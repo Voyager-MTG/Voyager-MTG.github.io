@@ -157,7 +157,6 @@
   background: linear-gradient(135deg, #93b483 0%, #93b483 50%, #b5cde3 50%, #b5cde3 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93b483', endColorstr='#b5cde3', GradientType=1);
 }
-
 .mana-cost.mana-iw {
   background: #9B91B2;
   background: -moz-linear-gradient(-45deg, #9B91B2 0%, #9B91B2 50%, #edf2b0 50%, #edf2b0 100%);
@@ -208,8 +207,6 @@
   background: linear-gradient(135deg, #9B91B2 0%, #9B91B2 50%, #93b483 50%, #93b483 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9B91B2', endColorstr='#93b483', GradientType=1);
 }
-
-
 .mana-cost.mana-2w, .mana-cost.mana-cw {
   background: #beb9b2;
   background: -moz-linear-gradient(-45deg, #beb9b2 0%, #beb9b2 50%, #edf2b0 50%, #edf2b0 100%);
@@ -328,7 +325,7 @@
   top: -0.38em;
   left: 0.28em;
 }
-.mana-2b:after,.mana-2g:after,.mana-2r:after,.mana-2u:after,.mana-2w:after,.mana-bg:after,.mana-br:after,.mana-gu:after,.mana-gw:after,.mana-rg:after,.mana-rw:after,.mana-ub:after,.mana-ur:after,.mana-wb:after,.mana-wu:after,.mana-cw::after,.mana-cu::after,.mana-cb::after,.mana-cr::after,.mana-cg::after,.mana-ci::after,.mana-2i:after {
+.mana-2b:after,.mana-2g:after,.mana-2r:after,.mana-2u:after,.mana-2w:after,.mana-bg:after,.mana-br:after,.mana-gu:after,.mana-gw:after,.mana-rg:after,.mana-rw:after,.mana-ub:after,.mana-ur:after,.mana-wb:after,.mana-wu:after,.mana-cw::after,.mana-cu::after,.mana-cb::after,.mana-cr::after,.mana-cg::after,.mana-ci::after,.mana-2i:after,.mana-iu:after,.mana-ib:after,.mana-ir:after,.mana-ig:after,.mana-iw:after,.mana-2i:after,.mana-ci::after  {
   font-size: 0.55em !important;
   position: absolute;
   top: 0.5em;
