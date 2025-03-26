@@ -4,7 +4,7 @@
 @font-face {
   font-family: 'Mana';
   src: url('mana.otf');
-  src: url('mana.otf')  format('opentype');
+  src: url('mana.otf')  format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
