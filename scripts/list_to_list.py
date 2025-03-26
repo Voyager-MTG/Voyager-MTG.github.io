@@ -35,9 +35,9 @@ def convertList(setCode):
 	cards_basic = []
 	cards_token = []
 
-	colors = [ 'W', 'U', 'B', 'R', 'G' ]
-	guilds = [ 'WU', 'UB', 'BR', 'RG', 'GW', 'WB', 'BG', 'GU', 'UR', 'RW' ]
-	shards = [ 'WUB', 'UBR', 'BRG', 'RGW', 'GWU', 'WBG', 'BGU', 'GUR', 'URW', 'RWB' ] # and wedges
+	colors = [ 'W', 'U', 'B', 'R', 'G', 'I' ]
+	guilds = [ 'WU', 'UB', 'BR', 'RG', 'GW', 'WB', 'BG', 'GU', 'UR', 'RW', 'IW', 'IU', 'IB', 'IR', 'IG' ]
+	shards = [ 'WUB', 'UBR', 'BRG', 'RGW', 'GWU', 'WBG', 'BGU', 'GUR', 'URW', 'RWB', 'IWU', 'IUB', 'IBR', 'IRG', 'IGW', 'IWB', 'IBG', 'IGU', 'IUR', 'IRW' ] # and wedges
 
 	cards_sorted = {
 		'W': [],
@@ -45,6 +45,7 @@ def convertList(setCode):
 		'B': [],
 		'R': [],
 		'G': [],
+		'I': [],
 		'WU': [],
 		'UB': [],
 		'BR': [],
@@ -55,6 +56,11 @@ def convertList(setCode):
 		'GU': [],
 		'UR': [],
 		'RW': [],
+		'IW': [],
+		'IU': [],
+		'IB': [],
+		'IR': [],
+		'IG': [],
 		'WUB': [],
 		'UBR': [],
 		'BRG': [],
@@ -65,6 +71,16 @@ def convertList(setCode):
 		'GUR': [],
 		'URW': [],
 		'RWB': [],
+		'IWU': [],
+		'IUB': [],
+		'IBR': [],
+		'IRG': [],
+		'IGW': [],
+		'IWB': [],
+		'IBG': [],
+		'IGU': [],
+		'IUR': [],
+		'IRW': [],
 		'gold': [],
 		'C': [],
 		'WL': [],
@@ -72,6 +88,7 @@ def convertList(setCode):
 		'BL': [],
 		'RL': [],
 		'GL': [],
+		'IL': [],
 		'WUL': [],
 		'UBL': [],
 		'BRL': [],
@@ -82,6 +99,11 @@ def convertList(setCode):
 		'GUL': [],
 		'URL': [],
 		'RWL': [],
+		'IWL': [],
+		'IUL': [],
+		'IBL': [],
+		'IRL': [],
+		'IGL': [],
 		'L': [],
 		'basic': [],
 		'token': [],
