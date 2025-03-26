@@ -427,7 +427,7 @@
   content: "\e604";
 }
 .mana-i:before {
-  content: "\e599";
+  content: "\e5ff";
 }
 .mana-0:before {
   content: "\e605";
@@ -645,7 +645,7 @@
 .mana-ig:before,
 .mana-2i:after,
 .mana-ci:after {
-  content: "\e599";
+  content: "\e5ff";
 }
 .mana-cw:before,
 .mana-cu:before,
