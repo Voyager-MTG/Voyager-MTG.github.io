@@ -401,6 +401,82 @@ def generateHTML(codes):
 	.sg-icon {
 		cursor: pointer;
 	}
+	.load-modal-container {
+		display: none; 
+		position: fixed; 
+		z-index: 1; 
+		padding-top: 100px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto; 
+		background-color: rgb(0,0,0); 
+		background-color: rgba(0,0,0,0.4); 
+	}
+	.load-modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 80%;
+	}
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	#modal-container {
+		display: none; 
+		position: fixed; 
+		z-index: 1; 
+		padding-top: 100px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto; 
+		background-color: rgb(0,0,0); 
+		background-color: rgba(0,0,0,0.4); 
+	}
+	#modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 80%;
+	}
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.load-btn {
+		color: #fff;
+		background-color: rgba(14, 126, 246, 1);
+		padding: 10px;
+		margin: 10px;
+	}
+	.del-btn {
+		color: #fff;
+		background-color: rgb(215, 69, 59);
+		padding: 10px;
+		margin: 10px;
+	}
 </style>
 <body>
 	<div class="header">
@@ -463,6 +539,9 @@ def generateHTML(codes):
 					<option value="default">Actions ...</option>
 					<option value="new">New deck</option>
 					<option value="import">Import deck</option>
+					<option value="save">Save deck online</option>
+					<option value="load">Load online deck</option>
+					<option value="delete">Delete online deck</option>
 					<option value="export-dek">Export .dek</option>
 					<option value="export-txt">Export .txt</option>
 				</select>
@@ -520,6 +599,11 @@ def generateHTML(codes):
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div id="modal-container">
+			<div id="modal-content">
+				<span class="close" onclick="closeModal()">&times;</span> <!--close button-->
 			</div>
 		</div>
 	</div>
@@ -581,6 +665,17 @@ def generateHTML(codes):
 			{
 				document.getElementById("import-file").click();
 			}
+			else if (option == "save") {
+				localStorage.setItem(document.getElementById("deck-name").value, generateDeckText());
+				document.getElementById("file-menu").value = "default";
+				openSaveModal();
+			}
+			else if (option == "load") {
+				loadDeck();
+			}
+			else if (option == "delete") {
+				deleteModal();
+			}
 			else if (option.startsWith("export"))
 			{
 				exportFile(option);
@@ -606,6 +701,117 @@ def generateHTML(codes):
 		document.getElementById("display-select").addEventListener("change", function(event) {
 			processDeck();
 		});
+
+		function openSaveModal() {
+			document.getElementById("modal-container").style.display = "block";
+			document.getElementById("modal-content").innerHTML = "Deck Saved as " + document.getElementById("deck-name").value + '<span class="close" onclick="closeModal()">&times;</span>';
+		}
+
+		function closeModal() {
+			document.getElementById("modal-container").style.display = "none";
+			document.getElementById("file-menu").value = "default";
+		}
+
+		function readDeckText(text, name) {
+
+			document.getElementById("deck-name").value = name;
+
+			deck = [];
+			sideboard = [];
+			sb_cards = false;
+
+			const lines = text.split('\n');
+
+			let deck_map = new Map();
+			let sb_map = new Map();
+
+			for (const line of lines)
+			{
+				if (line == 'sideboard' || line == '') // '' for Draftmancer files
+				{
+					sb_cards = true;
+				}
+				else if (!sb_cards)
+				{
+					count = parseInt(line.substring(0, line.indexOf(' ')));
+					card_name = line.substring(line.indexOf(' ') + 1);
+
+					if (deck_map.has(card_name))
+					{
+						deck_map.set(card_name, deck_map.get(card_name) + count);
+					}
+					else
+					{
+						deck_map.set(card_name, count);
+					}
+				}
+				else
+				{
+					count = parseInt(line.substring(0, line.indexOf(' ')));
+					card_name = line.substring(line.indexOf(' ') + 1);
+
+					if (sb_map.has(card_name))
+					{
+						sb_map.set(card_name, sb_map.get(card_name) + count);
+					}
+					else
+					{
+						sb_map.set(card_name, count);
+					}
+				}
+			}
+			console.log(card_list_arrayified);
+			for (const card of card_list_arrayified)
+			{
+				if (deck_map.has(card.card_name))
+				{
+					for (let i = 0; i < deck_map.get(card.card_name); i++)
+					{
+						addCardToDeck(JSON.stringify(card));
+					}
+					deck_map.delete(card.card_name);
+				}
+
+				if (sb_map.has(card.card_name))
+				{
+					for (let i = 0; i < sb_map.get(card.card_name); i++)
+					{
+						addCardToSideboard(JSON.stringify(card));
+					}
+					sb_map.delete(card.card_name);
+				}
+			}
+		// reader.readAsText(file);
+		document.getElementById("modal-container").style.display = "none";
+		document.getElementById("file-menu").value = "default";
+		}
+		
+		function loadDeck() {
+			document.getElementById("modal-container").style.display = "block";
+			document.getElementById("modal-content").innerHTML = "Loading Deck:";
+			Object.keys(localStorage).forEach(function(key){
+				console.log(key);
+   				console.log(localStorage.getItem(key));
+				document.getElementById("modal-content").innerHTML += `<span class="load-btn" onclick=readDeckText(localStorage.getItem("${key}"),"${key}")>${key}</span>`;
+			});
+			document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>';
+		}
+
+		function deleteModal() {
+			document.getElementById("modal-container").style.display = "block";
+			document.getElementById("modal-content").innerHTML = "Deleting Deck:";
+			Object.keys(localStorage).forEach(function(key){
+				console.log(key);
+   				console.log(localStorage.getItem(key));
+				document.getElementById("modal-content").innerHTML += `<span id="delete-${key}" class="del-btn" onclick="deleteDeck('${key}')">${key}</span>`;
+			});
+			document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>';
+		}
+
+		function deleteDeck(name) {
+			localStorage.removeItem(name);
+			document.getElementById(`delete-${name}`).remove();
+		}
 
 		document.getElementById("import-file").addEventListener("change", function(event) {
 			const files = event.target.files;
@@ -1108,7 +1314,7 @@ def generateHTML(codes):
 			}
 		}
 
-		async function exportFile(export_as) {
+		function generateDeckText() {
 			let deck_text = "";
 
 			let map = new Map([]);
@@ -1147,7 +1353,49 @@ def generateHTML(codes):
 					deck_text += map.get(card_map) + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name) + "\\n";
 				}
 			}
+			return deck_text;
+		}
 
+
+		async function exportFile(export_as) {	
+			let deck_text = "";
+			let map = new Map([]);
+			for (const card of deck)
+			{
+				if (map.has(card))
+				{
+					map.set(card, map.get(card) + 1);
+				}
+				else
+				{
+					map.set(card, 1);
+				}
+			}
+			for (const card_map of Array.from(map.keys()))
+			{
+				deck_text += map.get(card_map) + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name) + "\\n";
+			}
+			if (sideboard.length != 0)
+			{
+				deck_text += "sideboard\\n";
+				map = new Map([]);
+				for (const card of sideboard)
+				{
+					if (map.has(card))
+					{
+						map.set(card, map.get(card) + 1);
+					}
+					else
+					{
+						map.set(card, 1);
+					}
+				}
+				for (const card_map of Array.from(map.keys()))
+				{
+					deck_text += map.get(card_map) + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name) + "\\n";
+				}
+			}
+			//let deck_text = generateDeckText()
 			let downloadableLink = document.createElement('a');
 			downloadableLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(deck_text));
 			downloadableLink.download = document.getElementById("deck-name").value + (export_as == "export-dek" ? ".dek" : ".txt");
@@ -1168,7 +1416,12 @@ def generateHTML(codes):
 				preSearch();
 			}
 		});
-
+		modal = document.getElementById("modal-container");
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				closeModal();
+			}
+		}
 		'''
 
 	with open(os.path.join('resources', 'snippets', 'random-card.txt'), encoding='utf-8-sig') as f:
