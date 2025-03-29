@@ -720,7 +720,7 @@ def generateHTML(codes):
 			sideboard = [];
 			sb_cards = false;
 
-			const lines = text.split('\n');
+			const lines = text.split('\\n');
 
 			let deck_map = new Map();
 			let sb_map = new Map();
@@ -792,8 +792,7 @@ def generateHTML(codes):
 			Object.keys(localStorage).forEach(function(key){
 				console.log(key);
    				console.log(localStorage.getItem(key));
-				document.getElementById("modal-content").innerHTML += `<span class="load-btn" onclick=readDeckText(localStorage.getItem("${key}"),"${key}")>${key}</span>`;
-			});
+				document.getElementById("modal-content").innerHTML += `<span class="load-btn" onclick="readDeckText(localStorage.getItem('${key}'),'${key}')">${key}</span>`;			});
 			document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>';
 		}
 
@@ -1316,7 +1315,6 @@ def generateHTML(codes):
 
 		function generateDeckText() {
 			let deck_text = "";
-
 			let map = new Map([]);
 			for (const card of deck)
 			{
@@ -1331,7 +1329,7 @@ def generateHTML(codes):
 			}
 			for (const card_map of Array.from(map.keys()))
 			{
-				deck_text += map.get(card_map) + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name) + "\\n";
+				deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + "\\n";
 			}
 			if (sideboard.length != 0)
 			{
@@ -1350,12 +1348,11 @@ def generateHTML(codes):
 				}
 				for (const card_map of Array.from(map.keys()))
 				{
-					deck_text += map.get(card_map) + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name) + "\\n";
+					deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + "\\n";
 				}
 			}
 			return deck_text;
 		}
-
 
 		async function exportFile(export_as) {	
 			let deck_text = "";
