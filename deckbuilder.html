@@ -1527,11 +1527,11 @@
 							return false;
 						}
 						if (check == "sanctum") {
-							regex = new RegExp("(Pathbound|Heir)");
+							regex = new RegExp("((P|p)athbound|Heir)");
 							if (regex.test(card_oracle_text)) {
 								return true;
 							} else {
-								if (card_type.includes("Wonder") || card_type.includes("Erysite") || card_type.includes("Realm") || card_type.includes("Frontier")) {
+								if (card_type.includes("wonder") || card_type.includes("erysite") || card_type.includes("realm") || card_type.includes("frontier")) {
 									return true;
 								} else {
 									if (card.special_text.includes("sanctum")) {
