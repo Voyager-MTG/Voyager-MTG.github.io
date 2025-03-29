@@ -4,202 +4,202 @@
 	<link rel="icon" type="image/x-icon" href="/img/search.png">
 	<link rel="stylesheet" href="resources/mana.css">
 	<link rel="stylesheet" href="/resources/header.css">
-</head>
-<style>
-	@font-face {
-		font-family: Beleren;
-		src: url('/resources/beleren.ttf');
-	}
-	body {
-		font-family: 'Helvetica', 'Arial', sans-serif;
-		overscroll-behavior: none;
-		margin: 0px;
-		background-color: #f3f3f3;
-	}
-	.button-grid {
-		width: 70%;
-		max-width: 1200px;
-		height: 40px;
-		margin: auto;
-		display: grid;
-		grid-template-columns: 4fr 1fr;
-		gap: 10px;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		justify-items: center;
-	}
-	.prev-next-btns {
-		width: 100%;
-		height: 40px;
-		margin: auto;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 5px;
-		align-items: center;
-	}
-	button {
-		background-color: #fafafa;
-		border: 1px solid #d5d9d9;
-		border-radius: 8px;
-		box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
-		color: #171717;
-		cursor: pointer;
-		font-size: 13px;
-		width: 100%;
-		height: 35px;
-		min-width: 85px;
-	}
-	button:hover {
-		background-color: #ffffff;
-	}
-	button:focus {
-		border-color: #171717;
-		box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
-		outline: 0;
-	}
-	button:disabled {
-		cursor: auto;
-		background-color: #f7fafa;
-		font-style: italic;
-		box-shadow: none;
-		color: #cccccc;
-	}
-	.button-grid .results-text {
-		margin-right: -3px;
-	}
-	.button-grid .select-text {
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: left;
-		gap: 8px;
-		font-size: 14.5px;
-		text-align: center;
-	}
-	select {
-		background-color: #fafafa;
-		border: 1px solid #d5d9d9;
-		border-radius: 8px;
-		box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
-		text-align: center;
-		color: #171717;
-		font-size: 13px;
-		height: 30px;
-	}
-	.grid-container {
-		display: grid;
-		grid-template-columns: auto;
-		max-width: 1200px;
-		margin: auto;
-	}
-	.image-grid-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		width: 70%;
-		max-width: 1200px;
-		margin: auto;
-		gap: 5px;
-		justify-items: center;
-	}
-	@media ( max-width: 750px ) {
-		.image-grid-container {
-			grid-template-columns: 1fr 1fr;	
+	<style>
+		@font-face {
+			font-family: Beleren;
+			src: url('/resources/beleren.ttf');
 		}
-	}
-	.image-grid {
-		width: 70%;
-		margin: auto;
-		display: grid;
-		grid-template-columns: minmax(150px, 1fr) minmax(300px, 2fr);
-		gap: 50px;
-		padding-bottom: 10px;
-		justify-items: left;
-	}
-	.image-grid img {
-		position: relative;
-	}
-	.card-image {
-		float: left;
-		width: 100%;
-		height: auto;
-		display: block;
-	}
-	.card-text {
-		padding-top: 20px;
-		padding-bottom: 20px;
-		background: #fcfcfc;
-		width: 100%;
-		border: 1px solid #d5d9d9;
-		border-top: 3px solid #171717;
-		border-bottom: 3px solid #171717;
-		border-radius: 6px;
-		height: fit-content;
-		min-height: 75%;
-		margin-top: 3%;
-	}
-	.card-text div {
-		white-space: normal;
-		font-size: 15px;
-		padding-bottom: 10px;
-		padding-left: 12px;
-		padding-right: 12px;
-		line-height: 155%;
-	}
-	.card-text .name-cost {
-		font-weight: bold;
-		font-size: 20px;
-		white-space: pre-wrap;
-	}
-	.card-text .type {
-		font-size: 16px;
-	}
-	.card-text .pt {
-		font-weight: bold;
-	}
-	.card-text br {
-		content: "";
-		display: block;
-		margin-bottom: 5px;
-	}
-	.img-container {
-		position: relative;
-		width: 100%;
-		align-self: center;
-	}
-	.img-container img {
-		width: 100%;
-		height: auto;
-	}
-	.img-container .btn {
-		background: url('img/flip.png') no-repeat;
-		background-size: contain;
-		background-position: center;
-		width: 15%;
-		height: 11%;
-		cursor: pointer;
-		border: none;
-		position: absolute;
-		border-radius: 0px;
-		box-shadow: none;
-		left: 50%;
-		top: 48%;
-		transform: translate(-50%, -50%);
-		opacity: 0.5;
-	}
-	.img-container .btn:hover {
-		background: url('img/flip-hover.png') no-repeat;
-		background-size: contain;
-		background-position: center;
-	}
-	.img-container .hidden-text {
-		position: absolute;
-		font-family: Beleren;
-		top: 5%;
-		left: 9%;
-		font-size: .97vw;
-		color: rgba(0, 0, 0, 0);
-	}
-</style>
+		body {
+			font-family: 'Helvetica', 'Arial', sans-serif;
+			overscroll-behavior: none;
+			margin: 0px;
+			background-color: #f3f3f3;
+		}
+		.button-grid {
+			width: 70%;
+			max-width: 1200px;
+			height: 40px;
+			margin: auto;
+			display: grid;
+			grid-template-columns: 4fr 1fr;
+			gap: 10px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			justify-items: center;
+		}
+		.prev-next-btns {
+			width: 100%;
+			height: 40px;
+			margin: auto;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 5px;
+			align-items: center;
+		}
+		button {
+			background-color: #fafafa;
+			border: 1px solid #d5d9d9;
+			border-radius: 8px;
+			box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+			color: #171717;
+			cursor: pointer;
+			font-size: 13px;
+			width: 100%;
+			height: 35px;
+			min-width: 85px;
+		}
+		button:hover {
+			background-color: #ffffff;
+		}
+		button:focus {
+			border-color: #171717;
+			box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+			outline: 0;
+		}
+		button:disabled {
+			cursor: auto;
+			background-color: #f7fafa;
+			font-style: italic;
+			box-shadow: none;
+			color: #cccccc;
+		}
+		.button-grid .results-text {
+			margin-right: -3px;
+		}
+		.button-grid .select-text {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: left;
+			gap: 8px;
+			font-size: 14.5px;
+			text-align: center;
+		}
+		select {
+			background-color: #fafafa;
+			border: 1px solid #d5d9d9;
+			border-radius: 8px;
+			box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+			text-align: center;
+			color: #171717;
+			font-size: 13px;
+			height: 30px;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: auto;
+			max-width: 1200px;
+			margin: auto;
+		}
+		.image-grid-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			width: 70%;
+			max-width: 1200px;
+			margin: auto;
+			gap: 5px;
+			justify-items: center;
+		}
+		@media ( max-width: 750px ) {
+			.image-grid-container {
+				grid-template-columns: 1fr 1fr;	
+			}
+		}
+		.image-grid {
+			width: 70%;
+			margin: auto;
+			display: grid;
+			grid-template-columns: minmax(150px, 1fr) minmax(300px, 2fr);
+			gap: 50px;
+			padding-bottom: 10px;
+			justify-items: left;
+		}
+		.image-grid img {
+			position: relative;
+		}
+		.card-image {
+			float: left;
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+		.card-text {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			background: #fcfcfc;
+			width: 100%;
+			border: 1px solid #d5d9d9;
+			border-top: 3px solid #171717;
+			border-bottom: 3px solid #171717;
+			border-radius: 6px;
+			height: fit-content;
+			min-height: 75%;
+			margin-top: 3%;
+		}
+		.card-text div {
+			white-space: normal;
+			font-size: 15px;
+			padding-bottom: 10px;
+			padding-left: 12px;
+			padding-right: 12px;
+			line-height: 155%;
+		}
+		.card-text .name-cost {
+			font-weight: bold;
+			font-size: 20px;
+			white-space: pre-wrap;
+		}
+		.card-text .type {
+			font-size: 16px;
+		}
+		.card-text .pt {
+			font-weight: bold;
+		}
+		.card-text br {
+			content: "";
+			display: block;
+			margin-bottom: 5px;
+		}
+		.img-container {
+			position: relative;
+			width: 100%;
+			align-self: center;
+		}
+		.img-container img {
+			width: 100%;
+			height: auto;
+		}
+		.img-container .btn {
+			background: url('img/flip.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 15%;
+			height: 11%;
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			border-radius: 0px;
+			box-shadow: none;
+			left: 50%;
+			top: 48%;
+			transform: translate(-50%, -50%);
+			opacity: 0.5;
+		}
+		.img-container .btn:hover {
+			background: url('img/flip-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.img-container .hidden-text {
+			position: absolute;
+			font-family: Beleren;
+			top: 5%;
+			left: 9%;
+			font-size: .97vw;
+			color: rgba(0, 0, 0, 0);
+		}
+	</style>
+</head>
 <body>
 	<div class="header">
 		<div class="search-grid">
