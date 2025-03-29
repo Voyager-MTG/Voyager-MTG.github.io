@@ -578,7 +578,7 @@ function tokenizeTerms(searchTerms)
 								if (card_type.includes("Wonder") || card_type.includes("Erysite") || card_type.includes("Realm") || card_type.includes("Frontier")) {
 									return true;
 								} else {
-									if (card.special_text.includes("santum")) {
+									if (card.special_text.includes("sanctum")) {
 										return true;
 									} else {
 										return false;

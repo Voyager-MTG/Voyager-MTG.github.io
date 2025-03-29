@@ -1,5 +1,6 @@
 ﻿[CustomCards]
-	[	{
+	[
+		{
 			"name": "Sword of the Royalty",
 			"rarity": "mythic",
 			"mana_cost": "{3}",
@@ -325,15 +326,15 @@
 			"mana_cost": "{1}{B}",
 			"type": "Legendary Creature — Elf Noble ",
 			"collector_number": "124",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/124_Waldemar, Forgotten Heir_front.png"
-			},
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
 					"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/124_Waldemar, Forgotten Heir_back.png"
 				}
+			},
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/124_Waldemar, Forgotten Heir_front.png"
 			}
 		},
 		{
@@ -3615,634 +3616,633 @@
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/24_Marilye's Revelation.png"
 			}
-		},
-		]
-	[RareSlot(1)]
-	2 Knight Exemplar
-		2 Arbiter of the Meek
-		2 Sandrock Blacksmith
-		2 Sapner Vindicator
-		2 Call to War
-		2 Regal Lion
-		2 Leon Terrel, Unspoken Heir
-		2 Scorched Earth
-		2 Mirrorkin's Bargain
-		2 Sovereign Echomage
-		2 Idol of Forgotten Gods
-		2 Takers of Voice
-		2 Wilmot Nye, the Crafty
-		2 Inquisitive Otter
-		2 Geistwald Kraken
-		2 Beachside Drake
-		2 Unending Malice
-		2 Petula Vance, the Solemn Joke
-		2 Thriving Hyena
-		2 Taken by House Vance
-		2 Vance Informant
-		2 Sapner Hexcrafter
-		2 Plaskett Trickster
-		2 Virulent Hexer
-		2 Fervent Demagogue
-		2 Caryl Rey, the Rose
-		2 Ardleby Gatekeeper
-		2 Geistwald Deceiver
-		2 Usurp
-		2 Standoff at Beachside
-		2 William's Epiphany
-		2 Blazing Phoenix
-		2 House Negotiations
-		2 Quirky Chameleon
-		2 Ranulf, the Seed of Sapner
-		2 Geistwald Amalgam
-		2 Geistwald Abomination
-		2 Choice of Salvations
-		2 Chorus of the Silberwald
-		2 Blight-Tipped Hunter
-		2 Oriel Rivers, Wings of Worth
-		2 Elias Plaskett, Hidden Blade
-		2 Wulfric Hook, Lord of Ends
-		2 The Empty Throne of Phyre
-		2 Roul Banefort, the Stern
-		2 Conrad Whitaker, Protector
-		2 Minna Radcliff, the Swift
-		2 Gosfridus Turnberry
-		2 Alger Perle, Lord of Truetower
-		2 Dovizia Attwater, the Learned
-		2 Daring General
-		2 In Defiance
-		2 Inspiring Castellan
-		2 Edict of the Mirrorkin
-		2 Bamboozle
-		2 Whisperer of Armies
-		2 Weight of War
-		2 Scars of Wars Past
-		2 Succession Scandal
-		2 Castle Delta Agitator
-		2 Cherrywood Elite
-		2 Stoic at Graven Laughs
-		2 The Crown of Skyspire
-		2 Nye Scoundrel
-		2 Decisive Judgment
-		2 Castle on the Delta
-		2 Skyspire Keep
-		2 King's Rock Castle
-		2 Hall of Graven Laughs
-		2 Fort Sapner
-		2 Approach of the Newly Crowned
-		2 Read the Wingbeats
-		2 Bounty Collector
-		2 Gaze Upon Greatness
-		2 Long Night's Rest
-		1 Sword of the Royalty
-		1 The Aciesblade
-		1 Leon's Claim
-		1 Marilye, Heirloom Pilferer
-		1 Domineering Mirrorkin
-		1 Royal Seeker
-		1 Closure
-		1 Knight of the Endless War
-		1 Waldemar, Forgotten Heir
-		1 Thorough Conflagration
-		1 Herald of Storms
-		1 Sapner Trapper
-		1 One with the Geistwald
-		1 Capac Suyay, Grim Seeker
-		1 Bennet Terrel, the High King
-		1 Bistra Sapner, the Flourishing
-		1 Delora Vance, Lord of Laughs
-		1 Edith Rey, the Just
-		1 Elric Nye, the Pirate King
-		1 Hann, Herald of the Conqueror
-		1 Marilye's Revelation
-		[UncommonSlot(3)]
-	9 Slabman Stoneplate
-		9 Clearing in the Glade
-		9 Important Parcel
-		9 Overflowing Sanctuary
-		9 Extravagent Airship
-		9 Travelcart's Care
-		9 Whitaker Elite
-		9 Switching Shifts
-		9 Terrel Battlemage
-		9 Imani Whitaker
-		9 Noble Griffin
-		9 Paragon of Stories
-		9 Wystan Terrel, the Occultist
-		9 Heart of Banefort
-		9 Trust in the Future
-		9 Left to Wander
-		9 In Hopeful Caress
-		9 Lost at Sea
-		9 Nye Battlemage
-		9 Many-faced Blade
-		9 Flittering Distraction
-		9 Pilferer of Shrouded Coasts
-		9 Attwater Drakerider
-		9 Disappointing Show
-		9 Town Busybody
-		9 Lodema, Diamond of the Nye
-		9 Grasp of the Mirrorkin
-		9 Beginning of a Grand Heist
-		9 Grand Snail Race at Riverdale
-		9 Vance Soulsapper
-		9 Vance Battlemage
-		9 Voyage to the End of the World
-		9 Massacre at King's Rock
-		9 Reaper of Graven Laughs
-		9 Fueled by Vengeance
-		9 On the Knife's Edge
-		9 Whitaker Devoted
-		9 Plaskett Barber
-		9 Tacit Scorpion
-		9 Alder, Vance's Claw
-		9 Binding Lightning
-		9 Torch
-		9 William Rey, Lover to All
-		9 All-Out Charge
-		9 Drenched Euphoria
-		9 Death's Sting Captain
-		9 Rey Battlemages
-		9 Seeker of Blood
-		9 Radcliff Electromancer
-		9 Catastrophic Dragon
-		9 Raving Bomber
-		9 Beacon of Greatness
-		9 Turnberry Mediator
-		9 The Call to Adventure
-		9 Foilage Decoy
-		9 Encroach Upon
-		9 Hunter's Expertise
-		9 Attwater Elite
-		9 Sapner Battlemage
-		9 Rey Hospitality
-		9 Fulchard Sapner, Gentle Giant
-		9 Turnberry Overseer
-		9 Silberwald Trailblazer
-		9 Robust Oxen
-		9 Gathering of Lost Souls
-		9 Travelcart Guardian
-		9 Vindictive Spiral
-		9 Guide of Neglected Hopes
-		9 Hook Ironmantle
-		9 Artillery Shot
-		9 Break Out
-		9 Phyre Armiger
-		9 Bistra's Commander
-		9 Standing Army
-		9 Whitaker Cavalry
-		9 Proof of Divinity
-		9 Radcliff Dragoncaller
-		9 Naval Artillery
-		9 Dirt to Flesh
-		9 Restorative Hexer
-		9 Kirsa, the Sword of Perle
-		9 Renodet, the Shield of Perle
-		9 Hillcrest Vanguard
-		9 Attwater Warsworn
-		9 Cherrywood Groundskeeper
-		9 Sapner Decree
-		9 Terrel Decree
-		9 Vance Decree
-		9 Rey Decree
-		9 Respected Captain
-		9 Oaksworn Phantom
-		9 Glory on Bloodied Wings
-		9 Secluded Arachnomorph
-		9 Explore the Great Unknown
-		9 Faceless Mirrorkin
-		9 Azra Seasonkeeper
-		9 Sacred Avenger
-		9 Nye Decree
-		9 Disciple of Entwined Souls
-		9 Deadly Interrogation
-		9 Refuse to Yield
-		9 Everturning Crane
-		9 Mockery of Innocence
-		9 Perle Retainer
-		9 Show of Aggression
-		9 Hexer's Cave
-		[CommonSlot(10)]
-	30 Scorned Redeemer
-		30 Dreamstalker
-		30 Skulking Smuggler
-		30 Meeting of Powers
-		30 Highborn Sovereign
-		30 Crossroads of Identity
-		30 Dreadship Vessel
-		30 Hulking Vessel
-		30 Writ of Supplies
-		30 War Map
-		30 Wealthy Slabman
-		30 Terrel Recruit
-		30 Blade of Riverdale
-		30 Hardy Bear
-		30 Resolute Elk
-		30 Glimpse
-		30 Royal Send-Off
-		30 Blessing at Graven Laughs
-		30 Beguiling Soulmage
-		30 Guerrilla Ambush
-		30 Manacles of Stilled Fury
-		30 Dealings at the Delta
-		30 Duplicitous Crow
-		30 Bounty Setter
-		30 Bout on the Deck
-		30 Give Penance
-		30 Lucky Break
-		30 Debt Collection
-		30 Vance Devotee
-		30 Cherrywood Purification
-		30 Impaling Lance
-		30 Overwhelming Presence
-		30 Pull unto Death
-		30 Teller of Infinite Tales
-		30 Master the Old Ways
-		30 Call of the King
-		30 Naval Diplomacy
-		30 Sandrock Infantry
-		30 Summer Tryst
-		30 Fort Sapner Caretaker
-		30 Roul's High Guard
-		30 Kidnapping
-		30 Devious Cutthroat
-		30 Innocent Rendezvous
-		30 Instill with Integrity
-		30 Truetower Warden
-		30 Tormentor of Tales
-		30 Warden of Fort Sapner
-		30 Truetower Lookout
-		30 Silberwald Ranger
-		30 Banefort Skywarden
-		30 Vance Racketeers
-		30 Turnberry Legionnaire
-		30 Phyre Sellsword
-		30 Flowing Streams Halberdier
-		30 Knight of Skyspire
-		30 Enduring Turtle
-		30 Sanguine Chalice
-		30 Call of the Rose
-		30 Qualified Windrigger
-		30 Honored Eagle
-		30 Nye Recruit
-		30 Vance Recruit
-		30 Measured Strike
-		30 Geistwald Explorer
-		30 Battle for the Aciesblade
-		30 Thugs at the Shrouded Coast
-		30 Terrifying Mongrel
-		30 Battle Scars
-		30 Spellwild Ouphe
-		30 Overcoming Squire
-		30 Castle Delta Lookout
-		30 Sever the Legacy
-		30 Gleaming Courage
-		30 Call to Strength
-		30 Overzealous Page
-		30 Vance Mentor
-		30 Slabman Muscle
-		30 Rey Recruit
-		30 Replenishing Camp
-		30 Charitable Faerie
-		30 Ardent Warsworn
-		30 Fleshborne Horror
-		30 Kirsa's Page
-		30 Sapner Recruit
-		30 Hopeful Spouse
-		30 King's Rock Warden
-		30 Catharsis of Grief
-		30 Expendable Army
-		30 Cloudkissed Tracker
-		30 Brotherly Comradery
-		30 Monarch-Wing Retainer
-		30 Overt Warning
-		30 Death's Sting Diplomacy
-		30 Aggressive Urge
-		30 Dishonorable End
-		30 Messenger of Absent Messages
-		[WildcardSlot(1)]
-	10 Sword of the Royalty
-	10 Knight Exemplar
-	10 Arbiter of the Meek
-	10 Sandrock Blacksmith
-	10 Sapner Vindicator
-	10 Call to War
-	10 Regal Lion
-	10 Leon Terrel, Unspoken Heir
-	10 Scorched Earth
-	10 The Aciesblade
-	10 Leon's Claim
-	10 Mirrorkin's Bargain
-	10 Sovereign Echomage
-	10 Idol of Forgotten Gods
-	10 Takers of Voice
-	10 Wilmot Nye, the Crafty
-	10 Inquisitive Otter
-	10 Geistwald Kraken
-	10 Beachside Drake
-	10 Marilye, Heirloom Pilferer
-	10 Domineering Mirrorkin
-	10 Royal Seeker
-	10 Unending Malice
-	10 Petula Vance, the Solemn Joke
-	10 Thriving Hyena
-	10 Taken by House Vance
-	10 Vance Informant
-	10 Sapner Hexcrafter
-	10 Plaskett Trickster
-	10 Virulent Hexer
-	10 Closure
-	10 Knight of the Endless War
-	10 Waldemar, Forgotten Heir
-	10 Fervent Demagogue
-	10 Caryl Rey, the Rose
-	10 Ardleby Gatekeeper
-	10 Geistwald Deceiver
-	10 Usurp
-	10 Standoff at Beachside
-	10 William's Epiphany
-	10 Blazing Phoenix
-	10 Thorough Conflagration
-	10 Herald of Storms
-	10 House Negotiations
-	10 Quirky Chameleon
-	10 Ranulf, the Seed of Sapner
-	10 Geistwald Amalgam
-	10 Geistwald Abomination
-	10 Choice of Salvations
-	10 Chorus of the Silberwald
-	10 Blight-Tipped Hunter
-	10 Sapner Trapper
-	10 One with the Geistwald
-	10 Oriel Rivers, Wings of Worth
-	10 Elias Plaskett, Hidden Blade
-	10 Wulfric Hook, Lord of Ends
-	10 The Empty Throne of Phyre
-	10 Capac Suyay, Grim Seeker
-	10 Roul Banefort, the Stern
-	10 Conrad Whitaker, Protector
-	10 Minna Radcliff, the Swift
-	10 Gosfridus Turnberry
-	10 Alger Perle, Lord of Truetower
-	10 Dovizia Attwater, the Learned
-	10 Daring General
-	10 In Defiance
-	10 Inspiring Castellan
-	10 Edict of the Mirrorkin
-	10 Bamboozle
-	10 Whisperer of Armies
-	10 Weight of War
-	10 Scars of Wars Past
-	10 Succession Scandal
-	10 Castle Delta Agitator
-	10 Cherrywood Elite
-	10 Stoic at Graven Laughs
-	10 The Crown of Skyspire
-	10 Nye Scoundrel
-	10 Decisive Judgment
-	10 Bennet Terrel, the High King
-	10 Bistra Sapner, the Flourishing
-	10 Delora Vance, Lord of Laughs
-	10 Edith Rey, the Just
-	10 Elric Nye, the Pirate King
-	10 Castle on the Delta
-	10 Skyspire Keep
-	10 King's Rock Castle
-	10 Hall of Graven Laughs
-	10 Fort Sapner
-	10 Slabman Stoneplate
-	10 Clearing in the Glade
-	10 Important Parcel
-	10 Overflowing Sanctuary
-	10 Extravagent Airship
-	10 Travelcart's Care
-	10 Whitaker Elite
-	10 Switching Shifts
-	10 Terrel Battlemage
-	10 Imani Whitaker
-	10 Noble Griffin
-	10 Paragon of Stories
-	10 Wystan Terrel, the Occultist
-	10 Heart of Banefort
-	10 Trust in the Future
-	10 Left to Wander
-	10 In Hopeful Caress
-	10 Lost at Sea
-	10 Nye Battlemage
-	10 Many-faced Blade
-	10 Flittering Distraction
-	10 Pilferer of Shrouded Coasts
-	10 Attwater Drakerider
-	10 Disappointing Show
-	10 Town Busybody
-	10 Lodema, Diamond of the Nye
-	10 Grasp of the Mirrorkin
-	10 Beginning of a Grand Heist
-	10 Grand Snail Race at Riverdale
-	10 Vance Soulsapper
-	10 Vance Battlemage
-	10 Voyage to the End of the World
-	10 Massacre at King's Rock
-	10 Reaper of Graven Laughs
-	10 Fueled by Vengeance
-	10 On the Knife's Edge
-	10 Whitaker Devoted
-	10 Plaskett Barber
-	10 Tacit Scorpion
-	10 Alder, Vance's Claw
-	10 Binding Lightning
-	10 Torch
-	10 William Rey, Lover to All
-	10 All-Out Charge
-	10 Drenched Euphoria
-	10 Death's Sting Captain
-	10 Rey Battlemages
-	10 Seeker of Blood
-	10 Radcliff Electromancer
-	10 Catastrophic Dragon
-	10 Raving Bomber
-	10 Beacon of Greatness
-	10 Turnberry Mediator
-	10 The Call to Adventure
-	10 Foilage Decoy
-	10 Encroach Upon
-	10 Hunter's Expertise
-	10 Attwater Elite
-	10 Sapner Battlemage
-	10 Rey Hospitality
-	10 Fulchard Sapner, Gentle Giant
-	10 Turnberry Overseer
-	10 Silberwald Trailblazer
-	10 Robust Oxen
-	10 Gathering of Lost Souls
-	10 Travelcart Guardian
-	10 Vindictive Spiral
-	10 Guide of Neglected Hopes
-	10 Hook Ironmantle
-	10 Artillery Shot
-	10 Break Out
-	10 Phyre Armiger
-	10 Bistra's Commander
-	10 Standing Army
-	10 Whitaker Cavalry
-	10 Proof of Divinity
-	10 Radcliff Dragoncaller
-	10 Naval Artillery
-	10 Dirt to Flesh
-	10 Restorative Hexer
-	10 Kirsa, the Sword of Perle
-	10 Renodet, the Shield of Perle
-	10 Hillcrest Vanguard
-	10 Attwater Warsworn
-	10 Cherrywood Groundskeeper
-	10 Sapner Decree
-	10 Terrel Decree
-	10 Vance Decree
-	10 Rey Decree
-	10 Respected Captain
-	10 Oaksworn Phantom
-	10 Glory on Bloodied Wings
-	10 Secluded Arachnomorph
-	10 Explore the Great Unknown
-	10 Faceless Mirrorkin
-	10 Azra Seasonkeeper
-	10 Sacred Avenger
-	10 Nye Decree
-	10 Disciple of Entwined Souls
-	10 Scorned Redeemer
-	10 Dreamstalker
-	10 Skulking Smuggler
-	10 Meeting of Powers
-	10 Highborn Sovereign
-	10 Crossroads of Identity
-	10 Whitaker Sigil
-	10 Ardleby Hold
-	10 Beachside Castle
-	10 Castle of Death's Sting
-	10 Castle of Shrouded Coasts
-	10 Cloudkissed Keep
-	10 Hall of Flowing Streams
-	10 Riverdale Fortress
-	10 Sandrock Castle
-	10 Truetower Castle
-	10 Turnberry Citadel
-	10 Dreadship Vessel
-	10 Hulking Vessel
-	10 Writ of Supplies
-	10 War Map
-	10 Wealthy Slabman
-	10 Terrel Recruit
-	10 Blade of Riverdale
-	10 Hardy Bear
-	10 Resolute Elk
-	10 Glimpse
-	10 Royal Send-Off
-	10 Blessing at Graven Laughs
-	10 Beguiling Soulmage
-	10 Guerrilla Ambush
-	10 Manacles of Stilled Fury
-	10 Dealings at the Delta
-	10 Duplicitous Crow
-	10 Bounty Setter
-	10 Bout on the Deck
-	10 Give Penance
-	10 Lucky Break
-	10 Debt Collection
-	10 Vance Devotee
-	10 Cherrywood Purification
-	10 Impaling Lance
-	10 Overwhelming Presence
-	10 Pull unto Death
-	10 Teller of Infinite Tales
-	10 Master the Old Ways
-	10 Call of the King
-	10 Naval Diplomacy
-	10 Sandrock Infantry
-	10 Summer Tryst
-	10 Fort Sapner Caretaker
-	10 Roul's High Guard
-	10 Kidnapping
-	10 Devious Cutthroat
-	10 Innocent Rendezvous
-	10 Instill with Integrity
-	10 Truetower Warden
-	10 Tormentor of Tales
-	10 Warden of Fort Sapner
-	10 Truetower Lookout
-	10 Silberwald Ranger
-	10 Banefort Skywarden
-	10 Vance Racketeers
-	10 Turnberry Legionnaire
-	10 Phyre Sellsword
-	10 Flowing Streams Halberdier
-	10 Knight of Skyspire
-	10 Enduring Turtle
-	10 Sanguine Chalice
-	10 Call of the Rose
-	10 Qualified Windrigger
-	10 Honored Eagle
-	10 Nye Recruit
-	10 Vance Recruit
-	10 Measured Strike
-	10 Geistwald Explorer
-	10 Battle for the Aciesblade
-	10 Thugs at the Shrouded Coast
-	10 Terrifying Mongrel
-	10 Battle Scars
-	10 Spellwild Ouphe
-	10 Overcoming Squire
-	10 Castle Delta Lookout
-	10 Sever the Legacy
-	10 Gleaming Courage
-	10 Call to Strength
-	10 Overzealous Page
-	10 Vance Mentor
-	10 Slabman Muscle
-	10 Rey Recruit
-	10 Replenishing Camp
-	10 Charitable Faerie
-	10 Ardent Warsworn
-	10 Fleshborne Horror
-	10 Kirsa's Page
-	10 Sapner Recruit
-	10 Hopeful Spouse
-	10 King's Rock Warden
-	10 Catharsis of Grief
-	10 Expendable Army
-	10 Cloudkissed Tracker
-	10 Brotherly Comradery
-	10 Monarch-Wing Retainer
-	10 Overt Warning
-	10 Death's Sting Diplomacy
-	10 Aggressive Urge
-	10 Dishonorable End
-	10 Deadly Interrogation
-	10 Refuse to Yield
-	10 Everturning Crane
-	10 Mockery of Innocence
-	10 Perle Retainer
-	10 Show of Aggression
-	10 Approach of the Newly Crowned
-	10 Read the Wingbeats
-	10 Bounty Collector
-	10 Gaze Upon Greatness
-	10 Long Night's Rest
-	10 Hexer's Cave
-	10 Messenger of Absent Messages
-	10 Vance Sigil
-	10 Turnberry Sigil
-	10 Terrel Sigil
-	10 Sapner Sigil
-	10 Rivers Sigil
-	10 Rey Sigil
-	10 Radcliff Sigil
-	10 Plaskett Sigil
-	10 Phyre Sigil
-	10 Attwater Sigil
-	10 Perle House Sigil
-	10 Nye Sigil
-	10 Hook Sigil
-	10 Banefort Sigil
-	10 Hann, Herald of the Conqueror
-	10 Marilye's Revelation
-	[LandSlot(1)]
-	
+		}
+	]
+[RareSlot(1)]
+2 Knight Exemplar
+2 Arbiter of the Meek
+2 Sandrock Blacksmith
+2 Sapner Vindicator
+2 Call to War
+2 Regal Lion
+2 Leon Terrel, Unspoken Heir
+2 Scorched Earth
+2 Mirrorkin's Bargain
+2 Sovereign Echomage
+2 Idol of Forgotten Gods
+2 Takers of Voice
+2 Wilmot Nye, the Crafty
+2 Inquisitive Otter
+2 Geistwald Kraken
+2 Beachside Drake
+2 Unending Malice
+2 Petula Vance, the Solemn Joke
+2 Thriving Hyena
+2 Taken by House Vance
+2 Vance Informant
+2 Sapner Hexcrafter
+2 Plaskett Trickster
+2 Virulent Hexer
+2 Fervent Demagogue
+2 Caryl Rey, the Rose
+2 Ardleby Gatekeeper
+2 Geistwald Deceiver
+2 Usurp
+2 Standoff at Beachside
+2 William's Epiphany
+2 Blazing Phoenix
+2 House Negotiations
+2 Quirky Chameleon
+2 Ranulf, the Seed of Sapner
+2 Geistwald Amalgam
+2 Geistwald Abomination
+2 Choice of Salvations
+2 Chorus of the Silberwald
+2 Blight-Tipped Hunter
+2 Oriel Rivers, Wings of Worth
+2 Elias Plaskett, Hidden Blade
+2 Wulfric Hook, Lord of Ends
+2 The Empty Throne of Phyre
+2 Roul Banefort, the Stern
+2 Conrad Whitaker, Protector
+2 Minna Radcliff, the Swift
+2 Gosfridus Turnberry
+2 Alger Perle, Lord of Truetower
+2 Dovizia Attwater, the Learned
+2 Daring General
+2 In Defiance
+2 Inspiring Castellan
+2 Edict of the Mirrorkin
+2 Bamboozle
+2 Whisperer of Armies
+2 Weight of War
+2 Scars of Wars Past
+2 Succession Scandal
+2 Castle Delta Agitator
+2 Cherrywood Elite
+2 Stoic at Graven Laughs
+2 The Crown of Skyspire
+2 Nye Scoundrel
+2 Decisive Judgment
+2 Castle on the Delta
+2 Skyspire Keep
+2 King's Rock Castle
+2 Hall of Graven Laughs
+2 Fort Sapner
+2 Approach of the Newly Crowned
+2 Read the Wingbeats
+2 Bounty Collector
+2 Gaze Upon Greatness
+2 Long Night's Rest
+1 Sword of the Royalty
+1 The Aciesblade
+1 Leon's Claim
+1 Marilye, Heirloom Pilferer
+1 Domineering Mirrorkin
+1 Royal Seeker
+1 Closure
+1 Knight of the Endless War
+1 Waldemar, Forgotten Heir
+1 Thorough Conflagration
+1 Herald of Storms
+1 Sapner Trapper
+1 One with the Geistwald
+1 Capac Suyay, Grim Seeker
+1 Bennet Terrel, the High King
+1 Bistra Sapner, the Flourishing
+1 Delora Vance, Lord of Laughs
+1 Edith Rey, the Just
+1 Elric Nye, the Pirate King
+1 Hann, Herald of the Conqueror
+1 Marilye's Revelation
+[UncommonSlot(3)]
+9 Slabman Stoneplate
+9 Clearing in the Glade
+9 Important Parcel
+9 Overflowing Sanctuary
+9 Extravagent Airship
+9 Travelcart's Care
+9 Whitaker Elite
+9 Switching Shifts
+9 Terrel Battlemage
+9 Imani Whitaker
+9 Noble Griffin
+9 Paragon of Stories
+9 Wystan Terrel, the Occultist
+9 Heart of Banefort
+9 Trust in the Future
+9 Left to Wander
+9 In Hopeful Caress
+9 Lost at Sea
+9 Nye Battlemage
+9 Many-faced Blade
+9 Flittering Distraction
+9 Pilferer of Shrouded Coasts
+9 Attwater Drakerider
+9 Disappointing Show
+9 Town Busybody
+9 Lodema, Diamond of the Nye
+9 Grasp of the Mirrorkin
+9 Beginning of a Grand Heist
+9 Grand Snail Race at Riverdale
+9 Vance Soulsapper
+9 Vance Battlemage
+9 Voyage to the End of the World
+9 Massacre at King's Rock
+9 Reaper of Graven Laughs
+9 Fueled by Vengeance
+9 On the Knife's Edge
+9 Whitaker Devoted
+9 Plaskett Barber
+9 Tacit Scorpion
+9 Alder, Vance's Claw
+9 Binding Lightning
+9 Torch
+9 William Rey, Lover to All
+9 All-Out Charge
+9 Drenched Euphoria
+9 Death's Sting Captain
+9 Rey Battlemages
+9 Seeker of Blood
+9 Radcliff Electromancer
+9 Catastrophic Dragon
+9 Raving Bomber
+9 Beacon of Greatness
+9 Turnberry Mediator
+9 The Call to Adventure
+9 Foilage Decoy
+9 Encroach Upon
+9 Hunter's Expertise
+9 Attwater Elite
+9 Sapner Battlemage
+9 Rey Hospitality
+9 Fulchard Sapner, Gentle Giant
+9 Turnberry Overseer
+9 Silberwald Trailblazer
+9 Robust Oxen
+9 Gathering of Lost Souls
+9 Travelcart Guardian
+9 Vindictive Spiral
+9 Guide of Neglected Hopes
+9 Hook Ironmantle
+9 Artillery Shot
+9 Break Out
+9 Phyre Armiger
+9 Bistra's Commander
+9 Standing Army
+9 Whitaker Cavalry
+9 Proof of Divinity
+9 Radcliff Dragoncaller
+9 Naval Artillery
+9 Dirt to Flesh
+9 Restorative Hexer
+9 Kirsa, the Sword of Perle
+9 Renodet, the Shield of Perle
+9 Hillcrest Vanguard
+9 Attwater Warsworn
+9 Cherrywood Groundskeeper
+9 Sapner Decree
+9 Terrel Decree
+9 Vance Decree
+9 Rey Decree
+9 Respected Captain
+9 Oaksworn Phantom
+9 Glory on Bloodied Wings
+9 Secluded Arachnomorph
+9 Explore the Great Unknown
+9 Faceless Mirrorkin
+9 Azra Seasonkeeper
+9 Sacred Avenger
+9 Nye Decree
+9 Disciple of Entwined Souls
+9 Deadly Interrogation
+9 Refuse to Yield
+9 Everturning Crane
+9 Mockery of Innocence
+9 Perle Retainer
+9 Show of Aggression
+9 Hexer's Cave
+[CommonSlot(10)]
+30 Scorned Redeemer
+30 Dreamstalker
+30 Skulking Smuggler
+30 Meeting of Powers
+30 Highborn Sovereign
+30 Crossroads of Identity
+30 Dreadship Vessel
+30 Hulking Vessel
+30 Writ of Supplies
+30 War Map
+30 Wealthy Slabman
+30 Terrel Recruit
+30 Blade of Riverdale
+30 Hardy Bear
+30 Resolute Elk
+30 Glimpse
+30 Royal Send-Off
+30 Blessing at Graven Laughs
+30 Beguiling Soulmage
+30 Guerrilla Ambush
+30 Manacles of Stilled Fury
+30 Dealings at the Delta
+30 Duplicitous Crow
+30 Bounty Setter
+30 Bout on the Deck
+30 Give Penance
+30 Lucky Break
+30 Debt Collection
+30 Vance Devotee
+30 Cherrywood Purification
+30 Impaling Lance
+30 Overwhelming Presence
+30 Pull unto Death
+30 Teller of Infinite Tales
+30 Master the Old Ways
+30 Call of the King
+30 Naval Diplomacy
+30 Sandrock Infantry
+30 Summer Tryst
+30 Fort Sapner Caretaker
+30 Roul's High Guard
+30 Kidnapping
+30 Devious Cutthroat
+30 Innocent Rendezvous
+30 Instill with Integrity
+30 Truetower Warden
+30 Tormentor of Tales
+30 Warden of Fort Sapner
+30 Truetower Lookout
+30 Silberwald Ranger
+30 Banefort Skywarden
+30 Vance Racketeers
+30 Turnberry Legionnaire
+30 Phyre Sellsword
+30 Flowing Streams Halberdier
+30 Knight of Skyspire
+30 Enduring Turtle
+30 Sanguine Chalice
+30 Call of the Rose
+30 Qualified Windrigger
+30 Honored Eagle
+30 Nye Recruit
+30 Vance Recruit
+30 Measured Strike
+30 Geistwald Explorer
+30 Battle for the Aciesblade
+30 Thugs at the Shrouded Coast
+30 Terrifying Mongrel
+30 Battle Scars
+30 Spellwild Ouphe
+30 Overcoming Squire
+30 Castle Delta Lookout
+30 Sever the Legacy
+30 Gleaming Courage
+30 Call to Strength
+30 Overzealous Page
+30 Vance Mentor
+30 Slabman Muscle
+30 Rey Recruit
+30 Replenishing Camp
+30 Charitable Faerie
+30 Ardent Warsworn
+30 Fleshborne Horror
+30 Kirsa's Page
+30 Sapner Recruit
+30 Hopeful Spouse
+30 King's Rock Warden
+30 Catharsis of Grief
+30 Expendable Army
+30 Cloudkissed Tracker
+30 Brotherly Comradery
+30 Monarch-Wing Retainer
+30 Overt Warning
+30 Death's Sting Diplomacy
+30 Aggressive Urge
+30 Dishonorable End
+30 Messenger of Absent Messages
+[WildcardSlot(1)]
+10 Sword of the Royalty
+10 Knight Exemplar
+10 Arbiter of the Meek
+10 Sandrock Blacksmith
+10 Sapner Vindicator
+10 Call to War
+10 Regal Lion
+10 Leon Terrel, Unspoken Heir
+10 Scorched Earth
+10 The Aciesblade
+10 Leon's Claim
+10 Mirrorkin's Bargain
+10 Sovereign Echomage
+10 Idol of Forgotten Gods
+10 Takers of Voice
+10 Wilmot Nye, the Crafty
+10 Inquisitive Otter
+10 Geistwald Kraken
+10 Beachside Drake
+10 Marilye, Heirloom Pilferer
+10 Domineering Mirrorkin
+10 Royal Seeker
+10 Unending Malice
+10 Petula Vance, the Solemn Joke
+10 Thriving Hyena
+10 Taken by House Vance
+10 Vance Informant
+10 Sapner Hexcrafter
+10 Plaskett Trickster
+10 Virulent Hexer
+10 Closure
+10 Knight of the Endless War
+10 Waldemar, Forgotten Heir
+10 Fervent Demagogue
+10 Caryl Rey, the Rose
+10 Ardleby Gatekeeper
+10 Geistwald Deceiver
+10 Usurp
+10 Standoff at Beachside
+10 William's Epiphany
+10 Blazing Phoenix
+10 Thorough Conflagration
+10 Herald of Storms
+10 House Negotiations
+10 Quirky Chameleon
+10 Ranulf, the Seed of Sapner
+10 Geistwald Amalgam
+10 Geistwald Abomination
+10 Choice of Salvations
+10 Chorus of the Silberwald
+10 Blight-Tipped Hunter
+10 Sapner Trapper
+10 One with the Geistwald
+10 Oriel Rivers, Wings of Worth
+10 Elias Plaskett, Hidden Blade
+10 Wulfric Hook, Lord of Ends
+10 The Empty Throne of Phyre
+10 Capac Suyay, Grim Seeker
+10 Roul Banefort, the Stern
+10 Conrad Whitaker, Protector
+10 Minna Radcliff, the Swift
+10 Gosfridus Turnberry
+10 Alger Perle, Lord of Truetower
+10 Dovizia Attwater, the Learned
+10 Daring General
+10 In Defiance
+10 Inspiring Castellan
+10 Edict of the Mirrorkin
+10 Bamboozle
+10 Whisperer of Armies
+10 Weight of War
+10 Scars of Wars Past
+10 Succession Scandal
+10 Castle Delta Agitator
+10 Cherrywood Elite
+10 Stoic at Graven Laughs
+10 The Crown of Skyspire
+10 Nye Scoundrel
+10 Decisive Judgment
+10 Bennet Terrel, the High King
+10 Bistra Sapner, the Flourishing
+10 Delora Vance, Lord of Laughs
+10 Edith Rey, the Just
+10 Elric Nye, the Pirate King
+10 Castle on the Delta
+10 Skyspire Keep
+10 King's Rock Castle
+10 Hall of Graven Laughs
+10 Fort Sapner
+10 Slabman Stoneplate
+10 Clearing in the Glade
+10 Important Parcel
+10 Overflowing Sanctuary
+10 Extravagent Airship
+10 Travelcart's Care
+10 Whitaker Elite
+10 Switching Shifts
+10 Terrel Battlemage
+10 Imani Whitaker
+10 Noble Griffin
+10 Paragon of Stories
+10 Wystan Terrel, the Occultist
+10 Heart of Banefort
+10 Trust in the Future
+10 Left to Wander
+10 In Hopeful Caress
+10 Lost at Sea
+10 Nye Battlemage
+10 Many-faced Blade
+10 Flittering Distraction
+10 Pilferer of Shrouded Coasts
+10 Attwater Drakerider
+10 Disappointing Show
+10 Town Busybody
+10 Lodema, Diamond of the Nye
+10 Grasp of the Mirrorkin
+10 Beginning of a Grand Heist
+10 Grand Snail Race at Riverdale
+10 Vance Soulsapper
+10 Vance Battlemage
+10 Voyage to the End of the World
+10 Massacre at King's Rock
+10 Reaper of Graven Laughs
+10 Fueled by Vengeance
+10 On the Knife's Edge
+10 Whitaker Devoted
+10 Plaskett Barber
+10 Tacit Scorpion
+10 Alder, Vance's Claw
+10 Binding Lightning
+10 Torch
+10 William Rey, Lover to All
+10 All-Out Charge
+10 Drenched Euphoria
+10 Death's Sting Captain
+10 Rey Battlemages
+10 Seeker of Blood
+10 Radcliff Electromancer
+10 Catastrophic Dragon
+10 Raving Bomber
+10 Beacon of Greatness
+10 Turnberry Mediator
+10 The Call to Adventure
+10 Foilage Decoy
+10 Encroach Upon
+10 Hunter's Expertise
+10 Attwater Elite
+10 Sapner Battlemage
+10 Rey Hospitality
+10 Fulchard Sapner, Gentle Giant
+10 Turnberry Overseer
+10 Silberwald Trailblazer
+10 Robust Oxen
+10 Gathering of Lost Souls
+10 Travelcart Guardian
+10 Vindictive Spiral
+10 Guide of Neglected Hopes
+10 Hook Ironmantle
+10 Artillery Shot
+10 Break Out
+10 Phyre Armiger
+10 Bistra's Commander
+10 Standing Army
+10 Whitaker Cavalry
+10 Proof of Divinity
+10 Radcliff Dragoncaller
+10 Naval Artillery
+10 Dirt to Flesh
+10 Restorative Hexer
+10 Kirsa, the Sword of Perle
+10 Renodet, the Shield of Perle
+10 Hillcrest Vanguard
+10 Attwater Warsworn
+10 Cherrywood Groundskeeper
+10 Sapner Decree
+10 Terrel Decree
+10 Vance Decree
+10 Rey Decree
+10 Respected Captain
+10 Oaksworn Phantom
+10 Glory on Bloodied Wings
+10 Secluded Arachnomorph
+10 Explore the Great Unknown
+10 Faceless Mirrorkin
+10 Azra Seasonkeeper
+10 Sacred Avenger
+10 Nye Decree
+10 Disciple of Entwined Souls
+10 Scorned Redeemer
+10 Dreamstalker
+10 Skulking Smuggler
+10 Meeting of Powers
+10 Highborn Sovereign
+10 Crossroads of Identity
+10 Whitaker Sigil
+10 Ardleby Hold
+10 Beachside Castle
+10 Castle of Death's Sting
+10 Castle of Shrouded Coasts
+10 Cloudkissed Keep
+10 Hall of Flowing Streams
+10 Riverdale Fortress
+10 Sandrock Castle
+10 Truetower Castle
+10 Turnberry Citadel
+10 Dreadship Vessel
+10 Hulking Vessel
+10 Writ of Supplies
+10 War Map
+10 Wealthy Slabman
+10 Terrel Recruit
+10 Blade of Riverdale
+10 Hardy Bear
+10 Resolute Elk
+10 Glimpse
+10 Royal Send-Off
+10 Blessing at Graven Laughs
+10 Beguiling Soulmage
+10 Guerrilla Ambush
+10 Manacles of Stilled Fury
+10 Dealings at the Delta
+10 Duplicitous Crow
+10 Bounty Setter
+10 Bout on the Deck
+10 Give Penance
+10 Lucky Break
+10 Debt Collection
+10 Vance Devotee
+10 Cherrywood Purification
+10 Impaling Lance
+10 Overwhelming Presence
+10 Pull unto Death
+10 Teller of Infinite Tales
+10 Master the Old Ways
+10 Call of the King
+10 Naval Diplomacy
+10 Sandrock Infantry
+10 Summer Tryst
+10 Fort Sapner Caretaker
+10 Roul's High Guard
+10 Kidnapping
+10 Devious Cutthroat
+10 Innocent Rendezvous
+10 Instill with Integrity
+10 Truetower Warden
+10 Tormentor of Tales
+10 Warden of Fort Sapner
+10 Truetower Lookout
+10 Silberwald Ranger
+10 Banefort Skywarden
+10 Vance Racketeers
+10 Turnberry Legionnaire
+10 Phyre Sellsword
+10 Flowing Streams Halberdier
+10 Knight of Skyspire
+10 Enduring Turtle
+10 Sanguine Chalice
+10 Call of the Rose
+10 Qualified Windrigger
+10 Honored Eagle
+10 Nye Recruit
+10 Vance Recruit
+10 Measured Strike
+10 Geistwald Explorer
+10 Battle for the Aciesblade
+10 Thugs at the Shrouded Coast
+10 Terrifying Mongrel
+10 Battle Scars
+10 Spellwild Ouphe
+10 Overcoming Squire
+10 Castle Delta Lookout
+10 Sever the Legacy
+10 Gleaming Courage
+10 Call to Strength
+10 Overzealous Page
+10 Vance Mentor
+10 Slabman Muscle
+10 Rey Recruit
+10 Replenishing Camp
+10 Charitable Faerie
+10 Ardent Warsworn
+10 Fleshborne Horror
+10 Kirsa's Page
+10 Sapner Recruit
+10 Hopeful Spouse
+10 King's Rock Warden
+10 Catharsis of Grief
+10 Expendable Army
+10 Cloudkissed Tracker
+10 Brotherly Comradery
+10 Monarch-Wing Retainer
+10 Overt Warning
+10 Death's Sting Diplomacy
+10 Aggressive Urge
+10 Dishonorable End
+10 Deadly Interrogation
+10 Refuse to Yield
+10 Everturning Crane
+10 Mockery of Innocence
+10 Perle Retainer
+10 Show of Aggression
+10 Approach of the Newly Crowned
+10 Read the Wingbeats
+10 Bounty Collector
+10 Gaze Upon Greatness
+10 Long Night's Rest
+10 Hexer's Cave
+10 Messenger of Absent Messages
+10 Vance Sigil
+10 Turnberry Sigil
+10 Terrel Sigil
+10 Sapner Sigil
+10 Rivers Sigil
+10 Rey Sigil
+10 Radcliff Sigil
+10 Plaskett Sigil
+10 Phyre Sigil
+10 Attwater Sigil
+10 Perle House Sigil
+10 Nye Sigil
+10 Hook Sigil
+10 Banefort Sigil
+10 Hann, Herald of the Conqueror
+10 Marilye's Revelation
+[LandSlot(1)]

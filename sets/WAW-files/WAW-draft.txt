@@ -1,5 +1,6 @@
 ﻿[CustomCards]
-	[	{
+	[
+		{
 			"name": "A Beloved World",
 			"rarity": "mythic",
 			"mana_cost": "",
@@ -1815,15 +1816,15 @@
 			"mana_cost": "{3}{B}",
 			"type": "Legendary Creature — Human Wizard ",
 			"collector_number": "79",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/WAW-files/img/79_Chance-in-Hell_front.png"
-			},
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
 					"en": "https://Voyager-MTG.github.io/sets/WAW-files/img/79_Chance-in-Hell_back.png"
 				}
+			},
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/WAW-files/img/79_Chance-in-Hell_front.png"
 			}
 		},
 		{
@@ -2905,533 +2906,532 @@
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/WAW-files/img/227_Starshine Wisp.png"
 			}
-		},
-		]
-	[RareSlot(1)]
-	2 Bottom of the Deepmists
-		2 New Tensuo Colony
-		2 Splinter of Ilcae
-		2 The Citadel
-		2 The Deepmists
-		2 The Holt
-		2 The Skyview
-		2 The Starsea
-		2 Wanderer's Shrine
-		2 Ancient Viewdrifter
-		2 Chitterbit
-		2 Dhere, Preserver of Memories
-		2 Escalate to Violence
-		2 New Tensuo Luminary
-		2 Shapes in the Pools
-		2 Wish for Separation
-		2 Ageless Wayfarer
-		2 Collector of the Wonderful
-		2 Lakebed Wrudge
-		2 Liberators of the Soul
-		2 Supercharged Shockodile
-		2 Antlerweaver
-		2 Etchings on the Citadel Walls
-		2 Eteres' Chronicler
-		2 Retreat to the Borderholt
-		2 Swirling Smokewalker
-		2 The Gateway Pictographs
-		2 The Shimmering Sky
-		2 Wish for Discord
-		2 Wishtouched Outcast
-		2 Wonder Road
-		2 Worldsoul Song
-		2 Worldsoul's Sorrow
-		2 Aechmi, Ilcan Innovator
-		2 Conceptual Digestion
-		2 Cutthroat Obsession
-		2 Forgotten Worlds' Love
-		2 Ilcan Ghostbound
-		2 Overwhelming Force
-		2 Silent Memoriam
-		2 Sunset Study
-		2 The Borderholt Obelisks
-		2 The Citadel's Geometry
-		2 Thing in the Birches
-		2 Warpwyrm
-		2 Wish for Family
-		2 Ageless Caretaker
-		2 Cathexis, Soul Aspect
-		2 Elusive Harbinger
-		2 Excess of Potential
-		2 Give Out
-		2 Myriad Reflections
-		2 New Tensuo Physician
-		2 Starsea Slayer
-		2 The Deepmist Structures
-		2 Wish for Death
-		2 Ilcan Szcygite
-		2 Wish for Transformation
-		2 Sailing the Starsea
-		2 Stymied Purpose
-		1 A Beloved World
-		1 The Heart of Ischav
-		1 Starstruck Skitter
-		1 Thriving Sornidol
-		1 Amarell, New Tensuo Elder
-		1 Anything and Everything
-		1 Manuela, the Known
-		1 Playful Chiaykyaich
-		1 Remain Steady
-		1 The Deepmist Record
-		1 Chance-in-Hell
-		1 Khiare, Last of the Lost
-		1 Wizened Trundler
-		1 A Promise
-		1 Eteres, Planar Analyst
-		1 New Tensuo Collaborator
-		1 Vrep
-		1 Ajha, the Wish for Home
-		1 Skyview Chronomancer
-		1 Planar Resurrection
-		[UncommonSlot(3)]
-	9 Citadel Observatory
-		9 Promising Hillside
-		9 Promising Lagoon
-		9 Promising Plume
-		9 Promising Ruin
-		9 Promising Thicket
-		9 Arrival of the Wonderlands
-		9 Holt Sleeper
-		9 Insight Beyond the Clouds
-		9 Larissi, Wonder Weaver
-		9 Prismatic Armor
-		9 Pyretic Desire
-		9 Scrappy Wisp-Speaker
-		9 Smug Upstart
-		9 Stare at the Stars
-		9 Subsume
-		9 Windwish Pests
-		9 Worldsoul Wanderer
-		9 Alpine Poolseeker
-		9 Condensed Memory
-		9 Corrupted Wish
-		9 Deepmists Vindicator
-		9 Exhaust Desire
-		9 Feral Prelwort
-		9 Giatela, Tensu Emissary
-		9 Ilcan Resilience
-		9 Into the Rootways
-		9 Memory Lane
-		9 Olse, Steward of Ilcae's Ember
-		9 Outclass
-		9 Overeager Researcher
-		9 Rapturous Joy
-		9 Secrets of the Citadel
-		9 Tall-Tale Salesman
-		9 Unbound Troubador
-		9 Blossoming Conscience
-		9 Citadel Outburst
-		9 Citadel Penitent
-		9 Citadel Repository
-		9 Crafty Cutthroat
-		9 Existence Flutter
-		9 Ilcan Entrancer
-		9 Ilcan Resolution
-		9 Mossdrudge Ambusher
-		9 Music of the Deepholt
-		9 New Tensuo Clergy
-		9 Out of Options
-		9 Pain of Death
-		9 Ritz, Queen of Thieves
-		9 Rogues' Gallery
-		9 Searing Dream
-		9 Spacewind Aurora
-		9 Spinning of the Stars
-		9 Wave of Wisps
-		9 Worldsoul Phoenix
-		9 Ageless Harbinger
-		9 Alpine Salvager
-		9 Borderholt Herdcaller
-		9 Clever Willweaver
-		9 Effigy of Dead Homes
-		9 Endless Enigma
-		9 Ilcan Loyalist
-		9 Incandescent Spite
-		9 New Tensuo Orator
-		9 Norr, Ajha's Lieutenant
-		9 Numberless Procession
-		9 Painful Memory
-		9 Redefinition
-		9 Rootway Toll-Taker
-		9 Skyscrape
-		9 Stardust Haze
-		9 Wish for Fury
-		9 Aechmi's Creativity
-		9 Aether Spring
-		9 Cackling Thunderbeast
-		9 Curious Observer
-		9 Destructive Desire
-		9 Elder Beast's Approach
-		9 Faceless Watchtower
-		9 Font of Boons
-		9 Glorious Moment
-		9 Ilcan Soulshear
-		9 Leyseeker
-		9 Limitless Manadrinker
-		9 Merciless Axon
-		9 Migratory Bloom
-		9 Miraculous Strength
-		9 Perceptual Distortion
-		9 Skyview Visitor
-		9 Starseeker Deva
-		9 Territorial Wanderer
-		9 Vivid Revivification
-		9 Wish for Wealth
-		9 Citadel Amnoctix
-		9 Fascinated Immortal
-		9 New Tensuo Calmkeeper
-		9 Starsea Bloomqueen
-		9 Wish for Strength
-		9 Paradel Prism
-		9 Starsea Leviathan
-		[CommonSlot(10)]
-	30 Branching Grotto
-		30 Ambling Myceliad
-		30 Cryptic Columns
-		30 Curious Courier
-		30 Dissolution Specimen
-		30 Drifting Opportunist
-		30 Heat of Potential
-		30 Lost in the Horizon
-		30 Mesmerize
-		30 Treacherous Guide
-		30 Weaving Reality in a Tapestry
-		30 Abrasive Trailblazer
-		30 Blossoming Comprehension
-		30 Blossoming Dissenter
-		30 Calculated Risk
-		30 Deepmist Bandit
-		30 Ilcan Keyseeker
-		30 Lifelighter
-		30 New Tensuo Spy
-		30 Playful Skulk
-		30 Pull of the Unknown
-		30 Rootway Delver
-		30 Rotting Structure
-		30 Silent Reposid
-		30 Spectral Blade
-		30 Starsea Diver
-		30 Tactical Diversion
-		30 Ultimate Price
-		30 Wish for Peace
-		30 Blinding Majesty
-		30 Brazen Confidence
-		30 Declivity
-		30 Earthen Curiosity
-		30 Epitaph Hermit
-		30 Flameweaver Maverick
-		30 Grifters' Ambush
-		30 Ilcan Avenger
-		30 Irresistible Calling
-		30 Mental Unmooring
-		30 Power's Promise
-		30 Seeker of the Pools
-		30 Skredhound
-		30 Suggestible Mark
-		30 Tranquil Cloudray
-		30 Broken Tranquility
-		30 Cloudeater Drake
-		30 Contemplative Pause
-		30 Deepholt Encounter
-		30 Flowering Germinus
-		30 Kindly Skywinder
-		30 New Tensuo Pathlayer
-		30 New Worlds, New Friends
-		30 Pensive Swordmaster
-		30 Tenuous Partners
-		30 Wish for Safety
-		30 Enlightenment Iterator
-		30 Ilcan Stalwart
-		30 Immensity
-		30 New Tensuo Vanguard
-		30 Placid Sunbask
-		30 Planar Geometer
-		30 Wish for Destruction
-		30 Wish for Relief
-		30 Wish for Revenge
-		30 Gilded Ancient
-		30 Polymorphic Wispweaver
-		30 Wish for Authority
-		30 Wish for Eternity
-		30 Wish for Power
-		30 Worldsoul Ambassador
-		30 Starshine Wisp
-		[WildcardSlot(1)]
-	10 A Beloved World
-	10 Alpine Borderholt
-	10 Aurora-Lit Valley
-	10 Bottom of the Deepmists
-	10 Branching Grotto
-	10 Citadel Chapel
-	10 Citadel Observatory
-	10 Underholt Gateway
-	10 Megaflora Floodplain
-	10 New Tensuo Colony
-	10 Opulent Labyrinth
-	10 Promising Hillside
-	10 Promising Lagoon
-	10 Promising Plume
-	10 Promising Ruin
-	10 Promising Thicket
-	10 Skyview Zenith
-	10 Splinter of Ilcae
-	10 Starsea Nadir
-	10 Stonewrought Hall
-	10 Surreal Highlands
-	10 The Citadel
-	10 The Deepmists
-	10 The Heart of Ischav
-	10 The Holt
-	10 The Skyview
-	10 The Starsea
-	10 Wanderer's Shrine
-	10 Ambling Myceliad
-	10 Ancient Viewdrifter
-	10 Arrival of the Wonderlands
-	10 Chitterbit
-	10 Cryptic Columns
-	10 Curious Courier
-	10 Dhere, Preserver of Memories
-	10 Dissolution Specimen
-	10 Drifting Opportunist
-	10 Escalate to Violence
-	10 Heat of Potential
-	10 Holt Sleeper
-	10 Insight Beyond the Clouds
-	10 Larissi, Wonder Weaver
-	10 Lost in the Horizon
-	10 Mesmerize
-	10 New Tensuo Luminary
-	10 Prismatic Armor
-	10 Pyretic Desire
-	10 Scrappy Wisp-Speaker
-	10 Shapes in the Pools
-	10 Smug Upstart
-	10 Stare at the Stars
-	10 Starstruck Skitter
-	10 Subsume
-	10 Treacherous Guide
-	10 Weaving Reality in a Tapestry
-	10 Windwish Pests
-	10 Wish for Separation
-	10 Worldsoul Wanderer
-	10 Abrasive Trailblazer
-	10 Ageless Wayfarer
-	10 Alpine Poolseeker
-	10 Blossoming Comprehension
-	10 Blossoming Dissenter
-	10 Calculated Risk
-	10 Collector of the Wonderful
-	10 Condensed Memory
-	10 Corrupted Wish
-	10 Deepmist Bandit
-	10 Deepmists Vindicator
-	10 Exhaust Desire
-	10 Feral Prelwort
-	10 Giatela, Tensu Emissary
-	10 Ilcan Keyseeker
-	10 Ilcan Resilience
-	10 Into the Rootways
-	10 Lakebed Wrudge
-	10 Liberators of the Soul
-	10 Lifelighter
-	10 Memory Lane
-	10 New Tensuo Spy
-	10 Olse, Steward of Ilcae's Ember
-	10 Outclass
-	10 Overeager Researcher
-	10 Playful Skulk
-	10 Pull of the Unknown
-	10 Rapturous Joy
-	10 Rootway Delver
-	10 Rotting Structure
-	10 Secrets of the Citadel
-	10 Silent Reposid
-	10 Spectral Blade
-	10 Starsea Diver
-	10 Supercharged Shockodile
-	10 Tactical Diversion
-	10 Tall-Tale Salesman
-	10 Thriving Sornidol
-	10 Ultimate Price
-	10 Unbound Troubador
-	10 Wish for Peace
-	10 Amarell, New Tensuo Elder
-	10 Antlerweaver
-	10 Anything and Everything
-	10 Blinding Majesty
-	10 Blossoming Conscience
-	10 Brazen Confidence
-	10 Citadel Outburst
-	10 Citadel Penitent
-	10 Citadel Repository
-	10 Crafty Cutthroat
-	10 Declivity
-	10 Earthen Curiosity
-	10 Epitaph Hermit
-	10 Etchings on the Citadel Walls
-	10 Eteres' Chronicler
-	10 Existence Flutter
-	10 Flameweaver Maverick
-	10 Grifters' Ambush
-	10 Ilcan Avenger
-	10 Ilcan Entrancer
-	10 Ilcan Resolution
-	10 Irresistible Calling
-	10 Manuela, the Known
-	10 Mental Unmooring
-	10 Mossdrudge Ambusher
-	10 Music of the Deepholt
-	10 New Tensuo Clergy
-	10 Out of Options
-	10 Pain of Death
-	10 Playful Chiaykyaich
-	10 Power's Promise
-	10 Remain Steady
-	10 Retreat to the Borderholt
-	10 Ritz, Queen of Thieves
-	10 Rogues' Gallery
-	10 Searing Dream
-	10 Seeker of the Pools
-	10 Skredhound
-	10 Spacewind Aurora
-	10 Spinning of the Stars
-	10 Suggestible Mark
-	10 Swirling Smokewalker
-	10 The Deepmist Record
-	10 The Gateway Pictographs
-	10 The Shimmering Sky
-	10 Tranquil Cloudray
-	10 Wave of Wisps
-	10 Wish for Discord
-	10 Wishtouched Outcast
-	10 Wonder Road
-	10 Worldsoul Phoenix
-	10 Worldsoul Song
-	10 Worldsoul's Sorrow
-	10 Aechmi, Ilcan Innovator
-	10 Ageless Harbinger
-	10 Alpine Salvager
-	10 Borderholt Herdcaller
-	10 Broken Tranquility
-	10 Chance-in-Hell
-	10 Clever Willweaver
-	10 Cloudeater Drake
-	10 Conceptual Digestion
-	10 Contemplative Pause
-	10 Cutthroat Obsession
-	10 Deepholt Encounter
-	10 Effigy of Dead Homes
-	10 Endless Enigma
-	10 Flowering Germinus
-	10 Forgotten Worlds' Love
-	10 Ilcan Ghostbound
-	10 Ilcan Loyalist
-	10 Incandescent Spite
-	10 Khiare, Last of the Lost
-	10 Kindly Skywinder
-	10 New Tensuo Orator
-	10 New Tensuo Pathlayer
-	10 New Worlds, New Friends
-	10 Norr, Ajha's Lieutenant
-	10 Numberless Procession
-	10 Overwhelming Force
-	10 Painful Memory
-	10 Pensive Swordmaster
-	10 Redefinition
-	10 Rootway Toll-Taker
-	10 Silent Memoriam
-	10 Skyscrape
-	10 Stardust Haze
-	10 Sunset Study
-	10 Tenuous Partners
-	10 The Borderholt Obelisks
-	10 The Citadel's Geometry
-	10 Thing in the Birches
-	10 Warpwyrm
-	10 Wish for Family
-	10 Wish for Fury
-	10 Wish for Safety
-	10 Wizened Trundler
-	10 A Promise
-	10 Aechmi's Creativity
-	10 Aether Spring
-	10 Ageless Caretaker
-	10 Cackling Thunderbeast
-	10 Cathexis, Soul Aspect
-	10 Curious Observer
-	10 Destructive Desire
-	10 Elder Beast's Approach
-	10 Elusive Harbinger
-	10 Enlightenment Iterator
-	10 Eteres, Planar Analyst
-	10 Excess of Potential
-	10 Faceless Watchtower
-	10 Font of Boons
-	10 Give Out
-	10 Glorious Moment
-	10 Ilcan Soulshear
-	10 Ilcan Stalwart
-	10 Immensity
-	10 Leyseeker
-	10 Limitless Manadrinker
-	10 Merciless Axon
-	10 Migratory Bloom
-	10 Miraculous Strength
-	10 Myriad Reflections
-	10 New Tensuo Collaborator
-	10 New Tensuo Physician
-	10 New Tensuo Vanguard
-	10 Perceptual Distortion
-	10 Placid Sunbask
-	10 Planar Geometer
-	10 Skyview Visitor
-	10 Starsea Slayer
-	10 Starseeker Deva
-	10 Territorial Wanderer
-	10 The Deepmist Structures
-	10 Vivid Revivification
-	10 Vrep
-	10 Wish for Death
-	10 Wish for Destruction
-	10 Wish for Relief
-	10 Wish for Revenge
-	10 Wish for Wealth
-	10 Ajha, the Wish for Home
-	10 Citadel Amnoctix
-	10 Fascinated Immortal
-	10 Gilded Ancient
-	10 Ilcan Szcygite
-	10 New Tensuo Calmkeeper
-	10 Polymorphic Wispweaver
-	10 Skyview Chronomancer
-	10 Starsea Bloomqueen
-	10 Wish for Authority
-	10 Wish for Eternity
-	10 Wish for Strength
-	10 Wish for Transformation
-	10 Paradel Prism
-	10 Planar Resurrection
-	10 Wish for Power
-	10 Worldsoul Ambassador
-	10 Sailing the Starsea
-	10 Starsea Leviathan
-	10 Stymied Purpose
-	10 Starshine Wisp
-	[LandSlot(1)]
-	10 Alpine Borderholt
-		10 Aurora-Lit Valley
-		10 Citadel Chapel
-		10 Underholt Gateway
-		10 Megaflora Floodplain
-		10 Opulent Labyrinth
-		10 Skyview Zenith
-		10 Starsea Nadir
-		10 Stonewrought Hall
-		10 Surreal Highlands
-		
+		}
+	]
+[RareSlot(1)]
+2 Bottom of the Deepmists
+2 New Tensuo Colony
+2 Splinter of Ilcae
+2 The Citadel
+2 The Deepmists
+2 The Holt
+2 The Skyview
+2 The Starsea
+2 Wanderer's Shrine
+2 Ancient Viewdrifter
+2 Chitterbit
+2 Dhere, Preserver of Memories
+2 Escalate to Violence
+2 New Tensuo Luminary
+2 Shapes in the Pools
+2 Wish for Separation
+2 Ageless Wayfarer
+2 Collector of the Wonderful
+2 Lakebed Wrudge
+2 Liberators of the Soul
+2 Supercharged Shockodile
+2 Antlerweaver
+2 Etchings on the Citadel Walls
+2 Eteres' Chronicler
+2 Retreat to the Borderholt
+2 Swirling Smokewalker
+2 The Gateway Pictographs
+2 The Shimmering Sky
+2 Wish for Discord
+2 Wishtouched Outcast
+2 Wonder Road
+2 Worldsoul Song
+2 Worldsoul's Sorrow
+2 Aechmi, Ilcan Innovator
+2 Conceptual Digestion
+2 Cutthroat Obsession
+2 Forgotten Worlds' Love
+2 Ilcan Ghostbound
+2 Overwhelming Force
+2 Silent Memoriam
+2 Sunset Study
+2 The Borderholt Obelisks
+2 The Citadel's Geometry
+2 Thing in the Birches
+2 Warpwyrm
+2 Wish for Family
+2 Ageless Caretaker
+2 Cathexis, Soul Aspect
+2 Elusive Harbinger
+2 Excess of Potential
+2 Give Out
+2 Myriad Reflections
+2 New Tensuo Physician
+2 Starsea Slayer
+2 The Deepmist Structures
+2 Wish for Death
+2 Ilcan Szcygite
+2 Wish for Transformation
+2 Sailing the Starsea
+2 Stymied Purpose
+1 A Beloved World
+1 The Heart of Ischav
+1 Starstruck Skitter
+1 Thriving Sornidol
+1 Amarell, New Tensuo Elder
+1 Anything and Everything
+1 Manuela, the Known
+1 Playful Chiaykyaich
+1 Remain Steady
+1 The Deepmist Record
+1 Chance-in-Hell
+1 Khiare, Last of the Lost
+1 Wizened Trundler
+1 A Promise
+1 Eteres, Planar Analyst
+1 New Tensuo Collaborator
+1 Vrep
+1 Ajha, the Wish for Home
+1 Skyview Chronomancer
+1 Planar Resurrection
+[UncommonSlot(3)]
+9 Citadel Observatory
+9 Promising Hillside
+9 Promising Lagoon
+9 Promising Plume
+9 Promising Ruin
+9 Promising Thicket
+9 Arrival of the Wonderlands
+9 Holt Sleeper
+9 Insight Beyond the Clouds
+9 Larissi, Wonder Weaver
+9 Prismatic Armor
+9 Pyretic Desire
+9 Scrappy Wisp-Speaker
+9 Smug Upstart
+9 Stare at the Stars
+9 Subsume
+9 Windwish Pests
+9 Worldsoul Wanderer
+9 Alpine Poolseeker
+9 Condensed Memory
+9 Corrupted Wish
+9 Deepmists Vindicator
+9 Exhaust Desire
+9 Feral Prelwort
+9 Giatela, Tensu Emissary
+9 Ilcan Resilience
+9 Into the Rootways
+9 Memory Lane
+9 Olse, Steward of Ilcae's Ember
+9 Outclass
+9 Overeager Researcher
+9 Rapturous Joy
+9 Secrets of the Citadel
+9 Tall-Tale Salesman
+9 Unbound Troubador
+9 Blossoming Conscience
+9 Citadel Outburst
+9 Citadel Penitent
+9 Citadel Repository
+9 Crafty Cutthroat
+9 Existence Flutter
+9 Ilcan Entrancer
+9 Ilcan Resolution
+9 Mossdrudge Ambusher
+9 Music of the Deepholt
+9 New Tensuo Clergy
+9 Out of Options
+9 Pain of Death
+9 Ritz, Queen of Thieves
+9 Rogues' Gallery
+9 Searing Dream
+9 Spacewind Aurora
+9 Spinning of the Stars
+9 Wave of Wisps
+9 Worldsoul Phoenix
+9 Ageless Harbinger
+9 Alpine Salvager
+9 Borderholt Herdcaller
+9 Clever Willweaver
+9 Effigy of Dead Homes
+9 Endless Enigma
+9 Ilcan Loyalist
+9 Incandescent Spite
+9 New Tensuo Orator
+9 Norr, Ajha's Lieutenant
+9 Numberless Procession
+9 Painful Memory
+9 Redefinition
+9 Rootway Toll-Taker
+9 Skyscrape
+9 Stardust Haze
+9 Wish for Fury
+9 Aechmi's Creativity
+9 Aether Spring
+9 Cackling Thunderbeast
+9 Curious Observer
+9 Destructive Desire
+9 Elder Beast's Approach
+9 Faceless Watchtower
+9 Font of Boons
+9 Glorious Moment
+9 Ilcan Soulshear
+9 Leyseeker
+9 Limitless Manadrinker
+9 Merciless Axon
+9 Migratory Bloom
+9 Miraculous Strength
+9 Perceptual Distortion
+9 Skyview Visitor
+9 Starseeker Deva
+9 Territorial Wanderer
+9 Vivid Revivification
+9 Wish for Wealth
+9 Citadel Amnoctix
+9 Fascinated Immortal
+9 New Tensuo Calmkeeper
+9 Starsea Bloomqueen
+9 Wish for Strength
+9 Paradel Prism
+9 Starsea Leviathan
+[CommonSlot(10)]
+30 Branching Grotto
+30 Ambling Myceliad
+30 Cryptic Columns
+30 Curious Courier
+30 Dissolution Specimen
+30 Drifting Opportunist
+30 Heat of Potential
+30 Lost in the Horizon
+30 Mesmerize
+30 Treacherous Guide
+30 Weaving Reality in a Tapestry
+30 Abrasive Trailblazer
+30 Blossoming Comprehension
+30 Blossoming Dissenter
+30 Calculated Risk
+30 Deepmist Bandit
+30 Ilcan Keyseeker
+30 Lifelighter
+30 New Tensuo Spy
+30 Playful Skulk
+30 Pull of the Unknown
+30 Rootway Delver
+30 Rotting Structure
+30 Silent Reposid
+30 Spectral Blade
+30 Starsea Diver
+30 Tactical Diversion
+30 Ultimate Price
+30 Wish for Peace
+30 Blinding Majesty
+30 Brazen Confidence
+30 Declivity
+30 Earthen Curiosity
+30 Epitaph Hermit
+30 Flameweaver Maverick
+30 Grifters' Ambush
+30 Ilcan Avenger
+30 Irresistible Calling
+30 Mental Unmooring
+30 Power's Promise
+30 Seeker of the Pools
+30 Skredhound
+30 Suggestible Mark
+30 Tranquil Cloudray
+30 Broken Tranquility
+30 Cloudeater Drake
+30 Contemplative Pause
+30 Deepholt Encounter
+30 Flowering Germinus
+30 Kindly Skywinder
+30 New Tensuo Pathlayer
+30 New Worlds, New Friends
+30 Pensive Swordmaster
+30 Tenuous Partners
+30 Wish for Safety
+30 Enlightenment Iterator
+30 Ilcan Stalwart
+30 Immensity
+30 New Tensuo Vanguard
+30 Placid Sunbask
+30 Planar Geometer
+30 Wish for Destruction
+30 Wish for Relief
+30 Wish for Revenge
+30 Gilded Ancient
+30 Polymorphic Wispweaver
+30 Wish for Authority
+30 Wish for Eternity
+30 Wish for Power
+30 Worldsoul Ambassador
+30 Starshine Wisp
+[WildcardSlot(1)]
+10 A Beloved World
+10 Alpine Borderholt
+10 Aurora-Lit Valley
+10 Bottom of the Deepmists
+10 Branching Grotto
+10 Citadel Chapel
+10 Citadel Observatory
+10 Underholt Gateway
+10 Megaflora Floodplain
+10 New Tensuo Colony
+10 Opulent Labyrinth
+10 Promising Hillside
+10 Promising Lagoon
+10 Promising Plume
+10 Promising Ruin
+10 Promising Thicket
+10 Skyview Zenith
+10 Splinter of Ilcae
+10 Starsea Nadir
+10 Stonewrought Hall
+10 Surreal Highlands
+10 The Citadel
+10 The Deepmists
+10 The Heart of Ischav
+10 The Holt
+10 The Skyview
+10 The Starsea
+10 Wanderer's Shrine
+10 Ambling Myceliad
+10 Ancient Viewdrifter
+10 Arrival of the Wonderlands
+10 Chitterbit
+10 Cryptic Columns
+10 Curious Courier
+10 Dhere, Preserver of Memories
+10 Dissolution Specimen
+10 Drifting Opportunist
+10 Escalate to Violence
+10 Heat of Potential
+10 Holt Sleeper
+10 Insight Beyond the Clouds
+10 Larissi, Wonder Weaver
+10 Lost in the Horizon
+10 Mesmerize
+10 New Tensuo Luminary
+10 Prismatic Armor
+10 Pyretic Desire
+10 Scrappy Wisp-Speaker
+10 Shapes in the Pools
+10 Smug Upstart
+10 Stare at the Stars
+10 Starstruck Skitter
+10 Subsume
+10 Treacherous Guide
+10 Weaving Reality in a Tapestry
+10 Windwish Pests
+10 Wish for Separation
+10 Worldsoul Wanderer
+10 Abrasive Trailblazer
+10 Ageless Wayfarer
+10 Alpine Poolseeker
+10 Blossoming Comprehension
+10 Blossoming Dissenter
+10 Calculated Risk
+10 Collector of the Wonderful
+10 Condensed Memory
+10 Corrupted Wish
+10 Deepmist Bandit
+10 Deepmists Vindicator
+10 Exhaust Desire
+10 Feral Prelwort
+10 Giatela, Tensu Emissary
+10 Ilcan Keyseeker
+10 Ilcan Resilience
+10 Into the Rootways
+10 Lakebed Wrudge
+10 Liberators of the Soul
+10 Lifelighter
+10 Memory Lane
+10 New Tensuo Spy
+10 Olse, Steward of Ilcae's Ember
+10 Outclass
+10 Overeager Researcher
+10 Playful Skulk
+10 Pull of the Unknown
+10 Rapturous Joy
+10 Rootway Delver
+10 Rotting Structure
+10 Secrets of the Citadel
+10 Silent Reposid
+10 Spectral Blade
+10 Starsea Diver
+10 Supercharged Shockodile
+10 Tactical Diversion
+10 Tall-Tale Salesman
+10 Thriving Sornidol
+10 Ultimate Price
+10 Unbound Troubador
+10 Wish for Peace
+10 Amarell, New Tensuo Elder
+10 Antlerweaver
+10 Anything and Everything
+10 Blinding Majesty
+10 Blossoming Conscience
+10 Brazen Confidence
+10 Citadel Outburst
+10 Citadel Penitent
+10 Citadel Repository
+10 Crafty Cutthroat
+10 Declivity
+10 Earthen Curiosity
+10 Epitaph Hermit
+10 Etchings on the Citadel Walls
+10 Eteres' Chronicler
+10 Existence Flutter
+10 Flameweaver Maverick
+10 Grifters' Ambush
+10 Ilcan Avenger
+10 Ilcan Entrancer
+10 Ilcan Resolution
+10 Irresistible Calling
+10 Manuela, the Known
+10 Mental Unmooring
+10 Mossdrudge Ambusher
+10 Music of the Deepholt
+10 New Tensuo Clergy
+10 Out of Options
+10 Pain of Death
+10 Playful Chiaykyaich
+10 Power's Promise
+10 Remain Steady
+10 Retreat to the Borderholt
+10 Ritz, Queen of Thieves
+10 Rogues' Gallery
+10 Searing Dream
+10 Seeker of the Pools
+10 Skredhound
+10 Spacewind Aurora
+10 Spinning of the Stars
+10 Suggestible Mark
+10 Swirling Smokewalker
+10 The Deepmist Record
+10 The Gateway Pictographs
+10 The Shimmering Sky
+10 Tranquil Cloudray
+10 Wave of Wisps
+10 Wish for Discord
+10 Wishtouched Outcast
+10 Wonder Road
+10 Worldsoul Phoenix
+10 Worldsoul Song
+10 Worldsoul's Sorrow
+10 Aechmi, Ilcan Innovator
+10 Ageless Harbinger
+10 Alpine Salvager
+10 Borderholt Herdcaller
+10 Broken Tranquility
+10 Chance-in-Hell
+10 Clever Willweaver
+10 Cloudeater Drake
+10 Conceptual Digestion
+10 Contemplative Pause
+10 Cutthroat Obsession
+10 Deepholt Encounter
+10 Effigy of Dead Homes
+10 Endless Enigma
+10 Flowering Germinus
+10 Forgotten Worlds' Love
+10 Ilcan Ghostbound
+10 Ilcan Loyalist
+10 Incandescent Spite
+10 Khiare, Last of the Lost
+10 Kindly Skywinder
+10 New Tensuo Orator
+10 New Tensuo Pathlayer
+10 New Worlds, New Friends
+10 Norr, Ajha's Lieutenant
+10 Numberless Procession
+10 Overwhelming Force
+10 Painful Memory
+10 Pensive Swordmaster
+10 Redefinition
+10 Rootway Toll-Taker
+10 Silent Memoriam
+10 Skyscrape
+10 Stardust Haze
+10 Sunset Study
+10 Tenuous Partners
+10 The Borderholt Obelisks
+10 The Citadel's Geometry
+10 Thing in the Birches
+10 Warpwyrm
+10 Wish for Family
+10 Wish for Fury
+10 Wish for Safety
+10 Wizened Trundler
+10 A Promise
+10 Aechmi's Creativity
+10 Aether Spring
+10 Ageless Caretaker
+10 Cackling Thunderbeast
+10 Cathexis, Soul Aspect
+10 Curious Observer
+10 Destructive Desire
+10 Elder Beast's Approach
+10 Elusive Harbinger
+10 Enlightenment Iterator
+10 Eteres, Planar Analyst
+10 Excess of Potential
+10 Faceless Watchtower
+10 Font of Boons
+10 Give Out
+10 Glorious Moment
+10 Ilcan Soulshear
+10 Ilcan Stalwart
+10 Immensity
+10 Leyseeker
+10 Limitless Manadrinker
+10 Merciless Axon
+10 Migratory Bloom
+10 Miraculous Strength
+10 Myriad Reflections
+10 New Tensuo Collaborator
+10 New Tensuo Physician
+10 New Tensuo Vanguard
+10 Perceptual Distortion
+10 Placid Sunbask
+10 Planar Geometer
+10 Skyview Visitor
+10 Starsea Slayer
+10 Starseeker Deva
+10 Territorial Wanderer
+10 The Deepmist Structures
+10 Vivid Revivification
+10 Vrep
+10 Wish for Death
+10 Wish for Destruction
+10 Wish for Relief
+10 Wish for Revenge
+10 Wish for Wealth
+10 Ajha, the Wish for Home
+10 Citadel Amnoctix
+10 Fascinated Immortal
+10 Gilded Ancient
+10 Ilcan Szcygite
+10 New Tensuo Calmkeeper
+10 Polymorphic Wispweaver
+10 Skyview Chronomancer
+10 Starsea Bloomqueen
+10 Wish for Authority
+10 Wish for Eternity
+10 Wish for Strength
+10 Wish for Transformation
+10 Paradel Prism
+10 Planar Resurrection
+10 Wish for Power
+10 Worldsoul Ambassador
+10 Sailing the Starsea
+10 Starsea Leviathan
+10 Stymied Purpose
+10 Starshine Wisp
+[LandSlot(1)]
+10 Alpine Borderholt
+10 Aurora-Lit Valley
+10 Citadel Chapel
+10 Underholt Gateway
+10 Megaflora Floodplain
+10 Opulent Labyrinth
+10 Skyview Zenith
+10 Starsea Nadir
+10 Stonewrought Hall
+10 Surreal Highlands
