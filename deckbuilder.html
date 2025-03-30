@@ -643,6 +643,7 @@
 
 			// initial search on load
 			preSearch();
+			const urlParams = new URLSearchParams(window.location.search);
 			let decoded = atob(urlParams.get('deck'));
 			console.log(decoded);
 			readDeckText(decoded);
