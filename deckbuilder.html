@@ -536,6 +536,7 @@
 					<option value="load">Load online deck</option>
 					<option value="delete">Delete online deck</option>
 					<option value="get-url">Get deck URL</option>
+					<option value="copy">Copy decklist</option>
 					<option value="export-dek">Export .dek</option>
 					<option value="export-txt">Export .txt</option>
 				</select>
@@ -688,6 +689,11 @@
 				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`);
 				openCopyModal();
 			}
+			else if (option == "save") {
+				navigator.clipboard.writeText(generateDeckText());
+				document.getElementById("file-menu").value = "default";
+				openCopy2Modal();
+			}
 			else if (option.startsWith("export"))
 			{
 				exportFile(option);
@@ -722,6 +728,11 @@
 		function openCopyModal() {
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = "Url copied to clipboard" + '<span class="close" onclick="closeModal()">&times;</span>';
+		}
+
+		function openCopy2Modal() {
+			document.getElementById("modal-container").style.display = "block";
+			document.getElementById("modal-content").innerHTML = "Decklist copied to clipboard" + '<span class="close" onclick="closeModal()">&times;</span>';
 		}
 
 		function closeModal() {

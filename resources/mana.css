@@ -3,8 +3,8 @@
  * Global */
 @font-face {
   font-family: 'Mana';
-  src: url('mana.otf');
-  src: url('mana.otf')  format('embedded-opentype');
+  src: url('mana.ttf');
+  src: url('mana.ttf')  format('truetype');
   font-weight: normal;
   font-style: normal;
 }
