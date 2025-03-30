@@ -685,7 +685,7 @@
 				deleteModal();
 			}
 			else if (option == "get-url") {
-				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${btoa(generateDeckText())}`);
+				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`);
 				openCopyModal();
 			}
 			else if (option.startsWith("export"))
