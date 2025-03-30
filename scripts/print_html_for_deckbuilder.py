@@ -542,6 +542,7 @@ def generateHTML(codes):
 					<option value="save">Save deck online</option>
 					<option value="load">Load online deck</option>
 					<option value="delete">Delete online deck</option>
+					<option value="get-url">Get deck URL</option>
 					<option value="export-dek">Export .dek</option>
 					<option value="export-txt">Export .txt</option>
 				</select>
@@ -642,6 +643,12 @@ def generateHTML(codes):
 
 			// initial search on load
 			preSearch();
+			let decoded = atob(urlParams.get('deck'));
+			console.log(decoded);
+			readDeckText(decoded);
+			if (document.getElementById("deck-name").value == "undefined") {
+				document.getElementById("deck-name").value = "Untitled Deck";
+			}
 		});
 
 		function displayChangeListener() {
@@ -676,6 +683,10 @@ def generateHTML(codes):
 			else if (option == "delete") {
 				deleteModal();
 			}
+			else if (option == "get-url") {
+				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${btoa(generateDeckText())}`);
+				openCopyModal();
+			}
 			else if (option.startsWith("export"))
 			{
 				exportFile(option);
@@ -705,6 +716,11 @@ def generateHTML(codes):
 		function openSaveModal() {
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = "Deck Saved as " + document.getElementById("deck-name").value + '<span class="close" onclick="closeModal()">&times;</span>';
+		}
+
+		function openCopyModal() {
+			document.getElementById("modal-container").style.display = "block";
+			document.getElementById("modal-content").innerHTML = "Url copied to clipboard" + '<span class="close" onclick="closeModal()">&times;</span>';
 		}
 
 		function closeModal() {
@@ -1419,6 +1435,7 @@ def generateHTML(codes):
 				closeModal();
 			}
 		}
+
 		'''
 
 	with open(os.path.join('resources', 'snippets', 'random-card.txt'), encoding='utf-8-sig') as f:
