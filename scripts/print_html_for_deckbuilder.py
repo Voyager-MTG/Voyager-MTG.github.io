@@ -546,6 +546,7 @@ def generateHTML(codes):
 					<option value="copy">Copy decklist</option>
 					<option value="export-dek">Export .dek</option>
 					<option value="export-txt">Export .txt</option>
+					<option value="draftmancer">Export Draftmancer File</option>
 				</select>
 				<input type="file" class="hidden" id="import-file" onclick="this.value=null;">
 			</div>
@@ -697,6 +698,10 @@ def generateHTML(codes):
 			else if (option.startsWith("export"))
 			{
 				exportFile(option);
+			}
+			else if (option == "draftmancer")
+			{
+				exportDraftmancer();
 			}
 		});
 
@@ -1431,6 +1436,122 @@ def generateHTML(codes):
 			document.getElementById("file-menu").value = "default";
 		}
 
+		
+		function convertManaCostForDraftmancer(mana_cost) {
+			return mana_cost
+				.replace(/{([A-Z])([A-Z])}/g, "{$1/$2}");
+		}
+
+		async function exportDraftmancer() {	
+			let output_text = "";
+			let cards = new Map();
+			
+			console.log("deck:", deck);
+			
+			for (const card of deck)
+			{
+				const c = JSON.parse(card);
+				if (cards.has(c.card_name))
+				{
+					cards.get(c.card_name).count += 1;
+				}
+				else
+				{
+					cards.set(c.card_name, {...c, count: 1});
+				}
+			}
+
+			const URLDomain = "https://voyager-mtg.github.io"; // FIXME: Shouldn't be hardcoded.
+
+			output_text += `[Settings]
+{
+  "layouts": {
+    "default": {
+      "weight": 1,
+      "slots": {
+        "rare": 1,
+        "uncommon": 3,
+        "common": 10,
+      }
+	}
+  }
+}
+`;
+			output_text += "[CustomCards]\\n[\\n";
+			for (const c of cards.values())
+			{
+				const img_url = URLDomain + "/sets/" + c.set + "-files/img/" + c.number + "_" + c.card_name + ((c.shape.includes("double")) ? "_front" : "") + "." + c.image_type;
+				output_text += "  {\\n";
+				output_text += `    "name": "${c.card_name}",\\n`;
+				if(c.cost)
+					output_text += `    "mana_cost": "${convertManaCostForDraftmancer(c.cost)}",\\n`;
+				else 
+					output_text += `    "mana_cost": "",\\n`;
+				if(c.rarity)
+					output_text += `    "rarity": "${c.rarity}",\\n`;
+				if(c.set)
+					output_text += `    "set": "${c.set}",\\n`;
+				if(c.number)
+					output_text += `    "collector_number": "${c.number}",\\n`;
+				if(c.type) {
+					output_text += `    "type": "${c.type.split(" – ")[0]}",\\n`;
+					const subtypes = c.type.split(" – ")[1];
+					if(subtypes)
+						output_text += `    "subtypes": ["${subtypes.split(" ").join("\", \"")}"],\\n`;
+				}
+				if(c.rules_text)
+					output_text += `    "oracle_text": ${JSON.stringify(c.rules_text)},\\n`;
+				output_text += `    "image": "${img_url}",\\n`;
+				if(c.shape.includes("double")) {
+					const back_url = URLDomain + "/sets/" + c.set + "-files/img/" + c.number + "_" + c.card_name + "_back" + "." + c.image_type;
+					output_text += `    "back": {`
+					output_text += `      "name": "${c.card_name2}",\\n`;
+					if(c.cost2)
+						output_text += `      "mana_cost": "${convertManaCostForDraftmancer(c.cost2)}",\\n`;
+					else 
+						output_text += `    "mana_cost": "",\\n`;
+					if(c.rarity2)
+						output_text += `      "rarity": "${c.rarity2}",\\n`;
+					if(c.set2)
+						output_text += `      "set": "${c.set2}",\\n`;
+					if(c.number2)
+						output_text += `      "collector_number": "${c.number2}",\\n`;
+					if(c.type2) {
+						output_text += `      "type": "${c.type2.split(" – ")[0]}",\\n`;
+						const subtypes = c.type2.split(" – ")[1];
+						if(subtypes)
+							output_text += `    "subtypes": ["${subtypes.split(" ").join("\", \"")}"],\\n`;
+					}
+					if(c.rules_text2)
+						output_text += `      "oracle_text": ${JSON.stringify(c.rules_text2)},\\n`;
+					output_text += `      "image": "${back_url}",`
+					output_text += `    },\\n`;
+				}
+				output_text += "  },\\n";
+			}
+			output_text += "]\\n";
+
+			const rarities = [...(new Set([...cards.values().map(c => c.rarity)]))];
+
+			for(const r of rarities) {
+				output_text += `[${r}]\\n`;
+				for (const c of cards.values()) {
+					if(c.rarity === r) 
+						output_text += `${c.count} ${c.card_name}\\n`;
+				}
+			}
+
+			let downloadableLink = document.createElement('a');
+			downloadableLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(output_text));
+			downloadableLink.download = document.getElementById("deck-name").value + ".txt";
+			document.body.appendChild(downloadableLink);
+			downloadableLink.click();
+			document.body.removeChild(downloadableLink);
+
+			document.getElementById("file-menu").value = "default";
+		
+		}
+        
 		function goToSearch() {
 			window.location = ("/search");
 		}
