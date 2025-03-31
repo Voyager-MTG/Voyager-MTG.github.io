@@ -689,7 +689,7 @@ def generateHTML(codes):
 				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`);
 				openCopyModal();
 			}
-			else if (option == "save") {
+			else if (option == "copy") {
 				navigator.clipboard.writeText(generateDeckText());
 				document.getElementById("file-menu").value = "default";
 				openCopy2Modal();
