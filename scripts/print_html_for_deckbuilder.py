@@ -477,6 +477,9 @@ def generateHTML(codes):
 		padding: 10px;
 		margin: 10px;
 	}
+	.name-cost {
+		font-family: beleren;
+	}
 </style>
 <body>
 	<div class="header">
@@ -539,6 +542,8 @@ def generateHTML(codes):
 					<option value="default">Actions ...</option>
 					<option value="new">New deck</option>
 					<option value="import">Import deck</option>
+					<option value="save-collection">Save as collection</option>
+					<option value="load-collection">Load collection</option>
 					<option value="save">Save deck online</option>
 					<option value="load">Load online deck</option>
 					<option value="delete">Delete online deck</option>
@@ -611,14 +616,19 @@ def generateHTML(codes):
 		</div>
 	</div>
 
+<script src="https://cdn.jsdelivr.net/gh/pieroxy/lz-string/libs/lz-string.js"></script>
+
 	<script>
-		let search_results = [];
+		et search_results = [];
 		let card_list_arrayified = [];
 		let specialchars = "";
 		let deck = [];
 		let sideboard = [];
 		let active_card = [];
 		let sets_json = {};
+		let collection_copies = {};
+		let deck_2 = {};
+		let sideboard_2 = {};
 
 		document.addEventListener("DOMContentLoaded", async function () {
 			'''
@@ -629,7 +639,7 @@ def generateHTML(codes):
 
 	html_content += '''
 
-			await fetch('/lists/all-sets.json')
+await fetch('/lists/all-sets.json')
 					.then(response => response.json())
 					.then(data => {
 						sets_json = data; 
@@ -652,6 +662,16 @@ def generateHTML(codes):
 			if (document.getElementById("deck-name").value == "undefined") {
 				document.getElementById("deck-name").value = "Untitled Deck";
 			}
+
+			// initialize full card pool as collection
+			var colls = JSON.parse(localStorage.getItem("colls.collections"));
+			if (colls == null) {
+				colls = {}
+			}
+			colls["Full card pool"] = card_list_arrayified;
+			console.log("test");
+			console.log(colls);
+			localStorage.setItem("colls.collections", JSON.stringify(colls));
 		});
 
 		function displayChangeListener() {
@@ -668,6 +688,8 @@ def generateHTML(codes):
 			{
 				deck = [];
 				sideboard = [];
+				deck_2 = {};
+				sideboard_2 = {};
 				processDeck();
 				document.getElementById("file-menu").value = "default";
 			}
@@ -687,13 +709,22 @@ def generateHTML(codes):
 				deleteModal();
 			}
 			else if (option == "get-url") {
-				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`);
+				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${btao(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`);
 				openCopyModal();
 			}
 			else if (option == "copy") {
 				navigator.clipboard.writeText(generateDeckText());
 				document.getElementById("file-menu").value = "default";
 				openCopy2Modal();
+			}
+			else if (option == "save-collection") {
+				let colls = JSON.parse(localStorage.getItem("colls.collections"));
+				colls[document.getElementById("deck-name").value.toString()] = deckTextToCollection();
+				localStorage.setItem("colls.collections", JSON.stringify(colls));
+				document.getElementById("file-menu").value = "default";
+			}
+			else if (option == "load-collection") {
+				openLoadCollectionWindow();
 			}
 			else if (option.startsWith("export"))
 			{
@@ -745,6 +776,73 @@ def generateHTML(codes):
 			document.getElementById("file-menu").value = "default";
 		}
 
+		function loadDeck() {
+			document.getElementById("modal-container").style.display = "block";
+			document.getElementById("modal-content").innerHTML = "Loading Deck:";
+			Object.keys(localStorage).forEach(function(key){
+				console.log(key);
+   				console.log(localStorage.getItem(key));
+				document.getElementById("modal-content").innerHTML += `<span class="load-btn" onclick="readDeckText(localStorage.getItem('${key}'),'${key}')">${key}</span>`;			
+			});
+			document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>';
+		} 
+
+		function openLoadCollectionWindow() {
+			document.getElementById("modal-container").style.display = "block";
+			document.getElementById("modal-content").innerHTML = "Loading Collection:";
+			Object.keys(JSON.parse(localStorage.getItem("colls.collections"))).forEach(function(key){
+				console.log(key);
+   				// console.log(localStorage.getItem(key));
+				document.getElementById("modal-content").innerHTML += `<span class="load-btn" onclick="loadCollection('${key}')">${key}</span>`;			
+			});
+			document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>';
+		} 
+
+		function loadCollection(name) {
+			let colls = JSON.parse(localStorage.getItem("colls.collections"));
+			let collectionToLoad_ = colls[name];
+			let new_list = [];
+			let collectionToLoad = [];
+			let cssStr = "";
+			let i = 0;
+			for (const item of collectionToLoad_) {
+				collectionToLoad.push(item.slice(2));
+			}
+			console.log(collectionToLoad);
+			for (const card of card_list.cards) {
+				// console.log("---------------------------------------");
+				// console.log(card.card_name);
+				// console.log(collectionToLoad);
+				// console.log(collectionToLoad.includes(card.card_name));
+				if (collectionToLoad.includes(card.card_name)) {
+					new_list.push(card);
+					collection_copies[`${card["set"]}-${card["number"]}`] = Number(collectionToLoad_[i].split(" ")[0]);
+					cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}-cards-and-text):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${collectionToLoad_[i].split(" ")[0]}x"; z-index: 999; display: block; position: absolute; border-radius: 20px;}\n`
+					i++;
+					deck_2[`${card["set"]}-${card["number"]}`] = 0;
+					sideboard_2[`${card["set"]}-${card["number"]}`] = 0;
+				}
+			}
+			card_list_arrayified = new_list;
+			const cssElem = document.createElement("style");
+			cssELEM.id = "copies-style";
+			cssElem.innerHTML = cssStr;
+			document.body.appendChild(cssElem);
+			closeModal();
+			preSearch();
+		}
+
+		function deckTextToCollection() {
+			var text = generateDeckText();
+			var lines = text.split("\n");
+			var cardlist = [];
+			for (const line of lines) {
+				cardlist.push(line);
+			}
+			console.log(cardlist);
+			return cardlist;
+		}
+
 		function readDeckText(text, name) {
 
 			document.getElementById("deck-name").value = name;
@@ -753,7 +851,7 @@ def generateHTML(codes):
 			sideboard = [];
 			sb_cards = false;
 
-			const lines = text.split('\\n');
+			const lines = text.split('\n');
 
 			let deck_map = new Map();
 			let sb_map = new Map();
@@ -819,15 +917,6 @@ def generateHTML(codes):
 		document.getElementById("file-menu").value = "default";
 		}
 		
-		function loadDeck() {
-			document.getElementById("modal-container").style.display = "block";
-			document.getElementById("modal-content").innerHTML = "Loading Deck:";
-			Object.keys(localStorage).forEach(function(key){
-				console.log(key);
-   				console.log(localStorage.getItem(key));
-				document.getElementById("modal-content").innerHTML += `<span class="load-btn" onclick="readDeckText(localStorage.getItem('${key}'),'${key}')">${key}</span>`;			});
-			document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>';
-		}
 
 		function deleteModal() {
 			document.getElementById("modal-container").style.display = "block";
@@ -850,8 +939,8 @@ def generateHTML(codes):
 
 			if (files.length > 0) {
 				const file = files[0];
-				const name = file.name.replace(/\\.[^/.]+$/, "");
-				const import_type = file.name.replace(/^[^/.]+\\./, "");
+				const name = file.name.replace(/\.[^/.]+$/, "");
+				const import_type = file.name.replace(/^[^/.]+\./, "");
 
 				document.getElementById("deck-name").value = name;
 
@@ -863,7 +952,7 @@ def generateHTML(codes):
 				reader.onload = function(e) {
 					const fileContent = e.target.result;
 
-					const lines = fileContent.split('\\n');
+					const lines = fileContent.split('\n');
 					if (import_type == 'dek')
 					{
 						for (const line of lines)
@@ -1114,11 +1203,19 @@ def generateHTML(codes):
 		}
 
 		function addCardToDeck(card) {
+			let card_parsed = JSON.parse(card);
+			if (modifyDeck2(`${card_parsed['set']}-${card_parsed['number']}`, '+')) {
+				return;
+			}
 			deck.push(card);
 			processDeck();
 		}
 
 		function addCardToSideboard(card) {
+			let card_parsed = JSON.parse(card);
+			if (modifySB2(`${card_parsed['set']}-${card_parsed['number']}`, '+')) {
+				return;
+			}
 			sideboard.push(card);
 			processDeck();
 		}
@@ -1215,7 +1312,7 @@ def generateHTML(codes):
 							card_row.className = "deck-line";
 							
 							card_in_deck = document.createElement("div");
-							card_in_deck.innerText += map.get(card) + " " + card_name + "\\n";
+							card_in_deck.innerText += map.get(card) + " " + card_name + "\n";
 							card_in_deck.style.cursor = "pointer";
 							card_in_deck.onmouseover = function() {
 								cgc = document.getElementById("card-grid-container");
@@ -1245,19 +1342,27 @@ def generateHTML(codes):
 
 								card_in_deck.onclick = function() {
 									sideboard.splice(sideboard.indexOf(card), 1);
+									let parsed_card = JSON.parse(card);
+									modifySB2(`${parsed_card['set']}-${parsed_card['number']}`, '-');
 									addCardToDeck(card);
 								}
 							}
 							else
 							{
+								// console.log(card);
 								del_btn.src = "/img/delete.png";
+								let card_parsed = JSON.parse(card);
 								del_btn.onclick = function() {
 									deck.splice(deck.indexOf(card), 1);
+									let card_parsed = JSON.parse(card);
+									modifyDeck2(`${card_parsed['set']}-${card_parsed['number']}`, "-");
 									processDeck();
 								}
 
 								card_in_deck.onclick = function() {
 									deck.splice(deck.indexOf(card), 1);
+									let card_parsed = JSON.parse(card);
+									modifyDeck2(`${card_parsed['set']}-${card_parsed['number']}`, "-");						
 									addCardToSideboard(card);
 								}
 							}
@@ -1314,19 +1419,25 @@ def generateHTML(codes):
 
 								card_img.onclick = function() {
 									sideboard.splice(sideboard.indexOf(card), 1);
+									let parsed_card = JSON.parse(card);
+									modifySB2(`${parsed_card['set']}-${parsed_card['number']}`, '-');
 									addCardToDeck(card);
 								}
 							}
 							else
 							{
+								// console.log(card);
 								del_btn.src = "/img/delete.png";
+								let card_parsed = JSON.parse(card);
 								del_btn.onclick = function() {
 									deck.splice(deck.indexOf(card), 1);
+									modifyDeck2(`${card_parsed['set']}-${card_parsed['number']}`, "-");
 									processDeck();
 								}
 
-								card_img.onclick = function() {
+								card_in_deck.onclick = function() {
 									deck.splice(deck.indexOf(card), 1);
+									modifyDeck2(`${card_parsed['set']}-${card_parsed['number']}`, "-");
 									addCardToSideboard(card);
 								}
 							}
@@ -1362,11 +1473,11 @@ def generateHTML(codes):
 			}
 			for (const card_map of Array.from(map.keys()))
 			{
-				deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + "\\n";
+				deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + "\n";
 			}
 			if (sideboard.length != 0)
 			{
-				deck_text += "sideboard\\n";
+				deck_text += "sideboard\n";
 				map = new Map([]);
 				for (const card of sideboard)
 				{
@@ -1381,7 +1492,7 @@ def generateHTML(codes):
 				}
 				for (const card_map of Array.from(map.keys()))
 				{
-					deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + "\\n";
+					deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + "\n";
 				}
 			}
 			return deck_text;
@@ -1403,11 +1514,11 @@ def generateHTML(codes):
 			}
 			for (const card_map of Array.from(map.keys()))
 			{
-				deck_text += map.get(card_map) + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name) + "\\n";
+				deck_text += map.get(card_map) + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name) + "\n";
 			}
 			if (sideboard.length != 0)
 			{
-				deck_text += "sideboard\\n";
+				deck_text += "sideboard\n";
 				map = new Map([]);
 				for (const card of sideboard)
 				{
@@ -1422,7 +1533,7 @@ def generateHTML(codes):
 				}
 				for (const card_map of Array.from(map.keys()))
 				{
-					deck_text += map.get(card_map) + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name) + "\\n";
+					deck_text += map.get(card_map) + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name) + "\n";
 				}
 			}
 			//let deck_text = generateDeckText()
@@ -1436,7 +1547,6 @@ def generateHTML(codes):
 			document.getElementById("file-menu").value = "default";
 		}
 
-		
 		function convertManaCostForDraftmancer(mana_cost) {
 			return mana_cost
 				.replace(/{([A-Z])([A-Z])}/g, "{$1/$2}");
@@ -1477,67 +1587,67 @@ def generateHTML(codes):
   }
 }
 `;
-			output_text += "[CustomCards]\\n[\\n";
+			output_text += "[CustomCards]\n[\n";
 			for (const c of cards.values())
 			{
 				const img_url = URLDomain + "/sets/" + c.set + "-files/img/" + c.number + "_" + c.card_name + ((c.shape.includes("double")) ? "_front" : "") + "." + c.image_type;
-				output_text += "  {\\n";
-				output_text += `    "name": "${c.card_name}",\\n`;
+				output_text += "  {\n";
+				output_text += `    "name": "${c.card_name}",\n`;
 				if(c.cost)
-					output_text += `    "mana_cost": "${convertManaCostForDraftmancer(c.cost)}",\\n`;
+					output_text += `    "mana_cost": "${convertManaCostForDraftmancer(c.cost)}",\n`;
 				else 
-					output_text += `    "mana_cost": "",\\n`;
+					output_text += `    "mana_cost": "",\n`;
 				if(c.rarity)
-					output_text += `    "rarity": "${c.rarity}",\\n`;
+					output_text += `    "rarity": "${c.rarity}",\n`;
 				if(c.set)
-					output_text += `    "set": "${c.set}",\\n`;
+					output_text += `    "set": "${c.set}",\n`;
 				if(c.number)
-					output_text += `    "collector_number": "${c.number}",\\n`;
+					output_text += `    "collector_number": "${c.number}",\n`;
 				if(c.type) {
-					output_text += `    "type": "${c.type.split(" – ")[0]}",\\n`;
+					output_text += `    "type": "${c.type.split(" – ")[0]}",\n`;
 					const subtypes = c.type.split(" – ")[1];
 					if(subtypes)
-						output_text += `    "subtypes": ["${subtypes.split(" ").join("\", \"")}"],\\n`;
+						output_text += `    "subtypes": ["${subtypes.split(" ").join("", "")}"],\n`;
 				}
 				if(c.rules_text)
-					output_text += `    "oracle_text": ${JSON.stringify(c.rules_text)},\\n`;
-				output_text += `    "image": "${img_url}",\\n`;
+					output_text += `    "oracle_text": ${JSON.stringify(c.rules_text)},\n`;
+				output_text += `    "image": "${img_url}",\n`;
 				if(c.shape.includes("double")) {
 					const back_url = URLDomain + "/sets/" + c.set + "-files/img/" + c.number + "_" + c.card_name + "_back" + "." + c.image_type;
 					output_text += `    "back": {`
-					output_text += `      "name": "${c.card_name2}",\\n`;
+					output_text += `      "name": "${c.card_name2}",\n`;
 					if(c.cost2)
-						output_text += `      "mana_cost": "${convertManaCostForDraftmancer(c.cost2)}",\\n`;
+						output_text += `      "mana_cost": "${convertManaCostForDraftmancer(c.cost2)}",\n`;
 					else 
-						output_text += `    "mana_cost": "",\\n`;
+						output_text += `    "mana_cost": "",\n`;
 					if(c.rarity2)
-						output_text += `      "rarity": "${c.rarity2}",\\n`;
+						output_text += `      "rarity": "${c.rarity2}",\n`;
 					if(c.set2)
-						output_text += `      "set": "${c.set2}",\\n`;
+						output_text += `      "set": "${c.set2}",\n`;
 					if(c.number2)
-						output_text += `      "collector_number": "${c.number2}",\\n`;
+						output_text += `      "collector_number": "${c.number2}",\n`;
 					if(c.type2) {
-						output_text += `      "type": "${c.type2.split(" – ")[0]}",\\n`;
+						output_text += `      "type": "${c.type2.split(" – ")[0]}",\n`;
 						const subtypes = c.type2.split(" – ")[1];
 						if(subtypes)
-							output_text += `    "subtypes": ["${subtypes.split(" ").join("\", \"")}"],\\n`;
+							output_text += `    "subtypes": ["${subtypes.split(" ").join("", "")}"],\n`;
 					}
 					if(c.rules_text2)
-						output_text += `      "oracle_text": ${JSON.stringify(c.rules_text2)},\\n`;
+						output_text += `      "oracle_text": ${JSON.stringify(c.rules_text2)},\n`;
 					output_text += `      "image": "${back_url}",`
-					output_text += `    },\\n`;
+					output_text += `    },\n`;
 				}
-				output_text += "  },\\n";
+				output_text += "  },\n";
 			}
-			output_text += "]\\n";
+			output_text += "]\n";
 
 			const rarities = [...(new Set([...cards.values().map(c => c.rarity)]))];
 
 			for(const r of rarities) {
-				output_text += `[${r}]\\n`;
+				output_text += `[${r}]\n`;
 				for (const c of cards.values()) {
 					if(c.rarity === r) 
-						output_text += `${c.count} ${c.card_name}\\n`;
+						output_text += `${c.count} ${c.card_name}\n`;
 				}
 			}
 
@@ -1551,7 +1661,7 @@ def generateHTML(codes):
 			document.getElementById("file-menu").value = "default";
 		
 		}
-        
+
 		function goToSearch() {
 			window.location = ("/search");
 		}
@@ -1568,6 +1678,46 @@ def generateHTML(codes):
 				closeModal();
 			}
 		}
+
+				function modifyDeck2(setNum, op) {
+			if (op == "+") {
+				console.log(deck_2[setNum], sideboard_2[setNum], collection_copies[setNum], setNum)
+				if ((deck_2[setNum] + sideboard_2[setNum]) > collection_copies[setNum]) {
+					console.log('ret');
+					return true;
+				}
+				if (setNum in deck_2) {
+					deck_2[setNum] += 1;
+				} else {
+					deck_2[setNum] = 1;
+				}
+			}
+			if (op == "-") {
+				deck_2[setNum] -= 1;
+			}
+			console.log(deck_2);
+			return false;
+		}
+		function modifySB2(setNum, op) {
+			if (op == "+") {
+				console.log(deck_2[setNum], sideboard_2[setNum], collection_copies[setNum], setNum)
+				if ((deck_2[setNum] + sideboard_2[setNum]) > collection_copies[setNum]) {
+					console.log('ret');
+					return true;
+				}
+				if (setNum in sideboard_2) {
+					sideboard_2[setNum] += 1;
+				} else {
+					sideboard_2[setNum] = 1;
+				}
+			}
+			if (op == "-") {
+				sideboard_2[setNum] -= 1;
+			}
+			console.log(sideboard_2, op, setNum);
+			return false;
+		}
+
 
 		'''
 
