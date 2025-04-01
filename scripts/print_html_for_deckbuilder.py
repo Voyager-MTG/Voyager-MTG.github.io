@@ -544,9 +544,9 @@ def generateHTML(codes):
 					<option value="import">Import deck</option>
 					<option value="save-collection">Save as collection</option>
 					<option value="load-collection">Load collection</option>
-					<option value="save">Save deck online</option>
-					<option value="load">Load online deck</option>
-					<option value="delete">Delete online deck</option>
+					<option value="save">Save deck</option>
+					<option value="load">Load deck</option>
+					<option value="delete">Delete saved deck</option>
 					<option value="get-url">Get deck URL</option>
 					<option value="copy">Copy decklist</option>
 					<option value="export-dek">Export .dek</option>
@@ -776,13 +776,20 @@ await fetch('/lists/all-sets.json')
 			document.getElementById("file-menu").value = "default";
 		}
 
+		function openSaveCollModal() {
+			document.getElementById("modal-container").style.display = "block";
+			document.getElementById("modal-content").innerHTML = "Deck Saved as collection" + document.getElementById("deck-name").value + '<span class="close" onclick="closeModal()">&times;</span>';
+		}
+
 		function loadDeck() {
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = "Loading Deck:";
 			Object.keys(localStorage).forEach(function(key){
-				console.log(key);
-   				console.log(localStorage.getItem(key));
-				document.getElementById("modal-content").innerHTML += `<span class="load-btn" onclick="readDeckText(localStorage.getItem('${key}'),'${key}')">${key}</span>`;			
+				if (key != "colls.collections") { 
+					console.log(key);
+					console.log(localStorage.getItem(key));
+					document.getElementById("modal-content").innerHTML += `<span class="load-btn" onclick="readDeckText(localStorage.getItem('${key}'),'${key}')">${key}</span>`;		
+				}	
 			});
 			document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>';
 		} 
@@ -799,6 +806,14 @@ await fetch('/lists/all-sets.json')
 		} 
 
 		function loadCollection(name) {
+			var e = document.getElementById("copies-style");
+			if (e != null){ e.remove(); }
+			if (name == "Full card pool") {
+				card_list_arrayified = card_list.cards;
+				closeModal();
+				preSearch();
+				return;
+			}
 			let colls = JSON.parse(localStorage.getItem("colls.collections"));
 			let collectionToLoad_ = colls[name];
 			let new_list = [];
@@ -825,7 +840,7 @@ await fetch('/lists/all-sets.json')
 			}
 			card_list_arrayified = new_list;
 			const cssElem = document.createElement("style");
-			cssELEM.id = "copies-style";
+			cssElem.id = "copies-style";
 			cssElem.innerHTML = cssStr;
 			document.body.appendChild(cssElem);
 			closeModal();
