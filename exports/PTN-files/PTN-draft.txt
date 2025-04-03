@@ -1,12 +1,13 @@
 ﻿[CustomCards]
-	[	{
+	[
+		{
 			"name": "The Horned-Axe",
 			"rarity": "mythic",
 			"mana_cost": "{5}",
 			"type": "Legendary Creature — God ",
 			"collector_number": "2",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/2_The Horned-Axe.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/2_The Horned-Axe.jpg"
 			}
 		},
 		{
@@ -16,7 +17,7 @@
 			"type": "Legendary Creature — Fungus God ",
 			"collector_number": "90",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/90_The Crowned Growth.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/90_The Crowned Growth.jpg"
 			}
 		},
 		{
@@ -26,7 +27,7 @@
 			"type": "Sorcery",
 			"collector_number": "101",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/101_Implant the Seeds.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/101_Implant the Seeds.jpg"
 			}
 		},
 		{
@@ -36,7 +37,7 @@
 			"type": "Legendary Creature — Cleric God ",
 			"collector_number": "217",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/217_Mother of Ants.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/217_Mother of Ants.jpg"
 			}
 		},
 		{
@@ -46,7 +47,7 @@
 			"type": "Legendary Creature — Bird God ",
 			"collector_number": "204",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/204_The Elegiast.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/204_The Elegiast.jpg"
 			}
 		},
 		{
@@ -56,7 +57,7 @@
 			"type": "Legendary Creature — Elemental God ",
 			"collector_number": "207",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/207_The Forge of Days.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/207_The Forge of Days.jpg"
 			}
 		},
 		{
@@ -66,7 +67,7 @@
 			"type": "Legendary Creature — Reflection God ",
 			"collector_number": "215",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/215_The Mirror-Queen.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/215_The Mirror-Queen.jpg"
 			}
 		},
 		{
@@ -76,7 +77,7 @@
 			"type": "Legendary Creature — Vampire God ",
 			"collector_number": "223",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/223_The Red Grail.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/223_The Red Grail.jpg"
 			}
 		},
 		{
@@ -86,7 +87,7 @@
 			"type": "Legendary Creature — God ",
 			"collector_number": "230",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/230_The Sun-In-Rags.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/230_The Sun-In-Rags.jpg"
 			}
 		},
 		{
@@ -96,7 +97,7 @@
 			"type": "Legendary Creature — Human God ",
 			"collector_number": "232",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/232_The Thunderskin.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/232_The Thunderskin.jpg"
 			}
 		},
 		{
@@ -106,7 +107,7 @@
 			"type": "Legendary Creature — Insect God ",
 			"collector_number": "233",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/233_The Vagabond.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/233_The Vagabond.jpg"
 			}
 		},
 		{
@@ -115,15 +116,15 @@
 			"mana_cost": "{1}{U}{R}",
 			"type": "Legendary Creature — Wizard God ",
 			"collector_number": "236",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/236_The Witch-and-Sister_front.png"
-			},
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/236_The Witch-and-Sister_back.png"
+					"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/236_The Witch-and-Sister_back.jpg"
 				}
+			},
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/236_The Witch-and-Sister_front.jpg"
 			}
 		},
 		{
@@ -133,7 +134,7 @@
 			"type": "Legendary Creature — Wolf God ",
 			"collector_number": "237",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/237_The Wolf Divided.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/237_The Wolf Divided.jpg"
 			}
 		},
 		{
@@ -143,7 +144,7 @@
 			"type": "Legendary Artifact — Equipment ",
 			"collector_number": "240",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/240_The Frangiclave.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/240_The Frangiclave.jpg"
 			}
 		},
 		{
@@ -153,7 +154,7 @@
 			"type": "Token Enchantment",
 			"collector_number": "2",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/2_PTN Foretell.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/2_PTN Foretell.jpg"
 			}
 		},
 		{
@@ -163,7 +164,7 @@
 			"type": "Creature — Human Cleric Wizard ",
 			"collector_number": "23",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/23_Glassgarden Prophet.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/23_Glassgarden Prophet.jpg"
 			}
 		},
 		{
@@ -173,7 +174,7 @@
 			"type": "Creature — Bird Spirit ",
 			"collector_number": "50",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/50_Dreamway Key.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/50_Dreamway Key.jpg"
 			}
 		},
 		{
@@ -183,7 +184,7 @@
 			"type": "Instant",
 			"collector_number": "68",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/68_Perfect Stillness.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/68_Perfect Stillness.jpg"
 			}
 		},
 		{
@@ -193,7 +194,7 @@
 			"type": "Creature — Vampire Cleric ",
 			"collector_number": "112",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/112_Sensation Ascender.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/112_Sensation Ascender.jpg"
 			}
 		},
 		{
@@ -203,7 +204,7 @@
 			"type": "Creature — Insect Shapeshifter ",
 			"collector_number": "121",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/121_Wood's Deceiver.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/121_Wood's Deceiver.jpg"
 			}
 		},
 		{
@@ -213,7 +214,7 @@
 			"type": "Instant",
 			"collector_number": "122",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/122_Blazing Crescendo.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/122_Blazing Crescendo.jpg"
 			}
 		},
 		{
@@ -223,7 +224,7 @@
 			"type": "Instant",
 			"collector_number": "136",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/136_Lessons of Strife.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/136_Lessons of Strife.jpg"
 			}
 		},
 		{
@@ -233,7 +234,7 @@
 			"type": "Creature — Human Scout ",
 			"collector_number": "175",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/175_Map's Edge Explorer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/175_Map's Edge Explorer.jpg"
 			}
 		},
 		{
@@ -243,7 +244,7 @@
 			"type": "Creature — Human Ranger Cleric ",
 			"collector_number": "187",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/187_Thyrsine Tracker.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/187_Thyrsine Tracker.jpg"
 			}
 		},
 		{
@@ -253,7 +254,7 @@
 			"type": "Land — Sanctuary ",
 			"collector_number": "249",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/249_Society Headquarters.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/249_Society Headquarters.jpg"
 			}
 		},
 		{
@@ -263,7 +264,7 @@
 			"type": "Land — Sanctuary ",
 			"collector_number": "250",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/250_Sanctuary of Enlightenment.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/250_Sanctuary of Enlightenment.jpg"
 			}
 		},
 		{
@@ -273,7 +274,7 @@
 			"type": "Land — Sanctuary ",
 			"collector_number": "251",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/251_Sanctuary of Glory.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/251_Sanctuary of Glory.jpg"
 			}
 		},
 		{
@@ -283,7 +284,7 @@
 			"type": "Land — Sanctuary ",
 			"collector_number": "252",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/252_Sanctuary of Movement.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/252_Sanctuary of Movement.jpg"
 			}
 		},
 		{
@@ -293,7 +294,7 @@
 			"type": "Land — Sanctuary ",
 			"collector_number": "253",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/253_Sanctuary of Openings.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/253_Sanctuary of Openings.jpg"
 			}
 		},
 		{
@@ -303,7 +304,7 @@
 			"type": "Land — Sanctuary ",
 			"collector_number": "254",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/254_Sanctuary of Remembrance.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/254_Sanctuary of Remembrance.jpg"
 			}
 		},
 		{
@@ -313,7 +314,7 @@
 			"type": "Land — Sanctuary ",
 			"collector_number": "255",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/255_Sanctuary of Reshaping.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/255_Sanctuary of Reshaping.jpg"
 			}
 		},
 		{
@@ -323,7 +324,7 @@
 			"type": "Land — Sanctuary ",
 			"collector_number": "256",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/256_Sanctuary of Sensation.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/256_Sanctuary of Sensation.jpg"
 			}
 		},
 		{
@@ -333,7 +334,7 @@
 			"type": "Land — Sanctuary ",
 			"collector_number": "257",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/257_Sanctuary of Shedding.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/257_Sanctuary of Shedding.jpg"
 			}
 		},
 		{
@@ -343,7 +344,7 @@
 			"type": "Land — Sanctuary ",
 			"collector_number": "258",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/258_Sanctuary of Strength.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/258_Sanctuary of Strength.jpg"
 			}
 		},
 		{
@@ -353,7 +354,7 @@
 			"type": "Land — Sanctuary ",
 			"collector_number": "259",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/259_Sanctuary of Time.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/259_Sanctuary of Time.jpg"
 			}
 		},
 		{
@@ -363,7 +364,7 @@
 			"type": "Basic Land — Plains ",
 			"collector_number": "260",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/260_PTN Plains.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/260_PTN Plains.jpg"
 			}
 		},
 		{
@@ -373,7 +374,7 @@
 			"type": "Basic Land — Plains ",
 			"collector_number": "261",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/261_PTN Plains 2.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/261_PTN Plains 2.jpg"
 			}
 		},
 		{
@@ -383,7 +384,7 @@
 			"type": "Basic Land — Island ",
 			"collector_number": "262",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/262_PTN Island.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/262_PTN Island.jpg"
 			}
 		},
 		{
@@ -393,7 +394,7 @@
 			"type": "Basic Land — Island ",
 			"collector_number": "263",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/263_PTN Island 2.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/263_PTN Island 2.jpg"
 			}
 		},
 		{
@@ -403,7 +404,7 @@
 			"type": "Basic Land — Swamp ",
 			"collector_number": "264",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/264_PTN Swamp.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/264_PTN Swamp.jpg"
 			}
 		},
 		{
@@ -413,7 +414,7 @@
 			"type": "Basic Land — Swamp ",
 			"collector_number": "265",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/265_PTN Swamp 2.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/265_PTN Swamp 2.jpg"
 			}
 		},
 		{
@@ -423,7 +424,7 @@
 			"type": "Basic Land — Mountain ",
 			"collector_number": "266",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/266_PTN Mountain.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/266_PTN Mountain.jpg"
 			}
 		},
 		{
@@ -433,7 +434,7 @@
 			"type": "Basic Land — Mountain ",
 			"collector_number": "267",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/267_PTN Mountain 2.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/267_PTN Mountain 2.jpg"
 			}
 		},
 		{
@@ -443,7 +444,7 @@
 			"type": "Basic Land — Forest ",
 			"collector_number": "268",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/268_PTN Forest.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/268_PTN Forest.jpg"
 			}
 		},
 		{
@@ -453,7 +454,7 @@
 			"type": "Basic Land — Forest ",
 			"collector_number": "269",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/269_PTN Forest 2.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/269_PTN Forest 2.jpg"
 			}
 		},
 		{
@@ -463,7 +464,7 @@
 			"type": "Creature — Treefolk Zombie ",
 			"collector_number": "1",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/1_Burgeoning Risen.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/1_Burgeoning Risen.jpg"
 			}
 		},
 		{
@@ -473,7 +474,7 @@
 			"type": "Creature — Wolf Reflection ",
 			"collector_number": "4",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/4_Mirrored Wolf.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/4_Mirrored Wolf.jpg"
 			}
 		},
 		{
@@ -483,7 +484,7 @@
 			"type": "Creature — Serpent ",
 			"collector_number": "6",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/6_Noon Delver Serpent.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/6_Noon Delver Serpent.jpg"
 			}
 		},
 		{
@@ -493,7 +494,7 @@
 			"type": "Creature — Human Cleric ",
 			"collector_number": "11",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/11_Banisher Priest.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/11_Banisher Priest.jpg"
 			}
 		},
 		{
@@ -503,7 +504,7 @@
 			"type": "Enchantment — Aura ",
 			"collector_number": "12",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/12_Bars Across the Sun.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/12_Bars Across the Sun.jpg"
 			}
 		},
 		{
@@ -513,7 +514,7 @@
 			"type": "Creature — Angel Cleric ",
 			"collector_number": "14",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/14_Broken Sun-Servant.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/14_Broken Sun-Servant.jpg"
 			}
 		},
 		{
@@ -523,7 +524,7 @@
 			"type": "Instant",
 			"collector_number": "15",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/15_Brought Back.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/15_Brought Back.jpg"
 			}
 		},
 		{
@@ -533,7 +534,7 @@
 			"type": "Instant",
 			"collector_number": "17",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/17_Defacement.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/17_Defacement.jpg"
 			}
 		},
 		{
@@ -543,7 +544,7 @@
 			"type": "Creature — Human Artificer ",
 			"collector_number": "20",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/20_Forge Secretkeeper.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/20_Forge Secretkeeper.jpg"
 			}
 		},
 		{
@@ -553,7 +554,7 @@
 			"type": "Creature — Reflection Golem ",
 			"collector_number": "21",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/21_Glass Guardian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/21_Glass Guardian.jpg"
 			}
 		},
 		{
@@ -563,7 +564,7 @@
 			"type": "Instant",
 			"collector_number": "31",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/31_Iron Verdict.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/31_Iron Verdict.jpg"
 			}
 		},
 		{
@@ -573,7 +574,7 @@
 			"type": "Kindred Enchantment — God ",
 			"collector_number": "32",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/32_Legacy of Amber.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/32_Legacy of Amber.jpg"
 			}
 		},
 		{
@@ -583,7 +584,7 @@
 			"type": "Kindred Enchantment — God ",
 			"collector_number": "57",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/57_Legacy of the Wheel.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/57_Legacy of the Wheel.jpg"
 			}
 		},
 		{
@@ -593,7 +594,7 @@
 			"type": "Kindred Enchantment — God ",
 			"collector_number": "103",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/103_Legacy of Tides.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/103_Legacy of Tides.jpg"
 			}
 		},
 		{
@@ -603,7 +604,7 @@
 			"type": "Kindred Enchantment — God ",
 			"collector_number": "135",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/135_Legacy of Flint.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/135_Legacy of Flint.jpg"
 			}
 		},
 		{
@@ -613,7 +614,7 @@
 			"type": "Kindred Enchantment — God ",
 			"collector_number": "173",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/173_Legacy of Coils.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/173_Legacy of Coils.jpg"
 			}
 		},
 		{
@@ -623,7 +624,7 @@
 			"type": "Creature — Vampire Cleric ",
 			"collector_number": "42",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/42_Subverted Cyprian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/42_Subverted Cyprian.jpg"
 			}
 		},
 		{
@@ -633,7 +634,7 @@
 			"type": "Sorcery",
 			"collector_number": "46",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/46_Verse Illuminate.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/46_Verse Illuminate.jpg"
 			}
 		},
 		{
@@ -643,7 +644,7 @@
 			"type": "Sorcery",
 			"collector_number": "82",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/82_Verse Open.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/82_Verse Open.jpg"
 			}
 		},
 		{
@@ -653,7 +654,7 @@
 			"type": "Sorcery",
 			"collector_number": "119",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/119_Verse Change.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/119_Verse Change.jpg"
 			}
 		},
 		{
@@ -663,7 +664,7 @@
 			"type": "Sorcery",
 			"collector_number": "159",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/159_Verse Reshape.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/159_Verse Reshape.jpg"
 			}
 		},
 		{
@@ -673,7 +674,7 @@
 			"type": "Sorcery",
 			"collector_number": "190",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/190_Verse Aggress.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/190_Verse Aggress.jpg"
 			}
 		},
 		{
@@ -683,7 +684,7 @@
 			"type": "Instant",
 			"collector_number": "62",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/62_Nowhere Inhabits.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/62_Nowhere Inhabits.jpg"
 			}
 		},
 		{
@@ -693,7 +694,7 @@
 			"type": "Instant",
 			"collector_number": "60",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/60_Names of the Dead.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/60_Names of the Dead.jpg"
 			}
 		},
 		{
@@ -703,7 +704,7 @@
 			"type": "Creature — Skeleton Wizard ",
 			"collector_number": "61",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/61_Nowhere Illuminator.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/61_Nowhere Illuminator.jpg"
 			}
 		},
 		{
@@ -713,7 +714,7 @@
 			"type": "Enchantment — Aura ",
 			"collector_number": "69",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/69_Prison of Glass.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/69_Prison of Glass.jpg"
 			}
 		},
 		{
@@ -723,7 +724,7 @@
 			"type": "Sorcery",
 			"collector_number": "70",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/70_Rite of Twins' Union.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/70_Rite of Twins' Union.jpg"
 			}
 		},
 		{
@@ -733,7 +734,7 @@
 			"type": "Instant",
 			"collector_number": "73",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/73_Sea's Feasting.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/73_Sea's Feasting.jpg"
 			}
 		},
 		{
@@ -743,7 +744,7 @@
 			"type": "Creature — Serpent Horror ",
 			"collector_number": "75",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/75_Seven-Coil Shipbreaker.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/75_Seven-Coil Shipbreaker.jpg"
 			}
 		},
 		{
@@ -753,7 +754,7 @@
 			"type": "Creature — Human Cleric Shaman ",
 			"collector_number": "87",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/87_Carapace Shearer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/87_Carapace Shearer.jpg"
 			}
 		},
 		{
@@ -763,7 +764,7 @@
 			"type": "Creature — Skeleton Angel ",
 			"collector_number": "95",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/95_Dry-Soul Angel.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/95_Dry-Soul Angel.jpg"
 			}
 		},
 		{
@@ -773,7 +774,7 @@
 			"type": "Instant",
 			"collector_number": "98",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/98_Flesh Asunder.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/98_Flesh Asunder.jpg"
 			}
 		},
 		{
@@ -783,7 +784,7 @@
 			"type": "Creature — Angel Cleric ",
 			"collector_number": "100",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/100_Herald of Loss.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/100_Herald of Loss.jpg"
 			}
 		},
 		{
@@ -793,7 +794,7 @@
 			"type": "Legendary Artifact",
 			"collector_number": "105",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/105_The Museum of Worms.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/105_The Museum of Worms.jpg"
 			}
 		},
 		{
@@ -803,7 +804,7 @@
 			"type": "Enchantment — Aura ",
 			"collector_number": "114",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/114_Skintwist.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/114_Skintwist.jpg"
 			}
 		},
 		{
@@ -813,17 +814,17 @@
 			"type": "Instant",
 			"collector_number": "124",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/124_Carnal Thirst.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/124_Carnal Thirst.jpg"
 			}
 		},
 		{
 			"name": "Ignus Rites",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
-			"type": "Sorcery",
+			"type": "Instant",
 			"collector_number": "133",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/133_Ignus Rites.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/133_Ignus Rites.jpg"
 			}
 		},
 		{
@@ -833,7 +834,7 @@
 			"type": "Instant",
 			"collector_number": "161",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/161_Ascent from Snakes.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/161_Ascent from Snakes.jpg"
 			}
 		},
 		{
@@ -843,7 +844,7 @@
 			"type": "Enchantment",
 			"collector_number": "120",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/120_The Vitulation.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/120_The Vitulation.jpg"
 			}
 		},
 		{
@@ -853,7 +854,7 @@
 			"type": "Sorcery",
 			"collector_number": "150",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/150_Rite Intercalate.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/150_Rite Intercalate.jpg"
 			}
 		},
 		{
@@ -863,7 +864,7 @@
 			"type": "Sorcery",
 			"collector_number": "130",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/130_Foul Alteration.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/130_Foul Alteration.jpg"
 			}
 		},
 		{
@@ -873,7 +874,7 @@
 			"type": "Artifact — Equipment ",
 			"collector_number": "153",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/153_Stained Silver.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/153_Stained Silver.jpg"
 			}
 		},
 		{
@@ -883,7 +884,7 @@
 			"type": "Instant",
 			"collector_number": "154",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/154_Subvert the Light.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/154_Subvert the Light.jpg"
 			}
 		},
 		{
@@ -893,7 +894,7 @@
 			"type": "Creature — Elf Wizard Berserker ",
 			"collector_number": "155",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/155_Subverting Insurgent.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/155_Subverting Insurgent.jpg"
 			}
 		},
 		{
@@ -903,7 +904,7 @@
 			"type": "Creature — Human Citizen ",
 			"collector_number": "158",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/158_Unlucky Witness.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/158_Unlucky Witness.jpg"
 			}
 		},
 		{
@@ -913,7 +914,7 @@
 			"type": "Sorcery",
 			"collector_number": "174",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/174_Life's Legacy.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/174_Life's Legacy.jpg"
 			}
 		},
 		{
@@ -923,7 +924,7 @@
 			"type": "Legendary Creature — Vampire God ",
 			"collector_number": "205",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/205_Ezeem, the Second Thirstly.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/205_Ezeem, the Second Thirstly.jpg"
 			}
 		},
 		{
@@ -933,7 +934,7 @@
 			"type": "Legendary Creature — Elemental God ",
 			"collector_number": "211",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/211_King Crucible.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/211_King Crucible.jpg"
 			}
 		},
 		{
@@ -943,7 +944,7 @@
 			"type": "Legendary Creature — Insect God ",
 			"collector_number": "216",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/216_The Moth.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/216_The Moth.jpg"
 			}
 		},
 		{
@@ -953,7 +954,7 @@
 			"type": "Sorcery",
 			"collector_number": "218",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/218_Moth's Yearning.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/218_Moth's Yearning.jpg"
 			}
 		},
 		{
@@ -963,7 +964,7 @@
 			"type": "Creature — Elemental Wolf Horror ",
 			"collector_number": "228",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/228_Spirit of Defiance.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/228_Spirit of Defiance.jpg"
 			}
 		},
 		{
@@ -973,7 +974,7 @@
 			"type": "Legendary Artifact",
 			"collector_number": "245",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/245_True Blood of Saint Janus.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/245_True Blood of Saint Janus.jpg"
 			}
 		},
 		{
@@ -983,7 +984,7 @@
 			"type": "Land — Sanctuary ",
 			"collector_number": "247",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/247_House of the Moon.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/247_House of the Moon.jpg"
 			}
 		},
 		{
@@ -993,7 +994,7 @@
 			"type": "Instant",
 			"collector_number": "19",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/19_Extract Secrets.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/19_Extract Secrets.jpg"
 			}
 		},
 		{
@@ -1003,7 +1004,7 @@
 			"type": "Instant",
 			"collector_number": "30",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/30_Ignite Fervor.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/30_Ignite Fervor.jpg"
 			}
 		},
 		{
@@ -1013,7 +1014,7 @@
 			"type": "Instant",
 			"collector_number": "33",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/33_Lended Light.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/33_Lended Light.jpg"
 			}
 		},
 		{
@@ -1023,7 +1024,7 @@
 			"type": "Creature — Wolf Angel ",
 			"collector_number": "45",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/45_Unscarred Wolf.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/45_Unscarred Wolf.jpg"
 			}
 		},
 		{
@@ -1033,7 +1034,7 @@
 			"type": "Creature — Elf Cleric Advisor ",
 			"collector_number": "56",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/56_Fucine Translator.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/56_Fucine Translator.jpg"
 			}
 		},
 		{
@@ -1043,7 +1044,7 @@
 			"type": "Sorcery",
 			"collector_number": "55",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/55_Forgotten Tongues.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/55_Forgotten Tongues.jpg"
 			}
 		},
 		{
@@ -1053,7 +1054,7 @@
 			"type": "Instant",
 			"collector_number": "79",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/79_Take Prisoners.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/79_Take Prisoners.jpg"
 			}
 		},
 		{
@@ -1063,7 +1064,7 @@
 			"type": "Creature — Angel ",
 			"collector_number": "37",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/37_Ragged Sun's Angel.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/37_Ragged Sun's Angel.jpg"
 			}
 		},
 		{
@@ -1073,7 +1074,7 @@
 			"type": "Instant",
 			"collector_number": "43",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/43_Sun-Scorched Tempering.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/43_Sun-Scorched Tempering.jpg"
 			}
 		},
 		{
@@ -1083,7 +1084,7 @@
 			"type": "Instant",
 			"collector_number": "78",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/78_Skin's Division.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/78_Skin's Division.jpg"
 			}
 		},
 		{
@@ -1093,7 +1094,7 @@
 			"type": "Enchantment",
 			"collector_number": "125",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/125_Corrivality.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/125_Corrivality.jpg"
 			}
 		},
 		{
@@ -1103,7 +1104,7 @@
 			"type": "Creature — Angel Demon ",
 			"collector_number": "3",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/3_Lost Seraph.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/3_Lost Seraph.jpg"
 			}
 		},
 		{
@@ -1113,17 +1114,17 @@
 			"type": "Creature — Horror ",
 			"collector_number": "5",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/5_Misguiding Lighthouse.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/5_Misguiding Lighthouse.jpg"
 			}
 		},
 		{
 			"name": "Planar Lockdown",
 			"rarity": "rare",
-			"mana_cost": "{2}",
+			"mana_cost": "{1}",
 			"type": "Enchantment",
 			"collector_number": "7",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/7_Planar Lockdown.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/7_Planar Lockdown.jpg"
 			}
 		},
 		{
@@ -1133,7 +1134,7 @@
 			"type": "Creature — Angel ",
 			"collector_number": "9",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/9_Angel of the True Sun.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/9_Angel of the True Sun.jpg"
 			}
 		},
 		{
@@ -1143,7 +1144,7 @@
 			"type": "Creature — Human Cleric ",
 			"collector_number": "38",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/38_Rarefied Illuminator.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/38_Rarefied Illuminator.jpg"
 			}
 		},
 		{
@@ -1153,7 +1154,7 @@
 			"type": "Creature — Angel Knight ",
 			"collector_number": "44",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/44_Sunshard Protector.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/44_Sunshard Protector.jpg"
 			}
 		},
 		{
@@ -1163,7 +1164,7 @@
 			"type": "Creature — Zombie Angel ",
 			"collector_number": "89",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/89_Crowned Ghoul.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/89_Crowned Ghoul.jpg"
 			}
 		},
 		{
@@ -1173,7 +1174,7 @@
 			"type": "Sorcery",
 			"collector_number": "108",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/108_Paradoxical Inquiry.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/108_Paradoxical Inquiry.jpg"
 			}
 		},
 		{
@@ -1183,7 +1184,7 @@
 			"type": "Sorcery",
 			"collector_number": "151",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/151_Rite of Crucible Soul.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/151_Rite of Crucible Soul.jpg"
 			}
 		},
 		{
@@ -1193,7 +1194,7 @@
 			"type": "Instant",
 			"collector_number": "113",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/113_Seven-Coil Invocation.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/113_Seven-Coil Invocation.jpg"
 			}
 		},
 		{
@@ -1203,7 +1204,7 @@
 			"type": "Sorcery",
 			"collector_number": "109",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/109_Rite of Beast's Division.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/109_Rite of Beast's Division.jpg"
 			}
 		},
 		{
@@ -1213,7 +1214,7 @@
 			"type": "Legendary Creature — Human God ",
 			"collector_number": "202",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/202_The Chiliarch.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/202_The Chiliarch.jpg"
 			}
 		},
 		{
@@ -1223,7 +1224,7 @@
 			"type": "Legendary Creature — Cat God ",
 			"collector_number": "137",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/137_The Lionsmith.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/137_The Lionsmith.jpg"
 			}
 		},
 		{
@@ -1233,7 +1234,7 @@
 			"type": "Legendary Creature — God Horror ",
 			"collector_number": "212",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/212_The Knotwingknot.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/212_The Knotwingknot.jpg"
 			}
 		},
 		{
@@ -1243,7 +1244,7 @@
 			"type": "Legendary Creature — Plant God ",
 			"collector_number": "224",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/224_The Ring-Yew.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/224_The Ring-Yew.jpg"
 			}
 		},
 		{
@@ -1253,7 +1254,7 @@
 			"type": "Legendary Creature — Human God ",
 			"collector_number": "235",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/235_The Watchman.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/235_The Watchman.jpg"
 			}
 		},
 		{
@@ -1263,7 +1264,7 @@
 			"type": "Instant",
 			"collector_number": "146",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/146_Preemptive Purge.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/146_Preemptive Purge.jpg"
 			}
 		},
 		{
@@ -1273,7 +1274,7 @@
 			"type": "Creature — Phoenix ",
 			"collector_number": "148",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/148_Reshaping Phoenix.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/148_Reshaping Phoenix.jpg"
 			}
 		},
 		{
@@ -1283,7 +1284,7 @@
 			"type": "Creature — Human Warrior ",
 			"collector_number": "198",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/198_Acolyte of Agony.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/198_Acolyte of Agony.jpg"
 			}
 		},
 		{
@@ -1293,7 +1294,7 @@
 			"type": "Legendary Artifact",
 			"collector_number": "241",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/241_The Geminiad.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/241_The Geminiad.jpg"
 			}
 		},
 		{
@@ -1303,7 +1304,7 @@
 			"type": "Sorcery",
 			"collector_number": "170",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/170_Discover the Stone Gods.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/170_Discover the Stone Gods.jpg"
 			}
 		},
 		{
@@ -1313,7 +1314,7 @@
 			"type": "Artifact",
 			"collector_number": "242",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/242_Noonstone Amulet.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/242_Noonstone Amulet.jpg"
 			}
 		},
 		{
@@ -1323,7 +1324,7 @@
 			"type": "Instant",
 			"collector_number": "208",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/208_Forged Conflagration.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/208_Forged Conflagration.jpg"
 			}
 		},
 		{
@@ -1333,7 +1334,7 @@
 			"type": "Creature — Skeleton ",
 			"collector_number": "143",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/143_Nowhere Razer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/143_Nowhere Razer.jpg"
 			}
 		},
 		{
@@ -1343,7 +1344,7 @@
 			"type": "Instant",
 			"collector_number": "193",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/193_Wildwood Containment.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/193_Wildwood Containment.jpg"
 			}
 		},
 		{
@@ -1353,7 +1354,7 @@
 			"type": "Sorcery",
 			"collector_number": "195",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/195_Wolven Hatred.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/195_Wolven Hatred.jpg"
 			}
 		},
 		{
@@ -1363,7 +1364,7 @@
 			"type": "Sorcery",
 			"collector_number": "144",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/144_Open the Self.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/144_Open the Self.jpg"
 			}
 		},
 		{
@@ -1373,7 +1374,7 @@
 			"type": "Creature — Angel Cleric ",
 			"collector_number": "13",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/13_Bringer of Glory.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/13_Bringer of Glory.jpg"
 			}
 		},
 		{
@@ -1383,7 +1384,7 @@
 			"type": "Artifact",
 			"collector_number": "243",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/243_Relic Vial.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/243_Relic Vial.jpg"
 			}
 		},
 		{
@@ -1393,7 +1394,7 @@
 			"type": "Artifact",
 			"collector_number": "244",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/244_Ritual Daggar.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/244_Ritual Daggar.jpg"
 			}
 		},
 		{
@@ -1403,7 +1404,7 @@
 			"type": "Creature — Skeleton Warrior ",
 			"collector_number": "219",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/219_Nowhere Deathlord.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/219_Nowhere Deathlord.jpg"
 			}
 		},
 		{
@@ -1413,7 +1414,7 @@
 			"type": "Creature — Skeleton Horse ",
 			"collector_number": "220",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/220_Nowhere Dreadsteed.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/220_Nowhere Dreadsteed.jpg"
 			}
 		},
 		{
@@ -1423,7 +1424,7 @@
 			"type": "Boon",
 			"collector_number": "4",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/4_Scar Boon.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/4_Scar Boon.jpg"
 			}
 		},
 		{
@@ -1433,7 +1434,7 @@
 			"type": "Enchantment",
 			"collector_number": "206",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/206_Flames of Emnity.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/206_Flames of Emnity.jpg"
 			}
 		},
 		{
@@ -1443,7 +1444,7 @@
 			"type": "Creature — Human Knight ",
 			"collector_number": "28",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/28_Guided Crusader.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/28_Guided Crusader.jpg"
 			}
 		},
 		{
@@ -1453,7 +1454,7 @@
 			"type": "Sorcery",
 			"collector_number": "88",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/88_Cindered Tally.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/88_Cindered Tally.jpg"
 			}
 		},
 		{
@@ -1463,7 +1464,7 @@
 			"type": "Instant",
 			"collector_number": "97",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/97_Escape into the Night.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/97_Escape into the Night.jpg"
 			}
 		},
 		{
@@ -1473,7 +1474,7 @@
 			"type": "Creature — Vampire Noble ",
 			"collector_number": "132",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/132_High Cyprian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/132_High Cyprian.jpg"
 			}
 		},
 		{
@@ -1483,7 +1484,7 @@
 			"type": "Creature — Horror ",
 			"collector_number": "147",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/147_Raw Prophet.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/147_Raw Prophet.jpg"
 			}
 		},
 		{
@@ -1493,7 +1494,7 @@
 			"type": "Token Creature — Worm ",
 			"collector_number": "6",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/6_PTN Worm Token.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/6_PTN Worm Token.jpg"
 			}
 		},
 		{
@@ -1503,7 +1504,7 @@
 			"type": "Token Creature — Wolf ",
 			"collector_number": "7",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/7_PTN Wolf Token.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/7_PTN Wolf Token.jpg"
 			}
 		},
 		{
@@ -1513,7 +1514,7 @@
 			"type": "Token Creature — Angel ",
 			"collector_number": "5",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/5_PTN Angel Token.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/5_PTN Angel Token.jpg"
 			}
 		},
 		{
@@ -1523,7 +1524,7 @@
 			"type": "Instant",
 			"collector_number": "183",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/183_Seven-Coiled Strength.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/183_Seven-Coiled Strength.jpg"
 			}
 		},
 		{
@@ -1533,17 +1534,17 @@
 			"type": "Creature — Human Cleric Druid ",
 			"collector_number": "181",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/181_Ring-Yew's Chosen.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/181_Ring-Yew's Chosen.jpg"
 			}
 		},
 		{
 			"name": "The Allure's Light",
 			"rarity": "uncommon",
-			"mana_cost": "{W}{U}",
+			"mana_cost": "{1}{W}{U}",
 			"type": "Enchantment",
 			"collector_number": "199",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/199_The Allure's Light.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/199_The Allure's Light.jpg"
 			}
 		},
 		{
@@ -1553,7 +1554,7 @@
 			"type": "Enchantment",
 			"collector_number": "41",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/41_The Sky, The Soul.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/41_The Sky, The Soul.jpg"
 			}
 		},
 		{
@@ -1563,7 +1564,7 @@
 			"type": "Creature — Bird ",
 			"collector_number": "8",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/8_Roost Messengers.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/8_Roost Messengers.jpg"
 			}
 		},
 		{
@@ -1573,7 +1574,7 @@
 			"type": "Creature — Human Cleric ",
 			"collector_number": "25",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/25_Glassgarden Watcheye.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/25_Glassgarden Watcheye.jpg"
 			}
 		},
 		{
@@ -1583,7 +1584,7 @@
 			"type": "Creature — Elk Bear Horror ",
 			"collector_number": "27",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/27_Guardian Percussigant.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/27_Guardian Percussigant.jpg"
 			}
 		},
 		{
@@ -1593,7 +1594,7 @@
 			"type": "Creature — Angel Cleric ",
 			"collector_number": "10",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/10_Apostle Entheate.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/10_Apostle Entheate.jpg"
 			}
 		},
 		{
@@ -1603,7 +1604,7 @@
 			"type": "Creature — Cat Cleric ",
 			"collector_number": "16",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/16_Cat o'lic Priests.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/16_Cat o'lic Priests.jpg"
 			}
 		},
 		{
@@ -1613,7 +1614,7 @@
 			"type": "Creature — Unicorn ",
 			"collector_number": "18",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/18_Echoing Charger.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/18_Echoing Charger.jpg"
 			}
 		},
 		{
@@ -1623,7 +1624,7 @@
 			"type": "Creature — Human Cleric ",
 			"collector_number": "22",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/22_Glassgarden Elder.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/22_Glassgarden Elder.jpg"
 			}
 		},
 		{
@@ -1633,7 +1634,7 @@
 			"type": "Creature — Human Cleric ",
 			"collector_number": "24",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/24_Glassgarden Seer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/24_Glassgarden Seer.jpg"
 			}
 		},
 		{
@@ -1643,7 +1644,7 @@
 			"type": "Creature — Angel ",
 			"collector_number": "26",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/26_Glorious Enforcer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/26_Glorious Enforcer.jpg"
 			}
 		},
 		{
@@ -1653,7 +1654,7 @@
 			"type": "Creature — Angel ",
 			"collector_number": "29",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/29_Horomachist Sacrifice.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/29_Horomachist Sacrifice.jpg"
 			}
 		},
 		{
@@ -1663,7 +1664,7 @@
 			"type": "Sorcery",
 			"collector_number": "34",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/34_Merciless Illumination.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/34_Merciless Illumination.jpg"
 			}
 		},
 		{
@@ -1673,7 +1674,7 @@
 			"type": "Enchantment — Aura ",
 			"collector_number": "35",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/35_Mystical Trail.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/35_Mystical Trail.jpg"
 			}
 		},
 		{
@@ -1683,7 +1684,7 @@
 			"type": "Instant",
 			"collector_number": "36",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/36_Pulsing Vitality.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/36_Pulsing Vitality.jpg"
 			}
 		},
 		{
@@ -1693,7 +1694,7 @@
 			"type": "Instant",
 			"collector_number": "39",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/39_Root of Mercy.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/39_Root of Mercy.jpg"
 			}
 		},
 		{
@@ -1703,7 +1704,7 @@
 			"type": "Creature — Angel Serpent ",
 			"collector_number": "40",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/40_Seven-Coil Glider.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/40_Seven-Coil Glider.jpg"
 			}
 		},
 		{
@@ -1713,7 +1714,7 @@
 			"type": "Creature — Bird ",
 			"collector_number": "47",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/47_Augury Raven.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/47_Augury Raven.jpg"
 			}
 		},
 		{
@@ -1723,7 +1724,7 @@
 			"type": "Creature — Bird Skeleton ",
 			"collector_number": "48",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/48_Devoured Messenger.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/48_Devoured Messenger.jpg"
 			}
 		},
 		{
@@ -1733,7 +1734,7 @@
 			"type": "Instant",
 			"collector_number": "53",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/53_Expose Mortality.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/53_Expose Mortality.jpg"
 			}
 		},
 		{
@@ -1743,7 +1744,7 @@
 			"type": "Enchantment",
 			"collector_number": "54",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/54_Eyes Everywhere.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/54_Eyes Everywhere.jpg"
 			}
 		},
 		{
@@ -1753,7 +1754,7 @@
 			"type": "Creature — Merfolk Demon ",
 			"collector_number": "67",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/67_Painted Distorter.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/67_Painted Distorter.jpg"
 			}
 		},
 		{
@@ -1763,7 +1764,7 @@
 			"type": "Creature — Kraken Horror ",
 			"collector_number": "58",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/58_Map's Edge Monstrosity.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/58_Map's Edge Monstrosity.jpg"
 			}
 		},
 		{
@@ -1773,7 +1774,7 @@
 			"type": "Enchantment",
 			"collector_number": "59",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/59_Moonlit Augury.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/59_Moonlit Augury.jpg"
 			}
 		},
 		{
@@ -1783,7 +1784,7 @@
 			"type": "Creature — Demon ",
 			"collector_number": "49",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/49_Dreamway Imposter.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/49_Dreamway Imposter.jpg"
 			}
 		},
 		{
@@ -1793,7 +1794,7 @@
 			"type": "Creature — Skeleton Cleric Shaman ",
 			"collector_number": "63",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/63_Nowhere Soul Collector.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/63_Nowhere Soul Collector.jpg"
 			}
 		},
 		{
@@ -1803,7 +1804,7 @@
 			"type": "Creature — Skeleton ",
 			"collector_number": "64",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/64_Nowhere Wormhost.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/64_Nowhere Wormhost.jpg"
 			}
 		},
 		{
@@ -1813,7 +1814,7 @@
 			"type": "Creature — Shapeshifter Cleric ",
 			"collector_number": "65",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/65_Opener of Realities.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/65_Opener of Realities.jpg"
 			}
 		},
 		{
@@ -1823,7 +1824,7 @@
 			"type": "Creature — Snake Spirit ",
 			"collector_number": "66",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/66_Ophidian Soul.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/66_Ophidian Soul.jpg"
 			}
 		},
 		{
@@ -1833,7 +1834,7 @@
 			"type": "Creature — Merfolk Horror ",
 			"collector_number": "71",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/71_River Drowner.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/71_River Drowner.jpg"
 			}
 		},
 		{
@@ -1843,7 +1844,7 @@
 			"type": "Creature — Bird Cleric ",
 			"collector_number": "72",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/72_Roost Nyctodromist.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/72_Roost Nyctodromist.jpg"
 			}
 		},
 		{
@@ -1853,7 +1854,7 @@
 			"type": "Creature — Merfolk Cleric Scout ",
 			"collector_number": "74",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/74_Seaside Smuggler.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/74_Seaside Smuggler.jpg"
 			}
 		},
 		{
@@ -1863,7 +1864,7 @@
 			"type": "Creature — Leviathan Serpent ",
 			"collector_number": "76",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/76_Seven-Coil's Scion.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/76_Seven-Coil's Scion.jpg"
 			}
 		},
 		{
@@ -1873,7 +1874,7 @@
 			"type": "Creature — Merfolk Wizard ",
 			"collector_number": "77",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/77_Silent Drowner.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/77_Silent Drowner.jpg"
 			}
 		},
 		{
@@ -1883,7 +1884,7 @@
 			"type": "Creature — Human Cleric Wizard ",
 			"collector_number": "52",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/52_Evening Isles Skycomber.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/52_Evening Isles Skycomber.jpg"
 			}
 		},
 		{
@@ -1893,7 +1894,7 @@
 			"type": "Creature — Spirit Knight ",
 			"collector_number": "80",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/80_Twins' Guardian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/80_Twins' Guardian.jpg"
 			}
 		},
 		{
@@ -1903,7 +1904,7 @@
 			"type": "Instant",
 			"collector_number": "81",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/81_Veil of Dreams.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/81_Veil of Dreams.jpg"
 			}
 		},
 		{
@@ -1913,7 +1914,7 @@
 			"type": "Creature — Elemental Bird ",
 			"collector_number": "83",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/83_White Reaper.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/83_White Reaper.jpg"
 			}
 		},
 		{
@@ -1923,7 +1924,7 @@
 			"type": "Creature — Vampire Shaman ",
 			"collector_number": "92",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/92_Cyprian Ophiomancer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/92_Cyprian Ophiomancer.jpg"
 			}
 		},
 		{
@@ -1933,7 +1934,7 @@
 			"type": "Creature — Horror Spirit ",
 			"collector_number": "94",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/94_Dream Whisperer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/94_Dream Whisperer.jpg"
 			}
 		},
 		{
@@ -1943,7 +1944,7 @@
 			"type": "Creature — Insect ",
 			"collector_number": "85",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/85_Carapace Guardian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/85_Carapace Guardian.jpg"
 			}
 		},
 		{
@@ -1953,7 +1954,7 @@
 			"type": "Creature — Skeleton Insect ",
 			"collector_number": "86",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/86_Carapace Scavenger.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/86_Carapace Scavenger.jpg"
 			}
 		},
 		{
@@ -1963,7 +1964,7 @@
 			"type": "Creature — Vampire Cleric Wizard ",
 			"collector_number": "91",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/91_Cyprian Haemomancer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/91_Cyprian Haemomancer.jpg"
 			}
 		},
 		{
@@ -1973,7 +1974,7 @@
 			"type": "Creature — Vampire Cleric ",
 			"collector_number": "93",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/93_Despairing Devotee.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/93_Despairing Devotee.jpg"
 			}
 		},
 		{
@@ -1983,7 +1984,7 @@
 			"type": "Sorcery",
 			"collector_number": "96",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/96_Escape from Nowhere.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/96_Escape from Nowhere.jpg"
 			}
 		},
 		{
@@ -1993,7 +1994,7 @@
 			"type": "Creature — Horror ",
 			"collector_number": "99",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/99_Gloom Sower.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/99_Gloom Sower.jpg"
 			}
 		},
 		{
@@ -2003,7 +2004,7 @@
 			"type": "Creature — Human Cleric Shaman ",
 			"collector_number": "51",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/51_Evening Isles Gravemouth.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/51_Evening Isles Gravemouth.jpg"
 			}
 		},
 		{
@@ -2013,7 +2014,7 @@
 			"type": "Creature — Vampire Cleric ",
 			"collector_number": "102",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/102_Indulgent Cyprian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/102_Indulgent Cyprian.jpg"
 			}
 		},
 		{
@@ -2023,7 +2024,7 @@
 			"type": "Artifact",
 			"collector_number": "104",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/104_Monument of Rags.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/104_Monument of Rags.jpg"
 			}
 		},
 		{
@@ -2033,7 +2034,7 @@
 			"type": "Creature — Skeleton Angel ",
 			"collector_number": "106",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/106_Nowhere Ascender.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/106_Nowhere Ascender.jpg"
 			}
 		},
 		{
@@ -2043,7 +2044,7 @@
 			"type": "Creature — Skeleton Wizard ",
 			"collector_number": "107",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/107_Nowhere Stygian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/107_Nowhere Stygian.jpg"
 			}
 		},
 		{
@@ -2053,7 +2054,7 @@
 			"type": "Instant",
 			"collector_number": "110",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/110_Rite of Watchman's Sorrow.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/110_Rite of Watchman's Sorrow.jpg"
 			}
 		},
 		{
@@ -2063,7 +2064,7 @@
 			"type": "Enchantment",
 			"collector_number": "111",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/111_Scarring Servitude.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/111_Scarring Servitude.jpg"
 			}
 		},
 		{
@@ -2073,7 +2074,7 @@
 			"type": "Creature — Angel Cleric ",
 			"collector_number": "115",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/115_Sky-Scar Angel.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/115_Sky-Scar Angel.jpg"
 			}
 		},
 		{
@@ -2083,7 +2084,7 @@
 			"type": "Creature — Cleric Warlock ",
 			"collector_number": "116",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/116_Students of Rememberance.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/116_Students of Rememberance.jpg"
 			}
 		},
 		{
@@ -2093,7 +2094,7 @@
 			"type": "Artifact",
 			"collector_number": "118",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/118_Throat of Remnants.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/118_Throat of Remnants.jpg"
 			}
 		},
 		{
@@ -2103,7 +2104,7 @@
 			"type": "Instant",
 			"collector_number": "123",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/123_Callidate Invocation.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/123_Callidate Invocation.jpg"
 			}
 		},
 		{
@@ -2113,7 +2114,7 @@
 			"type": "Creature — Vampire Cleric Rogue ",
 			"collector_number": "126",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/126_Cyprian Sacristan.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/126_Cyprian Sacristan.jpg"
 			}
 		},
 		{
@@ -2123,7 +2124,7 @@
 			"type": "Creature — Elemental ",
 			"collector_number": "127",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/127_Enflamed Caligine.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/127_Enflamed Caligine.jpg"
 			}
 		},
 		{
@@ -2133,7 +2134,7 @@
 			"type": "Creature — Human Wizard ",
 			"collector_number": "128",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/128_Entry Consultant.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/128_Entry Consultant.jpg"
 			}
 		},
 		{
@@ -2143,7 +2144,7 @@
 			"type": "Enchantment",
 			"collector_number": "129",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/129_Forces of Opening.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/129_Forces of Opening.jpg"
 			}
 		},
 		{
@@ -2153,7 +2154,7 @@
 			"type": "Legendary Artifact Creature — Cleric Wall ",
 			"collector_number": "131",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/131_Ghirbi, the Gatekeeper.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/131_Ghirbi, the Gatekeeper.jpg"
 			}
 		},
 		{
@@ -2163,7 +2164,7 @@
 			"type": "Creature — Elemental ",
 			"collector_number": "134",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/134_Ironsmoke Caligine.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/134_Ironsmoke Caligine.jpg"
 			}
 		},
 		{
@@ -2173,7 +2174,7 @@
 			"type": "Creature — Elemental Cleric ",
 			"collector_number": "138",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/138_Malleary Augmenter.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/138_Malleary Augmenter.jpg"
 			}
 		},
 		{
@@ -2183,7 +2184,7 @@
 			"type": "Creature — Human Cleric Artificer ",
 			"collector_number": "139",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/139_Malleary Novice.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/139_Malleary Novice.jpg"
 			}
 		},
 		{
@@ -2193,7 +2194,7 @@
 			"type": "Creature — Elemental Cleric ",
 			"collector_number": "140",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/140_Malleary Reforged.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/140_Malleary Reforged.jpg"
 			}
 		},
 		{
@@ -2203,7 +2204,7 @@
 			"type": "Creature — Elemental Knight ",
 			"collector_number": "141",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/141_Malleary Seer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/141_Malleary Seer.jpg"
 			}
 		},
 		{
@@ -2213,7 +2214,7 @@
 			"type": "Creature — Shapeshifter Cleric Artificer ",
 			"collector_number": "142",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/142_Malleary Smelter.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/142_Malleary Smelter.jpg"
 			}
 		},
 		{
@@ -2223,7 +2224,7 @@
 			"type": "Creature — Human Rogue ",
 			"collector_number": "145",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/145_Opener of Glass.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/145_Opener of Glass.jpg"
 			}
 		},
 		{
@@ -2233,7 +2234,7 @@
 			"type": "Creature — Cat Cleric Shaman ",
 			"collector_number": "149",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/149_Rite Flamecaller.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/149_Rite Flamecaller.jpg"
 			}
 		},
 		{
@@ -2243,7 +2244,7 @@
 			"type": "Creature — Elemental Wolf ",
 			"collector_number": "152",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/152_Smoldering Pack.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/152_Smoldering Pack.jpg"
 			}
 		},
 		{
@@ -2253,7 +2254,7 @@
 			"type": "Creature — Vampire Cleric ",
 			"collector_number": "156",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/156_Tattered Cyprian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/156_Tattered Cyprian.jpg"
 			}
 		},
 		{
@@ -2263,7 +2264,7 @@
 			"type": "Sorcery",
 			"collector_number": "157",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/157_Traitorous Blood.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/157_Traitorous Blood.jpg"
 			}
 		},
 		{
@@ -2273,7 +2274,7 @@
 			"type": "Creature — Shapeshifter Cleric ",
 			"collector_number": "160",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/160_Wandering Unmaker.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/160_Wandering Unmaker.jpg"
 			}
 		},
 		{
@@ -2283,7 +2284,7 @@
 			"type": "Creature — Insect Warrior ",
 			"collector_number": "162",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/162_Carapace Crusader.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/162_Carapace Crusader.jpg"
 			}
 		},
 		{
@@ -2293,7 +2294,7 @@
 			"type": "Creature — Insect Cleric ",
 			"collector_number": "163",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/163_Carapace Disciple.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/163_Carapace Disciple.jpg"
 			}
 		},
 		{
@@ -2303,7 +2304,7 @@
 			"type": "Creature — Insect Spider Cleric ",
 			"collector_number": "164",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/164_Carapace Threadbearer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/164_Carapace Threadbearer.jpg"
 			}
 		},
 		{
@@ -2313,7 +2314,7 @@
 			"type": "Creature — Insect Cleric ",
 			"collector_number": "165",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/165_Carapace Voyager.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/165_Carapace Voyager.jpg"
 			}
 		},
 		{
@@ -2323,7 +2324,7 @@
 			"type": "Creature — Insect ",
 			"collector_number": "166",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/166_Carapace Youngling.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/166_Carapace Youngling.jpg"
 			}
 		},
 		{
@@ -2333,7 +2334,7 @@
 			"type": "Creature — Zombie ",
 			"collector_number": "167",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/167_Cartographed Risen.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/167_Cartographed Risen.jpg"
 			}
 		},
 		{
@@ -2343,7 +2344,7 @@
 			"type": "Creature — Cat Warrior ",
 			"collector_number": "169",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/169_Debilitated Tragulari.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/169_Debilitated Tragulari.jpg"
 			}
 		},
 		{
@@ -2353,7 +2354,7 @@
 			"type": "Creature — Insect ",
 			"collector_number": "172",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/172_Flesh Weaver.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/172_Flesh Weaver.jpg"
 			}
 		},
 		{
@@ -2363,7 +2364,7 @@
 			"type": "Instant",
 			"collector_number": "177",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/177_The Old Forms.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/177_The Old Forms.jpg"
 			}
 		},
 		{
@@ -2373,7 +2374,7 @@
 			"type": "Enchantment — Aura ",
 			"collector_number": "178",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/178_Ordeal of Defiance.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/178_Ordeal of Defiance.jpg"
 			}
 		},
 		{
@@ -2383,7 +2384,7 @@
 			"type": "Creature — Wolf Berserker ",
 			"collector_number": "180",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/180_Ravenous Unmaker.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/180_Ravenous Unmaker.jpg"
 			}
 		},
 		{
@@ -2393,7 +2394,7 @@
 			"type": "Creature — Insect Cleric ",
 			"collector_number": "168",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/168_Dappled Wing-Clippers.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/168_Dappled Wing-Clippers.jpg"
 			}
 		},
 		{
@@ -2403,7 +2404,7 @@
 			"type": "Sorcery",
 			"collector_number": "171",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/171_Dyad's Dance.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/171_Dyad's Dance.jpg"
 			}
 		},
 		{
@@ -2413,7 +2414,7 @@
 			"type": "Creature — Serpent Warrior ",
 			"collector_number": "182",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/182_Seven-Coil Ambusher.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/182_Seven-Coil Ambusher.jpg"
 			}
 		},
 		{
@@ -2423,7 +2424,7 @@
 			"type": "Creature — Wolf Spirit ",
 			"collector_number": "184",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/184_Splinter-Blossom.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/184_Splinter-Blossom.jpg"
 			}
 		},
 		{
@@ -2433,7 +2434,7 @@
 			"type": "Creature — Cat Cleric Monk ",
 			"collector_number": "179",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/179_Pupil of Defiance.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/179_Pupil of Defiance.jpg"
 			}
 		},
 		{
@@ -2443,7 +2444,7 @@
 			"type": "Sorcery",
 			"collector_number": "192",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/192_Wildest Dreams.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/192_Wildest Dreams.jpg"
 			}
 		},
 		{
@@ -2453,7 +2454,7 @@
 			"type": "Creature — Spirit Warrior Cleric ",
 			"collector_number": "186",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/186_Thyrsine Hunter.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/186_Thyrsine Hunter.jpg"
 			}
 		},
 		{
@@ -2463,7 +2464,7 @@
 			"type": "Creature — Spirit Cleric Scout ",
 			"collector_number": "188",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/188_Tireless Recruiter.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/188_Tireless Recruiter.jpg"
 			}
 		},
 		{
@@ -2473,7 +2474,7 @@
 			"type": "Sorcery",
 			"collector_number": "189",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/189_Unceasing Initiation.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/189_Unceasing Initiation.jpg"
 			}
 		},
 		{
@@ -2483,7 +2484,7 @@
 			"type": "Enchantment",
 			"collector_number": "191",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/191_Way to the Wood.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/191_Way to the Wood.jpg"
 			}
 		},
 		{
@@ -2493,7 +2494,7 @@
 			"type": "Creature — Wolf Spirit ",
 			"collector_number": "194",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/194_Wolf-Splinter.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/194_Wolf-Splinter.jpg"
 			}
 		},
 		{
@@ -2503,7 +2504,7 @@
 			"type": "Creature — Wolf Demon Horror ",
 			"collector_number": "196",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/196_Wood's Devourer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/196_Wood's Devourer.jpg"
 			}
 		},
 		{
@@ -2513,7 +2514,7 @@
 			"type": "Creature — Treefolk ",
 			"collector_number": "197",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/197_Yew Colossus.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/197_Yew Colossus.jpg"
 			}
 		},
 		{
@@ -2523,7 +2524,7 @@
 			"type": "Creature — Treefolk Beast ",
 			"collector_number": "185",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/185_Territorial Yew-Maw.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/185_Territorial Yew-Maw.jpg"
 			}
 		},
 		{
@@ -2533,7 +2534,7 @@
 			"type": "Instant",
 			"collector_number": "229",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/229_Study the Histories.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/229_Study the Histories.jpg"
 			}
 		},
 		{
@@ -2543,7 +2544,7 @@
 			"type": "Legendary Creature — Hydra Serpent ",
 			"collector_number": "226",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/226_Seven-Coil's Successor.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/226_Seven-Coil's Successor.jpg"
 			}
 		},
 		{
@@ -2553,7 +2554,7 @@
 			"type": "Instant",
 			"collector_number": "231",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/231_Teferi's Banishment.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/231_Teferi's Banishment.jpg"
 			}
 		},
 		{
@@ -2563,7 +2564,7 @@
 			"type": "Sorcery",
 			"collector_number": "200",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/200_Breaching Vespera.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/200_Breaching Vespera.jpg"
 			}
 		},
 		{
@@ -2573,7 +2574,7 @@
 			"type": "Creature — Insect Warrior ",
 			"collector_number": "201",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/201_Carapace Shell-Burster.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/201_Carapace Shell-Burster.jpg"
 			}
 		},
 		{
@@ -2583,7 +2584,7 @@
 			"type": "Creature — Vampire Rogue ",
 			"collector_number": "203",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/203_Drowning Cyprian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/203_Drowning Cyprian.jpg"
 			}
 		},
 		{
@@ -2593,7 +2594,7 @@
 			"type": "Instant",
 			"collector_number": "209",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/209_Horomachist Ending.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/209_Horomachist Ending.jpg"
 			}
 		},
 		{
@@ -2603,7 +2604,7 @@
 			"type": "Legendary Planeswalker — Isidra ",
 			"collector_number": "210",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/210_Isidra, Foreign Goddess.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/210_Isidra, Foreign Goddess.jpg"
 			}
 		},
 		{
@@ -2613,7 +2614,7 @@
 			"type": "Creature — Snake ",
 			"collector_number": "213",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/213_Lorescale Coatl.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/213_Lorescale Coatl.jpg"
 			}
 		},
 		{
@@ -2623,7 +2624,7 @@
 			"type": "Creature — Spirit Cleric ",
 			"collector_number": "214",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/214_Malleary Phantasm.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/214_Malleary Phantasm.jpg"
 			}
 		},
 		{
@@ -2633,7 +2634,7 @@
 			"type": "Creature — Bear Horror ",
 			"collector_number": "221",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/221_Percussigant.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/221_Percussigant.jpg"
 			}
 		},
 		{
@@ -2643,7 +2644,7 @@
 			"type": "Artifact",
 			"collector_number": "222",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/222_Places of Peace.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/222_Places of Peace.jpg"
 			}
 		},
 		{
@@ -2653,7 +2654,7 @@
 			"type": "Creature — Bird ",
 			"collector_number": "225",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/225_Roost Augur.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/225_Roost Augur.jpg"
 			}
 		},
 		{
@@ -2663,7 +2664,7 @@
 			"type": "Creature — Human Shaman Cleric ",
 			"collector_number": "227",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/227_Sister of Venoms.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/227_Sister of Venoms.jpg"
 			}
 		},
 		{
@@ -2673,7 +2674,7 @@
 			"type": "Creature — Angel ",
 			"collector_number": "234",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/234_Vengeful Restorer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/234_Vengeful Restorer.jpg"
 			}
 		},
 		{
@@ -2683,7 +2684,7 @@
 			"type": "Enchantment",
 			"collector_number": "238",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/238_Wound the World.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/238_Wound the World.jpg"
 			}
 		},
 		{
@@ -2693,7 +2694,7 @@
 			"type": "Artifact — Equipment ",
 			"collector_number": "239",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/239_Covert Cloak.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/239_Covert Cloak.jpg"
 			}
 		},
 		{
@@ -2703,7 +2704,7 @@
 			"type": "Land",
 			"collector_number": "246",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/246_Field of Ruin.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/246_Field of Ruin.jpg"
 			}
 		},
 		{
@@ -2713,7 +2714,7 @@
 			"type": "Land — Sanctuary ",
 			"collector_number": "248",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/248_Sanctuary of Mysteries.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/248_Sanctuary of Mysteries.jpg"
 			}
 		},
 		{
@@ -2723,7 +2724,7 @@
 			"type": "Token Creature — Cleric ",
 			"collector_number": "1",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/1_PTN Cleric Token.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/1_PTN Cleric Token.jpg"
 			}
 		},
 		{
@@ -2733,7 +2734,7 @@
 			"type": "Token Creature — God Horror ",
 			"collector_number": "3",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/3_God Horror Token.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/3_God Horror Token.jpg"
 			}
 		},
 		{
@@ -2743,7 +2744,7 @@
 			"type": "Creature — Human Insect Cleric ",
 			"collector_number": "84",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/84_Carapace Ancestor.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/84_Carapace Ancestor.jpg"
 			}
 		},
 		{
@@ -2753,7 +2754,7 @@
 			"type": "Creature — Angel Cleric ",
 			"collector_number": "117",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/117_Tenacious Illuminator.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/117_Tenacious Illuminator.jpg"
 			}
 		},
 		{
@@ -2763,511 +2764,510 @@
 			"type": "Creature — Horror ",
 			"collector_number": "176",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/176_Musician's Remnant.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/176_Musician's Remnant.jpg"
 			}
-		},
-		]
-	[RareSlot(1)]
-	2 Mother of Ants
-		2 The Elegiast
-		2 The Sun-In-Rags
-		2 The Vagabond
-		2 Brought Back
-		2 Legacy of Amber
-		2 Legacy of the Wheel
-		2 Legacy of Tides
-		2 Legacy of Flint
-		2 Legacy of Coils
-		2 Rite of Twins' Union
-		2 The Museum of Worms
-		2 Skintwist
-		2 Carnal Thirst
-		2 Life's Legacy
-		2 Ezeem, the Second Thirstly
-		2 King Crucible
-		2 True Blood of Saint Janus
-		2 House of the Moon
-		2 Planar Lockdown
-		2 Angel of the True Sun
-		2 Crowned Ghoul
-		2 The Lionsmith
-		2 The Knotwingknot
-		2 The Ring-Yew
-		2 The Watchman
-		2 Reshaping Phoenix
-		2 The Geminiad
-		2 Relic Vial
-		2 Glassgarden Watcheye
-		2 Apostle Entheate
-		2 Cat o'lic Priests
-		2 Merciless Illumination
-		2 Devoured Messenger
-		2 Painted Distorter
-		2 Ophidian Soul
-		2 Seven-Coil's Scion
-		2 Dream Whisperer
-		2 Evening Isles Gravemouth
-		2 Nowhere Stygian
-		2 Rite of Watchman's Sorrow
-		2 Forces of Opening
-		2 Ghirbi, the Gatekeeper
-		2 Ironsmoke Caligine
-		2 Malleary Augmenter
-		2 Carapace Voyager
-		2 Dyad's Dance
-		2 Wildest Dreams
-		2 Territorial Yew-Maw
-		2 Seven-Coil's Successor
-		2 Musician's Remnant
-		1 The Horned-Axe
-		1 The Crowned Growth
-		1 The Forge of Days
-		1 The Mirror-Queen
-		1 The Red Grail
-		1 The Thunderskin
-		1 The Witch-and-Sister
-		1 The Wolf Divided
-		1 The Frangiclave
-		1 Rite Intercalate
-		1 The Moth
-		1 The Chiliarch
-		1 Glorious Enforcer
-		1 Teferi's Banishment
-		1 Breaching Vespera
-		1 Isidra, Foreign Goddess
-		[UncommonSlot(3)]
-	9 Mirrored Wolf
-		9 Banisher Priest
-		9 Defacement
-		9 Nowhere Inhabits
-		9 Dry-Soul Angel
-		9 Flesh Asunder
-		9 Ignus Rites
-		9 Ascent from Snakes
-		9 The Vitulation
-		9 Foul Alteration
-		9 Unlucky Witness
-		9 Moth's Yearning
-		9 Spirit of Defiance
-		9 Ragged Sun's Angel
-		9 Sun-Scorched Tempering
-		9 Skin's Division
-		9 Corrivality
-		9 Misguiding Lighthouse
-		9 Rarefied Illuminator
-		9 Sunshard Protector
-		9 Preemptive Purge
-		9 Acolyte of Agony
-		9 Forged Conflagration
-		9 Nowhere Razer
-		9 Ritual Daggar
-		9 Nowhere Deathlord
-		9 Nowhere Dreadsteed
-		9 Flames of Emnity
-		9 The Allure's Light
-		9 The Sky, The Soul
-		9 Guardian Percussigant
-		9 Horomachist Sacrifice
-		9 Root of Mercy
-		9 Seven-Coil Glider
-		9 Expose Mortality
-		9 Eyes Everywhere
-		9 Map's Edge Monstrosity
-		9 Moonlit Augury
-		9 Nowhere Soul Collector
-		9 Opener of Realities
-		9 Roost Nyctodromist
-		9 Silent Drowner
-		9 Evening Isles Skycomber
-		9 Carapace Guardian
-		9 Cyprian Haemomancer
-		9 Monument of Rags
-		9 Scarring Servitude
-		9 Students of Rememberance
-		9 Throat of Remnants
-		9 Cyprian Sacristan
-		9 Malleary Reforged
-		9 Malleary Smelter
-		9 Opener of Glass
-		9 Smoldering Pack
-		9 Carapace Youngling
-		9 Debilitated Tragulari
-		9 Flesh Weaver
-		9 Ordeal of Defiance
-		9 Ravenous Unmaker
-		9 Dappled Wing-Clippers
-		9 Splinter-Blossom
-		9 Thyrsine Hunter
-		9 Tireless Recruiter
-		9 Yew Colossus
-		9 Study the Histories
-		9 Carapace Shell-Burster
-		9 Drowning Cyprian
-		9 Horomachist Ending
-		9 Lorescale Coatl
-		9 Malleary Phantasm
-		9 Percussigant
-		9 Places of Peace
-		9 Roost Augur
-		9 Sister of Venoms
-		9 Vengeful Restorer
-		9 Wound the World
-		9 Field of Ruin
-		9 Sanctuary of Mysteries
-		9 Carapace Ancestor
-		9 Tenacious Illuminator
-		[CommonSlot(10)]
-	30 Implant the Seeds
-		30 Glassgarden Prophet
-		30 Dreamway Key
-		30 Perfect Stillness
-		30 Sensation Ascender
-		30 Wood's Deceiver
-		30 Blazing Crescendo
-		30 Lessons of Strife
-		30 Map's Edge Explorer
-		30 Thyrsine Tracker
-		30 Society Headquarters
-		30 Burgeoning Risen
-		30 Noon Delver Serpent
-		30 Bars Across the Sun
-		30 Broken Sun-Servant
-		30 Forge Secretkeeper
-		30 Glass Guardian
-		30 Iron Verdict
-		30 Subverted Cyprian
-		30 Verse Illuminate
-		30 Verse Open
-		30 Verse Change
-		30 Verse Reshape
-		30 Verse Aggress
-		30 Names of the Dead
-		30 Nowhere Illuminator
-		30 Prison of Glass
-		30 Sea's Feasting
-		30 Seven-Coil Shipbreaker
-		30 Carapace Shearer
-		30 Herald of Loss
-		30 Stained Silver
-		30 Subvert the Light
-		30 Subverting Insurgent
-		30 Extract Secrets
-		30 Ignite Fervor
-		30 Lended Light
-		30 Unscarred Wolf
-		30 Fucine Translator
-		30 Forgotten Tongues
-		30 Take Prisoners
-		30 Lost Seraph
-		30 Paradoxical Inquiry
-		30 Rite of Crucible Soul
-		30 Seven-Coil Invocation
-		30 Rite of Beast's Division
-		30 Discover the Stone Gods
-		30 Noonstone Amulet
-		30 Wildwood Containment
-		30 Wolven Hatred
-		30 Open the Self
-		30 Bringer of Glory
-		30 Guided Crusader
-		30 Cindered Tally
-		30 Escape into the Night
-		30 High Cyprian
-		30 Raw Prophet
-		30 Seven-Coiled Strength
-		30 Ring-Yew's Chosen
-		30 Roost Messengers
-		30 Echoing Charger
-		30 Glassgarden Elder
-		30 Glassgarden Seer
-		30 Mystical Trail
-		30 Pulsing Vitality
-		30 Augury Raven
-		30 Dreamway Imposter
-		30 Nowhere Wormhost
-		30 River Drowner
-		30 Seaside Smuggler
-		30 Twins' Guardian
-		30 Veil of Dreams
-		30 White Reaper
-		30 Cyprian Ophiomancer
-		30 Carapace Scavenger
-		30 Despairing Devotee
-		30 Escape from Nowhere
-		30 Gloom Sower
-		30 Indulgent Cyprian
-		30 Nowhere Ascender
-		30 Sky-Scar Angel
-		30 Callidate Invocation
-		30 Enflamed Caligine
-		30 Entry Consultant
-		30 Malleary Novice
-		30 Malleary Seer
-		30 Rite Flamecaller
-		30 Tattered Cyprian
-		30 Traitorous Blood
-		30 Wandering Unmaker
-		30 Carapace Crusader
-		30 Carapace Disciple
-		30 Carapace Threadbearer
-		30 Cartographed Risen
-		30 The Old Forms
-		30 Seven-Coil Ambusher
-		30 Pupil of Defiance
-		30 Unceasing Initiation
-		30 Way to the Wood
-		30 Wolf-Splinter
-		30 Wood's Devourer
-		30 Covert Cloak
-		[WildcardSlot(1)]
-	10 The Horned-Axe
-	10 The Crowned Growth
-	10 Implant the Seeds
-	10 Mother of Ants
-	10 The Elegiast
-	10 The Forge of Days
-	10 The Mirror-Queen
-	10 The Red Grail
-	10 The Sun-In-Rags
-	10 The Thunderskin
-	10 The Vagabond
-	10 The Witch-and-Sister
-	10 The Wolf Divided
-	10 The Frangiclave
-	10 Glassgarden Prophet
-	10 Dreamway Key
-	10 Perfect Stillness
-	10 Sensation Ascender
-	10 Wood's Deceiver
-	10 Blazing Crescendo
-	10 Lessons of Strife
-	10 Map's Edge Explorer
-	10 Thyrsine Tracker
-	10 Society Headquarters
-	10 Burgeoning Risen
-	10 Mirrored Wolf
-	10 Noon Delver Serpent
-	10 Banisher Priest
-	10 Bars Across the Sun
-	10 Broken Sun-Servant
-	10 Brought Back
-	10 Defacement
-	10 Forge Secretkeeper
-	10 Glass Guardian
-	10 Iron Verdict
-	10 Legacy of Amber
-	10 Legacy of the Wheel
-	10 Legacy of Tides
-	10 Legacy of Flint
-	10 Legacy of Coils
-	10 Subverted Cyprian
-	10 Verse Illuminate
-	10 Verse Open
-	10 Verse Change
-	10 Verse Reshape
-	10 Verse Aggress
-	10 Nowhere Inhabits
-	10 Names of the Dead
-	10 Nowhere Illuminator
-	10 Prison of Glass
-	10 Rite of Twins' Union
-	10 Sea's Feasting
-	10 Seven-Coil Shipbreaker
-	10 Carapace Shearer
-	10 Dry-Soul Angel
-	10 Flesh Asunder
-	10 Herald of Loss
-	10 The Museum of Worms
-	10 Skintwist
-	10 Carnal Thirst
-	10 Ignus Rites
-	10 Ascent from Snakes
-	10 The Vitulation
-	10 Rite Intercalate
-	10 Foul Alteration
-	10 Stained Silver
-	10 Subvert the Light
-	10 Subverting Insurgent
-	10 Unlucky Witness
-	10 Life's Legacy
-	10 Ezeem, the Second Thirstly
-	10 King Crucible
-	10 The Moth
-	10 Moth's Yearning
-	10 Spirit of Defiance
-	10 True Blood of Saint Janus
-	10 House of the Moon
-	10 Extract Secrets
-	10 Ignite Fervor
-	10 Lended Light
-	10 Unscarred Wolf
-	10 Fucine Translator
-	10 Forgotten Tongues
-	10 Take Prisoners
-	10 Ragged Sun's Angel
-	10 Sun-Scorched Tempering
-	10 Skin's Division
-	10 Corrivality
-	10 Lost Seraph
-	10 Misguiding Lighthouse
-	10 Planar Lockdown
-	10 Angel of the True Sun
-	10 Rarefied Illuminator
-	10 Sunshard Protector
-	10 Crowned Ghoul
-	10 Paradoxical Inquiry
-	10 Rite of Crucible Soul
-	10 Seven-Coil Invocation
-	10 Rite of Beast's Division
-	10 The Chiliarch
-	10 The Lionsmith
-	10 The Knotwingknot
-	10 The Ring-Yew
-	10 The Watchman
-	10 Preemptive Purge
-	10 Reshaping Phoenix
-	10 Acolyte of Agony
-	10 The Geminiad
-	10 Discover the Stone Gods
-	10 Noonstone Amulet
-	10 Forged Conflagration
-	10 Nowhere Razer
-	10 Wildwood Containment
-	10 Wolven Hatred
-	10 Open the Self
-	10 Bringer of Glory
-	10 Relic Vial
-	10 Ritual Daggar
-	10 Nowhere Deathlord
-	10 Nowhere Dreadsteed
-	10 Flames of Emnity
-	10 Guided Crusader
-	10 Cindered Tally
-	10 Escape into the Night
-	10 High Cyprian
-	10 Raw Prophet
-	10 Seven-Coiled Strength
-	10 Ring-Yew's Chosen
-	10 The Allure's Light
-	10 The Sky, The Soul
-	10 Roost Messengers
-	10 Glassgarden Watcheye
-	10 Guardian Percussigant
-	10 Apostle Entheate
-	10 Cat o'lic Priests
-	10 Echoing Charger
-	10 Glassgarden Elder
-	10 Glassgarden Seer
-	10 Glorious Enforcer
-	10 Horomachist Sacrifice
-	10 Merciless Illumination
-	10 Mystical Trail
-	10 Pulsing Vitality
-	10 Root of Mercy
-	10 Seven-Coil Glider
-	10 Augury Raven
-	10 Devoured Messenger
-	10 Expose Mortality
-	10 Eyes Everywhere
-	10 Painted Distorter
-	10 Map's Edge Monstrosity
-	10 Moonlit Augury
-	10 Dreamway Imposter
-	10 Nowhere Soul Collector
-	10 Nowhere Wormhost
-	10 Opener of Realities
-	10 Ophidian Soul
-	10 River Drowner
-	10 Roost Nyctodromist
-	10 Seaside Smuggler
-	10 Seven-Coil's Scion
-	10 Silent Drowner
-	10 Evening Isles Skycomber
-	10 Twins' Guardian
-	10 Veil of Dreams
-	10 White Reaper
-	10 Cyprian Ophiomancer
-	10 Dream Whisperer
-	10 Carapace Guardian
-	10 Carapace Scavenger
-	10 Cyprian Haemomancer
-	10 Despairing Devotee
-	10 Escape from Nowhere
-	10 Gloom Sower
-	10 Evening Isles Gravemouth
-	10 Indulgent Cyprian
-	10 Monument of Rags
-	10 Nowhere Ascender
-	10 Nowhere Stygian
-	10 Rite of Watchman's Sorrow
-	10 Scarring Servitude
-	10 Sky-Scar Angel
-	10 Students of Rememberance
-	10 Throat of Remnants
-	10 Callidate Invocation
-	10 Cyprian Sacristan
-	10 Enflamed Caligine
-	10 Entry Consultant
-	10 Forces of Opening
-	10 Ghirbi, the Gatekeeper
-	10 Ironsmoke Caligine
-	10 Malleary Augmenter
-	10 Malleary Novice
-	10 Malleary Reforged
-	10 Malleary Seer
-	10 Malleary Smelter
-	10 Opener of Glass
-	10 Rite Flamecaller
-	10 Smoldering Pack
-	10 Tattered Cyprian
-	10 Traitorous Blood
-	10 Wandering Unmaker
-	10 Carapace Crusader
-	10 Carapace Disciple
-	10 Carapace Threadbearer
-	10 Carapace Voyager
-	10 Carapace Youngling
-	10 Cartographed Risen
-	10 Debilitated Tragulari
-	10 Flesh Weaver
-	10 The Old Forms
-	10 Ordeal of Defiance
-	10 Ravenous Unmaker
-	10 Dappled Wing-Clippers
-	10 Dyad's Dance
-	10 Seven-Coil Ambusher
-	10 Splinter-Blossom
-	10 Pupil of Defiance
-	10 Wildest Dreams
-	10 Thyrsine Hunter
-	10 Tireless Recruiter
-	10 Unceasing Initiation
-	10 Way to the Wood
-	10 Wolf-Splinter
-	10 Wood's Devourer
-	10 Yew Colossus
-	10 Territorial Yew-Maw
-	10 Study the Histories
-	10 Seven-Coil's Successor
-	10 Teferi's Banishment
-	10 Breaching Vespera
-	10 Carapace Shell-Burster
-	10 Drowning Cyprian
-	10 Horomachist Ending
-	10 Isidra, Foreign Goddess
-	10 Lorescale Coatl
-	10 Malleary Phantasm
-	10 Percussigant
-	10 Places of Peace
-	10 Roost Augur
-	10 Sister of Venoms
-	10 Vengeful Restorer
-	10 Wound the World
-	10 Covert Cloak
-	10 Field of Ruin
-	10 Sanctuary of Mysteries
-	10 Carapace Ancestor
-	10 Tenacious Illuminator
-	10 Musician's Remnant
-	[LandSlot(1)]
-	
+		}
+	]
+[RareSlot(1)]
+2 Mother of Ants
+2 The Elegiast
+2 The Sun-In-Rags
+2 The Vagabond
+2 Brought Back
+2 Legacy of Amber
+2 Legacy of the Wheel
+2 Legacy of Tides
+2 Legacy of Flint
+2 Legacy of Coils
+2 Rite of Twins' Union
+2 The Museum of Worms
+2 Skintwist
+2 Carnal Thirst
+2 Life's Legacy
+2 Ezeem, the Second Thirstly
+2 King Crucible
+2 True Blood of Saint Janus
+2 House of the Moon
+2 Planar Lockdown
+2 Angel of the True Sun
+2 Crowned Ghoul
+2 The Lionsmith
+2 The Knotwingknot
+2 The Ring-Yew
+2 The Watchman
+2 Reshaping Phoenix
+2 The Geminiad
+2 Relic Vial
+2 Glassgarden Watcheye
+2 Apostle Entheate
+2 Cat o'lic Priests
+2 Merciless Illumination
+2 Devoured Messenger
+2 Painted Distorter
+2 Ophidian Soul
+2 Seven-Coil's Scion
+2 Dream Whisperer
+2 Evening Isles Gravemouth
+2 Nowhere Stygian
+2 Rite of Watchman's Sorrow
+2 Forces of Opening
+2 Ghirbi, the Gatekeeper
+2 Ironsmoke Caligine
+2 Malleary Augmenter
+2 Carapace Voyager
+2 Dyad's Dance
+2 Wildest Dreams
+2 Territorial Yew-Maw
+2 Seven-Coil's Successor
+2 Musician's Remnant
+1 The Horned-Axe
+1 The Crowned Growth
+1 The Forge of Days
+1 The Mirror-Queen
+1 The Red Grail
+1 The Thunderskin
+1 The Witch-and-Sister
+1 The Wolf Divided
+1 The Frangiclave
+1 Rite Intercalate
+1 The Moth
+1 The Chiliarch
+1 Glorious Enforcer
+1 Teferi's Banishment
+1 Breaching Vespera
+1 Isidra, Foreign Goddess
+[UncommonSlot(3)]
+9 Mirrored Wolf
+9 Banisher Priest
+9 Defacement
+9 Nowhere Inhabits
+9 Dry-Soul Angel
+9 Flesh Asunder
+9 Ignus Rites
+9 Ascent from Snakes
+9 The Vitulation
+9 Foul Alteration
+9 Unlucky Witness
+9 Moth's Yearning
+9 Spirit of Defiance
+9 Ragged Sun's Angel
+9 Sun-Scorched Tempering
+9 Skin's Division
+9 Corrivality
+9 Misguiding Lighthouse
+9 Rarefied Illuminator
+9 Sunshard Protector
+9 Preemptive Purge
+9 Acolyte of Agony
+9 Forged Conflagration
+9 Nowhere Razer
+9 Ritual Daggar
+9 Nowhere Deathlord
+9 Nowhere Dreadsteed
+9 Flames of Emnity
+9 The Allure's Light
+9 The Sky, The Soul
+9 Guardian Percussigant
+9 Horomachist Sacrifice
+9 Root of Mercy
+9 Seven-Coil Glider
+9 Expose Mortality
+9 Eyes Everywhere
+9 Map's Edge Monstrosity
+9 Moonlit Augury
+9 Nowhere Soul Collector
+9 Opener of Realities
+9 Roost Nyctodromist
+9 Silent Drowner
+9 Evening Isles Skycomber
+9 Carapace Guardian
+9 Cyprian Haemomancer
+9 Monument of Rags
+9 Scarring Servitude
+9 Students of Rememberance
+9 Throat of Remnants
+9 Cyprian Sacristan
+9 Malleary Reforged
+9 Malleary Smelter
+9 Opener of Glass
+9 Smoldering Pack
+9 Carapace Youngling
+9 Debilitated Tragulari
+9 Flesh Weaver
+9 Ordeal of Defiance
+9 Ravenous Unmaker
+9 Dappled Wing-Clippers
+9 Splinter-Blossom
+9 Thyrsine Hunter
+9 Tireless Recruiter
+9 Yew Colossus
+9 Study the Histories
+9 Carapace Shell-Burster
+9 Drowning Cyprian
+9 Horomachist Ending
+9 Lorescale Coatl
+9 Malleary Phantasm
+9 Percussigant
+9 Places of Peace
+9 Roost Augur
+9 Sister of Venoms
+9 Vengeful Restorer
+9 Wound the World
+9 Field of Ruin
+9 Sanctuary of Mysteries
+9 Carapace Ancestor
+9 Tenacious Illuminator
+[CommonSlot(10)]
+30 Implant the Seeds
+30 Glassgarden Prophet
+30 Dreamway Key
+30 Perfect Stillness
+30 Sensation Ascender
+30 Wood's Deceiver
+30 Blazing Crescendo
+30 Lessons of Strife
+30 Map's Edge Explorer
+30 Thyrsine Tracker
+30 Society Headquarters
+30 Burgeoning Risen
+30 Noon Delver Serpent
+30 Bars Across the Sun
+30 Broken Sun-Servant
+30 Forge Secretkeeper
+30 Glass Guardian
+30 Iron Verdict
+30 Subverted Cyprian
+30 Verse Illuminate
+30 Verse Open
+30 Verse Change
+30 Verse Reshape
+30 Verse Aggress
+30 Names of the Dead
+30 Nowhere Illuminator
+30 Prison of Glass
+30 Sea's Feasting
+30 Seven-Coil Shipbreaker
+30 Carapace Shearer
+30 Herald of Loss
+30 Stained Silver
+30 Subvert the Light
+30 Subverting Insurgent
+30 Extract Secrets
+30 Ignite Fervor
+30 Lended Light
+30 Unscarred Wolf
+30 Fucine Translator
+30 Forgotten Tongues
+30 Take Prisoners
+30 Lost Seraph
+30 Paradoxical Inquiry
+30 Rite of Crucible Soul
+30 Seven-Coil Invocation
+30 Rite of Beast's Division
+30 Discover the Stone Gods
+30 Noonstone Amulet
+30 Wildwood Containment
+30 Wolven Hatred
+30 Open the Self
+30 Bringer of Glory
+30 Guided Crusader
+30 Cindered Tally
+30 Escape into the Night
+30 High Cyprian
+30 Raw Prophet
+30 Seven-Coiled Strength
+30 Ring-Yew's Chosen
+30 Roost Messengers
+30 Echoing Charger
+30 Glassgarden Elder
+30 Glassgarden Seer
+30 Mystical Trail
+30 Pulsing Vitality
+30 Augury Raven
+30 Dreamway Imposter
+30 Nowhere Wormhost
+30 River Drowner
+30 Seaside Smuggler
+30 Twins' Guardian
+30 Veil of Dreams
+30 White Reaper
+30 Cyprian Ophiomancer
+30 Carapace Scavenger
+30 Despairing Devotee
+30 Escape from Nowhere
+30 Gloom Sower
+30 Indulgent Cyprian
+30 Nowhere Ascender
+30 Sky-Scar Angel
+30 Callidate Invocation
+30 Enflamed Caligine
+30 Entry Consultant
+30 Malleary Novice
+30 Malleary Seer
+30 Rite Flamecaller
+30 Tattered Cyprian
+30 Traitorous Blood
+30 Wandering Unmaker
+30 Carapace Crusader
+30 Carapace Disciple
+30 Carapace Threadbearer
+30 Cartographed Risen
+30 The Old Forms
+30 Seven-Coil Ambusher
+30 Pupil of Defiance
+30 Unceasing Initiation
+30 Way to the Wood
+30 Wolf-Splinter
+30 Wood's Devourer
+30 Covert Cloak
+[WildcardSlot(1)]
+10 The Horned-Axe
+10 The Crowned Growth
+10 Implant the Seeds
+10 Mother of Ants
+10 The Elegiast
+10 The Forge of Days
+10 The Mirror-Queen
+10 The Red Grail
+10 The Sun-In-Rags
+10 The Thunderskin
+10 The Vagabond
+10 The Witch-and-Sister
+10 The Wolf Divided
+10 The Frangiclave
+10 Glassgarden Prophet
+10 Dreamway Key
+10 Perfect Stillness
+10 Sensation Ascender
+10 Wood's Deceiver
+10 Blazing Crescendo
+10 Lessons of Strife
+10 Map's Edge Explorer
+10 Thyrsine Tracker
+10 Society Headquarters
+10 Burgeoning Risen
+10 Mirrored Wolf
+10 Noon Delver Serpent
+10 Banisher Priest
+10 Bars Across the Sun
+10 Broken Sun-Servant
+10 Brought Back
+10 Defacement
+10 Forge Secretkeeper
+10 Glass Guardian
+10 Iron Verdict
+10 Legacy of Amber
+10 Legacy of the Wheel
+10 Legacy of Tides
+10 Legacy of Flint
+10 Legacy of Coils
+10 Subverted Cyprian
+10 Verse Illuminate
+10 Verse Open
+10 Verse Change
+10 Verse Reshape
+10 Verse Aggress
+10 Nowhere Inhabits
+10 Names of the Dead
+10 Nowhere Illuminator
+10 Prison of Glass
+10 Rite of Twins' Union
+10 Sea's Feasting
+10 Seven-Coil Shipbreaker
+10 Carapace Shearer
+10 Dry-Soul Angel
+10 Flesh Asunder
+10 Herald of Loss
+10 The Museum of Worms
+10 Skintwist
+10 Carnal Thirst
+10 Ignus Rites
+10 Ascent from Snakes
+10 The Vitulation
+10 Rite Intercalate
+10 Foul Alteration
+10 Stained Silver
+10 Subvert the Light
+10 Subverting Insurgent
+10 Unlucky Witness
+10 Life's Legacy
+10 Ezeem, the Second Thirstly
+10 King Crucible
+10 The Moth
+10 Moth's Yearning
+10 Spirit of Defiance
+10 True Blood of Saint Janus
+10 House of the Moon
+10 Extract Secrets
+10 Ignite Fervor
+10 Lended Light
+10 Unscarred Wolf
+10 Fucine Translator
+10 Forgotten Tongues
+10 Take Prisoners
+10 Ragged Sun's Angel
+10 Sun-Scorched Tempering
+10 Skin's Division
+10 Corrivality
+10 Lost Seraph
+10 Misguiding Lighthouse
+10 Planar Lockdown
+10 Angel of the True Sun
+10 Rarefied Illuminator
+10 Sunshard Protector
+10 Crowned Ghoul
+10 Paradoxical Inquiry
+10 Rite of Crucible Soul
+10 Seven-Coil Invocation
+10 Rite of Beast's Division
+10 The Chiliarch
+10 The Lionsmith
+10 The Knotwingknot
+10 The Ring-Yew
+10 The Watchman
+10 Preemptive Purge
+10 Reshaping Phoenix
+10 Acolyte of Agony
+10 The Geminiad
+10 Discover the Stone Gods
+10 Noonstone Amulet
+10 Forged Conflagration
+10 Nowhere Razer
+10 Wildwood Containment
+10 Wolven Hatred
+10 Open the Self
+10 Bringer of Glory
+10 Relic Vial
+10 Ritual Daggar
+10 Nowhere Deathlord
+10 Nowhere Dreadsteed
+10 Flames of Emnity
+10 Guided Crusader
+10 Cindered Tally
+10 Escape into the Night
+10 High Cyprian
+10 Raw Prophet
+10 Seven-Coiled Strength
+10 Ring-Yew's Chosen
+10 The Allure's Light
+10 The Sky, The Soul
+10 Roost Messengers
+10 Glassgarden Watcheye
+10 Guardian Percussigant
+10 Apostle Entheate
+10 Cat o'lic Priests
+10 Echoing Charger
+10 Glassgarden Elder
+10 Glassgarden Seer
+10 Glorious Enforcer
+10 Horomachist Sacrifice
+10 Merciless Illumination
+10 Mystical Trail
+10 Pulsing Vitality
+10 Root of Mercy
+10 Seven-Coil Glider
+10 Augury Raven
+10 Devoured Messenger
+10 Expose Mortality
+10 Eyes Everywhere
+10 Painted Distorter
+10 Map's Edge Monstrosity
+10 Moonlit Augury
+10 Dreamway Imposter
+10 Nowhere Soul Collector
+10 Nowhere Wormhost
+10 Opener of Realities
+10 Ophidian Soul
+10 River Drowner
+10 Roost Nyctodromist
+10 Seaside Smuggler
+10 Seven-Coil's Scion
+10 Silent Drowner
+10 Evening Isles Skycomber
+10 Twins' Guardian
+10 Veil of Dreams
+10 White Reaper
+10 Cyprian Ophiomancer
+10 Dream Whisperer
+10 Carapace Guardian
+10 Carapace Scavenger
+10 Cyprian Haemomancer
+10 Despairing Devotee
+10 Escape from Nowhere
+10 Gloom Sower
+10 Evening Isles Gravemouth
+10 Indulgent Cyprian
+10 Monument of Rags
+10 Nowhere Ascender
+10 Nowhere Stygian
+10 Rite of Watchman's Sorrow
+10 Scarring Servitude
+10 Sky-Scar Angel
+10 Students of Rememberance
+10 Throat of Remnants
+10 Callidate Invocation
+10 Cyprian Sacristan
+10 Enflamed Caligine
+10 Entry Consultant
+10 Forces of Opening
+10 Ghirbi, the Gatekeeper
+10 Ironsmoke Caligine
+10 Malleary Augmenter
+10 Malleary Novice
+10 Malleary Reforged
+10 Malleary Seer
+10 Malleary Smelter
+10 Opener of Glass
+10 Rite Flamecaller
+10 Smoldering Pack
+10 Tattered Cyprian
+10 Traitorous Blood
+10 Wandering Unmaker
+10 Carapace Crusader
+10 Carapace Disciple
+10 Carapace Threadbearer
+10 Carapace Voyager
+10 Carapace Youngling
+10 Cartographed Risen
+10 Debilitated Tragulari
+10 Flesh Weaver
+10 The Old Forms
+10 Ordeal of Defiance
+10 Ravenous Unmaker
+10 Dappled Wing-Clippers
+10 Dyad's Dance
+10 Seven-Coil Ambusher
+10 Splinter-Blossom
+10 Pupil of Defiance
+10 Wildest Dreams
+10 Thyrsine Hunter
+10 Tireless Recruiter
+10 Unceasing Initiation
+10 Way to the Wood
+10 Wolf-Splinter
+10 Wood's Devourer
+10 Yew Colossus
+10 Territorial Yew-Maw
+10 Study the Histories
+10 Seven-Coil's Successor
+10 Teferi's Banishment
+10 Breaching Vespera
+10 Carapace Shell-Burster
+10 Drowning Cyprian
+10 Horomachist Ending
+10 Isidra, Foreign Goddess
+10 Lorescale Coatl
+10 Malleary Phantasm
+10 Percussigant
+10 Places of Peace
+10 Roost Augur
+10 Sister of Venoms
+10 Vengeful Restorer
+10 Wound the World
+10 Covert Cloak
+10 Field of Ruin
+10 Sanctuary of Mysteries
+10 Carapace Ancestor
+10 Tenacious Illuminator
+10 Musician's Remnant
+[LandSlot(1)]

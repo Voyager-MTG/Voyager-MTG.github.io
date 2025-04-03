@@ -619,7 +619,7 @@ def generateHTML(codes):
 <script src="https://cdn.jsdelivr.net/gh/pieroxy/lz-string/libs/lz-string.js"></script>
 
 	<script>
-		et search_results = [];
+		let search_results = [];
 		let card_list_arrayified = [];
 		let specialchars = "";
 		let deck = [];
@@ -663,12 +663,11 @@ await fetch('/lists/all-sets.json')
 				document.getElementById("deck-name").value = "Untitled Deck";
 			}
 
-			// initialize full card pool as collection
 			var colls = JSON.parse(localStorage.getItem("colls.collections"));
 			if (colls == null) {
 				colls = {}
 			}
-			colls["Full card pool"] = card_list_arrayified;
+			colls["Full card pool"] = "This is a dummy, the code handles this";
 			console.log("test");
 			console.log(colls);
 			localStorage.setItem("colls.collections", JSON.stringify(colls));
@@ -832,7 +831,7 @@ await fetch('/lists/all-sets.json')
 				if (collectionToLoad.includes(card.card_name)) {
 					new_list.push(card);
 					collection_copies[`${card["set"]}-${card["number"]}`] = Number(collectionToLoad_[i].split(" ")[0]);
-					cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}-cards-and-text):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${collectionToLoad_[i].split(" ")[0]}x"; z-index: 999; display: block; position: absolute; border-radius: 20px;}\n`
+					cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}-cards-and-text):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${collectionToLoad_[i].split(" ")[0]}x"; z-index: 999; display: block; position: absolute; border-radius: 20px;}\\n`
 					i++;
 					deck_2[`${card["set"]}-${card["number"]}`] = 0;
 					sideboard_2[`${card["set"]}-${card["number"]}`] = 0;
@@ -849,7 +848,7 @@ await fetch('/lists/all-sets.json')
 
 		function deckTextToCollection() {
 			var text = generateDeckText();
-			var lines = text.split("\n");
+			var lines = text.split("\\n");
 			var cardlist = [];
 			for (const line of lines) {
 				cardlist.push(line);
@@ -866,7 +865,7 @@ await fetch('/lists/all-sets.json')
 			sideboard = [];
 			sb_cards = false;
 
-			const lines = text.split('\n');
+			const lines = text.split('\\n');
 
 			let deck_map = new Map();
 			let sb_map = new Map();
@@ -954,8 +953,8 @@ await fetch('/lists/all-sets.json')
 
 			if (files.length > 0) {
 				const file = files[0];
-				const name = file.name.replace(/\.[^/.]+$/, "");
-				const import_type = file.name.replace(/^[^/.]+\./, "");
+				const name = file.name.replace(/\\.[^/.]+$/, "");
+				const import_type = file.name.replace(/^[^/.]+\\./, "");
 
 				document.getElementById("deck-name").value = name;
 
@@ -967,7 +966,7 @@ await fetch('/lists/all-sets.json')
 				reader.onload = function(e) {
 					const fileContent = e.target.result;
 
-					const lines = fileContent.split('\n');
+					const lines = fileContent.split('\\n');
 					if (import_type == 'dek')
 					{
 						for (const line of lines)
@@ -1327,7 +1326,7 @@ await fetch('/lists/all-sets.json')
 							card_row.className = "deck-line";
 							
 							card_in_deck = document.createElement("div");
-							card_in_deck.innerText += map.get(card) + " " + card_name + "\n";
+							card_in_deck.innerText += map.get(card) + " " + card_name + "\\n";
 							card_in_deck.style.cursor = "pointer";
 							card_in_deck.onmouseover = function() {
 								cgc = document.getElementById("card-grid-container");
@@ -1488,11 +1487,11 @@ await fetch('/lists/all-sets.json')
 			}
 			for (const card_map of Array.from(map.keys()))
 			{
-				deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + "\n";
+				deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + "\\n";
 			}
 			if (sideboard.length != 0)
 			{
-				deck_text += "sideboard\n";
+				deck_text += "sideboard\\n";
 				map = new Map([]);
 				for (const card of sideboard)
 				{
@@ -1507,7 +1506,7 @@ await fetch('/lists/all-sets.json')
 				}
 				for (const card_map of Array.from(map.keys()))
 				{
-					deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + "\n";
+					deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + "\\n";
 				}
 			}
 			return deck_text;
@@ -1529,11 +1528,11 @@ await fetch('/lists/all-sets.json')
 			}
 			for (const card_map of Array.from(map.keys()))
 			{
-				deck_text += map.get(card_map) + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name) + "\n";
+				deck_text += map.get(card_map) + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name) + "\\n";
 			}
 			if (sideboard.length != 0)
 			{
-				deck_text += "sideboard\n";
+				deck_text += "sideboard\\n";
 				map = new Map([]);
 				for (const card of sideboard)
 				{
@@ -1548,7 +1547,7 @@ await fetch('/lists/all-sets.json')
 				}
 				for (const card_map of Array.from(map.keys()))
 				{
-					deck_text += map.get(card_map) + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name) + "\n";
+					deck_text += map.get(card_map) + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name) + "\\n";
 				}
 			}
 			//let deck_text = generateDeckText()
@@ -1602,67 +1601,67 @@ await fetch('/lists/all-sets.json')
   }
 }
 `;
-			output_text += "[CustomCards]\n[\n";
+			output_text += "[CustomCards]\\n[\\n";
 			for (const c of cards.values())
 			{
 				const img_url = URLDomain + "/sets/" + c.set + "-files/img/" + c.number + "_" + c.card_name + ((c.shape.includes("double")) ? "_front" : "") + "." + c.image_type;
-				output_text += "  {\n";
-				output_text += `    "name": "${c.card_name}",\n`;
+				output_text += "  {\\n";
+				output_text += `    "name": "${c.card_name}",\\n`;
 				if(c.cost)
-					output_text += `    "mana_cost": "${convertManaCostForDraftmancer(c.cost)}",\n`;
+					output_text += `    "mana_cost": "${convertManaCostForDraftmancer(c.cost)}",\\n`;
 				else 
-					output_text += `    "mana_cost": "",\n`;
+					output_text += `    "mana_cost": "",\\n`;
 				if(c.rarity)
-					output_text += `    "rarity": "${c.rarity}",\n`;
+					output_text += `    "rarity": "${c.rarity}",\\n`;
 				if(c.set)
-					output_text += `    "set": "${c.set}",\n`;
+					output_text += `    "set": "${c.set}",\\n`;
 				if(c.number)
-					output_text += `    "collector_number": "${c.number}",\n`;
+					output_text += `    "collector_number": "${c.number}",\\n`;
 				if(c.type) {
-					output_text += `    "type": "${c.type.split(" – ")[0]}",\n`;
+					output_text += `    "type": "${c.type.split(" – ")[0]}",\\n`;
 					const subtypes = c.type.split(" – ")[1];
 					if(subtypes)
-						output_text += `    "subtypes": ["${subtypes.split(" ").join("", "")}"],\n`;
+						output_text += `    "subtypes": ["${subtypes.split(" ").join("", "")}"],\\n`;
 				}
 				if(c.rules_text)
-					output_text += `    "oracle_text": ${JSON.stringify(c.rules_text)},\n`;
-				output_text += `    "image": "${img_url}",\n`;
+					output_text += `    "oracle_text": ${JSON.stringify(c.rules_text)},\\n`;
+				output_text += `    "image": "${img_url}",\\n`;
 				if(c.shape.includes("double")) {
 					const back_url = URLDomain + "/sets/" + c.set + "-files/img/" + c.number + "_" + c.card_name + "_back" + "." + c.image_type;
 					output_text += `    "back": {`
-					output_text += `      "name": "${c.card_name2}",\n`;
+					output_text += `      "name": "${c.card_name2}",\\n`;
 					if(c.cost2)
-						output_text += `      "mana_cost": "${convertManaCostForDraftmancer(c.cost2)}",\n`;
+						output_text += `      "mana_cost": "${convertManaCostForDraftmancer(c.cost2)}",\\n`;
 					else 
-						output_text += `    "mana_cost": "",\n`;
+						output_text += `    "mana_cost": "",\\n`;
 					if(c.rarity2)
-						output_text += `      "rarity": "${c.rarity2}",\n`;
+						output_text += `      "rarity": "${c.rarity2}",\\n`;
 					if(c.set2)
-						output_text += `      "set": "${c.set2}",\n`;
+						output_text += `      "set": "${c.set2}",\\n`;
 					if(c.number2)
-						output_text += `      "collector_number": "${c.number2}",\n`;
+						output_text += `      "collector_number": "${c.number2}",\\n`;
 					if(c.type2) {
-						output_text += `      "type": "${c.type2.split(" – ")[0]}",\n`;
+						output_text += `      "type": "${c.type2.split(" – ")[0]}",\\n`;
 						const subtypes = c.type2.split(" – ")[1];
 						if(subtypes)
-							output_text += `    "subtypes": ["${subtypes.split(" ").join("", "")}"],\n`;
+							output_text += `    "subtypes": ["${subtypes.split(" ").join("", "")}"],\\n`;
 					}
 					if(c.rules_text2)
-						output_text += `      "oracle_text": ${JSON.stringify(c.rules_text2)},\n`;
+						output_text += `      "oracle_text": ${JSON.stringify(c.rules_text2)},\\n`;
 					output_text += `      "image": "${back_url}",`
-					output_text += `    },\n`;
+					output_text += `    },\\n`;
 				}
-				output_text += "  },\n";
+				output_text += "  },\\n";
 			}
-			output_text += "]\n";
+			output_text += "]\\n";
 
 			const rarities = [...(new Set([...cards.values().map(c => c.rarity)]))];
 
 			for(const r of rarities) {
-				output_text += `[${r}]\n`;
+				output_text += `[${r}]\\n`;
 				for (const c of cards.values()) {
 					if(c.rarity === r) 
-						output_text += `${c.count} ${c.card_name}\n`;
+						output_text += `${c.count} ${c.card_name}\\n`;
 				}
 			}
 
