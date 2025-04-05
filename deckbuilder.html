@@ -624,7 +624,7 @@
 		let sideboard_2 = {};
 
 		document.addEventListener("DOMContentLoaded", async function () {
-			await fetch('/lists/all-cards.json')
+				await fetch('/lists/all-cards.json')
 					.then(response => response.json())
 					.then(json => {
 						card_list = json;
@@ -639,7 +639,7 @@
 				card_list_arrayified = card_list.cards;
 
 
-await fetch('/lists/all-sets.json')
+				await fetch('/lists/all-sets.json')
 					.then(response => response.json())
 					.then(data => {
 						sets_json = data; 
@@ -647,7 +647,7 @@ await fetch('/lists/all-sets.json')
 
 			cardGrid = document.getElementById("imagesOnlyGrid");
 			card_list_arrayified.sort(compareFunction);
-
+			// console.log('whyyyy1');
 			gridified_card = gridifyCard(card_list_arrayified[0], true, true);
 			gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
 			gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
@@ -656,19 +656,41 @@ await fetch('/lists/all-sets.json')
 			// initial search on load
 			preSearch();
 			const urlParams = new URLSearchParams(window.location.search);
-			let splitted = urlParams.get('deck').split(';');
+			let splitted = urlParams.get('deck');
+			if (splitted == null) {
+				splitted = ['', splitted];
+			} else {
+				splitted = splitted.split(';');
+			}
 			readDeckText(atob(splitted[1]), splitted[0]);
-			if (document.getElementById("deck-name").value == "undefined") {
+			if (document.getElementById("deck-name").value == "undefined" || document.getElementById("deck-name").value == "") {
 				document.getElementById("deck-name").value = "Untitled Deck";
 			}
-
+			// console.log('whyyyy');
 			var colls = JSON.parse(localStorage.getItem("colls.collections"));
 			if (colls == null) {
 				colls = {}
 			}
+			let sanctum_coll = [];
+			for (const card of card_list_arrayified) {
+				let regex = new RegExp("((P|p)athbound|(H|h)eir–)");
+				if (regex.test(card.rules_text)) {
+					sanctum_coll.push(`1 ${card.card_name}`);
+				} else if (card.type.includes("wonder") || card.type.includes("erysite") || card.type.includes("realm") || card.type.includes("frontier")) {
+					sanctum_coll.push(`1 ${card.card_name}`);
+				}
+				else if (card.special_text.includes("sanctum")) {
+					sanctum_coll.push(`1 ${card.card_name}`);
+				}
+				else if (card.type.includes("basic")) {
+					sanctum_coll.push(`7 ${card.card_name}`);
+				}
+			}
+			// console.log(sanctum_coll);
+			colls["Sanctum cards"] = sanctum_coll;
 			colls["Full card pool"] = "This is a dummy, the code handles this";
-			console.log("test");
-			console.log(colls);
+			// console.log("test");
+			// console.log(colls);
 			localStorage.setItem("colls.collections", JSON.stringify(colls));
 		});
 

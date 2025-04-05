@@ -658,7 +658,7 @@ await fetch('/lists/all-sets.json')
 			const urlParams = new URLSearchParams(window.location.search);
 			let splitted = urlParams.get('deck').split(';');
 			readDeckText(atob(splitted[1]), splitted[0]);
-			if (document.getElementById("deck-name").value == "undefined") {
+			if (document.getElementById("deck-name").value == "undefined" || document.getElementById("deck-name").value == "") {
 				document.getElementById("deck-name").value = "Untitled Deck";
 			}
 
@@ -666,6 +666,23 @@ await fetch('/lists/all-sets.json')
 			if (colls == null) {
 				colls = {}
 			}
+			let sanctum_coll = [];
+			for (const card of card_list_arrayified) {
+				let regex = new RegExp("((P|p)athbound|(H|h)eir–)");
+				if (regex.test(card.rules_text)) {
+					sanctum_coll.push(`1 ${card.card_name}`);
+				} else if (card.type.includes("wonder") || card.type.includes("erysite") || card.type.includes("realm") || card.type.includes("frontier")) {
+					sanctum_coll.push(`1 ${card.card_name}`);
+				}
+				else if (card.special_text.includes("sanctum")) {
+					sanctum_coll.push(`1 ${card.card_name}`);
+				}
+				else if (card.type.includes("basic")) {
+					sanctum_coll.push(`7 ${card.card_name}`);
+				}
+			}
+			// console.log(sanctum_coll);
+			colls["Sanctum cards"] = sanctum_coll;
 			colls["Full card pool"] = "This is a dummy, the code handles this";
 			console.log("test");
 			console.log(colls);
