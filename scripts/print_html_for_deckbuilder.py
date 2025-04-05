@@ -656,9 +656,8 @@ await fetch('/lists/all-sets.json')
 			// initial search on load
 			preSearch();
 			const urlParams = new URLSearchParams(window.location.search);
-			let decoded = atob(urlParams.get('deck'));
-			console.log(decoded);
-			readDeckText(decoded);
+			let splitted = urlParams.get('deck').split(';');
+			readDeckText(atob(splitted[1]), splitted[0]);
 			if (document.getElementById("deck-name").value == "undefined") {
 				document.getElementById("deck-name").value = "Untitled Deck";
 			}
@@ -708,7 +707,7 @@ await fetch('/lists/all-sets.json')
 				deleteModal();
 			}
 			else if (option == "get-url") {
-				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`);
+				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`);
 				openCopyModal();
 			}
 			else if (option == "copy") {

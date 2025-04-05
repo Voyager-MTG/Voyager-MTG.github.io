@@ -9,7 +9,7 @@ import re
 def generateHTML(code):
 	#F: /sets/SET.html
 	output_html_file = "sets/" + code + ".html"
-	
+
 	with open(os.path.join('lists', 'all-sets.json'), encoding='utf-8-sig') as f:
 		data = json.load(f)
 		for s in data['sets']:
@@ -39,10 +39,22 @@ def generateHTML(code):
 		overscroll-behavior: none;
 		margin: 0px;
 		background-color: #f3f3f3;
+		background-position: center;
+		background-attachment: fixed;
+		background-size: cover;
+	'''
+
+	if os.path.exists(os.path.join('sets', code + '-files', 'bg.png')):
+		html_content += f"\tbackground-image: url('/sets/{code}-files/bg.png');\n"
+	elif os.path.exists(os.path.join('sets', code + '-files', 'bg.jpg')):
+		html_content += f"\tbackground-image: url('/sets/{code}-files/bg.jpg');\n"
+
+	html_content += '''
 	}
 	.banner {
 		width: 100%;
 		background-color: #bbbbbb;
+		border-bottom: 3px solid black;
 	}
 	.banner-container {
 		width: 85%;
