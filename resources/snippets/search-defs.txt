@@ -390,7 +390,7 @@ function tokenizeTerms(searchTerms)
 				{
 					if (modifier == ":")
 					{
-						regex = new RegExp(check.replaceAll("+","\\+"));
+						let regex = new RegExp(check.replaceAll("+","\\+"));
 						return regex.test(card_oracle_text);
 					}
 					/* unsupported flows
@@ -527,7 +527,7 @@ function tokenizeTerms(searchTerms)
 					} */
 				}
 				if (term == "alias") {
-					regex = new RegExp(check.replaceAll("+","\\+"));
+					let regex = new RegExp(check.replaceAll("+","\\+"));
 					return regex.test(card_stats.special_text);
 				}
 				if (term == "f" || term=="format")

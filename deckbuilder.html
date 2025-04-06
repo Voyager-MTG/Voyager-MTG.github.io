@@ -685,7 +685,7 @@ await fetch('/lists/all-sets.json')
 				else if (card.special_text.includes("sanctum")) {
 					sanctum_coll.push(`1 ${card.card_name}`);
 				}
-				else if (card.type.includes("Basic")) {
+				else if (card.type.includes("basic")) {
 					sanctum_coll.push(`7 ${card.card_name}`);
 				}
 			}
@@ -1749,7 +1749,7 @@ await fetch('/lists/all-sets.json')
 				{
 					if (modifier == ":")
 					{
-						regex = new RegExp(check.replaceAll("+","\\+"));
+						let regex = new RegExp(check.replaceAll("+","\\+"));
 						return regex.test(card_oracle_text);
 					}
 					/* unsupported flows
@@ -1886,7 +1886,7 @@ await fetch('/lists/all-sets.json')
 					} */
 				}
 				if (term == "alias") {
-					regex = new RegExp(check.replaceAll("+","\\+"));
+					let regex = new RegExp(check.replaceAll("+","\\+"));
 					return regex.test(card_stats.special_text);
 				}
 				if (term == "f" || term=="format")
