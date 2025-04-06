@@ -660,8 +660,12 @@ await fetch('/lists/all-sets.json')
 			// initial search on load
 			preSearch();
 			const urlParams = new URLSearchParams(window.location.search);
-			let splitted = urlParams.get('deck').split(';');
-			readDeckText(atob(splitted[1]), splitted[0]);
+			if (urlParams.get('deck').includes(';')) { 
+				let splitted = urlParams.get('deck').split(';');
+				readDeckText(atob(splitted[1]), splitted[0]);
+			} else {
+				readDeckText(atob(urlParams.get('deck')));
+			}
 			if (document.getElementById("deck-name").value == "undefined" || document.getElementById("deck-name").value == "") {
 				document.getElementById("deck-name").value = "Untitled Deck";
 			}
