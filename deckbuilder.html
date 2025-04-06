@@ -473,6 +473,9 @@
 	.name-cost {
 		font-family: beleren;
 	}
+	.settings-dropdown {
+		margin-right: 15px;
+	}
 </style>
 <body>
 	<div class="header">
@@ -533,6 +536,7 @@
 				<div></div> <!-- empty div for spacing -->
 				<select name="file-menu" class="file-menu" id="file-menu">
 					<option value="default">Actions ...</option>
+					<option value="settings">Settings</option>
 					<option value="new">New deck</option>
 					<option value="import">Import deck</option>
 					<option value="save-collection">Save as collection</option>
@@ -624,7 +628,7 @@
 		let sideboard_2 = {};
 
 		document.addEventListener("DOMContentLoaded", async function () {
-				await fetch('/lists/all-cards.json')
+			await fetch('/lists/all-cards.json')
 					.then(response => response.json())
 					.then(json => {
 						card_list = json;
@@ -639,7 +643,7 @@
 				card_list_arrayified = card_list.cards;
 
 
-				await fetch('/lists/all-sets.json')
+await fetch('/lists/all-sets.json')
 					.then(response => response.json())
 					.then(data => {
 						sets_json = data; 
@@ -647,7 +651,7 @@
 
 			cardGrid = document.getElementById("imagesOnlyGrid");
 			card_list_arrayified.sort(compareFunction);
-			// console.log('whyyyy1');
+
 			gridified_card = gridifyCard(card_list_arrayified[0], true, true);
 			gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
 			gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
@@ -656,17 +660,12 @@
 			// initial search on load
 			preSearch();
 			const urlParams = new URLSearchParams(window.location.search);
-			let splitted = urlParams.get('deck');
-			if (splitted == null) {
-				splitted = ['', splitted];
-			} else {
-				splitted = splitted.split(';');
-			}
+			let splitted = urlParams.get('deck').split(';');
 			readDeckText(atob(splitted[1]), splitted[0]);
 			if (document.getElementById("deck-name").value == "undefined" || document.getElementById("deck-name").value == "") {
 				document.getElementById("deck-name").value = "Untitled Deck";
 			}
-			// console.log('whyyyy');
+
 			var colls = JSON.parse(localStorage.getItem("colls.collections"));
 			if (colls == null) {
 				colls = {}
@@ -682,16 +681,19 @@
 				else if (card.special_text.includes("sanctum")) {
 					sanctum_coll.push(`1 ${card.card_name}`);
 				}
-				else if (card.type.includes("basic")) {
+				else if (card.type.includes("Basic")) {
 					sanctum_coll.push(`7 ${card.card_name}`);
 				}
 			}
 			// console.log(sanctum_coll);
 			colls["Sanctum cards"] = sanctum_coll;
 			colls["Full card pool"] = "This is a dummy, the code handles this";
-			// console.log("test");
-			// console.log(colls);
+			console.log("test");
+			console.log(colls);
 			localStorage.setItem("colls.collections", JSON.stringify(colls));
+			defaultSetting('settings.autosave', 'On');
+			defaultSetting('settings.searchalias', 'On');
+			defaultSetting('settings.exportcube', 'On');
 		});
 
 		function displayChangeListener() {
@@ -742,6 +744,7 @@
 				colls[document.getElementById("deck-name").value.toString()] = deckTextToCollection();
 				localStorage.setItem("colls.collections", JSON.stringify(colls));
 				document.getElementById("file-menu").value = "default";
+				openSaveCollModal();
 			}
 			else if (option == "load-collection") {
 				openLoadCollectionWindow();
@@ -753,6 +756,9 @@
 			else if (option == "draftmancer")
 			{
 				exportDraftmancer();
+			}
+			else if (option == "settings") {
+				openSettingsModal();
 			}
 		});
 
@@ -798,7 +804,38 @@
 
 		function openSaveCollModal() {
 			document.getElementById("modal-container").style.display = "block";
-			document.getElementById("modal-content").innerHTML = "Deck Saved as collection" + document.getElementById("deck-name").value + '<span class="close" onclick="closeModal()">&times;</span>';
+			document.getElementById("modal-content").innerHTML = "Deck Saved as collection: " + document.getElementById("deck-name").value + '<span class="close" onclick="closeModal()">&times;</span>';
+		}
+
+		function openSettingsModal() {
+			let modalContent = '';
+			modalContent += settingsOptionHtml("Auto save decks", "settings.autosave");
+			modalContent += settingsOptionHtml("Export draftmancer as cube", "settings.exportcube");
+			modalContent += settingsOptionHtml("Include aliases in name searching", "settings.searchalias");
+			modalContent += `</select><span class="close" onclick="closeModal()">&times;</span>`;
+			document.getElementById("modal-container").style.display = "block";
+			document.getElementById("modal-content").innerHTML = modalContent;
+		}
+
+		function settingsOptionHtml(settingname, settingtag) {
+			let generatedContent = settingname + ": ";
+			generatedContent += `<select class="settings-dropdown" id="${settingtag}" onchange="localStorage.setItem('${settingtag}', document.getElementById('${settingtag}').value)">`;
+			if (localStorage.getItem(settingtag) == "Off") {
+				generatedContent += '<option>Off</option>';
+				generatedContent += '<option>On </option>';
+			} else {
+				generatedContent += '<option>On </option>';
+				generatedContent += '<option>Off</option>';
+			}
+			generatedContent += '</select>';
+			console.log(generatedContent);
+			return generatedContent;
+		}
+
+		function defaultSetting(name, default_) {
+			if (localStorage.getItem(name) == null) {
+				localStorage.setItem(name, default_);
+			}
 		}
 
 		function loadDeck() {
@@ -1844,6 +1881,10 @@
 
 					} */
 				}
+				if (term == "alias") {
+					regex = new RegExp(check.replaceAll("+","\\+"));
+					return regex.test(card_stats.special_text);
+				}
 				if (term == "f" || term=="format")
 				{
 					if (modifier == ":" || modifier == "!" || modifier == "=")
@@ -1901,7 +1942,7 @@
 							return false;
 						}
 						if (check == "sanctum") {
-							regex = new RegExp("((P|p)athbound|Heir)");
+							let regex = new RegExp("((P|p)athbound|(H|h)eir–)");
 							if (regex.test(card_oracle_text)) {
 								return true;
 							} else {
@@ -1942,8 +1983,8 @@
 					}
 				}
 			}
-
-			return card_name.includes(token);
+			let regex = new RegExp(token.replaceAll("+","\\+"));
+			return (regex.test(card_stats.special_text) && (localStorage.getItem('settings.searchalias') == "On")) || card_name.includes(token);
 		}function isDecimal(char) {
 			return char >= '0' && char <= '9';
 		}
@@ -2638,15 +2679,21 @@
 
 			const URLDomain = "https://voyager-mtg.github.io"; // FIXME: Shouldn't be hardcoded.
 
+			let slots = '';
+
+			if (localStorage.getItem('settings.exportcube') == "On") {
+				slots = 'rare: 15';
+			} else {
+				slots = '"rare": 1,\n"uncommon": 3,\n"common": 10"';
+			}
+
 			output_text += `[Settings]
 {
   "layouts": {
     "default": {
       "weight": 1,
       "slots": {
-        "rare": 1,
-        "uncommon": 3,
-        "common": 10,
+		${slots}
       }
 	}
   }
@@ -2706,15 +2753,26 @@
 			}
 			output_text += "]\n";
 
-			const rarities = [...(new Set([...cards.values().map(c => c.rarity)]))];
-
-			for(const r of rarities) {
-				output_text += `[${r}]\n`;
+			if (localStorage.getItem('settings.exportcube')) {
+				output_text += `[rare]
+`;
 				for (const c of cards.values()) {
-					if(c.rarity === r) 
-						output_text += `${c.count} ${c.card_name}\n`;
+					output_text += `${c.count} ${c.card_name}
+`;
 				}
-			}
+			} else {
+				const rarities = [...(new Set([...cards.values().map(c => c.rarity)]))];
+
+				for(const r of rarities) {
+					output_text += `[${r}]
+`;
+					for (const c of cards.values()) {
+						if(c.rarity === r) 
+							output_text += `${c.count} ${c.card_name}
+`;
+					}
+				}
+			}	
 
 			let downloadableLink = document.createElement('a');
 			downloadableLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(output_text));
@@ -2747,7 +2805,7 @@
 				function modifyDeck2(setNum, op) {
 			if (op == "+") {
 				console.log(deck_2[setNum], sideboard_2[setNum], collection_copies[setNum], setNum)
-				if ((deck_2[setNum] + sideboard_2[setNum]) > collection_copies[setNum]) {
+				if ((deck_2[setNum] + sideboard_2[setNum]) >= collection_copies[setNum]) {
 					console.log('ret');
 					return true;
 				}
@@ -2766,7 +2824,7 @@
 		function modifySB2(setNum, op) {
 			if (op == "+") {
 				console.log(deck_2[setNum], sideboard_2[setNum], collection_copies[setNum], setNum)
-				if ((deck_2[setNum] + sideboard_2[setNum]) > collection_copies[setNum]) {
+				if ((deck_2[setNum] + sideboard_2[setNum]) >= collection_copies[setNum]) {
 					console.log('ret');
 					return true;
 				}
@@ -2781,6 +2839,12 @@
 			}
 			console.log(sideboard_2, op, setNum);
 			return false;
+		}
+
+		window.onbeforeunload = function() {
+			if (localStorage.getItem("settings.autosave") == "On") {
+				localStorage.setItem(document.getElementById("deck-name").value, generateDeckText());
+			}
 		}
 
 

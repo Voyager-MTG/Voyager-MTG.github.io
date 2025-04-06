@@ -526,6 +526,10 @@ function tokenizeTerms(searchTerms)
 
 					} */
 				}
+				if (term == "alias") {
+					regex = new RegExp(check.replaceAll("+","\\+"));
+					return regex.test(card_stats.special_text);
+				}
 				if (term == "f" || term=="format")
 				{
 					if (modifier == ":" || modifier == "!" || modifier == "=")
@@ -624,6 +628,6 @@ function tokenizeTerms(searchTerms)
 					}
 				}
 			}
-
-			return card_name.includes(token);
+			let regex = new RegExp(token.replaceAll("+","\\+"));
+			return (regex.test(card_stats.special_text) && (localStorage.getItem('settings.searchalias') == "On")) || card_name.includes(token);
 		}

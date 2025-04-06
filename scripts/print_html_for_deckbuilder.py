@@ -480,6 +480,9 @@ def generateHTML(codes):
 	.name-cost {
 		font-family: beleren;
 	}
+	.settings-dropdown {
+		margin-right: 15px;
+	}
 </style>
 <body>
 	<div class="header">
@@ -540,6 +543,7 @@ def generateHTML(codes):
 				<div></div> <!-- empty div for spacing -->
 				<select name="file-menu" class="file-menu" id="file-menu">
 					<option value="default">Actions ...</option>
+					<option value="settings">Settings</option>
 					<option value="new">New deck</option>
 					<option value="import">Import deck</option>
 					<option value="save-collection">Save as collection</option>
@@ -687,6 +691,9 @@ await fetch('/lists/all-sets.json')
 			console.log("test");
 			console.log(colls);
 			localStorage.setItem("colls.collections", JSON.stringify(colls));
+			defaultSetting('settings.autosave', 'On');
+			defaultSetting('settings.searchalias', 'On');
+			defaultSetting('settings.exportcube', 'On');
 		});
 
 		function displayChangeListener() {
@@ -737,6 +744,7 @@ await fetch('/lists/all-sets.json')
 				colls[document.getElementById("deck-name").value.toString()] = deckTextToCollection();
 				localStorage.setItem("colls.collections", JSON.stringify(colls));
 				document.getElementById("file-menu").value = "default";
+				openSaveCollModal();
 			}
 			else if (option == "load-collection") {
 				openLoadCollectionWindow();
@@ -748,6 +756,9 @@ await fetch('/lists/all-sets.json')
 			else if (option == "draftmancer")
 			{
 				exportDraftmancer();
+			}
+			else if (option == "settings") {
+				openSettingsModal();
 			}
 		});
 
@@ -793,7 +804,38 @@ await fetch('/lists/all-sets.json')
 
 		function openSaveCollModal() {
 			document.getElementById("modal-container").style.display = "block";
-			document.getElementById("modal-content").innerHTML = "Deck Saved as collection" + document.getElementById("deck-name").value + '<span class="close" onclick="closeModal()">&times;</span>';
+			document.getElementById("modal-content").innerHTML = "Deck Saved as collection: " + document.getElementById("deck-name").value + '<span class="close" onclick="closeModal()">&times;</span>';
+		}
+
+		function openSettingsModal() {
+			let modalContent = '';
+			modalContent += settingsOptionHtml("Auto save decks", "settings.autosave");
+			modalContent += settingsOptionHtml("Export draftmancer as cube", "settings.exportcube");
+			modalContent += settingsOptionHtml("Include aliases in name searching", "settings.searchalias");
+			modalContent += `</select><span class="close" onclick="closeModal()">&times;</span>`;
+			document.getElementById("modal-container").style.display = "block";
+			document.getElementById("modal-content").innerHTML = modalContent;
+		}
+
+		function settingsOptionHtml(settingname, settingtag) {
+			let generatedContent = settingname + ": ";
+			generatedContent += `<select class="settings-dropdown" id="${settingtag}" onchange="localStorage.setItem('${settingtag}', document.getElementById('${settingtag}').value)">`;
+			if (localStorage.getItem(settingtag) == "Off") {
+				generatedContent += '<option>Off</option>';
+				generatedContent += '<option>On </option>';
+			} else {
+				generatedContent += '<option>On </option>';
+				generatedContent += '<option>Off</option>';
+			}
+			generatedContent += '</select>';
+			console.log(generatedContent);
+			return generatedContent;
+		}
+
+		function defaultSetting(name, default_) {
+			if (localStorage.getItem(name) == null) {
+				localStorage.setItem(name, default_);
+			}
 		}
 
 		function loadDeck() {
@@ -1167,6 +1209,8 @@ await fetch('/lists/all-sets.json')
 	with open(os.path.join('resources', 'snippets', 'search-defs.txt'), encoding='utf-8-sig') as f:
 		snippet = f.read()
 		html_content += snippet
+
+	# INSERT THE CODE HERE
 
 	with open(os.path.join('resources', 'snippets', 'tokenize-symbolize.txt'), encoding='utf-8-sig') as f:
 		snippet = f.read()
@@ -1603,15 +1647,21 @@ await fetch('/lists/all-sets.json')
 
 			const URLDomain = "https://voyager-mtg.github.io"; // FIXME: Shouldn't be hardcoded.
 
+			let slots = '';
+
+			if (localStorage.getItem('settings.exportcube') == "On") {
+				slots = 'rare: 15';
+			} else {
+				slots = '"rare": 1,\\n"uncommon": 3,\\n"common": 10"';
+			}
+
 			output_text += `[Settings]
 {
   "layouts": {
     "default": {
       "weight": 1,
       "slots": {
-        "rare": 1,
-        "uncommon": 3,
-        "common": 10,
+		${slots}
       }
 	}
   }
@@ -1671,15 +1721,22 @@ await fetch('/lists/all-sets.json')
 			}
 			output_text += "]\\n";
 
-			const rarities = [...(new Set([...cards.values().map(c => c.rarity)]))];
-
-			for(const r of rarities) {
-				output_text += `[${r}]\\n`;
+			if (localStorage.getItem('settings.exportcube')) {
+				output_text += `[rare]\n`;
 				for (const c of cards.values()) {
-					if(c.rarity === r) 
-						output_text += `${c.count} ${c.card_name}\\n`;
+					output_text += `${c.count} ${c.card_name}\n`;
 				}
-			}
+			} else {
+				const rarities = [...(new Set([...cards.values().map(c => c.rarity)]))];
+
+				for(const r of rarities) {
+					output_text += `[${r}]\n`;
+					for (const c of cards.values()) {
+						if(c.rarity === r) 
+							output_text += `${c.count} ${c.card_name}\n`;
+					}
+				}
+			}	
 
 			let downloadableLink = document.createElement('a');
 			downloadableLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(output_text));
@@ -1712,7 +1769,7 @@ await fetch('/lists/all-sets.json')
 				function modifyDeck2(setNum, op) {
 			if (op == "+") {
 				console.log(deck_2[setNum], sideboard_2[setNum], collection_copies[setNum], setNum)
-				if ((deck_2[setNum] + sideboard_2[setNum]) > collection_copies[setNum]) {
+				if ((deck_2[setNum] + sideboard_2[setNum]) >= collection_copies[setNum]) {
 					console.log('ret');
 					return true;
 				}
@@ -1731,7 +1788,7 @@ await fetch('/lists/all-sets.json')
 		function modifySB2(setNum, op) {
 			if (op == "+") {
 				console.log(deck_2[setNum], sideboard_2[setNum], collection_copies[setNum], setNum)
-				if ((deck_2[setNum] + sideboard_2[setNum]) > collection_copies[setNum]) {
+				if ((deck_2[setNum] + sideboard_2[setNum]) >= collection_copies[setNum]) {
 					console.log('ret');
 					return true;
 				}
@@ -1746,6 +1803,12 @@ await fetch('/lists/all-sets.json')
 			}
 			console.log(sideboard_2, op, setNum);
 			return false;
+		}
+
+		window.onbeforeunload = function() {
+			if (localStorage.getItem("settings.autosave") == "On") {
+				localStorage.setItem(document.getElementById("deck-name").value, generateDeckText());
+			}
 		}
 
 

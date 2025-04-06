@@ -293,9 +293,19 @@
 			displayStyle = document.getElementById("display").value;
 			setCardView();
 
+			defaultSetting('settings.autosave', 'On');
+			defaultSetting('settings.searchalias', 'On');
+			defaultSetting('settings.exportcube', 'On');
+
 			// initial search on load
 			preSearch(false);
 		});
+
+		function defaultSetting(name, default_) {
+			if (localStorage.getItem(name) == null) {
+				localStorage.setItem(name, default_);
+			}
+		}
 
 		function displayChangeListener() {
 			displayStyle = document.getElementById("display").value;
@@ -1146,6 +1156,10 @@
 
 					} */
 				}
+				if (term == "alias") {
+					regex = new RegExp(check.replaceAll("+","\\+"));
+					return regex.test(card_stats.special_text);
+				}
 				if (term == "f" || term=="format")
 				{
 					if (modifier == ":" || modifier == "!" || modifier == "=")
@@ -1203,7 +1217,7 @@
 							return false;
 						}
 						if (check == "sanctum") {
-							regex = new RegExp("((P|p)athbound|Heir)");
+							let regex = new RegExp("((P|p)athbound|(H|h)eir–)");
 							if (regex.test(card_oracle_text)) {
 								return true;
 							} else {
@@ -1244,8 +1258,8 @@
 					}
 				}
 			}
-
-			return card_name.includes(token);
+			let regex = new RegExp(token.replaceAll("+","\\+"));
+			return (regex.test(card_stats.special_text) && (localStorage.getItem('settings.searchalias') == "On")) || card_name.includes(token);
 		}function isDecimal(char) {
 			return char >= '0' && char <= '9';
 		}
