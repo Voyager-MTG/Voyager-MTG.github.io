@@ -741,7 +741,7 @@ await fetch('/lists/all-sets.json')
 				deleteModal();
 			}
 			else if (option == "get-url") {
-				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`);
+				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replace(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`);
 				openCopyModal();
 			}
 			else if (option == "copy") {
