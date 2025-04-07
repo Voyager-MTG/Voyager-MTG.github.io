@@ -470,12 +470,18 @@ def generateHTML(codes):
 		background-color: rgba(14, 126, 246, 1);
 		padding: 10px;
 		margin: 10px;
+		display: inline-block;
+		margin-bottom: 3px;
+		margin-top: 3px;
 	}
 	.del-btn {
 		color: #fff;
 		background-color: rgb(215, 69, 59);
 		padding: 10px;
 		margin: 10px;
+		display: inline-block;
+		margin-bottom: 3px;
+		margin-top: 3px;
 	}
 	.name-cost {
 		font-family: beleren;
@@ -846,7 +852,7 @@ await fetch('/lists/all-sets.json')
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = "Loading Deck:";
 			Object.keys(localStorage).forEach(function(key){
-				if (key != "colls.collections") { 
+				if (key != "colls.collections" && !key.startsWith("settings.")) { 
 					console.log(key);
 					console.log(localStorage.getItem(key));
 					document.getElementById("modal-content").innerHTML += `<span class="load-btn" onclick="readDeckText(localStorage.getItem('${key}'),'${key}')">${key}</span>`;		
