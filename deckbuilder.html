@@ -665,12 +665,14 @@ await fetch('/lists/all-sets.json')
 			// initial search on load
 			preSearch();
 			const urlParams = new URLSearchParams(window.location.search);
-			if (urlParams.get('deck').includes(';')) { 
-				let splitted = urlParams.get('deck').split(';');
-				readDeckText(atob(splitted[1]), splitted[0]);
-			} else {
-				readDeckText(atob(urlParams.get('deck')));
-			}
+			if (urlParams.get('deck') != null) {
+				if (urlParams.get('deck').includes(';')) { 
+					let splitted = urlParams.get('deck').split(';');
+					readDeckText(atob(splitted[1]), splitted[0]);
+				} else {
+					readDeckText(atob(urlParams.get('deck')));
+				}
+			}	
 			if (document.getElementById("deck-name").value == "undefined" || document.getElementById("deck-name").value == "") {
 				document.getElementById("deck-name").value = "Untitled Deck";
 			}
@@ -680,7 +682,9 @@ await fetch('/lists/all-sets.json')
 				colls = {}
 			}
 			let sanctum_coll = [];
+			let common_coll = [];
 			for (const card of card_list_arrayified) {
+				// sanctum test
 				let regex = new RegExp("((P|p)athbound|(H|h)eir–)");
 				if (regex.test(card.rules_text)) {
 					sanctum_coll.push(`1 ${card.card_name}`);
@@ -693,9 +697,16 @@ await fetch('/lists/all-sets.json')
 				else if (card.type.includes("basic")) {
 					sanctum_coll.push(`7 ${card.card_name}`);
 				}
+				// common test
+				// console.log(card);
+				if (card.rarity == "common" && !card.type.includes("Token") && !card.type.includes("Reminder") && !card.card_name.includes("Token") && !card.type.includes("Boon") && !card.card_name.includes("Distant Vulture Astral")) {
+					console.log(card);
+					common_coll.push(`4 ${card.card_name}`);
+				}
 			}
 			// console.log(sanctum_coll);
 			colls["Sanctum cards"] = sanctum_coll;
+			colls["Pauper"] = common_coll;
 			colls["Full card pool"] = "This is a dummy, the code handles this";
 			console.log("test");
 			console.log(colls);
@@ -897,6 +908,9 @@ await fetch('/lists/all-sets.json')
 				// console.log(collectionToLoad.includes(card.card_name));
 				if (collectionToLoad.includes(card.card_name)) {
 					new_list.push(card);
+					if (collectionToLoad_[i] == undefined) {
+						continue;
+					}
 					collection_copies[`${card["set"]}-${card["number"]}`] = Number(collectionToLoad_[i].split(" ")[0]);
 					cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}-cards-and-text):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${collectionToLoad_[i].split(" ")[0]}x"; z-index: 999; display: block; position: absolute; border-radius: 20px;}\n`
 					i++;
