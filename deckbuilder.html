@@ -620,7 +620,7 @@
 	</div>
 
 	<script>
-
+		// initialize variables
 		let search_results = [];
 		let card_list_arrayified = [];
 		let specialchars = "";
@@ -632,6 +632,7 @@
 		let deck_2 = {};
 		let sideboard_2 = {};
 
+		// load resource files
 		document.addEventListener("DOMContentLoaded", async function () {
 			await fetch('/lists/all-cards.json')
 					.then(response => response.json())
@@ -664,56 +665,61 @@ await fetch('/lists/all-sets.json')
 
 			// initial search on load
 			preSearch();
+
+			// get url params
 			const urlParams = new URLSearchParams(window.location.search);
-			if (urlParams.get('deck') != null) {
-				if (urlParams.get('deck').includes(';')) { 
-					let splitted = urlParams.get('deck').split(';');
-					readDeckText(atob(splitted[1]), splitted[0]);
+			if (urlParams.get('deck') != null) { // check if deck exists
+				if (urlParams.get('deck').includes(';')) { // check if deck has the ';' (for deck names)
+					let splitted = urlParams.get('deck').split(';'); // get the deck name and text by splitting
+					readDeckText(atob(splitted[1]), splitted[0]);  
 				} else {
 					readDeckText(atob(urlParams.get('deck')));
 				}
 			}	
+			// If a deck name is not imported, set the name to 'Untitled Deck'
 			if (document.getElementById("deck-name").value == "undefined" || document.getElementById("deck-name").value == "") {
 				document.getElementById("deck-name").value = "Untitled Deck";
 			}
 
+			// COLLECTIONS
+			// initialize collections if they don't exist
 			var colls = JSON.parse(localStorage.getItem("colls.collections"));
 			if (colls == null) {
 				colls = {}
 			}
+			// initialize default collections
 			let sanctum_coll = [];
 			let common_coll = [];
-			for (const card of card_list_arrayified) {
-				// sanctum test
-				let regex = new RegExp("((P|p)athbound|(H|h)eir–)");
+			for (const card of card_list_arrayified) { // loop through all cards
+				// sanctum regex tests
+				let regex = new RegExp("((P|p)athbound|(H|h)eir–)"); // check pathbounds and heirs, in the future other mechanics
 				if (regex.test(card.rules_text)) {
-					sanctum_coll.push(`1 ${card.card_name}`);
-				} else if (card.type.includes("wonder") || card.type.includes("erysite") || card.type.includes("realm") || card.type.includes("frontier")) {
-					sanctum_coll.push(`1 ${card.card_name}`);
-				}
-				else if (card.special_text.includes("sanctum")) {
+					sanctum_coll.push(`1 ${card.card_name}`); // push just 1 because of sanctum limit
+				} else if (card.type.includes("wonder") || card.type.includes("erysite") || card.type.includes("realm") || card.type.includes("frontier")) {  // check if it has a type that lets it be in the sanctum
 					sanctum_coll.push(`1 ${card.card_name}`);
 				}
-				else if (card.type.includes("basic")) {
-					sanctum_coll.push(`7 ${card.card_name}`);
+				else if (card.special_text.includes("sanctum")) { // check evobars
+					sanctum_coll.push(`1 ${card.card_name}`); 
 				}
-				// common test
-				// console.log(card);
+				else if (card.type.includes("Basic")) { // add basic lands
+					sanctum_coll.push(`7 ${card.card_name}`); // push 7 as it's the max sanctum size
+				}
+				// check if the card is a common, isn't a token/reminder/boon, and isn't distant vulture astral (this will be fixed on apr 15 when the next update is pushed)
 				if (card.rarity == "common" && !card.type.includes("Token") && !card.type.includes("Reminder") && !card.card_name.includes("Token") && !card.type.includes("Boon") && !card.card_name.includes("Distant Vulture Astral")) {
 					console.log(card);
 					common_coll.push(`4 ${card.card_name}`);
 				}
 			}
-			// console.log(sanctum_coll);
+			// send the created collections to localstorage
 			colls["Sanctum cards"] = sanctum_coll;
 			colls["Pauper"] = common_coll;
 			colls["Full card pool"] = "This is a dummy, the code handles this";
-			console.log("test");
-			console.log(colls);
 			localStorage.setItem("colls.collections", JSON.stringify(colls));
+			// Initialize default settings
 			defaultSetting('settings.autosave', 'On');
 			defaultSetting('settings.searchalias', 'On');
 			defaultSetting('settings.exportcube', 'On');
+			defaultSetting('settings.maxcopies', 'On');
 		});
 
 		function displayChangeListener() {
@@ -723,123 +729,136 @@ await fetch('/lists/all-sets.json')
 		document.getElementById("sort-by").onchange = displayChangeListener;
 		document.getElementById("sort-order").onchange = displayChangeListener;
 
-		document.getElementById("file-menu").addEventListener("change", function(event) {
-			let option = document.getElementById("file-menu").value;
+		document.getElementById("file-menu").addEventListener("change", function(event) { // Watch the dropdown that says Actions...
+			let option = document.getElementById("file-menu").value; // get the chosen option
 
-			if (option == "new")
+			if (option == "new") // Create a new deck by initializing empty variables
 			{
 				deck = [];
 				sideboard = [];
 				deck_2 = {};
 				sideboard_2 = {};
 				processDeck();
-				document.getElementById("file-menu").value = "default";
+				document.getElementById("file-menu").value = "default"; // set the value back
 			}
 			else if (option == "import")
 			{
-				document.getElementById("import-file").click();
+				document.getElementById("import-file").click(); // Import a file by clicking a certain element
 			}
 			else if (option == "save") {
-				localStorage.setItem(document.getElementById("deck-name").value, generateDeckText());
-				document.getElementById("file-menu").value = "default";
-				openSaveModal();
+				localStorage.setItem(document.getElementById("deck-name").value, generateDeckText()); // save the deck text with the key of the deck name to localstorage
+				document.getElementById("file-menu").value = "default"; // set the value back
+				openSaveModal(); // open the modal giving the user a notification
 			}
 			else if (option == "load") {
-				loadDeck();
+				loadDeck(); // open the modal for loading decks
 			}
 			else if (option == "delete") {
-				deleteModal();
+				deleteModal(); // open the modal for deleting decks
 			}
 			else if (option == "get-url") {
-				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replace(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`);
-				openCopyModal();
+				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replace(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`); // write the url + ?deck= + the name with spaces replaced + ; + base64 encoded deck text + &main = deck count + &side= + sideboard count
+				openCopyModal(); // open the modal notifying the user
 			}
 			else if (option == "copy") {
-				navigator.clipboard.writeText(generateDeckText());
-				document.getElementById("file-menu").value = "default";
-				openCopy2Modal();
+				navigator.clipboard.writeText(generateDeckText()); // copy the deck text to clipboard
+				document.getElementById("file-menu").value = "default"; // set the dropdown back
+				openCopy2Modal(); // open the modal to notify the user
 			}
 			else if (option == "save-collection") {
-				let colls = JSON.parse(localStorage.getItem("colls.collections"));
-				colls[document.getElementById("deck-name").value.toString()] = deckTextToCollection();
+				let colls = JSON.parse(localStorage.getItem("colls.collections")); // get the collections object from colls.collections
+				colls[document.getElementById("deck-name").value.toString()] = deckTextToCollection(); // save the deck text converted to collection text in the colls object with the deck name as the key
 				localStorage.setItem("colls.collections", JSON.stringify(colls));
-				document.getElementById("file-menu").value = "default";
-				openSaveCollModal();
+				document.getElementById("file-menu").value = "default"; // set colls back stringified
+				openSaveCollModal(); // open the modal to notify the user
 			}
 			else if (option == "load-collection") {
-				openLoadCollectionWindow();
+				openLoadCollectionWindow(); // open the load collection modal
 			}
 			else if (option.startsWith("export"))
 			{
-				exportFile(option);
+				exportFile(option); // line 2637
 			}
 			else if (option == "draftmancer")
 			{
-				exportDraftmancer();
+				exportDraftmancer(); // line 2691
 			}
 			else if (option == "settings") {
-				openSettingsModal();
+				openSettingsModal(); // open the settings modal to notifyt he user
 			}
 		});
 
 		document.addEventListener("click", (event) => {
+			// if the rightclick menu is clicked on, get rid of it
 			if (!contextMenu.contains(event.target)) {
 				contextMenu.style.display = "none";
 			}
 		});
 
 		document.getElementById("add-to-deck").addEventListener("click", () => {
+			// if the add to deck button in the right click menu is clicked, add the card to the deck, then hide the menu
 			addCardToDeck(active_card);
 			contextMenu.style.display = "none";
 		});
 
 		document.getElementById("add-to-sideboard").addEventListener("click", () => {
+			// if the add to sideboard button in the right click menu is clicked, add the card to the deck, then hide the menu
 			addCardToSideboard(active_card);
 			contextMenu.style.display = "none";
 		});
 
 		document.getElementById("display-select").addEventListener("change", function(event) {
-			processDeck();
+			processDeck(); // when the user chooses the option to change the deck, re-process it
 		});
 
 		function openSaveModal() {
+			// make the modal visible and add the text 'Deck saved as DECK NAME', then add the X
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = "Deck Saved as " + document.getElementById("deck-name").value + '<span class="close" onclick="closeModal()">&times;</span>';
 		}
 
 		function openCopyModal() {
+			// make the modal visible and add the text 'Url copied to clipboard', then add the X			
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = "Url copied to clipboard" + '<span class="close" onclick="closeModal()">&times;</span>';
 		}
 
 		function openCopy2Modal() {
+			// make the modal visible and add the text 'Decklist copied to clipboard', then add the X
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = "Decklist copied to clipboard" + '<span class="close" onclick="closeModal()">&times;</span>';
 		}
 
 		function closeModal() {
+			// hide the modal and change the file menu to default
 			document.getElementById("modal-container").style.display = "none";
 			document.getElementById("file-menu").value = "default";
 		}
 
 		function openSaveCollModal() {
+			// make the modal visible and add the text 'Deck saved as collection: DECK NAME', then add the X
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = "Deck Saved as collection: " + document.getElementById("deck-name").value + '<span class="close" onclick="closeModal()">&times;</span>';
 		}
 
 		function openSettingsModal() {
+			// initialize empty HTML then add each option and the X to it, then make the modal visible and add the content
 			let modalContent = '';
 			modalContent += settingsOptionHtml("Auto save decks", "settings.autosave");
 			modalContent += settingsOptionHtml("Export draftmancer as cube", "settings.exportcube");
 			modalContent += settingsOptionHtml("Include aliases in name searching", "settings.searchalias");
+			modalContent += settingsOptionHtml("Disable adding over max copies in collection", "settings.maxcopies");
 			modalContent += `</select><span class="close" onclick="closeModal()">&times;</span>`;
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = modalContent;
 		}
 
 		function settingsOptionHtml(settingname, settingtag) {
+			// add the text then ':'
 			let generatedContent = settingname + ": ";
+			// add the dropdown with an onchange to set the localStorage value of the settingtag
 			generatedContent += `<select class="settings-dropdown" id="${settingtag}" onchange="localStorage.setItem('${settingtag}', document.getElementById('${settingtag}').value)">`;
+			// add On and Off in the order they need to be based on the value stored in localstorage
 			if (localStorage.getItem(settingtag) == "Off") {
 				generatedContent += '<option>Off</option>';
 				generatedContent += '<option>On </option>';
@@ -848,49 +867,50 @@ await fetch('/lists/all-sets.json')
 				generatedContent += '<option>Off</option>';
 			}
 			generatedContent += '</select>';
-			console.log(generatedContent);
 			return generatedContent;
 		}
 
 		function defaultSetting(name, default_) {
+			// if you dont have a value in localstorage, set that value to default_
 			if (localStorage.getItem(name) == null) {
 				localStorage.setItem(name, default_);
 			}
 		}
 
-		function loadDeck() {
-			document.getElementById("modal-container").style.display = "block";
+		function loadDeck() { // this name is misleading, this opens the load modal
+			// Unide the modal and add the text 'Loading Deck:'
+			document.getElementById("modal-container").style.display = "block"; 
 			document.getElementById("modal-content").innerHTML = "Loading Deck:";
-			Object.keys(localStorage).forEach(function(key){
+			Object.keys(localStorage).forEach(function(key){ // Loop through each localstorage value, then check if its not a setting or collections
 				if (key != "colls.collections" && !key.startsWith("settings.")) { 
-					console.log(key);
-					console.log(localStorage.getItem(key));
-					document.getElementById("modal-content").innerHTML += `<span class="load-btn" onclick="readDeckText(localStorage.getItem('${key}'),'${key}')">${key}</span>`;		
+					document.getElementById("modal-content").innerHTML += `<span class="load-btn" onclick="readDeckText(localStorage.getItem('${key}'),'${key}')">${key}</span>`; // add a button that loads the deck using readDeckText and has the name of the deck (key = deck name)
 				}	
 			});
-			document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>';
+			document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>'; // add the X
 		} 
 
 		function openLoadCollectionWindow() {
+			// make the modal visible and add the text 'Loading Collection:'
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = "Loading Collection:";
-			Object.keys(JSON.parse(localStorage.getItem("colls.collections"))).forEach(function(key){
-				console.log(key);
-   				// console.log(localStorage.getItem(key));
+			Object.keys(JSON.parse(localStorage.getItem("colls.collections"))).forEach(function(key){ // Loop through each item in the collections object
+				// add a button that loads the collection using loadCollection and has the name of the collection (key = collection name)
 				document.getElementById("modal-content").innerHTML += `<span class="load-btn" onclick="loadCollection('${key}')">${key}</span>`;			
 			});
 			document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>';
 		} 
 
 		function loadCollection(name) {
+			// remove the copies style so we can change it later
 			var e = document.getElementById("copies-style");
 			if (e != null){ e.remove(); }
-			if (name == "Full card pool") {
+			if (name == "Full card pool") { // This is a special collection, so loading it is hard coded; we set card_list_arrayified to the original json, then close the modal and initialize the search
 				card_list_arrayified = card_list.cards;
 				closeModal();
 				preSearch();
 				return;
 			}
+			// get the collections object and find the collection to load, then initialize some variables
 			let colls = JSON.parse(localStorage.getItem("colls.collections"));
 			let collectionToLoad_ = colls[name];
 			let new_list = [];
@@ -898,26 +918,26 @@ await fetch('/lists/all-sets.json')
 			let cssStr = "";
 			let i = 0;
 			for (const item of collectionToLoad_) {
+				// for each item in collections, push the card name (the number will be cut off)
 				collectionToLoad.push(item.slice(2));
 			}
 			console.log(collectionToLoad);
-			for (const card of card_list.cards) {
-				// console.log("---------------------------------------");
-				// console.log(card.card_name);
-				// console.log(collectionToLoad);
-				// console.log(collectionToLoad.includes(card.card_name));
-				if (collectionToLoad.includes(card.card_name)) {
+			for (const card of card_list.cards) { // Loop through the card JSON
+				if (collectionToLoad.includes(card.card_name)) { // If the collection has this card, add it to new_list, if it's undefined, don't do the next part
 					new_list.push(card);
 					if (collectionToLoad_[i] == undefined) {
 						continue;
 					}
+					// add to the css to add the copy indicator in the topleft corner
 					collection_copies[`${card["set"]}-${card["number"]}`] = Number(collectionToLoad_[i].split(" ")[0]);
 					cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}-cards-and-text):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${collectionToLoad_[i].split(" ")[0]}x"; z-index: 999; display: block; position: absolute; border-radius: 20px;}\n`
+					// modify deck and sideboard 2 and incrementy i
 					i++;
 					deck_2[`${card["set"]}-${card["number"]}`] = 0;
 					sideboard_2[`${card["set"]}-${card["number"]}`] = 0;
 				}
 			}
+			// set the card list to te new list, then add a style element with the css string we just made, then add it to the body. Close the modal, then initialize the search
 			card_list_arrayified = new_list;
 			const cssElem = document.createElement("style");
 			cssElem.id = "copies-style";
@@ -928,13 +948,14 @@ await fetch('/lists/all-sets.json')
 		}
 
 		function deckTextToCollection() {
+			// get the deck text then split it into lines
 			var text = generateDeckText();
 			var lines = text.split("\n");
 			var cardlist = [];
 			for (const line of lines) {
+				// for each line, add the line to the list
 				cardlist.push(line);
 			}
-			console.log(cardlist);
 			return cardlist;
 		}
 
@@ -2825,10 +2846,10 @@ await fetch('/lists/all-sets.json')
 			}
 		}
 
-				function modifyDeck2(setNum, op) {
+		function modifyDeck2(setNum, op) {
 			if (op == "+") {
 				console.log(deck_2[setNum], sideboard_2[setNum], collection_copies[setNum], setNum)
-				if ((deck_2[setNum] + sideboard_2[setNum]) >= collection_copies[setNum]) {
+				if (((deck_2[setNum] + sideboard_2[setNum]) >= collection_copies[setNum]) && localStorage.getItem("settings.maxcopies") == "On") {
 					console.log('ret');
 					return true;
 				}
@@ -2847,7 +2868,7 @@ await fetch('/lists/all-sets.json')
 		function modifySB2(setNum, op) {
 			if (op == "+") {
 				console.log(deck_2[setNum], sideboard_2[setNum], collection_copies[setNum], setNum)
-				if ((deck_2[setNum] + sideboard_2[setNum]) >= collection_copies[setNum]) {
+				if (((deck_2[setNum] + sideboard_2[setNum]) >= collection_copies[setNum]) && localStorage.getItem("settings.maxcopies") == "On") {
 					console.log('ret');
 					return true;
 				}
