@@ -331,7 +331,7 @@
 	.deck-line {
 		border-top: 1px solid #d5d9d9;
 		display: grid;
-		grid-template-columns: 1fr 13fr;
+		grid-template-columns: 1fr 1fr 13fr 1fr;
 		gap: 5px;
 		align-items: center;
 	}
@@ -343,7 +343,7 @@
 		height: 2.1vw;
 		max-height: 45px;
 		display: grid;
-		grid-template-columns: 1fr 2fr 12fr;
+		grid-template-columns: 1fr 2fr 13fr;
 		gap: 2px;
 		font-weight: bold;
 		line-height: 1;
@@ -481,6 +481,10 @@
 	}
 	.settings-dropdown {
 		margin-right: 15px;
+	}
+	.sanctum-img {
+		height: 150%;
+		width: 150%;
 	}
 </style>
 <body>
@@ -697,7 +701,7 @@ await fetch('/lists/all-sets.json')
 				let regex = new RegExp("((P|p)athbound|(H|h)eir–)"); // check pathbounds and heirs, in the future other mechanics
 				if (regex.test(card.rules_text)) {
 					sanctum_coll.push(`1 ${card.card_name}`); // push just 1 because of sanctum limit
-				} else if (card.type.includes("wonder") || card.type.includes("erysite") || card.type.includes("realm") || card.type.includes("frontier")) {  // check if it has a type that lets it be in the sanctum
+				} else if (card.type.includes("Wonder") || card.type.includes("Erysite") || card.type.includes("realm") || card.type.includes("frontier")) {  // check if it has a type that lets it be in the sanctum
 					sanctum_coll.push(`1 ${card.card_name}`);
 				}
 				else if (card.special_text.includes("sanctum")) { // check evobars
@@ -790,8 +794,8 @@ await fetch('/lists/all-sets.json')
 			}
 			else if (option == "copy-msg") {
 				navigator.clipboard.writeText(`# [${document.getElementById("deck-name").value}](https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length})\n\`\`\`${generateDeckText()}\`\`\``); // CURSED
-				document.getElementById("file-menu").value = "default";
-				openCopy3Modal();
+				document.getElementById("file-menu").value = "default"; // resert the dropdown
+				openCopy3Modal(); // open modal to notify the user
 			}
 		});
 
@@ -1443,8 +1447,8 @@ await fetch('/lists/all-sets.json')
 				const card_sr = card_sr_grid.getElementsByTagName("img")[0];
 
 				card_sr.onmouseover = function() {
-					cgc = document.getElementById("card-grid-container");
-					cgc.innerHTML = "";
+					card_grid_container = document.getElementById("card-grid-container");
+					card_grid_container.innerHTML = "";
 					const gridified_card = gridifyCard(card_stats, true, true);
 					gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
 					gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
@@ -1454,7 +1458,7 @@ await fetch('/lists/all-sets.json')
 							imgFlip("image-grid-card", card_stats.type.includes("Battle"));
 						}
 					}
-					cgc.appendChild(gridified_card);
+					card_grid_container.appendChild(gridified_card);
 				};
 
 				card_sr.onclick = function() {
@@ -2560,32 +2564,48 @@ await fetch('/lists/all-sets.json')
 							card_in_deck.style.cursor = "pointer"; // make the cursor style pointer
 							card_in_deck.onmouseover = function() { // on mouse over: do the following
 								// reset the card grid container's html
-								cgc = document.getElementById("card-grid-container");
-								cgc.innerHTML = "";
+								card_grid_container = document.getElementById("card-grid-container");
+								card_grid_container.innerHTML = "";
 		
 								const gridified_card = gridifyCard(card_stats, true, true); // line 2158
 								gridified_card.getElementsByTagName("img")[0].id = "image-grid-card"; // set gridified
 								gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
-								if (card_stats.shape.includes("double"))
+								if (card_stats.shape.includes("double")) // if its a dfc, add the flip button and give it an onlcick that calls imgFlip (line 2342)
 								{
 									gridified_card.getElementsByTagName("button")[0].onclick = function() {
 										imgFlip("image-grid-card", card_stats.type.includes("Battle"));
 									}
 								}
-								cgc.appendChild(gridified_card);
+								// add gridified card to the card grid container
+								card_grid_container.appendChild(gridified_card);
 							};
 
+							// create an image with the class icon, add the pointer cursor style, this is the delete button
 							del_btn = document.createElement("img");
 							del_btn.className = "icon";
 							del_btn.style.cursor = "pointer";
+
+							// do the same for the add button
+							add_btn = document.createElement("img");
+							add_btn.className = "icon";
+							add_btn.style.cursor = "pointer";
 							if (key == "sideboard")
 							{
+								// if its the sideboard, add the sideboard delete button and setup the onclick accordingly
 								del_btn.src = "/img/sb-delete.png";
 								del_btn.onclick = function() {
 									sideboard.splice(sideboard.indexOf(card), 1);
 									processDeck();
 								}
 
+								// if its the sideboard, add the sideboard add button and setup the onclick accordingly
+								add_btn.src = "/img/sb-add.png";
+								add_btn.onclick = function() {
+									addCardToSideboard(card);
+									processDeck();
+								}
+
+								// when a card in the sideboard is clicked, remove it from the sideboard and add it to the maindeck
 								card_in_deck.onclick = function() {
 									sideboard.splice(sideboard.indexOf(card), 1);
 									let parsed_card = JSON.parse(card);
@@ -2595,16 +2615,23 @@ await fetch('/lists/all-sets.json')
 							}
 							else
 							{
-								// console.log(card);
+								// make the delete button have the normal delete image
 								del_btn.src = "/img/delete.png";
+								add_btn.src = "/img/add.png";
 								let card_parsed = JSON.parse(card);
 								del_btn.onclick = function() {
 									deck.splice(deck.indexOf(card), 1);
-									let card_parsed = JSON.parse(card);
 									modifyDeck2(`${card_parsed['set']}-${card_parsed['number']}`, "-");
 									processDeck();
 								}
 
+								// do the same for the add button
+								add_btn.onclick = function() {
+									addCardToDeck(card);
+									processDeck();
+								}
+
+								// when a card in the deck is clicked, remove it from the deck and add it to the sideboard
 								card_in_deck.onclick = function() {
 									deck.splice(deck.indexOf(card), 1);
 									let card_parsed = JSON.parse(card);
@@ -2613,12 +2640,32 @@ await fetch('/lists/all-sets.json')
 								}
 							}
 
+							// make a container div with the card-fx class and add the delete button to it, do the same for the add button
 							db_container = document.createElement("div");
 							db_container.className = "card-fx";
+							ab_container = document.createElement("div");
+							ab_container.className = "card-fx";
 							db_container.appendChild(del_btn);
+							ab_container.appendChild(add_btn);
 
+							// add all of our elements to the card_row and cards_ele elements
 							card_row.appendChild(db_container);
+							card_row.appendChild(ab_container);
 							card_row.appendChild(card_in_deck);
+							// sanctum stuff, similar to delete button
+							let sanctum_coll = JSON.parse(localStorage.getItem("colls.collections"))["Sanctum cards"];
+							for (card_ of sanctum_coll) {
+								console.log(card_stats.card_name, "'" + card_.substring(card_.indexOf(' ') + 1, card_.length) + "'");
+								if (card_stats.card_name == card_.substring(card_.indexOf(' ') + 1, card_.length)) {
+									sanctum_container = document.createElement("div");
+									sanctum_container.className = "card-fx sanctum-img";
+									sanctum_img = document.createElement("img");
+									sanctum_img.className = "icon";
+									sanctum_img.src = "/img/sanctum.png";
+									sanctum_container.appendChild(sanctum_img);
+									card_row.appendChild(sanctum_container);
+								}
+							}
 							cards_ele.appendChild(card_row);
 						}
 						else
@@ -2635,8 +2682,8 @@ await fetch('/lists/all-sets.json')
 							card_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + "_" + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 							card_img.style.cursor = "pointer";
 							card_img.onmouseover = function() {
-								cgc = document.getElementById("card-grid-container");
-								cgc.innerHTML = "";
+								card_grid_container = document.getElementById("card-grid-container");
+								card_grid_container.innerHTML = "";
 								const gridified_card = gridifyCard(card_stats, true, true);
 								gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
 								gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
@@ -2646,7 +2693,7 @@ await fetch('/lists/all-sets.json')
 										imgFlip("image-grid-card", card_stats.type.includes("Battle"));
 									}
 								}
-								cgc.appendChild(gridified_card);
+								card_grid_container.appendChild(gridified_card);
 							};
 
 							card_count = document.createElement("div");
