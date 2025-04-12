@@ -2657,8 +2657,8 @@ await fetch('/lists/all-sets.json')
 							// sanctum stuff, similar to delete button
 							let sanctum_coll = JSON.parse(localStorage.getItem("colls.collections"))["Sanctum cards"];
 							for (card_ of sanctum_coll) {
-								console.log(card_stats.card_name, "'" + card_.substring(card_.indexOf(' ') + 1, card_.length) + "'");
-								console.log((card_stats.card_name == card_.substring(card_.indexOf(' ') + 1, card_.length)) && (card_stats.type.includes("Basic") || localStorage.getItem("settings.sanctumbasic") == "On"));
+								//console.log(card_stats.card_name, "'" + card_.substring(card_.indexOf(' ') + 1, card_.length) + "'");
+								//console.log((card_stats.card_name == card_.substring(card_.indexOf(' ') + 1, card_.length)) && (card_stats.type.includes("Basic") || localStorage.getItem("settings.sanctumbasic") == "On"));
 								if ( (card_stats.card_name == card_.substring(card_.indexOf(' ') + 1, card_.length)) && (!card_stats.type.includes("Basic") || localStorage.getItem("settings.sanctumbasic") == "On") ) {
 									sanctum_container = document.createElement("div");
 									sanctum_container.className = "card-fx sanctum-img";
