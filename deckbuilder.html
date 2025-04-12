@@ -552,6 +552,7 @@
 					<option value="delete">Delete saved deck</option>
 					<option value="get-url">Get deck URL</option>
 					<option value="copy">Copy decklist</option>
+					<option value="copy-msg">Copy discord message</option>
 					<option value="export-dek">Export .dek</option>
 					<option value="export-txt">Export .txt</option>
 					<option value="draftmancer">Export Draftmancer File</option>
@@ -690,6 +691,7 @@ await fetch('/lists/all-sets.json')
 			// initialize default collections
 			let sanctum_coll = [];
 			let common_coll = [];
+			let cssstr = "";
 			for (const card of card_list_arrayified) { // loop through all cards
 				// sanctum regex tests
 				let regex = new RegExp("((P|p)athbound|(H|h)eir–)"); // check pathbounds and heirs, in the future other mechanics
@@ -757,7 +759,7 @@ await fetch('/lists/all-sets.json')
 				deleteModal(); // open the modal for deleting decks
 			}
 			else if (option == "get-url") {
-				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replace(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`); // write the url + ?deck= + the name with spaces replaced + ; + base64 encoded deck text + &main = deck count + &side= + sideboard count
+				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`); // write the url + ?deck= + the name with spaces replaced + ; + base64 encoded deck text + &main = deck count + &side= + sideboard count
 				openCopyModal(); // open the modal notifying the user
 			}
 			else if (option == "copy") {
@@ -785,6 +787,11 @@ await fetch('/lists/all-sets.json')
 			}
 			else if (option == "settings") {
 				openSettingsModal(); // open the settings modal to notifyt he user
+			}
+			else if (option == "copy-msg") {
+				navigator.clipboard.writeText(`# [${document.getElementById("deck-name").value}](https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length})\n\`\`\`${generateDeckText()}\`\`\``); // CURSED
+				document.getElementById("file-menu").value = "default";
+				openCopy3Modal();
 			}
 		});
 
@@ -827,6 +834,12 @@ await fetch('/lists/all-sets.json')
 			// make the modal visible and add the text 'Decklist copied to clipboard', then add the X
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = "Decklist copied to clipboard" + '<span class="close" onclick="closeModal()">&times;</span>';
+		}
+
+		function openCopy3Modal() {
+			// make the modal visible and add the text 'Decklist copied to clipboard', then add the X
+			document.getElementById("modal-container").style.display = "block";
+			document.getElementById("modal-content").innerHTML = "Deck discord message copied to clipboard" + '<span class="close" onclick="closeModal()">&times;</span>';
 		}
 
 		function closeModal() {
@@ -878,7 +891,7 @@ await fetch('/lists/all-sets.json')
 		}
 
 		function loadDeck() { // this name is misleading, this opens the load modal
-			// Unide the modal and add the text 'Loading Deck:'
+			// Unhide the modal and add the text 'Loading Deck:'
 			document.getElementById("modal-container").style.display = "block"; 
 			document.getElementById("modal-content").innerHTML = "Loading Deck:";
 			Object.keys(localStorage).forEach(function(key){ // Loop through each localstorage value, then check if its not a setting or collections
@@ -960,7 +973,7 @@ await fetch('/lists/all-sets.json')
 		}
 
 		function readDeckText(text, name) {
-
+			// get the deck name and initialize variables
 			document.getElementById("deck-name").value = name;
 
 			deck = [];
@@ -980,10 +993,11 @@ await fetch('/lists/all-sets.json')
 				}
 				else if (!sb_cards)
 				{
+					// get the count and card name
 					count = parseInt(line.substring(0, line.indexOf(' ')));
 					card_name = line.substring(line.indexOf(' ') + 1);
 
-					if (deck_map.has(card_name))
+					if (deck_map.has(card_name)) // if the deck has card name, add the new value, if it doesnt, set the value to stop keyerrors
 					{
 						deck_map.set(card_name, deck_map.get(card_name) + count);
 					}
@@ -992,7 +1006,7 @@ await fetch('/lists/all-sets.json')
 						deck_map.set(card_name, count);
 					}
 				}
-				else
+				else // sideboard cards, do the same thing but with sb_map
 				{
 					count = parseInt(line.substring(0, line.indexOf(' ')));
 					card_name = line.substring(line.indexOf(' ') + 1);
@@ -1007,9 +1021,10 @@ await fetch('/lists/all-sets.json')
 					}
 				}
 			}
-			console.log(card_list_arrayified);
+			// console.log(card_list_arrayified);
 			for (const card of card_list_arrayified)
 			{
+				// for every card, if it's in the deck map, add it to the deck, then remove it from the deck map; repeat with the sideboard map
 				if (deck_map.has(card.card_name))
 				{
 					for (let i = 0; i < deck_map.get(card.card_name); i++)
@@ -1028,24 +1043,25 @@ await fetch('/lists/all-sets.json')
 					sb_map.delete(card.card_name);
 				}
 			}
-		// reader.readAsText(file);
-		document.getElementById("modal-container").style.display = "none";
-		document.getElementById("file-menu").value = "default";
+			// reader.readAsText(file);
+			document.getElementById("modal-container").style.display = "none";
+			document.getElementById("file-menu").value = "default";
 		}
 		
 
 		function deleteModal() {
+			// make the modal visible and add the text 'Deleting deck'
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = "Deleting Deck:";
 			Object.keys(localStorage).forEach(function(key){
-				console.log(key);
-   				console.log(localStorage.getItem(key));
+				// for each key, make a delete button with the name that calls deletedeck
 				document.getElementById("modal-content").innerHTML += `<span id="delete-${key}" class="del-btn" onclick="deleteDeck('${key}')">${key}</span>`;
 			});
 			document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>';
 		}
 
 		function deleteDeck(name) {
+			// remove the item from localstorage and remove the element from the modal
 			localStorage.removeItem(name);
 			document.getElementById(`delete-${name}`).remove();
 		}
@@ -1157,7 +1173,72 @@ await fetch('/lists/all-sets.json')
 							}
 						}
 					}
-				};
+					else if (import_type == "cod") {
+						let deck_map = new Map();
+						let sb_map = new Map();
+
+						for (const line of lines)
+						{
+							if (line.startsWith("<card") || line.startsWith("<zone")) {
+								let parser = new window.DOMParser() .parseFromString(line, "text/xml");
+								let num = parser.documentElement.attributes.number.nodeValue;
+								let name = parser.documentElement.attributes.name.nodeValue;
+							}
+							if (line == 'sideboard' || line == '') // '' for Draftmancer files
+							{
+								sb_cards = true;
+							}
+							else if (!sb_cards)
+							{
+								count = parseInt(line.substring(0, line.indexOf(' ')));
+								card_name = line.substring(line.indexOf(' ') + 1);
+
+								if (deck_map.has(card_name))
+								{
+									deck_map.set(card_name, deck_map.get(card_name) + count);
+								}
+								else
+								{
+									deck_map.set(card_name, count);
+								}
+							}
+							else
+							{
+								count = parseInt(line.substring(0, line.indexOf(' ')));
+								card_name = line.substring(line.indexOf(' ') + 1);
+
+								if (sb_map.has(card_name))
+								{
+									sb_map.set(card_name, sb_map.get(card_name) + count);
+								}
+								else
+								{
+									sb_map.set(card_name, count);
+								}
+							}
+						}
+						for (const card of card_list_arrayified)
+						{
+							if (deck_map.has(card.card_name))
+							{
+								for (let i = 0; i < deck_map.get(card.card_name); i++)
+								{
+									addCardToDeck(JSON.stringify(card));
+								}
+								deck_map.delete(card.card_name);
+							}
+
+							if (sb_map.has(card.card_name))
+							{
+								for (let i = 0; i < sb_map.get(card.card_name); i++)
+								{
+									addCardToSideboard(JSON.stringify(card));
+								}
+								sb_map.delete(card.card_name);
+							}
+						}
+						}
+					}
 				reader.readAsText(file);
 			}
 
@@ -2371,12 +2452,15 @@ await fetch('/lists/all-sets.json')
 		}
 
 		function processDeck() {
+			// add the no-cards-text if there's no cards in the deck or sideboard, otherwise hide it
 			const nct = document.getElementById("no-cards-text");
 			nct.style.display = (deck.length == 0 && sideboard.length == 0) ? "block" : "none";
 
+			// set the deck count thing in the deck header
 			const dc = document.getElementById("deck-count");
 			dc.innerText = "(" + deck.length + " / " + sideboard.length + ")";
 
+			// initialize card types (and sideboard)
 			let deck_cards = new Map([
 				['land', new Map([])],
 				['creature', new Map([])],
@@ -2391,8 +2475,10 @@ await fetch('/lists/all-sets.json')
 
 			for (const card of deck)
 			{
+				// loop through each card and get the cardtype
 				card_type = JSON.parse(card).type.toLowerCase();
 
+				// TODO: make this a giant if thing or switchcase
 				for (const [key, map] of deck_cards)
 				{
 					if (card_type.includes(key))
@@ -2412,6 +2498,7 @@ await fetch('/lists/all-sets.json')
 			}
 			for (const card of sideboard)
 			{
+				// loop through the sideboard and assign the cards to the map
 				let map = deck_cards.get("sideboard");
 				if (map.has(card))
 				{
@@ -2425,20 +2512,23 @@ await fetch('/lists/all-sets.json')
 
 			for (const [key, map] of deck_cards)
 			{
-				dsec_id = "deck-" + key;
-				outer_ele = document.getElementById(dsec_id);
+				// assign the id based on the card type, then get the container div
+				deck_section_id = "deck-" + key;
+				outer_ele = document.getElementById(deck_section_id);
 
-				if (map.size == 0)
+				if (map.size == 0) // if the card type has no cards in the deck, hide the element
 				{
 					outer_ele.style.display = "none";
 				}
 				else
 				{
+					// if it does have cards, make the display grid and get both the cards and title element
 					outer_ele.style.display = "grid";
-					dsec_c_id = dsec_id + "-cards";
-					
-					dsec_t_id = dsec_id + "-title";
-					title_ele = document.getElementById(dsec_t_id);
+					deck_section_cards_id = deck_section_id + "-cards";
+					deck_section_title_id = deck_section_id + "-title";
+					title_ele = document.getElementById(deck_section_title_id);
+
+					// get the number of copies of the card type and add it to the title
 					let count = 0;
 					for (const val of Array.from(map.values()))
 					{
@@ -2447,28 +2537,34 @@ await fetch('/lists/all-sets.json')
 					const numregex = /[0-9]+/;
 					title_ele.innerText = title_ele.innerText.replace(numregex, count);
 
-					cards_ele = document.getElementById(dsec_c_id);
+					// get the cards section and and reset its html
+					cards_ele = document.getElementById(deck_section_cards_id);
 					cards_ele.innerHTML = "";
 					const cards_list = Array.from(map.keys()).sort();				
 					for (const card of cards_list)
 					{
+						// loop through each card in the deck with the card type
+						// get the display style (text or image), the card json, and the name
 						const display_style = document.getElementById("display-select").value;
 						const card_stats = JSON.parse(card);
 						const card_name = card_stats.card_name;
 
-						if (display_style == "text")
+						if (display_style == "text") // if text is selected as the display mode
 						{
+							// make a div for the card line (will contain the name, copies, and - button)
 							card_row = document.createElement("div");
 							card_row.className = "deck-line";
 							
-							card_in_deck = document.createElement("div");
-							card_in_deck.innerText += map.get(card) + " " + card_name + "\n";
-							card_in_deck.style.cursor = "pointer";
-							card_in_deck.onmouseover = function() {
+							card_in_deck = document.createElement("div"); // make a div
+							card_in_deck.innerText += map.get(card) + " " + card_name + "\n"; // add the card name to it
+							card_in_deck.style.cursor = "pointer"; // make the cursor style pointer
+							card_in_deck.onmouseover = function() { // on mouse over: do the following
+								// reset the card grid container's html
 								cgc = document.getElementById("card-grid-container");
 								cgc.innerHTML = "";
-								const gridified_card = gridifyCard(card_stats, true, true);
-								gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
+		
+								const gridified_card = gridifyCard(card_stats, true, true); // line 2158
+								gridified_card.getElementsByTagName("img")[0].id = "image-grid-card"; // set gridified
 								gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
 								if (card_stats.shape.includes("double"))
 								{
@@ -2699,7 +2795,8 @@ await fetch('/lists/all-sets.json')
 
 		function convertManaCostForDraftmancer(mana_cost) {
 			return mana_cost
-				.replace(/{([A-Z])([A-Z])}/g, "{$1/$2}");
+				.replace(/{([A-Z])([A-Z])}/g, "{$1/$2}")
+				.replaceAll("{I}", "{C}");
 		}
 
 		async function exportDraftmancer() {	
@@ -2726,7 +2823,7 @@ await fetch('/lists/all-sets.json')
 			let slots = '';
 
 			if (localStorage.getItem('settings.exportcube') == "On") {
-				slots = 'rare: 15';
+				slots = '"rare": 15';
 			} else {
 				slots = '"rare": 1,\n"uncommon": 3,\n"common": 10"';
 			}
