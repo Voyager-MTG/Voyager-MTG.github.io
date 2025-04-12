@@ -726,6 +726,7 @@ await fetch('/lists/all-sets.json')
 			defaultSetting('settings.searchalias', 'On');
 			defaultSetting('settings.exportcube', 'On');
 			defaultSetting('settings.maxcopies', 'On');
+			defaultSetting('settings.sanctumbasic', 'On');
 		});
 
 		function displayChangeListener() {
@@ -865,6 +866,7 @@ await fetch('/lists/all-sets.json')
 			modalContent += settingsOptionHtml("Export draftmancer as cube", "settings.exportcube");
 			modalContent += settingsOptionHtml("Include aliases in name searching", "settings.searchalias");
 			modalContent += settingsOptionHtml("Disable adding over max copies in collection", "settings.maxcopies");
+			modalContent += settingsOptionHtml("Include basics in sanctum indicator", "settings.sanctumbasic");
 			modalContent += `</select><span class="close" onclick="closeModal()">&times;</span>`;
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = modalContent;
@@ -2656,7 +2658,8 @@ await fetch('/lists/all-sets.json')
 							let sanctum_coll = JSON.parse(localStorage.getItem("colls.collections"))["Sanctum cards"];
 							for (card_ of sanctum_coll) {
 								console.log(card_stats.card_name, "'" + card_.substring(card_.indexOf(' ') + 1, card_.length) + "'");
-								if (card_stats.card_name == card_.substring(card_.indexOf(' ') + 1, card_.length)) {
+								console.log((card_stats.card_name == card_.substring(card_.indexOf(' ') + 1, card_.length)) && (card_stats.type.includes("Basic") || localStorage.getItem("settings.sanctumbasic") == "On"));
+								if ( (card_stats.card_name == card_.substring(card_.indexOf(' ') + 1, card_.length)) && (!card_stats.type.includes("Basic") || localStorage.getItem("settings.sanctumbasic") == "On") ) {
 									sanctum_container = document.createElement("div");
 									sanctum_container.className = "card-fx sanctum-img";
 									sanctum_img = document.createElement("img");
@@ -2664,6 +2667,7 @@ await fetch('/lists/all-sets.json')
 									sanctum_img.src = "/img/sanctum.png";
 									sanctum_container.appendChild(sanctum_img);
 									card_row.appendChild(sanctum_container);
+									break;
 								}
 							}
 							cards_ele.appendChild(card_row);
