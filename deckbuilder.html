@@ -1016,6 +1016,11 @@ await fetch('/lists/all-sets.json')
 				document.getElementById("file-menu").value = "default"; // set the dropdown back
 				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Decklist copied to clipboard"); // open the modal to notify the user
 			}));
+			modalContent.appendChild(exportButtonHtml("Copy Discord Message", function() {
+				navigator.clipboard.writeText(`# [${document.getElementById("deck-name").value}](https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length})\n\`\`\`${generateDeckText()}\`\`\``); // CURSED
+ 				document.getElementById("file-menu").value = "default"
+				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Discord message copied to clipboard"); // open the modal to notify the user
+			}));
 			modalContent.appendChild(exportButtonHtml("Download Draftmancer JSON", exportDraftmancer));
 			modalContent.appendChild(exportButtonHtml("Download .txt", function() {
 				exportFile("export-txt");
