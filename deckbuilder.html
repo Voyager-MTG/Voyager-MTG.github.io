@@ -851,7 +851,10 @@ await fetch('/lists/all-sets.json')
 				colls[document.getElementById("deck-name").value.toString()] = deckTextToCollection(); // save the deck text converted to collection text in the colls object with the deck name as the key
 				localStorage.setItem("colls.collections", JSON.stringify(colls));
 				document.getElementById("file-menu").value = "default"; // set colls back stringified
-				openSaveModal("Deck Saved as collection: " + document.getElementById("deck-name").value + '<span class="close" onclick="closeModal()">&times;</span>'); // open the modal to notify the user
+				openModal("Deck Saved as collection: " + document.getElementById("deck-name").value + '<span class="close" onclick="closeModal()">&times;</span>'); // open the modal to notify the user
+			}
+			else if (option == "load-collection") {
+				openLoadCollectionWindow();
 			}
 		});
 
