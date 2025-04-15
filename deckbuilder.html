@@ -159,7 +159,8 @@
 		top: 91vh;
 		height: 6vh;
 		z-index: 1;
-		width: 32.15vw;
+		width: 32vw;
+		background-size: cover;
 	}
 	@media ( max-width: 750px ) {
 		.image-grid {
@@ -271,7 +272,7 @@
 		max-height: 100%;
 		display: block;
 		margin: auto;
-		border-radius: 10px;
+		border-radius: 12px;
 	}
 	.card-grid-container .btn {
 		left: 50%;
@@ -280,7 +281,7 @@
 		opacity: 0.5;
 	}
 	.card-image {
-		border-radius: 6px;
+		border-radius: 8px;
 	}
 	.hidden {
 		display: none;
@@ -309,7 +310,7 @@
 		position: relative;
 	}
 	::-webkit-scrollbar {
-    background-color: rgba(0, 0, 0, 0);
+    	background-color: rgba(0, 0, 0, 0);
 	}
 	::-webkit-scrollbar-button {
 		background-color: #999;
@@ -793,7 +794,7 @@
 				card_list_arrayified = card_list.cards;
 
 
-await fetch('/lists/all-sets.json')
+			await fetch('/lists/all-sets.json')
 					.then(response => response.json())
 					.then(data => {
 						sets_json = data; 
@@ -1158,7 +1159,10 @@ await fetch('/lists/all-sets.json')
 			contentContainer.innerHTML += settingsOptionHtml("Export draftmancer as cube", "settings.exportcube");
 			contentContainer.innerHTML += settingsOptionHtml("Include aliases in name searching", "settings.searchalias");
 			contentContainer.innerHTML += settingsOptionHtml("Disable adding over max copies in collection", "settings.maxcopies");
+			contentContainer.innerHTML += settingsOptionHtml("Use sanctum symbol", "settings.sanctumsym");
 			contentContainer.innerHTML += settingsOptionHtml("Include basics in sanctum indicator", "settings.sanctumbasic");
+			contentContainer.innerHTML += settingsOptionHtml("Gradient at bottom of search results", "settings.resultgradient");
+			contentContainer.innerHTML += settingsOptionHtml("Scrollbar in search results", "settings.scrollbar");
 			contentContainer.innerHTML += settingsOptionHtml("Black Text", "settings.textcolor");
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = modalContent;
@@ -2754,11 +2758,23 @@ await fetch('/lists/all-sets.json')
 
 		function processDeck() {
 
+			// handle settings at the top
 			if (localStorage.getItem("settings.darktheme") == "On") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000; color: #f3f3f3; }"
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000; color: #f3f3f3; }";
+			} else if (localStorage.getItem("settings.darktheme") == "Off") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3;  }";
 			}
-			if (localStorage.getItem("settings.darktheme") == "Off") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3;  }"
+
+			if (localStorage.getItem("settings.resultgradient") == "Off") {
+				document.getElementsByClassName("search-image-gradient")[0].style.display = "none";
+			} else if (localStorage.getItem("settings.darktheme") == "On") {
+				document.getElementsByClassName("search-image-gradient")[0].style.display = "block";
+			}
+
+			if (localStorage.getItem("settings.scrollbar") == "On") {
+				document.getElementsByClassName("search-image-grid-container")[0].style.scrollbarWidth = "auto";
+			} else if (localStorage.getItem("settings.scrollbar") == "Off") {
+				document.getElementsByClassName("search-image-grid-container")[0].style.scrollbarWidth = "none";
 			}
 
 			// add the no-cards-text if there's no cards in the deck or sideboard, otherwise hide it
@@ -3031,7 +3047,7 @@ await fetch('/lists/all-sets.json')
 			if (display_style == "image") card_row.appendChild(card_count);
 			card_row.appendChild(card_in_deck);
 			// sanctum stuff, similar to delete button
-			if (display_style == "text") {
+			if (display_style == "text" && localStorage.getItem("settings.sanctumsym") == "On") {
 				let sanctum_coll = JSON.parse(localStorage.getItem("colls.collections"))["Sanctum cards"];
 				for (card_ of sanctum_coll) {
 					if ( (card_stats.card_name == card_.substring(card_.indexOf(' ') + 1, card_.length)) && (!card_stats.type.includes("Basic") || localStorage.getItem("settings.sanctumbasic") == "On") ) {
