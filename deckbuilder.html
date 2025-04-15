@@ -63,7 +63,7 @@
 		gap: 8px;
 		padding: 5px 10%;
 		border-bottom: 1px solid #898989;
-		background-color: #f3f3f3;
+		/* background-color: #f3f3f3; */
 		justify-items: center;
 		align-items: center;
 		border-bottom: 3px solid #000;
@@ -123,12 +123,12 @@
 		text-align: center;
 	}
 	select {
-		background-color: #fafafa;
+		/* background-color: #fafafa; */
 		border: 1px solid #d5d9d9;
 		border-radius: 8px;
 		box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
 		text-align: center;
-		color: #171717;
+		/* color: #171717; */
 		font-size: 13px;
 		height: 30px;
 	}
@@ -156,10 +156,10 @@
 		position: relative;
 	}
 	.search-image-gradient {
-		top: 85%;
-		height: 12%;
+		top: 91vh;
+		height: 6vh;
 		z-index: 1;
-		width: 32.15%;
+		width: 32.15vw;
 	}
 	@media ( max-width: 750px ) {
 		.image-grid {
@@ -177,7 +177,7 @@
 		overflow-y: scroll;
 		scrollbar-width: none;
 		height: 50%;
-		background-color: #f3f3f3;
+		/* background-color: #f3f3f3; */
 	}
 	.card-text div {
 		white-space: normal;
@@ -332,7 +332,7 @@
 		border-bottom: 3px solid #000;
 		border-top: 4px solid #171717;
 		border-radius: 6px;
-		background-color: #f3f3f3;
+		/* background-color: #f3f3f3; */
 		justify-items: center;
 		align-items: center;
 	}
@@ -412,7 +412,7 @@
 	.rc-menu {
 		display: none;
 		position: absolute;
-		background-color: #f3f3f3;
+		/* background-color: #f3f3f3; */
 		border-top: 1px solid #d5d9d9;
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 		z-index: 2;
@@ -612,6 +612,12 @@
 		border-radius: 10px;
 	}
 </style>
+<style id="popout-style">
+	.popout {
+		background-color: #f3f3f3;
+		/* color: #f3f3f3; */
+	}
+</style>
 <body>
 	<img class="preload-hidden" src="/img/add.png">
 	<img class="preload-hidden" src="/img/delete.png">
@@ -627,7 +633,7 @@
 			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
 		</div>
 	</div>
-	<div id="myContextMenu" class="rc-menu">
+	<div id="myContextMenu" class="rc-menu popout">
 		<ul>
 			<li id="add-to-deck">Add to Deck</li>
 			<li id="add-to-sideboard">Add to Sideboard</li>
@@ -636,16 +642,16 @@
 	<input type="text" id="display" class="hidden" value="cards-and-text"> <!-- here to make img-container-defs snippet work properly -->
 	<div class="page-container">
 		<div class="search-container">
-			<div class="deckbuilder-search-grid">
-				<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<div class="deckbuilder-search-grid popout">
+				<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false" class="popout">
 				<div class="select-text">
-					<select name="sort-by" id="sort-by">
+					<select name="sort-by" id="sort-by" class="popout">
 						<option value="name">Name</option>
 						<option value="set-code">Set / Number</option>
 						<option value="mv">Mana Value</option>
 						<option value="color">Color</option>
 						<option value="rarity">Rarity</option>
-					</select>:<select name="sort-order" id="sort-order">
+					</select>:<select name="sort-order" id="sort-order" class="popout">
 						<option value="ascending">Asc</option>
 						<option value="descending">Desc</option>
 					</select>
@@ -665,12 +671,12 @@
 			<div class="no-cards-text" id="no-cards-text">
 				Click on a card to add it to the deck
 			</div>
-			<div class="deck-info-grid">
-				<input type="text" value="Untitled Deck" id="deck-name" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<div class="deck-info-grid popout">
+				<input type="text" value="Untitled Deck" id="deck-name" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false" class="popout">
 				<div id="deck-count" class="deck-count">
 					(0 / 0)
 				</div>
-				<select name="display-select" class="display-select" id="display-select">
+				<select name="display-select" class="display-select popout" id="display-select">
 					<option value="text">Text</option>
 					<option value="images">Images</option>
 				</select>
@@ -683,7 +689,7 @@
 				<div id="settings-btn" class="file-icon-container" title="settings" style="cursor: pointer;" onclick="openSettingsModal()">
 					<img src="/img/settings.png" class="file-icon">
 				</div> 
-				<select name="file-menu" class="file-menu" id="file-menu">
+				<select name="file-menu" class="file-menu popout" id="file-menu">
 					<option value="default">Actions ...</option>
 					<option value="new">New deck</option>
 					<option value="import">Import deck</option>
@@ -873,8 +879,10 @@ await fetch('/lists/all-sets.json')
 			defaultSetting('settings.sanctumbasic', 'On');
 			defaultSetting('settings.textcolor', 'On');
 			defaultSetting('settings.gradient', 'Default-(White)');
+			defaultSetting('settings.darktheme', 'Off');
 			
 			setGradient(localStorage.getItem("settings.gradient"));
+			processDeck();
 		});
 
 		function displayChangeListener() {
@@ -1144,7 +1152,8 @@ await fetch('/lists/all-sets.json')
 			contentContainer.style.gridTemplateColumns = "1fr 0.5fr";
 			contentContainer.style.gap = "10px";
 			let modalContent = '</select><span class="close" onclick="closeModal()">&times;</span>';
-			contentContainer.innerHTML += 'Gradient: <select id="color-select" onchange="setGradient()"></select>';
+			contentContainer.innerHTML += 'Background Gradient: <select id="color-select" onchange="setGradient()"></select>';
+			contentContainer.innerHTML += settingsOptionHtml("Dark Theme", "settings.darktheme");
 			contentContainer.innerHTML += settingsOptionHtml("Auto save decks", "settings.autosave");
 			contentContainer.innerHTML += settingsOptionHtml("Export draftmancer as cube", "settings.exportcube");
 			contentContainer.innerHTML += settingsOptionHtml("Include aliases in name searching", "settings.searchalias");
@@ -2473,7 +2482,7 @@ await fetch('/lists/all-sets.json')
 			grid.appendChild(buildImgContainer(card_stats, false, rotate_card));
 			
 			const text = document.createElement("div");
-			text.className = "card-text";
+			text.className = "card-text popout";
 			text.id = "card-text";
 
 			const name_cost = document.createElement("div");
@@ -2744,6 +2753,14 @@ await fetch('/lists/all-sets.json')
 		}
 
 		function processDeck() {
+
+			if (localStorage.getItem("settings.darktheme") == "On") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000; color: #f3f3f3; }"
+			}
+			if (localStorage.getItem("settings.darktheme") == "Off") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3;  }"
+			}
+
 			// add the no-cards-text if there's no cards in the deck or sideboard, otherwise hide it
 			const nct = document.getElementById("no-cards-text");
 			nct.style.display = (deck.length == 0 && sideboard.length == 0) ? "block" : "none";
