@@ -1131,7 +1131,7 @@ def generateHTML(codes):
 				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Decklist copied to clipboard"); // open the modal to notify the user
 			}));
 			modalContent.appendChild(exportButtonHtml("Copy Discord Message", function() {
-				navigator.clipboard.writeText(`# [${document.getElementById("deck-name").value}](https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length})\\n\`\`\`${generateDeckText()}\`\`\``); // CURSED
+				navigator.clipboard.writeText(`# [${document.getElementById("deck-name").value}](https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length})\\n\\`\\`\\`${generateDeckText()}\\`\\`\\``); // CURSED
  				document.getElementById("file-menu").value = "default"
 				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Discord message copied to clipboard"); // open the modal to notify the user
 			}));
@@ -1376,8 +1376,8 @@ def generateHTML(codes):
 
 			if (files.length > 0) {
 				const file = files[0];
-				const name = file.name.replace(/\.[^/.]+$/, "");
-				const import_type = file.name.replace(/^[^/.]+\./, "");
+				const name = file.name.replace(/\\.[^/.]+$/, "");
+				const import_type = file.name.replace(/^[^/.]+\\./, "");
 
 				document.getElementById("deck-name").value = name;
 

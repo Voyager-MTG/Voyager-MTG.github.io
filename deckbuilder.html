@@ -794,7 +794,7 @@
 				card_list_arrayified = card_list.cards;
 
 
-			await fetch('/lists/all-sets.json')
+				await fetch('/lists/all-sets.json')
 					.then(response => response.json())
 					.then(data => {
 						sets_json = data; 
@@ -1549,7 +1549,6 @@
 
 			document.getElementById("file-menu").value = "default";
 		});
-
 		function compareFunction(a, b) {
 			const sortMode = document.getElementById("sort-by").value;
 
@@ -2486,7 +2485,7 @@
 			grid.appendChild(buildImgContainer(card_stats, false, rotate_card));
 			
 			const text = document.createElement("div");
-			text.className = "card-text popout";
+			text.className = "card-text";
 			text.id = "card-text";
 
 			const name_cost = document.createElement("div");
