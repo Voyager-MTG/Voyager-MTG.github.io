@@ -17,8 +17,10 @@
 		margin: 0px;
 		background-color: #bbbbbb;
 		display: block;
+		overflow-y: hidden;
 	}
 	.page-container {
+		overflow-y: hidden;
 		width: 2000px;
 		max-width: 98%;
 		height: 89%;
@@ -37,16 +39,16 @@
 	.search-results-container {
 		display: grid;
 		grid-template-columns: 3fr 2fr;
-		overflow-y: hidden;
+		/* overflow-y: scroll; */
 		overflow-x: hidden;
 		height: 100%;
 	}
 	.search-container {
 		height: 100%;
-		border: 1px solid #d5d9d9;
-		border-top: 4px solid #171717;
-		border-bottom: 4px solid #171717;
-		background-color: #f3f3f3;
+		/* border: 1px solid #d5d9d9; */
+		/* border-top: 4px solid #171717;
+		border-bottom: 4px solid #171717; */
+		background-color: rgba(0, 0, 0, 0);
 		border-radius: 6px;
 		display: flex;
 		flex-direction: column;
@@ -61,8 +63,12 @@
 		gap: 8px;
 		padding: 5px 10%;
 		border-bottom: 1px solid #898989;
+		background-color: #f3f3f3;
 		justify-items: center;
 		align-items: center;
+		border-bottom: 3px solid #000;
+		border-top: 4px solid #171717;
+		border-radius: 6px;
 	}
 	input {
 		width: 100%;
@@ -131,9 +137,10 @@
 	}
 	.search-image-grid-container {
 		overflow-y: scroll;
-		scrollbar-width: none;
+		border-radius: 5px;
+		direction: rtl;
 	}
-	.search-image-grid {
+	.search-image-grid, .search-image-gradient {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		width: 98%;
@@ -141,6 +148,18 @@
 		gap: 3px;
 		justify-items: center;
 		padding: 8px 1%;
+		direction: ltr;
+		position: absolute;
+		/* overflow-y: scroll; */
+	}
+	.search-image-grid {
+		position: relative;
+	}
+	.search-image-gradient {
+		top: 85%;
+		height: 12%;
+		z-index: 1;
+		width: 32.15%;
 	}
 	@media ( max-width: 750px ) {
 		.image-grid {
@@ -153,10 +172,12 @@
 		height: 100%;
 	}
 	.card-text {
-		border-top: 3px solid #171717;
+		border: 3px solid #171717;
+		border-radius: 6px;
 		overflow-y: scroll;
 		scrollbar-width: none;
 		height: 50%;
+		background-color: #f3f3f3;
 	}
 	.card-text div {
 		white-space: normal;
@@ -221,7 +242,7 @@
 		color: rgba(0, 0, 0, 0);
 	}
 	.card-grid-container {
-		border-left: 1px solid #d5d9d9;
+		/* border-left: 1px solid #d5d9d9; */
 		width: 100%;
 		height: 100%;
 		overflow-y: hidden;
@@ -250,12 +271,16 @@
 		max-height: 100%;
 		display: block;
 		margin: auto;
+		border-radius: 10px;
 	}
 	.card-grid-container .btn {
 		left: 50%;
 		top: 48%;
 		transform: translate(-50%, -50%);
 		opacity: 0.5;
+	}
+	.card-image {
+		border-radius: 6px;
 	}
 	.hidden {
 		display: none;
@@ -272,15 +297,29 @@
 	}
 	.deck-container {
 		height: 100%;
-		border: 1px solid #d5d9d9;
-		border-top: 4px solid #171717;
-		border-bottom: 4px solid #171717;
-		background-color: #f3f3f3;
+		/* border: 1px solid #d5d9d9; */
+		/* border-top: 4px solid #171717;
+		border-bottom: 4px solid #171717; */
+		background-color: rgba(0, 0, 0, 0);
 		border-radius: 6px;
 		display: flex;
 		flex-direction: column;
 		overflow-y: hidden;
+		overflow-x: hidden;
 		position: relative;
+	}
+	::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0);
+	}
+	::-webkit-scrollbar-button {
+		background-color: #999;
+		border-radius: 5px;
+		border: 2px solid #333;
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: #ddd;
+		border-radius: 5px;
+		border: 2px solid #333;
 	}
 	.deck-info-grid {
 		width: 95%;
@@ -290,7 +329,10 @@
 		grid-template-columns: 6fr 3fr 3fr 1fr 1fr 1fr 3fr;
 		gap: 3px;
 		padding: 5px 2.5%;
-		border-bottom: 1px solid #898989;
+		border-bottom: 3px solid #000;
+		border-top: 4px solid #171717;
+		border-radius: 6px;
+		background-color: #f3f3f3;
 		justify-items: center;
 		align-items: center;
 	}
@@ -304,13 +346,14 @@
 		height: 100%;
 		overflow-y: hidden;
 	}
-	.deck-cards-container {
+	.deck-cards-container, .deck-cards-background {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		overflow-y: scroll;
 		scrollbar-width: none;
 		font-size: 14px;
 		height: 100%;
+		position: absolute;
 	}
 	.deck-container span {
 		font-size: 15px;
@@ -420,6 +463,7 @@
 		float: right;
 		font-size: 28px;
 		font-weight: bold;
+		margin-left: 30px;
 	}
 	.close:hover,
 	.close:focus {
@@ -445,7 +489,9 @@
 		margin: auto;
 		padding: 20px;
 		border: 1px solid #888;
-		width: 80%;
+		width: 50%;
+		border-radius: 10px;
+		border: solid #777 3px;
 	}
 	.close {
 		color: #aaaaaa;
@@ -479,9 +525,6 @@
 	}
 	.name-cost {
 		font-family: beleren;
-	}
-	.settings-dropdown {
-		margin-right: 15px;
 	}
 	.sanctum-img {
 		height: 150%;
@@ -610,6 +653,7 @@
 			</div>
 			<div class="search-results-container">
 				<div class="search-image-grid-container">
+					<div class="search-image-gradient"></div>
 					<div class="search-image-grid" id="imagesOnlyGrid">
 					</div>
 				</div>
@@ -651,6 +695,7 @@
 				<input type="file" class="hidden" id="import-file" onclick="this.value=null;">
 			</div>
 			<div class="static-deck-container">
+				<div class="deck-cards-background" style="opacity: 0.5;"></div>
 				<div class="deck-cards-container">
 					<div class="deck-col" id="col1">
 						<div class="deck-section" id="deck-creature">
@@ -723,6 +768,7 @@
 		let collection_copies = {};
 		let deck_2 = {};
 		let sideboard_2 = {};
+		let gradients = [];
 
 		// load resource files
 		document.addEventListener("DOMContentLoaded", async function () {
@@ -754,6 +800,17 @@ await fetch('/lists/all-sets.json')
 			gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
 			gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
 			document.getElementById("card-grid-container").appendChild(gridified_card);
+
+			try {
+			const response = await fetch('./resources/gradients.json');
+			raw_gradients = await response.json();
+			}
+			catch(error) {
+				console.error('Error:', error);
+			}
+
+			gradients = raw_gradients.gradients;
+			// prepareGradients();
 
 			// initial search on load
 			preSearch();
@@ -814,10 +871,55 @@ await fetch('/lists/all-sets.json')
 			defaultSetting('settings.exportcube', 'On');
 			defaultSetting('settings.maxcopies', 'On');
 			defaultSetting('settings.sanctumbasic', 'On');
+			defaultSetting('settings.textcolor', 'On');
+			defaultSetting('settings.gradient', 'Default-(White)');
+			
+			setGradient(localStorage.getItem("settings.gradient"));
 		});
 
 		function displayChangeListener() {
 			preSearch();
+		}
+
+		function prepareGradients() {
+			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt = document.createElement("option");
+			opt.value = defaultGradient.replace(' ', '-');
+			opt.text = defaultGradient;
+			document.getElementById("color-select").appendChild(opt);
+			for (const gradient of gradients)
+			{	
+				const opt = document.createElement("option");
+				opt.value = gradient.name.replace(' ', '-');
+				opt.text = gradient.name;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
+				}
+			}
+
+			// setGradient();
+		}
+
+		function setGradient(gradient=false) {
+			if (!gradient) { 
+				gradient = document.getElementById("color-select").value;
+			}
+
+			gradTop = "#000000";
+			gradBottom = "#FFFFFF";
+			for (const grad of gradients)
+			{
+				if (gradient == grad.name.replace(' ', '-'))
+				{ 	
+					gradTop = grad.color1;
+					gradBottom = grad.color2;
+				}
+			}
+
+			// console.log(`linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
+			document.getElementsByClassName("search-image-gradient")[0].style = `background-image: linear-gradient(rgba(0,0,0,0), ${gradBottom}dd, ${gradBottom});`;
+			document.body.style.backgroundImage = `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`;
+			localStorage.setItem("settings.gradient", gradient);
 		}
 
 		document.getElementById("sort-by").onchange = displayChangeListener;
@@ -1037,22 +1139,30 @@ await fetch('/lists/all-sets.json')
 
 		function openSettingsModal() {
 			// initialize empty HTML then add each option and the X to it, then make the modal visible and add the content
-			let modalContent = '';
-			modalContent += settingsOptionHtml("Auto save decks", "settings.autosave");
-			modalContent += settingsOptionHtml("Export draftmancer as cube", "settings.exportcube");
-			modalContent += settingsOptionHtml("Include aliases in name searching", "settings.searchalias");
-			modalContent += settingsOptionHtml("Disable adding over max copies in collection", "settings.maxcopies");
-			modalContent += settingsOptionHtml("Include basics in sanctum indicator", "settings.sanctumbasic");
-			modalContent += `</select><span class="close" onclick="closeModal()">&times;</span>`;
+			let contentContainer = document.createElement("div");
+			contentContainer.style.display = "grid";
+			contentContainer.style.gridTemplateColumns = "1fr 0.5fr";
+			contentContainer.style.gap = "10px";
+			let modalContent = '</select><span class="close" onclick="closeModal()">&times;</span>';
+			contentContainer.innerHTML += 'Gradient: <select id="color-select" onchange="setGradient()"></select>';
+			contentContainer.innerHTML += settingsOptionHtml("Auto save decks", "settings.autosave");
+			contentContainer.innerHTML += settingsOptionHtml("Export draftmancer as cube", "settings.exportcube");
+			contentContainer.innerHTML += settingsOptionHtml("Include aliases in name searching", "settings.searchalias");
+			contentContainer.innerHTML += settingsOptionHtml("Disable adding over max copies in collection", "settings.maxcopies");
+			contentContainer.innerHTML += settingsOptionHtml("Include basics in sanctum indicator", "settings.sanctumbasic");
+			contentContainer.innerHTML += settingsOptionHtml("Black Text", "settings.textcolor");
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = modalContent;
+			document.getElementById("modal-content").appendChild(contentContainer);
+			prepareGradients();
+			setGradient();
 		}
 
 		function settingsOptionHtml(settingname, settingtag) {
 			// add the text then ':'
 			let generatedContent = settingname + ": ";
 			// add the dropdown with an onchange to set the localStorage value of the settingtag
-			generatedContent += `<select class="settings-dropdown" id="${settingtag}" onchange="localStorage.setItem('${settingtag}', document.getElementById('${settingtag}').value)">`;
+			generatedContent += `<select class="settings-dropdown" id="${settingtag}" onchange="localStorage.setItem('${settingtag}', document.getElementById('${settingtag}').value); processDeck();">`;
 			// add On and Off in the order they need to be based on the value stored in localstorage
 			if (localStorage.getItem(settingtag) == "Off") {
 				generatedContent += '<option>Off</option>';
@@ -2710,6 +2820,12 @@ await fetch('/lists/all-sets.json')
 					deck_section_title_id = deck_section_id + "-title";
 					title_ele = document.getElementById(deck_section_title_id);
 
+					if (localStorage.getItem("settings.textcolor") == "On") {
+						title_ele.style.color = "black";
+					} else {
+						title_ele.style.color = "#ddd";
+					}
+
 					// get the number of copies of the card type and add it to the title
 					let count = 0;
 					for (const val of Array.from(map.values()))
@@ -2759,6 +2875,11 @@ await fetch('/lists/all-sets.json')
 				card_in_deck.innerText += map.get(card) + " " + card_name + "\n"; // add the card name to it
 				card_in_deck.style.cursor = "pointer"; // make the cursor style pointer
 				// card_in_deck.onmouseover = updateCardGrid(card_stats);
+				if (localStorage.getItem("settings.textcolor") == "On") {
+					card_in_deck.style.color = "black";
+				} else {
+					card_in_deck.style.color = "#ddd";			
+				}
 			} else if (display_style == "image") {
 				// make the card image container div & give it the class
 				card_row = document.createElement("div");
@@ -2773,12 +2894,17 @@ await fetch('/lists/all-sets.json')
 				// make an image element and give it the correct url
 				card_in_deck = document.createElement("img");
 				card_in_deck.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + "_" + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
-				card_in_deck.style.cursor = "pointer";
+				card_in_deck.style.borderRadius = "8px";
 				// card_in_deck.onmouseover = updateCardGrid(card_stats);
 
 				card_count = document.createElement("div");
 				card_count.innerText = map.get(card) + "x";
 				card_count.className = "card-fx";
+				if (localStorage.getItem("settings.textcolor") == "On") {
+					card_count.style.color = "black";
+				} else {
+					card_count.style.color = "white";			
+				}
 			}			
 
 			// create an image with the class icon, add the pointer cursor style, this is the delete button

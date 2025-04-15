@@ -15,6 +15,7 @@
 		overscroll-behavior: none;
 		font-family: 'Helvetica', 'Arial', sans-serif;
 		display: grid;
+		overflow-y: hidden;
 	}
 	.selects {
 		position: absolute;
@@ -342,6 +343,11 @@
 				}
 				while (!isImageOk(document.getElementById("cotd")));
 				document.getElementById("preview-container").style.height = document.getElementById("cotd-image").offsetHeight;
+
+				if (localStorage.getItem('settings.gradient') == null) {
+					localStorage.setItem('settings.gradient', "Voyager");
+				}
+				setGradient(localStorage.getItem("settings.gradient"));
 			});
 
 			document.getElementById("search").addEventListener("keypress", function(event) {
@@ -380,34 +386,47 @@
 				return Math.floor(randomNumber * x);
 			}
 
-			function prepareGradients() {
-				for (const gradient of gradients)
-				{
-					const opt = document.createElement("option");
-					opt.value = gradient.name.replace(' ', '-');
-					opt.text = gradient.name;
+			
+		function prepareGradients() {
+			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt = document.createElement("option");
+			opt.value = defaultGradient.replace(' ', '-');
+			opt.text = defaultGradient;
+			document.getElementById("color-select").appendChild(opt);
+			for (const gradient of gradients)
+			{	
+				const opt = document.createElement("option");
+				opt.value = gradient.name.replace(' ', '-');
+				opt.text = gradient.name;
+				if (gradient.name != defaultGradient) {
 					document.getElementById("color-select").appendChild(opt);
 				}
-
-				setGradient();
 			}
 
-			function setGradient() {
+			// setGradient();
+		}
+
+		function setGradient(gradient=false) {
+			if (!gradient) { 
 				gradient = document.getElementById("color-select").value;
-
-				gradTop = "#000000";
-				gradBottom = "#FFFFFF";
-				for (const grad of gradients)
-				{
-					if (gradient == grad.name.replace(' ', '-'))
-					{
-						gradTop = grad.color1;
-						gradBottom = grad.color2;
-					}
-				}
-
-				document.body.style.backgroundImage = `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`;
 			}
+
+			gradTop = "#000000";
+			gradBottom = "#FFFFFF";
+			for (const grad of gradients)
+			{
+				if (gradient == grad.name.replace(' ', '-'))
+				{ 	
+					gradTop = grad.color1;
+					gradBottom = grad.color2;
+				}
+			}
+
+			// console.log(`linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
+			// document.getElementsByClassName("search-image-gradient")[0].style = `background-image: linear-gradient(rgba(0,0,0,0), ${gradBottom}dd, ${gradBottom});`;
+			document.body.style.backgroundImage = `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`;
+			localStorage.setItem("settings.gradient", gradient);
+		}
 
 			function goToSets() {
 				window.location = ("/all-sets");
