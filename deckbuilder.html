@@ -872,6 +872,12 @@
 			colls["Pauper"] = common_coll;
 			colls["Full card pool"] = "This is a dummy, the code handles this";
 			localStorage.setItem("colls.collections", JSON.stringify(colls));
+
+			if (localStorage.getItem("settings.autosave") == "On") {
+				readDeckText(localStorage.getItem(localStorage.getItem("info.lastdeck")));
+				document.getElementById("deck-name").value = localStorage.getItem("info.lastdeck");
+			}
+
 			// Initialize default settings
 			defaultSetting('settings.autosave', 'On');
 			defaultSetting('settings.searchalias', 'On');
@@ -994,6 +1000,7 @@
 
 		function saveDeck() {
 			localStorage.setItem(document.getElementById("deck-name").value, generateDeckText()); // save the deck text with the key of the deck name to localstorage
+			localStorage.setItem("info.lastdeck", document.getElementById("deck-name").value);
 			document.getElementById("file-menu").value = "default"; // set the value back
 			openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Deck Saved as " + document.getElementById("deck-name").value); // open the modal giving the user a notification
 		}
@@ -1155,7 +1162,7 @@
 			let modalContent = '</select><span class="close" onclick="closeModal()">&times;</span>';
 			contentContainer.innerHTML += 'Background Gradient: <select id="color-select" onchange="setGradient()"></select>';
 			contentContainer.innerHTML += settingsOptionHtml("Dark Theme", "settings.darktheme");
-			contentContainer.innerHTML += settingsOptionHtml("Auto save decks", "settings.autosave");
+			contentContainer.innerHTML += settingsOptionHtml("Auto save/load decks", "settings.autosave");
 			contentContainer.innerHTML += settingsOptionHtml("Export draftmancer as cube", "settings.exportcube");
 			contentContainer.innerHTML += settingsOptionHtml("Include aliases in name searching", "settings.searchalias");
 			contentContainer.innerHTML += settingsOptionHtml("Disable adding over max copies in collection", "settings.maxcopies");
@@ -3353,7 +3360,7 @@
 
 		window.onbeforeunload = function() {
 			if (localStorage.getItem("settings.autosave") == "On") {
-				localStorage.setItem(document.getElementById("deck-name").value, generateDeckText());
+				saveDeck();
 			}
 		}
 
