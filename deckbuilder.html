@@ -697,7 +697,7 @@
 					<option value="save-collection">Save as collection</option>
 					<option value="load-collection">Load collection</option>
 					<option value="load">Load deck</option>
-					<option value="delete">Delete saved deck</option>
+					<option value="delete">Delete saved properties</option>
 				</select>
 				<input type="file" class="hidden" id="import-file" onclick="this.value=null;">
 			</div>
@@ -1207,7 +1207,7 @@
 			document.getElementById("modal-container").style.display = "block"; 
 			document.getElementById("modal-content").innerHTML = "Loading Deck:";
 			Object.keys(localStorage).forEach(function(key){ // Loop through each localstorage value, then check if its not a setting or collections
-				if (key != "colls.collections" && !key.startsWith("settings.")) { 
+				if (key != "colls.collections" && !key.startsWith("settings.") && !key.startsWith("info.")) { 
 					document.getElementById("modal-content").innerHTML += `<span class="load-btn" onclick="readDeckText(localStorage.getItem('${key}'),'${key}')">${key}</span>`; // add a button that loads the deck using readDeckText and has the name of the deck (key = deck name)
 				}	
 			});
