@@ -161,6 +161,7 @@
 		z-index: 1;
 		width: 32vw;
 		background-size: cover;
+		pointer-events: none;
 	}
 	@media ( max-width: 750px ) {
 		.image-grid {
@@ -310,7 +311,7 @@
 		position: relative;
 	}
 	::-webkit-scrollbar {
-    	background-color: rgba(0, 0, 0, 0);
+    	background-color: rgba(0, 0, 0, 0.1);
 	}
 	::-webkit-scrollbar-button {
 		background-color: #999;
@@ -612,10 +613,31 @@
 		margin-top: 3px;
 		border-radius: 10px;
 	}
+	.settings-modal-header, .settings-modal-header-active {
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 15px;
+		color: #aaa;
+		border-bottom: #ccc solid 2px;
+		/* width: 100%; */
+	}
+	.settings-modal-header-active {
+		color: #333;
+		border-color: #333;
+	}
+	.settings-modal-header-container {
+		align-items: center;
+		justify-items: center;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 5px;
+		margin-bottom: 20px;
+	}
 </style>
 <style id="popout-style">
 	.popout {
-		background-color: #f3f3f3;
+		background-color: #f3f3f3 !important;
 		/* color: #f3f3f3; */
 	}
 </style>
@@ -687,7 +709,7 @@
 				<div id="export-btn" class="file-icon-container" title="export" style="cursor: pointer;" onclick="openExportModal()">
 					<img src="/img/export.png" class="file-icon">
 				</div>
-				<div id="settings-btn" class="file-icon-container" title="settings" style="cursor: pointer;" onclick="openSettingsModal()">
+				<div id="settings-btn" class="file-icon-container" title="settings" style="cursor: pointer;" onclick="openSettingsModal('Home')">
 					<img src="/img/settings.png" class="file-icon">
 				</div> 
 				<select name="file-menu" class="file-menu popout" id="file-menu">
@@ -757,7 +779,7 @@
 			</div>
 		</div>
 		<div id="modal-container">
-			<div id="modal-content">
+			<div id="modal-content" class="popout">
 				<span class="close" onclick="closeModal()">&times;</span> <!--close button-->
 			</div>
 		</div>
@@ -884,9 +906,9 @@
 			defaultSetting('settings.exportcube', 'On');
 			defaultSetting('settings.maxcopies', 'On');
 			defaultSetting('settings.sanctumbasic', 'On');
-			defaultSetting('settings.textcolor', 'On');
+			defaultSetting('settings.textcolor', 'Black');
 			defaultSetting('settings.gradient', 'Default-(White)');
-			defaultSetting('settings.darktheme', 'Off');
+			defaultSetting('settings.darkthememenu', 'Off');
 			
 			setGradient(localStorage.getItem("settings.gradient"));
 			processDeck();
@@ -1153,46 +1175,127 @@
 			document.getElementById("modal-content").appendChild(modalContent);
 		}
 
-		function openSettingsModal() {
+		function createText(text) {
+			let ele = document.createElement('span');
+			ele.innerText = text;
+			return ele;
+		}
+
+		function openSettingsModal(menu) {
 			// initialize empty HTML then add each option and the X to it, then make the modal visible and add the content
+			let headerContainer = document.createElement("div");
+			headerContainer.className = "settings-modal-header-container";
+			const settingsMenus = ["Home", "Style"]
+			for (const menuName of settingsMenus) {
+				let ele = document.createElement("span");
+				ele.onclick = function() {
+					openSettingsModal(menuName);
+				}
+				ele.innerText = menuName;
+				if (menuName == menu) {
+					ele.className = "settings-modal-header-active";
+					if (localStorage.getItem("settings.darkthememenu") == "On") {
+						ele.style.color = "#aaa";
+						ele.style.borderColor = "#ccc";
+					}
+				} else {
+					ele.className = "settings-modal-header";
+					if (localStorage.getItem("settings.darkthememenu") == "On") {
+						ele.style.color = "#333";
+						ele.style.borderColor = "#333";
+					}
+				}
+				headerContainer.appendChild(ele);
+			}
 			let contentContainer = document.createElement("div");
 			contentContainer.style.display = "grid";
 			contentContainer.style.gridTemplateColumns = "1fr 0.5fr";
 			contentContainer.style.gap = "10px";
 			let modalContent = '</select><span class="close" onclick="closeModal()">&times;</span>';
-			contentContainer.innerHTML += 'Background Gradient: <select id="color-select" onchange="setGradient()"></select>';
-			contentContainer.innerHTML += settingsOptionHtml("Dark Theme", "settings.darktheme");
-			contentContainer.innerHTML += settingsOptionHtml("Auto save/load decks", "settings.autosave");
-			contentContainer.innerHTML += settingsOptionHtml("Export draftmancer as cube", "settings.exportcube");
-			contentContainer.innerHTML += settingsOptionHtml("Include aliases in name searching", "settings.searchalias");
-			contentContainer.innerHTML += settingsOptionHtml("Disable adding over max copies in collection", "settings.maxcopies");
-			contentContainer.innerHTML += settingsOptionHtml("Use sanctum symbol", "settings.sanctumsym");
-			contentContainer.innerHTML += settingsOptionHtml("Include basics in sanctum indicator", "settings.sanctumbasic");
-			contentContainer.innerHTML += settingsOptionHtml("Gradient at bottom of search results", "settings.resultgradient");
-			contentContainer.innerHTML += settingsOptionHtml("Scrollbar in search results", "settings.scrollbar");
-			contentContainer.innerHTML += settingsOptionHtml("Black Text", "settings.textcolor");
+			if (menu == "Home") {
+				contentContainer.appendChild(createText("Auto save/load decks: "));
+				contentContainer.appendChild(settingsOptionHtml("Auto save/load decks", "settings.autosave"));
+				contentContainer.appendChild(createText("Export draftmancer as cube: "));
+				contentContainer.appendChild(settingsOptionHtml("Export draftmancer as cube", "settings.exportcube"));
+				contentContainer.appendChild(createText("Include aliases in name searching: "));
+				contentContainer.appendChild(settingsOptionHtml("Include aliases in name searching", "settings.searchalias"));
+				contentContainer.appendChild(createText("Disable adding over max copies in collection: "));
+				contentContainer.appendChild(settingsOptionHtml("Disable adding over max copies in collection", "settings.maxcopies"));
+			} else if (menu == "Style") {
+				let gradientDropdown = document.createElement('select');
+				gradientDropdown.id = 'color-select';
+				gradientDropdown.onchange = function() {
+					setGradient();
+				}
+				let gradientText = document.createElement('span');
+				gradientText.innerText = "Background Gradient:"
+				contentContainer.appendChild(gradientText);
+				contentContainer.appendChild(gradientDropdown);
+				contentContainer.appendChild(createText("Dark theme: "));
+				contentContainer.appendChild(settingsOptionHtml("Dark Theme", "settings.darktheme", ["On", "Off"], function() {
+					let val = document.getElementById('settings.darktheme').value;
+					document.getElementById("settings.darkthememenu").value = val;
+					localStorage.setItem("settings.darkthememenu", val);
+					document.getElementById("settings.textcolor").value = (val == "On" ? "White" : "Black");
+					localStorage.setItem("settings.textcolor", (val == "On" ? "White" : "Black"));
+					setGradient(val == "On" ? 'Frost' : 'Voyager');
+					document.getElementById("color-select").value = (val == "On" ? 'Frost' : 'Voyager');
+					localStorage.setItem("settings.darktheme", val);
+					processDeck();
+				}));
+				contentContainer.appendChild(createText("Dark theme menus: "));
+				contentContainer.appendChild(settingsOptionHtml("Dark Theme Menus", "settings.darkthememenu"));
+				contentContainer.appendChild(createText("Use sanctum indicator: "));
+				contentContainer.appendChild(settingsOptionHtml("Use sanctum symbol", "settings.sanctumsym"));
+				contentContainer.appendChild(createText("Include basics in sanctum indicator: "));
+				contentContainer.appendChild(settingsOptionHtml("Include basics in sanctum indicator", "settings.sanctumbasic"));
+				contentContainer.appendChild(createText("Gradient at bottom of search results: "));
+				contentContainer.appendChild(settingsOptionHtml("Gradient at bottom of search results", "settings.resultgradient"));
+				contentContainer.appendChild(createText("Scrollbar in search results: "));
+				contentContainer.appendChild(settingsOptionHtml("Scrollbar in search results", "settings.scrollbar"));
+				contentContainer.appendChild(createText("Black text color: "));
+				contentContainer.appendChild(settingsOptionHtml("Text Color: ", "settings.textcolor", ["Black", "White"]));
+			}
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = modalContent;
+			document.getElementById("modal-content").appendChild(headerContainer);
 			document.getElementById("modal-content").appendChild(contentContainer);
 			prepareGradients();
 			setGradient();
 		}
 
-		function settingsOptionHtml(settingname, settingtag) {
-			// add the text then ':'
-			let generatedContent = settingname + ": ";
+		function settingsOptionHtml(settingname, settingtag, options=['On', 'Off'], func=false) {
+			let settingsText = document.createElement('span');
+			// add the text then :
+			settingsText.innerText = settingname + ": ";
 			// add the dropdown with an onchange to set the localStorage value of the settingtag
-			generatedContent += `<select class="settings-dropdown" id="${settingtag}" onchange="localStorage.setItem('${settingtag}', document.getElementById('${settingtag}').value); processDeck();">`;
-			// add On and Off in the order they need to be based on the value stored in localstorage
-			if (localStorage.getItem(settingtag) == "Off") {
-				generatedContent += '<option>Off</option>';
-				generatedContent += '<option>On </option>';
+			let dropdown = document.createElement("select");
+			dropdown.className = "settings-dropdown";
+			dropdown.id = settingtag;
+			if (!func) {
+				dropdown.onchange = function() {
+					localStorage.setItem(settingtag, document.getElementById(settingtag).value); 
+					processDeck();
+				}
 			} else {
-				generatedContent += '<option>On </option>';
-				generatedContent += '<option>Off</option>';
+				dropdown.onchange = func;
 			}
-			generatedContent += '</select>';
-			return generatedContent;
+			let defaultOption = localStorage.getItem(settingtag);
+			let dropdownOption_ = document.createElement('option');
+			dropdownOption_.innerText = defaultOption;
+			dropdownOption_.value = defaultOption;
+			dropdown.appendChild(dropdownOption_);
+
+			for (const opt of options) {
+				if (opt == defaultOption) {
+					continue;
+				}
+				let dropdownOption = document.createElement('option');
+				dropdownOption.innerText = opt;
+				dropdownOption.value = opt;
+				dropdown.appendChild(dropdownOption);
+			}
+			return dropdown;
 		}
 
 		function defaultSetting(name, default_) {
@@ -2765,15 +2868,15 @@
 		function processDeck() {
 
 			// handle settings at the top
-			if (localStorage.getItem("settings.darktheme") == "On") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000; color: #f3f3f3; }";
-			} else if (localStorage.getItem("settings.darktheme") == "Off") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3;  }";
+			if (localStorage.getItem("settings.darkthememenu") == "On") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
+			} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
 			}
 
 			if (localStorage.getItem("settings.resultgradient") == "Off") {
 				document.getElementsByClassName("search-image-gradient")[0].style.display = "none";
-			} else if (localStorage.getItem("settings.darktheme") == "On") {
+			} else if (localStorage.getItem("settings.darkthememenu") == "On") {
 				document.getElementsByClassName("search-image-gradient")[0].style.display = "block";
 			}
 
@@ -2859,11 +2962,7 @@
 					deck_section_title_id = deck_section_id + "-title";
 					title_ele = document.getElementById(deck_section_title_id);
 
-					if (localStorage.getItem("settings.textcolor") == "On") {
-						title_ele.style.color = "black";
-					} else {
-						title_ele.style.color = "#ddd";
-					}
+					title_ele.style.color = localStorage.getItem('settings.textcolor');
 
 					// get the number of copies of the card type and add it to the title
 					let count = 0;
@@ -2914,11 +3013,7 @@
 				card_in_deck.innerText += map.get(card) + " " + card_name + "\n"; // add the card name to it
 				card_in_deck.style.cursor = "pointer"; // make the cursor style pointer
 				// card_in_deck.onmouseover = updateCardGrid(card_stats);
-				if (localStorage.getItem("settings.textcolor") == "On") {
-					card_in_deck.style.color = "black";
-				} else {
-					card_in_deck.style.color = "#ddd";			
-				}
+				card_in_deck.style.color = localStorage.getItem("settings.textcolor");
 			} else if (display_style == "image") {
 				// make the card image container div & give it the class
 				card_row = document.createElement("div");
