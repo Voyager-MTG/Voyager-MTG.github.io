@@ -1248,7 +1248,7 @@ def generateHTML(codes):
 					}
 					// add to the css to add the copy indicator in the topleft corner
 					collection_copies[`${card["set"]}-${card["number"]}`] = Number(collectionToLoad_[i].split(" ")[0]);
-					cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}-cards-and-text):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${collectionToLoad_[i].split(" ")[0]}x"; z-index: 999; display: block; position: absolute; border-radius: 20px;}\\n`
+					cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}-cards-and-text):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${collectionToLoad_[i].split(" ")[0]}x"; display: block; position: absolute; border-radius: 20px;}\\n`
 					// modify deck and sideboard 2 and incrementy i
 					i++;
 					deck_2[`${card["set"]}-${card["number"]}`] = 0;
