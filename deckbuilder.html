@@ -716,6 +716,7 @@
 					<option value="default">Actions ...</option>
 					<option value="new">New deck</option>
 					<option value="import">Import deck</option>
+					<option value="load-text">Input textbox</option>
 					<option value="save-collection">Save as collection</option>
 					<option value="load-collection">Load collection</option>
 					<option value="load">Load deck</option>
@@ -998,6 +999,8 @@
 			}
 			else if (option == "load-collection") {
 				openLoadCollectionWindow();
+			} else if (option == "load-text") {
+				openTextareaModal();
 			}
 		});
 
@@ -1042,6 +1045,12 @@
 			document.getElementById("modal-container").style = "";
 			document.getElementById("modal-container").style.display = "none";
 			document.getElementById("file-menu").value = "default";
+		}
+
+		function openTextareaModal() {
+			html = '<span class="close" onclick="closeModal()">&times;</span><textarea placeholder="Paste decklist here..." style="resize: none;height: 40vh;width: 90%;" id="input-area"></textarea><span class="load-btn" onclick="readDeckText(document.getElementById(`input-area`).value);">Load Deck</span>'
+			document.getElementById("modal-container").style.display = "block";
+			document.getElementById("modal-content").innerHTML = html;
 		}
 
 		function createElement(elementname, classname=false, text=false) {
