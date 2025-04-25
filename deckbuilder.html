@@ -820,7 +820,7 @@
 				card_list_arrayified = card_list.cards;
 
 
-				aawait fetch('/lists/all-sets.json')
+				await fetch('/lists/all-sets.json')
 					.then(response => response.json())
 					.then(data => {
 						sets_json = data; 
