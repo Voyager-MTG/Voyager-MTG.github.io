@@ -1,423 +1,423 @@
-ï»¿[CustomCards]
+[CustomCards]
 	[
 		{
 			"name": "Drake Wrangler",
 			"rarity": "uncommon",
-			"mana_cost": "{3}{W/U}{W/U}",
-			"type": "Creature â€” Human ",
+			"mana_cost": "{3}{WU}{WU}",
+			"type": "Creature — Human",
 			"collector_number": "205",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/205_Drake Wrangler.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/205_Drake Wrangler.png"
 			}
 		},
 		{
 			"name": "Tofnet Riftstalker",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{W/B}{W/B}",
-			"type": "Creature â€” Hyena Scout ",
+			"mana_cost": "{1}{WB}{WB}",
+			"type": "Creature — Hyena Scout",
 			"collector_number": "236",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/236_Tofnet Riftstalker.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/236_Tofnet Riftstalker.png"
 			}
 		},
 		{
 			"name": "Passage Overseer",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{R/W}{R/W}",
-			"type": "Creature â€” Minotaur Scout ",
+			"mana_cost": "{1}{RW}{RW}",
+			"type": "Creature — Minotaur Scout",
 			"collector_number": "221",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/221_Passage Overseer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/221_Passage Overseer.png"
 			}
 		},
 		{
 			"name": "Bruin Wanderer",
 			"rarity": "uncommon",
-			"mana_cost": "{G/W}{G/W}",
-			"type": "Creature â€” Bear Scout ",
+			"mana_cost": "{GW}{GW}",
+			"type": "Creature — Bear Scout",
 			"collector_number": "196",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/196_Bruin Wanderer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/196_Bruin Wanderer.png"
 			}
 		},
 		{
 			"name": "Avakin Riftseeker",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{U/B}{U/B}",
-			"type": "Creature â€” Bird Wizard ",
+			"mana_cost": "{1}{UB}{UB}",
+			"type": "Creature — Bird Wizard",
 			"collector_number": "193",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/193_Avakin Riftseeker.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/193_Avakin Riftseeker.png"
 			}
 		},
 		{
 			"name": "Untamed Drake",
 			"rarity": "uncommon",
-			"mana_cost": "{U/R}{U/R}",
-			"type": "Creature â€” Drake ",
+			"mana_cost": "{UR}{UR}",
+			"type": "Creature — Drake",
 			"collector_number": "239",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/239_Untamed Drake.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/239_Untamed Drake.png"
 			}
 		},
 		{
 			"name": "Aeon Awakener",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{B/G}{B/G}",
-			"type": "Creature â€” Human Wizard ",
+			"mana_cost": "{1}{BG}{BG}",
+			"type": "Creature — Human Wizard",
 			"collector_number": "189",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/189_Aeon Awakener.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/189_Aeon Awakener.png"
 			}
 		},
 		{
 			"name": "Bulwark of the Thicket",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{R/G}{R/G}",
-			"type": "Creature â€” Wurm Warrior ",
+			"mana_cost": "{2}{RG}{RG}",
+			"type": "Creature — Wurm Warrior",
 			"collector_number": "197",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/197_Bulwark of the Thicket.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/197_Bulwark of the Thicket.png"
 			}
 		},
 		{
 			"name": "Multaphs Riftwarden",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{G/U}{G/U}",
-			"type": "Creature â€” Elk Shaman ",
+			"mana_cost": "{2}{GU}{GU}",
+			"type": "Creature — Elk Shaman",
 			"collector_number": "217",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/217_Multaphs Riftwarden.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/217_Multaphs Riftwarden.png"
 			}
 		},
 		{
 			"name": "Rush Down",
 			"rarity": "common",
-			"mana_cost": "{R/W}",
+			"mana_cost": "{RW}",
 			"type": "Instant",
 			"collector_number": "228",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/228_Rush Down.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/228_Rush Down.png"
 			}
 		},
 		{
 			"name": "Purge the Clanless",
 			"rarity": "common",
-			"mana_cost": "{3}{W/B}{W/B}",
+			"mana_cost": "{3}{WB}{WB}",
 			"type": "Instant",
 			"collector_number": "225",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/225_Purge the Clanless.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/225_Purge the Clanless.png"
 			}
 		},
 		{
 			"name": "Survivors Instinct",
 			"rarity": "uncommon",
-			"mana_cost": "{G/W}",
+			"mana_cost": "{GW}",
 			"type": "Instant",
 			"collector_number": "235",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/235_Survivors Instinct.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/235_Survivors Instinct.png"
 			}
 		},
 		{
 			"name": "Entrance of Hunger",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{W/U}",
+			"mana_cost": "{1}{WU}",
 			"type": "Instant",
 			"collector_number": "207",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/207_Entrance of Hunger.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/207_Entrance of Hunger.png"
 			}
 		},
 		{
 			"name": "Prismatism",
 			"rarity": "common",
-			"mana_cost": "{U/R}",
+			"mana_cost": "{UR}",
 			"type": "Instant",
 			"collector_number": "224",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/224_Prismatism.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/224_Prismatism.png"
 			}
 		},
 		{
 			"name": "Aerial Roost",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{U/B}{U/B}",
+			"mana_cost": "{2}{UB}{UB}",
 			"type": "Enchantment",
 			"collector_number": "190",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/190_Aerial Roost.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/190_Aerial Roost.png"
 			}
 		},
 		{
 			"name": "Soul Fire",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{B/R}",
+			"mana_cost": "{2}{BR}",
 			"type": "Instant",
 			"collector_number": "231",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/231_Soul Fire.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/231_Soul Fire.png"
 			}
 		},
 		{
 			"name": "Dust to Life",
 			"rarity": "common",
-			"mana_cost": "{B/G}",
+			"mana_cost": "{BG}",
 			"type": "Instant",
 			"collector_number": "206",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/206_Dust to Life.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/206_Dust to Life.png"
 			}
 		},
 		{
 			"name": "Hired Enforcer",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{W/B}{W/B}",
-			"type": "Creature â€” Human Scout Mercenary ",
+			"mana_cost": "{2}{WB}{WB}",
+			"type": "Creature — Human Scout Mercenary",
 			"collector_number": "212",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/212_Hired Enforcer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/212_Hired Enforcer.png"
 			}
 		},
 		{
 			"name": "Perplexing Ray",
 			"rarity": "uncommon",
-			"mana_cost": "{U/R}{U/R}",
-			"type": "Kindred Enchantment â€” Fish Entity ",
+			"mana_cost": "{UR}{UR}",
+			"type": "Kindred Enchantment — Fish Entity",
 			"collector_number": "222",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/222_Perplexing Ray.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/222_Perplexing Ray.png"
 			}
 		},
 		{
 			"name": "Clanless Usurper",
 			"rarity": "uncommon",
-			"mana_cost": "{3}{U/R}{U/R}",
-			"type": "Creature â€” Human Rogue ",
+			"mana_cost": "{3}{UR}{UR}",
+			"type": "Creature — Human Rogue",
 			"collector_number": "200",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/200_Clanless Usurper.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/200_Clanless Usurper.png"
 			}
 		},
 		{
 			"name": "Opportunistic Scavenger",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{B/G}",
-			"type": "Kindred Enchantment â€” Squirrel Entity ",
+			"mana_cost": "{1}{BG}",
+			"type": "Kindred Enchantment — Squirrel Entity",
 			"collector_number": "218",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/218_Opportunistic Scavenger.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/218_Opportunistic Scavenger.png"
 			}
 		},
 		{
 			"name": "Outlands Bulwark",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{B/G}{B/G}",
-			"type": "Creature â€” Human Warrior ",
+			"mana_cost": "{2}{BG}{BG}",
+			"type": "Creature — Human Warrior",
 			"collector_number": "220",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/220_Outlands Bulwark.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/220_Outlands Bulwark.png"
 			}
 		},
 		{
 			"name": "Mischievous Fox",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{R/W}",
-			"type": "Kindred Enchantment â€” Fox Entity ",
+			"mana_cost": "{1}{RW}",
+			"type": "Kindred Enchantment — Fox Entity",
 			"collector_number": "216",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/216_Mischievous Fox.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/216_Mischievous Fox.png"
 			}
 		},
 		{
 			"name": "Roduth's Guard",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{R/W}{R/W}",
-			"type": "Creature â€” Wurm Warrior ",
+			"mana_cost": "{2}{RW}{RW}",
+			"type": "Creature — Wurm Warrior",
 			"collector_number": "227",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/227_Roduth's Guard.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/227_Roduth's Guard.png"
 			}
 		},
 		{
 			"name": "Ageless History",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{G/U}{G/U}",
-			"type": "Kindred Enchantment â€” Turtle Entity ",
+			"mana_cost": "{1}{GU}{GU}",
+			"type": "Kindred Enchantment — Turtle Entity",
 			"collector_number": "191",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/191_Ageless History.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/191_Ageless History.png"
 			}
 		},
 		{
 			"name": "Icebound Reinforcements",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{G/U}{G/U}",
-			"type": "Creature â€” Human Scout ",
+			"mana_cost": "{1}{GU}{GU}",
+			"type": "Creature — Human Scout",
 			"collector_number": "213",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/213_Icebound Reinforcements.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/213_Icebound Reinforcements.png"
 			}
 		},
 		{
 			"name": "Blossoming Mentor",
 			"rarity": "uncommon",
-			"mana_cost": "{G/W}",
-			"type": "Creature â€” Human Cleric Shaman ",
+			"mana_cost": "{GW}",
+			"type": "Creature — Human Cleric Shaman",
 			"collector_number": "194",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/194_Blossoming Mentor.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/194_Blossoming Mentor.png"
 			}
 		},
 		{
 			"name": "Accord Mentor",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{W/U}{W/U}",
-			"type": "Creature â€” Elf Wizard ",
+			"mana_cost": "{1}{WU}{WU}",
+			"type": "Creature — Elf Wizard",
 			"collector_number": "188",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/188_Accord Mentor.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/188_Accord Mentor.png"
 			}
 		},
 		{
 			"name": "Eternal Mentor",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{U/B}",
-			"type": "Creature â€” Human Zombie Shaman ",
+			"mana_cost": "{1}{UB}",
+			"type": "Creature — Human Zombie Shaman",
 			"collector_number": "209",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/209_Eternal Mentor.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/209_Eternal Mentor.png"
 			}
 		},
 		{
 			"name": "Conflict Mentor",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{B/R}{B/R}",
-			"type": "Creature â€” Human Warrior ",
+			"mana_cost": "{2}{BR}{BR}",
+			"type": "Creature — Human Warrior",
 			"collector_number": "201",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/201_Conflict Mentor.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/201_Conflict Mentor.png"
 			}
 		},
 		{
 			"name": "Outcast Mentor",
 			"rarity": "uncommon",
-			"mana_cost": "{R/G}{R/G}",
-			"type": "Creature â€” Human Warlock ",
+			"mana_cost": "{RG}{RG}",
+			"type": "Creature — Human Warlock",
 			"collector_number": "219",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/219_Outcast Mentor.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/219_Outcast Mentor.png"
 			}
 		},
 		{
 			"name": "Fadove Initiate",
 			"rarity": "common",
 			"mana_cost": "{W}",
-			"type": "Creature â€” Human Scout ",
+			"type": "Creature — Human Scout",
 			"collector_number": "22",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/22_Fadove Initiate.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/22_Fadove Initiate.png"
 			}
 		},
 		{
 			"name": "Fadove Trainer",
 			"rarity": "common",
 			"mana_cost": "{W}",
-			"type": "Creature â€” Human Warrior Spellshaper ",
+			"type": "Creature — Human Warrior Spellshaper",
 			"collector_number": "26",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/26_Fadove Trainer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/26_Fadove Trainer.png"
 			}
 		},
 		{
 			"name": "Trusted Companion",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-			"type": "Creature â€” Drake ",
+			"type": "Creature — Drake",
 			"collector_number": "46",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/46_Trusted Companion.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/46_Trusted Companion.png"
 			}
 		},
 		{
 			"name": "Fadove Tracker",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-			"type": "Creature â€” Hyena Scout Spellshaper ",
+			"type": "Creature — Hyena Scout Spellshaper",
 			"collector_number": "25",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/25_Fadove Tracker.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/25_Fadove Tracker.png"
 			}
 		},
 		{
 			"name": "Outlands Marauder",
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-			"type": "Creature â€” Hyena Warrior ",
+			"type": "Creature — Hyena Warrior",
 			"collector_number": "35",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/35_Outlands Marauder.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/35_Outlands Marauder.png"
 			}
 		},
 		{
 			"name": "Wandering Soul",
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-			"type": "Enchantment Creature â€” Icon Nomad ",
+			"type": "Enchantment Creature — Icon Nomad",
 			"collector_number": "48",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/48_Wandering Soul.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/48_Wandering Soul.png"
 			}
 		},
 		{
 			"name": "Fadove Drillmaster",
 			"rarity": "common",
 			"mana_cost": "{3}{W}",
-			"type": "Creature â€” Hyena Warrior Spellshaper ",
+			"type": "Creature — Hyena Warrior Spellshaper",
 			"collector_number": "21",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/21_Fadove Drillmaster.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/21_Fadove Drillmaster.png"
 			}
 		},
 		{
 			"name": "Oathkeep Wurm",
 			"rarity": "common",
 			"mana_cost": "{4}{W}{W}",
-			"type": "Creature â€” Wurm Warrior ",
+			"type": "Creature — Wurm Warrior",
 			"collector_number": "34",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/34_Oathkeep Wurm.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/34_Oathkeep Wurm.png"
 			}
 		},
 		{
 			"name": "Drake Rider",
 			"rarity": "common",
 			"mana_cost": "{4}{W}",
-			"type": "Creature â€” Human Scout ",
+			"type": "Creature — Human Scout",
 			"collector_number": "19",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/19_Drake Rider.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/19_Drake Rider.png"
 			}
 		},
 		{
 			"name": "Radiant Guide",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{W}{W}",
-			"type": "Enchantment Creature â€” Icon Cat ",
+			"type": "Enchantment Creature — Icon Cat",
 			"collector_number": "40",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/40_Radiant Guide.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/40_Radiant Guide.png"
 			}
 		},
 		{
 			"name": "Covetous Fox",
 			"rarity": "common",
-			"mana_cost": "{1}{U/B}",
-			"type": "Kindred Enchantment â€” Fox Entity ",
+			"mana_cost": "{1}{UB}",
+			"type": "Kindred Enchantment — Fox Entity",
 			"collector_number": "202",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/202_Covetous Fox.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/202_Covetous Fox.png"
 			}
 		},
 		{
@@ -427,57 +427,57 @@
 			"type": "Instant",
 			"collector_number": "41",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/41_Rebuke the Foul.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/41_Rebuke the Foul.png"
 			}
 		},
 		{
 			"name": "Maddened by Hunger",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-			"type": "Enchantment â€” Aura ",
+			"type": "Enchantment — Aura",
 			"collector_number": "33",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/33_Maddened by Hunger.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/33_Maddened by Hunger.png"
 			}
 		},
 		{
 			"name": "Fadove Bodyguard",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-			"type": "Creature â€” Human Knight ",
+			"type": "Creature — Human Knight",
 			"collector_number": "20",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/20_Fadove Bodyguard.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/20_Fadove Bodyguard.png"
 			}
 		},
 		{
 			"name": "Combat Diviner",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{W}",
-			"type": "Creature â€” Wurm Warrior ",
+			"type": "Creature — Wurm Warrior",
 			"collector_number": "18",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/18_Combat Diviner.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/18_Combat Diviner.png"
 			}
 		},
 		{
 			"name": "Frostborn Sentinel",
 			"rarity": "common",
 			"mana_cost": "{3}{U}{U}",
-			"type": "Enchantment Creature â€” Icon Soldier ",
+			"type": "Enchantment Creature — Icon Soldier",
 			"collector_number": "62",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/62_Frostborn Sentinel.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/62_Frostborn Sentinel.png"
 			}
 		},
 		{
 			"name": "Respite Partisan",
 			"rarity": "common",
 			"mana_cost": "{2}{U}{U}",
-			"type": "Enchantment Creature â€” Icon Elk ",
+			"type": "Enchantment Creature — Icon Elk",
 			"collector_number": "73",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/73_Respite Partisan.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/73_Respite Partisan.png"
 			}
 		},
 		{
@@ -487,7 +487,7 @@
 			"type": "Instant",
 			"collector_number": "60",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/60_Due Dismissal.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/60_Due Dismissal.png"
 			}
 		},
 		{
@@ -497,7 +497,7 @@
 			"type": "Instant",
 			"collector_number": "59",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/59_Denied by Nature.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/59_Denied by Nature.png"
 			}
 		},
 		{
@@ -507,147 +507,147 @@
 			"type": "Instant",
 			"collector_number": "71",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/71_Repel the Invasion.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/71_Repel the Invasion.png"
 			}
 		},
 		{
 			"name": "Storm Bearer",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-			"type": "Creature â€” Elf Warlock Spellshaper ",
+			"type": "Creature — Elf Warlock Spellshaper",
 			"collector_number": "78",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/78_Storm Bearer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/78_Storm Bearer.png"
 			}
 		},
 		{
 			"name": "Resolute Watcher",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}{U}",
-			"type": "Enchantment Creature â€” Icon Warlock ",
+			"type": "Enchantment Creature — Icon Warlock",
 			"collector_number": "72",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/72_Resolute Watcher.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/72_Resolute Watcher.png"
 			}
 		},
 		{
 			"name": "Avakin Sayer",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}",
-			"type": "Creature â€” Bird Warlock ",
+			"type": "Creature — Bird Warlock",
 			"collector_number": "53",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/53_Avakin Sayer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/53_Avakin Sayer.png"
 			}
 		},
 		{
 			"name": "Avlod Diviner",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-			"type": "Creature â€” Human Wizard ",
+			"type": "Creature — Human Wizard",
 			"collector_number": "55",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/55_Avlod Diviner.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/55_Avlod Diviner.png"
 			}
 		},
 		{
 			"name": "Aspiring Mount",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{U}{U}",
-			"type": "Creature â€” Drake ",
+			"type": "Creature — Drake",
 			"collector_number": "50",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/50_Aspiring Mount.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/50_Aspiring Mount.png"
 			}
 		},
 		{
 			"name": "Cooing Foundling",
 			"rarity": "common",
 			"mana_cost": "{B}",
-			"type": "Creature â€” Bird ",
+			"type": "Creature — Bird",
 			"collector_number": "94",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/94_Cooing Foundling.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/94_Cooing Foundling.png"
 			}
 		},
 		{
 			"name": "Avakin Avenger",
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-			"type": "Creature â€” Bird Archer Spellshaper ",
+			"type": "Creature — Bird Archer Spellshaper",
 			"collector_number": "85",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/85_Avakin Avenger.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/85_Avakin Avenger.png"
 			}
 		},
 		{
 			"name": "Gateway Guardian",
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-			"type": "Creature â€” Human Warrior Spellshaper ",
+			"type": "Creature — Human Warrior Spellshaper",
 			"collector_number": "98",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/98_Gateway Guardian.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/98_Gateway Guardian.png"
 			}
 		},
 		{
 			"name": "Avakin Riftwalker",
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-			"type": "Creature â€” Bird Warlock ",
+			"type": "Creature — Bird Warlock",
 			"collector_number": "89",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/89_Avakin Riftwalker.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/89_Avakin Riftwalker.png"
 			}
 		},
 		{
 			"name": "Rift Tender",
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-			"type": "Creature â€” Human Shaman Spellshaper ",
+			"type": "Creature — Human Shaman Spellshaper",
 			"collector_number": "110",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/110_Rift Tender.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/110_Rift Tender.png"
 			}
 		},
 		{
 			"name": "Waking Words",
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
-			"type": "Enchantment Creature â€” Icon Rogue ",
+			"type": "Enchantment Creature — Icon Rogue",
 			"collector_number": "115",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/115_Waking Words.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/115_Waking Words.png"
 			}
 		},
 		{
 			"name": "Avakin Cleaner",
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-			"type": "Creature â€” Bird Scout ",
+			"type": "Creature — Bird Scout",
 			"collector_number": "86",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/86_Avakin Cleaner.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/86_Avakin Cleaner.png"
 			}
 		},
 		{
 			"name": "Avakin Assaulter",
 			"rarity": "common",
 			"mana_cost": "{3}{B}{B}",
-			"type": "Creature â€” Bird Warrior ",
+			"type": "Creature — Bird Warrior",
 			"collector_number": "84",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/84_Avakin Assaulter.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/84_Avakin Assaulter.png"
 			}
 		},
 		{
 			"name": "Scornful Pursuit",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{B}",
-			"type": "Enchantment Creature â€” Icon Rogue ",
+			"type": "Enchantment Creature — Icon Rogue",
 			"collector_number": "111",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/111_Scornful Pursuit.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/111_Scornful Pursuit.png"
 			}
 		},
 		{
@@ -657,17 +657,17 @@
 			"type": "Sorcery",
 			"collector_number": "101",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/101_Left for the Crows.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/101_Left for the Crows.png"
 			}
 		},
 		{
 			"name": "Weight of Betrayal",
 			"rarity": "common",
 			"mana_cost": "{B}",
-			"type": "Enchantment â€” Aura ",
+			"type": "Enchantment — Aura",
 			"collector_number": "117",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/117_Weight of Betrayal.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/117_Weight of Betrayal.png"
 			}
 		},
 		{
@@ -677,127 +677,127 @@
 			"type": "Instant",
 			"collector_number": "99",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/99_Iconic Resurgence.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/99_Iconic Resurgence.png"
 			}
 		},
 		{
 			"name": "Avlod Necklace",
 			"rarity": "common",
 			"mana_cost": "{B}",
-			"type": "Artifact â€” Equipment ",
+			"type": "Artifact — Equipment",
 			"collector_number": "91",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/91_Avlod Necklace.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/91_Avlod Necklace.png"
 			}
 		},
 		{
 			"name": "Avakin Mentor",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}{B}",
-			"type": "Creature â€” Bird Wizard Spellshaper ",
+			"type": "Creature — Bird Wizard Spellshaper",
 			"collector_number": "88",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/88_Avakin Mentor.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/88_Avakin Mentor.png"
 			}
 		},
 		{
 			"name": "Shaman of Rites Lost",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
-			"type": "Creature â€” Human Warlock ",
+			"type": "Creature — Human Warlock",
 			"collector_number": "112",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/112_Shaman of Rites Lost.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/112_Shaman of Rites Lost.png"
 			}
 		},
 		{
 			"name": "Avakin Hireblade",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}{B}",
-			"type": "Creature â€” Bird Mercenary ",
+			"type": "Creature — Bird Mercenary",
 			"collector_number": "87",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/87_Avakin Hireblade.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/87_Avakin Hireblade.png"
 			}
 		},
 		{
 			"name": "Frontline Assaulter",
 			"rarity": "common",
 			"mana_cost": "{R}",
-			"type": "Creature â€” Minotaur Warrior Spellshaper ",
+			"type": "Creature — Minotaur Warrior Spellshaper",
 			"collector_number": "126",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/126_Frontline Assaulter.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/126_Frontline Assaulter.png"
 			}
 		},
 		{
 			"name": "Minotaur Riftcaller",
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-			"type": "Creature â€” Minotaur Shaman ",
+			"type": "Creature — Minotaur Shaman",
 			"collector_number": "130",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/130_Minotaur Riftcaller.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/130_Minotaur Riftcaller.png"
 			}
 		},
 		{
 			"name": "Fervent Incandescence",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
-			"type": "Enchantment Creature â€” Icon Wizard ",
+			"type": "Enchantment Creature — Icon Wizard",
 			"collector_number": "124",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/124_Fervent Incandescence.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/124_Fervent Incandescence.png"
 			}
 		},
 		{
 			"name": "Mordel Patrol",
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
-			"type": "Creature â€” Human Warrior ",
+			"type": "Creature — Human Warrior",
 			"collector_number": "134",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/134_Mordel Patrol.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/134_Mordel Patrol.png"
 			}
 		},
 		{
 			"name": "Tenuous Empowerment",
 			"rarity": "common",
 			"mana_cost": "{1}{R}{R}",
-			"type": "Enchantment Creature â€” Icon Wizard ",
+			"type": "Enchantment Creature — Icon Wizard",
 			"collector_number": "144",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/144_Tenuous Empowerment.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/144_Tenuous Empowerment.png"
 			}
 		},
 		{
 			"name": "Mordel Drillmaster",
 			"rarity": "common",
 			"mana_cost": "{3}{R}{R}",
-			"type": "Creature â€” Minotaur Warrior Spellshaper ",
+			"type": "Creature — Minotaur Warrior Spellshaper",
 			"collector_number": "132",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/132_Mordel Drillmaster.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/132_Mordel Drillmaster.png"
 			}
 		},
 		{
 			"name": "Verem-Volcano Rumbler",
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
-			"type": "Creature â€” Wurm Warrior ",
+			"type": "Creature — Wurm Warrior",
 			"collector_number": "148",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/148_Verem-Volcano Rumbler.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/148_Verem-Volcano Rumbler.png"
 			}
 		},
 		{
 			"name": "Stalking Entity",
 			"rarity": "common",
-			"mana_cost": "{1}{R/G}{R/G}",
-			"type": "Kindred Enchantment â€” Cat Entity ",
+			"mana_cost": "{1}{RG}{RG}",
+			"type": "Kindred Enchantment — Cat Entity",
 			"collector_number": "232",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/232_Stalking Entity.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/232_Stalking Entity.png"
 			}
 		},
 		{
@@ -807,7 +807,7 @@
 			"type": "Instant",
 			"collector_number": "127",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/127_Iconic Resolution.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/127_Iconic Resolution.png"
 			}
 		},
 		{
@@ -817,7 +817,7 @@
 			"type": "Sorcery",
 			"collector_number": "123",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/123_Conscripted by the Clanless.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/123_Conscripted by the Clanless.png"
 			}
 		},
 		{
@@ -827,7 +827,7 @@
 			"type": "Enchantment",
 			"collector_number": "122",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/122_Clanless Destruction.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/122_Clanless Destruction.png"
 			}
 		},
 		{
@@ -837,47 +837,47 @@
 			"type": "Sorcery",
 			"collector_number": "146",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/146_Unexpected Discovery.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/146_Unexpected Discovery.png"
 			}
 		},
 		{
 			"name": "Brood Protector",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}{R}",
-			"type": "Enchantment Creature â€” Icon Wurm ",
+			"type": "Enchantment Creature — Icon Wurm",
 			"collector_number": "119",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/119_Brood Protector.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/119_Brood Protector.png"
 			}
 		},
 		{
 			"name": "Minotaur Outlander",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}{R}",
-			"type": "Creature â€” Minotaur Warrior Spellshaper ",
+			"type": "Creature — Minotaur Warrior Spellshaper",
 			"collector_number": "129",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/129_Minotaur Outlander.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/129_Minotaur Outlander.png"
 			}
 		},
 		{
 			"name": "Mordel Excursionist",
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
-			"type": "Creature â€” Human Scout Spellshaper ",
+			"type": "Creature — Human Scout Spellshaper",
 			"collector_number": "133",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/133_Mordel Excursionist.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/133_Mordel Excursionist.png"
 			}
 		},
 		{
 			"name": "Lavaskimmer Wurm",
 			"rarity": "common",
 			"mana_cost": "{4}{R}{R}",
-			"type": "Creature â€” Wurm Shaman ",
+			"type": "Creature — Wurm Shaman",
 			"collector_number": "128",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/128_Lavaskimmer Wurm.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/128_Lavaskimmer Wurm.png"
 			}
 		},
 		{
@@ -887,77 +887,77 @@
 			"type": "Instant",
 			"collector_number": "120",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/120_Burnout.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/120_Burnout.png"
 			}
 		},
 		{
 			"name": "Farming Wurm",
 			"rarity": "common",
 			"mana_cost": "{G}",
-			"type": "Creature â€” Wurm Shaman ",
+			"type": "Creature — Wurm Shaman",
 			"collector_number": "256",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/256_Farming Wurm.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/256_Farming Wurm.png"
 			}
 		},
 		{
 			"name": "Awakened Harmony",
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-			"type": "Enchantment Creature â€” Icon Druid ",
+			"type": "Enchantment Creature — Icon Druid",
 			"collector_number": "247",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/247_Awakened Harmony.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/247_Awakened Harmony.png"
 			}
 		},
 		{
 			"name": "Mordel Formgiver",
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-			"type": "Creature â€” Wurm Warlock ",
+			"type": "Creature — Wurm Warlock",
 			"collector_number": "263",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/263_Mordel Formgiver.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/263_Mordel Formgiver.png"
 			}
 		},
 		{
 			"name": "Outlands Diviner",
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
-			"type": "Creature â€” Wurm Warlock Spellshaper ",
+			"type": "Creature — Wurm Warlock Spellshaper",
 			"collector_number": "267",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/267_Outlands Diviner.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/267_Outlands Diviner.png"
 			}
 		},
 		{
 			"name": "Bruin Clankeeper",
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
-			"type": "Creature â€” Bear Warrior ",
+			"type": "Creature — Bear Warrior",
 			"collector_number": "251",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/251_Bruin Clankeeper.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/251_Bruin Clankeeper.png"
 			}
 		},
 		{
 			"name": "Multaphs Watch",
 			"rarity": "common",
 			"mana_cost": "{4}{G}",
-			"type": "Creature â€” Elk ",
+			"type": "Creature — Elk",
 			"collector_number": "266",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/266_Multaphs Watch.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/266_Multaphs Watch.png"
 			}
 		},
 		{
 			"name": "Progeny of Mordel",
 			"rarity": "common",
 			"mana_cost": "{4}{G}{G}",
-			"type": "Creature â€” Wurm Warrior ",
+			"type": "Creature — Wurm Warrior",
 			"collector_number": "273",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/273_Progeny of Mordel.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/273_Progeny of Mordel.png"
 			}
 		},
 		{
@@ -967,7 +967,7 @@
 			"type": "Instant",
 			"collector_number": "258",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/258_Iconic Altercation.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/258_Iconic Altercation.png"
 			}
 		},
 		{
@@ -977,7 +977,7 @@
 			"type": "Instant",
 			"collector_number": "249",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/249_Boon of Roduth.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/249_Boon of Roduth.png"
 			}
 		},
 		{
@@ -987,87 +987,87 @@
 			"type": "Instant",
 			"collector_number": "275",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/275_Ripped into Eternity.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/275_Ripped into Eternity.png"
 			}
 		},
 		{
 			"name": "Rifttouched Ursine",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
-			"type": "Creature â€” Bear Shaman ",
+			"type": "Creature — Bear Shaman",
 			"collector_number": "274",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/274_Rifttouched Ursine.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/274_Rifttouched Ursine.png"
 			}
 		},
 		{
 			"name": "Triumphant Riftcaller",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}{G}",
-			"type": "Creature â€” Bear Berserker ",
+			"type": "Creature — Bear Berserker",
 			"collector_number": "279",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/279_Triumphant Riftcaller.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/279_Triumphant Riftcaller.png"
 			}
 		},
 		{
 			"name": "Forest Assailant",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{G}{G}",
-			"type": "Enchantment Creature â€” Icon Barbarian ",
+			"type": "Enchantment Creature — Icon Barbarian",
 			"collector_number": "257",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/257_Forest Assailant.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/257_Forest Assailant.png"
 			}
 		},
 		{
 			"name": "Progeny of Bruin",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{G}{G}{G}",
-			"type": "Creature â€” Wurm Shaman ",
+			"type": "Creature — Wurm Shaman",
 			"collector_number": "272",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/272_Progeny of Bruin.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/272_Progeny of Bruin.png"
 			}
 		},
 		{
 			"name": "Rippling Crustacean",
 			"rarity": "common",
 			"mana_cost": "{2}",
-			"type": "Creature â€” Crab ",
+			"type": "Creature — Crab",
 			"collector_number": "10",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/10_Rippling Crustacean.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/10_Rippling Crustacean.png"
 			}
 		},
 		{
 			"name": "Starbright Entity",
 			"rarity": "common",
 			"mana_cost": "{1}{C}",
-			"type": "Kindred Enchantment â€” Cat Entity ",
+			"type": "Kindred Enchantment — Cat Entity",
 			"collector_number": "162",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/162_Starbright Entity.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/162_Starbright Entity.png"
 			}
 		},
 		{
 			"name": "Aspiring Entity",
 			"rarity": "common",
 			"mana_cost": "{4}",
-			"type": "Kindred Enchantment â€” Elk Entity ",
+			"type": "Kindred Enchantment — Elk Entity",
 			"collector_number": "1",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/1_Aspiring Entity.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/1_Aspiring Entity.png"
 			}
 		},
 		{
 			"name": "Wings of New Horizons",
 			"rarity": "common",
 			"mana_cost": "{1}",
-			"type": "Artifact â€” Equipment ",
+			"type": "Artifact — Equipment",
 			"collector_number": "284",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/284_Wings of New Horizons.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/284_Wings of New Horizons.png"
 			}
 		},
 		{
@@ -1077,7 +1077,7 @@
 			"type": "Land",
 			"collector_number": "297",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/297_Rip to Tomorrow.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/297_Rip to Tomorrow.png"
 			}
 		},
 		{
@@ -1087,97 +1087,97 @@
 			"type": "Artifact",
 			"collector_number": "282",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/282_Powerstone Claw.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/282_Powerstone Claw.png"
 			}
 		},
 		{
 			"name": "Wandering Entity",
 			"rarity": "common",
 			"mana_cost": "{1}",
-			"type": "Kindred Enchantment â€” Cat Entity ",
+			"type": "Kindred Enchantment — Cat Entity",
 			"collector_number": "14",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/14_Wandering Entity.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/14_Wandering Entity.png"
 			}
 		},
 		{
 			"name": "Pinnacle Skitter",
 			"rarity": "common",
 			"mana_cost": "{2}{C}",
-			"type": "Creature â€” Snake ",
+			"type": "Creature — Snake",
 			"collector_number": "160",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/160_Pinnacle Skitter.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/160_Pinnacle Skitter.png"
 			}
 		},
 		{
 			"name": "Tidepool Scuttler",
 			"rarity": "uncommon",
 			"mana_cost": "{6}",
-			"type": "Creature â€” Octopus Fish ",
+			"type": "Creature — Octopus Fish",
 			"collector_number": "11",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/11_Tidepool Scuttler.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/11_Tidepool Scuttler.png"
 			}
 		},
 		{
 			"name": "Explorers Compass",
 			"rarity": "uncommon",
 			"mana_cost": "{1}",
-			"type": "Artifact â€” Equipment ",
+			"type": "Artifact — Equipment",
 			"collector_number": "280",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/280_Explorers Compass.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/280_Explorers Compass.png"
 			}
 		},
 		{
 			"name": "Pinnacle Wanderer",
 			"rarity": "uncommon",
-			"mana_cost": "{C/W}{C/W}",
-			"type": "Enchantment Creature â€” Incarnation Icon ",
+			"mana_cost": "{CW}{CW}",
+			"type": "Enchantment Creature — Incarnation Icon",
 			"collector_number": "180",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/180_Pinnacle Wanderer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/180_Pinnacle Wanderer.png"
 			}
 		},
 		{
 			"name": "Frostnip Watcher",
 			"rarity": "uncommon",
-			"mana_cost": "{C/U}{C/U}",
-			"type": "Enchantment Creature â€” Incarnation Icon ",
+			"mana_cost": "{CU}{CU}",
+			"type": "Enchantment Creature — Incarnation Icon",
 			"collector_number": "170",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/170_Frostnip Watcher.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/170_Frostnip Watcher.png"
 			}
 		},
 		{
 			"name": "Shroud Walkers",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C/B}{C/B}",
-			"type": "Enchantment Creature â€” Incarnation Icon ",
+			"mana_cost": "{1}{CB}{CB}",
+			"type": "Enchantment Creature — Incarnation Icon",
 			"collector_number": "183",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/183_Shroud Walkers.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/183_Shroud Walkers.png"
 			}
 		},
 		{
 			"name": "Verem-Volcano Stalker",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C/R}{C/R}",
-			"type": "Enchantment Creature â€” Incarnation Icon ",
+			"mana_cost": "{1}{CR}{CR}",
+			"type": "Enchantment Creature — Incarnation Icon",
 			"collector_number": "185",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/185_Verem-Volcano Stalker.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/185_Verem-Volcano Stalker.png"
 			}
 		},
 		{
 			"name": "Power of Oath",
 			"rarity": "common",
 			"mana_cost": "{W}",
-			"type": "Enchantment â€” Aura ",
+			"type": "Enchantment — Aura",
 			"collector_number": "39",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/39_Power of Oath.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/39_Power of Oath.png"
 			}
 		},
 		{
@@ -1187,7 +1187,7 @@
 			"type": "Instant",
 			"collector_number": "31",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/31_Iconic Absolution.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/31_Iconic Absolution.png"
 			}
 		},
 		{
@@ -1197,7 +1197,7 @@
 			"type": "Enchantment",
 			"collector_number": "49",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/49_Wipe the Wicked.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/49_Wipe the Wicked.png"
 			}
 		},
 		{
@@ -1207,17 +1207,17 @@
 			"type": "Instant",
 			"collector_number": "44",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/44_Stalwart Resolution.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/44_Stalwart Resolution.png"
 			}
 		},
 		{
 			"name": "Fadove Willshaper",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{W}",
-			"type": "Creature â€” Human Cleric Spellshaper ",
+			"type": "Creature — Human Cleric Spellshaper",
 			"collector_number": "27",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/27_Fadove Willshaper.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/27_Fadove Willshaper.png"
 			}
 		},
 		{
@@ -1227,7 +1227,7 @@
 			"type": "Sorcery",
 			"collector_number": "109",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/109_Returned from Beyond.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/109_Returned from Beyond.png"
 			}
 		},
 		{
@@ -1237,17 +1237,17 @@
 			"type": "Instant",
 			"collector_number": "141",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/141_Rift Burn.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/141_Rift Burn.png"
 			}
 		},
 		{
 			"name": "Windshaper Drake",
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-			"type": "Enchantment Creature â€” Drake ",
+			"type": "Enchantment Creature — Drake",
 			"collector_number": "83",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/83_Windshaper Drake.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/83_Windshaper Drake.png"
 			}
 		},
 		{
@@ -1257,137 +1257,137 @@
 			"type": "Instant",
 			"collector_number": "79",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/79_Study the Rifts.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/79_Study the Rifts.png"
 			}
 		},
 		{
 			"name": "Blessing of Uth",
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-			"type": "Artifact â€” Equipment ",
+			"type": "Artifact — Equipment",
 			"collector_number": "248",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/248_Blessing of Uth.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/248_Blessing of Uth.png"
 			}
 		},
 		{
 			"name": "Multaphs Resplendant",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
-			"type": "Enchantment Creature â€” Icon Elk ",
+			"type": "Enchantment Creature — Icon Elk",
 			"collector_number": "265",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/265_Multaphs Resplendant.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/265_Multaphs Resplendant.png"
 			}
 		},
 		{
 			"name": "Bruin Outlander",
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-			"type": "Creature â€” Bear Scout ",
+			"type": "Creature — Bear Scout",
 			"collector_number": "253",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/253_Bruin Outlander.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/253_Bruin Outlander.png"
 			}
 		},
 		{
 			"name": "Dark Lessons",
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-			"type": "Enchantment â€” Aura ",
+			"type": "Enchantment — Aura",
 			"collector_number": "95",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/95_Dark Lessons.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/95_Dark Lessons.png"
 			}
 		},
 		{
 			"name": "Chromaboon Blade",
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
-			"type": "Artifact â€” Equipment ",
+			"type": "Artifact — Equipment",
 			"collector_number": "121",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/121_Chromaboon Blade.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/121_Chromaboon Blade.png"
 			}
 		},
 		{
 			"name": "Towering Protector",
 			"rarity": "common",
 			"mana_cost": "{2}{R}{R}",
-			"type": "Artifact Creature â€” Construct ",
+			"type": "Artifact Creature — Construct",
 			"collector_number": "145",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/145_Towering Protector.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/145_Towering Protector.png"
 			}
 		},
 		{
 			"name": "Sage of the Aeons",
 			"rarity": "uncommon",
-			"mana_cost": "{B/R}{B/R}",
-			"type": "Creature â€” Human Warlock ",
+			"mana_cost": "{BR}{BR}",
+			"type": "Creature — Human Warlock",
 			"collector_number": "229",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/229_Sage of the Aeons.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/229_Sage of the Aeons.png"
 			}
 		},
 		{
 			"name": "Avakin Opportunist",
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-			"type": "Creature â€” Bird Warlock ",
+			"type": "Creature — Bird Warlock",
 			"collector_number": "52",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/52_Avakin Opportunist.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/52_Avakin Opportunist.png"
 			}
 		},
 		{
 			"name": "Sage of Truths",
 			"rarity": "common",
 			"mana_cost": "{U}",
-			"type": "Creature â€” Elf Shaman Spellshaper ",
+			"type": "Creature — Elf Shaman Spellshaper",
 			"collector_number": "74",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/74_Sage of Truths.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/74_Sage of Truths.png"
 			}
 		},
 		{
 			"name": "Stalwart Guard",
 			"rarity": "common",
-			"mana_cost": "{2}{W/U}{W/U}",
-			"type": "Kindred Enchantment â€” Wolf Entity ",
+			"mana_cost": "{2}{WU}{WU}",
+			"type": "Kindred Enchantment — Wolf Entity",
 			"collector_number": "233",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/233_Stalwart Guard.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/233_Stalwart Guard.png"
 			}
 		},
 		{
 			"name": "Outlands Wanderer",
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-			"type": "Creature â€” Human Scout Spellshaper ",
+			"type": "Creature — Human Scout Spellshaper",
 			"collector_number": "66",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/66_Outlands Wanderer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/66_Outlands Wanderer.png"
 			}
 		},
 		{
 			"name": "Frostborn Glimmer",
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-			"type": "Enchantment Creature â€” Icon Bird ",
+			"type": "Enchantment Creature — Icon Bird",
 			"collector_number": "61",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/61_Frostborn Glimmer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/61_Frostborn Glimmer.png"
 			}
 		},
 		{
 			"name": "Kaln-Ocean Cloak",
 			"rarity": "common",
 			"mana_cost": "{U}",
-			"type": "Artifact â€” Equipment ",
+			"type": "Artifact — Equipment",
 			"collector_number": "64",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/64_Kaln-Ocean Cloak.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/64_Kaln-Ocean Cloak.png"
 			}
 		},
 		{
@@ -1397,7 +1397,7 @@
 			"type": "Instant",
 			"collector_number": "80",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/80_Suffused Memories.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/80_Suffused Memories.png"
 			}
 		},
 		{
@@ -1407,137 +1407,137 @@
 			"type": "Sorcery",
 			"collector_number": "75",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/75_Search For Wisdom.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/75_Search For Wisdom.png"
 			}
 		},
 		{
 			"name": "Avakin Watcher",
 			"rarity": "common",
 			"mana_cost": "{3}{U}",
-			"type": "Creature â€” Bird Warlock Spellshaper ",
+			"type": "Creature — Bird Warlock Spellshaper",
 			"collector_number": "54",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/54_Avakin Watcher.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/54_Avakin Watcher.png"
 			}
 		},
 		{
 			"name": "Transient Eternity",
 			"rarity": "common",
-			"mana_cost": "{1}{W/U}{W/U}",
-			"type": "Enchantment Creature â€” Icon Wizard ",
+			"mana_cost": "{1}{WU}{WU}",
+			"type": "Enchantment Creature — Icon Wizard",
 			"collector_number": "237",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/237_Transient Eternity.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/237_Transient Eternity.png"
 			}
 		},
 		{
 			"name": "Abrupt Death",
 			"rarity": "common",
-			"mana_cost": "{2}{U/B}{U/B}",
-			"type": "Enchantment Creature â€” Icon Scout ",
+			"mana_cost": "{2}{UB}{UB}",
+			"type": "Enchantment Creature — Icon Scout",
 			"collector_number": "187",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/187_Abrupt Death.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/187_Abrupt Death.png"
 			}
 		},
 		{
 			"name": "Fleeting Ruin",
 			"rarity": "common",
-			"mana_cost": "{B/R}{B/R}",
-			"type": "Enchantment Creature â€” Icon Rogue ",
+			"mana_cost": "{BR}{BR}",
+			"type": "Enchantment Creature — Icon Rogue",
 			"collector_number": "211",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/211_Fleeting Ruin.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/211_Fleeting Ruin.png"
 			}
 		},
 		{
 			"name": "Impetuous Eradication",
 			"rarity": "common",
-			"mana_cost": "{2}{R/G}{R/G}",
-			"type": "Enchantment Creature â€” Icon Berserker ",
+			"mana_cost": "{2}{RG}{RG}",
+			"type": "Enchantment Creature — Icon Berserker",
 			"collector_number": "214",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/214_Impetuous Eradication.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/214_Impetuous Eradication.png"
 			}
 		},
 		{
 			"name": "Ephemeral Ordinance",
 			"rarity": "common",
-			"mana_cost": "{3}{G/W}{G/W}",
-			"type": "Enchantment Creature â€” Icon Warrior ",
+			"mana_cost": "{3}{GW}{GW}",
+			"type": "Enchantment Creature — Icon Warrior",
 			"collector_number": "208",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/208_Ephemeral Ordinance.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/208_Ephemeral Ordinance.png"
 			}
 		},
 		{
 			"name": "Vanishing Resolve",
 			"rarity": "common",
-			"mana_cost": "{W/B}{W/B}",
-			"type": "Enchantment Creature â€” Icon Warlock ",
+			"mana_cost": "{WB}{WB}",
+			"type": "Enchantment Creature — Icon Warlock",
 			"collector_number": "240",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/240_Vanishing Resolve.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/240_Vanishing Resolve.png"
 			}
 		},
 		{
 			"name": "Cursory Casualty",
 			"rarity": "common",
-			"mana_cost": "{1}{B/G}{B/G}",
-			"type": "Enchantment Creature â€” Icon Warlock ",
+			"mana_cost": "{1}{BG}{BG}",
+			"type": "Enchantment Creature — Icon Warlock",
 			"collector_number": "204",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/204_Cursory Casualty.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/204_Cursory Casualty.png"
 			}
 		},
 		{
 			"name": "Transitory Refuge",
 			"rarity": "common",
-			"mana_cost": "{3}{G/U}{G/U}",
-			"type": "Enchantment Creature â€” Icon Nomad ",
+			"mana_cost": "{3}{GU}{GU}",
+			"type": "Enchantment Creature — Icon Nomad",
 			"collector_number": "238",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/238_Transitory Refuge.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/238_Transitory Refuge.png"
 			}
 		},
 		{
 			"name": "Evanescent Impasse",
 			"rarity": "common",
-			"mana_cost": "{1}{U/R}{U/R}",
-			"type": "Enchantment Creature â€” Icon Mystic ",
+			"mana_cost": "{1}{UR}{UR}",
+			"type": "Enchantment Creature — Icon Mystic",
 			"collector_number": "210",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/210_Evanescent Impasse.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/210_Evanescent Impasse.png"
 			}
 		},
 		{
 			"name": "Sublime Liquidation",
 			"rarity": "common",
-			"mana_cost": "{1}{R/W}{R/W}",
-			"type": "Enchantment Creature â€” Icon Warrior ",
+			"mana_cost": "{1}{RW}{RW}",
+			"type": "Enchantment Creature — Icon Warrior",
 			"collector_number": "234",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/234_Sublime Liquidation.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/234_Sublime Liquidation.png"
 			}
 		},
 		{
 			"name": "Mistblade Rogue",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}{B}",
-			"type": "Enchantment Creature â€” Icon Rogue ",
+			"type": "Enchantment Creature — Icon Rogue",
 			"collector_number": "103",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/103_Mistblade Rogue.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/103_Mistblade Rogue.png"
 			}
 		},
 		{
 			"name": "Manifesting Ardor",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
-			"type": "Enchantment Creature â€” Icon Druid ",
+			"type": "Enchantment Creature — Icon Druid",
 			"collector_number": "261",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/261_Manifesting Ardor.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/261_Manifesting Ardor.png"
 			}
 		},
 		{
@@ -1547,87 +1547,87 @@
 			"type": "Artifact",
 			"collector_number": "283",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/283_Prismatic Powerstone.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/283_Prismatic Powerstone.png"
 			}
 		},
 		{
 			"name": "Razorshell Drake",
 			"rarity": "common",
 			"mana_cost": "{4}{U}{U}",
-			"type": "Creature â€” Drake Turtle ",
+			"type": "Creature — Drake Turtle",
 			"collector_number": "70",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/70_Razorshell Drake.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/70_Razorshell Drake.png"
 			}
 		},
 		{
 			"name": "Verem-Volcano Warrior",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{R}{R}",
-			"type": "Creature â€” Wurm Warrior ",
+			"type": "Creature — Wurm Warrior",
 			"collector_number": "149",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/149_Verem-Volcano Warrior.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/149_Verem-Volcano Warrior.png"
 			}
 		},
 		{
 			"name": "Outlands Protector",
 			"rarity": "uncommon",
 			"mana_cost": "{G}",
-			"type": "Creature â€” Human Mercenary Spellshaper ",
+			"type": "Creature — Human Mercenary Spellshaper",
 			"collector_number": "269",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/269_Outlands Protector.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/269_Outlands Protector.png"
 			}
 		},
 		{
 			"name": "Smoldering Entity",
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
-			"type": "Kindred Enchantment â€” Dragon Entity ",
+			"type": "Kindred Enchantment — Dragon Entity",
 			"collector_number": "143",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/143_Smoldering Entity.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/143_Smoldering Entity.png"
 			}
 		},
 		{
 			"name": "Skywatch Entity",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-			"type": "Kindred Enchantment â€” Bird Entity ",
+			"type": "Kindred Enchantment — Bird Entity",
 			"collector_number": "77",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/77_Skywatch Entity.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/77_Skywatch Entity.png"
 			}
 		},
 		{
 			"name": "Giants Blade",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{W}",
-			"type": "Artifact â€” Equipment ",
+			"type": "Artifact — Equipment",
 			"collector_number": "28",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/28_Giants Blade.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/28_Giants Blade.png"
 			}
 		},
 		{
 			"name": "Voidborn Entity",
 			"rarity": "common",
-			"mana_cost": "{1}{B/R}",
-			"type": "Kindred Enchantment â€” Rat Entity ",
+			"mana_cost": "{1}{BR}",
+			"type": "Kindred Enchantment — Rat Entity",
 			"collector_number": "241",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/241_Voidborn Entity.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/241_Voidborn Entity.png"
 			}
 		},
 		{
 			"name": "Chittering Entity",
 			"rarity": "common",
-			"mana_cost": "{G/W}",
-			"type": "Kindred Enchantment â€” Squirrel Entity ",
+			"mana_cost": "{GW}",
+			"type": "Kindred Enchantment — Squirrel Entity",
 			"collector_number": "199",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/199_Chittering Entity.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/199_Chittering Entity.png"
 			}
 		},
 		{
@@ -1637,17 +1637,17 @@
 			"type": "Instant",
 			"collector_number": "142",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/142_Riftborn Flames.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/142_Riftborn Flames.png"
 			}
 		},
 		{
 			"name": "Shining Idol",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-			"type": "Enchantment Creature â€” Icon Cleric ",
+			"type": "Enchantment Creature — Icon Cleric",
 			"collector_number": "43",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/43_Shining Idol.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/43_Shining Idol.png"
 			}
 		},
 		{
@@ -1657,57 +1657,57 @@
 			"type": "Enchantment",
 			"collector_number": "45",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/45_Triumphant Entrance.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/45_Triumphant Entrance.png"
 			}
 		},
 		{
 			"name": "Midnight Raven",
 			"rarity": "uncommon",
-			"mana_cost": "{W/B}",
-			"type": "Kindred Enchantment â€” Bird Entity ",
+			"mana_cost": "{WB}",
+			"type": "Kindred Enchantment — Bird Entity",
 			"collector_number": "215",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/215_Midnight Raven.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/215_Midnight Raven.png"
 			}
 		},
 		{
 			"name": "Outlands Riftbearer",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-			"type": "Creature â€” Human Warlock Spellshaper ",
+			"type": "Creature — Human Warlock Spellshaper",
 			"collector_number": "36",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/36_Outlands Riftbearer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/36_Outlands Riftbearer.png"
 			}
 		},
 		{
 			"name": "Mordel Clanwarden",
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-			"type": "Creature â€” Human Scout ",
+			"type": "Creature — Human Scout",
 			"collector_number": "262",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/262_Mordel Clanwarden.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/262_Mordel Clanwarden.png"
 			}
 		},
 		{
 			"name": "Warden of the Lost",
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-			"type": "Creature â€” Human Shaman ",
+			"type": "Creature — Human Shaman",
 			"collector_number": "116",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/116_Warden of the Lost.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/116_Warden of the Lost.png"
 			}
 		},
 		{
 			"name": "Warforged Herald",
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-			"type": "Creature â€” Human Warrior Spellshaper ",
+			"type": "Creature — Human Warrior Spellshaper",
 			"collector_number": "150",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/150_Warforged Herald.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/150_Warforged Herald.png"
 			}
 		},
 		{
@@ -1717,147 +1717,147 @@
 			"type": "Instant",
 			"collector_number": "63",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/63_Iconic Incident.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/63_Iconic Incident.png"
 			}
 		},
 		{
 			"name": "Mordel Warrior",
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-			"type": "Creature â€” Bear Warrior Spellshaper ",
+			"type": "Creature — Bear Warrior Spellshaper",
 			"collector_number": "264",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/264_Mordel Warrior.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/264_Mordel Warrior.png"
 			}
 		},
 		{
 			"name": "Keeper of Calm",
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-			"type": "Creature â€” Bear Shaman Spellshaper ",
+			"type": "Creature — Bear Shaman Spellshaper",
 			"collector_number": "259",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/259_Keeper of Calm.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/259_Keeper of Calm.png"
 			}
 		},
 		{
 			"name": "Avlod Bulwark",
 			"rarity": "common",
 			"mana_cost": "{4}{B}{B}",
-			"type": "Creature â€” Human Warlock Spellshaper ",
+			"type": "Creature — Human Warlock Spellshaper",
 			"collector_number": "90",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/90_Avlod Bulwark.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/90_Avlod Bulwark.png"
 			}
 		},
 		{
 			"name": "Faloden Thickets",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C/G}{C/G}",
-			"type": "Enchantment Creature â€” Incarnation Icon ",
+			"mana_cost": "{1}{CG}{CG}",
+			"type": "Enchantment Creature — Incarnation Icon",
 			"collector_number": "169",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/169_Faloden Thickets.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/169_Faloden Thickets.png"
 			}
 		},
 		{
 			"name": "Faloden Tear-Warden",
 			"rarity": "uncommon",
 			"mana_cost": "{2}",
-			"type": "Creature â€” Beast Horror ",
+			"type": "Creature — Beast Horror",
 			"collector_number": "4",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/4_Faloden Tear-Warden.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/4_Faloden Tear-Warden.png"
 			}
 		},
 		{
 			"name": "Tofnet Predator",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{C}",
-			"type": "Creature â€” Insect ",
+			"type": "Creature — Insect",
 			"collector_number": "163",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/163_Tofnet Predator.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/163_Tofnet Predator.png"
 			}
 		},
 		{
 			"name": "Remnant Awakener",
 			"rarity": "common",
 			"mana_cost": "{5}",
-			"type": "Creature â€” Nightmare ",
+			"type": "Creature — Nightmare",
 			"collector_number": "9",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/9_Remnant Awakener.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/9_Remnant Awakener.png"
 			}
 		},
 		{
 			"name": "Waterspout",
 			"rarity": "common",
-			"mana_cost": "{1}{G/U}",
+			"mana_cost": "{1}{GU}",
 			"type": "Instant",
 			"collector_number": "242",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/242_Waterspout.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/242_Waterspout.png"
 			}
 		},
 		{
 			"name": "Malevolent Naginata",
 			"rarity": "uncommon",
 			"mana_cost": "{B}",
-			"type": "Artifact â€” Equipment ",
+			"type": "Artifact — Equipment",
 			"collector_number": "102",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/102_Malevolent Naginata.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/102_Malevolent Naginata.png"
 			}
 		},
 		{
 			"name": "Skillful Blade",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-			"type": "Artifact â€” Equipment ",
+			"type": "Artifact — Equipment",
 			"collector_number": "76",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/76_Skillful Blade.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/76_Skillful Blade.png"
 			}
 		},
 		{
 			"name": "Tattered Entity",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
-			"type": "Kindred Enchantment â€” Spirit Entity ",
+			"type": "Kindred Enchantment — Spirit Entity",
 			"collector_number": "113",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/113_Tattered Entity.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/113_Tattered Entity.png"
 			}
 		},
 		{
 			"name": "Crowned Entity",
 			"rarity": "uncommon",
 			"mana_cost": "{G}{G}",
-			"type": "Kindred Enchantment â€” Elk Entity ",
+			"type": "Kindred Enchantment — Elk Entity",
 			"collector_number": "254",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/254_Crowned Entity.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/254_Crowned Entity.png"
 			}
 		},
 		{
 			"name": "Flaming Iron",
 			"rarity": "common",
 			"mana_cost": "{R}",
-			"type": "Artifact â€” Equipment ",
+			"type": "Artifact — Equipment",
 			"collector_number": "125",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/125_Flaming Iron.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/125_Flaming Iron.png"
 			}
 		},
 		{
 			"name": "Usher of the Lost",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}",
-			"type": "Kindred Enchantment â€” Elk Entity ",
+			"type": "Kindred Enchantment — Elk Entity",
 			"collector_number": "47",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/47_Usher of the Lost.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/47_Usher of the Lost.png"
 			}
 		},
 		{
@@ -1867,7 +1867,7 @@
 			"type": "Trace Enchantment",
 			"collector_number": "5",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/5_Voidstone Shard.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/5_Voidstone Shard.png"
 			}
 		},
 		{
@@ -1877,57 +1877,57 @@
 			"type": "Trace Land",
 			"collector_number": "34",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/34_Reformed Rift.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/34_Reformed Rift.png"
 			}
 		},
 		{
 			"name": "Vin-Mountain",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Basic Land â€” Mountain ",
+			"type": "Basic Land — Mountain",
 			"collector_number": "32",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/32_Vin-Mountain.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/32_Vin-Mountain.png"
 			}
 		},
 		{
 			"name": "Subdued Rift",
 			"rarity": "special",
-			"mana_cost": "{W/B}",
+			"mana_cost": "{WB}",
 			"type": "Trace Skill Sorcery",
 			"collector_number": "27",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/27_Subdued Rift.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/27_Subdued Rift.png"
 			}
 		},
 		{
 			"name": "Hollow Graze",
 			"rarity": "special",
-			"mana_cost": "{U/B}",
+			"mana_cost": "{UB}",
 			"type": "Trace Skill Instant",
 			"collector_number": "21",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/21_Hollow Graze.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/21_Hollow Graze.png"
 			}
 		},
 		{
 			"name": "Ever Vigilant",
 			"rarity": "special",
-			"mana_cost": "{1}{G/U}",
+			"mana_cost": "{1}{GU}",
 			"type": "Trace Skill Sorcery",
 			"collector_number": "20",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/20_Ever Vigilant.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/20_Ever Vigilant.png"
 			}
 		},
 		{
 			"name": "Steady Growth",
 			"rarity": "special",
-			"mana_cost": "{1}{B/G}",
+			"mana_cost": "{1}{BG}",
 			"type": "Trace Enchantment",
 			"collector_number": "26",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/26_Steady Growth.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/26_Steady Growth.png"
 			}
 		},
 		{
@@ -1937,7 +1937,7 @@
 			"type": "Trace Skill Sorcery",
 			"collector_number": "14",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/14_Prepared Strike.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/14_Prepared Strike.png"
 			}
 		},
 		{
@@ -1947,57 +1947,57 @@
 			"type": "Trace Skill Sorcery",
 			"collector_number": "13",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/13_In the Moment.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/13_In the Moment.png"
 			}
 		},
 		{
 			"name": "Reshape Will",
 			"rarity": "special",
-			"mana_cost": "{1}{W/U}",
+			"mana_cost": "{1}{WU}",
 			"type": "Trace Skill Instant",
 			"collector_number": "25",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/25_Reshape Will.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/25_Reshape Will.png"
 			}
 		},
 		{
 			"name": "Readied Assault",
 			"rarity": "special",
-			"mana_cost": "{2}{R/W}",
+			"mana_cost": "{2}{RW}",
 			"type": "Trace Skill Sorcery",
 			"collector_number": "24",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/24_Readied Assault.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/24_Readied Assault.png"
 			}
 		},
 		{
 			"name": "Military Training",
 			"rarity": "special",
-			"mana_cost": "{G/W}",
+			"mana_cost": "{GW}",
 			"type": "Trace Skill Instant",
 			"collector_number": "23",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/23_Military Training.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/23_Military Training.png"
 			}
 		},
 		{
 			"name": "White Drake Token",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Token Creature â€” Drake ",
+			"type": "Token Creature — Drake",
 			"collector_number": "7",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/7_White Drake Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/7_White Drake Token.png"
 			}
 		},
 		{
 			"name": "Icebound Reinforcements Token",
 			"rarity": "special",
-			"mana_cost": "{1}{G/U}{G/U}",
-			"type": "Token Creature â€” Human Scout ",
+			"mana_cost": "{1}{GU}{GU}",
+			"type": "Token Creature — Human Scout",
 			"collector_number": "22",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/22_Icebound Reinforcements Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/22_Icebound Reinforcements Token.png"
 			}
 		},
 		{
@@ -2007,27 +2007,27 @@
 			"type": "Token Reminder",
 			"collector_number": "1",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/1_Luminous.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/1_Luminous.png"
 			}
 		},
 		{
 			"name": "Breaking the Mold",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{R/G}",
+			"mana_cost": "{1}{RG}",
 			"type": "Instant",
 			"collector_number": "195",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/195_Breaking the Mold.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/195_Breaking the Mold.png"
 			}
 		},
 		{
 			"name": "Cat Token",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Enchantment Creature â€” Cat ",
+			"type": "Token Enchantment Creature — Cat",
 			"collector_number": "19",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/19_Cat Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/19_Cat Token.png"
 			}
 		},
 		{
@@ -2037,57 +2037,57 @@
 			"type": "Trace Skill Sorcery",
 			"collector_number": "6",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/6_Warped Exploration.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/6_Warped Exploration.png"
 			}
 		},
 		{
 			"name": "Blue Drake Token",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Token Creature â€” Drake ",
+			"type": "Token Creature — Drake",
 			"collector_number": "9",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/9_Blue Drake Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/9_Blue Drake Token.png"
 			}
 		},
 		{
 			"name": "Vin-Plains",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Basic Land â€” Plains ",
+			"type": "Basic Land — Plains",
 			"collector_number": "33",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/33_Vin-Plains.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/33_Vin-Plains.png"
 			}
 		},
 		{
 			"name": "Vin-Island",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Basic Land â€” Island ",
+			"type": "Basic Land — Island",
 			"collector_number": "31",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/31_Vin-Island.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/31_Vin-Island.png"
 			}
 		},
 		{
 			"name": "Vin-Swamp",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Basic Land â€” Swamp ",
+			"type": "Basic Land — Swamp",
 			"collector_number": "35",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/35_Vin-Swamp.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/35_Vin-Swamp.png"
 			}
 		},
 		{
 			"name": "Vin-Forest",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Basic Land â€” Forest ",
+			"type": "Basic Land — Forest",
 			"collector_number": "30",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/30_Vin-Forest.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/30_Vin-Forest.png"
 			}
 		},
 		{
@@ -2097,7 +2097,7 @@
 			"type": "Trace Skill Instant",
 			"collector_number": "12",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/12_Harsh Reprise.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/12_Harsh Reprise.png"
 			}
 		},
 		{
@@ -2107,47 +2107,47 @@
 			"type": "Legendary Enchantment Artifact",
 			"collector_number": "42",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/42_Ruins of Multa.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/42_Ruins of Multa.png"
 			}
 		},
 		{
 			"name": "Multaph Riftborn God",
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{B}",
-			"type": "Legendary Enchantment Creature â€” Icon Elk God ",
+			"type": "Legendary Enchantment Creature — Icon Elk God",
 			"collector_number": "175",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/175_Multaph Riftborn God.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/175_Multaph Riftborn God.png"
 			}
 		},
 		{
 			"name": "Will of Roduth",
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{R}",
-			"type": "Creature â€” God Wurm Reflection ",
+			"type": "Creature — God Wurm Reflection",
 			"collector_number": "151",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/151_Will of Roduth.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/151_Will of Roduth.png"
 			}
 		},
 		{
 			"name": "Will of Multaph",
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{U}",
-			"type": "Creature â€” God Elk Reflection ",
+			"type": "Creature — God Elk Reflection",
 			"collector_number": "82",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/82_Will of Multaph.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/82_Will of Multaph.png"
 			}
 		},
 		{
 			"name": "Will of Destruction",
 			"rarity": "rare",
-			"mana_cost": "{U/R}{U/R}{B}",
-			"type": "Legendary Creature â€” Reflection Wizard ",
+			"mana_cost": "{UR}{UR}{B}",
+			"type": "Legendary Creature — Reflection Wizard",
 			"collector_number": "244",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/244_Will of Destruction.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/244_Will of Destruction.png"
 			}
 		},
 		{
@@ -2157,37 +2157,37 @@
 			"type": "Sorcery",
 			"collector_number": "29",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/29_The Great Tear.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/29_The Great Tear.png"
 			}
 		},
 		{
 			"name": "Multaph's Respite",
 			"rarity": "rare",
-			"mana_cost": "{C/U}{C/R}{C/W}",
+			"mana_cost": "{CU}{CR}{CW}",
 			"type": "Legendary Enchantment",
 			"collector_number": "176",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/176_Multaph's Respite.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/176_Multaph's Respite.png"
 			}
 		},
 		{
 			"name": "The Wandering Cook",
 			"rarity": "rare",
 			"mana_cost": "{2}{C}",
-			"type": "Legendary Enchantment Creature â€” Bird ",
+			"type": "Legendary Enchantment Creature — Bird",
 			"collector_number": "165",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/165_The Wandering Cook.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/165_The Wandering Cook.png"
 			}
 		},
 		{
 			"name": "Najael Travelling Shaman",
 			"rarity": "rare",
 			"mana_cost": "{2}{G}{U}",
-			"type": "Legendary Creature â€” Human Shaman ",
+			"type": "Legendary Creature — Human Shaman",
 			"collector_number": "177",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/177_Najael Travelling Shaman.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/177_Najael Travelling Shaman.png"
 			}
 		},
 		{
@@ -2197,7 +2197,7 @@
 			"type": "Instant",
 			"collector_number": "93",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/93_Called by the Void.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/93_Called by the Void.png"
 			}
 		},
 		{
@@ -2207,37 +2207,37 @@
 			"type": "Legendary Enchantment Artifact",
 			"collector_number": "276",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/276_Ruins of Uth.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/276_Ruins of Uth.png"
 			}
 		},
 		{
 			"name": "Will of Hunger",
 			"rarity": "rare",
 			"mana_cost": "{3}",
-			"type": "Creature â€” Reflection ",
+			"type": "Creature — Reflection",
 			"collector_number": "15",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/15_Will of Hunger.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/15_Will of Hunger.png"
 			}
 		},
 		{
 			"name": "Roduth God of Conflict",
 			"rarity": "rare",
-			"mana_cost": "{2}{G}{R/W}{R/W}",
-			"type": "Legendary Enchantment Creature â€” Wurm Elk God ",
+			"mana_cost": "{2}{G}{RW}{RW}",
+			"type": "Legendary Enchantment Creature — Wurm Elk God",
 			"collector_number": "226",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/226_Roduth God of Conflict.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/226_Roduth God of Conflict.png"
 			}
 		},
 		{
 			"name": "Thargle",
 			"rarity": "rare",
 			"mana_cost": "{4}{B}",
-			"type": "Legendary Creature â€” Frog Demon ",
+			"type": "Legendary Creature — Frog Demon",
 			"collector_number": "114",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/114_Thargle.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/114_Thargle.png"
 			}
 		},
 		{
@@ -2247,7 +2247,7 @@
 			"type": "Trace Skill Instant",
 			"collector_number": "10",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/10_Cut from Void.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/10_Cut from Void.png"
 			}
 		},
 		{
@@ -2257,67 +2257,67 @@
 			"type": "Land",
 			"collector_number": "298",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/298_Rip to Yesterday.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/298_Rip to Yesterday.png"
 			}
 		},
 		{
 			"name": "Bark of Tofnet Plains",
 			"rarity": "common",
-			"mana_cost": "{3}{C/W}{C/W}",
-			"type": "Creature â€” Plant ",
+			"mana_cost": "{3}{CW}{CW}",
+			"type": "Creature — Plant",
 			"collector_number": "167",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/167_Bark of Tofnet Plains.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/167_Bark of Tofnet Plains.png"
 			}
 		},
 		{
 			"name": "Kaln-Ocean Wispop",
 			"rarity": "common",
-			"mana_cost": "{1}{C/U}",
-			"type": "Creature â€” Jellyfish ",
+			"mana_cost": "{1}{CU}",
+			"type": "Creature — Jellyfish",
 			"collector_number": "173",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/173_Kaln-Ocean Wispop.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/173_Kaln-Ocean Wispop.png"
 			}
 		},
 		{
 			"name": "Pathborn Crackle",
 			"rarity": "common",
-			"mana_cost": "{C/R}",
-			"type": "Creature â€” Elemental ",
+			"mana_cost": "{CR}",
+			"type": "Creature — Elemental",
 			"collector_number": "179",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/179_Pathborn Crackle.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/179_Pathborn Crackle.png"
 			}
 		},
 		{
 			"name": "Guardian of Faloden Woods",
 			"rarity": "common",
-			"mana_cost": "{2}{C/G}{C/G}",
-			"type": "Creature â€” Beast ",
+			"mana_cost": "{2}{CG}{CG}",
+			"type": "Creature — Beast",
 			"collector_number": "171",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/171_Guardian of Faloden Woods.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/171_Guardian of Faloden Woods.png"
 			}
 		},
 		{
 			"name": "Outlands Frostalker",
 			"rarity": "common",
-			"mana_cost": "{1}{C/B}{C/B}",
-			"type": "Creature â€” Cat Beast ",
+			"mana_cost": "{1}{CB}{CB}",
+			"type": "Creature — Cat Beast",
 			"collector_number": "178",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/178_Outlands Frostalker.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/178_Outlands Frostalker.png"
 			}
 		},
 		{
 			"name": "Fog Walker",
 			"rarity": "common",
 			"mana_cost": "{C}",
-			"type": "Creature â€” Insect ",
+			"type": "Creature — Insect",
 			"collector_number": "156",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/156_Fog Walker.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/156_Fog Walker.png"
 			}
 		},
 		{
@@ -2327,7 +2327,7 @@
 			"type": "Enchantment",
 			"collector_number": "3",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/3_Dromencals Respite.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/3_Dromencals Respite.png"
 			}
 		},
 		{
@@ -2337,107 +2337,107 @@
 			"type": "Enchantment",
 			"collector_number": "6",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/6_Outlands Respite.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/6_Outlands Respite.png"
 			}
 		},
 		{
 			"name": "Melodia Voidtouched",
 			"rarity": "rare",
 			"mana_cost": "{2}{C}{C}",
-			"type": "Legendary Enchantment Creature â€” Human Wizard ",
+			"type": "Legendary Enchantment Creature — Human Wizard",
 			"collector_number": "158",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/158_Melodia Voidtouched.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/158_Melodia Voidtouched.png"
 			}
 		},
 		{
 			"name": "Calia Oracle of Tofnet Plains",
 			"rarity": "rare",
 			"mana_cost": "{2}{W}{W}",
-			"type": "Legendary Enchantment Creature â€” Icon Wizard ",
+			"type": "Legendary Enchantment Creature — Icon Wizard",
 			"collector_number": "17",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/17_Calia Oracle of Tofnet Plains.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/17_Calia Oracle of Tofnet Plains.png"
 			}
 		},
 		{
 			"name": "Ola Kaln-Ocean Spellkeeper",
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{U}",
-			"type": "Legendary Enchantment Creature â€” Icon Wurm ",
+			"type": "Legendary Enchantment Creature — Icon Wurm",
 			"collector_number": "65",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/65_Ola Kaln-Ocean Spellkeeper.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/65_Ola Kaln-Ocean Spellkeeper.png"
 			}
 		},
 		{
 			"name": "Kier Acolyte of Avlod Respite",
 			"rarity": "rare",
 			"mana_cost": "{B}{B}",
-			"type": "Legendary Enchantment Creature â€” Icon Warlock ",
+			"type": "Legendary Enchantment Creature — Icon Warlock",
 			"collector_number": "100",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/100_Kier Acolyte of Avlod Respite.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/100_Kier Acolyte of Avlod Respite.png"
 			}
 		},
 		{
 			"name": "Vane Verem-Volcano Scorcher",
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{R}",
-			"type": "Legendary Enchantment Creature â€” Icon Dragon ",
+			"type": "Legendary Enchantment Creature — Icon Dragon",
 			"collector_number": "147",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/147_Vane Verem-Volcano Scorcher.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/147_Vane Verem-Volcano Scorcher.png"
 			}
 		},
 		{
 			"name": "Somma, Blade of Faloden Woods",
 			"rarity": "rare",
 			"mana_cost": "{3}{G}{G}",
-			"type": "Legendary Enchantment Creature â€” Icon Giant ",
+			"type": "Legendary Enchantment Creature — Icon Giant",
 			"collector_number": "278",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/278_Somma, Blade of Faloden Woods.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/278_Somma, Blade of Faloden Woods.png"
 			}
 		},
 		{
 			"name": "Khestri Fadove Clanleader",
 			"rarity": "rare",
 			"mana_cost": "{1}{W}{W}",
-			"type": "Legendary Creature â€” Human Knight ",
+			"type": "Legendary Creature — Human Knight",
 			"collector_number": "32",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/32_Khestri Fadove Clanleader.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/32_Khestri Fadove Clanleader.png"
 			}
 		},
 		{
 			"name": "Shivta, Avlod Clanleader",
 			"rarity": "rare",
-			"mana_cost": "{1}{U/B}{U/B}",
-			"type": "Legendary Creature â€” Bird Rogue ",
+			"mana_cost": "{1}{UB}{UB}",
+			"type": "Legendary Creature — Bird Rogue",
 			"collector_number": "230",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/230_Shivta, Avlod Clanleader.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/230_Shivta, Avlod Clanleader.png"
 			}
 		},
 		{
 			"name": "Urkial Outlands Clanleader",
 			"rarity": "rare",
 			"mana_cost": "{4}",
-			"type": "Legendary Creature â€” Bear Shaman ",
+			"type": "Legendary Creature — Bear Shaman",
 			"collector_number": "12",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/12_Urkial Outlands Clanleader.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/12_Urkial Outlands Clanleader.png"
 			}
 		},
 		{
 			"name": "Bruin Mentor",
 			"rarity": "rare",
 			"mana_cost": "{1}{G}",
-			"type": "Creature â€” Bear Scout Spellshaper ",
+			"type": "Creature — Bear Scout Spellshaper",
 			"collector_number": "252",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/252_Bruin Mentor.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/252_Bruin Mentor.png"
 			}
 		},
 		{
@@ -2447,47 +2447,47 @@
 			"type": "Instant",
 			"collector_number": "140",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/140_Raze the Clanless.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/140_Raze the Clanless.png"
 			}
 		},
 		{
 			"name": "Prismatic Offense",
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{G}",
-			"type": "Enchantment Creature â€” Elk Shaman ",
+			"type": "Enchantment Creature — Elk Shaman",
 			"collector_number": "181",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/181_Prismatic Offense.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/181_Prismatic Offense.png"
 			}
 		},
 		{
 			"name": "Korna, Vinimroth Historian",
 			"rarity": "rare",
 			"mana_cost": "{R}{W}",
-			"type": "Legendary Kindred Enchantment â€” Wurm Entity ",
+			"type": "Legendary Kindred Enchantment — Wurm Entity",
 			"collector_number": "174",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/174_Korna, Vinimroth Historian.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/174_Korna, Vinimroth Historian.png"
 			}
 		},
 		{
 			"name": "Zoslera Mordel Clanleader",
 			"rarity": "rare",
-			"mana_cost": "{3}{R/G}{R/G}",
-			"type": "Legendary Creature â€” Human Knight ",
+			"mana_cost": "{3}{RG}{RG}",
+			"type": "Legendary Creature — Human Knight",
 			"collector_number": "245",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/245_Zoslera Mordel Clanleader.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/245_Zoslera Mordel Clanleader.png"
 			}
 		},
 		{
 			"name": "Prophellos Pathborn Hunger",
 			"rarity": "rare",
 			"mana_cost": "{5}",
-			"type": "Legendary Creature â€” God ",
+			"type": "Legendary Creature — God",
 			"collector_number": "8",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/8_Prophellos Pathborn Hunger.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/8_Prophellos Pathborn Hunger.png"
 			}
 		},
 		{
@@ -2497,7 +2497,7 @@
 			"type": "Sorcery",
 			"collector_number": "96",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/96_Dust for Dust.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/96_Dust for Dust.png"
 			}
 		},
 		{
@@ -2507,7 +2507,7 @@
 			"type": "Reminder",
 			"collector_number": "3",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/3_Sanctum Reminder.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/3_Sanctum Reminder.png"
 			}
 		},
 		{
@@ -2517,57 +2517,57 @@
 			"type": "Legendary Enchantment Artifact",
 			"collector_number": "139",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/139_Pinnacle of Vinimroth.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/139_Pinnacle of Vinimroth.png"
 			}
 		},
 		{
 			"name": "Attuned Shimmer",
 			"rarity": "rare",
-			"mana_cost": "{W/B}{W/B}{W/B}",
-			"type": "Kindred Enchantment â€” Cat Entity ",
+			"mana_cost": "{WB}{WB}{WB}",
+			"type": "Kindred Enchantment — Cat Entity",
 			"collector_number": "192",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/192_Attuned Shimmer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/192_Attuned Shimmer.png"
 			}
 		},
 		{
 			"name": "Bushy Shimmer",
 			"rarity": "rare",
-			"mana_cost": "{B/G}{B/G}{B/G}",
-			"type": "Kindred Enchantment â€” Squirrel Entity ",
+			"mana_cost": "{BG}{BG}{BG}",
+			"type": "Kindred Enchantment — Squirrel Entity",
 			"collector_number": "198",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/198_Bushy Shimmer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/198_Bushy Shimmer.png"
 			}
 		},
 		{
 			"name": "Wild Shimmer",
 			"rarity": "rare",
-			"mana_cost": "{G/U}{G/U}{G/U}",
-			"type": "Kindred Enchantment â€” Wolf Entity ",
+			"mana_cost": "{GU}{GU}{GU}",
+			"type": "Kindred Enchantment — Wolf Entity",
 			"collector_number": "243",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/243_Wild Shimmer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/243_Wild Shimmer.png"
 			}
 		},
 		{
 			"name": "Curious Shimmer",
 			"rarity": "rare",
-			"mana_cost": "{U/R}{U/R}{U/R}",
-			"type": "Kindred Enchantment â€” Wurm Entity ",
+			"mana_cost": "{UR}{UR}{UR}",
+			"type": "Kindred Enchantment — Wurm Entity",
 			"collector_number": "203",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/203_Curious Shimmer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/203_Curious Shimmer.png"
 			}
 		},
 		{
 			"name": "Pouncing Shimmer",
 			"rarity": "rare",
-			"mana_cost": "{R/W}{R/W}{R/W}",
-			"type": "Kindred Enchantment â€” Cat Entity ",
+			"mana_cost": "{RW}{RW}{RW}",
+			"type": "Kindred Enchantment — Cat Entity",
 			"collector_number": "223",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/223_Pouncing Shimmer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/223_Pouncing Shimmer.png"
 			}
 		},
 		{
@@ -2577,7 +2577,7 @@
 			"type": "Land",
 			"collector_number": "299",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/299_Runed Spire.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/299_Runed Spire.png"
 			}
 		},
 		{
@@ -2587,17 +2587,17 @@
 			"type": "Reminder",
 			"collector_number": "2",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/2_Pathbound.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/2_Pathbound.png"
 			}
 		},
 		{
 			"name": "Fadove Pathwarden",
 			"rarity": "rare",
 			"mana_cost": "{1}{W}{W}",
-			"type": "Creature â€” Human Warrior ",
+			"type": "Creature — Human Warrior",
 			"collector_number": "23",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/23_Fadove Pathwarden.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/23_Fadove Pathwarden.png"
 			}
 		},
 		{
@@ -2607,7 +2607,7 @@
 			"type": "Sorcery",
 			"collector_number": "67",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/67_Path of Insight.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/67_Path of Insight.png"
 			}
 		},
 		{
@@ -2617,87 +2617,87 @@
 			"type": "Sorcery",
 			"collector_number": "106",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/106_Path of Revival.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/106_Path of Revival.png"
 			}
 		},
 		{
 			"name": "Keeper of Faloden Woods",
 			"rarity": "rare",
 			"mana_cost": "{4}{G}{G}",
-			"type": "Creature â€” Wurm Druid ",
+			"type": "Creature — Wurm Druid",
 			"collector_number": "260",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/260_Keeper of Faloden Woods.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/260_Keeper of Faloden Woods.png"
 			}
 		},
 		{
 			"name": "Mistveil Drake",
 			"rarity": "rare",
 			"mana_cost": "{5}",
-			"type": "Creature â€” Drake ",
+			"type": "Creature — Drake",
 			"collector_number": "5",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/5_Mistveil Drake.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/5_Mistveil Drake.png"
 			}
 		},
 		{
 			"name": "Mordel Combatant",
 			"rarity": "rare",
 			"mana_cost": "{R}",
-			"type": "Creature â€” Human Warrior ",
+			"type": "Creature — Human Warrior",
 			"collector_number": "131",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/131_Mordel Combatant.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/131_Mordel Combatant.png"
 			}
 		},
 		{
 			"name": "Bearer of Change",
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{U}",
-			"type": "Creature â€” Elf Spellshaper ",
+			"type": "Creature — Elf Spellshaper",
 			"collector_number": "57",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/57_Bearer of Change.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/57_Bearer of Change.png"
 			}
 		},
 		{
 			"name": "Mordel Razer",
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{R}",
-			"type": "Creature â€” Human Wizard ",
+			"type": "Creature — Human Wizard",
 			"collector_number": "135",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/135_Mordel Razer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/135_Mordel Razer.png"
 			}
 		},
 		{
 			"name": "Pathborn Aggression",
 			"rarity": "rare",
 			"mana_cost": "{B}",
-			"type": "Enchantment Creature â€” Icon Warlock ",
+			"type": "Enchantment Creature — Icon Warlock",
 			"collector_number": "108",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/108_Pathborn Aggression.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/108_Pathborn Aggression.png"
 			}
 		},
 		{
 			"name": "Eternities Weaver",
 			"rarity": "rare",
 			"mana_cost": "{1}{G}",
-			"type": "Creature â€” Human Druid ",
+			"type": "Creature — Human Druid",
 			"collector_number": "255",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/255_Eternities Weaver.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/255_Eternities Weaver.png"
 			}
 		},
 		{
 			"name": "Guardian Roost",
 			"rarity": "rare",
 			"mana_cost": "{1}{W}",
-			"type": "Creature â€” Drake ",
+			"type": "Creature — Drake",
 			"collector_number": "30",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/30_Guardian Roost.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/30_Guardian Roost.png"
 			}
 		},
 		{
@@ -2707,7 +2707,7 @@
 			"type": "Sorcery",
 			"collector_number": "38",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/38_Path to Restoration.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/38_Path to Restoration.png"
 			}
 		},
 		{
@@ -2717,7 +2717,7 @@
 			"type": "Sorcery",
 			"collector_number": "138",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/138_Path to Ages.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/138_Path to Ages.png"
 			}
 		},
 		{
@@ -2727,7 +2727,7 @@
 			"type": "Enchantment",
 			"collector_number": "16",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/16_Breach of Protection.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/16_Breach of Protection.png"
 			}
 		},
 		{
@@ -2737,7 +2737,7 @@
 			"type": "Enchantment",
 			"collector_number": "58",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/58_Breach of Sanity.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/58_Breach of Sanity.png"
 			}
 		},
 		{
@@ -2747,7 +2747,7 @@
 			"type": "Enchantment",
 			"collector_number": "118",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/118_Breach of Malice.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/118_Breach of Malice.png"
 			}
 		},
 		{
@@ -2757,7 +2757,7 @@
 			"type": "Enchantment",
 			"collector_number": "250",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/250_Breach of Nature.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/250_Breach of Nature.png"
 			}
 		},
 		{
@@ -2767,17 +2767,17 @@
 			"type": "Enchantment",
 			"collector_number": "92",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/92_Breach of Mortality.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/92_Breach of Mortality.png"
 			}
 		},
 		{
 			"name": "Breach of the Unknown",
 			"rarity": "rare",
 			"mana_cost": "{3}",
-			"type": "Enchantment â€” Aura ",
+			"type": "Enchantment — Aura",
 			"collector_number": "2",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/2_Breach of the Unknown.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/2_Breach of the Unknown.png"
 			}
 		},
 		{
@@ -2787,87 +2787,87 @@
 			"type": "Sorcery",
 			"collector_number": "270",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/270_Path of the Grove.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/270_Path of the Grove.png"
 			}
 		},
 		{
 			"name": "Pathborn Drake",
 			"rarity": "rare",
 			"mana_cost": "{1}{U}",
-			"type": "Creature â€” Drake ",
+			"type": "Creature — Drake",
 			"collector_number": "69",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/69_Pathborn Drake.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/69_Pathborn Drake.png"
 			}
 		},
 		{
 			"name": "Outlands Pathwarden",
 			"rarity": "rare",
 			"mana_cost": "{2}{B}{B}",
-			"type": "Creature â€” Bird Warrior ",
+			"type": "Creature — Bird Warrior",
 			"collector_number": "104",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/104_Outlands Pathwarden.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/104_Outlands Pathwarden.png"
 			}
 		},
 		{
 			"name": "Fadove Reinforcement",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-			"type": "Creature â€” Hyena Warrior ",
+			"type": "Creature — Hyena Warrior",
 			"collector_number": "24",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/24_Fadove Reinforcement.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/24_Fadove Reinforcement.png"
 			}
 		},
 		{
 			"name": "Avlod Pathshaper",
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-			"type": "Creature â€” Human Wizard ",
+			"type": "Creature — Human Wizard",
 			"collector_number": "56",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/56_Avlod Pathshaper.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/56_Avlod Pathshaper.png"
 			}
 		},
 		{
 			"name": "Outlands Traveller",
 			"rarity": "common",
 			"mana_cost": "{3}{B}{B}",
-			"type": "Creature â€” Human Warrior ",
+			"type": "Creature — Human Warrior",
 			"collector_number": "105",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/105_Outlands Traveller.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/105_Outlands Traveller.png"
 			}
 		},
 		{
 			"name": "Mordel Reinforcement",
 			"rarity": "common",
 			"mana_cost": "{2}{R}{R}",
-			"type": "Creature â€” Minotaur Warrior ",
+			"type": "Creature — Minotaur Warrior",
 			"collector_number": "136",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/136_Mordel Reinforcement.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/136_Mordel Reinforcement.png"
 			}
 		},
 		{
 			"name": "Outlands Guardian",
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-			"type": "Creature â€” Bear Warrior ",
+			"type": "Creature — Bear Warrior",
 			"collector_number": "268",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/268_Outlands Guardian.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/268_Outlands Guardian.png"
 			}
 		},
 		{
 			"name": "Paths Strider",
 			"rarity": "common",
 			"mana_cost": "{3}",
-			"type": "Creature â€” Beast ",
+			"type": "Creature — Beast",
 			"collector_number": "7",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/7_Paths Strider.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/7_Paths Strider.png"
 			}
 		},
 		{
@@ -2877,7 +2877,7 @@
 			"type": "Enchantment",
 			"collector_number": "37",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/37_Path of the Proud.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/37_Path of the Proud.png"
 			}
 		},
 		{
@@ -2887,7 +2887,7 @@
 			"type": "Enchantment",
 			"collector_number": "68",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/68_Path of the Roost.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/68_Path of the Roost.png"
 			}
 		},
 		{
@@ -2897,7 +2897,7 @@
 			"type": "Enchantment",
 			"collector_number": "107",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/107_Path of the Rift.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/107_Path of the Rift.png"
 			}
 		},
 		{
@@ -2907,7 +2907,7 @@
 			"type": "Enchantment",
 			"collector_number": "137",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/137_Path of the Brood.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/137_Path of the Brood.png"
 			}
 		},
 		{
@@ -2917,7 +2917,7 @@
 			"type": "Enchantment",
 			"collector_number": "271",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/271_Path of the Mighty.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/271_Path of the Mighty.png"
 			}
 		},
 		{
@@ -2927,57 +2927,57 @@
 			"type": "Artifact",
 			"collector_number": "281",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/281_Pathbound Bloom.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/281_Pathbound Bloom.png"
 			}
 		},
 		{
 			"name": "Vin Plains",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Basic Land â€” Plains ",
+			"type": "Basic Land — Plains",
 			"collector_number": "4",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/4_Vin Plains.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/4_Vin Plains.png"
 			}
 		},
 		{
 			"name": "Vin Island",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Basic Land â€” Island ",
+			"type": "Basic Land — Island",
 			"collector_number": "2",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/2_Vin Island.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/2_Vin Island.png"
 			}
 		},
 		{
 			"name": "Vin Swamp",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Basic Land â€” Swamp ",
+			"type": "Basic Land — Swamp",
 			"collector_number": "5",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/5_Vin Swamp.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/5_Vin Swamp.png"
 			}
 		},
 		{
 			"name": "Vin Mountain",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Basic Land â€” Mountain ",
+			"type": "Basic Land — Mountain",
 			"collector_number": "3",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/3_Vin Mountain.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/3_Vin Mountain.png"
 			}
 		},
 		{
 			"name": "Vin Forest",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Basic Land â€” Forest ",
+			"type": "Basic Land — Forest",
 			"collector_number": "1",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/1_Vin Forest.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/1_Vin Forest.png"
 			}
 		},
 		{
@@ -2987,17 +2987,17 @@
 			"type": "Land",
 			"collector_number": "285",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/285_Crackling Plains.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/285_Crackling Plains.png"
 			}
 		},
 		{
 			"name": "Restored Plains",
 			"rarity": "mythic",
 			"mana_cost": "",
-			"type": "Land â€” Plains ",
+			"type": "Land — Plains",
 			"collector_number": "294",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/294_Restored Plains.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/294_Restored Plains.png"
 			}
 		},
 		{
@@ -3007,7 +3007,7 @@
 			"type": "Land",
 			"collector_number": "302",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/302_Splintered Island.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/302_Splintered Island.png"
 			}
 		},
 		{
@@ -3017,47 +3017,47 @@
 			"type": "Land",
 			"collector_number": "289",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/289_Furrowed Mountain.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/289_Furrowed Mountain.png"
 			}
 		},
 		{
 			"name": "Restored Island",
 			"rarity": "mythic",
 			"mana_cost": "",
-			"type": "Land â€” Island ",
+			"type": "Land — Island",
 			"collector_number": "292",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/292_Restored Island.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/292_Restored Island.png"
 			}
 		},
 		{
 			"name": "Restored Swamp",
 			"rarity": "mythic",
 			"mana_cost": "",
-			"type": "Land â€” Swamp ",
+			"type": "Land — Swamp",
 			"collector_number": "295",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/295_Restored Swamp.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/295_Restored Swamp.png"
 			}
 		},
 		{
 			"name": "Restored Mountain",
 			"rarity": "mythic",
 			"mana_cost": "",
-			"type": "Land â€” Mountain ",
+			"type": "Land — Mountain",
 			"collector_number": "293",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/293_Restored Mountain.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/293_Restored Mountain.png"
 			}
 		},
 		{
 			"name": "Restored Forest",
 			"rarity": "mythic",
 			"mana_cost": "",
-			"type": "Land â€” Forest ",
+			"type": "Land — Forest",
 			"collector_number": "291",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/291_Restored Forest.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/291_Restored Forest.png"
 			}
 		},
 		{
@@ -3067,7 +3067,7 @@
 			"type": "Land",
 			"collector_number": "296",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/296_Rip to Today.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/296_Rip to Today.png"
 			}
 		},
 		{
@@ -3077,7 +3077,7 @@
 			"type": "Land",
 			"collector_number": "286",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/286_Divided Forest.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/286_Divided Forest.png"
 			}
 		},
 		{
@@ -3087,7 +3087,7 @@
 			"type": "Land",
 			"collector_number": "303",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/303_Sundered Swamp.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/303_Sundered Swamp.png"
 			}
 		},
 		{
@@ -3097,7 +3097,7 @@
 			"type": "Land",
 			"collector_number": "304",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/304_Unstable Rift.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/304_Unstable Rift.png"
 			}
 		},
 		{
@@ -3107,7 +3107,7 @@
 			"type": "Land",
 			"collector_number": "301",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/301_Spire of Hunger.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/301_Spire of Hunger.png"
 			}
 		},
 		{
@@ -3117,7 +3117,7 @@
 			"type": "Land",
 			"collector_number": "300",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/300_Shimmering Path.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/300_Shimmering Path.png"
 			}
 		},
 		{
@@ -3127,17 +3127,17 @@
 			"type": "Land",
 			"collector_number": "288",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/288_Flashing Path.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/288_Flashing Path.png"
 			}
 		},
 		{
 			"name": "Tethers of Insanity",
 			"rarity": "common",
 			"mana_cost": "{1}{U}{U}",
-			"type": "Enchantment â€” Aura ",
+			"type": "Enchantment — Aura",
 			"collector_number": "81",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/81_Tethers of Insanity.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/81_Tethers of Insanity.png"
 			}
 		},
 		{
@@ -3147,27 +3147,27 @@
 			"type": "Instant",
 			"collector_number": "97",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/97_Eternity Siphon.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/97_Eternity Siphon.png"
 			}
 		},
 		{
 			"name": "Tofnet Thrummer",
 			"rarity": "uncommon",
 			"mana_cost": "{C}",
-			"type": "Creature â€” Bird ",
+			"type": "Creature — Bird",
 			"collector_number": "164",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/164_Tofnet Thrummer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/164_Tofnet Thrummer.png"
 			}
 		},
 		{
 			"name": "Faloden Scavenger",
 			"rarity": "rare",
 			"mana_cost": "{2}{C}",
-			"type": "Creature â€” Fox ",
+			"type": "Creature — Fox",
 			"collector_number": "155",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/155_Faloden Scavenger.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/155_Faloden Scavenger.png"
 			}
 		},
 		{
@@ -3177,7 +3177,7 @@
 			"type": "Instant",
 			"collector_number": "157",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/157_Grazed by the Endless.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/157_Grazed by the Endless.png"
 			}
 		},
 		{
@@ -3187,7 +3187,7 @@
 			"type": "Instant",
 			"collector_number": "152",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/152_Choked Essence.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/152_Choked Essence.png"
 			}
 		},
 		{
@@ -3197,57 +3197,57 @@
 			"type": "Land",
 			"collector_number": "287",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/287_Enduring Sapling.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/287_Enduring Sapling.png"
 			}
 		},
 		{
 			"name": "Avakin Hazeweaver",
 			"rarity": "common",
 			"mana_cost": "{U}",
-			"type": "Creature â€” Bird Wizard Spellshaper ",
+			"type": "Creature — Bird Wizard Spellshaper",
 			"collector_number": "51",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/51_Avakin Hazeweaver.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/51_Avakin Hazeweaver.png"
 			}
 		},
 		{
 			"name": "Verem-Volcano Keeper",
 			"rarity": "rare",
 			"mana_cost": "{6}",
-			"type": "Creature â€” Wurm Warrior ",
+			"type": "Creature — Wurm Warrior",
 			"collector_number": "13",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/13_Verem-Volcano Keeper.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/13_Verem-Volcano Keeper.png"
 			}
 		},
 		{
 			"name": "Vin-Fault-Conjure",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Basic Land â€” Fault ",
+			"type": "Basic Land — Fault",
 			"collector_number": "29",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/29_Vin-Fault-Conjure.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/29_Vin-Fault-Conjure.png"
 			}
 		},
 		{
 			"name": "Vin-Fault",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Basic Land â€” Fault ",
+			"type": "Basic Land — Fault",
 			"collector_number": "305",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/305_Vin-Fault.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/305_Vin-Fault.png"
 			}
 		},
 		{
 			"name": "Restored Fault",
 			"rarity": "mythic",
 			"mana_cost": "",
-			"type": "Land â€” Fault ",
+			"type": "Land — Fault",
 			"collector_number": "290",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/290_Restored Fault.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/290_Restored Fault.png"
 			}
 		},
 		{
@@ -3257,17 +3257,17 @@
 			"type": "Sorcery",
 			"collector_number": "246",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/246_Ash to Hope.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/246_Ash to Hope.png"
 			}
 		},
 		{
 			"name": "Scouts Bow",
 			"rarity": "uncommon",
 			"mana_cost": "{G}",
-			"type": "Artifact â€” Equipment ",
+			"type": "Artifact — Equipment",
 			"collector_number": "277",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/277_Scouts Bow.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/277_Scouts Bow.png"
 			}
 		},
 		{
@@ -3277,17 +3277,17 @@
 			"type": "Sorcery",
 			"collector_number": "1",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/1_xXDust420Xx.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/1_xXDust420Xx.png"
 			}
 		},
 		{
 			"name": "Paragon of Unknown Sights",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{C}",
-			"type": "Creature â€” Human Warrior ",
+			"type": "Creature — Human Warrior",
 			"collector_number": "159",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/159_Paragon of Unknown Sights.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/159_Paragon of Unknown Sights.png"
 			}
 		},
 		{
@@ -3297,7 +3297,7 @@
 			"type": "Enchantment",
 			"collector_number": "154",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/154_Dustfall.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/154_Dustfall.png"
 			}
 		},
 		{
@@ -3307,7 +3307,7 @@
 			"type": "Instant",
 			"collector_number": "153",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/153_Common Enemy.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/153_Common Enemy.png"
 			}
 		},
 		{
@@ -3317,77 +3317,77 @@
 			"type": "Instant",
 			"collector_number": "161",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/161_Power Null.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/161_Power Null.png"
 			}
 		},
 		{
 			"name": "Weavehorn Chimera",
 			"rarity": "rare",
 			"mana_cost": "{C}",
-			"type": "Creature â€” Unicorn Chimera ",
+			"type": "Creature — Unicorn Chimera",
 			"collector_number": "166",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/166_Weavehorn Chimera.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/166_Weavehorn Chimera.png"
 			}
 		},
 		{
 			"name": "Ethereal Exposure",
 			"rarity": "common",
-			"mana_cost": "{2}{C/W}",
+			"mana_cost": "{2}{CW}",
 			"type": "Instant",
 			"collector_number": "168",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/168_Ethereal Exposure.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/168_Ethereal Exposure.png"
 			}
 		},
 		{
 			"name": "Impunity of Souls",
 			"rarity": "common",
-			"mana_cost": "{C/B}",
+			"mana_cost": "{CB}",
 			"type": "Instant",
 			"collector_number": "172",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/172_Impunity of Souls.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/172_Impunity of Souls.png"
 			}
 		},
 		{
 			"name": "Scars of Oil",
 			"rarity": "common",
-			"mana_cost": "{1}{C/U}",
+			"mana_cost": "{1}{CU}",
 			"type": "Enchantment",
 			"collector_number": "182",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/182_Scars of Oil.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/182_Scars of Oil.png"
 			}
 		},
 		{
 			"name": "Splendid Genesis",
 			"rarity": "common",
-			"mana_cost": "{X}{C/G}",
+			"mana_cost": "{X}{CG}",
 			"type": "Sorcery",
 			"collector_number": "184",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/184_Splendid Genesis.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/184_Splendid Genesis.png"
 			}
 		},
 		{
 			"name": "Icon",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Enchantment Creature â€” Icon ",
+			"type": "Token Enchantment Creature — Icon",
 			"collector_number": "16",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/16_Icon.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/16_Icon.png"
 			}
 		},
 		{
 			"name": "Volatile Visions",
 			"rarity": "common",
-			"mana_cost": "{1}{C/R}",
+			"mana_cost": "{1}{CR}",
 			"type": "Sorcery",
 			"collector_number": "186",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/186_Volatile Visions.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/186_Volatile Visions.png"
 			}
 		},
 		{
@@ -3397,47 +3397,47 @@
 			"type": "Spellbook",
 			"collector_number": "18",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/18_Multaph's Respite's Spellbook.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/18_Multaph's Respite's Spellbook.png"
 			}
 		},
 		{
 			"name": "Black Wurm Token",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Token Creature â€” Wurm ",
+			"type": "Token Creature — Wurm",
 			"collector_number": "11",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/11_Black Wurm Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/11_Black Wurm Token.png"
 			}
 		},
 		{
 			"name": "Green Wurm Token",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Token Creature â€” Wurm ",
+			"type": "Token Creature — Wurm",
 			"collector_number": "28",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/28_Green Wurm Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/28_Green Wurm Token.png"
 			}
 		},
 		{
 			"name": "Red Wurm Token",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Token Creature â€” Wurm ",
+			"type": "Token Creature — Wurm",
 			"collector_number": "15",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/15_Red Wurm Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/15_Red Wurm Token.png"
 			}
 		},
 		{
 			"name": "White Wurm Token",
 			"rarity": "special",
 			"mana_cost": "",
-			"type": "Token Creature â€” Wurm ",
+			"type": "Token Creature — Wurm",
 			"collector_number": "8",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/8_White Wurm Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/8_White Wurm Token.png"
 			}
 		},
 		{
@@ -3447,635 +3447,630 @@
 			"type": "Reminder",
 			"collector_number": "4",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/4_Trace Reminder.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/4_Trace Reminder.png"
 			}
 		},
 		{
 			"name": "Icon Token",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Enchantment Creature â€” Icon ",
+			"type": "Token Enchantment Creature — Icon",
 			"collector_number": "17",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/17_Icon Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/17_Icon Token.png"
 			}
-		}
+		},
 	]
-[RareSlot(1)]
-2 Ruins of Multa
-2 Multaph Riftborn God
-2 Will of Roduth
-2 Will of Multaph
-2 Will of Destruction
-2 The Great Tear
-2 Multaph's Respite
-2 The Wandering Cook
-2 Najael Travelling Shaman
-2 Ruins of Uth
-2 Will of Hunger
-2 Roduth God of Conflict
-2 Thargle
-2 Rip to Yesterday
-2 Melodia Voidtouched
-2 Calia Oracle of Tofnet Plains
-2 Ola Kaln-Ocean Spellkeeper
-2 Kier Acolyte of Avlod Respite
-2 Vane Verem-Volcano Scorcher
-2 Somma, Blade of Faloden Woods
-2 Khestri Fadove Clanleader
-2 Shivta, Avlod Clanleader
-2 Urkial Outlands Clanleader
-2 Bruin Mentor
-2 Raze the Clanless
-2 Prismatic Offense
-2 Korna, Vinimroth Historian
-2 Zoslera Mordel Clanleader
-2 Prophellos Pathborn Hunger
-2 Dust for Dust
-2 Pinnacle of Vinimroth
-2 Attuned Shimmer
-2 Bushy Shimmer
-2 Wild Shimmer
-2 Curious Shimmer
-2 Pouncing Shimmer
-2 Runed Spire
-2 Fadove Pathwarden
-2 Path of Insight
-2 Path of Revival
-2 Keeper of Faloden Woods
-2 Mistveil Drake
-2 Mordel Combatant
-2 Bearer of Change
-2 Mordel Razer
-2 Pathborn Aggression
-2 Eternities Weaver
-2 Guardian Roost
-2 Path to Restoration
-2 Path to Ages
-2 Breach of Protection
-2 Breach of Sanity
-2 Breach of Malice
-2 Breach of Nature
-2 Breach of Mortality
-2 Breach of the Unknown
-2 Path of the Grove
-2 Pathborn Drake
-2 Outlands Pathwarden
-2 Faloden Scavenger
-2 Verem-Volcano Keeper
-2 Dustfall
-2 Weavehorn Chimera
-1 Crackling Plains
-1 Restored Plains
-1 Splintered Island
-1 Furrowed Mountain
-1 Restored Island
-1 Restored Swamp
-1 Restored Mountain
-1 Restored Forest
-1 Rip to Today
-1 Divided Forest
-1 Sundered Swamp
-1 Spire of Hunger
-1 Shimmering Path
-1 Flashing Path
-1 Enduring Sapling
-1 Restored Fault
-[UncommonSlot(3)]
-9 Drake Wrangler
-9 Tofnet Riftstalker
-9 Passage Overseer
-9 Bruin Wanderer
-9 Avakin Riftseeker
-9 Untamed Drake
-9 Aeon Awakener
-9 Bulwark of the Thicket
-9 Multaphs Riftwarden
-9 Survivors Instinct
-9 Entrance of Hunger
-9 Aerial Roost
-9 Soul Fire
-9 Hired Enforcer
-9 Perplexing Ray
-9 Clanless Usurper
-9 Opportunistic Scavenger
-9 Outlands Bulwark
-9 Mischievous Fox
-9 Roduth's Guard
-9 Ageless History
-9 Icebound Reinforcements
-9 Blossoming Mentor
-9 Accord Mentor
-9 Eternal Mentor
-9 Conflict Mentor
-9 Outcast Mentor
-9 Trusted Companion
-9 Radiant Guide
-9 Fadove Bodyguard
-9 Combat Diviner
-9 Denied by Nature
-9 Storm Bearer
-9 Resolute Watcher
-9 Avakin Sayer
-9 Avlod Diviner
-9 Aspiring Mount
-9 Scornful Pursuit
-9 Avakin Mentor
-9 Shaman of Rites Lost
-9 Avakin Hireblade
-9 Fervent Incandescence
-9 Brood Protector
-9 Minotaur Outlander
-9 Mordel Excursionist
-9 Burnout
-9 Rifttouched Ursine
-9 Triumphant Riftcaller
-9 Forest Assailant
-9 Progeny of Bruin
-9 Tidepool Scuttler
-9 Explorers Compass
-9 Pinnacle Wanderer
-9 Frostnip Watcher
-9 Shroud Walkers
-9 Verem-Volcano Stalker
-9 Wipe the Wicked
-9 Stalwart Resolution
-9 Fadove Willshaper
-9 Returned from Beyond
-9 Rift Burn
-9 Study the Rifts
-9 Multaphs Resplendant
-9 Chromaboon Blade
-9 Sage of the Aeons
-9 Mistblade Rogue
-9 Manifesting Ardor
-9 Prismatic Powerstone
-9 Verem-Volcano Warrior
-9 Outlands Protector
-9 Smoldering Entity
-9 Skywatch Entity
-9 Giants Blade
-9 Midnight Raven
-9 Faloden Thickets
-9 Faloden Tear-Warden
-9 Tofnet Predator
-9 Malevolent Naginata
-9 Skillful Blade
-9 Tattered Entity
-9 Crowned Entity
-9 Usher of the Lost
-9 Breaking the Mold
-9 Called by the Void
-9 Path of the Proud
-9 Path of the Roost
-9 Path of the Rift
-9 Path of the Brood
-9 Path of the Mighty
-9 Unstable Rift
-9 Tofnet Thrummer
-9 Choked Essence
-9 Scouts Bow
-9 Paragon of Unknown Sights
-9 Common Enemy
-9 Power Null
-[CommonSlot(10)]
-30 Rush Down
-30 Purge the Clanless
-30 Prismatism
-30 Dust to Life
-30 Fadove Initiate
-30 Fadove Trainer
-30 Fadove Tracker
-30 Outlands Marauder
-30 Wandering Soul
-30 Fadove Drillmaster
-30 Oathkeep Wurm
-30 Drake Rider
-30 Covetous Fox
-30 Rebuke the Foul
-30 Maddened by Hunger
-30 Frostborn Sentinel
-30 Respite Partisan
-30 Due Dismissal
-30 Repel the Invasion
-30 Cooing Foundling
-30 Avakin Avenger
-30 Gateway Guardian
-30 Avakin Riftwalker
-30 Rift Tender
-30 Waking Words
-30 Avakin Cleaner
-30 Avakin Assaulter
-30 Left for the Crows
-30 Weight of Betrayal
-30 Iconic Resurgence
-30 Avlod Necklace
-30 Frontline Assaulter
-30 Minotaur Riftcaller
-30 Mordel Patrol
-30 Tenuous Empowerment
-30 Mordel Drillmaster
-30 Verem-Volcano Rumbler
-30 Stalking Entity
-30 Iconic Resolution
-30 Conscripted by the Clanless
-30 Clanless Destruction
-30 Unexpected Discovery
-30 Lavaskimmer Wurm
-30 Farming Wurm
-30 Awakened Harmony
-30 Mordel Formgiver
-30 Outlands Diviner
-30 Bruin Clankeeper
-30 Multaphs Watch
-30 Progeny of Mordel
-30 Iconic Altercation
-30 Boon of Roduth
-30 Ripped into Eternity
-30 Rippling Crustacean
-30 Starbright Entity
-30 Aspiring Entity
-30 Wings of New Horizons
-30 Rip to Tomorrow
-30 Powerstone Claw
-30 Wandering Entity
-30 Pinnacle Skitter
-30 Power of Oath
-30 Iconic Absolution
-30 Windshaper Drake
-30 Blessing of Uth
-30 Bruin Outlander
-30 Dark Lessons
-30 Towering Protector
-30 Avakin Opportunist
-30 Sage of Truths
-30 Stalwart Guard
-30 Outlands Wanderer
-30 Frostborn Glimmer
-30 Kaln-Ocean Cloak
-30 Suffused Memories
-30 Search For Wisdom
-30 Avakin Watcher
-30 Transient Eternity
-30 Abrupt Death
-30 Fleeting Ruin
-30 Impetuous Eradication
-30 Ephemeral Ordinance
-30 Vanishing Resolve
-30 Cursory Casualty
-30 Transitory Refuge
-30 Evanescent Impasse
-30 Sublime Liquidation
-30 Razorshell Drake
-30 Voidborn Entity
-30 Chittering Entity
-30 Riftborn Flames
-30 Shining Idol
-30 Triumphant Entrance
-30 Outlands Riftbearer
-30 Mordel Clanwarden
-30 Warden of the Lost
-30 Warforged Herald
-30 Iconic Incident
-30 Mordel Warrior
-30 Keeper of Calm
-30 Avlod Bulwark
-30 Remnant Awakener
-30 Waterspout
-30 Flaming Iron
-30 Bark of Tofnet Plains
-30 Kaln-Ocean Wispop
-30 Pathborn Crackle
-30 Guardian of Faloden Woods
-30 Outlands Frostalker
-30 Fog Walker
-30 Dromencals Respite
-30 Outlands Respite
-30 Fadove Reinforcement
-30 Avlod Pathshaper
-30 Outlands Traveller
-30 Mordel Reinforcement
-30 Outlands Guardian
-30 Paths Strider
-30 Pathbound Bloom
-30 Tethers of Insanity
-30 Eternity Siphon
-30 Grazed by the Endless
-30 Avakin Hazeweaver
-30 Ash to Hope
-30 Ethereal Exposure
-30 Impunity of Souls
-30 Scars of Oil
-30 Splendid Genesis
-30 Volatile Visions
-[WildcardSlot(1)]
-10 Drake Wrangler
-10 Tofnet Riftstalker
-10 Passage Overseer
-10 Bruin Wanderer
-10 Avakin Riftseeker
-10 Untamed Drake
-10 Aeon Awakener
-10 Bulwark of the Thicket
-10 Multaphs Riftwarden
-10 Rush Down
-10 Purge the Clanless
-10 Survivors Instinct
-10 Entrance of Hunger
-10 Prismatism
-10 Aerial Roost
-10 Soul Fire
-10 Dust to Life
-10 Hired Enforcer
-10 Perplexing Ray
-10 Clanless Usurper
-10 Opportunistic Scavenger
-10 Outlands Bulwark
-10 Mischievous Fox
-10 Roduth's Guard
-10 Ageless History
-10 Icebound Reinforcements
-10 Blossoming Mentor
-10 Accord Mentor
-10 Eternal Mentor
-10 Conflict Mentor
-10 Outcast Mentor
-10 Fadove Initiate
-10 Fadove Trainer
-10 Trusted Companion
-10 Fadove Tracker
-10 Outlands Marauder
-10 Wandering Soul
-10 Fadove Drillmaster
-10 Oathkeep Wurm
-10 Drake Rider
-10 Radiant Guide
-10 Covetous Fox
-10 Rebuke the Foul
-10 Maddened by Hunger
-10 Fadove Bodyguard
-10 Combat Diviner
-10 Frostborn Sentinel
-10 Respite Partisan
-10 Due Dismissal
-10 Denied by Nature
-10 Repel the Invasion
-10 Storm Bearer
-10 Resolute Watcher
-10 Avakin Sayer
-10 Avlod Diviner
-10 Aspiring Mount
-10 Cooing Foundling
-10 Avakin Avenger
-10 Gateway Guardian
-10 Avakin Riftwalker
-10 Rift Tender
-10 Waking Words
-10 Avakin Cleaner
-10 Avakin Assaulter
-10 Scornful Pursuit
-10 Left for the Crows
-10 Weight of Betrayal
-10 Iconic Resurgence
-10 Avlod Necklace
-10 Avakin Mentor
-10 Shaman of Rites Lost
-10 Avakin Hireblade
-10 Frontline Assaulter
-10 Minotaur Riftcaller
-10 Fervent Incandescence
-10 Mordel Patrol
-10 Tenuous Empowerment
-10 Mordel Drillmaster
-10 Verem-Volcano Rumbler
-10 Stalking Entity
-10 Iconic Resolution
-10 Conscripted by the Clanless
-10 Clanless Destruction
-10 Unexpected Discovery
-10 Brood Protector
-10 Minotaur Outlander
-10 Mordel Excursionist
-10 Lavaskimmer Wurm
-10 Burnout
-10 Farming Wurm
-10 Awakened Harmony
-10 Mordel Formgiver
-10 Outlands Diviner
-10 Bruin Clankeeper
-10 Multaphs Watch
-10 Progeny of Mordel
-10 Iconic Altercation
-10 Boon of Roduth
-10 Ripped into Eternity
-10 Rifttouched Ursine
-10 Triumphant Riftcaller
-10 Forest Assailant
-10 Progeny of Bruin
-10 Rippling Crustacean
-10 Starbright Entity
-10 Aspiring Entity
-10 Wings of New Horizons
-10 Rip to Tomorrow
-10 Powerstone Claw
-10 Wandering Entity
-10 Pinnacle Skitter
-10 Tidepool Scuttler
-10 Explorers Compass
-10 Pinnacle Wanderer
-10 Frostnip Watcher
-10 Shroud Walkers
-10 Verem-Volcano Stalker
-10 Power of Oath
-10 Iconic Absolution
-10 Wipe the Wicked
-10 Stalwart Resolution
-10 Fadove Willshaper
-10 Returned from Beyond
-10 Rift Burn
-10 Windshaper Drake
-10 Study the Rifts
-10 Blessing of Uth
-10 Multaphs Resplendant
-10 Bruin Outlander
-10 Dark Lessons
-10 Chromaboon Blade
-10 Towering Protector
-10 Sage of the Aeons
-10 Avakin Opportunist
-10 Sage of Truths
-10 Stalwart Guard
-10 Outlands Wanderer
-10 Frostborn Glimmer
-10 Kaln-Ocean Cloak
-10 Suffused Memories
-10 Search For Wisdom
-10 Avakin Watcher
-10 Transient Eternity
-10 Abrupt Death
-10 Fleeting Ruin
-10 Impetuous Eradication
-10 Ephemeral Ordinance
-10 Vanishing Resolve
-10 Cursory Casualty
-10 Transitory Refuge
-10 Evanescent Impasse
-10 Sublime Liquidation
-10 Mistblade Rogue
-10 Manifesting Ardor
-10 Prismatic Powerstone
-10 Razorshell Drake
-10 Verem-Volcano Warrior
-10 Outlands Protector
-10 Smoldering Entity
-10 Skywatch Entity
-10 Giants Blade
-10 Voidborn Entity
-10 Chittering Entity
-10 Riftborn Flames
-10 Shining Idol
-10 Triumphant Entrance
-10 Midnight Raven
-10 Outlands Riftbearer
-10 Mordel Clanwarden
-10 Warden of the Lost
-10 Warforged Herald
-10 Iconic Incident
-10 Mordel Warrior
-10 Keeper of Calm
-10 Avlod Bulwark
-10 Faloden Thickets
-10 Faloden Tear-Warden
-10 Tofnet Predator
-10 Remnant Awakener
-10 Waterspout
-10 Malevolent Naginata
-10 Skillful Blade
-10 Tattered Entity
-10 Crowned Entity
-10 Flaming Iron
-10 Usher of the Lost
-10 Breaking the Mold
-10 Ruins of Multa
-10 Multaph Riftborn God
-10 Will of Roduth
-10 Will of Multaph
-10 Will of Destruction
-10 The Great Tear
-10 Multaph's Respite
-10 The Wandering Cook
-10 Najael Travelling Shaman
-10 Called by the Void
-10 Ruins of Uth
-10 Will of Hunger
-10 Roduth God of Conflict
-10 Thargle
-10 Rip to Yesterday
-10 Bark of Tofnet Plains
-10 Kaln-Ocean Wispop
-10 Pathborn Crackle
-10 Guardian of Faloden Woods
-10 Outlands Frostalker
-10 Fog Walker
-10 Dromencals Respite
-10 Outlands Respite
-10 Melodia Voidtouched
-10 Calia Oracle of Tofnet Plains
-10 Ola Kaln-Ocean Spellkeeper
-10 Kier Acolyte of Avlod Respite
-10 Vane Verem-Volcano Scorcher
-10 Somma, Blade of Faloden Woods
-10 Khestri Fadove Clanleader
-10 Shivta, Avlod Clanleader
-10 Urkial Outlands Clanleader
-10 Bruin Mentor
-10 Raze the Clanless
-10 Prismatic Offense
-10 Korna, Vinimroth Historian
-10 Zoslera Mordel Clanleader
-10 Prophellos Pathborn Hunger
-10 Dust for Dust
-10 Pinnacle of Vinimroth
-10 Attuned Shimmer
-10 Bushy Shimmer
-10 Wild Shimmer
-10 Curious Shimmer
-10 Pouncing Shimmer
-10 Runed Spire
-10 Fadove Pathwarden
-10 Path of Insight
-10 Path of Revival
-10 Keeper of Faloden Woods
-10 Mistveil Drake
-10 Mordel Combatant
-10 Bearer of Change
-10 Mordel Razer
-10 Pathborn Aggression
-10 Eternities Weaver
-10 Guardian Roost
-10 Path to Restoration
-10 Path to Ages
-10 Breach of Protection
-10 Breach of Sanity
-10 Breach of Malice
-10 Breach of Nature
-10 Breach of Mortality
-10 Breach of the Unknown
-10 Path of the Grove
-10 Pathborn Drake
-10 Outlands Pathwarden
-10 Fadove Reinforcement
-10 Avlod Pathshaper
-10 Outlands Traveller
-10 Mordel Reinforcement
-10 Outlands Guardian
-10 Paths Strider
-10 Path of the Proud
-10 Path of the Roost
-10 Path of the Rift
-10 Path of the Brood
-10 Path of the Mighty
-10 Pathbound Bloom
-10 Vin Plains
-10 Vin Island
-10 Vin Swamp
-10 Vin Mountain
-10 Vin Forest
-10 Crackling Plains
-10 Restored Plains
-10 Splintered Island
-10 Furrowed Mountain
-10 Restored Island
-10 Restored Swamp
-10 Restored Mountain
-10 Restored Forest
-10 Rip to Today
-10 Divided Forest
-10 Sundered Swamp
-10 Unstable Rift
-10 Spire of Hunger
-10 Shimmering Path
-10 Flashing Path
-10 Tethers of Insanity
-10 Eternity Siphon
-10 Tofnet Thrummer
-10 Faloden Scavenger
-10 Grazed by the Endless
-10 Choked Essence
-10 Enduring Sapling
-10 Avakin Hazeweaver
-10 Verem-Volcano Keeper
-10 Restored Fault
-10 Ash to Hope
-10 Scouts Bow
-10 xXDust420Xx
-10 Paragon of Unknown Sights
-10 Dustfall
-10 Common Enemy
-10 Power Null
-10 Weavehorn Chimera
-10 Ethereal Exposure
-10 Impunity of Souls
-10 Scars of Oil
-10 Splendid Genesis
-10 Volatile Visions
+
+[rare(1)]
+	2 Ruins of Multa
+	2 Multaph Riftborn God
+	2 Will of Roduth
+	2 Will of Multaph
+	2 Will of Destruction
+	2 The Great Tear
+	2 Multaph's Respite
+	2 The Wandering Cook
+	2 Najael Travelling Shaman
+	2 Ruins of Uth
+	2 Will of Hunger
+	2 Roduth God of Conflict
+	2 Thargle
+	2 Rip to Yesterday
+	2 Melodia Voidtouched
+	2 Calia Oracle of Tofnet Plains
+	2 Ola Kaln-Ocean Spellkeeper
+	2 Kier Acolyte of Avlod Respite
+	2 Vane Verem-Volcano Scorcher
+	2 Somma, Blade of Faloden Woods
+	2 Khestri Fadove Clanleader
+	2 Shivta, Avlod Clanleader
+	2 Urkial Outlands Clanleader
+	2 Bruin Mentor
+	2 Raze the Clanless
+	2 Prismatic Offense
+	2 Korna, Vinimroth Historian
+	2 Zoslera Mordel Clanleader
+	2 Prophellos Pathborn Hunger
+	2 Dust for Dust
+	2 Pinnacle of Vinimroth
+	2 Attuned Shimmer
+	2 Bushy Shimmer
+	2 Wild Shimmer
+	2 Curious Shimmer
+	2 Pouncing Shimmer
+	2 Runed Spire
+	2 Fadove Pathwarden
+	2 Path of Insight
+	2 Path of Revival
+	2 Keeper of Faloden Woods
+	2 Mistveil Drake
+	2 Mordel Combatant
+	2 Bearer of Change
+	2 Mordel Razer
+	2 Pathborn Aggression
+	2 Eternities Weaver
+	2 Guardian Roost
+	2 Path to Restoration
+	2 Path to Ages
+	2 Breach of Protection
+	2 Breach of Sanity
+	2 Breach of Malice
+	2 Breach of Nature
+	2 Breach of Mortality
+	2 Breach of the Unknown
+	2 Path of the Grove
+	2 Pathborn Drake
+	2 Outlands Pathwarden
+	1 Crackling Plains
+	1 Restored Plains
+	1 Splintered Island
+	1 Furrowed Mountain
+	1 Restored Island
+	1 Restored Swamp
+	1 Restored Mountain
+	1 Restored Forest
+	1 Rip to Today
+	1 Divided Forest
+	1 Sundered Swamp
+	1 Spire of Hunger
+	1 Shimmering Path
+	1 Flashing Path
+	2 Faloden Scavenger
+	1 Enduring Sapling
+	2 Verem-Volcano Keeper
+	1 Restored Fault
+	2 Dustfall
+	2 Weavehorn Chimera
+[uncommon(4)]
+	4 Drake Wrangler
+	4 Tofnet Riftstalker
+	4 Passage Overseer
+	4 Bruin Wanderer
+	4 Avakin Riftseeker
+	4 Untamed Drake
+	4 Aeon Awakener
+	4 Bulwark of the Thicket
+	4 Multaphs Riftwarden
+	4 Survivors Instinct
+	4 Entrance of Hunger
+	4 Aerial Roost
+	4 Soul Fire
+	4 Hired Enforcer
+	4 Perplexing Ray
+	4 Clanless Usurper
+	4 Opportunistic Scavenger
+	4 Outlands Bulwark
+	4 Mischievous Fox
+	4 Roduth's Guard
+	4 Ageless History
+	4 Icebound Reinforcements
+	4 Blossoming Mentor
+	4 Accord Mentor
+	4 Eternal Mentor
+	4 Conflict Mentor
+	4 Outcast Mentor
+	4 Trusted Companion
+	4 Radiant Guide
+	4 Fadove Bodyguard
+	4 Combat Diviner
+	4 Denied by Nature
+	4 Storm Bearer
+	4 Resolute Watcher
+	4 Avakin Sayer
+	4 Avlod Diviner
+	4 Aspiring Mount
+	4 Scornful Pursuit
+	4 Avakin Mentor
+	4 Shaman of Rites Lost
+	4 Avakin Hireblade
+	4 Fervent Incandescence
+	4 Brood Protector
+	4 Minotaur Outlander
+	4 Mordel Excursionist
+	4 Burnout
+	4 Rifttouched Ursine
+	4 Triumphant Riftcaller
+	4 Forest Assailant
+	4 Progeny of Bruin
+	4 Tidepool Scuttler
+	4 Explorers Compass
+	4 Pinnacle Wanderer
+	4 Frostnip Watcher
+	4 Shroud Walkers
+	4 Verem-Volcano Stalker
+	4 Wipe the Wicked
+	4 Stalwart Resolution
+	4 Fadove Willshaper
+	4 Returned from Beyond
+	4 Rift Burn
+	4 Study the Rifts
+	4 Multaphs Resplendant
+	4 Chromaboon Blade
+	4 Sage of the Aeons
+	4 Mistblade Rogue
+	4 Manifesting Ardor
+	4 Prismatic Powerstone
+	4 Verem-Volcano Warrior
+	4 Outlands Protector
+	4 Smoldering Entity
+	4 Skywatch Entity
+	4 Giants Blade
+	4 Midnight Raven
+	4 Faloden Thickets
+	4 Faloden Tear-Warden
+	4 Tofnet Predator
+	4 Malevolent Naginata
+	4 Skillful Blade
+	4 Tattered Entity
+	4 Crowned Entity
+	4 Usher of the Lost
+	4 Breaking the Mold
+	4 Called by the Void
+	4 Path of the Proud
+	4 Path of the Roost
+	4 Path of the Rift
+	4 Path of the Brood
+	4 Path of the Mighty
+	4 Unstable Rift
+	4 Tofnet Thrummer
+	4 Choked Essence
+	4 Scouts Bow
+	4 Paragon of Unknown Sights
+	4 Common Enemy
+	4 Power Null
+[common(7)]
+	8 Rush Down
+	8 Purge the Clanless
+	8 Prismatism
+	8 Dust to Life
+	8 Fadove Initiate
+	8 Fadove Trainer
+	8 Fadove Tracker
+	8 Outlands Marauder
+	8 Wandering Soul
+	8 Fadove Drillmaster
+	8 Oathkeep Wurm
+	8 Drake Rider
+	8 Covetous Fox
+	8 Rebuke the Foul
+	8 Maddened by Hunger
+	8 Frostborn Sentinel
+	8 Respite Partisan
+	8 Due Dismissal
+	8 Repel the Invasion
+	8 Cooing Foundling
+	8 Avakin Avenger
+	8 Gateway Guardian
+	8 Avakin Riftwalker
+	8 Rift Tender
+	8 Waking Words
+	8 Avakin Cleaner
+	8 Avakin Assaulter
+	8 Left for the Crows
+	8 Weight of Betrayal
+	8 Iconic Resurgence
+	8 Avlod Necklace
+	8 Frontline Assaulter
+	8 Minotaur Riftcaller
+	8 Mordel Patrol
+	8 Tenuous Empowerment
+	8 Mordel Drillmaster
+	8 Verem-Volcano Rumbler
+	8 Stalking Entity
+	8 Iconic Resolution
+	8 Conscripted by the Clanless
+	8 Clanless Destruction
+	8 Unexpected Discovery
+	8 Lavaskimmer Wurm
+	8 Farming Wurm
+	8 Awakened Harmony
+	8 Mordel Formgiver
+	8 Outlands Diviner
+	8 Bruin Clankeeper
+	8 Multaphs Watch
+	8 Progeny of Mordel
+	8 Iconic Altercation
+	8 Boon of Roduth
+	8 Ripped into Eternity
+	8 Rippling Crustacean
+	8 Starbright Entity
+	8 Aspiring Entity
+	8 Wings of New Horizons
+	8 Rip to Tomorrow
+	8 Powerstone Claw
+	8 Wandering Entity
+	8 Pinnacle Skitter
+	8 Power of Oath
+	8 Iconic Absolution
+	8 Windshaper Drake
+	8 Blessing of Uth
+	8 Bruin Outlander
+	8 Dark Lessons
+	8 Towering Protector
+	8 Avakin Opportunist
+	8 Sage of Truths
+	8 Stalwart Guard
+	8 Outlands Wanderer
+	8 Frostborn Glimmer
+	8 Kaln-Ocean Cloak
+	8 Suffused Memories
+	8 Search For Wisdom
+	8 Avakin Watcher
+	8 Transient Eternity
+	8 Abrupt Death
+	8 Fleeting Ruin
+	8 Impetuous Eradication
+	8 Ephemeral Ordinance
+	8 Vanishing Resolve
+	8 Cursory Casualty
+	8 Transitory Refuge
+	8 Evanescent Impasse
+	8 Sublime Liquidation
+	8 Razorshell Drake
+	8 Voidborn Entity
+	8 Chittering Entity
+	8 Riftborn Flames
+	8 Shining Idol
+	8 Triumphant Entrance
+	8 Outlands Riftbearer
+	8 Mordel Clanwarden
+	8 Warden of the Lost
+	8 Warforged Herald
+	8 Iconic Incident
+	8 Mordel Warrior
+	8 Keeper of Calm
+	8 Avlod Bulwark
+	8 Remnant Awakener
+	8 Waterspout
+	8 Flaming Iron
+	8 Bark of Tofnet Plains
+	8 Kaln-Ocean Wispop
+	8 Pathborn Crackle
+	8 Guardian of Faloden Woods
+	8 Outlands Frostalker
+	8 Fog Walker
+	8 Dromencals Respite
+	8 Outlands Respite
+	8 Fadove Reinforcement
+	8 Avlod Pathshaper
+	8 Outlands Traveller
+	8 Mordel Reinforcement
+	8 Outlands Guardian
+	8 Paths Strider
+	8 Pathbound Bloom
+	8 Tethers of Insanity
+	8 Eternity Siphon
+	8 Grazed by the Endless
+	8 Avakin Hazeweaver
+	8 Ash to Hope
+	8 Ethereal Exposure
+	8 Impunity of Souls
+	8 Scars of Oil
+	8 Splendid Genesis
+	8 Volatile Visions
+[wildcard(2)]
+	15 Drake Wrangler
+	15 Tofnet Riftstalker
+	15 Passage Overseer
+	15 Bruin Wanderer
+	15 Avakin Riftseeker
+	15 Untamed Drake
+	15 Aeon Awakener
+	15 Bulwark of the Thicket
+	15 Multaphs Riftwarden
+	6 Rush Down
+	6 Purge the Clanless
+	15 Survivors Instinct
+	15 Entrance of Hunger
+	6 Prismatism
+	15 Aerial Roost
+	15 Soul Fire
+	6 Dust to Life
+	15 Hired Enforcer
+	15 Perplexing Ray
+	15 Clanless Usurper
+	15 Opportunistic Scavenger
+	15 Outlands Bulwark
+	15 Mischievous Fox
+	15 Roduth's Guard
+	15 Ageless History
+	15 Icebound Reinforcements
+	15 Blossoming Mentor
+	15 Accord Mentor
+	15 Eternal Mentor
+	15 Conflict Mentor
+	15 Outcast Mentor
+	6 Fadove Initiate
+	6 Fadove Trainer
+	15 Trusted Companion
+	6 Fadove Tracker
+	6 Outlands Marauder
+	6 Wandering Soul
+	6 Fadove Drillmaster
+	6 Oathkeep Wurm
+	6 Drake Rider
+	15 Radiant Guide
+	6 Covetous Fox
+	6 Rebuke the Foul
+	6 Maddened by Hunger
+	15 Fadove Bodyguard
+	15 Combat Diviner
+	6 Frostborn Sentinel
+	6 Respite Partisan
+	6 Due Dismissal
+	15 Denied by Nature
+	6 Repel the Invasion
+	15 Storm Bearer
+	15 Resolute Watcher
+	15 Avakin Sayer
+	15 Avlod Diviner
+	15 Aspiring Mount
+	6 Cooing Foundling
+	6 Avakin Avenger
+	6 Gateway Guardian
+	6 Avakin Riftwalker
+	6 Rift Tender
+	6 Waking Words
+	6 Avakin Cleaner
+	6 Avakin Assaulter
+	15 Scornful Pursuit
+	6 Left for the Crows
+	6 Weight of Betrayal
+	6 Iconic Resurgence
+	6 Avlod Necklace
+	15 Avakin Mentor
+	15 Shaman of Rites Lost
+	15 Avakin Hireblade
+	6 Frontline Assaulter
+	6 Minotaur Riftcaller
+	15 Fervent Incandescence
+	6 Mordel Patrol
+	6 Tenuous Empowerment
+	6 Mordel Drillmaster
+	6 Verem-Volcano Rumbler
+	6 Stalking Entity
+	6 Iconic Resolution
+	6 Conscripted by the Clanless
+	6 Clanless Destruction
+	6 Unexpected Discovery
+	15 Brood Protector
+	15 Minotaur Outlander
+	15 Mordel Excursionist
+	6 Lavaskimmer Wurm
+	15 Burnout
+	6 Farming Wurm
+	6 Awakened Harmony
+	6 Mordel Formgiver
+	6 Outlands Diviner
+	6 Bruin Clankeeper
+	6 Multaphs Watch
+	6 Progeny of Mordel
+	6 Iconic Altercation
+	6 Boon of Roduth
+	6 Ripped into Eternity
+	15 Rifttouched Ursine
+	15 Triumphant Riftcaller
+	15 Forest Assailant
+	15 Progeny of Bruin
+	6 Rippling Crustacean
+	6 Starbright Entity
+	6 Aspiring Entity
+	6 Wings of New Horizons
+	6 Rip to Tomorrow
+	6 Powerstone Claw
+	6 Wandering Entity
+	6 Pinnacle Skitter
+	15 Tidepool Scuttler
+	15 Explorers Compass
+	15 Pinnacle Wanderer
+	15 Frostnip Watcher
+	15 Shroud Walkers
+	15 Verem-Volcano Stalker
+	6 Power of Oath
+	6 Iconic Absolution
+	15 Wipe the Wicked
+	15 Stalwart Resolution
+	15 Fadove Willshaper
+	15 Returned from Beyond
+	15 Rift Burn
+	6 Windshaper Drake
+	15 Study the Rifts
+	6 Blessing of Uth
+	15 Multaphs Resplendant
+	6 Bruin Outlander
+	6 Dark Lessons
+	15 Chromaboon Blade
+	6 Towering Protector
+	15 Sage of the Aeons
+	6 Avakin Opportunist
+	6 Sage of Truths
+	6 Stalwart Guard
+	6 Outlands Wanderer
+	6 Frostborn Glimmer
+	6 Kaln-Ocean Cloak
+	6 Suffused Memories
+	6 Search For Wisdom
+	6 Avakin Watcher
+	6 Transient Eternity
+	6 Abrupt Death
+	6 Fleeting Ruin
+	6 Impetuous Eradication
+	6 Ephemeral Ordinance
+	6 Vanishing Resolve
+	6 Cursory Casualty
+	6 Transitory Refuge
+	6 Evanescent Impasse
+	6 Sublime Liquidation
+	15 Mistblade Rogue
+	15 Manifesting Ardor
+	15 Prismatic Powerstone
+	6 Razorshell Drake
+	15 Verem-Volcano Warrior
+	15 Outlands Protector
+	15 Smoldering Entity
+	15 Skywatch Entity
+	15 Giants Blade
+	6 Voidborn Entity
+	6 Chittering Entity
+	6 Riftborn Flames
+	6 Shining Idol
+	6 Triumphant Entrance
+	15 Midnight Raven
+	6 Outlands Riftbearer
+	6 Mordel Clanwarden
+	6 Warden of the Lost
+	6 Warforged Herald
+	6 Iconic Incident
+	6 Mordel Warrior
+	6 Keeper of Calm
+	6 Avlod Bulwark
+	15 Faloden Thickets
+	15 Faloden Tear-Warden
+	15 Tofnet Predator
+	6 Remnant Awakener
+	6 Waterspout
+	15 Malevolent Naginata
+	15 Skillful Blade
+	15 Tattered Entity
+	15 Crowned Entity
+	6 Flaming Iron
+	15 Usher of the Lost
+	15 Breaking the Mold
+	7 Ruins of Multa
+	7 Multaph Riftborn God
+	7 Will of Roduth
+	7 Will of Multaph
+	7 Will of Destruction
+	7 The Great Tear
+	7 Multaph's Respite
+	7 The Wandering Cook
+	7 Najael Travelling Shaman
+	15 Called by the Void
+	7 Ruins of Uth
+	7 Will of Hunger
+	7 Roduth God of Conflict
+	7 Thargle
+	7 Rip to Yesterday
+	6 Bark of Tofnet Plains
+	6 Kaln-Ocean Wispop
+	6 Pathborn Crackle
+	6 Guardian of Faloden Woods
+	6 Outlands Frostalker
+	6 Fog Walker
+	6 Dromencals Respite
+	6 Outlands Respite
+	7 Melodia Voidtouched
+	7 Calia Oracle of Tofnet Plains
+	7 Ola Kaln-Ocean Spellkeeper
+	7 Kier Acolyte of Avlod Respite
+	7 Vane Verem-Volcano Scorcher
+	7 Somma, Blade of Faloden Woods
+	7 Khestri Fadove Clanleader
+	7 Shivta, Avlod Clanleader
+	7 Urkial Outlands Clanleader
+	7 Bruin Mentor
+	7 Raze the Clanless
+	7 Prismatic Offense
+	7 Korna, Vinimroth Historian
+	7 Zoslera Mordel Clanleader
+	7 Prophellos Pathborn Hunger
+	7 Dust for Dust
+	7 Pinnacle of Vinimroth
+	7 Attuned Shimmer
+	7 Bushy Shimmer
+	7 Wild Shimmer
+	7 Curious Shimmer
+	7 Pouncing Shimmer
+	7 Runed Spire
+	7 Fadove Pathwarden
+	7 Path of Insight
+	7 Path of Revival
+	7 Keeper of Faloden Woods
+	7 Mistveil Drake
+	7 Mordel Combatant
+	7 Bearer of Change
+	7 Mordel Razer
+	7 Pathborn Aggression
+	7 Eternities Weaver
+	7 Guardian Roost
+	7 Path to Restoration
+	7 Path to Ages
+	7 Breach of Protection
+	7 Breach of Sanity
+	7 Breach of Malice
+	7 Breach of Nature
+	7 Breach of Mortality
+	7 Breach of the Unknown
+	7 Path of the Grove
+	7 Pathborn Drake
+	7 Outlands Pathwarden
+	6 Fadove Reinforcement
+	6 Avlod Pathshaper
+	6 Outlands Traveller
+	6 Mordel Reinforcement
+	6 Outlands Guardian
+	6 Paths Strider
+	15 Path of the Proud
+	15 Path of the Roost
+	15 Path of the Rift
+	15 Path of the Brood
+	15 Path of the Mighty
+	6 Pathbound Bloom
+	4 Crackling Plains
+	4 Restored Plains
+	4 Splintered Island
+	4 Furrowed Mountain
+	4 Restored Island
+	4 Restored Swamp
+	4 Restored Mountain
+	4 Restored Forest
+	4 Rip to Today
+	4 Divided Forest
+	4 Sundered Swamp
+	15 Unstable Rift
+	4 Spire of Hunger
+	4 Shimmering Path
+	4 Flashing Path
+	6 Tethers of Insanity
+	6 Eternity Siphon
+	15 Tofnet Thrummer
+	7 Faloden Scavenger
+	6 Grazed by the Endless
+	15 Choked Essence
+	4 Enduring Sapling
+	6 Avakin Hazeweaver
+	7 Verem-Volcano Keeper
+	4 Restored Fault
+	6 Ash to Hope
+	15 Scouts Bow
+	15 Paragon of Unknown Sights
+	7 Dustfall
+	15 Common Enemy
+	15 Power Null
+	7 Weavehorn Chimera
+	6 Ethereal Exposure
+	6 Impunity of Souls
+	6 Scars of Oil
+	6 Splendid Genesis
+	6 Volatile Visions

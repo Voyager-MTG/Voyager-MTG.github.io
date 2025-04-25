@@ -159,9 +159,8 @@
 		top: 91vh;
 		height: 6vh;
 		z-index: 1;
-		/*width: 32vw;*/
+		width: 32vw;
 		background-size: cover;
-		pointer-events: none;
 	}
 	@media ( max-width: 750px ) {
 		.image-grid {
@@ -311,7 +310,7 @@
 		position: relative;
 	}
 	::-webkit-scrollbar {
-    	background-color: rgba(0, 0, 0, 0.1);
+    	background-color: rgba(0, 0, 0, 0);
 	}
 	::-webkit-scrollbar-button {
 		background-color: #999;
@@ -630,14 +629,17 @@
 		align-items: center;
 		justify-items: center;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 		gap: 5px;
 		margin-bottom: 20px;
+	}
+	.preview-card-image {
+		max-width: 30vw;
 	}
 </style>
 <style id="popout-style">
 	.popout {
-		background-color: #f3f3f3 !important;
+		background-color: #f3f3f3;
 		/* color: #f3f3f3; */
 	}
 </style>
@@ -654,6 +656,7 @@
 			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
 			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
 			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<a href="/account" id="account-link"><img src="/img/account.png" class="sg-icon">Account</a>
 		</div>
 	</div>
 	<div id="myContextMenu" class="rc-menu popout">
@@ -817,7 +820,7 @@
 				card_list_arrayified = card_list.cards;
 
 
-				await fetch('/lists/all-sets.json')
+				aawait fetch('/lists/all-sets.json')
 					.then(response => response.json())
 					.then(data => {
 						sets_json = data; 
@@ -895,7 +898,7 @@
 			localStorage.setItem("colls.collections", JSON.stringify(colls));
 
 			if (localStorage.getItem("settings.autosave") == "On" && !deckURL) {
-				readDezckText(localStorage.getItem(localStorage.getItem("info.lastdeck")));
+				readDeckText(localStorage.getItem(localStorage.getItem("info.lastdeck")));
 				document.getElementById("deck-name").value = localStorage.getItem("info.lastdeck");
 			}
 
@@ -1198,7 +1201,7 @@
 			// initialize empty HTML then add each option and the X to it, then make the modal visible and add the content
 			let headerContainer = document.createElement("div");
 			headerContainer.className = "settings-modal-header-container";
-			const settingsMenus = ["Home", "Style"]
+			const settingsMenus = ["Home", "Style", "Preview Card"]
 			for (const menuName of settingsMenus) {
 				let ele = document.createElement("span");
 				ele.onclick = function() {
@@ -1268,6 +1271,37 @@
 				contentContainer.appendChild(settingsOptionHtml("Scrollbar in search results", "settings.scrollbar"));
 				contentContainer.appendChild(createText("Black text color: "));
 				contentContainer.appendChild(settingsOptionHtml("Text Color: ", "settings.textcolor", ["Black", "White"]));
+			} else if (menu == "Preview Card") {
+				let preview_card_img = document.createElement("img");
+				let card_stats = JSON.parse(localStorage.getItem("settings.previewimg"));
+				preview_card_img.className = "card-image preview-card-image";
+				preview_card_img.id = "preview-card-image";
+				preview_card_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+				let card_dropdown = document.createElement("select");
+				card_dropdown.id = "card-dropdown";
+				let deck_list = [];
+				let option_ = document.createElement('option');
+				option_.innerText = card_stats.card_name;
+				option_.value = localStorage.getItem('settings.previewimg');
+				card_dropdown.appendChild(option_);
+				for (const card of deck) {
+					if (deck_list.includes(card) || card == localStorage.getItem('settings.previewimg')) {
+						continue
+					}
+					let card_stats = JSON.parse(card);
+					let option = document.createElement('option');
+					option.value = card;
+					option.innerText = card_stats.card_name;
+					deck_list.push(card);
+					card_dropdown.appendChild(option);
+				}
+				card_dropdown.onchange = function() {
+					localStorage.setItem("settings.previewimg", document.getElementById("card-dropdown").value);
+					openSettingsModal("Preview Card");
+				}
+				console.log(deck_list);
+				contentContainer.appendChild(preview_card_img);
+				contentContainer.appendChild(card_dropdown);
 			}
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = modalContent;
@@ -2608,7 +2642,7 @@
 			grid.appendChild(buildImgContainer(card_stats, false, rotate_card));
 			
 			const text = document.createElement("div");
-			text.className = "card-text popout";
+			text.className = "card-text";
 			text.id = "card-text";
 
 			const name_cost = document.createElement("div");
@@ -2860,11 +2894,20 @@
 			return retVal && (strOut.length > strIn.length);
 		}
 
+		let first_card = true;
+
 		function addCardToDeck(card) {
+			// console.log("ADDING");
+			console.log(first_card, card);
+			if (first_card) {
+				first_card = false;
+				localStorage.setItem("settings.previewimg", card);
+			}
 			let card_parsed = JSON.parse(card);
 			if (modifyDeck2(`${card_parsed['set']}-${card_parsed['number']}`, '+')) {
 				return;
 			}
+			// console.log('wtf');
 			deck.push(card);
 			processDeck();
 		}
@@ -3472,7 +3515,6 @@
 			}
 		}
 
-
 		function randomCard() {
 				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
 				let random_card = card_list_arrayified[i];
@@ -3489,6 +3531,66 @@
 
 				window.location.href = url;
 			}
+	</script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+		
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+			authDomain: "voyager-78e30.firebaseapp.com",
+			projectId: "voyager-78e30",
+			storageBucket: "voyager-78e30.firebasestorage.app",
+			messagingSenderId: "411191248476",
+			appId: "1:411191248476:web:591349be169d823e5f8899",
+			measurementId: "G-TQ1L48F25M"
+		};
+		
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+
+		let username = "";
+        let password = "";
+		let decks = "";
+
+		let sessionid = localStorage.getItem("settings.session");
+
+		const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+			let data = docSnap.data();
+			username = data.username;
+			password = data.password;
+		});
+
+		await getDoc(doc(db, 'users', username)).then(docSnap => {
+			let data = docSnap.data();
+			decks = JSON.parse(data.decks);
+		});
+
+		document.getElementById('save-btn').addEventListener("click", (e) => {
+			let card_stats = JSON.parse(localStorage.getItem('settings.previewimg'));
+			let deckObj = {
+				name: document.getElementById("deck-name").value,
+				previewimg: "/sets/" + card_stats.set + "-files/img/" + card_stats.number + "_" + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type,
+				url: `https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`
+			};
+			for (const deck of decks) {
+				if (deck.name == deckObj.name) {
+					decks.splice(decks.indexOf(deck), 1);
+				}
+			}
+			decks.push(deckObj);
+			setDoc(doc(db, "users", username), {
+				username: username,
+				password: password,
+				decks   : JSON.stringify(decks)
+			});
+		});
 	</script>
 </body>
 </html>

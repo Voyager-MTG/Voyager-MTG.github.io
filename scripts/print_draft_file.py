@@ -48,7 +48,7 @@ def generateFile(code):
 		draft_string += '''	{
 			"name": "''' + card['card_name'] + '''",
 			"rarity": "''' + card['rarity'] + '''",
-			"mana_cost": "''' + card['cost'] + '''",
+			"mana_cost": "''' + card['cost'].replace("I", "C") + '''",
 			"type": "''' + card['type'] + '''",
 			"collector_number": "''' + str(card['number']) + '''",
 	'''
@@ -111,6 +111,6 @@ def generateFile(code):
 			if count > 0:
 				draft_string += '''	''' + str(count) + ''' ''' + c['card_name'] + '''
 '''
-
+	
 	with open(os.path.join('sets', code + '-files', code + '-draft.txt'), 'w') as f:
 		f.write(draft_string)

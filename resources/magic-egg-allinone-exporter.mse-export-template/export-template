@@ -121,19 +121,20 @@ script:
 			+ ( if contains(color, match:"black") or contains(cost, match:"B") then "B" else "" )
 			+ ( if contains(color, match:"red") or contains(cost, match:"R") then "R" else "" )
 			+ ( if contains(color, match:"green") or contains(cost, match:"G") then "G" else "" )
+			+ ( if contains(color, match:"silver") or contains(cost, match:"I") then "I" else "" )
 		)
 	}
 	card_color_1 := { get_card_color(text:card.text, type:card.type, color:card.card_color, cost:card.casting_cost) }
 	card_color_2 := { get_card_color(text:card.text_2, type:card.type_2, color:card.card_color_2, cost:card.casting_cost_2) }
 
-	##Fungustober's notes:
+	##Fungustobers notes:
 	#.txt implementation example:
 	#Black Lotus	artifact	cube	Artifact	0000	C	{0}	{T}, Sacrifice this artifact: Add three mana of any one color.			normal	TST		!restricted	VintageREPLACEME
 	#.json with same info:
 	#{"name":"Black Lotus","color":"artifact","rarity":"cube","type":"Artifact","card_number":"0000","color_identity":"C","casting_cost":"{0}","rules_text":"{T}, Sacrifice this artifact: Add three mana of any one color.","shape":"normal",set:"TST",notes:"!restricted Vintage"},
-		#card_number can just be a number instead of a string, because we don't need to add a or b based on which side the card object is.
+		#card_number can just be a number instead of a string, because we dont need to add a or b based on which side the card object is.
 		#having the entire DFC be just one card object make this a whole lot easier
-		#loyalty definitely cannot be a number because of the possibility of X or n+X, and PT can't be a number because of the /
+		#loyalty definitely cannot be a number because of the possibility of X or n+X, and PT cant be a number because of the /
 		
 	#dfc example:
 	#.txt implementation:
@@ -142,14 +143,14 @@ script:
 	#{"name":"Delver of Secrets","color":"blue","rarity":"common","type":"Creature -- Human Wizard"card_number:"0001","color_identity":"U","cost":"{U}","rules_text":"{U}	At the beginning of your upkeep, look at the top card of your library. You may reveal that card. If an instant or sorcery card is revealed this way, transform Delver of Secrets.","p/t":"1/1","shape":"double faced","set":"TST","name2":"Insectile Aberration","color2":"blue","type2":"Creature -- Human Insect","rules_text2":"3/2","notes":"no longer legal in standard :("},
 		#color_identity_statistic() uses both sides of a DFC to create the color identity, so calling it twice is redundant.	
 	
-	#now that we understand how write_card works, let's reformat it to fit JSON specifications.
-	#we're also formatting this in vertical chunks so we don't have to scroll to the right to see everything
+	#now that we understand how write_card works, lets reformat it to fit JSON specifications.
+	#were also formatting this in vertical chunks so we dont have to scroll to the right to see everything
 
 	##symbol processing
 	#adding my symbol processing functions to simplify things down the road
-	#If we make all the symbols {1}{U} here, we won't have to use tokenize/symbolize in the python scripts
+	#If we make all the symbols {1}{U} here, we wont have to use tokenize/symbolize in the python scripts
 	
-	#all the mana types we need this regex to detect: (css is case-insensitive, so we don't need to worry about making things upper/lowercase)
+	#all the mana types we need this regex to detect: (css is case-insensitive, so we dont need to worry about making things upper/lowercase)
 	#w
 	#w/p -> every mana type with a slash needs to not have that by the end
 	#u, u/p, b, b/p, r, r/p, g, g/p 
@@ -183,8 +184,8 @@ script:
 	}
 	inline_replacement := replace@(match:"<sym(-auto)?>([^<]+)</sym(-auto)?>", replace:{mana_cost_replacement_css(_2)})
 	mana_cost_replacement := replace@(match:"([+=-])([0-9X])", replace:{ if _2 == "0" or _2 == "=" then "["+_2+"]" else "["+_1+_2+"]"})+
-		replace@(match:"([0-9HWUBRGSCV])/([WUBRGCSV])(/([WUBRGCSV]))?", replace:{"\{"+_1+"/"+_2+_3+"\}"})+
-		replace@(match:"([½∞XYZWUBRGCSTQVJFENAH])", in_context:"(?<![\{[+-])(?<!/)<match>", replace:{"\{"+_1+"\}"})+
+		replace@(match:"([0-9HIWUBRGSCV])/([IWUBRGCSV])(/([IWUBRGCSV]))?", replace:{"\{"+_1+"/"+_2+_3+"\}"})+
+		replace@(match:"([½∞XYZIWUBRGCSTQVJFENAH])", in_context:"(?<![\{[+-])(?<!/)<match>", replace:{"\{"+_1+"\}"})+
 		replace@(match:"([1-9]?[0-9]+)", in_context:"(?<![\{[+-])(?<!\\/)<match>", replace:{"\{"+_1+"\}"})+
 		replace@(match:"V", replace:{v_rep("V")})
 	mana_cost_replacement_css := mana_cost_replacement +
@@ -202,7 +203,15 @@ script:
 		+ (if contains(card.type, match:"Swamp") then "B" else "")
 		+ (if contains(card.type, match:"Mountain") then "R" else "")
 		+ (if contains(card.type, match:"Forest") then "G" else "")
+		+ (if contains(card.type, match:"Fault") then "I" else "")
 	}
+
+	full_text := {
+		if card.special_text == "" then card.rule_text
+		else card.special_text
+	}
+
+
 	merge_ci := {
 		base := input
 		add := with
@@ -249,10 +258,10 @@ script:
 			"{q}number{q}: {sanitize(card_number())}",
 			"{q}color_identity{q}: {q}{get_color_identity()}{q}",
 			"{q}cost{q}: {q}{mana_cost_replacement_css(card.casting_cost)}{q}",
-			"{q}rules_text{q}: {q}{format_textbox(card.rule_text)}{q}",
+			"{q}rules_text{q}: {q}{format_textbox(full_text())}{q}",
 			"{q}flavor_text{q}: {q}{format_textbox(card.flavor_text)}{q}",
 			"{q}pt{q}: {q}{sanitize(card.pt)}{q}",
-			"{q}special_text{q}: {q}{format_textbox(card.special_text)}{q}",
+			"{q}special_text{q}: {q}{format_textbox(card.alias)}{q}",
 			"{q}shape{q}: {q}{get_shape()}{q}",
 			"{q}set{q}: {q}{adj_setcode()}{q}",
 			"{q}loyalty{q}: {q}{sanitize(card.loyalty)}{q}",

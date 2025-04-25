@@ -3,7 +3,7 @@
 		{
 			"name": "Dust Converter",
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Bird ",
 			"collector_number": "33",
 			"image_uris": {
@@ -13,7 +13,7 @@
 		{
 			"name": "Avakin Adventurer",
 			"rarity": "common",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Creature — Bird Scout ",
 			"collector_number": "12",
 			"image_uris": {
@@ -23,7 +23,7 @@
 		{
 			"name": "Meirel Drifter",
 			"rarity": "common",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Creature — Fox Scout ",
 			"collector_number": "68",
 			"image_uris": {
@@ -33,7 +33,7 @@
 		{
 			"name": "Power from Beyond",
 			"rarity": "common",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Instant",
 			"collector_number": "80",
 			"image_uris": {
@@ -43,7 +43,7 @@
 		{
 			"name": "Calign",
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Drake Horror ",
 			"collector_number": "16",
 			"image_uris": {
@@ -53,7 +53,7 @@
 		{
 			"name": "Captivate",
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Instant",
 			"collector_number": "19",
 			"image_uris": {
@@ -63,7 +63,7 @@
 		{
 			"name": "Adventurous Pair",
 			"rarity": "common",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Creature — Human ",
 			"collector_number": "7",
 			"image_uris": {
@@ -73,7 +73,7 @@
 		{
 			"name": "Perspective Shift",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Instant",
 			"collector_number": "79",
 			"image_uris": {
@@ -83,7 +83,7 @@
 		{
 			"name": "Emigrating Pilgrim",
 			"rarity": "common",
-			"mana_cost": "{3}{C}",
+			"mana_cost": "{3}{I}",
 			"type": "Enchantment Creature — Icon Knight ",
 			"collector_number": "36",
 			"image_uris": {
@@ -93,7 +93,7 @@
 		{
 			"name": "Drougth Oracle",
 			"rarity": "common",
-			"mana_cost": "{6}{C}",
+			"mana_cost": "{6}{I}",
 			"type": "Creature — Cat Shaman ",
 			"collector_number": "31",
 			"image_uris": {
@@ -103,7 +103,7 @@
 		{
 			"name": "Morraire Shimmer Patrol",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{C}{W}",
+			"mana_cost": "{2}{I}{W}",
 			"type": "Creature — Faerie Dog ",
 			"collector_number": "139",
 			"image_uris": {
@@ -113,7 +113,7 @@
 		{
 			"name": "Coiling Jailer",
 			"rarity": "uncommon",
-			"mana_cost": "{4}{C}{W}",
+			"mana_cost": "{4}{I}{W}",
 			"type": "Creature — Wurm Cleric ",
 			"collector_number": "130",
 			"image_uris": {
@@ -123,7 +123,7 @@
 		{
 			"name": "Cydina Storm Drake",
 			"rarity": "uncommon",
-			"mana_cost": "{3}{C}{R}",
+			"mana_cost": "{3}{I}{R}",
 			"type": "Creature — Drake ",
 			"collector_number": "131",
 			"image_uris": {
@@ -133,7 +133,7 @@
 		{
 			"name": "Flowsnail",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}{R}",
+			"mana_cost": "{1}{I}{R}",
 			"type": "Creature — Jellyfish Snail ",
 			"collector_number": "135",
 			"image_uris": {
@@ -143,7 +143,7 @@
 		{
 			"name": "Promise of Hunger",
 			"rarity": "uncommon",
-			"mana_cost": "{C}{G}",
+			"mana_cost": "{I}{G}",
 			"type": "Enchantment",
 			"collector_number": "144",
 			"image_uris": {
@@ -153,7 +153,7 @@
 		{
 			"name": "Balutr Runners",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{C}{G}",
+			"mana_cost": "{2}{I}{G}",
 			"type": "Creature — Human Wolf Scout ",
 			"collector_number": "123",
 			"image_uris": {
@@ -163,7 +163,7 @@
 		{
 			"name": "Boundless Flight",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{C}{U}",
+			"mana_cost": "{2}{I}{U}",
 			"type": "Creature — Chimera ",
 			"collector_number": "125",
 			"image_uris": {
@@ -173,7 +173,7 @@
 		{
 			"name": "Calamitous Koi",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{C}{B}",
+			"mana_cost": "{2}{I}{B}",
 			"type": "Creature — Fish Spirit ",
 			"collector_number": "126",
 			"image_uris": {
@@ -183,7 +183,7 @@
 		{
 			"name": "Omen of Hunger",
 			"rarity": "uncommon",
-			"mana_cost": "{3}{C}{B}",
+			"mana_cost": "{3}{I}{B}",
 			"type": "Creature — Angel Reflection ",
 			"collector_number": "141",
 			"image_uris": {
@@ -193,7 +193,7 @@
 		{
 			"name": "Homestead Pair",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Human Elf ",
 			"collector_number": "47",
 			"image_uris": {
@@ -203,7 +203,7 @@
 		{
 			"name": "Discover Uncertainty",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Instant",
 			"collector_number": "28",
 			"image_uris": {
@@ -213,7 +213,7 @@
 		{
 			"name": "When Words Dont Work",
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Instant",
 			"collector_number": "114",
 			"image_uris": {
@@ -223,7 +223,7 @@
 		{
 			"name": "Iconic Challenger",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Enchantment Creature — Icon Warrior ",
 			"collector_number": "49",
 			"image_uris": {
@@ -233,7 +233,7 @@
 		{
 			"name": "Unweave",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Instant",
 			"collector_number": "109",
 			"image_uris": {
@@ -243,7 +243,7 @@
 		{
 			"name": "Ignelscor Witch",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Creature — Human Warlock ",
 			"collector_number": "51",
 			"image_uris": {
@@ -253,7 +253,7 @@
 		{
 			"name": "Kornas Forward",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Creature — Wurm Scout ",
 			"collector_number": "60",
 			"image_uris": {
@@ -263,7 +263,7 @@
 		{
 			"name": "Meirel Evacuator",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}{C}",
+			"mana_cost": "{1}{I}{I}",
 			"type": "Creature — Hyena Scout ",
 			"collector_number": "69",
 			"image_uris": {
@@ -273,7 +273,7 @@
 		{
 			"name": "Unending Exploration",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{C}{C}",
+			"mana_cost": "{2}{I}{I}",
 			"type": "Enchantment",
 			"collector_number": "107",
 			"image_uris": {
@@ -293,7 +293,7 @@
 		{
 			"name": "Inkblot Artist",
 			"rarity": "uncommon",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Creature — Human Wizard ",
 			"collector_number": "54",
 			"image_uris": {
@@ -303,7 +303,7 @@
 		{
 			"name": "Reflected Inclination",
 			"rarity": "uncommon",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Creature — Elemental ",
 			"collector_number": "83",
 			"image_uris": {
@@ -313,7 +313,7 @@
 		{
 			"name": "Wandering Travellers",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Human ",
 			"collector_number": "112",
 			"image_uris": {
@@ -323,7 +323,7 @@
 		{
 			"name": "Pathshaping",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Sorcery",
 			"collector_number": "78",
 			"image_uris": {
@@ -333,7 +333,7 @@
 		{
 			"name": "Kaln-Ocean Streamliner",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Merfolk Rogue ",
 			"collector_number": "58",
 			"image_uris": {
@@ -343,7 +343,7 @@
 		{
 			"name": "Shrouded Pathcensor",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Creature — Bird Wizard ",
 			"collector_number": "93",
 			"image_uris": {
@@ -353,7 +353,7 @@
 		{
 			"name": "Chirps Spice Seeker",
 			"rarity": "rare",
-			"mana_cost": "{3}{C}",
+			"mana_cost": "{3}{I}",
 			"type": "Legendary Enchantment Creature — Bird ",
 			"collector_number": "23",
 			"image_uris": {
@@ -363,7 +363,7 @@
 		{
 			"name": "Melodia Drifter at Heart",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}{C}",
+			"mana_cost": "{2}{I}{I}",
 			"type": "Legendary Enchantment Creature — Human Wizard ",
 			"collector_number": "70",
 			"image_uris": {
@@ -373,7 +373,7 @@
 		{
 			"name": "Outlands Chimera",
 			"rarity": "rare",
-			"mana_cost": "{3}{C}{C}",
+			"mana_cost": "{3}{I}{I}",
 			"type": "Creature — Chimera ",
 			"collector_number": "77",
 			"image_uris": {
@@ -383,7 +383,7 @@
 		{
 			"name": "Starling",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}{C}",
+			"mana_cost": "{2}{I}{I}",
 			"type": "Creature — Shapeshifter ",
 			"collector_number": "99",
 			"image_uris": {
@@ -393,7 +393,7 @@
 		{
 			"name": "Cerise Auger of Flow",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}{W}{U}",
+			"mana_cost": "{1}{I}{W}{U}",
 			"type": "Legendary Creature — Human Wizard ",
 			"collector_number": "128",
 			"image_uris": {
@@ -403,7 +403,7 @@
 		{
 			"name": "Called to Eternity",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Enchantment",
 			"collector_number": "17",
 			"image_uris": {
@@ -413,7 +413,7 @@
 		{
 			"name": "Mass Mutation",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}{C}",
+			"mana_cost": "{1}{I}{I}",
 			"type": "Sorcery",
 			"collector_number": "67",
 			"image_uris": {
@@ -423,7 +423,7 @@
 		{
 			"name": "Ancient Interference",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}{C}",
+			"mana_cost": "{2}{I}{I}",
 			"type": "Instant",
 			"collector_number": "10",
 			"image_uris": {
@@ -433,7 +433,7 @@
 		{
 			"name": "Probe the Veil",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Sorcery",
 			"collector_number": "81",
 			"image_uris": {
@@ -443,7 +443,7 @@
 		{
 			"name": "Lithify",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Instant",
 			"collector_number": "62",
 			"image_uris": {
@@ -453,7 +453,7 @@
 		{
 			"name": "Cascading Reflections",
 			"rarity": "rare",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Instant",
 			"collector_number": "20",
 			"image_uris": {
@@ -463,7 +463,7 @@
 		{
 			"name": "Kindred Spirits",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Enchantment",
 			"collector_number": "59",
 			"image_uris": {
@@ -473,7 +473,7 @@
 		{
 			"name": "Falling Sparks",
 			"rarity": "rare",
-			"mana_cost": "{X}{1}{C}{R}",
+			"mana_cost": "{X}{1}{I}{R}",
 			"type": "Sorcery",
 			"collector_number": "134",
 			"image_uris": {
@@ -483,7 +483,7 @@
 		{
 			"name": "Soul Splintering",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}{W}",
+			"mana_cost": "{1}{I}{W}",
 			"type": "Instant",
 			"collector_number": "149",
 			"image_uris": {
@@ -503,7 +503,7 @@
 		{
 			"name": "Liminal Ambiguity",
 			"rarity": "rare",
-			"mana_cost": "{X}{C}",
+			"mana_cost": "{X}{I}",
 			"type": "Instant",
 			"collector_number": "61",
 			"image_uris": {
@@ -513,7 +513,7 @@
 		{
 			"name": "Experience Cultivator",
 			"rarity": "common",
-			"mana_cost": "{2}{C/G}",
+			"mana_cost": "{2}{I/G}",
 			"type": "Creature — Plant ",
 			"collector_number": "133",
 			"image_uris": {
@@ -523,7 +523,7 @@
 		{
 			"name": "Towing Steladiuys",
 			"rarity": "common",
-			"mana_cost": "{4}{C/B}{C/B}",
+			"mana_cost": "{4}{I/B}{I/B}",
 			"type": "Creature — Octopus Jellyfish ",
 			"collector_number": "151",
 			"image_uris": {
@@ -533,7 +533,7 @@
 		{
 			"name": "Information Recovery Crew",
 			"rarity": "common",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Creature — Human Scout ",
 			"collector_number": "52",
 			"image_uris": {
@@ -543,7 +543,7 @@
 		{
 			"name": "Exuberant Archaeologist",
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Human Scout ",
 			"collector_number": "41",
 			"image_uris": {
@@ -553,7 +553,7 @@
 		{
 			"name": "Tepid Tamer",
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Human Warrior ",
 			"collector_number": "104",
 			"image_uris": {
@@ -563,7 +563,7 @@
 		{
 			"name": "Striking Reflection",
 			"rarity": "common",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Creature — Reflection ",
 			"collector_number": "100",
 			"image_uris": {
@@ -573,7 +573,7 @@
 		{
 			"name": "Unbothered Alchemist",
 			"rarity": "common",
-			"mana_cost": "{3}{C}",
+			"mana_cost": "{3}{I}",
 			"type": "Creature — Human Wizard ",
 			"collector_number": "106",
 			"image_uris": {
@@ -583,7 +583,7 @@
 		{
 			"name": "Scouting Party",
 			"rarity": "common",
-			"mana_cost": "{3}{C}{C}",
+			"mana_cost": "{3}{I}{I}",
 			"type": "Creature — Rabbit Soldier Scout ",
 			"collector_number": "88",
 			"image_uris": {
@@ -593,7 +593,7 @@
 		{
 			"name": "Back to Market",
 			"rarity": "common",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Sorcery",
 			"collector_number": "13",
 			"image_uris": {
@@ -603,7 +603,7 @@
 		{
 			"name": "Center Mass",
 			"rarity": "common",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Instant",
 			"collector_number": "21",
 			"image_uris": {
@@ -613,7 +613,7 @@
 		{
 			"name": "Murky Politics",
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Instant",
 			"collector_number": "75",
 			"image_uris": {
@@ -623,7 +623,7 @@
 		{
 			"name": "Memory Restored",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Sorcery",
 			"collector_number": "71",
 			"image_uris": {
@@ -703,7 +703,7 @@
 		{
 			"name": "Neverbloom",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}{G}",
+			"mana_cost": "{1}{I}{G}",
 			"type": "Creature — Plant Horror ",
 			"collector_number": "140",
 			"image_uris": {
@@ -713,7 +713,7 @@
 		{
 			"name": "The Lost Heir",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Enchantment Creature — Human Noble ",
 			"collector_number": "64",
 			"image_uris": {
@@ -723,7 +723,7 @@
 		{
 			"name": "Unveiling",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}{C}",
+			"mana_cost": "{1}{I}{I}",
 			"type": "Instant",
 			"collector_number": "108",
 			"image_uris": {
@@ -733,7 +733,7 @@
 		{
 			"name": "To Survive in Some Form",
 			"rarity": "uncommon",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Instant",
 			"collector_number": "105",
 			"image_uris": {
@@ -743,7 +743,7 @@
 		{
 			"name": "Eschewer of Form",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Shapeshifter Artificer ",
 			"collector_number": "39",
 			"image_uris": {
@@ -753,7 +753,7 @@
 		{
 			"name": "Era, Hymn to Creation",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Legendary Enchantment Creature — God ",
 			"collector_number": "38",
 			"image_uris": {
@@ -763,7 +763,7 @@
 		{
 			"name": "Infraruin Predator",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}{C}",
+			"mana_cost": "{1}{I}{I}",
 			"type": "Creature — Lizard ",
 			"collector_number": "53",
 			"image_uris": {
@@ -773,7 +773,7 @@
 		{
 			"name": "Sealed Deepborn",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Merfolk Chimera Citizen ",
 			"collector_number": "89",
 			"image_uris": {
@@ -783,7 +783,7 @@
 		{
 			"name": "Kaiju Sighting",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Sorcery",
 			"collector_number": "57",
 			"image_uris": {
@@ -793,7 +793,7 @@
 		{
 			"name": "Interstellar Traveller",
 			"rarity": "rare",
-			"mana_cost": "{3}{C}",
+			"mana_cost": "{3}{I}",
 			"type": "Enchantment Creature — Construct ",
 			"collector_number": "55",
 			"image_uris": {
@@ -803,7 +803,7 @@
 		{
 			"name": "The Depths Talk Loudly",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Enchantment",
 			"collector_number": "26",
 			"image_uris": {
@@ -833,7 +833,7 @@
 		{
 			"name": "Lost in Dreams of Life",
 			"rarity": "mythic",
-			"mana_cost": "{4}{C}{C}",
+			"mana_cost": "{4}{I}{I}",
 			"type": "Sorcery",
 			"collector_number": "65",
 			"image_uris": {
@@ -843,7 +843,7 @@
 		{
 			"name": "Iridescent Summit",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}{C}",
+			"mana_cost": "{1}{I}{I}",
 			"type": "Enchantment",
 			"collector_number": "56",
 			"image_uris": {
@@ -853,7 +853,7 @@
 		{
 			"name": "One Last Sunset",
 			"rarity": "rare",
-			"mana_cost": "{C}{R}{W}",
+			"mana_cost": "{I}{R}{W}",
 			"type": "Instant",
 			"collector_number": "142",
 			"image_uris": {
@@ -863,7 +863,7 @@
 		{
 			"name": "Winged Turtle",
 			"rarity": "mythic",
-			"mana_cost": "{2}{C}{C}",
+			"mana_cost": "{2}{I}{I}",
 			"type": "Creature — Angel Turtle  ",
 			"collector_number": "116",
 			"image_uris": {
@@ -873,7 +873,7 @@
 		{
 			"name": "Wandering Dislocation",
 			"rarity": "common",
-			"mana_cost": "{2}{C}{C}",
+			"mana_cost": "{2}{I}{I}",
 			"type": "Enchantment Creature — Icon Spirit ",
 			"collector_number": "111",
 			"image_uris": {
@@ -883,7 +883,7 @@
 		{
 			"name": "Sundown",
 			"rarity": "mythic",
-			"mana_cost": "{1}{C}{R}{R}",
+			"mana_cost": "{1}{I}{R}{R}",
 			"type": "Sorcery",
 			"collector_number": "150",
 			"image_uris": {
@@ -893,7 +893,7 @@
 		{
 			"name": "Against the Night",
 			"rarity": "rare",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Sorcery",
 			"collector_number": "8",
 			"image_uris": {
@@ -903,7 +903,7 @@
 		{
 			"name": "Warping Wolf",
 			"rarity": "uncommon",
-			"mana_cost": "{C}{C}",
+			"mana_cost": "{I}{I}",
 			"type": "Enchantment Creature — Wolf ",
 			"collector_number": "113",
 			"image_uris": {
@@ -913,7 +913,7 @@
 		{
 			"name": "Risen Earthdragon",
 			"rarity": "uncommon",
-			"mana_cost": "{10}{C}{G}",
+			"mana_cost": "{10}{I}{G}",
 			"type": "Enchantment Creature — Dragon ",
 			"collector_number": "146",
 			"image_uris": {
@@ -933,7 +933,7 @@
 		{
 			"name": "Shell's Scraping",
 			"rarity": "rare",
-			"mana_cost": "{3}{C}{C}",
+			"mana_cost": "{3}{I}{I}",
 			"type": "Sorcery",
 			"collector_number": "92",
 			"image_uris": {
@@ -1003,7 +1003,7 @@
 		{
 			"name": "Swirling Moon",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Enchantment",
 			"collector_number": "101",
 			"image_uris": {
@@ -1013,7 +1013,7 @@
 		{
 			"name": "Sever the Oracle",
 			"rarity": "uncommon",
-			"mana_cost": "{C}{C}{C}",
+			"mana_cost": "{I}{I}{I}",
 			"type": "Instant",
 			"collector_number": "91",
 			"image_uris": {
@@ -1023,7 +1023,7 @@
 		{
 			"name": "Curious Dexteria",
 			"rarity": "uncommon",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Creature — Beast ",
 			"collector_number": "25",
 			"image_uris": {
@@ -1033,7 +1033,7 @@
 		{
 			"name": "Searing Sigils",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Artifact",
 			"collector_number": "90",
 			"image_uris": {
@@ -1043,7 +1043,7 @@
 		{
 			"name": "Distant Vulture",
 			"rarity": "rare",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Creature — Bird Incarnation ",
 			"collector_number": "29",
 			"image_uris": {
@@ -1053,7 +1053,7 @@
 		{
 			"name": "Distant Vulture Astral;",
 			"rarity": "common",
-			"mana_cost": "{2}{C}{C}",
+			"mana_cost": "{2}{I}{I}",
 			"type": "Creature — Bird Incarnation ",
 			"collector_number": "8",
 			"image_uris": {
@@ -1063,7 +1063,7 @@
 		{
 			"name": "Extant Surveyor",
 			"rarity": "rare",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Artifact Creature — Robot Construct ",
 			"collector_number": "40",
 			"image_uris": {
@@ -1073,7 +1073,7 @@
 		{
 			"name": "Hopeless Summit",
 			"rarity": "common",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Sorcery",
 			"collector_number": "48",
 			"image_uris": {
@@ -1083,7 +1083,7 @@
 		{
 			"name": "Lost Cause",
 			"rarity": "common",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Enchantment",
 			"collector_number": "63",
 			"image_uris": {
@@ -1093,7 +1093,7 @@
 		{
 			"name": "Sieve",
 			"rarity": "common",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Instant",
 			"collector_number": "95",
 			"image_uris": {
@@ -1103,7 +1103,7 @@
 		{
 			"name": "Draconic Reflection",
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Demon Dragon Reflection ",
 			"collector_number": "30",
 			"image_uris": {
@@ -1113,7 +1113,7 @@
 		{
 			"name": "Sryyn Spawner",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Insect ",
 			"collector_number": "98",
 			"image_uris": {
@@ -1123,7 +1123,7 @@
 		{
 			"name": "Algael-leael",
 			"rarity": "common",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Enchantment Creature — Elemental ",
 			"collector_number": "9",
 			"image_uris": {
@@ -1143,7 +1143,7 @@
 		{
 			"name": "Syphroid",
 			"rarity": "uncommon",
-			"mana_cost": "{4}{C}{C}",
+			"mana_cost": "{4}{I}{I}",
 			"type": "Artifact Creature — Robot ",
 			"collector_number": "102",
 			"image_uris": {
@@ -1153,7 +1153,7 @@
 		{
 			"name": "Tellavia Balwar",
 			"rarity": "common",
-			"mana_cost": "{1}{C}{C}",
+			"mana_cost": "{1}{I}{I}",
 			"type": "Creature — Demon Beast ",
 			"collector_number": "103",
 			"image_uris": {
@@ -1163,7 +1163,7 @@
 		{
 			"name": "Refraction Mech",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Artifact Creature — Robot Warrior ",
 			"collector_number": "84",
 			"image_uris": {
@@ -1173,7 +1173,7 @@
 		{
 			"name": "Writhing Sight",
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Zombie Eye Wizard ",
 			"collector_number": "119",
 			"image_uris": {
@@ -1183,7 +1183,7 @@
 		{
 			"name": "Soaring Chorus",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Enchamtment Creature — Icon Wizard ",
 			"collector_number": "96",
 			"image_uris": {
@@ -1203,7 +1203,7 @@
 		{
 			"name": "Xylem Attendant",
 			"rarity": "uncommon",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Creature — Human Warrior ",
 			"collector_number": "120",
 			"image_uris": {
@@ -1213,7 +1213,7 @@
 		{
 			"name": "Clifftop Pishogue",
 			"rarity": "uncommon",
-			"mana_cost": "{C}{U}",
+			"mana_cost": "{I}{U}",
 			"type": "Creature — Bird Wizard ",
 			"collector_number": "129",
 			"image_uris": {
@@ -1223,7 +1223,7 @@
 		{
 			"name": "Malevolent Knowledge",
 			"rarity": "rare",
-			"mana_cost": "{C/B}",
+			"mana_cost": "{I/B}",
 			"type": "Instant",
 			"collector_number": "138",
 			"image_uris": {
@@ -1233,7 +1233,7 @@
 		{
 			"name": "Shadow Eater",
 			"rarity": "common",
-			"mana_cost": "{X}{C}{B}",
+			"mana_cost": "{X}{I}{B}",
 			"type": "Creature — Zombie Spirit ",
 			"collector_number": "148",
 			"image_uris": {
@@ -1243,7 +1243,7 @@
 		{
 			"name": "Mirrored Magic",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Enchantment — Aura ",
 			"collector_number": "72",
 			"image_uris": {
@@ -1253,7 +1253,7 @@
 		{
 			"name": "Siege Crossbow",
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Artifact — Equipment ",
 			"collector_number": "94",
 			"image_uris": {
@@ -1263,7 +1263,7 @@
 		{
 			"name": "The Demon Within",
 			"rarity": "rare",
-			"mana_cost": "{C}{U}",
+			"mana_cost": "{I}{U}",
 			"type": "Instant",
 			"collector_number": "132",
 			"image_uris": {
@@ -1283,7 +1283,7 @@
 		{
 			"name": "Beautiful Headhuntress",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}{G}",
+			"mana_cost": "{1}{I}{G}",
 			"type": "Creature — Human Shapeshifter ",
 			"collector_number": "124",
 			"image_uris": {
@@ -1293,7 +1293,7 @@
 		{
 			"name": "Wisped Wings",
 			"rarity": "common",
-			"mana_cost": "{4}{C}",
+			"mana_cost": "{4}{I}",
 			"type": "Creature — Bird Spirit ",
 			"collector_number": "117",
 			"image_uris": {
@@ -1303,7 +1303,7 @@
 		{
 			"name": "Scholigaunt",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{C}{C}",
+			"mana_cost": "{2}{I}{I}",
 			"type": "Creature — Shapeshifter ",
 			"collector_number": "87",
 			"image_uris": {
@@ -1313,7 +1313,7 @@
 		{
 			"name": "Godhead's Interdiction",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}{C}",
+			"mana_cost": "{2}{I}{I}",
 			"type": "Sorcery",
 			"collector_number": "45",
 			"image_uris": {
@@ -1323,7 +1323,7 @@
 		{
 			"name": "Incessant Intercession",
 			"rarity": "uncommon",
-			"mana_cost": "{3}{C}{B}",
+			"mana_cost": "{3}{I}{B}",
 			"type": "Creature — Demon Wizard ",
 			"collector_number": "136",
 			"image_uris": {
@@ -1333,7 +1333,7 @@
 		{
 			"name": "Duet of Loss and Life",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Creature — Insect Warrior ",
 			"collector_number": "32",
 			"image_uris": {
@@ -1343,7 +1343,7 @@
 		{
 			"name": "Abstracted Mark",
 			"rarity": "uncommon",
-			"mana_cost": "{3}{C}{R}",
+			"mana_cost": "{3}{I}{R}",
 			"type": "Creature — Faerie Demon Wizard ",
 			"collector_number": "122",
 			"image_uris": {
@@ -1353,7 +1353,7 @@
 		{
 			"name": "Whimsy Unbound",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}{W}",
+			"mana_cost": "{2}{I}{W}",
 			"type": "Sorcery",
 			"collector_number": "152",
 			"image_uris": {
@@ -1383,7 +1383,7 @@
 		{
 			"name": "Gradius Option",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Artifact Creature — Robot Construct ",
 			"collector_number": "86",
 			"image_uris": {
@@ -1393,7 +1393,7 @@
 		{
 			"name": "Sentinel of the Afterlife",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}{B}",
+			"mana_cost": "{2}{I}{B}",
 			"type": "Creature — Zombie Spirit ",
 			"collector_number": "147",
 			"image_uris": {
@@ -1403,7 +1403,7 @@
 		{
 			"name": "Our Fates Change",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}{G}",
+			"mana_cost": "{1}{I}{G}",
 			"type": "Instant",
 			"collector_number": "143",
 			"image_uris": {
@@ -1413,7 +1413,7 @@
 		{
 			"name": "Caught in the Confusion",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}{W}",
+			"mana_cost": "{2}{I}{W}",
 			"type": "Enchantment",
 			"collector_number": "127",
 			"image_uris": {
@@ -1423,7 +1423,7 @@
 		{
 			"name": "Madness Broadcaster",
 			"rarity": "rare",
-			"mana_cost": "{C}{B}{R}",
+			"mana_cost": "{I}{B}{R}",
 			"type": "Creature — Vampire Warrior ",
 			"collector_number": "137",
 			"image_uris": {
@@ -1433,7 +1433,7 @@
 		{
 			"name": "Reflection Tender",
 			"rarity": "rare",
-			"mana_cost": "{C}{W}",
+			"mana_cost": "{I}{W}",
 			"type": "Enchantment Creature — Elemental ",
 			"collector_number": "145",
 			"image_uris": {
@@ -1443,7 +1443,7 @@
 		{
 			"name": "The Usurper",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Legendary Creature — Human ",
 			"collector_number": "110",
 			"image_uris": {
@@ -1453,7 +1453,7 @@
 		{
 			"name": "The Chanter of Paths",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Spirit ",
 			"collector_number": "22",
 			"image_uris": {
@@ -1733,7 +1733,7 @@
 		{
 			"name": "Mooyan Curry",
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Instant",
 			"collector_number": "74",
 			"image_uris": {
@@ -1743,7 +1743,7 @@
 		{
 			"name": "Yaiba Robo",
 			"rarity": "common",
-			"mana_cost": "{3}{C}",
+			"mana_cost": "{3}{I}",
 			"type": "Artifact Creature — Robot ",
 			"collector_number": "121",
 			"image_uris": {
@@ -1753,7 +1753,7 @@
 		{
 			"name": "Blooming Peculiarity",
 			"rarity": "uncommon",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Enchantment — Aura ",
 			"collector_number": "15",
 			"image_uris": {
@@ -1763,7 +1763,7 @@
 		{
 			"name": "Mark of Insanity",
 			"rarity": "rare",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Instant",
 			"collector_number": "66",
 			"image_uris": {
@@ -1773,7 +1773,7 @@
 		{
 			"name": "Nildiver",
 			"rarity": "uncommon",
-			"mana_cost": "{C}{C}",
+			"mana_cost": "{I}{I}",
 			"type": "Kindred Enchantment — Fish Entity ",
 			"collector_number": "76",
 			"image_uris": {
@@ -1783,7 +1783,7 @@
 		{
 			"name": "Wilmee",
 			"rarity": "common",
-			"mana_cost": "{6}{C}",
+			"mana_cost": "{6}{I}",
 			"type": "Creature — Rabbit Warrior ",
 			"collector_number": "115",
 			"image_uris": {
@@ -1803,7 +1803,7 @@
 		{
 			"name": "Ashen Wisps",
 			"rarity": "common",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Instant",
 			"collector_number": "11",
 			"image_uris": {
@@ -1813,7 +1813,7 @@
 		{
 			"name": "Fyndhorn Betrayer",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Phyrexian Elf ",
 			"collector_number": "44",
 			"image_uris": {
@@ -1823,7 +1823,7 @@
 		{
 			"name": "Groaning Lullaby",
 			"rarity": "rare",
-			"mana_cost": "{C}{C}",
+			"mana_cost": "{I}{I}",
 			"type": "Creature — Insect Plant ",
 			"collector_number": "46",
 			"image_uris": {
@@ -1833,7 +1833,7 @@
 		{
 			"name": "Moonlight Charm",
 			"rarity": "common",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Instant",
 			"collector_number": "73",
 			"image_uris": {
@@ -1843,7 +1843,7 @@
 		{
 			"name": "Spiteful Coil-Servants",
 			"rarity": "common",
-			"mana_cost": "{1}{C}{C}",
+			"mana_cost": "{1}{I}{I}",
 			"type": "Creature — Serpent Wall ",
 			"collector_number": "97",
 			"image_uris": {
@@ -1853,7 +1853,7 @@
 		{
 			"name": "Ego Entwined",
 			"rarity": "rare",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Instant",
 			"collector_number": "35",
 			"image_uris": {
@@ -1863,7 +1863,7 @@
 		{
 			"name": "Reto-Polo",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Enchantment — Aura ",
 			"collector_number": "85",
 			"image_uris": {
@@ -1873,7 +1873,7 @@
 		{
 			"name": "Identity Granter",
 			"rarity": "mythic",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Legendary Planeswalker — Peross ",
 			"collector_number": "50",
 			"image_uris": {
@@ -1883,7 +1883,7 @@
 		{
 			"name": "Empty Body Practitioner",
 			"rarity": "common",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}{I}",
 			"type": "Creature — Human Monk ",
 			"collector_number": "37",
 			"image_uris": {
@@ -1893,7 +1893,7 @@
 		{
 			"name": "Raging Rubigrug",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Beast ",
 			"collector_number": "82",
 			"image_uris": {
@@ -1903,7 +1903,7 @@
 		{
 			"name": "Ferryman's Price",
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Instant",
 			"collector_number": "43",
 			"image_uris": {
@@ -1913,7 +1913,7 @@
 		{
 			"name": "Dessigry",
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Fungus Drake ",
 			"collector_number": "27",
 			"image_uris": {
@@ -1923,7 +1923,7 @@
 		{
 			"name": "Woods' Procession",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Enchantment",
 			"collector_number": "118",
 			"image_uris": {
@@ -1933,7 +1933,7 @@
 		{
 			"name": "Blank",
 			"rarity": "common",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Sorcery",
 			"collector_number": "14",
 			"image_uris": {
@@ -1943,7 +1943,7 @@
 		{
 			"name": "Edification",
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Instant",
 			"collector_number": "34",
 			"image_uris": {
@@ -1953,7 +1953,7 @@
 		{
 			"name": "Canyon Crustacean",
 			"rarity": "common",
-			"mana_cost": "{C}",
+			"mana_cost": "{I}",
 			"type": "Creature — Crab ",
 			"collector_number": "18",
 			"image_uris": {
@@ -1963,7 +1963,7 @@
 		{
 			"name": "Cowering Lightbringer",
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}{I}",
 			"type": "Creature — Human Coward ",
 			"collector_number": "24",
 			"image_uris": {
@@ -1971,172 +1971,342 @@
 			}
 		}
 	]
-
-[WildcardSlot(15)]
-20 Dust Converter
-20 Avakin Adventurer
-20 Meirel Drifter
-20 Power from Beyond
-20 Calign
-20 Captivate
-20 Adventurous Pair
-20 Perspective Shift
-20 Emigrating Pilgrim
-20 Drougth Oracle
-20 Morraire Shimmer Patrol
-20 Coiling Jailer
-20 Cydina Storm Drake
-20 Flowsnail
-20 Promise of Hunger
-20 Balutr Runners
-20 Boundless Flight
-20 Calamitous Koi
-20 Omen of Hunger
-20 Homestead Pair
-20 Discover Uncertainty
-20 When Words Dont Work
-20 Iconic Challenger
-20 Unweave
-20 Ignelscor Witch
-20 Kornas Forward
-20 Meirel Evacuator
-20 Unending Exploration
-20 Persisting Timepiece
-20 Inkblot Artist
-20 Reflected Inclination
-20 Wandering Travellers
-20 Pathshaping
-20 Kaln-Ocean Streamliner
-20 Shrouded Pathcensor
-20 Chirps Spice Seeker
-20 Melodia Drifter at Heart
-20 Outlands Chimera
-20 Starling
-20 Cerise Auger of Flow
-20 Called to Eternity
-20 Mass Mutation
-20 Ancient Interference
-20 Probe the Veil
-20 Lithify
-20 Cascading Reflections
-20 Kindred Spirits
-20 Falling Sparks
-20 Soul Splintering
-20 Liminal Ambiguity
-20 Experience Cultivator
-20 Towing Steladiuys
-20 Information Recovery Crew
-20 Exuberant Archaeologist
-20 Tepid Tamer
-20 Striking Reflection
-20 Unbothered Alchemist
-20 Scouting Party
-20 Back to Market
-20 Center Mass
-20 Murky Politics
-20 Memory Restored
-20 Drifting Crevasse
-20 Drifting Field
-20 Drifting Isle
-20 Drifting Jungle
-20 Drifting Mire
-20 Drifting Peak
-20 Drifting Sands
-20 Neverbloom
-20 The Lost Heir
-20 Unveiling
-20 To Survive in Some Form
-20 Eschewer of Form
-20 Era, Hymn to Creation
-20 Infraruin Predator
-20 Sealed Deepborn
-20 Kaiju Sighting
-20 Interstellar Traveller
-20 The Depths Talk Loudly
-20 Sanctum Trader
-20 Lost in Dreams of Life
-20 Iridescent Summit
-20 One Last Sunset
-20 Winged Turtle
-20 Wandering Dislocation
-20 Sundown
-20 Against the Night
-20 Warping Wolf
-20 Risen Earthdragon
-20 Shell's Scraping
-20 Illuminant Spire
-20 Ivory Spire
-20 Searing Spire
-20 Silent Spire
-20 Twisted Spire
-20 Verdant Spire
-20 Swirling Moon
-20 Sever the Oracle
-20 Curious Dexteria
-20 Searing Sigils
-20 Distant Vulture
-20 Extant Surveyor
-20 Hopeless Summit
-20 Lost Cause
-20 Sieve
-20 Draconic Reflection
-20 Sryyn Spawner
-20 Algael-leael
-20 Syphroid
-20 Tellavia Balwar
-20 Refraction Mech
-20 Writhing Sight
-20 Soaring Chorus
-20 Xylem Attendant
-20 Clifftop Pishogue
-20 Malevolent Knowledge
-20 Shadow Eater
-20 Mirrored Magic
-20 Siege Crossbow
-20 The Demon Within
-20 Unending Toils
-20 Beautiful Headhuntress
-20 Wisped Wings
-20 Scholigaunt
-20 Godhead's Interdiction
-20 Incessant Intercession
-20 Duet of Loss and Life
-20 Abstracted Mark
-20 Whimsy Unbound
-20 Gradius Option
-20 Sentinel of the Afterlife
-20 Our Fates Change
-20 Caught in the Confusion
-20 Madness Broadcaster
-20 Reflection Tender
-20 The Usurper
-20 The Chanter of Paths
-20 Bygone Monoliths
-20 Foreboding Falls
-20 Forbidding Spires
-20 Suffocating Path
-20 Dreaded Clearing
-20 Mooyan Curry
-20 Yaiba Robo
-20 Blooming Peculiarity
-20 Mark of Insanity
-20 Nildiver
-20 Wilmee
-20 Planar Boundary
-20 Ashen Wisps
-20 Fyndhorn Betrayer
-20 Groaning Lullaby
-20 Moonlight Charm
-20 Spiteful Coil-Servants
-20 Ego Entwined
-20 Reto-Polo
-20 Identity Granter
-20 Empty Body Practitioner
-20 Raging Rubigrug
-20 Ferryman's Price
-20 Dessigry
-20 Woods' Procession
-20 Blank
-20 Edification
-20 Canyon Crustacean
-20 Cowering Lightbringer
+[RareSlot(1)]
+2 Pathshaping
+2 Kaln-Ocean Streamliner
+2 Shrouded Pathcensor
+2 Chirps Spice Seeker
+2 Melodia Drifter at Heart
+2 Outlands Chimera
+2 Starling
+2 Cerise Auger of Flow
+2 Called to Eternity
+2 Mass Mutation
+2 Ancient Interference
+2 Probe the Veil
+2 Lithify
+2 Cascading Reflections
+2 Kindred Spirits
+2 Falling Sparks
+2 Soul Splintering
+2 Liminal Ambiguity
+2 Memory Restored
+2 Neverbloom
+2 The Lost Heir
+2 Unveiling
+2 Eschewer of Form
+2 Era, Hymn to Creation
+2 Infraruin Predator
+2 Kaiju Sighting
+2 Interstellar Traveller
+2 Sanctum Trader
+2 Iridescent Summit
+2 One Last Sunset
+2 Against the Night
+2 Shell's Scraping
+2 Swirling Moon
+2 Distant Vulture
+2 Extant Surveyor
+2 Refraction Mech
+2 Soaring Chorus
+2 Malevolent Knowledge
+2 Mirrored Magic
+2 The Demon Within
+2 Godhead's Interdiction
+2 Whimsy Unbound
+2 Sentinel of the Afterlife
+2 Our Fates Change
+2 Caught in the Confusion
+2 Madness Broadcaster
+2 Reflection Tender
+2 The Usurper
+2 The Chanter of Paths
+2 Bygone Monoliths
+2 Foreboding Falls
+2 Forbidding Spires
+2 Suffocating Path
+2 Dreaded Clearing
+2 Mark of Insanity
+2 Planar Boundary
+2 Groaning Lullaby
+2 Ego Entwined
+2 Raging Rubigrug
+1 Lost in Dreams of Life
+1 Winged Turtle
+1 Sundown
+1 Identity Granter
+[UncommonSlot(3)]
+9 Perspective Shift
+9 Morraire Shimmer Patrol
+9 Coiling Jailer
+9 Cydina Storm Drake
+9 Flowsnail
+9 Promise of Hunger
+9 Balutr Runners
+9 Boundless Flight
+9 Calamitous Koi
+9 Omen of Hunger
+9 Homestead Pair
+9 Discover Uncertainty
+9 Iconic Challenger
+9 Unweave
+9 Ignelscor Witch
+9 Kornas Forward
+9 Meirel Evacuator
+9 Unending Exploration
+9 Persisting Timepiece
+9 Inkblot Artist
+9 Reflected Inclination
+9 Wandering Travellers
+9 To Survive in Some Form
+9 Sealed Deepborn
+9 The Depths Talk Loudly
+9 Warping Wolf
+9 Risen Earthdragon
+9 Illuminant Spire
+9 Ivory Spire
+9 Searing Spire
+9 Silent Spire
+9 Twisted Spire
+9 Verdant Spire
+9 Sever the Oracle
+9 Curious Dexteria
+9 Searing Sigils
+9 Sryyn Spawner
+9 Syphroid
+9 Xylem Attendant
+9 Clifftop Pishogue
+9 Unending Toils
+9 Beautiful Headhuntress
+9 Scholigaunt
+9 Incessant Intercession
+9 Duet of Loss and Life
+9 Abstracted Mark
+9 Gradius Option
+9 Blooming Peculiarity
+9 Nildiver
+9 Fyndhorn Betrayer
+9 Reto-Polo
+9 Woods' Procession
+[CommonSlot(10)]
+30 Dust Converter
+30 Avakin Adventurer
+30 Meirel Drifter
+30 Power from Beyond
+30 Calign
+30 Captivate
+30 Adventurous Pair
+30 Emigrating Pilgrim
+30 Drougth Oracle
+30 When Words Dont Work
+30 Experience Cultivator
+30 Towing Steladiuys
+30 Information Recovery Crew
+30 Exuberant Archaeologist
+30 Tepid Tamer
+30 Striking Reflection
+30 Unbothered Alchemist
+30 Scouting Party
+30 Back to Market
+30 Center Mass
+30 Murky Politics
+30 Drifting Crevasse
+30 Drifting Field
+30 Drifting Isle
+30 Drifting Jungle
+30 Drifting Mire
+30 Drifting Peak
+30 Drifting Sands
+30 Wandering Dislocation
+30 Hopeless Summit
+30 Lost Cause
+30 Sieve
+30 Draconic Reflection
+30 Algael-leael
+30 Tellavia Balwar
+30 Writhing Sight
+30 Shadow Eater
+30 Siege Crossbow
+30 Wisped Wings
+30 Mooyan Curry
+30 Yaiba Robo
+30 Wilmee
+30 Ashen Wisps
+30 Moonlight Charm
+30 Spiteful Coil-Servants
+30 Empty Body Practitioner
+30 Ferryman's Price
+30 Dessigry
+30 Blank
+30 Edification
+30 Canyon Crustacean
+30 Cowering Lightbringer
+[WildcardSlot(1)]
+10 Dust Converter
+10 Avakin Adventurer
+10 Meirel Drifter
+10 Power from Beyond
+10 Calign
+10 Captivate
+10 Adventurous Pair
+10 Perspective Shift
+10 Emigrating Pilgrim
+10 Drougth Oracle
+10 Morraire Shimmer Patrol
+10 Coiling Jailer
+10 Cydina Storm Drake
+10 Flowsnail
+10 Promise of Hunger
+10 Balutr Runners
+10 Boundless Flight
+10 Calamitous Koi
+10 Omen of Hunger
+10 Homestead Pair
+10 Discover Uncertainty
+10 When Words Dont Work
+10 Iconic Challenger
+10 Unweave
+10 Ignelscor Witch
+10 Kornas Forward
+10 Meirel Evacuator
+10 Unending Exploration
+10 Persisting Timepiece
+10 Inkblot Artist
+10 Reflected Inclination
+10 Wandering Travellers
+10 Pathshaping
+10 Kaln-Ocean Streamliner
+10 Shrouded Pathcensor
+10 Chirps Spice Seeker
+10 Melodia Drifter at Heart
+10 Outlands Chimera
+10 Starling
+10 Cerise Auger of Flow
+10 Called to Eternity
+10 Mass Mutation
+10 Ancient Interference
+10 Probe the Veil
+10 Lithify
+10 Cascading Reflections
+10 Kindred Spirits
+10 Falling Sparks
+10 Soul Splintering
+10 Liminal Ambiguity
+10 Experience Cultivator
+10 Towing Steladiuys
+10 Information Recovery Crew
+10 Exuberant Archaeologist
+10 Tepid Tamer
+10 Striking Reflection
+10 Unbothered Alchemist
+10 Scouting Party
+10 Back to Market
+10 Center Mass
+10 Murky Politics
+10 Memory Restored
+10 Drifting Crevasse
+10 Drifting Field
+10 Drifting Isle
+10 Drifting Jungle
+10 Drifting Mire
+10 Drifting Peak
+10 Drifting Sands
+10 Neverbloom
+10 The Lost Heir
+10 Unveiling
+10 To Survive in Some Form
+10 Eschewer of Form
+10 Era, Hymn to Creation
+10 Infraruin Predator
+10 Sealed Deepborn
+10 Kaiju Sighting
+10 Interstellar Traveller
+10 The Depths Talk Loudly
+10 Sanctum Trader
+10 Lost in Dreams of Life
+10 Iridescent Summit
+10 One Last Sunset
+10 Winged Turtle
+10 Wandering Dislocation
+10 Sundown
+10 Against the Night
+10 Warping Wolf
+10 Risen Earthdragon
+10 Shell's Scraping
+10 Illuminant Spire
+10 Ivory Spire
+10 Searing Spire
+10 Silent Spire
+10 Twisted Spire
+10 Verdant Spire
+10 Swirling Moon
+10 Sever the Oracle
+10 Curious Dexteria
+10 Searing Sigils
+10 Distant Vulture
+10 Extant Surveyor
+10 Hopeless Summit
+10 Lost Cause
+10 Sieve
+10 Draconic Reflection
+10 Sryyn Spawner
+10 Algael-leael
+10 Syphroid
+10 Tellavia Balwar
+10 Refraction Mech
+10 Writhing Sight
+10 Soaring Chorus
+10 Xylem Attendant
+10 Clifftop Pishogue
+10 Malevolent Knowledge
+10 Shadow Eater
+10 Mirrored Magic
+10 Siege Crossbow
+10 The Demon Within
+10 Unending Toils
+10 Beautiful Headhuntress
+10 Wisped Wings
+10 Scholigaunt
+10 Godhead's Interdiction
+10 Incessant Intercession
+10 Duet of Loss and Life
+10 Abstracted Mark
+10 Whimsy Unbound
+10 Gradius Option
+10 Sentinel of the Afterlife
+10 Our Fates Change
+10 Caught in the Confusion
+10 Madness Broadcaster
+10 Reflection Tender
+10 The Usurper
+10 The Chanter of Paths
+10 Bygone Monoliths
+10 Foreboding Falls
+10 Forbidding Spires
+10 Suffocating Path
+10 Dreaded Clearing
+10 Mooyan Curry
+10 Yaiba Robo
+10 Blooming Peculiarity
+10 Mark of Insanity
+10 Nildiver
+10 Wilmee
+10 Planar Boundary
+10 Ashen Wisps
+10 Fyndhorn Betrayer
+10 Groaning Lullaby
+10 Moonlight Charm
+10 Spiteful Coil-Servants
+10 Ego Entwined
+10 Reto-Polo
+10 Identity Granter
+10 Empty Body Practitioner
+10 Raging Rubigrug
+10 Ferryman's Price
+10 Dessigry
+10 Woods' Procession
+10 Blank
+10 Edification
+10 Canyon Crustacean
+10 Cowering Lightbringer
+[LandSlot(1)]

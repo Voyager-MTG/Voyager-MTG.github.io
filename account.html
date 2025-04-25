@@ -1,0 +1,256 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="resources/mana.css">
+        <link rel="stylesheet" href="/resources/header.css">
+    </head>
+    <style>
+        @font-face {
+		font-family: Beleren;
+		src: url('/resources/beleren.ttf');
+        }
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            overscroll-behavior: none;
+            margin: 0px;
+            background-color: #bbbbbb;
+            display: block;
+            /* overflow-y: scroll; */
+        }
+        .search-grid {
+		justify-content: center;
+        }
+        .sg-icon {
+            cursor: pointer;
+        }
+        select {
+            position: absolute;
+            text-align: center;
+            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-weight: 500;
+            cursor: pointer;
+            background-color: #F3F3F3;
+            padding: 2px;
+	    }
+        .selects {
+		    position: absolute;
+            top: 10%;
+            left: 1%;
+	    }
+        .page-container {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            width: 100%;
+        }
+        .username {
+            font-size: 80px;
+            font-weight: bold;
+            /* color: white; */
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            width: 100%;
+            margin: 20px;
+            font-family: beleren;
+        }
+        .decks-container {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: 85%;
+        }
+        .deck-container {
+            display: grid;
+            gap: 5px;
+            /* grid-template-rows: 1fr 2fr 1fr; */
+            background-color: #f3f3f3;
+            border-radius: 8px;
+            height: fit-content;
+            padding: 5px;
+            align-items: center;
+            justify-items: center;
+        }
+        .deck-preview-img {
+            max-height: 300px;
+        }
+        .deck-name {
+            font-weight: bold;
+            font-size: 30px;
+            font-family: beleren;
+        }
+        .deck-link {
+            /* font-family: beleren; */
+            background-color: #1652e0;
+            color: white;
+            padding: 8px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+        }  
+        .deck-section-header {
+            font-size: 60px;
+            font-weight: bold;
+            /* color: white; */
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            width: 100%;
+            margin: 20px;
+            font-family: beleren;
+        }
+    </style>
+    <style id="text-style">
+        .text {
+            color: white;
+        }
+    </style>
+    <body>
+        <div class="header">
+            <div class="search-grid">
+                <a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+                <img class="sg-icon" src="/img/search.png">
+                <input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+                <a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
+                <a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+                <a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+                <a href="/account" id="account-link"><img src="/img/account.png" class="sg-icon">Account</a>
+            </div>
+        </div>
+        <div class="selects" id="selects">
+			<select id="color-select" onchange="setGradient()">
+			</select>
+		</div>
+        <div class="page-container">
+            <div class="username text" id="username"></div>
+            <div class="deck-section-header text">My Decks</div>
+            <div class="decks-container" id="decks">
+                <!-- test -->
+            </div>
+        </div>
+        <script>
+            let gradients = null;
+            let raw_gradients = null;
+            let gradTop = null;
+            let gradBottom = null;
+            document.addEventListener("DOMContentLoaded", async function () {
+                try {
+                    const response = await fetch('./resources/gradients.json');
+                    raw_gradients = await response.json();
+                }
+                catch(error) {
+                    console.error('Error:', error);
+                }
+
+                gradients = raw_gradients.gradients;
+                setGradient(localStorage.getItem("settings.gradient"));
+                console.log(setGradient);
+                prepareGradients();
+            });
+
+            function setGradient(gradient=false) {
+                if (!gradient) { 
+                    gradient = document.getElementById("color-select").value;
+                }
+
+                gradTop = "#000000";
+                gradBottom = "#FFFFFF";
+                for (const grad of gradients)
+                {
+                    if (gradient == grad.name.replace(' ', '-'))
+                    { 	
+                        gradTop = grad.color1;
+                        gradBottom = grad.color2;
+                    }
+                }
+
+                // console.log(`linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
+                document.body.style.backgroundImage = `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`;
+                localStorage.setItem("settings.gradient", gradient);
+		    }
+            function prepareGradients() {
+                let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+                const opt = document.createElement("option");
+                opt.value = defaultGradient.replace(' ', '-');
+                opt.text = defaultGradient;
+                document.getElementById("color-select").appendChild(opt);
+                for (const gradient of gradients)
+                {	
+                    const opt = document.createElement("option");
+                    opt.value = gradient.name.replace(' ', '-');
+                    opt.text = gradient.name;
+                    if (gradient.name != defaultGradient) {
+                        document.getElementById("color-select").appendChild(opt);
+                    }
+                }
+
+                // setGradient();
+            }
+        </script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+            import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+            
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+                authDomain: "voyager-78e30.firebaseapp.com",
+                projectId: "voyager-78e30",
+                storageBucket: "voyager-78e30.firebasestorage.app",
+                messagingSenderId: "411191248476",
+                appId: "1:411191248476:web:591349be169d823e5f8899",
+                measurementId: "G-TQ1L48F25M"
+            };
+            
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+            let username = "";
+            let password = "";
+            let sessionid = localStorage.getItem('settings.session');
+            // console.log
+
+            if (!sessionid) {
+                window.location.href = "/login";
+            }
+
+            const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+                let data = docSnap.data();
+                username = data.username;
+                password = data.password;
+            });
+
+            document.getElementById("username").innerText = username;
+            document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+            
+            const deck_data = await getDoc(doc(db, 'users', username)).then(docSnap => {
+                let user_data = docSnap.data();
+                let decks = JSON.parse(user_data.decks);
+                console.log(decks);
+                for (const deck of decks) {
+                    let deck_container = document.createElement('div');
+                    deck_container.className = "deck-container";
+                    let deck_preview = document.createElement('img');
+                    deck_preview.src = deck.previewimg;
+                    deck_preview.className = "deck-preview-img";
+                    let deck_name = document.createElement('div');
+                    deck_name.className = "deck-name";
+                    deck_name.innerText = deck.name;
+                    let deck_link = document.createElement('a');
+                    deck_link.href = deck.url;
+                    deck_link.className = "deck-link";
+                    deck_link.innerText = "Edit in Deckbuilder";
+                    deck_container.appendChild(deck_name);
+                    deck_container.appendChild(deck_preview);
+                    deck_container.appendChild(deck_link);
+                    document.getElementById('decks').appendChild(deck_container);
+                }
+            });
+        </script>
+    </body>
+</html>
