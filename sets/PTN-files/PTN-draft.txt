@@ -7,7 +7,7 @@
 			"type": "Legendary Creature — God",
 			"collector_number": "2",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/2_The Horned-Axe.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/2_The Horned-Axe.jpg"
 			}
 		},
 		{
@@ -17,7 +17,7 @@
 			"type": "Legendary Creature — Fungus God",
 			"collector_number": "90",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/90_The Crowned Growth.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/90_The Crowned Growth.jpg"
 			}
 		},
 		{
@@ -27,7 +27,7 @@
 			"type": "Sorcery",
 			"collector_number": "101",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/101_Implant the Seeds.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/101_Implant the Seeds.jpg"
 			}
 		},
 		{
@@ -37,7 +37,7 @@
 			"type": "Legendary Creature — Cleric God",
 			"collector_number": "180",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/180_Mother of Ants.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/180_Mother of Ants.jpg"
 			}
 		},
 		{
@@ -47,7 +47,7 @@
 			"type": "Legendary Creature — Bird God",
 			"collector_number": "167",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/167_The Elegiast.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/167_The Elegiast.jpg"
 			}
 		},
 		{
@@ -57,7 +57,7 @@
 			"type": "Legendary Creature — Elemental God",
 			"collector_number": "170",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/170_The Forge of Days.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/170_The Forge of Days.jpg"
 			}
 		},
 		{
@@ -67,7 +67,7 @@
 			"type": "Legendary Creature — Reflection God",
 			"collector_number": "178",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/178_The Mirror-Queen.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/178_The Mirror-Queen.jpg"
 			}
 		},
 		{
@@ -77,7 +77,7 @@
 			"type": "Legendary Creature — Vampire God",
 			"collector_number": "186",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/186_The Red Grail.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/186_The Red Grail.jpg"
 			}
 		},
 		{
@@ -87,7 +87,7 @@
 			"type": "Legendary Creature — God",
 			"collector_number": "193",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/193_The Sun-In-Rags.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/193_The Sun-In-Rags.jpg"
 			}
 		},
 		{
@@ -97,7 +97,7 @@
 			"type": "Legendary Creature — Human God",
 			"collector_number": "195",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/195_The Thunderskin.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/195_The Thunderskin.jpg"
 			}
 		},
 		{
@@ -107,7 +107,7 @@
 			"type": "Legendary Creature — Insect God",
 			"collector_number": "196",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/196_The Vagabond.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/196_The Vagabond.jpg"
 			}
 		},
 		{
@@ -116,8 +116,15 @@
 			"mana_cost": "{1}{U}{R}",
 			"type": "Legendary Creature — Wizard God",
 			"collector_number": "199",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/199_The Witch-and-Sister_back.jpg"
+				}
+			},
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/199_The Witch-and-Sister.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/199_The Witch-and-Sister_front.jpg"
 			}
 		},
 		{
@@ -127,7 +134,7 @@
 			"type": "Legendary Creature — Wolf God",
 			"collector_number": "200",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/200_The Wolf Divided.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/200_The Wolf Divided.jpg"
 			}
 		},
 		{
@@ -137,7 +144,7 @@
 			"type": "Legendary Artifact — Equipment",
 			"collector_number": "240",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/240_The Frangiclave.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/240_The Frangiclave.jpg"
 			}
 		},
 		{
@@ -147,7 +154,7 @@
 			"type": "Token Enchantment",
 			"collector_number": "2",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/2_PTN Foretell.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/2_PTN Foretell.jpg"
 			}
 		},
 		{
@@ -157,7 +164,7 @@
 			"type": "Creature — Human Cleric Wizard",
 			"collector_number": "23",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/23_Glassgarden Prophet.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/23_Glassgarden Prophet.jpg"
 			}
 		},
 		{
@@ -167,7 +174,7 @@
 			"type": "Creature — Bird Spirit",
 			"collector_number": "50",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/50_Dreamway Key.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/50_Dreamway Key.jpg"
 			}
 		},
 		{
@@ -177,7 +184,7 @@
 			"type": "Instant",
 			"collector_number": "68",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/68_Perfect Stillness.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/68_Perfect Stillness.jpg"
 			}
 		},
 		{
@@ -187,7 +194,7 @@
 			"type": "Creature — Vampire Cleric",
 			"collector_number": "112",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/112_Sensation Ascender.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/112_Sensation Ascender.jpg"
 			}
 		},
 		{
@@ -197,7 +204,7 @@
 			"type": "Creature — Insect Shapeshifter",
 			"collector_number": "121",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/121_Wood's Deceiver.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/121_Wood's Deceiver.jpg"
 			}
 		},
 		{
@@ -207,7 +214,7 @@
 			"type": "Instant",
 			"collector_number": "122",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/122_Blazing Crescendo.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/122_Blazing Crescendo.jpg"
 			}
 		},
 		{
@@ -217,7 +224,7 @@
 			"type": "Instant",
 			"collector_number": "136",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/136_Lessons of Strife.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/136_Lessons of Strife.jpg"
 			}
 		},
 		{
@@ -227,7 +234,7 @@
 			"type": "Creature — Human Scout",
 			"collector_number": "216",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/216_Map's Edge Explorer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/216_Map's Edge Explorer.jpg"
 			}
 		},
 		{
@@ -237,7 +244,7 @@
 			"type": "Creature — Human Ranger Cleric",
 			"collector_number": "228",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/228_Thyrsine Tracker.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/228_Thyrsine Tracker.jpg"
 			}
 		},
 		{
@@ -247,7 +254,7 @@
 			"type": "Land — Sanctuary",
 			"collector_number": "249",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/249_Society Headquarters.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/249_Society Headquarters.jpg"
 			}
 		},
 		{
@@ -257,7 +264,7 @@
 			"type": "Land — Sanctuary",
 			"collector_number": "250",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/250_Sanctuary of Enlightenment.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/250_Sanctuary of Enlightenment.jpg"
 			}
 		},
 		{
@@ -267,7 +274,7 @@
 			"type": "Land — Sanctuary",
 			"collector_number": "251",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/251_Sanctuary of Glory.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/251_Sanctuary of Glory.jpg"
 			}
 		},
 		{
@@ -277,7 +284,7 @@
 			"type": "Land — Sanctuary",
 			"collector_number": "252",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/252_Sanctuary of Movement.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/252_Sanctuary of Movement.jpg"
 			}
 		},
 		{
@@ -287,7 +294,7 @@
 			"type": "Land — Sanctuary",
 			"collector_number": "253",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/253_Sanctuary of Openings.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/253_Sanctuary of Openings.jpg"
 			}
 		},
 		{
@@ -297,7 +304,7 @@
 			"type": "Land — Sanctuary",
 			"collector_number": "254",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/254_Sanctuary of Remembrance.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/254_Sanctuary of Remembrance.jpg"
 			}
 		},
 		{
@@ -307,7 +314,7 @@
 			"type": "Land — Sanctuary",
 			"collector_number": "255",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/255_Sanctuary of Reshaping.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/255_Sanctuary of Reshaping.jpg"
 			}
 		},
 		{
@@ -317,7 +324,7 @@
 			"type": "Land — Sanctuary",
 			"collector_number": "256",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/256_Sanctuary of Sensation.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/256_Sanctuary of Sensation.jpg"
 			}
 		},
 		{
@@ -327,7 +334,7 @@
 			"type": "Land — Sanctuary",
 			"collector_number": "257",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/257_Sanctuary of Shedding.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/257_Sanctuary of Shedding.jpg"
 			}
 		},
 		{
@@ -337,7 +344,7 @@
 			"type": "Land — Sanctuary",
 			"collector_number": "258",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/258_Sanctuary of Strength.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/258_Sanctuary of Strength.jpg"
 			}
 		},
 		{
@@ -347,7 +354,7 @@
 			"type": "Land — Sanctuary",
 			"collector_number": "259",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/259_Sanctuary of Time.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/259_Sanctuary of Time.jpg"
 			}
 		},
 		{
@@ -357,7 +364,7 @@
 			"type": "Basic Land — Plains",
 			"collector_number": "260",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/260_PTN Plains.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/260_PTN Plains.jpg"
 			}
 		},
 		{
@@ -367,7 +374,7 @@
 			"type": "Basic Land — Plains",
 			"collector_number": "261",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/261_PTN Plains 2.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/261_PTN Plains 2.jpg"
 			}
 		},
 		{
@@ -377,7 +384,7 @@
 			"type": "Basic Land — Island",
 			"collector_number": "262",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/262_PTN Island.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/262_PTN Island.jpg"
 			}
 		},
 		{
@@ -387,7 +394,7 @@
 			"type": "Basic Land — Island",
 			"collector_number": "263",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/263_PTN Island 2.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/263_PTN Island 2.jpg"
 			}
 		},
 		{
@@ -397,7 +404,7 @@
 			"type": "Basic Land — Swamp",
 			"collector_number": "264",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/264_PTN Swamp.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/264_PTN Swamp.jpg"
 			}
 		},
 		{
@@ -407,7 +414,7 @@
 			"type": "Basic Land — Swamp",
 			"collector_number": "265",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/265_PTN Swamp 2.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/265_PTN Swamp 2.jpg"
 			}
 		},
 		{
@@ -417,7 +424,7 @@
 			"type": "Basic Land — Mountain",
 			"collector_number": "266",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/266_PTN Mountain.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/266_PTN Mountain.jpg"
 			}
 		},
 		{
@@ -427,7 +434,7 @@
 			"type": "Basic Land — Mountain",
 			"collector_number": "267",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/267_PTN Mountain 2.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/267_PTN Mountain 2.jpg"
 			}
 		},
 		{
@@ -437,7 +444,7 @@
 			"type": "Basic Land — Forest",
 			"collector_number": "268",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/268_PTN Forest.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/268_PTN Forest.jpg"
 			}
 		},
 		{
@@ -447,7 +454,7 @@
 			"type": "Basic Land — Forest",
 			"collector_number": "269",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/269_PTN Forest 2.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/269_PTN Forest 2.jpg"
 			}
 		},
 		{
@@ -457,7 +464,7 @@
 			"type": "Creature — Treefolk Zombie",
 			"collector_number": "1",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/1_Burgeoning Risen.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/1_Burgeoning Risen.jpg"
 			}
 		},
 		{
@@ -467,7 +474,7 @@
 			"type": "Creature — Wolf Reflection",
 			"collector_number": "4",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/4_Mirrored Wolf.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/4_Mirrored Wolf.jpg"
 			}
 		},
 		{
@@ -477,7 +484,7 @@
 			"type": "Creature — Serpent",
 			"collector_number": "6",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/6_Noon Delver Serpent.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/6_Noon Delver Serpent.jpg"
 			}
 		},
 		{
@@ -487,7 +494,7 @@
 			"type": "Creature — Human Cleric",
 			"collector_number": "11",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/11_Banisher Priest.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/11_Banisher Priest.jpg"
 			}
 		},
 		{
@@ -497,7 +504,7 @@
 			"type": "Enchantment — Aura",
 			"collector_number": "12",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/12_Bars Across the Sun.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/12_Bars Across the Sun.jpg"
 			}
 		},
 		{
@@ -507,7 +514,7 @@
 			"type": "Creature — Angel Cleric",
 			"collector_number": "14",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/14_Broken Sun-Servant.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/14_Broken Sun-Servant.jpg"
 			}
 		},
 		{
@@ -517,7 +524,7 @@
 			"type": "Instant",
 			"collector_number": "15",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/15_Brought Back.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/15_Brought Back.jpg"
 			}
 		},
 		{
@@ -527,7 +534,7 @@
 			"type": "Instant",
 			"collector_number": "17",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/17_Defacement.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/17_Defacement.jpg"
 			}
 		},
 		{
@@ -537,7 +544,7 @@
 			"type": "Creature — Human Artificer",
 			"collector_number": "20",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/20_Forge Secretkeeper.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/20_Forge Secretkeeper.jpg"
 			}
 		},
 		{
@@ -547,7 +554,7 @@
 			"type": "Creature — Reflection Golem",
 			"collector_number": "21",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/21_Glass Guardian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/21_Glass Guardian.jpg"
 			}
 		},
 		{
@@ -557,7 +564,7 @@
 			"type": "Instant",
 			"collector_number": "31",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/31_Iron Verdict.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/31_Iron Verdict.jpg"
 			}
 		},
 		{
@@ -567,7 +574,7 @@
 			"type": "Kindred Enchantment — God",
 			"collector_number": "32",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/32_Legacy of Amber.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/32_Legacy of Amber.jpg"
 			}
 		},
 		{
@@ -577,7 +584,7 @@
 			"type": "Kindred Enchantment — God",
 			"collector_number": "57",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/57_Legacy of the Wheel.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/57_Legacy of the Wheel.jpg"
 			}
 		},
 		{
@@ -587,7 +594,7 @@
 			"type": "Kindred Enchantment — God",
 			"collector_number": "103",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/103_Legacy of Tides.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/103_Legacy of Tides.jpg"
 			}
 		},
 		{
@@ -597,7 +604,7 @@
 			"type": "Kindred Enchantment — God",
 			"collector_number": "135",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/135_Legacy of Flint.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/135_Legacy of Flint.jpg"
 			}
 		},
 		{
@@ -607,7 +614,7 @@
 			"type": "Kindred Enchantment — God",
 			"collector_number": "214",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/214_Legacy of Coils.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/214_Legacy of Coils.jpg"
 			}
 		},
 		{
@@ -617,7 +624,7 @@
 			"type": "Creature — Vampire Cleric",
 			"collector_number": "42",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/42_Subverted Cyprian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/42_Subverted Cyprian.jpg"
 			}
 		},
 		{
@@ -627,7 +634,7 @@
 			"type": "Sorcery",
 			"collector_number": "46",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/46_Verse Illuminate.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/46_Verse Illuminate.jpg"
 			}
 		},
 		{
@@ -637,7 +644,7 @@
 			"type": "Sorcery",
 			"collector_number": "82",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/82_Verse Open.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/82_Verse Open.jpg"
 			}
 		},
 		{
@@ -647,7 +654,7 @@
 			"type": "Sorcery",
 			"collector_number": "119",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/119_Verse Change.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/119_Verse Change.jpg"
 			}
 		},
 		{
@@ -657,7 +664,7 @@
 			"type": "Sorcery",
 			"collector_number": "159",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/159_Verse Reshape.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/159_Verse Reshape.jpg"
 			}
 		},
 		{
@@ -667,7 +674,7 @@
 			"type": "Sorcery",
 			"collector_number": "231",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/231_Verse Aggress.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/231_Verse Aggress.jpg"
 			}
 		},
 		{
@@ -677,7 +684,7 @@
 			"type": "Instant",
 			"collector_number": "62",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/62_Nowhere Inhabits.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/62_Nowhere Inhabits.jpg"
 			}
 		},
 		{
@@ -687,7 +694,7 @@
 			"type": "Instant",
 			"collector_number": "60",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/60_Names of the Dead.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/60_Names of the Dead.jpg"
 			}
 		},
 		{
@@ -697,7 +704,7 @@
 			"type": "Creature — Skeleton Wizard",
 			"collector_number": "61",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/61_Nowhere Illuminator.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/61_Nowhere Illuminator.jpg"
 			}
 		},
 		{
@@ -707,7 +714,7 @@
 			"type": "Enchantment — Aura",
 			"collector_number": "69",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/69_Prison of Glass.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/69_Prison of Glass.jpg"
 			}
 		},
 		{
@@ -717,7 +724,7 @@
 			"type": "Sorcery",
 			"collector_number": "70",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/70_Rite of Twins' Union.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/70_Rite of Twins' Union.jpg"
 			}
 		},
 		{
@@ -727,7 +734,7 @@
 			"type": "Instant",
 			"collector_number": "73",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/73_Sea's Feasting.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/73_Sea's Feasting.jpg"
 			}
 		},
 		{
@@ -737,7 +744,7 @@
 			"type": "Creature — Serpent Horror",
 			"collector_number": "75",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/75_Seven-Coil Shipbreaker.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/75_Seven-Coil Shipbreaker.jpg"
 			}
 		},
 		{
@@ -747,7 +754,7 @@
 			"type": "Creature — Human Cleric Shaman",
 			"collector_number": "87",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/87_Carapace Shearer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/87_Carapace Shearer.jpg"
 			}
 		},
 		{
@@ -757,7 +764,7 @@
 			"type": "Creature — Skeleton Angel",
 			"collector_number": "95",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/95_Dry-Soul Angel.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/95_Dry-Soul Angel.jpg"
 			}
 		},
 		{
@@ -767,7 +774,7 @@
 			"type": "Instant",
 			"collector_number": "98",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/98_Flesh Asunder.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/98_Flesh Asunder.jpg"
 			}
 		},
 		{
@@ -777,7 +784,7 @@
 			"type": "Creature — Angel Cleric",
 			"collector_number": "100",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/100_Herald of Loss.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/100_Herald of Loss.jpg"
 			}
 		},
 		{
@@ -787,7 +794,7 @@
 			"type": "Legendary Artifact",
 			"collector_number": "105",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/105_The Museum of Worms.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/105_The Museum of Worms.jpg"
 			}
 		},
 		{
@@ -797,7 +804,7 @@
 			"type": "Enchantment — Aura",
 			"collector_number": "114",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/114_Skintwist.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/114_Skintwist.jpg"
 			}
 		},
 		{
@@ -807,7 +814,7 @@
 			"type": "Instant",
 			"collector_number": "124",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/124_Carnal Thirst.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/124_Carnal Thirst.jpg"
 			}
 		},
 		{
@@ -817,7 +824,7 @@
 			"type": "Instant",
 			"collector_number": "133",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/133_Ignus Rites.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/133_Ignus Rites.jpg"
 			}
 		},
 		{
@@ -827,7 +834,7 @@
 			"type": "Instant",
 			"collector_number": "202",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/202_Ascent from Snakes.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/202_Ascent from Snakes.jpg"
 			}
 		},
 		{
@@ -837,7 +844,7 @@
 			"type": "Enchantment",
 			"collector_number": "120",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/120_The Vitulation.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/120_The Vitulation.jpg"
 			}
 		},
 		{
@@ -847,7 +854,7 @@
 			"type": "Sorcery",
 			"collector_number": "150",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/150_Rite Intercalate.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/150_Rite Intercalate.jpg"
 			}
 		},
 		{
@@ -857,7 +864,7 @@
 			"type": "Sorcery",
 			"collector_number": "130",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/130_Foul Alteration.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/130_Foul Alteration.jpg"
 			}
 		},
 		{
@@ -867,7 +874,7 @@
 			"type": "Artifact — Equipment",
 			"collector_number": "153",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/153_Stained Silver.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/153_Stained Silver.jpg"
 			}
 		},
 		{
@@ -877,7 +884,7 @@
 			"type": "Instant",
 			"collector_number": "154",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/154_Subvert the Light.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/154_Subvert the Light.jpg"
 			}
 		},
 		{
@@ -887,7 +894,7 @@
 			"type": "Creature — Elf Wizard Berserker",
 			"collector_number": "155",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/155_Subverting Insurgent.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/155_Subverting Insurgent.jpg"
 			}
 		},
 		{
@@ -897,7 +904,7 @@
 			"type": "Creature — Human Citizen",
 			"collector_number": "158",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/158_Unlucky Witness.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/158_Unlucky Witness.jpg"
 			}
 		},
 		{
@@ -907,7 +914,7 @@
 			"type": "Sorcery",
 			"collector_number": "215",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/215_Life's Legacy.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/215_Life's Legacy.jpg"
 			}
 		},
 		{
@@ -917,7 +924,7 @@
 			"type": "Legendary Creature — Vampire God",
 			"collector_number": "168",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/168_Ezeem, the Second Thirstly.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/168_Ezeem, the Second Thirstly.jpg"
 			}
 		},
 		{
@@ -927,7 +934,7 @@
 			"type": "Legendary Creature — Elemental God",
 			"collector_number": "174",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/174_King Crucible.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/174_King Crucible.jpg"
 			}
 		},
 		{
@@ -937,7 +944,7 @@
 			"type": "Legendary Creature — Insect God",
 			"collector_number": "179",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/179_The Moth.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/179_The Moth.jpg"
 			}
 		},
 		{
@@ -947,7 +954,7 @@
 			"type": "Sorcery",
 			"collector_number": "181",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/181_Moth's Yearning.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/181_Moth's Yearning.jpg"
 			}
 		},
 		{
@@ -957,7 +964,7 @@
 			"type": "Creature — Elemental Wolf Horror",
 			"collector_number": "191",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/191_Spirit of Defiance.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/191_Spirit of Defiance.jpg"
 			}
 		},
 		{
@@ -967,7 +974,7 @@
 			"type": "Legendary Artifact",
 			"collector_number": "245",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/245_True Blood of Saint Janus.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/245_True Blood of Saint Janus.jpg"
 			}
 		},
 		{
@@ -977,7 +984,7 @@
 			"type": "Land — Sanctuary",
 			"collector_number": "247",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/247_House of the Moon.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/247_House of the Moon.jpg"
 			}
 		},
 		{
@@ -987,7 +994,7 @@
 			"type": "Instant",
 			"collector_number": "19",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/19_Extract Secrets.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/19_Extract Secrets.jpg"
 			}
 		},
 		{
@@ -997,7 +1004,7 @@
 			"type": "Instant",
 			"collector_number": "30",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/30_Ignite Fervor.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/30_Ignite Fervor.jpg"
 			}
 		},
 		{
@@ -1007,7 +1014,7 @@
 			"type": "Instant",
 			"collector_number": "33",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/33_Lended Light.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/33_Lended Light.jpg"
 			}
 		},
 		{
@@ -1017,7 +1024,7 @@
 			"type": "Creature — Wolf Angel",
 			"collector_number": "45",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/45_Unscarred Wolf.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/45_Unscarred Wolf.jpg"
 			}
 		},
 		{
@@ -1027,7 +1034,7 @@
 			"type": "Creature — Elf Cleric Advisor",
 			"collector_number": "56",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/56_Fucine Translator.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/56_Fucine Translator.jpg"
 			}
 		},
 		{
@@ -1037,7 +1044,7 @@
 			"type": "Sorcery",
 			"collector_number": "55",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/55_Forgotten Tongues.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/55_Forgotten Tongues.jpg"
 			}
 		},
 		{
@@ -1047,7 +1054,7 @@
 			"type": "Instant",
 			"collector_number": "79",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/79_Take Prisoners.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/79_Take Prisoners.jpg"
 			}
 		},
 		{
@@ -1057,7 +1064,7 @@
 			"type": "Creature — Angel",
 			"collector_number": "37",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/37_Ragged Sun's Angel.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/37_Ragged Sun's Angel.jpg"
 			}
 		},
 		{
@@ -1067,7 +1074,7 @@
 			"type": "Instant",
 			"collector_number": "43",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/43_Sun-Scorched Tempering.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/43_Sun-Scorched Tempering.jpg"
 			}
 		},
 		{
@@ -1077,7 +1084,7 @@
 			"type": "Instant",
 			"collector_number": "78",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/78_Skin's Division.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/78_Skin's Division.jpg"
 			}
 		},
 		{
@@ -1087,7 +1094,7 @@
 			"type": "Enchantment",
 			"collector_number": "125",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/125_Corrivality.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/125_Corrivality.jpg"
 			}
 		},
 		{
@@ -1097,7 +1104,7 @@
 			"type": "Creature — Angel Demon",
 			"collector_number": "3",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/3_Lost Seraph.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/3_Lost Seraph.jpg"
 			}
 		},
 		{
@@ -1107,7 +1114,7 @@
 			"type": "Creature — Horror",
 			"collector_number": "5",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/5_Misguiding Lighthouse.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/5_Misguiding Lighthouse.jpg"
 			}
 		},
 		{
@@ -1117,7 +1124,7 @@
 			"type": "Enchantment",
 			"collector_number": "7",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/7_Planar Lockdown.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/7_Planar Lockdown.jpg"
 			}
 		},
 		{
@@ -1127,7 +1134,7 @@
 			"type": "Creature — Angel",
 			"collector_number": "9",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/9_Angel of the True Sun.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/9_Angel of the True Sun.jpg"
 			}
 		},
 		{
@@ -1137,7 +1144,7 @@
 			"type": "Creature — Human Cleric",
 			"collector_number": "38",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/38_Rarefied Illuminator.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/38_Rarefied Illuminator.jpg"
 			}
 		},
 		{
@@ -1147,7 +1154,7 @@
 			"type": "Creature — Angel Knight",
 			"collector_number": "44",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/44_Sunshard Protector.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/44_Sunshard Protector.jpg"
 			}
 		},
 		{
@@ -1157,7 +1164,7 @@
 			"type": "Creature — Zombie Angel",
 			"collector_number": "89",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/89_Crowned Ghoul.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/89_Crowned Ghoul.jpg"
 			}
 		},
 		{
@@ -1167,7 +1174,7 @@
 			"type": "Sorcery",
 			"collector_number": "108",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/108_Paradoxical Inquiry.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/108_Paradoxical Inquiry.jpg"
 			}
 		},
 		{
@@ -1177,7 +1184,7 @@
 			"type": "Sorcery",
 			"collector_number": "151",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/151_Rite of Crucible Soul.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/151_Rite of Crucible Soul.jpg"
 			}
 		},
 		{
@@ -1187,7 +1194,7 @@
 			"type": "Instant",
 			"collector_number": "113",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/113_Seven-Coil Invocation.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/113_Seven-Coil Invocation.jpg"
 			}
 		},
 		{
@@ -1197,7 +1204,7 @@
 			"type": "Sorcery",
 			"collector_number": "109",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/109_Rite of Beast's Division.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/109_Rite of Beast's Division.jpg"
 			}
 		},
 		{
@@ -1207,7 +1214,7 @@
 			"type": "Legendary Creature — Human God",
 			"collector_number": "165",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/165_The Chiliarch.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/165_The Chiliarch.jpg"
 			}
 		},
 		{
@@ -1217,7 +1224,7 @@
 			"type": "Legendary Creature — Cat God",
 			"collector_number": "137",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/137_The Lionsmith.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/137_The Lionsmith.jpg"
 			}
 		},
 		{
@@ -1227,7 +1234,7 @@
 			"type": "Legendary Creature — God Horror",
 			"collector_number": "175",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/175_The Knotwingknot.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/175_The Knotwingknot.jpg"
 			}
 		},
 		{
@@ -1237,7 +1244,7 @@
 			"type": "Legendary Creature — Plant God",
 			"collector_number": "187",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/187_The Ring-Yew.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/187_The Ring-Yew.jpg"
 			}
 		},
 		{
@@ -1247,7 +1254,7 @@
 			"type": "Legendary Creature — Human God",
 			"collector_number": "198",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/198_The Watchman.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/198_The Watchman.jpg"
 			}
 		},
 		{
@@ -1257,7 +1264,7 @@
 			"type": "Instant",
 			"collector_number": "146",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/146_Preemptive Purge.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/146_Preemptive Purge.jpg"
 			}
 		},
 		{
@@ -1267,7 +1274,7 @@
 			"type": "Creature — Phoenix",
 			"collector_number": "148",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/148_Reshaping Phoenix.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/148_Reshaping Phoenix.jpg"
 			}
 		},
 		{
@@ -1277,7 +1284,7 @@
 			"type": "Creature — Human Warrior",
 			"collector_number": "161",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/161_Acolyte of Agony.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/161_Acolyte of Agony.jpg"
 			}
 		},
 		{
@@ -1287,7 +1294,7 @@
 			"type": "Legendary Artifact",
 			"collector_number": "241",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/241_The Geminiad.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/241_The Geminiad.jpg"
 			}
 		},
 		{
@@ -1297,7 +1304,7 @@
 			"type": "Sorcery",
 			"collector_number": "211",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/211_Discover the Stone Gods.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/211_Discover the Stone Gods.jpg"
 			}
 		},
 		{
@@ -1307,7 +1314,7 @@
 			"type": "Artifact",
 			"collector_number": "242",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/242_Noonstone Amulet.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/242_Noonstone Amulet.jpg"
 			}
 		},
 		{
@@ -1317,7 +1324,7 @@
 			"type": "Instant",
 			"collector_number": "171",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/171_Forged Conflagration.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/171_Forged Conflagration.jpg"
 			}
 		},
 		{
@@ -1327,7 +1334,7 @@
 			"type": "Creature — Skeleton",
 			"collector_number": "143",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/143_Nowhere Razer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/143_Nowhere Razer.jpg"
 			}
 		},
 		{
@@ -1337,7 +1344,7 @@
 			"type": "Instant",
 			"collector_number": "234",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/234_Wildwood Containment.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/234_Wildwood Containment.jpg"
 			}
 		},
 		{
@@ -1347,7 +1354,7 @@
 			"type": "Sorcery",
 			"collector_number": "236",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/236_Wolven Hatred.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/236_Wolven Hatred.jpg"
 			}
 		},
 		{
@@ -1357,7 +1364,7 @@
 			"type": "Sorcery",
 			"collector_number": "144",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/144_Open the Self.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/144_Open the Self.jpg"
 			}
 		},
 		{
@@ -1367,7 +1374,7 @@
 			"type": "Creature — Angel Cleric",
 			"collector_number": "13",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/13_Bringer of Glory.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/13_Bringer of Glory.jpg"
 			}
 		},
 		{
@@ -1377,7 +1384,7 @@
 			"type": "Artifact",
 			"collector_number": "243",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/243_Relic Vial.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/243_Relic Vial.jpg"
 			}
 		},
 		{
@@ -1387,7 +1394,7 @@
 			"type": "Artifact",
 			"collector_number": "244",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/244_Ritual Daggar.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/244_Ritual Daggar.jpg"
 			}
 		},
 		{
@@ -1397,7 +1404,7 @@
 			"type": "Creature — Skeleton Warrior",
 			"collector_number": "182",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/182_Nowhere Deathlord.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/182_Nowhere Deathlord.jpg"
 			}
 		},
 		{
@@ -1407,7 +1414,7 @@
 			"type": "Creature — Skeleton Horse",
 			"collector_number": "183",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/183_Nowhere Dreadsteed.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/183_Nowhere Dreadsteed.jpg"
 			}
 		},
 		{
@@ -1417,7 +1424,7 @@
 			"type": "Boon",
 			"collector_number": "4",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/4_Scar Boon.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/4_Scar Boon.jpg"
 			}
 		},
 		{
@@ -1427,7 +1434,7 @@
 			"type": "Enchantment",
 			"collector_number": "169",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/169_Flames of Emnity.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/169_Flames of Emnity.jpg"
 			}
 		},
 		{
@@ -1437,7 +1444,7 @@
 			"type": "Creature — Human Knight",
 			"collector_number": "28",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/28_Guided Crusader.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/28_Guided Crusader.jpg"
 			}
 		},
 		{
@@ -1447,7 +1454,7 @@
 			"type": "Sorcery",
 			"collector_number": "88",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/88_Cindered Tally.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/88_Cindered Tally.jpg"
 			}
 		},
 		{
@@ -1457,7 +1464,7 @@
 			"type": "Instant",
 			"collector_number": "97",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/97_Escape into the Night.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/97_Escape into the Night.jpg"
 			}
 		},
 		{
@@ -1467,7 +1474,7 @@
 			"type": "Creature — Vampire Noble",
 			"collector_number": "132",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/132_High Cyprian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/132_High Cyprian.jpg"
 			}
 		},
 		{
@@ -1477,7 +1484,7 @@
 			"type": "Creature — Horror",
 			"collector_number": "147",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/147_Raw Prophet.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/147_Raw Prophet.jpg"
 			}
 		},
 		{
@@ -1487,7 +1494,7 @@
 			"type": "Token Creature — Worm",
 			"collector_number": "6",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/6_PTN Worm Token.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/6_PTN Worm Token.jpg"
 			}
 		},
 		{
@@ -1497,7 +1504,7 @@
 			"type": "Token Creature — Wolf",
 			"collector_number": "7",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/7_PTN Wolf Token.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/7_PTN Wolf Token.jpg"
 			}
 		},
 		{
@@ -1507,7 +1514,7 @@
 			"type": "Token Creature — Angel",
 			"collector_number": "5",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/5_PTN Angel Token.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/5_PTN Angel Token.jpg"
 			}
 		},
 		{
@@ -1517,7 +1524,7 @@
 			"type": "Instant",
 			"collector_number": "224",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/224_Seven-Coiled Strength.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/224_Seven-Coiled Strength.jpg"
 			}
 		},
 		{
@@ -1527,7 +1534,7 @@
 			"type": "Creature — Human Cleric Druid",
 			"collector_number": "222",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/222_Ring-Yew's Chosen.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/222_Ring-Yew's Chosen.jpg"
 			}
 		},
 		{
@@ -1537,7 +1544,7 @@
 			"type": "Enchantment",
 			"collector_number": "162",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/162_The Allure's Light.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/162_The Allure's Light.jpg"
 			}
 		},
 		{
@@ -1547,7 +1554,7 @@
 			"type": "Enchantment",
 			"collector_number": "41",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/41_The Sky, The Soul.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/41_The Sky, The Soul.jpg"
 			}
 		},
 		{
@@ -1557,7 +1564,7 @@
 			"type": "Creature — Bird",
 			"collector_number": "8",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/8_Roost Messengers.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/8_Roost Messengers.jpg"
 			}
 		},
 		{
@@ -1567,7 +1574,7 @@
 			"type": "Creature — Human Cleric",
 			"collector_number": "25",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/25_Glassgarden Watcheye.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/25_Glassgarden Watcheye.jpg"
 			}
 		},
 		{
@@ -1577,7 +1584,7 @@
 			"type": "Creature — Elk Bear Horror",
 			"collector_number": "27",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/27_Guardian Percussigant.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/27_Guardian Percussigant.jpg"
 			}
 		},
 		{
@@ -1587,7 +1594,7 @@
 			"type": "Creature — Angel Cleric",
 			"collector_number": "10",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/10_Apostle Entheate.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/10_Apostle Entheate.jpg"
 			}
 		},
 		{
@@ -1597,7 +1604,7 @@
 			"type": "Creature — Cat Cleric",
 			"collector_number": "16",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/16_Cat o'lic Priests.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/16_Cat o'lic Priests.jpg"
 			}
 		},
 		{
@@ -1607,7 +1614,7 @@
 			"type": "Creature — Unicorn",
 			"collector_number": "18",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/18_Echoing Charger.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/18_Echoing Charger.jpg"
 			}
 		},
 		{
@@ -1617,7 +1624,7 @@
 			"type": "Creature — Human Cleric",
 			"collector_number": "22",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/22_Glassgarden Elder.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/22_Glassgarden Elder.jpg"
 			}
 		},
 		{
@@ -1627,7 +1634,7 @@
 			"type": "Creature — Human Cleric",
 			"collector_number": "24",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/24_Glassgarden Seer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/24_Glassgarden Seer.jpg"
 			}
 		},
 		{
@@ -1637,7 +1644,7 @@
 			"type": "Creature — Angel",
 			"collector_number": "26",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/26_Glorious Enforcer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/26_Glorious Enforcer.jpg"
 			}
 		},
 		{
@@ -1647,7 +1654,7 @@
 			"type": "Creature — Angel",
 			"collector_number": "29",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/29_Horomachist Sacrifice.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/29_Horomachist Sacrifice.jpg"
 			}
 		},
 		{
@@ -1657,7 +1664,7 @@
 			"type": "Sorcery",
 			"collector_number": "34",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/34_Merciless Illumination.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/34_Merciless Illumination.jpg"
 			}
 		},
 		{
@@ -1667,7 +1674,7 @@
 			"type": "Enchantment — Aura",
 			"collector_number": "35",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/35_Mystical Trail.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/35_Mystical Trail.jpg"
 			}
 		},
 		{
@@ -1677,7 +1684,7 @@
 			"type": "Instant",
 			"collector_number": "36",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/36_Pulsing Vitality.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/36_Pulsing Vitality.jpg"
 			}
 		},
 		{
@@ -1687,7 +1694,7 @@
 			"type": "Instant",
 			"collector_number": "39",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/39_Root of Mercy.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/39_Root of Mercy.jpg"
 			}
 		},
 		{
@@ -1697,7 +1704,7 @@
 			"type": "Creature — Angel Serpent",
 			"collector_number": "40",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/40_Seven-Coil Glider.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/40_Seven-Coil Glider.jpg"
 			}
 		},
 		{
@@ -1707,7 +1714,7 @@
 			"type": "Creature — Bird",
 			"collector_number": "47",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/47_Augury Raven.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/47_Augury Raven.jpg"
 			}
 		},
 		{
@@ -1717,7 +1724,7 @@
 			"type": "Creature — Bird Skeleton",
 			"collector_number": "48",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/48_Devoured Messenger.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/48_Devoured Messenger.jpg"
 			}
 		},
 		{
@@ -1727,7 +1734,7 @@
 			"type": "Instant",
 			"collector_number": "53",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/53_Expose Mortality.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/53_Expose Mortality.jpg"
 			}
 		},
 		{
@@ -1737,7 +1744,7 @@
 			"type": "Enchantment",
 			"collector_number": "54",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/54_Eyes Everywhere.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/54_Eyes Everywhere.jpg"
 			}
 		},
 		{
@@ -1747,7 +1754,7 @@
 			"type": "Creature — Merfolk Demon",
 			"collector_number": "67",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/67_Painted Distorter.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/67_Painted Distorter.jpg"
 			}
 		},
 		{
@@ -1757,7 +1764,7 @@
 			"type": "Creature — Kraken Horror",
 			"collector_number": "58",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/58_Map's Edge Monstrosity.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/58_Map's Edge Monstrosity.jpg"
 			}
 		},
 		{
@@ -1767,7 +1774,7 @@
 			"type": "Enchantment",
 			"collector_number": "59",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/59_Moonlit Augury.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/59_Moonlit Augury.jpg"
 			}
 		},
 		{
@@ -1777,7 +1784,7 @@
 			"type": "Creature — Demon",
 			"collector_number": "49",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/49_Dreamway Imposter.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/49_Dreamway Imposter.jpg"
 			}
 		},
 		{
@@ -1787,7 +1794,7 @@
 			"type": "Creature — Skeleton Cleric Shaman",
 			"collector_number": "63",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/63_Nowhere Soul Collector.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/63_Nowhere Soul Collector.jpg"
 			}
 		},
 		{
@@ -1797,7 +1804,7 @@
 			"type": "Creature — Skeleton",
 			"collector_number": "64",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/64_Nowhere Wormhost.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/64_Nowhere Wormhost.jpg"
 			}
 		},
 		{
@@ -1807,7 +1814,7 @@
 			"type": "Creature — Shapeshifter Cleric",
 			"collector_number": "65",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/65_Opener of Realities.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/65_Opener of Realities.jpg"
 			}
 		},
 		{
@@ -1817,7 +1824,7 @@
 			"type": "Creature — Snake Spirit",
 			"collector_number": "66",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/66_Ophidian Soul.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/66_Ophidian Soul.jpg"
 			}
 		},
 		{
@@ -1827,7 +1834,7 @@
 			"type": "Creature — Merfolk Horror",
 			"collector_number": "71",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/71_River Drowner.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/71_River Drowner.jpg"
 			}
 		},
 		{
@@ -1837,7 +1844,7 @@
 			"type": "Creature — Bird Cleric",
 			"collector_number": "72",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/72_Roost Nyctodromist.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/72_Roost Nyctodromist.jpg"
 			}
 		},
 		{
@@ -1847,7 +1854,7 @@
 			"type": "Creature — Merfolk Cleric Scout",
 			"collector_number": "74",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/74_Seaside Smuggler.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/74_Seaside Smuggler.jpg"
 			}
 		},
 		{
@@ -1857,7 +1864,7 @@
 			"type": "Creature — Leviathan Serpent",
 			"collector_number": "76",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/76_Seven-Coil's Scion.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/76_Seven-Coil's Scion.jpg"
 			}
 		},
 		{
@@ -1867,7 +1874,7 @@
 			"type": "Creature — Merfolk Wizard",
 			"collector_number": "77",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/77_Silent Drowner.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/77_Silent Drowner.jpg"
 			}
 		},
 		{
@@ -1877,7 +1884,7 @@
 			"type": "Creature — Human Cleric Wizard",
 			"collector_number": "52",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/52_Evening Isles Skycomber.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/52_Evening Isles Skycomber.jpg"
 			}
 		},
 		{
@@ -1887,7 +1894,7 @@
 			"type": "Creature — Spirit Knight",
 			"collector_number": "80",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/80_Twins' Guardian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/80_Twins' Guardian.jpg"
 			}
 		},
 		{
@@ -1897,7 +1904,7 @@
 			"type": "Instant",
 			"collector_number": "81",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/81_Veil of Dreams.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/81_Veil of Dreams.jpg"
 			}
 		},
 		{
@@ -1907,7 +1914,7 @@
 			"type": "Creature — Elemental Bird",
 			"collector_number": "83",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/83_White Reaper.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/83_White Reaper.jpg"
 			}
 		},
 		{
@@ -1917,7 +1924,7 @@
 			"type": "Creature — Vampire Shaman",
 			"collector_number": "92",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/92_Cyprian Ophiomancer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/92_Cyprian Ophiomancer.jpg"
 			}
 		},
 		{
@@ -1927,7 +1934,7 @@
 			"type": "Creature — Horror Spirit",
 			"collector_number": "94",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/94_Dream Whisperer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/94_Dream Whisperer.jpg"
 			}
 		},
 		{
@@ -1937,7 +1944,7 @@
 			"type": "Creature — Insect",
 			"collector_number": "85",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/85_Carapace Guardian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/85_Carapace Guardian.jpg"
 			}
 		},
 		{
@@ -1947,7 +1954,7 @@
 			"type": "Creature — Skeleton Insect",
 			"collector_number": "86",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/86_Carapace Scavenger.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/86_Carapace Scavenger.jpg"
 			}
 		},
 		{
@@ -1957,7 +1964,7 @@
 			"type": "Creature — Vampire Cleric Wizard",
 			"collector_number": "91",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/91_Cyprian Haemomancer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/91_Cyprian Haemomancer.jpg"
 			}
 		},
 		{
@@ -1967,7 +1974,7 @@
 			"type": "Creature — Vampire Cleric",
 			"collector_number": "93",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/93_Despairing Devotee.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/93_Despairing Devotee.jpg"
 			}
 		},
 		{
@@ -1977,7 +1984,7 @@
 			"type": "Sorcery",
 			"collector_number": "96",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/96_Escape from Nowhere.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/96_Escape from Nowhere.jpg"
 			}
 		},
 		{
@@ -1987,7 +1994,7 @@
 			"type": "Creature — Horror",
 			"collector_number": "99",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/99_Gloom Sower.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/99_Gloom Sower.jpg"
 			}
 		},
 		{
@@ -1997,7 +2004,7 @@
 			"type": "Creature — Human Cleric Shaman",
 			"collector_number": "51",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/51_Evening Isles Gravemouth.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/51_Evening Isles Gravemouth.jpg"
 			}
 		},
 		{
@@ -2007,7 +2014,7 @@
 			"type": "Creature — Vampire Cleric",
 			"collector_number": "102",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/102_Indulgent Cyprian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/102_Indulgent Cyprian.jpg"
 			}
 		},
 		{
@@ -2017,7 +2024,7 @@
 			"type": "Artifact",
 			"collector_number": "104",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/104_Monument of Rags.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/104_Monument of Rags.jpg"
 			}
 		},
 		{
@@ -2027,7 +2034,7 @@
 			"type": "Creature — Skeleton Angel",
 			"collector_number": "106",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/106_Nowhere Ascender.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/106_Nowhere Ascender.jpg"
 			}
 		},
 		{
@@ -2037,7 +2044,7 @@
 			"type": "Creature — Skeleton Wizard",
 			"collector_number": "107",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/107_Nowhere Stygian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/107_Nowhere Stygian.jpg"
 			}
 		},
 		{
@@ -2047,7 +2054,7 @@
 			"type": "Instant",
 			"collector_number": "110",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/110_Rite of Watchman's Sorrow.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/110_Rite of Watchman's Sorrow.jpg"
 			}
 		},
 		{
@@ -2057,7 +2064,7 @@
 			"type": "Enchantment",
 			"collector_number": "111",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/111_Scarring Servitude.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/111_Scarring Servitude.jpg"
 			}
 		},
 		{
@@ -2067,7 +2074,7 @@
 			"type": "Creature — Angel Cleric",
 			"collector_number": "115",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/115_Sky-Scar Angel.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/115_Sky-Scar Angel.jpg"
 			}
 		},
 		{
@@ -2077,7 +2084,7 @@
 			"type": "Creature — Cleric Warlock",
 			"collector_number": "116",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/116_Students of Rememberance.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/116_Students of Rememberance.jpg"
 			}
 		},
 		{
@@ -2087,7 +2094,7 @@
 			"type": "Artifact",
 			"collector_number": "118",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/118_Throat of Remnants.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/118_Throat of Remnants.jpg"
 			}
 		},
 		{
@@ -2097,7 +2104,7 @@
 			"type": "Instant",
 			"collector_number": "123",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/123_Callidate Invocation.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/123_Callidate Invocation.jpg"
 			}
 		},
 		{
@@ -2107,7 +2114,7 @@
 			"type": "Creature — Vampire Cleric Rogue",
 			"collector_number": "126",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/126_Cyprian Sacristan.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/126_Cyprian Sacristan.jpg"
 			}
 		},
 		{
@@ -2117,7 +2124,7 @@
 			"type": "Creature — Elemental",
 			"collector_number": "127",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/127_Enflamed Caligine.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/127_Enflamed Caligine.jpg"
 			}
 		},
 		{
@@ -2127,7 +2134,7 @@
 			"type": "Creature — Human Wizard",
 			"collector_number": "128",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/128_Entry Consultant.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/128_Entry Consultant.jpg"
 			}
 		},
 		{
@@ -2137,7 +2144,7 @@
 			"type": "Enchantment",
 			"collector_number": "129",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/129_Forces of Opening.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/129_Forces of Opening.jpg"
 			}
 		},
 		{
@@ -2147,7 +2154,7 @@
 			"type": "Legendary Artifact Creature — Cleric Wall",
 			"collector_number": "131",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/131_Ghirbi, the Gatekeeper.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/131_Ghirbi, the Gatekeeper.jpg"
 			}
 		},
 		{
@@ -2157,7 +2164,7 @@
 			"type": "Creature — Elemental",
 			"collector_number": "134",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/134_Ironsmoke Caligine.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/134_Ironsmoke Caligine.jpg"
 			}
 		},
 		{
@@ -2167,7 +2174,7 @@
 			"type": "Creature — Elemental Cleric",
 			"collector_number": "138",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/138_Malleary Augmenter.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/138_Malleary Augmenter.jpg"
 			}
 		},
 		{
@@ -2177,7 +2184,7 @@
 			"type": "Creature — Human Cleric Artificer",
 			"collector_number": "139",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/139_Malleary Novice.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/139_Malleary Novice.jpg"
 			}
 		},
 		{
@@ -2187,7 +2194,7 @@
 			"type": "Creature — Elemental Cleric",
 			"collector_number": "140",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/140_Malleary Reforged.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/140_Malleary Reforged.jpg"
 			}
 		},
 		{
@@ -2197,7 +2204,7 @@
 			"type": "Creature — Elemental Knight",
 			"collector_number": "141",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/141_Malleary Seer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/141_Malleary Seer.jpg"
 			}
 		},
 		{
@@ -2207,7 +2214,7 @@
 			"type": "Creature — Shapeshifter Cleric Artificer",
 			"collector_number": "142",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/142_Malleary Smelter.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/142_Malleary Smelter.jpg"
 			}
 		},
 		{
@@ -2217,7 +2224,7 @@
 			"type": "Creature — Human Rogue",
 			"collector_number": "145",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/145_Opener of Glass.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/145_Opener of Glass.jpg"
 			}
 		},
 		{
@@ -2227,7 +2234,7 @@
 			"type": "Creature — Cat Cleric Shaman",
 			"collector_number": "149",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/149_Rite Flamecaller.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/149_Rite Flamecaller.jpg"
 			}
 		},
 		{
@@ -2237,7 +2244,7 @@
 			"type": "Creature — Elemental Wolf",
 			"collector_number": "152",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/152_Smoldering Pack.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/152_Smoldering Pack.jpg"
 			}
 		},
 		{
@@ -2247,7 +2254,7 @@
 			"type": "Creature — Vampire Cleric",
 			"collector_number": "156",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/156_Tattered Cyprian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/156_Tattered Cyprian.jpg"
 			}
 		},
 		{
@@ -2257,7 +2264,7 @@
 			"type": "Sorcery",
 			"collector_number": "157",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/157_Traitorous Blood.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/157_Traitorous Blood.jpg"
 			}
 		},
 		{
@@ -2267,7 +2274,7 @@
 			"type": "Creature — Shapeshifter Cleric",
 			"collector_number": "160",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/160_Wandering Unmaker.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/160_Wandering Unmaker.jpg"
 			}
 		},
 		{
@@ -2277,7 +2284,7 @@
 			"type": "Creature — Insect Warrior",
 			"collector_number": "203",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/203_Carapace Crusader.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/203_Carapace Crusader.jpg"
 			}
 		},
 		{
@@ -2287,7 +2294,7 @@
 			"type": "Creature — Insect Cleric",
 			"collector_number": "204",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/204_Carapace Disciple.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/204_Carapace Disciple.jpg"
 			}
 		},
 		{
@@ -2297,7 +2304,7 @@
 			"type": "Creature — Insect Spider Cleric",
 			"collector_number": "205",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/205_Carapace Threadbearer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/205_Carapace Threadbearer.jpg"
 			}
 		},
 		{
@@ -2307,7 +2314,7 @@
 			"type": "Creature — Insect Cleric",
 			"collector_number": "206",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/206_Carapace Voyager.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/206_Carapace Voyager.jpg"
 			}
 		},
 		{
@@ -2317,7 +2324,7 @@
 			"type": "Creature — Insect",
 			"collector_number": "207",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/207_Carapace Youngling.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/207_Carapace Youngling.jpg"
 			}
 		},
 		{
@@ -2327,7 +2334,7 @@
 			"type": "Creature — Zombie",
 			"collector_number": "208",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/208_Cartographed Risen.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/208_Cartographed Risen.jpg"
 			}
 		},
 		{
@@ -2337,7 +2344,7 @@
 			"type": "Creature — Cat Warrior",
 			"collector_number": "210",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/210_Debilitated Tragulari.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/210_Debilitated Tragulari.jpg"
 			}
 		},
 		{
@@ -2347,7 +2354,7 @@
 			"type": "Creature — Insect",
 			"collector_number": "213",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/213_Flesh Weaver.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/213_Flesh Weaver.jpg"
 			}
 		},
 		{
@@ -2357,7 +2364,7 @@
 			"type": "Instant",
 			"collector_number": "218",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/218_The Old Forms.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/218_The Old Forms.jpg"
 			}
 		},
 		{
@@ -2367,7 +2374,7 @@
 			"type": "Enchantment — Aura",
 			"collector_number": "219",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/219_Ordeal of Defiance.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/219_Ordeal of Defiance.jpg"
 			}
 		},
 		{
@@ -2377,7 +2384,7 @@
 			"type": "Creature — Wolf Berserker",
 			"collector_number": "221",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/221_Ravenous Unmaker.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/221_Ravenous Unmaker.jpg"
 			}
 		},
 		{
@@ -2387,7 +2394,7 @@
 			"type": "Creature — Insect Cleric",
 			"collector_number": "209",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/209_Dappled Wing-Clippers.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/209_Dappled Wing-Clippers.jpg"
 			}
 		},
 		{
@@ -2397,7 +2404,7 @@
 			"type": "Sorcery",
 			"collector_number": "212",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/212_Dyad's Dance.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/212_Dyad's Dance.jpg"
 			}
 		},
 		{
@@ -2407,7 +2414,7 @@
 			"type": "Creature — Serpent Warrior",
 			"collector_number": "223",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/223_Seven-Coil Ambusher.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/223_Seven-Coil Ambusher.jpg"
 			}
 		},
 		{
@@ -2417,7 +2424,7 @@
 			"type": "Creature — Wolf Spirit",
 			"collector_number": "225",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/225_Splinter-Blossom.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/225_Splinter-Blossom.jpg"
 			}
 		},
 		{
@@ -2427,7 +2434,7 @@
 			"type": "Creature — Cat Cleric Monk",
 			"collector_number": "220",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/220_Pupil of Defiance.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/220_Pupil of Defiance.jpg"
 			}
 		},
 		{
@@ -2437,7 +2444,7 @@
 			"type": "Sorcery",
 			"collector_number": "233",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/233_Wildest Dreams.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/233_Wildest Dreams.jpg"
 			}
 		},
 		{
@@ -2447,7 +2454,7 @@
 			"type": "Creature — Spirit Warrior Cleric",
 			"collector_number": "227",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/227_Thyrsine Hunter.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/227_Thyrsine Hunter.jpg"
 			}
 		},
 		{
@@ -2457,7 +2464,7 @@
 			"type": "Creature — Spirit Cleric Scout",
 			"collector_number": "229",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/229_Tireless Recruiter.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/229_Tireless Recruiter.jpg"
 			}
 		},
 		{
@@ -2467,7 +2474,7 @@
 			"type": "Sorcery",
 			"collector_number": "230",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/230_Unceasing Initiation.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/230_Unceasing Initiation.jpg"
 			}
 		},
 		{
@@ -2477,7 +2484,7 @@
 			"type": "Enchantment",
 			"collector_number": "232",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/232_Way to the Wood.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/232_Way to the Wood.jpg"
 			}
 		},
 		{
@@ -2487,7 +2494,7 @@
 			"type": "Creature — Wolf Spirit",
 			"collector_number": "235",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/235_Wolf-Splinter.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/235_Wolf-Splinter.jpg"
 			}
 		},
 		{
@@ -2497,7 +2504,7 @@
 			"type": "Creature — Wolf Demon Horror",
 			"collector_number": "237",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/237_Wood's Devourer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/237_Wood's Devourer.jpg"
 			}
 		},
 		{
@@ -2507,7 +2514,7 @@
 			"type": "Creature — Treefolk",
 			"collector_number": "238",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/238_Yew Colossus.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/238_Yew Colossus.jpg"
 			}
 		},
 		{
@@ -2517,7 +2524,7 @@
 			"type": "Creature — Treefolk Beast",
 			"collector_number": "226",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/226_Territorial Yew-Maw.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/226_Territorial Yew-Maw.jpg"
 			}
 		},
 		{
@@ -2527,7 +2534,7 @@
 			"type": "Instant",
 			"collector_number": "192",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/192_Study the Histories.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/192_Study the Histories.jpg"
 			}
 		},
 		{
@@ -2537,7 +2544,7 @@
 			"type": "Legendary Creature — Hydra Serpent",
 			"collector_number": "189",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/189_Seven-Coil's Successor.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/189_Seven-Coil's Successor.jpg"
 			}
 		},
 		{
@@ -2547,7 +2554,7 @@
 			"type": "Instant",
 			"collector_number": "194",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/194_Teferi's Banishment.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/194_Teferi's Banishment.jpg"
 			}
 		},
 		{
@@ -2557,7 +2564,7 @@
 			"type": "Sorcery",
 			"collector_number": "163",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/163_Breaching Vespera.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/163_Breaching Vespera.jpg"
 			}
 		},
 		{
@@ -2567,7 +2574,7 @@
 			"type": "Creature — Insect Warrior",
 			"collector_number": "164",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/164_Carapace Shell-Burster.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/164_Carapace Shell-Burster.jpg"
 			}
 		},
 		{
@@ -2577,7 +2584,7 @@
 			"type": "Creature — Vampire Rogue",
 			"collector_number": "166",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/166_Drowning Cyprian.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/166_Drowning Cyprian.jpg"
 			}
 		},
 		{
@@ -2587,7 +2594,7 @@
 			"type": "Instant",
 			"collector_number": "172",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/172_Horomachist Ending.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/172_Horomachist Ending.jpg"
 			}
 		},
 		{
@@ -2597,7 +2604,7 @@
 			"type": "Legendary Planeswalker — Isidra",
 			"collector_number": "173",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/173_Isidra, Foreign Goddess.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/173_Isidra, Foreign Goddess.jpg"
 			}
 		},
 		{
@@ -2607,7 +2614,7 @@
 			"type": "Creature — Snake",
 			"collector_number": "176",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/176_Lorescale Coatl.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/176_Lorescale Coatl.jpg"
 			}
 		},
 		{
@@ -2617,7 +2624,7 @@
 			"type": "Creature — Spirit Cleric",
 			"collector_number": "177",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/177_Malleary Phantasm.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/177_Malleary Phantasm.jpg"
 			}
 		},
 		{
@@ -2627,7 +2634,7 @@
 			"type": "Creature — Bear Horror",
 			"collector_number": "184",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/184_Percussigant.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/184_Percussigant.jpg"
 			}
 		},
 		{
@@ -2637,7 +2644,7 @@
 			"type": "Artifact",
 			"collector_number": "185",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/185_Places of Peace.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/185_Places of Peace.jpg"
 			}
 		},
 		{
@@ -2647,7 +2654,7 @@
 			"type": "Creature — Bird",
 			"collector_number": "188",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/188_Roost Augur.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/188_Roost Augur.jpg"
 			}
 		},
 		{
@@ -2657,7 +2664,7 @@
 			"type": "Creature — Human Shaman Cleric",
 			"collector_number": "190",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/190_Sister of Venoms.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/190_Sister of Venoms.jpg"
 			}
 		},
 		{
@@ -2667,7 +2674,7 @@
 			"type": "Creature — Angel",
 			"collector_number": "197",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/197_Vengeful Restorer.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/197_Vengeful Restorer.jpg"
 			}
 		},
 		{
@@ -2677,7 +2684,7 @@
 			"type": "Enchantment",
 			"collector_number": "201",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/201_Wound the World.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/201_Wound the World.jpg"
 			}
 		},
 		{
@@ -2687,7 +2694,7 @@
 			"type": "Artifact — Equipment",
 			"collector_number": "239",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/239_Covert Cloak.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/239_Covert Cloak.jpg"
 			}
 		},
 		{
@@ -2697,7 +2704,7 @@
 			"type": "Land",
 			"collector_number": "246",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/246_Field of Ruin.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/246_Field of Ruin.jpg"
 			}
 		},
 		{
@@ -2707,7 +2714,7 @@
 			"type": "Land — Sanctuary",
 			"collector_number": "248",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/248_Sanctuary of Mysteries.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/248_Sanctuary of Mysteries.jpg"
 			}
 		},
 		{
@@ -2717,7 +2724,7 @@
 			"type": "Token Creature — Cleric",
 			"collector_number": "1",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/1_PTN Cleric Token.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/1_PTN Cleric Token.jpg"
 			}
 		},
 		{
@@ -2727,7 +2734,7 @@
 			"type": "Token Creature — God Horror",
 			"collector_number": "3",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/3_God Horror Token.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/3_God Horror Token.jpg"
 			}
 		},
 		{
@@ -2737,7 +2744,7 @@
 			"type": "Creature — Human Insect Cleric",
 			"collector_number": "84",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/84_Carapace Ancestor.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/84_Carapace Ancestor.jpg"
 			}
 		},
 		{
@@ -2747,7 +2754,7 @@
 			"type": "Creature — Angel Cleric",
 			"collector_number": "117",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/117_Tenacious Illuminator.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/117_Tenacious Illuminator.jpg"
 			}
 		},
 		{
@@ -2757,7 +2764,7 @@
 			"type": "Creature — Horror",
 			"collector_number": "217",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ATR-files/img/217_Musician's Remnant.png"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/217_Musician's Remnant.jpg"
 			}
 		},
 	]
