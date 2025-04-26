@@ -275,6 +275,7 @@
 		    });
 
             document.getElementById("username").innerText = username;
+            document.title = username;
             document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
             
             async function reload() {
