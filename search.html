@@ -1001,7 +1001,7 @@
 				{
 					if (modifier == ":")
 					{
-						regex = new RegExp("\\b" + check + "\\b");
+						let regex = new RegExp("\\b" + check + "\\b");
 						return regex.test(card_type);
 					}
 					/* unsupported flows
@@ -1249,7 +1249,7 @@
 				{
 					if (modifier == ":" || modifier == "=" || modifier == "!")
 					{
-						regex = new RegExp("!tag " + check + "\\b");
+						let regex = new RegExp("!tag " + check + "\\b");
 						return regex.test(card_notes);
 					}
 				}

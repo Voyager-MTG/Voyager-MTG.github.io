@@ -19,7 +19,7 @@
             /* overflow-y: scroll; */
         }
         .search-grid {
-		justify-content: center;
+		    justify-content: center;
         }
         .sg-icon {
             cursor: pointer;
@@ -80,6 +80,13 @@
             font-size: 30px;
             font-family: beleren;
         }
+        .deck-buttons {
+            display: grid;
+            gap: 2px;
+            align-items: center;
+            justify-items: center;
+            grid-template-columns: 4fr 1fr 1fr;
+        }
         .deck-link {
             /* font-family: beleren; */
             background-color: #1652e0;
@@ -99,6 +106,40 @@
             width: 100%;
             margin: 20px;
             font-family: beleren;
+        }
+        .event-link {
+            background-color: #1652e0;
+            color: white;
+            padding: 8px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px;
+            height: fit-content;
+            align-self: middle;
+        }
+        .top-section {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 8fr;
+            width: 85%;
+            align-items: center;
+            justify-items: center;
+        }
+        .deck-icon-blue {
+            max-height:30px;
+            background-color: #1652e0;
+            border-radius: 8px;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .deck-icon-red {
+            max-height:30px;
+            background-color: #e01616;
+            border-radius: 8px;
+            padding: 5px;
+            cursor: pointer;
         }
     </style>
     <style id="text-style">
@@ -123,7 +164,9 @@
 			</select>
 		</div>
         <div class="page-container">
-            <div class="username text" id="username"></div>
+            <div class="top-section">
+                <div class="username text" id="username"></div>
+            </div>
             <div class="deck-section-header text">My Decks</div>
             <div class="decks-container" id="decks">
                 <!-- test -->
@@ -213,6 +256,7 @@
             let username = "";
             let password = "";
             let sessionid = localStorage.getItem('settings.session');
+            let decks = {};
             // console.log
 
             if (!sessionid) {
@@ -225,32 +269,85 @@
                 password = data.password;
             });
 
+            await getDoc(doc(db, 'users', username)).then(docSnap => {
+                let data = docSnap.data();
+                decks = JSON.parse(data.decks);
+		    });
+
             document.getElementById("username").innerText = username;
             document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
             
-            const deck_data = await getDoc(doc(db, 'users', username)).then(docSnap => {
-                let user_data = docSnap.data();
-                let decks = JSON.parse(user_data.decks);
-                console.log(decks);
-                for (const deck of decks) {
-                    let deck_container = document.createElement('div');
-                    deck_container.className = "deck-container";
-                    let deck_preview = document.createElement('img');
-                    deck_preview.src = deck.previewimg;
-                    deck_preview.className = "deck-preview-img";
-                    let deck_name = document.createElement('div');
-                    deck_name.className = "deck-name";
-                    deck_name.innerText = deck.name;
-                    let deck_link = document.createElement('a');
-                    deck_link.href = deck.url;
-                    deck_link.className = "deck-link";
-                    deck_link.innerText = "Edit in Deckbuilder";
-                    deck_container.appendChild(deck_name);
-                    deck_container.appendChild(deck_preview);
-                    deck_container.appendChild(deck_link);
-                    document.getElementById('decks').appendChild(deck_container);
-                }
-            });
+            async function reload() {
+                const deck_data = await getDoc(doc(db, 'users', username)).then(async docSnap => {
+                    let user_data = docSnap.data();
+                    let decks = JSON.parse(user_data.decks);
+                    console.log(decks);
+                    document.getElementById('decks').innerHTML = "";
+                    for (const deck of decks) {
+                        let deck_container = document.createElement('div');
+                        deck_container.className = "deck-container";
+                        let deck_preview = document.createElement('img');
+                        deck_preview.src = deck.previewimg;
+                        deck_preview.className = "deck-preview-img";
+                        let deck_name = document.createElement('div');
+                        deck_name.className = "deck-name";
+                        deck_name.innerText = deck.name;
+                        let deck_btns = document.createElement('div');
+                        deck_btns.className = "deck-buttons";
+                        let deck_link = document.createElement('a');
+                        deck_link.href = deck.url;
+                        deck_link.className = "deck-link";
+                        deck_link.innerText = "Edit in Deckbuilder";
+                        let deck_submit_icon = document.createElement('img');
+                        deck_submit_icon.src = "/img/export-white.png";
+                        deck_submit_icon.className = "deck-icon-blue";
+                        deck_submit_icon.onclick = async function() {
+                            await getDoc(doc(db, "events", "GP1")).then(async docSnap2 => {
+                                let tourndata = docSnap2.data();
+                                let decks_ = JSON.parse(tourndata.decks);
+                                decks_[username] = deck;
+                                await setDoc(doc(db, "events", "GP1"), {
+                                    decks: JSON.stringify(decks_)
+                                });
+                            });
+                            alert("Submitted deck " + deck.name + "to GP1!");
+                        }
+                        let deck_delete_icon = document.createElement('img');
+                        deck_delete_icon.src = "/img/trash.png";
+                        deck_delete_icon.className = "deck-icon-red";
+                        deck_delete_icon.onclick = async function() {
+                            let new_decks = decks;
+                            // let index = 0;
+                            let user_deck = {};
+                            console.log(user_data.decks);
+                            for (let i = 0; i < decks.length; i++) {
+                                user_deck = decks[i];
+                                console.log(user_deck, i, deck.name);
+                                if (user_deck["name"] == deck.name) {
+                                    new_decks.splice(i,1);
+                                }
+                                // index += 1;
+                            }
+                            await setDoc(doc(db, "users", username), {
+                                username: username,
+                                password: password,
+                                decks: JSON.stringify(new_decks)
+                            });
+                            alert("Deck Deleted!");
+                            reload();
+                        }
+                        deck_btns.appendChild(deck_link);
+                        deck_btns.appendChild(deck_submit_icon);
+                        deck_btns.appendChild(deck_delete_icon);
+                        deck_container.appendChild(deck_name);
+                        deck_container.appendChild(deck_preview);
+                        deck_container.appendChild(deck_btns);
+                        document.getElementById('decks').appendChild(deck_container);
+                    }
+                });
+            }
+
+            reload();
         </script>
     </body>
 </html>

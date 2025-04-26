@@ -178,7 +178,7 @@
 		overflow-y: scroll;
 		scrollbar-width: none;
 		height: 50%;
-		/* background-color: #f3f3f3;  */
+		/* background-color: #f3f3f3; */
 	}
 	.card-text div {
 		white-space: normal;
@@ -806,25 +806,25 @@
 		// load resource files
 		document.addEventListener("DOMContentLoaded", async function () {
 			await fetch('/lists/all-cards.json')
-				.then(response => response.json())
-				.then(json => {
-					card_list = json;
-			}).catch(error => console.error('Error:', error));
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
 
-			await fetch('/resources/replacechars.txt')
-				.then(response => response.text())
-				.then(text => {
-					specialchars = text; 
-			}).catch(error => console.error('Error:', error));
+				await fetch('/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
 
-			card_list_arrayified = card_list.cards;
+				card_list_arrayified = card_list.cards;
 
 
-			await fetch('/lists/all-sets.json')
-				.then(response => response.json())
-				.then(data => {
-					sets_json = data; 
-			}).catch(error => console.error('Error:', error));
+				aawait fetch('/lists/all-sets.json')
+					.then(response => response.json())
+					.then(data => {
+						sets_json = data; 
+				}).catch(error => console.error('Error:', error));
 
 			cardGrid = document.getElementById("imagesOnlyGrid");
 			card_list_arrayified.sort(compareFunction);
@@ -2311,7 +2311,7 @@
 				{
 					if (modifier == ":")
 					{
-						regex = new RegExp("\\b" + check + "\\b");
+						let regex = new RegExp("\\b" + check + "\\b");
 						return regex.test(card_type);
 					}
 					/* unsupported flows
@@ -2559,7 +2559,7 @@
 				{
 					if (modifier == ":" || modifier == "=" || modifier == "!")
 					{
-						regex = new RegExp("!tag " + check + "\\b");
+						let regex = new RegExp("!tag " + check + "\\b");
 						return regex.test(card_notes);
 					}
 				}
@@ -2644,7 +2644,7 @@
 			grid.appendChild(buildImgContainer(card_stats, false, rotate_card));
 			
 			const text = document.createElement("div");
-			text.className = "card-text popout";
+			text.className = "card-text";
 			text.id = "card-text";
 
 			const name_cost = document.createElement("div");
@@ -3571,26 +3571,30 @@
 
 		await getDoc(doc(db, 'users', username)).then(docSnap => {
 			let data = docSnap.data();
+			// console.log(data);
 			decks = JSON.parse(data.decks);
-		});
-
-		document.getElementById('save-btn').addEventListener("click", (e) => {
-			let card_stats = JSON.parse(localStorage.getItem('settings.previewimg'));
-			let deckObj = {
-				name: document.getElementById("deck-name").value,
-				previewimg: "/sets/" + card_stats.set + "-files/img/" + card_stats.number + "_" + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type,
-				url: `https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`
-			};
-			for (const deck of decks) {
-				if (deck.name == deckObj.name) {
-					decks.splice(decks.indexOf(deck), 1);
+			console.log(decks);
+			document.getElementById('save-btn').addEventListener("click", (e) => {
+				console.log(decks);
+				let card_stats = JSON.parse(localStorage.getItem('settings.previewimg'));
+				let deckObj = {
+					name: document.getElementById("deck-name").value,
+					previewimg: "/sets/" + card_stats.set + "-files/img/" + card_stats.number + "_" + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type,
+					url: `https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`
+				};
+				console.log(decks, deckObj);
+				for (const deck_ of decks) {
+					if (deck_.name == deckObj.name) {
+						decks.splice(decks.indexOf(deck_), 1);
+					}
 				}
-			}
-			decks.push(deckObj);
-			setDoc(doc(db, "users", username), {
-				username: username,
-				password: password,
-				decks   : JSON.stringify(decks)
+				decks.push(deckObj);
+				console.log(decks);
+				setDoc(doc(db, "users", username), {
+					username: username,
+					password: password,
+					decks   : JSON.stringify(decks)
+				});
 			});
 		});
 	</script>

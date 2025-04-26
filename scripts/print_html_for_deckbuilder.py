@@ -2528,26 +2528,30 @@ def generateHTML(codes):
 
 		await getDoc(doc(db, 'users', username)).then(docSnap => {
 			let data = docSnap.data();
+			// console.log(data);
 			decks = JSON.parse(data.decks);
-		});
-
-		document.getElementById('save-btn').addEventListener("click", (e) => {
-			let card_stats = JSON.parse(localStorage.getItem('settings.previewimg'));
-			let deckObj = {
-				name: document.getElementById("deck-name").value,
-				previewimg: "/sets/" + card_stats.set + "-files/img/" + card_stats.number + "_" + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type,
-				url: `https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`
-			};
-			for (const deck of decks) {
-				if (deck.name == deckObj.name) {
-					decks.splice(decks.indexOf(deck), 1);
+			console.log(decks);
+			document.getElementById('save-btn').addEventListener("click", (e) => {
+				console.log(decks);
+				let card_stats = JSON.parse(localStorage.getItem('settings.previewimg'));
+				let deckObj = {
+					name: document.getElementById("deck-name").value,
+					previewimg: "/sets/" + card_stats.set + "-files/img/" + card_stats.number + "_" + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type,
+					url: `https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}`
+				};
+				console.log(decks, deckObj);
+				for (const deck_ of decks) {
+					if (deck_.name == deckObj.name) {
+						decks.splice(decks.indexOf(deck_), 1);
+					}
 				}
-			}
-			decks.push(deckObj);
-			setDoc(doc(db, "users", username), {
-				username: username,
-				password: password,
-				decks   : JSON.stringify(decks)
+				decks.push(deckObj);
+				console.log(decks);
+				setDoc(doc(db, "users", username), {
+					username: username,
+					password: password,
+					decks   : JSON.stringify(decks)
+				});
 			});
 		});
 	</script>
