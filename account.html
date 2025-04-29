@@ -82,19 +82,23 @@
         }
         .deck-buttons {
             display: grid;
-            gap: 2px;
+            gap: 12px;
             align-items: center;
             justify-items: center;
-            grid-template-columns: 4fr 1fr 1fr;
+            grid-template-columns: 1fr 3fr 1fr;
         }
         .deck-link {
             /* font-family: beleren; */
             background-color: #1652e0;
             color: white;
-            padding: 8px;
+            padding: 2px 6px 2px 6px;
             border-radius: 8px;
-            font-size: 20px;
             font-weight: bold;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            align-items: center;
+            justify-items: center;
+            font-size: 28px;    
         }  
         .deck-section-header {
             font-size: 60px;
@@ -130,13 +134,20 @@
         .deck-icon-blue {
             max-height:30px;
             background-color: #1652e0;
-            border-radius: 8px;
+            /* border-radius: 8px; */
             padding: 5px;
             cursor: pointer;
         }
         .deck-icon-red {
             max-height:30px;
             background-color: #e01616;
+            border-radius: 8px;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .deck-icon-green {
+            max-height:30px;
+            background-color: #16e019;
             border-radius: 8px;
             padding: 5px;
             cursor: pointer;
@@ -275,7 +286,6 @@
 		    });
 
             document.getElementById("username").innerText = username;
-            document.title = username;
             document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
             
             async function reload() {
@@ -297,12 +307,18 @@
                         deck_btns.className = "deck-buttons";
                         let deck_link = document.createElement('a');
                         deck_link.href = deck.url;
-                        deck_link.className = "deck-link";
-                        deck_link.innerText = "Edit in Deckbuilder";
+                        let deck_edit_icon = document.createElement('img');
+                        deck_edit_icon.src = "/img/edit.png";
+                        deck_edit_icon.className = "deck-icon-green";
+                        deck_link.appendChild(deck_edit_icon);
+                        let deck_submit_text = document.createElement("div");
+                        deck_submit_text.innerText = "GP1";
+                        deck_submit_text.className = "deck-link";
                         let deck_submit_icon = document.createElement('img');
                         deck_submit_icon.src = "/img/export-white.png";
                         deck_submit_icon.className = "deck-icon-blue";
-                        deck_submit_icon.onclick = async function() {
+                        deck_submit_text.style.cursor = "pointer";
+                        deck_submit_text.onclick = async function() {
                             await getDoc(doc(db, "events", "GP1")).then(async docSnap2 => {
                                 let tourndata = docSnap2.data();
                                 let decks_ = JSON.parse(tourndata.decks);
@@ -313,6 +329,7 @@
                             });
                             alert("Submitted deck " + deck.name + "to GP1!");
                         }
+                        deck_submit_text.appendChild(deck_submit_icon);
                         let deck_delete_icon = document.createElement('img');
                         deck_delete_icon.src = "/img/trash.png";
                         deck_delete_icon.className = "deck-icon-red";
@@ -338,7 +355,7 @@
                             reload();
                         }
                         deck_btns.appendChild(deck_link);
-                        deck_btns.appendChild(deck_submit_icon);
+                        deck_btns.appendChild(deck_submit_text);
                         deck_btns.appendChild(deck_delete_icon);
                         deck_container.appendChild(deck_name);
                         deck_container.appendChild(deck_preview);
