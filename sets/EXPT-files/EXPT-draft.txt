@@ -1,10 +1,10 @@
-ï»¿[CustomCards]
+[CustomCards]
 	[
 		{
 			"name": "Dust Converter",
 			"rarity": "common",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Bird ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Bird",
 			"collector_number": "33",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/33_Dust Converter.jpg"
@@ -13,8 +13,8 @@
 		{
 			"name": "Avakin Adventurer",
 			"rarity": "common",
-			"mana_cost": "{2}{I}",
-			"type": "Creature â€” Bird Scout ",
+			"mana_cost": "{2}{C}",
+			"type": "Creature — Bird Scout",
 			"collector_number": "12",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/12_Avakin Adventurer.jpg"
@@ -23,8 +23,8 @@
 		{
 			"name": "Meirel Drifter",
 			"rarity": "common",
-			"mana_cost": "{I}",
-			"type": "Creature â€” Fox Scout ",
+			"mana_cost": "{C}",
+			"type": "Creature — Fox Scout",
 			"collector_number": "68",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/68_Meirel Drifter.jpg"
@@ -33,7 +33,7 @@
 		{
 			"name": "Power from Beyond",
 			"rarity": "common",
-			"mana_cost": "{I}",
+			"mana_cost": "{C}",
 			"type": "Instant",
 			"collector_number": "80",
 			"image_uris": {
@@ -43,8 +43,8 @@
 		{
 			"name": "Calign",
 			"rarity": "common",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Drake Horror ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Drake Horror",
 			"collector_number": "16",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/16_Calign.jpg"
@@ -53,7 +53,7 @@
 		{
 			"name": "Captivate",
 			"rarity": "common",
-			"mana_cost": "{1}{I}",
+			"mana_cost": "{1}{C}",
 			"type": "Instant",
 			"collector_number": "19",
 			"image_uris": {
@@ -63,8 +63,8 @@
 		{
 			"name": "Adventurous Pair",
 			"rarity": "common",
-			"mana_cost": "{2}{I}",
-			"type": "Creature â€” Human ",
+			"mana_cost": "{2}{C}",
+			"type": "Creature — Human",
 			"collector_number": "7",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/7_Adventurous Pair.jpg"
@@ -73,7 +73,7 @@
 		{
 			"name": "Perspective Shift",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{I}",
+			"mana_cost": "{2}{C}",
 			"type": "Instant",
 			"collector_number": "79",
 			"image_uris": {
@@ -83,8 +83,8 @@
 		{
 			"name": "Emigrating Pilgrim",
 			"rarity": "common",
-			"mana_cost": "{3}{I}",
-			"type": "Enchantment Creature â€” Icon Knight ",
+			"mana_cost": "{3}{C}",
+			"type": "Enchantment Creature — Icon Knight",
 			"collector_number": "36",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/36_Emigrating Pilgrim.jpg"
@@ -93,8 +93,8 @@
 		{
 			"name": "Drougth Oracle",
 			"rarity": "common",
-			"mana_cost": "{6}{I}",
-			"type": "Creature â€” Cat Shaman ",
+			"mana_cost": "{6}{C}",
+			"type": "Creature — Cat Shaman",
 			"collector_number": "31",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/31_Drougth Oracle.jpg"
@@ -103,8 +103,8 @@
 		{
 			"name": "Morraire Shimmer Patrol",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{I}{W}",
-			"type": "Creature â€” Faerie Dog ",
+			"mana_cost": "{2}{C}{W}",
+			"type": "Creature — Faerie Dog",
 			"collector_number": "139",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/139_Morraire Shimmer Patrol.jpg"
@@ -113,8 +113,8 @@
 		{
 			"name": "Coiling Jailer",
 			"rarity": "uncommon",
-			"mana_cost": "{4}{I}{W}",
-			"type": "Creature â€” Wurm Cleric ",
+			"mana_cost": "{4}{C}{W}",
+			"type": "Creature — Wurm Cleric",
 			"collector_number": "130",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/130_Coiling Jailer.jpg"
@@ -123,8 +123,8 @@
 		{
 			"name": "Cydina Storm Drake",
 			"rarity": "uncommon",
-			"mana_cost": "{3}{I}{R}",
-			"type": "Creature â€” Drake ",
+			"mana_cost": "{3}{C}{R}",
+			"type": "Creature — Drake",
 			"collector_number": "131",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/131_Cydina Storm Drake.jpg"
@@ -133,8 +133,8 @@
 		{
 			"name": "Flowsnail",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{I}{R}",
-			"type": "Creature â€” Jellyfish Snail ",
+			"mana_cost": "{1}{C}{R}",
+			"type": "Creature — Jellyfish Snail",
 			"collector_number": "135",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/135_Flowsnail.jpg"
@@ -143,7 +143,7 @@
 		{
 			"name": "Promise of Hunger",
 			"rarity": "uncommon",
-			"mana_cost": "{I}{G}",
+			"mana_cost": "{C}{G}",
 			"type": "Enchantment",
 			"collector_number": "144",
 			"image_uris": {
@@ -153,8 +153,8 @@
 		{
 			"name": "Balutr Runners",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{I}{G}",
-			"type": "Creature â€” Human Wolf Scout ",
+			"mana_cost": "{2}{C}{G}",
+			"type": "Creature — Human Wolf Scout",
 			"collector_number": "123",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/123_Balutr Runners.jpg"
@@ -163,8 +163,8 @@
 		{
 			"name": "Boundless Flight",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{I}{U}",
-			"type": "Creature â€” Chimera ",
+			"mana_cost": "{2}{C}{U}",
+			"type": "Creature — Chimera",
 			"collector_number": "125",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/125_Boundless Flight.jpg"
@@ -173,8 +173,8 @@
 		{
 			"name": "Calamitous Koi",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{I}{B}",
-			"type": "Creature â€” Fish Spirit ",
+			"mana_cost": "{2}{C}{B}",
+			"type": "Creature — Fish Spirit",
 			"collector_number": "126",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/126_Calamitous Koi.jpg"
@@ -183,8 +183,8 @@
 		{
 			"name": "Omen of Hunger",
 			"rarity": "uncommon",
-			"mana_cost": "{3}{I}{B}",
-			"type": "Creature â€” Angel Reflection ",
+			"mana_cost": "{3}{C}{B}",
+			"type": "Creature — Angel Reflection",
 			"collector_number": "141",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/141_Omen of Hunger.jpg"
@@ -193,8 +193,8 @@
 		{
 			"name": "Homestead Pair",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Human Elf ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Human Elf",
 			"collector_number": "47",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/47_Homestead Pair.jpg"
@@ -203,7 +203,7 @@
 		{
 			"name": "Discover Uncertainty",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{I}",
+			"mana_cost": "{1}{C}",
 			"type": "Instant",
 			"collector_number": "28",
 			"image_uris": {
@@ -213,7 +213,7 @@
 		{
 			"name": "When Words Dont Work",
 			"rarity": "common",
-			"mana_cost": "{1}{I}",
+			"mana_cost": "{1}{C}",
 			"type": "Instant",
 			"collector_number": "114",
 			"image_uris": {
@@ -223,8 +223,8 @@
 		{
 			"name": "Iconic Challenger",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{I}",
-			"type": "Enchantment Creature â€” Icon Warrior ",
+			"mana_cost": "{1}{C}",
+			"type": "Enchantment Creature — Icon Warrior",
 			"collector_number": "49",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/49_Iconic Challenger.jpg"
@@ -233,7 +233,7 @@
 		{
 			"name": "Unweave",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{I}",
+			"mana_cost": "{1}{C}",
 			"type": "Instant",
 			"collector_number": "109",
 			"image_uris": {
@@ -243,8 +243,8 @@
 		{
 			"name": "Ignelscor Witch",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{I}",
-			"type": "Creature â€” Human Warlock ",
+			"mana_cost": "{2}{C}",
+			"type": "Creature — Human Warlock",
 			"collector_number": "51",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/51_Ignelscor Witch.jpg"
@@ -253,8 +253,8 @@
 		{
 			"name": "Kornas Forward",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{I}",
-			"type": "Creature â€” Wurm Scout ",
+			"mana_cost": "{2}{C}",
+			"type": "Creature — Wurm Scout",
 			"collector_number": "60",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/60_Kornas Forward.jpg"
@@ -263,8 +263,8 @@
 		{
 			"name": "Meirel Evacuator",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{I}{I}",
-			"type": "Creature â€” Hyena Scout ",
+			"mana_cost": "{1}{C}{C}",
+			"type": "Creature — Hyena Scout",
 			"collector_number": "69",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/69_Meirel Evacuator.jpg"
@@ -273,7 +273,7 @@
 		{
 			"name": "Unending Exploration",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{I}{I}",
+			"mana_cost": "{2}{C}{C}",
 			"type": "Enchantment",
 			"collector_number": "107",
 			"image_uris": {
@@ -284,7 +284,7 @@
 			"name": "Persisting Timepiece",
 			"rarity": "uncommon",
 			"mana_cost": "",
-			"type": "Kindred Land â€” Scout ",
+			"type": "Kindred Land — Scout",
 			"collector_number": "167",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/167_Persisting Timepiece.jpg"
@@ -293,8 +293,8 @@
 		{
 			"name": "Inkblot Artist",
 			"rarity": "uncommon",
-			"mana_cost": "{I}",
-			"type": "Creature â€” Human Wizard ",
+			"mana_cost": "{C}",
+			"type": "Creature — Human Wizard",
 			"collector_number": "54",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/54_Inkblot Artist.jpg"
@@ -303,8 +303,8 @@
 		{
 			"name": "Reflected Inclination",
 			"rarity": "uncommon",
-			"mana_cost": "{I}",
-			"type": "Creature â€” Elemental ",
+			"mana_cost": "{C}",
+			"type": "Creature — Elemental",
 			"collector_number": "83",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/83_Reflected Inclination.jpg"
@@ -313,8 +313,8 @@
 		{
 			"name": "Wandering Travellers",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Human ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Human",
 			"collector_number": "112",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/112_Wandering Travellers.jpg"
@@ -323,7 +323,7 @@
 		{
 			"name": "Pathshaping",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}",
+			"mana_cost": "{1}{C}",
 			"type": "Sorcery",
 			"collector_number": "78",
 			"image_uris": {
@@ -333,8 +333,8 @@
 		{
 			"name": "Kaln-Ocean Streamliner",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Merfolk Rogue ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Merfolk Rogue",
 			"collector_number": "58",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/58_Kaln-Ocean Streamliner.jpg"
@@ -343,8 +343,8 @@
 		{
 			"name": "Shrouded Pathcensor",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}",
-			"type": "Creature â€” Bird Wizard ",
+			"mana_cost": "{2}{C}",
+			"type": "Creature — Bird Wizard",
 			"collector_number": "93",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/93_Shrouded Pathcensor.jpg"
@@ -353,8 +353,8 @@
 		{
 			"name": "Chirps Spice Seeker",
 			"rarity": "rare",
-			"mana_cost": "{3}{I}",
-			"type": "Legendary Enchantment Creature â€” Bird ",
+			"mana_cost": "{3}{C}",
+			"type": "Legendary Enchantment Creature — Bird",
 			"collector_number": "23",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/23_Chirps Spice Seeker.jpg"
@@ -363,8 +363,8 @@
 		{
 			"name": "Melodia Drifter at Heart",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}{I}",
-			"type": "Legendary Enchantment Creature â€” Human Wizard ",
+			"mana_cost": "{2}{C}{C}",
+			"type": "Legendary Enchantment Creature — Human Wizard",
 			"collector_number": "70",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/70_Melodia Drifter at Heart.jpg"
@@ -373,8 +373,8 @@
 		{
 			"name": "Outlands Chimera",
 			"rarity": "rare",
-			"mana_cost": "{3}{I}{I}",
-			"type": "Creature â€” Chimera ",
+			"mana_cost": "{3}{C}{C}",
+			"type": "Creature — Chimera",
 			"collector_number": "77",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/77_Outlands Chimera.jpg"
@@ -383,8 +383,8 @@
 		{
 			"name": "Starling",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}{I}",
-			"type": "Creature â€” Shapeshifter ",
+			"mana_cost": "{2}{C}{C}",
+			"type": "Creature — Shapeshifter",
 			"collector_number": "99",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/99_Starling.jpg"
@@ -393,8 +393,8 @@
 		{
 			"name": "Cerise Auger of Flow",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}{W}{U}",
-			"type": "Legendary Creature â€” Human Wizard ",
+			"mana_cost": "{1}{C}{W}{U}",
+			"type": "Legendary Creature — Human Wizard",
 			"collector_number": "128",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/128_Cerise Auger of Flow.jpg"
@@ -403,7 +403,7 @@
 		{
 			"name": "Called to Eternity",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}",
+			"mana_cost": "{1}{C}",
 			"type": "Enchantment",
 			"collector_number": "17",
 			"image_uris": {
@@ -413,7 +413,7 @@
 		{
 			"name": "Mass Mutation",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}{I}",
+			"mana_cost": "{1}{C}{C}",
 			"type": "Sorcery",
 			"collector_number": "67",
 			"image_uris": {
@@ -423,7 +423,7 @@
 		{
 			"name": "Ancient Interference",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}{I}",
+			"mana_cost": "{2}{C}{C}",
 			"type": "Instant",
 			"collector_number": "10",
 			"image_uris": {
@@ -433,7 +433,7 @@
 		{
 			"name": "Probe the Veil",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}",
+			"mana_cost": "{2}{C}",
 			"type": "Sorcery",
 			"collector_number": "81",
 			"image_uris": {
@@ -443,7 +443,7 @@
 		{
 			"name": "Lithify",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}",
+			"mana_cost": "{2}{C}",
 			"type": "Instant",
 			"collector_number": "62",
 			"image_uris": {
@@ -453,7 +453,7 @@
 		{
 			"name": "Cascading Reflections",
 			"rarity": "rare",
-			"mana_cost": "{I}",
+			"mana_cost": "{C}",
 			"type": "Instant",
 			"collector_number": "20",
 			"image_uris": {
@@ -463,7 +463,7 @@
 		{
 			"name": "Kindred Spirits",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}",
+			"mana_cost": "{2}{C}",
 			"type": "Enchantment",
 			"collector_number": "59",
 			"image_uris": {
@@ -473,7 +473,7 @@
 		{
 			"name": "Falling Sparks",
 			"rarity": "rare",
-			"mana_cost": "{X}{1}{I}{R}",
+			"mana_cost": "{X}{1}{C}{R}",
 			"type": "Sorcery",
 			"collector_number": "134",
 			"image_uris": {
@@ -483,7 +483,7 @@
 		{
 			"name": "Soul Splintering",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}{W}",
+			"mana_cost": "{1}{C}{W}",
 			"type": "Instant",
 			"collector_number": "149",
 			"image_uris": {
@@ -494,7 +494,7 @@
 			"name": "Icon Token",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Enchantment Creature â€” Icon ",
+			"type": "Token Enchantment Creature — Icon",
 			"collector_number": "15",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/15_Icon Token.jpg"
@@ -503,7 +503,7 @@
 		{
 			"name": "Liminal Ambiguity",
 			"rarity": "rare",
-			"mana_cost": "{X}{I}",
+			"mana_cost": "{X}{C}",
 			"type": "Instant",
 			"collector_number": "61",
 			"image_uris": {
@@ -513,8 +513,8 @@
 		{
 			"name": "Experience Cultivator",
 			"rarity": "common",
-			"mana_cost": "{2}{I/G}",
-			"type": "Creature â€” Plant ",
+			"mana_cost": "{2}{CG}",
+			"type": "Creature — Plant",
 			"collector_number": "133",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/133_Experience Cultivator.jpg"
@@ -523,8 +523,8 @@
 		{
 			"name": "Towing Steladiuys",
 			"rarity": "common",
-			"mana_cost": "{4}{I/B}{I/B}",
-			"type": "Creature â€” Octopus Jellyfish ",
+			"mana_cost": "{4}{CB}{CB}",
+			"type": "Creature — Octopus Jellyfish",
 			"collector_number": "151",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/151_Towing Steladiuys.jpg"
@@ -533,8 +533,8 @@
 		{
 			"name": "Information Recovery Crew",
 			"rarity": "common",
-			"mana_cost": "{I}",
-			"type": "Creature â€” Human Scout ",
+			"mana_cost": "{C}",
+			"type": "Creature — Human Scout",
 			"collector_number": "52",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/52_Information Recovery Crew.jpg"
@@ -543,8 +543,8 @@
 		{
 			"name": "Exuberant Archaeologist",
 			"rarity": "common",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Human Scout ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Human Scout",
 			"collector_number": "41",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/41_Exuberant Archaeologist.jpg"
@@ -553,8 +553,8 @@
 		{
 			"name": "Tepid Tamer",
 			"rarity": "common",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Human Warrior ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Human Warrior",
 			"collector_number": "104",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/104_Tepid Tamer.jpg"
@@ -563,8 +563,8 @@
 		{
 			"name": "Striking Reflection",
 			"rarity": "common",
-			"mana_cost": "{2}{I}",
-			"type": "Creature â€” Reflection ",
+			"mana_cost": "{2}{C}",
+			"type": "Creature — Reflection",
 			"collector_number": "100",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/100_Striking Reflection.jpg"
@@ -573,8 +573,8 @@
 		{
 			"name": "Unbothered Alchemist",
 			"rarity": "common",
-			"mana_cost": "{3}{I}",
-			"type": "Creature â€” Human Wizard ",
+			"mana_cost": "{3}{C}",
+			"type": "Creature — Human Wizard",
 			"collector_number": "106",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/106_Unbothered Alchemist.jpg"
@@ -583,8 +583,8 @@
 		{
 			"name": "Scouting Party",
 			"rarity": "common",
-			"mana_cost": "{3}{I}{I}",
-			"type": "Creature â€” Rabbit Soldier Scout ",
+			"mana_cost": "{3}{C}{C}",
+			"type": "Creature — Rabbit Soldier Scout",
 			"collector_number": "88",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/88_Scouting Party.jpg"
@@ -593,7 +593,7 @@
 		{
 			"name": "Back to Market",
 			"rarity": "common",
-			"mana_cost": "{I}",
+			"mana_cost": "{C}",
 			"type": "Sorcery",
 			"collector_number": "13",
 			"image_uris": {
@@ -603,7 +603,7 @@
 		{
 			"name": "Center Mass",
 			"rarity": "common",
-			"mana_cost": "{I}",
+			"mana_cost": "{C}",
 			"type": "Instant",
 			"collector_number": "21",
 			"image_uris": {
@@ -613,7 +613,7 @@
 		{
 			"name": "Murky Politics",
 			"rarity": "common",
-			"mana_cost": "{1}{I}",
+			"mana_cost": "{1}{C}",
 			"type": "Instant",
 			"collector_number": "75",
 			"image_uris": {
@@ -623,7 +623,7 @@
 		{
 			"name": "Memory Restored",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}",
+			"mana_cost": "{2}{C}",
 			"type": "Sorcery",
 			"collector_number": "71",
 			"image_uris": {
@@ -703,8 +703,8 @@
 		{
 			"name": "Neverbloom",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}{G}",
-			"type": "Creature â€” Plant Horror ",
+			"mana_cost": "{1}{C}{G}",
+			"type": "Creature — Plant Horror",
 			"collector_number": "140",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/140_Neverbloom.jpg"
@@ -713,8 +713,8 @@
 		{
 			"name": "The Lost Heir",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}",
-			"type": "Enchantment Creature â€” Human Noble ",
+			"mana_cost": "{1}{C}",
+			"type": "Enchantment Creature — Human Noble",
 			"collector_number": "64",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/64_The Lost Heir.jpg"
@@ -723,7 +723,7 @@
 		{
 			"name": "Unveiling",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}{I}",
+			"mana_cost": "{1}{C}{C}",
 			"type": "Instant",
 			"collector_number": "108",
 			"image_uris": {
@@ -733,7 +733,7 @@
 		{
 			"name": "To Survive in Some Form",
 			"rarity": "uncommon",
-			"mana_cost": "{I}",
+			"mana_cost": "{C}",
 			"type": "Instant",
 			"collector_number": "105",
 			"image_uris": {
@@ -743,8 +743,8 @@
 		{
 			"name": "Eschewer of Form",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Shapeshifter Artificer ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Shapeshifter Artificer",
 			"collector_number": "39",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/39_Eschewer of Form.jpg"
@@ -753,8 +753,8 @@
 		{
 			"name": "Era, Hymn to Creation",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}",
-			"type": "Legendary Enchantment Creature â€” God ",
+			"mana_cost": "{2}{C}",
+			"type": "Legendary Enchantment Creature — God",
 			"collector_number": "38",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/38_Era, Hymn to Creation.jpg"
@@ -763,8 +763,8 @@
 		{
 			"name": "Infraruin Predator",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}{I}",
-			"type": "Creature â€” Lizard ",
+			"mana_cost": "{1}{C}{C}",
+			"type": "Creature — Lizard",
 			"collector_number": "53",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/53_Infraruin Predator.jpg"
@@ -773,8 +773,8 @@
 		{
 			"name": "Sealed Deepborn",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Merfolk Chimera Citizen ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Merfolk Chimera Citizen",
 			"collector_number": "89",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/89_Sealed Deepborn.jpg"
@@ -783,7 +783,7 @@
 		{
 			"name": "Kaiju Sighting",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}",
+			"mana_cost": "{1}{C}",
 			"type": "Sorcery",
 			"collector_number": "57",
 			"image_uris": {
@@ -793,8 +793,8 @@
 		{
 			"name": "Interstellar Traveller",
 			"rarity": "rare",
-			"mana_cost": "{3}{I}",
-			"type": "Enchantment Creature â€” Construct ",
+			"mana_cost": "{3}{C}",
+			"type": "Enchantment Creature — Construct",
 			"collector_number": "55",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/55_Interstellar Traveller.jpg"
@@ -803,7 +803,7 @@
 		{
 			"name": "The Depths Talk Loudly",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{I}",
+			"mana_cost": "{1}{C}",
 			"type": "Enchantment",
 			"collector_number": "26",
 			"image_uris": {
@@ -814,7 +814,7 @@
 			"name": "Horror",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Horror ",
+			"type": "Token Creature — Horror",
 			"collector_number": "12",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/12_Horror.jpg"
@@ -824,7 +824,7 @@
 			"name": "Sanctum Trader",
 			"rarity": "rare",
 			"mana_cost": "{1}{R}",
-			"type": "Creature â€” Dinosaur Advisor ",
+			"type": "Creature — Dinosaur Advisor",
 			"collector_number": "6",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/6_Sanctum Trader.jpg"
@@ -833,7 +833,7 @@
 		{
 			"name": "Lost in Dreams of Life",
 			"rarity": "mythic",
-			"mana_cost": "{4}{I}{I}",
+			"mana_cost": "{4}{C}{C}",
 			"type": "Sorcery",
 			"collector_number": "65",
 			"image_uris": {
@@ -843,7 +843,7 @@
 		{
 			"name": "Iridescent Summit",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}{I}",
+			"mana_cost": "{1}{C}{C}",
 			"type": "Enchantment",
 			"collector_number": "56",
 			"image_uris": {
@@ -853,7 +853,7 @@
 		{
 			"name": "One Last Sunset",
 			"rarity": "rare",
-			"mana_cost": "{I}{R}{W}",
+			"mana_cost": "{C}{R}{W}",
 			"type": "Instant",
 			"collector_number": "142",
 			"image_uris": {
@@ -863,8 +863,8 @@
 		{
 			"name": "Winged Turtle",
 			"rarity": "mythic",
-			"mana_cost": "{2}{I}{I}",
-			"type": "Creature â€” Angel Turtle  ",
+			"mana_cost": "{2}{C}{C}",
+			"type": "Creature — Angel Turtle",
 			"collector_number": "116",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/116_Winged Turtle.jpg"
@@ -873,8 +873,8 @@
 		{
 			"name": "Wandering Dislocation",
 			"rarity": "common",
-			"mana_cost": "{2}{I}{I}",
-			"type": "Enchantment Creature â€” Icon Spirit ",
+			"mana_cost": "{2}{C}{C}",
+			"type": "Enchantment Creature — Icon Spirit",
 			"collector_number": "111",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/111_Wandering Dislocation.jpg"
@@ -883,7 +883,7 @@
 		{
 			"name": "Sundown",
 			"rarity": "mythic",
-			"mana_cost": "{1}{I}{R}{R}",
+			"mana_cost": "{1}{C}{R}{R}",
 			"type": "Sorcery",
 			"collector_number": "150",
 			"image_uris": {
@@ -893,7 +893,7 @@
 		{
 			"name": "Against the Night",
 			"rarity": "rare",
-			"mana_cost": "{I}",
+			"mana_cost": "{C}",
 			"type": "Sorcery",
 			"collector_number": "8",
 			"image_uris": {
@@ -903,8 +903,8 @@
 		{
 			"name": "Warping Wolf",
 			"rarity": "uncommon",
-			"mana_cost": "{I}{I}",
-			"type": "Enchantment Creature â€” Wolf ",
+			"mana_cost": "{C}{C}",
+			"type": "Enchantment Creature — Wolf",
 			"collector_number": "113",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/113_Warping Wolf.jpg"
@@ -913,8 +913,8 @@
 		{
 			"name": "Risen Earthdragon",
 			"rarity": "uncommon",
-			"mana_cost": "{10}{I}{G}",
-			"type": "Enchantment Creature â€” Dragon ",
+			"mana_cost": "{10}{C}{G}",
+			"type": "Enchantment Creature — Dragon",
 			"collector_number": "146",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/146_Risen Earthdragon.jpg"
@@ -924,7 +924,7 @@
 			"name": "Elemental",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Elemental ",
+			"type": "Token Creature — Elemental",
 			"collector_number": "7",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/7_Elemental.jpg"
@@ -933,7 +933,7 @@
 		{
 			"name": "Shell's Scraping",
 			"rarity": "rare",
-			"mana_cost": "{3}{I}{I}",
+			"mana_cost": "{3}{C}{C}",
 			"type": "Sorcery",
 			"collector_number": "92",
 			"image_uris": {
@@ -944,7 +944,7 @@
 			"name": "Illuminant Spire",
 			"rarity": "uncommon",
 			"mana_cost": "",
-			"type": "Land â€” Spire ",
+			"type": "Land — Spire",
 			"collector_number": "165",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/165_Illuminant Spire.jpg"
@@ -954,7 +954,7 @@
 			"name": "Ivory Spire",
 			"rarity": "uncommon",
 			"mana_cost": "",
-			"type": "Land â€” Spire ",
+			"type": "Land — Spire",
 			"collector_number": "166",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/166_Ivory Spire.jpg"
@@ -964,7 +964,7 @@
 			"name": "Searing Spire",
 			"rarity": "uncommon",
 			"mana_cost": "",
-			"type": "Land â€” Spire ",
+			"type": "Land — Spire",
 			"collector_number": "169",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/169_Searing Spire.jpg"
@@ -974,7 +974,7 @@
 			"name": "Silent Spire",
 			"rarity": "uncommon",
 			"mana_cost": "",
-			"type": "Land â€” Spire ",
+			"type": "Land — Spire",
 			"collector_number": "170",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/170_Silent Spire.jpg"
@@ -984,7 +984,7 @@
 			"name": "Twisted Spire",
 			"rarity": "uncommon",
 			"mana_cost": "",
-			"type": "Land â€” Spire ",
+			"type": "Land — Spire",
 			"collector_number": "172",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/172_Twisted Spire.jpg"
@@ -994,7 +994,7 @@
 			"name": "Verdant Spire",
 			"rarity": "uncommon",
 			"mana_cost": "",
-			"type": "Land â€” Spire ",
+			"type": "Land — Spire",
 			"collector_number": "173",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/173_Verdant Spire.jpg"
@@ -1003,7 +1003,7 @@
 		{
 			"name": "Swirling Moon",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}",
+			"mana_cost": "{2}{C}",
 			"type": "Enchantment",
 			"collector_number": "101",
 			"image_uris": {
@@ -1013,7 +1013,7 @@
 		{
 			"name": "Sever the Oracle",
 			"rarity": "uncommon",
-			"mana_cost": "{I}{I}{I}",
+			"mana_cost": "{C}{C}{C}",
 			"type": "Instant",
 			"collector_number": "91",
 			"image_uris": {
@@ -1023,8 +1023,8 @@
 		{
 			"name": "Curious Dexteria",
 			"rarity": "uncommon",
-			"mana_cost": "{I}",
-			"type": "Creature â€” Beast ",
+			"mana_cost": "{C}",
+			"type": "Creature — Beast",
 			"collector_number": "25",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/25_Curious Dexteria.jpg"
@@ -1033,7 +1033,7 @@
 		{
 			"name": "Searing Sigils",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{I}",
+			"mana_cost": "{1}{C}",
 			"type": "Artifact",
 			"collector_number": "90",
 			"image_uris": {
@@ -1043,8 +1043,8 @@
 		{
 			"name": "Distant Vulture",
 			"rarity": "rare",
-			"mana_cost": "{I}",
-			"type": "Creature â€” Bird Incarnation ",
+			"mana_cost": "{C}",
+			"type": "Creature — Bird Incarnation",
 			"collector_number": "29",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/29_Distant Vulture.jpg"
@@ -1053,8 +1053,8 @@
 		{
 			"name": "Distant Vulture Astral;",
 			"rarity": "common",
-			"mana_cost": "{2}{I}{I}",
-			"type": "Creature â€” Bird Incarnation ",
+			"mana_cost": "{2}{C}{C}",
+			"type": "Creature — Bird Incarnation",
 			"collector_number": "8",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/8_Distant Vulture Astral;.jpg"
@@ -1063,8 +1063,8 @@
 		{
 			"name": "Extant Surveyor",
 			"rarity": "rare",
-			"mana_cost": "{I}",
-			"type": "Artifact Creature â€” Robot Construct ",
+			"mana_cost": "{C}",
+			"type": "Artifact Creature — Robot Construct",
 			"collector_number": "40",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/40_Extant Surveyor.jpg"
@@ -1073,7 +1073,7 @@
 		{
 			"name": "Hopeless Summit",
 			"rarity": "common",
-			"mana_cost": "{2}{I}",
+			"mana_cost": "{2}{C}",
 			"type": "Sorcery",
 			"collector_number": "48",
 			"image_uris": {
@@ -1083,7 +1083,7 @@
 		{
 			"name": "Lost Cause",
 			"rarity": "common",
-			"mana_cost": "{I}",
+			"mana_cost": "{C}",
 			"type": "Enchantment",
 			"collector_number": "63",
 			"image_uris": {
@@ -1093,7 +1093,7 @@
 		{
 			"name": "Sieve",
 			"rarity": "common",
-			"mana_cost": "{I}",
+			"mana_cost": "{C}",
 			"type": "Instant",
 			"collector_number": "95",
 			"image_uris": {
@@ -1103,8 +1103,8 @@
 		{
 			"name": "Draconic Reflection",
 			"rarity": "common",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Demon Dragon Reflection ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Demon Dragon Reflection",
 			"collector_number": "30",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/30_Draconic Reflection.jpg"
@@ -1113,8 +1113,8 @@
 		{
 			"name": "Sryyn Spawner",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Insect ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Insect",
 			"collector_number": "98",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/98_Sryyn Spawner.jpg"
@@ -1123,8 +1123,8 @@
 		{
 			"name": "Algael-leael",
 			"rarity": "common",
-			"mana_cost": "{2}{I}",
-			"type": "Enchantment Creature â€” Elemental ",
+			"mana_cost": "{2}{C}",
+			"type": "Enchantment Creature — Elemental",
 			"collector_number": "9",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/9_Algael-leael.jpg"
@@ -1134,7 +1134,7 @@
 			"name": "Insect Plant Token",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Insect Plant ",
+			"type": "Token Creature — Insect Plant",
 			"collector_number": "13",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/13_Insect Plant Token.jpg"
@@ -1143,8 +1143,8 @@
 		{
 			"name": "Syphroid",
 			"rarity": "uncommon",
-			"mana_cost": "{4}{I}{I}",
-			"type": "Artifact Creature â€” Robot ",
+			"mana_cost": "{4}{C}{C}",
+			"type": "Artifact Creature — Robot",
 			"collector_number": "102",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/102_Syphroid.jpg"
@@ -1153,8 +1153,8 @@
 		{
 			"name": "Tellavia Balwar",
 			"rarity": "common",
-			"mana_cost": "{1}{I}{I}",
-			"type": "Creature â€” Demon Beast ",
+			"mana_cost": "{1}{C}{C}",
+			"type": "Creature — Demon Beast",
 			"collector_number": "103",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/103_Tellavia Balwar.jpg"
@@ -1163,8 +1163,8 @@
 		{
 			"name": "Refraction Mech",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}",
-			"type": "Artifact Creature â€” Robot Warrior ",
+			"mana_cost": "{2}{C}",
+			"type": "Artifact Creature — Robot Warrior",
 			"collector_number": "84",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/84_Refraction Mech.jpg"
@@ -1173,8 +1173,8 @@
 		{
 			"name": "Writhing Sight",
 			"rarity": "common",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Zombie Eye Wizard ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Zombie Eye Wizard",
 			"collector_number": "119",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/119_Writhing Sight.jpg"
@@ -1183,8 +1183,8 @@
 		{
 			"name": "Soaring Chorus",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}",
-			"type": "Enchamtment Creature â€” Icon Wizard ",
+			"mana_cost": "{1}{C}",
+			"type": "Enchamtment Creature — Icon Wizard",
 			"collector_number": "96",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/96_Soaring Chorus.jpg"
@@ -1194,7 +1194,7 @@
 			"name": "Wall Token",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Artifact Creature â€” Wall ",
+			"type": "Token Artifact Creature — Wall",
 			"collector_number": "19",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/19_Wall Token.jpg"
@@ -1203,8 +1203,8 @@
 		{
 			"name": "Xylem Attendant",
 			"rarity": "uncommon",
-			"mana_cost": "{I}",
-			"type": "Creature â€” Human Warrior ",
+			"mana_cost": "{C}",
+			"type": "Creature — Human Warrior",
 			"collector_number": "120",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/120_Xylem Attendant.jpg"
@@ -1213,8 +1213,8 @@
 		{
 			"name": "Clifftop Pishogue",
 			"rarity": "uncommon",
-			"mana_cost": "{I}{U}",
-			"type": "Creature â€” Bird Wizard ",
+			"mana_cost": "{C}{U}",
+			"type": "Creature — Bird Wizard",
 			"collector_number": "129",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/129_Clifftop Pishogue.jpg"
@@ -1223,7 +1223,7 @@
 		{
 			"name": "Malevolent Knowledge",
 			"rarity": "rare",
-			"mana_cost": "{I/B}",
+			"mana_cost": "{CB}",
 			"type": "Instant",
 			"collector_number": "138",
 			"image_uris": {
@@ -1233,8 +1233,8 @@
 		{
 			"name": "Shadow Eater",
 			"rarity": "common",
-			"mana_cost": "{X}{I}{B}",
-			"type": "Creature â€” Zombie Spirit ",
+			"mana_cost": "{X}{C}{B}",
+			"type": "Creature — Zombie Spirit",
 			"collector_number": "148",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/148_Shadow Eater.jpg"
@@ -1243,8 +1243,8 @@
 		{
 			"name": "Mirrored Magic",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}",
-			"type": "Enchantment â€” Aura ",
+			"mana_cost": "{1}{C}",
+			"type": "Enchantment — Aura",
 			"collector_number": "72",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/72_Mirrored Magic.jpg"
@@ -1253,8 +1253,8 @@
 		{
 			"name": "Siege Crossbow",
 			"rarity": "common",
-			"mana_cost": "{1}{I}",
-			"type": "Artifact â€” Equipment ",
+			"mana_cost": "{1}{C}",
+			"type": "Artifact — Equipment",
 			"collector_number": "94",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/94_Siege Crossbow.jpg"
@@ -1263,7 +1263,7 @@
 		{
 			"name": "The Demon Within",
 			"rarity": "rare",
-			"mana_cost": "{I}{U}",
+			"mana_cost": "{C}{U}",
 			"type": "Instant",
 			"collector_number": "132",
 			"image_uris": {
@@ -1283,8 +1283,8 @@
 		{
 			"name": "Beautiful Headhuntress",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{I}{G}",
-			"type": "Creature â€” Human Shapeshifter ",
+			"mana_cost": "{1}{C}{G}",
+			"type": "Creature — Human Shapeshifter",
 			"collector_number": "124",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/124_Beautiful Headhuntress.jpg"
@@ -1293,8 +1293,8 @@
 		{
 			"name": "Wisped Wings",
 			"rarity": "common",
-			"mana_cost": "{4}{I}",
-			"type": "Creature â€” Bird Spirit ",
+			"mana_cost": "{4}{C}",
+			"type": "Creature — Bird Spirit",
 			"collector_number": "117",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/117_Wisped Wings.jpg"
@@ -1303,8 +1303,8 @@
 		{
 			"name": "Scholigaunt",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{I}{I}",
-			"type": "Creature â€” Shapeshifter ",
+			"mana_cost": "{2}{C}{C}",
+			"type": "Creature — Shapeshifter",
 			"collector_number": "87",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/87_Scholigaunt.jpg"
@@ -1313,7 +1313,7 @@
 		{
 			"name": "Godhead's Interdiction",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}{I}",
+			"mana_cost": "{2}{C}{C}",
 			"type": "Sorcery",
 			"collector_number": "45",
 			"image_uris": {
@@ -1323,8 +1323,8 @@
 		{
 			"name": "Incessant Intercession",
 			"rarity": "uncommon",
-			"mana_cost": "{3}{I}{B}",
-			"type": "Creature â€” Demon Wizard ",
+			"mana_cost": "{3}{C}{B}",
+			"type": "Creature — Demon Wizard",
 			"collector_number": "136",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/136_Incessant Intercession.jpg"
@@ -1333,8 +1333,8 @@
 		{
 			"name": "Duet of Loss and Life",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{I}",
-			"type": "Creature â€” Insect Warrior ",
+			"mana_cost": "{2}{C}",
+			"type": "Creature — Insect Warrior",
 			"collector_number": "32",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/32_Duet of Loss and Life.jpg"
@@ -1343,8 +1343,8 @@
 		{
 			"name": "Abstracted Mark",
 			"rarity": "uncommon",
-			"mana_cost": "{3}{I}{R}",
-			"type": "Creature â€” Faerie Demon Wizard ",
+			"mana_cost": "{3}{C}{R}",
+			"type": "Creature — Faerie Demon Wizard",
 			"collector_number": "122",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/122_Abstracted Mark.jpg"
@@ -1353,7 +1353,7 @@
 		{
 			"name": "Whimsy Unbound",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}{W}",
+			"mana_cost": "{2}{C}{W}",
 			"type": "Sorcery",
 			"collector_number": "152",
 			"image_uris": {
@@ -1364,7 +1364,7 @@
 			"name": "Shapeshifter Token",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Shapeshifter ",
+			"type": "Token Creature — Shapeshifter",
 			"collector_number": "2",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/2_Shapeshifter Token.jpg"
@@ -1374,7 +1374,7 @@
 			"name": "Robot Token",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Artifact Creature â€” Robot ",
+			"type": "Token Artifact Creature — Robot",
 			"collector_number": "17",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/17_Robot Token.jpg"
@@ -1383,8 +1383,8 @@
 		{
 			"name": "Gradius Option",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{I}",
-			"type": "Artifact Creature â€” Robot Construct ",
+			"mana_cost": "{2}{C}",
+			"type": "Artifact Creature — Robot Construct",
 			"collector_number": "86",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/86_Gradius Option.jpg"
@@ -1393,8 +1393,8 @@
 		{
 			"name": "Sentinel of the Afterlife",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}{B}",
-			"type": "Creature â€” Zombie Spirit ",
+			"mana_cost": "{2}{C}{B}",
+			"type": "Creature — Zombie Spirit",
 			"collector_number": "147",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/147_Sentinel of the Afterlife.jpg"
@@ -1403,7 +1403,7 @@
 		{
 			"name": "Our Fates Change",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}{G}",
+			"mana_cost": "{1}{C}{G}",
 			"type": "Instant",
 			"collector_number": "143",
 			"image_uris": {
@@ -1413,7 +1413,7 @@
 		{
 			"name": "Caught in the Confusion",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}{W}",
+			"mana_cost": "{2}{C}{W}",
 			"type": "Enchantment",
 			"collector_number": "127",
 			"image_uris": {
@@ -1423,8 +1423,8 @@
 		{
 			"name": "Madness Broadcaster",
 			"rarity": "rare",
-			"mana_cost": "{I}{B}{R}",
-			"type": "Creature â€” Vampire Warrior ",
+			"mana_cost": "{C}{B}{R}",
+			"type": "Creature — Vampire Warrior",
 			"collector_number": "137",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/137_Madness Broadcaster.jpg"
@@ -1433,8 +1433,8 @@
 		{
 			"name": "Reflection Tender",
 			"rarity": "rare",
-			"mana_cost": "{I}{W}",
-			"type": "Enchantment Creature â€” Elemental ",
+			"mana_cost": "{C}{W}",
+			"type": "Enchantment Creature — Elemental",
 			"collector_number": "145",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/145_Reflection Tender.jpg"
@@ -1443,8 +1443,8 @@
 		{
 			"name": "The Usurper",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}",
-			"type": "Legendary Creature â€” Human ",
+			"mana_cost": "{2}{C}",
+			"type": "Legendary Creature — Human",
 			"collector_number": "110",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/110_The Usurper.jpg"
@@ -1453,8 +1453,8 @@
 		{
 			"name": "The Chanter of Paths",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Spirit ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Spirit",
 			"collector_number": "22",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/22_The Chanter of Paths.jpg"
@@ -1474,7 +1474,7 @@
 			"name": "Plains",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Basic Land â€” Plains ",
+			"type": "Basic Land — Plains",
 			"collector_number": "1",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/1_Plains.jpg"
@@ -1484,7 +1484,7 @@
 			"name": "Island",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Basic Land â€” Island ",
+			"type": "Basic Land — Island",
 			"collector_number": "2",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/2_Island.jpg"
@@ -1494,7 +1494,7 @@
 			"name": "Swamp",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Basic Land â€” Swamp ",
+			"type": "Basic Land — Swamp",
 			"collector_number": "3",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/3_Swamp.jpg"
@@ -1504,7 +1504,7 @@
 			"name": "Mountain",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Basic Land â€” Mountain ",
+			"type": "Basic Land — Mountain",
 			"collector_number": "5",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/5_Mountain.jpg"
@@ -1514,7 +1514,7 @@
 			"name": "Forest",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Basic Land â€” Forest ",
+			"type": "Basic Land — Forest",
 			"collector_number": "153",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/153_Forest.jpg"
@@ -1524,7 +1524,7 @@
 			"name": "Fault",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Basic Land â€” Fault ",
+			"type": "Basic Land — Fault",
 			"collector_number": "42",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/42_Fault.jpg"
@@ -1534,7 +1534,7 @@
 			"name": "Demon",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Demon ",
+			"type": "Token Creature — Demon",
 			"collector_number": "6",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/6_Demon.jpg"
@@ -1544,7 +1544,7 @@
 			"name": "Drake Token",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Drake ",
+			"type": "Token Creature — Drake",
 			"collector_number": "9",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/9_Drake Token.jpg"
@@ -1554,7 +1554,7 @@
 			"name": "Fox Token",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Fox ",
+			"type": "Token Creature — Fox",
 			"collector_number": "4",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/4_Fox Token.jpg"
@@ -1564,7 +1564,7 @@
 			"name": "Wurm Dragon Token",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Kindred Enchantment â€” Wurm Dragon ",
+			"type": "Token Kindred Enchantment — Wurm Dragon",
 			"collector_number": "3",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/3_Wurm Dragon Token.jpg"
@@ -1574,7 +1574,7 @@
 			"name": "Elemental Token 2;",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Elemental ",
+			"type": "Token Creature — Elemental",
 			"collector_number": "10",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/10_Elemental Token 2;.jpg"
@@ -1584,7 +1584,7 @@
 			"name": "Elemental Token 3;",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Elemental ",
+			"type": "Token Creature — Elemental",
 			"collector_number": "11",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/11_Elemental Token 3;.jpg"
@@ -1594,7 +1594,7 @@
 			"name": "Dragon Eye Token",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Dragon Eye ",
+			"type": "Token Creature — Dragon Eye",
 			"collector_number": "5",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/5_Dragon Eye Token.jpg"
@@ -1604,7 +1604,7 @@
 			"name": "Aubrey",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Legendary Token Creature â€” Drake ",
+			"type": "Legendary Token Creature — Drake",
 			"collector_number": "14",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/14_Aubrey.jpg"
@@ -1614,7 +1614,7 @@
 			"name": "Orb Wizard",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Artifact Creature â€” Orb Wizard ",
+			"type": "Token Artifact Creature — Orb Wizard",
 			"collector_number": "16",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/16_Orb Wizard.jpg"
@@ -1624,7 +1624,7 @@
 			"name": "Treasure Token",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Artifact Creature â€” Treasure ",
+			"type": "Token Artifact Creature — Treasure",
 			"collector_number": "18",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/18_Treasure Token.jpg"
@@ -1634,7 +1634,7 @@
 			"name": "Sanctuary of Nectars",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Land â€” Sanctuary ",
+			"type": "Land — Sanctuary",
 			"collector_number": "176",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/176_Sanctuary of Nectars.jpg"
@@ -1644,7 +1644,7 @@
 			"name": "Sanctuary of Resonance",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Land â€” Sanctuary ",
+			"type": "Land — Sanctuary",
 			"collector_number": "177",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/177_Sanctuary of Resonance.jpg"
@@ -1654,7 +1654,7 @@
 			"name": "Sanctuary of Moonlight",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Land â€” Sanctuary ",
+			"type": "Land — Sanctuary",
 			"collector_number": "175",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/175_Sanctuary of Moonlight.jpg"
@@ -1664,7 +1664,7 @@
 			"name": "Sanctuary of Scales",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Land â€” Sanctuary ",
+			"type": "Land — Sanctuary",
 			"collector_number": "178",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/178_Sanctuary of Scales.jpg"
@@ -1674,7 +1674,7 @@
 			"name": "Sanctuary of Journeys",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Land â€” Sanctuary ",
+			"type": "Land — Sanctuary",
 			"collector_number": "174",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/174_Sanctuary of Journeys.jpg"
@@ -1684,7 +1684,7 @@
 			"name": "Bygone Monoliths",
 			"rarity": "rare",
 			"mana_cost": "",
-			"type": "Land â€” Fault Plains ",
+			"type": "Land — Fault Plains",
 			"collector_number": "154",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/154_Bygone Monoliths.jpg"
@@ -1694,7 +1694,7 @@
 			"name": "Foreboding Falls",
 			"rarity": "rare",
 			"mana_cost": "",
-			"type": "Land â€” Fault Island ",
+			"type": "Land — Fault Island",
 			"collector_number": "164",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/164_Foreboding Falls.jpg"
@@ -1704,7 +1704,7 @@
 			"name": "Forbidding Spires",
 			"rarity": "rare",
 			"mana_cost": "",
-			"type": "Land â€” Fault Swamp ",
+			"type": "Land — Fault Swamp",
 			"collector_number": "163",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/163_Forbidding Spires.jpg"
@@ -1714,7 +1714,7 @@
 			"name": "Suffocating Path",
 			"rarity": "rare",
 			"mana_cost": "",
-			"type": "Land â€” Fault Mountain ",
+			"type": "Land — Fault Mountain",
 			"collector_number": "171",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/171_Suffocating Path.jpg"
@@ -1724,7 +1724,7 @@
 			"name": "Dreaded Clearing",
 			"rarity": "rare",
 			"mana_cost": "",
-			"type": "Land â€” Fault Forest ",
+			"type": "Land — Fault Forest",
 			"collector_number": "155",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/155_Dreaded Clearing.jpg"
@@ -1733,7 +1733,7 @@
 		{
 			"name": "Mooyan Curry",
 			"rarity": "common",
-			"mana_cost": "{1}{I}",
+			"mana_cost": "{1}{C}",
 			"type": "Instant",
 			"collector_number": "74",
 			"image_uris": {
@@ -1743,8 +1743,8 @@
 		{
 			"name": "Yaiba Robo",
 			"rarity": "common",
-			"mana_cost": "{3}{I}",
-			"type": "Artifact Creature â€” Robot ",
+			"mana_cost": "{3}{C}",
+			"type": "Artifact Creature — Robot",
 			"collector_number": "121",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/121_Yaiba Robo.jpg"
@@ -1753,8 +1753,8 @@
 		{
 			"name": "Blooming Peculiarity",
 			"rarity": "uncommon",
-			"mana_cost": "{I}",
-			"type": "Enchantment â€” Aura ",
+			"mana_cost": "{C}",
+			"type": "Enchantment — Aura",
 			"collector_number": "15",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/15_Blooming Peculiarity.jpg"
@@ -1763,7 +1763,7 @@
 		{
 			"name": "Mark of Insanity",
 			"rarity": "rare",
-			"mana_cost": "{2}{I}",
+			"mana_cost": "{2}{C}",
 			"type": "Instant",
 			"collector_number": "66",
 			"image_uris": {
@@ -1773,8 +1773,8 @@
 		{
 			"name": "Nildiver",
 			"rarity": "uncommon",
-			"mana_cost": "{I}{I}",
-			"type": "Kindred Enchantment â€” Fish Entity ",
+			"mana_cost": "{C}{C}",
+			"type": "Kindred Enchantment — Fish Entity",
 			"collector_number": "76",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/76_Nildiver.jpg"
@@ -1783,8 +1783,8 @@
 		{
 			"name": "Wilmee",
 			"rarity": "common",
-			"mana_cost": "{6}{I}",
-			"type": "Creature â€” Rabbit Warrior ",
+			"mana_cost": "{6}{C}",
+			"type": "Creature — Rabbit Warrior",
 			"collector_number": "115",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/115_Wilmee.jpg"
@@ -1803,7 +1803,7 @@
 		{
 			"name": "Ashen Wisps",
 			"rarity": "common",
-			"mana_cost": "{I}",
+			"mana_cost": "{C}",
 			"type": "Instant",
 			"collector_number": "11",
 			"image_uris": {
@@ -1813,8 +1813,8 @@
 		{
 			"name": "Fyndhorn Betrayer",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Phyrexian Elf ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Phyrexian Elf",
 			"collector_number": "44",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/44_Fyndhorn Betrayer.jpg"
@@ -1823,8 +1823,8 @@
 		{
 			"name": "Groaning Lullaby",
 			"rarity": "rare",
-			"mana_cost": "{I}{I}",
-			"type": "Creature â€” Insect Plant ",
+			"mana_cost": "{C}{C}",
+			"type": "Creature — Insect Plant",
 			"collector_number": "46",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/46_Groaning Lullaby.jpg"
@@ -1833,7 +1833,7 @@
 		{
 			"name": "Moonlight Charm",
 			"rarity": "common",
-			"mana_cost": "{I}",
+			"mana_cost": "{C}",
 			"type": "Instant",
 			"collector_number": "73",
 			"image_uris": {
@@ -1843,8 +1843,8 @@
 		{
 			"name": "Spiteful Coil-Servants",
 			"rarity": "common",
-			"mana_cost": "{1}{I}{I}",
-			"type": "Creature â€” Serpent Wall ",
+			"mana_cost": "{1}{C}{C}",
+			"type": "Creature — Serpent Wall",
 			"collector_number": "97",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/97_Spiteful Coil-Servants.jpg"
@@ -1853,7 +1853,7 @@
 		{
 			"name": "Ego Entwined",
 			"rarity": "rare",
-			"mana_cost": "{I}",
+			"mana_cost": "{C}",
 			"type": "Instant",
 			"collector_number": "35",
 			"image_uris": {
@@ -1863,8 +1863,8 @@
 		{
 			"name": "Reto-Polo",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{I}",
-			"type": "Enchantment â€” Aura ",
+			"mana_cost": "{1}{C}",
+			"type": "Enchantment — Aura",
 			"collector_number": "85",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/85_Reto-Polo.jpg"
@@ -1873,8 +1873,8 @@
 		{
 			"name": "Identity Granter",
 			"rarity": "mythic",
-			"mana_cost": "{2}{I}",
-			"type": "Legendary Planeswalker â€” Peross ",
+			"mana_cost": "{2}{C}",
+			"type": "Legendary Planeswalker — Peross",
 			"collector_number": "50",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/50_Identity Granter.jpg"
@@ -1883,8 +1883,8 @@
 		{
 			"name": "Empty Body Practitioner",
 			"rarity": "common",
-			"mana_cost": "{2}{I}",
-			"type": "Creature â€” Human Monk ",
+			"mana_cost": "{2}{C}",
+			"type": "Creature — Human Monk",
 			"collector_number": "37",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/37_Empty Body Practitioner.jpg"
@@ -1893,8 +1893,8 @@
 		{
 			"name": "Raging Rubigrug",
 			"rarity": "rare",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Beast ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Beast",
 			"collector_number": "82",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/82_Raging Rubigrug.jpg"
@@ -1903,7 +1903,7 @@
 		{
 			"name": "Ferryman's Price",
 			"rarity": "common",
-			"mana_cost": "{1}{I}",
+			"mana_cost": "{1}{C}",
 			"type": "Instant",
 			"collector_number": "43",
 			"image_uris": {
@@ -1913,8 +1913,8 @@
 		{
 			"name": "Dessigry",
 			"rarity": "common",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Fungus Drake ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Fungus Drake",
 			"collector_number": "27",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/27_Dessigry.jpg"
@@ -1923,7 +1923,7 @@
 		{
 			"name": "Woods' Procession",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{I}",
+			"mana_cost": "{1}{C}",
 			"type": "Enchantment",
 			"collector_number": "118",
 			"image_uris": {
@@ -1933,7 +1933,7 @@
 		{
 			"name": "Blank",
 			"rarity": "common",
-			"mana_cost": "{I}",
+			"mana_cost": "{C}",
 			"type": "Sorcery",
 			"collector_number": "14",
 			"image_uris": {
@@ -1943,7 +1943,7 @@
 		{
 			"name": "Edification",
 			"rarity": "common",
-			"mana_cost": "{1}{I}",
+			"mana_cost": "{1}{C}",
 			"type": "Instant",
 			"collector_number": "34",
 			"image_uris": {
@@ -1953,8 +1953,8 @@
 		{
 			"name": "Canyon Crustacean",
 			"rarity": "common",
-			"mana_cost": "{I}",
-			"type": "Creature â€” Crab ",
+			"mana_cost": "{C}",
+			"type": "Creature — Crab",
 			"collector_number": "18",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/18_Canyon Crustacean.jpg"
@@ -1963,350 +1963,13 @@
 		{
 			"name": "Cowering Lightbringer",
 			"rarity": "common",
-			"mana_cost": "{1}{I}",
-			"type": "Creature â€” Human Coward ",
+			"mana_cost": "{1}{C}",
+			"type": "Creature — Human Coward",
 			"collector_number": "24",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/24_Cowering Lightbringer.jpg"
 			}
-		}
+		},
 	]
-[RareSlot(1)]
-2 Pathshaping
-2 Kaln-Ocean Streamliner
-2 Shrouded Pathcensor
-2 Chirps Spice Seeker
-2 Melodia Drifter at Heart
-2 Outlands Chimera
-2 Starling
-2 Cerise Auger of Flow
-2 Called to Eternity
-2 Mass Mutation
-2 Ancient Interference
-2 Probe the Veil
-2 Lithify
-2 Cascading Reflections
-2 Kindred Spirits
-2 Falling Sparks
-2 Soul Splintering
-2 Liminal Ambiguity
-2 Memory Restored
-2 Neverbloom
-2 The Lost Heir
-2 Unveiling
-2 Eschewer of Form
-2 Era, Hymn to Creation
-2 Infraruin Predator
-2 Kaiju Sighting
-2 Interstellar Traveller
-2 Sanctum Trader
-2 Iridescent Summit
-2 One Last Sunset
-2 Against the Night
-2 Shell's Scraping
-2 Swirling Moon
-2 Distant Vulture
-2 Extant Surveyor
-2 Refraction Mech
-2 Soaring Chorus
-2 Malevolent Knowledge
-2 Mirrored Magic
-2 The Demon Within
-2 Godhead's Interdiction
-2 Whimsy Unbound
-2 Sentinel of the Afterlife
-2 Our Fates Change
-2 Caught in the Confusion
-2 Madness Broadcaster
-2 Reflection Tender
-2 The Usurper
-2 The Chanter of Paths
-2 Bygone Monoliths
-2 Foreboding Falls
-2 Forbidding Spires
-2 Suffocating Path
-2 Dreaded Clearing
-2 Mark of Insanity
-2 Planar Boundary
-2 Groaning Lullaby
-2 Ego Entwined
-2 Raging Rubigrug
-1 Lost in Dreams of Life
-1 Winged Turtle
-1 Sundown
-1 Identity Granter
-[UncommonSlot(3)]
-9 Perspective Shift
-9 Morraire Shimmer Patrol
-9 Coiling Jailer
-9 Cydina Storm Drake
-9 Flowsnail
-9 Promise of Hunger
-9 Balutr Runners
-9 Boundless Flight
-9 Calamitous Koi
-9 Omen of Hunger
-9 Homestead Pair
-9 Discover Uncertainty
-9 Iconic Challenger
-9 Unweave
-9 Ignelscor Witch
-9 Kornas Forward
-9 Meirel Evacuator
-9 Unending Exploration
-9 Persisting Timepiece
-9 Inkblot Artist
-9 Reflected Inclination
-9 Wandering Travellers
-9 To Survive in Some Form
-9 Sealed Deepborn
-9 The Depths Talk Loudly
-9 Warping Wolf
-9 Risen Earthdragon
-9 Illuminant Spire
-9 Ivory Spire
-9 Searing Spire
-9 Silent Spire
-9 Twisted Spire
-9 Verdant Spire
-9 Sever the Oracle
-9 Curious Dexteria
-9 Searing Sigils
-9 Sryyn Spawner
-9 Syphroid
-9 Xylem Attendant
-9 Clifftop Pishogue
-9 Unending Toils
-9 Beautiful Headhuntress
-9 Scholigaunt
-9 Incessant Intercession
-9 Duet of Loss and Life
-9 Abstracted Mark
-9 Gradius Option
-9 Blooming Peculiarity
-9 Nildiver
-9 Fyndhorn Betrayer
-9 Reto-Polo
-9 Woods' Procession
-[CommonSlot(10)]
-30 Dust Converter
-30 Avakin Adventurer
-30 Meirel Drifter
-30 Power from Beyond
-30 Calign
-30 Captivate
-30 Adventurous Pair
-30 Emigrating Pilgrim
-30 Drougth Oracle
-30 When Words Dont Work
-30 Experience Cultivator
-30 Towing Steladiuys
-30 Information Recovery Crew
-30 Exuberant Archaeologist
-30 Tepid Tamer
-30 Striking Reflection
-30 Unbothered Alchemist
-30 Scouting Party
-30 Back to Market
-30 Center Mass
-30 Murky Politics
-30 Drifting Crevasse
-30 Drifting Field
-30 Drifting Isle
-30 Drifting Jungle
-30 Drifting Mire
-30 Drifting Peak
-30 Drifting Sands
-30 Wandering Dislocation
-30 Hopeless Summit
-30 Lost Cause
-30 Sieve
-30 Draconic Reflection
-30 Algael-leael
-30 Tellavia Balwar
-30 Writhing Sight
-30 Shadow Eater
-30 Siege Crossbow
-30 Wisped Wings
-30 Mooyan Curry
-30 Yaiba Robo
-30 Wilmee
-30 Ashen Wisps
-30 Moonlight Charm
-30 Spiteful Coil-Servants
-30 Empty Body Practitioner
-30 Ferryman's Price
-30 Dessigry
-30 Blank
-30 Edification
-30 Canyon Crustacean
-30 Cowering Lightbringer
-[WildcardSlot(1)]
-10 Dust Converter
-10 Avakin Adventurer
-10 Meirel Drifter
-10 Power from Beyond
-10 Calign
-10 Captivate
-10 Adventurous Pair
-10 Perspective Shift
-10 Emigrating Pilgrim
-10 Drougth Oracle
-10 Morraire Shimmer Patrol
-10 Coiling Jailer
-10 Cydina Storm Drake
-10 Flowsnail
-10 Promise of Hunger
-10 Balutr Runners
-10 Boundless Flight
-10 Calamitous Koi
-10 Omen of Hunger
-10 Homestead Pair
-10 Discover Uncertainty
-10 When Words Dont Work
-10 Iconic Challenger
-10 Unweave
-10 Ignelscor Witch
-10 Kornas Forward
-10 Meirel Evacuator
-10 Unending Exploration
-10 Persisting Timepiece
-10 Inkblot Artist
-10 Reflected Inclination
-10 Wandering Travellers
-10 Pathshaping
-10 Kaln-Ocean Streamliner
-10 Shrouded Pathcensor
-10 Chirps Spice Seeker
-10 Melodia Drifter at Heart
-10 Outlands Chimera
-10 Starling
-10 Cerise Auger of Flow
-10 Called to Eternity
-10 Mass Mutation
-10 Ancient Interference
-10 Probe the Veil
-10 Lithify
-10 Cascading Reflections
-10 Kindred Spirits
-10 Falling Sparks
-10 Soul Splintering
-10 Liminal Ambiguity
-10 Experience Cultivator
-10 Towing Steladiuys
-10 Information Recovery Crew
-10 Exuberant Archaeologist
-10 Tepid Tamer
-10 Striking Reflection
-10 Unbothered Alchemist
-10 Scouting Party
-10 Back to Market
-10 Center Mass
-10 Murky Politics
-10 Memory Restored
-10 Drifting Crevasse
-10 Drifting Field
-10 Drifting Isle
-10 Drifting Jungle
-10 Drifting Mire
-10 Drifting Peak
-10 Drifting Sands
-10 Neverbloom
-10 The Lost Heir
-10 Unveiling
-10 To Survive in Some Form
-10 Eschewer of Form
-10 Era, Hymn to Creation
-10 Infraruin Predator
-10 Sealed Deepborn
-10 Kaiju Sighting
-10 Interstellar Traveller
-10 The Depths Talk Loudly
-10 Sanctum Trader
-10 Lost in Dreams of Life
-10 Iridescent Summit
-10 One Last Sunset
-10 Winged Turtle
-10 Wandering Dislocation
-10 Sundown
-10 Against the Night
-10 Warping Wolf
-10 Risen Earthdragon
-10 Shell's Scraping
-10 Illuminant Spire
-10 Ivory Spire
-10 Searing Spire
-10 Silent Spire
-10 Twisted Spire
-10 Verdant Spire
-10 Swirling Moon
-10 Sever the Oracle
-10 Curious Dexteria
-10 Searing Sigils
-10 Distant Vulture
-10 Extant Surveyor
-10 Hopeless Summit
-10 Lost Cause
-10 Sieve
-10 Draconic Reflection
-10 Sryyn Spawner
-10 Algael-leael
-10 Syphroid
-10 Tellavia Balwar
-10 Refraction Mech
-10 Writhing Sight
-10 Soaring Chorus
-10 Xylem Attendant
-10 Clifftop Pishogue
-10 Malevolent Knowledge
-10 Shadow Eater
-10 Mirrored Magic
-10 Siege Crossbow
-10 The Demon Within
-10 Unending Toils
-10 Beautiful Headhuntress
-10 Wisped Wings
-10 Scholigaunt
-10 Godhead's Interdiction
-10 Incessant Intercession
-10 Duet of Loss and Life
-10 Abstracted Mark
-10 Whimsy Unbound
-10 Gradius Option
-10 Sentinel of the Afterlife
-10 Our Fates Change
-10 Caught in the Confusion
-10 Madness Broadcaster
-10 Reflection Tender
-10 The Usurper
-10 The Chanter of Paths
-10 Bygone Monoliths
-10 Foreboding Falls
-10 Forbidding Spires
-10 Suffocating Path
-10 Dreaded Clearing
-10 Mooyan Curry
-10 Yaiba Robo
-10 Blooming Peculiarity
-10 Mark of Insanity
-10 Nildiver
-10 Wilmee
-10 Planar Boundary
-10 Ashen Wisps
-10 Fyndhorn Betrayer
-10 Groaning Lullaby
-10 Moonlight Charm
-10 Spiteful Coil-Servants
-10 Ego Entwined
-10 Reto-Polo
-10 Identity Granter
-10 Empty Body Practitioner
-10 Raging Rubigrug
-10 Ferryman's Price
-10 Dessigry
-10 Woods' Procession
-10 Blank
-10 Edification
-10 Canyon Crustacean
-10 Cowering Lightbringer
-[LandSlot(1)]
+
+[cube(15)]
