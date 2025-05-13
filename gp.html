@@ -729,7 +729,7 @@
                         let round_header = document.createElement("span");
                         let round_container = document.createElement("div");
                         round_header.innerText = round_name;
-                        round_header.className = "round-headers";
+                        round_header.className = "round-headers text";
                         round_container.className = "round-container";
                         let round = rounds['swiss'][round_name];
                         for (const game of round) {
@@ -790,7 +790,7 @@
                     let topcut;
                     if (event_data.stage == 'bracket') {
                         const bracket_header = document.createElement('span');
-                        bracket_header.className = "round-headers";
+                        bracket_header.className = "round-headers text";
                         bracket_header.innerText = "Top Cut Bracket";
                         document.getElementById("games").appendChild(bracket_header);
                         topcut = await topCutHelper(rounds); // {players, matches, seedings, stats}
@@ -979,6 +979,7 @@
                         deck_link.href = deck.url;
                         deck_link.innerText = "Deckbuilder";
                         deck_link.className = "deck-link-green deck-icon-shadow";
+                        deck_link.target = "_blank";
                         let deck_edit_icon = document.createElement('img');
                         deck_edit_icon.src = "/img/edit.png";
                         deck_edit_icon.className = "deck-icon-green";
@@ -1287,6 +1288,8 @@
                 let records = {};
                 let match_total = {};
                 let seedings = [];
+                let omw = {};
+                let opps = {};
                 for (const round_name in swiss_rounds) {
                     let round = swiss_rounds[round_name];
                     for (const match of round) {
@@ -1302,9 +1305,32 @@
                             match_total[player][0] += score;
                             match_total[player][1] +=  score < 2 ? 2 : 0;
                         }
+                        let players = Object.keys(match);
+                        let p1 = players[0];
+                        let p2 = players[1];
+                        if (!opps.hasOwnProperty(p1)) opps[p1] = [];
+                        if (!opps.hasOwnProperty(p2)) opps[p2] = [];
+                        opps[p1].push(p2);
+                        opps[p2].push(p1);
                     }
                 }
-                return {records: records, match_total: match_total};
+                for (const player in opps) {
+                    for (const opp of opps[player]) {
+                        console.log(opps);
+                        if (!omw.hasOwnProperty(player)) omw[player] = [];
+                        omw[player].push(records[opp][0]/ records[opp][1]);
+                    }
+                }
+                for (const player in omw) {
+                    let total = 0;
+                    let count=  0;
+                    for (const wr of omw[player]) {
+                        total += wr;
+                        count++;
+                    }
+                    omw[player] = total / count;
+                }
+                return {records: records, match_total: match_total, opps: opps, omw: omw};
             }
 
             async function topCutHelper(rounds) {
@@ -1550,6 +1576,13 @@
                         let seedings_2 = [...seedings];
                         Array.prototype.swiss_sort = function(p) {
                             function compare(a, b) {
+                                console.log("OPPS", p.opps[p.player]);
+                                if (p.opps[p.player].includes(a.player) && !p.opps[p.player].includes(b.player)) {
+                                    return -1;
+                                }
+                                if (!p.opps[p.player].includes(a.player) && p.opps[p.player].includes(b.player)) {
+                                    return 1;
+                                }
                                 if (Math.abs(p.record[0] - a.record[0]) > Math.abs(p.record[0] - b.record[0])) {
                                     return 1;
                                 }
@@ -1574,6 +1607,12 @@
                                 if (Math.abs(p.match_total[1] - a.match_total[1]) < Math.abs(p.match_total[1] - b.match_total[1])) {
                                     return -1;
                                 }
+                                if (Math.abs(p.omw - a.omw) > Math.abs(p.omw - b.omw)) {
+                                    return 1;
+                                }
+                                if (Math.abs(p.omw - a.omw) < Math.abs(p.omw - b.omw)) {
+                                    return -1;
+                                }
                                 return 0;
                             }
                             this.sort(compare);
@@ -1593,15 +1632,27 @@
                                 break;
                             }
                         }
+                        if (!in_games.includes(p1.player)) {
+                            let new_game = {};
+                            new_game[p1.player] = '-';
+                            new_game["Bye"] = '-';
+                            in_games.push(p1.player);
+                            games.push(new_game);
+                        }
                     }
                     rounds.swiss[`Round ${Object.keys(rounds.swiss).length + 1}`] = games;
-                    console.log(rounds);
-                    await setDoc(doc(db, 'events', event), {
-                        decks:  event_data.decks,
-                        rounds: JSON.stringify(rounds),
-                        num_rounds: event_data.num_rounds,
-                        stage: event_data.stage
-                    });
+                    let discord_msg = `Round ${Object.keys(rounds.swiss).length + 1} of ${event}. You have until <t:${Math.floor(Date.now() / 1000) + 259200}:f> to complete your matches. Contact @_hervor_ for extensions.`;
+                    for (const game of games) {
+                        discord_msg += `\n@${Object.keys(game)[0]} vs @${Object.keys(game)[1]}`;
+                    }
+                    console.log(discord_msg);
+                    navigator.clipboard.writeText(discord_msg);
+                    // await setDoc(doc(db, 'events', event), {
+                    //     decks:  event_data.decks,
+                    //     rounds: JSON.stringify(rounds),
+                    //     num_rounds: event_data.num_rounds,
+                    //     stage: event_data.stage
+                    // });
                     reload();
                 } 
                 else if (event_data.stage == "swiss") {
@@ -1765,7 +1816,7 @@
                     await setDoc(doc(db, 'events', event), {
                         decks:  event_data.decks,
                         rounds: JSON.stringify(rounds),
-                        num_rounds: event_data.num_rounds,
+                        num_rounds: numRounds(in_games.length),
                         stage: "swiss"
                     });
                     reload();
@@ -1775,9 +1826,20 @@
                 }
             }
 
-            if (sessionid) {
-                reload();
+            function numRounds(n) {
+                if (n < 17) {
+                    return 3;
+                }
+                if (n < 32) {
+                    return 4;
+                }
+                if (n < 64) {
+                    return 5;
+                }
+                return 6;
             }
+
+            reload();
         </script>
     </body>
 </html>
