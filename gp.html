@@ -1647,12 +1647,12 @@
                     }
                     console.log(discord_msg);
                     navigator.clipboard.writeText(discord_msg);
-                    // await setDoc(doc(db, 'events', event), {
-                    //     decks:  event_data.decks,
-                    //     rounds: JSON.stringify(rounds),
-                    //     num_rounds: event_data.num_rounds,
-                    //     stage: event_data.stage
-                    // });
+                    await setDoc(doc(db, 'events', event), {
+                        decks:  event_data.decks,
+                        rounds: JSON.stringify(rounds),
+                        num_rounds: event_data.num_rounds,
+                        stage: event_data.stage
+                    });
                     reload();
                 } 
                 else if (event_data.stage == "swiss") {
