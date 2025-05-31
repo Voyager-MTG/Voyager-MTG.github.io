@@ -309,15 +309,15 @@
 		</div>
         <div class="page-container">
             <div class="tab-select" id="tab-select">
-                <div class="tab-btn" id="users-tab-select" onclick="changeTab('users')">
+                <div class="tab-btn" id="users-tab-select" >
                     <img src="img/community.png" class="tab-switch-icon">
                     <span>Users</span>
                 </div>
-                <div class="tab-btn" id="decks-tab-select" onclick="changeTab('decks')">
+                <div class="tab-btn" id="decks-tab-select" >
                     <img src="img/deck.png" class="tab-switch-icon">
                     <span>Decks</span>
                 </div>
-                <div class="tab-btn" id="events-tab-select" onclick="changeTab('events')">
+                <div class="tab-btn" id="events-tab-select">
                     <img src="img/trophy.png" class="tab-switch-icon">
                     <span>Events</span>
                 </div>
@@ -420,8 +420,9 @@
 				window.location.href = url;
 			}
 
-            function changeTab(tab) {
-                window.location.href = "community.html?tab=" + tab;
+            function changeTab(_tab) {
+                tab = _tab;
+                makeTab();
             }
         </script>
         <script type="module">
@@ -452,8 +453,30 @@
             let decks = {};
             const events = ["GP1", "League"];
             const urlParams = new URLSearchParams(window.location.search);
-            const tab = urlParams.get('tab');
-            document.getElementById(`${tab}-tab-select`).className += " tab-btn-active";
+            let tab = urlParams.get('tab');
+            let events_html;
+            let decks_html;
+            let users_html;
+            let initial_load = true;
+
+            document.getElementById("users-tab-select").addEventListener("click", (e) => {
+                tab = "users";
+                document.getElementById("main-tab").innerHTML = "";
+                reload();
+            });
+
+            document.getElementById("events-tab-select").addEventListener("click", (e) => {
+                tab = "events";
+                document.getElementById("main-tab").innerHTML = "";
+                reload();
+            });
+
+            document.getElementById("decks-tab-select").addEventListener("click", async (e) => {
+                tab = "decks";
+                document.getElementById("main-tab").innerHTML = "";
+                reload();
+            });
+
             // console.log
 
             if (sessionid) {
@@ -478,32 +501,51 @@
             let all_users = [];
             let all_events_docs;
             let all_events = [];
+
             
             async function reload() {
-                q = query(collection(db, "users"));
-                all_users_docs = await getDocs(q);
-                all_decks = [];
-                all_users = [];
-                q = query(collection(db, "events"));
-                all_events_docs = await getDocs(q);
-                all_events = [];
-                all_users_docs.forEach((doc) => {
-                    const data = doc.data();
-                    all_users.push(data);
-                    for (const deck of JSON.parse(data.decks)) {
-                        all_decks.push({...deck, "user": data.username, "event": false});
-                    }
-                    // all_decks.push(...JSON.parse(data.decks));
-                });
-                all_events_docs.forEach((doc) => {
-                    const data = doc.data();
-                    all_events.push(data);
-                    for (const user in JSON.parse(data.decks)) {
-                        let deck = JSON.parse(data.decks)[user];
-                        all_decks.push({...deck, "user": user, "event": true});
-                    }
-                });
-                makeTab(tab); 
+                document.getElementById(`events-tab-select`).className = "tab-btn";
+                document.getElementById(`users-tab-select`).className = "tab-btn";
+                document.getElementById(`decks-tab-select`).className = "tab-btn";
+                document.getElementById(`${tab}-tab-select`).className += " tab-btn-active";
+                if (initial_load) {
+                    q = query(collection(db, "users"));
+                    all_users_docs = await getDocs(q);
+                    all_decks = [];
+                    all_users = [];
+                    q = query(collection(db, "events"));
+                    all_events_docs = await getDocs(q);
+                    all_events = [];
+                    all_users_docs.forEach((doc) => {
+                        const data = doc.data();
+                        all_users.push(data);
+                        for (const deck of JSON.parse(data.decks)) {
+                            all_decks.push({...deck, "user": data.username, "event": false});
+                        }
+                        // all_decks.push(...JSON.parse(data.decks));
+                    });
+                    all_events_docs.forEach((doc) => {
+                        const data = doc.data();
+                        all_events.push(data);
+                        for (const user in JSON.parse(data.decks)) {
+                            let deck = JSON.parse(data.decks)[user];
+                            all_decks.push({...deck, "user": user, "event": true});
+                        }
+                    });
+                    decks_html = await makeDecksTab();
+                    events_html = makeEventTab();
+                    users_html = makeUsersTab();
+                }
+                if (tab == "events") {
+                    document.getElementById("main-tab").appendChild(events_html);
+                }
+                if (tab == "decks") {
+                    document.getElementById("main-tab").appendChild(decks_html);
+                }
+                if (tab == "users") {
+                    document.getElementById("main-tab").appendChild(users_html);
+                }
+                initial_load = false;
             }
 
             async function makeTab(tab) {

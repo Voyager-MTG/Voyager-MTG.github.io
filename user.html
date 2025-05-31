@@ -94,6 +94,10 @@
             position: relative;
             top: 60px;
             right: 14px;
+            background-color: #333;
+            height: fit-content; 
+            padding: 2px;
+            border-radius: 20px;
         }
         .deck-preview-img {
             max-height: 300px;
@@ -503,7 +507,7 @@
                         }
                         for (const color of deck.colors) {
                             let color_ele = document.createElement('img');
-                            color_ele.src = `img/mana_${color}.png`;
+                            color_ele.src = `/img/mana_${color}.png`;
                             color_ele.className = "mana-img";
                             colors_container.appendChild(color_ele);
                         }
