@@ -1028,6 +1028,7 @@
 			let card_types = {};
 			const mv_labels = ["0", "1", "2", "3", "4", "5", "6+"];
 			const total_length  = deck.length + sideboard.length + sanctum.length;
+			let total_nonlands = 0;
 
 			const mana_curve_chart = document.createElement("canvas");
 			mana_curve_chart.id = "mana-curve-chart";
@@ -1055,6 +1056,7 @@
 					} else {
 						color_cards["M"] += 1;
 					}
+					total_nonlands++;
 				}
 				
 			}			
@@ -1073,6 +1075,25 @@
 					} else {
 						color_cards["M"] += 1;
 					}
+					total_nonlands++;
+				}
+			}
+
+			for (const card of sanctum) {
+				const card_stats = JSON.parse(card);
+				let card_mv = convertToMV(card_stats.cost);
+				const color = card_stats.color;
+				if (!card_stats.type.includes("Land")) {
+					card_mv = Math.min(6, card_mv);
+					mana_values[card_mv] += 1;
+					if (color_cards[color] != null) {
+						color_cards[color] += 1;
+					} else if (color == "") {
+						color_cards["C"] += 1;
+					} else {
+						color_cards["M"] += 1;
+					}
+					total_nonlands++;
 				}
 			}
 
@@ -1109,7 +1130,7 @@
 					legend: {display: false},
 					title: {
 						display: true,
-						text: `       Mana Curve       (Average: ${mv_average(mana_values, total_length).toFixed(2)})`
+						text: `       Mana Curve       (Average: ${mv_average(mana_values, total_nonlands).toFixed(2)})`
 					}, 
 					plugins: {
 						labels: {
