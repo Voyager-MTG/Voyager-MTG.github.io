@@ -10,12 +10,8 @@ import card_edge_trimmer
 import list_to_list
 import print_draft_file
 import print_html_for_index
-import print_html_for_search
-import print_html_for_preview
-import print_html_for_card
 import print_html_for_set
 import print_html_for_sets_page
-import print_html_for_deckbuilder
 
 import markdown
 
@@ -213,9 +209,7 @@ for code in set_codes:
 	#F: list_to_list.convertList is a long and important function
 	list_to_list.convertList(code)
 
-#CE: print html for card page
-print_html_for_card.generateHTML()
-print(f"HTML file for card display saved as card.html")
+
 
 #CE: only create set_order file if no custom one is provided
 custom_order = os.path.join('lists', 'set-order.json')
@@ -229,11 +223,7 @@ if not os.path.exists(custom_order):
 for code in set_codes:
 	#F: more important functions
 	#CE: moving this down after we create the 'set-order.json' file
-	if not os.path.exists(os.path.join('sets', code + '-files', 'ignore.txt')):
-		print_html_for_preview.generateHTML(code)
 	print_html_for_set.generateHTML(code)
 
 print_html_for_sets_page.generateHTML()
-print_html_for_search.generateHTML(set_codes)
-print_html_for_deckbuilder.generateHTML(set_codes)
 print_html_for_index.generateHTML()

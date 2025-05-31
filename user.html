@@ -77,7 +77,7 @@
             /* grid-template-rows: 1fr 2fr 1fr; */
             background-color: #f3f3f3;
             border-radius: 8px; 
-            /* height: fit-content; */
+            height: fit-content;
             padding: 5px;
             align-items: center;
             justify-items: center;
@@ -94,10 +94,6 @@
             position: relative;
             top: 60px;
             right: 14px;
-            background-color: #333;
-            height: fit-content; 
-            padding: 2px;
-            border-radius: 20px;
         }
         .deck-preview-img {
             max-height: 300px;
@@ -156,11 +152,12 @@
             color: white;
             padding: 2px 6px 2px 6px;
             border-radius: 8px;
+            font-weight: bold;
             display: grid;
             grid-template-columns: 2fr 1fr;
             align-items: center;
             justify-items: center;
-            font-size: 28px;    
+            font-size: 38px;    
         }  
         .deck-section-header {
             font-size: 60px;
@@ -187,10 +184,10 @@
         .event-link {
             background-color: #1652e0;
             color: white;
-            padding: 12px;
+            padding: 8px;
             border-radius: 8px;
-            font-size: 16px;
-            text-decoration: underline;
+            font-size: 20px;
+            font-weight: bold;
             text-align: center;
             margin: 20px;
             height: fit-content;
@@ -235,8 +232,8 @@
             grid-template-columns: 5fr 1fr;
             align-items: center;
             justify-items: center;
-            font-size: 24px; 
-            /* border: 2px solid #333;
+            font-size: 22px; 
+            /* border: 2px solid #333;  
             box-shadow: 2px 2px 1px #333; */
         }
         .deck-link-green .deck-icon-green {
@@ -251,47 +248,7 @@
         }
         .mana-img {
             max-height: 26px;
-            margin: 2px;
-        }
-        #modal-container {
-            display: none; 
-            position: fixed; 
-            z-index: 1; 
-            padding-top: 70px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto; 
-            background-color: rgb(0,0,0); 
-            background-color: rgba(0,0,0,0.4); 
-        }
-        #modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 50%;
-            border-radius: 10px;
-            border: solid #777 3px;
-        }
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            margin-left: 30px;
-        }
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .submit-modal {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
+            margin-top: 5px;
         }
     </style>
     <style id="text-style">
@@ -318,34 +275,18 @@
         <div class="page-container">
             <div class="top-section">
                 <div class="username text" id="username"></div>
+                <div class="deck-section-header text">Decks</div>
             </div>
-            <div class="deck-section-header text">My Decks</div>
             <hr>
             <div class="decks-container" id="decks">
                 <!-- test -->
             </div>
-            <div class="deck-section-header text">My Collections</div>
-            <hr>
-            <div class="collections-container" id="colls">
-                <!-- test -->
-            </div>
         </div>
-        <div id="modal-container">
-			<div id="modal-content" class="popout">
-				<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
-			</div>
-		</div>
         <script>
             let gradients = null;
             let raw_gradients = null;
             let gradTop = null;
             let gradBottom = null;
-            modal = document.getElementById("modal-container");
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    document.getElementById('modal-container').style.display = 'none';
-                }
-            }
             document.addEventListener("DOMContentLoaded", async function () {
                 try {
                     const response = await fetch('./resources/gradients.json');
@@ -399,14 +340,6 @@
 
                 // setGradient();
             }
-            document.getElementById("search").addEventListener("keypress", function(event) {
-				if (event.key === "Enter") {
-					event.preventDefault();
-					const url = new URL('search', window.location.origin);
-					url.searchParams.append('search', document.getElementById("search").value);
-					window.location.href = url;
-				}
-			});
         </script>
         <script type="module">
             // Import the functions you need from the SDKs you need
@@ -426,30 +359,32 @@
                 appId: "1:411191248476:web:591349be169d823e5f8899",
                 measurementId: "G-TQ1L48F25M"
             };
-
-            const color_bgs = {
-                white: "#"
-            }
             
             // Initialize Firebase
             const app = initializeApp(firebaseConfig);
             const db = getFirestore(app);
             let username = "";
-            let password = "";
-            let sessionid = localStorage.getItem('settings.session');
             let decks = {};
-            const events = ["GP1", "League"];
-            // console.log
+            let logged_in = false;
+            let sessionid = localStorage.getItem('settings.session');
+            let username2;
 
-            if (!sessionid) {
-                window.location.href = "/login";
+
+            username = decodeURIComponent(window.location.href.split("?user=")[1]);
+            console.log(username);
+
+            if (sessionid != null) {
+                const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+                    let data = docSnap.data();
+                    username2 = data.username;
+                });
+            } else {
+                username2 = null;
             }
 
-            const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-                let data = docSnap.data();
-                username = data.username;
-                password = data.password;
-            });
+            if (username == username2) {
+                logged_in = true;
+            }
 
             await getDoc(doc(db, 'users', username)).then(docSnap => {
                 let data = docSnap.data();
@@ -458,14 +393,12 @@
 
             document.getElementById("username").innerText = username;
             document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-
             
             async function reload() {
                 const deck_data = await getDoc(doc(db, 'users', username)).then(async docSnap => {
                     let user_data = docSnap.data();
                     let colls;
                     let used_formats = [];
-                    document.title = username;
                     let decks = JSON.parse(user_data.decks);
                     if (user_data.colls) { 
                         colls = JSON.parse(user_data.colls);
@@ -475,19 +408,27 @@
                     console.log(decks);
                     document.getElementById('decks').innerHTML = "";
                     for (const deck of decks) {
-
+                        let deck_submit_text;
+                        let deck_delete_icon;
                         if (!used_formats.includes(deck.format)) {
                             used_formats.push(deck.format);
-                            const full_format_container = createFormatContainer(deck.format);
-                            document.getElementById('decks').appendChild(full_format_container);
+                            let format_container = document.createElement("div");
+                            format_container.className = "format-container";
+                            format_container.id = deck.format;
+                            let format_header = document.createElement("div");
+                            format_header.innerText = deck.format;
+                            format_header.className = "format-header";
+                            let divider = document.createElement("hr");
+                            document.getElementById('decks').appendChild(format_header);
+                            document.getElementById('decks').appendChild(divider);
+                            document.getElementById('decks').appendChild(format_container);
                         }
-
-                        document.getElementById(deck.format).appendChild(createDeckContainer(deck));
-
-                    }
-                    for (const deck of colls) {
+                        let full_deck_container = document.createElement('div');
+                        full_deck_container.className = "full-deck-container";
                         let deck_container = document.createElement('div');
                         deck_container.className = "deck-container";
+                        let colors_container = document.createElement('div');
+                        colors_container.className = "colors-container";
                         let deck_preview = document.createElement('img');
                         deck_preview.src = deck.previewimg;
                         deck_preview.className = "deck-preview-img";
@@ -499,195 +440,98 @@
                         deck_name.className = "deck-name";
                         deck_name.innerText = deck.name;
                         let deck_btns = document.createElement('div');
-                        deck_btns.className = "coll-buttons";
+                        if (logged_in) deck_btns.className = "deck-buttons";
+                        else deck_btns.className = "deck-buttons-logged-out";
                         let deck_link = document.createElement('a');
                         deck_link.href = deck.url;
                         let deck_edit_icon = document.createElement('img');
-                        deck_edit_icon.src = "/img/create.png";
-                        deck_edit_icon.className = "deck-icon-green";
-                        deck_link.innerText = "Create Deck";
-                        deck_link.className = "deck-link-green deck-icon-shadow";
+                        deck_edit_icon.src = "/img/edit.png";
+                        deck_edit_icon.className = !logged_in ? "deck-icon-green" : "deck-icon-green deck-icon-shadow";
+                        if (!logged_in) {
+                            deck_link.innerText = "Edit in Deckbuilder";
+                            deck_link.className = "deck-link-green deck-icon-shadow";
+                        }
                         deck_link.appendChild(deck_edit_icon);
-                        let deck_delete_icon = document.createElement('img');
-                        deck_delete_icon.src = "/img/trash.png";
-                        deck_delete_icon.className = "deck-icon-red deck-icon-shadow";
-                        deck_delete_icon.onclick = async function() {
-                            let new_decks = decks;
-                            // let index = 0;
-                            let user_deck = {};
-                            console.log(user_data.decks);
-                            for (let i = 0; i < decks.length; i++) {
-                                user_deck = decks[i];
-                                console.log(user_deck, i, deck.name);
-                                if (user_deck["name"] == deck.name) {
-                                    new_decks.splice(i,1);
-                                }
-                                // index += 1;
+                        if (logged_in) {
+                            deck_submit_text = document.createElement("div");
+                            deck_submit_text.innerText = "GP1";
+                            deck_submit_text.className = "deck-link deck-icon-shadow";
+                            let deck_submit_icon = document.createElement('img');
+                            deck_submit_icon.src = "/img/export-white.png";
+                            deck_submit_icon.className = "deck-icon-blue";
+                            deck_submit_text.style.cursor = "pointer";
+                            deck_submit_text.onclick = async function() {
+                                await getDoc(doc(db, "events", "GP1")).then(async docSnap2 => {
+                                    let tourndata = docSnap2.data();
+                                    let decks_ = JSON.parse(tourndata.decks);
+                                    decks_[username] = deck;
+                                    await setDoc(doc(db, "events", "GP1"), {
+                                        decks: JSON.stringify(decks_)
+                                    });
+                                });
+                                alert("Submitted deck " + deck.name + "to GP1!");
                             }
-                            await setDoc(doc(db, "users", username), {
-                                username: username,
-                                password: password,
-                                decks: JSON.stringify(new_decks)
-                            });
-                            alert("Deck Deleted!");
-                            reload();
+                            deck_submit_text.appendChild(deck_submit_icon);
+                            deck_delete_icon = document.createElement('img');
+                            deck_delete_icon.src = "/img/trash.png";
+                            deck_delete_icon.className = "deck-icon-red deck-icon-shadow";
+                            deck_delete_icon.onclick = async function() {
+                                let new_decks = decks;
+                                // let index = 0;
+                                let user_deck = {};
+                                console.log(user_data.decks);
+                                for (let i = 0; i < decks.length; i++) {
+                                    user_deck = decks[i];
+                                    console.log(user_deck, i, deck.name);
+                                    if (user_deck["name"] == deck.name) {
+                                        new_decks.splice(i,1);
+                                    }
+                                    // index += 1;
+                                }
+                                await setDoc(doc(db, "users", username), {
+                                    username: username,
+                                    password: password,
+                                    decks: JSON.stringify(new_decks)
+                                });
+                                alert("Deck Deleted!");
+                                reload();
+                            }
                         }
                         deck_btns.appendChild(deck_link);
-                        // deck_btns.appendChild(deck_submit_text);
-                        deck_btns.appendChild(deck_delete_icon);
+                        if (logged_in) {
+                            deck_btns.appendChild(deck_submit_text);
+                            deck_btns.appendChild(deck_delete_icon);
+                        }
+                        for (const color of deck.colors) {
+                            let color_ele = document.createElement('img');
+                            color_ele.src = `img/mana_${color}.png`;
+                            color_ele.className = "mana-img";
+                            colors_container.appendChild(color_ele);
+                        }
+                        deck_btns.appendChild(deck_link);
+                        if (logged_in) {
+                            deck_btns.appendChild(deck_submit_text);
+                            deck_btns.appendChild(deck_delete_icon);
+                        }
                         deck_container.appendChild(deck_name);
                         deck_container.appendChild(deck_preview);
                         deck_container.appendChild(deck_btns);
-                        document.getElementById('colls').appendChild(deck_container);
+                        full_deck_container.appendChild(deck_container);
+                        full_deck_container.appendChild(colors_container);
+                        document.getElementById(deck.format).appendChild(full_deck_container);
                     }
                 });
             }
 
-            function createFormatContainer(format_name) {
-                const full_format_container = document.createElement("div");
-                const format_container = document.createElement("div");
-
-                format_container.className = "format-container";
-                format_container.id = format_name;
-
-                const format_header = document.createElement("div");
-                format_header.innerText = format_name;
-                format_header.className = "format-header";
-
-                let divider = document.createElement("hr");
-
-                full_format_container.appendChild(format_header);
-                full_format_container.appendChild(divider);
-                full_format_container.appendChild(format_container);
-
-                return full_format_container;
-            }
-
-            function createDeckContainer(deck) {
-                let full_deck_container = document.createElement('div');
-                full_deck_container.className = "full-deck-container";
-
-                let deck_container = document.createElement('div');
-                deck_container.className = "deck-container";
-
-                let colors_container = document.createElement('div');
-                colors_container.className = "colors-container";
-
-                let deck_preview = document.createElement('img');
-                deck_preview.src = deck.previewimg;
-                deck_preview.onclick = function() {
-                    window.location.href = deck.url;
-                }
-
-                deck_preview.style.cursor = "pointer";
-                deck_preview.className = "deck-preview-img";
-
-                let deck_name = document.createElement('div');
-                deck_name.className = "deck-name";
-                deck_name.innerText = deck.name;
-
-                let deck_btns = document.createElement('div');
-                deck_btns.className = "deck-buttons";
-
-                let deck_link = document.createElement('a');
-                deck_link.href = deck.url;
-                let deck_edit_icon = createDeckIcon("edit", "green");
-
-                deck_link.appendChild(deck_edit_icon);
-                let deck_submit_text = createDeckIconText("export-white", "blue", "Submit!", "");
-                deck_submit_text.style.cursor = "pointer";
-                deck_submit_text.onclick = async function() {
-
-                    document.getElementById('modal-container').style.display = 'block';
-                    let modal_content = document.getElementById('modal-content');
-                    let content_container = document.createElement("div");
-                    content_container.className = "submit-modal";
-                    modal_content.innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                    
-                    for (const event of events) {
-                        let deck_submit_text = createDeckIconText("export-white", "blue", "Submit to " + event, "");
-
-                        deck_submit_text.onclick = async function() {
-                            await getDoc(doc(db, "events", event)).then(async docSnap2 => {
-                                let tourndata = docSnap2.data();
-                                let decks_ = JSON.parse(tourndata.decks);
-                                decks_[username] = deck;
-                                await setDoc(doc(db, "events", event), {
-                                    decks: JSON.stringify(decks_)
-                                });
-                            });
-                            alert("Submitted deck " + deck.name + " to" + event + "!");
-                        }
-
-                        content_container.appendChild(deck_submit_text);
-                    }
-                    modal_content.appendChild(content_container);
-                }
-
-                let deck_delete_icon = createDeckIcon("trash", "red");
-
-                deck_delete_icon.onclick = async function() {
-                    let new_decks = decks;
-                    // let index = 0;
-                    let user_deck = {};
-                    for (let i = 0; i < decks.length; i++) {
-                        user_deck = decks[i];
-                        console.log(user_deck, i, deck.name);
-                        if (user_deck["name"] == deck.name) {
-                            new_decks.splice(i,1);
-                        }
-                        // index += 1;
-                    }
-                    await setDoc(doc(db, "users", username), {
-                        username: username,
-                        password: password,
-                        decks: JSON.stringify(new_decks)
-                    });
-                    alert("Deck Deleted!");
-                    reload();
-                }
-
-                for (const color of deck.colors) {
-                    let color_ele = document.createElement('img');
-                    color_ele.src = `img/mana_${color}.png`;
-                    color_ele.className = "mana-img";
-                    colors_container.appendChild(color_ele);
-                }
-
-                deck_btns.appendChild(deck_link);
-                deck_btns.appendChild(deck_submit_text);
-                deck_btns.appendChild(deck_delete_icon);
-                deck_container.appendChild(deck_name);
-                deck_container.appendChild(deck_preview);
-                deck_container.appendChild(deck_btns);
-                full_deck_container.appendChild(deck_container);
-                full_deck_container.appendChild(colors_container);
-                return (full_deck_container);
-            }
-
-            function createDeckIcon(img, color) {
-                const deck_icon = document.createElement('img');
-                deck_icon.src = `/img/${img}.png`;
-                deck_icon.className = `deck-icon-${color} deck-icon-shadow`;
-
-                return deck_icon;
-            }
-
-            function createDeckIconText(img, color, text, link) {
-                let deck_icon_text = document.createElement("div");
-                deck_icon_text.innerText = text;
-                deck_icon_text.className = `deck-link${link} deck-icon-shadow`;
-
-                let deck_icon = document.createElement('img');
-                deck_icon.src = `/img/${img}.png`;
-                deck_icon.className = `deck-icon-${color}`;
-
-                deck_icon_text.appendChild(deck_icon);
-
-                return deck_icon_text;
-            }
-
             reload();
+            document.getElementById("search").addEventListener("keypress", function(event) {
+				if (event.key === "Enter") {
+					event.preventDefault();
+					const url = new URL('search', window.location.origin);
+					url.searchParams.append('search', document.getElementById("search").value);
+					window.location.href = url;
+				}
+			}); 
         </script>
     </body>
 </html>

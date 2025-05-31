@@ -1,11 +1,15 @@
 ﻿<html>
 <head>
-	<title>Card</title>
-	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
-	<link rel="stylesheet" href="/resources/mana.css">
-	<link rel="stylesheet" href="/resources/header.css">
+  <title>The Wonderlands’ Wishes</title>
+  <link rel="icon" type="image/x-icon" href="/sets/WAW-files/icon.png">
+  <link rel="stylesheet" href="/resources/mana.css">
+  <link rel="stylesheet" href="/resources/header.css">
 </head>
 <style>
+		@font-face {
+			font-family: 'Beleren Small Caps';
+			src: url('/resources/beleren-caps.ttf');
+		}
 	@font-face {
 		font-family: Beleren;
 		src: url('/resources/beleren.ttf');
@@ -15,16 +19,23 @@
 		overscroll-behavior: none;
 		margin: 0px;
 		background-color: #f3f3f3;
+		background-position: center;
+		background-attachment: fixed;
+		background-size: cover;
+	
 	}
-	a {
-		text-decoration: none;
-	}
-	.banner-container {
+	.banner {
 		width: 100%;
 		background-color: #bbbbbb;
-		display: flex;
-		justify-items: center;
+		border-bottom: 3px solid black;
+	}
+	.banner-container {
+		width: 85%;
+		max-width: 1100px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 		align-items: center;
+		margin: auto;
 	}
 	.set-banner {
 		font-family: Beleren;
@@ -32,25 +43,109 @@
 		gap: 30px;
 		align-items: center;
 		justify-items: center;
-		font-size: 40px;
+		font-size: 26px;
 		color: #171717;
 		margin: auto;
 		padding-top: 10px;
 		padding-bottom: 10px;
+		justify-self: left;
+		width: 100%;
+		white-space: nowrap;
 	}
 	.set-banner img {
-		width: 100px;
+		width: 50px;
+	}
+	.set-banner a {
+		font-size: 18px;
+		padding-top: 6px;
+		color: #1338be;
+		text-decoration: none;
+	}
+	.set-banner a:hover {
+		color: #0492c2;
+	}
+	.select-text {
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		gap: 8px;
+		font-size: 14.5px;
+		justify-self: right;
+		text-align: center;
+	}
+	select {
+		background-color: #fafafa;
+		border: 1px solid #656565;
+		border-radius: 8px;
+		box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+		text-align: center;
+		color: #171717;
+		font-size: 13px;
+		height: 30px;
+	}
+	.button-container {
+		width: 50%;
+		max-width: 900px;
+		margin: auto;
+		padding: 15px 0 5px 0;
+		border-bottom: 2px solid #171717;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.button-container button {
+		font-family: Beleren;
+		font-size: 30px;
+		width: 100%;
+		justify-self: center;
+		border: none;
+		background: none;
+		cursor: pointer;
+	}
+	.button-container button:hover {
+		color: #797979;
+	}
+	.button-container button:disabled {
+		color: #797979;
+		cursor: auto;
+	}
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.splash-container {
+		width: 70%;
+		max-width: 1200px;
+		margin: auto;
+		justify-items: center;
+	}
+	.image-grid-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		width: 70%;
+		max-width: 1200px;
+		margin: auto;
+		gap: 5px;
+		justify-items: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	@media ( max-width: 750px ) {
+		.image-grid-container {
+			grid-template-columns: 1fr 1fr;  
+		}
 	}
 	.image-grid {
-		padding-top: 40px;
 		width: 70%;
-		max-width: 1000px;
 		margin: auto;
 		display: grid;
-		grid-template-columns: minmax(200px, 2fr) minmax(200px, 2.5fr);
-		gap: 30px;
+		grid-template-columns: minmax(150px, 1fr) minmax(300px, 2fr);
+		gap: 50px;
 		padding-bottom: 10px;
-		justify-items: center;
+		justify-items: left;
 	}
 	.image-grid img {
 		position: relative;
@@ -58,7 +153,6 @@
 	.card-image {
 		float: left;
 		width: 100%;
-		max-width: 375px;
 		height: auto;
 		display: block;
 	}
@@ -74,8 +168,6 @@
 		height: fit-content;
 		min-height: 75%;
 		margin-top: 3%;
-		display: flex;
-		flex-direction: column;
 	}
 	.card-text div {
 		white-space: normal;
@@ -90,42 +182,20 @@
 		font-size: 20px;
 		white-space: pre-wrap;
 	}
-	.name-cost {
-		font-family: beleren;
-	}
 	.card-text .type {
 		font-size: 16px;
 	}
 	.card-text .pt {
 		font-weight: bold;
 	}
-	.designer-notes {
-		padding-top: 10px;
-		border-top: 1px solid #171717;
-	}
 	.card-text br {
 		content: "";
 		display: block;
 		margin-bottom: 5px;
 	}
-	.card-text .printings {
-		margin-top: auto;
-		font-size: 12px;
-		font-weight: bold;
-		padding-bottom: 0px;
-	}
-	.printings {
-		display: none;
-	}
-	.printings a {
-		color: #1338be;
-		text-decoration: none;
-	}
-	.printings a:hover {
-		color: #0492c2;
-	}
 	.img-container {
 		position: relative;
+		width: 100%;
 		align-self: center;
 	}
 	.img-container img {
@@ -151,43 +221,23 @@
 		background-size: contain;
 		background-position: center;
 	}
-	.img-container .h-img {
-		transform: rotate(90deg);
-		width: 80%;
+	.img-container .hidden-text {
+		position: absolute;
+		font-family: Beleren;
+		top: 5%;
+		left: 9%;
+		font-size: .97vw;
+		color: rgba(0, 0, 0, 0);
 	}
-	.img-container a {
-		height: 100%;
-		display: grid;
-		justify-self: center;
-		align-items: center;
-		justify-items: center;
+	h1 {
+		font-family: 'Beleren Small Caps';
+		font-size: 48px;
+		margin: 24px 0;
 	}
-	.img-container a > * {
-		grid-row: 1;
-		grid-column: 1;
-	}
-	.hidden {
-		display: none;
-	}
-	.add-icon {
-		max-height: 14px;
-	}
-	.add-to-deck {
-		border: 3px solid rgb(19, 88, 19);
-		border-radius: 8px;
-		background-color: rgb(91, 196, 93);
-		color: white;
-		font-weight: bold;
-		font-size: 12px;
-		padding: 5px;
-		width: fit-content;
-		align-items: center;
-		justify-items: center;
-		display: flex;
-		gap: 10px;
-		cursor: pointer;
-		margin: 5px;
-		float: right;
+	h2 {
+		font-family: 'Beleren';
+		font-size: 30px;
+		margin: 15px 0;
 	}
 </style>
 <body>
@@ -202,21 +252,36 @@
 			<a href="/account" id="account-link"><img src="/img/account.png" class="sg-icon">Account</a>
 		</div>
 	</div>
+	<div class="banner">
+		<div class="banner-container">
+			<div class="set-banner" id="set-banner">
+				<img class="set-logo" src="/sets/WAW-files/icon.png">
+				<div class="set-title">The Wonderlands’ Wishes</div><a href="/sets/WAW-files/WAW-draft.txt" download>Draft me!</a>
+		
+			</div>
+			<div class="select-text">Cards displayed as<select name="display" id="display"><option value="cards-only">Cards Only</option><option value="cards-text">Cards + Text</option></select>sorted by<select name="sort-by" id="sort-by"><option value="set-code">Set Number</option><option value="name">Name</option><option value="mv">Mana Value</option><option value="color">Color</option><option value="rarity">Rarity</option></select> : <select name="sort-order" id="sort-order"><option value="ascending">Asc</option><option value="descending">Desc</option></select></div>
+		</div>
+	</div>
 
-	<input type="text" id="display" class="hidden" value="cards-and-text"> <!-- here to make img-container-defs snippet work properly -->
-	<div class="banner-container">
-		<a class="set-banner" id="set-banner">
-			<img class="set-logo" id="set-banner-logo">
-			<div class="set-title" id="set-banner-title"></div>
-		</a>
+	<div class="button-container" id="buttons">
+		<button style="border-right: 1px solid #171717;" onclick="switchView('splash')" id="splash-button">Splash</button><button onclick="switchView('cards')"id="cards-button">Cards</button>
+	</div>
+
+	<div class="splash-container" id="splash">
+	
 	</div>
 
 	<div class="grid-container" id="grid">
 	</div>
 
+	<div class="image-grid-container" id="imagesOnlyGrid">
+	</div>
+
 	<script>
 		let card_list_arrayified = [];
+		let set_list_arrayified = [];
 		let specialchars = "";
+		let displayStyle = "";
 
 		document.addEventListener("DOMContentLoaded", async function () {
 			await fetch('/lists/all-cards.json')
@@ -233,98 +298,263 @@
 
 				card_list_arrayified = card_list.cards;
 
-			await fetch('/lists/all-sets.json')
-					.then(response => response.json())
-					.then(json => {
-						set_list = json;
-				}).catch(error => console.error('Error:', error));
 
-			const params = new URLSearchParams(window.location.search);
-
-			const set = params.get('set');
-			const num = params.get('num');
-			const name = params.get('name');
-
-			for (const c of card_list_arrayified)
+			for (let i = 0; i < card_list_arrayified.length; i++)
 			{
-				if (c.card_name == name && c.set == set && c.number == num)
+				if (card_list_arrayified[i].set == "WAW")
 				{
-					card = c;
-					break;
+					set_list_arrayified.push(card_list_arrayified[i]);
 				}
 			}
-
-			var link = document.querySelector("link[rel~='icon']");
-			link.href = '/sets/' + set + '-files/icon.png';
-
-			document.title = name;
-
-			const banner = document.getElementById("set-banner");
-			const banner_logo = document.getElementById("set-banner-logo");
-			const banner_title = document.getElementById("set-banner-title");
-
-			banner.href = '/sets/' + set;
-			banner_logo.src = '/sets/' + set + '-files/icon.png';
-
-			for (const set_stats of set_list.sets)
-			{
-				if (set_stats.set_code == set)
-				{
-					banner_title.innerHTML = set_stats.set_name;
-					break;
-				}
-			}			
-
-			document.getElementById("grid").appendChild(gridifyCard(card, false, true));
-
-
-			other_printings = [];
-			for (const c of card_list_arrayified)
-			{
-				if (c.card_name == card.card_name && c.type == card.type && !c.shape.includes("Token") && (c.set != card.set || c.number != card.number))
-				{
-					other_printings.push(c);
-				}
-			}
-
-			if (other_printings.length > 0)
-			{
-				const printings = document.createElement("div");
-				printings.className = "printings";
-				printings.id = "other-printings";
-				printings.innerText = "Other Printings: ";
-
-				for (let i = 0; i < other_printings.length; i++)
-				{
-					const printing = other_printings[i];
-					const setlink = document.createElement("a");
-					setlink.innerText = printing.set;
-
-					const url = new URL('card', window.location.origin);
-					const params = {
-						set: printing.set,
-						num: printing.number,
-						name: printing.card_name
-					}
-					for (const key in params) {
-						url.searchParams.append(key, params[key]);
-					}
-					setlink.href = url;
-
-					printings.appendChild(setlink);
-
-					if (i != other_printings.length - 1)
-					{
-						const dot = document.createElement("text");
-						dot.innerText = " • ";
-						printings.appendChild(dot);
-					}
-				}
-
-				document.getElementById("card-text").appendChild(printings);
-				document.getElementById("other-printings").style.display = "block";
-			}
+					buttons.style.display = 'none';
+		setCardView();
 		});
+
+		document.getElementById("sort-by").onchange = displayChangeListener;
+		document.getElementById("display").onchange = displayChangeListener;
+		document.getElementById("sort-order").onchange = displayChangeListener;
+  
+		function displayChangeListener() {
+			setCardView();
+		}
+
+		function switchView(view) {
+			if (view == "splash")
+			{
+				splash.style.display = '';
+				imagesOnlyGrid.style.display = 'none';
+				grid.style.display = 'none';
+			}
+			else if (view == "cards")
+			{
+				setCardView();
+			}
+
+			document.getElementById("splash-button").disabled = (view == "splash");
+			document.getElementById("cards-button").disabled = (view == "cards");
+		}
+
+		function setCardView() {
+			displayStyle = document.getElementById("display").value;
+
+			splash.style.display = 'none';
+			imagesOnlyGrid.style.display = displayStyle == "cards-only" ? '' : 'none';
+			grid.style.display = displayStyle == "cards-only" ? 'none' : '';
+
+			updatePageContents();
+		}
+
+		function updatePageContents() {
+			if (displayStyle == "cards-only")
+			{
+				cardGrid = document.getElementById("imagesOnlyGrid");
+			}
+			else
+			{
+				cardGrid = document.getElementById("grid");
+			}
+
+			let set_cards = [];
+			let set_basics = [];
+			let set_tokens = [];
+			let set_mp = [];
+
+			for (const card of set_list_arrayified)
+			{
+				if (card.rarity.includes("masterpiece"))
+				{
+					set_mp.push(card);
+				}
+				else if (card.shape.includes("token"))
+				{
+					set_tokens.push(card);
+				}
+				else if (card.type.includes("Basic"))
+				{
+					set_basics.push(card);
+				}
+				else
+				{
+					set_cards.push(card);
+				}
+			}
+
+			set_cards.sort(compareFunction);
+			set_basics.sort(compareFunction);
+			set_tokens.sort(compareFunction);
+			set_mp.sort(compareFunction);
+			if (document.getElementById("sort-order").value == "descending")
+			{
+				set_cards.reverse();
+				set_basics.reverse();
+				set_tokens.reverse();
+				set_mp.reverse();
+			}
+			set_list_sorted = set_cards.concat(set_basics).concat(set_tokens).concat(set_mp);
+			cardGrid.innerHTML = "";
+
+			for (const card of set_list_sorted)
+			{
+				cardGrid.append(gridifyCard(card));
+			}
+		}
+
+		function compareFunction(a, b) {
+			const sortMode = document.getElementById("sort-by").value;
+
+			if (a.rarity.includes("masterpiece") && !b.rarity.includes("masterpiece"))
+			{
+				return 1;
+			}
+
+			if (!a.rarity.includes("masterpiece") && b.rarity.includes("masterpiece"))
+			{
+				return -1;
+			}
+
+			if (a.shape.includes("token") && !b.shape.includes("token"))
+			{
+				return 1;
+			}
+
+			if (!a.shape.includes("token") && b.shape.includes("token"))
+			{
+				return -1;
+			}
+			
+			if (sortMode == 'set-code')
+			{
+				if (a.set === b.set)
+				{
+					if (a.number === b.number)
+					{
+						return 0;
+					}
+					else {
+						return (a.number < b.number) ? -1 : 1;
+					}
+				}
+				else {
+					return (a.set < b.set) ? -1 : 1;
+				}
+			}
+			if (sortMode == 'name')
+			{
+				if (a.card_name === b.card_name)
+				{
+					return 0;
+				}
+				else {
+					return (a.card_name < b.card_name) ? -1 : 1;
+				}
+			}
+			if (sortMode == 'mv')
+			{
+				//since cost is now formatted like {1}{U} instead of 1U, we need to remove the brackets from the string first
+				//CE: undoing this because we're counting { chars for MV
+				a_mv = isDecimal(a.cost.charAt(1)) ? parseInt(a.cost.substring(1, a.cost.indexOf('}'))) + a.cost.replaceAll('x','').split('{').length - 2 : a.cost.replaceAll('x','').split('{').length - 1;
+				b_mv = isDecimal(b.cost.charAt(1)) ? parseInt(b.cost.substring(1, b.cost.indexOf('}'))) + b.cost.replaceAll('x','').split('{').length - 2 : b.cost.replaceAll('x','').split('{').length - 1;
+				if (a_mv === b_mv)
+				{
+					if (a.card_name === b.card_name)
+					{
+						return 0;
+					}
+					else {
+						return (a.card_name < b.card_name) ? -1 : 1;
+					}
+				}
+				else {
+					return (a_mv < b_mv) ? -1 : 1;
+				}
+			}
+			if (sortMode == 'color')
+			{
+				color_sort_order = ["W", "U", "B", "R", "G", "WU", "UB", "BR", "RG", "GW", "WB", "UR", "BG", "RW", "GU", "WUB", "UBR", "BRG", "RGW", "GWU", "RWB", "GUR", "WBG", "URW", "BGU", "WUBR", "UBRG", "BRGW", "RGWU", "GWUB", "WUBRG", ""];
+				a_color_index = -1;
+				b_color_index = -1;
+
+				for (let i = 0; i < color_sort_order.length; i++)
+				{
+					if (a.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join(''))
+					{
+						a_color_index = i;
+					}
+					if (b.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join(''))
+					{
+						b_color_index = i;
+					}
+				}
+
+				if (a_color_index === b_color_index)
+				{
+					if (a.card_name === b.card_name)
+					{
+						return 0;
+					}
+					else {
+						return (a.card_name < b.card_name) ? -1 : 1;
+					}
+				}
+				else {
+					return (a_color_index < b_color_index) ? -1 : 1;
+				}
+			}
+			if (sortMode == 'rarity')
+			{
+				rarity_sort_order = [ "mythic", "rare", "uncommon", "common" ];
+				a_rarity_index = 100;
+				b_rarity_index = 100;
+
+				for (let i = 0; i < rarity_sort_order.length; i++)
+				{
+					if (a.rarity.toLowerCase() == rarity_sort_order[i])
+					{
+						a_rarity_index = i;
+					}
+					if (b.rarity.toLowerCase() == rarity_sort_order[i])
+					{
+						b_rarity_index = i;
+					}
+				}
+
+				if (a_rarity_index === b_rarity_index)
+				{
+					color_sort_order = ["W", "U", "B", "R", "G", "WU", "UB", "BR", "RG", "GW", "WB", "UR", "BG", "RW", "GU", "WUB", "UBR", "BRG", "RGW", "GWU", "RWB", "GUR", "WBG", "URW", "BGU", "WUBR", "UBRG", "BRGW", "RGWU", "GWUB", "WUBRG", ""];
+					a_color_index = -1;
+					b_color_index = -1;
+
+					for (let i = 0; i < color_sort_order.length; i++)
+					{
+						if (a.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join(''))
+						{
+							a_color_index = i;
+						}
+						if (b.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join(''))
+						{
+							b_color_index = i;
+						}
+					}
+
+					if (a_color_index === b_color_index)
+					{
+						if (a.card_name === b.card_name)
+						{
+							return 0;
+						}
+						else {
+							return (a.card_name < b.card_name) ? -1 : 1;
+						}
+					}
+					else {
+						return (a_color_index < b_color_index) ? -1 : 1;
+					}		
+				}
+				else {
+					return (a_rarity_index < b_rarity_index) ? -1 : 1;
+				}
+			}
+		}
 
 		function isDecimal(char) {
 			return char >= '0' && char <= '9';
@@ -383,12 +613,13 @@
 			return str;
 		}
 
-		function gridifyCard(card_stats, card_text = false, rotate_card = false, designer_notes = true) {
-			card_stats = card;
+		function gridifyCard(card_stats, card_text = false, rotate_card = false, designer_notes = false) {
 			const card_name = card_stats.card_name;
 
-			const textContainer = document.createElement("div");
-			textContainer.className = "text-container";
+			if (displayStyle == "cards-only")
+			{
+				return buildImgContainer(card_stats, true, rotate_card);
+			}
 
 			const grid = document.createElement("div");
 			grid.className = "image-grid";
@@ -490,23 +721,7 @@
 				}
 			}
 			
-			textContainer.appendChild(text);
-
-			if (localStorage.getItem('info.lastdeck') != null) {
-				const addToDeck = document.createElement('button');
-				const lastdeck = localStorage.getItem('info.lastdeck');
-				addToDeck.className = "add-to-deck";
-				addToDeck.innerHTML = `<img src='img/plus.png' class='add-icon'>Add card to ${lastdeck}`;
-				addToDeck.onclick = function() {
-					let deck = localStorage.getItem(lastdeck);
-					deck = deck + `1 ${card_stats.card_name}`;
-					localStorage.setItem(lastdeck, deck);
-					alert("Added to deck");
-				}
-				textContainer.appendChild(addToDeck);
-			}
-
-			grid.appendChild(textContainer);
+			grid.appendChild(text);
 
 			return grid;
 		}
@@ -623,10 +838,10 @@
 		}
 
 		document.getElementById("search").addEventListener("keypress", function(event) {
-			if (event.key === "Enter") {
+		  if (event.key === "Enter") {
 				event.preventDefault();
 				search();
-			}
+		  }
 		});
 
 		function search() {

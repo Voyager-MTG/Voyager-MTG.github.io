@@ -1,0 +1,784 @@
+<html>
+    <head>
+        <title>Community</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="resources/mana.css">
+        <link rel="stylesheet" href="/resources/header.css">
+    </head>
+    <style>
+        @font-face {
+		font-family: Beleren;
+		src: url('/resources/beleren.ttf');
+        }
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            overscroll-behavior: none;
+            margin: 0px;
+            background-color: #bbbbbb;
+            display: block;
+            /* overflow-y: scroll; */
+        }
+        select {
+            position: absolute;
+            text-align: center;
+            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-weight: 500;
+            cursor: pointer;
+            background-color: #F3F3F3;
+            padding: 2px;
+	    }
+        .selects {
+		    position: absolute;
+            top: 10%;
+            left: 1%;
+	    }
+        .page-container {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            width: 100%;
+        }
+        hr {
+            width: 85%;
+            height: 4px;
+            background-color: black;
+            border-radius: 2px;
+            border: none;
+        }
+        #modal-container {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            padding-top: 70px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4); 
+        }
+        #modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            border-radius: 10px;
+            border: solid #777 3px;
+        }
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .event-container {
+            border: 3px solid black;
+            border-radius: 3px;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            padding: 5px;
+            background-color: #aaaaaa66;
+        }
+        .event-name {
+            font-family: beleren;
+            font-size: 32px;
+            text-decoration: underline;
+            text-underline-position: below;
+            text-underline-offset: 3px;
+            color: rgb(48, 48, 135);
+        }
+        .events-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            margin: 40px;
+        }
+        .main-tab {
+            width: 100%;
+            margin: 20px 40px 0 40px;
+            /* margin-top: 100px; */
+        }
+        .deck-section-container {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr;
+            width: 82%;
+            align-self: center;
+            justify-self: center;
+        }
+        .deck-container {
+            display: grid;
+            gap: 5px;
+            /* grid-template-rows: 1fr 2fr 1fr; */
+            background-color: #f3f3f3;
+            border-radius: 8px; 
+            /* height: 100%; */
+            padding: 5px;
+            align-items: center;
+            justify-items: center;
+            border: 2px solid #333;
+            box-shadow: 5px 5px 2px #333;
+            padding-top: 0px;
+        }
+        .full-deck-container {
+            display: grid;
+            grid-template-columns: 1fr 0.1fr;
+            gap: -5px;
+        }
+        .colors-container {
+            position: relative;
+            top: 60px;
+            right: 14px;
+            background-color: #333;
+            height: fit-content; 
+            padding: 2px;
+            border-radius: 20px;
+        }
+        .deck-preview-img {
+            max-height: 300px;
+            border: 2px solid black;
+            box-shadow: 7px 7px 2px #999;
+            border-radius: 16px;
+            margin-bottom: 7px;
+            cursor: pointer;
+            /* box-shadow: inset 0.2em 0.2em 0.2em 0em rgba(0, 0, 0, 0.5), inset -0.2em -0.2em 0.2em 0em rgba(0,0,0,0.5); */
+            /* padding: 0.2em; */
+            /* background-color: #777; */
+        }
+        .deck-name {
+            font-weight: bold;
+            font-size: 30px;
+            font-family: beleren;
+            background-color: #ccc;
+            /* border: 2px solid #333; */
+            /* box-shadow: 5px 5px 2px #333; */
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 3px;
+            width: 100%;
+            text-align: center;
+            /* color: white; */
+        }
+        .deck-section-header {
+            font-family: beleren;
+            font-size: 64px;
+        }
+        .decks-container {
+            display: grid;
+            gap: 15px;
+            /* align-items: center; */
+            justify-items: center;
+            grid-template-columns: 1fr 1fr;
+        }
+        .full-deck-section-container {
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        .users-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 12px;
+            margin: 15px;
+        }
+        .user-container {
+            display: grid;
+            gap: 5px;
+            /* grid-template-rows: 1fr 2fr 1fr; */
+            background-color: #f3f3f3;
+            border-radius: 8px; 
+            /* height: 100%; */
+            padding: 5px;
+            align-items: center;
+            justify-items: center;
+            border: 2px solid #333;
+            box-shadow: 5px 5px 2px #333;
+            padding-top: 0px;
+        }
+        .user-name-container {
+            font-family: beleren;
+            font-size: 28px;
+        }
+        .deck-icon-green {
+            max-height:30px;
+            background-color: #16e019;
+            border-radius: 8px;
+            padding: 8px;
+            cursor: pointer;
+        }
+        .deck-link-green {
+            background-color: #16e019;
+            color: white;
+            padding: 2px 6px 2px 6px;
+            border-radius: 8px;
+            font-weight: bold;
+            display: grid;
+            grid-template-columns: 5fr 1fr;
+            align-items: center;
+            justify-items: center;
+            font-size: 24px; 
+            cursor: pointer;
+            /* border: 2px solid #333;
+            box-shadow: 2px 2px 1px #333; */
+        }
+        .deck-link-blue {
+            background-color: #4816e0;
+            color: white;
+            padding: 2px 6px 2px 6px;
+            border-radius: 8px;
+            font-weight: bold;
+            display: grid;
+            grid-template-columns: 5fr 1fr;
+            align-items: center;
+            justify-items: center;
+            font-size: 24px; 
+            cursor: pointer;
+            /* border: 2px solid #333;
+            box-shadow: 2px 2px 1px #333; */
+        }
+        .deck-icon-blue {
+            max-height:30px;
+            background-color: #4816e0;
+            border-radius: 8px;
+            padding: 8px;
+            cursor: pointer;
+        }
+        .deck-icon-shadow {
+            /* border: 3px solid black; */
+            /* box-shadow: 2px 2px 1px #333; */
+            box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5), inset -0.2em -0.2em 0.2em 0 rgba(0,0,0,0.5);
+            padding: 0.3em;
+        }
+        .tab-btn {
+            background-color: #737373;
+            color: white;
+            border: 3px solid #ddd;
+            align-items: center;
+            justify-items: center;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            font-weight: bold;
+            font-size: 24px;
+            padding: 8px;
+            border-radius: 18px; 
+            cursor: pointer;
+        }
+        .tab-btn-active {
+            background-color: #333;
+        }
+        .tab-switch-icon {
+            max-height: 30px;
+        }
+        .tab-select {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 40px;
+        }
+    </style>
+    <style id="text-style">
+        .text {
+            color: white;
+        }
+    </style>
+    <body>
+        <div class="header">
+            <div class="search-grid">
+                <a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+                <img class="sg-icon" src="/img/search.png">
+                <input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+                <a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
+                <a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+                <a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+                <a href="/account" id="account-link"><img src="/img/account.png" class="sg-icon">Account</a>
+            </div>
+        </div>
+        <div class="selects" id="selects">
+			<select id="color-select" onchange="setGradient()">
+			</select>
+		</div>
+        <div class="page-container">
+            <div class="tab-select" id="tab-select">
+                <div class="tab-btn" id="users-tab-select" onclick="changeTab('users')">
+                    <img src="img/swords.png" class="tab-switch-icon">
+                    <span>Users</span>
+                </div>
+                <div class="tab-btn" id="decks-tab-select" onclick="changeTab('decks')">
+                    <img src="img/deck.png" class="tab-switch-icon">
+                    <span>Decks</span>
+                </div>
+                <div class="tab-btn" id="events-tab-select" onclick="changeTab('events')">
+                    <img src="img/trophy.png" class="tab-switch-icon">
+                    <span>Events</span>
+                </div>
+            </div>
+            <div id="main-tab" class="main-tab">
+
+            </div>
+        </div>
+        <div id="modal-container">
+			<div id="modal-content" class="popout">
+				<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+			</div>
+		</div>
+        <script>
+            let gradients = null;
+            let raw_gradients = null;
+            let gradTop = null;
+            let gradBottom = null;
+            modal = document.getElementById("modal-container");
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    document.getElementById('modal-container').style.display = 'none';
+                }
+            }
+            document.addEventListener("DOMContentLoaded", async function () {
+                try {
+                    const response = await fetch('/resources/gradients.json');
+                    raw_gradients = await response.json();
+                }
+                catch(error) {
+                    console.error('Error:', error);
+                }
+
+                gradients = raw_gradients.gradients;
+                setGradient(localStorage.getItem("settings.gradient"));
+                console.log(setGradient);
+                prepareGradients();
+            });
+
+            function setGradient(gradient=false) {
+                if (!gradient) { 
+                    gradient = document.getElementById("color-select").value;
+                }
+
+                gradTop = "#000000";
+                gradBottom = "#FFFFFF";
+                for (const grad of gradients)
+                {
+                    if (gradient == grad.name.replace(' ', '-'))
+                    { 	
+                        gradTop = grad.color1;
+                        gradBottom = grad.color2;
+                    }
+                }
+
+                // console.log(`linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
+                document.body.style.backgroundImage = `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`;
+                localStorage.setItem("settings.gradient", gradient);
+		    }
+            function prepareGradients() {
+                let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+                const opt = document.createElement("option");
+                opt.value = defaultGradient.replace(' ', '-');
+                opt.text = defaultGradient;
+                document.getElementById("color-select").appendChild(opt);
+                for (const gradient of gradients)
+                {	
+                    const opt = document.createElement("option");
+                    opt.value = gradient.name.replace(' ', '-');
+                    opt.text = gradient.name;
+                    if (gradient.name != defaultGradient) {
+                        document.getElementById("color-select").appendChild(opt);
+                    }
+                }
+
+                // setGradient();
+            }
+            document.getElementById("search").addEventListener("keypress", function(event) {
+				if (event.key === "Enter") {
+					event.preventDefault();
+					const url = new URL('search', window.location.origin);
+					url.searchParams.append('search', document.getElementById("search").value);
+					window.location.href = url;
+				}
+			});
+            function randomCard() {
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let random_card = card_list_arrayified[i];
+
+				const url = new URL('card', window.location.origin);
+				const params = {
+					set: random_card.set,
+					num: random_card.number,
+					name: random_card.card_name
+				}
+				for (const key in params) {
+					url.searchParams.append(key, params[key]);
+				}
+
+				window.location.href = url;
+			}
+
+            function changeTab(tab) {
+                window.location.href = "community.html?tab=" + tab;
+            }
+        </script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+            import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+            
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+                authDomain: "voyager-78e30.firebaseapp.com",
+                projectId: "voyager-78e30",
+                storageBucket: "voyager-78e30.firebasestorage.app",
+                messagingSenderId: "411191248476",
+                appId: "1:411191248476:web:591349be169d823e5f8899",
+                measurementId: "G-TQ1L48F25M"
+            };
+            
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+            let username = "";
+            let password = "";
+            let sessionid = localStorage.getItem('settings.session');
+            let decks = {};
+            const events = ["GP1", "League"];
+            const urlParams = new URLSearchParams(window.location.search);
+            const tab = urlParams.get('tab');
+            document.getElementById(`${tab}-tab-select`).className += " tab-btn-active";
+            // console.log
+
+            if (sessionid) {
+                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+                    let data = docSnap.data();
+                    username = data.username;
+                    password = data.password;
+                });
+
+                await getDoc(doc(db, 'users', username)).then(docSnap => {
+                    let data = docSnap.data();
+                    decks = JSON.parse(data.decks);
+                });
+            }
+
+            document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+
+            // declare variables outside of functions to avoid passing nonsense
+            let q;
+            let all_users_docs;
+            let all_decks = [];
+            let all_users = [];
+            let all_events_docs;
+            let all_events = [];
+            
+            async function reload() {
+                q = query(collection(db, "users"));
+                all_users_docs = await getDocs(q);
+                all_decks = [];
+                all_users = [];
+                q = query(collection(db, "events"));
+                all_events_docs = await getDocs(q);
+                all_events = [];
+                all_users_docs.forEach((doc) => {
+                    const data = doc.data();
+                    all_users.push(data);
+                    for (const deck of JSON.parse(data.decks)) {
+                        all_decks.push({...deck, "user": data.username, "event": false});
+                    }
+                    // all_decks.push(...JSON.parse(data.decks));
+                });
+                all_events_docs.forEach((doc) => {
+                    const data = doc.data();
+                    all_events.push(data);
+                    for (const user in JSON.parse(data.decks)) {
+                        let deck = JSON.parse(data.decks)[user];
+                        all_decks.push({...deck, "user": user, "event": true});
+                    }
+                });
+                makeTab(tab); 
+            }
+
+            async function makeTab(tab) {
+                if (tab == "events") {
+                    document.getElementById("main-tab").appendChild(makeEventTab());
+                }
+                if (tab == "decks") {
+                    document.getElementById("main-tab").appendChild(await makeDecksTab());
+                }
+                if (tab == "users") {
+                    document.getElementById("main-tab").appendChild(makeUsersTab());
+                }
+            }
+
+            function makeEventTab() {
+                const container = document.createElement("div");
+                container.className = "events-container";
+                for (const event of all_events) {   
+                    const event_container = document.createElement("div");
+                    event_container.className = "event-container";
+
+                    const event_name = document.createElement("a");
+                    event_name.className = "event-name";
+                    event_name.innerText = event.name;
+                    event_name.href = `gp?event=${event.name}`;
+                    event_container.appendChild(event_name);
+
+                    const event_players = document.createElement("span");
+                    event_players.className = "event-players";
+                    event_players.innerText = Object.keys(JSON.parse(event.decks)).length + " players";
+                    event_container.appendChild(event_players);
+
+                    const event_winner = document.createElement("span");
+                    event_winner.className = "event-winner";
+                    event_winner.innerText = "Winner: " + event.winner  ;
+                    event_container.appendChild(event_winner);
+                    
+                    container.appendChild(event_container); 
+                }
+                return container;
+            }
+
+            function gridifyDeck(deck) {
+                console.log(deck);
+                const container = document.createElement("div");
+                container.className = "deck-container";
+                const preview_img = document.createElement("img");
+                preview_img.src = deck.previewimg;
+                preview_img.className = "deck-preview-img";
+                preview_img.onclick = function() {
+                    if (deck.event) 
+                        window.location.href = `/deckbuilder?edeck=${deck.event}-${deck.user}`;
+                        return;
+                    window.location.href = `/deckbuilder?udeck=${deck.user}-${deck.name}`;
+                }
+                const deck_name = document.createElement("div");
+                deck_name.className = "deck-name";
+                deck_name.innerText = deck.name;
+
+                container.appendChild(deck_name);
+                container.appendChild(preview_img);
+                return container;
+            }
+
+            async function makeDecksTab() {
+                const sections = [{name: "New Decks", cond: "new", num: 4}, {name: "Winning Decks", cond: "win", num: "all"}]
+                const container = document.createElement("div");
+                container.className = "decks-container";
+
+                for (const section of sections) {
+                    const name = section.name;
+                    const cond = section.cond;
+
+                    const section_container = document.createElement("div");
+                    section_container.className = "full-deck-section-container";
+                    const section_header = document.createElement("span");
+                    section_header.className = "deck-section-header";
+                    section_header.innerText = name;
+                    const decks_container = document.createElement("div");
+                    decks_container.className = "deck-section-container";      
+                    const line = document.createElement("hr");             
+
+                    let all_decks_2 = [...all_decks];
+                    let num_decks = section.num;
+
+                    // 09-04-2025, 15:35 -- dates
+                    // seperate
+                    if (cond == 'new') {
+                        all_decks_2.sort(newDeck);
+                    } else if (cond == "win") {
+                        all_decks_2 = await getWinningDecks();
+                        num_decks = all_decks_2.length;
+                    }
+
+                    for (let i = 0; i < num_decks; i++) {
+                        const deck = all_decks_2[i];
+                        decks_container.appendChild(gridifyDeck(deck));
+                    }
+
+                    section_container.appendChild(section_header);
+                    section_container.appendChild(line);
+                    section_container.appendChild(decks_container);
+                    container.appendChild(section_container);
+                }
+
+                return container;
+            }
+
+            function makeUsersTab() {
+                const users_container = document.createElement("div");
+                users_container.className = "users-container";
+
+                for (const user of all_users) {
+                    users_container.appendChild(gridifyUser(user));
+                }
+
+                return users_container;
+            }
+
+            function gridifyUser(user) {
+                const user_container = document.createElement("div");
+                user_container.className = "user-container";
+                
+                const name_container = document.createElement("span");
+                name_container.className = "user-name-container";
+                name_container.innerText = user.username;
+
+                const decks_button = document.createElement("div");
+                decks_button.className = "view-decks-button deck-link-green deck-icon-shadow";
+                decks_button.innerText = "View Decks";
+                
+                const show_img = document.createElement("img");
+                show_img.className = "show-img deck-icon-green";
+                show_img.src = "img/show-white.png";
+                decks_button.appendChild(show_img);
+
+                decks_button.onclick = function() {
+                    window.location.href = `/decksearch?search=user:${user.username}`;
+                }
+
+                const view_button = document.createElement("div");
+                view_button.className = "view-decks-button deck-link-blue deck-icon-shadow";
+                view_button.innerText = "View Page";
+                
+                const show_img_2 = document.createElement("img");
+                show_img_2.className = "show-img deck-icon-blue";
+                show_img_2.src = "img/show-white.png";
+                view_button.appendChild(show_img_2);
+
+                view_button.onclick = function() {
+                    window.location.href = `/user?user=${user.username}`;
+                }
+            
+                user_container.appendChild(name_container);
+                user_container.appendChild(decks_button);
+                user_container.appendChild(view_button);
+
+                return user_container;
+            }
+
+
+
+            async function getWinningDecks() {
+                let recent_event;
+                let best_decks = [];
+                await getDoc(doc(db, 'info', 'events')).then((doc) => {
+                    recent_event = doc.data().recent;
+                });
+
+                await getDoc(doc(db, 'events', recent_event)).then((doc) => {
+                    const event = doc.data();
+                    let records = getRecords(event);
+                    const decks = JSON.parse(event.decks);
+                    for (const user in decks) {
+                        const deck = decks[user];
+                        if (records[user][1] <= 1) {
+                            best_decks.push({...deck, event: recent_event, user: user});
+                        }
+                    }
+                });
+
+                console.log(best_decks);
+                return best_decks;
+            }
+
+            function getRecords(event) {
+                const swiss_rounds = JSON.parse(event.rounds).swiss;
+                let records = {};
+                for (const round_name in swiss_rounds) {
+                    let round = swiss_rounds[round_name];
+                    for (const match of round) {
+                        for (const player in match) {
+                            let score = Number(match[player]);
+                            if (!records.hasOwnProperty(player)) {
+                                records[player] = [0, 0];
+                            }
+                            records[player][score == 2 ? 0 : 1] += 1;
+                        }
+                    }
+                }
+
+                return records;
+            }
+
+            function newDeck(a, b) {
+                if (a.last_modified && !b.last_modified) {
+                    return -1;
+                }
+                if (!a.last_modified && b.last_modified) {
+                    return 1;
+                }
+                if (!a.last_modified && !b.last_modified) {
+                    return 0;
+                }
+
+                let a_date = {};
+                let b_date = {};
+
+                let a_split = a.last_modified.split(',');
+                let a_split2 = a_split[0].split('-');
+
+                a_date.day   = Number(a_split2[0]);
+                a_date.month = Number(a_split2[1]);
+                a_date.year  = Number(a_split2[2]);
+
+                a_date.hour  = Number(a_split[1].split(":")[0]);
+                a_date.min   = Number(a_split[1].split(":")[1]);
+
+                let b_split = b.last_modified.split(',');
+                let b_split2 = b_split[0].split('-');
+
+                b_date.day   = Number(b_split2[0]);
+                b_date.month = Number(b_split2[1]);
+                b_date.year  = Number(b_split2[2]);
+
+                b_date.hour  = Number(b_split[1].split(":")[0]);
+                b_date.min   = Number(b_split[1].split(":")[1]);
+
+                if (a_date.year > b_date.year) {
+                    return -1;
+                }
+                if (a_date.year < b_date.year) {
+                    return 1;
+                }
+                if (a_date.month > b_date.month) {
+                    return -1;
+                }
+                if (a_date.month < b_date.month) {
+                    return 1;
+                }
+                if (a_date.day > b_date.day) {
+                    return -1;
+                }
+                if (a_date.day < b_date.day) {
+                    return 1;
+                }
+                if (a_date.hour > b_date.hour) {
+                    return -1;
+                }
+                if (a_date.hour < b_date.hour) {
+                    return 1;
+                }
+                if (a_date.min > b_date.min) {
+                    return -1;
+                }
+                if (a_date.min < b_date.min) {
+                    return 1;
+                }
+                return 0;
+            }
+
+            if (sessionid) {
+                reload();
+            }
+        </script>
+    </body>
+</html>

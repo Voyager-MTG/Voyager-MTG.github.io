@@ -318,6 +318,35 @@
             gap: 10px;
             display: none;
         }
+        .stats-tab {
+            display: grid;
+            /* gap: 10px; */
+            display: none;
+            border-top: 2px solid black;
+        }
+        .stats-row-container {
+            display: grid;
+            grid-template-columns: 0.4fr repeat(4, 1fr);
+        }
+        .stats-row-item {
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            padding: 5px;
+            text-align: center;
+            font-size: 20px;
+            background-color: rgba(255, 255, 255, 0.3)
+            /* font-weight: bold; */
+        }
+        .stats-name-container {
+            font-family: beleren;
+            cursor: pointer;
+        }
+        .stats-rank-container {
+            border-left: 2px solid black;
+        }
+        .stats-row-header {
+            font-weight: bold;
+        }
         .main-tab {
             margin: 25px 0 25px 0;
             width: 84%;
@@ -468,7 +497,7 @@
         }
         .tab-select {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 10px;
             margin-top: 40px;
         }
@@ -492,6 +521,14 @@
             font-size: 18px;
             padding: 8px;
             border-radius: 8px;
+        }
+        .initial-text {
+            grid-column: span 4;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            font-style: italic;
+            color: #444;
         }
     </style>
     <style id="text-style">
@@ -525,10 +562,15 @@
                     <img src="img/deck.png" class="tab-switch-icon">
                     <span>Decks</span>
                 </div>
+                <div class="tab-btn" id="stats-tab-select" onclick="changeTab('stats')">
+                    <img src="img/trophy.png" class="tab-switch-icon">
+                    <span>Stats</span>
+                </div>
             </div>
             <div class="admin-container" id="admin">
-                <span>Admin Options: </span>
+                <span class="text">Admin Options: </span>
                 <button class="push-gp admin-btn" id="push-gp">Push GP Round</button>
+                <button class="new-gp admin-btn"  id="new-gp" >Create new GP</button>
             </div>
             <div class="main-tab" id="main-tab">
                 <div class="decks-tab" id="decklists"></div>
@@ -713,11 +755,15 @@
                     const decks = JSON.parse(event_data.decks);
                     const rounds = JSON.parse(event_data.rounds);
                     console.log(rounds);
+                    statsHelper(rounds.swiss);
                     document.title = event;
                     if (admin) {
                         document.getElementById('push-gp').addEventListener("click", (e) => {
                             console.log("PUUUUUUSH");
                             pushGP(event_data);
+                        });
+                        document.getElementById('new-gp').addEventListener("click", (e) => {
+                            newGP();
                         });
                         document.getElementById('admin').style.display = "block";
                     }
@@ -950,78 +996,174 @@
                         document.getElementById("games").appendChild(bracket_container);
                     }
 
-                    for (const user in decks) {
-                        let deck = decks[user];
-                        let full_deck_container = document.createElement('div');
-                        full_deck_container.className = "full-deck-container";
-                        let deck_container = document.createElement('div');
-                        deck_container.className = "deck-container";
-                        let colors_container = document.createElement('div');
-                        colors_container.className = "colors-container";
-                        let deck_preview = document.createElement('img');
-                        deck_preview.src = deck.previewimg;
-                        deck_preview.onclick = function() {
-                            document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                            let deck_header = document.createElement("span");
-                            deck_header.className = "deck-window-header";
-                            deck_header.innerText = user + "'s " + deck.name;
-                            document.getElementById("modal-content").appendChild(deck_header);
-                            document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
-                            document.getElementById("modal-container").style.display = 'block';
-                        }
-                        deck_preview.className = "deck-preview-img";
-                        let deck_name = document.createElement('div');
-                        deck_name.className = "deck-name";
-                        deck_name.innerText = user + "'s " + deck.name;
-                        let deck_btns = document.createElement('div');
-                        deck_btns.className = "deck-buttons";
-                        let deck_link = document.createElement('a');
-                        deck_link.href = deck.url;
-                        deck_link.innerText = "Deckbuilder";
-                        deck_link.className = "deck-link-green deck-icon-shadow";
-                        deck_link.target = "_blank";
-                        let deck_edit_icon = document.createElement('img');
-                        deck_edit_icon.src = "/img/edit.png";
-                        deck_edit_icon.className = "deck-icon-green";
-                        deck_link.appendChild(deck_edit_icon);
-                        let deck_link2 = document.createElement('span');
-                        deck_link2.innerText = "View";
-                        deck_link2.className = "deck-link-blue deck-icon-shadow";
-                        let deck_edit_icon2 = document.createElement('img');
-                        deck_edit_icon2.src = "/img/show-white.png";
-                        deck_edit_icon2.className = "deck-icon-blue";
-                        deck_link2.onclick = function() {
-                            document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                            let deck_header = document.createElement("span");
-                            deck_header.className = "deck-window-header";
-                            deck_header.innerText = user + "'s " + deck.name;
-                            document.getElementById("modal-content").appendChild(deck_header);
-                            document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
-                            document.getElementById("modal-container").style.display = 'block';
-                        }
-                        deck_link2.appendChild(deck_edit_icon2);
-                        if (deck.colors) {
-                            for (const color of deck.colors) {
-                                let color_ele = document.createElement('img');
-                                color_ele.src = `img/mana_${color}.png`;
-                                color_ele.className = "mana-img";
-                                colors_container.appendChild(color_ele);
+                    if (event_data.stage != "initial") {
+                        for (const user in decks) {
+                            let deck = decks[user];
+                            let full_deck_container = document.createElement('div');
+                            full_deck_container.className = "full-deck-container";
+                            let deck_container = document.createElement('div');
+                            deck_container.className = "deck-container";
+                            let colors_container = document.createElement('div');
+                            colors_container.className = "colors-container";
+                            let deck_preview = document.createElement('img');
+                            deck_preview.src = deck.previewimg;
+                            deck_preview.onclick = function() {
+                                document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+                                let deck_header = document.createElement("span");
+                                deck_header.className = "deck-window-header";
+                                deck_header.innerText = user + "'s " + deck.name;
+                                document.getElementById("modal-content").appendChild(deck_header);
+                                document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+                                document.getElementById("modal-container").style.display = 'block';
+                            }
+                            deck_preview.className = "deck-preview-img";
+                            let deck_name = document.createElement('div');
+                            deck_name.className = "deck-name";
+                            deck_name.innerText = user + "'s " + deck.name;
+                            let deck_btns = document.createElement('div');
+                            deck_btns.className = "deck-buttons";
+                            let deck_link = document.createElement('a');
+                            deck_link.href = `/deckbuilder?edeck=${event}-${deck.name}`;
+                            deck_link.innerText = "Deckbuilder";
+                            deck_link.className = "deck-link-green deck-icon-shadow";
+                            deck_link.target = "_blank";
+                            let deck_edit_icon = document.createElement('img');
+                            deck_edit_icon.src = "/img/edit.png";
+                            deck_edit_icon.className = "deck-icon-green";
+                            deck_link.appendChild(deck_edit_icon);
+                            let deck_link2 = document.createElement('span');
+                            deck_link2.innerText = "View";
+                            deck_link2.className = "deck-link-blue deck-icon-shadow";
+                            let deck_edit_icon2 = document.createElement('img');
+                            deck_edit_icon2.src = "/img/show-white.png";
+                            deck_edit_icon2.className = "deck-icon-blue";
+                            deck_link2.onclick = function() {
+                                document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+                                let deck_header = document.createElement("span");
+                                deck_header.className = "deck-window-header";
+                                deck_header.innerText = user + "'s " + deck.name;
+                                document.getElementById("modal-content").appendChild(deck_header);
+                                document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+                                document.getElementById("modal-container").style.display = 'block';
+                            }
+                            deck_link2.appendChild(deck_edit_icon2);
+                            if (deck.colors) {
+                                for (const color of deck.colors) {
+                                    let color_ele = document.createElement('img');
+                                    color_ele.src = `img/mana_${color}.png`;
+                                    color_ele.className = "mana-img";
+                                    colors_container.appendChild(color_ele);
+                                }
+                            }
+                            deck_btns.appendChild(deck_link);
+                            deck_btns.appendChild(deck_link2);
+                            deck_container.appendChild(deck_name);
+                            deck_container.appendChild(deck_preview);
+                            deck_container.appendChild(deck_btns);
+                            full_deck_container.appendChild(deck_container);
+                            if(deck.colors) full_deck_container.appendChild(colors_container);
+                            if (deck.colors){
+                                document.getElementById("decklists").appendChild(full_deck_container);
+                            } else {
+                                document.getElementById("decklists").appendChild(deck_container);
                             }
                         }
-                        deck_btns.appendChild(deck_link);
-                        deck_btns.appendChild(deck_link2);
-                        deck_container.appendChild(deck_name);
-                        deck_container.appendChild(deck_preview);
-                        deck_container.appendChild(deck_btns);
-                        full_deck_container.appendChild(deck_container);
-                        if(deck.colors) full_deck_container.appendChild(colors_container);
-                        if (deck.colors){
-                            document.getElementById("decklists").appendChild(full_deck_container);
-                        } else {
-                            document.getElementById("decklists").appendChild(deck_container);
+
+                        const stats_tab = document.getElementById("stats");
+                        stats_tab.innerHTML = "";
+                        const stats = statsHelper(rounds.swiss);
+
+                        const row_container = document.createElement("div");
+                        row_container.className = "stats-row-container";
+                        const rank_container = document.createElement("div");
+                        rank_container.className = "stats-rank-container stats-row-item stats-row-header";
+                        rank_container.innerText = "Rank";
+                        const name_container = document.createElement("div");
+                        name_container.className = "stats-name-container stats-row-item stats-row-header";
+                        name_container.innerText = "Player";
+                        const record_container = document.createElement("div");
+                        record_container.className = "stats-record-container stats-row-item stats-row-header";
+                        record_container.innerText = `Record`;
+                        const match_total_container = document.createElement("div");
+                        match_total_container.className = "stats-match-total-container stats-row-item stats-row-header";
+                        match_total_container.innerText = `Game Record`;
+                        const omw_container = document.createElement("div");
+                        omw_container.className = "stats-omw-container stats-row-item stats-row-header";
+                        omw_container.innerText = "OM%";
+
+                        row_container.appendChild(rank_container);
+                        row_container.appendChild(name_container);
+                        row_container.appendChild(record_container);
+                        row_container.appendChild(match_total_container);
+                        row_container.appendChild(omw_container);
+
+                        stats_tab.appendChild(row_container);
+
+                        let seedings = [];
+
+                        for (const player in stats.records) {
+                            let record = stats.records[player];
+                            let total = stats.match_total[player];
+                            seedings.push({player: player, record: record, match_total: total, omw: stats.omw[player]});
                         }
+
+                        seedings.sort(seeder);
+
+                        let i = 1;
+
+                        for (const player_stats of seedings) {
+                            const player = player_stats.player;
+                            if (player == "Bye")
+                                continue;
+                            const record      = player_stats.record;
+                            const match_total = player_stats.match_total;
+                            const omw         = player_stats.omw;
+
+                            const row_container = document.createElement("div");
+                            row_container.className = "stats-row-container";
+                            const rank_container = document.createElement("div");
+                            rank_container.className = "stats-rank-container stats-row-item";
+                            rank_container.innerText = i;
+                            const name_container = document.createElement("div");
+                            name_container.className = "stats-name-container stats-row-item";
+                            name_container.innerText = player;
+                            let deck = decks[player];
+                            name_container.onclick = function() {
+                                document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+                                let deck_header = document.createElement("span");
+                                deck_header.className = "deck-window-header";
+                                deck_header.innerText = player + "'s " + deck.name;
+                                document.getElementById("modal-content").appendChild(deck_header);
+                                document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+                                document.getElementById("modal-container").style.display = 'block';
+                            }
+                            const record_container = document.createElement("div");
+                            record_container.className = "stats-record-container stats-row-item";
+                            record_container.innerText = `${record[0]}-${record[1]}`;
+                            const match_total_container = document.createElement("div");
+                            match_total_container.className = "stats-match-total-container stats-row-item";
+                            match_total_container.innerText = `${match_total[0]}-${match_total[1]}`;
+                            const omw_container = document.createElement("div");
+                            omw_container.className = "stats-omw-container stats-row-item";
+                            omw_container.innerText = omw * 100 + "%";
+
+                            row_container.appendChild(rank_container);
+                            row_container.appendChild(name_container);
+                            row_container.appendChild(record_container);
+                            row_container.appendChild(match_total_container);
+                            row_container.appendChild(omw_container);
+
+                            stats_tab.appendChild(row_container);
+                            i++;
+                        }
+
+                    } else {
+                        const initial_text = document.createElement("span");
+                        initial_text.className = "initial-text";
+                        initial_text.innerText = `Deck submissions are open for ${event}`;
+                        document.getElementById("decklists").appendChild(initial_text);
                     }
-                });
+              });
             }
 
             function deckHTML(deck, card_list) {
@@ -1261,7 +1403,9 @@
                             decks:  JSON.stringify(decks),
                             rounds: JSON.stringify(parsed_data),
                             num_rounds: event_data.num_rounds,
-                            stage: event_data.stage
+                            stage: event_data.stage,
+                            name: event_data.name,
+                            winner: event_data.winner
                         });
                         document.getElementById("modal-container").style.display = "none";
                         reload();
@@ -1274,7 +1418,9 @@
                             decks:  JSON.stringify(decks),
                             rounds: JSON.stringify(parsed_data),
                             num_rounds: event_data.num_rounds,
-                            stage: event_data.stage
+                            stage: event_data.stage,
+                            name: event_data.name,
+                            winner: event_data.winner
                         });
                         document.getElementById("modal-container").style.display = "none";
                         reload();
@@ -1318,47 +1464,26 @@
                     for (const opp of opps[player]) {
                         console.log(opps);
                         if (!omw.hasOwnProperty(player)) omw[player] = [];
-                        omw[player].push(records[opp][0]/ records[opp][1]);
+                        omw[player].push(records[opp][0] / records[opp][1]);
                     }
                 }
                 for (const player in omw) {
                     let total = 0;
-                    let count=  0;
+                    let count = 0;
                     for (const wr of omw[player]) {
                         total += wr;
                         count++;
                     }
                     omw[player] = total / count;
                 }
+                console.log(JSON.stringify({records: records, match_total: match_total, opps: opps, omw: omw}));
                 return {records: records, match_total: match_total, opps: opps, omw: omw};
             }
 
             async function topCutHelper(rounds) {
                 let swiss_rounds = rounds.swiss;
                 let stats = statsHelper(swiss_rounds);
-                // let stats = {
-                //     records: {
-                //         "p1": [3, 0],
-                //         "p2": [3, 0],
-                //         "p3": [2, 1],
-                //         "p4": [2, 1],
-                //         "p5": [1, 2],
-                //         "p6": [1, 2],
-                //         "p7": [0, 3],
-                //         "p8": [0, 3],
-                //     },
-                //     match_total: {
-                //         "p1": [6, 0],
-                //         "p2": [6, 0],
-                //         "p3": [4, 2],
-                //         "p4": [4, 2],
-                //         "p5": [2, 4],
-                //         "p6": [2, 4],
-                //         "p7": [0, 6],
-                //         "p8": [0, 6],
-                //     }
-                // }
-                let players = [/*"p1", "p2", "p3", "p4", "p5", "p6"*/];
+                let players = [];
                 let matches = [];
                 let seedings = [];
                 let structure = "";
@@ -1370,121 +1495,8 @@
                     }
                     seedings.push({player: player, record: record, match_total: total});
                 }
-                // console.log(players.length);
-                switch (players.length) {
-                    case 1: 
-                        structure = "a";
-                        matches = {
-                            "a": {"0": "2", "Bye": "0"}
-                        }
-                        break;
-                    case 2: 
-                        structure = "a";
-                        matches = {
-                            "a": {"0": "-", "1": "-"}
-                        }
-                        break;
-                    case 3: 
-                        structure = "a;b";
-                        matches = {
-                            "a": {"1": "-", "2": "-"},
-                            "b": {"a": "-", "0": "-"}
-                        }
-                        break;
-                    case 4: 
-                        structure = "ab;c";
-                        matches = {
-                            "a": {"0": "-", "3": "-"},
-                            "b": {"1": "-", "2": "-"},
-                            "c": {"a": "-", "b": "-"}
-                        }
-                        break;
-                    case 5: 
-                        structure = "a:bc;d";
-                        matches = {
-                            "a": {"3": "-", "4": "-"},
-                            "b": {"0": "-", "a": "-"},
-                            "c": {"1": "-", "2": "-"},
-                            "d": {"b": "-", "c": "-"}
-                        }
-                        break;
-                    case 6: 
-                        structure = "ab:cd;e";
-                        matches = {
-                            "a": {"2": "-", "5": "-"},
-                            "b": {"3": "-", "4": "-"},
-                            "c": {"0": "-", "a": "-"},
-                            "d": {"1": "-", "b": "-"},
-                            "e": {"c": "-", "d": "-"}
-                        }
-                        break;
-                    case 7: 
-                        structure = "abcd;ef;g";
-                        matches = {
-                            "a": {"0": "2", "Bye": "0"},
-                            "b": {"1": "-", "6": "-"},
-                            "c": {"2": "-", "5": "-"},
-                            "d": {"3": "-", "4": "-"},
-                            "e": {"a": "-", "b": "-"},
-                            "f": {"c": "-", "d": "-"}
-                        }
-                        break;
-                    case 8: 
-                        structure = "abcd;ef;g";
-                        matches = {
-                            "a": {"0": "-", "7": "-"},
-                            "b": {"1": "-", "6": "-"},
-                            "c": {"2": "-", "5": "-"},
-                            "d": {"3": "-", "4": "-"},
-                            "e": {"a": "-", "b": "-"},
-                            "f": {"c": "-", "d": "-"},
-                            "g": {"e": "-", "f": "-"}
-                        }
-                        break;
-                    case 9: 
-                        structure = "a:bcde;fg;h";
-                        matches = {
-                            "a": {"7": "-", "8": "-"},
-                            "b": {"0": "-", "a": "-"},
-                            "c": {"1": "-", "6": "-"},
-                            "d": {"2": "-", "5": "-"},
-                            "e": {"3": "-", "4": "-"},
-                            "f": {"b": "-", "c": "-"},
-                            "g": {"d": "-", "e": "-"},
-                            "h": {"f": "-", "g": "-"}
-                        }
-                        break;
-                    case 10: 
-                        structure = "ab:cdef;gh;i";
-                        matches = {
-                            "a": {"8": "-", "9": "-"},
-                            "b": {"6": "-", "7": "-"},
-                            "c": {"0": "-", "a": "-"},
-                            "d": {"1": "-", "b": "-"},
-                            "e": {"2": "-", "5": "-"},
-                            "f": {"3": "-", "4": "-"},
-                            "g": {"c": "-", "d": "-"},
-                            "h": {"e": "-", "f": "-"},
-                            "i": {"g": "-", "h": "-"}
-                        }
-                        break;
-                    case 11: 
-                        structure = "abc:defg;hi;j";
-                        matches = {
-                            "a": {"9": "-", "10": "-"},
-                            "b": {"7": "-",  "8": "-"},
-                            "c": {"5": "-",  "6": "-"},
-                            "d": {"0": "-",  "a": "-"},
-                            "e": {"1": "-",  "b": "-"},
-                            "f": {"2": "-",  "c": "-"},
-                            "g": {"3": "-",  "4": "-"},
-                            "h": {"d": "-",  "e": "-"},
-                            "i": {"f": "-",  "g": "-"},
-                            "j": {"h": "-",  "i": "-"}
-                        } 
-                        break;
-                }
                 
+                matches = rounds.bracket.matches;
                 seedings.sort(seeder);
                 console.log(matches);
                 return {players: players, matches: rounds.bracket.matches, seedings: seedings, stats: stats, structure: rounds.bracket.structure};
@@ -1513,6 +1525,12 @@
                     return -1;
                 }
                 if (a.match_total[1] < b.match_total[1]) {
+                    return 1;
+                }
+                if (a.omw > b.omw) {
+                    return -1;
+                }
+                if (a.omw < b.omw) {
                     return 1;
                 }
                 return 0;
@@ -1576,7 +1594,6 @@
                         let seedings_2 = [...seedings];
                         Array.prototype.swiss_sort = function(p) {
                             function compare(a, b) {
-                                console.log("OPPS", p.opps[p.player]);
                                 if (p.opps[p.player].includes(a.player) && !p.opps[p.player].includes(b.player)) {
                                     return -1;
                                 }
@@ -1651,7 +1668,9 @@
                         decks:  event_data.decks,
                         rounds: JSON.stringify(rounds),
                         num_rounds: event_data.num_rounds,
-                        stage: event_data.stage
+                        stage: event_data.stage,
+                        name: event_data.name,
+                        winner: event_data.winner
                     });
                     reload();
                 } 
@@ -1792,7 +1811,9 @@
                         decks:  event_data.decks,
                         rounds: JSON.stringify(rounds),
                         num_rounds: event_data.num_rounds,
-                        stage: "bracket"
+                        stage: "bracket",
+                        name: event_data.name,
+                        winner: event_data.winner
                     });
                     reload();
                 } 
@@ -1817,13 +1838,27 @@
                         decks:  event_data.decks,
                         rounds: JSON.stringify(rounds),
                         num_rounds: numRounds(in_games.length),
-                        stage: "swiss"
+                        stage: "swiss",
+                        name: event_data.name,
+                        winner: event_data.winner
                     });
                     reload();
                 }
                 else {
                     alert("There's no need to push rounds in top cut, you just need to paste the discord message copied to your clipboard");
                 }
+            }
+
+            async function newGP() {
+                const event_name = window.prompt("GP Name?");
+                await setDoc(doc(db, 'events', event_name), {
+                        decks:  "[]",
+                        rounds: '{"swiss":{},"bracket":{}}',
+                        num_rounds: 0,
+                        stage: "initial",
+                        name: event_name,
+                        winner: "TBD"
+                });
             }
 
             function numRounds(n) {
