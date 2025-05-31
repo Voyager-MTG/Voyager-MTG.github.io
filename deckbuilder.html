@@ -4082,6 +4082,7 @@
 				} else {
 					colls = []
 				}
+				console.log(decks);
 
 				const urlParams = new URLSearchParams(window.location.search);
 
@@ -4167,6 +4168,7 @@
 							decks.splice(decks.indexOf(deck_), 1);
 						}
 					}
+					console.log(decks);
 					decks.push(deckObj);
 					setDoc(doc(db, "users", username), {
 						username: username,
