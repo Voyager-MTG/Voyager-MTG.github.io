@@ -9,15 +9,32 @@
 	  font-family: 'Beleren Small Caps';
 	  src: url('/resources/beleren-caps.ttf');
 	}
+	:root {
+		--gradient: ""
+	}
 	body {
-		background-image: linear-gradient(to top, #ffdde1, #ee9ca7);
 		background-attachment: fixed;
 		overscroll-behavior: none;
 		font-family: 'Helvetica', 'Arial', sans-serif;
 		display: grid;
+		overflow-x: hidden;
+		margin: 0;
+	}
+	body::before {
+		content: "";
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		background-image: var(--gradient);	
+		/* background-attachment: fixed; */
+		background-size: cover;
 	}
 	.selects {
 		position: absolute;
+		margin: 10px;
 	}
 	.item-container {
 		height: auto;
@@ -98,12 +115,26 @@
 	.button-grid {
 		display: grid;
 		margin: auto;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 		gap: 20px;
 		padding-top: 10px;
 		padding-bottom: 20px;
 	}
 	.button-grid button {
+		background-color: #171717;
+		border: none;
+		color: #f3f3f3;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 15px;
+		width: 150px;
+		height: 35px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+	}
+	.black-button {
 		background-color: #171717;
 		border: none;
 		color: #f3f3f3;
@@ -193,12 +224,75 @@
 			font-size: 18px;
 		}
 	}
+	.settings-icon {
+		max-height: 30px;
+		cursor: pointer	;
+	}
+	.settings {
+		position: relative;
+		float: right;
+		width: fit-content;
+		margin: 10px;
+	}
+	#modal-container {
+		display: none; 
+		position: fixed; 
+		z-index: 1; 
+		padding-top: 70px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto; 
+		background-color: rgb(0,0,0); 
+		background-color: rgba(0,0,0,0.4); 
+	}
+	#modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 50%;
+		border-radius: 10px;
+		border: solid #777 3px;
+	}
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+		margin-left: 30px;
+	}
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.account-grid {
+		display: grid;
+		gap: 7px;
+		grid-template-columns: 1fr 2fr 1fr 2fr;
+		align-items: center;
+		justify-items: center;
+	}
+	#login {
+		font-weight: bold;
+		font-size: 20px;
+	}
+	</style>
+	<style id="gradient-style">
+
 	</style>
 	<body>
 		<div class="selects" id="selects">
 			<select id="color-select" onchange="setGradient()">
 			</select>
 		</div>
+		<div class="settings" id="settings">
+			<img src="img/settings.png" class="settings-icon" onclick="openSettingsModal()">
+		</div>
+		<div id="gradient"></div>
 		<div class="item-container">
 			<img class="banner" src="img/banner.png"></img>
 			<input type="text" inputmode="search" placeholder="Search ..." autofocus="autofocus" name="search" id="search" spellcheck="false" autocomplete="off" autocorrext="off" spellcheck="false">
@@ -206,6 +300,7 @@
 				<button onclick="goToSets()"><img src="/img/sets.png" class="btn-img">All Sets</button>
 				<button onclick="goToDeckbuilder()"><img src="/img/deck.png" class="btn-img">Deckbuilder</button>
 				<button onclick="randomCard()"><img src="/img/random.png" class="btn-img">Random Card</button>
+				<button onclick="window.location.href = '/community'"><img src="/img/community.png" class="btn-img">Community</button>
 			</div>
 			<div class="two-part-grid">
 				<div class="container" id="preview-container">
@@ -256,11 +351,28 @@
 				</div>
 			</div>
 		</div>
+		<div id="modal-container">
+			<div id="modal-content" class="popout">
+				<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+				<div class="account-grid">
+					<button class="black-button" onclick="window.location.href = '/account'" id="account-btn"><img src="/img/account.png" class="btn-img">My Account</button>
+					<span id="login"></span>
+					<button class="black-button" onclick="localStorage.removeItem('settings.session'); location.reload();" id="account-btn"><img src="/img/export-white.png" class="btn-img">Sign Out</button>
+				</div>
+			</div>
+		</div>
 		<script>
 			const delay = ms => new Promise(res => setTimeout(res, ms));
 			let gradients = [];
 			let card_list_arrayified = [];
 			let specialchars = "";
+
+			modal = document.getElementById("modal-container");
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    document.getElementById('modal-container').style.display = 'none';
+                }
+            }  
 
 			document.addEventListener("DOMContentLoaded", async function () {
 				try {
@@ -272,6 +384,9 @@
 				}
 
 				gradients = raw_gradients.gradients;
+
+				if (localStorage.getItem('settings.gradient') == null) localStorage.setItem('settings.gradient', 'Voyager');
+				setGradient(localStorage.getItem('settings.gradient'));
 				prepareGradients();
 
 				await fetch('/lists/all-cards.json')
@@ -342,7 +457,12 @@
 				}
 				while (!isImageOk(document.getElementById("cotd")));
 				document.getElementById("preview-container").style.height = document.getElementById("cotd-image").offsetHeight;
+
 			});
+
+			function openSettingsModal() {
+				document.getElementById("modal-container").style.display = "block";
+			}
 
 			document.getElementById("search").addEventListener("keypress", function(event) {
 				if (event.key === "Enter") {
@@ -381,32 +501,46 @@
 			}
 
 			function prepareGradients() {
+				let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+				const opt = document.createElement("option");
+				opt.value = defaultGradient.replace(' ', '-');
+				opt.text = defaultGradient;
+				document.getElementById("color-select").appendChild(opt);
 				for (const gradient of gradients)
-				{
+				{	
 					const opt = document.createElement("option");
 					opt.value = gradient.name.replace(' ', '-');
 					opt.text = gradient.name;
-					document.getElementById("color-select").appendChild(opt);
+					if (gradient.name != defaultGradient) {
+						document.getElementById("color-select").appendChild(opt);
+					}
 				}
 
-				setGradient();
+				// setGradient();
 			}
 
-			function setGradient() {
-				gradient = document.getElementById("color-select").value;
+			function setGradient(gradient=false) {
+				if (!gradient) { 
+					gradient = document.getElementById("color-select").value;
+				}
 
 				gradTop = "#000000";
 				gradBottom = "#FFFFFF";
 				for (const grad of gradients)
 				{
 					if (gradient == grad.name.replace(' ', '-'))
-					{
+					{ 	
 						gradTop = grad.color1;
 						gradBottom = grad.color2;
 					}
 				}
 
-				document.body.style.backgroundImage = `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`;
+				// console.log(`linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
+				document.body.style.setProperty("--gradient", `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
+				// cssVars({
+				// 	variables: {'--gradient': `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`}
+				// });
+				localStorage.setItem("settings.gradient", gradient);
 			}
 
 			function goToSets() {
@@ -438,6 +572,53 @@
 				}
 
 				window.location.href = url;
+			}
+		</script>
+		<script type="module">
+			// Import the functions you need from the SDKs you need
+			import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+			import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+			// TODO: Add SDKs for Firebase products that you want to use
+			// https://firebase.google.com/docs/web/setup#available-libraries
+			
+			// Your web app's Firebase configuration
+			// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+			const firebaseConfig = {
+				apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+				authDomain: "voyager-78e30.firebaseapp.com",
+				projectId: "voyager-78e30",
+				storageBucket: "voyager-78e30.firebasestorage.app",
+				messagingSenderId: "411191248476",
+				appId: "1:411191248476:web:591349be169d823e5f8899",
+				measurementId: "G-TQ1L48F25M"
+			};
+			
+			// Initialize Firebase
+			const app = initializeApp(firebaseConfig);
+			const db = getFirestore(app);
+
+			let username = "";
+			let password = "";
+			let decks = "";
+
+			let sessionid = localStorage.getItem("settings.session");
+			let logged_in = (sessionid != null);
+
+			if (logged_in) {
+				const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+					let data = docSnap.data();
+					username = data.username;
+					password = data.password;
+				});
+
+				await getDoc(doc(db, 'users', username)).then(docSnap => {
+					let data = docSnap.data();
+					console.log(data);
+					document.getElementById("login").innerText = username;
+				});
+			} else {
+				document.getElementById("login").innerText = "Not logged in";
+				document.getElementById("account-btn").innerHTML = `<img src="/img/account.png" class="btn-img">Not logged in`;
 			}
 		</script>
 	</body>
