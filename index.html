@@ -160,7 +160,7 @@
 		align-self: center;
 	}
 	.card-container {
-		background: #f3f3f3;
+		/* background: #f3f3f3; */
 		width: 90%;
 		border: 1px solid #d5d9d9;
 		border-top: 3px solid #171717;
@@ -209,7 +209,7 @@
 	.set-icon img {
 		width: 60px;
 	}
-	.set-icon-name {
+	.set-icon-name	 {
 		min-height: 30px;
 		height: 100%;
 	}
@@ -285,8 +285,16 @@
 		width: 90%;
 	}
 	</style>
-	<style id="gradient-style">
-
+	<style id="text-style">
+	.text {
+		color: white;
+	}
+	</style>
+	<style id="popout-style">
+		.popout {
+			background-color: #f3f3f3;
+			/* color: #f3f3f3; */
+		}
 	</style>
 	<body>
 		<div class="selects" id="selects">
@@ -308,49 +316,49 @@
 			</div>
 			<div class="two-part-grid">
 				<div class="container" id="preview-container">
-					<p>Preview Galleries</p>
+					<p class="text">Preview Galleries</p>
 										<div class="set-group"></div>
 							<div class="preview-container">
 		<div class="set-icon-container">
 									<a href="sets/AKT"><div class="set-icon"><img src="sets/AKT-files/icon.png" title="Akellan Transcendence"></img></div>
-									<div class="set-icon-name">Akellan Transcendence</div></a>
+									<div class="set-icon-name text">Akellan Transcendence</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/EXPT"><div class="set-icon"><img src="sets/EXPT-files/icon.png" title="TVP Silver Expansion"></img></div>
-									<div class="set-icon-name">TVP Silver Expansion</div></a>
+									<div class="set-icon-name text">TVP Silver Expansion</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/HEL"><div class="set-icon"><img src="sets/HEL-files/icon.png" title="Fires of Hwel"></img></div>
-									<div class="set-icon-name">Fires of Hwel</div></a>
+									<div class="set-icon-name text">Fires of Hwel</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/HOD"><div class="set-icon"><img src="sets/HOD-files/icon.png" title="Houses of Dewold"></img></div>
-									<div class="set-icon-name">Houses of Dewold</div></a>
+									<div class="set-icon-name text">Houses of Dewold</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/ITD"><div class="set-icon"><img src="sets/ITD-files/icon.png" title="Itera: Into the Dream"></img></div>
-									<div class="set-icon-name">Itera: Into the Dream</div></a>
+									<div class="set-icon-name text">Itera: Into the Dream</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/PTN"><div class="set-icon"><img src="sets/PTN-files/icon.png" title="Port Noon: Occult Islands of Vespera"></img></div>
-									<div class="set-icon-name">Port Noon: Occult Islands of Vespera</div></a>
+									<div class="set-icon-name text">Port Noon: Occult Islands of Vespera</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/PVR"><div class="set-icon"><img src="sets/PVR-files/icon.png" title="Primivir"></img></div>
-									<div class="set-icon-name">Primivir</div></a>
+									<div class="set-icon-name text">Primivir</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/VNM"><div class="set-icon"><img src="sets/VNM-files/icon.png" title="Vinimroth Eternities"></img></div>
-									<div class="set-icon-name">Vinimroth Eternities</div></a>
+									<div class="set-icon-name text">Vinimroth Eternities</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/WAW"><div class="set-icon"><img src="sets/WAW-files/icon.png" title="The Wonderlands’ Wishes"></img></div>
-									<div class="set-icon-name">The Wonderlands’ Wishes</div></a>
+									<div class="set-icon-name text">The Wonderlands’ Wishes</div></a>
 								</div>
 									</div>
 		
 				</div>
-				<div class="card-container" id="cotd-image">
+				<div class="card-container popout" id="cotd-image">
 					<p>Card of the Day</p>
 				</div>
 			</div>
@@ -406,6 +414,15 @@
 				}).catch(error => console.error('Error:', error));
 
 				card_list_arrayified = card_list.cards;
+
+				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+				document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+				if (localStorage.getItem("settings.darkthememenu") == "On") {
+					document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
+				} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
+					document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
+				}
 
 				card_list_cleaned = [];
 
