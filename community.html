@@ -493,6 +493,7 @@
             }
 
             document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
 
             // declare variables outside of functions to avoid passing nonsense
             let q;
@@ -568,18 +569,18 @@
                     event_container.className = "event-container";
 
                     const event_name = document.createElement("a");
-                    event_name.className = "event-name";
+                    event_name.className = "event-name text";
                     event_name.innerText = event.name;
                     event_name.href = `gp?event=${event.name}`;
                     event_container.appendChild(event_name);
 
                     const event_players = document.createElement("span");
-                    event_players.className = "event-players";
+                    event_players.className = "event-players text";
                     event_players.innerText = Object.keys(JSON.parse(event.decks)).length + " players";
                     event_container.appendChild(event_players);
 
                     const event_winner = document.createElement("span");
-                    event_winner.className = "event-winner";
+                    event_winner.className = "event-winner text";
                     event_winner.innerText = "Winner: " + event.winner  ;
                     event_container.appendChild(event_winner);
                     
@@ -622,11 +623,12 @@
                     const section_container = document.createElement("div");
                     section_container.className = "full-deck-section-container";
                     const section_header = document.createElement("span");
-                    section_header.className = "deck-section-header";
+                    section_header.className = "deck-section-header text";
                     section_header.innerText = name;
                     const decks_container = document.createElement("div");
                     decks_container.className = "deck-section-container";      
-                    const line = document.createElement("hr");             
+                    const line = document.createElement("hr");    
+                    line.className = "text-bg";         
 
                     let all_decks_2 = [...all_decks];
                     let num_decks = section.num;

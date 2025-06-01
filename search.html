@@ -200,6 +200,17 @@
 		color: rgba(0, 0, 0, 0);
 	}
 </style>
+<style id="text-style">
+	.text {
+		color: white;
+	}
+</style>
+<style id="popout-style">
+	.popout {
+		background-color: #f3f3f3;
+		/* color: #f3f3f3; */
+	}
+</style>
 <body>
 	<div class="header">
 		<div class="search-grid">
@@ -212,10 +223,10 @@
 			<a href="/community" id="account-link"><img src="/img/community.png" class="sg-icon">Community</a>		</div>
 	</div>
 	<div class="button-grid">
-		<div class="select-text"><div class="results-text" id="results-text">Loading ...</div>Cards displayed as<select name="display" id="display"><option value="cards-only">Cards Only</option><option value="cards-text">Cards + Text</option></select>sorted by<select name="sort-by" id="sort-by"><option value="name">Name</option><option value="set-code">Set / Number</option><option value="mv">Mana Value</option><option value="color">Color</option><option value="rarity">Rarity</option></select> : <select name="sort-order" id="sort-order"><option value="ascending">Asc</option><option value="descending">Desc</option></select></div>		
+		<div class="select-text text"><div class="results-text" id="results-text">Loading ...</div>Cards displayed as<select name="display" id="display" class="popout"><option value="cards-only">Cards Only</option><option value="cards-text">Cards + Text</option></select>sorted by<select name="sort-by" id="sort-by" class="popout"><option value="name">Name</option><option value="set-code">Set / Number</option><option value="mv">Mana Value</option><option value="color">Color</option><option value="rarity">Rarity</option></select> : <select name="sort-order" id="sort-order" class="popout"><option value="ascending">Asc</option><option value="descending">Desc</option></select></div>		
 		<div class="prev-next-btns">
-			<button type="submit" onclick="previousPage()" id="prevBtn" disabled>< Previous</button>
-			<button type="submit" onclick="nextPage()" id="nextBtn">Next 30 ></button>
+			<button class="popout" type="submit" onclick="previousPage()" id="prevBtn" disabled>< Previous</button>
+			<button class="popout" type="submit" onclick="nextPage()" id="nextBtn">Next 30 ></button>
 		</div>
 	</div>
 
@@ -228,8 +239,8 @@
 	<div class="button-grid" id="footer">
 		<div></div>
 		<div class="prev-next-btns">
-			<button type="submit" onclick="previousPage()" id="prevBtn-footer" disabled>< Previous</button>
-			<button type="submit" onclick="nextPage()" id="nextBtn-footer">Next 30 ></button>
+			<button class="popout" type="submit" onclick="previousPage()" id="prevBtn-footer" disabled>< Previous</button>
+			<button class="popout" type="submit" onclick="nextPage()" id="nextBtn-footer">Next 30 ></button>
 		</div>
 	</div>
 
@@ -294,6 +305,26 @@
 			defaultSetting('settings.autosave', 'On');
 			defaultSetting('settings.searchalias', 'On');
 			defaultSetting('settings.exportcube', 'On');
+
+			try {
+				const response = await fetch('/resources/gradients.json');
+				raw_gradients = await response.json();
+			}
+			catch(error) {
+				console.error('Error:', error);
+			}
+
+			gradients = raw_gradients.gradients;
+			setGradient(localStorage.getItem("settings.gradient"));
+
+			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+			if (localStorage.getItem("settings.darkthememenu") == "On") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
+			} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
+			}
 
 			// initial search on load
 			preSearch(false);
@@ -1671,6 +1702,45 @@
 
 				window.location.href = url;
 			}
+
+			function setGradient(gradient=false) {
+                if (!gradient) { 
+                    gradient = document.getElementById("color-select").value;
+                }
+
+                gradTop = "#000000";
+                gradBottom = "#FFFFFF";
+                for (const grad of gradients)
+                {
+                    if (gradient == grad.name.replace(' ', '-'))
+                    { 	
+                        gradTop = grad.color1;
+                        gradBottom = grad.color2;
+                    }
+                }
+
+                // console.log(`linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
+                document.body.style.backgroundImage = `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`;
+                localStorage.setItem("settings.gradient", gradient);
+		    }
+            function prepareGradients() {
+                let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+                const opt = document.createElement("option");
+                opt.value = defaultGradient.replace(' ', '-');
+                opt.text = defaultGradient;
+                document.getElementById("color-select").appendChild(opt);
+                for (const gradient of gradients)
+                {	
+                    const opt = document.createElement("option");
+                    opt.value = gradient.name.replace(' ', '-');
+                    opt.text = gradient.name;
+                    if (gradient.name != defaultGradient) {
+                        document.getElementById("color-select").appendChild(opt);
+                    }
+                }
+
+                // setGradient();
+            }
 	</script>
 </body>
 </html>

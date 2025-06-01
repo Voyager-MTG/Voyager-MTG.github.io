@@ -190,6 +190,17 @@
 		float: right;
 	}
 </style>
+<style id="text-style">
+	.text {
+		color: white;
+	}
+</style>
+<style id="popout-style">
+	.popout {
+		background-color: #f3f3f3;
+		/* color: #f3f3f3; */
+	}
+</style>
 <body>
 	<div class="header">
 		<div class="search-grid">
@@ -203,10 +214,10 @@
 	</div>
 
 	<input type="text" id="display" class="hidden" value="cards-and-text"> <!-- here to make img-container-defs snippet work properly -->
-	<div class="banner-container">
+	<div class="banner-container popout">
 		<a class="set-banner" id="set-banner">
 			<img class="set-logo" id="set-banner-logo">
-			<div class="set-title" id="set-banner-title"></div>
+			<div class="set-title text" id="set-banner-title"></div>
 		</a>
 	</div>
 
@@ -237,6 +248,27 @@
 					.then(json => {
 						set_list = json;
 				}).catch(error => console.error('Error:', error));
+
+			
+			try {
+				const response = await fetch('/resources/gradients.json');
+				raw_gradients = await response.json();
+			}
+			catch(error) {
+				console.error('Error:', error);
+			}
+
+			gradients = raw_gradients.gradients;
+			setGradient(localStorage.getItem("settings.gradient"));
+
+			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+			if (localStorage.getItem("settings.darkthememenu") == "On") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
+			} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
+			}
 
 			const params = new URLSearchParams(window.location.search);
 
@@ -650,6 +682,45 @@
 
 				window.location.href = url;
 			}
+
+		function setGradient(gradient=false) {
+                if (!gradient) { 
+                    gradient = document.getElementById("color-select").value;
+                }
+
+                gradTop = "#000000";
+                gradBottom = "#FFFFFF";
+                for (const grad of gradients)
+                {
+                    if (gradient == grad.name.replace(' ', '-'))
+                    { 	
+                        gradTop = grad.color1;
+                        gradBottom = grad.color2;
+                    }
+                }
+
+                // console.log(`linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
+                document.body.style.backgroundImage = `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`;
+                localStorage.setItem("settings.gradient", gradient);
+		    }
+            function prepareGradients() {
+                let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+                const opt = document.createElement("option");
+                opt.value = defaultGradient.replace(' ', '-');
+                opt.text = defaultGradient;
+                document.getElementById("color-select").appendChild(opt);
+                for (const gradient of gradients)
+                {	
+                    const opt = document.createElement("option");
+                    opt.value = gradient.name.replace(' ', '-');
+                    opt.text = gradient.name;
+                    if (gradient.name != defaultGradient) {
+                        document.getElementById("color-select").appendChild(opt);
+                    }
+                }
+
+                // setGradient();
+            }
 	</script>
 </body>
 </html>

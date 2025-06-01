@@ -1562,6 +1562,7 @@
 			} else if (menu == "Style") {
 				let gradientDropdown = document.createElement('select');
 				gradientDropdown.id = 'color-select';
+				gradientDropdown.className = "popout"
 				gradientDropdown.onchange = function() {
 					setGradient();
 				}
@@ -1601,6 +1602,7 @@
 				preview_card_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 				let card_dropdown = document.createElement("select");
 				card_dropdown.id = "card-dropdown";
+				card_dropdown.className = "popout";
 				let deck_list = [];
 				let option_ = document.createElement('option');
 				option_.innerText = card_stats.card_name;
@@ -1638,7 +1640,7 @@
 			settingsText.innerText = settingname + ": ";
 			// add the dropdown with an onchange to set the localStorage value of the settingtag
 			let dropdown = document.createElement("select");
-			dropdown.className = "settings-dropdown";
+			dropdown.className = "settings-dropdown popout";
 			dropdown.id = settingtag;
 			if (!func) {
 				dropdown.onchange = function() {

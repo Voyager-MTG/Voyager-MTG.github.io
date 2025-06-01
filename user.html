@@ -280,7 +280,7 @@
                 <div class="username text" id="username"></div>
                 <div class="deck-section-header text">Decks</div>
             </div>
-            <hr>
+            <hr class="text-bg">
             <div class="decks-container" id="decks">
                 <!-- test -->
             </div>
@@ -395,7 +395,9 @@
 		    });
 
             document.getElementById("username").innerText = username;
+
             document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
             
             async function reload() {
                 const deck_data = await getDoc(doc(db, 'users', username)).then(async docSnap => {
@@ -420,8 +422,9 @@
                             format_container.id = deck.format;
                             let format_header = document.createElement("div");
                             format_header.innerText = deck.format;
-                            format_header.className = "format-header";
+                            format_header.className = "format-header text";
                             let divider = document.createElement("hr");
+                            divider.className = "text-bg";
                             document.getElementById('decks').appendChild(format_header);
                             document.getElementById('decks').appendChild(divider);
                             document.getElementById('decks').appendChild(format_container);

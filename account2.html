@@ -56,14 +56,12 @@
             font-family: beleren;
         }
         .decks-container {
-            margin-bottom: 20px;
-            width: 85%;
-        }
-        .format-container {
             display: grid;
-            gap: 10px;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
+            gap: 5px;
+            grid-template-columns: 2fr auto 1fr 1fr auto;
+            width: 85%;
+            margin-bottom: 20px;
+        }/*
         .collections-container {
             display: grid;
             gap: 10px;
@@ -74,30 +72,16 @@
         .deck-container {
             display: grid;
             gap: 5px;
-            /* grid-template-rows: 1fr 2fr 1fr; */
+            /* grid-template-rows: 1fr 2fr 1fr; 
             background-color: #f3f3f3;
             border-radius: 8px; 
-            /* height: fit-content; */
+            height: fit-content;
             padding: 5px;
             align-items: center;
             justify-items: center;
             border: 2px solid #333;
             box-shadow: 5px 5px 2px #333;
             padding-top: 0px;
-        }
-        .full-deck-container {
-            display: grid;
-            grid-template-columns: 1fr 0.1fr;
-            gap: -5px;
-        }
-        .colors-container {
-            position: relative;
-            top: 60px;
-            right: 14px;
-            background-color: #333;
-            height: fit-content; 
-            padding: 2px;
-            border-radius: 20px;
         }
         .deck-preview-img {
             max-height: 300px;
@@ -107,22 +91,52 @@
             margin-bottom: 7px;
             /* box-shadow: inset 0.2em 0.2em 0.2em 0em rgba(0, 0, 0, 0.5), inset -0.2em -0.2em 0.2em 0em rgba(0,0,0,0.5); */
             /* padding: 0.2em; */
-            /* background-color: #777; */
-        }
+            /* background-color: #777; 
+        }*/
         .deck-name {
             font-weight: bold;
-            font-size: 30px;
+            font-size: 24px;
             font-family: beleren;
-            background-color: #ccc;
             /* border: 2px solid #333; */
-            /* box-shadow: 5px 5px 2px #333; */
-            border-radius: 5px;
-            padding: 5px;
-            margin-bottom: 3px;
-            width: 100%;
+            /* box-shadow: 5px 5px 2px #333;  */
             text-align: center;
-            /* color: white; */
+            /* border: 2px solid black;
+            color: white;
+            background-color: rgba(0,0,0,0.5); */
+            padding: 3px;
+            border-bottom: 2px solid black;
+            color: rgb(79, 79, 189);
+            text-decoration: underline;
+            cursor: pointer;
         }
+        .format {
+            font-size: 22px;
+            text-align: center;
+            /* border: 2px solid black;
+            color: white;
+            background-color: rgba(0,0,0,0.5); */
+            padding: 3px;
+            border-bottom: 2px solid black;
+        }
+        .colors {
+            font-size: 22px;
+            text-align: center;
+            /* border: 2px solid black;
+            color: white;
+            background-color: rgba(0,0,0,0.5); */
+            padding: 3px;
+            border-bottom: 2px solid black;
+        }
+        .updated {
+            font-size: 22px;
+            text-align: center;
+            /* border: 2px solid black;
+            color: white;
+            background-color: rgba(0,0,0,0.5); */
+            padding: 3px;
+            border-bottom: 2px solid black;
+        }
+        /*
         .deck-buttons {
             display: grid;
             gap: 12px;
@@ -135,7 +149,7 @@
             gap: 12px;
             align-items: center;
             justify-items: center;
-            grid-template-columns: 4fr 1fr;
+            grid-template-columns: 1fr 1fr;
         }
         .deck-buttons-logged-out {
             display: grid;
@@ -143,19 +157,18 @@
             align-items: center;
             justify-items: center;
             grid-template-columns: 1fr;
-        }
+        }*/
         .deck-icon-shadow {
-            /* border: 3px solid black; */
-            /* box-shadow: 2px 2px 1px #333; */
             box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5), inset -0.2em -0.2em 0.2em 0 rgba(0,0,0,0.5);
             padding: 0.3em;
         }
         .deck-link {
-            /* font-family: beleren; */
+            /*font-family: beleren; */
             background-color: #1652e0;
             color: white;
             padding: 2px 6px 2px 6px;
             border-radius: 8px;
+            font-weight: bold;
             display: grid;
             grid-template-columns: 2fr 1fr;
             align-items: center;
@@ -165,32 +178,21 @@
         .deck-section-header {
             font-size: 60px;
             font-weight: bold;
-            /* color: white; */
+            color: white; 
             align-items: center;
             justify-items: center;
             text-align: center;
             width: 100%;
             margin: 20px;
             font-family: beleren;
-        }
-        .format-header {
-            font-size: 40px;
-            font-weight: bold;
-            /* color: white; */
-            align-items: center;
-            justify-items: center;
-            text-align: center;
-            width: 100%;
-            margin: 20px;
-            font-family: beleren;
-        }
+        }/*
         .event-link {
             background-color: #1652e0;
             color: white;
-            padding: 12px;
+            padding: 8px;
             border-radius: 8px;
-            font-size: 16px;
-            text-decoration: underline;
+            font-size: 20px;
+            font-weight: bold;
             text-align: center;
             margin: 20px;
             height: fit-content;
@@ -203,11 +205,11 @@
             width: 85%;
             align-items: center;
             justify-items: center;
-        }
+        }*/
         .deck-icon-blue {
             max-height:30px;
             /* background-color: #1652e0; */
-            /* border-radius: 8px; */
+            border-radius: 8px; 
             padding: 5px;
             cursor: pointer;
         }
@@ -235,13 +237,13 @@
             grid-template-columns: 5fr 1fr;
             align-items: center;
             justify-items: center;
-            font-size: 24px; 
+            font-size: 20px; 
             /* border: 2px solid #333;
             box-shadow: 2px 2px 1px #333; */
         }
         .deck-link-green .deck-icon-green {
             background-color: rgba(0,0,0,0);
-        }
+        } 
         hr {
             width: 85%;
             height: 4px;
@@ -250,8 +252,35 @@
             border: none;
         }
         .mana-img {
-            max-height: 26px;
-            margin: 2px;
+            max-height: 22px;
+        }
+        .deck-icon {
+            max-height: 24px;
+            position: relative;
+            top: 15%;
+            cursor: pointer;
+        }
+        .deck-icon-container {
+            border-bottom: 2px solid black;
+            align-items: center;
+            justify-self: center;
+        }
+        .mana-img-dark {
+            max-height: 22px;
+            filter: brightness(0.5);
+        }
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
         }
         #modal-container {
             display: none; 
@@ -274,24 +303,6 @@
             width: 50%;
             border-radius: 10px;
             border: solid #777 3px;
-        }
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            margin-left: 30px;
-        }
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .submit-modal {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
         }
     </style>
     <style id="text-style">
@@ -319,12 +330,11 @@
                 <div class="username text" id="username"></div>
             </div>
             <div class="deck-section-header text">My Decks</div>
-            <hr class="text-bg">
+            <hr>
             <div class="decks-container" id="decks">
-                <!-- test -->
             </div>
             <div class="deck-section-header text">My Collections</div>
-            <hr class="text-bg">
+            <hr>
             <div class="collections-container" id="colls">
                 <!-- test -->
             </div>
@@ -398,14 +408,6 @@
 
                 // setGradient();
             }
-            document.getElementById("search").addEventListener("keypress", function(event) {
-				if (event.key === "Enter") {
-					event.preventDefault();
-					const url = new URL('search', window.location.origin);
-					url.searchParams.append('search', document.getElementById("search").value);
-					window.location.href = url;
-				}
-			});
         </script>
         <script type="module">
             // Import the functions you need from the SDKs you need
@@ -425,19 +427,15 @@
                 appId: "1:411191248476:web:591349be169d823e5f8899",
                 measurementId: "G-TQ1L48F25M"
             };
-
-            const color_bgs = {
-                white: "#"
-            }
             
             // Initialize Firebase
             const app = initializeApp(firebaseConfig);
             const db = getFirestore(app);
+            const events = ["GP1", "League"];
             let username = "";
             let password = "";
             let sessionid = localStorage.getItem('settings.session');
             let decks = {};
-            const events = ["GP1", "League"];
             // console.log
 
             if (!sessionid) {
@@ -457,15 +455,11 @@
 
             document.getElementById("username").innerText = username;
             document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-
             
             async function reload() {
                 const deck_data = await getDoc(doc(db, 'users', username)).then(async docSnap => {
                     let user_data = docSnap.data();
                     let colls;
-                    let used_formats = [];
-                    document.title = username;
                     let decks = JSON.parse(user_data.decks);
                     if (user_data.colls) { 
                         colls = JSON.parse(user_data.colls);
@@ -475,15 +469,104 @@
                     console.log(decks);
                     document.getElementById('decks').innerHTML = "";
                     for (const deck of decks) {
-
-                        if (!used_formats.includes(deck.format)) {
-                            used_formats.push(deck.format);
-                            const full_format_container = createFormatContainer(deck.format);
-                            document.getElementById('decks').appendChild(full_format_container);
+                        let name = document.createElement('div');
+                        let colors = document.createElement('div');
+                        let format = document.createElement('div');
+                        let modified = document.createElement('div');
+                        let settings_container = document.createElement('div');
+                        let settings = document.createElement('img');
+                        name.innerText = deck.name;
+                        name.className = 'deck-name';
+                        name.onclick = function() {
+                            window.location.href = deck.url;
                         }
-
-                        document.getElementById(deck.format).appendChild(createDeckContainer(deck));
-
+                        format.innerText = deck.format;
+                        format.className = 'format';
+                        modified.innerText = deck.last_modified;
+                        modified.className = 'updated';
+                        for (const color of 'WUBRGI') {
+                            let color_ele = document.createElement('img');
+                            color_ele.src = `img/mana_${color}.png`;
+                            if (deck.colors.includes(color)) {
+                                color_ele.className = "mana-img";
+                            } else {
+                                color_ele.className = "mana-img-dark";
+                            }
+                            colors.appendChild(color_ele);
+                        }
+                        colors.className = "colors";
+                        settings.src = "img/settings.png";
+                        settings.className = "deck-icon";
+                        console.log(settings_container);
+                        settings_container.className = "deck-icon-container";
+                        settings_container.append(settings);
+                        settings.onclick = function() {
+                            document.getElementById('modal-container').style.display = 'block';
+                            let modal_content = document.getElementById('modal-content');
+                            modal_content.innerHTML = "";
+                            let deck_link = document.createElement('a');
+                            deck_link.href = deck.url;
+                            let deck_edit_icon = document.createElement('img');
+                            deck_edit_icon.src = "/img/edit.png";
+                            deck_edit_icon.className = "deck-icon-green";
+                            deck_link.innerText = "Edit in Deckbuilder";
+                            deck_link.className = "deck-link-green deck-icon-shadow";
+                            deck_link.appendChild(deck_edit_icon);
+                            modal_content.appendChild(deck_link);
+                            let deck_delete_icon = document.createElement('img');
+                            deck_delete_icon.src = "/img/trash.png";
+                            deck_delete_icon.className = "deck-icon-red deck-icon-shadow";
+                            deck_delete_icon.onclick = async function() {
+                                let new_decks = decks;
+                                // let index = 0;
+                                let user_deck = {};
+                                console.log(user_data.decks);
+                                for (let i = 0; i < decks.length; i++) {
+                                    user_deck = decks[i];
+                                    console.log(user_deck, i, deck.name);
+                                    if (user_deck["name"] == deck.name) {
+                                        new_decks.splice(i,1);
+                                    }
+                                    // index += 1;
+                                }
+                                await setDoc(doc(db, "users", username), {
+                                    username: username,
+                                    password: password,
+                                    decks: JSON.stringify(new_decks)
+                                });
+                                document.getElementById('modal-container').style.display = 'none';
+                                alert("Deck Deleted!");
+                                reload();
+                            }
+                            modal_content.appendChild(deck_delete_icon);
+                            for (const event of events) {
+                                let deck_submit_text = document.createElement("div");
+                                deck_submit_text.innerText = event;
+                                deck_submit_text.className = "deck-link deck-icon-shadow";
+                                let deck_submit_icon = document.createElement('img');
+                                deck_submit_icon.src = "/img/export-white.png";
+                                deck_submit_icon.className = "deck-icon-blue";
+                                deck_submit_text.style.cursor = "pointer";
+                                deck_submit_text.onclick = async function() {
+                                    await getDoc(doc(db, "events", event)).then(async docSnap2 => {
+                                        let tourndata = docSnap2.data();
+                                        let decks_ = JSON.parse(tourndata.decks);
+                                        decks_[username] = deck;
+                                        await setDoc(doc(db, "events", event), {
+                                            decks: JSON.stringify(decks_)
+                                        });
+                                    });
+                                    alert("Submitted deck " + deck.name + " to" + event + "!");
+                                }
+                                deck_submit_text.appendChild(deck_submit_icon);
+                                modal_content.appendChild(deck_submit_text);
+                            }
+                        }
+                        document.getElementById('decks').appendChild(name);
+                        document.getElementById('decks').appendChild(colors);
+                        document.getElementById('decks').appendChild(format);
+                        document.getElementById('decks').appendChild(modified);
+                        document.getElementById('decks').appendChild(settings_container);
                     }
                     for (const deck of colls) {
                         let deck_container = document.createElement('div');
@@ -503,10 +586,8 @@
                         let deck_link = document.createElement('a');
                         deck_link.href = deck.url;
                         let deck_edit_icon = document.createElement('img');
-                        deck_edit_icon.src = "/img/create.png";
-                        deck_edit_icon.className = "deck-icon-green";
-                        deck_link.innerText = "Create Deck";
-                        deck_link.className = "deck-link-green deck-icon-shadow";
+                        deck_edit_icon.src = "/img/edit.png";
+                        deck_edit_icon.className = "deck-icon-green deck-icon-shadow";
                         deck_link.appendChild(deck_edit_icon);
                         let deck_delete_icon = document.createElement('img');
                         deck_delete_icon.src = "/img/trash.png";
@@ -541,151 +622,6 @@
                         document.getElementById('colls').appendChild(deck_container);
                     }
                 });
-            }
-
-            function createFormatContainer(format_name) {
-                const full_format_container = document.createElement("div");
-                const format_container = document.createElement("div");
-
-                format_container.className = "format-container";
-                format_container.id = format_name;
-
-                const format_header = document.createElement("div");
-                format_header.innerText = format_name;
-                format_header.className = "format-header text";
-
-                let divider = document.createElement("hr");
-                divider.className = "text-bg";
-
-                full_format_container.appendChild(format_header);
-                full_format_container.appendChild(divider);
-                full_format_container.appendChild(format_container);
-
-                return full_format_container;
-            }
-
-            function createDeckContainer(deck) {
-                let full_deck_container = document.createElement('div');
-                full_deck_container.className = "full-deck-container";
-
-                let deck_container = document.createElement('div');
-                deck_container.className = "deck-container";
-
-                let colors_container = document.createElement('div');
-                colors_container.className = "colors-container";
-
-                let deck_preview = document.createElement('img');
-                deck_preview.src = deck.previewimg;
-                deck_preview.onclick = function() {
-                    window.location.href = deck.url;
-                }
-
-                deck_preview.style.cursor = "pointer";
-                deck_preview.className = "deck-preview-img";
-
-                let deck_name = document.createElement('div');
-                deck_name.className = "deck-name";
-                deck_name.innerText = deck.name;
-
-                let deck_btns = document.createElement('div');
-                deck_btns.className = "deck-buttons";
-
-                let deck_link = document.createElement('a');
-                deck_link.href = deck.url;
-                let deck_edit_icon = createDeckIcon("edit", "green");
-
-                deck_link.appendChild(deck_edit_icon);
-                let deck_submit_text = createDeckIconText("export-white", "blue", "Submit!", "");
-                deck_submit_text.style.cursor = "pointer";
-                deck_submit_text.onclick = async function() {
-
-                    document.getElementById('modal-container').style.display = 'block';
-                    let modal_content = document.getElementById('modal-content');
-                    let content_container = document.createElement("div");
-                    content_container.className = "submit-modal";
-                    modal_content.innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                    
-                    for (const event of events) {
-                        let deck_submit_text = createDeckIconText("export-white", "blue", "Submit to " + event, "");
-
-                        deck_submit_text.onclick = async function() {
-                            await getDoc(doc(db, "events", event)).then(async docSnap2 => {
-                                let tourndata = docSnap2.data();
-                                let decks_ = JSON.parse(tourndata.decks);
-                                decks_[username] = deck;
-                                await setDoc(doc(db, "events", event), {
-                                    decks: JSON.stringify(decks_)
-                                });
-                            });
-                            alert("Submitted deck " + deck.name + " to" + event + "!");
-                        }
-
-                        content_container.appendChild(deck_submit_text);
-                    }
-                    modal_content.appendChild(content_container);
-                }
-
-                let deck_delete_icon = createDeckIcon("trash", "red");
-
-                deck_delete_icon.onclick = async function() {
-                    let new_decks = decks;
-                    // let index = 0;
-                    let user_deck = {};
-                    for (let i = 0; i < decks.length; i++) {
-                        user_deck = decks[i];
-                        console.log(user_deck, i, deck.name);
-                        if (user_deck["name"] == deck.name) {
-                            new_decks.splice(i,1);
-                        }
-                        // index += 1;
-                    }
-                    await setDoc(doc(db, "users", username), {
-                        username: username,
-                        password: password,
-                        decks: JSON.stringify(new_decks)
-                    });
-                    alert("Deck Deleted!");
-                    reload();
-                }
-
-                for (const color of deck.colors) {
-                    let color_ele = document.createElement('img');
-                    color_ele.src = `/img/mana_${color.toLowerCase()}.png`; // fuck you git
-                    color_ele.className = "mana-img";
-                    colors_container.appendChild(color_ele);
-                }
-
-                deck_btns.appendChild(deck_link);
-                deck_btns.appendChild(deck_submit_text);
-                deck_btns.appendChild(deck_delete_icon);
-                deck_container.appendChild(deck_name);
-                deck_container.appendChild(deck_preview);
-                deck_container.appendChild(deck_btns);
-                full_deck_container.appendChild(deck_container);
-                full_deck_container.appendChild(colors_container);
-                return (full_deck_container);
-            }
-
-            function createDeckIcon(img, color) {
-                const deck_icon = document.createElement('img');
-                deck_icon.src = `/img/${img}.png`;
-                deck_icon.className = `deck-icon-${color} deck-icon-shadow`;
-
-                return deck_icon;
-            }
-
-            function createDeckIconText(img, color, text, link) {
-                let deck_icon_text = document.createElement("div");
-                deck_icon_text.innerText = text;
-                deck_icon_text.className = `deck-link${link} deck-icon-shadow`;
-
-                let deck_icon = document.createElement('img');
-                deck_icon.src = `/img/${img}.png`;
-                deck_icon.className = `deck-icon-${color}`;
-
-                deck_icon_text.appendChild(deck_icon);
-
-                return deck_icon_text;
             }
 
             reload();
