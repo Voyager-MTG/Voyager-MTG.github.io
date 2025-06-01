@@ -9,28 +9,15 @@
 	  font-family: 'Beleren Small Caps';
 	  src: url('/resources/beleren-caps.ttf');
 	}
-	:root {
-		--gradient: ""
-	}
 	body {
+		background-image: linear-gradient(to top, #ffdde1, #ee9ca7);
 		background-attachment: fixed;
 		overscroll-behavior: none;
 		font-family: 'Helvetica', 'Arial', sans-serif;
 		display: grid;
-		overflow-x: hidden;
-		margin: 0;
 	}
-	body::before {
-		content: "";
-		position: fixed;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		z-index: -1;
-		background-image: var(--gradient);	
-		/* background-attachment: fixed; */
-		background-size: cover;
+	.selects {
+		position: absolute;
 	}
 	.item-container {
 		height: auto;
@@ -52,7 +39,6 @@
 		font-weight: 500;
 		cursor: pointer;
 		background-color: #F3F3F3;
-		height: 30px;
 	}
 	input {
 		width: 100%;
@@ -112,26 +98,12 @@
 	.button-grid {
 		display: grid;
 		margin: auto;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		gap: 20px;
 		padding-top: 10px;
 		padding-bottom: 20px;
 	}
 	.button-grid button {
-		background-color: #171717;
-		border: none;
-		color: #f3f3f3;
-		border-radius: 5px;
-		cursor: pointer;
-		font-size: 15px;
-		width: 150px;
-		height: 35px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 5px;
-	}
-	.black-button {
 		background-color: #171717;
 		border: none;
 		color: #f3f3f3;
@@ -157,7 +129,7 @@
 		align-self: center;
 	}
 	.card-container {
-		/* background: #f3f3f3; */
+		background: #f3f3f3;
 		width: 90%;
 		border: 1px solid #d5d9d9;
 		border-top: 3px solid #171717;
@@ -206,7 +178,7 @@
 	.set-icon img {
 		width: 60px;
 	}
-	.set-icon-name	 {
+	.set-icon-name {
 		min-height: 30px;
 		height: 100%;
 	}
@@ -221,89 +193,12 @@
 			font-size: 18px;
 		}
 	}
-	.settings-icon {
-		max-height: 30px;
-		cursor: pointer;
-		float: right;
-		pointer-events: auto;
-		margin-left: 15px;
-	}
-	.settings {
-		position: sticky;
-		top: 0;
-		/* float: right;
-		width: fit-content; */
-		padding: 10px;
-		grid-template-columns: 10fr 30fr 1fr 1fr;
-		gap: 15px;
-		/* background-color: rgba(0,0,0,0.3); */
-	}
-	#modal-container {
-		display: none; 
-		position: fixed; 
-		z-index: 1; 
-		padding-top: 70px;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		overflow: auto; 
-		background-color: rgb(0,0,0); 
-		background-color: rgba(0,0,0,0.4); 
-	}
-	#modal-content {
-		background-color: #fefefe;
-		margin: auto;
-		padding: 20px;
-		border: 1px solid #888;
-		width: 50%;
-		border-radius: 10px;
-		border: solid #777 3px;
-	}
-	.close {
-		color: #aaaaaa;
-		float: right;
-		font-size: 28px;
-		font-weight: bold;
-		margin-left: 30px;
-	}
-	.close:hover,
-	.close:focus {
-		color: #000;
-		text-decoration: none;
-		cursor: pointer;
-	}
-	.account-grid {
-		display: grid;
-		gap: 7px;
-		grid-template-columns: 1fr 2fr 1fr 2fr;
-		align-items: center;
-		justify-items: center;
-	}
-	#login {
-		font-weight: bold;
-		font-size: 20px;
-		width: 90%;
-	}
-	</style>
-	<style id="text-style">
-	.text {
-		color: white;
-	}
-	</style>
-	<style id="popout-style">
-		.popout {
-			background-color: #f3f3f3;
-			/* color: #f3f3f3; */
-		}
 	</style>
 	<body>
-		<div class="settings" id="settings">
-			<select id="color-select" onchange="setGradient()"></select>
-			<img src="img/settings.png" class="settings-icon" onclick="openSettingsModal()">
-			<img src="img/info.png" class="settings-icon" onclick="window.location.href = 'https:\/\/docs.google.com/document/d/1eZnljkF7TGC_OzQ6IYxgdWxyZU2T2dxSRZ5zYa6Cpkc/edit?usp=sharing'">
+		<div class="selects" id="selects">
+			<select id="color-select" onchange="setGradient()">
+			</select>
 		</div>
-		<div id="gradient"></div>
 		<div class="item-container">
 			<img class="banner" src="img/banner.png"></img>
 			<input type="text" inputmode="search" placeholder="Search ..." autofocus="autofocus" name="search" id="search" spellcheck="false" autocomplete="off" autocorrext="off" spellcheck="false">
@@ -311,64 +206,53 @@
 				<button onclick="goToSets()"><img src="/img/sets.png" class="btn-img">All Sets</button>
 				<button onclick="goToDeckbuilder()"><img src="/img/deck.png" class="btn-img">Deckbuilder</button>
 				<button onclick="randomCard()"><img src="/img/random.png" class="btn-img">Random Card</button>
-				<button onclick="window.location.href = '/community'"><img src="/img/community.png" class="btn-img">Community</button>
 			</div>
 			<div class="two-part-grid">
 				<div class="container" id="preview-container">
-					<p class="text">Preview Galleries</p>
+					<p>Preview Galleries</p>
 										<div class="set-group"></div>
 							<div class="preview-container">
 		<div class="set-icon-container">
 									<a href="sets/AKT"><div class="set-icon"><img src="sets/AKT-files/icon.png" title="Akellan Transcendence"></img></div>
-									<div class="set-icon-name text">Akellan Transcendence</div></a>
+									<div class="set-icon-name">Akellan Transcendence</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/EXPT"><div class="set-icon"><img src="sets/EXPT-files/icon.png" title="TVP Silver Expansion"></img></div>
-									<div class="set-icon-name text">TVP Silver Expansion</div></a>
+									<div class="set-icon-name">TVP Silver Expansion</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/HEL"><div class="set-icon"><img src="sets/HEL-files/icon.png" title="Fires of Hwel"></img></div>
-									<div class="set-icon-name text">Fires of Hwel</div></a>
+									<div class="set-icon-name">Fires of Hwel</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/HOD"><div class="set-icon"><img src="sets/HOD-files/icon.png" title="Houses of Dewold"></img></div>
-									<div class="set-icon-name text">Houses of Dewold</div></a>
+									<div class="set-icon-name">Houses of Dewold</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/ITD"><div class="set-icon"><img src="sets/ITD-files/icon.png" title="Itera: Into the Dream"></img></div>
-									<div class="set-icon-name text">Itera: Into the Dream</div></a>
+									<div class="set-icon-name">Itera: Into the Dream</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/PTN"><div class="set-icon"><img src="sets/PTN-files/icon.png" title="Port Noon: Occult Islands of Vespera"></img></div>
-									<div class="set-icon-name text">Port Noon: Occult Islands of Vespera</div></a>
+									<div class="set-icon-name">Port Noon: Occult Islands of Vespera</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/PVR"><div class="set-icon"><img src="sets/PVR-files/icon.png" title="Primivir"></img></div>
-									<div class="set-icon-name text">Primivir</div></a>
+									<div class="set-icon-name">Primivir</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/VNM"><div class="set-icon"><img src="sets/VNM-files/icon.png" title="Vinimroth Eternities"></img></div>
-									<div class="set-icon-name text">Vinimroth Eternities</div></a>
+									<div class="set-icon-name">Vinimroth Eternities</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/WAW"><div class="set-icon"><img src="sets/WAW-files/icon.png" title="The Wonderlands’ Wishes"></img></div>
-									<div class="set-icon-name text">The Wonderlands’ Wishes</div></a>
+									<div class="set-icon-name">The Wonderlands’ Wishes</div></a>
 								</div>
 									</div>
 		
 				</div>
-				<div class="card-container popout" id="cotd-image">
+				<div class="card-container" id="cotd-image">
 					<p>Card of the Day</p>
-				</div>
-			</div>
-		</div>
-		<div id="modal-container">
-			<div id="modal-content" class="popout">
-				<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
-				<div class="account-grid">
-					<button class="black-button" onclick="window.location.href = '/account'" id="account-btn"><img src="/img/account.png" class="btn-img">My Account</button>
-					<span id="login"></span>
-					<button class="black-button" onclick="localStorage.removeItem('settings.session'); location.reload();" id="account-btn"><img src="/img/export-white.png" class="btn-img">Sign Out</button>
 				</div>
 			</div>
 		</div>
@@ -377,13 +261,6 @@
 			let gradients = [];
 			let card_list_arrayified = [];
 			let specialchars = "";
-
-			modal = document.getElementById("modal-container");
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    document.getElementById('modal-container').style.display = 'none';
-                }
-            }  
 
 			document.addEventListener("DOMContentLoaded", async function () {
 				try {
@@ -395,9 +272,6 @@
 				}
 
 				gradients = raw_gradients.gradients;
-
-				if (localStorage.getItem('settings.gradient') == null) localStorage.setItem('settings.gradient', 'Voyager');
-				setGradient(localStorage.getItem('settings.gradient'));
 				prepareGradients();
 
 				await fetch('/lists/all-cards.json')
@@ -413,15 +287,6 @@
 				}).catch(error => console.error('Error:', error));
 
 				card_list_arrayified = card_list.cards;
-
-				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-				document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-
-				if (localStorage.getItem("settings.darkthememenu") == "On") {
-					document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
-				} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
-					document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
-				}
 
 				card_list_cleaned = [];
 
@@ -477,12 +342,7 @@
 				}
 				while (!isImageOk(document.getElementById("cotd")));
 				document.getElementById("preview-container").style.height = document.getElementById("cotd-image").offsetHeight;
-
 			});
-
-			function openSettingsModal() {
-				document.getElementById("modal-container").style.display = "block";
-			}
 
 			document.getElementById("search").addEventListener("keypress", function(event) {
 				if (event.key === "Enter") {
@@ -521,46 +381,32 @@
 			}
 
 			function prepareGradients() {
-				let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt = document.createElement("option");
-				opt.value = defaultGradient.replace(' ', '-');
-				opt.text = defaultGradient;
-				document.getElementById("color-select").appendChild(opt);
 				for (const gradient of gradients)
-				{	
+				{
 					const opt = document.createElement("option");
 					opt.value = gradient.name.replace(' ', '-');
 					opt.text = gradient.name;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
+					document.getElementById("color-select").appendChild(opt);
 				}
 
-				// setGradient();
+				setGradient();
 			}
 
-			function setGradient(gradient=false) {
-				if (!gradient) { 
-					gradient = document.getElementById("color-select").value;
-				}
+			function setGradient() {
+				gradient = document.getElementById("color-select").value;
 
 				gradTop = "#000000";
 				gradBottom = "#FFFFFF";
 				for (const grad of gradients)
 				{
 					if (gradient == grad.name.replace(' ', '-'))
-					{ 	
+					{
 						gradTop = grad.color1;
 						gradBottom = grad.color2;
 					}
 				}
 
-				// console.log(`linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
-				document.body.style.setProperty("--gradient", `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
-				// cssVars({
-				// 	variables: {'--gradient': `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`}
-				// });
-				localStorage.setItem("settings.gradient", gradient);
+				document.body.style.backgroundImage = `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`;
 			}
 
 			function goToSets() {
@@ -592,52 +438,6 @@
 				}
 
 				window.location.href = url;
-			}
-		</script>
-		<script type="module">
-			// Import the functions you need from the SDKs you need
-			import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-			import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-			// https://firebase.google.com/docs/web/setup#available-libraries
-			
-			// Your web app's Firebase configuration
-			// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-			const firebaseConfig = {
-				apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-				authDomain: "voyager-78e30.firebaseapp.com",
-				projectId: "voyager-78e30",
-				storageBucket: "voyager-78e30.firebasestorage.app",
-				messagingSenderId: "411191248476",
-				appId: "1:411191248476:web:591349be169d823e5f8899",
-				measurementId: "G-TQ1L48F25M"
-			};
-			
-			// Initialize Firebase
-			const app = initializeApp(firebaseConfig);
-			const db = getFirestore(app);
-
-			let username = "";
-			let password = "";
-			let decks = "";
-
-			let sessionid = localStorage.getItem("settings.session");
-			let logged_in = (sessionid != null);
-
-			if (logged_in) {
-				const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-					let data = docSnap.data();
-					username = data.username;
-					password = data.password;
-				});
-
-				await getDoc(doc(db, 'users', username)).then(docSnap => {
-					let data = docSnap.data();
-					console.log(data);
-					document.getElementById("login").innerText = username;
-				});
-			} else {
-				document.getElementById("login").innerText = "Not logged in";
-				document.getElementById("account-btn").innerHTML = `<img src="/img/account.png" class="btn-img">Not logged in`;
 			}
 		</script>
 	</body>
