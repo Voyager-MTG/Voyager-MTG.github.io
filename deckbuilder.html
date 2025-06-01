@@ -3295,8 +3295,10 @@
 			// handle settings at the top
 			if (localStorage.getItem("settings.darkthememenu") == "On") {
 				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
+				document.getElementById("export-btn").childNodes[1].src = "/img/export-white.png";
 			} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
 				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
+				document.getElementById("export-btn").childNodes[1].src = "/img/export.png";
 			}
 
 			if (localStorage.getItem("settings.resultgradient") == "Off") {
