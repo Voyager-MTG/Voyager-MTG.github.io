@@ -521,6 +521,22 @@
             font-size: 18px;
             padding: 8px;
             border-radius: 8px;
+            cursor: pointer;
+        }
+        .options-container {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .opt-btn {
+            color: white;
+            background-color: #ab3636;
+            border: 1px solid rgb(70, 16, 16);
+            font-weight: bold;
+            font-size: 18px;
+            padding: 8px;
+            border-radius: 8px;
+            cursor: pointer;
         }
         .initial-text {
             grid-column: span 4;
@@ -570,6 +586,11 @@
                 <span class="text">Admin Options: </span>
                 <button class="push-gp admin-btn" id="push-gp">Push GP Round</button>
                 <button class="new-gp admin-btn"  id="new-gp" >Create new GP</button>
+            </div>
+            <div class="options-container">
+                <span class="text">Options: </span>
+                <button class="opt-btn" id="drop">Drop</button>
+                <!-- <button class="opt-btn"></button> -->
             </div>
             <div class="main-tab" id="main-tab">
                 <div class="decks-tab" id="decklists"></div>
@@ -690,7 +711,6 @@
             // Import the functions you need from the SDKs you need
             import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
             import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-            // TODO: Add SDKs for Firebase products that you want to use
             // https://firebase.google.com/docs/web/setup#available-libraries
             
             // Your web app's Firebase configuration
@@ -758,7 +778,6 @@
                     document.title = event;
                     if (admin) {
                         document.getElementById('push-gp').addEventListener("click", (e) => {
-                            console.log("PUUUUUUSH");
                             pushGP(event_data);
                         });
                         document.getElementById('new-gp').addEventListener("click", (e) => {
@@ -766,6 +785,9 @@
                         });
                         document.getElementById('admin').style.display = "block";
                     }
+                    document.getElementById("drop").addEventListener("click", (e) => {
+                        dropGP(event_data);
+                    });
                     document.getElementById("decklists").innerHTML = "";
                     document.getElementById("games").innerHTML = "";
                     let swiss_container = document.createElement("div");
@@ -1243,7 +1265,6 @@
                     }
                     console.log(card_type);
 
-                    // TODO: make this a giant if thing or switchcase
                     for (const [key, map] of deck_cards)
                     {
                         console.log(key, map, card);
@@ -1404,7 +1425,8 @@
                             num_rounds: event_data.num_rounds,
                             stage: event_data.stage,
                             name: event_data.name,
-                            winner: event_data.winner
+                            winner: event_data.winner,
+                            dropped: event_data.dropped
                         });
                         document.getElementById("modal-container").style.display = "none";
                         reload();
@@ -1419,7 +1441,8 @@
                             num_rounds: event_data.num_rounds,
                             stage: event_data.stage,
                             name: event_data.name,
-                            winner: event_data.winner
+                            winner: event_data.winner,
+                            dropped: event_data.dropped
                         });
                         document.getElementById("modal-container").style.display = "none";
                         reload();
@@ -1582,6 +1605,7 @@
                         }
                     } 
                     for (const player in stats.records) {
+                        if (event_data.dropped.includes(player)) continue;
                         let record = stats.records[player];
                         let total = stats.match_total[player];
                         seedings.push({player: player, record: record, match_total: total, opps: opps});
@@ -1669,7 +1693,8 @@
                         num_rounds: event_data.num_rounds,
                         stage: event_data.stage,
                         name: event_data.name,
-                        winner: event_data.winner
+                        winner: event_data.winner,
+                        dropped: event_data.dropped
                     });
                     reload();
                 } 
@@ -1812,7 +1837,8 @@
                         num_rounds: event_data.num_rounds,
                         stage: "bracket",
                         name: event_data.name,
-                        winner: event_data.winner
+                        winner: event_data.winner,
+                        dropped: event_data.dropped
                     });
                     reload();
                 } 
@@ -1839,7 +1865,8 @@
                         num_rounds: numRounds(in_games.length),
                         stage: "swiss",
                         name: event_data.name,
-                        winner: event_data.winner
+                        winner: event_data.winner,
+                        dropped: event_data.dropped
                     });
                     reload();
                 }
@@ -1856,8 +1883,22 @@
                         num_rounds: 0,
                         stage: "initial",
                         name: event_name,
-                        winner: "TBD"
+                        winner: "TBD",
+                        dropped: event_data.dropped
                 });
+            }
+
+            async function dropGP(event_data) {
+                await setDoc(doc(db, 'events', event), {
+                    decks:  event_data.decks,
+                    rounds: event_data.rounds,
+                    num_rounds: event_data.num_rounds,
+                    stage: event_data.stage,
+                    name: event_data.name,
+                    winner: event_data.winner,
+                    dropped: [...event_data.dropped, username]
+                });
+                alert("Dropped " + username + ". Ping aanginer to be re-added.");
             }
 
             function numRounds(n) {
