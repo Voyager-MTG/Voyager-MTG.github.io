@@ -82,8 +82,14 @@
         }
     </style>
     <style id="text-style">
-        .text {
-            color: white;
+	.text {
+		color: white;
+	}
+    </style>
+    <style id="popout-style">
+        .popout {
+            background-color: #f3f3f3;
+            /* color: #f3f3f3; */
         }
     </style>
     <body>
@@ -102,7 +108,6 @@
 			</select>
 		</div>
         <div class="page-container">
-            
         </div>
         <div id="modal-container">
 			<div id="modal-content" class="popout">
@@ -245,6 +250,13 @@
             }
 
             document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+			if (localStorage.getItem("settings.darkthememenu") == "On") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
+			} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
+			}
 
             
             async function reload() {
