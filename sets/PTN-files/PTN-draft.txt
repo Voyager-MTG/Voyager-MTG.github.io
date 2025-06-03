@@ -11,16 +11,6 @@
 			}
 		},
 		{
-			"name": "The Crowned Growth",
-			"rarity": "mythic",
-			"mana_cost": "{4}{B}{B}",
-			"type": "Legendary Creature — Fungus God",
-			"collector_number": "90",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/90_The Crowned Growth.jpg"
-			}
-		},
-		{
 			"name": "Implant the Seeds",
 			"rarity": "common",
 			"mana_cost": "{B}",
@@ -51,16 +41,6 @@
 			}
 		},
 		{
-			"name": "The Forge of Days",
-			"rarity": "mythic",
-			"mana_cost": "{2}{R}{R}{W}",
-			"type": "Legendary Creature — Elemental God",
-			"collector_number": "170",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/170_The Forge of Days.jpg"
-			}
-		},
-		{
 			"name": "The Mirror-Queen",
 			"rarity": "mythic",
 			"mana_cost": "{1}{U}{R}",
@@ -88,26 +68,6 @@
 			"collector_number": "193",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/193_The Sun-In-Rags.jpg"
-			}
-		},
-		{
-			"name": "The Thunderskin",
-			"rarity": "mythic",
-			"mana_cost": "{2}{G}{W}",
-			"type": "Legendary Creature — Human God",
-			"collector_number": "195",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/195_The Thunderskin.jpg"
-			}
-		},
-		{
-			"name": "The Vagabond",
-			"rarity": "rare",
-			"mana_cost": "{X}{1}{G}{U}",
-			"type": "Legendary Creature — Insect God",
-			"collector_number": "196",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/196_The Vagabond.jpg"
 			}
 		},
 		{
@@ -232,9 +192,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
 			"type": "Creature — Human Scout",
-			"collector_number": "216",
+			"collector_number": "217",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/216_Map's Edge Explorer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/217_Map's Edge Explorer.jpg"
 			}
 		},
 		{
@@ -242,9 +202,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
 			"type": "Creature — Human Ranger Cleric",
-			"collector_number": "228",
+			"collector_number": "229",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/228_Thyrsine Tracker.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/229_Thyrsine Tracker.jpg"
 			}
 		},
 		{
@@ -492,9 +452,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{W}",
 			"type": "Creature — Human Cleric",
-			"collector_number": "11",
+			"collector_number": "12",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/11_Banisher Priest.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/12_Banisher Priest.jpg"
 			}
 		},
 		{
@@ -502,9 +462,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
 			"type": "Enchantment — Aura",
-			"collector_number": "12",
+			"collector_number": "13",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/12_Bars Across the Sun.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/13_Bars Across the Sun.jpg"
 			}
 		},
 		{
@@ -512,19 +472,9 @@
 			"rarity": "common",
 			"mana_cost": "{W}",
 			"type": "Creature — Angel Cleric",
-			"collector_number": "14",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/14_Broken Sun-Servant.jpg"
-			}
-		},
-		{
-			"name": "Brought Back",
-			"rarity": "rare",
-			"mana_cost": "{W}{W}",
-			"type": "Instant",
 			"collector_number": "15",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/15_Brought Back.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/15_Broken Sun-Servant.jpg"
 			}
 		},
 		{
@@ -578,16 +528,6 @@
 			}
 		},
 		{
-			"name": "Legacy of the Wheel",
-			"rarity": "rare",
-			"mana_cost": "{2}{U}",
-			"type": "Kindred Enchantment — God",
-			"collector_number": "57",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/57_Legacy of the Wheel.jpg"
-			}
-		},
-		{
 			"name": "Legacy of Tides",
 			"rarity": "rare",
 			"mana_cost": "{2}{B}",
@@ -598,23 +538,13 @@
 			}
 		},
 		{
-			"name": "Legacy of Flint",
-			"rarity": "rare",
-			"mana_cost": "{2}{R}",
-			"type": "Kindred Enchantment — God",
-			"collector_number": "135",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/135_Legacy of Flint.jpg"
-			}
-		},
-		{
 			"name": "Legacy of Coils",
 			"rarity": "rare",
 			"mana_cost": "{2}{G}",
 			"type": "Kindred Enchantment — God",
-			"collector_number": "214",
+			"collector_number": "215",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/214_Legacy of Coils.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/215_Legacy of Coils.jpg"
 			}
 		},
 		{
@@ -672,9 +602,9 @@
 			"rarity": "common",
 			"mana_cost": "{G}",
 			"type": "Sorcery",
-			"collector_number": "231",
+			"collector_number": "232",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/231_Verse Aggress.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/232_Verse Aggress.jpg"
 			}
 		},
 		{
@@ -705,16 +635,6 @@
 			"collector_number": "61",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/61_Nowhere Illuminator.jpg"
-			}
-		},
-		{
-			"name": "Prison of Glass",
-			"rarity": "common",
-			"mana_cost": "{2}{U}",
-			"type": "Enchantment — Aura",
-			"collector_number": "69",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/69_Prison of Glass.jpg"
 			}
 		},
 		{
@@ -788,16 +708,6 @@
 			}
 		},
 		{
-			"name": "The Museum of Worms",
-			"rarity": "rare",
-			"mana_cost": "{1}{B}",
-			"type": "Legendary Artifact",
-			"collector_number": "105",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/105_The Museum of Worms.jpg"
-			}
-		},
-		{
 			"name": "Skintwist",
 			"rarity": "rare",
 			"mana_cost": "{1}{B}",
@@ -825,16 +735,6 @@
 			"collector_number": "133",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/133_Ignus Rites.jpg"
-			}
-		},
-		{
-			"name": "Ascent from Snakes",
-			"rarity": "uncommon",
-			"mana_cost": "{1}{G}{G}",
-			"type": "Instant",
-			"collector_number": "202",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/202_Ascent from Snakes.jpg"
 			}
 		},
 		{
@@ -912,9 +812,9 @@
 			"rarity": "rare",
 			"mana_cost": "{1}{G}",
 			"type": "Sorcery",
-			"collector_number": "215",
+			"collector_number": "216",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/215_Life's Legacy.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/216_Life's Legacy.jpg"
 			}
 		},
 		{
@@ -1132,9 +1032,9 @@
 			"rarity": "rare",
 			"mana_cost": "{3}{W}{W}",
 			"type": "Creature — Angel",
-			"collector_number": "9",
+			"collector_number": "10",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/9_Angel of the True Sun.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/10_Angel of the True Sun.jpg"
 			}
 		},
 		{
@@ -1205,16 +1105,6 @@
 			"collector_number": "109",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/109_Rite of Beast's Division.jpg"
-			}
-		},
-		{
-			"name": "The Chiliarch",
-			"rarity": "mythic",
-			"mana_cost": "{2}{G}{U}",
-			"type": "Legendary Creature — Human God",
-			"collector_number": "165",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/165_The Chiliarch.jpg"
 			}
 		},
 		{
@@ -1302,9 +1192,9 @@
 			"rarity": "common",
 			"mana_cost": "{G}",
 			"type": "Sorcery",
-			"collector_number": "211",
+			"collector_number": "212",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/211_Discover the Stone Gods.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/212_Discover the Stone Gods.jpg"
 			}
 		},
 		{
@@ -1372,9 +1262,9 @@
 			"rarity": "common",
 			"mana_cost": "{3}{W}{W}",
 			"type": "Creature — Angel Cleric",
-			"collector_number": "13",
+			"collector_number": "14",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/13_Bringer of Glory.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/14_Bringer of Glory.jpg"
 			}
 		},
 		{
@@ -1522,9 +1412,9 @@
 			"rarity": "common",
 			"mana_cost": "{G}",
 			"type": "Instant",
-			"collector_number": "224",
+			"collector_number": "225",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/224_Seven-Coiled Strength.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/225_Seven-Coiled Strength.jpg"
 			}
 		},
 		{
@@ -1532,9 +1422,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
 			"type": "Creature — Human Cleric Druid",
-			"collector_number": "222",
+			"collector_number": "223",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/222_Ring-Yew's Chosen.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/223_Ring-Yew's Chosen.jpg"
 			}
 		},
 		{
@@ -1568,16 +1458,6 @@
 			}
 		},
 		{
-			"name": "Glassgarden Watcheye",
-			"rarity": "rare",
-			"mana_cost": "{3}{W}",
-			"type": "Creature — Human Cleric",
-			"collector_number": "25",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/25_Glassgarden Watcheye.jpg"
-			}
-		},
-		{
 			"name": "Guardian Percussigant",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{W}",
@@ -1592,9 +1472,9 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{W}{W}",
 			"type": "Creature — Angel Cleric",
-			"collector_number": "10",
+			"collector_number": "11",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/10_Apostle Entheate.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/11_Apostle Entheate.jpg"
 			}
 		},
 		{
@@ -1728,16 +1608,6 @@
 			}
 		},
 		{
-			"name": "Expose Mortality",
-			"rarity": "uncommon",
-			"mana_cost": "{1}{U}",
-			"type": "Instant",
-			"collector_number": "53",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/53_Expose Mortality.jpg"
-			}
-		},
-		{
 			"name": "Eyes Everywhere",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}",
@@ -1815,16 +1685,6 @@
 			"collector_number": "65",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/65_Opener of Realities.jpg"
-			}
-		},
-		{
-			"name": "Ophidian Soul",
-			"rarity": "rare",
-			"mana_cost": "{2}{U}",
-			"type": "Creature — Snake Spirit",
-			"collector_number": "66",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/66_Ophidian Soul.jpg"
 			}
 		},
 		{
@@ -2168,16 +2028,6 @@
 			}
 		},
 		{
-			"name": "Malleary Augmenter",
-			"rarity": "rare",
-			"mana_cost": "{1}{R}",
-			"type": "Creature — Elemental Cleric",
-			"collector_number": "138",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/138_Malleary Augmenter.jpg"
-			}
-		},
-		{
 			"name": "Malleary Novice",
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
@@ -2195,36 +2045,6 @@
 			"collector_number": "140",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/140_Malleary Reforged.jpg"
-			}
-		},
-		{
-			"name": "Malleary Seer",
-			"rarity": "common",
-			"mana_cost": "{3}{R}",
-			"type": "Creature — Elemental Knight",
-			"collector_number": "141",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/141_Malleary Seer.jpg"
-			}
-		},
-		{
-			"name": "Malleary Smelter",
-			"rarity": "uncommon",
-			"mana_cost": "{3}{R}",
-			"type": "Creature — Shapeshifter Cleric Artificer",
-			"collector_number": "142",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/142_Malleary Smelter.jpg"
-			}
-		},
-		{
-			"name": "Opener of Glass",
-			"rarity": "uncommon",
-			"mana_cost": "{2}{R}",
-			"type": "Creature — Human Rogue",
-			"collector_number": "145",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/145_Opener of Glass.jpg"
 			}
 		},
 		{
@@ -2248,16 +2068,6 @@
 			}
 		},
 		{
-			"name": "Tattered Cyprian",
-			"rarity": "common",
-			"mana_cost": "{1}{R}",
-			"type": "Creature — Vampire Cleric",
-			"collector_number": "156",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/156_Tattered Cyprian.jpg"
-			}
-		},
-		{
 			"name": "Traitorous Blood",
 			"rarity": "common",
 			"mana_cost": "{1}{R}{R}",
@@ -2268,23 +2078,13 @@
 			}
 		},
 		{
-			"name": "Wandering Unmaker",
-			"rarity": "common",
-			"mana_cost": "{2}{R}",
-			"type": "Creature — Shapeshifter Cleric",
-			"collector_number": "160",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/160_Wandering Unmaker.jpg"
-			}
-		},
-		{
 			"name": "Carapace Crusader",
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
 			"type": "Creature — Insect Warrior",
-			"collector_number": "203",
+			"collector_number": "204",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/203_Carapace Crusader.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/204_Carapace Crusader.jpg"
 			}
 		},
 		{
@@ -2292,9 +2092,9 @@
 			"rarity": "common",
 			"mana_cost": "{G}",
 			"type": "Creature — Insect Cleric",
-			"collector_number": "204",
+			"collector_number": "205",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/204_Carapace Disciple.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/205_Carapace Disciple.jpg"
 			}
 		},
 		{
@@ -2302,9 +2102,9 @@
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
 			"type": "Creature — Insect Spider Cleric",
-			"collector_number": "205",
+			"collector_number": "206",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/205_Carapace Threadbearer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/206_Carapace Threadbearer.jpg"
 			}
 		},
 		{
@@ -2312,9 +2112,9 @@
 			"rarity": "rare",
 			"mana_cost": "{G}",
 			"type": "Creature — Insect Cleric",
-			"collector_number": "206",
+			"collector_number": "207",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/206_Carapace Voyager.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/207_Carapace Voyager.jpg"
 			}
 		},
 		{
@@ -2322,9 +2122,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{G}",
 			"type": "Creature — Insect",
-			"collector_number": "207",
+			"collector_number": "208",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/207_Carapace Youngling.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/208_Carapace Youngling.jpg"
 			}
 		},
 		{
@@ -2332,9 +2132,9 @@
 			"rarity": "common",
 			"mana_cost": "{4}{G}",
 			"type": "Creature — Zombie",
-			"collector_number": "208",
+			"collector_number": "209",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/208_Cartographed Risen.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/209_Cartographed Risen.jpg"
 			}
 		},
 		{
@@ -2342,9 +2142,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
 			"type": "Creature — Cat Warrior",
-			"collector_number": "210",
+			"collector_number": "211",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/210_Debilitated Tragulari.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/211_Debilitated Tragulari.jpg"
 			}
 		},
 		{
@@ -2352,9 +2152,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}{G}",
 			"type": "Creature — Insect",
-			"collector_number": "213",
+			"collector_number": "214",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/213_Flesh Weaver.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/214_Flesh Weaver.jpg"
 			}
 		},
 		{
@@ -2362,9 +2162,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
 			"type": "Instant",
-			"collector_number": "218",
+			"collector_number": "219",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/218_The Old Forms.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/219_The Old Forms.jpg"
 			}
 		},
 		{
@@ -2372,59 +2172,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
 			"type": "Enchantment — Aura",
-			"collector_number": "219",
+			"collector_number": "220",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/219_Ordeal of Defiance.jpg"
-			}
-		},
-		{
-			"name": "Ravenous Unmaker",
-			"rarity": "uncommon",
-			"mana_cost": "{3}{G}{G}",
-			"type": "Creature — Wolf Berserker",
-			"collector_number": "221",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/221_Ravenous Unmaker.jpg"
-			}
-		},
-		{
-			"name": "Dappled Wing-Clippers",
-			"rarity": "uncommon",
-			"mana_cost": "{1}{G}",
-			"type": "Creature — Insect Cleric",
-			"collector_number": "209",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/209_Dappled Wing-Clippers.jpg"
-			}
-		},
-		{
-			"name": "Dyad's Dance",
-			"rarity": "rare",
-			"mana_cost": "{2}{G}",
-			"type": "Sorcery",
-			"collector_number": "212",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/212_Dyad's Dance.jpg"
-			}
-		},
-		{
-			"name": "Seven-Coil Ambusher",
-			"rarity": "common",
-			"mana_cost": "{2}{G}",
-			"type": "Creature — Serpent Warrior",
-			"collector_number": "223",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/223_Seven-Coil Ambusher.jpg"
-			}
-		},
-		{
-			"name": "Splinter-Blossom",
-			"rarity": "uncommon",
-			"mana_cost": "{1}{G}",
-			"type": "Creature — Wolf Spirit",
-			"collector_number": "225",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/225_Splinter-Blossom.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/220_Ordeal of Defiance.jpg"
 			}
 		},
 		{
@@ -2432,19 +2182,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
 			"type": "Creature — Cat Cleric Monk",
-			"collector_number": "220",
+			"collector_number": "221",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/220_Pupil of Defiance.jpg"
-			}
-		},
-		{
-			"name": "Wildest Dreams",
-			"rarity": "rare",
-			"mana_cost": "{X}{X}{G}",
-			"type": "Sorcery",
-			"collector_number": "233",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/233_Wildest Dreams.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/221_Pupil of Defiance.jpg"
 			}
 		},
 		{
@@ -2452,9 +2192,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{3}{G}",
 			"type": "Creature — Spirit Warrior Cleric",
-			"collector_number": "227",
+			"collector_number": "228",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/227_Thyrsine Hunter.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/228_Thyrsine Hunter.jpg"
 			}
 		},
 		{
@@ -2462,9 +2202,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
 			"type": "Creature — Spirit Cleric Scout",
-			"collector_number": "229",
+			"collector_number": "230",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/229_Tireless Recruiter.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/230_Tireless Recruiter.jpg"
 			}
 		},
 		{
@@ -2472,9 +2212,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
 			"type": "Sorcery",
-			"collector_number": "230",
+			"collector_number": "231",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/230_Unceasing Initiation.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/231_Unceasing Initiation.jpg"
 			}
 		},
 		{
@@ -2482,29 +2222,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
 			"type": "Enchantment",
-			"collector_number": "232",
+			"collector_number": "233",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/232_Way to the Wood.jpg"
-			}
-		},
-		{
-			"name": "Wolf-Splinter",
-			"rarity": "common",
-			"mana_cost": "{2}{G}",
-			"type": "Creature — Wolf Spirit",
-			"collector_number": "235",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/235_Wolf-Splinter.jpg"
-			}
-		},
-		{
-			"name": "Wood's Devourer",
-			"rarity": "common",
-			"mana_cost": "{4}{G}{G}",
-			"type": "Creature — Wolf Demon Horror",
-			"collector_number": "237",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/237_Wood's Devourer.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/233_Way to the Wood.jpg"
 			}
 		},
 		{
@@ -2522,9 +2242,9 @@
 			"rarity": "rare",
 			"mana_cost": "{1}{G}{G}",
 			"type": "Creature — Treefolk Beast",
-			"collector_number": "226",
+			"collector_number": "227",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/226_Territorial Yew-Maw.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/227_Territorial Yew-Maw.jpg"
 			}
 		},
 		{
@@ -2578,16 +2298,6 @@
 			}
 		},
 		{
-			"name": "Drowning Cyprian",
-			"rarity": "uncommon",
-			"mana_cost": "{2}{B}{R}",
-			"type": "Creature — Vampire Rogue",
-			"collector_number": "166",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/166_Drowning Cyprian.jpg"
-			}
-		},
-		{
 			"name": "Horomachist Ending",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{B}",
@@ -2595,16 +2305,6 @@
 			"collector_number": "172",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/172_Horomachist Ending.jpg"
-			}
-		},
-		{
-			"name": "Isidra, Foreign Goddess",
-			"rarity": "mythic",
-			"mana_cost": "{3}{U}{B}",
-			"type": "Legendary Planeswalker — Isidra",
-			"collector_number": "173",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/173_Isidra, Foreign Goddess.jpg"
 			}
 		},
 		{
@@ -2655,16 +2355,6 @@
 			"collector_number": "188",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/188_Roost Augur.jpg"
-			}
-		},
-		{
-			"name": "Sister of Venoms",
-			"rarity": "uncommon",
-			"mana_cost": "{U}{R}",
-			"type": "Creature — Human Shaman Cleric",
-			"collector_number": "190",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/190_Sister of Venoms.jpg"
 			}
 		},
 		{
@@ -2748,6 +2438,76 @@
 			}
 		},
 		{
+			"name": "Musician's Remnant",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Creature — Horror",
+			"collector_number": "218",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/218_Musician's Remnant.jpg"
+			}
+		},
+		{
+			"name": "Ambitions of Ascension",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}",
+			"type": "Enchantment — Saga",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/9_Ambitions of Ascension.jpg"
+			}
+		},
+		{
+			"name": "Glassgarden Watcheye",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Human Cleric",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/25_Glassgarden Watcheye.jpg"
+			}
+		},
+		{
+			"name": "Expose Mortality",
+			"rarity": "uncommon",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "53",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/53_Expose Mortality.jpg"
+			}
+		},
+		{
+			"name": "Legacy of the Wheel",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}",
+			"type": "Kindred Enchantment — God",
+			"collector_number": "57",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/57_Legacy of the Wheel.jpg"
+			}
+		},
+		{
+			"name": "Ophidian Soul",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Snake Spirit",
+			"collector_number": "66",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/66_Ophidian Soul.jpg"
+			}
+		},
+		{
+			"name": "Prison of Glass",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "69",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/69_Prison of Glass.jpg"
+			}
+		},
+		{
 			"name": "Tenacious Illuminator",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}",
@@ -2758,39 +2518,271 @@
 			}
 		},
 		{
-			"name": "Musician's Remnant",
-			"rarity": "rare",
-			"mana_cost": "{2}{G}{G}",
-			"type": "Creature — Horror",
-			"collector_number": "217",
+			"name": "The Crowned Growth",
+			"rarity": "mythic",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Legendary Creature — Fungus God",
+			"collector_number": "90",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/217_Musician's Remnant.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/90_The Crowned Growth.jpg"
+			}
+		},
+		{
+			"name": "The Museum of Worms",
+			"rarity": "rare",
+			"mana_cost": "{B}",
+			"type": "Legendary Artifact",
+			"collector_number": "105",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/105_The Museum of Worms.jpg"
+			}
+		},
+		{
+			"name": "Legacy of Flint",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+			"type": "Kindred Enchantment — God",
+			"collector_number": "135",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/135_Legacy of Flint.jpg"
+			}
+		},
+		{
+			"name": "Malleary Augmenter",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Elemental Cleric",
+			"collector_number": "138",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/138_Malleary Augmenter.jpg"
+			}
+		},
+		{
+			"name": "Malleary Seer",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Elemental Knight",
+			"collector_number": "141",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/141_Malleary Seer.jpg"
+			}
+		},
+		{
+			"name": "Malleary Smelter",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Shapeshifter Cleric Artificer",
+			"collector_number": "142",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/142_Malleary Smelter.jpg"
+			}
+		},
+		{
+			"name": "Opener of Glass",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Human Rogue",
+			"collector_number": "145",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/145_Opener of Glass.jpg"
+			}
+		},
+		{
+			"name": "Tattered Cyprian",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Vampire Cleric",
+			"collector_number": "156",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/156_Tattered Cyprian.jpg"
+			}
+		},
+		{
+			"name": "Wandering Unmaker",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Shapeshifter Cleric",
+			"collector_number": "160",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/160_Wandering Unmaker.jpg"
+			}
+		},
+		{
+			"name": "Drowning Cyprian",
+			"rarity": "uncommon",
+			"mana_cost": "{B}{R}",
+			"type": "Creature — Vampire Rogue",
+			"collector_number": "166",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/166_Drowning Cyprian.jpg"
+			}
+		},
+		{
+			"name": "Isidra, Foreign Goddess",
+			"rarity": "mythic",
+			"mana_cost": "{3}{U}{B}",
+			"type": "Legendary Planeswalker — Isidra",
+			"collector_number": "173",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/173_Isidra, Foreign Goddess.jpg"
+			}
+		},
+		{
+			"name": "Sister of Venoms",
+			"rarity": "uncommon",
+			"mana_cost": "{U}{R}",
+			"type": "Creature — Human Shaman Cleric",
+			"collector_number": "190",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/190_Sister of Venoms.jpg"
+			}
+		},
+		{
+			"name": "The Chiliarch",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}{U}",
+			"type": "Legendary Creature — Human God",
+			"collector_number": "165",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/165_The Chiliarch.jpg"
+			}
+		},
+		{
+			"name": "The Forge of Days",
+			"rarity": "mythic",
+			"mana_cost": "{2}{R}{R}{W}",
+			"type": "Legendary Creature — Elemental God",
+			"collector_number": "170",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/170_The Forge of Days.jpg"
+			}
+		},
+		{
+			"name": "The Thunderskin",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}{W}",
+			"type": "Legendary Creature — Human God",
+			"collector_number": "195",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/195_The Thunderskin.jpg"
+			}
+		},
+		{
+			"name": "The Vagabond",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{U}",
+			"type": "Legendary Planeswalker — Vagabond",
+			"collector_number": "196",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/196_The Vagabond.jpg"
+			}
+		},
+		{
+			"name": "Ascent from Snakes",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "202",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/202_Ascent from Snakes.jpg"
+			}
+		},
+		{
+			"name": "Buzzings in the World",
+			"rarity": "rare",
+			"mana_cost": "{X}{G}{G}",
+			"type": "Sorcery",
+			"collector_number": "203",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/203_Buzzings in the World.jpg"
+			}
+		},
+		{
+			"name": "Dappled Wing-Clippers",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Insect Cleric",
+			"collector_number": "210",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/210_Dappled Wing-Clippers.jpg"
+			}
+		},
+		{
+			"name": "Dyad's Dance",
+			"rarity": "rare",
+			"mana_cost": "{G}",
+			"type": "Sorcery",
+			"collector_number": "213",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/213_Dyad's Dance.jpg"
+			}
+		},
+		{
+			"name": "Ravenous Unmaker",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Creature — Wolf Berserker",
+			"collector_number": "222",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/222_Ravenous Unmaker.jpg"
+			}
+		},
+		{
+			"name": "Seven-Coil Ambusher",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Serpent Warrior",
+			"collector_number": "224",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/224_Seven-Coil Ambusher.jpg"
+			}
+		},
+		{
+			"name": "Splinter-Blossom",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Wolf Spirit",
+			"collector_number": "226",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/226_Splinter-Blossom.jpg"
+			}
+		},
+		{
+			"name": "Wolf-Splinter",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Wolf Spirit",
+			"collector_number": "235",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/235_Wolf-Splinter.jpg"
+			}
+		},
+		{
+			"name": "Wood's Devourer",
+			"rarity": "common",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Creature — Wolf Demon Horror",
+			"collector_number": "237",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/237_Wood's Devourer.jpg"
 			}
 		},
 	]
 
 [rare(1)]
 	1 The Horned-Axe
-	1 The Crowned Growth
 	2 Mother of Ants
 	2 The Elegiast
-	1 The Forge of Days
 	1 The Mirror-Queen
 	1 The Red Grail
 	2 The Sun-In-Rags
-	1 The Thunderskin
-	2 The Vagabond
 	1 The Witch-and-Sister
 	1 The Wolf Divided
 	1 The Frangiclave
-	2 Brought Back
 	2 Legacy of Amber
-	2 Legacy of the Wheel
 	2 Legacy of Tides
-	2 Legacy of Flint
 	2 Legacy of Coils
 	2 Rite of Twins' Union
-	2 The Museum of Worms
 	2 Skintwist
 	2 Carnal Thirst
 	1 Rite Intercalate
@@ -2803,7 +2795,6 @@
 	2 Planar Lockdown
 	2 Angel of the True Sun
 	2 Crowned Ghoul
-	1 The Chiliarch
 	2 The Lionsmith
 	2 The Knotwingknot
 	2 The Ring-Yew
@@ -2811,14 +2802,12 @@
 	2 Reshaping Phoenix
 	2 The Geminiad
 	2 Relic Vial
-	2 Glassgarden Watcheye
 	2 Apostle Entheate
 	2 Cat o'lic Priests
 	1 Glorious Enforcer
 	2 Merciless Illumination
 	2 Devoured Messenger
 	2 Painted Distorter
-	2 Ophidian Soul
 	2 Seven-Coil's Scion
 	2 Dream Whisperer
 	2 Evening Isles Gravemouth
@@ -2827,16 +2816,27 @@
 	2 Forces of Opening
 	2 Ghirbi, the Gatekeeper
 	2 Ironsmoke Caligine
-	2 Malleary Augmenter
 	2 Carapace Voyager
-	2 Dyad's Dance
-	2 Wildest Dreams
 	2 Territorial Yew-Maw
 	2 Seven-Coil's Successor
 	1 Teferi's Banishment
 	1 Breaching Vespera
-	1 Isidra, Foreign Goddess
 	2 Musician's Remnant
+	2 Ambitions of Ascension
+	2 Glassgarden Watcheye
+	2 Legacy of the Wheel
+	2 Ophidian Soul
+	1 The Crowned Growth
+	2 The Museum of Worms
+	2 Legacy of Flint
+	2 Malleary Augmenter
+	1 Isidra, Foreign Goddess
+	1 The Chiliarch
+	1 The Forge of Days
+	1 The Thunderskin
+	2 The Vagabond
+	2 Buzzings in the World
+	2 Dyad's Dance
 [uncommon(4)]
 	4 Mirrored Wolf
 	4 Banisher Priest
@@ -2845,7 +2845,6 @@
 	4 Dry-Soul Angel
 	4 Flesh Asunder
 	4 Ignus Rites
-	4 Ascent from Snakes
 	4 The Vitulation
 	4 Foul Alteration
 	4 Unlucky Witness
@@ -2872,7 +2871,6 @@
 	4 Horomachist Sacrifice
 	4 Root of Mercy
 	4 Seven-Coil Glider
-	4 Expose Mortality
 	4 Eyes Everywhere
 	4 Map's Edge Monstrosity
 	4 Moonlit Augury
@@ -2889,35 +2887,37 @@
 	4 Throat of Remnants
 	4 Cyprian Sacristan
 	4 Malleary Reforged
-	4 Malleary Smelter
-	4 Opener of Glass
 	4 Smoldering Pack
 	4 Carapace Youngling
 	4 Debilitated Tragulari
 	4 Flesh Weaver
 	4 Ordeal of Defiance
-	4 Ravenous Unmaker
-	4 Dappled Wing-Clippers
-	4 Splinter-Blossom
 	4 Thyrsine Hunter
 	4 Tireless Recruiter
 	4 Yew Colossus
 	4 Study the Histories
 	4 Carapace Shell-Burster
-	4 Drowning Cyprian
 	4 Horomachist Ending
 	4 Lorescale Coatl
 	4 Malleary Phantasm
 	4 Percussigant
 	4 Places of Peace
 	4 Roost Augur
-	4 Sister of Venoms
 	4 Vengeful Restorer
 	4 Wound the World
 	4 Field of Ruin
 	4 Sanctuary of Mysteries
 	4 Carapace Ancestor
+	4 Expose Mortality
 	4 Tenacious Illuminator
+	4 Malleary Smelter
+	4 Opener of Glass
+	4 Drowning Cyprian
+	4 Sister of Venoms
+	4 Ascent from Snakes
+	4 Ravenous Unmaker
+	4 Splinter-Blossom
+	4 Wolf-Splinter
 [common(7)]
 	8 Implant the Seeds
 	8 Glassgarden Prophet
@@ -2955,7 +2955,6 @@
 	8 Verse Aggress
 	8 Names of the Dead
 	8 Nowhere Illuminator
-	8 Prison of Glass
 	8 Sea's Feasting
 	8 Seven-Coil Shipbreaker
 	8 Carapace Shearer
@@ -3014,35 +3013,32 @@
 	8 Enflamed Caligine
 	8 Entry Consultant
 	8 Malleary Novice
-	8 Malleary Seer
 	8 Rite Flamecaller
-	8 Tattered Cyprian
 	8 Traitorous Blood
-	8 Wandering Unmaker
 	8 Carapace Crusader
 	8 Carapace Disciple
 	8 Carapace Threadbearer
 	8 Cartographed Risen
 	8 The Old Forms
-	8 Seven-Coil Ambusher
 	8 Pupil of Defiance
 	8 Unceasing Initiation
 	8 Way to the Wood
-	8 Wolf-Splinter
-	8 Wood's Devourer
 	8 Covert Cloak
+	8 Prison of Glass
+	8 Malleary Seer
+	8 Tattered Cyprian
+	8 Wandering Unmaker
+	8 Dappled Wing-Clippers
+	8 Seven-Coil Ambusher
+	8 Wood's Devourer
 [wildcard(2)]
 	4 The Horned-Axe
-	4 The Crowned Growth
 	6 Implant the Seeds
 	7 Mother of Ants
 	7 The Elegiast
-	4 The Forge of Days
 	4 The Mirror-Queen
 	4 The Red Grail
 	7 The Sun-In-Rags
-	4 The Thunderskin
-	7 The Vagabond
 	4 The Witch-and-Sister
 	4 The Wolf Divided
 	4 The Frangiclave
@@ -3072,15 +3068,12 @@
 	15 Banisher Priest
 	6 Bars Across the Sun
 	6 Broken Sun-Servant
-	7 Brought Back
 	15 Defacement
 	6 Forge Secretkeeper
 	6 Glass Guardian
 	6 Iron Verdict
 	7 Legacy of Amber
-	7 Legacy of the Wheel
 	7 Legacy of Tides
-	7 Legacy of Flint
 	7 Legacy of Coils
 	6 Subverted Cyprian
 	6 Verse Illuminate
@@ -3091,7 +3084,6 @@
 	15 Nowhere Inhabits
 	6 Names of the Dead
 	6 Nowhere Illuminator
-	6 Prison of Glass
 	7 Rite of Twins' Union
 	6 Sea's Feasting
 	6 Seven-Coil Shipbreaker
@@ -3099,11 +3091,9 @@
 	15 Dry-Soul Angel
 	15 Flesh Asunder
 	6 Herald of Loss
-	7 The Museum of Worms
 	7 Skintwist
 	7 Carnal Thirst
 	15 Ignus Rites
-	15 Ascent from Snakes
 	15 The Vitulation
 	4 Rite Intercalate
 	15 Foul Alteration
@@ -3141,7 +3131,6 @@
 	6 Rite of Crucible Soul
 	6 Seven-Coil Invocation
 	6 Rite of Beast's Division
-	4 The Chiliarch
 	7 The Lionsmith
 	7 The Knotwingknot
 	7 The Ring-Yew
@@ -3173,7 +3162,6 @@
 	15 The Allure's Light
 	15 The Sky, The Soul
 	6 Roost Messengers
-	7 Glassgarden Watcheye
 	15 Guardian Percussigant
 	7 Apostle Entheate
 	7 Cat o'lic Priests
@@ -3189,7 +3177,6 @@
 	15 Seven-Coil Glider
 	6 Augury Raven
 	7 Devoured Messenger
-	15 Expose Mortality
 	15 Eyes Everywhere
 	7 Painted Distorter
 	15 Map's Edge Monstrosity
@@ -3198,7 +3185,6 @@
 	15 Nowhere Soul Collector
 	6 Nowhere Wormhost
 	15 Opener of Realities
-	7 Ophidian Soul
 	6 River Drowner
 	15 Roost Nyctodromist
 	6 Seaside Smuggler
@@ -3233,17 +3219,11 @@
 	7 Forces of Opening
 	7 Ghirbi, the Gatekeeper
 	7 Ironsmoke Caligine
-	7 Malleary Augmenter
 	6 Malleary Novice
 	15 Malleary Reforged
-	6 Malleary Seer
-	15 Malleary Smelter
-	15 Opener of Glass
 	6 Rite Flamecaller
 	15 Smoldering Pack
-	6 Tattered Cyprian
 	6 Traitorous Blood
-	6 Wandering Unmaker
 	6 Carapace Crusader
 	6 Carapace Disciple
 	6 Carapace Threadbearer
@@ -3254,19 +3234,11 @@
 	15 Flesh Weaver
 	6 The Old Forms
 	15 Ordeal of Defiance
-	15 Ravenous Unmaker
-	15 Dappled Wing-Clippers
-	7 Dyad's Dance
-	6 Seven-Coil Ambusher
-	15 Splinter-Blossom
 	6 Pupil of Defiance
-	7 Wildest Dreams
 	15 Thyrsine Hunter
 	15 Tireless Recruiter
 	6 Unceasing Initiation
 	6 Way to the Wood
-	6 Wolf-Splinter
-	6 Wood's Devourer
 	15 Yew Colossus
 	7 Territorial Yew-Maw
 	15 Study the Histories
@@ -3274,20 +3246,48 @@
 	4 Teferi's Banishment
 	4 Breaching Vespera
 	15 Carapace Shell-Burster
-	15 Drowning Cyprian
 	15 Horomachist Ending
-	4 Isidra, Foreign Goddess
 	15 Lorescale Coatl
 	15 Malleary Phantasm
 	15 Percussigant
 	15 Places of Peace
 	15 Roost Augur
-	15 Sister of Venoms
 	15 Vengeful Restorer
 	15 Wound the World
 	6 Covert Cloak
 	15 Field of Ruin
 	15 Sanctuary of Mysteries
 	15 Carapace Ancestor
-	15 Tenacious Illuminator
 	7 Musician's Remnant
+	7 Ambitions of Ascension
+	7 Glassgarden Watcheye
+	15 Expose Mortality
+	7 Legacy of the Wheel
+	7 Ophidian Soul
+	6 Prison of Glass
+	15 Tenacious Illuminator
+	4 The Crowned Growth
+	7 The Museum of Worms
+	7 Legacy of Flint
+	7 Malleary Augmenter
+	6 Malleary Seer
+	15 Malleary Smelter
+	15 Opener of Glass
+	6 Tattered Cyprian
+	6 Wandering Unmaker
+	15 Drowning Cyprian
+	4 Isidra, Foreign Goddess
+	15 Sister of Venoms
+	4 The Chiliarch
+	4 The Forge of Days
+	4 The Thunderskin
+	7 The Vagabond
+	15 Ascent from Snakes
+	7 Buzzings in the World
+	6 Dappled Wing-Clippers
+	7 Dyad's Dance
+	15 Ravenous Unmaker
+	6 Seven-Coil Ambusher
+	15 Splinter-Blossom
+	15 Wolf-Splinter
+	6 Wood's Devourer

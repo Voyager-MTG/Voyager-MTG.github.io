@@ -1,4 +1,244 @@
-﻿VERSION 1 CHANGELOG
+﻿VERSION 2 CHANGELOG
+====================
+
+Ambitions of Ascension added.
+Buzzings in the World added.
+
+Brought Back removed.
+Wildest Dreams removed.
+
+Map's Edge Explorer
+
+Thyrsine Tracker
+
+Banisher Priest
+
+Bars Across the Sun
+
+Broken Sun-Servant
+
+Legacy of Coils
+
+Verse Aggress
+
+Life's Legacy
+
+Angel of the True Sun
+
+Discover the Stone Gods
+
+Bringer of Glory
+
+Seven-Coiled Strength
+
+Ring-Yew's Chosen
+
+Apostle Entheate
+
+Carapace Crusader
+
+Carapace Disciple
+
+Carapace Threadbearer
+
+Carapace Voyager
+
+Carapace Youngling
+
+Cartographed Risen
+
+Debilitated Tragulari
+
+Flesh Weaver
+
+The Old Forms
+
+Ordeal of Defiance
+
+Pupil of Defiance
+
+Thyrsine Hunter
+
+Tireless Recruiter
+
+Unceasing Initiation
+
+Way to the Wood
+
+Territorial Yew-Maw
+
+Musician's Remnant
+
+Glassgarden Watcheye
+Rules text: Whenever Glassgarden Watcheye or another Cleric you control enters, target creature gets +1/+1 and gains vigilance until end of turn.
+{1}{W}: Induct. Activate only as a sorcery. [i](Create a 0/1 Cleric creature token with “Sacrifice two other Clerics: Transform this creature.” It transforms into a 4/4 God Horror creature token that can't block.)[/i] => Gods and other Clerics you control get +1/+0 and have vigilance.
+Whenever Glassgarden Watcheye attacks, induct twice. Tokens created this way are tapped and attacking. [i](Create a 0/1 Cleric creature token with “Sacrifice two other Clerics: Transform this creature.” It transforms into a 4/4 God Horror creature token that can't block.)[/i]
+Pt: 4/3 => 3/4
+
+Expose Mortality
+Cost: {1}{U} => {U}
+
+Legacy of the Wheel
+Rules text: When Legacy of the Wheel enters, exile all the cards in your hand face down, then draw that many cards plus one.
+When Legacy of the Wheel is put into a graveyard from the battlefield, shuffle your hand into your library, then return the exiled cards to their owner's hand. => When Legacy of the Wheel enters, if it was cast, exile all the cards in your hand face down, then draw that many cards plus one.
+Discard X cards, Sacrifice Legacy of the Wheel: You may play up to X cards exiled by Legacy of the Wheel this turn.
+
+Ophidian Soul
+Cost: {2}{U} => {1}{U}
+Rules text: Flash
+As Ophidian Soul enters, choose another creature you control.
+Whenever Ophidian Soul or the chosen creature deals combat damage to a player, draw a card. => Flash
+When Ophidian Soul enters, target permanent gains Ophidian Soul abilities until end of turn.
+Whenever Ophidian Soul deals combat damage to a player, draw a card.
+Pt: 2/2 => 1/1
+
+Prison of Glass
+Cost: {2}{U} => {1}{U}
+Rules text: Enchant creature
+Enchanted creature is a blue Reflection, gets -3/-0, loses all abilities, and can't be sacrificed. => Enchant creature
+Enchanted creature is a blue Reflection, gets -4/-0, loses all abilities, and can't be sacrificed.
+
+Tenacious Illuminator
+Rules text: Flying
+Whenever Tenacious Illuminator or another Angel you control dies, each opponent loses 1 life and you gain 1 life. Then surveil 1. => Flying
+Whenever one or more other Angels you control die, each opponent loses 2 life and you gain 2 life, surveil 2. This ability triggers only once each turn.
+
+The Crowned Growth
+Cost: {4}{B}{B} => {3}{B}{B}
+Rules text: Whenever a creature dealt damage by The Crowned Growth this turn dies, its controller gets two poison counters.
+When The Crowned Growth leaves the battlefield, up to one target creature you control becomes a copy of The Crowned Growth. [i](This effect lasts indefinitely.)[/i] => Deathtouch
+Whenever The Crowned Growth or a creature dealt damage by it this turn leaves the battlefield, up to one target creature becomes a copy of The Crowned Growth except it isn't legendary and each opponent gets 2 poison counters. [i](This effect lasts indefinitely.)[/i]
+Pt: 5/5 => 5/3
+
+The Museum of Worms
+Cost: {1}{B} => {B}
+Rules text: Whenever a creature dies, put an omen counter on The Museum of Worms.
+Remove twice X omen counters from The Museum of Worms and sacrifice it: Create X 1/1 black Worm creature tokens with deathtouch and infect. Activate only as a sorcery. [i](That creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.)[/i] => Whenever a creature dies, put an omen counter on The Museum of Worms.
+Remove twice X omen counters from The Museum of Worms and sacrifice it: Create X 1/1 black Worm creature tokens with deathtouch and toxic 1. Activate only as a sorcery. [i](Players dealt combat damage by this creature also get a poison counter.)[/i]
+
+Legacy of Flint
+Rules text: Whenever you exile one or more cards, if they became foretold, Legacy of Flint deals 2 damage to any target. Otherwise, up to one target creature gains first strike until end of turn. => Whenever you finish exiling one or more cards, Legacy of Flint deals damage to target player equal to the number of spells you've cast from exile this turn.
+
+Malleary Augmenter
+Pt: 1/2 => 2/2
+
+Malleary Seer
+Cost: {3}{R} => {2}{R}
+Pt: 4/3 => 3/2
+
+Malleary Smelter
+Rules text: As long as you exiled a card this turn, Malleary Smelter is a Phoenix with flying and haste.
+Foretell {2}{R} [i](During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)[/i] => As long as you exiled a card this turn, Malleary Smelter is a Phoenix with flying and haste.
+Foretell {1}{R} [i](During your turn, you may pay {2} and exile this card from your hand face down. Cast it on a later turn for its foretell cost.)[/i]
+
+Opener of Glass
+Rules text: Menace
+Whenever Opener of Glass becomes blocked by one or more creatures, it deals 2 damage to each creature blocking Opener of Glass. => Haste
+Whenever Opener of Glass is dealt damage, it deals that much damage to any target.
+Pt: 3/1 => 3/2
+
+Tattered Cyprian
+Pt: 2/1 => 2/2
+
+Wandering Unmaker
+Cost: {2}{R} => {3}{R}
+Pt: 3/2 => 4/2
+
+Drowning Cyprian
+Cost: {2}{B}{R} => {B}{R}
+Rules text: This spell costs {2} less to cast if an opponent lost life this turn.
+Menace, haste => Menace, haste
+When Drowning Cyprian enters, if an opponent lose life this turn, put two +1/+1 counters on Drowning Cyprian.
+Pt: 3/3 => 1/1
+
+Isidra, Foreign Goddess
+Rules text: [+1]: Target opponent discards a card. You may draw a card unless target opponent pays {2}.
+[-3]: Look at the top five cards of your library. You may put a permanent card with mana value 3 or less from among them onto the battlefield.
+[-8]: You get an emblem with “Opponents can't draw cards”. => [+1]: Target opponent discards a card. You may draw a card unless target opponent pays {2}.
+[-3]: Look at the top three cards of your library. You may put a permanent card with mana value 5 or less from among them onto the battlefield. Put the rest into your graveyard.
+[-8]: You get an emblem with “Opponents can't draw cards”.
+
+Sister of Venoms
+Rules text: Whenever Sister of Venoms becomes blocked, choose one —
+• Tap target creature blocking Sister of Venoms, put a stun counter on it.
+• Other creatures you control get +1/+1 until end of turn. => Whenever Sister of Venoms becomes blocked, choose one —
+• Tap target creature and put a stun counter on it.
+• Other creatures you control get +1/+1 until end of turn.
+
+The Chiliarch
+Rules text: Whenever The Chiliarch becomes the target of a spell or ability an opponent controls, you may tap target nonland permanent, put three stun counters on it.
+If a creature would deal damage to The Chiliarch, if that creature isn't attacking, prevent that damage and put a +1/+1 counter on The Chiliarch. => The Chiliarch can't be the target of Instant spells.
+If damage would be dealt to The Chiliarch while it isn't blocking, prevent that damage and put that many +1/+1 counters on The Chiliarch.
+
+The Forge of Days
+Rules text: Trample, haste
+Whenever The Forge of Days attacks, you may put a creature card you own in exile onto the battlefield tapped and attacking. Exile that creature at the beginning of the next end step. => Trample, haste
+Whenever The Forge of Days attacks, you may put a creature card you own in exile onto the battlefield tapped and attacking. Its owner puts it on the bottom of their library at the beginning of the next end step.
+
+The Thunderskin
+Rules text: Trample, lifelink, ward {1}
+Whenever an opponent casts a spell during your turn and when The Thunderskin dies, induct twice. [i](Create a 0/1 Cleric creature token with “Sacrifice two other Clerics: Transform this creature.” It transforms into a 4/4 God Horror creature token that can't block.)[/i] => Lifelink
+Whenever #The Thunderskin attacks, create an enchantment token named Heartbeat with “{G}{W}, Sacrifice this permanent: Return target card named #The Thunderskin from your graveyard to the battlefield tapped.”
+Pt: 2/4 => 4/4
+
+The Vagabond
+Type: Legendary Creature — Insect God => Legendary Planeswalker — Vagabond
+Cost: {X}{1}{G}{U} => {2}{G}{U}
+Rules text: Flash
+When The Vagabond enters, draw twice X cards. For each card drawn this way, discard a card unless you sacrifice another permanent. => Whenever you draw a card put a loyalty counter on The Vagabond.
+[0]: Draw a card.
+[-3]: Return target permanent to its owner's hand.
+[-X]: Create a token that's a copy of target land except its an X/X blue Merfolk creature with hexproof in addition to its other types.
+Loyalty:  => 4
+
+Ascent from Snakes
+Cost: {1}{G}{G} => {1}{G}
+
+Dappled Wing-Clippers
+Cost: {1}{G} => {2}{G}
+Rules text: When Dappled Wing-Clippers enters, mill two cards.
+{2}{G}{G}, Sacrifice Dappled Wing-Clippers: Choose one —
+• Return up to two land cards from your graveyard to the battlefield tapped.
+• Destroy up to two target artifacts or enchantments. => When Dappled Wing-Clippers enters, mill three cards.
+{1}, Sacrifice Dappled Wing-Clippers: Choose one—
+• Destroy target artifact or enchantment.
+• Return target land card from your graveyard to the battlefield tapped.
+Pt: 2/2 => 3/2
+
+Dyad's Dance
+Cost: {2}{G} => {G}
+Rules text: Search your library for a creature card with the same total power and toughness as target creature an opponent controls, put it onto the battlefield, then shuffle. => Choose target creature then look at the top five cards of your library. You may cast a creature card from among them. Put the rest on the bottom of your library in a random order. When a creature cast this way enters, it fights that creature.
+
+Ravenous Unmaker
+Rules text: When Ravenous Unmaker enters, you get a Scar. [i](It's a boon with “When a creature you control dies, you may pay {1}. If you do, draw a card.”)[/i]
+Whenever Ravenous Unmaker attacks or a boon you own triggers, creatures you control get +1/+1 and gain trample until end of turn. => Flash
+Whenever Ravenous Unmaker is dealt damage you get a Scar. [i](It's a boon with “When a creature you control dies, you may pay {1}. If you do, draw a card.”)[/i]
+Whenever a boon you own triggers, create a 2/2 green Wolf creature token.
+Pt: 4/4 => 4/5
+
+Seven-Coil Ambusher
+Rules text: Deathtouch
+Whenever Seven-Coil Ambusher attacks, you may have it lose deathtouch until end of turn. If you do, target creature gains deathtouch and “This creature can't be blocked by token Clerics” until end of turn. => Reach, deathtouch
+Seven-Coil Ambusher can't be blocked by tokens.
+Pt: 3/2 => 2/3
+
+Splinter-Blossom
+Cost: {1}{G} => {2}{G}
+Pt: 2/2 => 3/3
+
+Wolf-Splinter
+Cost: {2}{G} => {1}{G}
+Rules text: When Wolf-Splinter enters, create a 2/2 green Wolf creature token.
+Whenever Wolf-Splinter attacks, target attacking creature you control gains trample until end of turn. => Whenever Wolf-Splinter is dealt damage, create a 2/2 green Wolf creature token.
+Pt: 1/1 => 2/1
+
+Wood's Devourer
+Rules text: Trample
+Whenever Wood's Devourer attacks, if you own a boon, put a +1/+1 counter on Wood's Devourer. => Trample
+When Wood's Devourer enters, you may have it deal 1 damage to target creature you control. If you do, that creature gains trample until end of turn.
+
+
+VERSION 1 CHANGELOG
 ====================
 
 First version published.
