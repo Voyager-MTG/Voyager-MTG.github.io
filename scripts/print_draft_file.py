@@ -47,7 +47,7 @@ def generateFile(code):
 
 		draft_string += '''	{
 			"name": "''' + card['card_name'] + '''",
-			"rarity": "''' + card['rarity'] + '''",
+			"rarity": "''' + card['rarity'].replace("cube", "rare") + '''",
 			"mana_cost": "''' + card['cost'].replace("I", "C") + '''",
 			"type": "''' + card['type'] + '''",
 			"collector_number": "''' + str(card['number']) + '''",

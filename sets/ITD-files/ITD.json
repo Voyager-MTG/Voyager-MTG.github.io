@@ -3109,7 +3109,7 @@
             "number": 78,
             "color_identity": "B",
             "cost": "{1}{B}{B}",
-            "rules_text": "Return target creature or planeswalker card with mana value 5 or less from your graveyard to the battlefield. If that card has mana value lesser than 5, mill a number of cards equal to twice the difference.",
+            "rules_text": "Return target creature or planeswalker card with mana value 5 or less from your graveyard to the battlefield. If that card has mana value lesser than 5, mill a number of cards equal to the difference.",
             "flavor_text": "[i]Lies and bodies fester beneath the surface.[/i]",
             "pt": "",
             "special_text": "",

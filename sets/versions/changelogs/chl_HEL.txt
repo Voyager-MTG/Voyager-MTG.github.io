@@ -1,4 +1,411 @@
-﻿VERSION 1 CHANGELOG
+﻿VERSION 2 CHANGELOG
+====================
+
+Deerstalker added.
+Monstrous Invocation added.
+Fields of Bone added.
+Perpetual Depths added.
+Shrine of Unburial added.
+Mysterious Altar added.
+Drained Crevace added.
+Imposing Clearing added.
+Cresting Spires added.
+Sweltering Shoals added.
+Sparse Weblands added.
+From Beneath the Woods added.
+Servant of Laceration added.
+Vicaroam, the Crushing Vines added.
+Collapsing Citadel added.
+Galvanized Necrowing added.
+Thread the Undergrowth added.
+
+Cycle of Degredation removed.
+Reflections of Death removed.
+Hellride Juggernaut removed.
+Vile Summoning removed.
+Copacra, The Soul Willow removed.
+
+Gnarledroot Demon
+cost: {1}{G}{G} => {1}{G}
+pt: 3/3 => 1/3
+
+Explosive Might
+cost: {G} => {2}{G}
+rules_text: Target creature you control gets +1/+1 and gains trample until end of turn. It deals damage equal to its power to target creature. Sacrifice it at the beginning of the next end step. => Target creature you control gets +1/+1 and gains trample until end of turn. It deals damage equal to its power to target creature you don't control.
+
+Return from Ash
+type: Sorcery => Instant
+rules_text: Choose one —
+• Surveil 2. You gain 2 life.
+• Return target permanent card that was put into your graveyard this turn to your hand.
+• Exile target players graveyard. => Choose one —
+• Draw a card. You gain 1 life.
+• Return target permanent card that was put into your graveyard this turn to your hand.
+• Exile target players graveyard.
+
+Ichorsplosion
+rules_text: As an additional cost to cast this spell, exile two instant or sorcery cards from your graveyard or pay {2}.
+Destroy target creature. => As an additional cost to cast this spell, exile two noncreature, nonland cards from your graveyard or pay {2}.
+Destroy target creature.
+
+Ransack the Tombs
+cost: {2}{R}{R} => {R}{R}
+rules_text: Discard up to two cards, then draw that many cards.
+Create three 1/1 black Skeleton creature tokens. => As an additional cost to cast this spell, discard a card or sacrifice a land.
+Choose one —
+• Create three 1/1 black Skeleton creature tokens.
+• Draw two cards.
+
+Bemused Gorger
+rules_text: When this creature enters, create a 1/1 black Skeleton creature token. That token gains haste until end of turn. => This spell costs {1} less to cast for each card you discarded this turn.
+When this creature enters, create a 1/1 black Skeleton creature token.
+pt: 2/4 => 4/3
+
+Skittering Demon
+rules_text: Pact [i](At the beginning of your end step, put a pact counter on a creature you control if you haven't this turn, then sacrifice it if it has two or more.)[/i]
+Trample
+This creature has +1/+0 for each pact counter among creatures you control. => Pact [i](At the beginning of your end step, put a pact counter on a creature you control if you haven't this turn, then sacrifice it if it has two or more.)[/i]
+Reach
+Creatures you control with pact counters on them have trample.
+pt: 4/3 => 5/3
+
+Corrupted Nightwing
+rules_text: Flash
+Flying
+When this creature enters, you may pay 2 life. If you do, surveil 2. [i](Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)[/i] => Flash
+Flying
+Whenever this creature attacks, surveil 1. [i](Look at the top card of your library. You may put it into your graveyard.)[/i]
+
+Rattling Gorger
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+Trample => Vigilance
+When this creature enters, you gain 3 life.
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+pt: 6/5 => 4/7
+
+Gnarled Hydra
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+Trample
+Whenever this creature attacks, put a +1/+1 counter on it. => Trample
+Whenever this creature attacks, put a +1/+1 counter on it.
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+
+Ignition Devil
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+This creature can't block.
+{1}, Sacrifice this creature: Another target creature you control gains haste until end of turn. => This creature can't block.
+{1}, Sacrifice this creature: Another target creature you control gains haste until end of turn.
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+
+Dweller's Hound
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+{1}{R}: Dweller's Hound gets +2/+0 until end of turn. => {1}{R}: Dweller's Hound gets +2/+0 until end of turn.
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+
+Bone Brigade
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+When this creature dies, it deals 1 damage to any target. => When this creature dies, it deals 1 damage to any target.
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+
+Ashen Crasher
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+Trample
+Sacrifice this creature: Add {R}{R}{R}. You don't lose this mana as steps and phases end this turn. => Trample
+Sacrifice this creature: Add {R}{R}{R}. You don't lose this mana as steps and phases end this turn.
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+
+Resilient Rot
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+Deathtouch => Deathtouch
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+
+Husked Consumer
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+Menace => Menace
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+
+Demonic Butcher
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+When this creature enters, each player sacrifices a creature. => When this creature enters, each player sacrifices a creature.
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+
+Bloodstarved Ghoul
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+When this creature dies, draw a card unless an opponent discards a card or pays 2 life. => When this creature dies, draw a card unless an opponent discards a card or pays 2 life.
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+
+Icicle Crasher
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+Whenever this creature attacks, return another permanent you control to its owner's hand. => This creature can't attack or block unless you return another creature or land you control to its owner hand.
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+pt: 3/3 => 3/2
+
+Deceptive Shadow
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+When this creature enters, you may tap target creature and put a stun counter on it. => When this creature enters, you may tap target creature and put a stun counter on it.
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+
+Processing Revenant
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+When this creature enters, create a 1/1 black Skeleton creature token. => When this creature enters, create a 1/1 black Skeleton creature token.
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+
+Deeptomb Guardian
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+When this creature enters, you gain 2 life. => When this creature enters, you gain 2 life.
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+
+Ferocious Maneater
+pt: 5/4 => 5/5
+
+Overwhelming Presence
+cost: {3}{G} => {2}{G}
+rules_text: Spectacle {1}{G} [i](You may cast this spell for its spectacle cost rather than its mana cost if an opponent lost life this turn.)[/i]
+Put three +1/+1 counters on target creature you control. => Spectacle {G} [i](You may cast this spell for its spectacle cost rather than its mana cost if an opponent lost life this turn.)[/i]
+Put three +1/+1 counters on target creature you control.
+
+Unidentifiable Mass
+cost: {3}{U}{U} => {4}{U}
+
+Rotting Leviathan
+pt: 2/4 => 3/4
+
+Shambling Mistwalker
+rules_text: Whenever this creature attacks, defending player may tap an untapped creature they control. If they don't, Shambling Mistwalker can't be blocked until end of turn. => Whenever this creature attacks, defending player may tap an untapped creature they control. If they don't, this creature gets +1/+0 and can't be blocked until end of turn.
+
+Abyssal Smoke
+rules_text: Trample
+When this creature enters, you may sacrifice a land. If you do, draw a card and lose 1 life. => Trample
+When this creature enters, you may sacrifice a land. If you do, draw a card.
+pt: 4/3 => 5/4
+
+Chaining Hellspawn
+rules_text: Pact [i](At the beginning of your end step, put a pact counter on a creature you control if you haven't this turn, then sacrifice it if it has two or more.)[/i]
+Trample
+Whenever a creature you control with a pact counter on it dies, target player discards a card. => Pact [i](At the beginning of your end step, put a pact counter on a creature you control if you haven't this turn, then sacrifice it if it has two or more.)[/i]
+Menace
+Whenever a creature you control with a pact counter on it dies, target player discards a card.
+pt: 5/4 => 5/5
+
+Skullcrushing Fiend
+pt: 3/3 => 4/3
+
+Eafem, Lethal Arachne
+pt: 5/3 => 5/4
+
+Sorin, Vengeful Sangrablade
+rules_text: The first time an opponent loses life each turn, you gain that much life.
+[+1]: Create a 3/1 white Vampire Soldier creature token with lifelink.
+[-2]: Exile target tapped creature.
+[-7]: Sorin becomes an X/X legendary Vampire creature with protection from everything until end of turn where X is your life total. [i](This permanent can't be targeted, dealt damage, enchanted, or equipped by anything until end of turn)[/i] => Once during each of your turns, when an opponent loses life, you may gain that much life.
+[+1]: Create a 3/1 white Vampire Soldier creature token with lifelink.
+[-2]: Exile target tapped creature.
+[-7]: Until end of turn, Sorin becomes an X/X legendary Vampire creature with protection from everything, where X is your life total. [i](This permanent can't be targeted, dealt damage, enchanted, or equipped by anything until end of turn)[/i]
+
+Rotten Insight
+rules_text: Target player reveals their hand and discards a creature or planeswalker card.
+{1}{B}, Exile this card from your graveyard: Create a 2/2 white Zombie creature token with lifelink and decayed. [i](It can't block. When it attacks, sacrifice it at end of combat.)[/i] => Target opponent reveals their hand. You choose a creature or planeswalker card from it. That player discards that card.
+{1}{B}, Exile this card from your graveyard: Create a 2/2 white Zombie creature token with lifelink and decayed. [i](It can't block. When it attacks, sacrifice it at end of combat.)[/i]
+
+Scouring Flames
+rules_text: Spectacle {B} [i](You may cast this spell for its spectacle cost rather than its mana cost if an opponent lost life this turn.)[/i]
+Surveil 2. Then target creature gets -3/-3 until end of turn. [i](To surveil 2, look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)[/i] => Spectacle {B} [i](You may cast this spell for its spectacle cost rather than its mana cost if an opponent lost life this turn.)[/i]
+Surveil 2. When you do, target creature gets -3/-3 until end of turn. [i](To surveil 2, look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)[/i]
+
+Bloodthirsty Howler
+
+Splintering Growth
+rules_text: Trample
+Whenever this creature attacks, it gets +2/+0 until end of turn. => Trample
+Whenever this creature attacks, it gets +1/+0 until end of turn.
+
+Twisted Eruption
+cost: {3}{R}{R} => {3}{R}
+rules_text: Choose two —
+• Destroy target land you don't control.
+• Twisted Eruption deals 3 damage to target creature or planeswalker.
+• Destroy target land you control and draw two cards. => Destroy target land. If a nonbasic land was destroyed this way, Twisted Eruption deals 3 damage to that lands controller.
+
+Orbisfaber's Influence
+rules_text: Choose one or both —
+• Return all creatures to their owner's hand.
+• Each player may put a permanent card from their hand onto the battlefield. => Choose one or both —
+• Return all nonland permanent cards to their owner's hand.
+• Each player may put a permanent card from their hand onto the battlefield.
+
+Hellish Mistwarper
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+Flying
+When this creature enters, up to one other target creature lose all abilities and become a 1/1 blue Horror for as long as you control this creature. => Flying
+When this creature enters, up to one target nonland permanent's controller puts it on top or bottom of their library.
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+
+Zeramander's Influence
+rules_text: Choose one or both —
+• Exile up to X target nonbasic lands. For each land exiled this way, its owner may search their library for a basic land card and put it onto the battlefield tapped. Then, shuffle.
+• Exile up to X target artifacts. => Choose one or both —
+• Zeramander's Influence deals X damage to each creature.
+• Destroy each artifact with mana value X or less.
+
+Creeping Frost
+rules_text: Enchant creature
+Enchanted creature doesn't untap during its controller untap step.
+{3}{U}: Return this card from your graveyard to the battlefield. => Enchant creature
+Enchanted creature has -5/-0.
+{1}{U}: Return this card from your graveyard to your hand.
+
+Tundra Screecher
+rules_text: Spectacle {1}{U} [i](You may cast this spell for its spectacle cost rather than its mana cost if an opponent lost life this turn.)[/i]
+Flying
+Whenever you draw your second card each turn, you may tap or untap target permanent. => Spectacle {1}{U} [i](You may cast this spell for its spectacle cost rather than its mana cost if an opponent lost life this turn.)[/i]
+Flying
+Whenever this creature attacks, you may tap or untap target permanent.
+
+Callous Willbreaker
+cost: {4}{U}{U} => {1}{U}
+rules_text: This creature costs {3} less to cast if a player has eight or more cards in their graveyard.
+This creature can only be blocked by Demons. => Flash
+When this creature enters, target player reveals their hand. You may choose a nonland, noncreature card from it. If you do, that player puts it on the bottom of their library, then draws a card.
+pt: 4/4 => 2/1
+
+Shadowbender Lich
+rules_text: Pact [i](At the beginning of your end step, put a pact counter on a creature you control if you haven't this turn, then sacrifice it if it has two or more.)[/i]
+Whenever a creature you control with a pact counter on it dies, target play mills four cards. => Pact [i](At the beginning of your end step, put a pact counter on a creature you control if you haven't this turn, then sacrifice it if it has two or more.)[/i]
+Whenever a creature you control with a pact counter on it attacks, defending player mills two cards for each pact counter on it.
+
+Harvesting Revenant
+rules_text: Pact [i](At the beginning of your end step, put a pact counter on a creature you control if you haven't this turn, then sacrifice it if it has two or more.)[/i]
+Whenever a creature you control with a pact counter on it dies, you may put a +1/+1 counter on target creature you control. => Pact [i](At the beginning of your end step, put a pact counter on a creature you control if you haven't this turn, then sacrifice it if it has two or more.)[/i]
+Whenever a creature you control with a pact counter on it dies, put a +1/+1 counter on this creature.
+
+Valley Lurker
+type: Creature — Elemetal Devil => Creature — Elemental Devil
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+When this creature dies, put a +1/+1 counter on up to one target creature. => When this creature enters, put a +1/+1 counter target creature you control.
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+
+Desperate Sealing
+rules_text: As an additional cost to cast this spell, sacrifice a creature.
+When this enchantment enters, exile another target nonland permanent an opponent controls until this enchantment leaves the battlefield. => As an additional cost to cast this spell, sacrifice a creature or discard a card.
+When this enchantment enters, exile another target nonland permanent an opponent controls until this enchantment leaves the battlefield.
+
+Intruding Undergrowth
+type: Enchantment => Instant
+rules_text: At the beginning of your end step, each opponent mills two cards.
+You may play land cards from opponents graveyards. => Choose a card type. Each player sacrifices a permanent of that type. For each player that does, they may search their library for a basic land card and put it onto the battlefield tapped. Then shuffle their library.
+
+Blazing Raid
+rules_text: Target creature gets +2/+0 and gains trample until end of turn.
+Create a 1/1 black Skeleton creature token. => Up to one target creature gets +2/+0 and gains trample until end of turn.
+Create a 1/1 black Skeleton creature token.
+
+Foreboding Milestone
+cost: {2} => {1}
+rules_text: When this artifact enters, search your library for a basic land card, reveal it, and put it into your hand. Then shuffle.
+{1}, Sacrifice this artifact: Create a 2/2 white Zombie creature token with lifelink and decayed. [i](It can't block. When it attacks, sacrifice it at end of combat.)[/i] => When this artifact enters, create a 2/2 white Zombie creature token with lifelink and decayed. [i](It can't block. When it attacks, sacrifice it at end of combat.)[/i]
+{T}: Until end of turn, target land you control becomes the basic land type of your choice in addition to its other types.
+
+Bloodmoon Champion
+cost: {2}{U}{U} => {3}{U}
+rules_text: Pact [i](At the beginning of your end step, put a pact counter on a creature you control if you haven't this turn, then sacrifice it if it has two or more.)[/i]
+Whenever a creature you control with a pact counter on it attacks, tap or untap target permanent. => Flash
+Pact [i](At the beginning of your end step, put a pact counter on a creature you control if you haven't this turn, then sacrifice it if it has two or more.)[/i]
+Creatures you control with pact counters on them have hexproof.
+pt: 4/3 => 3/3
+
+Remains of Despair
+rules_text: Create a tapped 1/1 black Skeleton creature token for each creature card you own in exile and in your graveyard.
+Flashback {4}{B}{R} [i](You may cast this card from your graveyard for its flashback cost. Then exile it.)[/i] => Create three 1/1 black Skeleton creature tokens. If this spells flashback cost was paid, create X of those tokens instead.
+Flashback {X}{B}{R} [i](You may cast this card from your graveyard for its flashback cost. Then exile it.)[/i]
+
+Ignosco, Death's Absolution
+cost: {3}{W}{W} => {1}{W}{W}{W}
+rules_text: Other creatures you control get +1/+1 and are Zombies in addition to their other types.
+{1}{W}{W}: Return target creature card with mana value X or less from your graveyard to the battlefield with a finality counter on it, where X is the number of creatures you control. Activate only as a sorcery. => Other Zombies you control get +1/+1 and lose all abilities.
+{W}{W}: Exile target creature card in your graveyard with mana value X or less, where X is the number of creatures you control. Create a token that is a copy of it, except it is also a Zombie. Activate only as a sorcery.
+
+Fervens, the Boiling Lake
+rules_text: Vigilance
+As long as it's not your turn, Fervens is an Island land. [i](It's not a creature.)[/i] => Vigilance
+Fervens's power and toughness are each equal to the number of instant and sorcery cards you own in your graveyard and in exile.
+As long as it's not your turn, Fervens is an Island land. [i](It's not a creature.)[/i]
+pt: 3/2 => */*
+
+Osavotus, Contract Dealer
+cost: {4}{U}{U} => {2}{U}{U}{U}
+rules_text: Indestructible
+Whenever Osavotus attacks, draw three cards.
+At the beginning of your end step, sacrifice Osavotus unless you exile three cards from your graveyard. => Osavotus has indestructible as long as there are twenty or more cards in a player's graveyard.
+Whenever Osavotus attacks, each player draws three cards. Then each opponent discards three cards.
+
+Bloodsoaked Mass
+cost: {2}{U}{B} => {2}{B}
+rules_text: Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+As this creature enters, choose a player.
+this creature gets -1/-1 for each card in the chosen players hand. => Menace
+Whenever a creature dies, put a +1/+1 counter on this creature.
+pt: 7/7 => 2/2
+
+Demonlord Orbisfaber
+pt: 7/7 => 9/8
+
+Hateful Amalgam
+pt: 4/4 => 5/4
+
+Demonlord Zeramander
+pt: 4/4 => 5/5
+
+Demonlord Morideus
+rules_text: When you cast this spell, exile all but the bottom fifteen cards of your library. When you do, search your library for up to two cards and put them into your hand. Then shuffle.
+Menace => As an additional cost to cast this spell, exile between one and seven cards from your graveyard. When you do, you draw that many cards and you lose that much life.
+Menace
+pt: 6/5 => 7/6
+
+Ghastly Tide
+cost: {1}{U}{U} => {2}{U}
+rules_text: Choose one. If a creature you control died this turn, you may choose both —
+• Create two 1/1 blue Merfolk Horror creature tokens.
+• Return target nonland permanent to its owner's hand. => Choose one. If a creature you control died this turn, you may choose both instead —
+• Create two 1/1 blue Merfolk Horror creature tokens.
+• You may return target nonland permanent to its owner's hand.
+
+Thickets Ghostcaller
+rules_text: Defender
+At the beginning of your end step, mill a card.
+{G}{W}, Sacrifice this creature: Return target creature card with mana value less than or equal to the number of lands you control from your graveyard to the battlefield. Activate only as a sorcery. => Defender
+{T}: Add {G} or {W}. When you do, mill a card.
+{4}, Sacrifice this creature: Return target creature card with mana value less than or equal to the number of lands you control from your graveyard to the battlefield. Activate only as a sorcery.
+pt: 0/4 => 1/3
+
+Midnight Stalker
+rules_text: Flash
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+This creature must be blocked each turn if able. => Flash
+When this creature dies, draw a card.
+Unrelenting [i](When this creature dies, if it wasn't a token, you may discard a card to create a token that's a copy of it with haste.)[/i]
+pt: 4/3 => 4/4
+
+Soul Devouring Core
+cost: {W} => {1}{W}
+
+Bloodbag Slaughterer
+
+Anord, Maddening Lich
+cost: {1}{B}{R} => {2}{B}{R}
+rules_text: You may have creatures you control enter the battlefield with decayed and haste. [i](It can't block. When it attacks, sacrifice it at end of combat.)[/i]
+Whenever you sacrifice a creature, you may draw a card and lose 1 life. => You may have nontoken creatures you control enter the battlefield with decayed and haste. [i](It can't block. When it attacks, sacrifice it at end of combat.)[/i]
+Whenever you sacrifice a creature, you may draw a card and lose 1 life.
+pt: 1/4 => 3/4
+
+Skittering Host
+type: Creature — Nightmare Spider => Creature — Spider Demon
+pt: 1/1 => 1/2
+
+Eafems' Brood
+type: Creature — Demon Spider => Creature — Spider Demon
+
+
+VERSION 1 CHANGELOG
 ====================
 
 First version published.

@@ -1521,7 +1521,7 @@
 			// initialize empty HTML then add each option and the X to it, then make the modal visible and add the content
 			let headerContainer = document.createElement("div");
 			headerContainer.className = "settings-modal-header-container";
-			const settingsMenus = ["Home", "Style", "Preview Card"]
+			const settingsMenus = ["Home", "Preview Card"]
 			for (const menuName of settingsMenus) {
 				let ele = document.createElement("span");
 				ele.onclick = function() {
@@ -1549,17 +1549,8 @@
 			contentContainer.style.gap = "10px";
 			let modalContent = '</select><span class="close" onclick="closeModal()">&times;</span>';
 			if (menu == "Home") {
-				contentContainer.appendChild(createText("Auto save/load decks: "));
-				contentContainer.appendChild(settingsOptionHtml("Auto save/load decks", "settings.autosave"));
-				contentContainer.appendChild(createText("Export draftmancer as cube: "));
-				contentContainer.appendChild(settingsOptionHtml("Export draftmancer as cube", "settings.exportcube"));
-				contentContainer.appendChild(createText("Include aliases in name searching: "));
-				contentContainer.appendChild(settingsOptionHtml("Include aliases in name searching", "settings.searchalias"));
-				contentContainer.appendChild(createText("Disable adding over max copies in collection: "));
-				contentContainer.appendChild(settingsOptionHtml("Disable adding over max copies in collection", "settings.maxcopies"));
 				contentContainer.appendChild(createText("Format: "));
 				contentContainer.appendChild(settingsOptionHtml("Format", "settings.format", ["Eternal", "Collection League", "Pauper"]));
-			} else if (menu == "Style") {
 				let gradientDropdown = document.createElement('select');
 				gradientDropdown.id = 'color-select';
 				gradientDropdown.className = "popout"
@@ -1582,18 +1573,6 @@
 					localStorage.setItem("settings.darktheme", val);
 					processDeck();
 				}));
-				contentContainer.appendChild(createText("Dark theme menus: "));
-				contentContainer.appendChild(settingsOptionHtml("Dark Theme Menus", "settings.darkthememenu"));
-				contentContainer.appendChild(createText("Use sanctum indicator: "));
-				contentContainer.appendChild(settingsOptionHtml("Use sanctum symbol", "settings.sanctumsym"));
-				contentContainer.appendChild(createText("Include basics in sanctum indicator: "));
-				contentContainer.appendChild(settingsOptionHtml("Include basics in sanctum indicator", "settings.sanctumbasic"));
-				contentContainer.appendChild(createText("Gradient at bottom of search results: "));
-				contentContainer.appendChild(settingsOptionHtml("Gradient at bottom of search results", "settings.resultgradient"));
-				contentContainer.appendChild(createText("Scrollbar in search results: "));
-				contentContainer.appendChild(settingsOptionHtml("Scrollbar in search results", "settings.scrollbar"));
-				contentContainer.appendChild(createText("Text color: "));
-				contentContainer.appendChild(settingsOptionHtml("Text Color: ", "settings.textcolor", ["Black", "White"]));
 			} else if (menu == "Preview Card") {
 				let preview_card_img = document.createElement("img");
 				let card_stats = JSON.parse(localStorage.getItem("settings.previewimg"));

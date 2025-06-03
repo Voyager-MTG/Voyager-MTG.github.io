@@ -53,7 +53,7 @@ def generateHTML(code):
 	}
 	.banner {
 		width: 100%;
-		background-color: #bbbbbb;
+		background-color: #bbbbbbaa;
 		border-bottom: 3px solid black;
 	}
 	.banner-container {

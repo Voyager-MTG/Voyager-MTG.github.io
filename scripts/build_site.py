@@ -62,6 +62,10 @@ def prettifyJSON(filepath):
 	with open(filepath, 'w', encoding='utf-8-sig') as f:
 		json.dump(js_data, f, indent=4)
 
+def prettifyKey(key: str):
+	key_spaces = key.replace("_", " ")
+	return key_spaces[0].upper() + key_spaces[1:]
+
 def portCustomFiles(custom_dir, export_dir):
 	for entry in os.scandir(custom_dir):
 		#CE: ignore default or generated files
@@ -131,8 +135,8 @@ for code in set_codes:
 		try:
 			print_draft_file.generateFile(code)
 			print('Generated draft file for {0}.'.format(code))
-		except:
-			print('Unable to generate draft file for {0}.'.format(code))
+		except Exception as e:
+			print('Unable to generate draft file for {0}, ERROR: {1}'.format(code, e))
 
 	#CE: this code is all for version history
 	if 'version' not in raw:
@@ -144,7 +148,7 @@ for code in set_codes:
 			with open(os.path.join('sets', 'versions', 'changelogs', 'chl_' + code + '.txt'), 'w', encoding='utf-8-sig') as f:
 				f.write('VERSION 1 CHANGELOG\n====================\n\nFirst version published.')
 		else:
-			regex = r'/([0-9]+)_'
+			regex = r'[/\\]([0-9]+)_'
 			match = re.search(regex, versions[0])
 			old_version = int(match.group(1))
 			new_version = int(match.group(1)) + 1
@@ -177,7 +181,7 @@ for code in set_codes:
 						changed_string += card['card_name'] + '\n'
 						for key in [ 'type', 'cost', 'rules_text', 'pt', 'special_text', 'loyalty' ]:
 							if card[key] != prev_card[key]:
-								changed_string += key + ': ' + prev_card[key] + ' => ' + card[key] + '\n'
+								changed_string += prettifyKey(key) + ': ' + prev_card[key] + ' => ' + card[key] + '\n'
 						changed_string += '\n'
 			for name in prev_card_names:
 				if name != '':
@@ -226,4 +230,4 @@ for code in set_codes:
 	print_html_for_set.generateHTML(code)
 
 print_html_for_sets_page.generateHTML()
-print_html_for_index.generateHTML()
+# print_html_for_index.generateHTML()
