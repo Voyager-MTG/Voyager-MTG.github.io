@@ -590,6 +590,11 @@
 				}
 			}
 
+			if (search_results.length == 1) {
+				// const card = search_results[0];
+				window.location.href = `https://voyager-mtg.github.io/card?set=${card.set}&num=${card.number}&name=${card.card_name.replaceAll(" ", "+")}` //https://voyager-mtg.github.io/card?set=PVR&num=304&name=Pool+of+Becoming
+			}
+
 			if (searchTerms != "")
 			{
 				document.getElementById("results-text").innerText = search_results.length + (search_results.length == 1 ? " result found." : " results found.");
@@ -630,11 +635,6 @@
 			for (let i = (pageCount * page); i < Math.min((pageCount * (page + 1)), search_results.length); i++)
 			{
 				cardGrid.appendChild(gridifyCard(search_results[i]));
-			}
-
-			if (search_results.length == 1) {
-				const card = search_results[0];
-				window.location.href = `https://voyager-mtg.github.io/card?set=${card.set}&num=${card.number}&name=${card.card_name.replaceAll(" ", "+")}` //https://voyager-mtg.github.io/card?set=PVR&num=304&name=Pool+of+Becoming
 			}
 
 			if (search_results.length <= (pageCount * (page + 1)))
