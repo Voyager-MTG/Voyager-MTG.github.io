@@ -1,0 +1,843 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="resources/mana.css">
+        <link rel="stylesheet" href="/resources/header.css">
+    </head>
+    <style>
+        @font-face {
+		font-family: Beleren;
+		src: url('/resources/beleren.ttf');
+        }
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            overscroll-behavior: none;
+            margin: 0px;
+            background-color: #bbbbbb;
+            display: block;
+            /* overflow-y: scroll; */
+        }
+        select {
+            position: absolute;
+            text-align: center;
+            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-weight: 500;
+            cursor: pointer;
+            background-color: #F3F3F3;
+            padding: 2px;
+	    }
+        .selects {
+		    position: absolute;
+            top: 10%;
+            left: 1%;
+	    }
+        .page-container {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            width: 100%;
+        }
+        hr {
+            width: 85%;
+            height: 4px;
+            background-color: black;
+            border-radius: 2px;
+            border: none;
+        }
+        #modal-container {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            padding-top: 70px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4); 
+        }
+        #modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            border-radius: 10px;
+            border: solid #777 3px;
+        }
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .tab-btn {
+            background-color: #737373;
+            color: white;
+            border: 3px solid #ddd;
+            align-items: center;
+            justify-items: center;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            font-weight: bold;
+            font-size: 24px;
+            padding: 8px;
+            border-radius: 18px; 
+            cursor: pointer;
+        }
+        .tab-btn-active {
+            background-color: #333;
+        }
+        .tab-switch-icon {
+            max-height: 30px;
+        }
+        .tab-select {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 40px;
+        }
+        /* .decks-container {
+            margin-bottom: 20px;
+            width: 85%;
+        } */
+        .decks-tab {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            display: none;
+        }
+        .main-tab {
+            margin: 25px 0 25px 0;
+            width: 84%;
+        }
+        .collections-container {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: 85%;
+            margin-bottom: 20px;
+        }
+        .deck-container {
+            display: grid;
+            gap: 5px;
+            /* grid-template-rows: 1fr 2fr 1fr; */
+            background-color: #f3f3f3;
+            border-radius: 8px; 
+            /* height: fit-content; */
+            padding: 5px;
+            align-items: center;
+            justify-items: center;
+            border: 2px solid #333;
+            box-shadow: 5px 5px 2px #333;
+            padding-top: 0px;
+        }
+        .full-deck-container {
+            display: grid;
+            grid-template-columns: 1fr 0.1fr;
+            gap: -5px;
+        }
+        .colors-container {
+            position: relative;
+            top: 60px;
+            right: 14px;
+            background-color: #333;
+            height: fit-content; 
+            padding: 2px;
+            border-radius: 20px;
+        }
+        .deck-preview-img {
+            max-height: 300px;
+            border: 2px solid black;
+            box-shadow: 7px 7px 2px #999;
+            border-radius: 16px;
+            margin-bottom: 7px;
+            cursor: pointer;
+            /* box-shadow: inset 0.2em 0.2em 0.2em 0em rgba(0, 0, 0, 0.5), inset -0.2em -0.2em 0.2em 0em rgba(0,0,0,0.5); */
+            /* padding: 0.2em; */
+            /* background-color: #777; */
+        }
+        .deck-name {
+            font-weight: bold;
+            font-size: 30px;
+            font-family: beleren;
+            background-color: #ccc;
+            /* border: 2px solid #333; */
+            /* box-shadow: 5px 5px 2px #333; */
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 3px;
+            width: 100%;
+            text-align: center;
+            /* color: white; */
+        }
+        .deck-buttons {
+            display: grid;
+            gap: 6px;
+            align-items: center;
+            justify-items: center;
+            grid-template-columns: 1fr 1fr;
+        }
+        .coll-buttons {
+            display: grid;
+            gap: 12px;
+            align-items: center;
+            justify-items: center;
+            grid-template-columns: 4fr 1fr;
+        }
+        .deck-buttons-logged-out {
+            display: grid;
+            gap: 12px;
+            align-items: center;
+            justify-items: center;
+            grid-template-columns: 1fr;
+        }
+        .deck-icon-shadow {
+            /* border: 3px solid black; */
+            /* box-shadow: 2px 2px 1px #333; */
+            box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5), inset -0.2em -0.2em 0.2em 0 rgba(0,0,0,0.5);
+            padding: 0.3em;
+        }
+        .deck-link {
+            /* font-family: beleren; */
+            background-color: #1652e0;
+            color: white;
+            padding: 2px 6px 2px 6px;
+            border-radius: 8px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            align-items: center;
+            justify-items: center;
+            font-size: 28px;    
+        }  
+        .deck-section-header {
+            font-size: 60px;
+            font-weight: bold;
+            /* color: white; */
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            width: 100%;
+            margin: 20px;
+            font-family: beleren;
+        }
+        .format-header {
+            font-size: 40px;
+            font-weight: bold;
+            /* color: white; */
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            width: 100%;
+            margin: 20px;
+            font-family: beleren;
+        }
+        .event-link {
+            background-color: #1652e0;
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            text-decoration: underline;
+            text-align: center;
+            margin: 20px;
+            height: fit-content;
+            align-self: middle;
+        }
+        .top-section {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 8fr;
+            width: 85%;
+            align-items: center;
+            justify-items: center;
+        }
+        .deck-icon-blue {
+            max-height:30px;
+            /* background-color: #1652e0; */
+            /* border-radius: 8px; */
+            padding: 5px;
+            cursor: pointer;
+        }
+        .deck-icon-red {
+            max-height:30px;
+            background-color: #e01616;
+            border-radius: 8px;
+            padding: 8px;
+            cursor: pointer;
+        }
+        .deck-icon-green {
+            max-height:30px;
+            background-color: #16e019;
+            border-radius: 8px;
+            padding: 8px;
+            cursor: pointer;
+        }
+        .deck-link-green {
+            background-color: #16e019;
+            color: white;
+            padding: 2px 6px 2px 6px;
+            border-radius: 8px;
+            font-weight: bold;
+            display: grid;
+            grid-template-columns: 5fr 1fr;
+            align-items: center;
+            justify-items: center;
+            font-size: 24px; 
+            height: 100%;
+            /* border: 2px solid #333;
+            box-shadow: 2px 2px 1px #333; */
+        }
+        .deck-link-blue {
+            background-color: #1652e0;
+            color: white;
+            padding: 2px 6px 2px 6px;
+            border-radius: 8px;
+            font-weight: bold;
+            display: grid;
+            grid-template-columns: 5fr 1fr;
+            align-items: center;
+            justify-items: center;
+            font-size: 24px; 
+            text-decoration: underline;
+            cursor: pointer;
+            height: 100%;
+            /* border: 2px solid #333;
+            box-shadow: 2px 2px 1px #333; */
+        }
+        .deck-link-green .deck-icon-green {
+            background-color: rgba(0,0,0,0);
+        }
+        hr {
+            width: 85%;
+            height: 4px;
+            background-color: black;
+            border-radius: 2px;
+            border: none;
+        }
+        .mana-img {
+            max-height: 26px;
+            margin: 2px;
+        }
+        .decklist-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        .card-type-header {
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-family: beleren;
+        }
+        .deck-preview-card {
+            max-width: 300px;
+            cursor: pointer;
+        }
+        .deck-window-header {
+            font-family: beleren;
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+            width: 100%;
+            display: block;
+        }
+    </style>
+    <style id="text-style">
+	.text {
+		color: white;
+	}
+    </style>
+    <style id="popout-style">
+        .popout {
+            background-color: #f3f3f3;
+            /* color: #f3f3f3; */
+        }
+    </style>
+    <body>
+        <div class="header">
+            <div class="search-grid">
+                <a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+                <img class="sg-icon" src="/img/search.png">
+                <input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+                <a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
+                <a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+                <a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+                <a href="/community" id="account-link"><img src="/img/community.png" class="sg-icon">Community</a>            </div>
+        </div>
+        <div class="selects" id="selects">
+			<select id="color-select" onchange="setGradient()">
+			</select>
+		</div>
+        <div class="page-container">
+            <div class="tab-select" id="tab-select">
+                <div class="tab-btn-active tab-btn" id="games-tab-select" onclick="changeTab('games')">
+                    <img src="img/swords.png" class="tab-switch-icon">
+                    <span>Games</span>
+                </div>
+                <div class="tab-btn" id="decklists-tab-select" onclick="changeTab('decklists')">
+                    <img src="img/deck.png" class="tab-switch-icon">
+                    <span>Decks</span>
+                </div>
+                <div class="tab-btn" id="stats-tab-select" onclick="changeTab('stats')">
+                    <img src="img/trophy.png" class="tab-switch-icon">
+                    <span>OTHER</span>
+                </div>
+            </div>
+            <div class="main-tab" id="main-tab">
+                <div class="decks-tab" id="decklists"></div>
+                <div class="rounds-tab" id="games"></div>
+                <div class="stats-tab" id="stats"></div>
+            </div>
+        </div>
+        <div id="modal-container">
+			<div id="modal-content" class="popout">
+				<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+			</div>
+		</div>
+        <script>
+            let gradients = null;
+            let raw_gradients = null;
+            let gradTop = null;
+            let gradBottom = null;
+            modal = document.getElementById("modal-container");
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    document.getElementById('modal-container').style.display = 'none';
+                }
+            }
+            document.addEventListener("DOMContentLoaded", async function () {
+                try {
+                    const response = await fetch('/resources/gradients.json');
+                    raw_gradients = await response.json();
+                }
+                catch(error) {
+                    console.error('Error:', error);
+                }
+
+                gradients = raw_gradients.gradients;
+                setGradient(localStorage.getItem("settings.gradient"));
+                console.log(setGradient);
+                prepareGradients();
+            });
+
+            function setGradient(gradient=false) {
+                if (!gradient) { 
+                    gradient = document.getElementById("color-select").value;
+                }
+
+                gradTop = "#000000";
+                gradBottom = "#FFFFFF";
+                for (const grad of gradients)
+                {
+                    if (gradient == grad.name.replace(' ', '-'))
+                    { 	
+                        gradTop = grad.color1;
+                        gradBottom = grad.color2;
+                    }
+                }
+
+                // console.log(`linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
+                document.body.style.backgroundImage = `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`;
+                localStorage.setItem("settings.gradient", gradient);
+		    }
+            function prepareGradients() {
+                let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+                const opt = document.createElement("option");
+                opt.value = defaultGradient.replace(' ', '-');
+                opt.text = defaultGradient;
+                document.getElementById("color-select").appendChild(opt);
+                for (const gradient of gradients)
+                {	
+                    const opt = document.createElement("option");
+                    opt.value = gradient.name.replace(' ', '-');
+                    opt.text = gradient.name;
+                    if (gradient.name != defaultGradient) {
+                        document.getElementById("color-select").appendChild(opt);
+                    }
+                }
+
+                // setGradient();
+            }
+            document.getElementById("search").addEventListener("keypress", function(event) {
+				if (event.key === "Enter") {
+					event.preventDefault();
+					const url = new URL('search', window.location.origin);
+					url.searchParams.append('search', document.getElementById("search").value);
+					window.location.href = url;
+				}
+			});
+            function randomCard() {
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let random_card = card_list_arrayified[i];
+
+				const url = new URL('card', window.location.origin);
+				const params = {
+					set: random_card.set,
+					num: random_card.number,
+					name: random_card.card_name
+				}
+				for (const key in params) {
+					url.searchParams.append(key, params[key]);
+				}
+
+				window.location.href = url;
+			}
+
+            function changeTab(tab_name) {
+                document.getElementById(tab_name).style.display = "grid";
+                document.getElementById(tab_name + "-tab-select").className = "tab-btn tab-btn-active"
+                for (const child of document.getElementById("main-tab").children) {
+                    if (child.id != tab_name) {
+                        child.style.display = "none";
+                    }
+                }
+                for (const child of document.getElementById("tab-select").children) {
+                    if (child.id != tab_name + "-tab-select") {
+                        child.className = "tab-btn";
+                    }
+                }
+            }
+        </script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+            import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+            
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+                authDomain: "voyager-78e30.firebaseapp.com",
+                projectId: "voyager-78e30",
+                storageBucket: "voyager-78e30.firebasestorage.app",
+                messagingSenderId: "411191248476",
+                appId: "1:411191248476:web:591349be169d823e5f8899",
+                measurementId: "G-TQ1L48F25M"
+            };
+
+            const color_bgs = {
+                white: "#"
+            }
+            
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+            let username = "";
+            let password = "";
+            let sessionid = localStorage.getItem('settings.session');
+            let decks = {};
+            // const events = ["GP1", "League "];
+            // console.log
+
+            if (sessionid) {
+                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+                    let data = docSnap.data();
+                    username = data.username;
+                    password = data.password;
+                });
+            }
+
+            document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+			if (localStorage.getItem("settings.darkthememenu") == "On") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
+			} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
+			}
+
+            let user_data;
+            let event_data;
+            const urlParams = new URLSearchParams(window.location.search);
+            const event = urlParams.get('event');
+
+            await getDoc(doc(db, 'users', username)).then(async docSnap => {
+                user_data = docSnap.data();
+            });
+            await getDoc(doc(db, 'events', event)).then(async docSnap => {
+                event_data = docSnap.data();
+            });
+
+            let card_list;
+            let card_list_arrayified;
+            await fetch('/lists/all-cards.json')
+                .then(response => response.json())
+                .then(json => {
+                    card_list = json;
+            }).catch(error => console.error('Error:', error));
+
+            card_list_arrayified = card_list.cards;
+            // console.log(card_list_arrayified);    
+
+            async function reload() {
+                makeDecksTab();
+            }
+
+            function makeDecksTab() {
+                // console.log(card_list_arrayified);
+                const decks = JSON.parse(event_data.decks);
+                for (const deck of decks) {
+                    let user = deck.user;
+                    let full_deck_container = document.createElement('div');
+                    full_deck_container.className = "full-deck-container";
+                    let deck_container = document.createElement('div');
+                    deck_container.className = "deck-container";
+                    let colors_container = document.createElement('div');
+                    colors_container.className = "colors-container";
+                    let deck_preview = document.createElement('img');
+                    deck_preview.src = deck.previewimg;
+                    deck_preview.onclick = function() {
+                        document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+                        let deck_header = document.createElement("span");
+                        deck_header.className = "deck-window-header";
+                        deck_header.innerText = user + "'s " + deck.name;
+                        document.getElementById("modal-content").appendChild(deck_header);
+                        document.getElementById("modal-content").appendChild(deckHTML(deck, card_list_arrayified));
+                        document.getElementById("modal-container").style.display = 'block';
+                    }
+                    deck_preview.className = "deck-preview-img";
+                    let deck_name = document.createElement('div');
+                    deck_name.className = "deck-name";
+                    deck_name.innerText = user + "'s " + deck.name;
+                    let deck_btns = document.createElement('div');
+                    deck_btns.className = "deck-buttons";
+                    let deck_link = document.createElement('a');
+                    deck_link.href = `/deckbuilder?edeck=${event}-${deck.name}`;
+                    deck_link.innerText = "Deckbuilder";
+                    deck_link.className = "deck-link-green deck-icon-shadow";
+                    deck_link.target = "_blank";
+                    let deck_edit_icon = document.createElement('img');
+                    deck_edit_icon.src = "/img/edit.png";
+                    deck_edit_icon.className = "deck-icon-green";
+                    deck_link.appendChild(deck_edit_icon);
+                    let deck_link2 = document.createElement('span');
+                    deck_link2.innerText = "View";
+                    deck_link2.className = "deck-link-blue deck-icon-shadow";
+                    let deck_edit_icon2 = document.createElement('img');
+                    deck_edit_icon2.src = "/img/show-white.png";
+                    deck_edit_icon2.className = "deck-icon-blue";
+                    deck_link2.onclick = function() {
+                        document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+                        let deck_header = document.createElement("span");
+                        deck_header.className = "deck-window-header";
+                        deck_header.innerText = user + "'s " + deck.name;
+                        document.getElementById("modal-content").appendChild(deck_header);
+                        document.getElementById("modal-content").appendChild(deckHTML(deck, card_list_arrayified));
+                        document.getElementById("modal-container").style.display = 'block';
+                    }
+                    deck_link2.appendChild(deck_edit_icon2);
+                    if (deck.colors) {
+                        for (const color of deck.colors) {
+                            let color_ele = document.createElement('img');
+                            color_ele.src = `img/mana_${color}.png`;
+                            color_ele.className = "mana-img";
+                            colors_container.appendChild(color_ele);
+                        }
+                    }
+                    deck_btns.appendChild(deck_link);
+                    deck_btns.appendChild(deck_link2);
+                    deck_container.appendChild(deck_name);
+                    deck_container.appendChild(deck_preview);
+                    deck_container.appendChild(deck_btns);
+                    full_deck_container.appendChild(deck_container);
+                    if(deck.colors) full_deck_container.appendChild(colors_container);
+                    if (deck.colors){
+                        document.getElementById("decklists").appendChild(full_deck_container);
+                    } else {
+                        document.getElementById("decklists").appendChild(deck_container);
+                    }
+                }
+            }
+
+            function deckHTML(deck, card_list_arrayified) {
+                let card_categories = {"creature": "", "planeswalker": "", "instant": "", "sorcery": "", "artifact": "", "enchantment": "", "land": "", "sideboard": ""};
+                const text = atob(deck.url.split(';')[1].split('&main')[0]);
+                let sideboard = [];
+                let sb_cards = false;
+                let count;
+                let card_name;
+                // let card_list_arrayified = card_list.cards;
+
+                const lines = text.split('\n');
+
+                let deck_map = new Map();
+                let sb_map = new Map();
+
+                for (const line of lines)
+                {
+                    if (line == 'sideboard' || line == '') // '' for Draftmancer files
+                    {
+                        sb_cards = true;
+                    }
+                    else if (!sb_cards)
+                    {
+                        // get the count and card name
+                        count = parseInt(line.substring(0, line.indexOf(' ')));
+                        card_name = line.substring(line.indexOf(' ') + 1);
+
+                        if (deck_map.has(card_name)) // if the deck has card name, add the new value, if it doesnt, set the value to stop keyerrors
+                        {
+                            deck_map.set(card_name, deck_map.get(card_name) + count);
+                        }
+                        else
+                        {
+                            deck_map.set(card_name, count);
+                        }
+                    }
+                    else // sideboard cards, do the same thing but with sb_map
+                    {
+                        count = parseInt(line.substring(0, line.indexOf(' ')));
+                        card_name = line.substring(line.indexOf(' ') + 1);
+
+                        if (sb_map.has(card_name))
+                        {
+                            sb_map.set(card_name, sb_map.get(card_name) + count);
+                        }
+                        else
+                        {
+                            sb_map.set(card_name, count);
+                        }
+                    }
+                }
+
+                // initialize card types (and sideboard)
+                let deck_cards = new Map([
+                    ['land', new Map([])],
+                    ['creature', new Map([])],
+                    ['instant', new Map([])],
+                    ['planeswalker', new Map([])],
+                    ['artifact', new Map([])],
+                    ['enchantment', new Map([])],
+                    ['sorcery', new Map([])],
+                    ['battle', new Map([])],
+                    ['sideboard', new Map([])]
+                ]);
+
+                for (const [card, copies] of deck_map)
+                {
+                    let card_type;
+                    // loop through each card in deck_map and get the cardtype
+                    for (const card2 of card_list_arrayified) {
+                        if (card2.card_name == card) {
+                            console.log(card2);
+                            card_type = card2.type.toLowerCase();
+                            break;
+                        }
+                    }
+                    console.log(card_type);
+
+                    for (const [key, map] of deck_cards)
+                    {
+                        console.log(key, map, card);
+                        if (card_type.includes(key))
+                        {
+                            map.set(card, copies)
+                            break;
+                        }
+                    }
+                }
+                for (const [card, copies] of sb_map) {
+                    for (const [key, map] of deck_cards)
+                    {
+                        if (key == 'sideboard')
+                        {
+                            map.set(card, copies)
+                            break;
+                        }
+                    }
+                }
+                let total_copies = {"creature": 0, "planeswalker": 0, "instant": 0, "sorcery": 0, "artifact": 0, "enchantment": 0, "land": 0, "sideboard": 0};
+                for (const [k, map] of deck_cards) {
+                    for (const [card, num] of map) {
+                        card_categories[k] += `<span class="card-in-deck">${num}x ${card}</span><br>`;
+                        total_copies[k] += num;
+                    }
+                }
+                
+                let finalHTML = "";
+                let column1 = document.createElement('div');
+                let column2 = document.createElement('div');
+                column1.className = "card-column";
+                column2.className = "card-column";
+                for (const section_name in card_categories) {
+                    let section_html = card_categories[section_name];
+                    if (section_html == "") {
+                        continue;
+                    }
+                    let section_name_capitalized = section_name[0].toUpperCase() + section_name.substring(1, section_name.length);
+                    let card_column = column1;
+                    if (section_name == "land" || section_name == "sideboard") {
+                        card_column = column2;
+                    }
+
+                    // card_column.innerHTML += `<div class="${section_name} card-type-section" id="${section_name}">
+                    //      <span class="${section_name}-header card-type-header" id="${section_name}-header">${section_name_capitalized} (${total_copies[section_name]})</span>
+                    // <br>
+                    // ${section_html}
+                    // </div><br>`;
+                    let section_container = document.createElement('div');
+                    let section_header = document.createElement('span');
+                    section_header.className = "card-type-header";
+                    section_header.innerText = section_name_capitalized + " (" + total_copies[section_name] + ")";
+                    let line_break = document.createElement('br');
+                    let line_break2 = document.createElement('br');
+                    let cards_container = document.createElement('div');
+                    cards_container.innerHTML = section_html;
+                    for (const card_ele of cards_container.childNodes) {
+                        card_ele.onmouseover = function() {
+                            let card_name = card_ele.innerText.substring(card_ele.innerText.indexOf(" ") + 1, card_ele.innerText.length);
+                            let card_stats;
+                            for (const card2 of card_list_arrayified) {
+                                if (card2.card_name == card_name) {
+                                    card_stats = card2;
+                                    break;
+                                }
+                            }
+                            let deck_preview_card = document.getElementById("deck-preview-card");
+                            deck_preview_card.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+                            //https://voyager-mtg.github.io/card?set=EXPT&num=44&name=Fyndhorn+Betrayer
+                            deck_preview_card.onclick = function() {
+                                window.location.href = `/card?set=${card_stats.set}&num=${card_stats.number}&name=${card_name.replaceAll(" ", "+")}`;
+                            } 
+                        }
+                    }
+                    section_container.appendChild(section_header);
+                    section_container.appendChild(cards_container);
+                    section_container.appendChild(line_break);
+                    card_column.appendChild(section_container);
+                    // card_column.appendChild(line_break2);
+                }
+
+                let preview_card = document.createElement('img');
+                preview_card.src = "img/card_back.png";
+                preview_card.id = "deck-preview-card";
+                preview_card.className = "deck-preview-card";
+                
+                let decklist_container = document.createElement("div");
+                decklist_container.appendChild(column1);
+                decklist_container.appendChild(column2);
+                decklist_container.appendChild(preview_card);
+                decklist_container.className = "decklist-container";
+
+                return decklist_container;
+            }
+
+
+            if (sessionid) {
+                reload();
+            }
+        </script>
+    </body>
+</html>

@@ -161,6 +161,7 @@
             align-items: center;
             justify-items: center;
             font-size: 28px;    
+            cursor: pointer;
         }  
         .deck-section-header {
             font-size: 60px;
@@ -437,7 +438,7 @@
             let password = "";
             let sessionid = localStorage.getItem('settings.session');
             let decks = {};
-            const events = ["GP1", "League"];
+            const events = ["GP1", "League June 2025"];
             // console.log
 
             if (!sessionid) {
@@ -612,8 +613,12 @@
                             await getDoc(doc(db, "events", event)).then(async docSnap2 => {
                                 let tourndata = docSnap2.data();
                                 let decks_ = JSON.parse(tourndata.decks);
-                                decks_[username] = deck;
-                                await setDoc(doc(db, "events", event), {
+                                if (event.toLowerCase().includes("league")) {
+                                    decks_.push({...deck, user: username});
+                                } else {
+                                    decks_[username] = deck;
+                                }
+                                updateDoc(doc(db, "events", event), {
                                     decks: JSON.stringify(decks_)
                                 });
                             });
