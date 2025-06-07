@@ -140,12 +140,12 @@ for code in set_codes:
 
 	#CE: this code is all for version history
 	if 'version' not in raw:
-		versions = glob.glob(os.path.join('sets', 'versions', '*' + code + '_*'))
+		versions = glob.glob(os.path.join('versions', '*' + code + '_*'))
 		if len(versions) == 0:
-			shutil.copyfile(os.path.join('sets', code + '-files', code + '.json'), os.path.join('sets', 'versions', '1_' + code + '.json'))
-			prettifyJSON(os.path.join('sets', 'versions', '1_' + code + '.json'))
+			shutil.copyfile(os.path.join('sets', code + '-files', code + '.json'), os.path.join('versions', '1_' + code + '.json'))
+			prettifyJSON(os.path.join('versions', '1_' + code + '.json'))
 			raw['version'] = 1
-			with open(os.path.join('sets', 'versions', 'changelogs', 'chl_' + code + '.txt'), 'w', encoding='utf-8-sig') as f:
+			with open(os.path.join('versions', 'changelogs', 'chl_' + code + '.txt'), 'w', encoding='utf-8-sig') as f:
 				f.write('VERSION 1 CHANGELOG\n====================\n\nFirst version published.')
 		else:
 			regex = r'[/\\]([0-9]+)_'
@@ -188,7 +188,7 @@ for code in set_codes:
 					changed = True
 					removed_string += name + ' removed.\n'
 
-			with open(os.path.join('sets', 'versions', 'changelogs', 'chl_' + code + '.txt'), 'r+', encoding='utf-8-sig') as f:
+			with open(os.path.join('versions', 'changelogs', 'chl_' + code + '.txt'), 'r+', encoding='utf-8-sig') as f:
 				file_content = f.read()
 				f.seek(0, 0)
 				if not changed:
@@ -197,9 +197,9 @@ for code in set_codes:
 					to_write = '\n'.join([ chl_string, added_string, removed_string, changed_string ])
 				f.write(to_write + '\n' + file_content)
 			
-			shutil.copyfile(os.path.join('sets', code + '-files', code + '.json'), os.path.join('sets', 'versions', str(new_version) + '_' + code + '.json'))
-			prettifyJSON(os.path.join('sets', 'versions', str(new_version) + '_' + code + '.json'))
-			os.remove(os.path.join('sets', 'versions', str(old_version) + '_' + code + '.json'))
+			shutil.copyfile(os.path.join('sets', code + '-files', code + '.json'), os.path.join('versions', str(new_version) + '_' + code + '.json'))
+			prettifyJSON(os.path.join('versions', str(new_version) + '_' + code + '.json'))
+			os.remove(os.path.join('versions', str(old_version) + '_' + code + '.json'))
 			raw['version'] = new_version
 
 	#CE: trims border radius of images
