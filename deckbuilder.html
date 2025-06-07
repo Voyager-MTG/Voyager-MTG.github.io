@@ -3822,7 +3822,7 @@
 			if (localStorage.getItem('settings.exportcube') == "On") {
 				slots = '"rare": 15';
 			} else {
-				slots = '"rare": 1,\n"uncommon": 3,\n"common": 10"';
+				slots = '"rare": 1,\n"uncommon": 3,\n"common": 10';
 			}
 
 			output_text += `[Settings]
@@ -3891,7 +3891,7 @@
 			}
 			output_text += "]\n";
 
-			if (localStorage.getItem('settings.exportcube')) {
+			if (localStorage.getItem('settings.exportcube') == "on") {
 				output_text += `[rare]
 `;
 				for (const c of cards.values()) {
