@@ -4122,6 +4122,7 @@
 							let collections = JSON.parse(data2.colls);
 							for (const collection of collections) {
 								if (collection.name == collection_name) {
+									console.log(collection);
 									let text = atob(collection.url.split(";")[1]);
 									loadCollection(collection.name, text.split("\n"));
 									window.fireimport = true;
