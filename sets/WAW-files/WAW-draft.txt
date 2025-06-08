@@ -1063,7 +1063,7 @@
 		{
 			"name": "Tall-Tale Salesman",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{R}",
+			"mana_cost": "{2}{R}",
 			"type": "Creature — Elf Rogue",
 			"collector_number": "138",
 			"image_uris": {
@@ -1321,13 +1321,13 @@
 			}
 		},
 		{
-			"name": "Flowering Germinus Token",
+			"name": "Flowering Germinus Token;",
 			"rarity": "common",
 			"mana_cost": "{1}{GW}{GW}",
 			"type": "Token Creature — Wonder",
 			"collector_number": "20",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/WAW-files/img/20_Flowering Germinus Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/WAW-files/img/20_Flowering Germinus Token;.jpg"
 			}
 		},
 		{
@@ -2923,15 +2923,20 @@
 	2 Wanderer's Shrine
 	2 Ancient Viewdrifter
 	2 Chitterbit
+	2 Dhere, Preserver of Memories
 	2 Escalate to Violence
+	2 New Tensuo Luminary
 	2 Shapes in the Pools
+	1 Starstruck Skitter
 	2 Wish for Separation
 	2 Ageless Wayfarer
 	2 Collector of the Wonderful
+	2 Lakebed Wrudge
 	2 Liberators of the Soul
 	2 Supercharged Shockodile
 	1 Thriving Sornidol
 	1 Amarell, New Tensuo Elder
+	2 Antlerweaver
 	2 Etchings on the Citadel Walls
 	2 Eteres' Chronicler
 	1 Manuela, the Known
@@ -2964,13 +2969,18 @@
 	2 Wish for Family
 	1 Wizened Trundler
 	1 A Promise
+	2 Ageless Caretaker
+	2 Cathexis, Soul Aspect
 	2 Elusive Harbinger
 	1 Eteres, Planar Analyst
 	2 Excess of Potential
 	2 Give Out
 	2 Myriad Reflections
 	1 New Tensuo Collaborator
+	2 New Tensuo Physician
+	2 Starsea Slayer
 	2 The Deepmist Structures
+	1 Vrep
 	2 Wish for Death
 	1 Ajha, the Wish for Home
 	2 Ilcan Szcygite
@@ -2992,6 +3002,7 @@
 	4 Larissi, Wonder Weaver
 	4 Prismatic Armor
 	4 Pyretic Desire
+	4 Scrappy Wisp-Speaker
 	4 Smug Upstart
 	4 Stare at the Stars
 	4 Subsume
@@ -3006,6 +3017,7 @@
 	4 Giatela, Tensu Emissary
 	4 Ilcan Resilience
 	4 Into the Rootways
+	4 Memory Lane
 	4 Olse, Steward of Ilcae's Ember
 	4 Outclass
 	4 Overeager Researcher
@@ -3013,12 +3025,16 @@
 	4 Secrets of the Citadel
 	4 Tall-Tale Salesman
 	4 Unbound Troubador
+	4 Blossoming Conscience
 	4 Citadel Outburst
 	4 Citadel Penitent
+	4 Citadel Repository
 	4 Crafty Cutthroat
 	4 Existence Flutter
 	4 Ilcan Resolution
 	4 Mossdrudge Ambusher
+	4 Music of the Deepholt
+	4 New Tensuo Clergy
 	4 Out of Options
 	4 Pain of Death
 	4 Ritz, Queen of Thieves
@@ -3036,10 +3052,13 @@
 	4 Ilcan Loyalist
 	4 Incandescent Spite
 	4 New Tensuo Orator
+	4 Norr, Ajha's Lieutenant
 	4 Numberless Procession
 	4 Painful Memory
+	4 Redefinition
 	4 Rootway Toll-Taker
 	4 Skyscrape
+	4 Stardust Haze
 	4 Wish for Fury
 	4 Aechmi's Creativity
 	4 Aether Spring
@@ -3058,11 +3077,13 @@
 	4 Miraculous Strength
 	4 Perceptual Distortion
 	4 Skyview Visitor
+	4 Starseeker Deva
 	4 Territorial Wanderer
 	4 Vivid Revivification
 	4 Wish for Wealth
 	4 Citadel Amnoctix
 	4 Fascinated Immortal
+	4 New Tensuo Calmkeeper
 	4 Starsea Bloomqueen
 	4 Wish for Strength
 	4 Paradel Prism
@@ -3089,8 +3110,12 @@
 	8 Mesmerize
 	8 Treacherous Guide
 	8 Weaving Reality in a Tapestry
+	8 Abrasive Trailblazer
+	8 Blossoming Comprehension
+	8 Blossoming Dissenter
 	8 Calculated Risk
 	8 Deepmist Bandit
+	8 Ilcan Keyseeker
 	8 Lifelighter
 	8 New Tensuo Spy
 	8 Playful Skulk
@@ -3103,6 +3128,7 @@
 	8 Tactical Diversion
 	8 Ultimate Price
 	8 Wish for Peace
+	8 Blinding Majesty
 	8 Brazen Confidence
 	8 Declivity
 	8 Earthen Curiosity
@@ -3118,21 +3144,26 @@
 	8 Suggestible Mark
 	8 Tranquil Cloudray
 	8 Broken Tranquility
+	8 Cloudeater Drake
 	8 Contemplative Pause
 	8 Deepholt Encounter
 	8 Flowering Germinus
+	8 Kindly Skywinder
 	8 New Tensuo Pathlayer
 	8 New Worlds, New Friends
 	8 Pensive Swordmaster
+	8 Tenuous Partners
 	8 Wish for Safety
 	8 Enlightenment Iterator
 	8 Ilcan Stalwart
 	8 Immensity
+	8 New Tensuo Vanguard
 	8 Placid Sunbask
 	8 Planar Geometer
 	8 Wish for Destruction
 	8 Wish for Relief
 	8 Wish for Revenge
+	8 Gilded Ancient
 	8 Polymorphic Wispweaver
 	8 Wish for Authority
 	8 Wish for Eternity
@@ -3173,6 +3204,7 @@
 	7 Chitterbit
 	6 Cryptic Columns
 	6 Curious Courier
+	7 Dhere, Preserver of Memories
 	6 Dissolution Specimen
 	6 Drifting Opportunist
 	7 Escalate to Violence
@@ -3182,19 +3214,25 @@
 	15 Larissi, Wonder Weaver
 	6 Lost in the Horizon
 	6 Mesmerize
+	7 New Tensuo Luminary
 	15 Prismatic Armor
 	15 Pyretic Desire
+	15 Scrappy Wisp-Speaker
 	7 Shapes in the Pools
 	15 Smug Upstart
 	15 Stare at the Stars
+	4 Starstruck Skitter
 	15 Subsume
 	6 Treacherous Guide
 	6 Weaving Reality in a Tapestry
 	15 Windwish Pests
 	7 Wish for Separation
 	15 Worldsoul Wanderer
+	6 Abrasive Trailblazer
 	7 Ageless Wayfarer
 	15 Alpine Poolseeker
+	6 Blossoming Comprehension
+	6 Blossoming Dissenter
 	6 Calculated Risk
 	7 Collector of the Wonderful
 	15 Condensed Memory
@@ -3204,10 +3242,13 @@
 	15 Exhaust Desire
 	15 Feral Prelwort
 	15 Giatela, Tensu Emissary
+	6 Ilcan Keyseeker
 	15 Ilcan Resilience
 	15 Into the Rootways
+	7 Lakebed Wrudge
 	7 Liberators of the Soul
 	6 Lifelighter
+	15 Memory Lane
 	6 New Tensuo Spy
 	15 Olse, Steward of Ilcae's Ember
 	15 Outclass
@@ -3229,9 +3270,13 @@
 	15 Unbound Troubador
 	6 Wish for Peace
 	4 Amarell, New Tensuo Elder
+	7 Antlerweaver
+	6 Blinding Majesty
+	15 Blossoming Conscience
 	6 Brazen Confidence
 	15 Citadel Outburst
 	15 Citadel Penitent
+	15 Citadel Repository
 	15 Crafty Cutthroat
 	6 Declivity
 	6 Earthen Curiosity
@@ -3247,6 +3292,8 @@
 	4 Manuela, the Known
 	6 Mental Unmooring
 	15 Mossdrudge Ambusher
+	15 Music of the Deepholt
+	15 New Tensuo Clergy
 	15 Out of Options
 	15 Pain of Death
 	4 Playful Chiaykyaich
@@ -3279,6 +3326,7 @@
 	6 Broken Tranquility
 	4 Chance-in-Hell
 	15 Clever Willweaver
+	6 Cloudeater Drake
 	7 Conceptual Digestion
 	6 Contemplative Pause
 	7 Cutthroat Obsession
@@ -3291,17 +3339,22 @@
 	15 Ilcan Loyalist
 	15 Incandescent Spite
 	4 Khiare, Last of the Lost
+	6 Kindly Skywinder
 	15 New Tensuo Orator
 	6 New Tensuo Pathlayer
 	6 New Worlds, New Friends
+	15 Norr, Ajha's Lieutenant
 	15 Numberless Procession
 	7 Overwhelming Force
 	15 Painful Memory
 	6 Pensive Swordmaster
+	15 Redefinition
 	15 Rootway Toll-Taker
 	7 Silent Memoriam
 	15 Skyscrape
+	15 Stardust Haze
 	7 Sunset Study
+	6 Tenuous Partners
 	7 The Borderholt Obelisks
 	7 The Citadel's Geometry
 	7 Thing in the Birches
@@ -3313,7 +3366,9 @@
 	4 A Promise
 	15 Aechmi's Creativity
 	15 Aether Spring
+	7 Ageless Caretaker
 	15 Cackling Thunderbeast
+	7 Cathexis, Soul Aspect
 	15 Curious Observer
 	15 Destructive Desire
 	15 Elder Beast's Approach
@@ -3335,13 +3390,18 @@
 	15 Miraculous Strength
 	7 Myriad Reflections
 	4 New Tensuo Collaborator
+	7 New Tensuo Physician
+	6 New Tensuo Vanguard
 	15 Perceptual Distortion
 	6 Placid Sunbask
 	6 Planar Geometer
 	15 Skyview Visitor
+	7 Starsea Slayer
+	15 Starseeker Deva
 	15 Territorial Wanderer
 	7 The Deepmist Structures
 	15 Vivid Revivification
+	4 Vrep
 	7 Wish for Death
 	6 Wish for Destruction
 	6 Wish for Relief
@@ -3350,7 +3410,9 @@
 	4 Ajha, the Wish for Home
 	15 Citadel Amnoctix
 	15 Fascinated Immortal
+	6 Gilded Ancient
 	7 Ilcan Szcygite
+	15 New Tensuo Calmkeeper
 	6 Polymorphic Wispweaver
 	4 Skyview Chronomancer
 	15 Starsea Bloomqueen
