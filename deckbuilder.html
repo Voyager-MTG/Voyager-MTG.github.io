@@ -951,8 +951,6 @@
 				if (urlParams.get('deck').includes(';')) { // check if deck has the ';' (for deck names)
 					let splitted = urlParams.get('deck').split(';'); // get the deck name and text by splitting
 					readDeckText(atob(splitted[1]), splitted[0]);  
-				} else {
-					readDeckText(atob(urlParams.get('deck')));
 				}
 			}
 			if (urlParams.get('collection') != null) {
@@ -4075,22 +4073,24 @@
 				const urlParams = new URLSearchParams(window.location.search);
 
 
-				if (urlParams.get('udeck') != null) { // check if deck exists
-					const splitted  = urlParams.get('udeck').split('-');
-					const deck_user = splitted[0];
-					const deck_name = splitted[1];
-					await getDoc(doc(db, 'users', deck_user)).then(docSnap => {
-						let data2 = docSnap.data();
-						let decks = JSON.parse(data2.decks);
-						for (const deck of decks) {
-							if (deck.name == deck_name) {
-								let text = atob(deck.url.split(";")[1].split("&")[0]);
-								readDeckText(text, deck.name);
-								window.fireimport = true;
-								break;
+				if (urlParams.get('deck') != null) { // check if deck exists
+					if (urlParams.get("deck").includes("-") && !urlParams.get("deck").includes(";")) {
+						const splitted  = urlParams.get('udeck').split('-');
+						const deck_user = splitted[0];
+						const deck_name = splitted[1];
+						await getDoc(doc(db, 'users', deck_user)).then(docSnap => {
+							let data2 = docSnap.data();
+							let decks = JSON.parse(data2.decks);
+							for (const deck of decks) {
+								if (deck.name == deck_name) {
+									let text = atob(deck.url.split(";")[1].split("&")[0]);
+									readDeckText(text, deck.name);
+									window.fireimport = true;
+									break;
+								}
 							}
-						}
-					});
+						});
+					}
 				}
 
 				if (urlParams.get('edeck') != null) { // check if deck exists
