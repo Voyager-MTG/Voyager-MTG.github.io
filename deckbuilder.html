@@ -4075,7 +4075,7 @@
 
 				if (urlParams.get('deck') != null) { // check if deck exists
 					if (urlParams.get("deck").includes("-") && !urlParams.get("deck").includes(";")) {
-						const splitted  = urlParams.get('udeck').split('-');
+						const splitted  = urlParams.get('deck').split('-');
 						const deck_user = splitted[0];
 						const deck_name = splitted[1];
 						await getDoc(doc(db, 'users', deck_user)).then(docSnap => {
