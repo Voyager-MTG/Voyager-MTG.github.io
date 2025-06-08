@@ -4130,6 +4130,10 @@
 								}
 							}
 						});
+						gridified_card = gridifyCard(card_list_arrayified[0], true, true);
+						gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
+						gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
+						document.getElementById("card-grid-container").appendChild(gridified_card);
 					}
 				}
 
