@@ -4119,7 +4119,7 @@
 						const collection_name = splitted[1];
 						await getDoc(doc(db, 'users', collection_user)).then(docSnap => {
 							let data2 = docSnap.data();
-							let collections = JSON.parse(data2.colls);
+							let collections = JSON.parse(data2.colls); // testing
 							for (const collection of collections) {
 								if (collection.name == collection_name) {
 									let text = atob(collection.url.split(";")[1].split("&")[0]);
