@@ -138,7 +138,7 @@ for code in set_codes:
 		except Exception as e:
 			print('Unable to generate draft file for {0}: {1}'.format(code, e))
 
-	#CE: this code is all for version history testing
+	#CE: this code is all for version history
 	if 'version' not in raw:
 		versions = glob.glob(os.path.join('versions', '*' + code + '_*'))
 		if len(versions) == 0:
