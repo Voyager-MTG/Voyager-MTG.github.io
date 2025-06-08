@@ -2252,7 +2252,7 @@
 					gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
 					if (card_stats.shape.includes("double"))
 					{
-						gridified_card.getElementsByTagName("button")[0].onclick = function() {
+						gridified_card.getElementsByTagName("button")[0].onclick = async function() {
 							imgFlip("image-grid-card", card_stats.type.includes("Battle"));
 						}
 					}
@@ -3128,7 +3128,7 @@
 			{
 				const imgFlipBtn = document.createElement("button");
 				imgFlipBtn.className = "btn";
-				imgFlipBtn.onclick = function() { imgFlip(id, rotate_card); };
+				imgFlipBtn.onclick = async function() { imgFlip(id, rotate_card); };
 				imgContainer.appendChild(imgFlipBtn);
 			}
 
@@ -3143,32 +3143,46 @@
 			return imgContainer;
 		}
 
-		function imgFlip(id, rotate_card = false) {
-			img = document.getElementById(id);
-			rotated_img = document.getElementById("h-img");
+		async function imgFlip(id, rotate_card = false) {
+			const img = document.getElementById(id);
+			const seconds = 0.2;
 
-			cardName = img.src;
-			
-			if (cardName.includes("_front"))
-			{
-				img.src = cardName.replace("_front", "_back");
+			img.style.transition = seconds.toString() + "s";
+			img.style.transform = "rotateY(90deg)";
 
-				if (rotate_card)
+			await setTimeout(function() {
+				const rotated_img = document.getElementById("h-img");
+
+				const cardName = img.src;
+				
+				if (cardName.includes("_front"))
 				{
-					rotated_img.style.display = "none";
-					img.style.filter = "";
-				}
-			}
-			else
-			{
-				img.src = cardName.replace("_back", "_front");
+					img.src = cardName.replace("_front", "_back");
 
-				if (rotate_card)
-				{
-					rotated_img.style.display = "block";
-					img.style.filter = "blur(2px) brightness(0.7)";
+					if (rotate_card)
+					{
+						rotated_img.style.display = "none";
+						img.style.filter = "";
+					}
 				}
-			}
+				else
+				{
+					img.src = cardName.replace("_back", "_front");
+
+					if (rotate_card)
+					{
+						rotated_img.style.display = "block";
+						img.style.filter = "blur(2px) brightness(0.7)";
+					}
+				}
+
+				img.style.transition = (seconds * 2).toString() + "s";
+				img.style.transform = "rotateY(0deg)";
+			}, seconds * 1000);
+
+			await setTimeout(function() {
+				console.log("done");
+			}, seconds * 1000);
 		}
 
 		function prettifyEffects(card_effects) {
@@ -3588,7 +3602,7 @@
 				gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
 				if (card_stats.shape.includes("double")) // if its a dfc, add the flip button and give it an onlcick that calls imgFlip (line 2342)
 				{
-					gridified_card.getElementsByTagName("button")[0].onclick = function() {
+					gridified_card.getElementsByTagName("button")[0].onclick = async function() {
 						imgFlip("image-grid-card", card_stats.type.includes("Battle"));
 					}
 				}

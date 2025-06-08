@@ -1519,7 +1519,7 @@
 			{
 				const imgFlipBtn = document.createElement("button");
 				imgFlipBtn.className = "btn";
-				imgFlipBtn.onclick = function() { imgFlip(id, rotate_card); };
+				imgFlipBtn.onclick = async function() { imgFlip(id, rotate_card); };
 				imgContainer.appendChild(imgFlipBtn);
 			}
 
@@ -1534,32 +1534,46 @@
 			return imgContainer;
 		}
 
-		function imgFlip(id, rotate_card = false) {
-			img = document.getElementById(id);
-			rotated_img = document.getElementById("h-img");
+		async function imgFlip(id, rotate_card = false) {
+			const img = document.getElementById(id);
+			const seconds = 0.2;
 
-			cardName = img.src;
-			
-			if (cardName.includes("_front"))
-			{
-				img.src = cardName.replace("_front", "_back");
+			img.style.transition = seconds.toString() + "s";
+			img.style.transform = "rotateY(90deg)";
 
-				if (rotate_card)
+			await setTimeout(function() {
+				const rotated_img = document.getElementById("h-img");
+
+				const cardName = img.src;
+				
+				if (cardName.includes("_front"))
 				{
-					rotated_img.style.display = "none";
-					img.style.filter = "";
-				}
-			}
-			else
-			{
-				img.src = cardName.replace("_back", "_front");
+					img.src = cardName.replace("_front", "_back");
 
-				if (rotate_card)
-				{
-					rotated_img.style.display = "block";
-					img.style.filter = "blur(2px) brightness(0.7)";
+					if (rotate_card)
+					{
+						rotated_img.style.display = "none";
+						img.style.filter = "";
+					}
 				}
-			}
+				else
+				{
+					img.src = cardName.replace("_back", "_front");
+
+					if (rotate_card)
+					{
+						rotated_img.style.display = "block";
+						img.style.filter = "blur(2px) brightness(0.7)";
+					}
+				}
+
+				img.style.transition = (seconds * 2).toString() + "s";
+				img.style.transform = "rotateY(0deg)";
+			}, seconds * 1000);
+
+			await setTimeout(function() {
+				console.log("done");
+			}, seconds * 1000);
 		}
 
 		function prettifyEffects(card_effects) {
