@@ -4114,12 +4114,12 @@
 
 				if (urlParams.get('ucollection') != null) { // check if collection exists
 					if (urlParams.get("ucollection").includes("-")) {
-						const splitted  = urlParams.get('collection').split('-');
+						const splitted  = urlParams.get('ucollection').split('-');
 						const collection_user = splitted[0];
 						const collection_name = splitted[1];
 						await getDoc(doc(db, 'users', collection_user)).then(docSnap => {
 							let data2 = docSnap.data();
-							let collections = JSON.parse(data2.colls); // testing 2
+							let collections = JSON.parse(data2.colls);
 							for (const collection of collections) {
 								if (collection.name == collection_name) {
 									let text = atob(collection.url.split(";")[1].split("&")[0]);
