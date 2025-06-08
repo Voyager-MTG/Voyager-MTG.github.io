@@ -924,11 +924,6 @@
 			cardGrid = document.getElementById("imagesOnlyGrid");
 			card_list_arrayified.sort(compareFunction);
 
-			gridified_card = gridifyCard(card_list_arrayified[0], true, true);
-			gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
-			gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
-			document.getElementById("card-grid-container").appendChild(gridified_card);
-
 			try {
 			const response = await fetch('./resources/gradients.json');
 			raw_gradients = await response.json();
@@ -1014,6 +1009,11 @@
 			if (document.getElementById("deck-name").value == "undefined" || document.getElementById("deck-name").value == "") {
 				document.getElementById("deck-name").value = "Untitled Deck";
 			}
+
+			gridified_card = gridifyCard(card_list_arrayified[0], true, true);
+			gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
+			gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
+			document.getElementById("card-grid-container").appendChild(gridified_card);
 
 			processDeck();
 		});
@@ -4123,7 +4123,7 @@
 							for (const collection of collections) {
 								if (collection.name == collection_name) {
 									console.log(collection);
-									let text = atob(collection.url.split(";")[1]);
+									let text = atob(collection.url.split("?ucollection=")[1]);
 									loadCollection(collection.name, text.split("\n"));
 									window.fireimport = true;
 									break;
