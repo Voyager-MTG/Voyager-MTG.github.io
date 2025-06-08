@@ -123,6 +123,7 @@
 		width: 100%;
 		height: auto;
 		display: block;
+		border-radius: 9px;
 	}
 	.card-text {
 		padding-top: 20px;
@@ -171,7 +172,7 @@
 		height: auto;
 	}
 	.img-container .btn {
-		background: url('img/flip.png') no-repeat;
+		background-color: #ffffffaa;
 		background-size: contain;
 		background-position: center;
 		width: 15%;
@@ -179,17 +180,18 @@
 		cursor: pointer;
 		border: none;
 		position: absolute;
-		border-radius: 0px;
-		box-shadow: none;
 		left: 50%;
 		top: 48%;
-		transform: translate(-50%, -50%);
-		opacity: 0.5;
+		transform: translate(170%, -150%);
+		opacity: 0.8;
+		border-radius: 100%;
+		border: 2px solid black;
+		padding: 3px;
 	}
 	.img-container .btn:hover {
-		background: url('img/flip-hover.png') no-repeat;
 		background-size: contain;
 		background-position: center;
+		background-color: #ffffff;
 	}
 	.img-container .hidden-text {
 		position: absolute;
@@ -1520,6 +1522,10 @@
 				const imgFlipBtn = document.createElement("button");
 				imgFlipBtn.className = "btn";
 				imgFlipBtn.onclick = async function() { imgFlip(id, rotate_card); };
+				const imgFlipIcon = document.createElement("img");
+				imgFlipIcon.className = "img-flip-icon";
+				imgFlipIcon.src = '/img/flip.svg';
+				imgFlipBtn.appendChild(imgFlipIcon);
 				imgContainer.appendChild(imgFlipBtn);
 			}
 

@@ -148,6 +148,10 @@
 				const imgFlipBtn = document.createElement("button");
 				imgFlipBtn.className = "btn";
 				imgFlipBtn.onclick = async function() { imgFlip(id, rotate_card); };
+				const imgFlipIcon = document.createElement("img");
+				imgFlipIcon.className = "img-flip-icon";
+				imgFlipIcon.src = '/img/flip.svg';
+				imgFlipBtn.appendChild(imgFlipIcon);
 				imgContainer.appendChild(imgFlipBtn);
 			}
 

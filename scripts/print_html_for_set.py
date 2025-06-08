@@ -182,6 +182,7 @@ def generateHTML(code):
 		width: 100%;
 		height: auto;
 		display: block;
+		border-radius: 9px;
 	}
 	.card-text {
 		padding-top: 20px;
@@ -230,7 +231,7 @@ def generateHTML(code):
 		height: auto;
 	}
 	.img-container .btn {
-		background: url('/img/flip.png') no-repeat;
+		background-color: #ffffffaa;
 		background-size: contain;
 		background-position: center;
 		width: 15%;
@@ -240,13 +241,16 @@ def generateHTML(code):
 		position: absolute;
 		left: 50%;
 		top: 48%;
-		transform: translate(-50%, -50%);
-		opacity: 0.5;
+		transform: translate(170%, -150%);
+		opacity: 0.8;
+		border-radius: 100%;
+		border: 2px solid black;
+		padding: 3px;
 	}
 	.img-container .btn:hover {
-		background: url('/img/flip-hover.png') no-repeat;
 		background-size: contain;
 		background-position: center;
+		background-color: #ffffff;
 	}
 	.img-container .hidden-text {
 		position: absolute;
