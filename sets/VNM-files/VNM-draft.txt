@@ -2,8 +2,13 @@
 	[
 		{
 			"name": "Drake Wrangler",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{WU}{WU}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W/U}{W/U}",
+>>>>>>> upstream/main
 			"type": "Creature — Human",
 			"collector_number": "205",
 			"image_uris": {
@@ -12,8 +17,13 @@
 		},
 		{
 			"name": "Tofnet Riftstalker",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{WB}{WB}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W/B}{W/B}",
+>>>>>>> upstream/main
 			"type": "Creature — Hyena Scout",
 			"collector_number": "236",
 			"image_uris": {
@@ -22,8 +32,13 @@
 		},
 		{
 			"name": "Passage Overseer",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{RW}{RW}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R/W}{R/W}",
+>>>>>>> upstream/main
 			"type": "Creature — Minotaur Scout",
 			"collector_number": "221",
 			"image_uris": {
@@ -32,8 +47,13 @@
 		},
 		{
 			"name": "Bruin Wanderer",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{GW}{GW}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{G/W}{G/W}",
+>>>>>>> upstream/main
 			"type": "Creature — Bear Scout",
 			"collector_number": "196",
 			"image_uris": {
@@ -42,8 +62,13 @@
 		},
 		{
 			"name": "Avakin Riftseeker",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{UB}{UB}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U/B}{U/B}",
+>>>>>>> upstream/main
 			"type": "Creature — Bird Wizard",
 			"collector_number": "193",
 			"image_uris": {
@@ -52,8 +77,13 @@
 		},
 		{
 			"name": "Untamed Drake",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{UR}{UR}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{U/R}{U/R}",
+>>>>>>> upstream/main
 			"type": "Creature — Drake",
 			"collector_number": "239",
 			"image_uris": {
@@ -62,8 +92,13 @@
 		},
 		{
 			"name": "Aeon Awakener",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{BG}{BG}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B/G}{B/G}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Wizard",
 			"collector_number": "189",
 			"image_uris": {
@@ -72,8 +107,13 @@
 		},
 		{
 			"name": "Bulwark of the Thicket",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{RG}{RG}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R/G}{R/G}",
+>>>>>>> upstream/main
 			"type": "Creature — Wurm Warrior",
 			"collector_number": "197",
 			"image_uris": {
@@ -82,8 +122,13 @@
 		},
 		{
 			"name": "Multaphs Riftwarden",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{GU}{GU}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G/U}{G/U}",
+>>>>>>> upstream/main
 			"type": "Creature — Elk Shaman",
 			"collector_number": "217",
 			"image_uris": {
@@ -92,8 +137,13 @@
 		},
 		{
 			"name": "Rush Down",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{RW}",
+=======
+			"rarity": "common",
+			"mana_cost": "{R/W}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "228",
 			"image_uris": {
@@ -102,8 +152,13 @@
 		},
 		{
 			"name": "Purge the Clanless",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{WB}{WB}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}{W/B}{W/B}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "225",
 			"image_uris": {
@@ -112,8 +167,13 @@
 		},
 		{
 			"name": "Survivors Instinct",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{GW}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{G/W}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "235",
 			"image_uris": {
@@ -122,8 +182,13 @@
 		},
 		{
 			"name": "Entrance of Hunger",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{WU}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W/U}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "207",
 			"image_uris": {
@@ -132,8 +197,13 @@
 		},
 		{
 			"name": "Prismatism",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{UR}",
+=======
+			"rarity": "common",
+			"mana_cost": "{U/R}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "224",
 			"image_uris": {
@@ -142,8 +212,13 @@
 		},
 		{
 			"name": "Aerial Roost",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{UB}{UB}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U/B}{U/B}",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "190",
 			"image_uris": {
@@ -152,8 +227,13 @@
 		},
 		{
 			"name": "Soul Fire",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{BR}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B/R}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "231",
 			"image_uris": {
@@ -162,8 +242,13 @@
 		},
 		{
 			"name": "Dust to Life",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{BG}",
+=======
+			"rarity": "common",
+			"mana_cost": "{B/G}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "206",
 			"image_uris": {
@@ -172,8 +257,13 @@
 		},
 		{
 			"name": "Hired Enforcer",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{WB}{WB}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W/B}{W/B}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Scout Mercenary",
 			"collector_number": "212",
 			"image_uris": {
@@ -182,8 +272,13 @@
 		},
 		{
 			"name": "Perplexing Ray",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{UR}{UR}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{U/R}{U/R}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Fish Entity",
 			"collector_number": "222",
 			"image_uris": {
@@ -192,8 +287,13 @@
 		},
 		{
 			"name": "Clanless Usurper",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{UR}{UR}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U/R}{U/R}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Rogue",
 			"collector_number": "200",
 			"image_uris": {
@@ -202,8 +302,13 @@
 		},
 		{
 			"name": "Opportunistic Scavenger",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{BG}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B/G}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Squirrel Entity",
 			"collector_number": "218",
 			"image_uris": {
@@ -212,8 +317,13 @@
 		},
 		{
 			"name": "Outlands Bulwark",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{BG}{BG}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B/G}{B/G}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Warrior",
 			"collector_number": "220",
 			"image_uris": {
@@ -222,8 +332,13 @@
 		},
 		{
 			"name": "Mischievous Fox",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{RW}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R/W}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Fox Entity",
 			"collector_number": "216",
 			"image_uris": {
@@ -232,8 +347,13 @@
 		},
 		{
 			"name": "Roduth's Guard",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{RW}{RW}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R/W}{R/W}",
+>>>>>>> upstream/main
 			"type": "Creature — Wurm Warrior",
 			"collector_number": "227",
 			"image_uris": {
@@ -242,8 +362,13 @@
 		},
 		{
 			"name": "Ageless History",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{GU}{GU}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G/U}{G/U}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Turtle Entity",
 			"collector_number": "191",
 			"image_uris": {
@@ -252,8 +377,13 @@
 		},
 		{
 			"name": "Icebound Reinforcements",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{GU}{GU}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G/U}{G/U}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Scout",
 			"collector_number": "213",
 			"image_uris": {
@@ -262,8 +392,13 @@
 		},
 		{
 			"name": "Blossoming Mentor",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{GW}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{G/W}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Cleric Shaman",
 			"collector_number": "194",
 			"image_uris": {
@@ -272,8 +407,13 @@
 		},
 		{
 			"name": "Accord Mentor",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{WU}{WU}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W/U}{W/U}",
+>>>>>>> upstream/main
 			"type": "Creature — Elf Wizard",
 			"collector_number": "188",
 			"image_uris": {
@@ -282,8 +422,13 @@
 		},
 		{
 			"name": "Eternal Mentor",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{UB}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U/B}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Zombie Shaman",
 			"collector_number": "209",
 			"image_uris": {
@@ -292,8 +437,13 @@
 		},
 		{
 			"name": "Conflict Mentor",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{BR}{BR}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B/R}{B/R}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Warrior",
 			"collector_number": "201",
 			"image_uris": {
@@ -302,8 +452,13 @@
 		},
 		{
 			"name": "Outcast Mentor",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{RG}{RG}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{R/G}{R/G}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Warlock",
 			"collector_number": "219",
 			"image_uris": {
@@ -312,8 +467,13 @@
 		},
 		{
 			"name": "Fadove Initiate",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{W}",
+=======
+			"rarity": "common",
+			"mana_cost": "{W}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Scout",
 			"collector_number": "22",
 			"image_uris": {
@@ -322,8 +482,13 @@
 		},
 		{
 			"name": "Fadove Trainer",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{W}",
+=======
+			"rarity": "common",
+			"mana_cost": "{W}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Warrior Spellshaper",
 			"collector_number": "26",
 			"image_uris": {
@@ -332,8 +497,13 @@
 		},
 		{
 			"name": "Trusted Companion",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+>>>>>>> upstream/main
 			"type": "Creature — Drake",
 			"collector_number": "46",
 			"image_uris": {
@@ -342,8 +512,13 @@
 		},
 		{
 			"name": "Fadove Tracker",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+>>>>>>> upstream/main
 			"type": "Creature — Hyena Scout Spellshaper",
 			"collector_number": "25",
 			"image_uris": {
@@ -352,8 +527,13 @@
 		},
 		{
 			"name": "Outlands Marauder",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+>>>>>>> upstream/main
 			"type": "Creature — Hyena Warrior",
 			"collector_number": "35",
 			"image_uris": {
@@ -362,8 +542,13 @@
 		},
 		{
 			"name": "Wandering Soul",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Nomad",
 			"collector_number": "48",
 			"image_uris": {
@@ -372,8 +557,13 @@
 		},
 		{
 			"name": "Fadove Drillmaster",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{W}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+>>>>>>> upstream/main
 			"type": "Creature — Hyena Warrior Spellshaper",
 			"collector_number": "21",
 			"image_uris": {
@@ -382,8 +572,13 @@
 		},
 		{
 			"name": "Oathkeep Wurm",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{W}{W}",
+=======
+			"rarity": "common",
+			"mana_cost": "{4}{W}{W}",
+>>>>>>> upstream/main
 			"type": "Creature — Wurm Warrior",
 			"collector_number": "34",
 			"image_uris": {
@@ -392,8 +587,13 @@
 		},
 		{
 			"name": "Drake Rider",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{W}",
+=======
+			"rarity": "common",
+			"mana_cost": "{4}{W}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Scout",
 			"collector_number": "19",
 			"image_uris": {
@@ -402,8 +602,13 @@
 		},
 		{
 			"name": "Radiant Guide",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{4}{W}{W}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{4}{W}{W}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Cat",
 			"collector_number": "40",
 			"image_uris": {
@@ -412,8 +617,13 @@
 		},
 		{
 			"name": "Covetous Fox",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{UB}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{U/B}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Fox Entity",
 			"collector_number": "202",
 			"image_uris": {
@@ -422,8 +632,13 @@
 		},
 		{
 			"name": "Rebuke the Foul",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "41",
 			"image_uris": {
@@ -432,8 +647,13 @@
 		},
 		{
 			"name": "Maddened by Hunger",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+>>>>>>> upstream/main
 			"type": "Enchantment — Aura",
 			"collector_number": "33",
 			"image_uris": {
@@ -442,8 +662,13 @@
 		},
 		{
 			"name": "Fadove Bodyguard",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Knight",
 			"collector_number": "20",
 			"image_uris": {
@@ -452,8 +677,13 @@
 		},
 		{
 			"name": "Combat Diviner",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{W}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{W}",
+>>>>>>> upstream/main
 			"type": "Creature — Wurm Warrior",
 			"collector_number": "18",
 			"image_uris": {
@@ -462,8 +692,13 @@
 		},
 		{
 			"name": "Frostborn Sentinel",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{U}{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}{U}{U}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Soldier",
 			"collector_number": "62",
 			"image_uris": {
@@ -472,8 +707,13 @@
 		},
 		{
 			"name": "Respite Partisan",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{U}{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{U}{U}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Elk",
 			"collector_number": "73",
 			"image_uris": {
@@ -482,8 +722,13 @@
 		},
 		{
 			"name": "Due Dismissal",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "60",
 			"image_uris": {
@@ -492,8 +737,13 @@
 		},
 		{
 			"name": "Denied by Nature",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{U}{U}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{U}{U}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "59",
 			"image_uris": {
@@ -502,8 +752,13 @@
 		},
 		{
 			"name": "Repel the Invasion",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "71",
 			"image_uris": {
@@ -512,8 +767,13 @@
 		},
 		{
 			"name": "Storm Bearer",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+>>>>>>> upstream/main
 			"type": "Creature — Elf Warlock Spellshaper",
 			"collector_number": "78",
 			"image_uris": {
@@ -522,8 +782,13 @@
 		},
 		{
 			"name": "Resolute Watcher",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}{U}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{U}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Warlock",
 			"collector_number": "72",
 			"image_uris": {
@@ -532,8 +797,13 @@
 		},
 		{
 			"name": "Avakin Sayer",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+>>>>>>> upstream/main
 			"type": "Creature — Bird Warlock",
 			"collector_number": "53",
 			"image_uris": {
@@ -542,8 +812,13 @@
 		},
 		{
 			"name": "Avlod Diviner",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Wizard",
 			"collector_number": "55",
 			"image_uris": {
@@ -552,8 +827,13 @@
 		},
 		{
 			"name": "Aspiring Mount",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{U}{U}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}{U}",
+>>>>>>> upstream/main
 			"type": "Creature — Drake",
 			"collector_number": "50",
 			"image_uris": {
@@ -562,8 +842,13 @@
 		},
 		{
 			"name": "Cooing Foundling",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{B}",
+>>>>>>> upstream/main
 			"type": "Creature — Bird",
 			"collector_number": "94",
 			"image_uris": {
@@ -572,8 +857,13 @@
 		},
 		{
 			"name": "Avakin Avenger",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+>>>>>>> upstream/main
 			"type": "Creature — Bird Archer Spellshaper",
 			"collector_number": "85",
 			"image_uris": {
@@ -582,8 +872,13 @@
 		},
 		{
 			"name": "Gateway Guardian",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Warrior Spellshaper",
 			"collector_number": "98",
 			"image_uris": {
@@ -592,8 +887,13 @@
 		},
 		{
 			"name": "Avakin Riftwalker",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+>>>>>>> upstream/main
 			"type": "Creature — Bird Warlock",
 			"collector_number": "89",
 			"image_uris": {
@@ -602,8 +902,13 @@
 		},
 		{
 			"name": "Rift Tender",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Shaman Spellshaper",
 			"collector_number": "110",
 			"image_uris": {
@@ -612,8 +917,13 @@
 		},
 		{
 			"name": "Waking Words",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Rogue",
 			"collector_number": "115",
 			"image_uris": {
@@ -622,8 +932,13 @@
 		},
 		{
 			"name": "Avakin Cleaner",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+>>>>>>> upstream/main
 			"type": "Creature — Bird Scout",
 			"collector_number": "86",
 			"image_uris": {
@@ -632,8 +947,13 @@
 		},
 		{
 			"name": "Avakin Assaulter",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{B}{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}{B}{B}",
+>>>>>>> upstream/main
 			"type": "Creature — Bird Warrior",
 			"collector_number": "84",
 			"image_uris": {
@@ -642,8 +962,13 @@
 		},
 		{
 			"name": "Scornful Pursuit",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{4}{B}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{4}{B}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Rogue",
 			"collector_number": "111",
 			"image_uris": {
@@ -652,8 +977,13 @@
 		},
 		{
 			"name": "Left for the Crows",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+>>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "101",
 			"image_uris": {
@@ -662,8 +992,13 @@
 		},
 		{
 			"name": "Weight of Betrayal",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{B}",
+>>>>>>> upstream/main
 			"type": "Enchantment — Aura",
 			"collector_number": "117",
 			"image_uris": {
@@ -672,8 +1007,13 @@
 		},
 		{
 			"name": "Iconic Resurgence",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{B}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "99",
 			"image_uris": {
@@ -682,8 +1022,13 @@
 		},
 		{
 			"name": "Avlod Necklace",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{B}",
+>>>>>>> upstream/main
 			"type": "Artifact — Equipment",
 			"collector_number": "91",
 			"image_uris": {
@@ -692,8 +1037,13 @@
 		},
 		{
 			"name": "Avakin Mentor",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}{B}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{B}",
+>>>>>>> upstream/main
 			"type": "Creature — Bird Wizard Spellshaper",
 			"collector_number": "88",
 			"image_uris": {
@@ -702,8 +1052,13 @@
 		},
 		{
 			"name": "Shaman of Rites Lost",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Warlock",
 			"collector_number": "112",
 			"image_uris": {
@@ -712,8 +1067,13 @@
 		},
 		{
 			"name": "Avakin Hireblade",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}{B}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{B}",
+>>>>>>> upstream/main
 			"type": "Creature — Bird Mercenary",
 			"collector_number": "87",
 			"image_uris": {
@@ -722,8 +1082,13 @@
 		},
 		{
 			"name": "Frontline Assaulter",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{R}",
+=======
+			"rarity": "common",
+			"mana_cost": "{R}",
+>>>>>>> upstream/main
 			"type": "Creature — Minotaur Warrior Spellshaper",
 			"collector_number": "126",
 			"image_uris": {
@@ -732,8 +1097,13 @@
 		},
 		{
 			"name": "Minotaur Riftcaller",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+>>>>>>> upstream/main
 			"type": "Creature — Minotaur Shaman",
 			"collector_number": "130",
 			"image_uris": {
@@ -742,8 +1112,13 @@
 		},
 		{
 			"name": "Fervent Incandescence",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Wizard",
 			"collector_number": "124",
 			"image_uris": {
@@ -752,8 +1127,13 @@
 		},
 		{
 			"name": "Mordel Patrol",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Warrior",
 			"collector_number": "134",
 			"image_uris": {
@@ -762,8 +1142,13 @@
 		},
 		{
 			"name": "Tenuous Empowerment",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{R}{R}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{R}{R}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Wizard",
 			"collector_number": "144",
 			"image_uris": {
@@ -772,8 +1157,13 @@
 		},
 		{
 			"name": "Mordel Drillmaster",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{R}{R}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}{R}{R}",
+>>>>>>> upstream/main
 			"type": "Creature — Minotaur Warrior Spellshaper",
 			"collector_number": "132",
 			"image_uris": {
@@ -782,8 +1172,13 @@
 		},
 		{
 			"name": "Verem-Volcano Rumbler",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+>>>>>>> upstream/main
 			"type": "Creature — Wurm Warrior",
 			"collector_number": "148",
 			"image_uris": {
@@ -792,8 +1187,13 @@
 		},
 		{
 			"name": "Stalking Entity",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{RG}{RG}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{R/G}{R/G}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Cat Entity",
 			"collector_number": "232",
 			"image_uris": {
@@ -802,8 +1202,13 @@
 		},
 		{
 			"name": "Iconic Resolution",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "127",
 			"image_uris": {
@@ -812,8 +1217,13 @@
 		},
 		{
 			"name": "Conscripted by the Clanless",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+>>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "123",
 			"image_uris": {
@@ -822,8 +1232,13 @@
 		},
 		{
 			"name": "Clanless Destruction",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{R}",
+=======
+			"rarity": "common",
+			"mana_cost": "{R}",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "122",
 			"image_uris": {
@@ -832,8 +1247,13 @@
 		},
 		{
 			"name": "Unexpected Discovery",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+>>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "146",
 			"image_uris": {
@@ -842,8 +1262,13 @@
 		},
 		{
 			"name": "Brood Protector",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}{R}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{R}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Wurm",
 			"collector_number": "119",
 			"image_uris": {
@@ -852,8 +1277,13 @@
 		},
 		{
 			"name": "Minotaur Outlander",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}{R}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{R}",
+>>>>>>> upstream/main
 			"type": "Creature — Minotaur Warrior Spellshaper",
 			"collector_number": "129",
 			"image_uris": {
@@ -862,8 +1292,13 @@
 		},
 		{
 			"name": "Mordel Excursionist",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{R}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Scout Spellshaper",
 			"collector_number": "133",
 			"image_uris": {
@@ -872,8 +1307,13 @@
 		},
 		{
 			"name": "Lavaskimmer Wurm",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{R}{R}",
+=======
+			"rarity": "common",
+			"mana_cost": "{4}{R}{R}",
+>>>>>>> upstream/main
 			"type": "Creature — Wurm Shaman",
 			"collector_number": "128",
 			"image_uris": {
@@ -882,8 +1322,13 @@
 		},
 		{
 			"name": "Burnout",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{R}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "120",
 			"image_uris": {
@@ -892,8 +1337,13 @@
 		},
 		{
 			"name": "Farming Wurm",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Wurm Shaman",
 			"collector_number": "256",
 			"image_uris": {
@@ -902,8 +1352,13 @@
 		},
 		{
 			"name": "Awakened Harmony",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Druid",
 			"collector_number": "247",
 			"image_uris": {
@@ -912,8 +1367,13 @@
 		},
 		{
 			"name": "Mordel Formgiver",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Wurm Warlock",
 			"collector_number": "263",
 			"image_uris": {
@@ -922,8 +1382,13 @@
 		},
 		{
 			"name": "Outlands Diviner",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Wurm Warlock Spellshaper",
 			"collector_number": "267",
 			"image_uris": {
@@ -932,8 +1397,13 @@
 		},
 		{
 			"name": "Bruin Clankeeper",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Bear Warrior",
 			"collector_number": "251",
 			"image_uris": {
@@ -942,8 +1412,13 @@
 		},
 		{
 			"name": "Multaphs Watch",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{4}{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Elk",
 			"collector_number": "266",
 			"image_uris": {
@@ -952,8 +1427,13 @@
 		},
 		{
 			"name": "Progeny of Mordel",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{G}{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{4}{G}{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Wurm Warrior",
 			"collector_number": "273",
 			"image_uris": {
@@ -962,8 +1442,13 @@
 		},
 		{
 			"name": "Iconic Altercation",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "258",
 			"image_uris": {
@@ -972,8 +1457,13 @@
 		},
 		{
 			"name": "Boon of Roduth",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{G}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "249",
 			"image_uris": {
@@ -982,8 +1472,13 @@
 		},
 		{
 			"name": "Ripped into Eternity",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "275",
 			"image_uris": {
@@ -992,8 +1487,13 @@
 		},
 		{
 			"name": "Rifttouched Ursine",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Bear Shaman",
 			"collector_number": "274",
 			"image_uris": {
@@ -1002,8 +1502,13 @@
 		},
 		{
 			"name": "Triumphant Riftcaller",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}{G}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Bear Berserker",
 			"collector_number": "279",
 			"image_uris": {
@@ -1012,8 +1517,13 @@
 		},
 		{
 			"name": "Forest Assailant",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{G}{G}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}{G}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Barbarian",
 			"collector_number": "257",
 			"image_uris": {
@@ -1022,8 +1532,13 @@
 		},
 		{
 			"name": "Progeny of Bruin",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{4}{G}{G}{G}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{4}{G}{G}{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Wurm Shaman",
 			"collector_number": "272",
 			"image_uris": {
@@ -1032,8 +1547,13 @@
 		},
 		{
 			"name": "Rippling Crustacean",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}",
+>>>>>>> upstream/main
 			"type": "Creature — Crab",
 			"collector_number": "10",
 			"image_uris": {
@@ -1042,8 +1562,13 @@
 		},
 		{
 			"name": "Starbright Entity",
+<<<<<<< HEAD
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}C",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}I",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Cat Entity",
 			"collector_number": "162",
 			"image_uris": {
@@ -1052,8 +1577,13 @@
 		},
 		{
 			"name": "Aspiring Entity",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}",
+=======
+			"rarity": "common",
+			"mana_cost": "{4}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Elk Entity",
 			"collector_number": "1",
 			"image_uris": {
@@ -1062,8 +1592,13 @@
 		},
 		{
 			"name": "Wings of New Horizons",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}",
+>>>>>>> upstream/main
 			"type": "Artifact — Equipment",
 			"collector_number": "284",
 			"image_uris": {
@@ -1072,8 +1607,13 @@
 		},
 		{
 			"name": "Rip to Tomorrow",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
+=======
+			"rarity": "common",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "297",
 			"image_uris": {
@@ -1082,8 +1622,13 @@
 		},
 		{
 			"name": "Powerstone Claw",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}",
+>>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "282",
 			"image_uris": {
@@ -1092,8 +1637,13 @@
 		},
 		{
 			"name": "Wandering Entity",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Cat Entity",
 			"collector_number": "14",
 			"image_uris": {
@@ -1102,8 +1652,13 @@
 		},
 		{
 			"name": "Pinnacle Skitter",
+<<<<<<< HEAD
 			"rarity": "common",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}C",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}I",
+>>>>>>> upstream/main
 			"type": "Creature — Snake",
 			"collector_number": "160",
 			"image_uris": {
@@ -1112,8 +1667,13 @@
 		},
 		{
 			"name": "Tidepool Scuttler",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{6}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{6}",
+>>>>>>> upstream/main
 			"type": "Creature — Octopus Fish",
 			"collector_number": "11",
 			"image_uris": {
@@ -1122,8 +1682,13 @@
 		},
 		{
 			"name": "Explorers Compass",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}",
+>>>>>>> upstream/main
 			"type": "Artifact — Equipment",
 			"collector_number": "280",
 			"image_uris": {
@@ -1132,8 +1697,13 @@
 		},
 		{
 			"name": "Pinnacle Wanderer",
+<<<<<<< HEAD
 			"rarity": "uncommon",
-			"mana_cost": "{CW}{CW}",
+			"mana_cost": "CWCW",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "IWIW",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Incarnation Icon",
 			"collector_number": "180",
 			"image_uris": {
@@ -1142,8 +1712,13 @@
 		},
 		{
 			"name": "Frostnip Watcher",
+<<<<<<< HEAD
 			"rarity": "uncommon",
-			"mana_cost": "{CU}{CU}",
+			"mana_cost": "CUCU",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "IUIU",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Incarnation Icon",
 			"collector_number": "170",
 			"image_uris": {
@@ -1152,8 +1727,13 @@
 		},
 		{
 			"name": "Shroud Walkers",
+<<<<<<< HEAD
 			"rarity": "uncommon",
-			"mana_cost": "{1}{CB}{CB}",
+			"mana_cost": "{1}CBCB",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}IBIB",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Incarnation Icon",
 			"collector_number": "183",
 			"image_uris": {
@@ -1162,8 +1742,13 @@
 		},
 		{
 			"name": "Verem-Volcano Stalker",
+<<<<<<< HEAD
 			"rarity": "uncommon",
-			"mana_cost": "{1}{CR}{CR}",
+			"mana_cost": "{1}CRCR",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}IRIR",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Incarnation Icon",
 			"collector_number": "185",
 			"image_uris": {
@@ -1172,8 +1757,13 @@
 		},
 		{
 			"name": "Power of Oath",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{W}",
+=======
+			"rarity": "common",
+			"mana_cost": "{W}",
+>>>>>>> upstream/main
 			"type": "Enchantment — Aura",
 			"collector_number": "39",
 			"image_uris": {
@@ -1182,8 +1772,13 @@
 		},
 		{
 			"name": "Iconic Absolution",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "31",
 			"image_uris": {
@@ -1192,8 +1787,13 @@
 		},
 		{
 			"name": "Wipe the Wicked",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "49",
 			"image_uris": {
@@ -1202,8 +1802,13 @@
 		},
 		{
 			"name": "Stalwart Resolution",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "44",
 			"image_uris": {
@@ -1212,8 +1817,13 @@
 		},
 		{
 			"name": "Fadove Willshaper",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{W}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Cleric Spellshaper",
 			"collector_number": "27",
 			"image_uris": {
@@ -1222,8 +1832,13 @@
 		},
 		{
 			"name": "Returned from Beyond",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{4}{B}{B}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{4}{B}{B}",
+>>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "109",
 			"image_uris": {
@@ -1232,8 +1847,13 @@
 		},
 		{
 			"name": "Rift Burn",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}{R}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{R}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "141",
 			"image_uris": {
@@ -1242,8 +1862,13 @@
 		},
 		{
 			"name": "Windshaper Drake",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Drake",
 			"collector_number": "83",
 			"image_uris": {
@@ -1252,8 +1877,13 @@
 		},
 		{
 			"name": "Study the Rifts",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}{U}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{U}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "79",
 			"image_uris": {
@@ -1262,8 +1892,13 @@
 		},
 		{
 			"name": "Blessing of Uth",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+>>>>>>> upstream/main
 			"type": "Artifact — Equipment",
 			"collector_number": "248",
 			"image_uris": {
@@ -1272,8 +1907,13 @@
 		},
 		{
 			"name": "Multaphs Resplendant",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Elk",
 			"collector_number": "265",
 			"image_uris": {
@@ -1282,8 +1922,13 @@
 		},
 		{
 			"name": "Bruin Outlander",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Bear Scout",
 			"collector_number": "253",
 			"image_uris": {
@@ -1292,8 +1937,13 @@
 		},
 		{
 			"name": "Dark Lessons",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+>>>>>>> upstream/main
 			"type": "Enchantment — Aura",
 			"collector_number": "95",
 			"image_uris": {
@@ -1302,8 +1952,13 @@
 		},
 		{
 			"name": "Chromaboon Blade",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{R}",
+>>>>>>> upstream/main
 			"type": "Artifact — Equipment",
 			"collector_number": "121",
 			"image_uris": {
@@ -1312,8 +1967,13 @@
 		},
 		{
 			"name": "Towering Protector",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{R}{R}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{R}{R}",
+>>>>>>> upstream/main
 			"type": "Artifact Creature — Construct",
 			"collector_number": "145",
 			"image_uris": {
@@ -1322,8 +1982,13 @@
 		},
 		{
 			"name": "Sage of the Aeons",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{BR}{BR}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{B/R}{B/R}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Warlock",
 			"collector_number": "229",
 			"image_uris": {
@@ -1332,8 +1997,13 @@
 		},
 		{
 			"name": "Avakin Opportunist",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+>>>>>>> upstream/main
 			"type": "Creature — Bird Warlock",
 			"collector_number": "52",
 			"image_uris": {
@@ -1342,8 +2012,13 @@
 		},
 		{
 			"name": "Sage of Truths",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{U}",
+>>>>>>> upstream/main
 			"type": "Creature — Elf Shaman Spellshaper",
 			"collector_number": "74",
 			"image_uris": {
@@ -1352,8 +2027,13 @@
 		},
 		{
 			"name": "Stalwart Guard",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{WU}{WU}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{W/U}{W/U}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Wolf Entity",
 			"collector_number": "233",
 			"image_uris": {
@@ -1362,8 +2042,13 @@
 		},
 		{
 			"name": "Outlands Wanderer",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Scout Spellshaper",
 			"collector_number": "66",
 			"image_uris": {
@@ -1372,8 +2057,13 @@
 		},
 		{
 			"name": "Frostborn Glimmer",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Bird",
 			"collector_number": "61",
 			"image_uris": {
@@ -1382,8 +2072,13 @@
 		},
 		{
 			"name": "Kaln-Ocean Cloak",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{U}",
+>>>>>>> upstream/main
 			"type": "Artifact — Equipment",
 			"collector_number": "64",
 			"image_uris": {
@@ -1392,8 +2087,13 @@
 		},
 		{
 			"name": "Suffused Memories",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "80",
 			"image_uris": {
@@ -1402,8 +2102,13 @@
 		},
 		{
 			"name": "Search For Wisdom",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+>>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "75",
 			"image_uris": {
@@ -1412,8 +2117,13 @@
 		},
 		{
 			"name": "Avakin Watcher",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+>>>>>>> upstream/main
 			"type": "Creature — Bird Warlock Spellshaper",
 			"collector_number": "54",
 			"image_uris": {
@@ -1422,8 +2132,13 @@
 		},
 		{
 			"name": "Transient Eternity",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{WU}{WU}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{W/U}{W/U}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Wizard",
 			"collector_number": "237",
 			"image_uris": {
@@ -1432,8 +2147,13 @@
 		},
 		{
 			"name": "Abrupt Death",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{UB}{UB}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{U/B}{U/B}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Scout",
 			"collector_number": "187",
 			"image_uris": {
@@ -1442,8 +2162,13 @@
 		},
 		{
 			"name": "Fleeting Ruin",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{BR}{BR}",
+=======
+			"rarity": "common",
+			"mana_cost": "{B/R}{B/R}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Rogue",
 			"collector_number": "211",
 			"image_uris": {
@@ -1452,8 +2177,13 @@
 		},
 		{
 			"name": "Impetuous Eradication",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{RG}{RG}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{R/G}{R/G}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Berserker",
 			"collector_number": "214",
 			"image_uris": {
@@ -1462,8 +2192,13 @@
 		},
 		{
 			"name": "Ephemeral Ordinance",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{GW}{GW}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}{G/W}{G/W}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Warrior",
 			"collector_number": "208",
 			"image_uris": {
@@ -1472,8 +2207,13 @@
 		},
 		{
 			"name": "Vanishing Resolve",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{WB}{WB}",
+=======
+			"rarity": "common",
+			"mana_cost": "{W/B}{W/B}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Warlock",
 			"collector_number": "240",
 			"image_uris": {
@@ -1482,8 +2222,13 @@
 		},
 		{
 			"name": "Cursory Casualty",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{BG}{BG}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{B/G}{B/G}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Warlock",
 			"collector_number": "204",
 			"image_uris": {
@@ -1492,8 +2237,13 @@
 		},
 		{
 			"name": "Transitory Refuge",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{GU}{GU}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}{G/U}{G/U}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Nomad",
 			"collector_number": "238",
 			"image_uris": {
@@ -1502,8 +2252,13 @@
 		},
 		{
 			"name": "Evanescent Impasse",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{UR}{UR}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{U/R}{U/R}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Mystic",
 			"collector_number": "210",
 			"image_uris": {
@@ -1512,8 +2267,13 @@
 		},
 		{
 			"name": "Sublime Liquidation",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{RW}{RW}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{R/W}{R/W}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Warrior",
 			"collector_number": "234",
 			"image_uris": {
@@ -1522,8 +2282,13 @@
 		},
 		{
 			"name": "Mistblade Rogue",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}{B}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{B}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Rogue",
 			"collector_number": "103",
 			"image_uris": {
@@ -1532,8 +2297,13 @@
 		},
 		{
 			"name": "Manifesting Ardor",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Druid",
 			"collector_number": "261",
 			"image_uris": {
@@ -1542,8 +2312,13 @@
 		},
 		{
 			"name": "Prismatic Powerstone",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{3}",
+>>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "283",
 			"image_uris": {
@@ -1552,8 +2327,13 @@
 		},
 		{
 			"name": "Razorshell Drake",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{U}{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{4}{U}{U}",
+>>>>>>> upstream/main
 			"type": "Creature — Drake Turtle",
 			"collector_number": "70",
 			"image_uris": {
@@ -1562,8 +2342,13 @@
 		},
 		{
 			"name": "Verem-Volcano Warrior",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{4}{R}{R}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{4}{R}{R}",
+>>>>>>> upstream/main
 			"type": "Creature — Wurm Warrior",
 			"collector_number": "149",
 			"image_uris": {
@@ -1572,8 +2357,13 @@
 		},
 		{
 			"name": "Outlands Protector",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{G}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Mercenary Spellshaper",
 			"collector_number": "269",
 			"image_uris": {
@@ -1582,8 +2372,13 @@
 		},
 		{
 			"name": "Smoldering Entity",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{R}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Dragon Entity",
 			"collector_number": "143",
 			"image_uris": {
@@ -1592,8 +2387,13 @@
 		},
 		{
 			"name": "Skywatch Entity",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Bird Entity",
 			"collector_number": "77",
 			"image_uris": {
@@ -1602,8 +2402,13 @@
 		},
 		{
 			"name": "Giants Blade",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{W}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{W}",
+>>>>>>> upstream/main
 			"type": "Artifact — Equipment",
 			"collector_number": "28",
 			"image_uris": {
@@ -1612,8 +2417,13 @@
 		},
 		{
 			"name": "Voidborn Entity",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{BR}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{B/R}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Rat Entity",
 			"collector_number": "241",
 			"image_uris": {
@@ -1622,8 +2432,13 @@
 		},
 		{
 			"name": "Chittering Entity",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{GW}",
+=======
+			"rarity": "common",
+			"mana_cost": "{G/W}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Squirrel Entity",
 			"collector_number": "199",
 			"image_uris": {
@@ -1632,8 +2447,13 @@
 		},
 		{
 			"name": "Riftborn Flames",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "142",
 			"image_uris": {
@@ -1642,8 +2462,13 @@
 		},
 		{
 			"name": "Shining Idol",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Cleric",
 			"collector_number": "43",
 			"image_uris": {
@@ -1652,8 +2477,13 @@
 		},
 		{
 			"name": "Triumphant Entrance",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "45",
 			"image_uris": {
@@ -1662,8 +2492,13 @@
 		},
 		{
 			"name": "Midnight Raven",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{WB}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{W/B}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Bird Entity",
 			"collector_number": "215",
 			"image_uris": {
@@ -1672,8 +2507,13 @@
 		},
 		{
 			"name": "Outlands Riftbearer",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Warlock Spellshaper",
 			"collector_number": "36",
 			"image_uris": {
@@ -1682,8 +2522,13 @@
 		},
 		{
 			"name": "Mordel Clanwarden",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Scout",
 			"collector_number": "262",
 			"image_uris": {
@@ -1692,8 +2537,13 @@
 		},
 		{
 			"name": "Warden of the Lost",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Shaman",
 			"collector_number": "116",
 			"image_uris": {
@@ -1702,8 +2552,13 @@
 		},
 		{
 			"name": "Warforged Herald",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Warrior Spellshaper",
 			"collector_number": "150",
 			"image_uris": {
@@ -1712,8 +2567,13 @@
 		},
 		{
 			"name": "Iconic Incident",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "63",
 			"image_uris": {
@@ -1722,8 +2582,13 @@
 		},
 		{
 			"name": "Mordel Warrior",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Bear Warrior Spellshaper",
 			"collector_number": "264",
 			"image_uris": {
@@ -1732,8 +2597,13 @@
 		},
 		{
 			"name": "Keeper of Calm",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Bear Shaman Spellshaper",
 			"collector_number": "259",
 			"image_uris": {
@@ -1742,8 +2612,13 @@
 		},
 		{
 			"name": "Avlod Bulwark",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{B}{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{4}{B}{B}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Warlock Spellshaper",
 			"collector_number": "90",
 			"image_uris": {
@@ -1752,8 +2627,13 @@
 		},
 		{
 			"name": "Faloden Thickets",
+<<<<<<< HEAD
 			"rarity": "uncommon",
-			"mana_cost": "{1}{CG}{CG}",
+			"mana_cost": "{1}CGCG",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}IGIG",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Incarnation Icon",
 			"collector_number": "169",
 			"image_uris": {
@@ -1762,8 +2642,13 @@
 		},
 		{
 			"name": "Faloden Tear-Warden",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+>>>>>>> upstream/main
 			"type": "Creature — Beast Horror",
 			"collector_number": "4",
 			"image_uris": {
@@ -1772,8 +2657,13 @@
 		},
 		{
 			"name": "Tofnet Predator",
+<<<<<<< HEAD
 			"rarity": "uncommon",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}C",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}I",
+>>>>>>> upstream/main
 			"type": "Creature — Insect",
 			"collector_number": "163",
 			"image_uris": {
@@ -1782,8 +2672,13 @@
 		},
 		{
 			"name": "Remnant Awakener",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{5}",
+=======
+			"rarity": "common",
+			"mana_cost": "{5}",
+>>>>>>> upstream/main
 			"type": "Creature — Nightmare",
 			"collector_number": "9",
 			"image_uris": {
@@ -1792,8 +2687,13 @@
 		},
 		{
 			"name": "Waterspout",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{GU}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{G/U}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "242",
 			"image_uris": {
@@ -1802,8 +2702,13 @@
 		},
 		{
 			"name": "Malevolent Naginata",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{B}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{B}",
+>>>>>>> upstream/main
 			"type": "Artifact — Equipment",
 			"collector_number": "102",
 			"image_uris": {
@@ -1812,8 +2717,13 @@
 		},
 		{
 			"name": "Skillful Blade",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+>>>>>>> upstream/main
 			"type": "Artifact — Equipment",
 			"collector_number": "76",
 			"image_uris": {
@@ -1822,8 +2732,13 @@
 		},
 		{
 			"name": "Tattered Entity",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Spirit Entity",
 			"collector_number": "113",
 			"image_uris": {
@@ -1832,8 +2747,13 @@
 		},
 		{
 			"name": "Crowned Entity",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{G}{G}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{G}{G}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Elk Entity",
 			"collector_number": "254",
 			"image_uris": {
@@ -1842,8 +2762,13 @@
 		},
 		{
 			"name": "Flaming Iron",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{R}",
+=======
+			"rarity": "common",
+			"mana_cost": "{R}",
+>>>>>>> upstream/main
 			"type": "Artifact — Equipment",
 			"collector_number": "125",
 			"image_uris": {
@@ -1852,8 +2777,13 @@
 		},
 		{
 			"name": "Usher of the Lost",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Elk Entity",
 			"collector_number": "47",
 			"image_uris": {
@@ -1862,8 +2792,13 @@
 		},
 		{
 			"name": "Voidstone Shard",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
+=======
+			"rarity": "special",
+			"mana_cost": "{2}",
+>>>>>>> upstream/main
 			"type": "Trace Enchantment",
 			"collector_number": "5",
 			"image_uris": {
@@ -1872,8 +2807,13 @@
 		},
 		{
 			"name": "Reformed Rift",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Trace Land",
 			"collector_number": "34",
 			"image_uris": {
@@ -1882,8 +2822,13 @@
 		},
 		{
 			"name": "Vin-Mountain",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Basic Land — Mountain",
 			"collector_number": "32",
 			"image_uris": {
@@ -1892,8 +2837,13 @@
 		},
 		{
 			"name": "Subdued Rift",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{WB}",
+=======
+			"rarity": "special",
+			"mana_cost": "{W/B}",
+>>>>>>> upstream/main
 			"type": "Trace Skill Sorcery",
 			"collector_number": "27",
 			"image_uris": {
@@ -1902,8 +2852,13 @@
 		},
 		{
 			"name": "Hollow Graze",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{UB}",
+=======
+			"rarity": "special",
+			"mana_cost": "{U/B}",
+>>>>>>> upstream/main
 			"type": "Trace Skill Instant",
 			"collector_number": "21",
 			"image_uris": {
@@ -1912,8 +2867,13 @@
 		},
 		{
 			"name": "Ever Vigilant",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{1}{GU}",
+=======
+			"rarity": "special",
+			"mana_cost": "{1}{G/U}",
+>>>>>>> upstream/main
 			"type": "Trace Skill Sorcery",
 			"collector_number": "20",
 			"image_uris": {
@@ -1922,8 +2882,13 @@
 		},
 		{
 			"name": "Steady Growth",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{1}{BG}",
+=======
+			"rarity": "special",
+			"mana_cost": "{1}{B/G}",
+>>>>>>> upstream/main
 			"type": "Trace Enchantment",
 			"collector_number": "26",
 			"image_uris": {
@@ -1932,8 +2897,13 @@
 		},
 		{
 			"name": "Prepared Strike",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{R}",
+=======
+			"rarity": "special",
+			"mana_cost": "{R}",
+>>>>>>> upstream/main
 			"type": "Trace Skill Sorcery",
 			"collector_number": "14",
 			"image_uris": {
@@ -1942,8 +2912,13 @@
 		},
 		{
 			"name": "In the Moment",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{1}{R}",
+=======
+			"rarity": "special",
+			"mana_cost": "{1}{R}",
+>>>>>>> upstream/main
 			"type": "Trace Skill Sorcery",
 			"collector_number": "13",
 			"image_uris": {
@@ -1952,8 +2927,13 @@
 		},
 		{
 			"name": "Reshape Will",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{1}{WU}",
+=======
+			"rarity": "special",
+			"mana_cost": "{1}{W/U}",
+>>>>>>> upstream/main
 			"type": "Trace Skill Instant",
 			"collector_number": "25",
 			"image_uris": {
@@ -1962,8 +2942,13 @@
 		},
 		{
 			"name": "Readied Assault",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}{RW}",
+=======
+			"rarity": "special",
+			"mana_cost": "{2}{R/W}",
+>>>>>>> upstream/main
 			"type": "Trace Skill Sorcery",
 			"collector_number": "24",
 			"image_uris": {
@@ -1972,8 +2957,13 @@
 		},
 		{
 			"name": "Military Training",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{GW}",
+=======
+			"rarity": "special",
+			"mana_cost": "{G/W}",
+>>>>>>> upstream/main
 			"type": "Trace Skill Instant",
 			"collector_number": "23",
 			"image_uris": {
@@ -1982,8 +2972,13 @@
 		},
 		{
 			"name": "White Drake Token",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Token Creature — Drake",
 			"collector_number": "7",
 			"image_uris": {
@@ -1992,8 +2987,13 @@
 		},
 		{
 			"name": "Icebound Reinforcements Token",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{1}{GU}{GU}",
+=======
+			"rarity": "special",
+			"mana_cost": "{1}{G/U}{G/U}",
+>>>>>>> upstream/main
 			"type": "Token Creature — Human Scout",
 			"collector_number": "22",
 			"image_uris": {
@@ -2002,8 +3002,13 @@
 		},
 		{
 			"name": "Luminous",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Token Reminder",
 			"collector_number": "1",
 			"image_uris": {
@@ -2012,8 +3017,13 @@
 		},
 		{
 			"name": "Breaking the Mold",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{RG}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R/G}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "195",
 			"image_uris": {
@@ -2022,8 +3032,13 @@
 		},
 		{
 			"name": "Cat Token",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
+=======
+			"rarity": "common",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Token Enchantment Creature — Cat",
 			"collector_number": "19",
 			"image_uris": {
@@ -2032,8 +3047,13 @@
 		},
 		{
 			"name": "Warped Exploration",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
+=======
+			"rarity": "special",
+			"mana_cost": "{2}",
+>>>>>>> upstream/main
 			"type": "Trace Skill Sorcery",
 			"collector_number": "6",
 			"image_uris": {
@@ -2042,8 +3062,13 @@
 		},
 		{
 			"name": "Blue Drake Token",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Token Creature — Drake",
 			"collector_number": "9",
 			"image_uris": {
@@ -2052,8 +3077,13 @@
 		},
 		{
 			"name": "Vin-Plains",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Basic Land — Plains",
 			"collector_number": "33",
 			"image_uris": {
@@ -2062,8 +3092,13 @@
 		},
 		{
 			"name": "Vin-Island",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Basic Land — Island",
 			"collector_number": "31",
 			"image_uris": {
@@ -2072,8 +3107,13 @@
 		},
 		{
 			"name": "Vin-Swamp",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Basic Land — Swamp",
 			"collector_number": "35",
 			"image_uris": {
@@ -2082,8 +3122,13 @@
 		},
 		{
 			"name": "Vin-Forest",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Basic Land — Forest",
 			"collector_number": "30",
 			"image_uris": {
@@ -2092,8 +3137,13 @@
 		},
 		{
 			"name": "Harsh Reprise",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{B}",
+=======
+			"rarity": "special",
+			"mana_cost": "{B}",
+>>>>>>> upstream/main
 			"type": "Trace Skill Instant",
 			"collector_number": "12",
 			"image_uris": {
@@ -2102,8 +3152,13 @@
 		},
 		{
 			"name": "Ruins of Multa",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{W}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{2}{W}",
+>>>>>>> upstream/main
 			"type": "Legendary Enchantment Artifact",
 			"collector_number": "42",
 			"image_uris": {
@@ -2112,8 +3167,13 @@
 		},
 		{
 			"name": "Multaph Riftborn God",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{B}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{B}",
+>>>>>>> upstream/main
 			"type": "Legendary Enchantment Creature — Icon Elk God",
 			"collector_number": "175",
 			"image_uris": {
@@ -2122,8 +3182,13 @@
 		},
 		{
 			"name": "Will of Roduth",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{R}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{R}",
+>>>>>>> upstream/main
 			"type": "Creature — God Wurm Reflection",
 			"collector_number": "151",
 			"image_uris": {
@@ -2132,8 +3197,13 @@
 		},
 		{
 			"name": "Will of Multaph",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{U}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{U}",
+>>>>>>> upstream/main
 			"type": "Creature — God Elk Reflection",
 			"collector_number": "82",
 			"image_uris": {
@@ -2142,8 +3212,13 @@
 		},
 		{
 			"name": "Will of Destruction",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{UR}{UR}{B}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{U/R}{U/R}{B}",
+>>>>>>> upstream/main
 			"type": "Legendary Creature — Reflection Wizard",
 			"collector_number": "244",
 			"image_uris": {
@@ -2152,8 +3227,13 @@
 		},
 		{
 			"name": "The Great Tear",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{4}{W}{W}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{4}{W}{W}",
+>>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "29",
 			"image_uris": {
@@ -2162,8 +3242,13 @@
 		},
 		{
 			"name": "Multaph's Respite",
+<<<<<<< HEAD
 			"rarity": "rare",
-			"mana_cost": "{CU}{CR}{CW}",
+			"mana_cost": "CUCRCW",
+=======
+			"rarity": "rare",
+			"mana_cost": "IUIRIW",
+>>>>>>> upstream/main
 			"type": "Legendary Enchantment",
 			"collector_number": "176",
 			"image_uris": {
@@ -2172,8 +3257,13 @@
 		},
 		{
 			"name": "The Wandering Cook",
+<<<<<<< HEAD
 			"rarity": "rare",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}C",
+=======
+			"rarity": "rare",
+			"mana_cost": "{2}I",
+>>>>>>> upstream/main
 			"type": "Legendary Enchantment Creature — Bird",
 			"collector_number": "165",
 			"image_uris": {
@@ -2182,8 +3272,13 @@
 		},
 		{
 			"name": "Najael Travelling Shaman",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{G}{U}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{U}",
+>>>>>>> upstream/main
 			"type": "Legendary Creature — Human Shaman",
 			"collector_number": "177",
 			"image_uris": {
@@ -2192,8 +3287,13 @@
 		},
 		{
 			"name": "Called by the Void",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{B}{B}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{B}{B}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "93",
 			"image_uris": {
@@ -2202,8 +3302,13 @@
 		},
 		{
 			"name": "Ruins of Uth",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{4}{G}{G}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{4}{G}{G}",
+>>>>>>> upstream/main
 			"type": "Legendary Enchantment Artifact",
 			"collector_number": "276",
 			"image_uris": {
@@ -2212,8 +3317,13 @@
 		},
 		{
 			"name": "Will of Hunger",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{3}",
+>>>>>>> upstream/main
 			"type": "Creature — Reflection",
 			"collector_number": "15",
 			"image_uris": {
@@ -2222,8 +3332,13 @@
 		},
 		{
 			"name": "Roduth God of Conflict",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{G}{RW}{RW}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{R/W}{R/W}",
+>>>>>>> upstream/main
 			"type": "Legendary Enchantment Creature — Wurm Elk God",
 			"collector_number": "226",
 			"image_uris": {
@@ -2232,8 +3347,13 @@
 		},
 		{
 			"name": "Thargle",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{4}{B}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{4}{B}",
+>>>>>>> upstream/main
 			"type": "Legendary Creature — Frog Demon",
 			"collector_number": "114",
 			"image_uris": {
@@ -2242,8 +3362,13 @@
 		},
 		{
 			"name": "Cut from Void",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}{U}",
+=======
+			"rarity": "special",
+			"mana_cost": "{2}{U}",
+>>>>>>> upstream/main
 			"type": "Trace Skill Instant",
 			"collector_number": "10",
 			"image_uris": {
@@ -2252,8 +3377,13 @@
 		},
 		{
 			"name": "Rip to Yesterday",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
+=======
+			"rarity": "rare",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "298",
 			"image_uris": {
@@ -2262,8 +3392,13 @@
 		},
 		{
 			"name": "Bark of Tofnet Plains",
+<<<<<<< HEAD
 			"rarity": "common",
-			"mana_cost": "{3}{CW}{CW}",
+			"mana_cost": "{3}CWCW",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}IWIW",
+>>>>>>> upstream/main
 			"type": "Creature — Plant",
 			"collector_number": "167",
 			"image_uris": {
@@ -2272,8 +3407,13 @@
 		},
 		{
 			"name": "Kaln-Ocean Wispop",
+<<<<<<< HEAD
 			"rarity": "common",
-			"mana_cost": "{1}{CU}",
+			"mana_cost": "{1}CU",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}IU",
+>>>>>>> upstream/main
 			"type": "Creature — Jellyfish",
 			"collector_number": "173",
 			"image_uris": {
@@ -2282,8 +3422,13 @@
 		},
 		{
 			"name": "Pathborn Crackle",
+<<<<<<< HEAD
 			"rarity": "common",
-			"mana_cost": "{CR}",
+			"mana_cost": "CR",
+=======
+			"rarity": "common",
+			"mana_cost": "IR",
+>>>>>>> upstream/main
 			"type": "Creature — Elemental",
 			"collector_number": "179",
 			"image_uris": {
@@ -2292,8 +3437,13 @@
 		},
 		{
 			"name": "Guardian of Faloden Woods",
+<<<<<<< HEAD
 			"rarity": "common",
-			"mana_cost": "{2}{CG}{CG}",
+			"mana_cost": "{2}CGCG",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}IGIG",
+>>>>>>> upstream/main
 			"type": "Creature — Beast",
 			"collector_number": "171",
 			"image_uris": {
@@ -2302,8 +3452,13 @@
 		},
 		{
 			"name": "Outlands Frostalker",
+<<<<<<< HEAD
 			"rarity": "common",
-			"mana_cost": "{1}{CB}{CB}",
+			"mana_cost": "{1}CBCB",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}IBIB",
+>>>>>>> upstream/main
 			"type": "Creature — Cat Beast",
 			"collector_number": "178",
 			"image_uris": {
@@ -2312,8 +3467,13 @@
 		},
 		{
 			"name": "Fog Walker",
+<<<<<<< HEAD
 			"rarity": "common",
-			"mana_cost": "{C}",
+			"mana_cost": "C",
+=======
+			"rarity": "common",
+			"mana_cost": "I",
+>>>>>>> upstream/main
 			"type": "Creature — Insect",
 			"collector_number": "156",
 			"image_uris": {
@@ -2322,8 +3482,13 @@
 		},
 		{
 			"name": "Dromencals Respite",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "3",
 			"image_uris": {
@@ -2332,8 +3497,13 @@
 		},
 		{
 			"name": "Outlands Respite",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "6",
 			"image_uris": {
@@ -2342,8 +3512,13 @@
 		},
 		{
 			"name": "Melodia Voidtouched",
+<<<<<<< HEAD
 			"rarity": "rare",
-			"mana_cost": "{2}{C}{C}",
+			"mana_cost": "{2}CC",
+=======
+			"rarity": "rare",
+			"mana_cost": "{2}II",
+>>>>>>> upstream/main
 			"type": "Legendary Enchantment Creature — Human Wizard",
 			"collector_number": "158",
 			"image_uris": {
@@ -2352,8 +3527,13 @@
 		},
 		{
 			"name": "Calia Oracle of Tofnet Plains",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{W}{W}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}",
+>>>>>>> upstream/main
 			"type": "Legendary Enchantment Creature — Icon Wizard",
 			"collector_number": "17",
 			"image_uris": {
@@ -2362,8 +3542,13 @@
 		},
 		{
 			"name": "Ola Kaln-Ocean Spellkeeper",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{U}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{U}",
+>>>>>>> upstream/main
 			"type": "Legendary Enchantment Creature — Icon Wurm",
 			"collector_number": "65",
 			"image_uris": {
@@ -2372,8 +3557,13 @@
 		},
 		{
 			"name": "Kier Acolyte of Avlod Respite",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{B}{B}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{B}{B}",
+>>>>>>> upstream/main
 			"type": "Legendary Enchantment Creature — Icon Warlock",
 			"collector_number": "100",
 			"image_uris": {
@@ -2382,8 +3572,13 @@
 		},
 		{
 			"name": "Vane Verem-Volcano Scorcher",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{R}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{R}",
+>>>>>>> upstream/main
 			"type": "Legendary Enchantment Creature — Icon Dragon",
 			"collector_number": "147",
 			"image_uris": {
@@ -2392,8 +3587,13 @@
 		},
 		{
 			"name": "Somma, Blade of Faloden Woods",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{G}{G}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{3}{G}{G}",
+>>>>>>> upstream/main
 			"type": "Legendary Enchantment Creature — Icon Giant",
 			"collector_number": "278",
 			"image_uris": {
@@ -2402,8 +3602,13 @@
 		},
 		{
 			"name": "Khestri Fadove Clanleader",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{W}{W}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{W}",
+>>>>>>> upstream/main
 			"type": "Legendary Creature — Human Knight",
 			"collector_number": "32",
 			"image_uris": {
@@ -2412,8 +3617,13 @@
 		},
 		{
 			"name": "Shivta, Avlod Clanleader",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{UB}{UB}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{U/B}{U/B}",
+>>>>>>> upstream/main
 			"type": "Legendary Creature — Bird Rogue",
 			"collector_number": "230",
 			"image_uris": {
@@ -2422,8 +3632,13 @@
 		},
 		{
 			"name": "Urkial Outlands Clanleader",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{4}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{4}",
+>>>>>>> upstream/main
 			"type": "Legendary Creature — Bear Shaman",
 			"collector_number": "12",
 			"image_uris": {
@@ -2432,8 +3647,13 @@
 		},
 		{
 			"name": "Bruin Mentor",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{G}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Bear Scout Spellshaper",
 			"collector_number": "252",
 			"image_uris": {
@@ -2442,8 +3662,13 @@
 		},
 		{
 			"name": "Raze the Clanless",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{R}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{R}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "140",
 			"image_uris": {
@@ -2452,8 +3677,13 @@
 		},
 		{
 			"name": "Prismatic Offense",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{G}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{G}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Elk Shaman",
 			"collector_number": "181",
 			"image_uris": {
@@ -2462,8 +3692,13 @@
 		},
 		{
 			"name": "Korna, Vinimroth Historian",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{R}{W}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{R}{W}",
+>>>>>>> upstream/main
 			"type": "Legendary Kindred Enchantment — Wurm Entity",
 			"collector_number": "174",
 			"image_uris": {
@@ -2472,8 +3707,13 @@
 		},
 		{
 			"name": "Zoslera Mordel Clanleader",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{RG}{RG}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{3}{R/G}{R/G}",
+>>>>>>> upstream/main
 			"type": "Legendary Creature — Human Knight",
 			"collector_number": "245",
 			"image_uris": {
@@ -2482,8 +3722,13 @@
 		},
 		{
 			"name": "Prophellos Pathborn Hunger",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{5}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{5}",
+>>>>>>> upstream/main
 			"type": "Legendary Creature — God",
 			"collector_number": "8",
 			"image_uris": {
@@ -2492,8 +3737,13 @@
 		},
 		{
 			"name": "Dust for Dust",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{B}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+>>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "96",
 			"image_uris": {
@@ -2502,8 +3752,13 @@
 		},
 		{
 			"name": "Sanctum Reminder",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Reminder",
 			"collector_number": "3",
 			"image_uris": {
@@ -2512,8 +3767,13 @@
 		},
 		{
 			"name": "Pinnacle of Vinimroth",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{R}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+>>>>>>> upstream/main
 			"type": "Legendary Enchantment Artifact",
 			"collector_number": "139",
 			"image_uris": {
@@ -2522,8 +3782,13 @@
 		},
 		{
 			"name": "Attuned Shimmer",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{WB}{WB}{WB}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{W/B}{W/B}{W/B}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Cat Entity",
 			"collector_number": "192",
 			"image_uris": {
@@ -2532,8 +3797,13 @@
 		},
 		{
 			"name": "Bushy Shimmer",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{BG}{BG}{BG}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{B/G}{B/G}{B/G}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Squirrel Entity",
 			"collector_number": "198",
 			"image_uris": {
@@ -2542,8 +3812,13 @@
 		},
 		{
 			"name": "Wild Shimmer",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{GU}{GU}{GU}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{G/U}{G/U}{G/U}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Wolf Entity",
 			"collector_number": "243",
 			"image_uris": {
@@ -2552,8 +3827,13 @@
 		},
 		{
 			"name": "Curious Shimmer",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{UR}{UR}{UR}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{U/R}{U/R}{U/R}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Wurm Entity",
 			"collector_number": "203",
 			"image_uris": {
@@ -2562,8 +3842,13 @@
 		},
 		{
 			"name": "Pouncing Shimmer",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{RW}{RW}{RW}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{R/W}{R/W}{R/W}",
+>>>>>>> upstream/main
 			"type": "Kindred Enchantment — Cat Entity",
 			"collector_number": "223",
 			"image_uris": {
@@ -2572,8 +3857,13 @@
 		},
 		{
 			"name": "Runed Spire",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
+=======
+			"rarity": "rare",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "299",
 			"image_uris": {
@@ -2582,8 +3872,13 @@
 		},
 		{
 			"name": "Pathbound",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Reminder",
 			"collector_number": "2",
 			"image_uris": {
@@ -2592,8 +3887,13 @@
 		},
 		{
 			"name": "Fadove Pathwarden",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{W}{W}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{W}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Warrior",
 			"collector_number": "23",
 			"image_uris": {
@@ -2602,8 +3902,13 @@
 		},
 		{
 			"name": "Path of Insight",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{U}{U}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{U}{U}",
+>>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "67",
 			"image_uris": {
@@ -2612,8 +3917,13 @@
 		},
 		{
 			"name": "Path of Revival",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{B}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{B}",
+>>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "106",
 			"image_uris": {
@@ -2622,8 +3932,13 @@
 		},
 		{
 			"name": "Keeper of Faloden Woods",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{4}{G}{G}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{4}{G}{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Wurm Druid",
 			"collector_number": "260",
 			"image_uris": {
@@ -2632,8 +3947,13 @@
 		},
 		{
 			"name": "Mistveil Drake",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{5}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{5}",
+>>>>>>> upstream/main
 			"type": "Creature — Drake",
 			"collector_number": "5",
 			"image_uris": {
@@ -2642,8 +3962,13 @@
 		},
 		{
 			"name": "Mordel Combatant",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{R}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{R}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Warrior",
 			"collector_number": "131",
 			"image_uris": {
@@ -2652,8 +3977,13 @@
 		},
 		{
 			"name": "Bearer of Change",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{U}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{U}",
+>>>>>>> upstream/main
 			"type": "Creature — Elf Spellshaper",
 			"collector_number": "57",
 			"image_uris": {
@@ -2662,8 +3992,13 @@
 		},
 		{
 			"name": "Mordel Razer",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{R}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{R}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Wizard",
 			"collector_number": "135",
 			"image_uris": {
@@ -2672,8 +4007,13 @@
 		},
 		{
 			"name": "Pathborn Aggression",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{B}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{B}",
+>>>>>>> upstream/main
 			"type": "Enchantment Creature — Icon Warlock",
 			"collector_number": "108",
 			"image_uris": {
@@ -2682,8 +4022,13 @@
 		},
 		{
 			"name": "Eternities Weaver",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{G}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Druid",
 			"collector_number": "255",
 			"image_uris": {
@@ -2692,8 +4037,13 @@
 		},
 		{
 			"name": "Guardian Roost",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{W}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+>>>>>>> upstream/main
 			"type": "Creature — Drake",
 			"collector_number": "30",
 			"image_uris": {
@@ -2702,8 +4052,13 @@
 		},
 		{
 			"name": "Path to Restoration",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{W}{W}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{3}{W}{W}",
+>>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "38",
 			"image_uris": {
@@ -2712,8 +4067,13 @@
 		},
 		{
 			"name": "Path to Ages",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{R}{R}{R}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{R}{R}{R}",
+>>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "138",
 			"image_uris": {
@@ -2722,8 +4082,13 @@
 		},
 		{
 			"name": "Breach of Protection",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{W}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "16",
 			"image_uris": {
@@ -2732,8 +4097,13 @@
 		},
 		{
 			"name": "Breach of Sanity",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{U}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{U}",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "58",
 			"image_uris": {
@@ -2742,8 +4112,13 @@
 		},
 		{
 			"name": "Breach of Malice",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{R}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "118",
 			"image_uris": {
@@ -2752,8 +4127,13 @@
 		},
 		{
 			"name": "Breach of Nature",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{G}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{2}{G}",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "250",
 			"image_uris": {
@@ -2762,8 +4142,13 @@
 		},
 		{
 			"name": "Breach of Mortality",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{B}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{3}{B}",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "92",
 			"image_uris": {
@@ -2772,8 +4157,13 @@
 		},
 		{
 			"name": "Breach of the Unknown",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{3}",
+>>>>>>> upstream/main
 			"type": "Enchantment — Aura",
 			"collector_number": "2",
 			"image_uris": {
@@ -2782,8 +4172,13 @@
 		},
 		{
 			"name": "Path of the Grove",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{G}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{G}",
+>>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "270",
 			"image_uris": {
@@ -2792,8 +4187,13 @@
 		},
 		{
 			"name": "Pathborn Drake",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{U}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}{U}",
+>>>>>>> upstream/main
 			"type": "Creature — Drake",
 			"collector_number": "69",
 			"image_uris": {
@@ -2802,8 +4202,13 @@
 		},
 		{
 			"name": "Outlands Pathwarden",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{B}{B}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}",
+>>>>>>> upstream/main
 			"type": "Creature — Bird Warrior",
 			"collector_number": "104",
 			"image_uris": {
@@ -2812,8 +4217,13 @@
 		},
 		{
 			"name": "Fadove Reinforcement",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+>>>>>>> upstream/main
 			"type": "Creature — Hyena Warrior",
 			"collector_number": "24",
 			"image_uris": {
@@ -2822,8 +4232,13 @@
 		},
 		{
 			"name": "Avlod Pathshaper",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Wizard",
 			"collector_number": "56",
 			"image_uris": {
@@ -2832,8 +4247,13 @@
 		},
 		{
 			"name": "Outlands Traveller",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{B}{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}{B}{B}",
+>>>>>>> upstream/main
 			"type": "Creature — Human Warrior",
 			"collector_number": "105",
 			"image_uris": {
@@ -2842,8 +4262,13 @@
 		},
 		{
 			"name": "Mordel Reinforcement",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{R}{R}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{R}{R}",
+>>>>>>> upstream/main
 			"type": "Creature — Minotaur Warrior",
 			"collector_number": "136",
 			"image_uris": {
@@ -2852,8 +4277,13 @@
 		},
 		{
 			"name": "Outlands Guardian",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+>>>>>>> upstream/main
 			"type": "Creature — Bear Warrior",
 			"collector_number": "268",
 			"image_uris": {
@@ -2862,8 +4292,13 @@
 		},
 		{
 			"name": "Paths Strider",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}",
+=======
+			"rarity": "common",
+			"mana_cost": "{3}",
+>>>>>>> upstream/main
 			"type": "Creature — Beast",
 			"collector_number": "7",
 			"image_uris": {
@@ -2872,8 +4307,13 @@
 		},
 		{
 			"name": "Path of the Proud",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "37",
 			"image_uris": {
@@ -2882,8 +4322,13 @@
 		},
 		{
 			"name": "Path of the Roost",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "68",
 			"image_uris": {
@@ -2892,8 +4337,13 @@
 		},
 		{
 			"name": "Path of the Rift",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "107",
 			"image_uris": {
@@ -2902,8 +4352,13 @@
 		},
 		{
 			"name": "Path of the Brood",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{R}",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "137",
 			"image_uris": {
@@ -2912,8 +4367,13 @@
 		},
 		{
 			"name": "Path of the Mighty",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "271",
 			"image_uris": {
@@ -2922,8 +4382,13 @@
 		},
 		{
 			"name": "Pathbound Bloom",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}",
+>>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "281",
 			"image_uris": {
@@ -2932,8 +4397,13 @@
 		},
 		{
 			"name": "Vin Plains",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Basic Land — Plains",
 			"collector_number": "4",
 			"image_uris": {
@@ -2942,8 +4412,13 @@
 		},
 		{
 			"name": "Vin Island",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Basic Land — Island",
 			"collector_number": "2",
 			"image_uris": {
@@ -2952,8 +4427,13 @@
 		},
 		{
 			"name": "Vin Swamp",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Basic Land — Swamp",
 			"collector_number": "5",
 			"image_uris": {
@@ -2962,8 +4442,13 @@
 		},
 		{
 			"name": "Vin Mountain",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Basic Land — Mountain",
 			"collector_number": "3",
 			"image_uris": {
@@ -2972,8 +4457,13 @@
 		},
 		{
 			"name": "Vin Forest",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Basic Land — Forest",
 			"collector_number": "1",
 			"image_uris": {
@@ -2982,8 +4472,13 @@
 		},
 		{
 			"name": "Crackling Plains",
+<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "",
+=======
+			"rarity": "mythic",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "285",
 			"image_uris": {
@@ -2992,8 +4487,13 @@
 		},
 		{
 			"name": "Restored Plains",
+<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "",
+=======
+			"rarity": "mythic",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land — Plains",
 			"collector_number": "294",
 			"image_uris": {
@@ -3002,8 +4502,13 @@
 		},
 		{
 			"name": "Splintered Island",
+<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "",
+=======
+			"rarity": "mythic",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "302",
 			"image_uris": {
@@ -3012,8 +4517,13 @@
 		},
 		{
 			"name": "Furrowed Mountain",
+<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "",
+=======
+			"rarity": "mythic",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "289",
 			"image_uris": {
@@ -3022,8 +4532,13 @@
 		},
 		{
 			"name": "Restored Island",
+<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "",
+=======
+			"rarity": "mythic",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land — Island",
 			"collector_number": "292",
 			"image_uris": {
@@ -3032,8 +4547,13 @@
 		},
 		{
 			"name": "Restored Swamp",
+<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "",
+=======
+			"rarity": "mythic",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land — Swamp",
 			"collector_number": "295",
 			"image_uris": {
@@ -3042,8 +4562,13 @@
 		},
 		{
 			"name": "Restored Mountain",
+<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "",
+=======
+			"rarity": "mythic",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land — Mountain",
 			"collector_number": "293",
 			"image_uris": {
@@ -3052,8 +4577,13 @@
 		},
 		{
 			"name": "Restored Forest",
+<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "",
+=======
+			"rarity": "mythic",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land — Forest",
 			"collector_number": "291",
 			"image_uris": {
@@ -3062,8 +4592,13 @@
 		},
 		{
 			"name": "Rip to Today",
+<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "",
+=======
+			"rarity": "mythic",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "296",
 			"image_uris": {
@@ -3072,8 +4607,13 @@
 		},
 		{
 			"name": "Divided Forest",
+<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "",
+=======
+			"rarity": "mythic",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "286",
 			"image_uris": {
@@ -3082,8 +4622,13 @@
 		},
 		{
 			"name": "Sundered Swamp",
+<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "",
+=======
+			"rarity": "mythic",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "303",
 			"image_uris": {
@@ -3092,8 +4637,13 @@
 		},
 		{
 			"name": "Unstable Rift",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "304",
 			"image_uris": {
@@ -3102,8 +4652,13 @@
 		},
 		{
 			"name": "Spire of Hunger",
+<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "",
+=======
+			"rarity": "mythic",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "301",
 			"image_uris": {
@@ -3112,8 +4667,13 @@
 		},
 		{
 			"name": "Shimmering Path",
+<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "",
+=======
+			"rarity": "mythic",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "300",
 			"image_uris": {
@@ -3122,8 +4682,13 @@
 		},
 		{
 			"name": "Flashing Path",
+<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "",
+=======
+			"rarity": "mythic",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "288",
 			"image_uris": {
@@ -3132,8 +4697,13 @@
 		},
 		{
 			"name": "Tethers of Insanity",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}{U}{U}",
+>>>>>>> upstream/main
 			"type": "Enchantment — Aura",
 			"collector_number": "81",
 			"image_uris": {
@@ -3142,8 +4712,13 @@
 		},
 		{
 			"name": "Eternity Siphon",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{B}",
+=======
+			"rarity": "common",
+			"mana_cost": "{B}",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "97",
 			"image_uris": {
@@ -3152,8 +4727,13 @@
 		},
 		{
 			"name": "Tofnet Thrummer",
+<<<<<<< HEAD
 			"rarity": "uncommon",
-			"mana_cost": "{C}",
+			"mana_cost": "C",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "I",
+>>>>>>> upstream/main
 			"type": "Creature — Bird",
 			"collector_number": "164",
 			"image_uris": {
@@ -3162,8 +4742,13 @@
 		},
 		{
 			"name": "Faloden Scavenger",
+<<<<<<< HEAD
 			"rarity": "rare",
-			"mana_cost": "{2}{C}",
+			"mana_cost": "{2}C",
+=======
+			"rarity": "rare",
+			"mana_cost": "{2}I",
+>>>>>>> upstream/main
 			"type": "Creature — Fox",
 			"collector_number": "155",
 			"image_uris": {
@@ -3172,8 +4757,13 @@
 		},
 		{
 			"name": "Grazed by the Endless",
+<<<<<<< HEAD
 			"rarity": "common",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}C",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}I",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "157",
 			"image_uris": {
@@ -3182,8 +4772,13 @@
 		},
 		{
 			"name": "Choked Essence",
+<<<<<<< HEAD
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}C",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}I",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "152",
 			"image_uris": {
@@ -3192,8 +4787,13 @@
 		},
 		{
 			"name": "Enduring Sapling",
+<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "",
+=======
+			"rarity": "mythic",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "287",
 			"image_uris": {
@@ -3202,8 +4802,13 @@
 		},
 		{
 			"name": "Avakin Hazeweaver",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{U}",
+=======
+			"rarity": "common",
+			"mana_cost": "{U}",
+>>>>>>> upstream/main
 			"type": "Creature — Bird Wizard Spellshaper",
 			"collector_number": "51",
 			"image_uris": {
@@ -3212,8 +4817,13 @@
 		},
 		{
 			"name": "Verem-Volcano Keeper",
+<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{6}",
+=======
+			"rarity": "rare",
+			"mana_cost": "{6}",
+>>>>>>> upstream/main
 			"type": "Creature — Wurm Warrior",
 			"collector_number": "13",
 			"image_uris": {
@@ -3222,8 +4832,13 @@
 		},
 		{
 			"name": "Vin-Fault-Conjure",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Basic Land — Fault",
 			"collector_number": "29",
 			"image_uris": {
@@ -3232,8 +4847,13 @@
 		},
 		{
 			"name": "Vin-Fault",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
+=======
+			"rarity": "common",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Basic Land — Fault",
 			"collector_number": "305",
 			"image_uris": {
@@ -3242,8 +4862,13 @@
 		},
 		{
 			"name": "Restored Fault",
+<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "",
+=======
+			"rarity": "mythic",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Land — Fault",
 			"collector_number": "290",
 			"image_uris": {
@@ -3252,8 +4877,13 @@
 		},
 		{
 			"name": "Ash to Hope",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+>>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "246",
 			"image_uris": {
@@ -3262,8 +4892,13 @@
 		},
 		{
 			"name": "Scouts Bow",
+<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{G}",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{G}",
+>>>>>>> upstream/main
 			"type": "Artifact — Equipment",
 			"collector_number": "277",
 			"image_uris": {
@@ -3272,8 +4907,13 @@
 		},
 		{
 			"name": "xXDust420Xx",
+<<<<<<< HEAD
 			"rarity": "masterpiece",
 			"mana_cost": "{1}{B}",
+=======
+			"rarity": "masterpiece",
+			"mana_cost": "{1}{B}",
+>>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "1",
 			"image_uris": {
@@ -3282,8 +4922,13 @@
 		},
 		{
 			"name": "Paragon of Unknown Sights",
+<<<<<<< HEAD
 			"rarity": "uncommon",
-			"mana_cost": "{3}{C}",
+			"mana_cost": "{3}C",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{3}I",
+>>>>>>> upstream/main
 			"type": "Creature — Human Warrior",
 			"collector_number": "159",
 			"image_uris": {
@@ -3292,8 +4937,13 @@
 		},
 		{
 			"name": "Dustfall",
+<<<<<<< HEAD
 			"rarity": "rare",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}C",
+=======
+			"rarity": "rare",
+			"mana_cost": "{1}I",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "154",
 			"image_uris": {
@@ -3302,8 +4952,13 @@
 		},
 		{
 			"name": "Common Enemy",
+<<<<<<< HEAD
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}C",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}I",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "153",
 			"image_uris": {
@@ -3312,8 +4967,13 @@
 		},
 		{
 			"name": "Power Null",
+<<<<<<< HEAD
 			"rarity": "uncommon",
-			"mana_cost": "{1}{C}",
+			"mana_cost": "{1}C",
+=======
+			"rarity": "uncommon",
+			"mana_cost": "{1}I",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "161",
 			"image_uris": {
@@ -3322,8 +4982,13 @@
 		},
 		{
 			"name": "Weavehorn Chimera",
+<<<<<<< HEAD
 			"rarity": "rare",
-			"mana_cost": "{C}",
+			"mana_cost": "C",
+=======
+			"rarity": "rare",
+			"mana_cost": "I",
+>>>>>>> upstream/main
 			"type": "Creature — Unicorn Chimera",
 			"collector_number": "166",
 			"image_uris": {
@@ -3332,8 +4997,13 @@
 		},
 		{
 			"name": "Ethereal Exposure",
+<<<<<<< HEAD
 			"rarity": "common",
-			"mana_cost": "{2}{CW}",
+			"mana_cost": "{2}CW",
+=======
+			"rarity": "common",
+			"mana_cost": "{2}IW",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "168",
 			"image_uris": {
@@ -3342,8 +5012,13 @@
 		},
 		{
 			"name": "Impunity of Souls",
+<<<<<<< HEAD
 			"rarity": "common",
-			"mana_cost": "{CB}",
+			"mana_cost": "CB",
+=======
+			"rarity": "common",
+			"mana_cost": "IB",
+>>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "172",
 			"image_uris": {
@@ -3352,8 +5027,13 @@
 		},
 		{
 			"name": "Scars of Oil",
+<<<<<<< HEAD
 			"rarity": "common",
-			"mana_cost": "{1}{CU}",
+			"mana_cost": "{1}CU",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}IU",
+>>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "182",
 			"image_uris": {
@@ -3362,8 +5042,13 @@
 		},
 		{
 			"name": "Splendid Genesis",
+<<<<<<< HEAD
 			"rarity": "common",
-			"mana_cost": "{X}{CG}",
+			"mana_cost": "{X}CG",
+=======
+			"rarity": "common",
+			"mana_cost": "{X}IG",
+>>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "184",
 			"image_uris": {
@@ -3372,8 +5057,13 @@
 		},
 		{
 			"name": "Icon",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
+=======
+			"rarity": "common",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Token Enchantment Creature — Icon",
 			"collector_number": "16",
 			"image_uris": {
@@ -3382,8 +5072,13 @@
 		},
 		{
 			"name": "Volatile Visions",
+<<<<<<< HEAD
 			"rarity": "common",
-			"mana_cost": "{1}{CR}",
+			"mana_cost": "{1}CR",
+=======
+			"rarity": "common",
+			"mana_cost": "{1}IR",
+>>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "186",
 			"image_uris": {
@@ -3392,8 +5087,13 @@
 		},
 		{
 			"name": "Multaph's Respite's Spellbook",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Spellbook",
 			"collector_number": "18",
 			"image_uris": {
@@ -3402,8 +5102,13 @@
 		},
 		{
 			"name": "Black Wurm Token",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Token Creature — Wurm",
 			"collector_number": "11",
 			"image_uris": {
@@ -3412,8 +5117,13 @@
 		},
 		{
 			"name": "Green Wurm Token",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Token Creature — Wurm",
 			"collector_number": "28",
 			"image_uris": {
@@ -3422,8 +5132,13 @@
 		},
 		{
 			"name": "Red Wurm Token",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Token Creature — Wurm",
 			"collector_number": "15",
 			"image_uris": {
@@ -3432,8 +5147,13 @@
 		},
 		{
 			"name": "White Wurm Token",
+<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
+=======
+			"rarity": "special",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Token Creature — Wurm",
 			"collector_number": "8",
 			"image_uris": {
@@ -3442,8 +5162,13 @@
 		},
 		{
 			"name": "Trace Reminder",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
+=======
+			"rarity": "common",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Reminder",
 			"collector_number": "4",
 			"image_uris": {
@@ -3452,8 +5177,13 @@
 		},
 		{
 			"name": "Icon Token",
+<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
+=======
+			"rarity": "common",
+			"mana_cost": "",
+>>>>>>> upstream/main
 			"type": "Token Enchantment Creature — Icon",
 			"collector_number": "17",
 			"image_uris": {
