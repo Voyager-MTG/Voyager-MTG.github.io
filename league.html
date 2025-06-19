@@ -314,7 +314,7 @@
             /* border: 2px solid #333;
             box-shadow: 2px 2px 1px #333; */
         }
-        .deck-link-green .deck-icon-green {
+        .deck-link-green .deck-icon-green { 
             background-color: rgba(0,0,0,0);
         }
         hr {
@@ -350,6 +350,43 @@
             text-align: center;
             width: 100%;
             display: block;
+        }
+        .report-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            justify-items: center;
+        }
+        .scores-container {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 15px;
+        }
+        .scores-number-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .report-username {
+            font-family: beleren;
+            font-size: 30px;
+        }
+        .report-scores-btn {
+            background-color: #16e019;
+            color: white;
+            border: 2px solid darkgreen;
+            border-radius: 8px;
+            font-weight: bold;
+            padding: 4px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .player-score-input {
+            font-size: 32px;
+            color: #333;
+            width: 40px;
+            padding: 3px;
+            text-align: center;
         }
     </style>
     <style id="text-style">
@@ -583,6 +620,7 @@
 
             async function reload() {
                 makeDecksTab();
+                makeGamesTab();
             }
 
             function makeDecksTab() {
@@ -834,6 +872,51 @@
                 return decklist_container;
             }
 
+            function makeGamesTab() {
+                const content_container = document.createElement("div");
+                content_container.className = "report-container";
+
+                const opponents_container = document.createElement("div");
+                opponents_container.className = "opponents-container";
+
+                const scores_container = document.createElement("div");
+                scores_container.className = "scores-container";
+
+                const scores_number_container = document.createElement("div");
+                scores_number_container.className = "scores-number-container";
+
+                const p1_score_input = document.createElement("input");
+                p1_score_input.className = "player-score-input";
+                p1_score_input.id = "p1-score-input";
+
+                const divider = document.createElement("div");
+                divider.className = "report-score-divider";
+
+                const p2_score_input = document.createElement("input");
+                p2_score_input.className = "player-score-input";
+                p2_score_input.id = "p2-score-input";
+
+                const submit_scores_btn = document.createElement("button");
+                submit_scores_btn.className = "report-scores-btn";
+                submit_scores_btn.innerText = "Report";
+
+                const username_ele = document.createElement("span");
+                username_ele.className = "report-username text";
+                username_ele.innerText = username;
+
+                scores_number_container.appendChild(p1_score_input);
+                scores_number_container.appendChild(divider);
+                scores_number_container.appendChild(p2_score_input);
+                
+                scores_container.appendChild(scores_number_container);
+                scores_container.appendChild(submit_scores_btn);
+                
+                content_container.appendChild(username_ele);
+                content_container.appendChild(scores_container);
+                content_container.appendChild(opponents_container);
+
+                document.getElementById("games").appendChild(content_container);
+            }
 
             if (sessionid) {
                 reload();
