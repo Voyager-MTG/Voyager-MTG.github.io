@@ -1,14 +1,9 @@
-[CustomCards]
+ï»¿[CustomCards]
 	[
 		{
 			"name": "Radiant Chains",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "26",
 			"image_uris": {
@@ -17,14 +12,9 @@
 		},
 		{
 			"name": "Dutybound Lich",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Advisor",
+			"type": "Creature â€” Skeleton Advisor",
 			"collector_number": "17",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/17_Dutybound Lich.jpg"
@@ -32,14 +22,9 @@
 		},
 		{
 			"name": "Crypt Defenders",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie Soldier",
+			"type": "Creature â€” Zombie Soldier",
 			"collector_number": "11",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/11_Crypt Defenders.jpg"
@@ -47,14 +32,9 @@
 		},
 		{
 			"name": "Kinnamon's Stitched",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie Soldier",
+			"type": "Creature â€” Zombie Soldier",
 			"collector_number": "24",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/24_Kinnamon's Stitched.jpg"
@@ -62,14 +42,9 @@
 		},
 		{
 			"name": "Duskrider Cavalry",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{W}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{W}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Vampire Soldier",
+			"type": "Creature â€” Vampire Soldier",
 			"collector_number": "16",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/16_Duskrider Cavalry.jpg"
@@ -77,14 +52,9 @@
 		},
 		{
 			"name": "Smoke Whisperer",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Elemental Devil",
+			"type": "Creature â€” Elemental Devil",
 			"collector_number": "34",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/34_Smoke Whisperer.jpg"
@@ -92,14 +62,9 @@
 		},
 		{
 			"name": "Faithful Gaze",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "18",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/18_Faithful Gaze.jpg"
@@ -107,13 +72,8 @@
 		},
 		{
 			"name": "Welcoming Touch",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "41",
 			"image_uris": {
@@ -122,14 +82,9 @@
 		},
 		{
 			"name": "Skyclaws",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Cat Bat",
+			"type": "Creature â€” Cat Bat",
 			"collector_number": "33",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/33_Skyclaws.jpg"
@@ -137,14 +92,9 @@
 		},
 		{
 			"name": "Upholder of Rites",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Vampire Wizard",
+			"type": "Creature â€” Vampire Wizard",
 			"collector_number": "39",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/39_Upholder of Rites.jpg"
@@ -152,13 +102,8 @@
 		},
 		{
 			"name": "Return the Forsaken",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{X}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{X}{W}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "29",
 			"image_uris": {
@@ -167,14 +112,9 @@
 		},
 		{
 			"name": "Hungering Sentinel",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
-			"type": "Creature — Vampire Scout",
+			"type": "Creature â€” Vampire Scout",
 			"collector_number": "21",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/21_Hungering Sentinel.jpg"
@@ -182,14 +122,9 @@
 		},
 		{
 			"name": "Tranquil Repose",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{W}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "38",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/38_Tranquil Repose.jpg"
@@ -197,14 +132,9 @@
 		},
 		{
 			"name": "Doubling Imp",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{U}",
->>>>>>> upstream/main
-			"type": "Creature — Imp",
+			"type": "Creature â€” Imp",
 			"collector_number": "51",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/51_Doubling Imp.jpg"
@@ -212,14 +142,9 @@
 		},
 		{
 			"name": "Orbisfaber's Hellspawn",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Demon",
+			"type": "Creature â€” Demon",
 			"collector_number": "69",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/69_Orbisfaber's Hellspawn.jpg"
@@ -227,13 +152,8 @@
 		},
 		{
 			"name": "Secret Dealings",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{U}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "75",
 			"image_uris": {
@@ -242,14 +162,9 @@
 		},
 		{
 			"name": "Warping Whisper",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Shade",
+			"type": "Creature â€” Shade",
 			"collector_number": "82",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/82_Warping Whisper.jpg"
@@ -257,14 +172,9 @@
 		},
 		{
 			"name": "Bloodied Stalker",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Shark Nightmare",
+			"type": "Creature â€” Shark Nightmare",
 			"collector_number": "42",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/42_Bloodied Stalker.jpg"
@@ -272,14 +182,9 @@
 		},
 		{
 			"name": "Gigas Screamer",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{5}{U}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{5}{U}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Merfolk Nightmare",
+			"type": "Creature â€” Merfolk Nightmare",
 			"collector_number": "60",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/60_Gigas Screamer.jpg"
@@ -287,13 +192,8 @@
 		},
 		{
 			"name": "Drag Under",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "52",
 			"image_uris": {
@@ -302,13 +202,8 @@
 		},
 		{
 			"name": "Fractured Epiphany",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{U}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "57",
 			"image_uris": {
@@ -317,13 +212,8 @@
 		},
 		{
 			"name": "Last Sip",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "65",
 			"image_uris": {
@@ -332,14 +222,9 @@
 		},
 		{
 			"name": "Osavotus's Pet",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Imp",
+			"type": "Creature â€” Imp",
 			"collector_number": "72",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/72_Osavotus's Pet.jpg"
@@ -347,13 +232,8 @@
 		},
 		{
 			"name": "Gloom Fracture",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{X}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{X}{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "61",
 			"image_uris": {
@@ -362,13 +242,8 @@
 		},
 		{
 			"name": "End's Embrace",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{U}{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "53",
 			"image_uris": {
@@ -377,14 +252,9 @@
 		},
 		{
 			"name": "Puppet Weaver",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{B}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Spider",
+			"type": "Creature â€” Skeleton Spider",
 			"collector_number": "111",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/111_Puppet Weaver.jpg"
@@ -392,13 +262,8 @@
 		},
 		{
 			"name": "Return for Duty",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{B}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "113",
 			"image_uris": {
@@ -407,14 +272,9 @@
 		},
 		{
 			"name": "Wandering Lich",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Knight",
+			"type": "Creature â€” Skeleton Knight",
 			"collector_number": "121",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/121_Wandering Lich.jpg"
@@ -422,14 +282,9 @@
 		},
 		{
 			"name": "Repurposed Bloodrinker",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Vampire Bat Horror",
+			"type": "Creature â€” Vampire Bat Horror",
 			"collector_number": "153",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/153_Repurposed Bloodrinker.jpg"
@@ -437,14 +292,9 @@
 		},
 		{
 			"name": "Bloodied Corpse",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{B}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie",
+			"type": "Creature â€” Zombie",
 			"collector_number": "85",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/85_Bloodied Corpse.jpg"
@@ -452,14 +302,9 @@
 		},
 		{
 			"name": "Phylactery Crafter",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Advisor",
+			"type": "Creature â€” Skeleton Advisor",
 			"collector_number": "110",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/110_Phylactery Crafter.jpg"
@@ -467,14 +312,9 @@
 		},
 		{
 			"name": "Bloodthirsty Dragon",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{5}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{5}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Dragon",
+			"type": "Creature â€” Dragon",
 			"collector_number": "88",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/88_Bloodthirsty Dragon.jpg"
@@ -482,13 +322,8 @@
 		},
 		{
 			"name": "Skeletonfy",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "117",
 			"image_uris": {
@@ -497,14 +332,9 @@
 		},
 		{
 			"name": "Moon Renegade",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Vampire Assassin",
+			"type": "Creature â€” Vampire Assassin",
 			"collector_number": "108",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/108_Moon Renegade.jpg"
@@ -512,13 +342,8 @@
 		},
 		{
 			"name": "Deathless Ceremony",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{B}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "93",
 			"image_uris": {
@@ -527,14 +352,9 @@
 		},
 		{
 			"name": "Embodiment of Hell",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{B}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "99",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/99_Embodiment of Hell.jpg"
@@ -542,13 +362,8 @@
 		},
 		{
 			"name": "Through the Skull",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "120",
 			"image_uris": {
@@ -557,13 +372,8 @@
 		},
 		{
 			"name": "Sign in Blood",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{B}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{B}{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "116",
 			"image_uris": {
@@ -572,14 +382,9 @@
 		},
 		{
 			"name": "Zeramander's Spawn",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Imp Soldier",
+			"type": "Creature â€” Imp Soldier",
 			"collector_number": "164",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/164_Zeramander's Spawn.jpg"
@@ -587,13 +392,8 @@
 		},
 		{
 			"name": "Magma Spray",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{R}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "146",
 			"image_uris": {
@@ -602,13 +402,8 @@
 		},
 		{
 			"name": "Burst Forth",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "132",
 			"image_uris": {
@@ -617,14 +412,9 @@
 		},
 		{
 			"name": "Bloodclot Traveler",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{R}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{R}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Horror",
+			"type": "Creature â€” Horror",
 			"collector_number": "128",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/128_Bloodclot Traveler.jpg"
@@ -632,14 +422,9 @@
 		},
 		{
 			"name": "Aloof Ichormancer",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Vampire Wizard",
+			"type": "Creature â€” Vampire Wizard",
 			"collector_number": "84",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/84_Aloof Ichormancer.jpg"
@@ -647,14 +432,9 @@
 		},
 		{
 			"name": "Salvaged Legionnaire",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Knight",
+			"type": "Creature â€” Skeleton Knight",
 			"collector_number": "30",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/30_Salvaged Legionnaire.jpg"
@@ -662,14 +442,9 @@
 		},
 		{
 			"name": "Vampire Hemoblade",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Vampire Wizard",
+			"type": "Creature â€” Vampire Wizard",
 			"collector_number": "160",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/160_Vampire Hemoblade.jpg"
@@ -677,14 +452,9 @@
 		},
 		{
 			"name": "Burning Walker",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie Giant",
+			"type": "Creature â€” Zombie Giant",
 			"collector_number": "131",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/131_Burning Walker.jpg"
@@ -692,13 +462,8 @@
 		},
 		{
 			"name": "Reduce to Embers",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{R}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "152",
 			"image_uris": {
@@ -707,13 +472,8 @@
 		},
 		{
 			"name": "Unshackled Desire",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "159",
 			"image_uris": {
@@ -722,13 +482,8 @@
 		},
 		{
 			"name": "Nightmare Webbing",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "220",
 			"image_uris": {
@@ -737,13 +492,8 @@
 		},
 		{
 			"name": "Aggressive Foraging",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "198",
 			"image_uris": {
@@ -752,14 +502,9 @@
 		},
 		{
 			"name": "Skittering Skullsifter",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Spider Skeleton",
+			"type": "Creature â€” Spider Skeleton",
 			"collector_number": "228",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/228_Skittering Skullsifter.jpg"
@@ -767,14 +512,9 @@
 		},
 		{
 			"name": "Predator's Gaze",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "222",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/222_Predator's Gaze.jpg"
@@ -782,13 +522,8 @@
 		},
 		{
 			"name": "Invigorating Essence",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{G}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "217",
 			"image_uris": {
@@ -797,14 +532,9 @@
 		},
 		{
 			"name": "Quarter Crasher",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Devil",
+			"type": "Creature â€” Devil",
 			"collector_number": "223",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/223_Quarter Crasher.jpg"
@@ -812,14 +542,9 @@
 		},
 		{
 			"name": "Decomposing Guardian",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{5}{G}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{5}{G}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton",
+			"type": "Creature â€” Skeleton",
 			"collector_number": "205",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/205_Decomposing Guardian.jpg"
@@ -827,13 +552,8 @@
 		},
 		{
 			"name": "Disturb the Undergrowth",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "207",
 			"image_uris": {
@@ -842,14 +562,9 @@
 		},
 		{
 			"name": "Smeltingtree",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Plant",
+			"type": "Creature â€” Plant",
 			"collector_number": "230",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/230_Smeltingtree.jpg"
@@ -857,13 +572,8 @@
 		},
 		{
 			"name": "Bloodied Overgrowth",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{G}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "200",
 			"image_uris": {
@@ -872,14 +582,9 @@
 		},
 		{
 			"name": "Bone Collector",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{U}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie",
+			"type": "Creature â€” Zombie",
 			"collector_number": "44",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/44_Bone Collector.jpg"
@@ -887,14 +592,9 @@
 		},
 		{
 			"name": "Bloodroot Demon",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{G}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Elemental Demon",
+			"type": "Creature â€” Elemental Demon",
 			"collector_number": "201",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/201_Bloodroot Demon.jpg"
@@ -902,13 +602,8 @@
 		},
 		{
 			"name": "Lich's Assembly",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "66",
 			"image_uris": {
@@ -917,14 +612,9 @@
 		},
 		{
 			"name": "Capricious Count",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Vampire Noble Wizard",
+			"type": "Creature â€” Vampire Noble Wizard",
 			"collector_number": "134",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/134_Capricious Count.jpg"
@@ -932,13 +622,8 @@
 		},
 		{
 			"name": "Faber's Hatching",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{U}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "54",
 			"image_uris": {
@@ -947,13 +632,8 @@
 		},
 		{
 			"name": "Craftiness of the Meek",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "47",
 			"image_uris": {
@@ -962,14 +642,9 @@
 		},
 		{
 			"name": "Fides, Bloodied Confidant",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{4}{W}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{4}{W}{W}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Vampire Advisor",
+			"type": "Legendary Creature â€” Vampire Advisor",
 			"collector_number": "19",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/19_Fides, Bloodied Confidant.jpg"
@@ -977,13 +652,8 @@
 		},
 		{
 			"name": "Repulsive Blast",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{R}{W}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{R}{W}{W}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "187",
 			"image_uris": {
@@ -992,13 +662,8 @@
 		},
 		{
 			"name": "Forlorn Scouring",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{B}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{B}{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "101",
 			"image_uris": {
@@ -1007,14 +672,9 @@
 		},
 		{
 			"name": "Mad Summoner",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{R}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Wizard",
+			"type": "Creature â€” Skeleton Wizard",
 			"collector_number": "145",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/145_Mad Summoner.jpg"
@@ -1022,13 +682,8 @@
 		},
 		{
 			"name": "Orbisfaber's Corruption",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "68",
 			"image_uris": {
@@ -1037,13 +692,8 @@
 		},
 		{
 			"name": "Misleading Mist",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{U}{U}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "67",
 			"image_uris": {
@@ -1052,13 +702,8 @@
 		},
 		{
 			"name": "Secure Mortality",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{W}{W}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "32",
 			"image_uris": {
@@ -1067,14 +712,9 @@
 		},
 		{
 			"name": "Skullspeaker",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{R}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Wizard",
+			"type": "Creature â€” Skeleton Wizard",
 			"collector_number": "191",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/191_Skullspeaker.jpg"
@@ -1082,13 +722,8 @@
 		},
 		{
 			"name": "Shamble En Masse",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{W}{B}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "190",
 			"image_uris": {
@@ -1097,14 +732,9 @@
 		},
 		{
 			"name": "Aged Warmage",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{W}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{W}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Wizard",
+			"type": "Creature â€” Skeleton Wizard",
 			"collector_number": "165",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/165_Aged Warmage.jpg"
@@ -1112,14 +742,9 @@
 		},
 		{
 			"name": "Demonic Influence",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{B}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "95",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/95_Demonic Influence.jpg"
@@ -1127,14 +752,9 @@
 		},
 		{
 			"name": "Whispering Walls",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Ooze Wall",
+			"type": "Creature â€” Ooze Wall",
 			"collector_number": "122",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/122_Whispering Walls.jpg"
@@ -1142,14 +762,9 @@
 		},
 		{
 			"name": "Hellfire Ant",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{B}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Insect",
+			"type": "Creature â€” Insect",
 			"collector_number": "103",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/103_Hellfire Ant.jpg"
@@ -1157,14 +772,9 @@
 		},
 		{
 			"name": "Culling Demon",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{4}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{4}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Demon",
+			"type": "Creature â€” Demon",
 			"collector_number": "91",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/91_Culling Demon.jpg"
@@ -1172,14 +782,9 @@
 		},
 		{
 			"name": "Ichorous Tyrant",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{4}{B}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{4}{B}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Vampire Dragon",
+			"type": "Creature â€” Vampire Dragon",
 			"collector_number": "105",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/105_Ichorous Tyrant.jpg"
@@ -1187,14 +792,9 @@
 		},
 		{
 			"name": "Cryptborn Bones",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{B}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{B}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Giant Skeleton",
+			"type": "Creature â€” Giant Skeleton",
 			"collector_number": "169",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/169_Cryptborn Bones.jpg"
@@ -1202,14 +802,9 @@
 		},
 		{
 			"name": "Deerstalker",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{R}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Shade",
+			"type": "Creature â€” Shade",
 			"collector_number": "171",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/171_Deerstalker.jpg"
@@ -1217,14 +812,9 @@
 		},
 		{
 			"name": "Eternal Slayer",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Knight",
+			"type": "Creature â€” Skeleton Knight",
 			"collector_number": "141",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/141_Eternal Slayer.jpg"
@@ -1232,14 +822,9 @@
 		},
 		{
 			"name": "Rambunctious Bonewalkers",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{R}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Soldier",
+			"type": "Creature â€” Skeleton Soldier",
 			"collector_number": "148",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/148_Rambunctious Bonewalkers.jpg"
@@ -1247,14 +832,9 @@
 		},
 		{
 			"name": "Zeramander's Infiltrator",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{R}",
->>>>>>> upstream/main
-			"type": "Creature — Vampire Assassin",
+			"type": "Creature â€” Vampire Assassin",
 			"collector_number": "162",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/162_Zeramander's Infiltrator.jpg"
@@ -1262,13 +842,8 @@
 		},
 		{
 			"name": "Unflinching Bloodlust",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{R}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "157",
 			"image_uris": {
@@ -1277,14 +852,9 @@
 		},
 		{
 			"name": "Repulsive Drake",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{G}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie Drake",
+			"type": "Creature â€” Zombie Drake",
 			"collector_number": "188",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/188_Repulsive Drake.jpg"
@@ -1292,14 +862,9 @@
 		},
 		{
 			"name": "Composting Hellion",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Wurm",
+			"type": "Creature â€” Wurm",
 			"collector_number": "204",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/204_Composting Hellion.jpg"
@@ -1307,14 +872,9 @@
 		},
 		{
 			"name": "Stranded Hatchling",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Kraken",
+			"type": "Creature â€” Kraken",
 			"collector_number": "232",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/232_Stranded Hatchling.jpg"
@@ -1322,14 +882,9 @@
 		},
 		{
 			"name": "Eafems' Brood",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{4}{G}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{4}{G}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Spider Demon",
+			"type": "Creature â€” Spider Demon",
 			"collector_number": "209",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/209_Eafems' Brood.jpg"
@@ -1337,14 +892,9 @@
 		},
 		{
 			"name": "Disembodied Lich",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{U}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Wizard",
+			"type": "Creature â€” Skeleton Wizard",
 			"collector_number": "172",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/172_Disembodied Lich.jpg"
@@ -1352,13 +902,8 @@
 		},
 		{
 			"name": "Widespread Cataclysm",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "123",
 			"image_uris": {
@@ -1367,13 +912,8 @@
 		},
 		{
 			"name": "Fling Through Hell",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{B}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}{B}{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "100",
 			"image_uris": {
@@ -1382,13 +922,8 @@
 		},
 		{
 			"name": "Overwhelming Consumption",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{R}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "147",
 			"image_uris": {
@@ -1397,14 +932,9 @@
 		},
 		{
 			"name": "Smoldering Tormentor",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{B}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{B}",
->>>>>>> upstream/main
-			"type": "Creature — Demon",
+			"type": "Creature â€” Demon",
 			"collector_number": "119",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/119_Smoldering Tormentor.jpg"
@@ -1412,14 +942,9 @@
 		},
 		{
 			"name": "Davriel's Dealbroker",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{R}{R}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{R}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Demon",
+			"type": "Creature â€” Demon",
 			"collector_number": "138",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/138_Davriel's Dealbroker.jpg"
@@ -1427,14 +952,9 @@
 		},
 		{
 			"name": "Demonlord Silfidiae",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{3}{G}{G}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{3}{G}{G}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Demon",
+			"type": "Legendary Creature â€” Demon",
 			"collector_number": "206",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/206_Demonlord Silfidiae.jpg"
@@ -1442,14 +962,9 @@
 		},
 		{
 			"name": "Bonemarrow Hydra",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{X}{G}{G}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{X}{G}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Hydra",
+			"type": "Creature â€” Skeleton Hydra",
 			"collector_number": "202",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/202_Bonemarrow Hydra.jpg"
@@ -1457,13 +972,8 @@
 		},
 		{
 			"name": "Cryptkeepers Vow",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "12",
 			"image_uris": {
@@ -1472,14 +982,9 @@
 		},
 		{
 			"name": "Tenacious Legion",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie Vampire Soldier",
+			"type": "Creature â€” Zombie Vampire Soldier",
 			"collector_number": "37",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/37_Tenacious Legion.jpg"
@@ -1487,14 +992,9 @@
 		},
 		{
 			"name": "Watchdog Liches",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{W}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{W}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Knight",
+			"type": "Creature â€” Skeleton Knight",
 			"collector_number": "40",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/40_Watchdog Liches.jpg"
@@ -1502,13 +1002,8 @@
 		},
 		{
 			"name": "Bones to Flesh",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{G}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "203",
 			"image_uris": {
@@ -1517,14 +1012,9 @@
 		},
 		{
 			"name": "Hibernating Dragon",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Dragon",
+			"type": "Creature â€” Dragon",
 			"collector_number": "63",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/63_Hibernating Dragon.jpg"
@@ -1532,13 +1022,8 @@
 		},
 		{
 			"name": "March From Beyond",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{B}{B}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}{B}{B}{B}",
->>>>>>> upstream/main
 			"type": "Legendary Enchantment",
 			"collector_number": "107",
 			"image_uris": {
@@ -1547,13 +1032,8 @@
 		},
 		{
 			"name": "Demonic Vortex",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{B}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "96",
 			"image_uris": {
@@ -1562,14 +1042,9 @@
 		},
 		{
 			"name": "Cerebral Devilfish",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{X}{X}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{X}{X}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Horror Octopus",
+			"type": "Creature â€” Horror Octopus",
 			"collector_number": "89",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/89_Cerebral Devilfish.jpg"
@@ -1577,13 +1052,8 @@
 		},
 		{
 			"name": "Rattler's Crusade",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{R}{R}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "150",
 			"image_uris": {
@@ -1592,14 +1062,9 @@
 		},
 		{
 			"name": "Calcinere, World Burner",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{5}{R}{R}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{5}{R}{R}{R}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Elemental Devil",
+			"type": "Legendary Creature â€” Elemental Devil",
 			"collector_number": "133",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/133_Calcinere, World Burner.jpg"
@@ -1607,14 +1072,9 @@
 		},
 		{
 			"name": "Invigorating Corpsemancer",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{R}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie Wizard",
+			"type": "Creature â€” Zombie Wizard",
 			"collector_number": "144",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/144_Invigorating Corpsemancer.jpg"
@@ -1622,13 +1082,8 @@
 		},
 		{
 			"name": "Viscera Blast",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{X}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{X}{R}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "161",
 			"image_uris": {
@@ -1637,14 +1092,9 @@
 		},
 		{
 			"name": "Cliff-Pit Hanger",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{R}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{R}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Demon",
+			"type": "Creature â€” Skeleton Demon",
 			"collector_number": "135",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/135_Cliff-Pit Hanger.jpg"
@@ -1652,14 +1102,9 @@
 		},
 		{
 			"name": "Aggravator of Herds",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{G}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}{G}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Demon",
+			"type": "Creature â€” Demon",
 			"collector_number": "197",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/197_Aggravator of Herds.jpg"
@@ -1667,14 +1112,9 @@
 		},
 		{
 			"name": "Savage Snapper",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Nightmare Snake",
+			"type": "Creature â€” Nightmare Snake",
 			"collector_number": "225",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/225_Savage Snapper.jpg"
@@ -1682,14 +1122,9 @@
 		},
 		{
 			"name": "Crackshot Skeleton",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{R}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{R}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Archer",
+			"type": "Creature â€” Skeleton Archer",
 			"collector_number": "136",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/136_Crackshot Skeleton.jpg"
@@ -1697,14 +1132,9 @@
 		},
 		{
 			"name": "Gaping Skimmer",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{U}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Serpent",
+			"type": "Creature â€” Serpent",
 			"collector_number": "58",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/58_Gaping Skimmer.jpg"
@@ -1712,14 +1142,9 @@
 		},
 		{
 			"name": "Rattletroop",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Soldier",
+			"type": "Creature â€” Skeleton Soldier",
 			"collector_number": "151",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/151_Rattletroop.jpg"
@@ -1727,13 +1152,8 @@
 		},
 		{
 			"name": "Begin Again",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{G}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "199",
 			"image_uris": {
@@ -1742,13 +1162,8 @@
 		},
 		{
 			"name": "Fabricated Phylactery",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}",
->>>>>>> upstream/main
 			"type": "Legendary Artifact",
 			"collector_number": "241",
 			"image_uris": {
@@ -1757,14 +1172,9 @@
 		},
 		{
 			"name": "Thicket Taker",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{5}{G}{G}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{5}{G}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Treefolk Demon",
+			"type": "Creature â€” Treefolk Demon",
 			"collector_number": "233",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/233_Thicket Taker.jpg"
@@ -1772,14 +1182,9 @@
 		},
 		{
 			"name": "Twisted Underling",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Wizard",
+			"type": "Creature â€” Skeleton Wizard",
 			"collector_number": "80",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/80_Twisted Underling.jpg"
@@ -1787,14 +1192,9 @@
 		},
 		{
 			"name": "Retributive Hellknight",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{W}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{W}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Demon Knight",
+			"type": "Creature â€” Demon Knight",
 			"collector_number": "27",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/27_Retributive Hellknight.jpg"
@@ -1802,14 +1202,9 @@
 		},
 		{
 			"name": "Unhinged Giant",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{5}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{5}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie Giant",
+			"type": "Creature â€” Zombie Giant",
 			"collector_number": "158",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/158_Unhinged Giant.jpg"
@@ -1817,14 +1212,9 @@
 		},
 		{
 			"name": "Skittering Hellflayer",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{5}{B}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{5}{B}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Spider Demon",
+			"type": "Creature â€” Spider Demon",
 			"collector_number": "118",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/118_Skittering Hellflayer.jpg"
@@ -1832,14 +1222,9 @@
 		},
 		{
 			"name": "Crypt Vessel",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}",
->>>>>>> upstream/main
-			"type": "Artifact Creature — Skeleton Construct",
+			"type": "Artifact Creature â€” Skeleton Construct",
 			"collector_number": "240",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/240_Crypt Vessel.jpg"
@@ -1847,14 +1232,9 @@
 		},
 		{
 			"name": "Infected Wolf",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{G}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie Wolf",
+			"type": "Creature â€” Zombie Wolf",
 			"collector_number": "216",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/216_Infected Wolf.jpg"
@@ -1862,14 +1242,9 @@
 		},
 		{
 			"name": "Adapted Servant",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
-			"type": "Artifact Creature — Demon Construct",
+			"type": "Artifact Creature â€” Demon Construct",
 			"collector_number": "238",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/238_Adapted Servant.jpg"
@@ -1877,14 +1252,9 @@
 		},
 		{
 			"name": "Broken Shortsword",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{0}",
-=======
-			"rarity": "common",
-			"mana_cost": "{0}",
->>>>>>> upstream/main
-			"type": "Artifact — Equipment",
+			"type": "Artifact â€” Equipment",
 			"collector_number": "239",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/239_Broken Shortsword.jpg"
@@ -1892,14 +1262,9 @@
 		},
 		{
 			"name": "Dreaded Savior",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{W}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{W}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Vampire Horror",
+			"type": "Creature â€” Vampire Horror",
 			"collector_number": "15",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/15_Dreaded Savior.jpg"
@@ -1907,14 +1272,9 @@
 		},
 		{
 			"name": "Saintly Remains",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{W}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{W}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Angel",
+			"type": "Creature â€” Skeleton Angel",
 			"collector_number": "189",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/189_Saintly Remains.jpg"
@@ -1922,14 +1282,9 @@
 		},
 		{
 			"name": "Blood Petunia",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{R}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Plant",
+			"type": "Creature â€” Plant",
 			"collector_number": "167",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/167_Blood Petunia.jpg"
@@ -1937,13 +1292,8 @@
 		},
 		{
 			"name": "Maddening Descent",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{X}{U}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{X}{U}{R}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "181",
 			"image_uris": {
@@ -1952,13 +1302,8 @@
 		},
 		{
 			"name": "Spitting Hellfire",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{R}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "155",
 			"image_uris": {
@@ -1967,14 +1312,9 @@
 		},
 		{
 			"name": "Grafted Boneshatterer",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{6}",
-=======
-			"rarity": "common",
-			"mana_cost": "{6}",
->>>>>>> upstream/main
-			"type": "Artifact Creature — Skeleton Construct",
+			"type": "Artifact Creature â€” Skeleton Construct",
 			"collector_number": "243",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/243_Grafted Boneshatterer.jpg"
@@ -1982,13 +1322,8 @@
 		},
 		{
 			"name": "Inflaming Smite",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{R}{W}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "177",
 			"image_uris": {
@@ -1997,13 +1332,8 @@
 		},
 		{
 			"name": "Provoking the Masses",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{W}{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "185",
 			"image_uris": {
@@ -2012,13 +1342,8 @@
 		},
 		{
 			"name": "Immortal Oath",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{W}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{W}{U}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "175",
 			"image_uris": {
@@ -2027,14 +1352,9 @@
 		},
 		{
 			"name": "Crashing Murmurer",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{U}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{U}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Minotaur Horror",
+			"type": "Creature â€” Minotaur Horror",
 			"collector_number": "168",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/168_Crashing Murmurer.jpg"
@@ -2042,14 +1362,9 @@
 		},
 		{
 			"name": "Frenzied Predation",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{B}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{B}{G}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "173",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/173_Frenzied Predation.jpg"
@@ -2057,14 +1372,9 @@
 		},
 		{
 			"name": "Marsh Grower",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{G}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{G}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Shade",
+			"type": "Creature â€” Shade",
 			"collector_number": "183",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/183_Marsh Grower.jpg"
@@ -2072,14 +1382,9 @@
 		},
 		{
 			"name": "Legion Bonecracker",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{B}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Giant Skeleton",
+			"type": "Creature â€” Giant Skeleton",
 			"collector_number": "180",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/180_Legion Bonecracker.jpg"
@@ -2087,13 +1392,8 @@
 		},
 		{
 			"name": "Malicious Mimicry",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{U}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{U}{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "182",
 			"image_uris": {
@@ -2102,14 +1402,9 @@
 		},
 		{
 			"name": "Vengeful Grovekeeper",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{G}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{G}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Treefolk Horror",
+			"type": "Creature â€” Treefolk Horror",
 			"collector_number": "196",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/196_Vengeful Grovekeeper.jpg"
@@ -2117,14 +1412,9 @@
 		},
 		{
 			"name": "Tanglemess Hydra",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{X}{R}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{X}{R}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Plant Hydra",
+			"type": "Creature â€” Plant Hydra",
 			"collector_number": "192",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/192_Tanglemess Hydra.jpg"
@@ -2132,13 +1422,8 @@
 		},
 		{
 			"name": "Unholy Communion",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{W}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{W}{B}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "195",
 			"image_uris": {
@@ -2147,13 +1432,8 @@
 		},
 		{
 			"name": "Infusing Ritual",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{U}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{U}{R}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "178",
 			"image_uris": {
@@ -2162,13 +1442,8 @@
 		},
 		{
 			"name": "Thought Scour",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "78",
 			"image_uris": {
@@ -2177,14 +1452,9 @@
 		},
 		{
 			"name": "Schefelix, Abyssal Retriever",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Demon Dog",
+			"type": "Legendary Creature â€” Demon Dog",
 			"collector_number": "31",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/31_Schefelix, Abyssal Retriever.jpg"
@@ -2192,14 +1462,9 @@
 		},
 		{
 			"name": "Crumbling Monstrosity",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{5}{R}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{5}{R}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Giant",
+			"type": "Creature â€” Skeleton Giant",
 			"collector_number": "137",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/137_Crumbling Monstrosity.jpg"
@@ -2207,14 +1472,9 @@
 		},
 		{
 			"name": "Twisted Guardian",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{G}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie Treefolk",
+			"type": "Creature â€” Zombie Treefolk",
 			"collector_number": "235",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/235_Twisted Guardian.jpg"
@@ -2222,14 +1482,9 @@
 		},
 		{
 			"name": "Mirumea, Ambush Master",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{X}{G}{G}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{X}{G}{G}{G}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Spider Demon",
+			"type": "Legendary Creature â€” Spider Demon",
 			"collector_number": "219",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/219_Mirumea, Ambush Master.jpg"
@@ -2237,14 +1492,9 @@
 		},
 		{
 			"name": "Davriel, the Pactmaker",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{1}{B}{B}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{1}{B}{B}",
->>>>>>> upstream/main
-			"type": "Legendary Planeswalker — Davriel",
+			"type": "Legendary Planeswalker â€” Davriel",
 			"collector_number": "92",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/92_Davriel, the Pactmaker.jpg"
@@ -2252,13 +1502,8 @@
 		},
 		{
 			"name": "Overgrowing Burial",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "257",
 			"image_uris": {
@@ -2267,13 +1512,8 @@
 		},
 		{
 			"name": "Submerging Grotto",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "266",
 			"image_uris": {
@@ -2282,13 +1522,8 @@
 		},
 		{
 			"name": "Tunneling Hideaway",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "269",
 			"image_uris": {
@@ -2297,13 +1532,8 @@
 		},
 		{
 			"name": "Slumbering Lavafields",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "263",
 			"image_uris": {
@@ -2312,13 +1542,8 @@
 		},
 		{
 			"name": "Striking Waterfalls",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "265",
 			"image_uris": {
@@ -2327,13 +1552,8 @@
 		},
 		{
 			"name": "Winding Quagmire",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "270",
 			"image_uris": {
@@ -2342,13 +1562,8 @@
 		},
 		{
 			"name": "Despairing Marsh",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "248",
 			"image_uris": {
@@ -2357,13 +1572,8 @@
 		},
 		{
 			"name": "Rotting Mineshaft",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "261",
 			"image_uris": {
@@ -2372,13 +1582,8 @@
 		},
 		{
 			"name": "Receding Coastline",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "260",
 			"image_uris": {
@@ -2387,14 +1592,9 @@
 		},
 		{
 			"name": "Forest",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Forest",
+			"type": "Basic Land â€” Forest",
 			"collector_number": "251",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/251_Forest.jpg"
@@ -2402,14 +1602,9 @@
 		},
 		{
 			"name": "Zombie",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Creature — Zombie",
+			"type": "Token Creature â€” Zombie",
 			"collector_number": "2",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/2_Zombie.jpg"
@@ -2417,14 +1612,9 @@
 		},
 		{
 			"name": "Merfolk Horror",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Creature — Merfolk Horror",
+			"type": "Token Creature â€” Merfolk Horror",
 			"collector_number": "3",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/3_Merfolk Horror.jpg"
@@ -2432,14 +1622,9 @@
 		},
 		{
 			"name": "Skeleton",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Creature — Skeleton",
+			"type": "Token Creature â€” Skeleton",
 			"collector_number": "4",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/4_Skeleton.jpg"
@@ -2447,14 +1632,9 @@
 		},
 		{
 			"name": "Spider",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Creature — Spider",
+			"type": "Token Creature â€” Spider",
 			"collector_number": "7",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/7_Spider.jpg"
@@ -2462,13 +1642,8 @@
 		},
 		{
 			"name": "Castle Salus's Catacombs",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
 			"type": "Legendary Enchantment",
 			"collector_number": "10",
 			"image_uris": {
@@ -2477,14 +1652,9 @@
 		},
 		{
 			"name": "Hellemental",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{B}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{B}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Elemental Skeleton",
+			"type": "Creature â€” Elemental Skeleton",
 			"collector_number": "102",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/102_Hellemental.jpg"
@@ -2492,13 +1662,8 @@
 		},
 		{
 			"name": "Silfidiae's Influence",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{G}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{G}{G}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "226",
 			"image_uris": {
@@ -2507,13 +1672,8 @@
 		},
 		{
 			"name": "Kinnamon's Influence",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{W}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{W}{W}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "23",
 			"image_uris": {
@@ -2522,13 +1682,8 @@
 		},
 		{
 			"name": "Morideus's Influence",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{X}{B}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{X}{B}{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "109",
 			"image_uris": {
@@ -2537,14 +1692,9 @@
 		},
 		{
 			"name": "Skeleton Hydra",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Creature — Skeleton Hydra",
+			"type": "Token Creature â€” Skeleton Hydra",
 			"collector_number": "6",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/6_Skeleton Hydra.jpg"
@@ -2552,14 +1702,9 @@
 		},
 		{
 			"name": "Undue, Death Devourer",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{1}{W}{B}{G}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{1}{W}{B}{G}",
->>>>>>> upstream/main
-			"type": "Legendary Planeswalker — Undue",
+			"type": "Legendary Planeswalker â€” Undue",
 			"collector_number": "194",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/194_Undue, Death Devourer.jpg"
@@ -2567,14 +1712,9 @@
 		},
 		{
 			"name": "Skeleton Horse",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Creature — Skeleton Horse",
+			"type": "Token Creature â€” Skeleton Horse",
 			"collector_number": "5",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/5_Skeleton Horse.jpg"
@@ -2582,13 +1722,8 @@
 		},
 		{
 			"name": "Imposing Asylum",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "252",
 			"image_uris": {
@@ -2597,13 +1732,8 @@
 		},
 		{
 			"name": "Agonizing Pit",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "245",
 			"image_uris": {
@@ -2612,13 +1742,8 @@
 		},
 		{
 			"name": "Impending Return",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{G}{W}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "176",
 			"image_uris": {
@@ -2627,13 +1752,8 @@
 		},
 		{
 			"name": "Hallowed Mist",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{X}{W}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{X}{W}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "20",
 			"image_uris": {
@@ -2642,13 +1762,8 @@
 		},
 		{
 			"name": "Rescede, Coffen of Kings",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
 			"type": "Legendary Enchantment",
 			"collector_number": "73",
 			"image_uris": {
@@ -2657,13 +1772,8 @@
 		},
 		{
 			"name": "Fiendish Scheming",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "56",
 			"image_uris": {
@@ -2672,14 +1782,9 @@
 		},
 		{
 			"name": "Abyssal Captain",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{W}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Demon",
+			"type": "Creature â€” Demon",
 			"collector_number": "1",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/1_Abyssal Captain.jpg"
@@ -2687,14 +1792,9 @@
 		},
 		{
 			"name": "Ashen Watcher",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Elemental Devil",
+			"type": "Creature â€” Elemental Devil",
 			"collector_number": "2",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/2_Ashen Watcher.jpg"
@@ -2702,13 +1802,8 @@
 		},
 		{
 			"name": "Assume Power",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{W}{W}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "3",
 			"image_uris": {
@@ -2717,14 +1812,9 @@
 		},
 		{
 			"name": "Awoken Pariah",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{W}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{W}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Vampire",
+			"type": "Creature â€” Vampire",
 			"collector_number": "4",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/4_Awoken Pariah.jpg"
@@ -2732,14 +1822,9 @@
 		},
 		{
 			"name": "Blood Heron",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
-			"type": "Creature — Bird",
+			"type": "Creature â€” Bird",
 			"collector_number": "6",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/6_Blood Heron.jpg"
@@ -2747,14 +1832,9 @@
 		},
 		{
 			"name": "Bloodied Lieutenant",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
-			"type": "Creature — Vampire Soldier",
+			"type": "Creature â€” Vampire Soldier",
 			"collector_number": "8",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/8_Bloodied Lieutenant.jpg"
@@ -2762,14 +1842,9 @@
 		},
 		{
 			"name": "Blessing of Blood and Steel",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "5",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/5_Blessing of Blood and Steel.jpg"
@@ -2777,14 +1852,9 @@
 		},
 		{
 			"name": "Bloodguard of Salus",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Vampire Knight",
+			"type": "Creature â€” Vampire Knight",
 			"collector_number": "7",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/7_Bloodguard of Salus.jpg"
@@ -2792,14 +1862,9 @@
 		},
 		{
 			"name": "Bloodlord Kinnamon",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{1}{W}{W}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{1}{W}{W}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Vampire Noble",
+			"type": "Legendary Creature â€” Vampire Noble",
 			"collector_number": "9",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/9_Bloodlord Kinnamon.jpg"
@@ -2807,14 +1872,9 @@
 		},
 		{
 			"name": "Vampire Soldier",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Creature — Vampire Soldier",
+			"type": "Token Creature â€” Vampire Soldier",
 			"collector_number": "1",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/1_Vampire Soldier.jpg"
@@ -2822,13 +1882,8 @@
 		},
 		{
 			"name": "Donum-Dei, Lake of Blood",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{B}",
->>>>>>> upstream/main
 			"type": "Legendary Enchantment",
 			"collector_number": "98",
 			"image_uris": {
@@ -2837,14 +1892,9 @@
 		},
 		{
 			"name": "Deeptomb Guardian",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton",
+			"type": "Creature â€” Skeleton",
 			"collector_number": "13",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/13_Deeptomb Guardian.jpg"
@@ -2852,13 +1902,8 @@
 		},
 		{
 			"name": "Desperate Sealing",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "14",
 			"image_uris": {
@@ -2867,14 +1912,9 @@
 		},
 		{
 			"name": "Ignosco, Death's Absolution",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{W}{W}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{W}{W}{W}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Zombie Demon",
+			"type": "Legendary Creature â€” Zombie Demon",
 			"collector_number": "22",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/22_Ignosco, Death's Absolution.jpg"
@@ -2882,14 +1922,9 @@
 		},
 		{
 			"name": "Processing Revenant",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Advisor",
+			"type": "Creature â€” Skeleton Advisor",
 			"collector_number": "25",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/25_Processing Revenant.jpg"
@@ -2897,13 +1932,8 @@
 		},
 		{
 			"name": "Return from Ash",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "28",
 			"image_uris": {
@@ -2912,14 +1942,9 @@
 		},
 		{
 			"name": "Sorin, Vengeful Sangrablade",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{3}{W}{W}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{3}{W}{W}",
->>>>>>> upstream/main
-			"type": "Legendary Planeswalker — Sorin",
+			"type": "Legendary Planeswalker â€” Sorin",
 			"collector_number": "35",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/35_Sorin, Vengeful Sangrablade.jpg"
@@ -2927,13 +1952,8 @@
 		},
 		{
 			"name": "Soul Devouring Core",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
 			"type": "Legendary Enchantment",
 			"collector_number": "36",
 			"image_uris": {
@@ -2942,14 +1962,9 @@
 		},
 		{
 			"name": "Bloodmoon Champion",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Vampire Horror",
+			"type": "Creature â€” Vampire Horror",
 			"collector_number": "43",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/43_Bloodmoon Champion.jpg"
@@ -2957,14 +1972,9 @@
 		},
 		{
 			"name": "Callous Willbreaker",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Demon Wizard",
+			"type": "Creature â€” Demon Wizard",
 			"collector_number": "45",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/45_Callous Willbreaker.jpg"
@@ -2972,14 +1982,9 @@
 		},
 		{
 			"name": "Corrupted Nightwing",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{U}",
->>>>>>> upstream/main
-			"type": "Creature — Bat",
+			"type": "Creature â€” Bat",
 			"collector_number": "46",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/46_Corrupted Nightwing.jpg"
@@ -2987,14 +1992,9 @@
 		},
 		{
 			"name": "Creeping Frost",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "48",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/48_Creeping Frost.jpg"
@@ -3002,14 +2002,9 @@
 		},
 		{
 			"name": "Deceptive Shadow",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Shade",
+			"type": "Creature â€” Shade",
 			"collector_number": "49",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/49_Deceptive Shadow.jpg"
@@ -3017,14 +2012,9 @@
 		},
 		{
 			"name": "Demonlord Orbisfaber",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{5}{U}{U}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{5}{U}{U}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Demon",
+			"type": "Legendary Creature â€” Demon",
 			"collector_number": "50",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/50_Demonlord Orbisfaber.jpg"
@@ -3032,14 +2022,9 @@
 		},
 		{
 			"name": "Fervens, the Boiling Lake",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{U}{U}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Elemental Devil",
+			"type": "Legendary Creature â€” Elemental Devil",
 			"collector_number": "55",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/55_Fervens, the Boiling Lake.jpg"
@@ -3047,13 +2032,8 @@
 		},
 		{
 			"name": "Ghastly Tide",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "59",
 			"image_uris": {
@@ -3062,14 +2042,9 @@
 		},
 		{
 			"name": "Hellish Mistwarper",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{U}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}{U}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Demon",
+			"type": "Creature â€” Demon",
 			"collector_number": "62",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/62_Hellish Mistwarper.jpg"
@@ -3077,14 +2052,9 @@
 		},
 		{
 			"name": "Icicle Crasher",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{U}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{U}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Demon",
+			"type": "Creature â€” Demon",
 			"collector_number": "64",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/64_Icicle Crasher.jpg"
@@ -3092,13 +2062,8 @@
 		},
 		{
 			"name": "Orbisfaber's Influence",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{4}{U}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{4}{U}{U}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "70",
 			"image_uris": {
@@ -3107,14 +2072,9 @@
 		},
 		{
 			"name": "Osavotus, Contract Dealer",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{2}{U}{U}{U}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{2}{U}{U}{U}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Skeleton Advisor",
+			"type": "Legendary Creature â€” Skeleton Advisor",
 			"collector_number": "71",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/71_Osavotus, Contract Dealer.jpg"
@@ -3122,14 +2082,9 @@
 		},
 		{
 			"name": "Rotting Leviathan",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{U}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{U}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Leviathan Skeleton",
+			"type": "Creature â€” Leviathan Skeleton",
 			"collector_number": "74",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/74_Rotting Leviathan.jpg"
@@ -3137,14 +2092,9 @@
 		},
 		{
 			"name": "Shadowbender Lich",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Advisor",
+			"type": "Creature â€” Skeleton Advisor",
 			"collector_number": "76",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/76_Shadowbender Lich.jpg"
@@ -3152,14 +2102,9 @@
 		},
 		{
 			"name": "Shambling Mistwalker",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Nightmare",
+			"type": "Creature â€” Nightmare",
 			"collector_number": "77",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/77_Shambling Mistwalker.jpg"
@@ -3167,14 +2112,9 @@
 		},
 		{
 			"name": "Tundra Screecher",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Bat",
+			"type": "Creature â€” Bat",
 			"collector_number": "79",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/79_Tundra Screecher.jpg"
@@ -3182,13 +2122,8 @@
 		},
 		{
 			"name": "Unidentifiable Mass",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "81",
 			"image_uris": {
@@ -3197,14 +2132,9 @@
 		},
 		{
 			"name": "Abyssal Smoke",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Elemental Demon",
+			"type": "Creature â€” Elemental Demon",
 			"collector_number": "83",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/83_Abyssal Smoke.jpg"
@@ -3212,14 +2142,9 @@
 		},
 		{
 			"name": "Bloodsoaked Mass",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Demon Ooze",
+			"type": "Creature â€” Skeleton Demon Ooze",
 			"collector_number": "86",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/86_Bloodsoaked Mass.jpg"
@@ -3227,14 +2152,9 @@
 		},
 		{
 			"name": "Bloodstarved Ghoul",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie Vampire",
+			"type": "Creature â€” Zombie Vampire",
 			"collector_number": "87",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/87_Bloodstarved Ghoul.jpg"
@@ -3242,14 +2162,9 @@
 		},
 		{
 			"name": "Chaining Hellspawn",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{B}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{B}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Demon",
+			"type": "Creature â€” Demon",
 			"collector_number": "90",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/90_Chaining Hellspawn.jpg"
@@ -3257,14 +2172,9 @@
 		},
 		{
 			"name": "Demonic Butcher",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{B}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Demon Berserker",
+			"type": "Creature â€” Demon Berserker",
 			"collector_number": "94",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/94_Demonic Butcher.jpg"
@@ -3272,14 +2182,9 @@
 		},
 		{
 			"name": "Demonlord Morideus",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{4}{B}{B}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{4}{B}{B}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Demon",
+			"type": "Legendary Creature â€” Demon",
 			"collector_number": "97",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/97_Demonlord Morideus.jpg"
@@ -3287,14 +2192,9 @@
 		},
 		{
 			"name": "Husked Consumer",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Elemental Skeleton",
+			"type": "Creature â€” Elemental Skeleton",
 			"collector_number": "104",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/104_Husked Consumer.jpg"
@@ -3302,13 +2202,8 @@
 		},
 		{
 			"name": "Ichorsplosion",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "106",
 			"image_uris": {
@@ -3317,14 +2212,9 @@
 		},
 		{
 			"name": "Resilient Rot",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Ooze",
+			"type": "Creature â€” Ooze",
 			"collector_number": "112",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/112_Resilient Rot.jpg"
@@ -3332,13 +2222,8 @@
 		},
 		{
 			"name": "Rotten Insight",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "114",
 			"image_uris": {
@@ -3347,13 +2232,8 @@
 		},
 		{
 			"name": "Scouring Flames",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "115",
 			"image_uris": {
@@ -3362,14 +2242,9 @@
 		},
 		{
 			"name": "Ashen Crasher",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{R}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{R}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Elemental Devil",
+			"type": "Creature â€” Elemental Devil",
 			"collector_number": "124",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/124_Ashen Crasher.jpg"
@@ -3377,14 +2252,9 @@
 		},
 		{
 			"name": "Bemused Gorger",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Elemental Devil",
+			"type": "Creature â€” Elemental Devil",
 			"collector_number": "125",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/125_Bemused Gorger.jpg"
@@ -3392,13 +2262,8 @@
 		},
 		{
 			"name": "Blazing Raid",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "126",
 			"image_uris": {
@@ -3407,14 +2272,9 @@
 		},
 		{
 			"name": "Bloodbag Slaughterer",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{R}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie Elemental",
+			"type": "Creature â€” Zombie Elemental",
 			"collector_number": "127",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/127_Bloodbag Slaughterer.jpg"
@@ -3422,14 +2282,9 @@
 		},
 		{
 			"name": "Bloodthirsty Howler",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie Demon",
+			"type": "Creature â€” Zombie Demon",
 			"collector_number": "129",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/129_Bloodthirsty Howler.jpg"
@@ -3437,14 +2292,9 @@
 		},
 		{
 			"name": "Bone Brigade",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{R}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Warrior",
+			"type": "Creature â€” Skeleton Warrior",
 			"collector_number": "130",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/130_Bone Brigade.jpg"
@@ -3452,14 +2302,9 @@
 		},
 		{
 			"name": "Demonlord Zeramander",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{2}{R}{R}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{2}{R}{R}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Demon",
+			"type": "Legendary Creature â€” Demon",
 			"collector_number": "139",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/139_Demonlord Zeramander.jpg"
@@ -3467,14 +2312,9 @@
 		},
 		{
 			"name": "Dweller's Hound",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Dog",
+			"type": "Creature â€” Skeleton Dog",
 			"collector_number": "140",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/140_Dweller's Hound.jpg"
@@ -3482,14 +2322,9 @@
 		},
 		{
 			"name": "Hateful Amalgam",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{3}{R}{R}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{3}{R}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Shade Avatar",
+			"type": "Creature â€” Shade Avatar",
 			"collector_number": "142",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/142_Hateful Amalgam.jpg"
@@ -3497,14 +2332,9 @@
 		},
 		{
 			"name": "Ignition Devil",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{R}",
->>>>>>> upstream/main
-			"type": "Creature — Elemental Devil",
+			"type": "Creature â€” Elemental Devil",
 			"collector_number": "143",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/143_Ignition Devil.jpg"
@@ -3512,13 +2342,8 @@
 		},
 		{
 			"name": "Ransack the Tombs",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{R}{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "149",
 			"image_uris": {
@@ -3527,14 +2352,9 @@
 		},
 		{
 			"name": "Skittering Demon",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Spider Demon",
+			"type": "Creature â€” Spider Demon",
 			"collector_number": "154",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/154_Skittering Demon.jpg"
@@ -3542,13 +2362,8 @@
 		},
 		{
 			"name": "Twisted Eruption",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "156",
 			"image_uris": {
@@ -3557,13 +2372,8 @@
 		},
 		{
 			"name": "Zeramander's Influence",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{X}{R}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{X}{R}{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "163",
 			"image_uris": {
@@ -3572,14 +2382,9 @@
 		},
 		{
 			"name": "Eafem, Lethal Arachne",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{G}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{G}{G}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Spider Demon",
+			"type": "Legendary Creature â€” Spider Demon",
 			"collector_number": "208",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/208_Eafem, Lethal Arachne.jpg"
@@ -3587,13 +2392,8 @@
 		},
 		{
 			"name": "Explosive Might",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "210",
 			"image_uris": {
@@ -3602,14 +2402,9 @@
 		},
 		{
 			"name": "Ferocious Maneater",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Cat",
+			"type": "Creature â€” Cat",
 			"collector_number": "211",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/211_Ferocious Maneater.jpg"
@@ -3617,13 +2412,8 @@
 		},
 		{
 			"name": "From Beneath the Woods",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{X}{G}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{X}{G}{G}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "212",
 			"image_uris": {
@@ -3632,14 +2422,9 @@
 		},
 		{
 			"name": "Gnarled Hydra",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{G}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{G}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Hydra Plant",
+			"type": "Creature â€” Hydra Plant",
 			"collector_number": "213",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/213_Gnarled Hydra.jpg"
@@ -3647,14 +2432,9 @@
 		},
 		{
 			"name": "Gnarledroot Demon",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Demon",
+			"type": "Creature â€” Demon",
 			"collector_number": "214",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/214_Gnarledroot Demon.jpg"
@@ -3662,14 +2442,9 @@
 		},
 		{
 			"name": "Harvesting Revenant",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{G}",
->>>>>>> upstream/main
-			"type": "Creature — Skeleton Wizard",
+			"type": "Creature â€” Skeleton Wizard",
 			"collector_number": "215",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/215_Harvesting Revenant.jpg"
@@ -3677,14 +2452,9 @@
 		},
 		{
 			"name": "Midnight Stalker",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{G}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{G}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Wolf",
+			"type": "Creature â€” Wolf",
 			"collector_number": "218",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/218_Midnight Stalker.jpg"
@@ -3692,13 +2462,8 @@
 		},
 		{
 			"name": "Overwhelming Presence",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "221",
 			"image_uris": {
@@ -3707,14 +2472,9 @@
 		},
 		{
 			"name": "Rattling Gorger",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{G}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{G}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Elemental Skeleton",
+			"type": "Creature â€” Elemental Skeleton",
 			"collector_number": "224",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/224_Rattling Gorger.jpg"
@@ -3722,14 +2482,9 @@
 		},
 		{
 			"name": "Skittering Host",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{G}",
->>>>>>> upstream/main
-			"type": "Creature — Spider Demon",
+			"type": "Creature â€” Spider Demon",
 			"collector_number": "227",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/227_Skittering Host.jpg"
@@ -3737,14 +2492,9 @@
 		},
 		{
 			"name": "Skullcrushing Fiend",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Demon Beast",
+			"type": "Creature â€” Demon Beast",
 			"collector_number": "229",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/229_Skullcrushing Fiend.jpg"
@@ -3752,14 +2502,9 @@
 		},
 		{
 			"name": "Splintering Growth",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Treefolk Horror",
+			"type": "Creature â€” Treefolk Horror",
 			"collector_number": "231",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/231_Splintering Growth.jpg"
@@ -3767,14 +2512,9 @@
 		},
 		{
 			"name": "Valley Lurker",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Elemental Devil",
+			"type": "Creature â€” Elemental Devil",
 			"collector_number": "236",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/236_Valley Lurker.jpg"
@@ -3782,14 +2522,9 @@
 		},
 		{
 			"name": "Vicaroam, the Crushing Vines",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}{G}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Zombie Treefolk",
+			"type": "Legendary Creature â€” Zombie Treefolk",
 			"collector_number": "237",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/237_Vicaroam, the Crushing Vines.jpg"
@@ -3797,14 +2532,9 @@
 		},
 		{
 			"name": "Anord, Maddening Lich",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{B}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{B}{R}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Skeleton Wizard",
+			"type": "Legendary Creature â€” Skeleton Wizard",
 			"collector_number": "166",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/166_Anord, Maddening Lich.jpg"
@@ -3812,14 +2542,9 @@
 		},
 		{
 			"name": "Deerstalker",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{R}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Shade",
+			"type": "Creature â€” Shade",
 			"collector_number": "170",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/170_Deerstalker.jpg"
@@ -3827,14 +2552,9 @@
 		},
 		{
 			"name": "Galvanized Necrowing",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{U}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{U}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie Drake",
+			"type": "Creature â€” Zombie Drake",
 			"collector_number": "174",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/174_Galvanized Necrowing.jpg"
@@ -3842,13 +2562,8 @@
 		},
 		{
 			"name": "Intruding Undergrowth",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{B}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{B}{G}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "179",
 			"image_uris": {
@@ -3857,13 +2572,8 @@
 		},
 		{
 			"name": "Monstrous Invocation",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{G}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{G}{U}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "184",
 			"image_uris": {
@@ -3872,13 +2582,8 @@
 		},
 		{
 			"name": "Remains of Despair",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{B}{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "186",
 			"image_uris": {
@@ -3887,14 +2592,9 @@
 		},
 		{
 			"name": "Thickets Ghostcaller",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{G}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{G}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Plant",
+			"type": "Creature â€” Plant",
 			"collector_number": "193",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/193_Thickets Ghostcaller.jpg"
@@ -3902,13 +2602,8 @@
 		},
 		{
 			"name": "Foreboding Milestone",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "242",
 			"image_uris": {
@@ -3917,14 +2612,9 @@
 		},
 		{
 			"name": "Servant of Laceration",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}",
->>>>>>> upstream/main
-			"type": "Artifact Creature — Skeleton Construct",
+			"type": "Artifact Creature â€” Skeleton Construct",
 			"collector_number": "244",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/244_Servant of Laceration.jpg"
@@ -3932,13 +2622,8 @@
 		},
 		{
 			"name": "Collapsing Citadel",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
-=======
-			"rarity": "rare",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "246",
 			"image_uris": {
@@ -3947,13 +2632,8 @@
 		},
 		{
 			"name": "Cresting Spires",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
-=======
-			"rarity": "rare",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "247",
 			"image_uris": {
@@ -3962,13 +2642,8 @@
 		},
 		{
 			"name": "Drained Crevace",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
-=======
-			"rarity": "rare",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "249",
 			"image_uris": {
@@ -3977,13 +2652,8 @@
 		},
 		{
 			"name": "Fields of Bone",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
-=======
-			"rarity": "rare",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "250",
 			"image_uris": {
@@ -3992,13 +2662,8 @@
 		},
 		{
 			"name": "Imposing Clearing",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
-=======
-			"rarity": "rare",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "253",
 			"image_uris": {
@@ -4007,14 +2672,9 @@
 		},
 		{
 			"name": "Island",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Island",
+			"type": "Basic Land â€” Island",
 			"collector_number": "254",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/254_Island.jpg"
@@ -4022,14 +2682,9 @@
 		},
 		{
 			"name": "Mountain",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Mountain",
+			"type": "Basic Land â€” Mountain",
 			"collector_number": "255",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/255_Mountain.jpg"
@@ -4037,13 +2692,8 @@
 		},
 		{
 			"name": "Mysterious Altar",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
-=======
-			"rarity": "rare",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "256",
 			"image_uris": {
@@ -4052,13 +2702,8 @@
 		},
 		{
 			"name": "Perpetual Depths",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
-=======
-			"rarity": "rare",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "258",
 			"image_uris": {
@@ -4067,14 +2712,9 @@
 		},
 		{
 			"name": "Plains",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Plains",
+			"type": "Basic Land â€” Plains",
 			"collector_number": "259",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/259_Plains.jpg"
@@ -4082,13 +2722,8 @@
 		},
 		{
 			"name": "Shrine of Unburial",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
-=======
-			"rarity": "rare",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "262",
 			"image_uris": {
@@ -4097,13 +2732,8 @@
 		},
 		{
 			"name": "Sparse Weblands",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
-=======
-			"rarity": "rare",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "264",
 			"image_uris": {
@@ -4112,14 +2742,9 @@
 		},
 		{
 			"name": "Swamp",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Swamp",
+			"type": "Basic Land â€” Swamp",
 			"collector_number": "267",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HEL-files/img/267_Swamp.jpg"
@@ -4127,13 +2752,8 @@
 		},
 		{
 			"name": "Sweltering Shoals",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
-=======
-			"rarity": "rare",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "268",
 			"image_uris": {
@@ -4142,13 +2762,8 @@
 		},
 		{
 			"name": "Thread the Undergrowth",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{G}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "234",
 			"image_uris": {

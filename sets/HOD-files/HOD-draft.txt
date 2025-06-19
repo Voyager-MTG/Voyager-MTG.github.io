@@ -1,15 +1,10 @@
-[CustomCards]
+ï»¿[CustomCards]
 	[
 		{
 			"name": "Sword of the Royalty",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{3}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{3}",
->>>>>>> upstream/main
-			"type": "Artifact — Equipment",
+			"type": "Artifact â€” Equipment",
 			"collector_number": "287",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/287_Sword of the Royalty.jpg"
@@ -17,14 +12,9 @@
 		},
 		{
 			"name": "Knight Exemplar",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{W}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{W}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Human Knight",
+			"type": "Creature â€” Human Knight",
 			"collector_number": "18",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/18_Knight Exemplar.jpg"
@@ -32,14 +22,9 @@
 		},
 		{
 			"name": "Arbiter of the Meek",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Angel Soldier",
+			"type": "Creature â€” Angel Soldier",
 			"collector_number": "3",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/3_Arbiter of the Meek.jpg"
@@ -47,14 +32,9 @@
 		},
 		{
 			"name": "Sandrock Blacksmith",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
-			"type": "Creature — Kithkin Artificer",
+			"type": "Creature â€” Kithkin Artificer",
 			"collector_number": "32",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/32_Sandrock Blacksmith.jpg"
@@ -62,14 +42,9 @@
 		},
 		{
 			"name": "Sapner Vindicator",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Gargoyle Knight",
+			"type": "Creature â€” Gargoyle Knight",
 			"collector_number": "33",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/33_Sapner Vindicator.jpg"
@@ -77,13 +52,8 @@
 		},
 		{
 			"name": "Call to War",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{X}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{X}{W}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "8",
 			"image_uris": {
@@ -92,14 +62,9 @@
 		},
 		{
 			"name": "Regal Lion",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{4}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{4}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Cat",
+			"type": "Creature â€” Cat",
 			"collector_number": "30",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/30_Regal Lion.jpg"
@@ -107,14 +72,9 @@
 		},
 		{
 			"name": "Leon Terrel, Unspoken Heir",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{4}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{4}{W}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Human Knight",
+			"type": "Legendary Creature â€” Human Knight",
 			"collector_number": "21",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/21_Leon Terrel, Unspoken Heir.jpg"
@@ -122,13 +82,8 @@
 		},
 		{
 			"name": "Scorched Earth",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{W}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}{W}{W}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "34",
 			"image_uris": {
@@ -137,13 +92,8 @@
 		},
 		{
 			"name": "The Aciesblade",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{2}{W}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{2}{W}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "1",
 			"image_uris": {
@@ -152,13 +102,8 @@
 		},
 		{
 			"name": "Leon's Claim",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{4}{W}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{4}{W}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "22",
 			"image_uris": {
@@ -167,13 +112,8 @@
 		},
 		{
 			"name": "Mirrorkin's Bargain",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "67",
 			"image_uris": {
@@ -182,14 +122,9 @@
 		},
 		{
 			"name": "Sovereign Echomage",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Elf Wizard",
+			"type": "Creature â€” Elf Wizard",
 			"collector_number": "77",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/77_Sovereign Echomage.jpg"
@@ -197,13 +132,8 @@
 		},
 		{
 			"name": "Idol of Forgotten Gods",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "58",
 			"image_uris": {
@@ -212,14 +142,9 @@
 		},
 		{
 			"name": "Takers of Voice",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{4}{U}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{4}{U}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Faerie Horror Wizard",
+			"type": "Creature â€” Faerie Horror Wizard",
 			"collector_number": "78",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/78_Takers of Voice.jpg"
@@ -227,14 +152,9 @@
 		},
 		{
 			"name": "Wilmot Nye, the Crafty",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}{U}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Human Pirate Noble",
+			"type": "Legendary Creature â€” Human Pirate Noble",
 			"collector_number": "84",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/84_Wilmot Nye, the Crafty.jpg"
@@ -242,14 +162,9 @@
 		},
 		{
 			"name": "Inquisitive Otter",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Otter",
+			"type": "Creature â€” Otter",
 			"collector_number": "59",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/59_Inquisitive Otter.jpg"
@@ -257,14 +172,9 @@
 		},
 		{
 			"name": "Geistwald Kraken",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{7}{U}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{7}{U}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Kraken Horror",
+			"type": "Creature â€” Kraken Horror",
 			"collector_number": "55",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/55_Geistwald Kraken.jpg"
@@ -272,14 +182,9 @@
 		},
 		{
 			"name": "Beachside Drake",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Drake",
+			"type": "Creature â€” Drake",
 			"collector_number": "45",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/45_Beachside Drake.jpg"
@@ -287,14 +192,9 @@
 		},
 		{
 			"name": "Marilye, Heirloom Pilferer",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{3}{U}{U}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{3}{U}{U}",
->>>>>>> upstream/main
-			"type": "Legendary Planeswalker — Marilye",
+			"type": "Legendary Planeswalker â€” Marilye",
 			"collector_number": "66",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/66_Marilye, Heirloom Pilferer.jpg"
@@ -302,14 +202,9 @@
 		},
 		{
 			"name": "Domineering Mirrorkin",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{5}{U}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{5}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Shapeshifter Horror",
+			"type": "Creature â€” Shapeshifter Horror",
 			"collector_number": "51",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/51_Domineering Mirrorkin.jpg"
@@ -317,14 +212,9 @@
 		},
 		{
 			"name": "Royal Seeker",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{7}{U}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{7}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Faerie Warrior",
+			"type": "Creature â€” Faerie Warrior",
 			"collector_number": "75",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/75_Royal Seeker.jpg"
@@ -332,13 +222,8 @@
 		},
 		{
 			"name": "Unending Malice",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{B}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "117",
 			"image_uris": {
@@ -347,14 +232,9 @@
 		},
 		{
 			"name": "Petula Vance, the Solemn Joke",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{4}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{4}{B}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Elf Noble",
+			"type": "Legendary Creature â€” Elf Noble",
 			"collector_number": "102",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/102_Petula Vance, the Solemn Joke.jpg"
@@ -362,14 +242,9 @@
 		},
 		{
 			"name": "Thriving Hyena",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Hyena",
+			"type": "Creature â€” Hyena",
 			"collector_number": "115",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/115_Thriving Hyena.jpg"
@@ -377,13 +252,8 @@
 		},
 		{
 			"name": "Taken by House Vance",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{B}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{B}{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "113",
 			"image_uris": {
@@ -392,14 +262,9 @@
 		},
 		{
 			"name": "Vance Informant",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Faerie Assassin",
+			"type": "Creature â€” Faerie Assassin",
 			"collector_number": "119",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/119_Vance Informant.jpg"
@@ -407,14 +272,9 @@
 		},
 		{
 			"name": "Sapner Hexcrafter",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Warlock",
+			"type": "Creature â€” Azra Warlock",
 			"collector_number": "109",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/109_Sapner Hexcrafter.jpg"
@@ -422,14 +282,9 @@
 		},
 		{
 			"name": "Plaskett Trickster",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Kithkin Rogue",
+			"type": "Creature â€” Kithkin Rogue",
 			"collector_number": "104",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/104_Plaskett Trickster.jpg"
@@ -437,14 +292,9 @@
 		},
 		{
 			"name": "Virulent Hexer",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Hag Warlock",
+			"type": "Creature â€” Hag Warlock",
 			"collector_number": "122",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/122_Virulent Hexer.jpg"
@@ -452,13 +302,8 @@
 		},
 		{
 			"name": "Closure",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{1}{B}{B}{B}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{1}{B}{B}{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "89",
 			"image_uris": {
@@ -467,14 +312,9 @@
 		},
 		{
 			"name": "Knight of the Endless War",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{2}{B}{B}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{2}{B}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Spirit Knight",
+			"type": "Creature â€” Spirit Knight",
 			"collector_number": "97",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/97_Knight of the Endless War.jpg"
@@ -482,14 +322,9 @@
 		},
 		{
 			"name": "Waldemar, Forgotten Heir",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{1}{B}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{1}{B}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Elf Noble",
+			"type": "Legendary Creature â€” Elf Noble",
 			"collector_number": "124",
 			"back": {
 				"name": "",
@@ -504,14 +339,9 @@
 		},
 		{
 			"name": "Fervent Demagogue",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Elf Warlock",
+			"type": "Creature â€” Elf Warlock",
 			"collector_number": "142",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/142_Fervent Demagogue.jpg"
@@ -519,14 +349,9 @@
 		},
 		{
 			"name": "Caryl Rey, the Rose",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}{R}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Human Knight",
+			"type": "Legendary Creature â€” Human Knight",
 			"collector_number": "136",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/136_Caryl Rey, the Rose.jpg"
@@ -534,14 +359,9 @@
 		},
 		{
 			"name": "Ardleby Gatekeeper",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Spirit Soldier",
+			"type": "Creature â€” Spirit Soldier",
 			"collector_number": "128",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/128_Ardleby Gatekeeper.jpg"
@@ -549,14 +369,9 @@
 		},
 		{
 			"name": "Geistwald Deceiver",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{4}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{4}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Ouphe Warlock",
+			"type": "Creature â€” Ouphe Warlock",
 			"collector_number": "144",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/144_Geistwald Deceiver.jpg"
@@ -564,13 +379,8 @@
 		},
 		{
 			"name": "Usurp",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{6}{R}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{6}{R}{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "164",
 			"image_uris": {
@@ -579,13 +389,8 @@
 		},
 		{
 			"name": "Standoff at Beachside",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{R}{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "158",
 			"image_uris": {
@@ -594,13 +399,8 @@
 		},
 		{
 			"name": "William's Epiphany",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{X}{R}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{X}{R}{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "167",
 			"image_uris": {
@@ -609,14 +409,9 @@
 		},
 		{
 			"name": "Blazing Phoenix",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Phoenix",
+			"type": "Creature â€” Phoenix",
 			"collector_number": "133",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/133_Blazing Phoenix.jpg"
@@ -624,13 +419,8 @@
 		},
 		{
 			"name": "Thorough Conflagration",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{X}{R}{R}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{X}{R}{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "161",
 			"image_uris": {
@@ -639,14 +429,9 @@
 		},
 		{
 			"name": "Herald of Storms",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{2}{R}{R}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{2}{R}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Elemental Dragon",
+			"type": "Creature â€” Elemental Dragon",
 			"collector_number": "147",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/147_Herald of Storms.jpg"
@@ -654,14 +439,9 @@
 		},
 		{
 			"name": "House Negotiations",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "259",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/259_House Negotiations.jpg"
@@ -669,14 +449,9 @@
 		},
 		{
 			"name": "Quirky Chameleon",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Lizard",
+			"type": "Creature â€” Lizard",
 			"collector_number": "266",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/266_Quirky Chameleon.jpg"
@@ -684,14 +459,9 @@
 		},
 		{
 			"name": "Ranulf, the Seed of Sapner",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{5}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{5}{G}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Azra Druid Noble",
+			"type": "Legendary Creature â€” Azra Druid Noble",
 			"collector_number": "267",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/267_Ranulf, the Seed of Sapner.jpg"
@@ -699,14 +469,9 @@
 		},
 		{
 			"name": "Geistwald Amalgam",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{X}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{X}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Hydra Mutant",
+			"type": "Creature â€” Hydra Mutant",
 			"collector_number": "256",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/256_Geistwald Amalgam.jpg"
@@ -714,14 +479,9 @@
 		},
 		{
 			"name": "Geistwald Abomination",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{5}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{5}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Wolf Horror",
+			"type": "Creature â€” Wolf Horror",
 			"collector_number": "255",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/255_Geistwald Abomination.jpg"
@@ -729,13 +489,8 @@
 		},
 		{
 			"name": "Choice of Salvations",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "247",
 			"image_uris": {
@@ -744,14 +499,9 @@
 		},
 		{
 			"name": "Chorus of the Silberwald",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Human Druid",
+			"type": "Creature â€” Human Druid",
 			"collector_number": "248",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/248_Chorus of the Silberwald.jpg"
@@ -759,14 +509,9 @@
 		},
 		{
 			"name": "Blight-Tipped Hunter",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{G}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Ranger",
+			"type": "Creature â€” Azra Ranger",
 			"collector_number": "242",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/242_Blight-Tipped Hunter.jpg"
@@ -774,14 +519,9 @@
 		},
 		{
 			"name": "Sapner Trapper",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Archer",
+			"type": "Creature â€” Azra Archer",
 			"collector_number": "274",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/274_Sapner Trapper.jpg"
@@ -789,14 +529,9 @@
 		},
 		{
 			"name": "One with the Geistwald",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{3}{G}{G}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{3}{G}{G}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "264",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/264_One with the Geistwald.jpg"
@@ -804,14 +539,9 @@
 		},
 		{
 			"name": "Oriel Rivers, Wings of Worth",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{W}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{W}{U}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Angel Soldier",
+			"type": "Legendary Creature â€” Angel Soldier",
 			"collector_number": "169",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/169_Oriel Rivers, Wings of Worth.jpg"
@@ -819,14 +549,9 @@
 		},
 		{
 			"name": "Elias Plaskett, Hidden Blade",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{U}{B}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Kithkin Rogue",
+			"type": "Legendary Creature â€” Kithkin Rogue",
 			"collector_number": "171",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/171_Elias Plaskett, Hidden Blade.jpg"
@@ -834,14 +559,9 @@
 		},
 		{
 			"name": "Wulfric Hook, Lord of Ends",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{B}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{B}{R}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Human Warrior",
+			"type": "Legendary Creature â€” Human Warrior",
 			"collector_number": "176",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/176_Wulfric Hook, Lord of Ends.jpg"
@@ -849,13 +569,8 @@
 		},
 		{
 			"name": "The Empty Throne of Phyre",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{R}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}{R}{G}",
->>>>>>> upstream/main
 			"type": "Legendary Artifact",
 			"collector_number": "178",
 			"image_uris": {
@@ -864,14 +579,9 @@
 		},
 		{
 			"name": "Capac Suyay, Grim Seeker",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{1}{G}{W}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{1}{G}{W}",
->>>>>>> upstream/main
-			"type": "Legendary Planeswalker — Suyay",
+			"type": "Legendary Planeswalker â€” Suyay",
 			"collector_number": "182",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/182_Capac Suyay, Grim Seeker.jpg"
@@ -879,14 +589,9 @@
 		},
 		{
 			"name": "Roul Banefort, the Stern",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{G}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{G}{W}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Azra Knight",
+			"type": "Legendary Creature â€” Azra Knight",
 			"collector_number": "183",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/183_Roul Banefort, the Stern.jpg"
@@ -894,14 +599,9 @@
 		},
 		{
 			"name": "Conrad Whitaker, Protector",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{W}{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{W}{B}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Human Knight",
+			"type": "Legendary Creature â€” Human Knight",
 			"collector_number": "185",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/185_Conrad Whitaker, Protector.jpg"
@@ -909,14 +609,9 @@
 		},
 		{
 			"name": "Minna Radcliff, the Swift",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{8}{U}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{8}{U}{R}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Human Knight",
+			"type": "Legendary Creature â€” Human Knight",
 			"collector_number": "188",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/188_Minna Radcliff, the Swift.jpg"
@@ -924,14 +619,9 @@
 		},
 		{
 			"name": "Gosfridus Turnberry",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{B}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}{B}{G}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Ouphe Knight",
+			"type": "Legendary Creature â€” Ouphe Knight",
 			"collector_number": "192",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/192_Gosfridus Turnberry.jpg"
@@ -939,14 +629,9 @@
 		},
 		{
 			"name": "Alger Perle, Lord of Truetower",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{R}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{R}{W}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Orc Knight",
+			"type": "Legendary Creature â€” Orc Knight",
 			"collector_number": "194",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/194_Alger Perle, Lord of Truetower.jpg"
@@ -954,14 +639,9 @@
 		},
 		{
 			"name": "Dovizia Attwater, the Learned",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{G}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{G}{U}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Azra Noble",
+			"type": "Legendary Creature â€” Azra Noble",
 			"collector_number": "198",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/198_Dovizia Attwater, the Learned.jpg"
@@ -969,14 +649,9 @@
 		},
 		{
 			"name": "Daring General",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{R}{G}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{R}{G}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Human Knight",
+			"type": "Creature â€” Human Knight",
 			"collector_number": "208",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/208_Daring General.jpg"
@@ -984,13 +659,8 @@
 		},
 		{
 			"name": "In Defiance",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{U}{R}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{U}{R}{W}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "220",
 			"image_uris": {
@@ -999,14 +669,9 @@
 		},
 		{
 			"name": "Inspiring Castellan",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{R}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{U}{R}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Gargoyle Soldier",
+			"type": "Creature â€” Gargoyle Soldier",
 			"collector_number": "221",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/221_Inspiring Castellan.jpg"
@@ -1014,13 +679,8 @@
 		},
 		{
 			"name": "Edict of the Mirrorkin",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{U}{R}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{U}{R}{W}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "213",
 			"image_uris": {
@@ -1029,13 +689,8 @@
 		},
 		{
 			"name": "Bamboozle",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{B}{G}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{B}{G}{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "201",
 			"image_uris": {
@@ -1044,14 +699,9 @@
 		},
 		{
 			"name": "Whisperer of Armies",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{W}{B}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{W}{B}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Druid",
+			"type": "Creature â€” Azra Druid",
 			"collector_number": "239",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/239_Whisperer of Armies.jpg"
@@ -1059,14 +709,9 @@
 		},
 		{
 			"name": "Weight of War",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{3}{U}{B}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{3}{U}{B}{R}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura Curse",
+			"type": "Enchantment â€” Aura Curse",
 			"collector_number": "238",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/238_Weight of War.jpg"
@@ -1074,13 +719,8 @@
 		},
 		{
 			"name": "Scars of Wars Past",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{G}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{R}{G}{W}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "230",
 			"image_uris": {
@@ -1089,13 +729,8 @@
 		},
 		{
 			"name": "Succession Scandal",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{U}{B}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{U}{B}{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "235",
 			"image_uris": {
@@ -1104,14 +739,9 @@
 		},
 		{
 			"name": "Castle Delta Agitator",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{B}{G}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{B}{G}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Kithkin Pirate",
+			"type": "Creature â€” Kithkin Pirate",
 			"collector_number": "204",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/204_Castle Delta Agitator.jpg"
@@ -1119,14 +749,9 @@
 		},
 		{
 			"name": "Cherrywood Elite",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{W}{B}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{W}{B}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Knight",
+			"type": "Creature â€” Azra Knight",
 			"collector_number": "205",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/205_Cherrywood Elite.jpg"
@@ -1134,14 +759,9 @@
 		},
 		{
 			"name": "Stoic at Graven Laughs",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{5}{U}{B}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{5}{U}{B}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Dragon",
+			"type": "Creature â€” Dragon",
 			"collector_number": "234",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/234_Stoic at Graven Laughs.jpg"
@@ -1149,14 +769,9 @@
 		},
 		{
 			"name": "The Crown of Skyspire",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{R}{G}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{R}{G}{W}",
->>>>>>> upstream/main
-			"type": "Legendary Artifact — Equipment",
+			"type": "Legendary Artifact â€” Equipment",
 			"collector_number": "207",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/207_The Crown of Skyspire.jpg"
@@ -1164,14 +779,9 @@
 		},
 		{
 			"name": "Nye Scoundrel",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{B}{G}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{B}{G}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Kithkin Pirate",
+			"type": "Creature â€” Kithkin Pirate",
 			"collector_number": "224",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/224_Nye Scoundrel.jpg"
@@ -1179,13 +789,8 @@
 		},
 		{
 			"name": "Decisive Judgment",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{W}{B}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{W}{B}{G}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "209",
 			"image_uris": {
@@ -1194,14 +799,9 @@
 		},
 		{
 			"name": "Bennet Terrel, the High King",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{U}{R}{W}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{U}{R}{W}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Human Noble",
+			"type": "Legendary Creature â€” Human Noble",
 			"collector_number": "202",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/202_Bennet Terrel, the High King.jpg"
@@ -1209,14 +809,9 @@
 		},
 		{
 			"name": "Bistra Sapner, the Flourishing",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{W}{B}{G}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{W}{B}{G}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Azra Wizard",
+			"type": "Legendary Creature â€” Azra Wizard",
 			"collector_number": "203",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/203_Bistra Sapner, the Flourishing.jpg"
@@ -1224,14 +819,9 @@
 		},
 		{
 			"name": "Delora Vance, Lord of Laughs",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{U}{B}{R}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{U}{B}{R}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Elf Warlock",
+			"type": "Legendary Creature â€” Elf Warlock",
 			"collector_number": "210",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/210_Delora Vance, Lord of Laughs.jpg"
@@ -1239,14 +829,9 @@
 		},
 		{
 			"name": "Edith Rey, the Just",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{R}{G}{W}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{R}{G}{W}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Human Noble",
+			"type": "Legendary Creature â€” Human Noble",
 			"collector_number": "214",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/214_Edith Rey, the Just.jpg"
@@ -1254,14 +839,9 @@
 		},
 		{
 			"name": "Elric Nye, the Pirate King",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{3}{B}{G}{U}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{3}{B}{G}{U}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Human Pirate",
+			"type": "Legendary Creature â€” Human Pirate",
 			"collector_number": "215",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/215_Elric Nye, the Pirate King.jpg"
@@ -1269,13 +849,8 @@
 		},
 		{
 			"name": "Castle on the Delta",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
-=======
-			"rarity": "rare",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "291",
 			"image_uris": {
@@ -1284,13 +859,8 @@
 		},
 		{
 			"name": "Skyspire Keep",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
-=======
-			"rarity": "rare",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "299",
 			"image_uris": {
@@ -1299,13 +869,8 @@
 		},
 		{
 			"name": "King's Rock Castle",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
-=======
-			"rarity": "rare",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "297",
 			"image_uris": {
@@ -1314,13 +879,8 @@
 		},
 		{
 			"name": "Hall of Graven Laughs",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
-=======
-			"rarity": "rare",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "295",
 			"image_uris": {
@@ -1329,13 +889,8 @@
 		},
 		{
 			"name": "Fort Sapner",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "",
-=======
-			"rarity": "rare",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "294",
 			"image_uris": {
@@ -1344,14 +899,9 @@
 		},
 		{
 			"name": "Slabman Stoneplate",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
-			"type": "Artifact — Equipment",
+			"type": "Artifact â€” Equipment",
 			"collector_number": "286",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/286_Slabman Stoneplate.jpg"
@@ -1359,13 +909,8 @@
 		},
 		{
 			"name": "Clearing in the Glade",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "292",
 			"image_uris": {
@@ -1374,14 +919,9 @@
 		},
 		{
 			"name": "Important Parcel",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{0}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{0}",
->>>>>>> upstream/main
-			"type": "Artifact — Clue",
+			"type": "Artifact â€” Clue",
 			"collector_number": "284",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/284_Important Parcel.jpg"
@@ -1389,13 +929,8 @@
 		},
 		{
 			"name": "Overflowing Sanctuary",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "298",
 			"image_uris": {
@@ -1404,14 +939,9 @@
 		},
 		{
 			"name": "Extravagent Airship",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{4}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{4}",
->>>>>>> upstream/main
-			"type": "Artifact — Vehicle",
+			"type": "Artifact â€” Vehicle",
 			"collector_number": "282",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/282_Extravagent Airship.jpg"
@@ -1419,13 +949,8 @@
 		},
 		{
 			"name": "Travelcart's Care",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "38",
 			"image_uris": {
@@ -1434,14 +959,9 @@
 		},
 		{
 			"name": "Whitaker Elite",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{4}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{4}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Human Knight",
+			"type": "Creature â€” Human Knight",
 			"collector_number": "41",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/41_Whitaker Elite.jpg"
@@ -1449,13 +969,8 @@
 		},
 		{
 			"name": "Switching Shifts",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "35",
 			"image_uris": {
@@ -1464,14 +979,9 @@
 		},
 		{
 			"name": "Terrel Battlemage",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Gargoyle Knight Wizard",
+			"type": "Creature â€” Gargoyle Knight Wizard",
 			"collector_number": "36",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/36_Terrel Battlemage.jpg"
@@ -1479,14 +989,9 @@
 		},
 		{
 			"name": "Imani Whitaker",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Human Soldier",
+			"type": "Legendary Creature â€” Human Soldier",
 			"collector_number": "15",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/15_Imani Whitaker.jpg"
@@ -1494,14 +999,9 @@
 		},
 		{
 			"name": "Noble Griffin",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Griffin",
+			"type": "Creature â€” Griffin",
 			"collector_number": "25",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/25_Noble Griffin.jpg"
@@ -1509,14 +1009,9 @@
 		},
 		{
 			"name": "Paragon of Stories",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Human Knight",
+			"type": "Creature â€” Human Knight",
 			"collector_number": "28",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/28_Paragon of Stories.jpg"
@@ -1524,14 +1019,9 @@
 		},
 		{
 			"name": "Wystan Terrel, the Occultist",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{W}{W}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Human Wizard",
+			"type": "Legendary Creature â€” Human Wizard",
 			"collector_number": "42",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/42_Wystan Terrel, the Occultist.jpg"
@@ -1539,14 +1029,9 @@
 		},
 		{
 			"name": "Heart of Banefort",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Cleric",
+			"type": "Creature â€” Azra Cleric",
 			"collector_number": "12",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/12_Heart of Banefort.jpg"
@@ -1554,13 +1039,8 @@
 		},
 		{
 			"name": "Trust in the Future",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "40",
 			"image_uris": {
@@ -1569,13 +1049,8 @@
 		},
 		{
 			"name": "Left to Wander",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "20",
 			"image_uris": {
@@ -1584,13 +1059,8 @@
 		},
 		{
 			"name": "In Hopeful Caress",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{W}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "17",
 			"image_uris": {
@@ -1599,13 +1069,8 @@
 		},
 		{
 			"name": "Lost at Sea",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "63",
 			"image_uris": {
@@ -1614,14 +1079,9 @@
 		},
 		{
 			"name": "Nye Battlemage",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Human Pirate Wizard",
+			"type": "Creature â€” Human Pirate Wizard",
 			"collector_number": "70",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/70_Nye Battlemage.jpg"
@@ -1629,14 +1089,9 @@
 		},
 		{
 			"name": "Many-faced Blade",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Shapeshifter Illusion",
+			"type": "Creature â€” Shapeshifter Illusion",
 			"collector_number": "65",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/65_Many-faced Blade.jpg"
@@ -1644,14 +1099,9 @@
 		},
 		{
 			"name": "Flittering Distraction",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Faerie Warlock",
+			"type": "Creature â€” Faerie Warlock",
 			"collector_number": "54",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/54_Flittering Distraction.jpg"
@@ -1659,14 +1109,9 @@
 		},
 		{
 			"name": "Pilferer of Shrouded Coasts",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Human Rogue",
+			"type": "Creature â€” Human Rogue",
 			"collector_number": "73",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/73_Pilferer of Shrouded Coasts.jpg"
@@ -1674,14 +1119,9 @@
 		},
 		{
 			"name": "Attwater Drakerider",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Knight",
+			"type": "Creature â€” Azra Knight",
 			"collector_number": "44",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/44_Attwater Drakerider.jpg"
@@ -1689,13 +1129,8 @@
 		},
 		{
 			"name": "Disappointing Show",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{X}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{X}{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "50",
 			"image_uris": {
@@ -1704,14 +1139,9 @@
 		},
 		{
 			"name": "Town Busybody",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{U}",
->>>>>>> upstream/main
-			"type": "Creature — Faerie Rogue",
+			"type": "Creature â€” Faerie Rogue",
 			"collector_number": "81",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/81_Town Busybody.jpg"
@@ -1719,14 +1149,9 @@
 		},
 		{
 			"name": "Lodema, Diamond of the Nye",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Human Pirate",
+			"type": "Legendary Creature â€” Human Pirate",
 			"collector_number": "62",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/62_Lodema, Diamond of the Nye.jpg"
@@ -1734,13 +1159,8 @@
 		},
 		{
 			"name": "Grasp of the Mirrorkin",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "57",
 			"image_uris": {
@@ -1749,13 +1169,8 @@
 		},
 		{
 			"name": "Beginning of a Grand Heist",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "46",
 			"image_uris": {
@@ -1764,13 +1179,8 @@
 		},
 		{
 			"name": "Grand Snail Race at Riverdale",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "56",
 			"image_uris": {
@@ -1779,14 +1189,9 @@
 		},
 		{
 			"name": "Vance Soulsapper",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Faerie Warlock",
+			"type": "Creature â€” Faerie Warlock",
 			"collector_number": "121",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/121_Vance Soulsapper.jpg"
@@ -1794,14 +1199,9 @@
 		},
 		{
 			"name": "Vance Battlemage",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Gargoyle Knight Wizard",
+			"type": "Creature â€” Gargoyle Knight Wizard",
 			"collector_number": "118",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/118_Vance Battlemage.jpg"
@@ -1809,13 +1209,8 @@
 		},
 		{
 			"name": "Voyage to the End of the World",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "123",
 			"image_uris": {
@@ -1824,13 +1219,8 @@
 		},
 		{
 			"name": "Massacre at King's Rock",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{B}{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "98",
 			"image_uris": {
@@ -1839,14 +1229,9 @@
 		},
 		{
 			"name": "Reaper of Graven Laughs",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{5}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{5}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Elf Knight",
+			"type": "Creature â€” Elf Knight",
 			"collector_number": "106",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/106_Reaper of Graven Laughs.jpg"
@@ -1854,14 +1239,9 @@
 		},
 		{
 			"name": "Fueled by Vengeance",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{B}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "96",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/96_Fueled by Vengeance.jpg"
@@ -1869,13 +1249,8 @@
 		},
 		{
 			"name": "On the Knife's Edge",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{B}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "100",
 			"image_uris": {
@@ -1884,14 +1259,9 @@
 		},
 		{
 			"name": "Whitaker Devoted",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{B}",
->>>>>>> upstream/main
-			"type": "Creature — Human Soldier",
+			"type": "Creature â€” Human Soldier",
 			"collector_number": "126",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/126_Whitaker Devoted.jpg"
@@ -1899,14 +1269,9 @@
 		},
 		{
 			"name": "Plaskett Barber",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Human Assassin",
+			"type": "Creature â€” Human Assassin",
 			"collector_number": "103",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/103_Plaskett Barber.jpg"
@@ -1914,14 +1279,9 @@
 		},
 		{
 			"name": "Tacit Scorpion",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Scorpion",
+			"type": "Creature â€” Scorpion",
 			"collector_number": "112",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/112_Tacit Scorpion.jpg"
@@ -1929,14 +1289,9 @@
 		},
 		{
 			"name": "Alder, Vance's Claw",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{B}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Elf Noble",
+			"type": "Legendary Creature â€” Elf Noble",
 			"collector_number": "85",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/85_Alder, Vance's Claw.jpg"
@@ -1944,13 +1299,8 @@
 		},
 		{
 			"name": "Binding Lightning",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "132",
 			"image_uris": {
@@ -1959,13 +1309,8 @@
 		},
 		{
 			"name": "Torch",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "162",
 			"image_uris": {
@@ -1974,14 +1319,9 @@
 		},
 		{
 			"name": "William Rey, Lover to All",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{R}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Human Noble",
+			"type": "Legendary Creature â€” Human Noble",
 			"collector_number": "166",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/166_William Rey, Lover to All.jpg"
@@ -1989,13 +1329,8 @@
 		},
 		{
 			"name": "All-Out Charge",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "127",
 			"image_uris": {
@@ -2004,14 +1339,9 @@
 		},
 		{
 			"name": "Drenched Euphoria",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{R}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "140",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/140_Drenched Euphoria.jpg"
@@ -2019,14 +1349,9 @@
 		},
 		{
 			"name": "Death's Sting Captain",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Gargoyle Soldier",
+			"type": "Creature â€” Gargoyle Soldier",
 			"collector_number": "138",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/138_Death's Sting Captain.jpg"
@@ -2034,14 +1359,9 @@
 		},
 		{
 			"name": "Rey Battlemages",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Kithkin Human Warrior",
+			"type": "Creature â€” Kithkin Human Warrior",
 			"collector_number": "155",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/155_Rey Battlemages.jpg"
@@ -2049,14 +1369,9 @@
 		},
 		{
 			"name": "Seeker of Blood",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Elf Warlock",
+			"type": "Creature â€” Elf Warlock",
 			"collector_number": "157",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/157_Seeker of Blood.jpg"
@@ -2064,14 +1379,9 @@
 		},
 		{
 			"name": "Radcliff Electromancer",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{4}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{4}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Human Wizard",
+			"type": "Creature â€” Human Wizard",
 			"collector_number": "153",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/153_Radcliff Electromancer.jpg"
@@ -2079,14 +1389,9 @@
 		},
 		{
 			"name": "Catastrophic Dragon",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{4}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{4}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Dragon",
+			"type": "Creature â€” Dragon",
 			"collector_number": "137",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/137_Catastrophic Dragon.jpg"
@@ -2094,14 +1399,9 @@
 		},
 		{
 			"name": "Raving Bomber",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{R}",
->>>>>>> upstream/main
-			"type": "Creature — Kithkin Rogue",
+			"type": "Creature â€” Kithkin Rogue",
 			"collector_number": "154",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/154_Raving Bomber.jpg"
@@ -2109,13 +1409,8 @@
 		},
 		{
 			"name": "Beacon of Greatness",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{R}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "130",
 			"image_uris": {
@@ -2124,14 +1419,9 @@
 		},
 		{
 			"name": "Turnberry Mediator",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{5}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{5}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Gargoyle Knight",
+			"type": "Creature â€” Gargoyle Knight",
 			"collector_number": "279",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/279_Turnberry Mediator.jpg"
@@ -2139,13 +1429,8 @@
 		},
 		{
 			"name": "The Call to Adventure",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{4}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{4}{G}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "244",
 			"image_uris": {
@@ -2154,13 +1439,8 @@
 		},
 		{
 			"name": "Foilage Decoy",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{G}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "252",
 			"image_uris": {
@@ -2169,13 +1449,8 @@
 		},
 		{
 			"name": "Encroach Upon",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "250",
 			"image_uris": {
@@ -2184,14 +1459,9 @@
 		},
 		{
 			"name": "Hunter's Expertise",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{G}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "260",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/260_Hunter's Expertise.jpg"
@@ -2199,14 +1469,9 @@
 		},
 		{
 			"name": "Attwater Elite",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{G}",
->>>>>>> upstream/main
-			"type": "Creature — Human Wizard",
+			"type": "Creature â€” Human Wizard",
 			"collector_number": "241",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/241_Attwater Elite.jpg"
@@ -2214,14 +1479,9 @@
 		},
 		{
 			"name": "Sapner Battlemage",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Knight Wizard",
+			"type": "Creature â€” Azra Knight Wizard",
 			"collector_number": "272",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/272_Sapner Battlemage.jpg"
@@ -2229,13 +1489,8 @@
 		},
 		{
 			"name": "Rey Hospitality",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "270",
 			"image_uris": {
@@ -2244,14 +1499,9 @@
 		},
 		{
 			"name": "Fulchard Sapner, Gentle Giant",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{4}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{4}{G}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Azra Knight",
+			"type": "Legendary Creature â€” Azra Knight",
 			"collector_number": "254",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/254_Fulchard Sapner, Gentle Giant.jpg"
@@ -2259,14 +1509,9 @@
 		},
 		{
 			"name": "Turnberry Overseer",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie Knight",
+			"type": "Creature â€” Zombie Knight",
 			"collector_number": "280",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/280_Turnberry Overseer.jpg"
@@ -2274,14 +1519,9 @@
 		},
 		{
 			"name": "Silberwald Trailblazer",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Rogue",
+			"type": "Creature â€” Azra Rogue",
 			"collector_number": "277",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/277_Silberwald Trailblazer.jpg"
@@ -2289,14 +1529,9 @@
 		},
 		{
 			"name": "Robust Oxen",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Ox",
+			"type": "Creature â€” Ox",
 			"collector_number": "271",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/271_Robust Oxen.jpg"
@@ -2304,13 +1539,8 @@
 		},
 		{
 			"name": "Gathering of Lost Souls",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{W}{U}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "168",
 			"image_uris": {
@@ -2319,14 +1549,9 @@
 		},
 		{
 			"name": "Travelcart Guardian",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{W}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{W}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Human Knight",
+			"type": "Creature â€” Human Knight",
 			"collector_number": "170",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/170_Travelcart Guardian.jpg"
@@ -2334,13 +1559,8 @@
 		},
 		{
 			"name": "Vindictive Spiral",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{U}{B}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "173",
 			"image_uris": {
@@ -2349,14 +1569,9 @@
 		},
 		{
 			"name": "Guide of Neglected Hopes",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{4}{U}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{4}{U}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Ouphe",
+			"type": "Creature â€” Ouphe",
 			"collector_number": "172",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/172_Guide of Neglected Hopes.jpg"
@@ -2364,14 +1579,9 @@
 		},
 		{
 			"name": "Hook Ironmantle",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{B}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{B}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Human Warrior",
+			"type": "Creature â€” Human Warrior",
 			"collector_number": "175",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/175_Hook Ironmantle.jpg"
@@ -2379,13 +1589,8 @@
 		},
 		{
 			"name": "Artillery Shot",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{3}{B}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{3}{B}{R}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "174",
 			"image_uris": {
@@ -2394,13 +1599,8 @@
 		},
 		{
 			"name": "Break Out",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{R}{G}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "177",
 			"image_uris": {
@@ -2409,14 +1609,9 @@
 		},
 		{
 			"name": "Phyre Armiger",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{R}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Satyr Knight",
+			"type": "Creature â€” Satyr Knight",
 			"collector_number": "180",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/180_Phyre Armiger.jpg"
@@ -2424,14 +1619,9 @@
 		},
 		{
 			"name": "Bistra's Commander",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{G}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Knight",
+			"type": "Creature â€” Azra Knight",
 			"collector_number": "181",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/181_Bistra's Commander.jpg"
@@ -2439,13 +1629,8 @@
 		},
 		{
 			"name": "Standing Army",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{G}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{G}{W}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "184",
 			"image_uris": {
@@ -2454,14 +1639,9 @@
 		},
 		{
 			"name": "Whitaker Cavalry",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{W}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{W}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Human Knight",
+			"type": "Creature â€” Human Knight",
 			"collector_number": "187",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/187_Whitaker Cavalry.jpg"
@@ -2469,14 +1649,9 @@
 		},
 		{
 			"name": "Proof of Divinity",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{W}{B}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "186",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/186_Proof of Divinity.jpg"
@@ -2484,14 +1659,9 @@
 		},
 		{
 			"name": "Radcliff Dragoncaller",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{U}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Human Wizard",
+			"type": "Creature â€” Human Wizard",
 			"collector_number": "190",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/190_Radcliff Dragoncaller.jpg"
@@ -2499,13 +1669,8 @@
 		},
 		{
 			"name": "Naval Artillery",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{U}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{U}{R}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "189",
 			"image_uris": {
@@ -2514,13 +1679,8 @@
 		},
 		{
 			"name": "Dirt to Flesh",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{B}{G}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "191",
 			"image_uris": {
@@ -2529,14 +1689,9 @@
 		},
 		{
 			"name": "Restorative Hexer",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{B}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{B}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Hag Warlock",
+			"type": "Creature â€” Hag Warlock",
 			"collector_number": "193",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/193_Restorative Hexer.jpg"
@@ -2544,14 +1699,9 @@
 		},
 		{
 			"name": "Kirsa, the Sword of Perle",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{R}{W}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Orc Soldier",
+			"type": "Legendary Creature â€” Orc Soldier",
 			"collector_number": "195",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/195_Kirsa, the Sword of Perle.jpg"
@@ -2559,14 +1709,9 @@
 		},
 		{
 			"name": "Renodet, the Shield of Perle",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{R}{W}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Orc Soldier",
+			"type": "Legendary Creature â€” Orc Soldier",
 			"collector_number": "196",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/196_Renodet, the Shield of Perle.jpg"
@@ -2574,14 +1719,9 @@
 		},
 		{
 			"name": "Hillcrest Vanguard",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{G}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Satyr Scout",
+			"type": "Creature â€” Satyr Scout",
 			"collector_number": "199",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/199_Hillcrest Vanguard.jpg"
@@ -2589,14 +1729,9 @@
 		},
 		{
 			"name": "Attwater Warsworn",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{G}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{G}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Human Soldier",
+			"type": "Creature â€” Human Soldier",
 			"collector_number": "197",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/197_Attwater Warsworn.jpg"
@@ -2604,14 +1739,9 @@
 		},
 		{
 			"name": "Cherrywood Groundskeeper",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{B}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{W}{B}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Druid",
+			"type": "Creature â€” Azra Druid",
 			"collector_number": "206",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/206_Cherrywood Groundskeeper.jpg"
@@ -2619,13 +1749,8 @@
 		},
 		{
 			"name": "Sapner Decree",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{W}{B}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{W}{B}{G}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "229",
 			"image_uris": {
@@ -2634,13 +1759,8 @@
 		},
 		{
 			"name": "Terrel Decree",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{U}{R}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{U}{R}{W}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "236",
 			"image_uris": {
@@ -2649,13 +1769,8 @@
 		},
 		{
 			"name": "Vance Decree",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{U}{B}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{U}{B}{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "237",
 			"image_uris": {
@@ -2664,13 +1779,8 @@
 		},
 		{
 			"name": "Rey Decree",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}{G}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{R}{G}{W}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "227",
 			"image_uris": {
@@ -2679,14 +1789,9 @@
 		},
 		{
 			"name": "Respected Captain",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}{G}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{B}{G}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Human Pirate Warlock",
+			"type": "Creature â€” Human Pirate Warlock",
 			"collector_number": "226",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/226_Respected Captain.jpg"
@@ -2694,14 +1799,9 @@
 		},
 		{
 			"name": "Oaksworn Phantom",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}{G}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{R}{G}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Spirit",
+			"type": "Creature â€” Spirit",
 			"collector_number": "225",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/225_Oaksworn Phantom.jpg"
@@ -2709,14 +1809,9 @@
 		},
 		{
 			"name": "Glory on Bloodied Wings",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}{R}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{U}{R}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Angel Soldier",
+			"type": "Creature â€” Angel Soldier",
 			"collector_number": "218",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/218_Glory on Bloodied Wings.jpg"
@@ -2724,14 +1819,9 @@
 		},
 		{
 			"name": "Secluded Arachnomorph",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{4}{U}{B}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{4}{U}{B}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Spider Horror",
+			"type": "Creature â€” Spider Horror",
 			"collector_number": "232",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/232_Secluded Arachnomorph.jpg"
@@ -2739,13 +1829,8 @@
 		},
 		{
 			"name": "Explore the Great Unknown",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{R}{G}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{R}{G}{W}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "216",
 			"image_uris": {
@@ -2754,14 +1839,9 @@
 		},
 		{
 			"name": "Faceless Mirrorkin",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}{G}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{B}{G}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Shapeshifter",
+			"type": "Creature â€” Shapeshifter",
 			"collector_number": "217",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/217_Faceless Mirrorkin.jpg"
@@ -2769,14 +1849,9 @@
 		},
 		{
 			"name": "Azra Seasonkeeper",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}{B}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{W}{B}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Druid",
+			"type": "Creature â€” Azra Druid",
 			"collector_number": "200",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/200_Azra Seasonkeeper.jpg"
@@ -2784,14 +1859,9 @@
 		},
 		{
 			"name": "Sacred Avenger",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}{R}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{U}{R}{W}",
->>>>>>> upstream/main
-			"type": "Artifact — Equipment",
+			"type": "Artifact â€” Equipment",
 			"collector_number": "228",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/228_Sacred Avenger.jpg"
@@ -2799,13 +1869,8 @@
 		},
 		{
 			"name": "Nye Decree",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{B}{G}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{B}{G}{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "223",
 			"image_uris": {
@@ -2814,14 +1879,9 @@
 		},
 		{
 			"name": "Disciple of Entwined Souls",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{U}{B}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{U}{B}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Elf Warrior",
+			"type": "Creature â€” Elf Warrior",
 			"collector_number": "211",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/211_Disciple of Entwined Souls.jpg"
@@ -2829,14 +1889,9 @@
 		},
 		{
 			"name": "Scorned Redeemer",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{R}{G}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{R}{G}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Angel Soldier",
+			"type": "Creature â€” Angel Soldier",
 			"collector_number": "231",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/231_Scorned Redeemer.jpg"
@@ -2844,14 +1899,9 @@
 		},
 		{
 			"name": "Dreamstalker",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{U}{B}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{U}{B}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Horror Knight",
+			"type": "Creature â€” Horror Knight",
 			"collector_number": "212",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/212_Dreamstalker.jpg"
@@ -2859,14 +1909,9 @@
 		},
 		{
 			"name": "Skulking Smuggler",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{B}{G}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{B}{G}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Human Pirate Wizard",
+			"type": "Creature â€” Human Pirate Wizard",
 			"collector_number": "233",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/233_Skulking Smuggler.jpg"
@@ -2874,13 +1919,8 @@
 		},
 		{
 			"name": "Meeting of Powers",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{W}{B}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{W}{B}{G}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "222",
 			"image_uris": {
@@ -2889,14 +1929,9 @@
 		},
 		{
 			"name": "Highborn Sovereign",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{U}{R}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{U}{R}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Human Knight",
+			"type": "Creature â€” Human Knight",
 			"collector_number": "219",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/219_Highborn Sovereign.jpg"
@@ -2904,13 +1939,8 @@
 		},
 		{
 			"name": "Crossroads of Identity",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "293",
 			"image_uris": {
@@ -2919,13 +1949,8 @@
 		},
 		{
 			"name": "Whitaker Sigil",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
-=======
-			"rarity": "special",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "329",
 			"image_uris": {
@@ -2934,13 +1959,8 @@
 		},
 		{
 			"name": "Ardleby Hold",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
-=======
-			"rarity": "special",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "330",
 			"image_uris": {
@@ -2949,13 +1969,8 @@
 		},
 		{
 			"name": "Beachside Castle",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
-=======
-			"rarity": "special",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "331",
 			"image_uris": {
@@ -2964,13 +1979,8 @@
 		},
 		{
 			"name": "Castle of Death's Sting",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
-=======
-			"rarity": "special",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "332",
 			"image_uris": {
@@ -2979,13 +1989,8 @@
 		},
 		{
 			"name": "Castle of Shrouded Coasts",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
-=======
-			"rarity": "special",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "333",
 			"image_uris": {
@@ -2994,13 +1999,8 @@
 		},
 		{
 			"name": "Cloudkissed Keep",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
-=======
-			"rarity": "special",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "334",
 			"image_uris": {
@@ -3009,13 +2009,8 @@
 		},
 		{
 			"name": "Hall of Flowing Streams",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
-=======
-			"rarity": "special",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "335",
 			"image_uris": {
@@ -3024,13 +2019,8 @@
 		},
 		{
 			"name": "Riverdale Fortress",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
-=======
-			"rarity": "special",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "336",
 			"image_uris": {
@@ -3039,13 +2029,8 @@
 		},
 		{
 			"name": "Sandrock Castle",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
-=======
-			"rarity": "special",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "337",
 			"image_uris": {
@@ -3054,13 +2039,8 @@
 		},
 		{
 			"name": "Truetower Castle",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
-=======
-			"rarity": "special",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "338",
 			"image_uris": {
@@ -3069,13 +2049,8 @@
 		},
 		{
 			"name": "Turnberry Citadel",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "",
-=======
-			"rarity": "special",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "339",
 			"image_uris": {
@@ -3084,14 +2059,9 @@
 		},
 		{
 			"name": "Dreadship Vessel",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}",
->>>>>>> upstream/main
-			"type": "Artifact — Vehicle",
+			"type": "Artifact â€” Vehicle",
 			"collector_number": "281",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/281_Dreadship Vessel.jpg"
@@ -3099,14 +2069,9 @@
 		},
 		{
 			"name": "Hulking Vessel",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}",
->>>>>>> upstream/main
-			"type": "Artifact — Vehicle",
+			"type": "Artifact â€” Vehicle",
 			"collector_number": "283",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/283_Hulking Vessel.jpg"
@@ -3114,13 +2079,8 @@
 		},
 		{
 			"name": "Writ of Supplies",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "290",
 			"image_uris": {
@@ -3129,14 +2089,9 @@
 		},
 		{
 			"name": "War Map",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
-			"type": "Artifact — Clue",
+			"type": "Artifact â€” Clue",
 			"collector_number": "288",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/288_War Map.jpg"
@@ -3144,14 +2099,9 @@
 		},
 		{
 			"name": "Wealthy Slabman",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
-			"type": "Artifact Creature — Gargoyle Knight",
+			"type": "Artifact Creature â€” Gargoyle Knight",
 			"collector_number": "289",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/289_Wealthy Slabman.jpg"
@@ -3159,14 +2109,9 @@
 		},
 		{
 			"name": "Terrel Recruit",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
-			"type": "Creature — Gargoyle Soldier",
+			"type": "Creature â€” Gargoyle Soldier",
 			"collector_number": "37",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/37_Terrel Recruit.jpg"
@@ -3174,14 +2119,9 @@
 		},
 		{
 			"name": "Blade of Riverdale",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{U}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{U}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Angel Soldier",
+			"type": "Creature â€” Angel Soldier",
 			"collector_number": "47",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/47_Blade of Riverdale.jpg"
@@ -3189,14 +2129,9 @@
 		},
 		{
 			"name": "Hardy Bear",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Bear",
+			"type": "Creature â€” Bear",
 			"collector_number": "146",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/146_Hardy Bear.jpg"
@@ -3204,14 +2139,9 @@
 		},
 		{
 			"name": "Resolute Elk",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{G}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{G}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Elk Spirit",
+			"type": "Creature â€” Elk Spirit",
 			"collector_number": "269",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/269_Resolute Elk.jpg"
@@ -3219,13 +2149,8 @@
 		},
 		{
 			"name": "Glimpse",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "11",
 			"image_uris": {
@@ -3234,13 +2159,8 @@
 		},
 		{
 			"name": "Royal Send-Off",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{5}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{5}{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "76",
 			"image_uris": {
@@ -3249,13 +2169,8 @@
 		},
 		{
 			"name": "Blessing at Graven Laughs",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{B}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "86",
 			"image_uris": {
@@ -3264,14 +2179,9 @@
 		},
 		{
 			"name": "Beguiling Soulmage",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{R}",
->>>>>>> upstream/main
-			"type": "Creature — Elf Warlock",
+			"type": "Creature â€” Elf Warlock",
 			"collector_number": "131",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/131_Beguiling Soulmage.jpg"
@@ -3279,13 +2189,8 @@
 		},
 		{
 			"name": "Guerrilla Ambush",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{G}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "258",
 			"image_uris": {
@@ -3294,14 +2199,9 @@
 		},
 		{
 			"name": "Manacles of Stilled Fury",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "23",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/23_Manacles of Stilled Fury.jpg"
@@ -3309,13 +2209,8 @@
 		},
 		{
 			"name": "Dealings at the Delta",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "49",
 			"image_uris": {
@@ -3324,14 +2219,9 @@
 		},
 		{
 			"name": "Duplicitous Crow",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Bird Horror",
+			"type": "Creature â€” Bird Horror",
 			"collector_number": "94",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/94_Duplicitous Crow.jpg"
@@ -3339,14 +2229,9 @@
 		},
 		{
 			"name": "Bounty Setter",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Human Peasant",
+			"type": "Creature â€” Human Peasant",
 			"collector_number": "134",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/134_Bounty Setter.jpg"
@@ -3354,13 +2239,8 @@
 		},
 		{
 			"name": "Bout on the Deck",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "243",
 			"image_uris": {
@@ -3369,13 +2249,8 @@
 		},
 		{
 			"name": "Give Penance",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{W}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "10",
 			"image_uris": {
@@ -3384,13 +2259,8 @@
 		},
 		{
 			"name": "Lucky Break",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "64",
 			"image_uris": {
@@ -3399,13 +2269,8 @@
 		},
 		{
 			"name": "Debt Collection",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{B}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "91",
 			"image_uris": {
@@ -3414,14 +2279,9 @@
 		},
 		{
 			"name": "Vance Devotee",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Elf Warrior",
+			"type": "Creature â€” Elf Warrior",
 			"collector_number": "165",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/165_Vance Devotee.jpg"
@@ -3429,13 +2289,8 @@
 		},
 		{
 			"name": "Cherrywood Purification",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "246",
 			"image_uris": {
@@ -3444,13 +2299,8 @@
 		},
 		{
 			"name": "Impaling Lance",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "16",
 			"image_uris": {
@@ -3459,13 +2309,8 @@
 		},
 		{
 			"name": "Overwhelming Presence",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "72",
 			"image_uris": {
@@ -3474,14 +2319,9 @@
 		},
 		{
 			"name": "Pull unto Death",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{B}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "105",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/105_Pull unto Death.jpg"
@@ -3489,14 +2329,9 @@
 		},
 		{
 			"name": "Teller of Infinite Tales",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Kithkin Bard",
+			"type": "Creature â€” Kithkin Bard",
 			"collector_number": "160",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/160_Teller of Infinite Tales.jpg"
@@ -3504,14 +2339,9 @@
 		},
 		{
 			"name": "Master the Old Ways",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{G}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "263",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/263_Master the Old Ways.jpg"
@@ -3519,13 +2349,8 @@
 		},
 		{
 			"name": "Call of the King",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{W}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "7",
 			"image_uris": {
@@ -3534,13 +2359,8 @@
 		},
 		{
 			"name": "Naval Diplomacy",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "69",
 			"image_uris": {
@@ -3549,14 +2369,9 @@
 		},
 		{
 			"name": "Sandrock Infantry",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Human Soldier",
+			"type": "Creature â€” Human Soldier",
 			"collector_number": "107",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/107_Sandrock Infantry.jpg"
@@ -3564,13 +2379,8 @@
 		},
 		{
 			"name": "Summer Tryst",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{R}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "159",
 			"image_uris": {
@@ -3579,14 +2389,9 @@
 		},
 		{
 			"name": "Fort Sapner Caretaker",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Druid",
+			"type": "Creature â€” Azra Druid",
 			"collector_number": "253",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/253_Fort Sapner Caretaker.jpg"
@@ -3594,14 +2399,9 @@
 		},
 		{
 			"name": "Roul's High Guard",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Knight",
+			"type": "Creature â€” Azra Knight",
 			"collector_number": "31",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/31_Roul's High Guard.jpg"
@@ -3609,14 +2409,9 @@
 		},
 		{
 			"name": "Kidnapping",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{U}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "60",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/60_Kidnapping.jpg"
@@ -3624,14 +2419,9 @@
 		},
 		{
 			"name": "Devious Cutthroat",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Human Pirate",
+			"type": "Creature â€” Human Pirate",
 			"collector_number": "92",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/92_Devious Cutthroat.jpg"
@@ -3639,13 +2429,8 @@
 		},
 		{
 			"name": "Innocent Rendezvous",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "148",
 			"image_uris": {
@@ -3654,13 +2439,8 @@
 		},
 		{
 			"name": "Instill with Integrity",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "261",
 			"image_uris": {
@@ -3669,14 +2449,9 @@
 		},
 		{
 			"name": "Truetower Warden",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{W}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{W}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Orc Soldier",
+			"type": "Creature â€” Orc Soldier",
 			"collector_number": "39",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/39_Truetower Warden.jpg"
@@ -3684,14 +2459,9 @@
 		},
 		{
 			"name": "Tormentor of Tales",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{U}",
->>>>>>> upstream/main
-			"type": "Creature — Ouphe",
+			"type": "Creature â€” Ouphe",
 			"collector_number": "80",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/80_Tormentor of Tales.jpg"
@@ -3699,14 +2469,9 @@
 		},
 		{
 			"name": "Warden of Fort Sapner",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Soldier",
+			"type": "Creature â€” Azra Soldier",
 			"collector_number": "125",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/125_Warden of Fort Sapner.jpg"
@@ -3714,14 +2479,9 @@
 		},
 		{
 			"name": "Truetower Lookout",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Orc Scout Warrior",
+			"type": "Creature â€” Orc Scout Warrior",
 			"collector_number": "163",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/163_Truetower Lookout.jpg"
@@ -3729,14 +2489,9 @@
 		},
 		{
 			"name": "Silberwald Ranger",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Human Ranger",
+			"type": "Creature â€” Human Ranger",
 			"collector_number": "276",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/276_Silberwald Ranger.jpg"
@@ -3744,14 +2499,9 @@
 		},
 		{
 			"name": "Banefort Skywarden",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Knight",
+			"type": "Creature â€” Azra Knight",
 			"collector_number": "4",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/4_Banefort Skywarden.jpg"
@@ -3759,14 +2509,9 @@
 		},
 		{
 			"name": "Vance Racketeers",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Elf Rogue",
+			"type": "Creature â€” Elf Rogue",
 			"collector_number": "83",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/83_Vance Racketeers.jpg"
@@ -3774,14 +2519,9 @@
 		},
 		{
 			"name": "Turnberry Legionnaire",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{B}",
->>>>>>> upstream/main
-			"type": "Creature — Zombie Knight",
+			"type": "Creature â€” Zombie Knight",
 			"collector_number": "116",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/116_Turnberry Legionnaire.jpg"
@@ -3789,14 +2529,9 @@
 		},
 		{
 			"name": "Phyre Sellsword",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Human Mercenary",
+			"type": "Creature â€” Human Mercenary",
 			"collector_number": "152",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/152_Phyre Sellsword.jpg"
@@ -3804,14 +2539,9 @@
 		},
 		{
 			"name": "Flowing Streams Halberdier",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Human Knight",
+			"type": "Creature â€” Human Knight",
 			"collector_number": "251",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/251_Flowing Streams Halberdier.jpg"
@@ -3819,14 +2549,9 @@
 		},
 		{
 			"name": "Knight of Skyspire",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Human Knight",
+			"type": "Creature â€” Human Knight",
 			"collector_number": "19",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/19_Knight of Skyspire.jpg"
@@ -3834,14 +2559,9 @@
 		},
 		{
 			"name": "Enduring Turtle",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Turtle",
+			"type": "Creature â€” Turtle",
 			"collector_number": "52",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/52_Enduring Turtle.jpg"
@@ -3849,13 +2569,8 @@
 		},
 		{
 			"name": "Sanguine Chalice",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{B}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "108",
 			"image_uris": {
@@ -3864,13 +2579,8 @@
 		},
 		{
 			"name": "Call of the Rose",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{R}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "135",
 			"image_uris": {
@@ -3879,14 +2589,9 @@
 		},
 		{
 			"name": "Qualified Windrigger",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Human Pirate",
+			"type": "Creature â€” Human Pirate",
 			"collector_number": "265",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/265_Qualified Windrigger.jpg"
@@ -3894,14 +2599,9 @@
 		},
 		{
 			"name": "Honored Eagle",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Bird",
+			"type": "Creature â€” Bird",
 			"collector_number": "13",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/13_Honored Eagle.jpg"
@@ -3909,14 +2609,9 @@
 		},
 		{
 			"name": "Nye Recruit",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Human Pirate",
+			"type": "Creature â€” Human Pirate",
 			"collector_number": "71",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/71_Nye Recruit.jpg"
@@ -3924,14 +2619,9 @@
 		},
 		{
 			"name": "Vance Recruit",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Elf Warlock",
+			"type": "Creature â€” Elf Warlock",
 			"collector_number": "120",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/120_Vance Recruit.jpg"
@@ -3939,13 +2629,8 @@
 		},
 		{
 			"name": "Measured Strike",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "150",
 			"image_uris": {
@@ -3954,14 +2639,9 @@
 		},
 		{
 			"name": "Geistwald Explorer",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Gargoyle Scout",
+			"type": "Creature â€” Gargoyle Scout",
 			"collector_number": "257",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/257_Geistwald Explorer.jpg"
@@ -3969,13 +2649,8 @@
 		},
 		{
 			"name": "Battle for the Aciesblade",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{W}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "5",
 			"image_uris": {
@@ -3984,14 +2659,9 @@
 		},
 		{
 			"name": "Thugs at the Shrouded Coast",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Kithkin Rogue",
+			"type": "Creature â€” Kithkin Rogue",
 			"collector_number": "79",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/79_Thugs at the Shrouded Coast.jpg"
@@ -3999,14 +2669,9 @@
 		},
 		{
 			"name": "Terrifying Mongrel",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Wolf Horror",
+			"type": "Creature â€” Wolf Horror",
 			"collector_number": "114",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/114_Terrifying Mongrel.jpg"
@@ -4014,14 +2679,9 @@
 		},
 		{
 			"name": "Battle Scars",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{R}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "129",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/129_Battle Scars.jpg"
@@ -4029,14 +2689,9 @@
 		},
 		{
 			"name": "Spellwild Ouphe",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Ouphe",
+			"type": "Creature â€” Ouphe",
 			"collector_number": "278",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/278_Spellwild Ouphe.jpg"
@@ -4044,14 +2699,9 @@
 		},
 		{
 			"name": "Overcoming Squire",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Human Soldier",
+			"type": "Creature â€” Human Soldier",
 			"collector_number": "26",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/26_Overcoming Squire.jpg"
@@ -4059,14 +2709,9 @@
 		},
 		{
 			"name": "Castle Delta Lookout",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Human Bard Rogue",
+			"type": "Creature â€” Human Bard Rogue",
 			"collector_number": "48",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/48_Castle Delta Lookout.jpg"
@@ -4074,13 +2719,8 @@
 		},
 		{
 			"name": "Sever the Legacy",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{B}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "110",
 			"image_uris": {
@@ -4089,13 +2729,8 @@
 		},
 		{
 			"name": "Gleaming Courage",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{R}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "145",
 			"image_uris": {
@@ -4104,13 +2739,8 @@
 		},
 		{
 			"name": "Call to Strength",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{G}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "245",
 			"image_uris": {
@@ -4119,14 +2749,9 @@
 		},
 		{
 			"name": "Overzealous Page",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Orc Bard",
+			"type": "Creature â€” Orc Bard",
 			"collector_number": "27",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/27_Overzealous Page.jpg"
@@ -4134,14 +2759,9 @@
 		},
 		{
 			"name": "Vance Mentor",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Elf Warlock",
+			"type": "Creature â€” Elf Warlock",
 			"collector_number": "82",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/82_Vance Mentor.jpg"
@@ -4149,14 +2769,9 @@
 		},
 		{
 			"name": "Slabman Muscle",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{5}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{5}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Gargoyle Soldier",
+			"type": "Creature â€” Gargoyle Soldier",
 			"collector_number": "111",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/111_Slabman Muscle.jpg"
@@ -4164,14 +2779,9 @@
 		},
 		{
 			"name": "Rey Recruit",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Human Soldier",
+			"type": "Creature â€” Human Soldier",
 			"collector_number": "156",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/156_Rey Recruit.jpg"
@@ -4179,14 +2789,9 @@
 		},
 		{
 			"name": "Replenishing Camp",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{G}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "268",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/268_Replenishing Camp.jpg"
@@ -4194,14 +2799,9 @@
 		},
 		{
 			"name": "Charitable Faerie",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
-			"type": "Creature — Faerie Cleric",
+			"type": "Creature â€” Faerie Cleric",
 			"collector_number": "9",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/9_Charitable Faerie.jpg"
@@ -4209,14 +2809,9 @@
 		},
 		{
 			"name": "Ardent Warsworn",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Kithkin Soldier",
+			"type": "Creature â€” Kithkin Soldier",
 			"collector_number": "43",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/43_Ardent Warsworn.jpg"
@@ -4224,14 +2819,9 @@
 		},
 		{
 			"name": "Fleshborne Horror",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{6}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{6}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Horror Knight",
+			"type": "Creature â€” Horror Knight",
 			"collector_number": "95",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/95_Fleshborne Horror.jpg"
@@ -4239,14 +2829,9 @@
 		},
 		{
 			"name": "Kirsa's Page",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Orc Knight",
+			"type": "Creature â€” Orc Knight",
 			"collector_number": "149",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/149_Kirsa's Page.jpg"
@@ -4254,14 +2839,9 @@
 		},
 		{
 			"name": "Sapner Recruit",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{G}",
->>>>>>> upstream/main
-			"type": "Creature — Azra Knight",
+			"type": "Creature â€” Azra Knight",
 			"collector_number": "273",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/273_Sapner Recruit.jpg"
@@ -4269,14 +2849,9 @@
 		},
 		{
 			"name": "Hopeful Spouse",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{W}",
->>>>>>> upstream/main
-			"type": "Creature — Human Peasant",
+			"type": "Creature â€” Human Peasant",
 			"collector_number": "14",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/14_Hopeful Spouse.jpg"
@@ -4284,14 +2859,9 @@
 		},
 		{
 			"name": "King's Rock Warden",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{3}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{3}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Human Soldier",
+			"type": "Creature â€” Human Soldier",
 			"collector_number": "61",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/61_King's Rock Warden.jpg"
@@ -4299,13 +2869,8 @@
 		},
 		{
 			"name": "Catharsis of Grief",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "88",
 			"image_uris": {
@@ -4314,14 +2879,9 @@
 		},
 		{
 			"name": "Expendable Army",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{5}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{5}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Human Soldier Army",
+			"type": "Creature â€” Human Soldier Army",
 			"collector_number": "141",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/141_Expendable Army.jpg"
@@ -4329,14 +2889,9 @@
 		},
 		{
 			"name": "Cloudkissed Tracker",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
-			"type": "Creature — Kithkin Ranger",
+			"type": "Creature â€” Kithkin Ranger",
 			"collector_number": "249",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/249_Cloudkissed Tracker.jpg"
@@ -4344,14 +2899,9 @@
 		},
 		{
 			"name": "Brotherly Comradery",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
-			"type": "Enchantment — Aura",
+			"type": "Enchantment â€” Aura",
 			"collector_number": "6",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/6_Brotherly Comradery.jpg"
@@ -4359,14 +2909,9 @@
 		},
 		{
 			"name": "Monarch-Wing Retainer",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{U}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Faerie Soldier",
+			"type": "Creature â€” Faerie Soldier",
 			"collector_number": "68",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/68_Monarch-Wing Retainer.jpg"
@@ -4374,13 +2919,8 @@
 		},
 		{
 			"name": "Overt Warning",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "101",
 			"image_uris": {
@@ -4389,13 +2929,8 @@
 		},
 		{
 			"name": "Death's Sting Diplomacy",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{R}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{R}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "139",
 			"image_uris": {
@@ -4404,13 +2939,8 @@
 		},
 		{
 			"name": "Aggressive Urge",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-=======
-			"rarity": "common",
-			"mana_cost": "{1}{G}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "240",
 			"image_uris": {
@@ -4419,13 +2949,8 @@
 		},
 		{
 			"name": "Dishonorable End",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{4}{B}",
-=======
-			"rarity": "common",
-			"mana_cost": "{4}{B}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "93",
 			"image_uris": {
@@ -4434,13 +2959,8 @@
 		},
 		{
 			"name": "Deadly Interrogation",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{B}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "90",
 			"image_uris": {
@@ -4449,13 +2969,8 @@
 		},
 		{
 			"name": "Refuse to Yield",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
 			"type": "Instant",
 			"collector_number": "29",
 			"image_uris": {
@@ -4464,14 +2979,9 @@
 		},
 		{
 			"name": "Everturning Crane",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{6}{U}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{6}{U}",
->>>>>>> upstream/main
-			"type": "Creature — Bird Horror",
+			"type": "Creature â€” Bird Horror",
 			"collector_number": "53",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/53_Everturning Crane.jpg"
@@ -4479,14 +2989,9 @@
 		},
 		{
 			"name": "Mockery of Innocence",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{5}{B}{B}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{5}{B}{B}",
->>>>>>> upstream/main
-			"type": "Creature — Rabbit Horror",
+			"type": "Creature â€” Rabbit Horror",
 			"collector_number": "99",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/99_Mockery of Innocence.jpg"
@@ -4494,14 +2999,9 @@
 		},
 		{
 			"name": "Perle Retainer",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{1}{R}",
->>>>>>> upstream/main
-			"type": "Creature — Orc Soldier",
+			"type": "Creature â€” Orc Soldier",
 			"collector_number": "151",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/151_Perle Retainer.jpg"
@@ -4509,13 +3009,8 @@
 		},
 		{
 			"name": "Show of Aggression",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "275",
 			"image_uris": {
@@ -4524,13 +3019,8 @@
 		},
 		{
 			"name": "Approach of the Newly Crowned",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{W}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{W}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "2",
 			"image_uris": {
@@ -4539,13 +3029,8 @@
 		},
 		{
 			"name": "Read the Wingbeats",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{U}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{U}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "74",
 			"image_uris": {
@@ -4554,14 +3039,9 @@
 		},
 		{
 			"name": "Bounty Collector",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{B}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{B}",
->>>>>>> upstream/main
-			"type": "Creature — Human Rogue",
+			"type": "Creature â€” Human Rogue",
 			"collector_number": "87",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/87_Bounty Collector.jpg"
@@ -4569,13 +3049,8 @@
 		},
 		{
 			"name": "Gaze Upon Greatness",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{1}{R}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{1}{R}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "143",
 			"image_uris": {
@@ -4584,13 +3059,8 @@
 		},
 		{
 			"name": "Long Night's Rest",
-<<<<<<< HEAD
 			"rarity": "rare",
 			"mana_cost": "{2}{G}",
-=======
-			"rarity": "rare",
-			"mana_cost": "{2}{G}",
->>>>>>> upstream/main
 			"type": "Enchantment",
 			"collector_number": "262",
 			"image_uris": {
@@ -4599,13 +3069,8 @@
 		},
 		{
 			"name": "Hexer's Cave",
-<<<<<<< HEAD
 			"rarity": "uncommon",
 			"mana_cost": "",
-=======
-			"rarity": "uncommon",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Land",
 			"collector_number": "296",
 			"image_uris": {
@@ -4614,13 +3079,8 @@
 		},
 		{
 			"name": "Intisuyus Armies",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Token Enchantment",
 			"collector_number": "2",
 			"image_uris": {
@@ -4629,14 +3089,9 @@
 		},
 		{
 			"name": "Suyay's Soldier",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Creature — Soldier",
+			"type": "Token Creature â€” Soldier",
 			"collector_number": "5",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/5_Suyay's Soldier.jpg"
@@ -4644,14 +3099,9 @@
 		},
 		{
 			"name": "Messenger of Absent Messages",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "{2}",
-=======
-			"rarity": "common",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
-			"type": "Artifact Creature — Scout",
+			"type": "Artifact Creature â€” Scout",
 			"collector_number": "285",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/285_Messenger of Absent Messages.jpg"
@@ -4659,14 +3109,9 @@
 		},
 		{
 			"name": "The Sword of Perle",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Legendary Creature — Orc Soldier",
+			"type": "Token Legendary Creature â€” Orc Soldier",
 			"collector_number": "15",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/15_The Sword of Perle.jpg"
@@ -4674,14 +3119,9 @@
 		},
 		{
 			"name": "Scout",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Creature — Scout",
+			"type": "Token Creature â€” Scout",
 			"collector_number": "8",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/8_Scout.jpg"
@@ -4689,14 +3129,9 @@
 		},
 		{
 			"name": "The Gentle Giant",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Legendary Creature — Azra Knight",
+			"type": "Token Legendary Creature â€” Azra Knight",
 			"collector_number": "17",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/17_The Gentle Giant.jpg"
@@ -4704,14 +3139,9 @@
 		},
 		{
 			"name": "Vances Claw",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Legendary Creature — Elf Soldier",
+			"type": "Token Legendary Creature â€” Elf Soldier",
 			"collector_number": "11",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/11_Vances Claw.jpg"
@@ -4719,14 +3149,9 @@
 		},
 		{
 			"name": "Lover to All",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Legendary Creature — Human Noble",
+			"type": "Token Legendary Creature â€” Human Noble",
 			"collector_number": "12",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/12_Lover to All.jpg"
@@ -4734,14 +3159,9 @@
 		},
 		{
 			"name": "The Diamond of the Nye",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Legendary Creature — Human Pirate",
+			"type": "Token Legendary Creature â€” Human Pirate",
 			"collector_number": "7",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/7_The Diamond of the Nye.jpg"
@@ -4749,14 +3169,9 @@
 		},
 		{
 			"name": "The Occultist",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Legendary Creature — Human Wizard",
+			"type": "Token Legendary Creature â€” Human Wizard",
 			"collector_number": "3",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/3_The Occultist.jpg"
@@ -4764,14 +3179,9 @@
 		},
 		{
 			"name": "Horror",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Creature — Horror",
+			"type": "Token Creature â€” Horror",
 			"collector_number": "10",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/10_Horror.jpg"
@@ -4779,14 +3189,9 @@
 		},
 		{
 			"name": "Dewold Army",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Creature — Army",
+			"type": "Token Creature â€” Army",
 			"collector_number": "9",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/9_Dewold Army.jpg"
@@ -4794,14 +3199,9 @@
 		},
 		{
 			"name": "Young Soldier",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Creature — Soldier",
+			"type": "Token Creature â€” Soldier",
 			"collector_number": "13",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/13_Young Soldier.jpg"
@@ -4809,13 +3209,8 @@
 		},
 		{
 			"name": "Reserves",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
 			"type": "Token Reminder",
 			"collector_number": "1",
 			"image_uris": {
@@ -4824,14 +3219,9 @@
 		},
 		{
 			"name": "Destroyed-Knight",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Creature — Knight",
+			"type": "Token Creature â€” Knight",
 			"collector_number": "16",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/16_Destroyed-Knight.jpg"
@@ -4839,14 +3229,9 @@
 		},
 		{
 			"name": "Plains",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Plains",
+			"type": "Basic Land â€” Plains",
 			"collector_number": "300",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/300_Plains.jpg"
@@ -4854,14 +3239,9 @@
 		},
 		{
 			"name": "Island",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Island",
+			"type": "Basic Land â€” Island",
 			"collector_number": "303",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/303_Island.jpg"
@@ -4869,14 +3249,9 @@
 		},
 		{
 			"name": "Swamp",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Swamp",
+			"type": "Basic Land â€” Swamp",
 			"collector_number": "306",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/306_Swamp.jpg"
@@ -4884,14 +3259,9 @@
 		},
 		{
 			"name": "Mountain",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Mountain",
+			"type": "Basic Land â€” Mountain",
 			"collector_number": "309",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/309_Mountain.jpg"
@@ -4899,14 +3269,9 @@
 		},
 		{
 			"name": "Forest",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Forest",
+			"type": "Basic Land â€” Forest",
 			"collector_number": "312",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/312_Forest.jpg"
@@ -4914,14 +3279,9 @@
 		},
 		{
 			"name": "Island2",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Island",
+			"type": "Basic Land â€” Island",
 			"collector_number": "304",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/304_Island2.jpg"
@@ -4929,14 +3289,9 @@
 		},
 		{
 			"name": "Swamp2",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Swamp",
+			"type": "Basic Land â€” Swamp",
 			"collector_number": "307",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/307_Swamp2.jpg"
@@ -4944,14 +3299,9 @@
 		},
 		{
 			"name": "Mountain2",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Mountain",
+			"type": "Basic Land â€” Mountain",
 			"collector_number": "310",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/310_Mountain2.jpg"
@@ -4959,14 +3309,9 @@
 		},
 		{
 			"name": "Forest2",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Forest",
+			"type": "Basic Land â€” Forest",
 			"collector_number": "313",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/313_Forest2.jpg"
@@ -4974,14 +3319,9 @@
 		},
 		{
 			"name": "Plains3",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Plains",
+			"type": "Basic Land â€” Plains",
 			"collector_number": "302",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/302_Plains3.jpg"
@@ -4989,14 +3329,9 @@
 		},
 		{
 			"name": "Island3",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Island",
+			"type": "Basic Land â€” Island",
 			"collector_number": "305",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/305_Island3.jpg"
@@ -5004,14 +3339,9 @@
 		},
 		{
 			"name": "Swamp3",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Swamp",
+			"type": "Basic Land â€” Swamp",
 			"collector_number": "308",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/308_Swamp3.jpg"
@@ -5019,14 +3349,9 @@
 		},
 		{
 			"name": "Mountain3",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Mountain",
+			"type": "Basic Land â€” Mountain",
 			"collector_number": "311",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/311_Mountain3.jpg"
@@ -5034,14 +3359,9 @@
 		},
 		{
 			"name": "Forest3",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Forest",
+			"type": "Basic Land â€” Forest",
 			"collector_number": "314",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/314_Forest3.jpg"
@@ -5049,14 +3369,9 @@
 		},
 		{
 			"name": "Plains2",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Basic Land — Plains",
+			"type": "Basic Land â€” Plains",
 			"collector_number": "301",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/301_Plains2.jpg"
@@ -5064,14 +3379,9 @@
 		},
 		{
 			"name": "Soldier",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Creature — Soldier",
+			"type": "Token Creature â€” Soldier",
 			"collector_number": "4",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/4_Soldier.jpg"
@@ -5079,14 +3389,9 @@
 		},
 		{
 			"name": "Knight",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Creature — Knight",
+			"type": "Token Creature â€” Knight",
 			"collector_number": "18",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/18_Knight.jpg"
@@ -5094,14 +3399,9 @@
 		},
 		{
 			"name": "The True Heir",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Legendary Creature — Human Noble",
+			"type": "Token Legendary Creature â€” Human Noble",
 			"collector_number": "6",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/6_The True Heir.jpg"
@@ -5109,14 +3409,9 @@
 		},
 		{
 			"name": "Treasure",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Artifact — Treasure",
+			"type": "Token Artifact â€” Treasure",
 			"collector_number": "21",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/21_Treasure.jpg"
@@ -5124,14 +3419,9 @@
 		},
 		{
 			"name": "Weapon",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Artifact — Equipment",
+			"type": "Token Artifact â€” Equipment",
 			"collector_number": "22",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/22_Weapon.jpg"
@@ -5139,14 +3429,9 @@
 		},
 		{
 			"name": "Food",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Artifact — Food",
+			"type": "Token Artifact â€” Food",
 			"collector_number": "20",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/20_Food.jpg"
@@ -5154,14 +3439,9 @@
 		},
 		{
 			"name": "Clue",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Artifact — Clue",
+			"type": "Token Artifact â€” Clue",
 			"collector_number": "19",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/19_Clue.jpg"
@@ -5169,14 +3449,9 @@
 		},
 		{
 			"name": "Spirit",
-<<<<<<< HEAD
 			"rarity": "common",
 			"mana_cost": "",
-=======
-			"rarity": "common",
-			"mana_cost": "",
->>>>>>> upstream/main
-			"type": "Token Creature — Spirit",
+			"type": "Token Creature â€” Spirit",
 			"collector_number": "14",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/14_Spirit.jpg"
@@ -5184,13 +3459,8 @@
 		},
 		{
 			"name": "Vance Sigil",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
-=======
-			"rarity": "special",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "328",
 			"image_uris": {
@@ -5199,13 +3469,8 @@
 		},
 		{
 			"name": "Turnberry Sigil",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
-=======
-			"rarity": "special",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "327",
 			"image_uris": {
@@ -5214,13 +3479,8 @@
 		},
 		{
 			"name": "Terrel Sigil",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
-=======
-			"rarity": "special",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "326",
 			"image_uris": {
@@ -5229,13 +3489,8 @@
 		},
 		{
 			"name": "Sapner Sigil",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
-=======
-			"rarity": "special",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "325",
 			"image_uris": {
@@ -5244,13 +3499,8 @@
 		},
 		{
 			"name": "Rivers Sigil",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
-=======
-			"rarity": "special",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "324",
 			"image_uris": {
@@ -5259,13 +3509,8 @@
 		},
 		{
 			"name": "Rey Sigil",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
-=======
-			"rarity": "special",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "323",
 			"image_uris": {
@@ -5274,13 +3519,8 @@
 		},
 		{
 			"name": "Radcliff Sigil",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
-=======
-			"rarity": "special",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "322",
 			"image_uris": {
@@ -5289,13 +3529,8 @@
 		},
 		{
 			"name": "Plaskett Sigil",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
-=======
-			"rarity": "special",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "321",
 			"image_uris": {
@@ -5304,13 +3539,8 @@
 		},
 		{
 			"name": "Phyre Sigil",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
-=======
-			"rarity": "special",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "320",
 			"image_uris": {
@@ -5319,13 +3549,8 @@
 		},
 		{
 			"name": "Attwater Sigil",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
-=======
-			"rarity": "special",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "315",
 			"image_uris": {
@@ -5334,13 +3559,8 @@
 		},
 		{
 			"name": "Perle House Sigil",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
-=======
-			"rarity": "special",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "319",
 			"image_uris": {
@@ -5349,13 +3569,8 @@
 		},
 		{
 			"name": "Nye Sigil",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
-=======
-			"rarity": "special",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "318",
 			"image_uris": {
@@ -5364,13 +3579,8 @@
 		},
 		{
 			"name": "Hook Sigil",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
-=======
-			"rarity": "special",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "317",
 			"image_uris": {
@@ -5379,13 +3589,8 @@
 		},
 		{
 			"name": "Banefort Sigil",
-<<<<<<< HEAD
 			"rarity": "special",
 			"mana_cost": "{2}",
-=======
-			"rarity": "special",
-			"mana_cost": "{2}",
->>>>>>> upstream/main
 			"type": "Artifact",
 			"collector_number": "316",
 			"image_uris": {
@@ -5394,14 +3599,9 @@
 		},
 		{
 			"name": "Hann, Herald of the Conqueror",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{R}{G}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{R}{G}",
->>>>>>> upstream/main
-			"type": "Legendary Creature — Satyr Noble",
+			"type": "Legendary Creature â€” Satyr Noble",
 			"collector_number": "179",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/179_Hann, Herald of the Conqueror.jpg"
@@ -5409,13 +3609,8 @@
 		},
 		{
 			"name": "Marilye's Revelation",
-<<<<<<< HEAD
 			"rarity": "mythic",
 			"mana_cost": "{2}{W}",
-=======
-			"rarity": "mythic",
-			"mana_cost": "{2}{W}",
->>>>>>> upstream/main
 			"type": "Sorcery",
 			"collector_number": "24",
 			"image_uris": {
