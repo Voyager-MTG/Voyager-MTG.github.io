@@ -1,0 +1,839 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="resources/mana.css">
+        <link rel="stylesheet" href="/resources/header.css">
+    </head>
+    <style>
+        @font-face {
+		font-family: Beleren;
+		src: url('/resources/beleren.ttf');
+        }
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            overscroll-behavior: none;
+            margin: 0px;
+            background-color: #bbbbbb;
+            display: block;
+            /* overflow-y: scroll; */
+        }
+        select {
+            position: absolute;
+            text-align: center;
+            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-weight: 500;
+            cursor: pointer;
+            background-color: #F3F3F3;
+            padding: 2px;
+	    }
+        .selects {
+		    position: absolute;
+            top: 10%;
+            left: 1%;
+            z-index: 1;
+	    }
+        .page-container {
+            /* display: flex;
+            align-items: center;
+            justify-items: center;
+            /* width: 100%;
+            height: 100%; 
+            flex-direction: column; */
+        }
+        hr {
+            width: 85%;
+            height: 4px;
+            background-color: black;
+            border-radius: 2px;
+            border: none;
+        }
+        #modal-container {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            padding-top: 70px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4); 
+        }
+        #modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 30%;
+            border-radius: 10px;
+            border: solid #777 3px;
+        }
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .top-section {
+            width: 100%;
+            position: relative;
+            display: flex;
+        }
+        .pack {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 13px;
+            align-items: center;
+            justify-items: center;
+            width: 80%;
+            margin-left: 10%;
+            padding-bottom: 25px;   
+            /* height: 1000%; */
+        }
+        .pulls {
+            /* background-color: green; */
+            /* width: 100%;
+            height: 100%; */
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            height: fit-content;
+            margin-bottom: 15px;
+            width: 80%;
+            margin-left: 10%;
+        }
+        .divider {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            align-items: center;
+            justify-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .img-container {
+            position: relative;
+            align-self: center;
+            text-align: center;
+        }
+        .img-container img {
+            width: 100%;
+            height: auto;
+        }
+        .card-image {
+            border-radius: 4%;
+        }
+        .main-top-area {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-items: center;
+        }
+        .top-area-section {
+            width: 100%; 
+            height: 100%;
+            margin: 8px;
+        }
+        .top-area-button {
+            font-size: 20px;
+            border-radius: 5px;
+            border: 1px solid white;
+            color: white;
+            background-color: #333;
+            padding: 6px;
+            float: right;
+            margin-right: 10px;
+            margin-top:   10px;
+        }
+        .top-area-button:hover {
+            background-color: black;
+        }
+        .card-col {
+            display: grid;
+            grid-auto-rows: 30px;
+            height: fit-content;
+        }
+    </style>
+    <style id="text-style">
+	.text {
+		color: white;
+	}
+    </style>
+    <style id="popout-style">
+        .popout {
+            background-color: #f3f3f3;
+            /* color: #f3f3f3; */
+        }
+    </style>
+    <body>
+        <div class="header">
+            <div class="search-grid">
+                <a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+                <img class="sg-icon" src="/img/search.png">
+                <input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+                <a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
+                <a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+                <a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+                <a href="/community" id="account-link"><img src="/img/community.png" class="sg-icon">Community</a>            </div>
+        </div>
+        <div class="selects" id="selects">
+			<select id="color-select" class="popout" onchange="setGradient()">
+			</select>
+		</div>
+        <div class="page-container">
+            <div class="top-section popout">
+                <div class="main-top-area">
+                    <div class="top-area-section"></div>
+                    <div class="top-area-section"></div>
+                    <div class="top-area-section">
+                        <button class="top-area-button" onclick="nextPack()">Next Pack</button>
+                    </div>
+                </div>
+                <div class="divider text-bg"></div>
+            </div>
+            <div class="pack"  id="pack" ></div>
+            <div class="pulls" id="pulls"></div>
+        </div>
+        <div id="modal-container">
+			<div id="modal-content" class="popout">
+				<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+			</div>
+		</div>
+        <script>
+            let gradients = null;
+            let raw_gradients = null;
+            let gradTop = null;
+            let gradBottom = null;
+            let p1p1_cards;
+            let pulls = [];
+            const urlParams = new URLSearchParams(window.location.search);
+            const pack = urlParams.get('pack');
+            modal = document.getElementById("modal-container");
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    document.getElementById('modal-container').style.display = 'none';
+                }
+            }
+            document.addEventListener("DOMContentLoaded", async function () {
+                await fetch('/lists/all-cards.json')
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch('/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
+
+				card_list_arrayified = card_list.cards;
+
+                try {
+                    const response = await fetch('/resources/gradients.json');
+                    raw_gradients = await response.json();
+                }
+                catch(error) {
+                    console.error('Error:', error);
+                }
+
+                const draft_file = await getDraftFile(pack);
+                draftmancerToP1P1(draft_file);
+                packOnePickOne();
+
+                gradients = raw_gradients.gradients;
+                setGradient(localStorage.getItem("settings.gradient"));
+                console.log(setGradient);
+                prepareGradients();
+            });
+
+            async function getDraftFile(pack) {
+                let file;
+                await fetch('/sets/' + pack + '-files/' + pack + '-draft.txt')
+					.then(response => response.text())
+					.then(text => {
+						file = text; 
+				}).catch(error => console.error('Error:', error));
+
+                return file;
+            }
+
+            function gridifyCard(card_stats, card_text = false, rotate_card = false, designer_notes = false) {
+                const card_name = card_stats.card_name;
+
+                const grid = document.createElement("div");
+                grid.className = "image-grid";
+
+                grid.appendChild(buildImgContainer(card_stats, false, rotate_card));
+                
+                const text = document.createElement("div");
+                text.className = "card-text popout";
+                text.id = "card-text";
+
+                const name_cost = document.createElement("div");
+                name_cost.className = "name-cost";
+                name_cost.innerHTML = card_stats.card_name + (card_stats.cost != "" ? '     ' + symbolize(card_stats.cost) : "");
+                text.appendChild(name_cost);
+
+                const type = document.createElement("div");
+                type.className = "type";
+                type.textContent = card_stats.type;
+                text.appendChild(type);
+
+                const effect = document.createElement("div");
+                effect.className = "effect";
+                let card_effects = "";
+                if (card_stats.rules_text != "")
+                {
+                    card_effects = card_stats.rules_text.split("\n");
+                }
+                else
+                {
+                    card_effects = card_stats.special_text.split("\n");
+                }
+                effect.innerHTML += prettifyEffects(card_effects);
+                text.appendChild(effect);
+
+                if(card_stats.pt != "")
+                {
+                    const pt = document.createElement("div");
+                    pt.className = "pt";
+                    pt.textContent = card_stats.pt;
+                    text.appendChild(pt);
+                }
+                else if (card_stats.loyalty != "")
+                {
+                    const loyalty = document.createElement("div");
+                    loyalty.className = "pt";
+                    loyalty.textContent = "[" + card_stats.loyalty + "]";
+                    text.appendChild(loyalty);
+                }
+
+                if(designer_notes && card_stats.designer_notes != null)
+                {
+                    const dnotes = document.createElement("div");
+                    dnotes.className = "designer-notes";
+                    dnotes.innerHTML = "<u><b>Designer Notes</b></u>";
+                    dnotes.innerHTML = dnotes.innerHTML + card_stats.designer_notes;
+                    text.appendChild(dnotes);
+                }
+
+                // 13-name	14-color	15-type	16-ci	17-cost	18-ability	19-pt	20-special-text	21-loyalty
+                if(card_stats.shape.includes("adventure") || card_stats.shape.includes("double") || card_stats.shape.includes("spli"))
+                {
+                    const name_cost_2 = document.createElement("div");
+                    name_cost_2.className = "name-cost";
+                    name_cost_2.innerHTML = card_stats.card_name2 + (card_stats.cost2 != "" ? '     ' + symbolize(card_stats.cost2) : "");
+                    text.appendChild(name_cost_2);
+
+                    const type_2 = document.createElement("div");
+                    type_2.className = "type";
+                    type_2.textContent = card_stats.type2;
+                    text.appendChild(type_2);
+
+                    const effect_2 = document.createElement("div");
+                    effect_2.className = "effect";
+                    let card_effects_2 = "";
+                    if (card_stats.rules_text2 != "")
+                    {
+                        card_effects_2 = card_stats.rules_text2.split("\n");
+                    }
+                    else
+                    {
+                        card_effects_2 = card_stats.special_text2.split("\n");
+                    }
+                    effect_2.innerHTML += prettifyEffects(card_effects_2);
+                    text.appendChild(effect_2);
+
+                    if(card_stats.pt2 != "")
+                    {
+                        const pt_2 = document.createElement("div");
+                        pt_2.className = "pt";
+                        pt_2.textContent = card_stats.pt2;
+                        text.appendChild(pt_2);
+                    }
+                    else if (card_stats.loyalty2 != "")
+                    {
+                        const loyalty = document.createElement("div");
+                        loyalty.className = "pt";
+                        loyalty.textContent = "[" + card_stats.loyalty2 + "]";
+                        text.appendChild(loyalty);
+                    }
+                }
+                
+                if (card_text)
+                    grid.appendChild(text);
+
+                return grid;
+            }
+
+            function buildImgContainer(card_stats, hidden_title = false, rotate_card = false) {
+                const imgContainer = document.createElement("div");
+                imgContainer.className = "img-container";
+                const id = card_stats.set + "-" + card_stats.number + "-";
+
+                const img = document.createElement("img");
+                img.className = "card-image";
+                img.id = id;
+                // (card_stats[13].includes("_") ? card_stats[13] : card_stats[0]) for posterity
+                img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+                
+                const link = document.createElement("a");
+                
+                const url = new URL('card', window.location.origin);
+                const params = {
+                    set: card_stats.set,
+                    num: card_stats.number,
+                    name: card_stats.card_name
+                }
+                for (const key in params) {
+                    url.searchParams.append(key, params[key]);
+                }
+                // link.href = url;
+
+                link.appendChild(img);
+
+                if ((card_stats.shape.includes("spli") || card_stats.type.includes("Battle")) && rotate_card)
+                {
+                    const rotated_img = document.createElement("img");
+                    rotated_img.className = "h-img";
+                    rotated_img.id = "h-img";
+                    rotated_img.src = img.src;
+                    rotated_img.style.display = "block";
+                    img.style.filter = "blur(2px) brightness(0.7)";
+
+                    link.appendChild(rotated_img);
+                }
+
+                imgContainer.appendChild(link);
+
+                if (card_stats.shape.includes("double"))
+                {
+                    const imgFlipBtn = document.createElement("button");
+                    imgFlipBtn.className = "btn";
+                    imgFlipBtn.onclick = async function() { imgFlip(id, rotate_card); };
+                    const imgFlipIcon = document.createElement("img");
+                    imgFlipIcon.className = "img-flip-icon";
+                    imgFlipIcon.src = '/img/flip.svg';
+                    imgFlipBtn.appendChild(imgFlipIcon);
+                    imgContainer.appendChild(imgFlipBtn);
+                }
+
+                if (hidden_title)
+                {
+                    const title = document.createElement("div");
+                    title.innerText = card_stats.card_name;
+                    title.className = "hidden-text";
+                    imgContainer.appendChild(title);
+                }
+
+                return imgContainer;
+            }
+
+            async function imgFlip(id, rotate_card = false) {
+                const img = document.getElementById(id);
+                const seconds = 0.2;
+
+                img.style.transition = seconds.toString() + "s";
+                img.style.transform = "rotateY(90deg)";
+
+                await setTimeout(function() {
+                    const rotated_img = document.getElementById("h-img");
+
+                    const cardName = img.src;
+                    
+                    if (cardName.includes("_front"))
+                    {
+                        img.src = cardName.replace("_front", "_back");
+
+                        if (rotate_card)
+                        {
+                            rotated_img.style.display = "none";
+                            img.style.filter = "";
+                        }
+                    }
+                    else
+                    {
+                        img.src = cardName.replace("_back", "_front");
+
+                        if (rotate_card)
+                        {
+                            rotated_img.style.display = "block";
+                            img.style.filter = "blur(2px) brightness(0.7)";
+                        }
+                    }
+
+                    img.style.transition = (seconds * 2).toString() + "s";
+                    img.style.transform = "rotateY(0deg)";
+                }, seconds * 1000);
+
+                await setTimeout(function() {
+                    console.log("done");
+                }, seconds * 1000);
+            }
+
+            function prettifyEffects(card_effects) {
+                let HTML = "";
+
+                for (let i = 0; i < card_effects.length; i++)
+                {
+                    let styled_effect = card_effects[i].replace(/\[i\]([^\]]+)\[\/i\]/g, function(matched, _1) {
+                        return '<i>' + _1 + '</i>'
+                    }).replace(/\[b\]([^\]]+)\[\/b\]/g, function(matched, _1) {
+                        return '<b>' + _1 + '</b>'
+                    })
+                    
+                    HTML += styled_effect;
+
+                    if (i != card_effects.length - 1)
+                    {
+                        HTML += "<br>"
+                    }
+                }
+                
+                let regexHTML = symbolize(HTML);
+
+                return regexHTML;
+            }
+
+            function symbolize(text) {
+                //This isn't needed now that the { & } are put into the cost & text by the exporter
+                //let tokens = tokenize(text);
+                //let symText = "";
+                //for (const token of tokens)
+                //{
+                //	symText = symText + "{" + token + "}";
+                //}
+
+                return formatTextHTML(text);
+            }
+
+            function formatTextHTML(str) {
+                if(!str)
+                    return "";
+                str = str.replace(/[{]([^}]+)[}]/g, function(matched, _1) {
+                    let letters = _1.toLowerCase()
+                    return '<span class="mana mana-cost mana-' + letters + '"></span>';
+                })
+                return str;
+            }
+
+
+            function setGradient(gradient=false) {
+                if (!gradient) { 
+                    gradient = document.getElementById("color-select").value;
+                }
+
+                gradTop = "#000000";
+                gradBottom = "#FFFFFF";
+                for (const grad of gradients)
+                {
+                    if (gradient == grad.name.replace(' ', '-'))
+                    { 	
+                        gradTop = grad.color1;
+                        gradBottom = grad.color2;
+                    }
+                }
+
+                // console.log(`linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
+                document.body.style.backgroundImage = `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`;
+                localStorage.setItem("settings.gradient", gradient);
+		    }
+            function prepareGradients() {
+                let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+                const opt = document.createElement("option");
+                opt.value = defaultGradient.replace(' ', '-');
+                opt.text = defaultGradient;
+                document.getElementById("color-select").appendChild(opt);
+                for (const gradient of gradients)
+                {	
+                    const opt = document.createElement("option");
+                    opt.value = gradient.name.replace(' ', '-');
+                    opt.text = gradient.name;
+                    if (gradient.name != defaultGradient) {
+                        document.getElementById("color-select").appendChild(opt);
+                    }
+                }
+
+                // setGradient();
+            }
+
+            function draftmancerToP1P1(draft_file) { // comments in here by aanginer
+                let draft_slots = {};
+                let p1p1_object = [];
+                let result_json = [];
+                let card_map    = {};
+                let current_slot_index = 0;
+                let slot_indexes = {};
+                const draft_headers = draft_file.matchAll(/\[(.*?)\]/g); // match text between [ and ]
+                for (const result of draft_headers) {
+                    if (result[1] == "CustomCards")
+                        continue; // skip the CustomCards header
+
+                    const copies = parseInt(result[0].match(/\((.*?)\)/g)[0].split("(")[1].split(")")[0]); // match text between ( and ) -- do the split thing bc js regex doesnt let me grab the group for some reason????????
+                    // -- this is useless but if needed, const name = result.groups[0].match(/\[(.*)\(/g); // match text before (
+                    draft_slots[result[0]] = copies;
+                    slot_indexes[result[0]] = current_slot_index;
+                    current_slot_index += copies;
+                }
+
+                console.log(slot_indexes);
+
+                for (let i = 0; i < current_slot_index; i++) { // the current index should be the total number
+                    p1p1_object.push([]);
+                }
+
+                draft_slots["EOF"] = 0; // add this so when we check for the next slot in the final one we don't get an index error
+                for (let i = 0; i < Object.keys(draft_slots).length - 1; i++) {
+                    const draft_slot = Object.keys(draft_slots)[i];
+                    const next_slot  = Object.keys(draft_slots)[i + 1];
+                    const slot_size  = draft_slots[draft_slot];
+
+                    let card_lines = draft_file.split(draft_slot)[1].split(next_slot)[0].split("\n"); // split between the 2 slots -- splitting by EOF shouldnt be a problem as thatll yield a 1 element list
+                    for (const line of card_lines) {
+                        const count = parseInt(line.substring(0, line.indexOf(' ')));
+                        const card_name = line.substring(line.indexOf(' ') + 1).trim();
+
+                        if (!card_map[card_name]) {
+                            card_map[card_name] = {};
+                        }
+
+                        card_map[card_name][draft_slot] = card_map[card_name][draft_slot] ? card_map[card_name][draft_slot] + count : count; // fancy way to do a null check to decide between = and +=
+                    }
+                }
+
+                for (const card of card_list_arrayified) { // grab the needed card data
+                    if (Object.keys(card_map).includes(card.card_name)) {
+                        const card_slots = card_map[card.card_name];
+                        for (const slot in card_slots) {
+                            const slot_copies = draft_slots[slot];
+                            for (let i = 0; i < slot_copies; i++) {
+                                for (let j = 0; j < card_slots[slot]; j++) {
+                                    p1p1_object[slot_indexes[slot] + i].push(card);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                p1p1_cards = p1p1_object;
+            }
+
+            function nextPack() {
+               pulls.push(...used_cards);
+               buildPulls();
+               packOnePickOne(); 
+            }
+
+            function packOnePickOne() {
+                img_list = [];
+                used_cards = [];
+                for (const slot of p1p1_cards)
+                {	
+                    if (slot.length == 0)
+                        continue;
+
+                    do {
+                        rand_i = Math.floor(Math.random() * (slot.length));
+                        card = slot[rand_i];
+                    } while (used_cards.includes(card));
+
+                    const img_url = '/sets/' + card.set + '-files/img/' + card.number + '_' + card.card_name + (card.shape.includes('double') ? '_front' : '') + '.' + card.image_type;
+
+                    const image = new Image();
+                    image.src = img_url;
+
+                    img_list.push(image);
+                    used_cards.push(card);
+                }
+
+                document.getElementById("pack").innerHTML = "";
+
+                for (const card of used_cards) {
+                    const card_ele = gridifyCard(card);
+                    card_ele.onclick = function() {
+                        openCardModal(card);
+                    }
+                    document.getElementById("pack").appendChild(card_ele);
+                }
+
+                // const canvas = document.getElementById("canvas");
+                // const ctx = canvas.getContext('2d');
+
+                // canvas.width = 1883;
+                // canvas.height = 1573;
+
+                // for (let i = 0; i < img_list.length; i++)
+                // {
+                //     img_list[i].onload = function() {
+                //         x_offset = 377 * (i % 5);
+                //         y_offset = 525 * Math.floor(i / 5);
+                //         ctx.drawImage(img_list[i], x_offset, y_offset, 375, 523);
+                //     };
+                // }
+
+                // document.getElementById("p1p1").style.display = "block";
+            }
+
+            function buildPulls() {
+                let col_lengths = [0, 0, 0, 0, 0, 0, 0, 0];
+                document.getElementById("pulls").innerHTML = '<div class="card-col" id="col-0"></div><div class="card-col" id="col-1"></div><div class="card-col" id="col-2"></div><div class="card-col" id="col-3"></div><div class="card-col" id="col-4"></div><div class="card-col" id="col-5"></div><div class="card-col" id="col-6"></div>';
+
+                for (const card of pulls) {
+                    const card_ele = gridifyCard(card);
+                    card_ele.onclick = function() {
+                        openCardModal(card);
+                    }
+                    // card_ele.firstChild.style.height = "10px";
+                    // card_ele.height = "40px";
+                    const mv = Math.min(6, convertToMV(card.cost));
+                    col_lengths[mv] += 1;
+                    document.getElementById(`col-${mv}`).appendChild(card_ele);
+                }
+
+                for (let i = 0; i < 7; i++) {
+                    document.getElementById(`col-${i}`).style.height = (col_lengths[i] * 30 + window.outerWidth * 0.125 * 1.4 * 0.8).toString() + "px";
+                }
+            }
+
+            function isDecimal(char) {
+                return char >= '0' && char <= '9';
+            }
+
+            function convertToMV(cost)
+            {
+                let mv = 0;
+                
+                costTokens = cost.substring(1, cost.length - 1).replaceAll("}{"," ").split(' ');
+                for (const token of costTokens)
+                {
+                    if (isDecimal(token))
+                    {
+                        mv += parseInt(token);
+                    }
+                    // 2brid
+                    else if (token.includes('2'))
+                    {
+                        mv += 2;
+                    }
+                    else if (token != "x" && token != "")
+                    {
+                        mv += 1;
+                    }
+                }
+
+                return mv;
+            }
+
+            function openCardModal(card) {
+                document.getElementById("modal-content").innerHTML = "";
+                document.getElementById("modal-content").appendChild(gridifyCard(card));
+                document.getElementById("modal-container").style.display = "block";
+            }
+
+            document.getElementById("search").addEventListener("keypress", function(event) {
+				if (event.key === "Enter") {
+					event.preventDefault();
+					const url = new URL('search', window.location.origin);
+					url.searchParams.append('search', document.getElementById("search").value);
+					window.location.href = url;
+				}
+			});
+            function randomCard() {
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let random_card = card_list_arrayified[i];
+
+				const url = new URL('card', window.location.origin);
+				const params = {
+					set: random_card.set,
+					num: random_card.number,
+					name: random_card.card_name
+				}
+				for (const key in params) {
+					url.searchParams.append(key, params[key]);
+				}
+
+				window.location.href = url;
+			}
+        </script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+            import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+            
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+                authDomain: "voyager-78e30.firebaseapp.com",
+                projectId: "voyager-78e30",
+                storageBucket: "voyager-78e30.firebasestorage.app",
+                messagingSenderId: "411191248476",
+                appId: "1:411191248476:web:591349be169d823e5f8899",
+                measurementId: "G-TQ1L48F25M"
+            };
+
+            const color_bgs = {
+                white: "#"
+            }
+            
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+            let username = "";
+            let password = "";
+            let sessionid = localStorage.getItem('settings.session');
+            let decks = {};
+            const events = ["GP1", "League"];
+            // console.log
+
+            if (sessionid) {
+                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+                    let data = docSnap.data();
+                    username = data.username;
+                    password = data.password;
+                });
+
+                await getDoc(doc(db, 'users', username)).then(docSnap => {
+                    let data = docSnap.data();
+                    decks = JSON.parse(data.decks);
+                });
+            }
+
+            document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+			if (localStorage.getItem("settings.darkthememenu") == "On") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
+			} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
+			}
+
+            
+            async function reload() {
+                await getDoc(doc(db, 'users', username)).then(async docSnap => {
+                    let user_data = docSnap.data();
+                    // firebase code
+                });
+            }
+
+            if (sessionid) {
+                reload();
+            }
+        </script>
+    </body>
+</html>
