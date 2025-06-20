@@ -366,6 +366,8 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
+            align-items: center;
+            justify-items: center;
         }
         .report-username {
             font-family: beleren;
@@ -387,6 +389,11 @@
             width: 40px;
             padding: 3px;
             text-align: center;
+        }
+        .report-score-divider {
+            height: 8px;
+            width: 90%;
+            border-radius: 4px;
         }
     </style>
     <style id="text-style">
@@ -877,7 +884,7 @@
                 content_container.className = "report-container";
 
                 const opponents_container = document.createElement("div");
-                opponents_container.className = "opponents-container";
+                opponents_container.className = "opponents-container popout";
 
                 const scores_container = document.createElement("div");
                 scores_container.className = "scores-container";
@@ -890,7 +897,7 @@
                 p1_score_input.id = "p1-score-input";
 
                 const divider = document.createElement("div");
-                divider.className = "report-score-divider";
+                divider.className = "report-score-divider text-bg";
 
                 const p2_score_input = document.createElement("input");
                 p2_score_input.className = "player-score-input";
@@ -903,6 +910,15 @@
                 const username_ele = document.createElement("span");
                 username_ele.className = "report-username text";
                 username_ele.innerText = username;
+
+                for (const deck of JSON.parse(event_data.decks)) {
+                    const player = deck.user;
+                    const opponent_container = document.createElement("div");
+                    opponent_container.className = "opponent-container text";
+                    opponent_container.innerText = player;
+
+                    opponents_container.appendChild(opponent_container);
+                }
 
                 scores_number_container.appendChild(p1_score_input);
                 scores_number_container.appendChild(divider);
