@@ -3076,7 +3076,7 @@
             "rules_text": "",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "[+1]: Surveil 2. You gain 2 life.\n[-2]: Exile target nonland permanent with mana value 2 or less.\n[-3]: Create a */* green Skeleton Horse creature token with \u201cthis creature's power and toughness are each equal to the number of creature cards and planeswalker cards in your graveyard\u201d.",
+            "special_text": "[+1]: Surveil 2. You gain 2 life.\n[-2]: Exile target nonland permanent with mana value 2 or less.\n[-3]: Create a green Skeleton Horse creature token. It has \u201cThis creature's power and toughness are each equal to the number of creature or planeswalker cards in your graveyard.\u201d",
             "shape": "planeswalker",
             "set": "HEL",
             "loyalty": "4",
