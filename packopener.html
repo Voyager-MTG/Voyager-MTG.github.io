@@ -19,7 +19,6 @@
             /* overflow-y: scroll; */
         }
         select {
-            position: absolute;
             text-align: center;
             font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
             font-weight: 500;
@@ -33,14 +32,14 @@
             left: 1%;
             z-index: 1;
 	    }
-        .page-container {
-            /* display: flex;
+        /*.page-container {
+            display: flex;
             align-items: center;
             justify-items: center;
-            /* width: 100%;
+            width: 100%;
             height: 100%; 
-            flex-direction: column; */
-        }
+            flex-direction: column;
+        }*/
         hr {
             width: 85%;
             height: 4px;
@@ -91,13 +90,14 @@
         .pack {
             margin-top: 30px;
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
+            grid-template-columns: repeat(8, 1fr);
             gap: 13px;
             align-items: center;
             justify-items: center;
-            width: 80%;
-            margin-left: 10%;
-            padding-bottom: 25px;   
+            width: 95%;
+            margin-left: 2.5%;
+            padding-bottom: 25px; 
+            position: relative; 
             /* height: 1000%; */
         }
         .pulls {
@@ -110,6 +110,7 @@
             margin-bottom: 15px;
             width: 80%;
             margin-left: 10%;
+            padding-top: 20px;
         }
         .divider {
             position: absolute;
@@ -145,25 +146,57 @@
             width: 100%; 
             height: 100%;
             margin: 8px;
+            position: relative;
         }
-        .top-area-button {
+        .dark-button{
             font-size: 20px;
             border-radius: 5px;
             border: 1px solid white;
             color: white;
             background-color: #333;
             padding: 6px;
+        }
+        .top-area-button {
             float: right;
             margin-right: 10px;
             margin-top:   10px;
         }
-        .top-area-button:hover {
+        .dark-button:hover {
             background-color: black;
         }
         .card-col {
             display: grid;
             grid-auto-rows: 30px;
             height: fit-content;
+        }
+        .image-grid {
+            transition: 0.2s;
+        }
+        .page-container .image-grid:hover {
+            transform: scale(110%);
+            z-index: 1;
+        }
+        .input {
+            border-radius: 6px;
+            border: 1px solid white;
+            font-size: 16px;
+            padding: 4px;
+        }
+        .pack-counter {
+            top: 22%; 
+            width: 85%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            position: absolute;
+        }
+        .save-coll-modal-container {
+            display: flex;
+            gap: 8px;
+            width: 60%;
+        }
+        .top-area-btn-icon {
+            height: 30px;
         }
     </style>
     <style id="text-style">
@@ -196,14 +229,19 @@
             <div class="top-section popout">
                 <div class="main-top-area">
                     <div class="top-area-section"></div>
-                    <div class="top-area-section"></div>
                     <div class="top-area-section">
-                        <button class="top-area-button" onclick="nextPack()">Next Pack</button>
+                        <button onclick="importFile()" class="top-area-button dark-button"><img src="/img/create.png" class="top-area-btn-icon"></button>
+                        <span id="pack-counter" class="pack-counter text">Pack X/X</span>
+                    </div>
+                    <div class="top-area-section">
+                        <button class="top-area-button dark-button" onclick="nextPack()"  id="next-pack">Next pack</button>
+                        <button class="top-area-button dark-button" onclick="savePulls()" id="save-pack">Save to collection</button>
                     </div>
                 </div>
                 <div class="divider text-bg"></div>
             </div>
-            <div class="pack"  id="pack" ></div>
+            <div class="pack"  id="pack">
+            </div>
             <div class="pulls" id="pulls"></div>
         </div>
         <div id="modal-container">
@@ -211,6 +249,7 @@
 				<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
 			</div>
 		</div>
+        <input type="file" style="display: none;" id="import-file">
         <script>
             let gradients = null;
             let raw_gradients = null;
@@ -220,6 +259,8 @@
             let pulls = [];
             const urlParams = new URLSearchParams(window.location.search);
             const pack = urlParams.get('pack');
+            let pack_count = 1;
+            const num_packs = urlParams.get('num') ? parseInt(urlParams.get('num')) : 999999 /* that should be enough for everyone */;
             modal = document.getElementById("modal-container");
             window.onclick = function(event) {
                 if (event.target == modal) {
@@ -571,6 +612,7 @@
             }
 
             function draftmancerToP1P1(draft_file) { // comments in here by aanginer
+                updatePackCount(); // just do this at the start
                 let draft_slots = {};
                 let p1p1_object = [];
                 let result_json = [];
@@ -579,7 +621,7 @@
                 let slot_indexes = {};
                 const draft_headers = draft_file.matchAll(/\[(.*?)\]/g); // match text between [ and ]
                 for (const result of draft_headers) {
-                    if (result[1] == "CustomCards")
+                    if (!result[1].includes("("))
                         continue; // skip the CustomCards header
 
                     const copies = parseInt(result[0].match(/\((.*?)\)/g)[0].split("(")[1].split(")")[0]); // match text between ( and ) -- do the split thing bc js regex doesnt let me grab the group for some reason????????
@@ -588,8 +630,6 @@
                     slot_indexes[result[0]] = current_slot_index;
                     current_slot_index += copies;
                 }
-
-                console.log(slot_indexes);
 
                 for (let i = 0; i < current_slot_index; i++) { // the current index should be the total number
                     p1p1_object.push([]);
@@ -632,9 +672,26 @@
             }
 
             function nextPack() {
-               pulls.push(...used_cards);
-               buildPulls();
-               packOnePickOne(); 
+                if (pack_count < num_packs) {
+                    pack_count += 1;
+                    pulls.push(...used_cards);
+                    packOnePickOne();
+                } 
+                else {
+                    document.getElementById("pack").innerHTML = "";
+                }
+
+                updatePackCount();
+
+                if (pack_count >= num_packs) {
+                    document.getElementById("next-pack").innerText = "View Pulls";
+                }
+
+                buildPulls();
+            }
+
+            function updatePackCount() {
+                document.getElementById("pack-counter").innerText = `Pack ${pack_count}/${num_packs}`;
             }
 
             function packOnePickOne() {
@@ -668,6 +725,8 @@
                     }
                     document.getElementById("pack").appendChild(card_ele);
                 }
+
+                document.getElementById("pack").innerHTML += `<div class="divider text-bg"></div>`;
 
                 // const canvas = document.getElementById("canvas");
                 // const ctx = canvas.getContext('2d');
@@ -704,9 +763,106 @@
                 }
 
                 for (let i = 0; i < 7; i++) {
-                    document.getElementById(`col-${i}`).style.height = (col_lengths[i] * 30 + window.outerWidth * 0.125 * 1.4 * 0.8).toString() + "px";
+                    document.getElementById(`col-${i}`).style.height = (col_lengths[i] * 30 + window.outerWidth * 0.125 * 1.4 * 0.8 * 1.1).toString() + "px";
                 }
             }
+
+            const default_colls = ["Sanctum cards", "Pauper", "Full card pool"];
+
+            function savePulls() {
+                document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+                const colls = JSON.parse(localStorage.getItem("colls.collections"));
+                const collection_dropdown = document.createElement("select");
+                collection_dropdown.className = "coll-dropdown popout";
+                collection_dropdown.id = "coll-dropdown";
+                
+                for (const coll in colls) {
+                    if (default_colls.includes(coll))
+                        continue;
+                    const coll_ele = document.createElement("option");
+                    coll_ele.value = coll;
+                    coll_ele.innerText = coll;
+                    collection_dropdown.appendChild(coll_ele);
+                }
+
+                const coll_name = document.createElement("input");
+                coll_name.className = "input coll-name popout";
+                coll_name.id = "coll-name";
+                coll_name.placeholder = "Collection name..."
+
+                const coll_ele = document.createElement("option");
+                coll_ele.value     = "new";
+                coll_ele.innerText = "New Collection +";
+                collection_dropdown.appendChild(coll_ele);
+
+                if (collection_dropdown.value == "new") {
+                    coll_name.style.display = "block";
+                } else {
+                    coll_name.style.display = "none";
+                }
+
+                collection_dropdown.onchange = function() {
+                    if (collection_dropdown.value == "new") {
+                        coll_name.style.display = "block";
+                    } else {
+                        coll_name.style.display = "none";
+                    }
+                }
+
+                const save_btn = document.createElement("button");
+                save_btn.className = "save-btn dark-button";
+                save_btn.innerText = "Save to collection";
+
+                save_btn.onclick = function() {
+                    let coll_cards = {};
+                    let updated_collection = [];
+                    for (const card of pulls) {
+                        coll_cards[card.card_name] = !coll_cards[card.card_name] ? 1 : coll_cards[card.card_name] + 1;
+                    }
+
+                    for (const card in coll_cards) {
+                        updated_collection.push(`${coll_cards[card]} ${card}`);
+                    }
+                    const collection_to_save = collection_dropdown.value == "new" ? coll_name.value : collection_dropdown.value;
+                    const save_val = collection_dropdown.value == "new" ? updated_collection : [...colls[collection_to_save], ...updated_collection];
+                    colls[collection_to_save] = save_val;
+                    localStorage.setItem("colls.collections", JSON.stringify(colls));
+                }
+
+                const content_container = document.createElement("div");
+                content_container.className = "save-coll-modal-container";
+
+                content_container.appendChild(collection_dropdown);
+                content_container.appendChild(coll_name);
+                content_container.appendChild(save_btn);
+                document.getElementById("modal-content").appendChild(content_container);
+                document.getElementById("modal-container").style.display = 'block';
+            }
+
+            function importFile() {
+                document.getElementById("import-file").click();
+            }
+
+            document.getElementById("import-file").addEventListener("change", function(event) {
+                const files = event.target.files;
+
+                if (files.length > 0) {
+                    const file = files[0];
+                    const name = file.name.replace(/\.[^/.]+$/, "");
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        const fileContent = e.target.result;
+                        pack_count = 1;
+                        pulls = [];
+                        buildPulls();
+                        updatePackCount();
+                        draftmancerToP1P1(fileContent);
+                        packOnePickOne();
+                    }
+
+                    reader.readAsText(file);
+                }
+            }); 
 
             function isDecimal(char) {
                 return char >= '0' && char <= '9';

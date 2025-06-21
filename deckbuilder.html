@@ -1577,6 +1577,13 @@
 					localStorage.setItem("settings.darktheme", val);
 					processDeck();
 				}));
+				const settingsBtn = document.createElement("button");
+				settingsBtn.className = "settings-modal-button popout";
+				settingsBtn.innerText = "Go to settings page";
+				settingsBtn.onclick = function() {
+					window.location.href = "settings";
+				}
+				contentContainer.appendChild(settingsBtn);
 			} else if (menu == "Preview Card") {
 				let preview_card_img = document.createElement("img");
 				let card_stats = JSON.parse(localStorage.getItem("settings.previewimg"));
@@ -3829,26 +3836,28 @@
 
 			const URLDomain = "https://voyager-mtg.github.io"; // FIXME: Shouldn't be hardcoded.
 
-			let slots = '';
+// 			let slots = ''; // disabled slots for now
 
-			if (localStorage.getItem('settings.exportcube') == "On") {
-				slots = '"rare": 15';
+			if (localStorage.getItem('settings.exportcollleague') == "On") {
+				slots = {rare: 2, uncommon: 5, common: 8}
+			} else if (localStorage.getItem('settings.exportcube') == "On") {
+				slots = {rare: 15};
 			} else {
-				slots = '"rare": 1,\n"uncommon": 3,\n"common": 10';
+				slots = {rare: 1, uncommon: 3, common: 10};
 			}
 
-			output_text += `[Settings]
-{
-  "layouts": {
-    "default": {
-      "weight": 1,
-      "slots": {
-		${slots}
-      }
-	}
-  }
-}
-`;
+// 			output_text += `[Settings]
+// {
+//   "layouts": {
+//     "default": {
+//       "weight": 1,
+//       "slots": {
+// 		${slots}
+//       }
+// 	}
+//   }
+// }
+// `;
 			output_text += "[CustomCards]\n[\n";
 			for (const c of cards.values())
 			{
@@ -3904,7 +3913,7 @@
 			output_text += "]\n";
 
 			if (localStorage.getItem('settings.exportcube') == "on") {
-				output_text += `[rare]
+				output_text += `[rare(15)]
 `;
 				for (const c of cards.values()) {
 					output_text += `${c.count} ${c.card_name}
@@ -3914,7 +3923,7 @@
 				const rarities = [...(new Set([...cards.values().map(c => c.rarity)]))];
 
 				for(const r of rarities) {
-					output_text += `[${r}]
+					output_text += `[${r}(${slots[r]})]
 `;
 					for (const c of cards.values()) {
 						if(c.rarity === r) 
