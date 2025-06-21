@@ -343,9 +343,11 @@ def generateHTML(code):
 
 	#F: sets/SET-files/SET-draft.txt
 	if os.path.exists(os.path.join('sets', code + '-files', code + '-draft.txt')):
-		html_content += '''<div class="dot"> • </div><a href="/sets/''' + code + '''-files/''' + code + '''-draft.txt" download>Draft</a>
+		html_content += '''<div class="dot"> • </div><a href="/sets/''' + code + '''-files/''' + code + '''-draft.txt" download>Draftmancer</a>
 		'''
-		html_content += '''<div class="dot"> • </div><a onclick="packOnePickOne()">Pack</a>
+		html_content += '''<div class="dot"> • </div><a onclick="packOnePickOne()">P1P1</a>
+		'''
+		html_content += '''<div class="dot"> • </div><a href="/packopener?pack=''' + code + '''&num=3">Open Packs!</a>
 		'''
 
 	html_content += '''
