@@ -32,6 +32,28 @@
             left: 1%;
             z-index: 1;
 	    }
+        .img-container .btn {
+            background-color: #ffffffaa;
+            background-size: contain;
+            background-position: center;
+            width: 15%;
+            height: 11%;
+            cursor: pointer;
+            border: none;
+            position: absolute;
+            left: 50%;
+            top: 48%;
+            transform: translate(170%, -150%);
+            opacity: 0.8;
+            border-radius: 100%;
+            border: 2px solid black;
+            padding: 3px;
+        }
+        .img-container .btn:hover {
+            background-size: contain;
+            background-position: center;
+            background-color: #ffffff;
+        }
         /*.page-container {
             display: flex;
             align-items: center;
@@ -65,7 +87,7 @@
             margin: auto;
             padding: 20px;
             border: 1px solid #888;
-            width: 30%;
+            width: 60%;
             border-radius: 10px;
             border: solid #777 3px;
         }
@@ -155,6 +177,10 @@
             color: white;
             background-color: #333;
             padding: 6px;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            gap: 6px;
         }
         .top-area-button {
             float: right;
@@ -183,12 +209,14 @@
             padding: 4px;
         }
         .pack-counter {
-            top: 22%; 
-            width: 85%;
+            margin-top: 19px; 
+            margin-right: 0%;
+            /* width: 85%; */
+            float: right;
             text-align: center;
             font-weight: bold;
             font-size: 24px;
-            position: absolute;
+            /* position: absolute; */
         }
         .save-coll-modal-container {
             display: flex;
@@ -197,7 +225,32 @@
         }
         .top-area-btn-icon {
             height: 30px;
+            pointer-events: none;
         }
+        .set-modal-container {
+            display: grid;
+            gap: 15px;
+            grid-template-columns: 70px 5fr 1fr 70px 120px;
+            align-items: center;
+            /* justify-items: center; */
+            padding: 8px;
+            margin-bottom: 70px;
+        }
+        .set-logo {
+            height: 70px;
+        }
+        .set-name {
+            font-family: beleren;
+            font-size: 28px;
+        }
+        .pack-num {
+            font-size: 30px;
+            text-align: center;
+        }
+        /* .set-code {
+            font-weight: bold;
+            font-size: 24px;
+        } */
     </style>
     <style id="text-style">
 	.text {
@@ -228,10 +281,12 @@
         <div class="page-container">
             <div class="top-section popout">
                 <div class="main-top-area">
-                    <div class="top-area-section"></div>
                     <div class="top-area-section">
-                        <button onclick="importFile()" class="top-area-button dark-button"><img src="/img/create.png" class="top-area-btn-icon"></button>
                         <span id="pack-counter" class="pack-counter text">Pack X/X</span>
+                    </div>
+                    <div class="top-area-section">
+                        <button onclick="importFile()" class="top-area-button dark-button">Upload file<img src="/img/create.png" class="top-area-btn-icon"></button>
+                        <button onclick="openSet()" class="top-area-button dark-button">Open set<img src="/img/sets.png" class="top-area-btn-icon"></button>
                     </div>
                     <div class="top-area-section">
                         <button class="top-area-button dark-button" onclick="nextPack()"  id="next-pack">Next pack</button>
@@ -311,13 +366,13 @@
                 return file;
             }
 
-            function gridifyCard(card_stats, card_text = false, rotate_card = false, designer_notes = false) {
+            function gridifyCard(card_stats, cgc = false, card_text = false, rotate_card = false, designer_notes = false) {
                 const card_name = card_stats.card_name;
 
                 const grid = document.createElement("div");
                 grid.className = "image-grid";
 
-                grid.appendChild(buildImgContainer(card_stats, false, rotate_card));
+                grid.appendChild(buildImgContainer(card_stats, false, rotate_card, cgc = cgc));
                 
                 const text = document.createElement("div");
                 text.className = "card-text popout";
@@ -420,10 +475,10 @@
                 return grid;
             }
 
-            function buildImgContainer(card_stats, hidden_title = false, rotate_card = false) {
+            function buildImgContainer(card_stats, hidden_title = false, rotate_card = false, cgc = false) {
                 const imgContainer = document.createElement("div");
                 imgContainer.className = "img-container";
-                const id = card_stats.set + "-" + card_stats.number + "-";
+                const id = cgc ? "card-modal-card" : card_stats.set + "-" + card_stats.number;
 
                 const img = document.createElement("img");
                 img.className = "card-image";
@@ -720,13 +775,15 @@
 
                 for (const card of used_cards) {
                     const card_ele = gridifyCard(card);
-                    card_ele.onclick = function() {
+                    card_ele.onclick = () => {
                         openCardModal(card);
                     }
                     document.getElementById("pack").appendChild(card_ele);
                 }
 
-                document.getElementById("pack").innerHTML += `<div class="divider text-bg"></div>`;
+                const divider = document.createElement("div");
+                divider.className = "divider text-bg";
+                document.getElementById("pack").appendChild(divider);
 
                 // const canvas = document.getElementById("canvas");
                 // const ctx = canvas.getContext('2d');
@@ -823,10 +880,13 @@
                     for (const card in coll_cards) {
                         updated_collection.push(`${coll_cards[card]} ${card}`);
                     }
+                    
                     const collection_to_save = collection_dropdown.value == "new" ? coll_name.value : collection_dropdown.value;
                     const save_val = collection_dropdown.value == "new" ? updated_collection : [...colls[collection_to_save], ...updated_collection];
                     colls[collection_to_save] = save_val;
                     localStorage.setItem("colls.collections", JSON.stringify(colls));
+
+                    document.getElementById("modal-container").style.display = "none";
                 }
 
                 const content_container = document.createElement("div");
@@ -841,6 +901,56 @@
 
             function importFile() {
                 document.getElementById("import-file").click();
+            }
+
+            async function openSet() {
+                await fetch('/lists/all-sets.json')
+					.then(response => response.json())
+					.then(json => {
+						set_list = json;
+				}).catch(error => console.error('Error:', error));
+
+                const content_container = document.createElement("div");
+                content_container.className = "set-modal-container";
+
+                for (const set of set_list.sets) {
+                    const set_name = document.createElement("span");
+                    set_name.className = "set-name";
+                    set_name.innerText = set.set_name;
+
+                    const set_code = document.createElement("span");
+                    set_code.className = "set-code";
+                    set_code.innerText = set.set_code;
+                    
+                    const set_logo = document.createElement("img");
+                    set_logo.src = `/sets/${set.set_code}-files/logo.png`;
+                    set_logo.className = "set-logo";
+
+                    const packs_num = document.createElement("input");
+                    packs_num.className = "pack-num input popout";
+                    packs_num.id = `${set.set_code}-input`;
+                    packs_num.type = "text";
+                    packs_num.value = 0;
+
+                    const open_btn = document.createElement("button");
+                    open_btn.className = "dark-button open-button";
+                    open_btn.innerText = "Open Pack";
+
+                    open_btn.onclick = function() {
+                        window.location.href = `?pack=${set.set_code}&num=${document.getElementById(`${set.set_code}-input`).value}`;
+                    }
+
+                    content_container.appendChild(set_logo);
+                    content_container.appendChild(set_name);
+                    content_container.appendChild(set_code);
+                    content_container.appendChild(packs_num);
+                    content_container.appendChild(open_btn);
+                }
+
+                document.getElementById("modal-content").innerHTML = '';
+                document.getElementById("modal-content").style.width = "70%";
+                document.getElementById("modal-content").appendChild(content_container);
+                document.getElementById("modal-container").style.display = 'block';
             }
 
             document.getElementById("import-file").addEventListener("change", function(event) {
@@ -894,8 +1004,9 @@
             }
 
             function openCardModal(card) {
+                document.getElementById("modal-content").style.width = "30%";
                 document.getElementById("modal-content").innerHTML = "";
-                document.getElementById("modal-content").appendChild(gridifyCard(card));
+                document.getElementById("modal-content").appendChild(gridifyCard(card, cgc = true));
                 document.getElementById("modal-container").style.display = "block";
             }
 

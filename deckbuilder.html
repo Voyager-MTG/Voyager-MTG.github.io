@@ -3839,7 +3839,7 @@
 // 			let slots = ''; // disabled slots for now
 
 			if (localStorage.getItem('settings.exportcollleague') == "On") {
-				slots = {rare: 2, uncommon: 5, common: 8}
+				slots = {common: 8, uncommon: 5, rare: 2};
 			} else if (localStorage.getItem('settings.exportcube') == "On") {
 				slots = {rare: 15};
 			} else {
@@ -3927,7 +3927,7 @@
 `;
 					for (const c of cards.values()) {
 						if(c.rarity === r) 
-							output_text += `${c.count} ${c.card_name}
+							output_text += `\t${c.count} ${c.card_name}
 `;
 					}
 				}
