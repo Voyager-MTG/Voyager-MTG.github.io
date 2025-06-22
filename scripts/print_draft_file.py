@@ -81,7 +81,7 @@ def generateFile(code):
 	draft_string += ''']
 
 '''
-	
+
 	for slot in structure:
 		slot_list = []
 		draft_string += '''[''' + slot['name'] + '''(''' + str(slot['count']) + ''')]
@@ -124,6 +124,8 @@ def generateFile(code):
 				count = 1
 			else:
 				count = 5
+
+			if count > 0:
 				draft_string += '''	''' + str(count) + ''' ''' + c['card_name'] + '''
 '''
 
