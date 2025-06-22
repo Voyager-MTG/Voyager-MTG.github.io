@@ -271,7 +271,7 @@
                 // initialize empty HTML then add each option and the X to it, then make the modal visible and add the content
                 let headerContainer = document.createElement("div");
                 headerContainer.className = "settings-modal-header-container";
-                const settingsMenus = ["Home", "Style", "Deckbuilder"]
+                const settingsMenus = ["Home", "Style", "Deckbuilder"];
                 for (const menuName of settingsMenus) {
                     let ele = document.createElement("span");
                     ele.onclick = function() {
@@ -442,14 +442,14 @@
                 });
             }
 
-                document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-                document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+            document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
 
-                if (localStorage.getItem("settings.darkthememenu") == "On") {
-                    document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
-                } else if (localStorage.getItem("settings.darkthememenu") == "Off") {
-                    document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
-                }
+            if (localStorage.getItem("settings.darkthememenu") == "On") {
+                document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
+            } else if (localStorage.getItem("settings.darkthememenu") == "Off") {
+                document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
+            }
 
             
             let logged_in = (sessionid != null);

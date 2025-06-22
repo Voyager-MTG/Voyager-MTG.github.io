@@ -4087,6 +4087,7 @@
 			await getDoc(doc(db, 'users', username)).then(async docSnap => {
 				let data = docSnap.data();
 				let colls; // comment
+				const admin = data.admin;
 				decks = JSON.parse(data.decks);
 				if (data.colls != null) {
 					colls = JSON.parse(data.colls);
@@ -4213,7 +4214,8 @@
 						username: username,
 						password: password,
 						decks   : JSON.stringify(decks),
-						colls   : JSON.stringify(colls)
+						colls   : JSON.stringify(colls),
+						admin   : admin ? true : false
 					});
 				});
 				window.beforeunload = function() {
@@ -4234,7 +4236,8 @@
 						username: username,
 						password: password,
 						decks   : JSON.stringify(decks),
-						colls   : JSON.stringify(colls)
+						colls   : JSON.stringify(colls),
+						admin   : admin ? true : false
 					});
 				}
 				document.getElementById("file-menu").addEventListener("change", function(event) { // Watch the dropdown that says Actions...
@@ -4256,7 +4259,8 @@
 							username: username,
 							password: password,
 							decks   : JSON.stringify(decks),
-							colls   : JSON.stringify(colls)
+							colls   : JSON.stringify(colls),
+							admin   : admin ? true : false
 						});
 					}
 				});
