@@ -3736,7 +3736,7 @@
 			let export_cod = (export_as == "export-cod");
 
 			if (export_cod) {
-				deck_text += `<?xml version="1.0" encoding="UTF-8"?>\\n<cockatrice_deck version="1">\\n\\t<deckname>${deck_name}</deckname>\\n\\t<zone name="main">\\n`;
+				deck_text += `<?xml version="1.0" encoding="UTF-8"?>\n<cockatrice_deck version="1">\n\t<deckname>${deck_name}</deckname>\n\\t<zone name="main">\n`;
 			}
 
 			let map = new Map([]);
@@ -3755,14 +3755,14 @@
 			{
 				let card_number = map.get(card_map);
 				if (export_cod) {
-					deck_text += `\\t\\t<card number="${card_number}" name="${JSON.parse(card_map).card_name}"/>\\n`;
+					deck_text += `\\t\\t<card number="${card_number}" name="${JSON.parse(card_map).card_name}"/>\n`;
 					continue; // continue instead of writing else
 				}
-				deck_text += card_number + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name + "\\n");
+				deck_text += card_number + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name + "\n");
 			}
 			if (sideboard.length != 0)
 			{
-				deck_text += export_cod ? '\\t</zone>\\n\\t<zone name="side">\\n' : "sideboard\\n";
+				deck_text += export_cod ? '\t</zone>\n\t<zone name="side">\n' : "sideboard\n";
 				map = new Map([]);
 				for (const card of sideboard)
 				{
@@ -3790,15 +3790,15 @@
 				{
 					let card_number = map.get(card_map);
 					if (export_cod) {
-						deck_text += `\\t\\t<card number="${card_number}" name="${JSON.parse(card_map).card_name}"/>\\n`;
+						deck_text += `\\t\\t<card number="${card_number}" name="${JSON.parse(card_map).card_name}"/>\n`;
 						continue; // continue instead of writing else
 					}
-					deck_text += card_number + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name + "\\n");
+					deck_text += card_number + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name + "\n");
 				}
 			}
 
 			if (export_cod) {
-				deck_text += "\\t</zone>\\n</cockatrice_deck>";
+				deck_text += "\t</zone>\n</cockatrice_deck>";
 			}
 
 			let downloadableLink = document.createElement('a');

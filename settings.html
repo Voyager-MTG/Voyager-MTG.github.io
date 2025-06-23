@@ -542,8 +542,8 @@
                     document.getElementById("Admin").style.display = "none";      
                 } else {
                     document.getElementById("add-packs-btn").addEventListener("click", async function() {
-                        const set_count  = document.getElementById("coll-league-set-input");
-                        const pack_count = document.getElementById("coll-league-pack-input");
+                        const set_count  = document.getElementById("coll-league-set-input" ).value;
+                        const pack_count = document.getElementById("coll-league-pack-input").value;
                         for (const user of all_users) {
                             if (!coll_league_players.includes(user.username)) {
                                 continue;
@@ -551,8 +551,8 @@
                             setDoc(doc(db, "users", user.username), {
                                 username    : user.username,
                                 password    : user.password,
-                                decks       : JSON.stringify(user.decks),
-                                colls       : JSON.stringify(user.colls),
+                                decks       : user.decks,
+                                colls       : user.colls,
                                 admin       : user.admin ? true : false,
                                 coll_league : user.coll_league ? [user.coll_league[0] + set_count, user.coll_league[1] + pack_count] : [0, 0]
                             });
