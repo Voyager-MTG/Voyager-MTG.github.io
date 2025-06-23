@@ -3836,7 +3836,7 @@
 				}
 			}
 
-			const URLDomain = "https://voyager-mtg.github.io"; // FIXME: Shouldn't be hardcoded.
+			const URLDomain = window.location.href.split("/deckbuilder")[0]; // FIXME: Shouldn't be hardcoded.
 
 // 			let slots = ''; // disabled slots for now
 
@@ -3922,15 +3922,15 @@
 `;
 				}
 			} else {
-				const rarities = [...(new Set([...cards.values().map(c => c.rarity)]))];
+				const rarities = [...(new Set([...cards.values().map(c => convertRarity(c))]))];
 
 				for(const r of rarities) {
 					output_text += `[${r}(${slots[r]})]
 `;
 					for (const c of cards.values()) {
-						if(c.rarity === r) 
-							output_text += `\t${c.count} ${c.card_name}
-`;
+						if(convertRarity(c) === r) {
+							output_text += `\t${c.count} ${c.card_name}\n`;
+						}
 					}
 				}
 			}	
@@ -3944,6 +3944,13 @@
 
 			document.getElementById("file-menu").value = "default";
 		
+		}
+
+		function convertRarity(c) {
+			if (c.rarity == "mythic" || c.rarity == "special")
+				return "rare";
+
+			return c.rarity;
 		}
 
 		function goToSearch() {
