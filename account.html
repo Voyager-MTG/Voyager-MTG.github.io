@@ -530,7 +530,10 @@
                             await setDoc(doc(db, "users", username), {
                                 username: username,
                                 password: password,
-                                decks: JSON.stringify(new_decks)
+                                decks: JSON.stringify(new_decks),
+                                colls: user_data.colls,
+                                admin: user_data.admin ? true : false,
+                                coll_league: user_data.coll_league ? user_data.coll_league : []
                             });
                             alert("Deck Deleted!");
                             reload();
@@ -649,7 +652,10 @@
                     await setDoc(doc(db, "users", username), {
                         username: username,
                         password: password,
-                        decks: JSON.stringify(new_decks)
+                        decks: JSON.stringify(new_decks),
+                        colls: user_data.colls,
+                        admin: user_data.admin ? true : false,
+                        coll_league: user_data.coll_league ? user_data.coll_league : []
                     });
                     alert("Deck Deleted!");
                     reload();

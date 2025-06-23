@@ -4088,6 +4088,7 @@
 				let data = docSnap.data();
 				let colls; // comment
 				const admin = data.admin;
+				let coll_league = data.coll_league;
 				decks = JSON.parse(data.decks);
 				if (data.colls != null) {
 					colls = JSON.parse(data.colls);
@@ -4215,7 +4216,8 @@
 						password: password,
 						decks   : JSON.stringify(decks),
 						colls   : JSON.stringify(colls),
-						admin   : admin ? true : false
+						admin   : admin ? true : false,
+						coll_league: coll_league ? coll_league : []
 					});
 				});
 				window.beforeunload = function() {
@@ -4237,7 +4239,8 @@
 						password: password,
 						decks   : JSON.stringify(decks),
 						colls   : JSON.stringify(colls),
-						admin   : admin ? true : false
+						admin   : admin ? true : false,
+						coll_league: coll_league ? coll_league : []
 					});
 				}
 				document.getElementById("file-menu").addEventListener("change", function(event) { // Watch the dropdown that says Actions...
@@ -4260,7 +4263,8 @@
 							password: password,
 							decks   : JSON.stringify(decks),
 							colls   : JSON.stringify(colls),
-							admin   : admin ? true : false
+							admin   : admin ? true : false,
+							coll_league: coll_league ? coll_league : []
 						});
 					}
 				});

@@ -137,6 +137,19 @@
     .btn-img {
 		width: 24px;
 	}
+    .cl-container {
+        display: flex;
+        gap: 8px;
+        justify-items: center;
+        align-items: center;
+    }
+    .coll-league-input {
+        width: 50px;
+        font-size: 24px;
+        border: 1px solid white;
+        border-radius: 5px;
+        text-align: center;
+    }
     </style>
     <style id="text-style">
 	.text {
@@ -150,6 +163,7 @@
         }
     </style>
     <body>
+        <button id="reload" style="display: none;"></button>
         <div class="header">
             <div class="search-grid">
                 <a href="/"><img class="sg-logo" src="/img/banner.png"></a>
@@ -271,13 +285,14 @@
                 // initialize empty HTML then add each option and the X to it, then make the modal visible and add the content
                 let headerContainer = document.createElement("div");
                 headerContainer.className = "settings-modal-header-container";
-                const settingsMenus = ["Home", "Style", "Deckbuilder"];
+                const settingsMenus = ["Home", "Style", "Deckbuilder", "Admin"];
                 for (const menuName of settingsMenus) {
                     let ele = document.createElement("span");
                     ele.onclick = function() {
                         openSettingsModal(menuName);
                     }
                     ele.innerText = menuName;
+                    ele.id = menuName;
                     if (menuName == menu) {
                         ele.className = "settings-modal-header-active";
                         if (localStorage.getItem("settings.darkthememenu") == "On") {
@@ -295,7 +310,7 @@
                 }
                 let contentContainer = document.createElement("div");
                 contentContainer.style.display = "grid";
-                contentContainer.style.width = "60%";
+                contentContainer.style.width = "80%";
                 contentContainer.style.gridTemplateColumns = "1fr 0.5fr";
                 contentContainer.style.gap = "10px";
                 let modalContent = '</select><span class="close" onclick="closeModal()">&times;</span>';
@@ -339,12 +354,53 @@
                     contentContainer.appendChild(settingsOptionHtml("Export draftmancer as cube", "settings.exportcube"));
                     contentContainer.appendChild(createText("Export draftmancer as collection league pack: "));
                     contentContainer.appendChild(settingsOptionHtml("Export draftmancer as collection league pack", "settings.exportcollleague"));
+                } else if (menu == "Admin") {
+                    contentContainer.appendChild(createText("Add collection league packs: "));
+
+                    const set_input        = document.createElement("input");
+                    const pack_input       = document.createElement("input");
+                    const set_input_label  = document.createElement("span");
+                    const pack_input_label = document.createElement("span");
+                    const submit_btn       = document.createElement("button");
+                    const submit_icon      = document.createElement("img");
+                    const cl_container     = document.createElement("div");
+
+                    set_input.className  = "coll-league-input popout";
+                    pack_input.className = "coll-league-input popout";
+                    set_input.id  = "coll-league-set-input";
+                    pack_input.id = "coll-league-pack-input";
+                    set_input.type  = "number";
+                    pack_input.type = "number";
+                    set_input.value  = 3;
+                    pack_input.value = 3;
+
+                    set_input_label.className  = "coll-league-input-label text";
+                    pack_input_label.className = "coll-league-input-label text";
+
+                    set_input_label.innerText = "Set:";
+                    pack_input_label.innerText = "Pack:";
+
+                    submit_btn.className = "black-button";
+                    submit_btn.id = "add-packs-btn";
+                    submit_icon.className = "btn-img";
+                    submit_btn.innerHTML = `<b style="font-size: 28px;">+</b> Add Packs`;
+                    submit_btn.appendChild(submit_icon);
+
+                    cl_container.className = "cl-container";
+                    cl_container.appendChild(set_input_label);
+                    cl_container.appendChild(set_input);
+                    cl_container.appendChild(pack_input_label);
+                    cl_container.appendChild(pack_input);
+                    cl_container.appendChild(submit_btn);
+
+                    contentContainer.appendChild(cl_container);
                 }
                 document.getElementById("page-container").innerHTML = "";
                 document.getElementById("page-container").appendChild(headerContainer);
                 document.getElementById("page-container").appendChild(contentContainer);
                 prepareGradients();
                 setGradient();
+                document.getElementById("reload").click();
             }
 
             function settingsOptionHtml(settingname, settingtag, options=['On', 'Off'], func=false) {
@@ -424,8 +480,10 @@
             const db = getFirestore(app);
             let username = "";
             let password = "";
+            let user_data;
             let sessionid = localStorage.getItem('settings.session');
             let decks = {};
+            let coll_league_players;
             const events = ["GP1", "League"];
             // console.log
 
@@ -439,8 +497,14 @@
                 await getDoc(doc(db, 'users', username)).then(docSnap => {
                     let data = docSnap.data();
                     decks = JSON.parse(data.decks);
+                    user_data = data;
                 });
             }
+
+            await getDoc(doc(db, "info", "collectionleague")).then(docSnap => {
+                let data = docSnap.data();
+                coll_league_players = JSON.parse(data.players); 
+            });
 
             document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
             document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
@@ -460,6 +524,44 @@
 				document.getElementById("login").innerText = "Not logged in";
 				document.getElementById("account-btn").innerHTML = `<img src="/img/account.png" class="btn-img">Not logged in`;
 			}
+
+            document.getElementById("reload").addEventListener("click", reload);
+
+            const all_users_data = await getDocs(collection(db, "users"));
+            let all_users = []
+            all_users_data.forEach((doc) => {
+                all_users.push(doc.data());
+            });
+
+            async function reload() {
+                if (!user_data) {
+                    document.getElementById("Admin").style.display = "none";    
+                    return;
+                }
+                if (!user_data.admin) {
+                    document.getElementById("Admin").style.display = "none";      
+                } else {
+                    document.getElementById("add-packs-btn").addEventListener("click", async function() {
+                        const set_count  = document.getElementById("coll-league-set-input");
+                        const pack_count = document.getElementById("coll-league-pack-input");
+                        for (const user of all_users) {
+                            if (!coll_league_players.includes(user.username)) {
+                                continue;
+                            }
+                            setDoc(doc(db, "users", user.username), {
+                                username    : user.username,
+                                password    : user.password,
+                                decks       : JSON.stringify(user.decks),
+                                colls       : JSON.stringify(user.colls),
+                                admin       : user.admin ? true : false,
+                                coll_league : user.coll_league ? [user.coll_league[0] + set_count, user.coll_league[1] + pack_count] : [0, 0]
+                            });
+                        }
+                        alert("Added Packs!");
+                    });
+                }
+                
+            }
 
             if (sessionid) {
                 reload();
