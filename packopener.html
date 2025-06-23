@@ -677,13 +677,11 @@
                 let card_map    = {};
                 let current_slot_index = 0;
                 let slot_indexes = {};
-                const draft_headers = draft_file.matchAll(/\[(.*?)\]/g); // match text between [ and ]
+                const draft_headers = draft_file.matchAll(/\[(.+?)\([0-9]+?\)]/g); // match text between [ and ]
                 for (const result of draft_headers) {
-                    if (!result[1].includes("("))
-                        continue; // skip the CustomCards header
-
                     const copies = parseInt(result[0].match(/\((.*?)\)/g)[0].split("(")[1].split(")")[0]); // match text between ( and ) -- do the split thing bc js regex doesnt let me grab the group for some reason????????
                     // -- this is useless but if needed, const name = result.groups[0].match(/\[(.*)\(/g); // match text before (
+                    console.log
                     draft_slots[result[0]] = copies;
                     slot_indexes[result[0]] = current_slot_index;
                     current_slot_index += copies;

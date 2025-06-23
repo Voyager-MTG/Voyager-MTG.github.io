@@ -8,7 +8,7 @@
         {
             "card_name": "Bone Prophet",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Cleric",
             "number": 67,
             "color_identity": "B",
@@ -26,7 +26,7 @@
         {
             "card_name": "Emergent Anomaly",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Horror",
             "number": 93,
             "color_identity": "R",
@@ -44,7 +44,7 @@
         {
             "card_name": "Priest of Perfection",
             "color": "UR",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Cleric",
             "number": 122,
             "color_identity": "UR",
@@ -62,7 +62,7 @@
         {
             "card_name": "Far-Off Factory",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Land",
             "number": 172,
             "color_identity": "C",
@@ -80,7 +80,7 @@
         {
             "card_name": "Contagious Murder",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 69,
             "color_identity": "B",
@@ -98,7 +98,7 @@
         {
             "card_name": "Endless Distortion Line",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact \u2014 Vehicle",
             "number": 157,
             "color_identity": "C",
@@ -116,7 +116,7 @@
         {
             "card_name": "Matryoshka Crawler",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Construct",
             "number": 163,
             "color_identity": "C",
@@ -134,7 +134,7 @@
         {
             "card_name": "Sorting Servant",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Golem",
             "number": 165,
             "color_identity": "C",
@@ -152,7 +152,7 @@
         {
             "card_name": "Rattlefiend",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Demon",
             "number": 164,
             "color_identity": "C",
@@ -170,7 +170,7 @@
         {
             "card_name": "Doorwarden",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Creature \u2014 Horror",
             "number": 3,
             "color_identity": "C",
@@ -188,7 +188,7 @@
         {
             "card_name": "Eyes Scorched from Divinity",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Angel Eye Incarnation",
             "number": 5,
             "color_identity": "C",
@@ -206,7 +206,7 @@
         {
             "card_name": "Mechanised Hunter",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Horror",
             "number": 53,
             "color_identity": "U",
@@ -224,7 +224,7 @@
         {
             "card_name": "Deepmind Oracle",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Sphinx",
             "number": 40,
             "color_identity": "U",
@@ -242,7 +242,7 @@
         {
             "card_name": "New-Life Acolyte",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Warlock",
             "number": 56,
             "color_identity": "U",
@@ -260,7 +260,7 @@
         {
             "card_name": "Thought-Theft",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 84,
             "color_identity": "B",
@@ -278,7 +278,7 @@
         {
             "card_name": "The Red Door",
             "color": "UB",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact",
             "number": 123,
             "color_identity": "UB",
@@ -296,7 +296,7 @@
         {
             "card_name": "Door to Clear Skies",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Instant",
             "number": 41,
             "color_identity": "U",
@@ -314,7 +314,7 @@
         {
             "card_name": "Dreamlured Giant",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment Artifact Creature \u2014 Giant",
             "number": 156,
             "color_identity": "C",
@@ -332,15 +332,15 @@
         {
             "card_name": "The Gardener's Saga",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment Land \u2014 Saga",
             "number": 174,
             "color_identity": "C",
             "cost": "",
-            "rules_text": "",
+            "rules_text": "[i]His roots twist and twist and reach deeper and deeper.[/i]\nI, II \u2014 This land gains \u201c{T}: Add {C}.\u201d until your next turn.\nIII \u2014 Search your library for a non-Saga land card and put it onto the battlefield, then shuffle.",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "[i]His roots twist and twist and reach deeper and deeper.[/i]\nI, II \u2014 This land gains \u201c{T}: Add {C}.\u201d until your next turn.\nIII \u2014 Search your library for a non-Saga land card and put it onto the battlefield, then shuffle.\n\u200b",
+            "special_text": "",
             "shape": "saga",
             "set": "ITD",
             "loyalty": "",
@@ -350,7 +350,7 @@
         {
             "card_name": "Binding Decision",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment",
             "number": 15,
             "color_identity": "W",
@@ -368,7 +368,7 @@
         {
             "card_name": "Inexorable Pressure",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Eye Horror Incarnation",
             "number": 50,
             "color_identity": "U",
@@ -386,7 +386,7 @@
         {
             "card_name": "Vertigomancer",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Horror Wizard",
             "number": 166,
             "color_identity": "C",
@@ -404,7 +404,7 @@
         {
             "card_name": "Unsightly Mutate",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Insect Horror",
             "number": 62,
             "color_identity": "U",
@@ -422,7 +422,7 @@
         {
             "card_name": "Beacon Dreamer",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Human",
             "number": 13,
             "color_identity": "W",
@@ -440,7 +440,7 @@
         {
             "card_name": "Restlessness",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Instant",
             "number": 31,
             "color_identity": "W",
@@ -458,7 +458,7 @@
         {
             "card_name": "Secrets of Radiance",
             "color": "WB",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment",
             "number": 124,
             "color_identity": "WB",
@@ -476,15 +476,15 @@
         {
             "card_name": "Yklev, In a Strange Land",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Planeswalker \u2014 Yklev",
             "number": 12,
             "color_identity": "C",
             "cost": "{3}",
-            "rules_text": "",
+            "rules_text": "[i]Landfall[/i]\u2014 Whenever a land enters under your control, you gain 1 life.\n[+1]: Untap target land. Surveil 1.\n[-3]: Search your library or graveyard for a land card, reveal it, put it into your hand, then shuffle.",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "[i]Landfall[/i]\u2014 Whenever a land enters under your control, you gain 1 life.\n[+1]: Untap target land. Surveil 1.\n[-3]: Search your library or graveyard for a land card, reveal it, put it into your hand, then shuffle.",
+            "special_text": "",
             "shape": "planeswalker",
             "set": "ITD",
             "loyalty": "3",
@@ -494,7 +494,7 @@
         {
             "card_name": "Suffocating Gaze",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Instant",
             "number": 83,
             "color_identity": "B",
@@ -512,7 +512,7 @@
         {
             "card_name": "Vaga, True Prophet",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Creature \u2014 Human Cleric",
             "number": 149,
             "color_identity": "G",
@@ -530,7 +530,7 @@
         {
             "card_name": "Arbiter",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Creature \u2014 Elder Construct",
             "number": 2,
             "color_identity": "C",
@@ -548,7 +548,7 @@
         {
             "card_name": "Chimerism",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Instant",
             "number": 17,
             "color_identity": "W",
@@ -566,7 +566,7 @@
         {
             "card_name": "Foreboding Monolith",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact",
             "number": 160,
             "color_identity": "C",
@@ -584,7 +584,7 @@
         {
             "card_name": "Rite of Resurrection",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 81,
             "color_identity": "B",
@@ -602,7 +602,7 @@
         {
             "card_name": "Overcome All",
             "color": "WR",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 121,
             "color_identity": "WR",
@@ -620,7 +620,7 @@
         {
             "card_name": "Lammasu, Dream-Stilled",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Artifact Creature \u2014 Sphinx",
             "number": 51,
             "color_identity": "U",
@@ -638,7 +638,7 @@
         {
             "card_name": "Ichor-Drowned",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Zombie",
             "number": 135,
             "color_identity": "G",
@@ -656,7 +656,7 @@
         {
             "card_name": "Unfair Judgment",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Instant",
             "number": 37,
             "color_identity": "W",
@@ -674,7 +674,7 @@
         {
             "card_name": "Horrific Punishment",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Instant",
             "number": 75,
             "color_identity": "B",
@@ -692,7 +692,7 @@
         {
             "card_name": "Lamplure",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 138,
             "color_identity": "G",
@@ -710,7 +710,7 @@
         {
             "card_name": "Somnonaut Drone",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Drone",
             "number": 106,
             "color_identity": "R",
@@ -728,7 +728,7 @@
         {
             "card_name": "Observation Agent",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Shapeshifter",
             "number": 142,
             "color_identity": "G",
@@ -746,7 +746,7 @@
         {
             "card_name": "Mirror Eater",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Reflection",
             "number": 101,
             "color_identity": "R",
@@ -764,7 +764,7 @@
         {
             "card_name": "Volcanic Steambed",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Land \u2014 Island Mountain",
             "number": 182,
             "color_identity": "UR",
@@ -782,7 +782,7 @@
         {
             "card_name": "Far-off Door",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Artifact",
             "number": 158,
             "color_identity": "C",
@@ -800,7 +800,7 @@
         {
             "card_name": "A Blossoming of Flowers",
             "color": "RG",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Incarnation",
             "number": 114,
             "color_identity": "RG",
@@ -818,7 +818,7 @@
         {
             "card_name": "Symbiotic Host",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Human Knight",
             "number": 60,
             "color_identity": "U",
@@ -836,7 +836,7 @@
         {
             "card_name": "Identity Shatter",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 97,
             "color_identity": "R",
@@ -854,7 +854,7 @@
         {
             "card_name": "Corpse-Shell Container",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact \u2014 Equipment",
             "number": 154,
             "color_identity": "C",
@@ -872,7 +872,7 @@
         {
             "card_name": "Feast of Butterflies",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 24,
             "color_identity": "W",
@@ -890,7 +890,7 @@
         {
             "card_name": "Mycelial Coating",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment \u2014 Aura",
             "number": 141,
             "color_identity": "G",
@@ -908,15 +908,15 @@
         {
             "card_name": "Ashiok, Dream Feaster",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Planeswalker \u2014 Ashiok",
             "number": 65,
             "color_identity": "B",
             "cost": "{2}{B}{B}",
-            "rules_text": "",
+            "rules_text": "You may cast nonland cards exiled with Ashiok planeswalkers and spend mana as though it were mana of any color to cast those spells.\n[-2]: Target player reveals their hand. You choose a nonland card from it. That player exiles that card.",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "You may cast nonland cards exiled with Ashiok planeswalkers and spend mana as though it were mana of any color to cast those spells.\n[-2]: Target player reveals their hand. You choose a nonland card from it. That player exiles that card.",
+            "special_text": "",
             "shape": "planeswalker",
             "set": "ITD",
             "loyalty": "5",
@@ -926,15 +926,15 @@
         {
             "card_name": "Echo of Distorted Outcomes",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Planeswalker \u2014 Echo",
             "number": 23,
             "color_identity": "W",
             "cost": "{2}{W}",
-            "rules_text": "",
+            "rules_text": "[+1]: Sacrifice up to one nontoken creature you control. Create a token copy of it except it's an artifact in addition to its other types.\n[-2]: Return target creature card with mana value 3 or less from your graveyard to the battlefield.\n[-5]: Create two token copies of Echo of Distorted Outcomes, except they're not legendary.",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "[+1]: Sacrifice up to one nontoken creature you control. Create a token copy of it except it's an artifact in addition to its other types.\n[-2]: Return target creature card with mana value 3 or less from your graveyard to the battlefield.\n[-5]: Create two token copies of Echo of Distorted Outcomes, except they're not legendary.",
+            "special_text": "",
             "shape": "planeswalker",
             "set": "ITD",
             "loyalty": "3",
@@ -944,7 +944,7 @@
         {
             "card_name": "Edge of a Precipice",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Instant",
             "number": 43,
             "color_identity": "U",
@@ -962,7 +962,7 @@
         {
             "card_name": "Hall of the Hands",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Land",
             "number": 175,
             "color_identity": "C",
@@ -980,7 +980,7 @@
         {
             "card_name": "Eightfold Sight",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment \u2014 Aura",
             "number": 44,
             "color_identity": "U",
@@ -998,15 +998,15 @@
         {
             "card_name": "Ashiok, Lone Dreamer",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Planeswalker \u2014 Ashiok",
             "number": 38,
             "color_identity": "U",
             "cost": "{1}{U}{U}",
-            "rules_text": "",
+            "rules_text": "If you would draw a card, instead exile the top three cards of your library, then put a card you own exiled with an Ashiok planeswalker into your hand.\n[-2]: Exile the top card of your library, then put a card you own exiled with an Ashiok planeswalker into your hand.",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "If you would draw a card, instead exile the top three cards of your library, then put a card you own exiled with an Ashiok planeswalker into your hand.\n[-2]: Exile the top card of your library, then put a card you own exiled with an Ashiok planeswalker into your hand.",
+            "special_text": "",
             "shape": "planeswalker",
             "set": "ITD",
             "loyalty": "5",
@@ -1016,7 +1016,7 @@
         {
             "card_name": "Collapsed Chaos",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment Artifact Creature \u2014 Fractal",
             "number": 153,
             "color_identity": "C",
@@ -1034,7 +1034,7 @@
         {
             "card_name": "Aspect of Logic",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment Artifact Creature \u2014 Avatar",
             "number": 152,
             "color_identity": "WUBRG",
@@ -1052,7 +1052,7 @@
         {
             "card_name": "Angel of Dying Flames",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Angel",
             "number": 89,
             "color_identity": "R",
@@ -1070,7 +1070,7 @@
         {
             "card_name": "Fracture of Divinity",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Demigod Construct",
             "number": 49,
             "color_identity": "U",
@@ -1088,7 +1088,7 @@
         {
             "card_name": "Warden of Scorching Days",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment Creature \u2014 God",
             "number": 110,
             "color_identity": "R",
@@ -1106,7 +1106,7 @@
         {
             "card_name": "Stretching Tangle",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Land \u2014 Swamp Forest",
             "number": 181,
             "color_identity": "BG",
@@ -1124,7 +1124,7 @@
         {
             "card_name": "Awakened Fiend",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment Creature \u2014 Devil",
             "number": 128,
             "color_identity": "G",
@@ -1142,7 +1142,7 @@
         {
             "card_name": "Faceless",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment \u2014 Aura",
             "number": 46,
             "color_identity": "U",
@@ -1160,7 +1160,7 @@
         {
             "card_name": "Angel of the Forest",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Angel Illusion",
             "number": 63,
             "color_identity": "B",
@@ -1178,7 +1178,7 @@
         {
             "card_name": "Firmament-Rending Blade",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact \u2014 Equipment",
             "number": 159,
             "color_identity": "C",
@@ -1196,7 +1196,7 @@
         {
             "card_name": "Moonbreaker",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Human Wizard",
             "number": 102,
             "color_identity": "R",
@@ -1214,7 +1214,7 @@
         {
             "card_name": "Watching Wolf",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Eye Wolf Horror",
             "number": 150,
             "color_identity": "G",
@@ -1232,7 +1232,7 @@
         {
             "card_name": "Tormented Saviour",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Angel",
             "number": 36,
             "color_identity": "W",
@@ -1250,7 +1250,7 @@
         {
             "card_name": "Pestilent Meeting",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 144,
             "color_identity": "G",
@@ -1268,7 +1268,7 @@
         {
             "card_name": "Ajaxala, Cunning Puppeteer",
             "color": "UG",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Creature \u2014 Isopod Horror",
             "number": 113,
             "color_identity": "UG",
@@ -1286,7 +1286,7 @@
         {
             "card_name": "Avaz, Moontouched Prince",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Creature \u2014 Human Noble",
             "number": 66,
             "color_identity": "B",
@@ -1304,7 +1304,7 @@
         {
             "card_name": "Firmament Sculptor",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Avatar",
             "number": 48,
             "color_identity": "U",
@@ -1322,7 +1322,7 @@
         {
             "card_name": "Defensive Denizen",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Lizard",
             "number": 19,
             "color_identity": "W",
@@ -1340,7 +1340,7 @@
         {
             "card_name": "Abstracter of Thought",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Eldrazi",
             "number": 1,
             "color_identity": "C",
@@ -1358,7 +1358,7 @@
         {
             "card_name": "Shifting Silverscape",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Kindred Artifact Land \u2014 Shapeshifter",
             "number": 179,
             "color_identity": "C",
@@ -1376,7 +1376,7 @@
         {
             "card_name": "To be Forgotten in a Dream",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Instant",
             "number": 35,
             "color_identity": "W",
@@ -1394,7 +1394,7 @@
         {
             "card_name": "Tyrant of Long Death",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment Creature \u2014 Horror",
             "number": 148,
             "color_identity": "G",
@@ -1412,7 +1412,7 @@
         {
             "card_name": "Antisun's Domain",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Land",
             "number": 167,
             "color_identity": "C",
@@ -1430,7 +1430,7 @@
         {
             "card_name": "Celestial Messenger",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Bird Nightmare",
             "number": 16,
             "color_identity": "WB",
@@ -1448,7 +1448,7 @@
         {
             "card_name": "Forgotten Prophet",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Human Advisor",
             "number": 132,
             "color_identity": "G",
@@ -1466,7 +1466,7 @@
         {
             "card_name": "001, Errant Spark-Engine",
             "color": "BG",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Artifact Creature \u2014 Construct",
             "number": 112,
             "color_identity": "BG",
@@ -1484,7 +1484,7 @@
         {
             "card_name": "Star-Binding Command",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Instant",
             "number": 33,
             "color_identity": "W",
@@ -1502,7 +1502,7 @@
         {
             "card_name": "Desolate Meeting",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment",
             "number": 20,
             "color_identity": "W",
@@ -1520,7 +1520,7 @@
         {
             "card_name": "The Pact",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment",
             "number": 143,
             "color_identity": "G",
@@ -1538,7 +1538,7 @@
         {
             "card_name": "Tyrant's Rage",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 108,
             "color_identity": "R",
@@ -1556,7 +1556,7 @@
         {
             "card_name": "Saylthe, Twice-Drowned",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Creature \u2014 Zombie",
             "number": 59,
             "color_identity": "U",
@@ -1574,7 +1574,7 @@
         {
             "card_name": "Water-Witch's Bargain",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 151,
             "color_identity": "G",
@@ -1592,7 +1592,7 @@
         {
             "card_name": "Drown in Self Reflection",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Instant",
             "number": 42,
             "color_identity": "U",
@@ -1610,15 +1610,15 @@
         {
             "card_name": "Fleeting Merriment",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment \u2014 Saga",
             "number": 95,
             "color_identity": "R",
             "cost": "{2}{R}",
-            "rules_text": "",
+            "rules_text": "[i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]\nI \u2014 Fleeting Merriment deals 3 damage to any target.\nII \u2014 Draw a card.\nIII \u2014 Discard two cards at the beginning of your next end step.",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "[i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]\nI \u2014 Fleeting Merriment deals 3 damage to any target.\nII \u2014 Draw a card.\nIII \u2014 Discard two cards at the beginning of your next end step.",
+            "special_text": "",
             "shape": "saga",
             "set": "ITD",
             "loyalty": "",
@@ -1628,15 +1628,15 @@
         {
             "card_name": "Unmasking Divinity",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment \u2014 Saga",
             "number": 85,
             "color_identity": "B",
             "cost": "{1}{B}",
-            "rules_text": "",
+            "rules_text": "[i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]\nI \u2014 Each player sacrifices a creature.\nII \u2014 You may put a loyalty counter on each permanent you control with a loyalty counter on it.\nIII \u2014 You lose 2 life and draw a card.",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "[i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]\nI \u2014 Each player sacrifices a creature.\nII \u2014 You may put a loyalty counter on each permanent you control with a loyalty counter on it.\nIII \u2014 You lose 2 life and draw a card.",
+            "special_text": "",
             "shape": "saga",
             "set": "ITD",
             "loyalty": "",
@@ -1646,7 +1646,7 @@
         {
             "card_name": "Cleaver, Sword-Saint",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Creature \u2014 Demon Cleric",
             "number": 68,
             "color_identity": "B",
@@ -1664,7 +1664,7 @@
         {
             "card_name": "The Living Enigma",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Creature \u2014 Shaman",
             "number": 99,
             "color_identity": "R",
@@ -1682,7 +1682,7 @@
         {
             "card_name": "Tithetaker Angel",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Angel Artificer",
             "number": 34,
             "color_identity": "W",
@@ -1700,7 +1700,7 @@
         {
             "card_name": "Infested Heart",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 137,
             "color_identity": "G",
@@ -1718,7 +1718,7 @@
         {
             "card_name": "Cursed Range",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Land \u2014 Swamp Mountain",
             "number": 169,
             "color_identity": "BR",
@@ -1736,7 +1736,7 @@
         {
             "card_name": "Desolate Expanse",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Land \u2014 Plains Swamp",
             "number": 170,
             "color_identity": "WB",
@@ -1754,7 +1754,7 @@
         {
             "card_name": "Beseech the Divine",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 14,
             "color_identity": "W",
@@ -1772,7 +1772,7 @@
         {
             "card_name": "Imprisoned Aspect",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment Creature \u2014 Devil",
             "number": 136,
             "color_identity": "G",
@@ -1790,7 +1790,7 @@
         {
             "card_name": "Mire in Sorrow",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Instant",
             "number": 54,
             "color_identity": "U",
@@ -1808,7 +1808,7 @@
         {
             "card_name": "Harbinger of Doubt",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Illusion",
             "number": 134,
             "color_identity": "G",
@@ -1826,7 +1826,7 @@
         {
             "card_name": "The Living Coffin",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Artifact",
             "number": 162,
             "color_identity": "C",
@@ -1844,7 +1844,7 @@
         {
             "card_name": "Decrepid Terraformer",
             "color": "WG",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Construct",
             "number": 116,
             "color_identity": "WG",
@@ -1862,7 +1862,7 @@
         {
             "card_name": "Find the Corrupt Heart",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Instant",
             "number": 131,
             "color_identity": "G",
@@ -1880,7 +1880,7 @@
         {
             "card_name": "Scion of the Unknowable",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Horror",
             "number": 145,
             "color_identity": "G",
@@ -1898,15 +1898,15 @@
         {
             "card_name": "Lighting the False Sun",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment \u2014 Saga",
             "number": 28,
             "color_identity": "W",
             "cost": "{1}{W}",
-            "rules_text": "",
+            "rules_text": "\nI, II, III \u2014 Reveal the top six cards of your library. Put a non-Saga permanent card with mana value 2 or less from among them into your hand, and put the rest on the bottom of your library in any order.\nYou may put a nonland permanent card with mana value 2 or less from your hand onto the battlefield.\n\u200b",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "[i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]\nI, II, III \u2014 Reveal the top six cards of your library. Put a non-Saga permanent card with mana value 2 or less from among them into your hand, and put the rest on the bottom of your library in any order.\nYou may put a nonland permanent card with mana value 2 or less from your hand onto the battlefield.\n\u200b",
+            "special_text": "",
             "shape": "saga",
             "set": "ITD",
             "loyalty": "",
@@ -1916,15 +1916,15 @@
         {
             "card_name": "Embrace Rebirth",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment \u2014 Saga",
             "number": 130,
             "color_identity": "G",
             "cost": "{2}{G}{G}",
-            "rules_text": "",
+            "rules_text": "\nI \u2014 You may mill five cards.\nII \u2014 Return a permanent card from your graveyard to your hand.\nIII \u2014 You may put a permanent card from your hand onto the battlefield.",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "[i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]\nI \u2014 You may mill five cards.\nII \u2014 Return a permanent card from your graveyard to your hand.\nIII \u2014 You may put a permanent card from your hand onto the battlefield.",
+            "special_text": "",
             "shape": "saga",
             "set": "ITD",
             "loyalty": "",
@@ -1934,7 +1934,7 @@
         {
             "card_name": "Corvid Defacer",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Bird Horror",
             "number": 70,
             "color_identity": "B",
@@ -1952,7 +1952,7 @@
         {
             "card_name": "Deepgrowth Animist",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Elf Spirit Shaman",
             "number": 129,
             "color_identity": "G",
@@ -1970,7 +1970,7 @@
         {
             "card_name": "Embryonic Mound",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Land \u2014 Mountain Forest",
             "number": 171,
             "color_identity": "RG",
@@ -1988,7 +1988,7 @@
         {
             "card_name": "Forlorn Battlefield",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Land \u2014 Mountain Plains",
             "number": 173,
             "color_identity": "WR",
@@ -2006,7 +2006,7 @@
         {
             "card_name": "Seek Understanding",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment",
             "number": 32,
             "color_identity": "W",
@@ -2024,7 +2024,7 @@
         {
             "card_name": "Prowling Shade",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Cat Shade",
             "number": 80,
             "color_identity": "B",
@@ -2042,7 +2042,7 @@
         {
             "card_name": "Smokeplume Crustacean",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Crab",
             "number": 105,
             "color_identity": "R",
@@ -2060,7 +2060,7 @@
         {
             "card_name": "Living Bog",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Land \u2014 Forest Island",
             "number": 176,
             "color_identity": "UG",
@@ -2078,7 +2078,7 @@
         {
             "card_name": "Ghostspitter",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Spirit Horror",
             "number": 25,
             "color_identity": "W",
@@ -2096,15 +2096,15 @@
         {
             "card_name": "Petition the Abominable",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment \u2014 Saga",
             "number": 57,
             "color_identity": "U",
             "cost": "{1}{U}{U}",
-            "rules_text": "",
+            "rules_text": "\nI, II \u2014 Draw a card.\nIII \u2014 When you next resolve an instant or sorcery spell this turn, return it from your graveyard to your hand.",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "[i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]\nI, II \u2014 Draw a card.\nIII \u2014 When you next resolve an instant or sorcery spell this turn, return it from your graveyard to your hand.\n\u200b",
+            "special_text": "",
             "shape": "saga",
             "set": "ITD",
             "loyalty": "",
@@ -2114,7 +2114,7 @@
         {
             "card_name": "Longlegs",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Octopus",
             "number": 77,
             "color_identity": "B",
@@ -2132,7 +2132,7 @@
         {
             "card_name": "Heliach, The Sunspitter",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Creature \u2014 Human Warlock",
             "number": 96,
             "color_identity": "R",
@@ -2150,7 +2150,7 @@
         {
             "card_name": "Lord of Rust",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Skeleton Artificer",
             "number": 100,
             "color_identity": "R",
@@ -2168,7 +2168,7 @@
         {
             "card_name": "Abstracted Rapture",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 87,
             "color_identity": "R",
@@ -2186,7 +2186,7 @@
         {
             "card_name": "The Nowhere Girl",
             "color": "WU",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Creature \u2014 Reflection",
             "number": 120,
             "color_identity": "WU",
@@ -2204,7 +2204,7 @@
         {
             "card_name": "Somnibiotic Emergence",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Instant",
             "number": 146,
             "color_identity": "G",
@@ -2222,7 +2222,7 @@
         {
             "card_name": "Exiled Trickster",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Faerie",
             "number": 45,
             "color_identity": "U",
@@ -2240,7 +2240,7 @@
         {
             "card_name": "Cascade Coherency Failure",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 92,
             "color_identity": "R",
@@ -2258,7 +2258,7 @@
         {
             "card_name": "Experience Infinite Time",
             "color": "WU",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Instant",
             "number": 118,
             "color_identity": "WU",
@@ -2276,7 +2276,7 @@
         {
             "card_name": "Novice Dream-Binder",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Human Wizard",
             "number": 29,
             "color_identity": "W",
@@ -2294,7 +2294,7 @@
         {
             "card_name": "Bladecraft Scion",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Human Warrior",
             "number": 91,
             "color_identity": "R",
@@ -2312,7 +2312,7 @@
         {
             "card_name": "Gravewalking",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment",
             "number": 74,
             "color_identity": "B",
@@ -2330,7 +2330,7 @@
         {
             "card_name": "Moonlight Oracle",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Cleric",
             "number": 55,
             "color_identity": "U",
@@ -2348,7 +2348,7 @@
         {
             "card_name": "Strange Wayfarer",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Horror",
             "number": 147,
             "color_identity": "G",
@@ -2366,7 +2366,7 @@
         {
             "card_name": "Reshape Reality",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 58,
             "color_identity": "U",
@@ -2384,7 +2384,7 @@
         {
             "card_name": "Figure of Some Importance",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Demon",
             "number": 47,
             "color_identity": "U",
@@ -2402,7 +2402,7 @@
         {
             "card_name": "One of Keys",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Creature \u2014 Shapeshifter",
             "number": 30,
             "color_identity": "W",
@@ -2420,7 +2420,7 @@
         {
             "card_name": "Unceasing Observation",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Instant",
             "number": 61,
             "color_identity": "U",
@@ -2438,7 +2438,7 @@
         {
             "card_name": "Distortion World",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment",
             "number": 22,
             "color_identity": "W",
@@ -2456,7 +2456,7 @@
         {
             "card_name": "Cloudscape Observer",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Drone",
             "number": 39,
             "color_identity": "U",
@@ -2474,7 +2474,7 @@
         {
             "card_name": "Celestial Realm",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Land \u2014 Plains Island",
             "number": 168,
             "color_identity": "WU",
@@ -2492,15 +2492,15 @@
         {
             "card_name": "Goddess of Puppet Strings",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Planeswalker \u2014 Arachne",
             "number": 72,
             "color_identity": "B",
             "cost": "{1}{B}",
-            "rules_text": "",
+            "rules_text": "[+1]: You may pay 1 life. If you do, create a 1/1 colorless Faerie Horror creature token with flying and \u201cThis creature can't block.\u201d\n[-6]: Destroy up to one target creature. When you do, put a creature from a graveyard onto the battlefield under your control. It gains haste. Exile it at end of turn.",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "[+1]: You may pay 1 life. If you do, create a 1/1 colorless Faerie Horror creature token with flying and \u201cThis creature can't block.\u201d\n[-6]: Destroy up to one target creature. When you do, put a creature from a graveyard onto the battlefield under your control. It gains haste. Exile it at end of turn.",
+            "special_text": "",
             "shape": "planeswalker",
             "set": "ITD",
             "loyalty": "1",
@@ -2510,15 +2510,15 @@
         {
             "card_name": "The Gardener, Waning",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Planeswalker \u2014 Gardener",
             "number": 133,
             "color_identity": "G",
             "cost": "{X}{G}",
-            "rules_text": "",
+            "rules_text": "Whenever a land you control enters, add one mana of any color.\n[-1]: Return target land card from your graveyard to your hand.\n[-1]: You may play an additional land this turn.",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "Whenever a land you control enters, add one mana of any color.\n[-1]: Return target land card from your graveyard to your hand.\n[-1]: You may play an additional land this turn.",
+            "special_text": "",
             "shape": "planeswalker",
             "set": "ITD",
             "loyalty": "X",
@@ -2528,15 +2528,15 @@
         {
             "card_name": "Ever-Burning Soul",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Planeswalker \u2014 Unmasked",
             "number": 94,
             "color_identity": "R",
             "cost": "{3}{R}",
-            "rules_text": "",
+            "rules_text": "[+1]: Exile the top card of your library. You may play it this turn. When you do, you may activate this ability an additional time this turn.\n[-2]: This planeswalker deals X damage to any target, where X is 2 plus the number of cards exiled with it. If that permanent would die this turn, exile it instead.",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "[+1]: Exile the top card of your library. You may play it this turn. When you do, you may activate this ability an additional time this turn.\n[-2]: This planeswalker deals X damage to any target, where X is 2 plus the number of cards exiled with it. If that permanent would die this turn, exile it instead.",
+            "special_text": "",
             "shape": "planeswalker",
             "set": "ITD",
             "loyalty": "3",
@@ -2546,15 +2546,15 @@
         {
             "card_name": "Aeon, of the Living Coffin",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Planeswalker \u2014 Aeon",
             "number": 127,
             "color_identity": "G",
             "cost": "{3}{G}{G}",
-            "rules_text": "",
+            "rules_text": "When Aeon, of the Living Coffin enters, mill four cards and return each land card from your graveyard to the battlefield tapped.\n[+2]: Creatures you control gain reach and trample until your next turn.\n[-3]: Untap target land you control. It becomes a 4/4 Elemental creature with vigilance and haste. It's still a land.",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "When Aeon, of the Living Coffin enters, mill four cards and return each land card from your graveyard to the battlefield tapped.\n[+2]: Creatures you control gain reach and trample until your next turn.\n[-3]: Untap target land you control. It becomes a 4/4 Elemental creature with vigilance and haste. It's still a land.",
+            "special_text": "",
             "shape": "planeswalker",
             "set": "ITD",
             "loyalty": "4",
@@ -2564,7 +2564,7 @@
         {
             "card_name": "Phantom City",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Land \u2014 Island Swamp",
             "number": 177,
             "color_identity": "UB",
@@ -2582,7 +2582,7 @@
         {
             "card_name": "Liferoot Gnawer",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Horror",
             "number": 98,
             "color_identity": "R",
@@ -2600,7 +2600,7 @@
         {
             "card_name": "Living Heart",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Enchantment",
             "number": 139,
             "color_identity": "G",
@@ -2618,7 +2618,7 @@
         {
             "card_name": "Cryptbreaking",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 18,
             "color_identity": "W",
@@ -2636,7 +2636,7 @@
         {
             "card_name": "Animus Conflagration",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 90,
             "color_identity": "R",
@@ -2654,7 +2654,7 @@
         {
             "card_name": "Ancient Forerunner",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Construct",
             "number": 88,
             "color_identity": "R",
@@ -2672,15 +2672,15 @@
         {
             "card_name": "The Ephemeral Piper",
             "color": "WUG",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Planeswalker \u2014 Lursk",
             "number": 117,
             "color_identity": "WUG",
             "cost": "{1}{G}{W}{U}",
-            "rules_text": "",
+            "rules_text": "Enchantments you control have hexproof.\n[+2]: Target creature you control gains vigilance and can't be blocked until end of turn.\n[-1]: Target creature phases out until The Ephemeral Piper leaves the battlefield.\n[-4]: Create a colorless enchantment token named Ringing Noise with \u201cAt the beginning of each opponent's upkeep, for each creature they control, destroy that creature unless its controller pays {1}.\u201d",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "Enchantments you control have hexproof.\n[+2]: Target creature you control gains vigilance and can't be blocked until end of turn.\n[-1]: Target creature phases out until The Ephemeral Piper leaves the battlefield.\n[-4]: Create a colorless enchantment token named Ringing Noise with \u201cAt the beginning of each opponent's upkeep, for each creature they control, destroy that creature unless its controller pays {1}.\u201d",
+            "special_text": "",
             "shape": "planeswalker",
             "set": "ITD",
             "loyalty": "4",
@@ -2690,7 +2690,7 @@
         {
             "card_name": "Wyrm's Death",
             "color": "BRG",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 126,
             "color_identity": "BRG",
@@ -2708,7 +2708,7 @@
         {
             "card_name": "Interstellar Drifter",
             "color": "UBG",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Human Scout Rogue",
             "number": 119,
             "color_identity": "UBG",
@@ -2726,7 +2726,7 @@
         {
             "card_name": "Crackling Serpent",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Serpent",
             "number": 155,
             "color_identity": "C",
@@ -2744,7 +2744,7 @@
         {
             "card_name": "Reflective Savannah",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Land \u2014 Forest Plains",
             "number": 178,
             "color_identity": "WG",
@@ -2762,7 +2762,7 @@
         {
             "card_name": "Shortcut Through Hell",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Land",
             "number": 180,
             "color_identity": "C",
@@ -2780,15 +2780,15 @@
         {
             "card_name": "MX-04, Electric Usurper",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Planeswalker \u2014 Mx-04",
             "number": 8,
             "color_identity": "C",
             "cost": "{5}",
-            "rules_text": "",
+            "rules_text": "MX-04 enters with an additional loyalty counter on it for each land in your realm. You gain that much life. [i](Your realm consists of up to one land of each of the basic land types.)[/i]\n[+1]: This planeswalker deals 3 damage to target opponent.\n[-3]: Create a colorless Mx-04 token planeswalker with 1 starting loyalty named Replicant with \u201c[+1]: Each opponent loses 2 life and you gain 2 life.\u201d and \u201c[-2]: Draw a card.\u201d",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "MX-04 enters with an additional loyalty counter on it for each land in your realm. You gain that much life. [i](Your realm consists of up to one land of each of the basic land types.)[/i]\n[+1]: This planeswalker deals 3 damage to target opponent.\n[-3]: Create a colorless Mx-04 token planeswalker with 1 starting loyalty named Replicant with \u201c[+1]: Each opponent loses 2 life and you gain 2 life.\u201d and \u201c[-2]: Draw a card.\u201d",
+            "special_text": "",
             "shape": "planeswalker",
             "set": "ITD",
             "loyalty": "1",
@@ -2798,7 +2798,7 @@
         {
             "card_name": "Wandering Moon",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Orb Horror",
             "number": 11,
             "color_identity": "B",
@@ -2816,7 +2816,7 @@
         {
             "card_name": "Like Butterflies on Strings",
             "color": "U",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Horror Incarnation",
             "number": 52,
             "color_identity": "U",
@@ -2834,7 +2834,7 @@
         {
             "card_name": "Veteran Bloodhunter",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Vampire Warrior",
             "number": 86,
             "color_identity": "B",
@@ -2852,7 +2852,7 @@
         {
             "card_name": "Infiltration Agent",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Human Rogue",
             "number": 76,
             "color_identity": "B",
@@ -2870,7 +2870,7 @@
         {
             "card_name": "Piercing Betrayal",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 79,
             "color_identity": "B",
@@ -2888,7 +2888,7 @@
         {
             "card_name": "Sentinel of Dead Lands",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Artifact Creature \u2014 Spirit Soldier",
             "number": 104,
             "color_identity": "R",
@@ -2906,7 +2906,7 @@
         {
             "card_name": "Towersmog Ghoul",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Zombie Horror",
             "number": 107,
             "color_identity": "R",
@@ -2924,7 +2924,7 @@
         {
             "card_name": "Weight of Tradition",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment Creature \u2014 Incarnation",
             "number": 111,
             "color_identity": "R",
@@ -2942,7 +2942,7 @@
         {
             "card_name": "Callous Observer",
             "color": "BR",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment Creature \u2014 Eye Horror",
             "number": 115,
             "color_identity": "BR",
@@ -2960,7 +2960,7 @@
         {
             "card_name": "Siltcurrent Obsession",
             "color": "UG",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery \u2014 Revelation",
             "number": 125,
             "color_identity": "UG",
@@ -2978,7 +2978,7 @@
         {
             "card_name": "Insubstantial Glimpse",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Angel Horror",
             "number": 27,
             "color_identity": "W",
@@ -2996,7 +2996,7 @@
         {
             "card_name": "Maktel and the Unknowable",
             "color": "G",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Creature \u2014 Human Horror",
             "number": 140,
             "color_identity": "G",
@@ -3014,7 +3014,7 @@
         {
             "card_name": "Protostar Bombardment",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Enchantment",
             "number": 103,
             "color_identity": "R",
@@ -3032,7 +3032,7 @@
         {
             "card_name": "Eye of the Abominable",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Enchantment Artifact",
             "number": 71,
             "color_identity": "B",
@@ -3050,7 +3050,7 @@
         {
             "card_name": "Meet the Beyond",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 7,
             "color_identity": "C",
@@ -3068,7 +3068,7 @@
         {
             "card_name": "Illuminant Master",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Human Warlock",
             "number": 26,
             "color_identity": "W",
@@ -3086,7 +3086,7 @@
         {
             "card_name": "Unexpected Passenger",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Horror",
             "number": 109,
             "color_identity": "R",
@@ -3104,7 +3104,7 @@
         {
             "card_name": "Necromantic Overspill",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Sorcery",
             "number": 78,
             "color_identity": "B",
@@ -3122,7 +3122,7 @@
         {
             "card_name": "Devoted Numena",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Snake Cleric",
             "number": 21,
             "color_identity": "W",
@@ -3140,15 +3140,15 @@
         {
             "card_name": "Replicant",
             "color": "",
-            "rarity": "cube",
+            "rarity": "common",
             "type": "Token Planeswalker \u2014 Mx-04",
             "number": 9,
             "color_identity": "C",
             "cost": "",
-            "rules_text": "",
+            "rules_text": "[i]Additional processing concerns routed through crude bodies. Materials of construction: Enigmatic, unique, Abiogenetic. PRIORITY: Expand.[/i]\n[+1]: Each opponent loses 2 life and you gain 2 life\n[-2]: Draw a card.",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "[i]Additional processing concerns routed through crude bodies. Materials of construction: Enigmatic, unique, Abiogenetic. PRIORITY: Expand.[/i]\n[+1]: Each opponent loses 2 life and you gain 2 life\n[-2]: Draw a card.",
+            "special_text": "",
             "shape": "planeswalker",
             "set": "ITD",
             "loyalty": "1",
@@ -3158,7 +3158,7 @@
         {
             "card_name": "Drain",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "masterpiece",
             "type": "Sorcery",
             "number": 1,
             "color_identity": "B",
@@ -3176,7 +3176,7 @@
         {
             "card_name": "Spark",
             "color": "R",
-            "rarity": "cube",
+            "rarity": "masterpiece",
             "type": "Sorcery",
             "number": 2,
             "color_identity": "R",
@@ -3194,7 +3194,7 @@
         {
             "card_name": "Faerie Horror",
             "color": "",
-            "rarity": "cube",
+            "rarity": "common",
             "type": "Token Creature \u2014 Faerie Horror",
             "number": 2,
             "color_identity": "C",
@@ -3212,7 +3212,7 @@
         {
             "card_name": "Horror",
             "color": "",
-            "rarity": "cube",
+            "rarity": "common",
             "type": "Token Creature \u2014 Horror",
             "number": 3,
             "color_identity": "C",
@@ -3230,7 +3230,7 @@
         {
             "card_name": "Ringing Noise",
             "color": "",
-            "rarity": "cube",
+            "rarity": "common",
             "type": "Token Enchantment",
             "number": 4,
             "color_identity": "C",
@@ -3248,7 +3248,7 @@
         {
             "card_name": "Through Violence",
             "color": "",
-            "rarity": "cube",
+            "rarity": "common",
             "type": "Sorcery",
             "number": 10,
             "color_identity": "C",
@@ -3266,7 +3266,7 @@
         {
             "card_name": "Illusion",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "common",
             "type": "Token Creature \u2014 Illusion",
             "number": 5,
             "color_identity": "W",
@@ -3284,7 +3284,7 @@
         {
             "card_name": "Nightmare",
             "color": "W",
-            "rarity": "cube",
+            "rarity": "common",
             "type": "Token Creature \u2014 Nightmare",
             "number": 6,
             "color_identity": "W",
@@ -3302,7 +3302,7 @@
         {
             "card_name": "Everywhere",
             "color": "",
-            "rarity": "cube",
+            "rarity": "common",
             "type": "Token Land",
             "number": 18,
             "color_identity": "C",
@@ -3320,7 +3320,7 @@
         {
             "card_name": "Spite-Crowned Champion",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Human Warrior",
             "number": 82,
             "color_identity": "B",
@@ -3338,7 +3338,7 @@
         {
             "card_name": "Grasping Eternity",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Creature \u2014 Horror",
             "number": 73,
             "color_identity": "B",
@@ -3356,7 +3356,7 @@
         {
             "card_name": "Echo",
             "color": "",
-            "rarity": "cube",
+            "rarity": "common",
             "type": "Token Planeswalker \u2014 Echo",
             "number": 1,
             "color_identity": "C",
@@ -3374,15 +3374,15 @@
         {
             "card_name": "The Gardener, Crowned",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Planeswalker \u2014 Gardener",
             "number": 6,
             "color_identity": "C",
             "cost": "{15}",
-            "rules_text": "",
+            "rules_text": "The Gardener, Crowned costs {1} less to cast for each colorless permanent you control. [i](Lands are colorless.)[/i]\n[+2]: Create three colorless 1/1 Faerie Horror creature tokens with flying that can't block.\n[-3]: Gain control of target permanent.\n[-5]: You get an emblem with \u201cYou may look at the top card of your library any time and you may play lands and cast colorless spells from the top of your library.\u201d",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "The Gardener, Crowned costs {1} less to cast for each colorless permanent you control. [i](Lands are colorless.)[/i]\n[+2]: Create three colorless 1/1 Faerie Horror creature tokens with flying that can't block.\n[-3]: Gain control of target permanent.\n[-5]: You get an emblem with \u201cYou may look at the top card of your library any time and you may play lands and cast colorless spells from the top of your library.\u201d",
+            "special_text": "",
             "shape": "planeswalker",
             "set": "ITD",
             "loyalty": "7",
@@ -3392,7 +3392,7 @@
         {
             "card_name": "The Howling Door",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Artifact",
             "number": 161,
             "color_identity": "C",
@@ -3410,15 +3410,15 @@
         {
             "card_name": "The Eternal Echo",
             "color": "",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Planeswalker \u2014 Echo",
             "number": 4,
             "color_identity": "C",
             "cost": "{4}",
-            "rules_text": "",
+            "rules_text": "Whenever you activate a loyalty ability of The Eternal Echo, create a colorless Echo planeswalker token at the beginning of your next end step and put 3 loyalty counters on it. It gains that ability, except it costs [-1].\n[+1]: You gain 2 life.\n[0]: Put a +1/+1 counter on target creature you control. \n[-2]: Each opponent loses 2 life.\n[-5]: Draw a card.",
             "flavor_text": "[i][/i]",
             "pt": "",
-            "special_text": "Whenever you activate a loyalty ability of The Eternal Echo, create a colorless Echo planeswalker token at the beginning of your next end step and put 3 loyalty counters on it. It gains that ability, except it costs [-1].\n[+1]: You gain 2 life.\n[0]: Put a +1/+1 counter on target creature you control. \n[-2]: Each opponent loses 2 life.\n[-5]: Draw a card.",
+            "special_text": "",
             "shape": "planeswalker",
             "set": "ITD",
             "loyalty": "3",
@@ -3428,7 +3428,7 @@
         {
             "card_name": "Ancient Forerunner ITD",
             "color": "",
-            "rarity": "cube",
+            "rarity": "masterpiece",
             "type": "Artifact Creature \u2014 Construct",
             "number": 7,
             "color_identity": "C",
@@ -3446,7 +3446,7 @@
         {
             "card_name": "Cloudscape Observer ITD",
             "color": "",
-            "rarity": "cube",
+            "rarity": "masterpiece",
             "type": "Artifact Creature \u2014 Drone",
             "number": 8,
             "color_identity": "C",
@@ -3464,7 +3464,7 @@
         {
             "card_name": "Deepmind Oracle ITD",
             "color": "",
-            "rarity": "cube",
+            "rarity": "masterpiece",
             "type": "Artifact Creature \u2014 Sphinx",
             "number": 9,
             "color_identity": "C",
@@ -3482,7 +3482,7 @@
         {
             "card_name": "Emergent Anomaly ITD",
             "color": "",
-            "rarity": "cube",
+            "rarity": "masterpiece",
             "type": "Artifact Creature \u2014 Horror",
             "number": 10,
             "color_identity": "C",
@@ -3500,7 +3500,7 @@
         {
             "card_name": "Fracture of Divinity ITD",
             "color": "",
-            "rarity": "cube",
+            "rarity": "masterpiece",
             "type": "Artifact Creature \u2014 Demigod Construct",
             "number": 11,
             "color_identity": "C",
@@ -3518,7 +3518,7 @@
         {
             "card_name": "Lammasu, Dream-Stilled ITD",
             "color": "",
-            "rarity": "cube",
+            "rarity": "masterpiece",
             "type": "Legendary Artifact Creature \u2014 Sphinx",
             "number": 13,
             "color_identity": "C",
@@ -3536,7 +3536,7 @@
         {
             "card_name": "Mechanised Hunter ITD",
             "color": "",
-            "rarity": "cube",
+            "rarity": "masterpiece",
             "type": "Artifact Creature \u2014 Horror",
             "number": 14,
             "color_identity": "C",
@@ -3554,7 +3554,7 @@
         {
             "card_name": "New-Life Acolyte ITD",
             "color": "",
-            "rarity": "cube",
+            "rarity": "masterpiece",
             "type": "Artifact Creature \u2014 Warlock",
             "number": 15,
             "color_identity": "C",
@@ -3572,7 +3572,7 @@
         {
             "card_name": "Priest of Perfection ITD",
             "color": "",
-            "rarity": "cube",
+            "rarity": "masterpiece",
             "type": "Artifact Creature \u2014 Cleric",
             "number": 16,
             "color_identity": "C",
@@ -3590,7 +3590,7 @@
         {
             "card_name": "Shifting Silverscape ITD",
             "color": "",
-            "rarity": "cube",
+            "rarity": "masterpiece",
             "type": "Artifact Creature \u2014 Shapeshifter",
             "number": 17,
             "color_identity": "C",
@@ -3608,7 +3608,7 @@
         {
             "card_name": "Insect",
             "color": "",
-            "rarity": "cube",
+            "rarity": "common",
             "type": "Token Artifact Creature \u2014 Insect",
             "number": 12,
             "color_identity": "C",
@@ -3626,7 +3626,7 @@
         {
             "card_name": "Apocalypse of the Forest",
             "color": "B",
-            "rarity": "cube",
+            "rarity": "rare",
             "type": "Legendary Creature \u2014 Bird Incarnation",
             "number": 64,
             "color_identity": "B",

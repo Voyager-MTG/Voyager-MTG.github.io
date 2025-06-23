@@ -2,7 +2,7 @@
 	[
 		{
 			"name": "Mother of Ants",
-			"rarity": "special",
+			"rarity": "rare",
 			"mana_cost": "{2}{U}{R}",
 			"type": "Legendary Creature — Cleric God",
 			"collector_number": "3",
@@ -12,7 +12,7 @@
 		},
 		{
 			"name": "The Forge of Days",
-			"rarity": "special",
+			"rarity": "mythic",
 			"mana_cost": "{2}{R}{R}{W}",
 			"type": "Legendary Creature — Elemental God",
 			"collector_number": "1",
@@ -22,7 +22,7 @@
 		},
 		{
 			"name": "The Moth",
-			"rarity": "special",
+			"rarity": "mythic",
 			"mana_cost": "{3}{B}{G}",
 			"type": "Legendary Creature — Insect God",
 			"collector_number": "2",
@@ -32,7 +32,7 @@
 		},
 		{
 			"name": "The Red Grail",
-			"rarity": "special",
+			"rarity": "mythic",
 			"mana_cost": "{3}{B}{R}",
 			"type": "Legendary Creature — Vampire God",
 			"collector_number": "4",
@@ -42,7 +42,7 @@
 		},
 		{
 			"name": "The Watchman",
-			"rarity": "special",
+			"rarity": "rare",
 			"mana_cost": "{1}{W}{U}",
 			"type": "Legendary Creature — Human God",
 			"collector_number": "6",
@@ -52,7 +52,7 @@
 		},
 		{
 			"name": "The Thunderskin",
-			"rarity": "special",
+			"rarity": "mythic",
 			"mana_cost": "{2}{G}{W}",
 			"type": "Legendary Creature — Human God",
 			"collector_number": "5",
@@ -62,7 +62,7 @@
 		},
 		{
 			"name": "Drifting Field",
-			"rarity": "special",
+			"rarity": "masterpiece",
 			"mana_cost": "",
 			"type": "Land",
 			"collector_number": "1",
@@ -73,10 +73,3 @@
 	]
 
 [cube(15)]
-	1 Mother of Ants
-	1 The Forge of Days
-	1 The Moth
-	1 The Red Grail
-	1 The Watchman
-	1 The Thunderskin
-	1 Drifting Field
