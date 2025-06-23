@@ -728,9 +728,11 @@
             }
 
             function nextPack() {
+                if (pack_count <= num_packs) {
+                    pulls.push(...used_cards);
+                }
                 if (pack_count < num_packs) {
                     pack_count += 1;
-                    pulls.push(...used_cards);
                     packOnePickOne();
                 } 
                 else {
