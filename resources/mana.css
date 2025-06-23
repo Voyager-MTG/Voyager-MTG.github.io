@@ -521,6 +521,72 @@
 .mana-energy:before {
   content: "\e907";
 }
+.mana-v {
+  background: none;
+  padding-right: 3px;
+}
+.mana-v:before {
+  content: "\e703";
+  font-size: 75px;
+  position: absolute;
+  top: 32px;
+  left: 2px;
+}
+.mana-vw {
+  background: none;
+  padding-right:  20px;
+}
+.mana-vw:before {
+  content: "\e703\e704";
+  font-size: 75px;
+  position: absolute;
+  top: 32px;
+  left: 2px;
+}
+.mana-vu {
+  background: none;
+  padding-right:  30px;
+}
+.mana-vu:before {
+  content: "\e703\e704\e703";
+  font-size: 75px;
+  position: absolute;
+  top: 32px;
+  left: 2px;
+}
+.mana-vb {
+  background: none;
+  padding-right:  42px;
+}
+.mana-vb:before {
+  content: "\e703\e704\e703\e704";
+  font-size: 75px;
+  position: absolute;
+  top: 32px;
+  left: 2px;
+}
+.mana-vr {
+  background: none;
+  padding-right:  58px;
+}
+.mana-vr:before {
+  content: "\e703\e704\e703\e704\e703";
+  font-size: 75px;
+  position: absolute;
+  top: 32px;
+  left: 2px;
+}
+.mana-vg {
+  background: none;
+}
+.mana-vg:before {
+  content: "+";
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.8em;
+  left: 0;
+  top: -2px;
+}
 /**
  * Tap/roll symbols */
 .mana-t:before {
