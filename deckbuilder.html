@@ -2975,9 +2975,16 @@
 				return "";
 			str = str.replace(/[{]([^}]+)[}]/g, function(matched, _1) {
 				let letters = _1.toLowerCase()
-				return '<span class="mana mana-cost mana-' + letters + '"></span>';
+				return `<span class="mana mana-cost ${isText(letters)} mana-` + letters + '"></span>';
 			})
 			return str;
+		}
+
+		function isText(l) {
+			if (l.includes("v") || l.includes("e")) {
+				return "popout";
+			} 
+			return "";
 		}
 
 		function gridifyCard(card_stats, card_text = false, rotate_card = false, designer_notes = false) {
@@ -3013,10 +3020,8 @@
 			if (card_stats.rules_text != "")
 			{
 				card_effects = card_stats.rules_text + "\n" + (card_stats.flavor_text != "[i][/i]" ? "<hr class=\"ft-divider text-bg\"></div>" + card_stats.flavor_text : "");
-			}
-			else
-			{
-				card_effects = card_stats.special_text.split("\n");
+			} else {
+				card_effects = "";
 			}
 
 			effect.innerHTML += prettifyEffects(card_effects);
@@ -3064,12 +3069,11 @@
 				let card_effects_2 = "";
 				if (card_stats.rules_text2 != "")
 				{
-					card_effects_2 = card_stats.rules_text2.split("\n");
+					card_effects_2 = card_stats.rules_text2 + "\n" + (card_stats.flavor_text2 != "[i][/i]" ? "<hr class=\"ft-divider text-bg\"></div>" + card_stats.flavor_text2 : "");
+				} else {
+					card_effects_2 = "";
 				}
-				else
-				{
-					card_effects_2 = card_stats.special_text2.split("\n");
-				}
+				
 				effect_2.innerHTML += prettifyEffects(card_effects_2);
 				text.appendChild(effect_2);
 
@@ -3198,10 +3202,10 @@
 		function prettifyEffects(card_effect) {
 			let HTML = "";
 
-			let styled_effect = card_effect.replace(/(\[i\])+(.+?)(\[\/i\])+/gs, function(matched, _1) {
-				return '<i>' + _1 + '</i>'
-			}).replaceAll(/\[b\](.+?)\[\/b\]/gs, function(matched, _1) {
-				return '<b>' + _1 + '</b>'
+			let styled_effect = card_effect.replace(/(\[i\])+(.+?)(\[\/i\])+/gs, function(matched, _1, _2) {
+				return '<i>' + _2 + '</i>'
+			}).replaceAll(/\[b\](.+?)\[\/b\]/gs, function(matched, _1, _2) {
+				return '<b>' + _2 + '</b>'
 			});
 
 			let card_effects = styled_effect.split("\n");
