@@ -473,7 +473,7 @@
                                     let tourndata = docSnap2.data();
                                     let decks_ = JSON.parse(tourndata.decks);
                                     decks_[username] = deck;
-                                    await setDoc(doc(db, "events", "GP1"), {
+                                    await updateDoc(doc(db, "events", "GP1"), {
                                         decks: JSON.stringify(decks_)
                                     });
                                 });
@@ -496,13 +496,8 @@
                                     }
                                     // index += 1;
                                 }
-                                await setDoc(doc(db, "users", username), {
-                                    username: username,
-                                    password: password,
-                                    decks: JSON.stringify(new_decks),
-                                    colls: user_data.colls,
-                                    admin: user_data.admin ? true : false,
-                                    coll_league: user_data.coll_league ? user_data.coll_league : []
+                                await updateDoc(doc(db, "users", username), {
+                                    decks: JSON.stringify(new_decks)
                                 });
                                 alert("Deck Deleted!");
                                 reload();

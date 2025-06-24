@@ -1421,14 +1421,8 @@
                                 break;
                             }
                         }
-                        await setDoc(doc(db, 'events', event), {
-                            decks:  JSON.stringify(decks),
-                            rounds: JSON.stringify(parsed_data),
-                            num_rounds: event_data.num_rounds,
-                            stage: event_data.stage,
-                            name: event_data.name,
-                            winner: event_data.winner,
-                            dropped: event_data.dropped
+                        await updateDoc(doc(db, 'events', event), {
+                            rounds: JSON.stringify(parsed_data)
                         });
                         document.getElementById("modal-container").style.display = "none";
                         reload();
@@ -1437,14 +1431,8 @@
                         new_game[Object.keys(match)[0]] = document.getElementById(`${p1_name_text}-score`).value;
                         new_game[Object.keys(match)[1]] = document.getElementById(`${p2_name_text}-score`).value;
                         parsed_data.bracket.matches[round_name] = new_game;
-                        await setDoc(doc(db, 'events', event), {
-                            decks:  JSON.stringify(decks),
-                            rounds: JSON.stringify(parsed_data),
-                            num_rounds: event_data.num_rounds,
-                            stage: event_data.stage,
-                            name: event_data.name,
-                            winner: event_data.winner,
-                            dropped: event_data.dropped
+                        await updateDoc(doc(db, 'events', event), {
+                            rounds: JSON.stringify(parsed_data)
                         });
                         document.getElementById("modal-container").style.display = "none";
                         reload();
@@ -1689,14 +1677,8 @@
                     }
                     console.log(discord_msg);
                     navigator.clipboard.writeText(discord_msg);
-                    await setDoc(doc(db, 'events', event), {
-                        decks:  event_data.decks,
-                        rounds: JSON.stringify(rounds),
-                        num_rounds: event_data.num_rounds,
-                        stage: event_data.stage,
-                        name: event_data.name,
-                        winner: event_data.winner,
-                        dropped: event_data.dropped
+                    await updateDoc(doc(db, 'events', event), {
+                        rounds: JSON.stringify(rounds)
                     });
                     reload();
                 } 
@@ -1833,14 +1815,9 @@
                     seedings.sort(seeder);
                     rounds.bracket.structure = structure;
                     rounds.bracket.matches = matches;
-                    await setDoc(doc(db, 'events', event), {
-                        decks:  event_data.decks,
+                    await updateDoc(doc(db, 'events', event), {
                         rounds: JSON.stringify(rounds),
-                        num_rounds: event_data.num_rounds,
-                        stage: "bracket",
-                        name: event_data.name,
-                        winner: event_data.winner,
-                        dropped: event_data.dropped
+                        stage: "bracket"
                     });
                     reload();
                 } 
@@ -1861,14 +1838,10 @@
                         i++;
                     }
                     rounds.swiss["Round 1"] = games;
-                    await setDoc(doc(db, 'events', event), {
-                        decks:  event_data.decks,
+                    await updateDoc(doc(db, 'events', event), {
                         rounds: JSON.stringify(rounds),
                         num_rounds: numRounds(in_games.length),
-                        stage: "swiss",
-                        name: event_data.name,
-                        winner: event_data.winner,
-                        dropped: event_data.dropped
+                        stage: "swiss"
                     });
                     reload();
                 }
@@ -1891,13 +1864,7 @@
             }
 
             async function dropGP(event_data) {
-                await setDoc(doc(db, 'events', event), {
-                    decks:  event_data.decks,
-                    rounds: event_data.rounds,
-                    num_rounds: event_data.num_rounds,
-                    stage: event_data.stage,
-                    name: event_data.name,
-                    winner: event_data.winner,
+                await updateDoc(doc(db, 'events', event), {
                     dropped: [...event_data.dropped, username]
                 });
                 alert("Dropped " + username + ". Ping aanginer to be re-added.");

@@ -548,12 +548,7 @@
                             if (!coll_league_players.includes(user.username)) {
                                 continue;
                             }
-                            setDoc(doc(db, "users", user.username), {
-                                username    : user.username,
-                                password    : user.password,
-                                decks       : user.decks,
-                                colls       : user.colls,
-                                admin       : user.admin ? true : false,
+                            updateDoc(doc(db, "users", user.username), {
                                 coll_league : user.coll_league ? [user.coll_league[0] + set_count, user.coll_league[1] + pack_count] : [0, 0]
                             });
                         }

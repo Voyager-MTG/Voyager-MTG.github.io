@@ -4213,7 +4213,7 @@
 					let date = new Date();
 					let deckObj = {
 						name: document.getElementById("deck-name").value,
-						previewimg: "/sets/" + card_stats.set + "-files/img/" + card_stats.number + "_" + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type,
+						previewimg: card_stats.card_name,
 						url: `https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`,
 						colors: colors,
 						last_modified: `${leadingZero(date.getDate())}-${leadingZero(date.getMonth())}-${date.getYear() + 1900}, ${date.getHours()}:${leadingZero(date.getMinutes())}`,
@@ -4226,13 +4226,8 @@
 					}
 					console.log(decks);
 					decks.push(deckObj);
-					setDoc(doc(db, "users", username), {
-						username: username,
-						password: password,
-						decks   : JSON.stringify(decks),
-						colls   : JSON.stringify(colls),
-						admin   : admin ? true : false,
-						coll_league: coll_league ? coll_league : []
+					updateDoc(doc(db, "users", username), {
+						decks   : JSON.stringify(decks)
 					});
 				});
 				window.beforeunload = function() {
@@ -4240,7 +4235,7 @@
 					let card_stats = JSON.parse(localStorage.getItem('settings.previewimg'));
 					let deckObj = {
 						name: document.getElementById("deck-name").value,
-						previewimg: "/sets/" + card_stats.set + "-files/img/" + card_stats.number + "_" + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type,
+						previewimg: card_stats.card_name,
 						url: `https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`
 					};
 					for (const deck_ of decks) {
@@ -4249,13 +4244,8 @@
 						}
 					}
 					decks.push(deckObj);
-					setDoc(doc(db, "users", username), {
-						username: username,
-						password: password,
-						decks   : JSON.stringify(decks),
-						colls   : JSON.stringify(colls),
-						admin   : admin ? true : false,
-						coll_league: coll_league ? coll_league : []
+					updateDoc(doc(db, "users", username), {
+						decks   : JSON.stringify(decks)
 					});
 				}
 				document.getElementById("file-menu").addEventListener("change", function(event) { // Watch the dropdown that says Actions...
@@ -4264,7 +4254,7 @@
 						let card_stats = JSON.parse(localStorage.getItem('settings.previewimg'));
 						let collObj = {
 							name: document.getElementById("deck-name").value,
-							previewimg: "/sets/" + card_stats.set + "-files/img/" + card_stats.number + "_" + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type,
+							previewimg: card_stats.card_name,
 							url: 'https://voyager-mtg.github.io/deckbuilder?collection=' + btoa(generateDeckText())
 						};
 						for (const coll_ of colls) {
@@ -4273,13 +4263,8 @@
 							}
 						}
 						colls.push(collObj);
-						setDoc(doc(db, "users", username), {
-							username: username,
-							password: password,
-							decks   : JSON.stringify(decks),
-							colls   : JSON.stringify(colls),
-							admin   : admin ? true : false,
-							coll_league: coll_league ? coll_league : []
+						updateDoc(doc(db, "users", username), {
+							colls   : JSON.stringify(colls)
 						});
 					}
 				});

@@ -359,7 +359,6 @@
 
                 gradients = raw_gradients.gradients;
                 setGradient(localStorage.getItem("settings.gradient"));
-                console.log(setGradient);
                 prepareGradients();
             });
 
@@ -379,7 +378,6 @@
                     }
                 }
 
-                // console.log(`linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
                 document.body.style.backgroundImage = `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`;
                 localStorage.setItem("settings.gradient", gradient);
 		    }
@@ -440,8 +438,9 @@
             let password = "";
             let sessionid = localStorage.getItem('settings.session');
             let decks = {};
+            let card_list_arrayified;
+            let card_list;
             const events = ["GP1", "League June 2025"];
-            // console.log
 
             if (!sessionid) {
                 window.location.href = "/login";
@@ -462,8 +461,26 @@
             document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
             document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
 
+            // document.addEventListener("DOMContentLoaded", async () => {
+            //     await fetch('/lists/all-cards.json')
+			// 		.then(response => response.json())
+			// 		.then(json => {
+			// 			card_list_arrayified = json.cards;
+			// 	}).catch(error => console.error('Error:', error));
+            // });
             
             async function reload() {
+                let card_list;
+                let card_list_arrayified;
+                if (!card_list_arrayified) {
+                    await fetch('/lists/all-cards.json')
+                        .then(response => response.json())
+                        .then(json => {
+                            card_list = json;
+                    }).catch(error => console.error('Error:', error));
+                }
+                card_list_arrayified = card_list.cards;
+
                 const deck_data = await getDoc(doc(db, 'users', username)).then(async docSnap => {
                     let user_data = docSnap.data();
                     let colls;
@@ -475,7 +492,6 @@
                     } else {
                         colls = [];
                     }
-                    console.log(decks);
                     document.getElementById('decks').innerHTML = "";
                     for (const deck of decks) {
 
@@ -485,14 +501,22 @@
                             document.getElementById('decks').appendChild(full_format_container);
                         }
 
-                        document.getElementById(deck.format).appendChild(createDeckContainer(deck));
+                        document.getElementById(deck.format).appendChild(createDeckContainer(user_data, deck, card_list_arrayified));
 
                     }
                     for (const deck of colls) {
                         let deck_container = document.createElement('div');
                         deck_container.className = "deck-container";
+                        let card_stats;
                         let deck_preview = document.createElement('img');
-                        deck_preview.src = deck.previewimg;
+                        console.log(deck.previewimg, card_list_arrayified);
+                        for (const card of card_list_arrayified) {
+                            if (deck.previewimg == card.card_name) {
+                                card_stats = card;
+                                break;
+                            }
+                        }
+                        deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
                         deck_preview.className = "deck-preview-img";
                         deck_preview.onclick = function() {
                             window.location.href = deck.url;
@@ -518,22 +542,15 @@
                             let new_decks = decks;
                             // let index = 0;
                             let user_deck = {};
-                            console.log(user_data.decks);
                             for (let i = 0; i < decks.length; i++) {
                                 user_deck = decks[i];
-                                console.log(user_deck, i, deck.name);
                                 if (user_deck["name"] == deck.name) {
                                     new_decks.splice(i,1);
                                 }
                                 // index += 1;
                             }
-                            await setDoc(doc(db, "users", username), {
-                                username: username,
-                                password: password,
-                                decks: JSON.stringify(new_decks),
-                                colls: user_data.colls,
-                                admin: user_data.admin ? true : false,
-                                coll_league: user_data.coll_league ? user_data.coll_league : []
+                            await updateDocs(doc(db, "users", username), {
+                                decks: JSON.stringify(new_decks)
                             });
                             alert("Deck Deleted!");
                             reload();
@@ -570,7 +587,7 @@
                 return full_format_container;
             }
 
-            function createDeckContainer(deck) {
+            function createDeckContainer(user_data, deck, card_list_arrayified) {
                 let full_deck_container = document.createElement('div');
                 full_deck_container.className = "full-deck-container";
 
@@ -580,8 +597,16 @@
                 let colors_container = document.createElement('div');
                 colors_container.className = "colors-container";
 
+                let card_stats;
                 let deck_preview = document.createElement('img');
-                deck_preview.src = deck.previewimg;
+                console.log(deck.previewimg, card_list_arrayified);
+                for (const card of card_list_arrayified) {
+                    if (deck.previewimg == card.card_name) {
+                        card_stats = card;
+                        break;
+                    }
+                }
+                deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
                 deck_preview.onclick = function() {
                     window.location.href = deck.url;
                 }
@@ -643,19 +668,13 @@
                     let user_deck = {};
                     for (let i = 0; i < decks.length; i++) {
                         user_deck = decks[i];
-                        console.log(user_deck, i, deck.name);
                         if (user_deck["name"] == deck.name) {
                             new_decks.splice(i,1);
                         }
                         // index += 1;
                     }
-                    await setDoc(doc(db, "users", username), {
-                        username: username,
-                        password: password,
-                        decks: JSON.stringify(new_decks),
-                        colls: user_data.colls,
-                        admin: user_data.admin ? true : false,
-                        coll_league: user_data.coll_league ? user_data.coll_league : []
+                    await updateDoc(doc(db, "users", username), {
+                        decks: JSON.stringify(new_decks)
                     });
                     alert("Deck Deleted!");
                     reload();
