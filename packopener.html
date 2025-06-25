@@ -1284,6 +1284,12 @@
                     content_container.appendChild(packs_num);
                     content_container.appendChild(cost_text);
                 }
+
+                document.getElementById("modal-content").innerHTML = '';
+                document.getElementById("modal-content").style.width = "70%";
+                document.getElementById("modal-content").appendChild(content_header);
+                document.getElementById("modal-content").appendChild(content_container);
+                document.getElementById("modal-container").style.display = 'block';
             }
 
             async function openCollLeaguePack() {
@@ -1308,7 +1314,7 @@
                     coll_league_data = docSnap.data().coll_league;
                 });
 
-                let total_points = coll_league_data[0];
+                let total_points = coll_league_data[1];
 
                 const content_header = document.createElement("div");
                 content_header.className = "coll-league-set-header";
@@ -1356,7 +1362,7 @@
                     packOnePickOne();
 
                     await updateDoc(doc(db, "users", user_data.username), {
-                        coll_league: [user_data.coll_league[0] - spent_points, user_data.coll_league[1]]
+                        coll_league: [user_data.coll_league[0], user_data.coll_league[1] - spent_points]
                     });
                 }
 
