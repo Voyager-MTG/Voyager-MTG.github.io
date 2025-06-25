@@ -549,7 +549,7 @@
                                 continue;
                             }
                             updateDoc(doc(db, "users", user.username), {
-                                coll_league : user.coll_league ? [user.coll_league[0] + set_count, user.coll_league[1] + pack_count] : [0, 0]
+                                coll_league : user.coll_league ? [parseInt(user.coll_league[0]) + set_count, parseInt(user.coll_league[1]) + pack_count] : [0, 0]
                             });
                         }
                         alert("Added Packs!");

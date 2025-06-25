@@ -1,0 +1,17 @@
+{
+    "set_cost": {
+        "default": 1,
+        "HOD": 3,
+        "ITD": 3
+    },
+    "set_exclude": [
+        "EXPT",
+        "LAIR"
+    ],
+    "custom_packs": [
+        {
+            "name": "Tokens",
+            "cost": 1
+        }
+    ]
+}

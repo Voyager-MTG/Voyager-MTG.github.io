@@ -3892,10 +3892,10 @@
 				}
 				if(c.rules_text)
 					output_text += `    "oracle_text": ${JSON.stringify(c.rules_text)},\n`;
-				output_text += `    "image": "${img_url}",\n`;
+				output_text += `    "image": "${img_url}"\n`;
 				if(c.shape.includes("double")) {
 					const back_url = URLDomain + "/sets/" + c.set + "-files/img/" + c.number + "_" + c.card_name + "_back" + "." + c.image_type;
-					output_text += `    "back": {`
+					output_text += `,\n    "back": {`
 					output_text += `      "name": "${c.card_name2}",\n`;
 					if(c.cost2)
 						output_text += `      "mana_cost": "${convertManaCostForDraftmancer(c.cost2)}",\n`;
@@ -3915,12 +3915,13 @@
 					}
 					if(c.rules_text2)
 						output_text += `      "oracle_text": ${JSON.stringify(c.rules_text2)},\n`;
-					output_text += `      "image": "${back_url}",`
-					output_text += `    },\n`;
+					output_text += `      "image": "${back_url}"`
+					output_text += `    }\n`;
 				}
-				output_text += "  },\n";
+				output_text += "  },";
 			}
-			output_text += "]\n";
+			output_text = output_text.substring(0, output_text.length - 1)
+			output_text += "\n]\n";
 
 			if (localStorage.getItem('settings.exportcube') == "on") {
 				output_text += `[rare(15)]

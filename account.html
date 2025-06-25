@@ -294,10 +294,32 @@
             grid-template-columns: 1fr 1fr;
             gap: 10px;
         }
+        .coll-league-btn {
+            padding: 4px;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: 0.2s;
+        }
+        .coll-league-notif-container {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            gap: 8px;
+        }
+        .collection-league-notif {
+            font-size: 18px;
+        }
     </style>
     <style id="text-style">
         .text {
             color: white;
+        }
+    </style>
+    <style id="popout-style">
+        .popout {
+            background-color: #f3f3f3;
+            /* color: #f3f3f3; */
         }
     </style>
     <body>
@@ -461,6 +483,12 @@
             document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
             document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
 
+            if (localStorage.getItem("settings.darkthememenu") == "On") {
+                document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
+            } else if (localStorage.getItem("settings.darkthememenu") == "Off") {
+                document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
+            }
+
             // document.addEventListener("DOMContentLoaded", async () => {
             //     await fetch('/lists/all-cards.json')
 			// 		.then(response => response.json())
@@ -504,12 +532,15 @@
                         document.getElementById(deck.format).appendChild(createDeckContainer(user_data, deck, card_list_arrayified));
 
                     }
+                    if (!document.getElementById("Collection League")) {
+                        createFormatContainer("Collection League");
+                    }
+                    createCollectionLeaguePacks(user_data);
                     for (const deck of colls) {
                         let deck_container = document.createElement('div');
                         deck_container.className = "deck-container";
                         let card_stats;
                         let deck_preview = document.createElement('img');
-                        console.log(deck.previewimg, card_list_arrayified);
                         for (const card of card_list_arrayified) {
                             if (deck.previewimg == card.card_name) {
                                 card_stats = card;
@@ -599,7 +630,6 @@
 
                 let card_stats;
                 let deck_preview = document.createElement('img');
-                console.log(deck.previewimg, card_list_arrayified);
                 for (const card of card_list_arrayified) {
                     if (deck.previewimg == card.card_name) {
                         card_stats = card;
@@ -718,6 +748,46 @@
                 deck_icon_text.appendChild(deck_icon);
 
                 return deck_icon_text;
+            }
+
+            async function createCollectionLeaguePacks(user_data) {
+                await getDoc(doc(db, "info", "collectionleague")).then(docSnap => {
+                    const cl_data = docSnap.data();
+                    const players = JSON.parse(cl_data.players);
+
+                    if (players.includes(user_data.username)) {
+                        const packn = user_data.coll_league;
+
+                        const content_container = document.createElement("div");
+                        content_container.className = "coll-league-notif-container";
+                        content_container.style.gridRow = "1";
+                        content_container.style.gridColumn = "span 4";
+
+                        const collection_league_notif = document.createElement("span");
+                        collection_league_notif.innerText = `You have ${packn[0]} set packs available and ${packn[1]} collection league packs to open!`;
+                        collection_league_notif.className = "collection-league-notif text";
+
+                        const open_set_packs_btn = document.createElement("button");
+                        open_set_packs_btn.className = "coll-league-btn popout";
+                        open_set_packs_btn.innerText = "Open set packs!";
+                        open_set_packs_btn.onclick = () => {
+                            window.location.href = "/packopener?source=coll-league-set"
+                        }
+
+                        const open_pack_packs_btn = document.createElement("button");
+                        open_pack_packs_btn.className = "coll-league-btn popout";
+                        open_pack_packs_btn.innerText = "Open collection league packs!";
+                        open_pack_packs_btn.onclick = () => {
+                            window.location.href = "/packopener?source=coll-league-pack"
+                        }
+
+                        content_container.appendChild(collection_league_notif);
+                        content_container.appendChild(open_set_packs_btn);
+                        content_container.appendChild(open_pack_packs_btn);
+
+                        document.getElementById("Collection League").appendChild(content_container);
+                    }
+                });
             }
 
             reload();

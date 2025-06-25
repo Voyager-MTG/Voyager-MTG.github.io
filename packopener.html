@@ -182,6 +182,7 @@
             align-items: center;
             justify-items: center;
             gap: 6px;
+            cursor: pointer;
         }
         .top-area-button {
             float: right;
@@ -248,6 +249,21 @@
             font-size: 30px;
             text-align: center;
         }
+        .total-cost {
+            font-size: 24px;
+            width: 80%;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+        }
+        .coll-league-set-header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            gap: 18px;
+            margin-bottom: 8px;
+        }
         /* .set-code {
             font-weight: bold;
             font-size: 24px;
@@ -277,6 +293,8 @@
                 <a href="/settings" id="account-link"><img src="/img/settings.png" class="sg-icon"></a>
             </div>
         </div>
+        <input id="coll-league-inp" style="display: none;">
+        <button id="coll-league-next-pack" style="display: none;"></button>
         <div class="selects" id="selects">
 			<select id="color-select" class="popout" onchange="setGradient()">
 			</select>
@@ -315,13 +333,18 @@
             let gradBottom = null;
             let p1p1_cards;
             let pulls = [];
+            let firstpack = true;
             const urlParams = new URLSearchParams(window.location.search);
             const pack = urlParams.get('pack');
+            const source = urlParams.get('source');
             let pack_count = 1;
             const num_packs = urlParams.get('num') ? parseInt(urlParams.get('num')) : 999999 /* that should be enough for everyone */;
+            document.getElementById("next-pack").dataset.count = pack_count;
+            document.getElementById("next-pack").dataset.packs = num_packs;
             modal = document.getElementById("modal-container");
             window.onclick = function(event) {
-                if (event.target == modal) {
+                let iscoll = document.getElementById("modal-container").dataset.source == "coll";
+                if (event.target == modal && !iscoll) {
                     document.getElementById('modal-container').style.display = 'none';
                 }
             }
@@ -348,14 +371,21 @@
                     console.error('Error:', error);
                 }
 
-                const draft_file = await getDraftFile(pack);
-                draftmancerToP1P1(draft_file);
-                packOnePickOne();
-
                 gradients = raw_gradients.gradients;
                 setGradient(localStorage.getItem("settings.gradient"));
                 console.log(setGradient);
                 prepareGradients();
+
+                if (source) {
+                    if (source.includes("coll-league")) {
+                        document.getElementById("coll-league-inp").value = source;
+                        document.getElementById("coll-league-inp").click();
+                    }
+                } else {
+                    const draft_file = await getDraftFile(pack);
+                    draftmancerToP1P1(draft_file);
+                    packOnePickOne();
+                }
             });
 
             async function getDraftFile(pack) {
@@ -728,16 +758,28 @@
             }
 
             function nextPack() {
-                if (pack_count <= num_packs) {
+                let pack_count = parseInt(document.getElementById("next-pack").dataset.count);
+                const num_packs = parseInt(document.getElementById("next-pack").dataset.packs);
+
+                if (source) {
+                    if (source.includes("coll-league")) {
+                        document.getElementById("coll-league-next-pack").click();
+                        return;
+                    }
+                }
+
+                if (pack_count <= num_packs && !(num_packs == 1 && !firstpack)) {
                     pulls.push(...used_cards);
                 }
                 if (pack_count < num_packs) {
-                    pack_count += 1;
+                    document.getElementById("next-pack").dataset.count = pack_count + 1;
                     packOnePickOne();
                 } 
                 else {
                     document.getElementById("pack").innerHTML = "";
                 }
+
+                pack_count = parseInt(document.getElementById("next-pack").dataset.count);
 
                 updatePackCount();
 
@@ -746,10 +788,12 @@
                 }
 
                 buildPulls();
+
+                firstpack = false;
             }
 
             function updatePackCount() {
-                document.getElementById("pack-counter").innerText = `Pack ${pack_count}/${num_packs}`;
+                document.getElementById("pack-counter").innerText = `Pack ${document.getElementById("next-pack").dataset.count}/${document.getElementById("next-pack").dataset.packs}`;
             }
 
             function packOnePickOne() {
@@ -965,7 +1009,7 @@
                     const reader = new FileReader();
                     reader.onload = function(e) {
                         const fileContent = e.target.result;
-                        pack_count = 1;
+                        document.getElementById("next-pack").dataset.count = 1;
                         pulls = [];
                         buildPulls();
                         updatePackCount();
@@ -1068,21 +1112,19 @@
             let password = "";
             let sessionid = localStorage.getItem('settings.session');
             let decks = {};
-            const events = ["GP1", "League"];
-            // console.log
+            let draft_files;
+            let total_cards;
+            let user_data;
+            
+            document.getElementById("coll-league-inp").addEventListener("click", function() {
+                const source = document.getElementById("coll-league-inp").value;
 
-            if (sessionid) {
-                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-                    let data = docSnap.data();
-                    username = data.username;
-                    password = data.password;
-                });
-
-                await getDoc(doc(db, 'users', username)).then(docSnap => {
-                    let data = docSnap.data();
-                    decks = JSON.parse(data.decks);
-                });
-            }
+                if (source == "coll-league-set") {
+                    openCollLeagueSet();
+                } else if (source == "coll-league-pack") {
+                    openCollLeaguePack();
+                }
+            });
 
             document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
             document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
@@ -1093,16 +1135,340 @@
 				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
 			}
 
-            
-            async function reload() {
-                await getDoc(doc(db, 'users', username)).then(async docSnap => {
-                    let user_data = docSnap.data();
-                    // firebase code
+            if (sessionid) {
+                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+                    let data = docSnap.data();
+                    username = data.username;
+                    password = data.password;
+                });
+
+                await getDoc(doc(db, 'users', username)).then(docSnap => {
+                    let data = docSnap.data();
+                    user_data = data;
                 });
             }
 
-            if (sessionid) {
-                reload();
+            async function openCollLeagueSet() {
+                document.getElementById("modal-container").dataset.source = "coll";
+
+                let set_list;
+                let set_packs;
+                let coll_league_data;
+                await fetch('/lists/all-sets.json')
+					.then(response => response.json())
+					.then(json => {
+						set_list = json;
+				}).catch(error => console.error('Error:', error));
+
+                await fetch('/resources/collectionleague/packs.json')
+					.then(response => response.json())
+					.then(json => {
+						set_packs = json;
+				}).catch(error => console.error('Error:', error));
+
+                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+                    let data = docSnap.data();
+                    username = data.username;
+                    password = data.password;
+                });
+
+                await getDoc(doc(db, "users", username)).then(docSnap => {
+                    coll_league_data = docSnap.data().coll_league;
+                });
+
+                let total_points = coll_league_data[0];
+
+                const content_header = document.createElement("div");
+                content_header.className = "coll-league-set-header";
+
+                const total_cost = document.createElement("span");
+                total_cost.className = "total-cost text";
+                total_cost.id = "total-cost";
+                total_cost.innerText = `Points spent: 0/${total_points}`;
+
+                const open_btn = document.createElement("button");
+                open_btn.className = "dark-button open-btn-coll-league";
+                open_btn.innerText = "Open Packs!";
+                open_btn.onclick = async function() {
+                    let spent_points = 0;
+                    total_cards = [];
+                    draft_files = [];
+                    for (const set of set_list.sets) {
+                        if (set_packs.set_exclude.includes(set.set_code))
+                            continue;
+
+                        let set_points = set_packs.set_cost[set.set_code] ? set_packs.set_cost[set.set_code] : set_packs.set_cost.default;
+                        let set_packn = parseInt(document.getElementById(`${set.set_code}-input`).value);
+                        for (let i = 0; i < set_packn; i++) { 
+                            draft_files.push(await getDraftFile(set.set_code));
+                        }
+                        spent_points += set_packn * set_points;
+                    }
+
+                    if (spent_points > total_points) {
+                        alert("Not enough points!");
+                        return;
+                    }
+
+                    for (const file of draft_files) {
+                        draftmancerToP1P1(file);
+                        total_cards.push(p1p1_cards);
+                    }
+
+                    p1p1_cards = total_cards[0];
+                    console.log(p1p1_cards, total_cards);
+                    document.getElementById("modal-container").dataset.source = "";
+                    document.getElementById("next-pack").dataset.source = "coll";
+                    document.getElementById("next-pack").dataset.count = 1;
+                    document.getElementById("next-pack").dataset.packs = draft_files.length;
+                    document.getElementById("modal-container").style.display = "none";
+                    updatePackCount();
+                    packOnePickOne();
+
+                    await updateDoc(doc(db, "users", user_data.username), {
+                        coll_league: [user_data.coll_league[0] - spent_points, user_data.coll_league[1]]
+                    });
+                }
+
+                content_header.appendChild(total_cost);
+                content_header.appendChild(open_btn);
+
+                const content_container = document.createElement("div");
+                content_container.className = "set-modal-container";
+
+                for (const set of set_list.sets) {
+                    if (set_packs.set_exclude.includes(set.set_code))
+                        continue;
+
+                    let set_points = set_packs.set_cost[set.set_code] ? set_packs.set_cost[set.set_code] : set_packs.set_cost.default;
+
+                    const set_name = document.createElement("span");
+                    set_name.className = "set-name";
+                    set_name.innerText = set.set_name;
+
+                    const set_code = document.createElement("span");
+                    set_code.className = "set-code";
+                    set_code.innerText = set.set_code;
+                    
+                    const set_logo = document.createElement("img");
+                    set_logo.src = `/sets/${set.set_code}-files/logo.png`;
+                    set_logo.className = "set-logo";
+
+                    const packs_num = document.createElement("input");
+                    packs_num.className = "pack-num input popout";
+                    packs_num.id = `${set.set_code}-input`;
+                    packs_num.type = "number";
+                    packs_num.value = 0;
+                    packs_num.onchange = function() {
+                        if (document.getElementById(`${set.set_code}-input`).value < 0) {
+                            document.getElementById(`${set.set_code}-input`).value = 0;
+                        }
+                        let spent_points = 0;
+                        for (const set of set_list.sets) {
+                            if (set_packs.set_exclude.includes(set.set_code))
+                                continue;
+
+                            let set_points = set_packs.set_cost[set.set_code] ? set_packs.set_cost[set.set_code] : set_packs.set_cost.default;
+                            spent_points += parseInt(document.getElementById(`${set.set_code}-input`).value) * set_points;
+                        }
+                        total_cost.innerHTML = `Points spent: ${formatPoints(spent_points, total_points)}`;
+                    }
+
+                    const cost_text = document.createElement("span");
+                    cost_text.className = "cost-text text";
+                    cost_text.innerText = `Cost: ${set_points}`;
+
+                    content_container.appendChild(set_logo);
+                    content_container.appendChild(set_name);
+                    content_container.appendChild(set_code);
+                    content_container.appendChild(packs_num);
+                    content_container.appendChild(cost_text);
+                }
+            }
+
+            async function openCollLeaguePack() {
+                document.getElementById("modal-container").dataset.source = "coll";
+                let pack_list;
+                let packs;
+                let coll_league_data;
+
+                await fetch('/resources/collectionleague/packs.json')
+					.then(response => response.json())
+					.then(json => {
+						pack_list = json;
+				}).catch(error => console.error('Error:', error));
+
+                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+                    let data = docSnap.data();
+                    username = data.username;
+                    password = data.password;
+                });
+
+                await getDoc(doc(db, "users", username)).then(docSnap => {
+                    coll_league_data = docSnap.data().coll_league;
+                });
+
+                let total_points = coll_league_data[0];
+
+                const content_header = document.createElement("div");
+                content_header.className = "coll-league-set-header";
+
+                const total_cost = document.createElement("span");
+                total_cost.className = "total-cost text";
+                total_cost.id = "total-cost";
+                total_cost.innerText = `Points spent: 0/${total_points}`;
+
+                const open_btn = document.createElement("button");
+                open_btn.className = "dark-button open-btn-coll-league";
+                open_btn.innerText = "Open Packs!";
+                open_btn.onclick = async function() {
+                    let spent_points = 0;
+                    total_cards = [];
+                    draft_files = [];
+                    for (const pack of pack_list.custom_packs) {
+                        let set_points = pack.cost;
+                        const path = `/resources/collectionleague/packs/${pack.name}`;
+                        let set_packn = parseInt(document.getElementById(`${pack.name}-input`).value);
+                        for (let i = 0; i < set_packn; i++) { 
+                            draft_files.push(await getCustomFile(`${path}/draft_file.txt`));
+                        }
+                        spent_points += set_packn * set_points;
+                    }
+
+                    if (spent_points > total_points) {
+                        alert("Not enough points!");
+                        return;
+                    }
+
+                    for (const file of draft_files) {
+                        draftmancerToP1P1(file);
+                        total_cards.push(p1p1_cards);
+                    }
+
+                    p1p1_cards = total_cards[0];
+                    console.log(p1p1_cards, total_cards);
+                    document.getElementById("modal-container").dataset.source = "";
+                    document.getElementById("next-pack").dataset.source = "coll";
+                    document.getElementById("next-pack").dataset.count = 1;
+                    document.getElementById("next-pack").dataset.packs = draft_files.length;
+                    document.getElementById("modal-container").style.display = "none";
+                    updatePackCount();
+                    packOnePickOne();
+
+                    await updateDoc(doc(db, "users", user_data.username), {
+                        coll_league: [user_data.coll_league[0] - spent_points, user_data.coll_league[1]]
+                    });
+                }
+
+                content_header.appendChild(total_cost);
+                content_header.appendChild(open_btn);
+
+                const content_container = document.createElement("div");
+                content_container.className = "set-modal-container";
+
+                for (const pack of pack_list.custom_packs) {
+                    let set_points = pack.cost;
+                    const path = `/resources/collectionleague/packs/${pack.name}`;
+
+                    const set_name = document.createElement("span");
+                    set_name.className = "set-name";
+                    set_name.innerText = pack.name;
+
+                    const set_code = document.createElement("a");
+                    set_code.className = "set-code";
+                    set_code.innerText = "View Pack";
+                    set_code.href = "/viewpack?pack=" + pack.name;
+                    
+                    const set_logo = document.createElement("img");
+                    set_logo.src = `${path}/icon.png`;
+                    set_logo.className = "set-logo";
+
+                    const packs_num = document.createElement("input");
+                    packs_num.className = "pack-num input popout";
+                    packs_num.id = `${pack.name}-input`;
+                    packs_num.type = "number";
+                    packs_num.value = 0;
+                    packs_num.onchange = function() {
+                        if (document.getElementById(`${pack.name}-input`).value < 0) {
+                            document.getElementById(`${pack.name}-input`).value = 0;
+                        }
+                        let spent_points = 0;
+                        for (const pack of pack_list.custom_packs) {
+                            let set_points = pack.cost;
+                            spent_points += parseInt(document.getElementById(`${pack.name}-input`).value) * set_points;
+                        }
+                        total_cost.innerHTML = `Points spent: ${formatPoints(spent_points, total_points)}`;
+                    }
+
+                    const cost_text = document.createElement("span");
+                    cost_text.className = "cost-text text";
+                    cost_text.innerText = `Cost: ${set_points}`;
+
+                    content_container.appendChild(set_logo);
+                    content_container.appendChild(set_name);
+                    content_container.appendChild(set_code);
+                    content_container.appendChild(packs_num);
+                    content_container.appendChild(cost_text);
+                }
+
+                document.getElementById("modal-content").innerHTML = '';
+                document.getElementById("modal-content").style.width = "70%";
+                document.getElementById("modal-content").appendChild(content_header);
+                document.getElementById("modal-content").appendChild(content_container);
+                document.getElementById("modal-container").style.display = 'block';
+            }
+
+            function formatPoints(spent, total) {
+                let ret = "";
+                if (spent > total) {
+                    ret += `<span style="color: red;">${spent}</span>`
+                } else {
+                    ret += spent.toString();
+                }
+                ret += `/${total}`;
+
+                return ret;
+            }
+
+            async function getCustomFile(src) {
+                let text_ret;
+                await fetch(src)
+					.then(response => response.text())
+					.then(text => {
+						text_ret = text;
+				}).catch(error => console.error('Error:', error));
+
+                return text_ret;
+            }
+
+            document.getElementById("coll-league-next-pack").addEventListener("click", collLeagueNextPack);
+
+            function collLeagueNextPack() {
+                let pack_count  = parseInt(document.getElementById("next-pack").dataset.count);
+                const num_packs = parseInt(document.getElementById("next-pack").dataset.packs);
+
+                if (pack_count <= num_packs && !(num_packs == 1 && !firstpack)) {
+                    pulls.push(...used_cards);
+                }
+                if (pack_count < num_packs) {
+                    document.getElementById("next-pack").dataset.count = pack_count + 1;
+                    p1p1_cards = total_cards[pack_count];
+                    packOnePickOne();
+                } 
+                else {
+                    document.getElementById("pack").innerHTML = "";
+                }
+
+                pack_count = parseInt(document.getElementById("next-pack").dataset.count);
+
+                updatePackCount();
+
+                if (pack_count >= num_packs) {
+                    document.getElementById("next-pack").innerText = "View Pulls";
+                }
+
+                buildPulls();
+                firstpack = false;
             }
         </script>
     </body>
