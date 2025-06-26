@@ -773,7 +773,7 @@
                     }
                 }
 
-                if (pack_count <= num_packs && !(num_packs == 1 && !firstpack)) {
+                if (pack_count <= num_packs && (num_packs != 1 || firstpack)) {
                     pulls.push(...used_cards);
                 }
                 if (pack_count < num_packs) {
@@ -1458,7 +1458,7 @@
                 let pack_count  = parseInt(document.getElementById("next-pack").dataset.count);
                 const num_packs = parseInt(document.getElementById("next-pack").dataset.packs);
 
-                if (pack_count <= num_packs && !(num_packs == 1 && !firstpack)) {
+                if (pack_count <= num_packs && (num_packs != 1 || firstpack)) {
                     pulls.push(...used_cards);
                 }
                 if (pack_count < num_packs) {
