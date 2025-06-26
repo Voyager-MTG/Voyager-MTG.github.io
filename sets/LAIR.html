@@ -1005,18 +1005,22 @@
 		async function imgFlip(id, rotate_card = false) {
 			const img = document.getElementById(id);
 			const seconds = 0.2;
+			const cardName = img.src;
 
 			img.style.transition = seconds.toString() + "s";
 			img.style.transform = "rotateY(90deg)";
 
+			const btn = img.parentElement.parentElement.getElementsByTagName("button")[0];
+			btn.style.transition = seconds.toString() + "s";
+			btn.style.filter = cardName.includes("_front") ? "invert()" : "";
+
 			await setTimeout(function() {
 				const rotated_img = document.getElementById("h-img");
-
-				const cardName = img.src;
 				
 				if (cardName.includes("_front"))
 				{
 					img.src = cardName.replace("_front", "_back");
+					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "invert()";
 
 					if (rotate_card)
 					{
@@ -1027,6 +1031,7 @@
 				else
 				{
 					img.src = cardName.replace("_back", "_front");
+					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "";
 
 					if (rotate_card)
 					{
