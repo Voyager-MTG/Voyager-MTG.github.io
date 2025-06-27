@@ -669,6 +669,9 @@
 	<img class="preload-hidden" src="/img/sb-delete.png">
 	<img class="preload-hidden" src="/img/sb-add.png">
 	<img class="preload-hidden" src="/img/sanctum.png">
+	<img class="preload-hidden" src="/img/export.png">
+	<img class="preload-hidden" src="/img/export-white.png">
+	<img class="preload-hidden" src="/img/save.png">
 	<div class="header">
 		<div class="search-grid">
 			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
@@ -678,6 +681,7 @@
 			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
 			<a href="/community" id="account-link"><img src="/img/community.png" class="sg-icon">Community</a>
 			<a href="/settings" id="account-link"><img src="/img/settings.png" class="sg-icon"></a>
+                <a href="/account" id="account-link"><img src="/img/account.png" class="sg-icon"></a>
 		</div>
 	</div>
 	<div id="myContextMenu" class="rc-menu popout">
@@ -1736,6 +1740,13 @@
 			cssElem.id = "copies-style";
 			cssElem.innerHTML = cssStr;
 			document.body.appendChild(cssElem);
+
+			// add copies sort order
+			const copies_order = document.createElement("option");
+			copies_order.innerText = "Copies";
+			copies_order.value = "copies";
+			document.getElementById("sort-by").appendChild(copies_order);
+
 			closeModal();
 			preSearch();
 		}
@@ -2210,6 +2221,11 @@
 				else {
 					return (a_rarity_index < b_rarity_index) ? -1 : 1;
 				}
+			}
+			if (sortMode == "copies") {
+				const a_copies = collection_copies[`${a.set}-${a.number}`];
+				const b_copies = collection_copies[`${b.set}-${b.number}`];
+				return (a_copies < b_copies) ? -1 : 1;
 			}
 		}
 

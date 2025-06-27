@@ -11,7 +11,8 @@
     "custom_packs": [
         {
             "name": "Tokens",
-            "cost": 1
+            "cost": 1,
+            "defaulticon": true
         }
     ]
 }

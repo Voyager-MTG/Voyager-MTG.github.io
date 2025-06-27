@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Login</title>
+        <title>Pack Opener</title>
         <link rel="icon" type="image/x-icon" href="/img/favicon.png">
         <link rel="stylesheet" href="resources/mana.css">
         <link rel="stylesheet" href="/resources/header.css">
@@ -291,6 +291,8 @@
                 <a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
                 <a href="/community" id="account-link"><img src="/img/community.png" class="sg-icon">Community</a>
                 <a href="/settings" id="account-link"><img src="/img/settings.png" class="sg-icon"></a>
+                <a href="/account" id="account-link"><img src="/img/account.png" class="sg-icon"></a>
+                <a href="/account" id="account-link"><img src="/img/account.png" class="sg-icon"></a>
             </div>
         </div>
         <input id="coll-league-inp" style="display: none;">
@@ -375,6 +377,8 @@
                 setGradient(localStorage.getItem("settings.gradient"));
                 console.log(setGradient);
                 prepareGradients();
+
+                document.title = `${num_packs} ${pack} packs`;
 
                 if (source) {
                     if (source.includes("coll-league")) {
@@ -1154,6 +1158,7 @@
             }
 
             async function openCollLeagueSet() {
+                document.title = "Collection League - Sets";
                 document.getElementById("modal-container").dataset.source = "coll";
 
                 let set_list;
@@ -1298,6 +1303,8 @@
             }
 
             async function openCollLeaguePack() {
+                document.title = "Collection League - Packs";
+
                 document.getElementById("modal-container").dataset.source = "coll";
                 let pack_list;
                 let packs;
@@ -1391,7 +1398,7 @@
                     set_code.href = "/viewpack?pack=" + pack.name;
                     
                     const set_logo = document.createElement("img");
-                    set_logo.src = `${path}/icon.png`;
+                    set_logo.src = pack.defaulticon ? `/img/sets.png` : `${path}/icon.png`;
                     set_logo.className = "set-logo";
 
                     const packs_num = document.createElement("input");
