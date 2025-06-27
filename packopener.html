@@ -1392,10 +1392,11 @@
                     set_name.className = "set-name";
                     set_name.innerText = pack.name;
 
-                    const set_code = document.createElement("a");
-                    set_code.className = "set-code";
-                    set_code.innerText = "View Pack";
-                    set_code.href = "/viewpack?pack=" + pack.name;
+                    const pack_link = document.createElement("a");
+                    pack_link.className = "set-code";
+                    pack_link.innerText = "View Pack";
+                    pack_link.href = "/viewpack?pack=" + pack.name;
+                    pack_link.target = "_blank";
                     
                     const set_logo = document.createElement("img");
                     set_logo.src = pack.defaulticon ? `/img/sets.png` : `${path}/icon.png`;
@@ -1424,7 +1425,7 @@
 
                     content_container.appendChild(set_logo);
                     content_container.appendChild(set_name);
-                    content_container.appendChild(set_code);
+                    content_container.appendChild(pack_link);
                     content_container.appendChild(packs_num);
                     content_container.appendChild(cost_text);
                 }
