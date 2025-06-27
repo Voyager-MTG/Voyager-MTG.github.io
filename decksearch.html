@@ -416,7 +416,14 @@
                 const container = document.createElement("div");
                 container.className = "deck-container";
                 const preview_img = document.createElement("img");
-                preview_img.src = deck.previewimg;
+                let card_stats;
+                for (const card of card_list_arrayified) {
+                    if (deck.previewimg == card.card_name) {
+                        card_stats = card;
+                        break;
+                    }
+                }
+                preview_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
                 preview_img.className = "deck-preview-img";
                 preview_img.onclick = function() {
                     window.location.href = `/deckbuilder?udeck=${deck.user}-${deck.name}`

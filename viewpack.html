@@ -122,9 +122,21 @@
         }
         .main-content {
             display: grid;
-            margin: 80px 140px;
+            margin: 40px 140px;
             grid-template-columns: repeat(4, 1fr);
             gap: 10px;
+        }
+        .pack-name {
+            font-family: beleren;
+            font-size: 75px;
+        }
+        .top {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            width: 100%;
         }
     </style>
     <style id="text-style">
@@ -154,6 +166,10 @@
 			</select>
 		</div>
         <div class="page-container">
+            <div class="top">
+                <span class="coll-pack text">Collection league pack:</span>
+                <span class="pack-name text" id="header"></span>
+            </div>
             <div class="main-content" id="main-content">
 
             </div>
@@ -205,6 +221,8 @@
                 const urlParams = new URLSearchParams(window.location.search);
                 const pack = urlParams.get("pack");
 
+                document.title = pack;
+                document.getElementById("header").innerText = "Tokens";
                 loadCards(pack);
             });
 

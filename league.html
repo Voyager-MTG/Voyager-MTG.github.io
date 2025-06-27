@@ -643,8 +643,15 @@
                     deck_container.className = "deck-container";
                     let colors_container = document.createElement('div');
                     colors_container.className = "colors-container";
+                    let card_stats;
                     let deck_preview = document.createElement('img');
-                    deck_preview.src = deck.previewimg;
+                    for (const card of card_list_arrayified) {
+                        if (deck.previewimg == card.card_name) {
+                            card_stats = card;
+                            break;
+                        }
+                    }
+                    deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
                     deck_preview.onclick = function() {
                         document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
                         let deck_header = document.createElement("span");
