@@ -75,7 +75,59 @@
 			font-size: 40px;
 			padding-top: 20px;
 		}
+		.set-icon-container {
+			font-family: 'Beleren Small Caps';
+			font-size: 20px;
+			text-align: center;
+			display: grid;
+			justify-items: center;
+			align-items: center;
+			gap: 2px;
+			width: 100%;
+			/* height: 100%; */
+		}
+		.set-icon-container a {
+			text-decoration: none;
+			color: #171717;
+			/* height: 100%; */
+		}
+		.set-icon {
+			/* height: 60px; */
+			display: grid;
+			align-items: center;
+			justify-items: center;
+		}
+		.set-icon img {
+			width: 10vw;
+		}
+		hr {
+			width: 90%;
+		}
+		.set-info-container {
+			width: 100%;
+			text-align: center;
+		}
+		.set-area {
+			display: grid;
+			grid-template-columns: repeat(7, 1fr);
+			/* grid-auto-rows: 0.01fr 50px; */
+			align-items: center;
+			justify-items: center;
+			width: 80%;
+			margin-left: 10%;
+			gap: 8px;
+			margin-top: 20px;
+		}
+		.set-icon-name {
+			margin-top: 10px;
+			font-size: 1.2em;
+		}
 	</style>
+	<style id="text-style">
+		.text {
+			color: white;
+		}
+    </style>
 	<body>
 		<div class="header">
 		<div class="search-grid">
@@ -89,97 +141,27 @@
 			<a href="/settings" id="account-link"><img src="/img/settings.png" class="sg-icon"></a>
                 <a href="/account" id="account-link"><img src="/img/account.png" class="sg-icon"></a>
 		</div>
-	</div>			<div class="set-group"></div>
-		
-			<div class="set-table">
-			<div class="set-header-row">
-				<div></div> <!-- empty div for spacing -->
-				<div>NAME</div>
-				<div>CODE</div>
-				<div>CARDS</div>
-			</div>
-		
-			<a href="/sets/AKT" class="set-row"> 
-				<img src="/sets/AKT-files/icon.png">
-				<div class="set-title">Akellan Transcendence</div>
-				<div>AKT</div>
-				<div>286</div>
-			</a>
-			
-			<a href="/sets/EXPT" class="set-row"> 
-				<img src="/sets/EXPT-files/icon.png">
-				<div class="set-title">TVP Silver Expansion</div>
-				<div>EXPT</div>
-				<div>172</div>
-			</a>
-			
-			<a href="/sets/HEL" class="set-row"> 
-				<img src="/sets/HEL-files/icon.png">
-				<div class="set-title">Fires of Hwel</div>
-				<div>HEL</div>
-				<div>265</div>
-			</a>
-			
-			<a href="/sets/HOD" class="set-row"> 
-				<img src="/sets/HOD-files/icon.png">
-				<div class="set-title">Houses of Dewold</div>
-				<div>HOD</div>
-				<div>324</div>
-			</a>
-			
-			<a href="/sets/ITD" class="set-row"> 
-				<img src="/sets/ITD-files/icon.png">
-				<div class="set-title">Itera: Into the Dream</div>
-				<div>ITD</div>
-				<div>184</div>
-			</a>
-			
-			<a href="/sets/LAIR" class="set-row"> 
-				<img src="/sets/LAIR-files/icon.png">
-				<div class="set-title">Secret Lair Drops</div>
-				<div>LAIR</div>
-				<div>7</div>
-			</a>
-			
-			<a href="/sets/PTN" class="set-row"> 
-				<img src="/sets/PTN-files/icon.png">
-				<div class="set-title">Port Noon: Occult Islands of Vespera</div>
-				<div>PTN</div>
-				<div>259</div>
-			</a>
-			
-			<a href="/sets/PVR" class="set-row"> 
-				<img src="/sets/PVR-files/icon.png">
-				<div class="set-title">Primivir</div>
-				<div>PVR</div>
-				<div>311</div>
-			</a>
-			
-			<a href="/sets/VNM" class="set-row"> 
-				<img src="/sets/VNM-files/icon.png">
-				<div class="set-title">Vinimroth Eternities</div>
-				<div>VNM</div>
-				<div>305</div>
-			</a>
-			
-			<a href="/sets/WAW" class="set-row"> 
-				<img src="/sets/WAW-files/icon.png">
-				<div class="set-title">The Wonderlands’ Wishes</div>
-				<div>WAW</div>
-				<div>257</div>
-			</a>
-			</div>
-		
+	</div>
+	<div class="page-container" id="page-container">
+		<div class="set-area" id="set-area">
+		</div>
+	</div>
 	<script>
 		let card_list_arrayified = [];
 		let specialchars = "";
 		let displayStyle = "";
 
 		document.addEventListener("DOMContentLoaded", async function () {
-			await fetch('/lists/all-cards.json')
+				await fetch('/lists/all-cards.json')
 					.then(response => response.json())
 					.then(json => {
 						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch('/lists/all-sets.json')
+					.then(response => response.json())
+					.then(json => {
+						set_list = json;
 				}).catch(error => console.error('Error:', error));
 
 				await fetch('/resources/replacechars.txt')
@@ -189,12 +171,116 @@
 				}).catch(error => console.error('Error:', error));
 
 				card_list_arrayified = card_list.cards;
+				set_list_arrayified = set_list.sets;
 
+				try {
+                    const response = await fetch('/resources/gradients.json');
+                    raw_gradients = await response.json();
+                }
+                catch(error) {
+                    console.error('Error:', error);
+                }
+
+                gradients = raw_gradients.gradients;
+                setGradient(localStorage.getItem("settings.gradient"));
+                // prepareGradients();
+				
+				generateHTML();
 		});
+
+		function generateHTML() {
+			let set_counts = {}
+			for (const card of card_list_arrayified) {
+				set_counts[card.set] = set_counts[card.set] ? set_counts[card.set] + 1 : 1;
+			}
+			let n = 0;
+			let flag = true;
+			while (n < set_list_arrayified.length) {
+				let i;
+				for (let i = 0; i < 7 && n + i < set_list_arrayified.length; i++) {
+					const set = set_list_arrayified[n + i];
+					document.getElementById("set-area").appendChild(generateSetIcon(set));
+				}
+				for (let j = 0; j < (n + 7 - set_list_arrayified.length); j++) {
+					document.getElementById("set-area").appendChild(document.createElement("div"));
+				}
+				for (let i = 0; i < 7 && n + i < set_list_arrayified.length; i++) {
+					const set = set_list_arrayified[n + i];
+					document.getElementById("set-area").appendChild(generateSetInfo(set, set_counts));
+				}
+				n += 7;
+				// break;
+			}
+		}
+
+		function generateSetIcon(set) {
+			const container = document.createElement("div");
+			container.className = "set-icon-container";
+
+			const link = document.createElement("a");
+			link.href = `/sets/${set.set_code}`;
+
+			const set_icon = document.createElement("div");
+			set_icon.className = "set-icon";
+
+			const set_icon_img = document.createElement("img");
+			set_icon_img.src = `/sets/${set.set_code}-files/icon.png`;
+			set_icon_img.title = set.set_name;
+
+			const set_icon_name = document.createElement("div");
+			set_icon_name.className = "set-icon-name text";
+			set_icon_name.innerText = set.set_name;
+			set_icon_name.id = set.set_name;
+
+			set_icon.appendChild(set_icon_img);
+			link.appendChild(set_icon);
+			link.appendChild(set_icon_name);
+			container.appendChild(link);
+			
+			return container;
+		}
+
+		function generateSetInfo(set, set_counts) {
+			const container = document.createElement("div");
+			container.className = "set-info-container";
+
+			const divider = document.createElement("hr");
+			divider.className = "text-bg";
+
+			const set_icon_info = document.createElement("div");
+			set_icon_info.className = "set-icon-info text";
+			set_icon_info.innerText = `${set.set_code} - ${set_counts[set.set_code]} cards`;
+
+			container.appendChild(divider);
+			container.appendChild(set_icon_info);
+			
+			return container;
+		}
 
 		function isDecimal(char) {
 			return char >= '0' && char <= '9';
 		}
+
+		function setGradient(gradient=false) {
+                if (!gradient) { 
+                    gradient = document.getElementById("color-select").value;
+                }
+
+                gradTop = "#000000";
+                gradBottom = "#FFFFFF";
+                for (const grad of gradients)
+                {
+                    if (gradient == grad.name.replace(' ', '-'))
+                    { 	
+                        gradTop = grad.color1;
+                        gradBottom = grad.color2;
+                    }
+                }
+
+                document.body.style.backgroundImage = `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`;
+                localStorage.setItem("settings.gradient", gradient);
+		    }
+
 
 		document.getElementById("search").addEventListener("keypress", function(event) {
 		  if (event.key === "Enter") {

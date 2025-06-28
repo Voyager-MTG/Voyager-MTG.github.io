@@ -9,6 +9,10 @@
 	  font-family: 'Beleren Small Caps';
 	  src: url('/resources/beleren-caps.ttf');
 	}
+	@font-face {
+	  font-family: 'Reglisse';
+	  src: url('/resources/Reglisse.otf');
+	}
 	:root {
 		--gradient: ""
 	}
@@ -281,6 +285,27 @@
 		font-weight: bold;
 		font-size: 20px;
 	}
+	.and-more {
+		/* min-height: 30px; */
+		grid-column: span 2;
+		height: 100%;
+		font-family: beleren small caps;
+		display: grid;
+		align-items: center;
+		justify-items: center;
+		padding-bottom: 20px;	
+		width: 100%;
+		font-size: 2.3em;
+		font-family: Reglisse;
+		text-decoration: underline;
+		text-underline-offset: 0.15em;
+		cursor: pointer;
+		color: black;
+		display: none;
+	}
+	.text {
+		color: black;
+	}
 	</style>
 	<style id="gradient-style">
 
@@ -350,6 +375,9 @@
 									<a href="sets/LAIR"><div class="set-icon"><img src="sets/LAIR-files/logo.png" title="Secret Lair Drops"></img></div>
 									<div class="set-icon-name">Secret Lair Drops</div></a>
 								</div>
+				<div class="and-more" id="and-more">
+					<a href="/all-sets" class="text" id="and-more-text">And X more...</a>
+				</div>
 								</div>
 				</div>
 				<div class="card-container" id="cotd-image">
@@ -400,6 +428,17 @@
 					.then(json => {
 						card_list = json;
 				}).catch(error => console.error('Error:', error));
+
+				await fetch('/lists/all-sets.json')
+					.then(response => response.json())
+					.then(json => {
+						set_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				if (set_list.sets.length > 10) { // FIXME: this doesnt work
+					document.getElementById("and-more").style.display = "block";
+					document.getElementById("and-more").innerText = `And ${set_list.sets.length - 10} more...`;
+				} 
 
 				await fetch('/resources/replacechars.txt')
 					.then(response => response.text())
