@@ -116,11 +116,19 @@
 			width: 80%;
 			margin-left: 10%;
 			gap: 8px;
-			margin-top: 20px;
+			margin-bottom: 20px;
 		}
 		.set-icon-name {
 			margin-top: 10px;
 			font-size: 1.2em;
+		}
+		.area-header {
+			font-family: beleren;
+			font-size: 75px;
+			text-align: center;
+			width: 100%;
+			margin-bottom: 15px;
+			display: inline-block;
 		}
 	</style>
 	<style id="text-style">
@@ -143,8 +151,12 @@
 		</div>
 	</div>
 	<div class="page-container" id="page-container">
+		<span class="area-header text">Sets</span>
 		<div class="set-area" id="set-area">
 		</div>
+		<!--<span class="area-header text">Collection league packs</span>
+		<div class="pack-area" id="pack-area">
+		</div>-->
 	</div>
 	<script>
 		let card_list_arrayified = [];
@@ -189,6 +201,10 @@
 		});
 
 		function generateHTML() {
+			generateSetHTML();
+		}
+		
+		function generateSetHTML() {
 			let set_counts = {}
 			for (const card of card_list_arrayified) {
 				set_counts[card.set] = set_counts[card.set] ? set_counts[card.set] + 1 : 1;
@@ -209,7 +225,6 @@
 					document.getElementById("set-area").appendChild(generateSetInfo(set, set_counts));
 				}
 				n += 7;
-				// break;
 			}
 		}
 
@@ -249,7 +264,7 @@
 
 			const set_icon_info = document.createElement("div");
 			set_icon_info.className = "set-icon-info text";
-			set_icon_info.innerText = `${set.set_code} - ${set_counts[set.set_code]} cards`;
+			set_icon_info.innerHTML = `${set.set_code} - ${set_counts[set.set_code]} cards<br>By ${set.designer}`;
 
 			container.appendChild(divider);
 			container.appendChild(set_icon_info);
