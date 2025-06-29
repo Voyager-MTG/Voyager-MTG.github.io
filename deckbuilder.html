@@ -604,6 +604,20 @@
 		margin-bottom: 3px;
 		margin-top: 3px;
 		border-radius: 10px;
+		cursor: pointer;
+		transition: 0.2s;
+		display: inline-flex;
+		gap: 5px;
+		flex-direction: row-reverse;
+		width: fit-content;
+		align-items: center;
+		justify-items: center;
+	}
+	.export-modal-button:hover {
+		background-color: rgb(16, 70, 128);
+	}
+	.export-icon {
+		width: 28px;
 	}
 	.settings-modal-header, .settings-modal-header-active {
 		padding: 10px;
@@ -676,6 +690,8 @@
 	<img class="preload-hidden" src="/img/export.png">
 	<img class="preload-hidden" src="/img/export-white.png">
 	<img class="preload-hidden" src="/img/save.png">
+	<img class="preload-hidden" src="/img/download.png">
+	<img class="preload-hidden" src="/img/copy-white.png">
 	<div class="header">
 		<div class="search-grid">
 			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
@@ -1486,9 +1502,15 @@
 			return val;
 		}
 
-		function exportButtonHtml(name, func) {
+		function exportButtonHtml(name, func, img = false) {
 			let button = createElement("span", "export-modal-button", name);
 			button.onclick = func;
+			if (img) {
+				const btn_img = document.createElement("img");
+				btn_img.className = "export-icon";
+				btn_img.src = img;	
+				button.appendChild(btn_img);
+			}
 			return button;
 		}
 
@@ -1497,30 +1519,30 @@
 		function openExportModal() {
 			document.getElementById("modal-content").innerHTML = `<span class="close" onclick="closeModal()">&times;</span>`;
 			let modalContent = document.createElement("div");
-			modalContent.appendChild(exportButtonHtml("Copy Deck URL", function() {
+			modalContent.appendChild(exportButtonHtml("Deck URL", function() {
 				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`); // write the url + ?deck= + the name with spaces replaced + ; + base64 encoded deck text + &main = deck count + &side= + sideboard count + &sanctum= + sanctum count
 				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Url copied to clipboard"); // open the modal notifying the user
-			}));
-			modalContent.appendChild(exportButtonHtml("Copy Decklist", function() {
+			}, "/img/copy-white.png"));
+			modalContent.appendChild(exportButtonHtml("Decklist", function() {
 				navigator.clipboard.writeText(generateDeckText()); // copy the deck text to clipboard
 				document.getElementById("file-menu").value = "default"; // set the dropdown back
 				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Decklist copied to clipboard"); // open the modal to notify the user
-			}));
-			modalContent.appendChild(exportButtonHtml("Copy Discord Message", function() {
+			}, "/img/copy-white.png"));
+			modalContent.appendChild(exportButtonHtml("Discord Message", function() {
 				navigator.clipboard.writeText(`# [${document.getElementById("deck-name").value}](https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length})\n\`\`\`${generateDeckText()}\`\`\``); // CURSED
  				document.getElementById("file-menu").value = "default"
 				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Discord message copied to clipboard"); // open the modal to notify the user
-			}));
-			modalContent.appendChild(exportButtonHtml("Download Draftmancer JSON", exportDraftmancer));
-			modalContent.appendChild(exportButtonHtml("Download .txt", function() {
+			}, "/img/copy-white.png"));
+			modalContent.appendChild(exportButtonHtml("Draftmancer", exportDraftmancer, "/img/download.png"));
+			modalContent.appendChild(exportButtonHtml(".txt file", function() {
 				exportFile("export-txt");
-			}));
-			modalContent.appendChild(exportButtonHtml("Download .dek", function() {
+			}, "/img/download.png"));
+			modalContent.appendChild(exportButtonHtml(".dek file", function() {
 				exportFile("export-dek");
-			}));
-			modalContent.appendChild(exportButtonHtml("Download .cod", function() {
+			}, "/img/download.png"));
+			modalContent.appendChild(exportButtonHtml("Cockatrice (.cod)", function() {
 				exportFile("export-cod");
-			}));
+			}, "/img/download.png"));
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").appendChild(modalContent);
 		}
