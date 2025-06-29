@@ -486,7 +486,7 @@
                         modified.className = 'updated';
                         for (const color of 'WUBRGI') {
                             let color_ele = document.createElement('img');
-                            color_ele.src = `img/mana_${color}.png`;
+                            color_ele.src = `img/mana_${color.toLowerCase()}.png`;
                             if (deck.colors.includes(color)) {
                                 color_ele.className = "mana-img";
                             } else {
