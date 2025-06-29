@@ -468,6 +468,9 @@
             if (!sessionid) {
                 window.location.href = "/login";
             }
+            if (localStorage.getItem("settings.compactaccount") == "On") {
+                window.location.href = "/account-compact";
+            }
 
             const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
                 let data = docSnap.data();

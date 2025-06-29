@@ -219,6 +219,13 @@
                 openSettingsModal("Home");
             });
 
+            defaultSetting("settings.compactaccount", "Off");
+            defaultSetting("settings.darkthememenus", "Off");
+            defaultSetting("settings.textcolor", "Black");
+            defaultSetting("settings.sanctumbasic", "On");
+            defaultSetting("settings.resultgradient", "On");
+            defaultSetting("settings.darktheme", "Off");
+
             function setGradient(gradient=false) {
                 if (!gradient) { 
                     gradient = document.getElementById("color-select").value;
@@ -338,6 +345,8 @@
                     contentContainer.appendChild(settingsOptionHtml("Dark Theme Menus", "settings.darkthememenu"));
                     contentContainer.appendChild(createText("Text color: "));
                     contentContainer.appendChild(settingsOptionHtml("Text Color: ", "settings.textcolor", ["Black", "White"]));
+                    contentContainer.appendChild(createText("Compact Account Page: "));
+                    contentContainer.appendChild(settingsOptionHtml("Compact Account Page: ", "settings.compactaccount"));
                 } else if (menu == "Deckbuilder") {
                     contentContainer.appendChild(createText("Use sanctum indicator: "));
                     contentContainer.appendChild(settingsOptionHtml("Use sanctum symbol", "settings.sanctumsym"));
