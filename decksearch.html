@@ -223,6 +223,27 @@
                 }
             }
             document.addEventListener("DOMContentLoaded", async function () {
+                await fetch('/lists/all-cards.json')
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch('/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
+
+				card_list_arrayified = card_list.cards;
+
+
+				await fetch('/lists/all-sets.json')
+					.then(response => response.json())
+					.then(data => {
+						sets_json = data; 
+				}).catch(error => console.error('Error:', error));
+
                 try {
                     const response = await fetch('/resources/gradients.json');
                     raw_gradients = await response.json();
@@ -332,7 +353,16 @@
             let decks = {};
             const events = ["GP1", "League"];
             const urlParams = new URLSearchParams(window.location.search);
-            // console.log
+            let card_list;
+            let card_list_arrayified;
+
+            await fetch('/lists/all-cards.json')
+                .then(response => response.json())
+                .then(json => {
+                    card_list = json;
+            }).catch(error => console.error('Error:', error));
+
+            card_list_arrayified = card_list.cards;
 
             if (sessionid) {
                 await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
