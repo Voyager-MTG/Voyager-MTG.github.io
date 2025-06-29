@@ -163,6 +163,58 @@
 		height: fit-content;
 		align-self: center;
 	}
+	.event-container {
+		background: #f3f3f3;
+		width: 90%;
+		border: 1px solid #d5d9d9;
+		border-top: 3px solid #171717;
+		border-bottom: 3px solid #171717;
+		border-radius: 6px;
+		display: grid;
+		justify-items: center;
+		gap: 8px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		height: fit-content;
+		display: none;
+	}
+	.event-container p {
+		border-bottom: 1px solid #898989;
+	}
+	.event-container a {
+		width: 70%;
+	}
+	.event-container img {
+		width: 100%;
+		display: block;
+		margin: auto;
+	}
+	.p1p1-container {
+		background: #f3f3f3;
+		width: 90%;
+		border: 1px solid #d5d9d9;
+		border-top: 3px solid #171717;
+		border-bottom: 3px solid #171717;
+		border-radius: 6px;
+		display: grid;
+		justify-items: center;
+		gap: 8px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		height: fit-content;
+		display: none;
+	}
+	.p1p1-container p {
+		border-bottom: 1px solid #898989;
+	}
+	.p1p1-container a {
+		width: 70%;
+	}
+	.p1p1-container img {
+		width: 100%;
+		display: block;
+		margin: auto;
+	}
 	.card-container {
 		background: #f3f3f3;
 		width: 90%;
@@ -306,6 +358,67 @@
 	.text {
 		color: black;
 	}
+	.dot:before {
+		content: "";
+		border-radius: 20px;
+		height: 20px;
+		width: 20px;
+		position: relative;
+		background-color: rgb(79, 79, 79);
+		display: block;
+		cursor: pointer;
+		transition: 0.2s;
+	}
+	.dot:not(.dot-active):hover:before {
+		background-color: rgb(59, 59, 59);
+	}
+	.dot:active:before {
+		background-color: rgb(20,20,20);
+	}
+	.dot-active:before {
+		background-color: rgb(20,20,20);
+	}
+	.dots {
+		display: flex;
+		gap: 8px;
+		margin-left: 70%;
+		margin-top: 15px;
+	}
+	.event {
+		background-color: #959595;
+		display: flex;
+		align-items: center;
+		justify-items: flex-end;
+		color: white;
+		padding: 7px;
+		font-size: 24px;
+		font-weight: bold;
+		gap: 8px;
+		cursor: pointer;
+		border-radius: 15px;
+		/* width: 90%; */
+		border: 2px solid black;
+		transition: 0.2s;
+	}
+	.event:hover {
+		background-color: #5e5e5e;
+	}
+	.event-icon {
+		max-width: 40px;
+	}
+	#canvas {
+		height: 250px;
+		width: 300px;
+		cursor: pointer;
+	}
+	#canvas2 {
+		max-width: 95%;
+		max-height: 95%;
+		width: auto;
+		height: auto;
+		display: flex;
+		justify-self: center;
+	}
 	</style>
 	<style id="gradient-style">
 
@@ -383,16 +496,33 @@
 				<div class="card-container" id="cotd-image">
 					<p>Card of the Day</p>
 				</div>
+				<div class="event-container" id="event-container">
+					<p>Events</p>
+					<div class="event" onclick="window.location.href = '/gp?event=GP1';">
+						<img src="/img/swords.png" class="event-icon">
+						GP1
+					</div>
+					<div class="event" onclick="window.location.href = '/collectionleague';">
+						<img src="/img/trophy.png" class="event-icon">
+						Collection League
+					</div>
+				</div>
+				<div class="p1p1-container" id="p1p1-image" onclick="openP1P1()">
+					<p>Daily "P1P1"</p>
+					<span>Click to expand</span>
+					<canvas id="canvas"></canvas>
+				</div>
+			</div>
+			<div class="dots">
+				<div class="dot dot-active" id="dot-1"></div>
+				<div class="dot" id="dot-2"></div>
+				<div class="dot" id="dot-3"></div>
 			</div>
 		</div>
 		<div id="modal-container">
 			<div id="modal-content" class="popout">
-				<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
-				<div class="account-grid">
-					<button class="black-button" onclick="window.location.href = '/account'" id="account-btn"><img src="/img/account.png" class="btn-img">My Account</button>
-					<span id="login"></span>
-					<button class="black-button" onclick="localStorage.removeItem('settings.session'); location.reload();" id="account-btn"><img src="/img/export-white.png" class="btn-img">Sign Out</button>
-				</div>
+				<span class="close" onclick="closeModal()">&times;</span>
+				<canvas id="canvas2"></canvas>
 			</div>
 		</div>
 		<script>
@@ -400,6 +530,14 @@
 			let gradients = [];
 			let card_list_arrayified = [];
 			let specialchars = "";
+			let img_list = [];
+			let current_dot = "dot-1";
+
+			const dot_eles = {
+				"dot-1": "cotd-image",
+				"dot-2": "event-container",
+				"dot-3": "p1p1-image"
+			}
 
 			modal = document.getElementById("modal-container");
             window.onclick = function(event) {
@@ -445,6 +583,24 @@
 					.then(text => {
 						specialchars = text; 
 				}).catch(error => console.error('Error:', error));
+
+				//dots
+				Array.from(document.getElementsByClassName("dot")).forEach(dot => {
+					dot.onclick = () => {
+						Array.from(document.getElementsByClassName("dot")).forEach(dot2 => {
+							dot2.className = "dot" + (dot.id == dot2.id ? " dot-active" : "");
+							for (const dotn in dot_eles) {
+								const id = dot_eles[dotn];
+								if (dot.id == dotn) {
+									document.getElementById(id).style.display = "grid";
+									current_dot = dot.id;
+								} else {
+									document.getElementById(id).style.display = "none";
+								}
+							}
+						})
+					}	
+				});
 
 				card_list_arrayified = card_list.cards;
 
@@ -497,6 +653,8 @@
 				a.append(img);
 				document.getElementById("cotd-image").append(a);
 
+				packOnePickOne();
+
 				do {
 					await delay(100);
 				}
@@ -504,6 +662,23 @@
 				document.getElementById("preview-container").style.height = document.getElementById("cotd-image").offsetHeight;
 
 			});
+
+			setInterval(() => {
+				const dotn = parseInt(current_dot.split("dot-")[1]);
+				const new_dot = dotn == 3 ? 1 : dotn + 1;
+				Array.from(document.getElementsByClassName("dot")).forEach(dot2 => {
+					dot2.className = "dot" + ("dot-" + new_dot == dot2.id ? " dot-active" : "");
+					for (const dotn in dot_eles) {
+						const id = dot_eles[dotn];
+						if ("dot-" + new_dot == dotn) {
+							document.getElementById(id).style.display = "grid";
+							current_dot = "dot-" + new_dot;
+						} else {
+							document.getElementById(id).style.display = "none";
+						}
+					}
+				})
+			}, 10000);
 
 			function openSettingsModal() {
 				//document.getElementById("modal-container").style.display = "block";
@@ -529,10 +704,63 @@
 				return true;
 			}
 
+			async function packOnePickOne() {
+				const p1p1_count = 15;
+				const l = p1p1Rand(card_list_cleaned.length + 1, p1p1_count);
+				for (const i of l)
+				{	
+					const card = card_list_arrayified[i];
+					const img_url = '/sets/' + card.set + '-files/img/' + card.number + '_' + card.card_name + (card.shape.includes('double') ? '_front' : '') + '.' + card.image_type;
+
+					const image = new Image();
+					image.src = img_url;
+
+					img_list.push(image);
+				}
+
+				const canvas = document.getElementById("canvas");
+				const ctx = canvas.getContext('2d');
+
+				canvas.width = 1883;
+				canvas.height = 1573;
+
+				for (let i = 0; i < img_list.length; i++)
+				{
+					img_list[i].onload = function() {
+						x_offset = 377 * (i % 5);
+						y_offset = 525 * Math.floor(i / 5);
+						ctx.drawImage(img_list[i], x_offset, y_offset, 375, 523);
+					};
+				}
+
+				// document.getElementById("p1p1").style.display = "block";
+			}
+
+			function openP1P1() {
+				const canvas = document.getElementById("canvas2");
+				const ctx = canvas.getContext('2d');
+
+				canvas.width = 1883;
+				canvas.height = 1573;
+
+				for (let i = 0; i < img_list.length; i++)
+				{
+					x_offset = 377 * (i % 5);
+					y_offset = 525 * Math.floor(i / 5);
+					try {
+						ctx.drawImage(img_list[i], x_offset, y_offset, 375, 523);
+					} catch {
+						console.log("ALERT: FAILED DRAWING IMAGE");
+					}
+				}
+
+				document.getElementById('modal-container').style.display = 'block';
+			}
+
 			// if this doesn't work, blame Gemini
-			function reallyRand(x) {
+			function reallyRand(x, seed = false) {
 				const date = new Date();
-				const seed = date.getFullYear() * 10000 + 
+				seed = seed ? seed : date.getFullYear() * 10000 + 
 							 date.getMonth() * 100 + 
 							 date.getDate();
 
@@ -544,6 +772,20 @@
 				randomNumber = randomNumber / m;
 
 				return Math.floor(randomNumber * x);
+			}
+
+			function p1p1Rand(x, n) {
+				let l = [];
+				const date = new Date();
+				const seed = date.getFullYear() * 10000 + 
+							 date.getMonth() * 100 + 
+							 date.getDate();
+				for (let i = 0; i < n; i++) {
+					
+					l.push(reallyRand(x, seed * (i + 1)));
+				}
+
+				return l;
 			}
 
 			function prepareGradients() {
