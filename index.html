@@ -760,9 +760,9 @@
 			// if this doesn't work, blame Gemini
 			function reallyRand(x, seed = false) {
 				const date = new Date();
-				seed = seed ? seed : date.getFullYear() * 10000 + 
-							 date.getMonth() * 100 + 
-							 date.getDate();
+				seed = seed ? seed : date.getUTCFullYear() * 10000 + 
+							 date.getUTCMonth() * 100 + 
+							 date.getUTCDate();
 
 				const a = 1103515245;
 				const c = 12345;
