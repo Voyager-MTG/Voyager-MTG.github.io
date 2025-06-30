@@ -93,6 +93,10 @@
             padding: 8px;
             border-radius: 18px; 
             cursor: pointer;
+            transition: 0.3s;
+        }
+        .tab-btn:not(.tab-btn-active):hover {
+            background-color: #666;
         }
         .tab-btn-active {
             background-color: #333;
@@ -382,6 +386,10 @@
             padding: 4px;
             font-size: 24px;
             cursor: pointer;
+            transition: 0.2s;
+        }
+        .report-scores-btn:hover {
+            background-color: #149316;
         }
         .player-score-input {
             font-size: 32px;
@@ -394,6 +402,26 @@
             height: 8px;
             width: 90%;
             border-radius: 4px;
+        }
+        .opponents-container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 8px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        .opponent-container {
+            font-size: 1.5em;
+            font-family: beleren;
+            padding: 4px;
+            transition: 0.2s;
+        }
+        .opponent-container:hover {
+            filter: brightness(0.6);
+        }
+        .active-opponent {
+            color: rgb(103, 206, 103);
         }
     </style>
     <style id="text-style">
@@ -435,15 +463,15 @@
                     <img src="img/deck.png" class="tab-switch-icon">
                     <span>Decks</span>
                 </div>
-                <div class="tab-btn" id="stats-tab-select" onclick="changeTab('stats')">
+                <div class="tab-btn" id="runs-tab-select" onclick="changeTab('runs')">
                     <img src="img/trophy.png" class="tab-switch-icon">
-                    <span>OTHER</span>
+                    <span>Runs</span>
                 </div>
             </div>
             <div class="main-tab" id="main-tab">
                 <div class="decks-tab" id="decklists"></div>
                 <div class="rounds-tab" id="games"></div>
-                <div class="stats-tab" id="stats"></div>
+                <div class="runs-tab" id="runs"></div>
             </div>
         </div>
         <div id="modal-container">
@@ -600,7 +628,7 @@
             document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
 
 			if (localStorage.getItem("settings.darkthememenu") == "On") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000; color: #f3f3f3; }";
 			} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
 				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
 			}
@@ -916,6 +944,15 @@
                 const submit_scores_btn = document.createElement("button");
                 submit_scores_btn.className = "report-scores-btn";
                 submit_scores_btn.innerText = "Report";
+                submit_scores_btn.onclick = async () => {
+                    const game = {};
+                    const opponent = document.getElementsByClassName("active-opponent")[0].innerText;
+                    game[player]   = [event_data.runs[player],   document.getElementById("p1-score-input").value];
+                    game[opponent] = [event_data.runs[opponent], document.getElementById("p2-score-input").value];
+                    // await updateDoc(doc(db, "events", event), {
+                    //     games: {...event_data.games, ...game}
+                    // });
+                }
 
                 const username_ele = document.createElement("span");
                 username_ele.className = "report-username text";
@@ -923,9 +960,17 @@
 
                 for (const deck of JSON.parse(event_data.decks)) {
                     const player = deck.user;
+                    if (player == user_data.username) 
+                        continue;
+
                     const opponent_container = document.createElement("div");
-                    opponent_container.className = "opponent-container text";
+                    opponent_container.className = "opponent-container";
                     opponent_container.innerText = player;
+                    opponent_container.onclick = () => {
+                        Array.from(document.getElementsByClassName("opponent-container")).forEach(container => {
+                            container.className = container.innerText == player && !container.className.includes("active") ? "opponent-container active-opponent" : "opponent-container";
+                        });
+                    }
 
                     opponents_container.appendChild(opponent_container);
                 }

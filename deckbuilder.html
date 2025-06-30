@@ -1590,7 +1590,7 @@
 			let modalContent = '</select><span class="close" onclick="closeModal()">&times;</span>';
 			if (menu == "Home") {
 				contentContainer.appendChild(createText("Format: "));
-				contentContainer.appendChild(settingsOptionHtml("Format", "settings.format", ["Eternal", "Collection League", "Pauper"]));
+				contentContainer.appendChild(settingsOptionHtml("Format", "settings.format", ["Eternal", "EDH", "Collection League", "Pauper"]));
 				let gradientDropdown = document.createElement('select');
 				gradientDropdown.id = 'color-select';
 				gradientDropdown.className = "popout"

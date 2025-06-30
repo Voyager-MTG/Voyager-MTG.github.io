@@ -325,6 +325,9 @@ def generateHTML(code):
 	a {
 		cursor: pointer;
 	}
+	.card-image:hover {
+		filter: brightness(0.7);
+	}
 </style>
 <body>
 	'''
