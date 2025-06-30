@@ -709,7 +709,7 @@
 				const l = p1p1Rand(card_list_cleaned.length + 1, p1p1_count);
 				for (const i of l)
 				{	
-					const card = card_list_arrayified[i];
+					const card = card_list_cleaned[i];
 					const img_url = '/sets/' + card.set + '-files/img/' + card.number + '_' + card.card_name + (card.shape.includes('double') ? '_front' : '') + '.' + card.image_type;
 
 					const image = new Image();
