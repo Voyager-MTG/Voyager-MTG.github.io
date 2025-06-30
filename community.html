@@ -586,7 +586,8 @@
                     const event_name = document.createElement("a");
                     event_name.className = "event-name text";
                     event_name.innerText = event.name;
-                    event_name.href = `gp?event=${event.name}`;
+                    const event_type = event.type ? event.type : "gp";
+                    event_name.href = `${event_type}?event=${event.name}`;
                     event_container.appendChild(event_name);
 
                     const event_players = document.createElement("span");
@@ -596,7 +597,7 @@
 
                     const event_winner = document.createElement("span");
                     event_winner.className = "event-winner text";
-                    event_winner.innerText = "Winner: " + event.winner  ;
+                    event_winner.innerText = "Winner: " + (event.winner ? event.winner : "TBD");
                     event_container.appendChild(event_winner);
                     
                     container.appendChild(event_container); 
