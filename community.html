@@ -622,7 +622,7 @@
                     if (deck.event) 
                         window.location.href = `/deckbuilder?edeck=${deck.event}-${deck.user}`;
                         return;
-                    window.location.href = `/deckbuilder?udeck=${deck.user}-${deck.name}`;
+                    window.location.href = `/deckbuilder?deck=${deck.user}-${deck.name}`;
                 }
                 const deck_name = document.createElement("div");
                 deck_name.className = "deck-name";

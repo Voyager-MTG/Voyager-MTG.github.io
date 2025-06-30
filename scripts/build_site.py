@@ -229,5 +229,5 @@ for code in set_codes:
 	#CE: moving this down after we create the 'set-order.json' file
 	print_html_for_set.generateHTML(code)
 
-print_html_for_sets_page.generateHTML()
+# print_html_for_sets_page.generateHTML()
 # print_html_for_index.generateHTML()
