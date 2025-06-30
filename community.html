@@ -519,6 +519,7 @@
             let card_list_arrayified = card_list.cards;
 
             async function reload() {
+                tab = tab ? tab : "events";
                 document.getElementById(`events-tab-select`).className = "tab-btn";
                 document.getElementById(`users-tab-select`).className = "tab-btn";
                 document.getElementById(`decks-tab-select`).className = "tab-btn";

@@ -389,15 +389,30 @@
             padding: 8px;
             border-left: 2px solid black;
             cursor: pointer;
+            transition: 0.2s;
+        }
+        .player-score:hover {
+            filter: brightness(0.8);
+        }
+        .player-score:not(.winner):not(.loser):hover {
+            background-color: #aaa;
         }
         .player-text {
             font-family: "beleren";
             font-size: 20px;
             padding: 8px;
             cursor: pointer;
+            transition: 0.2s;
+        }
+        .player-text:hover {
+            background-color: #999;
         }
         .player-text-top {
+            border-top-left-radius: 6px;
             border-bottom: 2px solid black;
+        }
+        .player-text:not(.player-text-top) {
+            border-bottom-left-radius: 6px;
         }
         .player-score-top {
             border-radius: 0 6px 0px 0;
@@ -549,6 +564,15 @@
             font-size: 20px;
             font-style: italic;
             color: #444;
+            display: inline-block;
+        }
+        .ended-text {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
         }
     </style>
     <style id="text-style">
@@ -593,6 +617,7 @@
                 <span class="text">Admin Options: </span>
                 <button class="push-gp admin-btn" id="push-gp">Push GP Round</button>
                 <button class="new-gp admin-btn"  id="new-gp" >Create new GP</button>
+                <button class="end-gp admin-btn"  id="end-gp" >End GP</button>
             </div>
             <div class="options-container">
                 <span class="text">Options: </span>
@@ -600,6 +625,7 @@
                 <!-- <button class="opt-btn"></button> -->
             </div>
             <div class="main-tab" id="main-tab">
+                <span id="ended-text" class="ended-text text">This event has ended.</span>
                 <div class="decks-tab" id="decklists"></div>
                 <div class="rounds-tab" id="games"></div>
                 <div class="stats-tab" id="stats"></div>
@@ -703,7 +729,7 @@
                 document.getElementById(tab_name).style.display = "grid";
                 document.getElementById(tab_name + "-tab-select").className = "tab-btn tab-btn-active"
                 for (const child of document.getElementById("main-tab").children) {
-                    if (child.id != tab_name) {
+                    if (child.id != tab_name && child.id != "ended-text") {
                         child.style.display = "none";
                     }
                 }
@@ -780,8 +806,8 @@
                     let event_data = docSnap.data();
                     const decks = JSON.parse(event_data.decks);
                     const rounds = JSON.parse(event_data.rounds);
-                    console.log(rounds);
-                    statsHelper(rounds.swiss);
+                    if (!event_data.ended)
+                        document.getElementById("ended-text").style.display = "none";
                     document.title = event;
                     if (admin) {
                         document.getElementById('push-gp').addEventListener("click", (e) => {
@@ -789,6 +815,9 @@
                         });
                         document.getElementById('new-gp').addEventListener("click", (e) => {
                             newGP();
+                        });
+                        document.getElementById('end-gp').addEventListener("click", (e) => {
+                            endGP();
                         });
                         document.getElementById('admin').style.display = "block";
                     }
@@ -1197,6 +1226,12 @@
                         initial_text.className = "initial-text";
                         initial_text.innerText = `Deck submissions are open for ${event}`;
                         document.getElementById("decklists").appendChild(initial_text);
+                        
+                        const initial_text2 = document.createElement("span");
+                        initial_text2.className = "initial-text";
+                        initial_text2.style.width = "100%";
+                        initial_text2.innerText = `Deck submissions are open for ${event}`;
+                        document.getElementById("games").appendChild(initial_text2);
                     }
               });
             }
@@ -1376,6 +1411,9 @@
             }
 
             function reportHTML(game, round, round_name, event_data, event, decks, swiss = true, match = null) {
+                if (event_data.ended) 
+                    return;
+
                 const content_container = document.createElement("div");
                 const player_names      = document.createElement("div");
                 const scores            = document.createElement("div");
@@ -1586,6 +1624,11 @@
             }
 
             async function pushGP(event_data) {
+                if (event_data.ended) {
+                    alert("GP has been ended, cannot push round");
+                    return;
+                }
+
                 let rounds = JSON.parse(event_data.rounds);
                 console.log(event_data.num_rounds,  Object.keys(rounds.swiss).length);
                 if (event_data.stage == "swiss" && event_data.num_rounds != Object.keys(rounds.swiss).length) {
@@ -1871,7 +1914,7 @@
                         stage: "initial",
                         name: event_name,
                         winner: "TBD",
-                        dropped: event_data.dropped
+                        dropped: []
                 });
             }
 
@@ -1893,6 +1936,12 @@
                     return 5;
                 }
                 return 6;
+            }
+
+            function endGP() {
+                updateDoc(doc(db, 'events', event), {
+                    ended: true
+                });
             }
 
             reload();
