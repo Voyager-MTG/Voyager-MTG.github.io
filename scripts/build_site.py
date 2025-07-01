@@ -47,6 +47,7 @@ def genAllCards(codes):
 			set_data['set_code'] = code
 			set_data['set_name'] = raw['name']
 			set_data['formats'] = raw['formats']
+			set_data['designer'] = raw['designer']
 			set_input['sets'].append(set_data)
 	#F: opens a path,
 	with open(os.path.join('lists', 'all-cards.json'), 'w', encoding='utf-8-sig') as f:

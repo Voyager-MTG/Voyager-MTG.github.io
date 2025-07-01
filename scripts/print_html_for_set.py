@@ -194,7 +194,6 @@ def generateHTML(code):
 		line-height: 155%;
 	}
 	.card-text .name-cost {
-		font-weight: bold;
 		font-size: 20px;
 		white-space: pre-wrap;
 	}

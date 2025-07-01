@@ -147,7 +147,6 @@
 		line-height: 155%;
 	}
 	.card-text .name-cost {
-		font-weight: bold;
 		font-size: 20px;
 		white-space: pre-wrap;
 	}
@@ -1314,26 +1313,32 @@
 				{
 					if (modifier == "!" || modifier == "=")
 					{
-						return card.flavor_text == check;
+						return card_stats.flavor_text == check;
 					}
 					else if (modifier == ":")
 					{
-						return card.flavor_text.includes(check);
+						return card_stats.flavor_text.includes(check);
 					}
 					else if (modifier == "<")
 					{
-						return card.flavor_text < check;
+						return card_stats.flavor_text < check;
 					}
 					else if (modifier == ">")
 					{
-						return card.flavor_text > check;
+						return card_stats.flavor_text > check;
 					}
 				}
 				if (term == "lore")
 				{
 					if (modifier == "!" || modifier == "=" || modifier == ":")
 					{
-						return card.flavor_text.toLowerCase().includes(check) || card_name.includes(check) || card.notes.toLowerCase().includes(check);
+						return card_stats.flavor_text.toLowerCase().includes(check) || card_name.includes(check) || card.notes.toLowerCase().includes(check);
+					}
+				}
+				if (term == "designer" || term == "design") {
+					if (modifier == "!" || modifier == "=" || modifier == ":")
+					{
+						return card_stats.designer.includes(check);
 					}
 				}
 			}
