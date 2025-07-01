@@ -72,11 +72,19 @@
 		},
 	]
 
-[cube(15)]
-	1 Mother of Ants
+[rare(1)]
+	2 Mother of Ants
 	1 The Forge of Days
 	1 The Moth
 	1 The Red Grail
-	1 The Watchman
+	2 The Watchman
 	1 The Thunderskin
-	1 Drifting Field
+[uncommon(4)]
+[common(7)]
+[wildcard(2)]
+	7 Mother of Ants
+	4 The Forge of Days
+	4 The Moth
+	4 The Red Grail
+	7 The Watchman
+	4 The Thunderskin

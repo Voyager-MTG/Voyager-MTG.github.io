@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Login</title>
+        <title>League</title>
         <link rel="icon" type="image/x-icon" href="/img/favicon.png">
         <link rel="stylesheet" href="resources/mana.css">
         <link rel="stylesheet" href="/resources/header.css">
@@ -59,7 +59,6 @@
             background-color: rgba(0,0,0,0.4); 
         }
         #modal-content {
-            background-color: #fefefe;
             margin: auto;
             padding: 20px;
             border: 1px solid #888;
@@ -145,6 +144,14 @@
             box-shadow: 5px 5px 2px #333;
             padding-top: 0px;
         }
+        #modal-content .deck-container {
+            width: 90%;
+            height: 90%;
+            transition: 0.3s;
+        }
+        #modal-content .deck-container:hover {
+            filter: brightness(0.7);
+        }
         .full-deck-container {
             display: grid;
             grid-template-columns: 1fr 0.1fr;
@@ -170,6 +177,11 @@
             /* padding: 0.2em; */
             /* background-color: #777; */
         }
+        #modal-content .deck-preview-img {
+            border: none;
+            box-shadow: none;
+            border-radius: 6px;
+        }
         .deck-name {
             font-weight: bold;
             font-size: 30px;
@@ -181,8 +193,12 @@
             padding: 5px;
             margin-bottom: 3px;
             width: 100%;
+            color: black;
             text-align: center;
             /* color: white; */
+        }
+        #modal-content .deck-name {
+            font-size: 16px;
         }
         .deck-buttons {
             display: grid;
@@ -210,7 +226,11 @@
             /* box-shadow: 2px 2px 1px #333; */
             box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5), inset -0.2em -0.2em 0.2em 0 rgba(0,0,0,0.5);
             padding: 0.3em;
+            transition: 0.2s;
         }
+        .deck-icon-shadow:hover {
+            filter: brightness(0.7);
+        }   
         .deck-link {
             /* font-family: beleren; */
             background-color: #1652e0;
@@ -377,7 +397,7 @@
             font-family: beleren;
             font-size: 30px;
         }
-        .report-scores-btn {
+        .report-scores-btn, .new-run-btn {
             background-color: #16e019;
             color: white;
             border: 2px solid darkgreen;
@@ -388,7 +408,7 @@
             cursor: pointer;
             transition: 0.2s;
         }
-        .report-scores-btn:hover {
+        .report-scores-btn:hover, .new-run-btn:hover {
             background-color: #149316;
         }
         .player-score-input {
@@ -422,6 +442,40 @@
         }
         .active-opponent {
             color: rgb(103, 206, 103);
+        }
+        .deck-select-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            align-items: center;
+            justify-items: center;
+        }
+        #modal-content .deck-preview-img {
+            max-width: 80px;
+        }
+        .runs-tab {
+            display: none;
+        }
+        .unclaimed-notif {
+            background-color: rgba(209, 42, 42, 0.5);
+            border: 2px solid white;
+            padding: 5px;
+            font-size: 1.2em;
+            font-weight: bold;  
+            border-radius: 10px;
+            cursor: pointer;
+            /* width: fit-content; */
+        }
+        .runs-top {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            align-items: center;
+            justify-items: center;
+        }
+        .new-run-btn {
+            margin-left: auto;
+            padding: 8px;
         }
     </style>
     <style id="text-style">
@@ -521,7 +575,6 @@
                     }
                 }
 
-                // console.log(`linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
                 document.body.style.backgroundImage = `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`;
                 localStorage.setItem("settings.gradient", gradient);
 		    }
@@ -567,6 +620,10 @@
 
 				window.location.href = url;
 			}
+
+            function closeModal() {
+                document.getElementById("modal-container").style.display = "none";
+            }
 
             function changeTab(tab_name) {
                 document.getElementById(tab_name).style.display = "grid";
@@ -659,6 +716,98 @@
             async function reload() {
                 makeDecksTab();
                 makeGamesTab();
+                makeRunsTab();
+            }
+
+            async function makeRunsTab() {
+                const container = document.getElementById("runs");
+                const unclaimed = getUnclaimedMatches();
+
+                const runs_top = document.createElement("div");
+                runs_top.className = "runs-top";
+                
+                const new_run = document.createElement("button");
+                new_run.className = "new-run-btn";
+                new_run.innerText = "New Run";
+                new_run.onclick = openDeckSelect;
+
+                const unclaimed_notif = document.createElement("div");
+                unclaimed_notif.className = "unclaimed-notif text";
+                unclaimed_notif.innerText = `You have ${unclaimed.number} unclaimed matches. Click here to allocate them to runs.`;
+                unclaimed_notif.onclick = () => {
+                    openUnclaimedModal(unclaimed);
+                };
+
+                runs_top.appendChild(unclaimed_notif);
+                runs_top.appendChild(new_run);
+                container.appendChild(runs_top);
+            }
+
+            function getUnclaimedMatches() {
+                let games = [];
+                for (const match of JSON.parse(event_data.games)) {
+                    if (Object.keys(match).includes(user_data.username)) {
+                        games.push(match);
+                    }
+                }
+
+                return {games: games, number: games.length};
+            }
+
+            function openUnclaimedModal(unclaimed) {
+                document.getElementById("modal-content").innerHTML = '<span class="close" onclick="closeModal()">&times;</span>';
+                document.getElementById("modal-container").style.display = "block";
+                console.log(unclaimed);
+            }
+
+            function openDeckSelect() {
+                document.getElementById("modal-content").innerHTML = '<span class="close" onclick="closeModal()">&times;</span>';
+                document.getElementById("modal-container").style.display = "block";
+
+                const content_container = document.createElement("div");
+                content_container.className = "deck-select-container";
+
+                for (const deck of JSON.parse(user_data.decks)) {
+                    const deck_ele = gridifyDeck(deck);
+                    deck_ele.onclick = () => {
+                        const new_runs = JSON.parse(event_data.runs);
+                        new_runs[user_data.username] = new_runs[user_data.username] ? new_runs[user_data.username] : [];
+                        new_runs[user_data.username].push({deck: deck, matches: []})
+                        updateDoc(doc(db, "events", event), {
+                            runs: JSON.stringify(new_runs)
+                        });
+                        alert("Created new run!");
+                        document.getElementById("modal-container").style.display = "none";
+                    }
+                    content_container.appendChild(deck_ele);
+                }
+
+                document.getElementById("modal-content").appendChild(content_container);
+            }
+
+            function gridifyDeck(deck) {
+                const container = document.createElement("div");
+                container.className = "deck-container";
+                const preview_img = document.createElement("img");
+                let card_stats;
+                for (const card of card_list_arrayified) {
+                    if (deck.previewimg == card.card_name) {
+                        card_stats = card;
+                        break;
+                    }
+                }
+                preview_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+                preview_img.className = "deck-preview-img";
+                // preview_img.onclick = function() {
+                //     window.location.href = `/deckbuilder?deck=${deck.user}-${deck.name}`
+                // }
+                const deck_name = document.createElement("div");
+                deck_name.className = "deck-name";
+                deck_name.innerText = deck.name;
+
+                container.appendChild(deck_name);
+                container.appendChild(preview_img);
+                return container;
             }
 
             function makeDecksTab() {
@@ -814,16 +963,13 @@
                     // loop through each card in deck_map and get the cardtype
                     for (const card2 of card_list_arrayified) {
                         if (card2.card_name == card) {
-                            console.log(card2);
                             card_type = card2.type.toLowerCase();
                             break;
                         }
                     }
-                    console.log(card_type);
 
                     for (const [key, map] of deck_cards)
                     {
-                        console.log(key, map, card);
                         if (card_type.includes(key))
                         {
                             map.set(card, copies)
@@ -945,13 +1091,14 @@
                 submit_scores_btn.className = "report-scores-btn";
                 submit_scores_btn.innerText = "Report";
                 submit_scores_btn.onclick = async () => {
-                    const game = {};
+                    const game = {};                    
+                    const player = user_data.username;
                     const opponent = document.getElementsByClassName("active-opponent")[0].innerText;
-                    game[player]   = [event_data.runs[player],   document.getElementById("p1-score-input").value];
-                    game[opponent] = [event_data.runs[opponent], document.getElementById("p2-score-input").value];
-                    // await updateDoc(doc(db, "events", event), {
-                    //     games: {...event_data.games, ...game}
-                    // });
+                    game[player]   = ["unclaimed", document.getElementById("p1-score-input").value];
+                    game[opponent] = ["unclaimed", document.getElementById("p2-score-input").value];
+                    await updateDoc(doc(db, "events", event), {
+                        games: JSON.stringify([...JSON.parse(event_data.games), game])
+                    });
                 }
 
                 const username_ele = document.createElement("span");

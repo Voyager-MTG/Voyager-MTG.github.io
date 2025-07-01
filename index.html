@@ -282,6 +282,7 @@
 	}
 	.settings-icon {
 		max-height: 30px;
+		margin: 5px;
 		cursor: pointer	;
 		float: right;
 	}
@@ -432,6 +433,7 @@
 			<select id="color-select" onchange="setGradient()">
 			</select>
 			<img src="img/settings.png" class="settings-icon" onclick="openSettingsModal()">
+			<img src="img/info.png" class="settings-icon" onclick="goToOnboard()">
 		</div>
 		<div id="gradient"></div>
 		<div class="item-container">
@@ -837,6 +839,10 @@
 
 			function goToDeckbuilder() {
 				window.location = ("/deckbuilder");
+			}
+
+			function goToOnboard() {
+				window.location.href = 'https://docs.google.com/document/d/1eZnljkF7TGC_OzQ6IYxgdWxyZU2T2dxSRZ5zYa6Cpkc/edit?usp=sharing';
 			}
 
 			function search() {
