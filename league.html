@@ -439,7 +439,7 @@
         .active-opponent {
             color: rgb(103, 206, 103);
         }
-        .deck-select-container {
+        .deck-select-container, #modal-content .runs-container {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 8px;
@@ -472,6 +472,19 @@
         .new-run-btn {
             margin-left: auto;
             padding: 8px;
+        }
+        .unclaimed-match-container {
+            padding: 10px;
+            border: 2px solid gray;
+            font-weight: bold;
+            border-radius: 8px;
+            font-size: 1.4em;
+            width: fit-content;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .unclaimed-match-container:hover {
+            background-color: gray;
         }
     </style>
     <style id="text-style">
@@ -737,6 +750,7 @@
                 runs_top.appendChild(unclaimed_notif);
                 runs_top.appendChild(new_run);
                 container.appendChild(runs_top);
+                container.appendChild(gridifyRuns());
             }
 
             function getUnclaimedMatches() {
@@ -753,7 +767,45 @@
             function openUnclaimedModal(unclaimed) {
                 document.getElementById("modal-content").innerHTML = '<span class="close" onclick="closeModal()">&times;</span>';
                 document.getElementById("modal-container").style.display = "block";
-                console.log(unclaimed);
+                
+                for (const match of unclaimed.games) {
+                    console.log(match);
+                    const match_container = document.createElement("div");
+                    match_container.className = "unclaimed-match-container text";
+                    const p1 = Object.keys(match)[0];
+                    const p2 = Object.keys(match)[1];
+                    match_container.innerText = `${p1} ${match[p1][1]}-${match[p2][1]} ${p2}`;
+                    match_container.onclick = () => {
+                        document.getElementById("modal-content").innerHTML = '<span class="close" onclick="closeModal()">&times;</span>';
+                        document.getElementById("modal-content").appendChild(gridifyRuns(true));
+                    }
+
+                    document.getElementById("modal-content").appendChild(match_container);
+                }
+            }
+
+            function gridifyRuns(unclaimed_modal = false) {
+                const runs = JSON.parse(event_data.runs)[user_data.username];
+                const content_container = document.createElement("div");
+                content_container.className = "runs-container";
+                let i = 0;
+                for (const run of runs) {
+                    const deck_ele = gridifyDeck(run.deck);
+                    if (unclaimed_modal) {
+                        deck_ele.onclick = () => {
+                            new_runs = JSON.parse(event_data.runs);
+                            new_runs[user_data.username][i].matches.push(match_id);
+                            updateDoc(doc(db, "events", event), {
+                                runs: new_runs,
+                                matches: new_matches
+                            });
+                        }
+                    }
+                    content_container.appendChild(deck_ele);
+                    i++;
+                }
+
+                return content_container;
             }
 
             function openDeckSelect() {
