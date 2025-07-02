@@ -702,7 +702,7 @@
             let user_data;
             let event_data;
             const urlParams = new URLSearchParams(window.location.search);
-            const event = urlParams.get('event');
+            const event = "League";
 
             await getDoc(doc(db, 'users', username)).then(async docSnap => {
                 user_data = docSnap.data();
@@ -755,10 +755,12 @@
 
             function getUnclaimedMatches() {
                 let games = [];
+                let id = 0;
                 for (const match of JSON.parse(event_data.games)) {
                     if (Object.keys(match).includes(user_data.username)) {
-                        games.push(match);
+                        games.push([match, id]);
                     }
+                    id++;
                 }
 
                 return {games: games, number: games.length};
@@ -768,8 +770,9 @@
                 document.getElementById("modal-content").innerHTML = '<span class="close" onclick="closeModal()">&times;</span>';
                 document.getElementById("modal-container").style.display = "block";
                 
-                for (const match of unclaimed.games) {
-                    console.log(match);
+                for (const match_data of unclaimed.games) {
+                    const match = match_data[0];
+                    const match_id = match_data[1];
                     const match_container = document.createElement("div");
                     match_container.className = "unclaimed-match-container text";
                     const p1 = Object.keys(match)[0];
@@ -777,32 +780,43 @@
                     match_container.innerText = `${p1} ${match[p1][1]}-${match[p2][1]} ${p2}`;
                     match_container.onclick = () => {
                         document.getElementById("modal-content").innerHTML = '<span class="close" onclick="closeModal()">&times;</span>';
-                        document.getElementById("modal-content").appendChild(gridifyRuns(true));
+                        document.getElementById("modal-content").appendChild(gridifyRuns(match_data));
                     }
 
                     document.getElementById("modal-content").appendChild(match_container);
                 }
             }
 
-            function gridifyRuns(unclaimed_modal = false) {
+            function gridifyRuns(unclaimed_matches = false) {
                 const runs = JSON.parse(event_data.runs)[user_data.username];
                 const content_container = document.createElement("div");
                 content_container.className = "runs-container";
-                let i = 0;
                 for (const run of runs) {
                     const deck_ele = gridifyDeck(run.deck);
-                    if (unclaimed_modal) {
+                    if (unclaimed_matches) {
+                        console.log(unclaimed_matches);
                         deck_ele.onclick = () => {
-                            new_runs = JSON.parse(event_data.runs);
-                            new_runs[user_data.username][i].matches.push(match_id);
+                            const run_id    = runs.indexOf(run);
+                            const match_id  = unclaimed_matches[1];
+                            const match     = unclaimed_matches[0];
+                            const player    = Object.keys(match)[0];
+                            const opponent  = Object.keys(match)[1];
+                            let new_runs    = JSON.parse(event_data.runs);
+                            let new_matches = JSON.parse(event_data.games);
+                            console.log("runs", new_runs);
+                            console.log("runs", new_matches);
+                            console.log("runid", run_id);
+                            console.log("matchid", match_id);
+                            new_runs[user_data.username][run_id].matches.push(match_id);
+                            new_matches[match_id][player]  [0] = run_id;
+                            new_matches[match_id][opponent][0] = run_id;
                             updateDoc(doc(db, "events", event), {
-                                runs: new_runs,
-                                matches: new_matches
+                                runs:  JSON.stringify(new_runs   ),
+                                games: JSON.stringify(new_matches)
                             });
                         }
                     }
                     content_container.appendChild(deck_ele);
-                    i++;
                 }
 
                 return content_container;
