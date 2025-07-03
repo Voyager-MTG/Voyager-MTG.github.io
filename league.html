@@ -1160,7 +1160,8 @@
                     const opponent = document.getElementsByClassName("active-opponent")[0].innerText;
                     game[player]   = ["unclaimed", document.getElementById("p1-score-input").value];
                     game[opponent] = ["unclaimed", document.getElementById("p2-score-input").value];
-                    new_games.push(game)
+                    new_games.push(game);
+                    alert(`Game reported. Go to the runs tab to assign it to a run!`);
                     await updateDoc(doc(db, "events", event), {
                         games: JSON.stringify(new_games)
                     });
