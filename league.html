@@ -1154,13 +1154,15 @@
                 submit_scores_btn.className = "report-scores-btn";
                 submit_scores_btn.innerText = "Report";
                 submit_scores_btn.onclick = async () => {
+                    const new_games = JSON.parse(event_data.games);
                     const game = {};                    
                     const player = user_data.username;
                     const opponent = document.getElementsByClassName("active-opponent")[0].innerText;
                     game[player]   = ["unclaimed", document.getElementById("p1-score-input").value];
                     game[opponent] = ["unclaimed", document.getElementById("p2-score-input").value];
+                    new_games.push(game)
                     await updateDoc(doc(db, "events", event), {
-                        games: JSON.stringify([...JSON.parse(event_data.games), game])
+                        games: JSON.stringify(new_games)
                     });
                 }
 
