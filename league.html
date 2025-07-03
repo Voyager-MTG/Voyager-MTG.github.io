@@ -759,7 +759,7 @@
                 let id = 0;
                 for (const match of JSON.parse(event_data.games)) {
                     if (Object.keys(match).includes(user_data.username)) {
-                        if (game[0] == "unclaimed") 
+                        if (match[0] == "unclaimed") 
                             games.push([match, id]);
                     }
                     id++;
