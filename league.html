@@ -815,6 +815,8 @@
                                 runs:  JSON.stringify(new_runs   ),
                                 games: JSON.stringify(new_matches)
                             });
+                            document.getElementById("modal-container").style.display = "none";
+                            alert("Match claimed!");
                         }
                     }
                     content_container.appendChild(deck_ele);
@@ -1165,6 +1167,7 @@
                     await updateDoc(doc(db, "events", event), {
                         games: JSON.stringify(new_games)
                     });
+                    reload();
                 }
 
                 const username_ele = document.createElement("span");
