@@ -13,6 +13,26 @@
             "name": "Tokens",
             "cost": 1,
             "defaulticon": true
+        },
+        {
+            "name": "Blink",
+            "cost": 1,
+            "defaulticon": true
+        },
+        {
+            "name": "Graveyard",
+            "cost": 1,
+            "defaulticon": true
+        },
+        {
+            "name": "Lands",
+            "cost": 1,
+            "defaulticon": true
+        },
+        {
+            "name": "Spells",
+            "cost": 1,
+            "defaulticon": true
         }
     ]
 }

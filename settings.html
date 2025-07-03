@@ -552,8 +552,8 @@
                     document.getElementById("Admin").style.display = "none";      
                 } else {
                     document.getElementById("add-packs-btn").addEventListener("click", async function() {
-                        const set_count  = document.getElementById("coll-league-set-input" ).value;
-                        const pack_count = document.getElementById("coll-league-pack-input").value;
+                        const set_count  = parseInt(document.getElementById("coll-league-set-input" ).value);
+                        const pack_count = parseInt(document.getElementById("coll-league-pack-input").value);
                         for (const user of all_users) {
                             if (!coll_league_players.includes(user.username)) {
                                 continue;
