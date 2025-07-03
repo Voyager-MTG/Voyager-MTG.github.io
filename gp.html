@@ -536,6 +536,10 @@
             padding: 8px;
             border-radius: 8px;
             cursor: pointer;
+            transition: 0.2s;
+        }
+        .admin-btn:hover {
+            background-color: #291b74;
         }
         .options-container {
             font-weight: bold;
@@ -551,6 +555,24 @@
             padding: 8px;
             border-radius: 8px;
             cursor: pointer;
+            transition: 0.2s;
+        }
+        .opt-btn:hover {
+            background-color: #5b1919;
+        }
+        .opt-btn-green {
+            color: white;
+            background-color: #36ab4c;
+            border: 1px solid rgb(16, 70, 17);
+            font-weight: bold;
+            font-size: 18px;
+            padding: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .opt-btn-green:hover {
+            background-color: #195b22;
         }
         .initial-text {
             grid-column: span 4;
@@ -558,16 +580,39 @@
             font-weight: bold;
             font-size: 20px;
             font-style: italic;
-            color: #444;
             display: inline-block;
         }
         .ended-text {
-            display: inline-block;
+            display: none;
             width: 100%;
             text-align: center;
             font-weight: bold;
             font-size: 1.1em;
             margin-bottom: 15px;
+        }
+        .deck-select-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            align-items: center;
+            justify-items: center;
+        }
+        #modal-content .deck-container {
+            width: 90%;
+            height: 90%;
+            transition: 0.3s;
+        }
+        #modal-content .deck-container:hover {
+            filter: brightness(0.7);
+        }
+        #modal-content .deck-preview-img {
+            border: none;
+            box-shadow: none;
+            border-radius: 6px;
+            max-width: 80px;
+        }
+        #modal-content .deck-name {
+            font-size: 16px;
         }
     </style>
     <style id="text-style">
@@ -616,6 +661,7 @@
             </div>
             <div class="options-container">
                 <span class="text">Options: </span>
+                <button class="opt-btn-green" style="display: none;" id="join">Submit Deck!</button>
                 <button class="opt-btn" id="drop">Drop</button>
                 <!-- <button class="opt-btn"></button> -->
             </div>
@@ -767,6 +813,15 @@
             let admin = false;
             const urlParams = new URLSearchParams(window.location.search);
             const event = urlParams.get('event');
+            let card_list;
+
+            await fetch('/lists/all-cards.json')
+                .then(response => response.json())
+                .then(json => {
+                    card_list = json;
+            }).catch(error => console.error('Error:', error));
+
+            let card_list_arrayified = card_list.cards;
             // console.log
 
             if (sessionid) {
@@ -789,20 +844,15 @@
             async function reload() {
                 let card_list;
                 let card_list_arrayified;
-                await fetch('/lists/all-cards.json')
-					.then(response => response.json())
-					.then(json => {
-						card_list = json;
-				}).catch(error => console.error('Error:', error));
-
-                card_list_arrayified = card_list.cards;
 
                 await getDoc(doc(db, 'events', event)).then(async docSnap => {
                     let event_data = docSnap.data();
                     const decks = JSON.parse(event_data.decks);
                     const rounds = JSON.parse(event_data.rounds);
-                    if (!event_data.ended)
-                        document.getElementById("ended-text").style.display = "none";
+                    if (event_data.ended)
+                        document.getElementById("ended-text").style.display = "inline-block";
+                    if (event_data.stage == "initial")
+                        document.getElementById("join").style.display = "inline"
                     document.title = event;
                     if (admin) {
                         document.getElementById('push-gp').addEventListener("click", (e) => {
@@ -818,6 +868,9 @@
                     }
                     document.getElementById("drop").addEventListener("click", (e) => {
                         dropGP(event_data);
+                    });
+                    document.getElementById("join").addEventListener("click", (e) => {
+                        joinGP(event_data);
                     });
                     document.getElementById("decklists").innerHTML = "";
                     document.getElementById("games").innerHTML = "";
@@ -1218,12 +1271,12 @@
 
                     } else {
                         const initial_text = document.createElement("span");
-                        initial_text.className = "initial-text";
+                        initial_text.className = "initial-text text";
                         initial_text.innerText = `Deck submissions are open for ${event}`;
                         document.getElementById("decklists").appendChild(initial_text);
                         
                         const initial_text2 = document.createElement("span");
-                        initial_text2.className = "initial-text";
+                        initial_text2.className = "initial-text text";
                         initial_text2.style.width = "100%";
                         initial_text2.innerText = `Deck submissions are open for ${event}`;
                         document.getElementById("games").appendChild(initial_text2);
@@ -1918,6 +1971,55 @@
                     dropped: [...event_data.dropped, username]
                 });
                 alert("Dropped " + username + ". Ping aanginer to be re-added.");
+            }
+
+            async function joinGP(event_data) {
+                document.getElementById("modal-content").innerHTML = '<span class="close" onclick="closeModal()">&times;</span>';
+                document.getElementById("modal-container").style.display = "block";
+
+                const content_container = document.createElement("div");
+                content_container.className = "deck-select-container";
+
+                for (const deck of decks) {
+                    const deck_ele = gridifyDeck(deck);
+                    deck_ele.onclick = () => {
+                        const new_decks = JSON.parse(event_data.decks);
+                        new_decks[username] = deck;
+                        updateDoc(doc(db, "events", event), {
+                            decks: JSON.stringify(new_decks)
+                        });
+                        alert("Deck Submitted!");
+                        document.getElementById("modal-container").style.display = "none";
+                    }
+                    content_container.appendChild(deck_ele);
+                }
+
+                document.getElementById("modal-content").appendChild(content_container);
+            }
+
+            function gridifyDeck(deck) {
+                const container = document.createElement("div");
+                container.className = "deck-container";
+                const preview_img = document.createElement("img");
+                let card_stats;
+                for (const card of card_list_arrayified) {
+                    if (deck.previewimg == card.card_name) {
+                        card_stats = card;
+                        break;
+                    }
+                }
+                preview_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+                preview_img.className = "deck-preview-img";
+                // preview_img.onclick = function() {
+                //     window.location.href = `/deckbuilder?deck=${deck.user}-${deck.name}`
+                // }
+                const deck_name = document.createElement("div");
+                deck_name.className = "deck-name";
+                deck_name.innerText = deck.name;
+
+                container.appendChild(deck_name);
+                container.appendChild(preview_img);
+                return container;
             }
 
             function numRounds(n) {
