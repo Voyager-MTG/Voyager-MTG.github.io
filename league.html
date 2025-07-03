@@ -1168,8 +1168,7 @@
                 username_ele.className = "report-username text";
                 username_ele.innerText = username;
 
-                for (const run of Object.keys(JSON.parse(event_data.runs))) {
-                    const player = deck.user;
+                for (const player of Object.keys(JSON.parse(event_data.runs))) {
                     if (player == user_data.username) 
                         continue;
 
