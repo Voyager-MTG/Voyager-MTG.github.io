@@ -17,7 +17,7 @@
             background-color: #bbbbbb;
             display: block;
             /* overflow-y: scroll; */
-            height: 100%;
+            /* height: 100%; */
         }
         select {
             position: absolute;
@@ -352,7 +352,7 @@
             let sessionid = localStorage.getItem('settings.session');
             let decks = {};
             const events = ["GP1", "League"];
-            const urlParams = new URLSearchParams(window.location.search);
+            let urlParams = new URLSearchParams(window.location.search);
             let card_list;
             let card_list_arrayified;
 
@@ -401,12 +401,18 @@
                 }
                 const all_decks = JSON.parse(LZString.decompress(localStorage.getItem("info.alldecks")));
                 document.getElementById("search-btn").addEventListener("click", (e) => {
-                    window.location.href = `?search=${document.getElementById('search').value}`;
+                    let url = (window.location.href.indexOf("?") == -1 ? new URL(window.location.href) : new URL(window.location.href.substring(0, window.location.href.indexOf("?"))));
+                    history.pushState({}, '', url.pathname + `?search=${document.getElementById('search').value}`);
+                    urlParams = new URLSearchParams(window.location.search);
+                    search(all_decks);
                 });
                 document.getElementById("search").addEventListener("keypress", function(event) {
                     if (event.key === "Enter") {
                         event.preventDefault();
-                        window.location.href = `?search=${document.getElementById('search').value}`;
+                        let url = (window.location.href.indexOf("?") == -1 ? new URL(window.location.href) : new URL(window.location.href.substring(0, window.location.href.indexOf("?"))));
+                        history.pushState({}, '', url.pathname + `?search=${document.getElementById('search').value}`);
+                        urlParams = new URLSearchParams(window.location.search);
+                        search(all_decks);
                     }
                 });
                 search(all_decks);

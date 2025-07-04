@@ -17,7 +17,7 @@
             background-color: #bbbbbb;
             display: block;
             /* overflow-y: scroll; */
-            height: 100%;
+            /* height: 100%; */
         }
         select {
             position: absolute;
@@ -144,6 +144,7 @@
             border: 2px solid #333;
             box-shadow: 5px 5px 2px #333;
             padding-top: 0px;
+            width: 90%;
         }
         #modal-content .deck-container {
             width: 90%;
@@ -470,6 +471,13 @@
             align-items: center;
             justify-items: center;
         }
+        .runs-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            justify-items: center;
+            gap: 8px;
+        }
         .new-run-btn {
             margin-left: auto;
             padding: 8px;
@@ -747,6 +755,7 @@
                 unclaimed_notif.onclick = () => {
                     openUnclaimedModal(unclaimed);
                 };
+                unclaimed_notif.style.display = unclaimed.number == 0 ? "none" : "";
 
                 runs_top.appendChild(unclaimed_notif);
                 runs_top.appendChild(new_run);

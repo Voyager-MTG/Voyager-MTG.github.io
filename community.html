@@ -17,7 +17,7 @@
             background-color: #bbbbbb;
             display: block;
             /* overflow-y: scroll; */
-            height: 100%;
+            height: fit-content;
         }
         select {
             position: absolute;
@@ -112,7 +112,7 @@
         .deck-section-container {
             display: grid;
             gap: 10px;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             width: 82%;
             align-self: center;
             justify-self: center;
@@ -173,7 +173,7 @@
             font-family: beleren;
             font-size: 64px;
         }
-        .decks-container {
+        .deck-sections-container {
             display: grid;
             gap: 15px;
             /* align-items: center; */
@@ -289,6 +289,26 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
             margin-top: 40px;
+        }
+        .search-input {
+            width: 70%;
+            height: 35px;
+            font-size: 16px;
+            background-color: #fafafa;
+            border: 1px solid #d5d9d9;
+            border-radius: 2px;
+            padding-left: 10px;
+            padding-right: 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .decks-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            gap: 20px;
         }
     </style>
     <style id="text-style">
@@ -636,9 +656,25 @@
             }
 
             async function makeDecksTab() {
-                const sections = [{name: "New Decks", cond: "new", num: 4}, {name: "Winning Decks", cond: "win", num: "all"}]
-                const container = document.createElement("div");
-                container.className = "decks-container";
+                const sections = [{name: "New Decks", cond: "new", num: 4}, {name: "Winning Decks", cond: "win", num: "all"}];
+
+                const content_container = document.createElement("div");
+                content_container.className = "decks-container";
+
+                const sections_container = document.createElement("div");
+                sections_container.className = "deck-sections-container";
+
+                const decksearch_input = document.createElement("input");
+                decksearch_input.className = "search-input";
+                decksearch_input.id    = "decksearch-input";
+                decksearch_input.placeholder = "Search decks ...";
+                decksearch_input.addEventListener("keypress", (e) => {
+                    if (e.key == "Enter") {
+                        window.location.href = `/decksearch?search=${encodeURIComponent(document.getElementById("decksearch-input").value)}`;
+                    }
+                });
+
+                content_container.appendChild(decksearch_input);
 
                 for (const section of sections) {
                     const name = section.name;
@@ -674,10 +710,12 @@
                     section_container.appendChild(section_header);
                     section_container.appendChild(line);
                     section_container.appendChild(decks_container);
-                    container.appendChild(section_container);
+                    sections_container.appendChild(section_container);
                 }
+                
+                content_container.appendChild(sections_container);
 
-                return container;
+                return content_container;
             }
 
             function makeUsersTab() {
