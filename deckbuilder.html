@@ -1,7 +1,7 @@
 ﻿<html>
 <head>
 	<title>Deckbuilder</title>
-	<link rel="icon" type="image/x-icon" href="/img/deck.png">
+	<link rel="icon" type="image/x-icon" href="/img/header/deck.png">
 	<link rel="stylesheet" href="resources/mana.css">
 	<link rel="stylesheet" href="/resources/header.css">
 </head>
@@ -700,10 +700,10 @@
 	}
 </style>
 <body>
-	<img class="preload-hidden" src="/img/add.png">
-	<img class="preload-hidden" src="/img/delete.png">
-	<img class="preload-hidden" src="/img/sb-delete.png">
-	<img class="preload-hidden" src="/img/sb-add.png">
+	<img class="preload-hidden" src="/img/header/deckbuilder/add.png">
+	<img class="preload-hidden" src="/img/header/deckbuilder/delete.png">
+	<img class="preload-hidden" src="/img/header/deckbuilder/sb-delete.png">
+	<img class="preload-hidden" src="/img/header/deckbuilder/sb-add.png">
 	<img class="preload-hidden" src="/img/sanctum.png">
 	<img class="preload-hidden" src="/img/export.png">
 	<img class="preload-hidden" src="/img/export-white.png">
@@ -713,13 +713,13 @@
 	<div class="header">
 		<div class="search-grid">
 			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-			<img class="sg-icon" src="/img/search.png" onclick="goToSearch()">
-			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
-			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+			<img class="sg-icon" src="/img/header/search.png" onclick="goToSearch()">
+			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
 			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
-			<a href="/community" id="account-link"><img src="/img/community.png" class="sg-icon">Community</a>
-			<a href="/settings" id="account-link"><img src="/img/settings.png" class="sg-icon"></a>
-                <a href="/account" id="account-link"><img src="/img/account.png" class="sg-icon"></a>
+			<a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>
+			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+                <a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
 		</div>
 	</div>
 	<div id="myContextMenu" class="rc-menu popout">
@@ -780,7 +780,7 @@
 					<img src="/img/export.png" class="file-icon">
 				</div>
 				<div id="settings-btn" class="file-icon-container" title="settings" style="cursor: pointer;" onclick="openSettingsModal('Home')">
-					<img src="/img/settings.png" class="file-icon">
+					<img src="/img/header/settings.png" class="file-icon">
 				</div> 
 				<select name="file-menu" class="file-menu popout" id="file-menu">
 					<option value="default">Actions ...</option>
@@ -3589,14 +3589,14 @@
 			if (key == "sideboard")
 			{
 				// if its the sideboard, add the sideboard delete button and setup the onclick accordingly
-				del_btn.src = "/img/sb-delete.png";
+				del_btn.src = "/img/header/deckbuilder/sb-delete.png";
 				del_btn.onclick = function() {
 					sideboard.splice(sideboard.indexOf(card), 1);
 					processDeck();
 				}
 
 				// if its the sideboard, add the sideboard add button and setup the onclick accordingly
-				add_btn.src = "/img/sb-add.png";
+				add_btn.src = "/img/header/deckbuilder/sb-add.png";
 				add_btn.onclick = function() {
 					addCardToSideboard(card);
 					processDeck();
@@ -3617,14 +3617,14 @@
 			} else if (key == "sanctum")
 			{
 				// if its the sanctum, add the sideboard delete button and setup the onclick accordingly
-				del_btn.src = "/img/sb-delete.png";
+				del_btn.src = "/img/header/deckbuilder/sb-delete.png";
 				del_btn.onclick = function() {
 					sanctum.splice(sanctum.indexOf(card), 1);
 					processDeck();
 				}
 
 				// if its the sanctum, add the sideboard add button and setup the onclick accordingly
-				add_btn.src = "/img/sb-add.png";
+				add_btn.src = "/img/header/deckbuilder/sb-add.png";
 				add_btn.onclick = function() {
 					addCardToSanctum(card);
 				}
@@ -3645,8 +3645,8 @@
 			else
 			{
 				// make the delete button have the normal delete image
-				del_btn.src = "/img/delete.png";
-				add_btn.src = "/img/add.png";
+				del_btn.src = "/img/header/deckbuilder/delete.png";
+				add_btn.src = "/img/header/deckbuilder/add.png";
 				let card_parsed = JSON.parse(card);
 				del_btn.onclick = function() {
 					deck.splice(deck.indexOf(card), 1);

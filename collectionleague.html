@@ -106,7 +106,7 @@
         }
         .tab-select {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 10px;
             margin-top: 40px;
         }
@@ -118,6 +118,9 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 10px;
+            display: none;
+        }
+        .rounds-tab {
             display: none;
         }
         .main-tab {
@@ -511,14 +514,14 @@
         <div class="header">
             <div class="search-grid">
                 <a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-                <img class="sg-icon" src="/img/search.png">
+                <img class="sg-icon" src="/img/header/search.png">
                 <input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
-                <a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
-                <a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+                <a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
+                <a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
                 <a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
-                <a href="/community" id="account-link"><img src="/img/community.png" class="sg-icon">Community</a>            
-                <a href="/settings" id="account-link"><img src="/img/settings.png" class="sg-icon"></a>
-                <a href="/account" id="account-link"><img src="/img/account.png" class="sg-icon"></a>
+                <a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>            
+                <a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+                <a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
             </div>
         </div>
         <div class="selects" id="selects">
@@ -527,12 +530,16 @@
 		</div>
         <div class="page-container">
             <div class="tab-select" id="tab-select">
-                <div class="tab-btn-active tab-btn" id="games-tab-select" onclick="changeTab('games')">
+                <div class="tab-btn-active tab-btn" id="home-tab-select" onclick="changeTab('home')">
+                    <img src="img/home.png" class="tab-switch-icon">
+                    <span>Home</span>
+                </div>
+                <div class="tab-btn" id="games-tab-select" onclick="changeTab('games')">
                     <img src="img/swords.png" class="tab-switch-icon">
                     <span>Games</span>
                 </div>
                 <div class="tab-btn" id="decklists-tab-select" onclick="changeTab('decklists')">
-                    <img src="img/deck.png" class="tab-switch-icon">
+                    <img src="img/header/deck.png" class="tab-switch-icon">
                     <span>Decks</span>
                 </div>
                 <div class="tab-btn" id="runs-tab-select" onclick="changeTab('runs')">
@@ -541,6 +548,7 @@
                 </div>
             </div>
             <div class="main-tab" id="main-tab">
+                <div class="home-tab" id="home"></div>
                 <div class="decks-tab" id="decklists"></div>
                 <div class="rounds-tab" id="games"></div>
                 <div class="runs-tab" id="runs"></div>
@@ -711,7 +719,7 @@
             let user_data;
             let event_data;
             const urlParams = new URLSearchParams(window.location.search);
-            const event = "League";
+            const event = "Collection League";
 
             await getDoc(doc(db, 'users', username)).then(async docSnap => {
                 user_data = docSnap.data();

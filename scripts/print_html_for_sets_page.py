@@ -9,7 +9,7 @@ def generateHTML():
 	html_content = '''<html>
 	<head>
 	  <title>All Sets</title>
-	  <link rel="icon" type="image/x-icon" href="/img/sets.png">
+	  <link rel="icon" type="image/x-icon" href="/img/header/sets.png">
 	  <link rel="stylesheet" href="/resources/mana.css">
 	  <link rel="stylesheet" href="/resources/header.css">
 	</head>

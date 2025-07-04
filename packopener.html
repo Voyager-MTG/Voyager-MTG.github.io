@@ -285,15 +285,15 @@
         <div class="header">
             <div class="search-grid">
                 <a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-                <img class="sg-icon" src="/img/search.png">
+                <img class="sg-icon" src="/img/header/search.png">
                 <input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
-                <a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
-                <a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+                <a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
+                <a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
                 <a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
-                <a href="/community" id="account-link"><img src="/img/community.png" class="sg-icon">Community</a>
-                <a href="/settings" id="account-link"><img src="/img/settings.png" class="sg-icon"></a>
-                <a href="/account" id="account-link"><img src="/img/account.png" class="sg-icon"></a>
-                <a href="/account" id="account-link"><img src="/img/account.png" class="sg-icon"></a>
+                <a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>
+                <a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+                <a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
+                <a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
             </div>
         </div>
         <input id="coll-league-inp" style="display: none;">
@@ -310,7 +310,7 @@
                     </div>
                     <div class="top-area-section">
                         <button onclick="importFile()" class="top-area-button dark-button">Upload file<img src="/img/create.png" class="top-area-btn-icon"></button>
-                        <button onclick="openSet()" class="top-area-button dark-button">Open set<img src="/img/sets.png" class="top-area-btn-icon"></button>
+                        <button onclick="openSet()" class="top-area-button dark-button">Open set<img src="/img/header/sets.png" class="top-area-btn-icon"></button>
                     </div>
                     <div class="top-area-section">
                         <button class="top-area-button dark-button" onclick="nextPack()"  id="next-pack">Next pack</button>
@@ -1400,7 +1400,7 @@
                     pack_link.target = "_blank";
                     
                     const set_logo = document.createElement("img");
-                    set_logo.src = pack.defaulticon ? `/img/sets.png` : `${path}/icon.png`;
+                    set_logo.src = pack.defaulticon ? `/img/header/sets.png` : `${path}/icon.png`;
                     set_logo.className = "set-logo";
 
                     const packs_num = document.createElement("input");

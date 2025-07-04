@@ -210,8 +210,8 @@ def generateHTML():
 			<img class="banner" src="img/banner.png"></img>
 			<input type="text" inputmode="search" placeholder="Search ..." autofocus="autofocus" name="search" id="search" spellcheck="false" autocomplete="off" autocorrext="off" spellcheck="false">
 			<div class="button-grid">
-				<button onclick="goToSets()"><img src="/img/sets.png" class="btn-img">All Sets</button>
-				<button onclick="goToDeckbuilder()"><img src="/img/deck.png" class="btn-img">Deckbuilder</button>
+				<button onclick="goToSets()"><img src="/img/header/sets.png" class="btn-img">All Sets</button>
+				<button onclick="goToDeckbuilder()"><img src="/img/header/deck.png" class="btn-img">Deckbuilder</button>
 				<button onclick="randomCard()"><img src="/img/random.png" class="btn-img">Random Card</button>
 			</div>
 			<div class="two-part-grid">
