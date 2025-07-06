@@ -171,6 +171,7 @@ def generateHTML(code):
 		width: 100%;
 		height: auto;
 		display: block;
+		transition: 0.2s;
 	}
 	.card-text {
 		padding-top: 20px;
