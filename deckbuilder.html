@@ -2980,6 +2980,42 @@
 						return card_artist.includes(check);
 					}
 				}
+				if (term == "ft" || term == "flavor" || term == "flavour" || term == "flavortext" || term == "flavourtext")
+				{
+					if (modifier == "!" || modifier == "=")
+					{
+						return card_stats.flavor_text == check;
+					}
+					else if (modifier == ":")
+					{
+						return card_stats.flavor_text.includes(check);
+					}
+					else if (modifier == "<")
+					{
+						return card_stats.flavor_text < check;
+					}
+					else if (modifier == ">")
+					{
+						return card_stats.flavor_text > check;
+					}
+				}
+				if (term == "lore")
+				{
+					if (modifier == "!" || modifier == "=" || modifier == ":")
+					{
+						return card_stats.flavor_text.toLowerCase().includes(check) || card_name.includes(check) || card.notes.toLowerCase().includes(check);
+					}
+				}
+				if (term == "designer" || term == "design") {
+					if (modifier == "!" || modifier == "=" || modifier == ":")
+					{
+						return card_stats.designer.includes(check);
+					}
+				}
+				if (modifier == ":" || modifier == "=" || modifier == "!") {
+					let regex = new RegExp(`!tag<${term}> ${check}\\b`);
+					return regex.test(card_notes);
+				}
 			}
 			let regex = new RegExp(token.replaceAll("+","\\+"));
 			return (regex.test(card_stats.special_text) && (localStorage.getItem('settings.searchalias') == "On")) || card_name.includes(token);
