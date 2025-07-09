@@ -823,6 +823,11 @@
             }).catch(error => console.error('Error:', error));
 
             let card_list_arrayified = card_list.cards;
+
+            await getDoc(doc(db, 'events', event)).then(async docSnap => {
+                // initialize
+                event_data = docSnap.data();
+            });
             // console.log
 
             if (sessionid) {
@@ -864,6 +869,8 @@
             }
 
             async function makeRoundsTab() {
+                const rounds = JSON.parse(event_data.rounds);
+                const decks = JSON.parse(event_data.decks);
                 document.getElementById("decklists").innerHTML = "";
                 document.getElementById("games").innerHTML = "";
                 let swiss_container = document.createElement("div");
@@ -1094,130 +1101,188 @@
                 }
             }
 
-            async function reload() {
-
-                await getDoc(doc(db, 'events', event)).then(async docSnap => {
-                    // initialize
-                    event_data = docSnap.data();
-                    const decks = JSON.parse(event_data.decks);
-                    const rounds = JSON.parse(event_data.rounds);
-
-                    // ended text and join button
-                    if (event_data.ended)
-                        document.getElementById("ended-text").style.display = "inline-block";
-                    if (event_data.stage == "initial")
-                        document.getElementById("join").style.display = "inline"
-
-                    document.title = event;
-
-                    // button listeners
-                    if (admin) {
-                        addAdminEventListeners();
-                    }
-                    addButtonEventListeners();
-                    
-
-                    if (event_data.stage != "initial") {
-                        for (const user in decks) {
-                            let deck = decks[user];
-                            let full_deck_container = document.createElement('div');
-                            full_deck_container.className = "full-deck-container";
-                            let deck_container = document.createElement('div');
-                            deck_container.className = "deck-container";
-                            let colors_container = document.createElement('div');
-                            colors_container.className = "colors-container";
-                            let deck_preview = document.createElement('img');
-                            let card_stats;
-                            for (const card of card_list_arrayified) {
-                                if (deck.previewimg == card.card_name) {
-                                    card_stats = card;
-                                    break;
-                                }
-                            }
-                            deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
-                            deck_preview.onclick = function() {
-                                document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                                let deck_header = document.createElement("span");
-                                deck_header.className = "deck-window-header";
-                                deck_header.innerText = user + "'s " + deck.name;
-                                document.getElementById("modal-content").appendChild(deck_header);
-                                document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
-                                document.getElementById("modal-container").style.display = 'block';
-                            }
-                            deck_preview.className = "deck-preview-img";
-                            let deck_name = document.createElement('div');
-                            deck_name.className = "deck-name";
-                            deck_name.innerText = user + "'s " + deck.name;
-                            let deck_btns = document.createElement('div');
-                            deck_btns.className = "deck-buttons";
-                            let deck_link = document.createElement('a');
-                            deck_link.href = `/deckbuilder?edeck=${event}-${deck.name}`;
-                            deck_link.innerText = "Deckbuilder";
-                            deck_link.className = "deck-link-green deck-icon-shadow";
-                            deck_link.target = "_blank";
-                            let deck_edit_icon = document.createElement('img');
-                            deck_edit_icon.src = "/img/edit.png";
-                            deck_edit_icon.className = "deck-icon-green";
-                            deck_link.appendChild(deck_edit_icon);
-                            let deck_link2 = document.createElement('span');
-                            deck_link2.innerText = "View";
-                            deck_link2.className = "deck-link-blue deck-icon-shadow";
-                            let deck_edit_icon2 = document.createElement('img');
-                            deck_edit_icon2.src = "/img/show-white.png";
-                            deck_edit_icon2.className = "deck-icon-blue";
-                            deck_link2.onclick = function() {
-                                document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                                let deck_header = document.createElement("span");
-                                deck_header.className = "deck-window-header";
-                                deck_header.innerText = user + "'s " + deck.name;
-                                document.getElementById("modal-content").appendChild(deck_header);
-                                document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
-                                document.getElementById("modal-container").style.display = 'block';
-                            }
-                            deck_link2.appendChild(deck_edit_icon2);
-                            if (deck.colors) {
-                                for (const color of deck.colors) {
-                                    let color_ele = document.createElement('img');
-                                    color_ele.src = `img/mana_${color}.png`;
-                                    color_ele.className = "mana-img";
-                                    colors_container.appendChild(color_ele);
-                                }
-                            }
-                            deck_btns.appendChild(deck_link);
-                            deck_btns.appendChild(deck_link2);
-                            deck_container.appendChild(deck_name);
-                            deck_container.appendChild(deck_preview);
-                            deck_container.appendChild(deck_btns);
-                            full_deck_container.appendChild(deck_container);
-                            if(deck.colors) full_deck_container.appendChild(colors_container);
-                            if (deck.colors){
-                                document.getElementById("decklists").appendChild(full_deck_container);
-                            } else {
-                                document.getElementById("decklists").appendChild(deck_container);
-                            }
+            async function makeDecksTab() {
+                const decks = JSON.parse(event_data.decks);
+                for (const user in decks) {
+                    let deck = decks[user];
+                    let full_deck_container = document.createElement('div');
+                    full_deck_container.className = "full-deck-container";
+                    let deck_container = document.createElement('div');
+                    deck_container.className = "deck-container";
+                    let colors_container = document.createElement('div');
+                    colors_container.className = "colors-container";
+                    let deck_preview = document.createElement('img');
+                    let card_stats;
+                    for (const card of card_list_arrayified) {
+                        if (deck.previewimg == card.card_name) {
+                            card_stats = card;
+                            break;
                         }
+                    }
+                    deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+                    deck_preview.onclick = function() {
+                        document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+                        let deck_header = document.createElement("span");
+                        deck_header.className = "deck-window-header";
+                        deck_header.innerText = user + "'s " + deck.name;
+                        document.getElementById("modal-content").appendChild(deck_header);
+                        document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+                        document.getElementById("modal-container").style.display = 'block';
+                    }
+                    deck_preview.className = "deck-preview-img";
+                    let deck_name = document.createElement('div');
+                    deck_name.className = "deck-name";
+                    deck_name.innerText = user + "'s " + deck.name;
+                    let deck_btns = document.createElement('div');
+                    deck_btns.className = "deck-buttons";
+                    let deck_link = document.createElement('a');
+                    deck_link.href = `/deckbuilder?edeck=${event}-${deck.name}`;
+                    deck_link.innerText = "Deckbuilder";
+                    deck_link.className = "deck-link-green deck-icon-shadow";
+                    deck_link.target = "_blank";
+                    let deck_edit_icon = document.createElement('img');
+                    deck_edit_icon.src = "/img/edit.png";
+                    deck_edit_icon.className = "deck-icon-green";
+                    deck_link.appendChild(deck_edit_icon);
+                    let deck_link2 = document.createElement('span');
+                    deck_link2.innerText = "View";
+                    deck_link2.className = "deck-link-blue deck-icon-shadow";
+                    let deck_edit_icon2 = document.createElement('img');
+                    deck_edit_icon2.src = "/img/show-white.png";
+                    deck_edit_icon2.className = "deck-icon-blue";
+                    deck_link2.onclick = function() {
+                        document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+                        let deck_header = document.createElement("span");
+                        deck_header.className = "deck-window-header";
+                        deck_header.innerText = user + "'s " + deck.name;
+                        document.getElementById("modal-content").appendChild(deck_header);
+                        document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+                        document.getElementById("modal-container").style.display = 'block';
+                    }
+                    deck_link2.appendChild(deck_edit_icon2);
+                    if (deck.colors) {
+                        for (const color of deck.colors) {
+                            let color_ele = document.createElement('img');
+                            color_ele.src = `img/mana_${color}.png`;
+                            color_ele.className = "mana-img";
+                            colors_container.appendChild(color_ele);
+                        }
+                    }
+                    deck_btns.appendChild(deck_link);
+                    deck_btns.appendChild(deck_link2);
+                    deck_container.appendChild(deck_name);
+                    deck_container.appendChild(deck_preview);
+                    deck_container.appendChild(deck_btns);
+                    full_deck_container.appendChild(deck_container);
+                    if(deck.colors) full_deck_container.appendChild(colors_container);
+                    if (deck.colors){
+                        document.getElementById("decklists").appendChild(full_deck_container);
+                    } else {
+                        document.getElementById("decklists").appendChild(deck_container);
+                    }
+                }
+            }
 
-                        const stats_tab = document.getElementById("stats");
-                        stats_tab.innerHTML = "";
-                        const stats = statsHelper(rounds.swiss);
+            async function reload() {
+                const decks = JSON.parse(event_data.decks);
+                const rounds = JSON.parse(event_data.rounds);
+
+                // ended text and join button
+                if (event_data.ended)
+                    document.getElementById("ended-text").style.display = "inline-block";
+                if (event_data.stage == "initial")
+                    document.getElementById("join").style.display = "inline"
+
+                document.title = event;
+
+                // button listeners
+                if (admin) {
+                    addAdminEventListeners();
+                }
+                addButtonEventListeners();
+
+                makeRoundsTab();
+
+                if (event_data.stage != "initial") {
+                    makeDecksTab();
+
+                    const stats_tab = document.getElementById("stats");
+                    stats_tab.innerHTML = "";
+                    const stats = statsHelper(rounds.swiss);
+
+                    const row_container = document.createElement("div");
+                    row_container.className = "stats-row-container";
+                    const rank_container = document.createElement("div");
+                    rank_container.className = "stats-rank-container stats-row-item stats-row-header";
+                    rank_container.innerText = "Rank";
+                    const name_container = document.createElement("div");
+                    name_container.className = "stats-name-container stats-row-item stats-row-header";
+                    name_container.innerText = "Player";
+                    const record_container = document.createElement("div");
+                    record_container.className = "stats-record-container stats-row-item stats-row-header";
+                    record_container.innerText = `Record`;
+                    const match_total_container = document.createElement("div");
+                    match_total_container.className = "stats-match-total-container stats-row-item stats-row-header";
+                    match_total_container.innerText = `Game Record`;
+                    const omw_container = document.createElement("div");
+                    omw_container.className = "stats-omw-container stats-row-item stats-row-header";
+                    omw_container.innerText = "OM%";
+
+                    row_container.appendChild(rank_container);
+                    row_container.appendChild(name_container);
+                    row_container.appendChild(record_container);
+                    row_container.appendChild(match_total_container);
+                    row_container.appendChild(omw_container);
+
+                    stats_tab.appendChild(row_container);
+
+                    let seedings = [];
+
+                    for (const player in stats.records) {
+                        let record = stats.records[player];
+                        let total = stats.match_total[player];
+                        seedings.push({player: player, record: record, match_total: total, omw: stats.omw[player]});
+                    }
+
+                    seedings.sort(seeder);
+
+                    let i = 1;
+
+                    for (const player_stats of seedings) {
+                        const player = player_stats.player;
+                        if (player == "Bye")
+                            continue;
+                        const record      = player_stats.record;
+                        const match_total = player_stats.match_total;
+                        const omw         = player_stats.omw;
 
                         const row_container = document.createElement("div");
                         row_container.className = "stats-row-container";
                         const rank_container = document.createElement("div");
-                        rank_container.className = "stats-rank-container stats-row-item stats-row-header";
-                        rank_container.innerText = "Rank";
+                        rank_container.className = "stats-rank-container stats-row-item";
+                        rank_container.innerText = i;
                         const name_container = document.createElement("div");
-                        name_container.className = "stats-name-container stats-row-item stats-row-header";
-                        name_container.innerText = "Player";
+                        name_container.className = "stats-name-container stats-row-item";
+                        name_container.innerText = player;
+                        let deck = decks[player];
+                        name_container.onclick = function() {
+                            document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+                            let deck_header = document.createElement("span");
+                            deck_header.className = "deck-window-header";
+                            deck_header.innerText = player + "'s " + deck.name;
+                            document.getElementById("modal-content").appendChild(deck_header);
+                            document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+                            document.getElementById("modal-container").style.display = 'block';
+                        }
                         const record_container = document.createElement("div");
-                        record_container.className = "stats-record-container stats-row-item stats-row-header";
-                        record_container.innerText = `Record`;
+                        record_container.className = "stats-record-container stats-row-item";
+                        record_container.innerText = `${record[0]}-${record[1]}`;
                         const match_total_container = document.createElement("div");
-                        match_total_container.className = "stats-match-total-container stats-row-item stats-row-header";
-                        match_total_container.innerText = `Game Record`;
+                        match_total_container.className = "stats-match-total-container stats-row-item";
+                        match_total_container.innerText = `${match_total[0]}-${match_total[1]}`;
                         const omw_container = document.createElement("div");
-                        omw_container.className = "stats-omw-container stats-row-item stats-row-header";
-                        omw_container.innerText = "OM%";
+                        omw_container.className = "stats-omw-container stats-row-item";
+                        omw_container.innerText = omw * 100 + "%";
 
                         row_container.appendChild(rank_container);
                         row_container.appendChild(name_container);
@@ -1226,78 +1291,21 @@
                         row_container.appendChild(omw_container);
 
                         stats_tab.appendChild(row_container);
-
-                        let seedings = [];
-
-                        for (const player in stats.records) {
-                            let record = stats.records[player];
-                            let total = stats.match_total[player];
-                            seedings.push({player: player, record: record, match_total: total, omw: stats.omw[player]});
-                        }
-
-                        seedings.sort(seeder);
-
-                        let i = 1;
-
-                        for (const player_stats of seedings) {
-                            const player = player_stats.player;
-                            if (player == "Bye")
-                                continue;
-                            const record      = player_stats.record;
-                            const match_total = player_stats.match_total;
-                            const omw         = player_stats.omw;
-
-                            const row_container = document.createElement("div");
-                            row_container.className = "stats-row-container";
-                            const rank_container = document.createElement("div");
-                            rank_container.className = "stats-rank-container stats-row-item";
-                            rank_container.innerText = i;
-                            const name_container = document.createElement("div");
-                            name_container.className = "stats-name-container stats-row-item";
-                            name_container.innerText = player;
-                            let deck = decks[player];
-                            name_container.onclick = function() {
-                                document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                                let deck_header = document.createElement("span");
-                                deck_header.className = "deck-window-header";
-                                deck_header.innerText = player + "'s " + deck.name;
-                                document.getElementById("modal-content").appendChild(deck_header);
-                                document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
-                                document.getElementById("modal-container").style.display = 'block';
-                            }
-                            const record_container = document.createElement("div");
-                            record_container.className = "stats-record-container stats-row-item";
-                            record_container.innerText = `${record[0]}-${record[1]}`;
-                            const match_total_container = document.createElement("div");
-                            match_total_container.className = "stats-match-total-container stats-row-item";
-                            match_total_container.innerText = `${match_total[0]}-${match_total[1]}`;
-                            const omw_container = document.createElement("div");
-                            omw_container.className = "stats-omw-container stats-row-item";
-                            omw_container.innerText = omw * 100 + "%";
-
-                            row_container.appendChild(rank_container);
-                            row_container.appendChild(name_container);
-                            row_container.appendChild(record_container);
-                            row_container.appendChild(match_total_container);
-                            row_container.appendChild(omw_container);
-
-                            stats_tab.appendChild(row_container);
-                            i++;
-                        }
-
-                    } else {
-                        const initial_text = document.createElement("span");
-                        initial_text.className = "initial-text text";
-                        initial_text.innerText = `Deck submissions are open for ${event}`;
-                        document.getElementById("decklists").appendChild(initial_text);
-                        
-                        const initial_text2 = document.createElement("span");
-                        initial_text2.className = "initial-text text";
-                        initial_text2.style.width = "100%";
-                        initial_text2.innerText = `Deck submissions are open for ${event}`;
-                        document.getElementById("games").appendChild(initial_text2);
+                        i++;
                     }
-              });
+
+                } else {
+                    const initial_text = document.createElement("span");
+                    initial_text.className = "initial-text text";
+                    initial_text.innerText = `Deck submissions are open for ${event}`;
+                    document.getElementById("decklists").appendChild(initial_text);
+                    
+                    const initial_text2 = document.createElement("span");
+                    initial_text2.className = "initial-text text";
+                    initial_text2.style.width = "100%";
+                    initial_text2.innerText = `Deck submissions are open for ${event}`;
+                    document.getElementById("games").appendChild(initial_text2);
+                }
             }
 
             function deckHTML(deck, card_list) {
