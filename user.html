@@ -466,25 +466,25 @@
                         }
                         deck_link.appendChild(deck_edit_icon); // TODO: Fix this
                         if (logged_in) {
-                            deck_submit_text = document.createElement("div");
-                            deck_submit_text.innerText = "GP1";
-                            deck_submit_text.className = "deck-link deck-icon-shadow";
-                            let deck_submit_icon = document.createElement('img');
-                            deck_submit_icon.src = "/img/export-white.png";
-                            deck_submit_icon.className = "deck-icon-blue";
-                            deck_submit_text.style.cursor = "pointer";
-                            deck_submit_text.onclick = async function() {
-                                await getDoc(doc(db, "events", "GP1")).then(async docSnap2 => {
-                                    let tourndata = docSnap2.data();
-                                    let decks_ = JSON.parse(tourndata.decks);
-                                    decks_[username] = deck;
-                                    await updateDoc(doc(db, "events", "GP1"), {
-                                        decks: JSON.stringify(decks_)
-                                    });
-                                });
-                                alert("Submitted deck " + deck.name + "to GP1!");
-                            }
-                            deck_submit_text.appendChild(deck_submit_icon);
+                        //     deck_submit_text = document.createElement("div");
+                        //     deck_submit_text.innerText = "GP1";
+                        //     deck_submit_text.className = "deck-link deck-icon-shadow";
+                        //     let deck_submit_icon = document.createElement('img');
+                        //     deck_submit_icon.src = "/img/export-white.png";
+                        //     deck_submit_icon.className = "deck-icon-blue";
+                        //     deck_submit_text.style.cursor = "pointer";
+                        //     deck_submit_text.onclick = async function() {
+                        //         await getDoc(doc(db, "events", "GP1")).then(async docSnap2 => {
+                        //             let tourndata = docSnap2.data();
+                        //             let decks_ = JSON.parse(tourndata.decks);
+                        //             decks_[username] = deck;
+                        //             await updateDoc(doc(db, "events", "GP1"), {
+                        //                 decks: JSON.stringify(decks_)
+                        //             });
+                        //         });
+                        //         alert("Submitted deck " + deck.name + "to GP1!");
+                        //     }
+                        //     deck_submit_text.appendChild(deck_submit_icon);
                             deck_delete_icon = document.createElement('img');
                             deck_delete_icon.src = "/img/trash.png";
                             deck_delete_icon.className = "deck-icon-red deck-icon-shadow";

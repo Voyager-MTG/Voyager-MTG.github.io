@@ -782,6 +782,7 @@
             }
         </script>
         <script type="module">
+            // <!--MARK: init-->
             // Import the functions you need from the SDKs you need
             import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
             import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
@@ -799,9 +800,6 @@
                 measurementId: "G-TQ1L48F25M"
             };
 
-            const color_bgs = {
-                white: "#"
-            }
             
             // Initialize Firebase
             const app = initializeApp(firebaseConfig);
@@ -844,6 +842,7 @@
                 });
             }
 
+            // #endregion
             document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
 
             function addAdminEventListeners() {
@@ -883,47 +882,7 @@
                     round_container.className = "round-container";
                     let round = rounds['swiss'][round_name];
                     for (const game of round) {
-                        let game_container = document.createElement("div");
-                        game_container.className = "game-container";
-                        let game_grid = document.createElement("div");
-                        game_grid.className = "game-grid";
-                        let side = "top";
-                        for (const player in game) {
-                            let player_name = document.createElement("div");
-                            let player_score = document.createElement("div");
-                            let deck = decks[player];
-                            player_name.className = `player-text player-text-${side}`;
-                            player_name.innerText = player;
-                            player_name.onclick = function() {
-                                document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                                let deck_header = document.createElement("span");
-                                deck_header.className = "deck-window-header";
-                                deck_header.innerText = player + "'s " + deck.name;
-                                document.getElementById("modal-content").appendChild(deck_header);
-                                document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
-                                document.getElementById("modal-container").style.display = 'block';
-                            }
-                            let gameClass = "";
-                            if (game[player] == "2") gameClass = "winner";
-                            if (game[player] == "0") gameClass = "loser";
-                            if (game[player] == "1") gameClass = "loser";
-                            player_score.className = `player-score ${gameClass} player-score-${side}`;
-                            player_score.innerText = game[player];
-                            player_score.onclick = function() {
-                                document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                                document.getElementById("modal-content").appendChild(reportHTML(game, round, round_name, event_data, event, decks));
-                                document.getElementById("modal-container").style.display = 'block';
-                            }
-                            game_grid.appendChild(player_name);
-                            game_grid.appendChild(player_score);
-                            if (side == "top") {
-                                side = "bottom";
-                            }
-                        }
-                        let bar = document.createElement("div");
-                        bar.className = "bar";
-                        game_container.appendChild(bar);
-                        game_container.appendChild(game_grid);
+                        const game_container = makeGameContainer(game);
                         round_container.appendChild(game_container);
                     }
                     swiss_container.appendChild(round_header);
@@ -939,16 +898,126 @@
                 let matches;
                 let topcut;
                 if (event_data.stage == 'bracket') {
-                    const bracket_header = document.createElement('span');
-                    bracket_header.className = "round-headers text";
-                    bracket_header.innerText = "Top Cut Bracket";
-                    document.getElementById("games").appendChild(bracket_header);
-                    topcut = await topCutHelper(rounds); // {players, matches, seedings, stats}
-                    console.log(topcut);
-                    matches = topcut.matches;
-                    structure = parseStructure(topcut.structure);
-                    console.log(structure);
-                    const layer = structure.raw[0];
+                    makeBracket();
+                }
+            }
+
+            function makeGameContainer(game) {
+                const rounds = JSON.parse(event_data.rounds);
+                const decks = JSON.parse(event_data.decks);
+                let game_container = document.createElement("div");
+                game_container.className = "game-container";
+                let game_grid = document.createElement("div");
+                game_grid.className = "game-grid";
+                let side = "top";
+                for (const player in game) {
+                    let player_name = document.createElement("div");
+                    let player_score = document.createElement("div");
+                    let deck = decks[player];
+                    player_name.className = `player-text player-text-${side}`;
+                    player_name.innerText = player;
+                    player_name.onclick = function() {
+                        document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+                        let deck_header = document.createElement("span");
+                        deck_header.className = "deck-window-header";
+                        deck_header.innerText = player + "'s " + deck.name;
+                        document.getElementById("modal-content").appendChild(deck_header);
+                        document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+                        document.getElementById("modal-container").style.display = 'block';
+                    }
+                    let gameClass = "";
+                    if (game[player] == "2") gameClass = "winner";
+                    if (game[player] == "0") gameClass = "loser";
+                    if (game[player] == "1") gameClass = "loser";
+                    player_score.className = `player-score ${gameClass} player-score-${side}`;
+                    player_score.innerText = game[player];
+                    player_score.onclick = function() {
+                        document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+                        document.getElementById("modal-content").appendChild(reportHTML(game, round, round_name, event_data, event, decks));
+                        document.getElementById("modal-container").style.display = 'block';
+                    }
+                    game_grid.appendChild(player_name);
+                    game_grid.appendChild(player_score);
+                    if (side == "top") {
+                        side = "bottom";
+                    }
+                }
+                let bar = document.createElement("div");
+                bar.className = "bar";
+                game_container.appendChild(bar);
+                game_container.appendChild(game_grid);
+
+                return game_container;
+            }
+
+            async function makeBracket(rounds) {
+                const bracket_header = document.createElement('span');
+                bracket_header.className = "round-headers text";
+                bracket_header.innerText = "Top Cut Bracket";
+                document.getElementById("games").appendChild(bracket_header);
+                topcut = await topCutHelper(rounds); // {players, matches, seedings, stats}
+                matches = topcut.matches;
+                structure = parseStructure(topcut.structure);
+                const layer = structure.raw[0];
+                const layer_container = document.createElement("div");
+                layer_container.className = 'layer-container';
+                layer_container.style.gridTemplateRows = `repeat(${structure.info.size}, 1fr)`;
+                for (const match_name of layer) {
+                    const match = matches[match_name];
+                    let side = "top";
+                    const game_grid = document.createElement("div");
+                    game_grid.className = "game-grid";
+                    game_grid.style.height = "fit-content";
+                    for (const player_id in match) {
+                        console.log("match", match);
+                        let player;
+                        if (player_id != "Bye") player = topcut.seedings[player_id];
+                        else player = "Bye";
+                        if (player == undefined) {
+                            let p_match = matches[player_id];
+                            for (const p in p_match) {
+                                if (p_match[p] == "2") {
+                                    player = topcut.seedings[p].player;
+                                    break;
+                                }
+                            }
+                        } else {
+                            player = player.player;
+                        }
+                        if (player == undefined) {
+                            player = "TBD";
+                        } 
+                        const player_name = document.createElement('div');
+                        player_name.className = `player-text player-text-${side}`;
+                        player_name.onclick = function() {
+                            let deck = decks[player];
+                            document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+                            let deck_header = document.createElement("span");
+                            deck_header.className = "deck-window-header";
+                            deck_header.innerText = player + "'s " + deck.name;
+                            document.getElementById("modal-content").appendChild(deck_header);
+                            document.getElementById("modal-content").appendChild(deckHTML(deck  , card_list));
+                            document.getElementById("modal-container").style.display = 'block';
+                        }
+                        const player_score = document.createElement('div');
+                        let gameClass = "";
+                        if (match[player_id] == "2") gameClass = "winner";
+                        if (match[player_id] == "0") gameClass = "loser";
+                        if (match[player_id] == "1") gameClass = "loser";
+                        player_score.className = `player-score player-score-${side} ${gameClass}`;
+                        player_name.innerText = player;
+                        player_score.innerText = match[player_id];
+                        game_grid.appendChild(player_name);
+                        game_grid.appendChild(player_score);
+                        if (side == "top") {
+                            side = "bottom";
+                        }
+                    }
+                    layer_container.appendChild(game_grid);
+                }
+                if (layer.length != 0) bracket_container.appendChild(layer_container);
+
+                for (const layer of structure.raw[1]) {
                     const layer_container = document.createElement("div");
                     layer_container.className = 'layer-container';
                     layer_container.style.gridTemplateRows = `repeat(${structure.info.size}, 1fr)`;
@@ -957,12 +1026,13 @@
                         let side = "top";
                         const game_grid = document.createElement("div");
                         game_grid.className = "game-grid";
+                        game_grid.style.gridRow = "span " + structure.info.size / layer.length;
                         game_grid.style.height = "fit-content";
                         for (const player_id in match) {
-                            console.log("match", match);
+                            console.log("match", match, player_id);
                             let player;
                             if (player_id != "Bye") player = topcut.seedings[player_id];
-                            else player = "Bye";
+                            else player = {player: "Bye"};
                             if (player == undefined) {
                                 let p_match = matches[player_id];
                                 for (const p in p_match) {
@@ -986,7 +1056,7 @@
                                 deck_header.className = "deck-window-header";
                                 deck_header.innerText = player + "'s " + deck.name;
                                 document.getElementById("modal-content").appendChild(deck_header);
-                                document.getElementById("modal-content").appendChild(deckHTML(deck  , card_list));
+                                document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
                                 document.getElementById("modal-container").style.display = 'block';
                             }
                             const player_score = document.createElement('div');
@@ -997,6 +1067,35 @@
                             player_score.className = `player-score player-score-${side} ${gameClass}`;
                             player_name.innerText = player;
                             player_score.innerText = match[player_id];
+                            let game = {};
+                            for (const player_id in match) {
+                                let player2;
+                                if (player_id != "Bye") player2 = topcut.seedings[player_id];
+                                else player2 = {player: "Bye"};
+                                if (player2 == undefined) {
+                                    let p_match = matches[player_id];
+                                    for (const p in p_match) {
+                                        if (p_match[p] == "2") {
+                                            player2 = topcut.seedings[p].player;
+                                            break;
+                                        }
+                                    }
+                                } else {
+                                    player2 = player2.player;
+                                }
+                                if (player2 == undefined) {
+                                    player2 = "TBD";
+                                } 
+                                game[player2] = match[player_id];
+                            }
+                            console.log(game, game.length);
+                            if (Object.keys(game).length == 2) {
+                                player_score.onclick = function() {
+                                    document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+                                    document.getElementById("modal-content").appendChild(reportHTML(game, match_name, match_name, event_data, event, decks, false, match));
+                                    document.getElementById("modal-container").style.display = 'block';
+                                }
+                            }
                             game_grid.appendChild(player_name);
                             game_grid.appendChild(player_score);
                             if (side == "top") {
@@ -1005,100 +1104,10 @@
                         }
                         layer_container.appendChild(game_grid);
                     }
-                    if (layer.length != 0) bracket_container.appendChild(layer_container);
-
-                    for (const layer of structure.raw[1]) {
-                        const layer_container = document.createElement("div");
-                        layer_container.className = 'layer-container';
-                        layer_container.style.gridTemplateRows = `repeat(${structure.info.size}, 1fr)`;
-                        for (const match_name of layer) {
-                            const match = matches[match_name];
-                            let side = "top";
-                            const game_grid = document.createElement("div");
-                            game_grid.className = "game-grid";
-                            game_grid.style.gridRow = "span " + structure.info.size / layer.length;
-                            game_grid.style.height = "fit-content";
-                            for (const player_id in match) {
-                                console.log("match", match, player_id);
-                                let player;
-                                if (player_id != "Bye") player = topcut.seedings[player_id];
-                                else player = {player: "Bye"};
-                                if (player == undefined) {
-                                    let p_match = matches[player_id];
-                                    for (const p in p_match) {
-                                        if (p_match[p] == "2") {
-                                            player = topcut.seedings[p].player;
-                                            break;
-                                        }
-                                    }
-                                } else {
-                                    player = player.player;
-                                }
-                                if (player == undefined) {
-                                    player = "TBD";
-                                } 
-                                const player_name = document.createElement('div');
-                                player_name.className = `player-text player-text-${side}`;
-                                player_name.onclick = function() {
-                                    let deck = decks[player];
-                                    document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                                    let deck_header = document.createElement("span");
-                                    deck_header.className = "deck-window-header";
-                                    deck_header.innerText = player + "'s " + deck.name;
-                                    document.getElementById("modal-content").appendChild(deck_header);
-                                    document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
-                                    document.getElementById("modal-container").style.display = 'block';
-                                }
-                                const player_score = document.createElement('div');
-                                let gameClass = "";
-                                if (match[player_id] == "2") gameClass = "winner";
-                                if (match[player_id] == "0") gameClass = "loser";
-                                if (match[player_id] == "1") gameClass = "loser";
-                                player_score.className = `player-score player-score-${side} ${gameClass}`;
-                                player_name.innerText = player;
-                                player_score.innerText = match[player_id];
-                                let game = {};
-                                for (const player_id in match) {
-                                    let player2;
-                                    if (player_id != "Bye") player2 = topcut.seedings[player_id];
-                                    else player2 = {player: "Bye"};
-                                    if (player2 == undefined) {
-                                        let p_match = matches[player_id];
-                                        for (const p in p_match) {
-                                            if (p_match[p] == "2") {
-                                                player2 = topcut.seedings[p].player;
-                                                break;
-                                            }
-                                        }
-                                    } else {
-                                        player2 = player2.player;
-                                    }
-                                    if (player2 == undefined) {
-                                        player2 = "TBD";
-                                    } 
-                                    game[player2] = match[player_id];
-                                }
-                                console.log(game, game.length);
-                                if (Object.keys(game).length == 2) {
-                                    player_score.onclick = function() {
-                                        document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                                        document.getElementById("modal-content").appendChild(reportHTML(game, match_name, match_name, event_data, event, decks, false, match));
-                                        document.getElementById("modal-container").style.display = 'block';
-                                    }
-                                }
-                                game_grid.appendChild(player_name);
-                                game_grid.appendChild(player_score);
-                                if (side == "top") {
-                                    side = "bottom";
-                                }
-                            }
-                            layer_container.appendChild(game_grid);
-                        }
-                        bracket_container.appendChild(layer_container);
-                    }
-
-                    document.getElementById("games").appendChild(bracket_container);
+                    bracket_container.appendChild(layer_container);
                 }
+
+                document.getElementById("games").appendChild(bracket_container);
             }
 
             async function makeDecksTab() {
@@ -1163,7 +1172,7 @@
                     if (deck.colors) {
                         for (const color of deck.colors) {
                             let color_ele = document.createElement('img');
-                            color_ele.src = `img/mana_${color}.png`;
+                            color_ele.src = `img/mana/mana_${color}.png`;
                             color_ele.className = "mana-img";
                             colors_container.appendChild(color_ele);
                         }
@@ -1180,6 +1189,96 @@
                     } else {
                         document.getElementById("decklists").appendChild(deck_container);
                     }
+                }
+            }
+
+            async function makeStatsTab() {
+                const stats_tab = document.getElementById("stats");
+                stats_tab.innerHTML = "";
+                const stats = statsHelper(rounds.swiss);
+
+                const row_container = document.createElement("div");
+                row_container.className = "stats-row-container";
+                const rank_container = document.createElement("div");
+                rank_container.className = "stats-rank-container stats-row-item stats-row-header";
+                rank_container.innerText = "Rank";
+                const name_container = document.createElement("div");
+                name_container.className = "stats-name-container stats-row-item stats-row-header";
+                name_container.innerText = "Player";
+                const record_container = document.createElement("div");
+                record_container.className = "stats-record-container stats-row-item stats-row-header";
+                record_container.innerText = `Record`;
+                const match_total_container = document.createElement("div");
+                match_total_container.className = "stats-match-total-container stats-row-item stats-row-header";
+                match_total_container.innerText = `Game Record`;
+                const omw_container = document.createElement("div");
+                omw_container.className = "stats-omw-container stats-row-item stats-row-header";
+                omw_container.innerText = "OM%";
+
+                row_container.appendChild(rank_container);
+                row_container.appendChild(name_container);
+                row_container.appendChild(record_container);
+                row_container.appendChild(match_total_container);
+                row_container.appendChild(omw_container);
+
+                stats_tab.appendChild(row_container);
+
+                let seedings = [];
+
+                for (const player in stats.records) {
+                    let record = stats.records[player];
+                    let total = stats.match_total[player];
+                    seedings.push({player: player, record: record, match_total: total, omw: stats.omw[player]});
+                }
+
+                seedings.sort(seeder);
+
+                let i = 1;
+
+                for (const player_stats of seedings) {
+                    const player = player_stats.player;
+                    if (player == "Bye")
+                        continue;
+                    const record      = player_stats.record;
+                    const match_total = player_stats.match_total;
+                    const omw         = player_stats.omw;
+
+                    const row_container = document.createElement("div");
+                    row_container.className = "stats-row-container";
+                    const rank_container = document.createElement("div");
+                    rank_container.className = "stats-rank-container stats-row-item";
+                    rank_container.innerText = i;
+                    const name_container = document.createElement("div");
+                    name_container.className = "stats-name-container stats-row-item";
+                    name_container.innerText = player;
+                    let deck = decks[player];
+                    name_container.onclick = function() {
+                        document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+                        let deck_header = document.createElement("span");
+                        deck_header.className = "deck-window-header";
+                        deck_header.innerText = player + "'s " + deck.name;
+                        document.getElementById("modal-content").appendChild(deck_header);
+                        document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+                        document.getElementById("modal-container").style.display = 'block';
+                    }
+                    const record_container = document.createElement("div");
+                    record_container.className = "stats-record-container stats-row-item";
+                    record_container.innerText = `${record[0]}-${record[1]}`;
+                    const match_total_container = document.createElement("div");
+                    match_total_container.className = "stats-match-total-container stats-row-item";
+                    match_total_container.innerText = `${match_total[0]}-${match_total[1]}`;
+                    const omw_container = document.createElement("div");
+                    omw_container.className = "stats-omw-container stats-row-item";
+                    omw_container.innerText = omw * 100 + "%";
+
+                    row_container.appendChild(rank_container);
+                    row_container.appendChild(name_container);
+                    row_container.appendChild(record_container);
+                    row_container.appendChild(match_total_container);
+                    row_container.appendChild(omw_container);
+
+                    stats_tab.appendChild(row_container);
+                    i++;
                 }
             }
 
@@ -1205,95 +1304,7 @@
 
                 if (event_data.stage != "initial") {
                     makeDecksTab();
-
-                    const stats_tab = document.getElementById("stats");
-                    stats_tab.innerHTML = "";
-                    const stats = statsHelper(rounds.swiss);
-
-                    const row_container = document.createElement("div");
-                    row_container.className = "stats-row-container";
-                    const rank_container = document.createElement("div");
-                    rank_container.className = "stats-rank-container stats-row-item stats-row-header";
-                    rank_container.innerText = "Rank";
-                    const name_container = document.createElement("div");
-                    name_container.className = "stats-name-container stats-row-item stats-row-header";
-                    name_container.innerText = "Player";
-                    const record_container = document.createElement("div");
-                    record_container.className = "stats-record-container stats-row-item stats-row-header";
-                    record_container.innerText = `Record`;
-                    const match_total_container = document.createElement("div");
-                    match_total_container.className = "stats-match-total-container stats-row-item stats-row-header";
-                    match_total_container.innerText = `Game Record`;
-                    const omw_container = document.createElement("div");
-                    omw_container.className = "stats-omw-container stats-row-item stats-row-header";
-                    omw_container.innerText = "OM%";
-
-                    row_container.appendChild(rank_container);
-                    row_container.appendChild(name_container);
-                    row_container.appendChild(record_container);
-                    row_container.appendChild(match_total_container);
-                    row_container.appendChild(omw_container);
-
-                    stats_tab.appendChild(row_container);
-
-                    let seedings = [];
-
-                    for (const player in stats.records) {
-                        let record = stats.records[player];
-                        let total = stats.match_total[player];
-                        seedings.push({player: player, record: record, match_total: total, omw: stats.omw[player]});
-                    }
-
-                    seedings.sort(seeder);
-
-                    let i = 1;
-
-                    for (const player_stats of seedings) {
-                        const player = player_stats.player;
-                        if (player == "Bye")
-                            continue;
-                        const record      = player_stats.record;
-                        const match_total = player_stats.match_total;
-                        const omw         = player_stats.omw;
-
-                        const row_container = document.createElement("div");
-                        row_container.className = "stats-row-container";
-                        const rank_container = document.createElement("div");
-                        rank_container.className = "stats-rank-container stats-row-item";
-                        rank_container.innerText = i;
-                        const name_container = document.createElement("div");
-                        name_container.className = "stats-name-container stats-row-item";
-                        name_container.innerText = player;
-                        let deck = decks[player];
-                        name_container.onclick = function() {
-                            document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                            let deck_header = document.createElement("span");
-                            deck_header.className = "deck-window-header";
-                            deck_header.innerText = player + "'s " + deck.name;
-                            document.getElementById("modal-content").appendChild(deck_header);
-                            document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
-                            document.getElementById("modal-container").style.display = 'block';
-                        }
-                        const record_container = document.createElement("div");
-                        record_container.className = "stats-record-container stats-row-item";
-                        record_container.innerText = `${record[0]}-${record[1]}`;
-                        const match_total_container = document.createElement("div");
-                        match_total_container.className = "stats-match-total-container stats-row-item";
-                        match_total_container.innerText = `${match_total[0]}-${match_total[1]}`;
-                        const omw_container = document.createElement("div");
-                        omw_container.className = "stats-omw-container stats-row-item";
-                        omw_container.innerText = omw * 100 + "%";
-
-                        row_container.appendChild(rank_container);
-                        row_container.appendChild(name_container);
-                        row_container.appendChild(record_container);
-                        row_container.appendChild(match_total_container);
-                        row_container.appendChild(omw_container);
-
-                        stats_tab.appendChild(row_container);
-                        i++;
-                    }
-
+                    makeStatsTab();
                 } else {
                     const initial_text = document.createElement("span");
                     initial_text.className = "initial-text text";

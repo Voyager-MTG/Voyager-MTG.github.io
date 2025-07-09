@@ -431,7 +431,7 @@
             // Initialize Firebase
             const app = initializeApp(firebaseConfig);
             const db = getFirestore(app);
-            const events = ["GP1", "League"];
+            const events = ["GP2", "League"];
             let username = "";
             let password = "";
             let sessionid = localStorage.getItem('settings.session');
@@ -486,7 +486,7 @@
                         modified.className = 'updated';
                         for (const color of 'WUBRGI') {
                             let color_ele = document.createElement('img');
-                            color_ele.src = `img/mana_${color.toLowerCase()}.png`;
+                            color_ele.src = `img/mana/mana_${color.toLowerCase()}.png`;
                             if (deck.colors.includes(color)) {
                                 color_ele.className = "mana-img";
                             } else {
