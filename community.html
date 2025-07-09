@@ -776,7 +776,7 @@
                 let recent_event;
                 let best_decks = [];
                 await getDoc(doc(db, 'info', 'events')).then((doc) => {
-                    recent_event = doc.data().recent;
+                    recent_event = doc.data().bestevent;
                 });
 
                 await getDoc(doc(db, 'events', recent_event)).then((doc) => {
