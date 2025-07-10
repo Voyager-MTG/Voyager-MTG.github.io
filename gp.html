@@ -1194,6 +1194,8 @@
             }
 
             async function makeStatsTab() {
+                const decks = JSON.parse(event_data.decks);
+                const rounds = JSON.parse(event_data.rounds);
                 const stats_tab = document.getElementById("stats");
                 stats_tab.innerHTML = "";
                 const stats = statsHelper(rounds.swiss);
@@ -1582,6 +1584,7 @@
                 let seedings = [];
                 let omw = {};
                 let opps = {};
+                let num_games = {};
                 for (const round_name in swiss_rounds) {
                     let round = swiss_rounds[round_name];
                     for (const match of round) {
@@ -1593,9 +1596,17 @@
                             if (!match_total.hasOwnProperty(player)) {
                                 match_total[player] = [0, 0];
                             }
-                            records[player][score == 2 ? 0 : 1] += 1;
-                            match_total[player][0] += score;
-                            match_total[player][1] +=  score < 2 ? 2 : 0;
+                            switch(score) {
+                                case 2:
+                                    records[player][0] += 1;
+                                    break;
+                                case 1:
+                                case 0:
+                                    records[player][1] += 1;
+                                    break;
+                            }
+                            match_total[player][0] += (isNaN(score) ? 0 : score);
+                            match_total[player][1] += (score != "-" && score < 2 ? 2 : 0);
                         }
                         let players = Object.keys(match);
                         let p1 = players[0];
@@ -1604,13 +1615,15 @@
                         if (!opps.hasOwnProperty(p2)) opps[p2] = [];
                         opps[p1].push(p2);
                         opps[p2].push(p1);
+                        num_games[p1] = num_games[p1] ? num_games[p1] + 1 : 1;
+                        num_games[p2] = num_games[p2] ? num_games[p2] + 1 : 1;
                     }
                 }
                 for (const player in opps) {
                     for (const opp of opps[player]) {
                         console.log(opps);
                         if (!omw.hasOwnProperty(player)) omw[player] = [];
-                        omw[player].push(records[opp][0] / records[opp][1]);
+                        omw[player].push(records[opp][0] / num_games[opp]);
                     }
                 }
                 for (const player in omw) {
