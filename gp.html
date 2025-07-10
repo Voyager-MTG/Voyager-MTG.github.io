@@ -882,7 +882,7 @@
                     round_container.className = "round-container";
                     let round = rounds['swiss'][round_name];
                     for (const game of round) {
-                        const game_container = makeGameContainer(game);
+                        const game_container = makeGameContainer(game, round_name);
                         round_container.appendChild(game_container);
                     }
                     swiss_container.appendChild(round_header);
@@ -902,9 +902,10 @@
                 }
             }
 
-            function makeGameContainer(game) {
+            function makeGameContainer(game, round_name) {
                 const rounds = JSON.parse(event_data.rounds);
                 const decks = JSON.parse(event_data.decks);
+                const round = rounds[round_name];
                 let game_container = document.createElement("div");
                 game_container.className = "game-container";
                 let game_grid = document.createElement("div");

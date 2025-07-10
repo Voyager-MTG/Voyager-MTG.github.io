@@ -195,6 +195,11 @@
 	.ft-divider{
 		border-width: 1px;
 	}
+	.rulings-textarea {
+		display: block;
+		width: 80%;
+		margin: auto;
+	}
 </style>
 <style id="text-style">
 	.text {
@@ -762,5 +767,71 @@
                 // setGradient();
             }
 	</script>
+	<script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+            import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+            
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+                authDomain: "voyager-78e30.firebaseapp.com",
+                projectId: "voyager-78e30",
+                storageBucket: "voyager-78e30.firebasestorage.app",
+                messagingSenderId: "411191248476",
+                appId: "1:411191248476:web:591349be169d823e5f8899",
+                measurementId: "G-TQ1L48F25M"
+            };
+            
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+            let username = "";
+            let password = "";
+            let sessionid = localStorage.getItem('settings.session');
+            let decks = {};
+            const events = ["GP1", "League"];
+            let user_data;
+
+            if (sessionid) {
+                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+                    let data = docSnap.data();
+                    username = data.username;
+                    password = data.password;
+                });
+
+                await getDoc(doc(db, 'users', username)).then(docSnap => {
+                    let data = docSnap.data();
+                    user_data = data;
+                });
+            }
+
+            document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+			if (localStorage.getItem("settings.darkthememenu") == "On") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
+			} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
+				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
+			}
+
+            
+            async function reload() {
+				if (user_data.judge) {
+					const rulings_input = document.createElement("textarea");
+					rulings_input.style.resize = "none";
+					rulings_input.placeholder = "Add card rulings...";
+					rulings_input.className = "rulings-textarea";
+					document.getElementById("grid").appendChild(rulings_input);
+				}
+            }
+
+            if (sessionid) {
+                reload();
+            }
+        </script>
 </body>
 </html>
