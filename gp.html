@@ -705,7 +705,6 @@
 
                 gradients = raw_gradients.gradients;
                 setGradient(localStorage.getItem("settings.gradient"));
-                console.log(setGradient);
                 prepareGradients();
             });
 
@@ -725,7 +724,6 @@
                     }
                 }
 
-                // console.log(`linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
                 document.body.style.backgroundImage = `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`;
                 localStorage.setItem("settings.gradient", gradient);
 		    }
@@ -832,7 +830,6 @@
                 // initialize
                 event_data = docSnap.data();
             });
-            // console.log
 
             if (sessionid) {
                 await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
@@ -976,7 +973,6 @@
                     game_grid.className = "game-grid";
                     game_grid.style.height = "fit-content";
                     for (const player_id in match) {
-                        console.log("match", match);
                         let player;
                         if (player_id != "Bye") player = topcut.seedings[player_id];
                         else player = "Bye";
@@ -1036,7 +1032,6 @@
                         game_grid.style.gridRow = "span " + structure.info.size / layer.length;
                         game_grid.style.height = "fit-content";
                         for (const player_id in match) {
-                            console.log("match", match, player_id);
                             let player;
                             if (player_id != "Bye") player = topcut.seedings[player_id];
                             else player = {player: "Bye"};
@@ -1095,7 +1090,6 @@
                                 } 
                                 game[player2] = match[player_id];
                             }
-                            console.log(game, game.length);
                             if (Object.keys(game).length == 2) {
                                 player_score.onclick = function() {
                                     document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
@@ -1439,7 +1433,6 @@
                     // loop through each card in deck_map and get the cardtype
                     for (const card2 of card_list_arrayified) {
                         if (card2.card_name == card) {
-                            console.log(card2);
                             card_type = card2.type.toLowerCase();
                             break;
                         }
@@ -1616,7 +1609,7 @@
                             rounds: JSON.stringify(parsed_data)
                         });
                         document.getElementById("modal-container").style.display = "none";
-                        reload();
+                        window.location.reload();
                     } else {
                         let new_game = {};
                         new_game[Object.keys(match)[0]] = document.getElementById(`${p1_name_text}-score`).value;
@@ -1626,7 +1619,7 @@
                             rounds: JSON.stringify(parsed_data)
                         });
                         document.getElementById("modal-container").style.display = "none";
-                        reload();
+                        window.location.reload();
                     }
                 }
 
@@ -1684,7 +1677,6 @@
                 for (const player in opps) {
                     gw[player] = records[player][0] / num_games[player];
                     for (const opp of opps[player]) {
-                        console.log(opps);
                         if (!omw.hasOwnProperty(player)) omw[player] = [];
                         omw[player].push(records[opp][0] / num_games[opp]);
                     }
@@ -1719,7 +1711,6 @@
                 
                 matches = rounds.bracket.matches;
                 seedings.sort(seeder);
-                console.log(matches);
                 return {players: players, matches: rounds.bracket.matches, seedings: seedings, stats: stats, structure: rounds.bracket.structure};
             }
 
@@ -1765,7 +1756,6 @@
                     splt = ["", structure]
                 }
                 let splt2 = splt[1].split(";");
-                console.log(structure);
                 for (let s of splt2) {
                     splt2[splt2.indexOf(s)] = s.split('');
                 }
@@ -1789,10 +1779,8 @@
                 }
 
                 let rounds = JSON.parse(event_data.rounds);
-                console.log(event_data.num_rounds,  Object.keys(rounds.swiss).length);
                 if (event_data.stage == "swiss" && event_data.num_rounds != Object.keys(rounds.swiss).length) {
                     // if were in swiss and this isn't the last round
-                    console.log("swiss round");
                     let stats = statsHelper(rounds.swiss);
                     let seedings = [];
                     let opps = {};
@@ -1864,7 +1852,6 @@
                         seedings_2.swiss_sort(p1);
                         for (const p2 of seedings_2) {
                             if (!opps[p1.player].includes(p2.player) && !in_games.includes(p1.player) && !in_games.includes(p2.player)) {
-                                console.log(p1.player, "MATCH", p2.player);
                                 let new_game = {};
                                 new_game[p1.player] = '-';
                                 new_game[p2.player] = '-';
@@ -1889,7 +1876,6 @@
                     for (const game of games) {
                         discord_msg += `\n@${Object.keys(game)[0]} vs @${Object.keys(game)[1]}`;
                     }
-                    console.log(discord_msg);
                     navigator.clipboard.writeText(discord_msg);
                     await updateDoc(doc(db, 'events', event), {
                         rounds: JSON.stringify(rounds)
@@ -1898,7 +1884,6 @@
                 } 
                 else if (event_data.stage == "swiss") {
                     // first top cut round
-                    console.log("top cut round");
                     let stats = statsHelper(rounds.swiss);
                     let players = [];
                     let matches = [];
@@ -1912,120 +1897,9 @@
                         }
                         seedings.push({player: player, record: record, match_total: total});
                     }
-                    // console.log(players.length);
-                    switch (players.length) {
-                        case 1: 
-                            structure = "a";
-                            matches = {
-                                "a": {"0": "2", "Bye": "0"}
-                            }
-                            break;
-                        case 2: 
-                            structure = "a";
-                            matches = {
-                                "a": {"0": "-", "1": "-"}
-                            }
-                            break;
-                        case 3: 
-                            structure = "a;b";
-                            matches = {
-                                "a": {"1": "-", "2": "-"},
-                                "b": {"a": "-", "0": "-"}
-                            }
-                            break;
-                        case 4: 
-                            structure = "ab;c";
-                            matches = {
-                                "a": {"0": "-", "3": "-"},
-                                "b": {"1": "-", "2": "-"},
-                                "c": {"a": "-", "b": "-"}
-                            }
-                            break;
-                        case 5: 
-                            structure = "a:bc;d";
-                            matches = {
-                                "a": {"3": "-", "4": "-"},
-                                "b": {"0": "-", "a": "-"},
-                                "c": {"1": "-", "2": "-"},
-                                "d": {"b": "-", "c": "-"}
-                            }
-                            break;
-                        case 6: 
-                            structure = "ab:cd;e";
-                            matches = {
-                                "a": {"2": "-", "5": "-"},
-                                "b": {"3": "-", "4": "-"},
-                                "c": {"0": "-", "a": "-"},
-                                "d": {"1": "-", "b": "-"},
-                                "e": {"c": "-", "d": "-"}
-                            }
-                            break;
-                        case 7: 
-                            structure = "abcd;ef;g";
-                            matches = {
-                                "a": {"0": "2", "Bye": "0"},
-                                "b": {"1": "-", "6": "-"},
-                                "c": {"2": "-", "5": "-"},
-                                "d": {"3": "-", "4": "-"},
-                                "e": {"a": "-", "b": "-"},
-                                "f": {"c": "-", "d": "-"}
-                            }
-                            break;
-                        case 8: 
-                            structure = "abcd;ef;g";
-                            matches = {
-                                "a": {"0": "-", "7": "-"},
-                                "b": {"1": "-", "6": "-"},
-                                "c": {"2": "-", "5": "-"},
-                                "d": {"3": "-", "4": "-"},
-                                "e": {"a": "-", "b": "-"},
-                                "f": {"c": "-", "d": "-"},
-                                "g": {"e": "-", "f": "-"}
-                            }
-                            break;
-                        case 9: 
-                            structure = "a:bcde;fg;h";
-                            matches = {
-                                "a": {"7": "-", "8": "-"},
-                                "b": {"0": "-", "a": "-"},
-                                "c": {"1": "-", "6": "-"},
-                                "d": {"2": "-", "5": "-"},
-                                "e": {"3": "-", "4": "-"},
-                                "f": {"b": "-", "c": "-"},
-                                "g": {"d": "-", "e": "-"},
-                                "h": {"f": "-", "g": "-"}
-                            }
-                            break;
-                        case 10: 
-                            structure = "ab:cdef;gh;i";
-                            matches = {
-                                "a": {"8": "-", "9": "-"},
-                                "b": {"6": "-", "7": "-"},
-                                "c": {"0": "-", "a": "-"},
-                                "d": {"1": "-", "b": "-"},
-                                "e": {"2": "-", "5": "-"},
-                                "f": {"3": "-", "4": "-"},
-                                "g": {"c": "-", "d": "-"},
-                                "h": {"e": "-", "f": "-"},
-                                "i": {"g": "-", "h": "-"}
-                            }
-                            break;
-                        case 11: 
-                            structure = "abc:defg;hi;j";
-                            matches = {
-                                "a": {"9": "-", "10": "-"},
-                                "b": {"7": "-",  "8": "-"},
-                                "c": {"5": "-",  "6": "-"},
-                                "d": {"0": "-",  "a": "-"},
-                                "e": {"1": "-",  "b": "-"},
-                                "f": {"2": "-",  "c": "-"},
-                                "g": {"3": "-",  "4": "-"},
-                                "h": {"d": "-",  "e": "-"},
-                                "i": {"f": "-",  "g": "-"},
-                                "j": {"h": "-",  "i": "-"}
-                            } 
-                            break;
-                    }
+                    const struct_obj = getStructure(players.length);
+                    structure = struct_obj.structure;
+                    matches = struct_obj.matches;
                     seedings.sort(seeder);
                     rounds.bracket.structure = structure;
                     rounds.bracket.matches = matches;
@@ -2063,6 +1937,125 @@
                     alert("There's no need to push rounds in top cut, you just need to paste the discord message copied to your clipboard");
                 }
             }
+
+            function getStructure(length) {
+                let structure;
+                let matches;
+                switch (length) {
+                    case 1: 
+                        structure = "a";
+                        matches = {
+                            "a": {"0": "2", "Bye": "0"}
+                        }
+                        break;
+                    case 2: 
+                        structure = "a";
+                        matches = {
+                            "a": {"0": "-", "1": "-"}
+                        }
+                        break;
+                    case 3: 
+                        structure = "a;b";
+                        matches = {
+                            "a": {"1": "-", "2": "-"},
+                            "b": {"a": "-", "0": "-"}
+                        }
+                        break;
+                    case 4: 
+                        structure = "ab;c";
+                        matches = {
+                            "a": {"0": "-", "3": "-"},
+                            "b": {"1": "-", "2": "-"},
+                            "c": {"a": "-", "b": "-"}
+                        }
+                        break;
+                    case 5: 
+                        structure = "a:bc;d";
+                        matches = {
+                            "a": {"3": "-", "4": "-"},
+                            "b": {"0": "-", "a": "-"},
+                            "c": {"1": "-", "2": "-"},
+                            "d": {"b": "-", "c": "-"}
+                        }
+                        break;
+                    case 6: 
+                        structure = "ab:cd;e";
+                        matches = {
+                            "a": {"2": "-", "5": "-"},
+                            "b": {"3": "-", "4": "-"},
+                            "c": {"0": "-", "a": "-"},
+                            "d": {"1": "-", "b": "-"},
+                            "e": {"c": "-", "d": "-"}
+                        }
+                        break;
+                    case 7: 
+                        structure = "abcd;ef;g";
+                        matches = {
+                            "a": {"0": "2", "Bye": "0"},
+                            "b": {"1": "-", "6": "-"},
+                            "c": {"2": "-", "5": "-"},
+                            "d": {"3": "-", "4": "-"},
+                            "e": {"a": "-", "b": "-"},
+                            "f": {"c": "-", "d": "-"}
+                        }
+                        break;
+                    case 8: 
+                        structure = "abcd;ef;g";
+                        matches = {
+                            "a": {"0": "-", "7": "-"},
+                            "b": {"1": "-", "6": "-"},
+                            "c": {"2": "-", "5": "-"},
+                            "d": {"3": "-", "4": "-"},
+                            "e": {"a": "-", "b": "-"},
+                            "f": {"c": "-", "d": "-"},
+                            "g": {"e": "-", "f": "-"}
+                        }
+                        break;
+                    case 9: 
+                        structure = "a:bcde;fg;h";
+                        matches = {
+                            "a": {"7": "-", "8": "-"},
+                            "b": {"0": "-", "a": "-"},
+                            "c": {"1": "-", "6": "-"},
+                            "d": {"2": "-", "5": "-"},
+                            "e": {"3": "-", "4": "-"},
+                            "f": {"b": "-", "c": "-"},
+                            "g": {"d": "-", "e": "-"},
+                            "h": {"f": "-", "g": "-"}
+                        }
+                        break;
+                    case 10: 
+                        structure = "ab:cdef;gh;i";
+                        matches = {
+                            "a": {"8": "-", "9": "-"},
+                            "b": {"6": "-", "7": "-"},
+                            "c": {"0": "-", "a": "-"},
+                            "d": {"1": "-", "b": "-"},
+                            "e": {"2": "-", "5": "-"},
+                            "f": {"3": "-", "4": "-"},
+                            "g": {"c": "-", "d": "-"},
+                            "h": {"e": "-", "f": "-"},
+                            "i": {"g": "-", "h": "-"}
+                        }
+                        break;
+                    case 11: 
+                        structure = "abc:defg;hi;j";
+                        matches = {
+                            "a": {"9": "-", "10": "-"},
+                            "b": {"7": "-",  "8": "-"},
+                            "c": {"5": "-",  "6": "-"},
+                            "d": {"0": "-",  "a": "-"},
+                            "e": {"1": "-",  "b": "-"},
+                            "f": {"2": "-",  "c": "-"},
+                            "g": {"3": "-",  "4": "-"},
+                            "h": {"d": "-",  "e": "-"},
+                            "i": {"f": "-",  "g": "-"},
+                            "j": {"h": "-",  "i": "-"}
+                        } 
+                        break;
+                }
+                return {structure: structure, matches: matches};
+            } 
 
             async function newGP() {
                 const event_name = window.prompt("GP Name?");
