@@ -1146,7 +1146,7 @@
                     let deck_btns = document.createElement('div');
                     deck_btns.className = "deck-buttons";
                     let deck_link = document.createElement('a');
-                    deck_link.href = `/deckbuilder?edeck=${event}-${deck.name}`;
+                    deck_link.href = `/deckbuilder?edeck=${event}-${user}`;
                     deck_link.innerText = "Deckbuilder";
                     deck_link.className = "deck-link-green deck-icon-shadow";
                     deck_link.target = "_blank";
@@ -1515,8 +1515,7 @@
                                 }
                             }
                             let deck_preview_card = document.getElementById("deck-preview-card");
-                            deck_preview_card.innerHTML = "";
-                            deck_preview_card.appendChild(build)
+                            deck_preview_card.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
                             //https://voyager-mtg.github.io/card?set=EXPT&num=44&name=Fyndhorn+Betrayer
                             deck_preview_card.onclick = function() {
                                 window.location.href = `/card?set=${card_stats.set}&num=${card_stats.number}&name=${card_name.replaceAll(" ", "+")}`;

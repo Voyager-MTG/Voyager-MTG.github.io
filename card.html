@@ -821,11 +821,17 @@
             
             async function reload() {
 				if (user_data.judge) {
+					const rulings_container = document.createElement("div");
+					rulings_container.className = "rulings-container";
+
 					const rulings_input = document.createElement("textarea");
 					rulings_input.style.resize = "none";
 					rulings_input.placeholder = "Add card rulings...";
 					rulings_input.className = "rulings-textarea";
-					document.getElementById("grid").appendChild(rulings_input);
+
+					rulings_container.appendChild(rulings_input);
+
+					document.getElementById("grid").appendChild(rulings_container);
 				}
             }
 
