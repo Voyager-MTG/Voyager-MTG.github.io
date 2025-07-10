@@ -322,7 +322,7 @@
         }
         .stats-row-container {
             display: grid;
-            grid-template-columns: 0.4fr repeat(4, 1fr);
+            grid-template-columns: 0.4fr 2fr repeat(4, 1fr);
         }
         .stats-row-item {
             border-right: 2px solid black;
@@ -613,6 +613,12 @@
         }
         #modal-content .deck-name {
             font-size: 16px;
+        }
+        /* mobile layout changes*/
+        @media (max-device-width: 850px) {
+            .round-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
     </style>
     <style id="text-style">
@@ -1217,12 +1223,16 @@
                 const omw_container = document.createElement("div");
                 omw_container.className = "stats-omw-container stats-row-item stats-row-header";
                 omw_container.innerText = "OM%";
+                const gw_container = document.createElement("div");
+                gw_container.className = "stats-gw-container stats-row-item stats-row-header";
+                gw_container.innerText = "GW%";
 
                 row_container.appendChild(rank_container);
                 row_container.appendChild(name_container);
                 row_container.appendChild(record_container);
                 row_container.appendChild(match_total_container);
                 row_container.appendChild(omw_container);
+                row_container.appendChild(gw_container);
 
                 stats_tab.appendChild(row_container);
 
@@ -1231,7 +1241,7 @@
                 for (const player in stats.records) {
                     let record = stats.records[player];
                     let total = stats.match_total[player];
-                    seedings.push({player: player, record: record, match_total: total, omw: stats.omw[player]});
+                    seedings.push({player: player, record: record, match_total: total, omw: stats.omw[player], gw: stats.gw[player]});
                 }
 
                 seedings.sort(seeder);
@@ -1240,21 +1250,27 @@
 
                 for (const player_stats of seedings) {
                     const player = player_stats.player;
+
                     if (player == "Bye")
                         continue;
+
                     const record      = player_stats.record;
                     const match_total = player_stats.match_total;
                     const omw         = player_stats.omw;
+                    const gw          = player_stats.gw;
 
                     const row_container = document.createElement("div");
                     row_container.className = "stats-row-container";
+
                     const rank_container = document.createElement("div");
                     rank_container.className = "stats-rank-container stats-row-item";
                     rank_container.innerText = i;
+
                     const name_container = document.createElement("div");
                     name_container.className = "stats-name-container stats-row-item";
                     name_container.innerText = player;
                     let deck = decks[player];
+
                     name_container.onclick = function() {
                         document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
                         let deck_header = document.createElement("span");
@@ -1264,21 +1280,31 @@
                         document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
                         document.getElementById("modal-container").style.display = 'block';
                     }
+
                     const record_container = document.createElement("div");
                     record_container.className = "stats-record-container stats-row-item";
                     record_container.innerText = `${record[0]}-${record[1]}`;
+
                     const match_total_container = document.createElement("div");
                     match_total_container.className = "stats-match-total-container stats-row-item";
                     match_total_container.innerText = `${match_total[0]}-${match_total[1]}`;
+
                     const omw_container = document.createElement("div");
                     omw_container.className = "stats-omw-container stats-row-item";
-                    omw_container.innerText = omw * 100 + "%";
+                    omw_container.innerText = (omw * 100).toFixed(2) + "%";
+                    omw_container.setAttribute("title", "Opponent match percentage");
+
+                    const gw_container = document.createElement("div");
+                    gw_container.className = "stats-gw-container stats-row-item";
+                    gw_container.innerText = (gw * 100).toFixed(2) + "%";
+                    gw_container.setAttribute("title", "Game win percentage");
 
                     row_container.appendChild(rank_container);
                     row_container.appendChild(name_container);
                     row_container.appendChild(record_container);
                     row_container.appendChild(match_total_container);
                     row_container.appendChild(omw_container);
+                    row_container.appendChild(gw_container);
 
                     stats_tab.appendChild(row_container);
                     i++;
@@ -1323,11 +1349,11 @@
             }
 
             function deckHTML(deck, card_list) {
-                console.log('deck html');
-                let card_categories = {"creature": "", "planeswalker": "", "instant": "", "sorcery": "", "artifact": "", "enchantment": "", "land": "", "sideboard": ""};
+                let card_categories = {"creature": "", "planeswalker": "", "instant": "", "sorcery": "", "artifact": "", "enchantment": "", "land": "", "sideboard": "", "sanctum": ""};
                 const text = atob(deck.url.split(';')[1].split('&main')[0]);
                 let sideboard = [];
                 let sb_cards = false;
+                let sc_cards = false;
                 let count;
                 let card_name;
                 let card_list_arrayified = card_list.cards;
@@ -1336,14 +1362,20 @@
 
                 let deck_map = new Map();
                 let sb_map = new Map();
+                let sc_map = new Map();
 
                 for (const line of lines)
-                {
+                {	
                     if (line == 'sideboard' || line == '') // '' for Draftmancer files
                     {
                         sb_cards = true;
                     }
-                    else if (!sb_cards)
+                    else if (line == 'sanctum' || (sb_cards && line == '')) // '' for Draftmancer files
+                    {
+                        sc_cards = true;
+                        sb_cards = false;
+                    }
+                    else if (!sb_cards && !sc_cards)
                     {
                         // get the count and card name
                         count = parseInt(line.substring(0, line.indexOf(' ')));
@@ -1358,7 +1390,7 @@
                             deck_map.set(card_name, count);
                         }
                     }
-                    else // sideboard cards, do the same thing but with sb_map
+                    else if (sb_cards) // sideboard cards, do the same thing but with sb_map
                     {
                         count = parseInt(line.substring(0, line.indexOf(' ')));
                         card_name = line.substring(line.indexOf(' ') + 1);
@@ -1370,6 +1402,19 @@
                         else
                         {
                             sb_map.set(card_name, count);
+                        }
+                    } else if (sc_cards) // sanctum cards, do the same thing but with sc_map
+                    {
+                        count = parseInt(line.substring(0, line.indexOf(' ')));
+                        card_name = line.substring(line.indexOf(' ') + 1);
+
+                        if (sc_map.has(card_name))
+                        {
+                            sc_map.set(card_name, sc_map.get(card_name) + count);
+                        }
+                        else
+                        {
+                            sc_map.set(card_name, count);
                         }
                     }
                 }
@@ -1384,7 +1429,8 @@
                     ['enchantment', new Map([])],
                     ['sorcery', new Map([])],
                     ['battle', new Map([])],
-                    ['sideboard', new Map([])]
+                    ['sideboard', new Map([])],
+                    ['sanctum', new Map([])]
                 ]);
 
                 for (const [card, copies] of deck_map)
@@ -1398,11 +1444,9 @@
                             break;
                         }
                     }
-                    console.log(card_type);
-
+                    
                     for (const [key, map] of deck_cards)
                     {
-                        console.log(key, map, card);
                         if (card_type.includes(key))
                         {
                             map.set(card, copies)
@@ -1420,7 +1464,17 @@
                         }
                     }
                 }
-                let total_copies = {"creature": 0, "planeswalker": 0, "instant": 0, "sorcery": 0, "artifact": 0, "enchantment": 0, "land": 0, "sideboard": 0};
+                for (const [card, copies] of sc_map) {
+                    for (const [key, map] of deck_cards)
+                    {
+                        if (key == 'sanctum')
+                        {
+                            map.set(card, copies)
+                            break;
+                        }
+                    }
+                }
+                let total_copies = {"creature": 0, "planeswalker": 0, "instant": 0, "sorcery": 0, "artifact": 0, "enchantment": 0, "land": 0, "sideboard": 0, "sanctum": 0};
                 for (const [k, map] of deck_cards) {
                     for (const [card, num] of map) {
                         card_categories[k] += `<span class="card-in-deck">${num}x ${card}</span><br>`;
@@ -1440,7 +1494,7 @@
                     }
                     let section_name_capitalized = section_name[0].toUpperCase() + section_name.substring(1, section_name.length);
                     let card_column = column1;
-                    if (section_name == "land" || section_name == "sideboard") {
+                    if (section_name == "land" || section_name == "sideboard" || section_name == "sanctum") {
                         card_column = column2;
                     }
 
@@ -1468,7 +1522,8 @@
                                 }
                             }
                             let deck_preview_card = document.getElementById("deck-preview-card");
-                            deck_preview_card.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+                            deck_preview_card.innerHTML = "";
+                            deck_preview_card.appendChild(build)
                             //https://voyager-mtg.github.io/card?set=EXPT&num=44&name=Fyndhorn+Betrayer
                             deck_preview_card.onclick = function() {
                                 window.location.href = `/card?set=${card_stats.set}&num=${card_stats.number}&name=${card_name.replaceAll(" ", "+")}`;
@@ -1591,6 +1646,7 @@
                 let omw = {};
                 let opps = {};
                 let num_games = {};
+                let gw = {};
                 for (const round_name in swiss_rounds) {
                     let round = swiss_rounds[round_name];
                     for (const match of round) {
@@ -1626,6 +1682,7 @@
                     }
                 }
                 for (const player in opps) {
+                    gw[player] = records[player][0] / num_games[player];
                     for (const opp of opps[player]) {
                         console.log(opps);
                         if (!omw.hasOwnProperty(player)) omw[player] = [];
@@ -1641,8 +1698,7 @@
                     }
                     omw[player] = total / count;
                 }
-                console.log(JSON.stringify({records: records, match_total: match_total, opps: opps, omw: omw}));
-                return {records: records, match_total: match_total, opps: opps, omw: omw};
+                return {records: records, match_total: match_total, opps: opps, omw: omw, num_games: num_games, gw: gw};
             }
 
             async function topCutHelper(rounds) {
