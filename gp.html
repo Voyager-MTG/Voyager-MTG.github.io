@@ -1575,10 +1575,13 @@
                     }
                 }
 
+                const not_in_match = document.createElement("span");
+                not_in_match.innerText = "You aren't in this match.";
+
                 if (p1_name_text == username || p2_name_text == username || admin)
                     return content_container;
                 else
-                    return document.createElement("div");
+                    return not_in_match;
             }
 
             function statsHelper(swiss_rounds) {
