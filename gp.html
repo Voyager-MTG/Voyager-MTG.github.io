@@ -1542,7 +1542,7 @@
                 content_container.appendChild(player_names);
                 content_container.appendChild(scores);
                 content_container.appendChild(submit_btn);
-
+                
                 submit_btn.onclick = async function() {
                     const parsed_data = JSON.parse(event_data.rounds);
                     // [swiss ? "swiss" : "bracket"];
@@ -1575,7 +1575,10 @@
                     }
                 }
 
-                return content_container;
+                if (p1_name_text == username || p2_name_text == username || admin)
+                    return content_container;
+                else
+                    return document.createElement("div");
             }
 
             function statsHelper(swiss_rounds) {
