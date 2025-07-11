@@ -907,11 +907,13 @@
 						rulings_json = data; 
 				}).catch(error => console.error('Error:', error));
 
+				let card_rulings = rulings_json[card_name] ? rulings_json[card_name] : [];
+
 				await getDoc(doc(db, "info", "rulings")).then(docSnap => {
 					firebase_list = docSnap.data()[card_name] ? docSnap.data()[card_name] : [];
 				});
 
-				return convertToLi([...firebase_list, ...rulings_json[card_name]]);
+				return convertToLi([...firebase_list, ...card_rulings]);
 			}
 
 			function convertToLi(list) {
