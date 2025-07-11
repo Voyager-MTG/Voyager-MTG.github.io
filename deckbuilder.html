@@ -2670,7 +2670,7 @@
 						}
 						else if (modifier == ":")
 						{
-							return card_ci.length == parseInt(check);
+							return card_ci.length <= parseInt(check);
 						}
 						else if (modifier == "<")
 						{
@@ -2697,7 +2697,7 @@
 						}
 						else if (modifier == ":")
 						{
-							return hasAllChars(card_ci, check);
+							return card_ci == "c" || hasAllChars(check, card_ci);
 						}
 						else if (modifier == "<")
 						{

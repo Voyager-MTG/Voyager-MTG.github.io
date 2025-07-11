@@ -355,6 +355,7 @@
 
 			document.getElementById("grid").appendChild(gridifyCard(card, false, false));
 
+			const related_cards = await fetchRelatedCards(card);
 
 			other_printings = [];
 			for (const c of card_list_arrayified)
@@ -403,6 +404,16 @@
 				document.getElementById("other-printings").style.display = "block";
 			}
 		});
+
+		async function fetchRelatedCards() {
+			await fetch('/resources/related-cards.json')
+				.then(response => response.json())
+				.then(json => {
+					related_cards_json = json;
+			}).catch(error => console.error('Error:', error));
+			
+			const token_matches = related_cards_json.matches;
+		}
 
 		function isDecimal(char) {
 			return char >= '0' && char <= '9';
