@@ -878,13 +878,17 @@
 					rulings_container.appendChild(rulings_input_container);
 				}
 
+				const rulings = await fetchRulings(urlParams.get("name"));
+
 				const current_rulings = document.createElement("div");
 				current_rulings.className = "rulings-list text";
-				current_rulings.innerHTML = await fetchRulings(urlParams.get("name"));
+				current_rulings.innerHTML = rulings.list;
 				rulings_container.appendChild(current_rulings);
 
-				image_grid.appendChild(rulings_container);
-				image_grid.className += " image-grid-with-rulings";
+				if (rulings.has_rulings) {
+					image_grid.appendChild(rulings_container);
+					image_grid.className += " image-grid-with-rulings";
+				}
             }
 
 			async function submitRulings() {
@@ -913,7 +917,9 @@
 					firebase_list = docSnap.data()[card_name] ? docSnap.data()[card_name] : [];
 				});
 
-				return convertToLi([...firebase_list, ...card_rulings]);
+				const rulings_list = [...firebase_list, ...card_rulings];
+
+				return {list: convertToLi(rulings_list), has_rulings: (rulings_list.length > 0)};
 			}
 
 			function convertToLi(list) {
