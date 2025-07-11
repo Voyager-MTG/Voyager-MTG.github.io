@@ -113,6 +113,23 @@
 		display: block;
 		margin-bottom: 5px;
 	}
+	.card-text .related {
+		margin-top: auto;
+		font-size: 12px;
+		font-weight: bold;
+		padding-bottom: 0px;
+	}
+	.related {
+		display: none;
+	}
+	.related a {
+		color: #1338be;
+		text-decoration: none;
+		transition: 0.2s;
+	}
+	.related a:hover {
+		color: #0492c2;
+	}
 	.card-text .printings {
 		margin-top: auto;
 		font-size: 12px;
@@ -125,6 +142,7 @@
 	.printings a {
 		color: #1338be;
 		text-decoration: none;
+		transition: 0.2s;
 	}
 	.printings a:hover {
 		color: #0492c2;
@@ -366,6 +384,51 @@
 				}
 			}
 
+			if (related_cards.length > 0)
+			{
+				const others = document.createElement("div");
+				others.className = "related";
+				others.id = "related-cards";
+				others.innerText = "Related Cards: ";
+
+				for (let i = 0; i < related_cards.length; i++)
+				{
+					let related_card;
+					const related = related_cards[i];
+					const setlink = document.createElement("a");
+					setlink.innerText = related;
+
+					for (const card_ of card_list_arrayified) {
+						if (card_.card_name == related) {
+							related_card = card_;
+						}
+					}
+
+					const url = new URL('card', window.location.origin);
+					const params = {
+						set:  related_card.set,
+						num:  related_card.number,
+						name: related_card.card_name
+					}
+					for (const key in params) {
+						url.searchParams.append(key, params[key]);
+					}
+					setlink.href = url;
+
+					others.appendChild(setlink);
+
+					if (i != related_cards.length - 1)
+					{
+						const dot = document.createElement("text");
+						dot.innerText = " • ";
+						others.appendChild(dot);
+					}
+				}
+
+				document.getElementById("card-text").appendChild(others);
+				document.getElementById("related-cards").style.display = "block";
+			}
+
 			if (other_printings.length > 0)
 			{
 				const printings = document.createElement("div");
@@ -405,7 +468,8 @@
 			}
 		});
 
-		async function fetchRelatedCards() {
+		async function fetchRelatedCards(card) {
+			let related_cards = [];
 			await fetch('/resources/related-cards.json')
 				.then(response => response.json())
 				.then(json => {
@@ -413,6 +477,17 @@
 			}).catch(error => console.error('Error:', error));
 			
 			const token_matches = related_cards_json.matches;
+
+			for (const token in token_matches) {
+				const match = new RegExp(token_matches[token]);
+				if (match.test(card.rules_text)) {
+					related_cards.push(token.replaceAll("~", card.card_name));
+				}
+			}
+
+			console.log(related_cards);
+
+			return related_cards;
 		}
 
 		function isDecimal(char) {
