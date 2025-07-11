@@ -1875,6 +1875,7 @@
                     for (const game of games) {
                         discord_msg += `\n@${Object.keys(game)[0]} vs @${Object.keys(game)[1]}`;
                     }
+                    discord_msg += ``;
                     navigator.clipboard.writeText(discord_msg);
                     await updateDoc(doc(db, 'events', event), {
                         rounds: JSON.stringify(rounds)

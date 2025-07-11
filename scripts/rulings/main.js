@@ -28,22 +28,20 @@ async function main() {
             console.error(err);
         
         current_json = JSON.parse(data.toString());
-        console.log("data: " + current_json);
     });
-    
-    let q = query(collection(db, "Rulings"));
-    let all_users_docs = await getDocs(q);
 
-    all_users_docs.forEach((docSnap) => {
-        let current_card =  ( current_json[docSnap.id] != null ? current_json[docSnap.id] : [] );
-        current_json[docSnap.id] = [...current_card, ...Object.values(docSnap.data())];
-
-        deleteDoc(doc(db, 'Rulings', docSnap.id));
+    await getDoc(doc(db, "info", "rulings")).then(docSnap => {
+        const data = docSnap.data();
+        for (const card_name in data) {
+            current_json[card_name] = current_json[card_name] ? [...current_json[card_name], ...data[card_name]] : [];
+        }
     });
+
+    await setDoc(doc(db, "info", "rulings"), {}); // reset field
 
     fs.writeFile("rulings.json", JSON.stringify(current_json), (err) => err && console.error(err));
 
-    console.log("written")
+    console.log("finished, you can press ctrl+c now");
 
     // process.exit(0);
 }

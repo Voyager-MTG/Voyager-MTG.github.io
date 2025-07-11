@@ -53,6 +53,11 @@
 		padding-bottom: 10px;
 		justify-items: center;
 	}
+	.image-grid-with-rulings {
+		width: 85%;
+		max-width: 1600px;
+		grid-template-columns: minmax(200px, 2fr) minmax(200px, 2.5fr) minmax(200px, 2fr);
+	}
 	.image-grid img {
 		position: relative;
 	}
@@ -197,8 +202,36 @@
 	}
 	.rulings-textarea {
 		display: block;
-		width: 80%;
-		margin: auto;
+		width: 100%;
+		height: 52px;
+	}
+	.rulings-container {
+		width: 100%;
+		margin-bottom: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+	}
+	.rulings-list {
+		font-size: 1.2em;
+		font-style: italic;
+	}
+	.rulings-input-container {
+		display: flex;
+		gap: 6px;
+		align-items: center;
+		justify-items: center;
+	}
+	.rulings-submit-btn {
+		border: 2px solid white;
+		border-radius: 15px;
+		font-weight: bold;
+		transition: 0.2s;
+		cursor:pointer;
+	}
+	.rulings-submit-btn:hover {
+		border-radius: 5px;
+
 	}
 </style>
 <style id="text-style">
@@ -795,6 +828,7 @@
             let decks = {};
             const events = ["GP1", "League"];
             let user_data;
+			const urlParams = new URLSearchParams(window.location.search);
 
             if (sessionid) {
                 await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
@@ -820,20 +854,75 @@
 
             
             async function reload() {
+				const image_grid = document.getElementsByClassName("image-grid")[0];
+
+				const rulings_container = document.createElement("div");
+				rulings_container.className = "rulings-container";
+
 				if (user_data.judge) {
-					const rulings_container = document.createElement("div");
-					rulings_container.className = "rulings-container";
+					const rulings_input_container = document.createElement("div");
+					rulings_input_container.className = "rulings-input-container";
 
 					const rulings_input = document.createElement("textarea");
 					rulings_input.style.resize = "none";
 					rulings_input.placeholder = "Add card rulings...";
 					rulings_input.className = "rulings-textarea";
 
-					rulings_container.appendChild(rulings_input);
+					const submit_rulings = document.createElement("button");
+					submit_rulings.className = "rulings-submit-btn popout";
+					submit_rulings.innerText = "Upload this ruling";
+					submit_rulings.onclick = submitRulings;
 
-					document.getElementById("grid").appendChild(rulings_container);
+					rulings_input_container.appendChild(rulings_input);
+					rulings_input_container.appendChild(submit_rulings);
+					rulings_container.appendChild(rulings_input_container);
 				}
+
+				const current_rulings = document.createElement("div");
+				current_rulings.className = "rulings-list text";
+				current_rulings.innerHTML = await fetchRulings(urlParams.get("name"));
+				rulings_container.appendChild(current_rulings);
+
+				image_grid.appendChild(rulings_container);
+				image_grid.className += " image-grid-with-rulings";
             }
+
+			async function submitRulings() {
+				const ruling_to_submit = document.getElementsByClassName("rulings-textarea")[0].value;
+				await getDoc(doc(db, "info", "rulings")).then(async docSnap => {
+					let cardl = docSnap.data()[urlParams.get("name")] ? docSnap.data()[urlParams.get("name")] : [];
+					let card_obj = {};
+					card_obj[urlParams.get("name")] = [...cardl, ruling_to_submit];
+					await updateDoc(doc(db, "info", "rulings"), card_obj);
+					window.location.reload();
+				});
+			}
+
+			async function fetchRulings(card_name) {
+				let rulings_json;
+				let firebase_list;
+				await fetch('/scripts/rulings/rulings.json')
+					.then(response => response.json())
+					.then(data => {
+						rulings_json = data; 
+				}).catch(error => console.error('Error:', error));
+
+				await getDoc(doc(db, "info", "rulings")).then(docSnap => {
+					firebase_list = docSnap.data()[card_name] ? docSnap.data()[card_name] : [];
+				});
+
+				return convertToLi([...firebase_list, ...rulings_json[card_name]]);
+			}
+
+			function convertToLi(list) {
+				let ret = "";
+				ret += "<ol>";
+				for (const item of list) {
+					ret += `<li>${item}</li>`;
+				}
+				ret += "</ol>";
+				return ret
+			}
 
             if (sessionid) {
                 reload();
