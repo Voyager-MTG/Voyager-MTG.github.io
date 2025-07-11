@@ -5,7 +5,7 @@
         "Trace Reminder": "(C|c)reate (a|two|three|four|five|X) trace(s?) of",
         "Vertex Reminder": "{V",
         "Reserves": "(I|i)n your reserves",
-        "~ Token WAW": "Reflect {[0-9WUBRGIXYZ]+?}",
+        "~ Token;": "Reflect {[0-9WUBRGIXYZ]+?}",
         "~ ITD": "Iterate"
     }
 }

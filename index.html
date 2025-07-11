@@ -779,9 +779,9 @@
 			function p1p1Rand(x, n) {
 				let l = [];
 				const date = new Date();
-				const seed = date.getFullYear() * 10000 + 
-							 date.getMonth() * 100 + 
-							 date.getDate();
+				const seed = date.getUTCFullYear() * 10000 + 
+							 date.getUTCMonth() * 100 + 
+							 date.getUTCDate();
 				for (let i = 0; i < n; i++) {
 					
 					l.push(reallyRand(x, seed * (i + 1)));
