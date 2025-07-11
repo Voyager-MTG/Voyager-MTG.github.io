@@ -3202,7 +3202,7 @@
 			const img = document.createElement("img");
 			img.className = "card-image";
 			img.id = id;
-			img.loading = "lazy";
+			img.setAttribute("loading", "lazy");
 			// (card_stats[13].includes("_") ? card_stats[13] : card_stats[0]) for posterity
 			img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 			
@@ -3240,6 +3240,10 @@
 				const imgFlipBtn = document.createElement("button");
 				imgFlipBtn.className = "btn";
 				imgFlipBtn.onclick = async function() { imgFlip(id, rotate_card); };
+				const imgFlipIcon = document.createElement("img");
+				imgFlipIcon.className = "img-flip-icon";
+				imgFlipIcon.src = '/img/flip.svg';
+				imgFlipBtn.appendChild(imgFlipIcon);
 				imgContainer.appendChild(imgFlipBtn);
 			}
 
@@ -3252,6 +3256,53 @@
 			}
 
 			return imgContainer;
+		}
+
+		async function imgFlip(id, rotate_card = false) {
+			const img = document.getElementById(id);
+			const seconds = 0.2;
+			const cardName = img.src;
+
+			img.style.transition = seconds.toString() + "s";
+			img.style.transform = "rotateY(90deg)";
+
+			const btn = img.parentElement.parentElement.getElementsByTagName("button")[0];
+			btn.style.transition = seconds.toString() + "s";
+			btn.style.filter = cardName.includes("_front") ? "invert()" : "";
+
+			await setTimeout(function() {
+				const rotated_img = document.getElementById("h-img");
+				
+				if (cardName.includes("_front"))
+				{
+					img.src = cardName.replace("_front", "_back");
+					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "invert()";
+
+					if (rotate_card)
+					{
+						rotated_img.style.display = "none";
+						img.style.filter = "";
+					}
+				}
+				else
+				{
+					img.src = cardName.replace("_back", "_front");
+					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "";
+
+					if (rotate_card)
+					{
+						rotated_img.style.display = "block";
+						img.style.filter = "blur(2px) brightness(0.7)";
+					}
+				}
+
+				img.style.transition = (seconds * 2).toString() + "s";
+				img.style.transform = "rotateY(0deg)";
+			}, seconds * 1000);
+
+			await setTimeout(function() {
+				console.log("done");
+			}, seconds * 1000);
 		}
 
 		async function imgFlip(id, rotate_card = false) {
@@ -3322,7 +3373,6 @@
 				}
 			}
 			
-			console.log(HTML);
 			let regexHTML = symbolize(HTML);
 
 			return regexHTML;
@@ -4213,7 +4263,6 @@
 				} else {
 					colls = []
 				}
-				console.log(decks);
 
 				const urlParams = new URLSearchParams(window.location.search);
 
@@ -4267,7 +4316,6 @@
 							let collections = JSON.parse(data2.colls);
 							for (const collection of collections) {
 								if (collection.name == collection_name) {
-									console.log(collection);
 									let text = atob(collection.url.split("?collection=")[1]);
 									loadCollection(collection.name, text.split("\n"));
 									window.fireimport = true;
@@ -4327,7 +4375,6 @@
 							decks.splice(decks.indexOf(deck_), 1);
 						}
 					}
-					console.log(decks);
 					decks.push(deckObj);
 					updateDoc(doc(db, "users", username), {
 						decks   : JSON.stringify(decks)
