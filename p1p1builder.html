@@ -21,7 +21,6 @@
             background-attachment: fixed;
         }
         select {
-            position: absolute;
             text-align: center;
             font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
             font-weight: 500;
@@ -40,13 +39,13 @@
             justify-items: center;
             width: 100%;
         }
-        hr {
+        /* hr {
             width: 85%;
             height: 4px;
             background-color: black;
             border-radius: 2px;
             border: none;
-        }
+        } */
         #modal-container {
             display: none; 
             position: fixed; 
@@ -519,6 +518,9 @@
         .sg-icon {
             cursor: pointer;
         }
+        .name-cost {
+            font-family: beleren;
+        }
     </style>
     <style id="text-style">
 	.text {
@@ -544,10 +546,10 @@
                     <a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
             </div>
         </div>
-        <div class="selects" id="selects">
+        <!-- <div class="selects" id="selects">
 			<select id="color-select" onchange="setGradient()">
 			</select>
-		</div>
+		</div> -->
         <div class="page-container">
             <div class="search-container">
                 <div class="deckbuilder-search-grid popout">
@@ -575,6 +577,12 @@
                     </div>
                     <div class="card-grid-container" id="card-grid-container">
                     </div>
+                </div>
+            </div>
+            <div class="pack-container">
+                <div class="pack">
+                    <canvas id="pack-canvas" class="pack-canvas"></canvas>
+                    <div class="pack-grid" id="pack-grid"></div>
                 </div>
             </div>
         </div>
@@ -627,6 +635,13 @@
                 gradients = raw_gradients.gradients;
                 setGradient(localStorage.getItem("settings.gradient"));
                 prepareGradients();
+
+                preSearch();
+
+                gridified_card = gridifyCard(card_list_arrayified[0], true, true);
+                gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
+                gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
+                document.getElementById("card-grid-container").appendChild(gridified_card);
             });
 
             function setGradient(gradient=false) {
@@ -906,7 +921,7 @@
                     };
 
                     card_sr.onclick = function() {
-                        addCardToDeck(JSON.stringify(card_stats));
+                        addCardToPack(card_stats);
                     }
                     card_sr.style.cursor = "pointer";
 
@@ -923,6 +938,19 @@
 
                     imgContainer.appendChild(card_sr);
                     cardGrid.appendChild(imgContainer);
+                }
+            }
+
+            pack = [];
+
+            function addCardToPack(card) {
+                pack.push(card);
+                renderPack();
+            }
+
+            function renderPack() {
+                for (const card_stats of pack) {
+                    const card_src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
                 }
             }
 

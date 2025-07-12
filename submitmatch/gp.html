@@ -287,6 +287,7 @@
                                 } else {
                                     match[p] = opponent_score;
                                 }
+                                console.log(match);
                             }
                         }
                     }
@@ -302,6 +303,8 @@
                         }
                         i++;
                     }
+
+                    console.log(new_round, new_swiss, swiss);
 
                     new_swiss[Object.keys(swiss)[Object.keys(swiss).length - 1]] = new_round; 
 
