@@ -319,7 +319,9 @@
                         rounds: JSON.stringify(new_rounds)
                     });
 
-                    alert("Reported! You can now close the page");
+                    alert("Reported! You'll now be redirected to the gp page");
+                    
+                    window.location.href = "/recentgp";
                 });
             }
 
