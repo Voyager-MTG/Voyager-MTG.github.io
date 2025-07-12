@@ -190,7 +190,7 @@
         <div class="account-grid">
             <button class="black-button" onclick="window.location.href = '/account'" id="account-btn"><img src="/img/header/account.png" class="btn-img">My Account</button>
             <span id="login" class="text"></span>
-            <button class="black-button" onclick="localStorage.removeItem('settings.session'); location.reload();" id="account-btn"><img src="/img/export-white.png" class="btn-img">Sign Out</button>
+            <button class="black-button" id="sign-out"><img src="/img/export-white.png" class="btn-img">Sign Out</button>
         </div>
 
         <script>
@@ -467,7 +467,7 @@
         <script type="module">
             // Import the functions you need from the SDKs you need
             import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-            import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+            import { setDoc, addDoc, updateDoc, doc, deleteDoc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
             // TODO: Add SDKs for Firebase products that you want to use
             // https://firebase.google.com/docs/web/setup#available-libraries
             
@@ -543,6 +543,12 @@
             let all_users = []
             all_users_data.forEach((doc) => {
                 all_users.push(doc.data());
+            });
+
+            document.getElementById("sign-out").addEventListener("click", async () => {
+                await deleteDoc(doc(db, "sessions", localStorage.getItem("settings.session")));
+                localStorage.removeItem("settings.session");
+                window.location.reload();
             });
 
             async function reload() {

@@ -487,7 +487,7 @@
                         modified.className = 'updated';
                         for (const color of 'WUBRGI') {
                             let color_ele = document.createElement('img');
-                            color_ele.src = `img/mana/mana_${color.toLowerCase()}.png`;
+                            color_ele.src = `img/mana/mana_${color}.png`;
                             if (deck.colors.includes(color)) {
                                 color_ele.className = "mana-img";
                             } else {
@@ -496,7 +496,7 @@
                             colors.appendChild(color_ele);
                         }
                         colors.className = "colors";
-                        settings.src = "img/settings.png";
+                        settings.src = "img/header/settings.png";
                         settings.className = "deck-icon";
                         console.log(settings_container);
                         settings_container.className = "deck-icon-container";
