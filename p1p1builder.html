@@ -546,6 +546,7 @@
         }
         .pack-image-container {
             position: relative;
+            transition: 0.2s;
         }
     </style>
     <style id="text-style">
@@ -615,6 +616,7 @@
 				<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
 			</div>
 		</div>
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
         <script>
             let gradients = null;
             let raw_gradients = null;
@@ -707,6 +709,34 @@
                 }
 
                 // setGradient();
+            }
+
+            function writeImageFile() {
+                const card_ele = document.getElementById("pack");
+                html2canvas(card_ele, { width: card_ele.width * 2, height: card_ele.height * 2, useCORS: true, taintTest: false, allowTaint: false }).then(function(canvas) {
+                        var width = canvas.width;
+                        var height = canvas.height;
+                        var context = canvas.getContext('2d');
+                        var imageData = context.getImageData(0, 0, width, height).data;
+                        var outputCanvas = document.createElement('canvas');
+                        var outputContext = outputCanvas.getContext('2d');
+                        outputCanvas.width = width;
+                        outputCanvas.height = height;
+                        var idata = outputContext.createImageData(width, height);
+                        idata.data.set(imageData);
+                        outputContext.putImageData(idata, 0, 0);
+                        downloadURI(outputCanvas.toDataURL(), "p1p1.png");
+                });
+            }
+
+            function downloadURI(uri, name) {
+                var link = document.createElement("a");
+                link.download = name;
+                link.href = uri;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                delete link;
             }
 
 
@@ -983,6 +1013,10 @@
 
                     const image_container = document.createElement("div");
                     image_container.className = "pack-image-container";
+                    image_container.onclick = () => {
+                        pack.splice(pack.indexOf(card_stats), 1);
+                        renderPack();
+                    }
 
                     image_container.appendChild(image);
                     img_list.push(image_container);
