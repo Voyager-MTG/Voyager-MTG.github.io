@@ -4,8 +4,16 @@
 	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
 	<link rel="stylesheet" href="/resources/mana.css">
 	<link rel="stylesheet" href="/resources/header.css">
+	<meta id="meta-card-name" content="CARDNAME" property="og:title" />
+	<meta id="meta-card-desc" content="DESCRIPTION" property="og:description" />
+	<meta id="meta-card-url" content="MYLINK" property="og:url" />
+	<meta id="meta-card-img" content="CARDIMG" property="og:image" />
+	<meta content="#f1824a" data-react-helmet="true" name="theme-color" />
 </head>
 <style>
+	colortest {
+		color: #f1824a;
+	}
 	@font-face {
 		font-family: Beleren;
 		src: url('/resources/beleren.ttf');
@@ -369,7 +377,19 @@
 					banner_title.innerHTML = set_stats.set_name;
 					break;
 				}
-			}			
+			}	
+			
+			const card_desc = card.type       + "\n" + 
+			                  card.rules_text + "\n" +
+							  card.pt
+			
+			const card_stats = card;
+			const card_img = "https://voyager-mtg.github.io/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+
+			document.getElementById("meta-card-name").setAttribute("content", name);
+			document.getElementById("meta-card-desc").setAttribute("content", card_desc);
+			document.getElementById("meta-card-url").setAttribute("content", window.location.href);
+			document.getElementById("meta-card-img").setAttribute("content", card_img);
 
 			document.getElementById("grid").appendChild(gridifyCard(card, false, false));
 

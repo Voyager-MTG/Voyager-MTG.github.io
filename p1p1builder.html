@@ -521,6 +521,32 @@
         .name-cost {
             font-family: beleren;
         }
+        .pack-canvas {
+            width: 100%;
+            height: 100%;
+        }
+        .pack {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            width: 98%;
+            height: fit-content;
+            gap: 3px;
+            justify-items: center;
+            padding: 8px 1%;
+            /* direction: ltr; */
+            position: absolute;
+            /* overflow-y: scroll; */
+            position: relative;
+        }
+        .pack-container {
+            height: 80vh;
+        }
+        .pack-card {
+            width: 100%;
+        }
+        .pack-image-container {
+            position: relative;
+        }
     </style>
     <style id="text-style">
 	.text {
@@ -580,9 +606,7 @@
                 </div>
             </div>
             <div class="pack-container">
-                <div class="pack">
-                    <canvas id="pack-canvas" class="pack-canvas"></canvas>
-                    <div class="pack-grid" id="pack-grid"></div>
+                <div class="pack" id="pack">
                 </div>
             </div>
         </div>
@@ -949,8 +973,24 @@
             }
 
             function renderPack() {
+                let img_list = [];
                 for (const card_stats of pack) {
                     const card_src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+                    
+                    const image = new Image();
+                    image.src = card_src;
+                    image.className = "pack-card";
+
+                    const image_container = document.createElement("div");
+                    image_container.className = "pack-image-container";
+
+                    image_container.appendChild(image);
+                    img_list.push(image_container);
+                }
+                
+                document.getElementById("pack").innerHTML = "";
+                for (const img of img_list) {
+                    document.getElementById("pack").appendChild(img);
                 }
             }
 
@@ -2023,66 +2063,6 @@
                 }
 
                 return retVal && (strOut.length > strIn.length);
-            }
-        </script>
-        <script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-            import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
-            
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-                apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-                authDomain: "voyager-78e30.firebaseapp.com",
-                projectId: "voyager-78e30",
-                storageBucket: "voyager-78e30.firebasestorage.app",
-                messagingSenderId: "411191248476",
-                appId: "1:411191248476:web:591349be169d823e5f8899",
-                measurementId: "G-TQ1L48F25M"
-            };
-            
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
-            let username = "";
-            let password = "";
-            let sessionid = localStorage.getItem('settings.session');
-            let decks = {};
-            const events = ["GP1", "League"];
-            let user_data;
-
-            if (sessionid) {
-                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-                    let data = docSnap.data();
-                    username = data.username;
-                    password = data.password;
-                });
-
-                await getDoc(doc(db, 'users', username)).then(docSnap => {
-                    let data = docSnap.data();
-                    user_data = data;
-                });
-            }
-
-            document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-
-			if (localStorage.getItem("settings.darkthememenu") == "On") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
-			} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
-			}
-
-            
-            async function reload() {
-                //firebase code
-            }
-
-            if (sessionid) {
-                reload();
             }
         </script>
     </body>
