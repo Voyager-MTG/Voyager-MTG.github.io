@@ -1,12 +1,12 @@
 {
 	"cards":{
-		"A Beloved World": "white",
-		"Cloudscape Observer": "white",
-		"Hibernating Dragon": "white",
-		"Soul Devouring Core": "white",
-		"Subvert the Light": "black",
-		"The Forge of Days": "white",
-		"The Moth": "white"
+		"A Beloved World":     ["Ayan Nag",         "white"],
+		"Cloudscape Observer": ["LoganWalden",      "white"],
+		"Hibernating Dragon":  ["VoidGift",         "white"],
+		"Soul Devouring Core": ["Chris Cold",       "white"],
+		"Subvert the Light":   ["Zachary Freestra", "black"],
+		"The Forge of Days":   ["Valun",            "white"],
+		"The Moth":            ["Valun",            "white"]
 	},
 	"gradients":[
 	{

@@ -40,6 +40,11 @@
             top: 10%;
             left: 1%;
 	    }
+.artist-credit {
+		left: 160px;
+		position: absolute;
+                width: 240px;
+	}
         .page-container {
             display: grid;
             align-items: center;
@@ -747,6 +752,7 @@
 			}
 
 			function setGradient(gradient=false) {
+				let artistCredit = "";
 				if (!gradient) { 
 					gradient = document.getElementById("color-select").value;
 				}
@@ -765,7 +771,8 @@
 					if (gradient == background.replace(' ', '-'))
 					{ 	
 						gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-						setTextColor(card_backgrounds[background]);
+						artistCredit = card_backgrounds[background][0];
+						setTextColor(card_backgrounds[background][1]);
 					}
 				}
 
@@ -773,11 +780,21 @@
 					const bgs = Object.keys(card_backgrounds);
 					const background = bgs[reallyRand(bgs.length)];
 					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-					setTextColor(card_backgrounds[background]);
+					artistCredit = card_backgrounds[background][0];
+					setTextColor(card_backgrounds[background][1]);
 				}
+
 				
 				document.body.style.backgroundImage = gradImage;
 				localStorage.setItem("settings.gradient", gradient);
+				console.log("CHANGE");
+				if (document.getElementsByClassName("artist-credit")[0])
+					document.getElementsByClassName("artist-credit")[0].remove();
+				const credit_text = document.createElement("span");
+				credit_text.className = "artist-credit text";
+				credit_text.innerText = `background by ${artistCredit}`;
+				if (artistCredit)
+					document.getElementById("color-select").parentElement.appendChild(credit_text);
 			}
 
 function reallyRand(x, seed = false) {
