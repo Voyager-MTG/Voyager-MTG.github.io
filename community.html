@@ -120,8 +120,7 @@
             gap: 10px;
             grid-template-columns: 1fr 1fr;
             width: 82%;
-            align-self: center;
-            justify-self: center;
+            margin: auto;
         }
         .deck-container {
             display: grid;
@@ -152,7 +151,7 @@
             border-radius: 20px;
         }
         .deck-preview-img {
-            max-height: 200px;
+            max-height: 300px;
             border: 2px solid black;
             box-shadow: 7px 7px 2px #999;
             border-radius: 16px;
@@ -292,7 +291,7 @@
         }
         .tab-select {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 10px;
             margin-top: 40px;
         }
@@ -354,6 +353,10 @@
                     <img src="img/trophy.png" class="tab-switch-icon">
                     <span>Events</span>
                 </div>
+                <!-- <div class="tab-btn" id="cards-tab-select">
+                    <img src="img/header/sets.png" class="tab-switch-icon">
+                    <span>Cards</span>
+                </div> -->
             </div>
             <div id="main-tab" class="main-tab">
 
@@ -556,6 +559,7 @@ function setTextColor(c = false) {
             let events_html;
             let decks_html;
             let users_html;
+            let cards_html;
             let initial_load = true;
 
             document.getElementById("users-tab-select").addEventListener("click", (e) => {
@@ -572,6 +576,12 @@ function setTextColor(c = false) {
 
             document.getElementById("decks-tab-select").addEventListener("click", async (e) => {
                 tab = "decks";
+                document.getElementById("main-tab").innerHTML = "";
+                reload();
+            });
+
+            document.getElementById("cards-tab-select").addEventListener("click", async (e) => {
+                tab = "cards";
                 document.getElementById("main-tab").innerHTML = "";
                 reload();
             });
@@ -611,12 +621,17 @@ function setTextColor(c = false) {
 
             let card_list_arrayified = card_list.cards;
 
-            async function reload() {
-                tab = tab ? tab : "events";
+            function setTabs() {
                 document.getElementById(`events-tab-select`).className = "tab-btn";
                 document.getElementById(`users-tab-select`).className = "tab-btn";
                 document.getElementById(`decks-tab-select`).className = "tab-btn";
+                document.getElementById(`cards-tab-select`).className = "tab-btn";
                 document.getElementById(`${tab}-tab-select`).className += " tab-btn-active";
+            }
+
+            async function reload() {
+                tab = tab ? tab : "events";
+                setTabs();
                 if (initial_load) {
                     q = query(collection(db, "users"));
                     all_users_docs = await getDocs(q);
@@ -642,6 +657,7 @@ function setTextColor(c = false) {
                         }
                     });
                     decks_html = await makeDecksTab();
+                    cards_html = await makeCardsTab();
                     events_html = makeEventTab();
                     users_html = makeUsersTab();
                 }
@@ -653,6 +669,9 @@ function setTextColor(c = false) {
                 }
                 if (tab == "users") {
                     document.getElementById("main-tab").appendChild(users_html);
+                }
+                if (tab == "cards") {
+                    document.getElementById("main-tab").appendChild(cards_html);
                 }
                 initial_load = false;
             }
@@ -729,7 +748,9 @@ function setTextColor(c = false) {
             }
 
             async function makeDecksTab() {
-                const sections = [{name: "New Decks", cond: "new", num: 4}, {name: "Winning Decks", cond: "win", num: "all"}];
+                const winning_decks = await getWinningDecks();
+
+                const sections = [{name: "New Decks", cond: "new", num: winning_decks.length}, {name: "Winning Decks", cond: "win", num: "all"}];
 
                 const content_container = document.createElement("div");
                 content_container.className = "decks-container";
@@ -771,7 +792,7 @@ function setTextColor(c = false) {
                     if (cond == 'new') {
                         all_decks_2.sort(newDeck);
                     } else if (cond == "win") {
-                        all_decks_2 = await getWinningDecks();
+                        all_decks_2 = winning_decks;
                         num_decks = all_decks_2.length;
                     }
 
@@ -954,9 +975,7 @@ function setTextColor(c = false) {
                 return 0;
             }
 
-            if (sessionid) {
-                reload();
-            }
+            reload();
         </script>
     </body>
 </html>
