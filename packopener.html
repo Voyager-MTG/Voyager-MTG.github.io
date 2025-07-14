@@ -750,7 +750,7 @@
 				const credit_text = document.createElement("span");
 				credit_text.className = "artist-credit text";
 				credit_text.innerText = `background by ${artistCredit}`;
-				if (artistCredit)
+				if (artistCredit && document.getElementById("color-select"))
 					document.getElementById("color-select").parentElement.appendChild(credit_text);
 			}
 
