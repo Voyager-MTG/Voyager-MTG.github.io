@@ -20,6 +20,7 @@ def generateHTML():
 	body {
 		background-image: linear-gradient(to top, #ffdde1, #ee9ca7);
 		background-attachment: fixed;
+		background-size: cover;
 		overscroll-behavior: none;
 		font-family: 'Helvetica', 'Arial', sans-serif;
 		display: grid;
@@ -270,6 +271,7 @@ def generateHTML():
 				}
 
 				gradients = raw_gradients.gradients;
+				card_backgrounds = raw_gradients.cards;
 				prepareGradients();
 
 				'''

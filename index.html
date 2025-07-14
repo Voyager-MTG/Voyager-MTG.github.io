@@ -18,11 +18,13 @@
 	}
 	body {
 		background-attachment: fixed;
+		background-size: cover;
 		overscroll-behavior: none;
 		font-family: 'Helvetica', 'Arial', sans-serif;
 		display: grid;
 		overflow-x: hidden;
 		margin: 0;
+		background-size: cover;
 	}
 	body::before {
 		content: "";
@@ -33,7 +35,8 @@
 		width: 100%;
 		z-index: -1;
 		background-image: var(--gradient);	
-		/* background-attachment: fixed; */
+		/* background-attachment: fixed;
+		background-size: cover; */
 		background-size: cover;
 	}
 	.selects {
@@ -424,6 +427,11 @@
 	<style id="gradient-style">
 
 	</style>
+	<style id="text-style">
+		.text {
+			color: white;
+		}
+	</style>
 	<body>
 		<!-- <div class="selects" id="selects">
 			<select id="color-select" onchange="setGradient()">
@@ -446,49 +454,49 @@
 				<button onclick="window.location.href = '/community'"><img src="/img/header/community.png" class="btn-img">Community</button>
 			</div>
 			<div class="two-part-grid">
-				<div class="container" id="preview-container">
-					<p>Preview Galleries</p>
+				<div class="container text" id="preview-container">
+					<p class="text">Preview Galleries</p>
 										<div class="set-group"></div>
 							<div class="preview-container">
 		<div class="set-icon-container">
 									<a href="sets/AKT"><div class="set-icon"><img src="sets/AKT-files/logo.png" title="Akellan Transcendence"></img></div>
-									<div class="set-icon-name">Akellan Transcendence</div></a>
+									<div class="set-icon-name text">Akellan Transcendence</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/EXPT"><div class="set-icon"><img src="sets/EXPT-files/logo.png" title="TVP Silver Expansion"></img></div>
-									<div class="set-icon-name">TVP Silver Expansion</div></a>
+									<div class="set-icon-name text">TVP Silver Expansion</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/HEL"><div class="set-icon"><img src="sets/HEL-files/logo.png" title="Fires of Hwel"></img></div>
-									<div class="set-icon-name">Fires of Hwel</div></a>
+									<div class="set-icon-name text">Fires of Hwel</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/HOD"><div class="set-icon"><img src="sets/HOD-files/logo.png" title="Houses of Dewold"></img></div>
-									<div class="set-icon-name">Houses of Dewold</div></a>
+									<div class="set-icon-name text">Houses of Dewold</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/ITD"><div class="set-icon"><img src="sets/ITD-files/logo.png" title="Itera: Into the Dream"></img></div>
-									<div class="set-icon-name">Itera: Into the Dream</div></a>
+									<div class="set-icon-name text">Itera: Into the Dream</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/PTN"><div class="set-icon"><img src="sets/PTN-files/logo.png" title="Port Noon: Occult Islands of Vespera"></img></div>
-									<div class="set-icon-name">Port Noon: Occult Islands of Vespera</div></a>
+									<div class="set-icon-name text">Port Noon: Occult Islands of Vespera</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/PVR"><div class="set-icon"><img src="sets/PVR-files/logo.png" title="Primivir"></img></div>
-									<div class="set-icon-name">Primivir</div></a>
+									<div class="set-icon-name text">Primivir</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/VNM"><div class="set-icon"><img src="sets/VNM-files/logo.png" title="Vinimroth Eternities"></img></div>
-									<div class="set-icon-name">Vinimroth Eternities</div></a>
+									<div class="set-icon-name text">Vinimroth Eternities</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/WAW"><div class="set-icon"><img src="sets/WAW-files/logo.png" title="The Wonderlands’ Wishes"></img></div>
-									<div class="set-icon-name">The Wonderlands’ Wishes</div></a>
+									<div class="set-icon-name text">The Wonderlands’ Wishes</div></a>
 								</div>
 				<div class="set-icon-container">
 									<a href="sets/LAIR"><div class="set-icon"><img src="sets/LAIR-files/logo.png" title="Secret Lair Drops"></img></div>
-									<div class="set-icon-name">Secret Lair Drops</div></a>
+									<div class="set-icon-name text">Secret Lair Drops</div></a>
 								</div>
 				<div class="and-more" id="and-more">
 					<a href="/all-sets" class="text" id="and-more-text">And X more...</a>
@@ -530,6 +538,7 @@
 		<script>
 			const delay = ms => new Promise(res => setTimeout(res, ms));
 			let gradients = [];
+			let card_backgrounds= [];
 			let card_list_arrayified = [];
 			let specialchars = "";
 			let img_list = [];
@@ -558,6 +567,8 @@
 				}
 
 				gradients = raw_gradients.gradients;
+				card_backgrounds = raw_gradients.cards;
+				card_backgrounds = raw_gradients.cards;
 
 				if (localStorage.getItem('settings.gradient') == null) localStorage.setItem('settings.gradient', 'Voyager');
 				setGradient(localStorage.getItem('settings.gradient'));
@@ -649,6 +660,7 @@
 				const img = document.createElement("img");
 				img.id = "cotd";
 
+				setTextColor();
 
 				img.src = '/sets/' + card_stats.set + '-files/img/' + card_stats.number + '_' + card_stats.card_name + (card_stats.shape.includes('double') ? '_front' : '') + '.' + card_stats.image_type;
 
@@ -664,6 +676,30 @@
 				document.getElementById("preview-container").style.height = document.getElementById("cotd-image").offsetHeight;
 
 			});
+
+			function reallyRand(x, seed = false) {
+				const date = new Date();
+				seed = seed ? seed : date.getUTCFullYear() * 10000 + 
+							 date.getUTCMonth() * 100 + 
+							 date.getUTCDate();
+
+				const a = 1103515245;
+				const c = 12345;
+				const m = Math.pow(2, 31);
+
+				let randomNumber = (a * seed + c) % m;
+				randomNumber = randomNumber / m;
+
+				return Math.floor(randomNumber * x);
+			}
+
+function setTextColor(c = false) {
+				if (c) {
+					localStorage.setItem("settings.textcolor", c);
+				}
+				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+            	document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+			}
 
 			setInterval(() => {
 				const dotn = parseInt(current_dot.split("dot-")[1]);
@@ -796,6 +832,12 @@
 				opt.value = defaultGradient.replace(' ', '-');
 				opt.text = defaultGradient;
 				document.getElementById("color-select").appendChild(opt);
+				let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
+				const opt_rand = document.createElement("option");
+				opt_rand.value = "Random-Card";
+				opt_rand.text = "Random Card";
+
+				document.getElementById("color-select").appendChild(opt_rand);
 				for (const gradient of gradients)
 				{	
 					const opt = document.createElement("option");
@@ -804,6 +846,16 @@
 					if (gradient.name != defaultGradient) {
 						document.getElementById("color-select").appendChild(opt);
 					}
+				}
+
+				for (const gradient in card_backgrounds) {
+					const opt = document.createElement("option");
+					opt.value = gradient.replace(' ', '-');
+					opt.text = gradient;
+					if (gradient.name != defaultGradient) {
+						document.getElementById("color-select").appendChild(opt);
+					}
+					console.log(gradient, opt);
 				}
 
 				// setGradient();
@@ -820,17 +872,51 @@
 				{
 					if (gradient == grad.name.replace(' ', '-'))
 					{ 	
-						gradTop = grad.color1;
-						gradBottom = grad.color2;
+						gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
 					}
 				}
 
-				// console.log(`linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
-				document.body.style.setProperty("--gradient", `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`);
-				// cssVars({
-				// 	variables: {'--gradient': `linear-gradient(to bottom, ${gradTop}, ${gradBottom})`}
-				// });
+				for (const background in card_backgrounds) {
+					if (gradient == background.replace(' ', '-'))
+					{ 	
+						gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
+						setTextColor(card_backgrounds[background]);
+					}
+				}
+
+				if (gradient == "Random-Card") {
+					const bgs = Object.keys(card_backgrounds);
+					const background = bgs[reallyRand(bgs.length)];
+					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
+					setTextColor(card_backgrounds[background]);
+				}
+				
+				document.body.style.backgroundImage = gradImage;
 				localStorage.setItem("settings.gradient", gradient);
+			}
+
+function reallyRand(x, seed = false) {
+				const date = new Date();
+				seed = seed ? seed : date.getUTCFullYear() * 10000 + 
+							 date.getUTCMonth() * 100 + 
+							 date.getUTCDate();
+
+				const a = 1103515245;
+				const c = 12345;
+				const m = Math.pow(2, 31);
+
+				let randomNumber = (a * seed + c) % m;
+				randomNumber = randomNumber / m;
+
+				return Math.floor(randomNumber * x);
+			}
+
+function setTextColor(c = false) {
+				if (c) {
+					localStorage.setItem("settings.textcolor", c);
+				}
+				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+            	document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
 			}
 
 			function goToSets() {
