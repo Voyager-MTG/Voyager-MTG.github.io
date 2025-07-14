@@ -509,8 +509,15 @@
 				}
 			}
 
-			const name_match = new RegExp(/named /);
-			for (const name of name.match)
+			const name_match = new RegExp(/(card|token) named /);
+			for (const name of card.rules_text.matchAll(/^(.*)(card|token)s? named (.*?) (into|,|with)/gs)) {
+				console.log(name);
+				for (const card_ of card_list_arrayified) {
+					if (card_.card_name == name[3] && !related_cards.includes(name[3])) {
+						related_cards.push(name[3]);
+					}
+				}
+			}
 
 			return related_cards;
 		}
