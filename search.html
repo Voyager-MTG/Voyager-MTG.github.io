@@ -126,6 +126,10 @@
 		height: auto;
 		display: block;
 		border-radius: 9px;
+		transition: 0.2s;
+	}
+	.card-image:hover {
+		filter: brightness(0.7);
 	}
 	.card-text {
 		padding-top: 20px;
@@ -1924,7 +1928,7 @@ function setTextColor(c = false) {
 				const playrate_event = parseFloat(stats.playrate_event[1].split("%")[0]);
 				const winrate = parseFloat(stats.winrate[1].split("%")[0]);
 				console.log(stats.playrate_event);
-				return (playrate > 10 && winrate > 20 && playrate_event > 10);
+				return (playrate > 10 && winrate > 40 && playrate_event > 10);
 			}
 
 	</script>
