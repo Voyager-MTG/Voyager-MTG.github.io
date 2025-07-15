@@ -319,7 +319,7 @@
 		border-top: 2px solid black;
 		border-left: 2px solid black;
 	}
-	.stat-title, .stat-value {
+	.stat-title, .stat-value, .is-played {
 		border-right: 2px solid black;
 		border-bottom: 2px solid black;
 		padding: 8px;
@@ -329,6 +329,15 @@
 	}
 	.stat-title:hover, .stat-value:hover {
 		background-color: gray;
+	}
+	.played {
+		background-color: rgb(103, 201, 98);
+	}
+	.not-played {
+		background-color: rgb(226, 74, 74);
+	}
+	.is-played:hover {
+		filter: brightness(0.7);
 	}
 </style>
 <style id="text-style">
@@ -1310,13 +1319,15 @@ function setTextColor(c = false) {
 								if (winner == p1) {
 									total_wins++;
 								}
-								total_games++;
+								if (winner != 0)
+									total_games++;
 							}
 							if (players_with_card.includes(p2)) {
 								if (winner == p2) {
 									total_wins++;
 								}
-								total_games++;
+								if (winner != 0)
+									total_games++;
 							}
 						}
 					}
@@ -1361,9 +1372,38 @@ function setTextColor(c = false) {
 					content_container.appendChild(stat_title);
 					content_container.appendChild(stat_ele);
 				}
+
+				const is_played = document.createElement("span");
+				is_played.className = "is-played ";
+				is_played.innerText = "Played";
+				is_played.className += isPlayed(stats) ? "played" : "not-played";
+				
+				const is_staple = document.createElement("span");
+				is_staple.className = "is-played ";
+				is_staple.innerText = "Staple";
+				is_staple.className += isStaple(stats) ? "played" : "not-played";
+
+				content_container.appendChild(is_played);
+				content_container.appendChild(is_staple);
 				
 				document.getElementById("modal-content").appendChild(content_container);
 				document.getElementById("modal-container").style.display = "block";
+			}
+
+			function isPlayed(stats) {
+				const playrate = parseFloat(stats.playrate_general[1].split("%")[0]);
+				if (playrate > 3) {
+					return true;
+				}
+			}
+
+			function isStaple(stats) {
+				const playrate = parseFloat(stats.playrate_general[1].split("%")[0]);
+				const playrate_event = parseFloat(stats.playrate_event[1].split("%")[0]);
+				const winrate = parseFloat(stats.winrate[1].split("%")[0]);
+				if (playrate > 10 && winrate > 20 && playrate_event > 10) {
+					return true;
+				}
 			}
 
 			reload();

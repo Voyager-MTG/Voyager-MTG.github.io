@@ -250,6 +250,8 @@
 		</div>
 	</div>
 
+	<button id="get-stats" style="display: none;"></button>
+
 	<script>
 		let page = 0;
 		let pageCount = 30;
@@ -257,6 +259,8 @@
 		let card_list_arrayified = [];
 		let specialchars = "";
 		let sets_json = {};
+		let all_cards_stats;
+		const delay = ms => new Promise(res => setTimeout(res, ms));
 
 		document.addEventListener("DOMContentLoaded", async function () {
 			await fetch('/lists/all-cards.json')
@@ -539,7 +543,7 @@
 			search(setNewState);
 		}
 
-		function search(setNewState) {
+		async function search(setNewState) {
 			searchTerms = document.getElementById("search").value.toLowerCase();
 
 			if (searchTerms != "")
@@ -589,7 +593,7 @@
 					continue;
 				}
 
-				searched = searchAllTokens(card, tokenizeTerms(searchTerms));
+				searched = await searchAllTokens(card, tokenizeTerms(searchTerms));
 
 				if (searched && !containsCard(search_results, card))
 				{
@@ -686,7 +690,7 @@
 			return searchTokens;
 		}
 
-		function searchAllTokens(card, tokens)
+		async function searchAllTokens(card, tokens)
 		{
 			if (tokens == null || tokens == '')
 			{
@@ -696,11 +700,11 @@
 			{
 				if (tokens[i].charAt(0) == '+')
 				{
-					return searchAllTokens(card, tokens.slice(0, i)) && searchAllTokens(card, tokens.slice(i + 1));
+					return await searchAllTokens(card, tokens.slice(0, i)) && await searchAllTokens(card, tokens.slice(i + 1));
 				}
 				if (tokens[i] == "or")
 				{
-					return searchAllTokens(card, tokens.slice(0, i)) || searchAllTokens(card, tokens.slice(i + 1));
+					return await searchAllTokens(card, tokens.slice(0, i)) || await searchAllTokens(card, tokens.slice(i + 1));
 				}
 			}
 
@@ -708,15 +712,15 @@
 			{
 				if (token.charAt(0) == '-')
 				{
-					return !searchToken(card, token.substring(1)) && (tokens.length == 1 ? true : searchAllTokens(card, tokens.slice(1)));
+					return !(await searchToken(card, token.substring(1))) && (tokens.length == 1 ? true : await searchAllTokens(card, tokens.slice(1)));
 				}
 				if (token.charAt(0) == '(')
 				{
-					return searchAllTokens(card, tokenizeTerms(token.substring(1, token.length - 1))) && (tokens.length == 1 ? true : searchAllTokens(card, tokens.slice(1)));
+					return await searchAllTokens(card, tokenizeTerms(token.substring(1, token.length - 1))) && (tokens.length == 1 ? true : await searchAllTokens(card, tokens.slice(1)));
 				}
 				else
 				{
-					return searchToken(card, token) && (tokens.length == 1 ? true : searchAllTokens(card, tokens.slice(1)));
+					return await searchToken(card, token) && (tokens.length == 1 ? true : await searchAllTokens(card, tokens.slice(1)));
 				}
 			}
 		}
@@ -761,7 +765,7 @@
 			return mv;
 		}
 
-		function searchToken(card, token)
+		async function searchToken(card, token)
 		{
 			let card_stats = [];
 
@@ -1286,6 +1290,36 @@
 						if (check == "dfc") {
 							return card_shape.includes("double");
 						}
+						if (check == "played") {
+							if (!document.getElementById("get-stats").dataset.ready) {
+								do {
+									await delay(100);
+								}
+								while (!document.getElementById("get-stats").dataset.ready);
+							}
+
+							if (!all_cards_stats) {
+								document.getElementById("get-stats").click();
+								all_cards_stats = JSON.parse(localStorage.getItem("info.stats"));
+							}
+
+							return isPlayed(all_cards_stats[card.card_name]);
+						}
+						if (check == "staple") {
+							if (!document.getElementById("get-stats").dataset.ready) {
+								do {
+									await delay(100);
+								}
+								while (!document.getElementById("get-stats").dataset.ready);
+							}
+
+							if (!all_cards_stats) {
+								document.getElementById("get-stats").click();
+								all_cards_stats = JSON.parse(localStorage.getItem("info.stats"));
+							}
+
+							return isStaple(all_cards_stats[card.card_name]);
+						}
 					}
 					/* unsupported flows
 					else if (modifier == "<")
@@ -1806,7 +1840,6 @@
 					if (gradient.name != defaultGradient) {
 						document.getElementById("color-select").appendChild(opt);
 					}
-					console.log(gradient, opt);
 				}
 
 				// setGradient();
@@ -1848,7 +1881,6 @@
 				
 				document.body.style.backgroundImage = gradImage;
 				localStorage.setItem("settings.gradient", gradient);
-				console.log("CHANGE");
 				if (document.getElementsByClassName("artist-credit")[0])
 					document.getElementsByClassName("artist-credit")[0].remove();
 				const credit_text = document.createElement("span");
@@ -1881,6 +1913,185 @@ function setTextColor(c = false) {
 				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
             	document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
 			}
+
+			function isPlayed(stats) {
+				const playrate = parseFloat(stats.playrate_general[1].split("%")[0]);
+				return playrate > 3;
+			}
+
+			function isStaple(stats) {
+				const playrate = parseFloat(stats.playrate_general[1].split("%")[0]);
+				const playrate_event = parseFloat(stats.playrate_event[1].split("%")[0]);
+				const winrate = parseFloat(stats.winrate[1].split("%")[0]);
+				console.log(stats.playrate_event);
+				return (playrate > 10 && winrate > 20 && playrate_event > 10);
+			}
+
 	</script>
+	<script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+            import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+            
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+                authDomain: "voyager-78e30.firebaseapp.com",
+                projectId: "voyager-78e30",
+                storageBucket: "voyager-78e30.firebasestorage.app",
+                messagingSenderId: "411191248476",
+                appId: "1:411191248476:web:591349be169d823e5f8899",
+                measurementId: "G-TQ1L48F25M"
+            };
+            
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+            let username = "";
+            let password = "";
+            let sessionid = localStorage.getItem('settings.session');
+            let decks = {};
+            const events = ["GP1", "League"];
+            let user_data;
+			let card_list;
+			let q;
+            let all_users_docs;
+            let all_decks = [];
+            let all_user_decks = [];
+            let all_event_decks = [];
+            let all_users = [];
+            let all_events_docs;
+            let all_events = [];
+
+			function getCardStats() {
+                const stats = {};
+                for (const card of card_list_arrayified) {
+                    let num_decks = 0;
+                    let total_wins = 0;
+                    let total_games = 0;
+					let num_event_decks = 0;
+					let num_user_decks = 0;	
+
+                    for (const event of all_events) {
+                        if (event.name.includes("League")) continue;
+                        const swiss = JSON.parse(event.rounds).swiss;
+                        const decks = JSON.parse(event.decks);
+                        let players_with_card = [];
+                        for (const player in decks) {
+                            const deck = decks[player];
+                            const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
+                            for (const line of decklist.split("\n")) {
+                                if (line.substring(line.indexOf(" ") + 1, line.length) == card.card_name) {
+                                    players_with_card.push(player);
+                                    break;
+                                }
+                            }
+                        }
+                        for (const round_name in swiss) {
+                            const round = swiss[round_name];
+                            for (const game of round) {
+                                const p1 = Object.keys(game)[0];
+                                const p2 = Object.keys(game)[1];
+
+                                const p1_score = parseInt(game[p1]);
+                                const p2_score = parseInt(game[p2]);
+
+                                let winner = 0;
+                                if (p1_score > p2_score)
+                                    winner = p1;
+                                if (p1_score < p2_score)
+                                    winner = p2;
+
+                                if (players_with_card.includes(p1)) {
+                                    if (winner == p1) {
+                                        total_wins++;
+                                    }
+                                    if (winner != 0)
+									    total_games++;
+                                }
+                                if (players_with_card.includes(p2)) {
+                                    if (winner == p2) {
+                                        total_wins++;
+                                    }
+                                    if (winner != 0)
+									    total_games++;
+                                }
+                            }
+                        }
+                    }
+
+                    for (const deck of all_decks) {
+                        const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
+                        for (const line of decklist.split("\n")) {
+                            if (line.substring(line.indexOf(" ") + 1, line.length) == card.card_name) {
+                                num_decks += 1;
+                                if (deck.event)
+                                    num_event_decks++;
+                                else
+                                    num_user_decks++;
+                            }
+                        }
+                    }
+
+                    let winrate = ((total_wins / total_games) * 100).toFixed(2).toString() + "%";
+                    winrate = winrate.replace("NaN%", "No Data");
+                    const playrate_event_text = ((num_event_decks / event_decks_count) * 100).toFixed(2).toString() + "%";
+                    const playrate_user_text  = ((num_user_decks  / user_decks_count ) * 100).toFixed(2).toString() + "%";
+                    const playrate_text       = ((num_decks       / all_decks.length ) * 100).toFixed(2).toString() + "%";
+
+                    stats[card.card_name] = {
+                        winrate          : ["GP Winrate"      , winrate            ],
+                        playrate_event   : ["Event Playrate"  , playrate_event_text],
+                        playrate_user    : ["User Playrate"   , playrate_user_text ],
+                        playrate_general : ["Overall Playrate", playrate_text      ]
+                    }
+                }
+
+                localStorage.setItem("info.stats", JSON.stringify(stats));
+            }
+
+			q = query(collection(db, "events"));
+			all_events_docs = await getDocs(q);
+
+			q = query(collection(db, "users"));
+			all_users_docs  = await getDocs(q);
+
+			all_events_docs.forEach((doc) => {
+				const data = doc.data();
+				all_events.push(data);
+				for (const user in JSON.parse(data.decks)) {
+					let deck = JSON.parse(data.decks)[user];
+					all_event_decks.push({...deck, "user": user, "event": true});
+					all_decks.push({...deck, "user": user, "event": true});
+				}
+			});
+
+			all_users_docs.forEach((doc) => {
+				const data = doc.data();
+				for (const deck of JSON.parse(data.decks)) {
+					all_user_decks.push({...deck, "user": data.username, "event": false});
+					all_decks.push({...deck, "user": data.username, "event": false});
+				}
+			});
+
+			let event_decks_count = 0;
+			let user_decks_count = 0;
+
+			for (const deck of all_decks) {
+				if (deck.event) {
+					event_decks_count++;
+				}
+				else {
+					user_decks_count++;
+				}
+			}
+
+			document.getElementById("get-stats").dataset.ready = true;
+			document.getElementById("get-stats").addEventListener("click", getCardStats);
+
+        </script>
 </body>
 </html>

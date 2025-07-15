@@ -315,12 +315,12 @@
             justify-items: center;
             gap: 20px;
         }
-        .cards-container {
+        .cards-container, .cards-header {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
             /* gap: 10px; */
             border-top: 2px solid black;
-            border-right: 2px solid black;
+            border-left: 2px solid black;
             width: 70%;
             overflow-y: scroll;
             margin: auto;
@@ -333,6 +333,20 @@
             font-size: 20px;
             background-color: rgba(180, 180, 180, 0.3)
             /* font-weight: bold; */
+        }
+        .card-row-header {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+        }
+        .cards-header {
+            position: sticky;
+            top: 0;
+        }
+        .card-row-name {
+            font-family: beleren;
+        }
+        .sorting-header {
+            text-decoration: underline;
         }
     </style>
     <style id="text-style">
@@ -579,6 +593,7 @@ function setTextColor(c = false) {
             let decks_html;
             let users_html;
             let cards_html;
+            let sort_cards = "name";
             let initial_load = true;
 
             document.getElementById("users-tab-select").addEventListener("click", (e) => {
@@ -1002,42 +1017,133 @@ function setTextColor(c = false) {
 
             async function makeCardsTab() {
                 const content_container = document.createElement("div");
-                content_container.className = "cards-container";
+                content_container.className = "full-cards-container";
+
+                const grid_container = document.createElement("div");
+                grid_container.className = "cards-container";
 
                 const stats = await getCardStats();
 
-                console.log(stats);
+                const header_container = document.createElement("div");
+                header_container.className = "cards-header popout";
+
+                const card_name = document.createElement("div");
+                card_name.className = "card-row-item card-row-name card-row-header";
+                card_name.innerText = "Card Name";
+                card_name.onclick = async () => {
+                    sort_cards = "name";
+                    cards_html = await makeCardsTab();
+                    reload();
+                }
+
+                const card_wr = document.createElement("div");
+                card_wr.className = "card-row-item card-row-wr card-row-header";
+                card_wr.innerText = "GP Winrate";
+                card_wr.onclick = async () => {
+                    sort_cards = "winrate";
+                    cards_html = await makeCardsTab();
+                    reload();
+                }
+
+                const card_event_playrate = document.createElement("div");
+                card_event_playrate.className = "card-row-item card-row-event-playrate card-row-header";
+                card_event_playrate.innerText = "Event Playrate";
+
+                const card_user_playrate = document.createElement("div");
+                card_user_playrate.className = "card-row-item card-row-user-playrate card-row-header";
+                card_user_playrate.innerText = "User Playrate";
+
+                const card_full_playrate = document.createElement("div");
+                card_full_playrate.className = "card-row-item card-row-full-playrate card-row-header";
+                card_full_playrate.innerText = "Playrate";
+
+                header_container.appendChild(card_name);
+                header_container.appendChild(card_wr);
+                header_container.appendChild(card_event_playrate);
+                header_container.appendChild(card_user_playrate);
+                header_container.appendChild(card_full_playrate);
+
+                Array.prototype.sortStats = function(stats) {
+                    function compare(a, b) {
+                        sort_cards = "winrate";
+                        if (sort_cards == "name") {
+                            if (a.card_name === b.card_name)
+                            {
+                                return 0;
+                            }
+                            else {
+                                return (a.card_name < b.card_name) ? -1 : 1;
+                            }
+                        } else if (sort_cards == "winrate") {
+                            const a_wr_unparsed = stats[a.card_name].winrate;
+                            const b_wr_unparsed = stats[b.card_name].winrate;
+
+                            const a_wr = a_wr_unparsed == "No Data" ? -1 : parseFloat(a_wr_unparsed.split("%")[0]);
+                            const b_wr = a_wr_unparsed == "No Data" ? -1 : parseFloat(a_wr_unparsed.split("%")[0]);
+
+                            if (a_wr === b_wr)
+                            {
+                                return 0;
+                            }
+                            else {
+                                return (a_wr < b_wr) ? -1 : 1;
+                            }
+                        }
+                    }
+                }
+
+                card_list_arrayified.sortStats(stats);
 
                 for (const card of card_list_arrayified) {
                     const card_eles = makeCard(card, stats[card.card_name]);
                     for (const ele of card_eles) {
-                        content_container.appendChild(ele);
+                        grid_container.appendChild(ele);
                     }
                 }
+                
+                content_container.appendChild(header_container);
+                content_container.appendChild(grid_container);
 
                 return content_container;
+            }
+
+            function statsSorter(a, b) {
+                    if (sort_cards == name) {
+                        if (a.card_name === b.card_name)
+                        {
+                            return 0;
+                        }
+                        else {
+                            return (a.card_name < b.card_name) ? -1 : 1;
+                        }
+                    }
             }
 
             function makeCard(card, stats) {
                 const card_name = document.createElement("div");
                 card_name.className = "card-row-item card-row-name text";
                 card_name.innerText = card.card_name;
+                card_name.title = "Card's name";
 
                 const card_wr = document.createElement("div");
                 card_wr.className = "card-row-item card-row-wr text";
                 card_wr.innerText = stats.winrate[1];
+                card_wr.title = "Card winrate";
 
                 const card_event_playrate = document.createElement("div");
                 card_event_playrate.className = "card-row-item card-row-event-playrate text";
                 card_event_playrate.innerText = stats.playrate_event[1];
+                card_event_playrate.title = "Card playrate in events";
 
                 const card_user_playrate = document.createElement("div");
                 card_user_playrate.className = "card-row-item card-row-user-playrate text";
                 card_user_playrate.innerText = stats.playrate_user[1];
+                card_user_playrate.title = "Card playrate in user decks";
 
                 const card_full_playrate = document.createElement("div");
                 card_full_playrate.className = "card-row-item card-row-full-playrate text";
                 card_full_playrate.innerText = stats.playrate_general[1];
+                card_full_playrate.title = "Card overall playrate";
 
                 return [card_name, card_wr, card_full_playrate, card_event_playrate, card_user_playrate];
             }
@@ -1085,13 +1191,15 @@ function setTextColor(c = false) {
                                     if (winner == p1) {
                                         total_wins++;
                                     }
-                                    total_games++;
+                                    if (winner != 0)
+									    total_games++;
                                 }
                                 if (players_with_card.includes(p2)) {
                                     if (winner == p2) {
                                         total_wins++;
                                     }
-                                    total_games++;
+                                    if (winner != 0)
+									    total_games++;
                                 }
                             }
                         }
@@ -1102,7 +1210,7 @@ function setTextColor(c = false) {
                         for (const line of decklist.split("\n")) {
                             if (line.substring(line.indexOf(" ") + 1, line.length) == card.card_name) {
                                 num_decks += 1;
-                                if (decklist.event)
+                                if (deck.event)
                                     num_event_decks++;
                                 else
                                     num_user_decks++;
