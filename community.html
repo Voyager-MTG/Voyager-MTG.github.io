@@ -315,6 +315,25 @@
             justify-items: center;
             gap: 20px;
         }
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            /* gap: 10px; */
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            width: 70%;
+            overflow-y: scroll;
+            margin: auto;
+        }
+        .card-row-item {
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            padding: 5px;
+            text-align: center;
+            font-size: 20px;
+            background-color: rgba(180, 180, 180, 0.3)
+            /* font-weight: bold; */
+        }
     </style>
     <style id="text-style">
         .text {
@@ -608,6 +627,8 @@ function setTextColor(c = false) {
             let q;
             let all_users_docs;
             let all_decks = [];
+            let all_users_decks = [];
+            let all_events_decks = [];
             let all_users = [];
             let all_events_docs;
             let all_events = [];
@@ -645,6 +666,7 @@ function setTextColor(c = false) {
                         all_users.push(data);
                         for (const deck of JSON.parse(data.decks)) {
                             all_decks.push({...deck, "user": data.username, "event": false});
+                            all_users_decks.push({...deck, "user": data.username, "event": false});
                         }
                         // all_decks.push(...JSON.parse(data.decks));
                     });
@@ -653,11 +675,11 @@ function setTextColor(c = false) {
                         all_events.push(data);
                         for (const user in JSON.parse(data.decks)) {
                             let deck = JSON.parse(data.decks)[user];
+                            all_events_decks.push({...deck, "user": user, "event": true});
                             all_decks.push({...deck, "user": user, "event": true});
                         }
                     });
                     decks_html = await makeDecksTab();
-                    cards_html = await makeCardsTab();
                     events_html = makeEventTab();
                     users_html = makeUsersTab();
                 }
@@ -671,6 +693,9 @@ function setTextColor(c = false) {
                     document.getElementById("main-tab").appendChild(users_html);
                 }
                 if (tab == "cards") {
+                    if (!cards_html)   
+                        cards_html = await makeCardsTab();
+                    
                     document.getElementById("main-tab").appendChild(cards_html);
                 }
                 initial_load = false;
@@ -975,7 +1000,132 @@ function setTextColor(c = false) {
                 return 0;
             }
 
-            function makeCardsTab() {}
+            async function makeCardsTab() {
+                const content_container = document.createElement("div");
+                content_container.className = "cards-container";
+
+                const stats = await getCardStats();
+
+                console.log(stats);
+
+                for (const card of card_list_arrayified) {
+                    const card_eles = makeCard(card, stats[card.card_name]);
+                    for (const ele of card_eles) {
+                        content_container.appendChild(ele);
+                    }
+                }
+
+                return content_container;
+            }
+
+            function makeCard(card, stats) {
+                const card_name = document.createElement("div");
+                card_name.className = "card-row-item card-row-name text";
+                card_name.innerText = card.card_name;
+
+                const card_wr = document.createElement("div");
+                card_wr.className = "card-row-item card-row-wr text";
+                card_wr.innerText = stats.winrate[1];
+
+                const card_event_playrate = document.createElement("div");
+                card_event_playrate.className = "card-row-item card-row-event-playrate text";
+                card_event_playrate.innerText = stats.playrate_event[1];
+
+                const card_user_playrate = document.createElement("div");
+                card_user_playrate.className = "card-row-item card-row-user-playrate text";
+                card_user_playrate.innerText = stats.playrate_user[1];
+
+                const card_full_playrate = document.createElement("div");
+                card_full_playrate.className = "card-row-item card-row-full-playrate text";
+                card_full_playrate.innerText = stats.playrate_general[1];
+
+                return [card_name, card_wr, card_full_playrate, card_event_playrate, card_user_playrate];
+            }
+
+            async function getCardStats() {
+                const stats = {};
+                for (const card of card_list_arrayified) {
+                    let num_event_decks = 0;
+                    let num_user_decks = 0;
+                    let num_decks = 0;
+                    let total_wins = 0;
+                    let total_games = 0;
+
+                    for (const event of all_events) {
+                        if (event.name.includes("League")) continue;
+                        const swiss = JSON.parse(event.rounds).swiss;
+                        const decks = JSON.parse(event.decks);
+                        let players_with_card = [];
+                        for (const player in decks) {
+                            const deck = decks[player];
+                            const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
+                            for (const line of decklist.split("\n")) {
+                                if (line.substring(line.indexOf(" ") + 1, line.length) == card.card_name) {
+                                    players_with_card.push(player);
+                                    break;
+                                }
+                            }
+                        }
+                        for (const round_name in swiss) {
+                            const round = swiss[round_name];
+                            for (const game of round) {
+                                const p1 = Object.keys(game)[0];
+                                const p2 = Object.keys(game)[1];
+
+                                const p1_score = parseInt(game[p1]);
+                                const p2_score = parseInt(game[p2]);
+
+                                let winner = 0;
+                                if (p1_score > p2_score)
+                                    winner = p1;
+                                if (p1_score < p2_score)
+                                    winner = p2;
+
+                                if (players_with_card.includes(p1)) {
+                                    if (winner == p1) {
+                                        total_wins++;
+                                    }
+                                    total_games++;
+                                }
+                                if (players_with_card.includes(p2)) {
+                                    if (winner == p2) {
+                                        total_wins++;
+                                    }
+                                    total_games++;
+                                }
+                            }
+                        }
+                    }
+
+                    for (const deck of all_decks) {
+                        const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
+                        for (const line of decklist.split("\n")) {
+                            if (line.substring(line.indexOf(" ") + 1, line.length) == card.card_name) {
+                                num_decks += 1;
+                                if (decklist.event)
+                                    num_event_decks++;
+                                else
+                                    num_user_decks++;
+                            }
+                        }
+                    }
+
+                    let winrate = ((total_wins / total_games) * 100).toFixed(2).toString() + "%";
+                    winrate = winrate.replace("NaN%", "No Data");
+                    const playrate_event_text = ((num_event_decks / all_events_decks.length) * 100).toFixed(2).toString() + "%";
+                    const playrate_user_text  = ((num_user_decks  / all_users_decks.length)  * 100).toFixed(2).toString() + "%";
+                    const playrate_text       = ((num_decks       / all_decks.length)       * 100).toFixed(2).toString() + "%";
+
+                    stats[card.card_name] = {
+                        winrate          : ["GP Winrate"      , winrate            ],
+                        playrate_event   : ["Event Playrate"  , playrate_event_text],
+                        playrate_user    : ["User Playrate"   , playrate_user_text ],
+                        playrate_general : ["Overall Playrate", playrate_text      ]
+                    }
+                }
+
+                return stats;
+            }
 
             reload();
         </script>
