@@ -621,6 +621,9 @@
         #modal-content .deck-name {
             font-size: 16px;
         }
+        .dropped {
+            color: rgb(211, 22, 56);
+        }
         /* mobile layout changes*/
         @media (max-device-width: 850px) {
             .round-container {
@@ -1337,6 +1340,8 @@ function setTextColor(c = false) {
 
                     const name_container = document.createElement("div");
                     name_container.className = "stats-name-container stats-row-item";
+                    if (event_data.dropped.includes(player)) 
+                        name_container.className += " dropped";
                     name_container.innerText = player;
                     let deck = decks[player];
 
@@ -2202,7 +2207,7 @@ function setTextColor(c = false) {
             }
 
             function numRounds(n) {
-                if (n < 17) {
+                if (n < 15) {
                     return 3;
                 }
                 if (n < 32) {
