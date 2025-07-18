@@ -972,14 +972,8 @@ function setTextColor(c = false) {
 
                 document.getElementById('games').appendChild(swiss_container);
 
-                const bracket_container = document.createElement("div");
-                bracket_container.className = "bracket-container";
-
-                let structure;
-                let matches;
-                let topcut;
                 if (event_data.stage == 'bracket') {
-                    makeBracket();
+                    makeBracket(rounds);
                 }
             }
 
@@ -1033,19 +1027,23 @@ function setTextColor(c = false) {
             }
 
             async function makeBracket(rounds) {
+                const decks = JSON.parse(event_data.decks);
+                const bracket_container = document.createElement("div");
+                bracket_container.className = "bracket-container";
                 const bracket_header = document.createElement('span');
                 bracket_header.className = "round-headers text";
                 bracket_header.innerText = "Top Cut Bracket";
                 document.getElementById("games").appendChild(bracket_header);
-                topcut = await topCutHelper(rounds); // {players, matches, seedings, stats}
-                matches = topcut.matches;
-                structure = parseStructure(topcut.structure);
+                let topcut = await topCutHelper(rounds); // {players, matches, seedings, stats}
+                let matches = topcut.matches;
+                let structure = parseStructure(topcut.structure);
                 const layer = structure.raw[0];
                 const layer_container = document.createElement("div");
                 layer_container.className = 'layer-container';
                 layer_container.style.gridTemplateRows = `repeat(${structure.info.size}, 1fr)`;
                 for (const match_name of layer) {
                     const match = matches[match_name];
+                    console.log("layer1", match);
                     let side = "top";
                     const game_grid = document.createElement("div");
                     game_grid.className = "game-grid";
@@ -1088,6 +1086,32 @@ function setTextColor(c = false) {
                         player_score.className = `player-score player-score-${side} ${gameClass}`;
                         player_name.innerText = player;
                         player_score.innerText = match[player_id];
+                        let game = {};
+                        for (const player_id in match) {
+                            let player2;
+                            if (player_id != "Bye") player2 = topcut.seedings[player_id];
+                            else player2 = {player: "Bye"};
+                            if (player2 == undefined) {
+                                let p_match = matches[player_id];
+                                for (const p in p_match) {
+                                    if (p_match[p] == "2") {
+                                        player2 = topcut.seedings[p].player;
+                                        break;
+                                    }
+                                }
+                            } else {
+                                player2 = player2.player;
+                            }
+                            if (player2 == undefined) {
+                                player2 = "TBD";
+                            } 
+                            game[player2] = match[player_id];
+                        }
+                        player_score.onclick = function() {
+                            document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+                            document.getElementById("modal-content").appendChild(reportHTML(game, match_name, match_name, event_data, event, decks, false, match));
+                            document.getElementById("modal-container").style.display = 'block';
+                        }
                         game_grid.appendChild(player_name);
                         game_grid.appendChild(player_score);
                         if (side == "top") {
@@ -1168,6 +1192,7 @@ function setTextColor(c = false) {
                                 } 
                                 game[player2] = match[player_id];
                             }
+
                             if (Object.keys(game).length == 2) {
                                 player_score.onclick = function() {
                                     document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
@@ -1783,6 +1808,7 @@ function setTextColor(c = false) {
                     let record = stats.records[player];
                     let total = stats.match_total[player];
                     if (record[1] <= 1) {
+                        console.log("in top cut", player);
                         players.push(player);
                     }
                     seedings.push({player: player, record: record, match_total: total});
@@ -1972,7 +1998,8 @@ function setTextColor(c = false) {
                     for (const player in stats.records) {
                         let record = stats.records[player];
                         let total = stats.match_total[player];
-                        if (record[1] <= 1) {
+                        if (record[1] <= 1 && player != "Bye" && !event_data.dropped.includes(player)) {
+                            console.log("added to top cut", player, stats.records[player]);
                             players.push(player);
                         }
                         seedings.push({player: player, record: record, match_total: total});
@@ -2076,7 +2103,8 @@ function setTextColor(c = false) {
                             "c": {"2": "-", "5": "-"},
                             "d": {"3": "-", "4": "-"},
                             "e": {"a": "-", "b": "-"},
-                            "f": {"c": "-", "d": "-"}
+                            "f": {"c": "-", "d": "-"},
+                            "g": {"e": "-", "d": "f"}
                         }
                         break;
                     case 8: 
