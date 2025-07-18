@@ -1807,7 +1807,7 @@ function setTextColor(c = false) {
                 for (const player in stats.records) {
                     let record = stats.records[player];
                     let total = stats.match_total[player];
-                    if (record[1] <= 1) {
+                    if (record[0] >= (event_data.num_rounds - 1)) {
                         console.log("in top cut", player);
                         players.push(player);
                     }
@@ -1998,7 +1998,7 @@ function setTextColor(c = false) {
                     for (const player in stats.records) {
                         let record = stats.records[player];
                         let total = stats.match_total[player];
-                        if (record[1] <= 1 && player != "Bye" && !event_data.dropped.includes(player)) {
+                        if (record[0] >= (event_data.num_rounds - 1) && player != "Bye" && !event_data.dropped.includes(player)) {
                             console.log("added to top cut", player, stats.records[player]);
                             players.push(player);
                         }
