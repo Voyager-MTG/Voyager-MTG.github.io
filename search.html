@@ -811,6 +811,12 @@
 			let card_loyalty_2 = ""
 
 			let color_map = new Map([
+				["white", "w"],
+				["blue", "u"],
+				["black", "b"],
+				["red", "r"],
+				["green", "g"],
+				["silver", "i"],
 				["azorius", "wu"],
 				["dimir", "ub"],
 				["rakdos", "br"],
@@ -920,7 +926,7 @@
 						return (card_mv >= check);
 					}
 				}
-				if (term == "c" || term == "color")
+				if (term == "c" || term == "color" || term == "colour")
 				{
 					if (!isNaN(check))
 					{
@@ -1076,7 +1082,7 @@
 
 					} */
 				}
-				if (term == "o")
+				if (term == "o" || term == "oracle" || term == "text")
 				{
 					if (modifier == ":")
 					{
@@ -1382,6 +1388,65 @@
 					{
 						return card_stats.designer.includes(check);
 					}
+				}
+				if (term == "size" || term == "pt") {
+					let searched_power = check.split("/")[0];
+					let searched_toughness = check.split("/")[1];
+					function search_tou(check, modifier, card_toughness) {
+						if (modifier == "!" || modifier == "=")
+						{
+							return (card_toughness == check);
+						}
+						else if (modifier == ":")
+						{
+							return (card_toughness == check);
+						}
+						else if (modifier == "<")
+						{
+							return (card_toughness < check);
+						}
+						else if (modifier == ">")
+						{
+							return (card_toughness > check);
+						}
+						else if (modifier == "<=")
+						{
+							return (card_toughness <= check);
+						}
+						else if (modifier == ">=")
+						{
+							return (card_toughness >= check);
+						}
+					}
+
+					function search_pow(check, modifier, card_power) {
+						if (modifier == "!" || modifier == "=")
+						{
+							return (card_power == check);
+						}
+						else if (modifier == ":")
+						{
+							return (card_power == check);
+						}
+						else if (modifier == "<")
+						{
+							return (card_power < check);
+						}
+						else if (modifier == ">")
+						{
+							return (card_power > check);
+						}
+						else if (modifier == "<=")
+						{
+							return (card_power <= check);
+						}
+						else if (modifier == ">=")
+						{
+							return (card_power >= check);
+						}
+					}
+
+					return search_pow(check, modifier, searched_power) && search_tou(check, modifier, searched_toughness);
 				}
 				if (modifier == ":" || modifier == "=" || modifier == "!") {
 					let regex = new RegExp(`!tag<${term}> ${check}\\b`);

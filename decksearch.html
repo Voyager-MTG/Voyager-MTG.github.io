@@ -18,6 +18,8 @@
             display: block;
             /* overflow-y: scroll; */
             /* height: 100%; */
+            background-attachment: fixed;
+            background-size: cover;
         }
         select {
             position: absolute;
@@ -34,7 +36,8 @@
             left: 1%;
 	    }
 .artist-credit {
-		left: 160px;
+		left: 0px;
+        top: 30px;
 		position: absolute;
                 width: 240px;
 	}
@@ -456,8 +459,7 @@ function setTextColor(c = false) {
             async function reload() {
                 let date = new Date();
                 document.getElementById("search").value = urlParams.get("search");
-                if (!localStorage.getItem("info.alldecks") || localStorage.getItem("info.lastday") != date.getDate()) {
-                    const q = query(collection(db, "users"));
+                    let q = query(collection(db, "users"));
                     const all_users = await getDocs(q);
                     const all_decks = [];
                     all_users.forEach((doc) => {
@@ -466,12 +468,20 @@ function setTextColor(c = false) {
                             all_decks.push({...deck, "user": data.username})
                         }
                         // all_decks.push(...JSON.parse(data.decks));
-                        console.log(all_decks);
                     });
-                    localStorage.setItem("info.alldecks", LZString.compress(JSON.stringify(all_decks)));
-                    localStorage.setItem("info.lastday", date.getDate());
-                }
-                const all_decks = JSON.parse(LZString.decompress(localStorage.getItem("info.alldecks")));
+                    q = query(collection(db, "events"));
+                    const all_events_docs = await getDocs(q);
+                    const all_events = [];
+                    all_events_docs.forEach((doc) => {
+                        const data = doc.data();
+                        all_events.push(data);
+                        for (const user in JSON.parse(data.decks)) {
+                            let deck = JSON.parse(data.decks)[user];
+                            all_decks.push({...deck, "user": user, "event": data.name});
+                        }
+                    });
+                    console.log(all_decks);
+                // const all_decks = JSON.parse(LZString.decompress(localStorage.getItem("info.alldecks")));
                 document.getElementById("search-btn").addEventListener("click", (e) => {
                     let url = (window.location.href.indexOf("?") == -1 ? new URL(window.location.href) : new URL(window.location.href.substring(0, window.location.href.indexOf("?"))));
                     history.pushState({}, '', url.pathname + `?search=${document.getElementById('search').value}`);
@@ -549,7 +559,7 @@ function setTextColor(c = false) {
 
             function tokenizeTerms(searchTerms)
             {
-                let tokenRegex = /-?\w*[!:<>=]?(([^ "\(\)\/“”]+)|(\".+?\")|(\(.+?\))|(\/.+?\/)|(\“.+?\”))/g;
+                let tokenRegex = /-?\w*[!:<>=]?(([^ \[\]"\(\)\/“”]+)|(\".+?\")|(\[.+\])|(\(.+?\))|(\/.+?\/)|(\“.+?\”))/g;
                 let searchTokens = searchTerms.match(tokenRegex);
 
                 return searchTokens;
@@ -626,7 +636,6 @@ function setTextColor(c = false) {
                 // console.log(dec  klist);
                 const deck_user = deck_stats.user;  
                 let deck_color = "";
-                console.log(deck_stats);
                 if (deck_stats.colors) {
                     deck_color = deck_stats.colors;
                 }
@@ -751,6 +760,20 @@ function setTextColor(c = false) {
                             return deck_color > check;
                         }
                     }
+                    if (term == "event") {
+                        console.log("event", deck.event, modifier);
+                        if (modifier == "!" || modifier == "=" || modifier == ":") {
+                            return deck.event ? deck.event.toLowerCase().includes(check) : false;
+                        }
+                    }
+                }   
+
+                const tl = token.length;
+                
+                if (token.substring(0, 2) == "[[" && token.substring(tl - 2) == "]]")
+                {
+                    console.log("card", token)
+                    return decklist.includes(token.split("[[")[1].split("]]")[0].toLowerCase())
                 }
                     
                 return deck_name.includes(token);
