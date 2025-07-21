@@ -1,21 +1,25 @@
 ﻿<html>
-	<head>
-		<title>Voyager</title>
-		<link rel="icon" type="image/x-icon" href="/img/favicon.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<style>
+
+<head>
+	<title>Voyager</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
 	@font-face {
-	  font-family: 'Beleren Small Caps';
-	  src: url('/resources/beleren-caps.ttf');
+		font-family: 'Beleren Small Caps';
+		src: url('/resources/beleren-caps.ttf');
 	}
+
 	@font-face {
-	  font-family: 'Reglisse';
-	  src: url('/resources/Reglisse.otf');
+		font-family: 'Reglisse';
+		src: url('/resources/Reglisse.otf');
 	}
+
 	:root {
 		--gradient: ""
 	}
+
 	body {
 		background-attachment: fixed;
 		background-size: cover;
@@ -26,6 +30,7 @@
 		margin: 0;
 		background-size: cover;
 	}
+
 	body::before {
 		content: "";
 		position: fixed;
@@ -34,21 +39,25 @@
 		height: 100%;
 		width: 100%;
 		z-index: -1;
-		background-image: var(--gradient);	
+		background-image: var(--gradient);
 		/* background-attachment: fixed;
 		background-size: cover; */
 		background-size: cover;
 	}
+
 	.selects {
 		position: absolute;
 		margin: 10px;
 	}
+
 	.item-container {
 		height: auto;
 		display: grid;
 		justify-self: center;
 		align-self: center;
+		width: 100%;
 	}
+
 	.item-container .banner {
 		max-width: 500px;
 		max-height: 200px;
@@ -56,6 +65,7 @@
 		margin: auto;
 		padding-bottom: 20px;
 	}
+
 	select {
 		position: absolute;
 		text-align: center;
@@ -64,10 +74,11 @@
 		cursor: pointer;
 		background-color: #F3F3F3;
 	}
+
 	input {
 		width: 100%;
 		max-width: 700px;
-		margin: auto;
+		/* margin: auto; */
 		height: 50px;
 		font-size: 24px;
 		color: #171717;
@@ -80,9 +91,18 @@
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 	}
+
+	.search-container {
+		margin: auto;
+		width: 100%;
+		gap: 10px;
+		max-width: 720px;
+	}
+
 	input:focus {
 		outline-color: #171717;
 	}
+
 	.two-part-grid {
 		width: 100%;
 		max-width: 700px;
@@ -92,6 +112,7 @@
 		gap: 20px;
 		justify-items: center;
 	}
+
 	.two-part-grid p {
 		width: 100%;
 		text-align: center;
@@ -101,9 +122,11 @@
 		font-family: 'Georgia';
 		margin: 0;
 	}
+
 	.container p {
 		padding: 11px 0px;
 	}
+
 	.preview-container {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -112,6 +135,7 @@
 		align-items: center;
 		padding-bottom: 10px;
 	}
+
 	.set-group {
 		font-family: Beleren Small Caps;
 		font-size: 18px;
@@ -119,6 +143,7 @@
 		margin-bottom: 10px;
 		border-bottom: 2px solid #171717;
 	}
+
 	.button-grid {
 		display: grid;
 		margin: auto;
@@ -127,6 +152,7 @@
 		padding-top: 10px;
 		padding-bottom: 20px;
 	}
+
 	.button-grid button {
 		background-color: #171717;
 		border: none;
@@ -141,6 +167,7 @@
 		justify-content: center;
 		gap: 5px;
 	}
+
 	.black-button {
 		background-color: #171717;
 		border: none;
@@ -155,17 +182,21 @@
 		justify-content: center;
 		gap: 5px;
 	}
+
 	button:hover {
 		background-color: #000000;
 		border: 1px solid #f3f3f3;
 	}
+
 	.btn-img {
 		width: 24px;
 	}
+
 	.container {
 		height: fit-content;
 		align-self: center;
 	}
+
 	.event-container {
 		background: #f3f3f3;
 		width: 90%;
@@ -181,17 +212,21 @@
 		height: fit-content;
 		display: none;
 	}
+
 	.event-container p {
 		border-bottom: 1px solid #898989;
 	}
+
 	.event-container a {
 		width: 70%;
 	}
+
 	.event-container img {
 		width: 100%;
 		display: block;
 		margin: auto;
 	}
+
 	.p1p1-container {
 		background: #f3f3f3;
 		width: 90%;
@@ -207,17 +242,21 @@
 		height: fit-content;
 		display: none;
 	}
+
 	.p1p1-container p {
 		border-bottom: 1px solid #898989;
 	}
+
 	.p1p1-container a {
 		width: 70%;
 	}
+
 	.p1p1-container img {
 		width: 100%;
 		display: block;
 		margin: auto;
 	}
+
 	.card-container {
 		background: #f3f3f3;
 		width: 90%;
@@ -232,17 +271,21 @@
 		padding-bottom: 8px;
 		height: fit-content;
 	}
+
 	.card-container p {
 		border-bottom: 1px solid #898989;
 	}
+
 	.card-container a {
 		width: 70%;
 	}
+
 	.card-container img {
 		width: 100%;
 		display: block;
 		margin: auto;
 	}
+
 	.set-icon-container {
 		font-family: 'Beleren Small Caps';
 		font-size: 12px;
@@ -254,64 +297,85 @@
 		width: 100%;
 		height: 100%;
 	}
+
 	.set-icon-container a {
 		text-decoration: none;
 		color: #171717;
 		height: 100%;
 	}
+
 	.set-icon {
 		height: 60px;
 		display: grid;
 		align-items: center;
 		justify-items: center;
 	}
+
 	.set-icon img {
 		width: 60px;
 		transition: 0.2s;
 	}
+
 	.set-icon img:hover {
 		filter: brightness(0.7);
 	}
+
 	.set-icon-name {
 		min-height: 30px;
 		height: 100%;
 	}
-	@media ( max-width: 750px ) {
+
+	@media (max-width: 750px) {
 		.item-container {
-			width: 95%;	
+			width: 95%;
 		}
+
 		.search-grid {
 			width: 95%;
 		}
+
 		.two-part-grid p {
 			font-size: 18px;
 		}
 	}
+
 	.settings-icon {
 		max-height: 30px;
 		margin: 5px;
-		cursor: pointer	;
+		cursor: pointer;
 		float: right;
 	}
+
+	.search-info {
+		max-height: 40px;
+		opacity: 50%;
+		position: absolute;
+		/* z-index: 2; */
+		margin-left: -45px;
+		margin-top: 5px;
+	}
+
 	.settings {
 		position: relative;
 		float: right;
 		/* width: fit-content; */
 		margin: 10px;
 	}
+
 	#modal-container {
-		display: none; 
-		position: fixed; 
-		z-index: 1; 
+		display: none;
+		position: fixed;
+		z-index: 1;
 		padding-top: 70px;
 		left: 0;
 		top: 0;
 		width: 100%;
 		height: 100%;
-		overflow: auto; 
-		background-color: rgb(0,0,0); 
-		background-color: rgba(0,0,0,0.4); 
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
 	}
+
 	#modal-content {
 		background-color: #fefefe;
 		margin: auto;
@@ -320,7 +384,9 @@
 		width: 50%;
 		border-radius: 10px;
 		border: solid #777 3px;
+		margin-bottom: 70px;
 	}
+
 	.close {
 		color: #aaaaaa;
 		float: right;
@@ -328,12 +394,14 @@
 		font-weight: bold;
 		margin-left: 30px;
 	}
+
 	.close:hover,
 	.close:focus {
 		color: #000;
 		text-decoration: none;
 		cursor: pointer;
 	}
+
 	.account-grid {
 		display: grid;
 		gap: 7px;
@@ -341,10 +409,12 @@
 		align-items: center;
 		justify-items: center;
 	}
+
 	#login {
 		font-weight: bold;
 		font-size: 20px;
 	}
+
 	.and-more {
 		/* min-height: 30px; */
 		grid-column: span 2;
@@ -353,7 +423,7 @@
 		display: grid;
 		align-items: center;
 		justify-items: center;
-		padding-bottom: 20px;	
+		padding-bottom: 20px;
 		width: 100%;
 		font-size: 2.3em;
 		font-family: Reglisse;
@@ -363,9 +433,11 @@
 		color: black;
 		display: none;
 	}
+
 	.text {
 		color: black;
 	}
+
 	.dot:before {
 		content: "";
 		border-radius: 20px;
@@ -377,21 +449,26 @@
 		cursor: pointer;
 		transition: 0.2s;
 	}
+
 	.dot:not(.dot-active):hover:before {
 		background-color: rgb(59, 59, 59);
 	}
+
 	.dot:active:before {
-		background-color: rgb(20,20,20);
+		background-color: rgb(20, 20, 20);
 	}
+
 	.dot-active:before {
-		background-color: rgb(20,20,20);
+		background-color: rgb(20, 20, 20);
 	}
+
 	.dots {
 		display: flex;
 		gap: 8px;
-		margin-left: 70%;
+		margin-left: 62%;
 		margin-top: 15px;
 	}
+
 	.event {
 		background-color: #959595;
 		display: flex;
@@ -408,17 +485,21 @@
 		border: 2px solid black;
 		transition: 0.2s;
 	}
+
 	.event:hover {
 		background-color: #5e5e5e;
 	}
+
 	.event-icon {
 		max-width: 40px;
 	}
+
 	#canvas {
 		height: 250px;
 		width: 300px;
 		cursor: pointer;
 	}
+
 	#canvas2 {
 		max-width: 95%;
 		max-height: 95%;
@@ -427,600 +508,698 @@
 		display: flex;
 		justify-self: center;
 	}
+
 	.artist-credit {
 		left: 160px;
 		position: absolute;
-                width: 240px;
+		width: 240px;
 	}
-	</style>
-	<style id="gradient-style">
+</style>
+<style id="gradient-style">
 
-	</style>
-	<style id="text-style">
-		.text {
-			color: white;
-		}
-	</style>
-	<body>
-		<!-- <div class="selects" id="selects">
+</style>
+<style id="text-style">
+	.text {
+		color: white;
+	}
+</style>
+
+<body>
+	<!-- <div class="selects" id="selects">
 			<select id="color-select" onchange="setGradient()">
 			</select>
 		</div> -->
-		<div class="settings" id="settings">
-			<select id="color-select" onchange="setGradient()">
-			</select>
-			<img src="img/header/settings.png" class="settings-icon" onclick="openSettingsModal()">
-			<img src="img/info.png" class="settings-icon" onclick="goToOnboard()">
+	<div class="settings" id="settings">
+		<select id="color-select" onchange="setGradient()">
+		</select>
+		<img src="img/header/settings.png" class="settings-icon" onclick="openSettingsModal()">
+	</div>
+	<div id="gradient"></div>
+	<div class="item-container">
+		<img class="banner" src="img/banner.png"></img>
+		<div class="search-container">
+			<input type="text" inputmode="search" placeholder="Search ..." autofocus="autofocus" name="search"
+				id="search" spellcheck="false" autocomplete="off" autocorrext="off" spellcheck="false">
+			<img src="img/info.png" class="search-info" onclick="goToOnboard()">
 		</div>
-		<div id="gradient"></div>
-		<div class="item-container">
-			<img class="banner" src="img/banner.png"></img>
-			<input type="text" inputmode="search" placeholder="Search ..." autofocus="autofocus" name="search" id="search" spellcheck="false" autocomplete="off" autocorrext="off" spellcheck="false">
-			<div class="button-grid">
-				<button onclick="goToSets()"><img src="/img/header/sets.png" class="btn-img">All Sets</button>
-				<button onclick="goToDeckbuilder()"><img src="/img/header/deck.png" class="btn-img">Deckbuilder</button>
-				<button onclick="randomCard()"><img src="/img/random.png" class="btn-img">Random Card</button>
-				<button onclick="window.location.href = '/community'"><img src="/img/header/community.png" class="btn-img">Community</button>
-			</div>
-			<div class="two-part-grid">
-				<div class="container text" id="preview-container">
-					<p class="text">Preview Galleries</p>
-										<div class="set-group"></div>
-							<div class="preview-container">
-		<div class="set-icon-container">
-									<a href="sets/AKT"><div class="set-icon"><img src="sets/AKT-files/logo.png" title="Akellan Transcendence"></img></div>
-									<div class="set-icon-name text">Akellan Transcendence</div></a>
-								</div>
+	</div>
+	<div class="button-grid">
+		<button onclick="goToSets()"><img src="/img/header/sets.png" class="btn-img">All Sets</button>
+		<button onclick="goToDeckbuilder()"><img src="/img/header/deck.png" class="btn-img">Deckbuilder</button>
+		<button onclick="randomCard()"><img src="/img/random.png" class="btn-img">Random Card</button>
+		<button onclick="window.location.href = '/community'"><img src="/img/header/community.png"
+				class="btn-img">Community</button>
+	</div>
+	<div class="two-part-grid">
+		<div class="container text" id="preview-container">
+			<p class="text">Preview Galleries</p>
+			<div class="set-group"></div>
+			<div class="preview-container">
 				<div class="set-icon-container">
-									<a href="sets/EXPT"><div class="set-icon"><img src="sets/EXPT-files/logo.png" title="TVP Silver Expansion"></img></div>
-									<div class="set-icon-name text">TVP Silver Expansion</div></a>
-								</div>
+					<a href="sets/AKT">
+						<div class="set-icon"><img src="sets/AKT-files/logo.png" title="Akellan Transcendence"></img>
+						</div>
+						<div class="set-icon-name text">Akellan Transcendence</div>
+					</a>
+				</div>
 				<div class="set-icon-container">
-									<a href="sets/HEL"><div class="set-icon"><img src="sets/HEL-files/logo.png" title="Fires of Hwel"></img></div>
-									<div class="set-icon-name text">Fires of Hwel</div></a>
-								</div>
+					<a href="sets/EXPT">
+						<div class="set-icon"><img src="sets/EXPT-files/logo.png" title="TVP Silver Expansion"></img>
+						</div>
+						<div class="set-icon-name text">TVP Silver Expansion</div>
+					</a>
+				</div>
 				<div class="set-icon-container">
-									<a href="sets/HOD"><div class="set-icon"><img src="sets/HOD-files/logo.png" title="Houses of Dewold"></img></div>
-									<div class="set-icon-name text">Houses of Dewold</div></a>
-								</div>
+					<a href="sets/HEL">
+						<div class="set-icon"><img src="sets/HEL-files/logo.png" title="Fires of Hwel"></img></div>
+						<div class="set-icon-name text">Fires of Hwel</div>
+					</a>
+				</div>
 				<div class="set-icon-container">
-									<a href="sets/ITD"><div class="set-icon"><img src="sets/ITD-files/logo.png" title="Itera: Into the Dream"></img></div>
-									<div class="set-icon-name text">Itera: Into the Dream</div></a>
-								</div>
+					<a href="sets/HOD">
+						<div class="set-icon"><img src="sets/HOD-files/logo.png" title="Houses of Dewold"></img>
+						</div>
+						<div class="set-icon-name text">Houses of Dewold</div>
+					</a>
+				</div>
 				<div class="set-icon-container">
-									<a href="sets/PTN"><div class="set-icon"><img src="sets/PTN-files/logo.png" title="Port Noon: Occult Islands of Vespera"></img></div>
-									<div class="set-icon-name text">Port Noon: Occult Islands of Vespera</div></a>
-								</div>
+					<a href="sets/ITD">
+						<div class="set-icon"><img src="sets/ITD-files/logo.png" title="Itera: Into the Dream"></img>
+						</div>
+						<div class="set-icon-name text">Itera: Into the Dream</div>
+					</a>
+				</div>
 				<div class="set-icon-container">
-									<a href="sets/PVR"><div class="set-icon"><img src="sets/PVR-files/logo.png" title="Primivir"></img></div>
-									<div class="set-icon-name text">Primivir</div></a>
-								</div>
+					<a href="sets/PTN">
+						<div class="set-icon"><img src="sets/PTN-files/logo.png"
+								title="Port Noon: Occult Islands of Vespera"></img></div>
+						<div class="set-icon-name text">Port Noon: Occult Islands of Vespera</div>
+					</a>
+				</div>
 				<div class="set-icon-container">
-									<a href="sets/VNM"><div class="set-icon"><img src="sets/VNM-files/logo.png" title="Vinimroth Eternities"></img></div>
-									<div class="set-icon-name text">Vinimroth Eternities</div></a>
-								</div>
+					<a href="sets/PVR">
+						<div class="set-icon"><img src="sets/PVR-files/logo.png" title="Primivir"></img></div>
+						<div class="set-icon-name text">Primivir</div>
+					</a>
+				</div>
 				<div class="set-icon-container">
-									<a href="sets/WAW"><div class="set-icon"><img src="sets/WAW-files/logo.png" title="The Wonderlands’ Wishes"></img></div>
-									<div class="set-icon-name text">The Wonderlands’ Wishes</div></a>
-								</div>
+					<a href="sets/VNM">
+						<div class="set-icon"><img src="sets/VNM-files/logo.png" title="Vinimroth Eternities"></img>
+						</div>
+						<div class="set-icon-name text">Vinimroth Eternities</div>
+					</a>
+				</div>
 				<div class="set-icon-container">
-									<a href="sets/LAIR"><div class="set-icon"><img src="sets/LAIR-files/logo.png" title="Secret Lair Drops"></img></div>
-									<div class="set-icon-name text">Secret Lair Drops</div></a>
-								</div>
+					<a href="sets/WAW">
+						<div class="set-icon"><img src="sets/WAW-files/logo.png" title="The Wonderlands’ Wishes"></img>
+						</div>
+						<div class="set-icon-name text">The Wonderlands’ Wishes</div>
+					</a>
+				</div>
+				<div class="set-icon-container">
+					<a href="sets/LAIR">
+						<div class="set-icon"><img src="sets/LAIR-files/logo.png" title="Secret Lair Drops"></img>
+						</div>
+						<div class="set-icon-name text">Secret Lair Drops</div>
+					</a>
+				</div>
 				<div class="and-more" id="and-more">
 					<a href="/all-sets" class="text" id="and-more-text">And X more...</a>
 				</div>
-								</div>
-				</div>
-				<div class="card-container" id="cotd-image">
-					<p>Card of the Day</p>
-				</div>
-				<div class="event-container" id="event-container">
-					<p>Events</p>
-					<div class="event" onclick="window.location.href = '/recentgp';">
-						<img src="/img/swords.png" class="event-icon">
-						Current GP
-					</div>
-					<div class="event" onclick="window.location.href = '/collectionleague';">
-						<img src="/img/trophy.png" class="event-icon">
-						Collection League
-					</div>
-				</div>
-				<div class="p1p1-container" id="p1p1-image" onclick="openP1P1()">
-					<p>Daily "P1P1"</p>
-					<span>Click to expand</span>
-					<canvas id="canvas"></canvas>
-				</div>
-			</div>
-			<div class="dots">
-				<div class="dot dot-active" id="dot-1"></div>
-				<div class="dot" id="dot-2"></div>
-				<div class="dot" id="dot-3"></div>
 			</div>
 		</div>
-		<div id="modal-container">
-			<div id="modal-content" class="popout">
-				<span class="close" onclick="closeModal()">&times;</span>
-				<canvas id="canvas2"></canvas>
+		<div class="card-container" id="cotd-image">
+			<p>Card of the Day</p>
+		</div>
+		<div class="event-container" id="event-container">
+			<p>Events</p>
+			<div class="event" onclick="window.location.href = '/recentgp';">
+				<img src="/img/swords.png" class="event-icon">
+				Current GP
+			</div>
+			<div class="event" onclick="window.location.href = '/collectionleague';">
+				<img src="/img/trophy.png" class="event-icon">
+				Collection League
 			</div>
 		</div>
-		<script>
-			const delay = ms => new Promise(res => setTimeout(res, ms));
-			let gradients = [];
-			let card_backgrounds= [];
-			let card_list_arrayified = [];
-			let specialchars = "";
-			let img_list = [];
-			let current_dot = "dot-1";
+		<div class="p1p1-container" id="p1p1-image" onclick="openP1P1()">
+			<p>Daily "P1P1"</p>
+			<span>Click to expand</span>
+			<canvas id="canvas"></canvas>
+		</div>
+	</div>
+	<div class="dots">
+		<div class="dot dot-active" id="dot-1"></div>
+		<div class="dot" id="dot-2"></div>
+		<div class="dot" id="dot-3"></div>
+	</div>
+	</div>
+	<div id="modal-container">
+		<div id="modal-content" class="popout">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<canvas id="canvas2"></canvas>
+		</div>
+	</div>
+	<script>
+		const delay = ms => new Promise(res => setTimeout(res, ms));
+		let gradients = [];
+		let card_backgrounds = [];
+		let card_list_arrayified = [];
+		let specialchars = "";
+		let img_list = [];
+		let current_dot = "dot-1";
 
-			const dot_eles = {
-				"dot-1": "cotd-image",
-				"dot-2": "event-container",
-				"dot-3": "p1p1-image"
+		const dot_eles = {
+			"dot-1": "cotd-image",
+			"dot-2": "event-container",
+			"dot-3": "p1p1-image"
+		}
+
+		modal = document.getElementById("modal-container");
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				document.getElementById('modal-container').style.display = 'none';
+			}
+		}
+
+		document.addEventListener("DOMContentLoaded", async function () {
+			try {
+				const response = await fetch('./resources/gradients.json');
+				raw_gradients = await response.json();
+			}
+			catch (error) {
+				console.error('Error:', error);
 			}
 
-			modal = document.getElementById("modal-container");
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    document.getElementById('modal-container').style.display = 'none';
-                }
-            }  
+			gradients = raw_gradients.gradients;
+			card_backgrounds = raw_gradients.cards;
+			card_backgrounds = raw_gradients.cards;
 
-			document.addEventListener("DOMContentLoaded", async function () {
-				try {
-					const response = await fetch('./resources/gradients.json');
-					raw_gradients = await response.json();
-				}
-				catch(error) {
-					console.error('Error:', error);
-				}
+			if (localStorage.getItem('settings.gradient') == null) localStorage.setItem('settings.gradient', 'Random-Card');
+			setGradient(localStorage.getItem('settings.gradient'));
+			prepareGradients();
 
-				gradients = raw_gradients.gradients;
-				card_backgrounds = raw_gradients.cards;
-				card_backgrounds = raw_gradients.cards;
-
-				if (localStorage.getItem('settings.gradient') == null) localStorage.setItem('settings.gradient', 'Random-Card');
-				setGradient(localStorage.getItem('settings.gradient'));
-				prepareGradients();
-
-				await fetch('/lists/all-cards.json')
-					.then(response => response.json())
-					.then(json => {
-						card_list = json;
+			await fetch('/lists/all-cards.json')
+				.then(response => response.json())
+				.then(json => {
+					card_list = json;
 				}).catch(error => console.error('Error:', error));
 
-				await fetch('/lists/all-sets.json')
-					.then(response => response.json())
-					.then(json => {
-						set_list = json;
+			await fetch('/lists/all-sets.json')
+				.then(response => response.json())
+				.then(json => {
+					set_list = json;
 				}).catch(error => console.error('Error:', error));
 
-				if (set_list.sets.length > 10) { // FIXME: this doesnt work
-					document.getElementById("and-more").style.display = "block";
-					document.getElementById("and-more").innerText = `And ${set_list.sets.length - 10} more...`;
-				} 
+			if (set_list.sets.length > 10) { // FIXME: this doesnt work
+				document.getElementById("and-more").style.display = "block";
+				document.getElementById("and-more").innerText = `And ${set_list.sets.length - 10} more...`;
+			}
 
-				await fetch('/resources/replacechars.txt')
-					.then(response => response.text())
-					.then(text => {
-						specialchars = text; 
+			await fetch('/resources/replacechars.txt')
+				.then(response => response.text())
+				.then(text => {
+					specialchars = text;
 				}).catch(error => console.error('Error:', error));
 
-				//dots
-				Array.from(document.getElementsByClassName("dot")).forEach(dot => {
-					dot.onclick = () => {
-						Array.from(document.getElementsByClassName("dot")).forEach(dot2 => {
-							dot2.className = "dot" + (dot.id == dot2.id ? " dot-active" : "");
-							for (const dotn in dot_eles) {
-								const id = dot_eles[dotn];
-								if (dot.id == dotn) {
-									document.getElementById(id).style.display = "grid";
-									current_dot = dot.id;
-								} else {
-									document.getElementById(id).style.display = "none";
-								}
+			//dots
+			Array.from(document.getElementsByClassName("dot")).forEach(dot => {
+				dot.onclick = () => {
+					Array.from(document.getElementsByClassName("dot")).forEach(dot2 => {
+						dot2.className = "dot" + (dot.id == dot2.id ? " dot-active" : "");
+						for (const dotn in dot_eles) {
+							const id = dot_eles[dotn];
+							if (dot.id == dotn) {
+								document.getElementById(id).style.display = "grid";
+								current_dot = dot.id;
+							} else {
+								document.getElementById(id).style.display = "none";
 							}
-						})
-					}	
-				});
-
-				card_list_arrayified = card_list.cards;
-
-				card_list_cleaned = [];
-
-				for (const card of card_list_arrayified)
-				{
-					let card_stats = [];
-
-					for (var key in card)
-					{
-						if (isNaN(card[key]))
-						{
-							card_stats[key] = card[key].toLowerCase();
 						}
-						else
-						{
-							card_stats[key] = card[key];
-						}
-					}
-
-					if (!card_stats.shape.includes("token") && !card_stats.type.includes("basic"))
-					{
-						card_list_cleaned.push(card);
-					}
-				}
-
-				const cotd = reallyRand(card_list_cleaned.length);
-				const card_stats = card_list_cleaned[cotd];
-
-				const a = document.createElement("a");
-
-				const url = new URL('card', window.location.origin);
-				const params = {
-					set: card_stats.set,
-					num: card_stats.number,
-					name: card_stats.card_name
-				}
-				for (const key in params) {
-					url.searchParams.append(key, params[key]);
-				}
-				a.href = url;
-
-				const img = document.createElement("img");
-				img.id = "cotd";
-
-				setTextColor();
-
-				img.src = '/sets/' + card_stats.set + '-files/img/' + card_stats.number + '_' + card_stats.card_name + (card_stats.shape.includes('double') ? '_front' : '') + '.' + card_stats.image_type;
-
-				a.append(img);
-				document.getElementById("cotd-image").append(a);
-
-				packOnePickOne();
-
-				do {
-					await delay(100);
-				}
-				while (!isImageOk(document.getElementById("cotd")));
-				document.getElementById("preview-container").style.height = document.getElementById("cotd-image").offsetHeight;
-
-			});
-
-			function reallyRand(x, seed = false) {
-				const date = new Date();
-				seed = seed ? seed : date.getUTCFullYear() * 10000 + 
-							 date.getUTCMonth() * 100 + 
-							 date.getUTCDate();
-
-				const a = 1103515245;
-				const c = 12345;
-				const m = Math.pow(2, 31);
-
-				let randomNumber = (a * seed + c) % m;
-				randomNumber = randomNumber / m;
-
-				return Math.floor(randomNumber * x);
-			}
-
-function setTextColor(c = false) {
-				if (c) {
-					localStorage.setItem("settings.textcolor", c);
-				}
-				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            	document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-			}
-
-			setInterval(() => {
-				const dotn = parseInt(current_dot.split("dot-")[1]);
-				const new_dot = dotn == 3 ? 1 : dotn + 1;
-				Array.from(document.getElementsByClassName("dot")).forEach(dot2 => {
-					dot2.className = "dot" + ("dot-" + new_dot == dot2.id ? " dot-active" : "");
-					for (const dotn in dot_eles) {
-						const id = dot_eles[dotn];
-						if ("dot-" + new_dot == dotn) {
-							document.getElementById(id).style.display = "grid";
-							current_dot = "dot-" + new_dot;
-						} else {
-							document.getElementById(id).style.display = "none";
-						}
-					}
-				})
-			}, 10000);
-
-			function openSettingsModal() {
-				//document.getElementById("modal-container").style.display = "block";
-				window.location.href = "settings";
-			}
-
-			document.getElementById("search").addEventListener("keypress", function(event) {
-				if (event.key === "Enter") {
-					event.preventDefault();
-					search();
+					})
 				}
 			});
 
-			window.addEventListener('resize', function(event) {
-				document.getElementById("preview-container").style.height = document.getElementById("cotd-image").offsetHeight;
-			}, true);
+			card_list_arrayified = card_list.cards;
 
-			function isImageOk(img) {
-				if (!img.complete || img.naturalWidth == 0) {
-					return false;
+			card_list_cleaned = [];
+
+			for (const card of card_list_arrayified) {
+				let card_stats = [];
+
+				for (var key in card) {
+					if (isNaN(card[key])) {
+						card_stats[key] = card[key].toLowerCase();
+					}
+					else {
+						card_stats[key] = card[key];
+					}
 				}
 
-				return true;
+				if (!card_stats.shape.includes("token") && !card_stats.type.includes("basic")) {
+					card_list_cleaned.push(card);
+				}
 			}
 
-			async function packOnePickOne() {
-				const p1p1_count = 15;
-				const l = p1p1Rand(card_list_cleaned.length, p1p1_count);
-				for (const i of l)
-				{	
-					const card = card_list_cleaned[i];
-					const img_url = '/sets/' + card.set + '-files/img/' + card.number + '_' + card.card_name + (card.shape.includes('double') ? '_front' : '') + '.' + card.image_type;
+			const cotd = reallyRand(card_list_cleaned.length);
+			const card_stats = card_list_cleaned[cotd];
 
-					const image = new Image();
-					image.src = img_url;
+			const a = document.createElement("a");
 
-					img_list.push(image);
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: card_stats.set,
+				num: card_stats.number,
+				name: card_stats.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+			a.href = url;
+
+			const img = document.createElement("img");
+			img.id = "cotd";
+
+			setTextColor();
+
+			img.src = '/sets/' + card_stats.set + '-files/img/' + card_stats.number + '_' + card_stats.card_name + (card_stats.shape.includes('double') ? '_front' : '') + '.' + card_stats.image_type;
+
+			a.append(img);
+			document.getElementById("cotd-image").append(a);
+
+			packOnePickOne();
+
+			do {
+				await delay(100);
+			}
+			while (!isImageOk(document.getElementById("cotd")));
+			document.getElementById("preview-container").style.height = document.getElementById("cotd-image").offsetHeight;
+
+		});
+
+		function reallyRand(x, seed = false) {
+			const date = new Date();
+			seed = seed ? seed : date.getUTCFullYear() * 10000 +
+				date.getUTCMonth() * 100 +
+				date.getUTCDate();
+
+			const a = 1103515245;
+			const c = 12345;
+			const m = Math.pow(2, 31);
+
+			let randomNumber = (a * seed + c) % m;
+			randomNumber = randomNumber / m;
+
+			return Math.floor(randomNumber * x);
+		}
+
+		function setTextColor(c = false) {
+			if (c) {
+				localStorage.setItem("settings.textcolor", c);
+			}
+			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+		}
+
+		setInterval(() => {
+			const dotn = parseInt(current_dot.split("dot-")[1]);
+			const new_dot = dotn == 3 ? 1 : dotn + 1;
+			Array.from(document.getElementsByClassName("dot")).forEach(dot2 => {
+				dot2.className = "dot" + ("dot-" + new_dot == dot2.id ? " dot-active" : "");
+				for (const dotn in dot_eles) {
+					const id = dot_eles[dotn];
+					if ("dot-" + new_dot == dotn) {
+						document.getElementById(id).style.display = "grid";
+						current_dot = "dot-" + new_dot;
+					} else {
+						document.getElementById(id).style.display = "none";
+					}
 				}
+			})
+		}, 10000);
 
-				const canvas = document.getElementById("canvas");
-				const ctx = canvas.getContext('2d');
+		function openSettingsModal() {
+			//document.getElementById("modal-container").style.display = "block";
+			window.location.href = "settings";
+		}
 
-				canvas.width = 1883;
-				canvas.height = 1573;
+		document.getElementById("search").addEventListener("keypress", function (event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				search();
+			}
+		});
 
-				for (let i = 0; i < img_list.length; i++)
-				{
-					img_list[i].onload = function() {
-						x_offset = 377 * (i % 5);
-						y_offset = 525 * Math.floor(i / 5);
-						ctx.drawImage(img_list[i], x_offset, y_offset, 375, 523);
-					};
-				}
+		window.addEventListener('resize', function (event) {
+			document.getElementById("preview-container").style.height = document.getElementById("cotd-image").offsetHeight;
+		}, true);
 
-				// document.getElementById("p1p1").style.display = "block";
+		function isImageOk(img) {
+			if (!img.complete || img.naturalWidth == 0) {
+				return false;
 			}
 
-			function openP1P1() {
-				const canvas = document.getElementById("canvas2");
-				const ctx = canvas.getContext('2d');
+			return true;
+		}
 
-				canvas.width = 1883;
-				canvas.height = 1573;
+		async function packOnePickOne() {
+			const p1p1_count = 15;
+			const l = p1p1Rand(card_list_cleaned.length, p1p1_count);
+			for (const i of l) {
+				const card = card_list_cleaned[i];
+				const img_url = '/sets/' + card.set + '-files/img/' + card.number + '_' + card.card_name + (card.shape.includes('double') ? '_front' : '') + '.' + card.image_type;
 
-				for (let i = 0; i < img_list.length; i++)
-				{
+				const image = new Image();
+				image.src = img_url;
+
+				img_list.push(image);
+			}
+
+			const canvas = document.getElementById("canvas");
+			const ctx = canvas.getContext('2d');
+
+			canvas.width = 1883;
+			canvas.height = 1573;
+
+			for (let i = 0; i < img_list.length; i++) {
+				img_list[i].onload = function () {
 					x_offset = 377 * (i % 5);
 					y_offset = 525 * Math.floor(i / 5);
-					try {
-						ctx.drawImage(img_list[i], x_offset, y_offset, 375, 523);
-					} catch {
-						console.log("ALERT: FAILED DRAWING IMAGE");
-					}
+					ctx.drawImage(img_list[i], x_offset, y_offset, 375, 523);
+				};
+			}
+
+			// document.getElementById("p1p1").style.display = "block";
+		}
+
+		function openP1P1() {
+			const canvas = document.getElementById("canvas2");
+			const ctx = canvas.getContext('2d');
+
+			canvas.width = 1883;
+			canvas.height = 1573;
+
+			for (let i = 0; i < img_list.length; i++) {
+				x_offset = 377 * (i % 5);
+				y_offset = 525 * Math.floor(i / 5);
+				try {
+					ctx.drawImage(img_list[i], x_offset, y_offset, 375, 523);
+				} catch {
+					console.log("ALERT: FAILED DRAWING IMAGE");
 				}
-
-				document.getElementById('modal-container').style.display = 'block';
 			}
 
-			// if this doesn't work, blame Gemini
-			function reallyRand(x, seed = false) {
-				const date = new Date();
-				seed = seed ? seed : date.getUTCFullYear() * 10000 + 
-							 date.getUTCMonth() * 100 + 
-							 date.getUTCDate();
+			document.getElementById('modal-container').style.display = 'block';
+		}
 
-				const a = 1103515245;
-				const c = 12345;
-				const m = Math.pow(2, 31);
+		// if this doesn't work, blame Gemini
+		function reallyRand(x, seed = false) {
+			const date = new Date();
+			seed = seed ? seed : date.getUTCFullYear() * 10000 +
+				date.getUTCMonth() * 100 +
+				date.getUTCDate();
 
-				let randomNumber = (a * seed + c) % m;
-				randomNumber = randomNumber / m;
+			const a = 1103515245;
+			const c = 12345;
+			const m = Math.pow(2, 31);
 
-				return Math.floor(randomNumber * x);
+			let randomNumber = (a * seed + c) % m;
+			randomNumber = randomNumber / m;
+
+			return Math.floor(randomNumber * x);
+		}
+
+		function p1p1Rand(x, n) {
+			let l = [];
+			const date = new Date();
+			const seed = date.getUTCFullYear() * 10000 +
+				date.getUTCMonth() * 100 +
+				date.getUTCDate();
+			for (let i = 0; i < n; i++) {
+
+				l.push(reallyRand(x, seed * (i + 1)));
 			}
 
-			function p1p1Rand(x, n) {
-				let l = [];
-				const date = new Date();
-				const seed = date.getUTCFullYear() * 10000 + 
-							 date.getUTCMonth() * 100 + 
-							 date.getUTCDate();
-				for (let i = 0; i < n; i++) {
-					
-					l.push(reallyRand(x, seed * (i + 1)));
-				}
+			return l;
+		}
 
-				return l;
-			}
+		function prepareGradients() {
+			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt = document.createElement("option");
+			opt.value = defaultGradient.replace(' ', '-');
+			opt.text = defaultGradient;
+			document.getElementById("color-select").appendChild(opt);
+			let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt_rand = document.createElement("option");
+			opt_rand.value = "Random-Card";
+			opt_rand.text = "Random Card";
 
-			function prepareGradients() {
-				let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+			document.getElementById("color-select").appendChild(opt_rand);
+			for (const gradient of gradients) {
 				const opt = document.createElement("option");
-				opt.value = defaultGradient.replace(' ', '-');
-				opt.text = defaultGradient;
-				document.getElementById("color-select").appendChild(opt);
-				let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt_rand = document.createElement("option");
-				opt_rand.value = "Random-Card";
-				opt_rand.text = "Random Card";
-
-				document.getElementById("color-select").appendChild(opt_rand);
-				for (const gradient of gradients)
-				{	
-					const opt = document.createElement("option");
-					opt.value = gradient.name.replace(' ', '-');
-					opt.text = gradient.name;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
+				opt.value = gradient.name.replace(' ', '-');
+				opt.text = gradient.name;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
 				}
-
-				for (const gradient in card_backgrounds) {
-					const opt = document.createElement("option");
-					opt.value = gradient.replace(' ', '-');
-					opt.text = gradient;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
-					console.log(gradient, opt);
-				}
-
-				// setGradient();
 			}
 
-			function setGradient(gradient=false) {
-				let artistCredit = "";
-				if (!gradient) { 
-					gradient = document.getElementById("color-select").value;
+			for (const gradient in card_backgrounds) {
+				const opt = document.createElement("option");
+				opt.value = gradient.replace(' ', '-');
+				opt.text = gradient;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
 				}
+				console.log(gradient, opt);
+			}
 
-				gradTop = "#000000";
-				gradBottom = "#FFFFFF";
-				for (const grad of gradients)
-				{
-					if (gradient == grad.name.replace(' ', '-'))
-					{ 	
-						gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
-					}
+			// setGradient();
+		}
+
+		function setGradient(gradient = false) {
+			let artistCredit = "";
+			if (!gradient) {
+				gradient = document.getElementById("color-select").value;
+			}
+
+			gradTop = "#000000";
+			gradBottom = "#FFFFFF";
+			for (const grad of gradients) {
+				if (gradient == grad.name.replace(' ', '-')) {
+					gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
 				}
+			}
 
-				for (const background in card_backgrounds) {
-					if (gradient == background.replace(' ', '-'))
-					{ 	
-						gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-						artistCredit = card_backgrounds[background][0];
-						setTextColor(card_backgrounds[background][1]);
-					}
-				}
-
-				if (gradient == "Random-Card") {
-					const bgs = Object.keys(card_backgrounds);
-					const background = bgs[reallyRand(bgs.length)];
+			for (const background in card_backgrounds) {
+				if (gradient == background.replace(' ', '-')) {
 					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
 					artistCredit = card_backgrounds[background][0];
 					setTextColor(card_backgrounds[background][1]);
 				}
-
-				
-				document.body.style.backgroundImage = gradImage;
-				localStorage.setItem("settings.gradient", gradient);
-				console.log("CHANGE");
-				if (document.getElementsByClassName("artist-credit")[0])
-					document.getElementsByClassName("artist-credit")[0].remove();
-				const credit_text = document.createElement("span");
-				credit_text.className = "artist-credit text";
-				credit_text.innerText = `background by ${artistCredit}`;
-				if (artistCredit && document.getElementById("color-select"))
-					document.getElementById("color-select").parentElement.appendChild(credit_text);
 			}
 
-function reallyRand(x, seed = false) {
-				const date = new Date();
-				seed = seed ? seed : date.getUTCFullYear() * 10000 + 
-							 date.getUTCMonth() * 100 + 
-							 date.getUTCDate();
-
-				const a = 1103515245;
-				const c = 12345;
-				const m = Math.pow(2, 31);
-
-				let randomNumber = (a * seed + c) % m;
-				randomNumber = randomNumber / m;
-
-				return Math.floor(randomNumber * x);
+			if (gradient == "Random-Card") {
+				const bgs = Object.keys(card_backgrounds);
+				const background = bgs[reallyRand(bgs.length)];
+				gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
+				artistCredit = card_backgrounds[background][0];
+				setTextColor(card_backgrounds[background][1]);
 			}
 
-function setTextColor(c = false) {
-				if (c) {
-					localStorage.setItem("settings.textcolor", c);
-				}
-				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            	document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+			document.body.style.backgroundImage = gradImage;
+			localStorage.setItem("settings.gradient", gradient);
+			console.log("CHANGE");
+			if (document.getElementsByClassName("artist-credit")[0])
+				document.getElementsByClassName("artist-credit")[0].remove();
+			const credit_text = document.createElement("span");
+			credit_text.className = "artist-credit text";
+			credit_text.innerText = `background by ${artistCredit}`;
+			if (artistCredit && document.getElementById("color-select"))
+				document.getElementById("color-select").parentElement.appendChild(credit_text);
+		}
+
+		function reallyRand(x, seed = false) {
+			const date = new Date();
+			seed = seed ? seed : date.getUTCFullYear() * 10000 +
+				date.getUTCMonth() * 100 +
+				date.getUTCDate();
+
+			const a = 1103515245;
+			const c = 12345;
+			const m = Math.pow(2, 31);
+
+			let randomNumber = (a * seed + c) % m;
+			randomNumber = randomNumber / m;
+
+			return Math.floor(randomNumber * x);
+		}
+
+		function setTextColor(c = false) {
+			if (c) {
+				localStorage.setItem("settings.textcolor", c);
+			}
+			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+		}
+
+		function goToSets() {
+			window.location = ("/all-sets");
+		}
+
+		function closeModal() {
+			document.getElementById("modal-container").style.display = "none";
+		}
+
+		function goToDeckbuilder() {
+			window.location = ("/deckbuilder");
+		}
+
+		const search_tips = `"t", "type"
+Search the card type of a card.
+"c", "color", "colour"
+Search the colours of the card. the colours are "w", "white", "u", "blue", "b", "black", "r", "red", "g", "green", "i", "silver".
+"p", "power"
+Search for a cards base power.
+"t", "toughness"
+Search for a cards base toughness.
+":" is 'includes', "=" and "!" are "exact", "<" is "less than", ">" is "greater than".
+"<=" gives you all things that include at least one or more of the search. For example, if you search "c<=ubg", you will get all blue, black, and green cards, as well as colourless cards. 
+"=>" gives you all things that include all or more of the search. For example, if you search "c>=ubg", you will get all cards that are at minimum blue, black, and green.
+"size", "pt"
+Search for a cards specific base power and toughness. For example, searching for "size:4/4" will yield all cards with base power and toughness "4/4".
+"mv", "cmc"
+Search for a cards mana value, or converted mana cost.
+"mana", "cost"
+Search for a cards specific mana cost. for example, you can search for "mana=2ww" to find all cards with that specific mana cost.
+"ci", "id"
+Search for a cards colour identity. colour identity includes
+"o", "oracle", "text"
+Search for text within the cards available. To search for a string of text, surround your search with "". For example, [o:"{T}: Add {G}"] searches for every card that could add green mana.
+"r", "rarity"
+Search for a cards rarity.
+"e", "set"
+Search for cards from a specific set.
+"kw", "has", "keyword"
+Search for a keyword among cards. For example, "kw:luminous" will find all cards that have luminous within their card text.
+"alias"
+Search within aliases of cards. For example, "alias:gradius" will find "Gradius" and "Gradius' Option".
+"is"
+Search for cards that fall within a specialized grouping. The groupings include: = permanent = spell = commander = hybrid = sanctum = dfc = played = staple
+"tag"
+Search for specialized tags that are added to cards via the card notes. For example, "tag:fascism" will find all cards that are tagged with fascism, such as all the cards that mention clan mordel.
+"a", "art", "artist"
+Search for artists listed on the cards.
+"ft", "flavor", "flavour"
+Search through the flavour text within cards.
+"lore"
+Search through cards flavour text, name, and card notes for a word or name available.
+"designer"
+Search for the designer of cards within the selection. For example, "designer:TVP" will find all cards that were designed by TVP.
+"lairnumber"
+Search for secret lairs by their release order. For example, "lairnumber:1" will find all cards available within the first secret lair.
+"lairname"
+Search for a secret lair by its name. For example, [lairname:"the hours"] finds all cards released within The Hours secret lair.
+"champion"
+Search for cards that were made into champion promo's by a specific user. For example, searching "champion:kogane" will find all cards that user kogane has made into champion promo's by winning in various events.`;
+
+		function formatText(text) {
+			let new_text = text;
+			new_text = new_text.replaceAll(/"(.*?)"/g, function (_1) {
+				return "<b>" + _1 + "</b>";
+			});
+			new_text = new_text.replaceAll(/\"([^ {]+?[:=][^ ]+?)\"/g, function (_1, _2) {
+				return "<a href=\"/search?search=" + encodeURI(_2.replaceAll(/<.+?>/g, "")) + "\">" + _1 + "</a>";
+			});
+			new_text = new_text.replaceAll(/\[(.+?[:=].+?)\]/g, function (_1, _2) {
+				return "<a href=\"/search?search=" + encodeURI(_2.replaceAll("<b>", "").replaceAll("</b>", "")) + "\">" + _1 + "</a>";
+			});
+			new_text = new_text.replaceAll(/^<b>/gm, "<hr><b>");
+			return new_text.replaceAll("\n", "<br>");
+		}
+
+		function goToOnboard() {
+			const modal_container = document.getElementById("modal-container");
+			const modal_content = document.getElementById("modal-content");
+			modal_container.style.display = "block";
+			modal_content.innerHTML = formatText(search_tips);
+		}
+
+		function openOnboard() {
+			window.location.href = 'https://docs.google.com/document/d/1eZnljkF7TGC_OzQ6IYxgdWxyZU2T2dxSRZ5zYa6Cpkc/edit?usp=sharing';
+		}
+
+		function search() {
+			const url = new URL('search', window.location.origin);
+			url.searchParams.append('search', document.getElementById("search").value);
+			window.location.href = url;
+		}
+
+		function randomCard() {
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
+
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
 			}
 
-			function goToSets() {
-				window.location = ("/all-sets");
-			}
+			window.location.href = url;
+		}
+	</script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
 
-			function goToDeckbuilder() {
-				window.location = ("/deckbuilder");
-			}
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+			authDomain: "voyager-78e30.firebaseapp.com",
+			projectId: "voyager-78e30",
+			storageBucket: "voyager-78e30.firebasestorage.app",
+			messagingSenderId: "411191248476",
+			appId: "1:411191248476:web:591349be169d823e5f8899",
+			measurementId: "G-TQ1L48F25M"
+		};
 
-			function goToOnboard() {
-				window.location.href = 'https://docs.google.com/document/d/1eZnljkF7TGC_OzQ6IYxgdWxyZU2T2dxSRZ5zYa6Cpkc/edit?usp=sharing';
-			}
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
 
-			function search() {
-				const url = new URL('search', window.location.origin);
-				url.searchParams.append('search', document.getElementById("search").value);
-				window.location.href = url;
-			}
+		let username = "";
+		let password = "";
+		let decks = "";
 
-			function randomCard() {
-				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
-				let random_card = card_list_arrayified[i];
+		let sessionid = localStorage.getItem("settings.session");
+		let logged_in = (sessionid != null);
 
-				const url = new URL('card', window.location.origin);
-				const params = {
-					set: random_card.set,
-					num: random_card.number,
-					name: random_card.card_name
-				}
-				for (const key in params) {
-					url.searchParams.append(key, params[key]);
-				}
+		if (logged_in) {
+			const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+				let data = docSnap.data();
+				username = data.username;
+				password = data.password;
+			});
 
-				window.location.href = url;
-			}
-		</script>
-		<script type="module">
-			// Import the functions you need from the SDKs you need
-			import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-			import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-			// TODO: Add SDKs for Firebase products that you want to use
-			// https://firebase.google.com/docs/web/setup#available-libraries
-			
-			// Your web app's Firebase configuration
-			// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-			const firebaseConfig = {
-				apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-				authDomain: "voyager-78e30.firebaseapp.com",
-				projectId: "voyager-78e30",
-				storageBucket: "voyager-78e30.firebasestorage.app",
-				messagingSenderId: "411191248476",
-				appId: "1:411191248476:web:591349be169d823e5f8899",
-				measurementId: "G-TQ1L48F25M"
-			};
-			
-			// Initialize Firebase
-			const app = initializeApp(firebaseConfig);
-			const db = getFirestore(app);
+			await getDoc(doc(db, 'users', username)).then(docSnap => {
+				let data = docSnap.data();
+				console.log(data);
+				document.getElementById("login").innerText = username;
+			});
+		} else {
+			document.getElementById("login").innerText = "Not logged in";
+			document.getElementById("account-btn").innerHTML = `<img src="/img/header/account.png" class="btn-img">Not logged in`;
+		}
+	</script>
+</body>
 
-			let username = "";
-			let password = "";
-			let decks = "";
-
-			let sessionid = localStorage.getItem("settings.session");
-			let logged_in = (sessionid != null);
-
-			if (logged_in) {
-				const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-					let data = docSnap.data();
-					username = data.username;
-					password = data.password;
-				});
-
-				await getDoc(doc(db, 'users', username)).then(docSnap => {
-					let data = docSnap.data();
-					console.log(data);
-					document.getElementById("login").innerText = username;
-				});
-			} else {
-				document.getElementById("login").innerText = "Not logged in";
-				document.getElementById("account-btn").innerHTML = `<img src="/img/header/account.png" class="btn-img">Not logged in`;
-			}
-		</script>
-	</body>
-	</html>
+</html>
