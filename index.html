@@ -1110,10 +1110,10 @@ Search for cards that were made into champion promo's by a specific user. For ex
 				return "<b>" + _1 + "</b>";
 			});
 			new_text = new_text.replaceAll(/\"([^ {]+?[:=][^ ]+?)\"/g, function (_1, _2) {
-				return "<a href=\"/search?search=" + encodeURI(_2.replaceAll(/<.+?>/g, "")) + "\">" + _1 + "</a>";
+				return "<a target=\"blank\" href=\"/search?search=" + encodeURI(_2.replaceAll(/<.+?>/g, "")) + "\">" + _1 + "</a>";
 			});
 			new_text = new_text.replaceAll(/\[(.+?[:=].+?)\]/g, function (_1, _2) {
-				return "<a href=\"/search?search=" + encodeURI(_2.replaceAll("<b>", "").replaceAll("</b>", "")) + "\">" + _1 + "</a>";
+				return "<a target=\"blank\" href=\"/search?search=" + encodeURI(_2.replaceAll("<b>", "").replaceAll("</b>", "")) + "\">" + _1 + "</a>";
 			});
 			new_text = new_text.replaceAll(/^<b>/gm, "<hr><b>");
 			return new_text.replaceAll("\n", "<br>");
