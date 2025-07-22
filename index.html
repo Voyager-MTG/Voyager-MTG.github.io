@@ -75,10 +75,15 @@
 		background-color: #F3F3F3;
 	}
 
-	input {
+	div:has(input) {
 		width: 100%;
 		max-width: 700px;
-		/* margin: auto; */
+		margin: auto;
+	}
+
+	input {
+		width: 100%;
+		margin: auto;
 		height: 50px;
 		font-size: 24px;
 		color: #171717;
@@ -90,13 +95,6 @@
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
-	}
-
-	.search-container {
-		margin: auto;
-		width: 100%;
-		gap: 10px;
-		max-width: 720px;
 	}
 
 	input:focus {
@@ -537,8 +535,7 @@
 	<div id="gradient"></div>
 	<div class="item-container">
 		<img class="banner" src="img/banner.png"></img>
-		<div class="search-container">
-			<input type="text" inputmode="search" placeholder="Search ..." autofocus="autofocus" name="search"
+		<div><input type="text" inputmode="search" placeholder="Search ..." autofocus="autofocus" name="search"
 				id="search" spellcheck="false" autocomplete="off" autocorrext="off" spellcheck="false">
 			<img src="img/info.png" class="search-info" onclick="goToOnboard()">
 		</div>

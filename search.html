@@ -1,4 +1,5 @@
 ﻿<html>
+
 <head>
 	<title>Search</title>
 	<link rel="icon" type="image/x-icon" href="/img/header/search.png">
@@ -10,14 +11,16 @@
 		font-family: Beleren;
 		src: url('/resources/beleren.ttf');
 	}
+
 	body {
 		font-family: 'Helvetica', 'Arial', sans-serif;
 		overscroll-behavior: none;
 		margin: 0px;
 		background-color: #f3f3f3;
-               background-attachment: fixed;
+		background-attachment: fixed;
 		background-size: cover;
 	}
+
 	.button-grid {
 		width: 70%;
 		max-width: 1200px;
@@ -30,6 +33,7 @@
 		padding-bottom: 20px;
 		justify-items: center;
 	}
+
 	.prev-next-btns {
 		width: 100%;
 		height: 40px;
@@ -39,6 +43,7 @@
 		gap: 5px;
 		align-items: center;
 	}
+
 	button:not(.btn) {
 		background-color: #fafafa;
 		border: 1px solid #d5d9d9;
@@ -51,14 +56,17 @@
 		height: 35px;
 		min-width: 85px;
 	}
+
 	button:hover {
 		background-color: #ffffff;
 	}
+
 	button:focus {
 		border-color: #171717;
 		box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
 		outline: 0;
 	}
+
 	button:disabled {
 		cursor: auto;
 		background-color: #f7fafa;
@@ -66,9 +74,11 @@
 		box-shadow: none;
 		color: #cccccc;
 	}
+
 	.button-grid .results-text {
 		margin-right: -3px;
 	}
+
 	.button-grid .select-text {
 		width: 100%;
 		display: flex;
@@ -78,6 +88,7 @@
 		font-size: 14.5px;
 		text-align: center;
 	}
+
 	select {
 		background-color: #fafafa;
 		border: 1px solid #d5d9d9;
@@ -88,12 +99,14 @@
 		font-size: 13px;
 		height: 30px;
 	}
+
 	.grid-container {
 		display: grid;
 		grid-template-columns: auto;
 		max-width: 1200px;
 		margin: auto;
 	}
+
 	.image-grid-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -103,11 +116,13 @@
 		gap: 5px;
 		justify-items: center;
 	}
-	@media ( max-width: 750px ) {
+
+	@media (max-width: 750px) {
 		.image-grid-container {
-			grid-template-columns: 1fr 1fr;	
+			grid-template-columns: 1fr 1fr;
 		}
 	}
+
 	.image-grid {
 		width: 70%;
 		margin: auto;
@@ -117,9 +132,11 @@
 		padding-bottom: 10px;
 		justify-items: left;
 	}
+
 	.image-grid img {
 		position: relative;
 	}
+
 	.card-image {
 		float: left;
 		width: 100%;
@@ -128,9 +145,11 @@
 		border-radius: 9px;
 		transition: 0.2s;
 	}
+
 	.card-image:hover {
 		filter: brightness(0.7);
 	}
+
 	.card-text {
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -144,6 +163,7 @@
 		min-height: 75%;
 		margin-top: 3%;
 	}
+
 	.card-text div {
 		white-space: normal;
 		font-size: 15px;
@@ -152,30 +172,37 @@
 		padding-right: 12px;
 		line-height: 155%;
 	}
+
 	.card-text .name-cost {
 		font-size: 20px;
 		white-space: pre-wrap;
 	}
+
 	.card-text .type {
 		font-size: 16px;
 	}
+
 	.card-text .pt {
 		font-weight: bold;
 	}
+
 	.card-text br {
 		content: "";
 		display: block;
 		margin-bottom: 5px;
 	}
+
 	.img-container {
 		position: relative;
 		width: 100%;
 		align-self: center;
 	}
+
 	.img-container img {
 		width: 100%;
 		height: auto;
 	}
+
 	.img-container .btn {
 		background-color: #ffffffaa;
 		background-size: contain;
@@ -193,11 +220,13 @@
 		border: 2px solid black;
 		padding: 3px;
 	}
+
 	.img-container .btn:hover {
 		background-size: contain;
 		background-position: center;
 		background-color: #ffffff;
 	}
+
 	.img-container .hidden-text {
 		position: absolute;
 		font-family: Beleren;
@@ -218,25 +247,43 @@
 		/* color: #f3f3f3; */
 	}
 </style>
+
 <body>
 	<div class="header">
 		<div class="search-grid">
 			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
 			<img class="sg-icon" src="/img/header/search.png">
-			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false"
+				autocomplete="off" autocorrect="off" spellcheck="false">
 			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
 			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
 			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
 			<a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>
 			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
-                <a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
+			<a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
 		</div>
 	</div>
 	<div class="button-grid">
-		<div class="select-text text"><div class="results-text" id="results-text">Loading ...</div>Cards displayed as<select name="display" id="display" class="popout"><option value="cards-only">Cards Only</option><option value="cards-text">Cards + Text</option></select>sorted by<select name="sort-by" id="sort-by" class="popout"><option value="name">Name</option><option value="set-code">Set / Number</option><option value="mv">Mana Value</option><option value="color">Color</option><option value="rarity">Rarity</option></select> : <select name="sort-order" id="sort-order" class="popout"><option value="ascending">Asc</option><option value="descending">Desc</option></select></div>		
+		<div class="select-text text">
+			<div class="results-text" id="results-text">Loading ...</div>Cards displayed as<select name="display"
+				id="display" class="popout">
+				<option value="cards-only">Cards Only</option>
+				<option value="cards-text">Cards + Text</option>
+			</select>sorted by<select name="sort-by" id="sort-by" class="popout">
+				<option value="name">Name</option>
+				<option value="set-code">Set / Number</option>
+				<option value="mv">Mana Value</option>
+				<option value="color">Color</option>
+				<option value="rarity">Rarity</option>
+			</select> : <select name="sort-order" id="sort-order" class="popout">
+				<option value="ascending">Asc</option>
+				<option value="descending">Desc</option>
+			</select>
+		</div>
 		<div class="prev-next-btns">
-			<button class="popout" type="submit" onclick="previousPage()" id="prevBtn" disabled>< Previous</button>
-			<button class="popout" type="submit" onclick="nextPage()" id="nextBtn">Next 30 ></button>
+			<button class="popout" type="submit" onclick="previousPage()" id="prevBtn" disabled>
+				< Previous</button>
+					<button class="popout" type="submit" onclick="nextPage()" id="nextBtn">Next 30 ></button>
 		</div>
 	</div>
 
@@ -249,8 +296,9 @@
 	<div class="button-grid" id="footer">
 		<div></div>
 		<div class="prev-next-btns">
-			<button class="popout" type="submit" onclick="previousPage()" id="prevBtn-footer" disabled>< Previous</button>
-			<button class="popout" type="submit" onclick="nextPage()" id="nextBtn-footer">Next 30 ></button>
+			<button class="popout" type="submit" onclick="previousPage()" id="prevBtn-footer" disabled>
+				< Previous</button>
+					<button class="popout" type="submit" onclick="nextPage()" id="nextBtn-footer">Next 30 ></button>
 		</div>
 	</div>
 
@@ -268,32 +316,36 @@
 
 		document.addEventListener("DOMContentLoaded", async function () {
 			await fetch('/lists/all-cards.json')
-					.then(response => response.json())
-					.then(json => {
-						card_list = json;
+				.then(response => response.json())
+				.then(json => {
+					card_list = json;
 				}).catch(error => console.error('Error:', error));
 
-				await fetch('/resources/replacechars.txt')
-					.then(response => response.text())
-					.then(text => {
-						specialchars = text; 
+			await fetch('/lists/all-sets.json')
+				.then(response => response.json())
+				.then(json => {
+					set_list = json;
 				}).catch(error => console.error('Error:', error));
 
-				card_list_arrayified = card_list.cards;
+			await fetch('/resources/replacechars.txt')
+				.then(response => response.text())
+				.then(text => {
+					specialchars = text;
+				}).catch(error => console.error('Error:', error));
+
+			card_list_arrayified = card_list.cards;
 
 
 			await fetch('/lists/all-sets.json')
-					.then(response => response.json())
-					.then(data => {
-						sets_json = data; 
+				.then(response => response.json())
+				.then(data => {
+					sets_json = data;
 				}).catch(error => console.error('Error:', error));
 
-			if (sessionStorage.getItem("display") != "cards-only")
-			{
+			if (sessionStorage.getItem("display") != "cards-only") {
 				cardGrid = document.getElementById("grid");
 			}
-			else
-			{
+			else {
 				cardGrid = document.getElementById("imagesOnlyGrid");
 			}
 
@@ -304,13 +356,11 @@
 			page = params.get("page") ? params.get("page") : 0;
 			document.getElementById("search").value = params.get("search") ? decodeURIComponent(params.get("search")) : "";
 
-			if (sessionStorage.getItem("sortMethod"))
-			{
-				document.getElementById("sort-by").value = sessionStorage.getItem("sortMethod");				
+			if (sessionStorage.getItem("sortMethod")) {
+				document.getElementById("sort-by").value = sessionStorage.getItem("sortMethod");
 			}
-			if (sessionStorage.getItem("display"))
-			{
-				document.getElementById("display").value = sessionStorage.getItem("display");				
+			if (sessionStorage.getItem("display")) {
+				document.getElementById("display").value = sessionStorage.getItem("display");
 			}
 
 			displayStyle = document.getElementById("display").value;
@@ -325,16 +375,16 @@
 				const response = await fetch('/resources/gradients.json');
 				raw_gradients = await response.json();
 			}
-			catch(error) {
+			catch (error) {
 				console.error('Error:', error);
 			}
 
 			gradients = raw_gradients.gradients;
-				card_backgrounds = raw_gradients.cards;
+			card_backgrounds = raw_gradients.cards;
 			setGradient(localStorage.getItem("settings.gradient"));
 
 			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
 
 			if (localStorage.getItem("settings.darkthememenu") == "On") {
 				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
@@ -366,7 +416,7 @@
 		document.getElementById("display").onchange = displayChangeListener;
 		document.getElementById("sort-order").onchange = displayChangeListener;
 
-		window.addEventListener('popstate', function(event) {
+		window.addEventListener('popstate', function (event) {
 			let params = decodeURIComponent(window.location.href.indexOf("?search") == -1 ? "" : window.location.href.substring(window.location.href.indexOf("?search") + 8), (window.location.href.indexOf("page=") == -1 ? window.location.href.length : window.location.href.indexOf("page=")));
 			document.getElementById("search").value = (params.indexOf("&page=") == -1 ? params.replaceAll("+", " ") : params.substring(0, params.indexOf("&page=")).replaceAll("+", " "));
 			page = window.location.href.indexOf("page=") == -1 ? 0 : parseInt(window.location.href.substring(window.location.href.indexOf("page=") + 5)) - 1;
@@ -382,32 +432,25 @@
 		function compareFunction(a, b) {
 			const sortMode = document.getElementById("sort-by").value;
 
-			if (a.rarity.includes("masterpiece") && !b.rarity.includes("masterpiece"))
-			{
+			if (a.rarity.includes("masterpiece") && !b.rarity.includes("masterpiece")) {
 				return 1;
 			}
 
-			if (!a.rarity.includes("masterpiece") && b.rarity.includes("masterpiece"))
-			{
+			if (!a.rarity.includes("masterpiece") && b.rarity.includes("masterpiece")) {
 				return -1;
 			}
 
-			if (a.shape.includes("token") && !b.shape.includes("token"))
-			{
+			if (a.shape.includes("token") && !b.shape.includes("token")) {
 				return 1;
 			}
 
-			if (!a.shape.includes("token") && b.shape.includes("token"))
-			{
+			if (!a.shape.includes("token") && b.shape.includes("token")) {
 				return -1;
 			}
-			
-			if (sortMode == 'set-code')
-			{
-				if (a.set === b.set)
-				{
-					if (a.number === b.number)
-					{
+
+			if (sortMode == 'set-code') {
+				if (a.set === b.set) {
+					if (a.number === b.number) {
 						return 0;
 					}
 					else {
@@ -418,26 +461,21 @@
 					return (a.set < b.set) ? -1 : 1;
 				}
 			}
-			if (sortMode == 'name')
-			{
-				if (a.card_name === b.card_name)
-				{
+			if (sortMode == 'name') {
+				if (a.card_name === b.card_name) {
 					return 0;
 				}
 				else {
 					return (a.card_name < b.card_name) ? -1 : 1;
 				}
 			}
-			if (sortMode == 'mv')
-			{
+			if (sortMode == 'mv') {
 				//since cost is now formatted like {1}{U} instead of 1U, we need to remove the brackets from the string first
 				//CE: undoing this because we're counting { chars for MV
-				a_mv = isDecimal(a.cost.charAt(1)) ? parseInt(a.cost.substring(1, a.cost.indexOf('}'))) + a.cost.replaceAll('x','').split('{').length - 2 : a.cost.replaceAll('x','').split('{').length - 1;
-				b_mv = isDecimal(b.cost.charAt(1)) ? parseInt(b.cost.substring(1, b.cost.indexOf('}'))) + b.cost.replaceAll('x','').split('{').length - 2 : b.cost.replaceAll('x','').split('{').length - 1;
-				if (a_mv === b_mv)
-				{
-					if (a.card_name === b.card_name)
-					{
+				a_mv = isDecimal(a.cost.charAt(1)) ? parseInt(a.cost.substring(1, a.cost.indexOf('}'))) + a.cost.replaceAll('x', '').split('{').length - 2 : a.cost.replaceAll('x', '').split('{').length - 1;
+				b_mv = isDecimal(b.cost.charAt(1)) ? parseInt(b.cost.substring(1, b.cost.indexOf('}'))) + b.cost.replaceAll('x', '').split('{').length - 2 : b.cost.replaceAll('x', '').split('{').length - 1;
+				if (a_mv === b_mv) {
+					if (a.card_name === b.card_name) {
 						return 0;
 					}
 					else {
@@ -448,28 +486,22 @@
 					return (a_mv < b_mv) ? -1 : 1;
 				}
 			}
-			if (sortMode == 'color')
-			{
+			if (sortMode == 'color') {
 				color_sort_order = ["W", "U", "B", "R", "G", "WU", "UB", "BR", "RG", "GW", "WB", "UR", "BG", "RW", "GU", "WUB", "UBR", "BRG", "RGW", "GWU", "RWB", "GUR", "WBG", "URW", "BGU", "WUBR", "UBRG", "BRGW", "RGWU", "GWUB", "WUBRG", ""];
 				a_color_index = -1;
 				b_color_index = -1;
 
-				for (let i = 0; i < color_sort_order.length; i++)
-				{
-					if (a.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join(''))
-					{
+				for (let i = 0; i < color_sort_order.length; i++) {
+					if (a.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join('')) {
 						a_color_index = i;
 					}
-					if (b.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join(''))
-					{
+					if (b.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join('')) {
 						b_color_index = i;
 					}
 				}
 
-				if (a_color_index === b_color_index)
-				{
-					if (a.card_name === b.card_name)
-					{
+				if (a_color_index === b_color_index) {
+					if (a.card_name === b.card_name) {
 						return 0;
 					}
 					else {
@@ -480,46 +512,36 @@
 					return (a_color_index < b_color_index) ? -1 : 1;
 				}
 			}
-			if (sortMode == 'rarity')
-			{
-				rarity_sort_order = [ "mythic", "rare", "uncommon", "common" ];
+			if (sortMode == 'rarity') {
+				rarity_sort_order = ["mythic", "rare", "uncommon", "common"];
 				a_rarity_index = 100;
 				b_rarity_index = 100;
 
-				for (let i = 0; i < rarity_sort_order.length; i++)
-				{
-					if (a.rarity.toLowerCase() == rarity_sort_order[i])
-					{
+				for (let i = 0; i < rarity_sort_order.length; i++) {
+					if (a.rarity.toLowerCase() == rarity_sort_order[i]) {
 						a_rarity_index = i;
 					}
-					if (b.rarity.toLowerCase() == rarity_sort_order[i])
-					{
+					if (b.rarity.toLowerCase() == rarity_sort_order[i]) {
 						b_rarity_index = i;
 					}
 				}
 
-				if (a_rarity_index === b_rarity_index)
-				{
+				if (a_rarity_index === b_rarity_index) {
 					color_sort_order = ["W", "U", "B", "R", "G", "WU", "UB", "BR", "RG", "GW", "WB", "UR", "BG", "RW", "GU", "WUB", "UBR", "BRG", "RGW", "GWU", "RWB", "GUR", "WBG", "URW", "BGU", "WUBR", "UBRG", "BRGW", "RGWU", "GWUB", "WUBRG", ""];
 					a_color_index = -1;
 					b_color_index = -1;
 
-					for (let i = 0; i < color_sort_order.length; i++)
-					{
-						if (a.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join(''))
-						{
+					for (let i = 0; i < color_sort_order.length; i++) {
+						if (a.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join('')) {
 							a_color_index = i;
 						}
-						if (b.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join(''))
-						{
+						if (b.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join('')) {
 							b_color_index = i;
 						}
 					}
 
-					if (a_color_index === b_color_index)
-					{
-						if (a.card_name === b.card_name)
-						{
+					if (a_color_index === b_color_index) {
+						if (a.card_name === b.card_name) {
 							return 0;
 						}
 						else {
@@ -528,7 +550,7 @@
 					}
 					else {
 						return (a_color_index < b_color_index) ? -1 : 1;
-					}		
+					}
 				}
 				else {
 					return (a_rarity_index < b_rarity_index) ? -1 : 1;
@@ -538,8 +560,7 @@
 
 		function preSearch(setNewState) {
 			card_list_arrayified.sort(compareFunction);
-			if (document.getElementById("sort-order").value == "descending")
-			{
+			if (document.getElementById("sort-order").value == "descending") {
 				card_list_arrayified.reverse();
 			}
 			search_results = [];
@@ -551,20 +572,16 @@
 		async function search(setNewState) {
 			searchTerms = document.getElementById("search").value.toLowerCase();
 
-			if (searchTerms != "")
-			{
-				if (setNewState)
-				{
+			if (searchTerms != "") {
+				if (setNewState) {
 					let url = (window.location.href.indexOf("?") == -1 ? new URL(window.location.href) : new URL(window.location.href.substring(0, window.location.href.indexOf("?"))));
 					let params = new URLSearchParams(url.search);
 					params.append("search", searchTerms);
 					history.pushState({}, '', url.pathname + '?' + params.toString());
 				}
 			}
-			else
-			{
-				if (setNewState)
-				{
+			else {
+				if (setNewState) {
 					let url = (window.location.href.indexOf("?") == -1 ? new URL(window.location.href) : new URL(window.location.href.substring(0, window.location.href.indexOf("?"))));
 					let params = new URLSearchParams(url.search);
 					params.delete("search");
@@ -572,36 +589,30 @@
 				}
 			}
 
-			if (displayStyle == "cards-only")
-			{
+			if (displayStyle == "cards-only") {
 				cardGrid = document.getElementById("imagesOnlyGrid");
 			}
-			else
-			{
+			else {
 				cardGrid = document.getElementById("grid");
 			}
 			cardGrid.innerHTML = "";
 
 			for (const card of card_list_arrayified) {
-				if (card.shape.includes("token") && !searchTerms.includes("+t:token") && !searchTerms.includes("t:token"))
-				{
+				if (card.shape.includes("token") && !searchTerms.includes("+t:token") && !searchTerms.includes("t:token")) {
 					continue;
 				}
 
-				if (card.type.includes("Basic") && !searchTerms.includes("+t:basic") && !searchTerms.includes("t:basic"))
-				{
+				if (card.type.includes("Basic") && !searchTerms.includes("+t:basic") && !searchTerms.includes("t:basic")) {
 					continue;
 				}
 
-				if (card.rarity.includes("masterpiece") && !searchTerms.includes("+r:masterpiece") && !searchTerms.includes("+r:mp") && !searchTerms.includes("t:basic"))
-				{
+				if (card.rarity.includes("masterpiece") && !searchTerms.includes("+r:masterpiece") && !searchTerms.includes("+r:mp") && !searchTerms.includes("t:basic")) {
 					continue;
 				}
 
 				searched = await searchAllTokens(card, tokenizeTerms(searchTerms));
 
-				if (searched && !containsCard(search_results, card))
-				{
+				if (searched && !containsCard(search_results, card)) {
 					search_results.push(card);
 				}
 			}
@@ -611,55 +622,47 @@
 				window.location.href = `https://voyager-mtg.github.io/card?set=${card.set}&num=${card.number}&name=${card.card_name.replaceAll(" ", "+")}`; //https://voyager-mtg.github.io/card?set=PVR&num=304&name=Pool+of+Becoming
 			}
 
-			if (searchTerms != "")
-			{
+			if (searchTerms != "") {
 				document.getElementById("results-text").innerText = search_results.length + (search_results.length == 1 ? " result found." : " results found.");
 			}
-			else
-			{
+			else {
 				document.getElementById("results-text").innerText = "";
 			}
 
-			if (page != 0)
-			{
+			if (page != 0) {
 				document.getElementById("prevBtn").disabled = false;
 				document.getElementById("prevBtn-footer").disabled = false;
 			}
-			else
-			{
+			else {
 				document.getElementById("prevBtn").disabled = true;
 				document.getElementById("prevBtn-footer").disabled = true;
 			}
 
 			// set text of Next to match number of displayed images
 			displayStyle = document.getElementById("display").value;
-				pageCount = displayStyle == "cards-only" ? 60 : 30;
-				document.getElementById("nextBtn").innerText = "Next " + pageCount + " >";
-				document.getElementById("nextBtn-footer").innerText = "Next " + pageCount + " >";
+			pageCount = displayStyle == "cards-only" ? 60 : 30;
+			document.getElementById("nextBtn").innerText = "Next " + pageCount + " >";
+			document.getElementById("nextBtn-footer").innerText = "Next " + pageCount + " >";
 
-				// really awesome code block to fix the URL when switching from Cards + Text view to Cards Only view
-				while ((pageCount * page) > search_results.length)
-				{
-					page = page - 1;
+			// really awesome code block to fix the URL when switching from Cards + Text view to Cards Only view
+			while ((pageCount * page) > search_results.length) {
+				page = page - 1;
 
-					let url = (window.location.href.indexOf("page=") == -1 ? new URL(window.location.href) : new URL(window.location.href.substring(0, window.location.href.indexOf("page="))));
+				let url = (window.location.href.indexOf("page=") == -1 ? new URL(window.location.href) : new URL(window.location.href.substring(0, window.location.href.indexOf("page="))));
 				let params = new URLSearchParams(url.search);
 				params.append("page", page + 1);
 				history.replaceState({}, '', url.pathname + '?' + params.toString());
-				}
+			}
 
-			for (let i = (pageCount * page); i < Math.min((pageCount * (page + 1)), search_results.length); i++)
-			{
+			for (let i = (pageCount * page); i < Math.min((pageCount * (page + 1)), search_results.length); i++) {
 				cardGrid.appendChild(gridifyCard(search_results[i]));
 			}
 
-			if (search_results.length <= (pageCount * (page + 1)))
-			{
+			if (search_results.length <= (pageCount * (page + 1))) {
 				document.getElementById("nextBtn").disabled = true;
 				document.getElementById("nextBtn-footer").disabled = true;
 			}
-			else
-			{
+			else {
 				document.getElementById("nextBtn").disabled = false;
 				document.getElementById("nextBtn-footer").disabled = false;
 			}
@@ -674,12 +677,9 @@
 			}
 		}
 
-		function containsCard(list, card)
-		{
-			for (const li of list)
-			{
-				if (li.card_name == card.card_name && li.type == card.type)
-				{
+		function containsCard(list, card) {
+			for (const li of list) {
+				if (li.card_name == card.card_name && li.type == card.type) {
 					return true;
 				}
 			}
@@ -687,57 +687,44 @@
 			return false;
 		}
 
-		function tokenizeTerms(searchTerms)
-		{
+		function tokenizeTerms(searchTerms) {
 			let tokenRegex = /-?\w*[!:<>=]?(([^ "\(\)\/“”]+)|(\".+?\")|(\(.+?\))|(\/.+?\/)|(\“.+?\”))/g;
 			let searchTokens = searchTerms.match(tokenRegex);
 
 			return searchTokens;
 		}
 
-		async function searchAllTokens(card, tokens)
-		{
-			if (tokens == null || tokens == '')
-			{
+		async function searchAllTokens(card, tokens) {
+			if (tokens == null || tokens == '') {
 				return true;
 			}
-			for (let i = 0; i < tokens.length; i++)
-			{
-				if (tokens[i].charAt(0) == '+')
-				{
+			for (let i = 0; i < tokens.length; i++) {
+				if (tokens[i].charAt(0) == '+') {
 					return await searchAllTokens(card, tokens.slice(0, i)) && await searchAllTokens(card, tokens.slice(i + 1));
 				}
-				if (tokens[i] == "or")
-				{
+				if (tokens[i] == "or") {
 					return await searchAllTokens(card, tokens.slice(0, i)) || await searchAllTokens(card, tokens.slice(i + 1));
 				}
 			}
 
-			for (let token of tokens)
-			{
-				if (token.charAt(0) == '-')
-				{
+			for (let token of tokens) {
+				if (token.charAt(0) == '-') {
 					return !(await searchToken(card, token.substring(1))) && (tokens.length == 1 ? true : await searchAllTokens(card, tokens.slice(1)));
 				}
-				if (token.charAt(0) == '(')
-				{
+				if (token.charAt(0) == '(') {
 					return await searchAllTokens(card, tokenizeTerms(token.substring(1, token.length - 1))) && (tokens.length == 1 ? true : await searchAllTokens(card, tokens.slice(1)));
 				}
-				else
-				{
+				else {
 					return await searchToken(card, token) && (tokens.length == 1 ? true : await searchAllTokens(card, tokens.slice(1)));
 				}
 			}
 		}
 
-		function removeDuplicateChars(str)
-		{
+		function removeDuplicateChars(str) {
 			let ret_str = '';
 
-			for (const c of str)
-			{
-				if (!ret_str.includes(c))
-				{
+			for (const c of str) {
+				if (!ret_str.includes(c)) {
 					ret_str += c;
 				}
 			}
@@ -745,24 +732,19 @@
 			return ret_str;
 		}
 
-		function convertToMV(cost)
-		{
+		function convertToMV(cost) {
 			let mv = 0;
-			
-			costTokens = cost.substring(1, cost.length - 1).replaceAll("}{"," ").split(' ');
-			for (const token of costTokens)
-			{
-				if (isDecimal(token))
-				{
+
+			costTokens = cost.substring(1, cost.length - 1).replaceAll("}{", " ").split(' ');
+			for (const token of costTokens) {
+				if (isDecimal(token)) {
 					mv += parseInt(token);
 				}
 				// 2brid
-				else if (token.includes('2'))
-				{
+				else if (token.includes('2')) {
 					mv += 2;
 				}
-				else if (token != "x")
-				{
+				else if (token != "x") {
 					mv += 1;
 				}
 			}
@@ -770,18 +752,14 @@
 			return mv;
 		}
 
-		async function searchToken(card, token)
-		{
+		async function searchToken(card, token) {
 			let card_stats = [];
 
-			for (var key in card)
-			{
-				if (isNaN(card[key]))
-				{
+			for (var key in card) {
+				if (isNaN(card[key])) {
 					card_stats[key] = card[key].toLowerCase();
 				}
-				else
-				{
+				else {
 					card_stats[key] = card[key];
 				}
 			}
@@ -797,8 +775,8 @@
 			//Strip out the lingering [i][/i] and [b][/b] tags while we're searching just in case someone decided to bold something in the
 			//middle of their rules text for some reason
 			let card_oracle_text = card_stats.rules_text != "" ? card_stats.rules_text.replace(/\[(\/)?([ib])\]/g, "") : card_stats.special_text.replace(/\[(\/)?([ib])\]/g, "");
-			let card_power = card_stats.pt.substring(0,card_stats.pt.indexOf('/'));
-			let card_toughness = card_stats.pt.substring(card_stats.pt.indexOf('/')+1);
+			let card_power = card_stats.pt.substring(0, card_stats.pt.indexOf('/'));
+			let card_toughness = card_stats.pt.substring(card_stats.pt.indexOf('/') + 1);
 			let card_shape = card_stats.shape;
 			let card_set = card_stats.set;
 			let card_loyalty = card_stats.loyalty;
@@ -840,40 +818,35 @@
 			]);
 
 			// two cards in one
-			if (card_shape.includes("adventure") || card_shape.includes("double") || card_shape.includes("spli"))
-			{
+			if (card_shape.includes("adventure") || card_shape.includes("double") || card_shape.includes("spli")) {
 				card_name = card_name + "	" + card_stats.card_name2;
 				card_type = card_type + "	" + card_stats.type2;
 				card_oracle_text = card_oracle_text + "	" + (card_stats.rules_text2 != "" ? card_stats.rules_text2.replace(/\[(\/)?([ib])\]/g, "") : card_stats.special_text2.replace(/\[(\/)?([ib])\]/g, ""));
 				card_color_2 = card_stats.color2;
 				card_cost_2 = card_stats.cost2;
-				card_power_2 = card_stats.pt2.substring(0,card_stats.pt2.indexOf('/'));
-				card_toughness_2 = card_stats.pt.substring(card_stats.pt.indexOf('/')+1);
+				card_power_2 = card_stats.pt2.substring(0, card_stats.pt2.indexOf('/'));
+				card_toughness_2 = card_stats.pt.substring(card_stats.pt.indexOf('/') + 1);
 				card_loyalty_2 = card_stats.loyalty2;
 			}
 
-			token = token.replaceAll("~", card_name).replaceAll("cardname", card_name).replaceAll('"','').replaceAll('“','').replaceAll('”','');
+			token = token.replaceAll("~", card_name).replaceAll("cardname", card_name).replaceAll('"', '').replaceAll('“', '').replaceAll('”', '');
 
 			const modifierRegex = /[!:<>=]+/g;
 			const match = token.match(modifierRegex);
 
-			if (match)
-			{
+			if (match) {
 				const modifier = match[0];
 				const term = token.substring(0, token.indexOf(modifier));
 				let check = token.substring(token.indexOf(modifier) + modifier.length);
 
-				if (check.charAt(0) == '/')
-				{
+				if (check.charAt(0) == '/') {
 					check = check.substring(1);
 				}
-				if (check.charAt(check.length - 1) == '/')
-				{
-					check = check.substring(0,check.length - 1);
+				if (check.charAt(check.length - 1) == '/') {
+					check = check.substring(0, check.length - 1);
 				}
 
-				if (color_map.has(check))
-				{
+				if (color_map.has(check)) {
 					check = color_map.get(check);
 				}
 
@@ -899,172 +872,128 @@
 
 					}
 				} */
-				if (term == "mv" || term == "cmc")
-				{
-					if (modifier == "!" || modifier == "=")
-					{
+				if (term == "mv" || term == "cmc") {
+					if (modifier == "!" || modifier == "=") {
 						return (card_mv == check);
 					}
-					else if (modifier == ":")
-					{
+					else if (modifier == ":") {
 						return (card_mv == check);
 					}
-					else if (modifier == "<")
-					{
+					else if (modifier == "<") {
 						return (card_mv < check);
 					}
-					else if (modifier == ">")
-					{
+					else if (modifier == ">") {
 						return (card_mv > check);
 					}
-					else if (modifier == "<=")
-					{
+					else if (modifier == "<=") {
 						return (card_mv <= check);
 					}
-					else if (modifier == ">=")
-					{
+					else if (modifier == ">=") {
 						return (card_mv >= check);
 					}
 				}
-				if (term == "c" || term == "color" || term == "colour")
-				{
-					if (!isNaN(check))
-					{
-						if (modifier == "!" || modifier == "=")
-						{
+				if (term == "c" || term == "color" || term == "colour") {
+					if (!isNaN(check)) {
+						if (modifier == "!" || modifier == "=") {
 							return card_color.length == parseInt(check);
 						}
-						else if (modifier == ":")
-						{
+						else if (modifier == ":") {
 							return card_color.length == parseInt(check);
 						}
-						else if (modifier == "<")
-						{
+						else if (modifier == "<") {
 							return card_color.length < parseInt(check);
 						}
-						else if (modifier == ">")
-						{
+						else if (modifier == ">") {
 							return card_color.length > parseInt(check);
 						}
-						else if (modifier == "<=")
-						{
+						else if (modifier == "<=") {
 							return card_color.length <= parseInt(check);
 						}
-						else if (modifier == ">=")
-						{
+						else if (modifier == ">=") {
 							return card_color.length >= parseInt(check);
 						}
 					}
-					else
-					{
+					else {
 						card_color = card_color == "" ? "c" : card_color;
-						if (check == "m")
-						{
-							if (modifier == "<")
-							{
+						if (check == "m") {
+							if (modifier == "<") {
 								return card_color.length < 2;
 							}
-							else
-							{
-								return card_color.length > 1;							
+							else {
+								return card_color.length > 1;
 							}
 						}
-						else if (modifier == "!" || modifier == "=")
-						{
+						else if (modifier == "!" || modifier == "=") {
 							return (card_color.split("").sort().join("") == check.split("").sort().join(""));
 						}
-						else if (modifier == ":")
-						{
+						else if (modifier == ":") {
 							return hasAllChars(card_color, check);
 						}
-						else if (modifier == "<")
-						{
+						else if (modifier == "<") {
 							return card_color == "c" || (check.length > card_color.length && hasAllChars(check, card_color));
 						}
-						else if (modifier == ">")
-						{
+						else if (modifier == ">") {
 							return card_color.length > check.length && hasAllChars(card_color, check);
 						}
-						else if (modifier == "<=")
-						{
+						else if (modifier == "<=") {
 							return card_color == "c" || hasAllChars(check, card_color);
 						}
-						else if (modifier == ">=")
-						{
+						else if (modifier == ">=") {
 							return hasAllChars(card_color, check);
 						}
 					}
 				}
-				if (term == "cost" || term == "mana")
-				{
-					if (modifier == "!" || modifier == "=" || modifier == ":")
-					{
+				if (term == "cost" || term == "mana") {
+					if (modifier == "!" || modifier == "=" || modifier == ":") {
 						card_cost_cleaned = card_cost.replaceAll('{', '').replaceAll('}', '');
 						return check == card_cost || check == card_cost_cleaned;
 					}
 				}
-				if (term == "ci" || term == "id")
-				{
-					if (!isNaN(check))
-					{
+				if (term == "ci" || term == "id") {
+					if (!isNaN(check)) {
 						card_ci = card_ci == "c" ? "" : card_ci;
-						if (modifier == "!" || modifier == "=")
-						{
+						if (modifier == "!" || modifier == "=") {
 							return card_ci.length == parseInt(check);
 						}
-						else if (modifier == ":")
-						{
+						else if (modifier == ":") {
 							return card_ci.length <= parseInt(check);
 						}
-						else if (modifier == "<")
-						{
+						else if (modifier == "<") {
 							return card_ci.length < parseInt(check);
 						}
-						else if (modifier == ">")
-						{
+						else if (modifier == ">") {
 							return card_ci.length > parseInt(check);
 						}
-						else if (modifier == "<=")
-						{
+						else if (modifier == "<=") {
 							return card_ci.length <= parseInt(check);
 						}
-						else if (modifier == ">=")
-						{
+						else if (modifier == ">=") {
 							return card_ci.length >= parseInt(check);
 						}
 					}
-					else
-					{
-						if (modifier == "!" || modifier == "=")
-						{
+					else {
+						if (modifier == "!" || modifier == "=") {
 							return (card_ci.split("").sort().join("") == check.split("").sort().join(""));
 						}
-						else if (modifier == ":")
-						{
+						else if (modifier == ":") {
 							return card_ci == "c" || hasAllChars(check, card_ci);
 						}
-						else if (modifier == "<")
-						{
+						else if (modifier == "<") {
 							return card_ci == "c" || (check.length > card_ci.length && hasAllChars(check, card_ci));
 						}
-						else if (modifier == ">")
-						{
+						else if (modifier == ">") {
 							return card_ci.length > check.length && hasAllChars(card_ci, check);
 						}
-						else if (modifier == "<=")
-						{
+						else if (modifier == "<=") {
 							return card_ci == "c" || hasAllChars(check, card_ci);
 						}
-						else if (modifier == ">=")
-						{
+						else if (modifier == ">=") {
 							return hasAllChars(card_ci, check);
 						}
 					}
 				}
-				if (term == "t" || term == "type")
-				{
-					if (modifier == ":")
-					{
+				if (term == "t" || term == "type") {
+					if (modifier == ":") {
 						let regex = new RegExp("\\b" + check + "\\b");
 						return regex.test(card_type);
 					}
@@ -1082,11 +1011,9 @@
 
 					} */
 				}
-				if (term == "o" || term == "oracle" || term == "text")
-				{
-					if (modifier == ":")
-					{
-						let regex = new RegExp(check.replaceAll("+","\\+"));
+				if (term == "o" || term == "oracle" || term == "text") {
+					if (modifier == ":") {
+						let regex = new RegExp(check.replaceAll("+", "\\+"));
 						return regex.test(card_oracle_text);
 					}
 					/* unsupported flows
@@ -1103,96 +1030,79 @@
 
 					} */
 				}
-				if (term == "pow" || term == "power")
-				{
-					if (modifier == "!" || modifier == "=")
-					{
+				if (term == "pow" || term == "power") {
+					if (modifier == "!" || modifier == "=") {
 						return (card_power == check);
 					}
-					else if (modifier == ":")
-					{
+					else if (modifier == ":") {
 						return (card_power == check);
 					}
-					else if (modifier == "<")
-					{
+					else if (modifier == "<") {
 						return (card_power < check);
 					}
-					else if (modifier == ">")
-					{
+					else if (modifier == ">") {
 						return (card_power > check);
 					}
-					else if (modifier == "<=")
-					{
+					else if (modifier == "<=") {
 						return (card_power <= check);
 					}
-					else if (modifier == ">=")
-					{
+					else if (modifier == ">=") {
 						return (card_power >= check);
 					}
 				}
-				if (term == "tou" || term == "toughness")
-				{
-					if (modifier == "!" || modifier == "=")
-					{
+				if (term == "tou" || term == "toughness") {
+					if (modifier == "!" || modifier == "=") {
 						return (card_toughness == check);
 					}
-					else if (modifier == ":")
-					{
+					else if (modifier == ":") {
 						return (card_toughness == check);
 					}
-					else if (modifier == "<")
-					{
+					else if (modifier == "<") {
 						return (card_toughness < check);
 					}
-					else if (modifier == ">")
-					{
+					else if (modifier == ">") {
 						return (card_toughness > check);
 					}
-					else if (modifier == "<=")
-					{
+					else if (modifier == "<=") {
 						return (card_toughness <= check);
 					}
-					else if (modifier == ">=")
-					{
+					else if (modifier == ">=") {
 						return (card_toughness >= check);
 					}
 				}
-				if (term == "r" || term == "rarity")
-				{
-					rarities = [ "common", "uncommon", "rare", "mythic" ];
-					for (const rarity of rarities)
-					{
-						if (rarity.startsWith(check))
-						{
+				if (term == "r" || term == "rarity") {
+					rarities = ["common", "uncommon", "rare", "mythic"];
+					for (const rarity of rarities) {
+						if (rarity.startsWith(check)) {
 							check = rarity;
 						}
 					}
-					if (modifier == ":" || modifier == "!" || modifier == "=")
-					{
+					if (modifier == ":" || modifier == "!" || modifier == "=") {
 						return (card_rarity == check);
 					}
-					else if (modifier == "<")
-					{
+					else if (modifier == "<") {
 						return rarities.includes(card_rarity) && rarities.indexOf(card_rarity) < rarities.indexOf(check);
 					}
-					else if (modifier == ">")
-					{
+					else if (modifier == ">") {
 						return rarities.includes(card_rarity) && rarities.indexOf(card_rarity) > rarities.indexOf(check);
 					}
-					else if (modifier == "<=")
-					{
+					else if (modifier == "<=") {
 						return rarities.includes(card_rarity) && rarities.indexOf(card_rarity) <= rarities.indexOf(check);
 					}
-					else if (modifier == ">=")
-					{
+					else if (modifier == ">=") {
 						return rarities.includes(card_rarity) && rarities.indexOf(card_rarity) >= rarities.indexOf(check);
 					}
 				}
-				if (term == "e" || term == "set")
-				{
-					if (modifier == ":" || modifier == "!" || modifier == "=")
-					{
-						return (card_set == check);
+				if (term == "e" || term == "set") {
+					let set_longname = "";
+					for (const set of set_list.sets) {
+						if (set.set_code.toLowerCase() == card_set) {
+							set_longname = set.set_name.toLowerCase();
+							break;
+						}
+					}
+					if (modifier == ":" || modifier == "!" || modifier == "=") {
+						return (card_set == check || set_longname.includes(check));
 					}
 					/* unsupported flows
 					else if (modifier == "<")
@@ -1204,10 +1114,8 @@
 
 					} */
 				}
-				if (term == "keyword" || term=="kw" || term == "has")
-				{
-					if (modifier == ":" || modifier == "!" || modifier == "=")
-					{
+				if (term == "keyword" || term == "kw" || term == "has") {
+					if (modifier == ":" || modifier == "!" || modifier == "=") {
 						regex_kw1 = new RegExp(`(^|\n|, )${check}[^.]*($|\n|\\()`, "g");
 						regex_kw2 = new RegExp(`(^|\n)${check} `, "g");
 						return regex_kw1.test(card_oracle_text) || regex_kw2.test(card_oracle_text);
@@ -1223,26 +1131,19 @@
 					} */
 				}
 				if (term == "alias") {
-					let regex = new RegExp(check.replaceAll("+","\\+"));
+					let regex = new RegExp(check.replaceAll("+", "\\+"));
 					return regex.test(card_stats.special_text);
 				}
-				if (term == "f" || term=="format")
-				{
-					if (modifier == ":" || modifier == "!" || modifier == "=")
-					{
-						for (const set of sets_json.sets)
-						{
-							if (set.set_code.toLowerCase() == card_set)
-							{
-								formats = [ "standard", "modern", "legacy" ];
-								set_formats = set.formats.toLowerCase().replace(' ','').split(',');
+				if (term == "f" || term == "format") {
+					if (modifier == ":" || modifier == "!" || modifier == "=") {
+						for (const set of sets_json.sets) {
+							if (set.set_code.toLowerCase() == card_set) {
+								formats = ["standard", "modern", "legacy"];
+								set_formats = set.formats.toLowerCase().replace(' ', '').split(',');
 
-								for (const format of set_formats)
-								{
-									if (formats.includes(format) && formats.includes(check))
-									{
-										if (formats.indexOf(format) < formats.indexOf(check))
-										{
+								for (const format of set_formats) {
+									if (formats.includes(format) && formats.includes(check)) {
+										if (formats.indexOf(format) < formats.indexOf(check)) {
 											return true;
 										}
 									}
@@ -1254,29 +1155,21 @@
 					}
 					return false;
 				}
-				if (term == "is")
-				{
-					if (modifier == ":" || modifier == "!" || modifier == "=")
-					{
+				if (term == "is") {
+					if (modifier == ":" || modifier == "!" || modifier == "=") {
 						// all of these are implemented individually
-						if (check == "permanent")
-						{
+						if (check == "permanent") {
 							return !card_type.includes("instant") && !card_type.includes("sorcery");
 						}
-						if (check == "spell")
-						{
+						if (check == "spell") {
 							return !card_type.includes("land");
 						}
-						if (check == "commander")
-						{
+						if (check == "commander") {
 							return (card_type.includes("legendary") && card_type.includes("creature")) || card_oracle_text.includes("can be your commander");
 						}
-						if (check == "hybrid")
-						{
-							for (let i = 0; i < card_cost.length - 2; i++)
-							{
-								if (card_cost[i] != '{' && card_cost[i] != '}' && card_cost[i + 1] != '{' && card_cost[i + 1] != '}' && !isDecimal(card_cost[i + 1]))
-								{
+						if (check == "hybrid") {
+							for (let i = 0; i < card_cost.length - 2; i++) {
+								if (card_cost[i] != '{' && card_cost[i] != '}' && card_cost[i + 1] != '{' && card_cost[i + 1] != '}' && !isDecimal(card_cost[i + 1])) {
 									return true;
 								}
 							}
@@ -1296,7 +1189,7 @@
 										return false;
 									}
 								}
-							}						
+							}
 						}
 						if (check == "dfc") {
 							return card_shape.includes("double");
@@ -1342,147 +1235,116 @@
 
 					} */
 				}
-				if (term == "tag")
-				{
-					if (modifier == ":" || modifier == "=" || modifier == "!")
-					{
+				if (term == "tag") {
+					if (modifier == ":" || modifier == "=" || modifier == "!") {
 						let regex = new RegExp("!tag " + check + "\\b");
 						return regex.test(card_notes);
 					}
 				}
-				if (term == "a" || term == "art" || term == "artist")
-				{
-					if (modifier == ":" || modifier == "=" || modifier == "!")
-					{
+				if (term == "a" || term == "art" || term == "artist") {
+					if (modifier == ":" || modifier == "=" || modifier == "!") {
 						return card_artist.includes(check);
 					}
 				}
-				if (term == "ft" || term == "flavor" || term == "flavour" || term == "flavortext" || term == "flavourtext")
-				{
-					if (modifier == "!" || modifier == "=")
-					{
+				if (term == "ft" || term == "flavor" || term == "flavour" || term == "flavortext" || term == "flavourtext") {
+					if (modifier == "!" || modifier == "=") {
 						return card_stats.flavor_text == check;
 					}
-					else if (modifier == ":")
-					{
+					else if (modifier == ":") {
 						return card_stats.flavor_text.includes(check);
 					}
-					else if (modifier == "<")
-					{
+					else if (modifier == "<") {
 						return card_stats.flavor_text < check;
 					}
-					else if (modifier == ">")
-					{
+					else if (modifier == ">") {
 						return card_stats.flavor_text > check;
 					}
 				}
-				if (term == "lore")
-				{
-					if (modifier == "!" || modifier == "=" || modifier == ":")
-					{
+				if (term == "lore") {
+					if (modifier == "!" || modifier == "=" || modifier == ":") {
 						return card_stats.flavor_text.toLowerCase().includes(check) || card_name.includes(check) || card.notes.toLowerCase().includes(check);
 					}
 				}
 				if (term == "designer" || term == "design") {
-					if (modifier == "!" || modifier == "=" || modifier == ":")
-					{
+					if (modifier == "!" || modifier == "=" || modifier == ":") {
 						return card_stats.designer.includes(check);
 					}
 				}
 				if (term == "size" || term == "pt") {
-					let searched_power = check.split("/")[0];
-					let searched_toughness = check.split("/")[1];
+					let searched_power = parseInt(check.split("/")[0]);
+					let searched_toughness = parseInt(check.split("/")[1]);
 					function search_tou(check, modifier, card_toughness) {
-						if (modifier == "!" || modifier == "=")
-						{
+						if (modifier == "!" || modifier == "=") {
 							return (card_toughness == check);
 						}
-						else if (modifier == ":")
-						{
+						else if (modifier == ":") {
 							return (card_toughness == check);
 						}
-						else if (modifier == "<")
-						{
+						else if (modifier == "<") {
 							return (card_toughness < check);
 						}
-						else if (modifier == ">")
-						{
+						else if (modifier == ">") {
 							return (card_toughness > check);
 						}
-						else if (modifier == "<=")
-						{
+						else if (modifier == "<=") {
 							return (card_toughness <= check);
 						}
-						else if (modifier == ">=")
-						{
+						else if (modifier == ">=") {
 							return (card_toughness >= check);
 						}
 					}
 
 					function search_pow(check, modifier, card_power) {
-						if (modifier == "!" || modifier == "=")
-						{
+						if (modifier == "!" || modifier == "=") {
 							return (card_power == check);
 						}
-						else if (modifier == ":")
-						{
+						else if (modifier == ":") {
 							return (card_power == check);
 						}
-						else if (modifier == "<")
-						{
+						else if (modifier == "<") {
 							return (card_power < check);
 						}
-						else if (modifier == ">")
-						{
+						else if (modifier == ">") {
 							return (card_power > check);
 						}
-						else if (modifier == "<=")
-						{
+						else if (modifier == "<=") {
 							return (card_power <= check);
 						}
-						else if (modifier == ">=")
-						{
+						else if (modifier == ">=") {
 							return (card_power >= check);
 						}
 					}
-
-					return search_pow(check, modifier, searched_power) && search_tou(check, modifier, searched_toughness);
+					return search_pow(searched_power, modifier, card_power) && search_tou(searched_toughness, modifier, card_toughness);
 				}
 				if (modifier == ":" || modifier == "=" || modifier == "!") {
 					let regex = new RegExp(`!tag<${term}> ${check}\\b`);
 					return regex.test(card_notes);
 				}
 			}
-			let regex = new RegExp(token.replaceAll("+","\\+"));
+			let regex = new RegExp(token.replaceAll("+", "\\+"));
 			return (regex.test(card_stats.special_text) && (localStorage.getItem('settings.searchalias') == "On")) || card_name.includes(token);
-		}function isDecimal(char) {
+		} function isDecimal(char) {
 			return char >= '0' && char <= '9';
 		}
 
 		function tokenize(text) {
 			let tokens = [];
 
-			for (let i = 0; i < text.length; i++)
-			{
-				if (i < text.length - 1)
-				{
-					if (text[i + 1] == '/')
-					{
+			for (let i = 0; i < text.length; i++) {
+				if (i < text.length - 1) {
+					if (text[i + 1] == '/') {
 						tokens.push(text.substring(i, i + 3));
 						i = i + 2;
 					}
-					else if (isDecimal(text[i]) && isDecimal(text[i + 1]))
-					{
+					else if (isDecimal(text[i]) && isDecimal(text[i + 1])) {
 						tokens.push(text.substring(i, i + 2));
 						i = i + 1;
 					}
-					else
-					{
+					else {
 						tokens.push(text[i]);
 					}
 				}
-				else
-				{
+				else {
 					tokens.push(text[i]);
 				}
 			}
@@ -1503,9 +1365,9 @@
 		}
 
 		function formatTextHTML(str) {
-			if(!str)
+			if (!str)
 				return "";
-			str = str.replace(/[{]([^}]+)[}]/g, function(matched, _1) {
+			str = str.replace(/[{]([^}]+)[}]/g, function (matched, _1) {
 				let letters = _1.toLowerCase()
 				return '<span class="mana mana-cost mana-' + letters + '"></span>';
 			})
@@ -1515,8 +1377,7 @@
 		function gridifyCard(card_stats, card_text = false, rotate_card = false, designer_notes = false) {
 			const card_name = card_stats.card_name;
 
-			if (displayStyle == "cards-only")
-			{
+			if (displayStyle == "cards-only") {
 				return buildImgContainer(card_stats, true, rotate_card);
 			}
 
@@ -1524,7 +1385,7 @@
 			grid.className = "image-grid";
 
 			grid.appendChild(buildImgContainer(card_stats, false, rotate_card));
-			
+
 			const text = document.createElement("div");
 			text.className = "card-text popout";
 			text.id = "card-text";
@@ -1542,34 +1403,29 @@
 			const effect = document.createElement("div");
 			effect.className = "effect";
 			let card_effects = "";
-			if (card_stats.rules_text != "")
-			{
+			if (card_stats.rules_text != "") {
 				card_effects = card_stats.rules_text.split("\n");
 			}
-			else
-			{
+			else {
 				card_effects = card_stats.special_text.split("\n");
 			}
 			effect.innerHTML += prettifyEffects(card_effects);
 			text.appendChild(effect);
 
-			if(card_stats.pt != "")
-			{
+			if (card_stats.pt != "") {
 				const pt = document.createElement("div");
 				pt.className = "pt";
 				pt.textContent = card_stats.pt;
 				text.appendChild(pt);
 			}
-			else if (card_stats.loyalty != "")
-			{
+			else if (card_stats.loyalty != "") {
 				const loyalty = document.createElement("div");
 				loyalty.className = "pt";
 				loyalty.textContent = "[" + card_stats.loyalty + "]";
 				text.appendChild(loyalty);
 			}
 
-			if(designer_notes && card_stats.designer_notes != null)
-			{
+			if (designer_notes && card_stats.designer_notes != null) {
 				const dnotes = document.createElement("div");
 				dnotes.className = "designer-notes";
 				dnotes.innerHTML = "<u><b>Designer Notes</b></u>";
@@ -1578,8 +1434,7 @@
 			}
 
 			// 13-name	14-color	15-type	16-ci	17-cost	18-ability	19-pt	20-special-text	21-loyalty
-			if(card_stats.shape.includes("adventure") || card_stats.shape.includes("double") || card_stats.shape.includes("spli"))
-			{
+			if (card_stats.shape.includes("adventure") || card_stats.shape.includes("double") || card_stats.shape.includes("spli")) {
 				const name_cost_2 = document.createElement("div");
 				name_cost_2.className = "name-cost";
 				name_cost_2.innerHTML = card_stats.card_name2 + (card_stats.cost2 != "" ? '     ' + symbolize(card_stats.cost2) : "");
@@ -1593,33 +1448,29 @@
 				const effect_2 = document.createElement("div");
 				effect_2.className = "effect";
 				let card_effects_2 = "";
-				if (card_stats.rules_text2 != "")
-				{
+				if (card_stats.rules_text2 != "") {
 					card_effects_2 = card_stats.rules_text2.split("\n");
 				}
-				else
-				{
+				else {
 					card_effects_2 = card_stats.special_text2.split("\n");
 				}
 				effect_2.innerHTML += prettifyEffects(card_effects_2);
 				text.appendChild(effect_2);
 
-				if(card_stats.pt2 != "")
-				{
+				if (card_stats.pt2 != "") {
 					const pt_2 = document.createElement("div");
 					pt_2.className = "pt";
 					pt_2.textContent = card_stats.pt2;
 					text.appendChild(pt_2);
 				}
-				else if (card_stats.loyalty2 != "")
-				{
+				else if (card_stats.loyalty2 != "") {
 					const loyalty = document.createElement("div");
 					loyalty.className = "pt";
 					loyalty.textContent = "[" + card_stats.loyalty2 + "]";
 					text.appendChild(loyalty);
 				}
 			}
-			
+
 			grid.appendChild(text);
 
 			return grid;
@@ -1635,9 +1486,9 @@
 			img.id = id;
 			// (card_stats[13].includes("_") ? card_stats[13] : card_stats[0]) for posterity
 			img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
-			
+
 			const link = document.createElement("a");
-			
+
 			const url = new URL('card', window.location.origin);
 			const params = {
 				set: card_stats.set,
@@ -1651,8 +1502,7 @@
 
 			link.appendChild(img);
 
-			if ((card_stats.shape.includes("spli") || card_stats.type.includes("Battle")) && rotate_card)
-			{
+			if ((card_stats.shape.includes("spli") || card_stats.type.includes("Battle")) && rotate_card) {
 				const rotated_img = document.createElement("img");
 				rotated_img.className = "h-img";
 				rotated_img.id = "h-img";
@@ -1665,11 +1515,10 @@
 
 			imgContainer.appendChild(link);
 
-			if (card_stats.shape.includes("double"))
-			{
+			if (card_stats.shape.includes("double")) {
 				const imgFlipBtn = document.createElement("button");
 				imgFlipBtn.className = "btn";
-				imgFlipBtn.onclick = async function() { imgFlip(id, rotate_card); };
+				imgFlipBtn.onclick = async function () { imgFlip(id, rotate_card); };
 				const imgFlipIcon = document.createElement("img");
 				imgFlipIcon.className = "img-flip-icon";
 				imgFlipIcon.src = '/img/flip.svg';
@@ -1677,8 +1526,7 @@
 				imgContainer.appendChild(imgFlipBtn);
 			}
 
-			if (hidden_title)
-			{
+			if (hidden_title) {
 				const title = document.createElement("div");
 				title.innerText = card_stats.card_name;
 				title.className = "hidden-text";
@@ -1700,27 +1548,23 @@
 			btn.style.transition = seconds.toString() + "s";
 			btn.style.filter = cardName.includes("_front") ? "invert()" : "";
 
-			await setTimeout(function() {
+			await setTimeout(function () {
 				const rotated_img = document.getElementById("h-img");
-				
-				if (cardName.includes("_front"))
-				{
+
+				if (cardName.includes("_front")) {
 					img.src = cardName.replace("_front", "_back");
 					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "invert()";
 
-					if (rotate_card)
-					{
+					if (rotate_card) {
 						rotated_img.style.display = "none";
 						img.style.filter = "";
 					}
 				}
-				else
-				{
+				else {
 					img.src = cardName.replace("_back", "_front");
 					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "";
 
-					if (rotate_card)
-					{
+					if (rotate_card) {
 						rotated_img.style.display = "block";
 						img.style.filter = "blur(2px) brightness(0.7)";
 					}
@@ -1730,7 +1574,7 @@
 				img.style.transform = "rotateY(0deg)";
 			}, seconds * 1000);
 
-			await setTimeout(function() {
+			await setTimeout(function () {
 				console.log("done");
 			}, seconds * 1000);
 		}
@@ -1738,22 +1582,20 @@
 		function prettifyEffects(card_effects) {
 			let HTML = "";
 
-			for (let i = 0; i < card_effects.length; i++)
-			{
-				let styled_effect = card_effects[i].replace(/\[i\]([^\]]+)\[\/i\]/g, function(matched, _1) {
+			for (let i = 0; i < card_effects.length; i++) {
+				let styled_effect = card_effects[i].replace(/\[i\]([^\]]+)\[\/i\]/g, function (matched, _1) {
 					return '<i>' + _1 + '</i>'
-				}).replace(/\[b\]([^\]]+)\[\/b\]/g, function(matched, _1) {
+				}).replace(/\[b\]([^\]]+)\[\/b\]/g, function (matched, _1) {
 					return '<b>' + _1 + '</b>'
 				})
-				
+
 				HTML += styled_effect;
 
-				if (i != card_effects.length - 1)
-				{
+				if (i != card_effects.length - 1) {
 					HTML += "<br>"
 				}
 			}
-			
+
 			let regexHTML = symbolize(HTML);
 
 			return regexHTML;
@@ -1762,10 +1604,8 @@
 		function hasAllChars(strOut, strIn) {
 			let retVal = true;
 
-			for (let i = 0; i < strIn.length; i++)
-			{
-				if (!strOut.includes(strIn.charAt(i)))
-				{
+			for (let i = 0; i < strIn.length; i++) {
+				if (!strOut.includes(strIn.charAt(i))) {
 					retVal = false;
 				}
 			}
@@ -1776,10 +1616,8 @@
 		function hasNoChars(strOut, strIn) {
 			let retVal = true;
 
-			for (let i = 0; i < strIn.length; i++)
-			{
-				if (strOut.includes(strIn.charAt(i)))
-				{
+			for (let i = 0; i < strIn.length; i++) {
+				if (strOut.includes(strIn.charAt(i))) {
 					retVal = false;
 				}
 			}
@@ -1790,10 +1628,8 @@
 		function hasAllAndMoreChars(strOut, strIn) {
 			let retVal = true;
 
-			for (let i = 0; i < strIn.length; i++)
-			{
-				if (!strOut.includes(strIn.charAt(i)))
-				{
+			for (let i = 0; i < strIn.length; i++) {
+				if (!strOut.includes(strIn.charAt(i))) {
 					retVal = false;
 				}
 			}
@@ -1801,10 +1637,10 @@
 			return retVal && (strOut.length > strIn.length);
 		}
 
-		document.getElementById("search").addEventListener("keypress", function(event) {
+		document.getElementById("search").addEventListener("keypress", function (event) {
 			if (event.key === "Enter") {
-			event.preventDefault();
-			preSearch(true);
+				event.preventDefault();
+				preSearch(true);
 			}
 		});
 
@@ -1814,32 +1650,29 @@
 
 			let url = (window.location.href.indexOf("page=") == -1 ? new URL(window.location.href) : new URL(window.location.href.substring(0, window.location.href.indexOf("page="))));
 			let params = new URLSearchParams(url.search);
-			if (page != 0)
-			{
+			if (page != 0) {
 				params.append("page", page + 1);
 			}
 			history.pushState({}, '', url.pathname + '?' + params.toString());
 
-			for (let i = (pageCount * page); i < Math.min((pageCount * (page + 1)), search_results.length); i++)
-			{
+			for (let i = (pageCount * page); i < Math.min((pageCount * (page + 1)), search_results.length); i++) {
 				cardGrid.appendChild(gridifyCard(search_results[i]));
 			}
 
 			document.getElementById("nextBtn").disabled = false;
 			document.getElementById("nextBtn-footer").disabled = false;
-			if (page == 0)
-			{
+			if (page == 0) {
 				document.getElementById("prevBtn").disabled = true;
 				document.getElementById("prevBtn-footer").disabled = true;
 			}
 
 			document.body.scrollTop = 0; // For Safari
-				document.documentElement.scrollTop = 0; // For real browsers
+			document.documentElement.scrollTop = 0; // For real browsers
 		}
 
 		function nextPage() {
 			page = page + 1;
-			
+
 			let url = (window.location.href.indexOf("page=") == -1 ? new URL(window.location.href) : new URL(window.location.href.substring(0, window.location.href.indexOf("page="))));
 			let params = new URLSearchParams(url.search);
 			params.append("page", page + 1);
@@ -1847,321 +1680,316 @@
 
 			cardGrid.innerHTML = "";
 
-			for (let i = (pageCount * page); i < Math.min((pageCount * (page + 1)), search_results.length); i++)
-			{
+			for (let i = (pageCount * page); i < Math.min((pageCount * (page + 1)), search_results.length); i++) {
 				cardGrid.appendChild(gridifyCard(search_results[i]));
 			}
 
 			document.getElementById("prevBtn").disabled = false;
 			document.getElementById("prevBtn-footer").disabled = false;
-			if (search_results.length <= (pageCount * (page + 1)))
-			{
+			if (search_results.length <= (pageCount * (page + 1))) {
 				document.getElementById("nextBtn").disabled = true;
 				document.getElementById("nextBtn-footer").disabled = true;
 			}
 
 			document.body.scrollTop = 0; // For Safari
-				document.documentElement.scrollTop = 0; // For real browsers
+			document.documentElement.scrollTop = 0; // For real browsers
 		}
 
 		function randomCard() {
-				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
-				let random_card = card_list_arrayified[i];
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
 
-				const url = new URL('card', window.location.origin);
-				const params = {
-					set: random_card.set,
-					num: random_card.number,
-					name: random_card.card_name
-				}
-				for (const key in params) {
-					url.searchParams.append(key, params[key]);
-				}
-
-				window.location.href = url;
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
 			}
 
-			function prepareGradients() {
-				let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+			window.location.href = url;
+		}
+
+		function prepareGradients() {
+			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt = document.createElement("option");
+			opt.value = defaultGradient.replace(' ', '-');
+			opt.text = defaultGradient;
+			document.getElementById("color-select").appendChild(opt);
+			let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt_rand = document.createElement("option");
+			opt_rand.value = "Random-Card";
+			opt_rand.text = "Random Card";
+
+			document.getElementById("color-select").appendChild(opt_rand);
+			for (const gradient of gradients) {
 				const opt = document.createElement("option");
-				opt.value = defaultGradient.replace(' ', '-');
-				opt.text = defaultGradient;
-				document.getElementById("color-select").appendChild(opt);
-				let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt_rand = document.createElement("option");
-				opt_rand.value = "Random-Card";
-				opt_rand.text = "Random Card";
-
-				document.getElementById("color-select").appendChild(opt_rand);
-				for (const gradient of gradients)
-				{	
-					const opt = document.createElement("option");
-					opt.value = gradient.name.replace(' ', '-');
-					opt.text = gradient.name;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
+				opt.value = gradient.name.replace(' ', '-');
+				opt.text = gradient.name;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
 				}
-
-				for (const gradient in card_backgrounds) {
-					const opt = document.createElement("option");
-					opt.value = gradient.replace(' ', '-');
-					opt.text = gradient;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
-				}
-
-				// setGradient();
 			}
 
-			function setGradient(gradient=false) {
-				let artistCredit = "";
-				if (!gradient) { 
-					gradient = document.getElementById("color-select").value;
+			for (const gradient in card_backgrounds) {
+				const opt = document.createElement("option");
+				opt.value = gradient.replace(' ', '-');
+				opt.text = gradient;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
 				}
+			}
 
-				gradTop = "#000000";
-				gradBottom = "#FFFFFF";
-				for (const grad of gradients)
-				{
-					if (gradient == grad.name.replace(' ', '-'))
-					{ 	
-						gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
-					}
+			// setGradient();
+		}
+
+		function setGradient(gradient = false) {
+			let artistCredit = "";
+			if (!gradient) {
+				gradient = document.getElementById("color-select").value;
+			}
+
+			gradTop = "#000000";
+			gradBottom = "#FFFFFF";
+			for (const grad of gradients) {
+				if (gradient == grad.name.replace(' ', '-')) {
+					gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
 				}
+			}
 
-				for (const background in card_backgrounds) {
-					if (gradient == background.replace(' ', '-'))
-					{ 	
-						gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-						artistCredit = card_backgrounds[background][0];
-						setTextColor(card_backgrounds[background][1]);
-					}
-				}
-
-				if (gradient == "Random-Card") {
-					const bgs = Object.keys(card_backgrounds);
-					const background = bgs[reallyRand(bgs.length)];
+			for (const background in card_backgrounds) {
+				if (gradient == background.replace(' ', '-')) {
 					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
 					artistCredit = card_backgrounds[background][0];
 					setTextColor(card_backgrounds[background][1]);
 				}
-
-				
-				document.body.style.backgroundImage = gradImage;
-				localStorage.setItem("settings.gradient", gradient);
-				if (document.getElementsByClassName("artist-credit")[0])
-					document.getElementsByClassName("artist-credit")[0].remove();
-				const credit_text = document.createElement("span");
-				credit_text.className = "artist-credit text";
-				credit_text.innerText = `background by ${artistCredit}`;
-				if (artistCredit && document.getElementById("color-select"))
-					document.getElementById("color-select").parentElement.appendChild(credit_text);
 			}
 
-function reallyRand(x, seed = false) {
-				const date = new Date();
-				seed = seed ? seed : date.getUTCFullYear() * 10000 + 
-							 date.getUTCMonth() * 100 + 
-							 date.getUTCDate();
-
-				const a = 1103515245;
-				const c = 12345;
-				const m = Math.pow(2, 31);
-
-				let randomNumber = (a * seed + c) % m;
-				randomNumber = randomNumber / m;
-
-				return Math.floor(randomNumber * x);
+			if (gradient == "Random-Card") {
+				const bgs = Object.keys(card_backgrounds);
+				const background = bgs[reallyRand(bgs.length)];
+				gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
+				artistCredit = card_backgrounds[background][0];
+				setTextColor(card_backgrounds[background][1]);
 			}
 
-function setTextColor(c = false) {
-				if (c) {
-					localStorage.setItem("settings.textcolor", c);
-				}
-				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            	document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-			}
 
-			function isPlayed(stats) {
-				const playrate = parseFloat(stats.playrate_general[1].split("%")[0]);
-				return playrate > 3;
-			}
+			document.body.style.backgroundImage = gradImage;
+			localStorage.setItem("settings.gradient", gradient);
+			if (document.getElementsByClassName("artist-credit")[0])
+				document.getElementsByClassName("artist-credit")[0].remove();
+			const credit_text = document.createElement("span");
+			credit_text.className = "artist-credit text";
+			credit_text.innerText = `background by ${artistCredit}`;
+			if (artistCredit && document.getElementById("color-select"))
+				document.getElementById("color-select").parentElement.appendChild(credit_text);
+		}
 
-			function isStaple(stats) {
-				const playrate = parseFloat(stats.playrate_general[1].split("%")[0]);
-				const playrate_event = parseFloat(stats.playrate_event[1].split("%")[0]);
-				const winrate = parseFloat(stats.winrate[1].split("%")[0]);
-				console.log(stats.playrate_event);
-				return (playrate > 10 && winrate > 40 && playrate_event > 10);
+		function reallyRand(x, seed = false) {
+			const date = new Date();
+			seed = seed ? seed : date.getUTCFullYear() * 10000 +
+				date.getUTCMonth() * 100 +
+				date.getUTCDate();
+
+			const a = 1103515245;
+			const c = 12345;
+			const m = Math.pow(2, 31);
+
+			let randomNumber = (a * seed + c) % m;
+			randomNumber = randomNumber / m;
+
+			return Math.floor(randomNumber * x);
+		}
+
+		function setTextColor(c = false) {
+			if (c) {
+				localStorage.setItem("settings.textcolor", c);
 			}
+			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+		}
+
+		function isPlayed(stats) {
+			const playrate = parseFloat(stats.playrate_general[1].split("%")[0]);
+			return playrate > 3;
+		}
+
+		function isStaple(stats) {
+			const playrate = parseFloat(stats.playrate_general[1].split("%")[0]);
+			const playrate_event = parseFloat(stats.playrate_event[1].split("%")[0]);
+			const winrate = parseFloat(stats.winrate[1].split("%")[0]);
+			console.log(stats.playrate_event);
+			return (playrate > 10 && winrate > 40 && playrate_event > 10);
+		}
 
 	</script>
 	<script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-            import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
-            
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-                apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-                authDomain: "voyager-78e30.firebaseapp.com",
-                projectId: "voyager-78e30",
-                storageBucket: "voyager-78e30.firebasestorage.app",
-                messagingSenderId: "411191248476",
-                appId: "1:411191248476:web:591349be169d823e5f8899",
-                measurementId: "G-TQ1L48F25M"
-            };
-            
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
-            let username = "";
-            let password = "";
-            let sessionid = localStorage.getItem('settings.session');
-            let decks = {};
-            const events = ["GP1", "League"];
-            let user_data;
-			let card_list;
-			let q;
-            let all_users_docs;
-            let all_decks = [];
-            let all_user_decks = [];
-            let all_event_decks = [];
-            let all_users = [];
-            let all_events_docs;
-            let all_events = [];
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
 
-			function getCardStats() {
-                const stats = {};
-                for (const card of card_list_arrayified) {
-                    let num_decks = 0;
-                    let total_wins = 0;
-                    let total_games = 0;
-					let num_event_decks = 0;
-					let num_user_decks = 0;	
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+			authDomain: "voyager-78e30.firebaseapp.com",
+			projectId: "voyager-78e30",
+			storageBucket: "voyager-78e30.firebasestorage.app",
+			messagingSenderId: "411191248476",
+			appId: "1:411191248476:web:591349be169d823e5f8899",
+			measurementId: "G-TQ1L48F25M"
+		};
 
-                    for (const event of all_events) {
-                        if (event.name.includes("League")) continue;
-                        const swiss = JSON.parse(event.rounds).swiss;
-                        const decks = JSON.parse(event.decks);
-                        let players_with_card = [];
-                        for (const player in decks) {
-                            const deck = decks[player];
-                            const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
-                            for (const line of decklist.split("\n")) {
-                                if (line.substring(line.indexOf(" ") + 1, line.length) == card.card_name) {
-                                    players_with_card.push(player);
-                                    break;
-                                }
-                            }
-                        }
-                        for (const round_name in swiss) {
-                            const round = swiss[round_name];
-                            for (const game of round) {
-                                const p1 = Object.keys(game)[0];
-                                const p2 = Object.keys(game)[1];
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+		let username = "";
+		let password = "";
+		let sessionid = localStorage.getItem('settings.session');
+		let decks = {};
+		const events = ["GP1", "League"];
+		let user_data;
+		let card_list;
+		let q;
+		let all_users_docs;
+		let all_decks = [];
+		let all_user_decks = [];
+		let all_event_decks = [];
+		let all_users = [];
+		let all_events_docs;
+		let all_events = [];
 
-                                const p1_score = parseInt(game[p1]);
-                                const p2_score = parseInt(game[p2]);
+		function getCardStats() {
+			const stats = {};
+			for (const card of card_list_arrayified) {
+				let num_decks = 0;
+				let total_wins = 0;
+				let total_games = 0;
+				let num_event_decks = 0;
+				let num_user_decks = 0;
 
-                                let winner = 0;
-                                if (p1_score > p2_score)
-                                    winner = p1;
-                                if (p1_score < p2_score)
-                                    winner = p2;
+				for (const event of all_events) {
+					if (event.name.includes("League")) continue;
+					const swiss = JSON.parse(event.rounds).swiss;
+					const decks = JSON.parse(event.decks);
+					let players_with_card = [];
+					for (const player in decks) {
+						const deck = decks[player];
+						const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
+						for (const line of decklist.split("\n")) {
+							if (line.substring(line.indexOf(" ") + 1, line.length) == card.card_name) {
+								players_with_card.push(player);
+								break;
+							}
+						}
+					}
+					for (const round_name in swiss) {
+						const round = swiss[round_name];
+						for (const game of round) {
+							const p1 = Object.keys(game)[0];
+							const p2 = Object.keys(game)[1];
 
-                                if (players_with_card.includes(p1)) {
-                                    if (winner == p1) {
-                                        total_wins++;
-                                    }
-                                    if (winner != 0)
-									    total_games++;
-                                }
-                                if (players_with_card.includes(p2)) {
-                                    if (winner == p2) {
-                                        total_wins++;
-                                    }
-                                    if (winner != 0)
-									    total_games++;
-                                }
-                            }
-                        }
-                    }
+							const p1_score = parseInt(game[p1]);
+							const p2_score = parseInt(game[p2]);
 
-                    for (const deck of all_decks) {
-                        const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
-                        for (const line of decklist.split("\n")) {
-                            if (line.substring(line.indexOf(" ") + 1, line.length) == card.card_name) {
-                                num_decks += 1;
-                                if (deck.event)
-                                    num_event_decks++;
-                                else
-                                    num_user_decks++;
-                            }
-                        }
-                    }
+							let winner = 0;
+							if (p1_score > p2_score)
+								winner = p1;
+							if (p1_score < p2_score)
+								winner = p2;
 
-                    let winrate = ((total_wins / total_games) * 100).toFixed(2).toString() + "%";
-                    winrate = winrate.replace("NaN%", "No Data");
-                    const playrate_event_text = ((num_event_decks / event_decks_count) * 100).toFixed(2).toString() + "%";
-                    const playrate_user_text  = ((num_user_decks  / user_decks_count ) * 100).toFixed(2).toString() + "%";
-                    const playrate_text       = ((num_decks       / all_decks.length ) * 100).toFixed(2).toString() + "%";
-
-                    stats[card.card_name] = {
-                        winrate          : ["GP Winrate"      , winrate            ],
-                        playrate_event   : ["Event Playrate"  , playrate_event_text],
-                        playrate_user    : ["User Playrate"   , playrate_user_text ],
-                        playrate_general : ["Overall Playrate", playrate_text      ]
-                    }
-                }
-
-                localStorage.setItem("info.stats", JSON.stringify(stats));
-            }
-
-			q = query(collection(db, "events"));
-			all_events_docs = await getDocs(q);
-
-			q = query(collection(db, "users"));
-			all_users_docs  = await getDocs(q);
-
-			all_events_docs.forEach((doc) => {
-				const data = doc.data();
-				all_events.push(data);
-				for (const user in JSON.parse(data.decks)) {
-					let deck = JSON.parse(data.decks)[user];
-					all_event_decks.push({...deck, "user": user, "event": true});
-					all_decks.push({...deck, "user": user, "event": true});
+							if (players_with_card.includes(p1)) {
+								if (winner == p1) {
+									total_wins++;
+								}
+								if (winner != 0)
+									total_games++;
+							}
+							if (players_with_card.includes(p2)) {
+								if (winner == p2) {
+									total_wins++;
+								}
+								if (winner != 0)
+									total_games++;
+							}
+						}
+					}
 				}
-			});
 
-			all_users_docs.forEach((doc) => {
-				const data = doc.data();
-				for (const deck of JSON.parse(data.decks)) {
-					all_user_decks.push({...deck, "user": data.username, "event": false});
-					all_decks.push({...deck, "user": data.username, "event": false});
+				for (const deck of all_decks) {
+					const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
+					for (const line of decklist.split("\n")) {
+						if (line.substring(line.indexOf(" ") + 1, line.length) == card.card_name) {
+							num_decks += 1;
+							if (deck.event)
+								num_event_decks++;
+							else
+								num_user_decks++;
+						}
+					}
 				}
-			});
 
-			let event_decks_count = 0;
-			let user_decks_count = 0;
+				let winrate = ((total_wins / total_games) * 100).toFixed(2).toString() + "%";
+				winrate = winrate.replace("NaN%", "No Data");
+				const playrate_event_text = ((num_event_decks / event_decks_count) * 100).toFixed(2).toString() + "%";
+				const playrate_user_text = ((num_user_decks / user_decks_count) * 100).toFixed(2).toString() + "%";
+				const playrate_text = ((num_decks / all_decks.length) * 100).toFixed(2).toString() + "%";
 
-			for (const deck of all_decks) {
-				if (deck.event) {
-					event_decks_count++;
-				}
-				else {
-					user_decks_count++;
+				stats[card.card_name] = {
+					winrate: ["GP Winrate", winrate],
+					playrate_event: ["Event Playrate", playrate_event_text],
+					playrate_user: ["User Playrate", playrate_user_text],
+					playrate_general: ["Overall Playrate", playrate_text]
 				}
 			}
 
-			document.getElementById("get-stats").dataset.ready = true;
-			document.getElementById("get-stats").addEventListener("click", getCardStats);
+			localStorage.setItem("info.stats", JSON.stringify(stats));
+		}
 
-        </script>
+		q = query(collection(db, "events"));
+		all_events_docs = await getDocs(q);
+
+		q = query(collection(db, "users"));
+		all_users_docs = await getDocs(q);
+
+		all_events_docs.forEach((doc) => {
+			const data = doc.data();
+			all_events.push(data);
+			for (const user in JSON.parse(data.decks)) {
+				let deck = JSON.parse(data.decks)[user];
+				all_event_decks.push({ ...deck, "user": user, "event": true });
+				all_decks.push({ ...deck, "user": user, "event": true });
+			}
+		});
+
+		all_users_docs.forEach((doc) => {
+			const data = doc.data();
+			for (const deck of JSON.parse(data.decks)) {
+				all_user_decks.push({ ...deck, "user": data.username, "event": false });
+				all_decks.push({ ...deck, "user": data.username, "event": false });
+			}
+		});
+
+		let event_decks_count = 0;
+		let user_decks_count = 0;
+
+		for (const deck of all_decks) {
+			if (deck.event) {
+				event_decks_count++;
+			}
+			else {
+				user_decks_count++;
+			}
+		}
+
+		document.getElementById("get-stats").dataset.ready = true;
+		document.getElementById("get-stats").addEventListener("click", getCardStats);
+
+	</script>
 </body>
+
 </html>
