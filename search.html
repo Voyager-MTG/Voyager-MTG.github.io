@@ -235,6 +235,31 @@
 		font-size: .97vw;
 		color: rgba(0, 0, 0, 0);
 	}
+
+	#modal-container {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 70px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	#modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 50%;
+		border-radius: 10px;
+		border: solid #777 3px;
+		margin-bottom: 70px;
+	}
 </style>
 <style id="text-style">
 	.text {
@@ -253,8 +278,9 @@
 		<div class="search-grid">
 			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
 			<img class="sg-icon" src="/img/header/search.png">
-			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false"
-				autocomplete="off" autocorrect="off" spellcheck="false">
+			<div><input type="text" inputmode="search" placeholder="Search ..." name="search" id="search"
+					spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false"><img src="img/info.png"
+					class="search-info" onclick="goToOnboard()"></div>
 			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
 			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
 			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
@@ -303,6 +329,12 @@
 	</div>
 
 	<button id="get-stats" style="display: none;"></button>
+
+	<div id="modal-container">
+		<div id="modal-content" class="popout">
+			<span class="close" onclick="closeModal()">&times;</span>
+		</div>
+	</div>
 
 	<script>
 		let page = 0;
@@ -1822,6 +1854,83 @@
 			const winrate = parseFloat(stats.winrate[1].split("%")[0]);
 			console.log(stats.playrate_event);
 			return (playrate > 10 && winrate > 40 && playrate_event > 10);
+		}
+
+		modal = document.getElementById("modal-container");
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				document.getElementById('modal-container').style.display = 'none';
+			}
+		}
+
+		const search_tips = `"t", "type"
+Search the card type of a card.
+"c", "color", "colour"
+Search the colours of the card. the colours are "w", "white", "u", "blue", "b", "black", "r", "red", "g", "green", "i", "silver".
+"p", "power"
+Search for a cards base power.
+"t", "toughness"
+Search for a cards base toughness.
+":" is 'includes', "=" and "!" are "exact", "<" is "less than", ">" is "greater than".
+"<=" gives you all things that include at least one or more of the search. For example, if you search "c<=ubg", you will get all blue, black, and green cards, as well as colourless cards. 
+"=>" gives you all things that include all or more of the search. For example, if you search "c>=ubg", you will get all cards that are at minimum blue, black, and green.
+"size", "pt"
+Search for a cards specific base power and toughness. For example, searching for "size:4/4" will yield all cards with base power and toughness "4/4".
+"mv", "cmc"
+Search for a cards mana value, or converted mana cost.
+"mana", "cost"
+Search for a cards specific mana cost. for example, you can search for "mana=2ww" to find all cards with that specific mana cost.
+"ci", "id"
+Search for a cards colour identity. colour identity includes
+"o", "oracle", "text"
+Search for text within the cards available. To search for a string of text, surround your search with "". For example, [o:"{T}: Add {G}"] searches for every card that could add green mana.
+"r", "rarity"
+Search for a cards rarity.
+"e", "set"
+Search for cards from a specific set.
+"kw", "has", "keyword"
+Search for a keyword among cards. For example, "kw:luminous" will find all cards that have luminous within their card text.
+"alias"
+Search within aliases of cards. For example, "alias:gradius" will find "Gradius" and "Gradius' Option".
+"is"
+Search for cards that fall within a specialized grouping. The groupings include: = permanent = spell = commander = hybrid = sanctum = dfc = played = staple
+"tag"
+Search for specialized tags that are added to cards via the card notes. For example, "tag:fascism" will find all cards that are tagged with fascism, such as all the cards that mention clan mordel.
+"a", "art", "artist"
+Search for artists listed on the cards.
+"ft", "flavor", "flavour"
+Search through the flavour text within cards.
+"lore"
+Search through cards flavour text, name, and card notes for a word or name available.
+"designer"
+Search for the designer of cards within the selection. For example, "designer:TVP" will find all cards that were designed by TVP.
+"lairnumber"
+Search for secret lairs by their release order. For example, "lairnumber:1" will find all cards available within the first secret lair.
+"lairname"
+Search for a secret lair by its name. For example, [lairname:"the hours"] finds all cards released within The Hours secret lair.
+"champion"
+Search for cards that were made into champion promo's by a specific user. For example, searching "champion:kogane" will find all cards that user kogane has made into champion promo's by winning in various events.`;
+
+		function formatText(text) {
+			let new_text = text;
+			new_text = new_text.replaceAll(/"(.*?)"/g, function (_1) {
+				return "<b>" + _1 + "</b>";
+			});
+			new_text = new_text.replaceAll(/\"([^ {]+?[:=][^ ]+?)\"/g, function (_1, _2) {
+				return "<a target=\"blank\" href=\"/search?search=" + encodeURI(_2.replaceAll(/<.+?>/g, "")) + "\">" + _1 + "</a>";
+			});
+			new_text = new_text.replaceAll(/\[(.+?[:=].+?)\]/g, function (_1, _2) {
+				return "<a target=\"blank\" href=\"/search?search=" + encodeURI(_2.replaceAll("<b>", "").replaceAll("</b>", "")) + "\">" + _1 + "</a>";
+			});
+			new_text = new_text.replaceAll(/^<b>/gm, "<hr><b>");
+			return new_text.replaceAll("\n", "<br>");
+		}
+
+		function goToOnboard() {
+			const modal_container = document.getElementById("modal-container");
+			const modal_content = document.getElementById("modal-content");
+			modal_container.style.display = "block";
+			modal_content.innerHTML = formatText(search_tips);
 		}
 
 	</script>

@@ -1,2259 +1,2341 @@
 <html>
-    <head>
-        <title>Login</title>
-        <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-        <link rel="stylesheet" href="../resources/mana.css">
-        <link rel="stylesheet" href="/resources/header.css">
-    </head>
-    <style>
-        @font-face {
-            font-family: Beleren;
-            src: url('/resources/beleren.ttf');
-        }
-        body {
-            font-family: 'Helvetica', 'Arial', sans-serif;
-            overscroll-behavior: none;
-            margin: 0px;
-            background-color: #bbbbbb;
-            display: block;
-            background-attachment: fixed;
+
+<head>
+	<title>Login</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
+	<link rel="stylesheet" href="../resources/mana.css">
+	<link rel="stylesheet" href="/resources/header.css">
+</head>
+<style>
+	@font-face {
+		font-family: Beleren;
+		src: url('/resources/beleren.ttf');
+	}
+
+	body {
+		font-family: 'Helvetica', 'Arial', sans-serif;
+		overscroll-behavior: none;
+		margin: 0px;
+		background-color: #bbbbbb;
+		display: block;
+		background-attachment: fixed;
 		background-size: cover;
-            /* overflow-y: scroll; */ 
-        }
-        .search-grid {
-		    justify-content: center;
-        }
-        .sg-icon {
-            cursor: pointer;
-        }
-        select {
-            position: absolute;
-            text-align: center;
-            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-            font-weight: 500;
-            cursor: pointer;
-            background-color: #F3F3F3;
-            padding: 2px;
-	    }
-        .selects {
-		    position: absolute;
-            top: 10%;
-            left: 1%;
-	    }
-.artist-credit {
+		/* overflow-y: scroll; */
+	}
+
+	.search-grid {
+		justify-content: center;
+	}
+
+	.sg-icon {
+		cursor: pointer;
+	}
+
+	select {
+		position: absolute;
+		text-align: center;
+		font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+		font-weight: 500;
+		cursor: pointer;
+		background-color: #F3F3F3;
+		padding: 2px;
+	}
+
+	.selects {
+		position: absolute;
+		top: 10%;
+		left: 1%;
+	}
+
+	.artist-credit {
 		left: 160px;
 		position: absolute;
-                width: 240px;
+		width: 240px;
 	}
-        .page-container {
-            display: grid;
-            align-items: center;
-            justify-items: center;
-            width: 100%;
-        }
-        .username {
-            font-size: 80px;
-            /* color: white; */
-            align-items: center;
-            justify-items: center;
-            text-align: center;
-            width: 100%;
-            margin: 20px;
-            font-family: beleren;
-        }
-        .decks-container {
-            margin-bottom: 20px;
-            width: 85%;
-        }
-        .format-container {
-            display: grid;
-            gap: 10px;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-        .collections-container {
-            display: grid;
-            gap: 10px;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            width: 85%;
-            margin-bottom: 20px;
-        }
-        .deck-container {
-            display: grid;
-            gap: 5px;
-            /* grid-template-rows: 1fr 2fr 1fr; */
-            background-color: #f3f3f3;
-            border-radius: 8px; 
-            /* height: fit-content; */
-            padding: 5px;
-            align-items: center;
-            justify-items: center;
-            border: 2px solid #333;
-            box-shadow: 5px 5px 2px #333;
-            padding-top: 0px;
-        }
-        .full-deck-container {
-            display: grid;
-            grid-template-columns: 1fr 0.1fr;
-            gap: -5px;
-        }
-        .colors-container {
-            position: relative;
-            top: 60px;
-            right: 14px;
-            background-color: #333;
-            height: fit-content; 
-            padding: 2px;
-            border-radius: 20px;
-        }
-        .deck-preview-img {
-            max-height: 250px;
-            border: 2px solid black;
-            box-shadow: 7px 7px 2px #999;
-            border-radius: 16px;
-            margin-bottom: 7px;
-            cursor: pointer;
-            /* box-shadow: inset 0.2em 0.2em 0.2em 0em rgba(0, 0, 0, 0.5), inset -0.2em -0.2em 0.2em 0em rgba(0,0,0,0.5); */
-            /* padding: 0.2em; */
-            /* background-color: #777; */
-        }
-        .deck-name {
-            font-size: 30px;
-            font-family: beleren;
-            background-color: #ccc;
-            /* border: 2px solid #333; */
-            /* box-shadow: 5px 5px 2px #333; */
-            border-radius: 5px;
-            padding: 5px;
-            margin-bottom: 3px;
-            width: 100%;
-            text-align: center;
-            /* color: white; */
-        }
-        .deck-buttons {
-            display: grid;
-            gap: 6px;
-            align-items: center;
-            justify-items: center;
-            grid-template-columns: 1fr 1fr;
-        }
-        .coll-buttons {
-            display: grid;
-            gap: 12px;
-            align-items: center;
-            justify-items: center;
-            grid-template-columns: 4fr 1fr;
-        }
-        .deck-buttons-logged-out {
-            display: grid;
-            gap: 12px;
-            align-items: center;
-            justify-items: center;
-            grid-template-columns: 1fr;
-        }
-        .deck-icon-shadow {
-            /* border: 3px solid black; */
-            /* box-shadow: 2px 2px 1px #333; */
-            box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5), inset -0.2em -0.2em 0.2em 0 rgba(0,0,0,0.5);
-            padding: 0.3em;
-        }
-        .deck-link {
-            /* font-family: beleren; */
-            background-color: #1652e0;
-            color: white;
-            padding: 2px 6px 2px 6px;
-            border-radius: 8px;
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            align-items: center;
-            justify-items: center;
-            font-size: 28px;    
-        }  
-        .deck-section-header {
-            font-size: 60px;
-            /* color: white; */
-            align-items: center;
-            justify-items: center;
-            text-align: center;
-            width: 100%;
-            margin: 20px;
-            font-family: beleren;
-        }
-        .format-header {
-            font-size: 40px;
-            /* color: white; */
-            align-items: center;
-            justify-items: center;
-            text-align: center;
-            width: 100%;
-            margin: 20px;
-            font-family: beleren;
-        }
-        .event-link {
-            background-color: #1652e0;
-            color: white;
-            padding: 12px;
-            border-radius: 8px;
-            font-size: 16px;
-            text-decoration: underline;
-            text-align: center;
-            margin: 20px;
-            height: fit-content;
-            align-self: middle;
-        }
-        .top-section {
-            display: grid;
-            gap: 10px;
-            grid-template-columns: 8fr;
-            width: 85%;
-            align-items: center;
-            justify-items: center;
-        }
-        .deck-icon-blue {
-            max-height:30px;
-            /* background-color: #1652e0; */
-            /* border-radius: 8px; */
-            padding: 5px;
-            cursor: pointer;
-        }
-        .deck-icon-red {
-            max-height:30px;
-            background-color: #e01616;
-            border-radius: 8px;
-            padding: 8px;
-            cursor: pointer;
-        }
-        .deck-icon-green {
-            max-height:30px;
-            background-color: #16e019;
-            border-radius: 8px;
-            padding: 8px;
-            cursor: pointer;
-        }
-        .deck-link-green {
-            background-color: #16e019;
-            color: white;
-            padding: 2px 6px 2px 6px;
-            border-radius: 8px;
-            font-weight: bold;
-            display: grid;
-            grid-template-columns: 5fr 1fr;
-            align-items: center;
-            justify-items: center;
-            font-size: 24px; 
-            height: 100%;
-            /* border: 2px solid #333;
+
+	.page-container {
+		display: grid;
+		align-items: center;
+		justify-items: center;
+		width: 100%;
+	}
+
+	.username {
+		font-size: 80px;
+		/* color: white; */
+		align-items: center;
+		justify-items: center;
+		text-align: center;
+		width: 100%;
+		margin: 20px;
+		font-family: beleren;
+	}
+
+	.decks-container {
+		margin-bottom: 20px;
+		width: 85%;
+	}
+
+	.format-container {
+		display: grid;
+		gap: 10px;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	.collections-container {
+		display: grid;
+		gap: 10px;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		width: 85%;
+		margin-bottom: 20px;
+	}
+
+	.deck-container {
+		display: grid;
+		gap: 5px;
+		/* grid-template-rows: 1fr 2fr 1fr; */
+		background-color: #f3f3f3;
+		border-radius: 8px;
+		/* height: fit-content; */
+		padding: 5px;
+		align-items: center;
+		justify-items: center;
+		border: 2px solid #333;
+		box-shadow: 5px 5px 2px #333;
+		padding-top: 0px;
+	}
+
+	.full-deck-container {
+		display: grid;
+		grid-template-columns: 1fr 0.1fr;
+		gap: -5px;
+	}
+
+	.colors-container {
+		position: relative;
+		top: 60px;
+		right: 14px;
+		background-color: #333;
+		height: fit-content;
+		padding: 2px;
+		border-radius: 20px;
+	}
+
+	.deck-preview-img {
+		max-height: 250px;
+		border: 2px solid black;
+		box-shadow: 7px 7px 2px #999;
+		border-radius: 16px;
+		margin-bottom: 7px;
+		cursor: pointer;
+		/* box-shadow: inset 0.2em 0.2em 0.2em 0em rgba(0, 0, 0, 0.5), inset -0.2em -0.2em 0.2em 0em rgba(0,0,0,0.5); */
+		/* padding: 0.2em; */
+		/* background-color: #777; */
+	}
+
+	.deck-name {
+		font-size: 30px;
+		font-family: beleren;
+		background-color: #ccc;
+		/* border: 2px solid #333; */
+		/* box-shadow: 5px 5px 2px #333; */
+		border-radius: 5px;
+		padding: 5px;
+		margin-bottom: 3px;
+		width: 100%;
+		text-align: center;
+		/* color: white; */
+	}
+
+	.deck-buttons {
+		display: grid;
+		gap: 6px;
+		align-items: center;
+		justify-items: center;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.coll-buttons {
+		display: grid;
+		gap: 12px;
+		align-items: center;
+		justify-items: center;
+		grid-template-columns: 4fr 1fr;
+	}
+
+	.deck-buttons-logged-out {
+		display: grid;
+		gap: 12px;
+		align-items: center;
+		justify-items: center;
+		grid-template-columns: 1fr;
+	}
+
+	.deck-icon-shadow {
+		/* border: 3px solid black; */
+		/* box-shadow: 2px 2px 1px #333; */
+		box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255, 255, 255, 0.5), inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.5);
+		padding: 0.3em;
+	}
+
+	.deck-link {
+		/* font-family: beleren; */
+		background-color: #1652e0;
+		color: white;
+		padding: 2px 6px 2px 6px;
+		border-radius: 8px;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		align-items: center;
+		justify-items: center;
+		font-size: 28px;
+	}
+
+	.deck-section-header {
+		font-size: 60px;
+		/* color: white; */
+		align-items: center;
+		justify-items: center;
+		text-align: center;
+		width: 100%;
+		margin: 20px;
+		font-family: beleren;
+	}
+
+	.format-header {
+		font-size: 40px;
+		/* color: white; */
+		align-items: center;
+		justify-items: center;
+		text-align: center;
+		width: 100%;
+		margin: 20px;
+		font-family: beleren;
+	}
+
+	.event-link {
+		background-color: #1652e0;
+		color: white;
+		padding: 12px;
+		border-radius: 8px;
+		font-size: 16px;
+		text-decoration: underline;
+		text-align: center;
+		margin: 20px;
+		height: fit-content;
+		align-self: middle;
+	}
+
+	.top-section {
+		display: grid;
+		gap: 10px;
+		grid-template-columns: 8fr;
+		width: 85%;
+		align-items: center;
+		justify-items: center;
+	}
+
+	.deck-icon-blue {
+		max-height: 30px;
+		/* background-color: #1652e0; */
+		/* border-radius: 8px; */
+		padding: 5px;
+		cursor: pointer;
+	}
+
+	.deck-icon-red {
+		max-height: 30px;
+		background-color: #e01616;
+		border-radius: 8px;
+		padding: 8px;
+		cursor: pointer;
+	}
+
+	.deck-icon-green {
+		max-height: 30px;
+		background-color: #16e019;
+		border-radius: 8px;
+		padding: 8px;
+		cursor: pointer;
+	}
+
+	.deck-link-green {
+		background-color: #16e019;
+		color: white;
+		padding: 2px 6px 2px 6px;
+		border-radius: 8px;
+		font-weight: bold;
+		display: grid;
+		grid-template-columns: 5fr 1fr;
+		align-items: center;
+		justify-items: center;
+		font-size: 24px;
+		height: 100%;
+		/* border: 2px solid #333;
             box-shadow: 2px 2px 1px #333; */
-        }
-        .deck-link-blue {
-            background-color: #1652e0;
-            color: white;
-            padding: 2px 6px 2px 6px;
-            border-radius: 8px;
-            font-weight: bold;
-            display: grid;
-            grid-template-columns: 5fr 1fr;
-            align-items: center;
-            justify-items: center;
-            font-size: 24px; 
-            text-decoration: underline;
-            cursor: pointer;
-            height: 100%;
-            /* border: 2px solid #333;
+	}
+
+	.deck-link-blue {
+		background-color: #1652e0;
+		color: white;
+		padding: 2px 6px 2px 6px;
+		border-radius: 8px;
+		font-weight: bold;
+		display: grid;
+		grid-template-columns: 5fr 1fr;
+		align-items: center;
+		justify-items: center;
+		font-size: 24px;
+		text-decoration: underline;
+		cursor: pointer;
+		height: 100%;
+		/* border: 2px solid #333;
             box-shadow: 2px 2px 1px #333; */
-        }
-        .deck-link-green .deck-icon-green {
-            background-color: rgba(0,0,0,0);
-        }
-        hr {
-            width: 85%;
-            height: 4px;
-            background-color: black;
-            border-radius: 2px;
-            border: none;
-        }
-        .mana-img {
-            max-height: 26px;
-            margin: 2px;
-        }
-        #modal-container {
-            display: none; 
-            position: fixed; 
-            z-index: 1; 
-            padding-top: 70px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto; 
-            background-color: rgb(0,0,0); 
-            background-color: rgba(0,0,0,0.4); 
-        }
-        #modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 60%;
-            border-radius: 10px;
-            border: solid #777 3px;
-        }
-        .decklist-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 10px;
-        }
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            margin-left: 30px;
-        }
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .decks-tab {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 10px;
-            display: none;
-        }
-        .stats-tab {
-            display: grid;
-            /* gap: 10px; */
-            display: none;
-            border-top: 2px solid black;
-        }
-        .stats-row-container {
-            display: grid;
-            grid-template-columns: 0.4fr 2fr repeat(4, 1fr);
-        }
-        .stats-row-item {
-            border-right: 2px solid black;
-            border-bottom: 2px solid black;
-            padding: 5px;
-            text-align: center;
-            font-size: 20px;
-            background-color: rgba(255, 255, 255, 0.3)
-            /* font-weight: bold; */
-        }
-        .stats-name-container {
-            font-family: beleren;
-            cursor: pointer;
-        }
-        .stats-rank-container {
-            border-left: 2px solid black;
-        }
-        .stats-row-header {
-            font-weight: bold;
-        }
-        .main-tab {
-            margin: 25px 0 25px 0;
-            width: 84%;
-        }
-        .card-type-header {
-            margin-bottom: 20px;
-            font-size: 18px;
-            font-family: beleren;
-        }
-        .deck-preview-card {
-            max-width: 300px;
-            cursor: pointer;
-        }
-        .deck-window-header {
-            font-family: beleren;
-            font-size: 30px;
-            margin-bottom: 20px;
-            text-align: center;
-            width: 100%;
-            display: block;
-        }
-        .game-grid {
-            display: grid;
-            grid-template-columns: 3fr 1fr;
-            background-color: #ccc;
-            border-radius: 8px;
-            border: 2px solid black;
-        }
-        /* .bar {
+	}
+
+	.deck-link-green .deck-icon-green {
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+	hr {
+		width: 85%;
+		height: 4px;
+		background-color: black;
+		border-radius: 2px;
+		border: none;
+	}
+
+	.mana-img {
+		max-height: 26px;
+		margin: 2px;
+	}
+
+	#modal-container {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 70px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	#modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 60%;
+		border-radius: 10px;
+		border: solid #777 3px;
+	}
+
+	.decklist-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 10px;
+	}
+
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+		margin-left: 30px;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.decks-tab {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 10px;
+		display: none;
+	}
+
+	.stats-tab {
+		display: grid;
+		/* gap: 10px; */
+		display: none;
+		border-top: 2px solid black;
+	}
+
+	.stats-row-container {
+		display: grid;
+		grid-template-columns: 0.4fr 2fr repeat(4, 1fr);
+	}
+
+	.stats-row-item {
+		border-right: 2px solid black;
+		border-bottom: 2px solid black;
+		padding: 5px;
+		text-align: center;
+		font-size: 20px;
+		background-color: rgba(255, 255, 255, 0.3)
+			/* font-weight: bold; */
+	}
+
+	.stats-name-container {
+		font-family: beleren;
+		cursor: pointer;
+	}
+
+	.stats-rank-container {
+		border-left: 2px solid black;
+	}
+
+	.stats-row-header {
+		font-weight: bold;
+	}
+
+	.main-tab {
+		margin: 25px 0 25px 0;
+		width: 84%;
+	}
+
+	.card-type-header {
+		margin-bottom: 20px;
+		font-size: 18px;
+		font-family: beleren;
+	}
+
+	.deck-preview-card {
+		max-width: 300px;
+		cursor: pointer;
+	}
+
+	.deck-window-header {
+		font-family: beleren;
+		font-size: 30px;
+		margin-bottom: 20px;
+		text-align: center;
+		width: 100%;
+		display: block;
+	}
+
+	.game-grid {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		background-color: #ccc;
+		border-radius: 8px;
+		border: 2px solid black;
+	}
+
+	/* .bar {
             background-color: white;
             height: 1px;
             top: 44px;
             position: relative;
         } */
-        .player-score {
-            font-weight: bold;
-            text-align: center;
-            font-size: 20px;
-            padding: 8px;
-            border-left: 2px solid black;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-        .player-score:hover {
-            filter: brightness(0.8);
-        }
-        .player-score:not(.winner):not(.loser):hover {
-            background-color: #aaa;
-        }
-        .player-text {
-            font-family: "beleren";
-            font-size: 20px;
-            padding: 8px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-        .player-text:hover {
-            background-color: #999;
-        }
-        .player-text-top {
-            border-top-left-radius: 6px;
-            border-bottom: 2px solid black;
-        }
-        .player-text:not(.player-text-top) {
-            border-bottom-left-radius: 6px;
-        }
-        .player-score-top {
-            border-radius: 0 6px 0px 0;
-            border-bottom: 2px solid black;
-        }
-        .player-score-bottom {
-            border-radius: 0 0px 6px 0;
-        }
-        .round-container {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 15px;
-            margin-bottom: 10px;
-        }
-        .bracket-container {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 15px;
-            margin-bottom: 10px;
-        }
-        .round-headers {
-            font-family: beleren;
-            font-size: 30px;
-        }
-        .swiss-container {
-            display: grid;
-            gap: 8px;
-        }
-        .winner {
-            background-color: rgb(46, 168, 83);
-        }
-        .loser {
-            background-color: rgb(204, 75, 75);
-        }
-        .player-names-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            align-items: center;
-            justify-items: center;
-            width: 90%;
-        }
-        .scores-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            align-items: center;
-            justify-items: center;
-            width: 90%;
-        }
-        .report-window-player-name {
-            font-family: beleren;
-            font-size: 40px;
-            margin: 15px;
-        }
-        .report-score-input {
-            padding: 8px;
-            font-size: 40px;
-            color: #555;
-            width: 60px;
-            text-align: center;
-        }
-        .scores-divider {
-            background-color: #555;
-            height: 3px;
-            width: 60%;
-        }
-        .scores-submit-btn {
-            border: 1px solid black;
-            border-radius: 8px;
-            background-color: #1cb81f;
-            color: white;
-            font-size: 25px;
-            font-weight: bold;
-            margin-top: 20px;
-            margin-left: 60%;
-            padding: 10px;
-            cursor: pointer;
-        }
-        .tab-btn {
-            background-color: #737373;
-            color: white;
-            border: 3px solid #ddd;
-            align-items: center;
-            justify-items: center;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            font-weight: bold;
-            font-size: 24px;
-            padding: 8px;
-            border-radius: 18px; 
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .tab-btn:not(.tab-btn-active):hover {
-            background-color: #666;
-        }
-        .tab-btn-active {
-            background-color: #333;
-        }
-        .tab-switch-icon {
-            max-height: 30px;
-        }
-        .tab-select {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-top: 40px;
-        }
-        .layer-container {
-            display: grid;
-            gap: 10px;
-            /* justify-items: center; */
-            align-items: center;
-        }
-        .admin-container {
-            font-weight: bold;
-            font-size: 18px;
-            margin-top: 20px;
-            display: none;
-        }
-        .admin-btn {
-            color: white;
-            background-color: #1b1b42;
-            border: 1px solid rgb(178, 178, 241);
-            font-weight: bold;
-            font-size: 18px;
-            padding: 8px;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-        .admin-btn:hover {
-            background-color: #291b74;
-        }
-        .options-container {
-            font-weight: bold;
-            font-size: 18px;
-            margin-top: 20px;
-        }
-        .opt-btn {
-            color: white;
-            background-color: #ab3636;
-            border: 1px solid rgb(70, 16, 16);
-            font-weight: bold;
-            font-size: 18px;
-            padding: 8px;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-        .opt-btn:hover {
-            background-color: #5b1919;
-        }
-        .opt-btn-green {
-            color: white;
-            background-color: #36ab4c;
-            border: 1px solid rgb(16, 70, 17);
-            font-weight: bold;
-            font-size: 18px;
-            padding: 8px;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-        .opt-btn-green:hover {
-            background-color: #195b22;
-        }
-        .initial-text {
-            grid-column: span 4;
-            text-align: center;
-            font-weight: bold;
-            font-size: 20px;
-            font-style: italic;
-            display: inline-block;
-        }
-        .ended-text {
-            display: none;
-            width: 100%;
-            text-align: center;
-            font-weight: bold;
-            font-size: 1.1em;
-            margin-bottom: 15px;
-        }
-        .deck-select-container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 8px;
-            align-items: center;
-            justify-items: center;
-        }
-        #modal-content .deck-container {
-            width: 90%;
-            height: 90%;
-            transition: 0.3s;
-        }
-        #modal-content .deck-container:hover {
-            filter: brightness(0.7);
-        }
-        #modal-content .deck-preview-img {
-            border: none;
-            box-shadow: none;
-            border-radius: 6px;
-            max-width: 80px;
-        }
-        #modal-content .deck-name {
-            font-size: 16px;
-        }
-        .dropped {
-            color: rgb(211, 22, 56);
-        }
-        /* mobile layout changes*/
-        @media (max-device-width: 850px) {
-            .round-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
-    <style id="text-style">
-        .text {
-            color: white;
-        }
-    </style>
-    <body>
-        <div class="header">
-            <div class="search-grid">
-                <a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-                <img class="sg-icon" src="/img/header/search.png">
-                <input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
-                <a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
-                <a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
-                <a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
-                <a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>            
-                <a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
-                <a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
-            </div>
-        </div>
-        <div class="selects" id="selects">
-			<select id="color-select" onchange="setGradient()">
-			</select>
+	.player-score {
+		font-weight: bold;
+		text-align: center;
+		font-size: 20px;
+		padding: 8px;
+		border-left: 2px solid black;
+		cursor: pointer;
+		transition: 0.2s;
+	}
+
+	.player-score:hover {
+		filter: brightness(0.8);
+	}
+
+	.player-score:not(.winner):not(.loser):hover {
+		background-color: #aaa;
+	}
+
+	.player-text {
+		font-family: "beleren";
+		font-size: 20px;
+		padding: 8px;
+		cursor: pointer;
+		transition: 0.2s;
+	}
+
+	.player-text:hover {
+		background-color: #999;
+	}
+
+	.player-text-top {
+		border-top-left-radius: 6px;
+		border-bottom: 2px solid black;
+	}
+
+	.player-text:not(.player-text-top) {
+		border-bottom-left-radius: 6px;
+	}
+
+	.player-score-top {
+		border-radius: 0 6px 0px 0;
+		border-bottom: 2px solid black;
+	}
+
+	.player-score-bottom {
+		border-radius: 0 0px 6px 0;
+	}
+
+	.round-container {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 15px;
+		margin-bottom: 10px;
+	}
+
+	.bracket-container {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 15px;
+		margin-bottom: 10px;
+	}
+
+	.round-headers {
+		font-family: beleren;
+		font-size: 30px;
+	}
+
+	.swiss-container {
+		display: grid;
+		gap: 8px;
+	}
+
+	.winner {
+		background-color: rgb(46, 168, 83);
+	}
+
+	.loser {
+		background-color: rgb(204, 75, 75);
+	}
+
+	.player-names-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		align-items: center;
+		justify-items: center;
+		width: 90%;
+	}
+
+	.scores-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		align-items: center;
+		justify-items: center;
+		width: 90%;
+	}
+
+	.report-window-player-name {
+		font-family: beleren;
+		font-size: 40px;
+		margin: 15px;
+	}
+
+	.report-score-input {
+		padding: 8px;
+		font-size: 40px;
+		color: #555;
+		width: 60px;
+		text-align: center;
+	}
+
+	.scores-divider {
+		background-color: #555;
+		height: 3px;
+		width: 60%;
+	}
+
+	.scores-submit-btn {
+		border: 1px solid black;
+		border-radius: 8px;
+		background-color: #1cb81f;
+		color: white;
+		font-size: 25px;
+		font-weight: bold;
+		margin-top: 20px;
+		margin-left: 60%;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	.tab-btn {
+		background-color: #737373;
+		color: white;
+		border: 3px solid #ddd;
+		align-items: center;
+		justify-items: center;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		font-weight: bold;
+		font-size: 24px;
+		padding: 8px;
+		border-radius: 18px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+
+	.tab-btn:not(.tab-btn-active):hover {
+		background-color: #666;
+	}
+
+	.tab-btn-active {
+		background-color: #333;
+	}
+
+	.tab-switch-icon {
+		max-height: 30px;
+	}
+
+	.tab-select {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+		margin-top: 40px;
+	}
+
+	.layer-container {
+		display: grid;
+		gap: 10px;
+		/* justify-items: center; */
+		align-items: center;
+	}
+
+	.admin-container {
+		font-weight: bold;
+		font-size: 18px;
+		margin-top: 20px;
+		display: none;
+	}
+
+	.admin-btn {
+		color: white;
+		background-color: #1b1b42;
+		border: 1px solid rgb(178, 178, 241);
+		font-weight: bold;
+		font-size: 18px;
+		padding: 8px;
+		border-radius: 8px;
+		cursor: pointer;
+		transition: 0.2s;
+	}
+
+	.admin-btn:hover {
+		background-color: #291b74;
+	}
+
+	.options-container {
+		font-weight: bold;
+		font-size: 18px;
+		margin-top: 20px;
+	}
+
+	.opt-btn {
+		color: white;
+		background-color: #ab3636;
+		border: 1px solid rgb(70, 16, 16);
+		font-weight: bold;
+		font-size: 18px;
+		padding: 8px;
+		border-radius: 8px;
+		cursor: pointer;
+		transition: 0.2s;
+	}
+
+	.opt-btn:hover {
+		background-color: #5b1919;
+	}
+
+	.opt-btn-green {
+		color: white;
+		background-color: #36ab4c;
+		border: 1px solid rgb(16, 70, 17);
+		font-weight: bold;
+		font-size: 18px;
+		padding: 8px;
+		border-radius: 8px;
+		cursor: pointer;
+		transition: 0.2s;
+	}
+
+	.opt-btn-green:hover {
+		background-color: #195b22;
+	}
+
+	.initial-text {
+		grid-column: span 4;
+		text-align: center;
+		font-weight: bold;
+		font-size: 20px;
+		font-style: italic;
+		display: inline-block;
+	}
+
+	.ended-text {
+		display: none;
+		width: 100%;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.1em;
+		margin-bottom: 15px;
+	}
+
+	.deck-select-container {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 8px;
+		align-items: center;
+		justify-items: center;
+	}
+
+	#modal-content .deck-container {
+		width: 90%;
+		height: 90%;
+		transition: 0.3s;
+	}
+
+	#modal-content .deck-container:hover {
+		filter: brightness(0.7);
+	}
+
+	#modal-content .deck-preview-img {
+		border: none;
+		box-shadow: none;
+		border-radius: 6px;
+		max-width: 80px;
+	}
+
+	#modal-content .deck-name {
+		font-size: 16px;
+	}
+
+	.dropped {
+		color: rgb(211, 22, 56);
+	}
+
+	/* mobile layout changes*/
+	@media (max-device-width: 850px) {
+		.round-container {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+</style>
+<style id="text-style">
+	.text {
+		color: white;
+	}
+</style>
+
+<body>
+	<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/header/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false"
+				autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>
+			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+			<a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
 		</div>
-        <div class="page-container">
-            <div class="tab-select" id="tab-select">
-                <div class="tab-btn-active tab-btn" id="games-tab-select" onclick="changeTab('games')">
-                    <img src="img/swords.png" class="tab-switch-icon">
-                    <span>Games</span>
-                </div>
-                <div class="tab-btn" id="decklists-tab-select" onclick="changeTab('decklists')">
-                    <img src="img/header/deck.png" class="tab-switch-icon">
-                    <span>Decks</span>
-                </div>
-                <div class="tab-btn" id="stats-tab-select" onclick="changeTab('stats')">
-                    <img src="img/trophy.png" class="tab-switch-icon">
-                    <span>Stats</span>
-                </div>
-            </div>
-            <div class="admin-container" id="admin">
-                <span class="text">Admin Options: </span>
-                <button class="push-gp admin-btn" id="push-gp">Push GP Round</button>
-                <button class="new-gp admin-btn"  id="new-gp" >Create new GP</button>
-                <button class="end-gp admin-btn"  id="end-gp" >End GP</button>
-            </div>
-            <div class="options-container">
-                <span class="text">Options: </span>
-                <button class="opt-btn-green" style="display: none;" id="join">Submit Deck!</button>
-                <button class="opt-btn" id="drop">Drop</button>
-                <!-- <button class="opt-btn"></button> -->
-            </div>
-            <div class="main-tab" id="main-tab">
-                <span id="ended-text" class="ended-text text">This event has ended.</span>
-                <div class="decks-tab" id="decklists"></div>
-                <div class="rounds-tab" id="games"></div>
-                <div class="stats-tab" id="stats"></div>
-            </div>
-        </div>
-        <div id="modal-container">
-			<div id="modal-content" class="popout">
-				<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+	</div>
+	<div class="selects" id="selects">
+		<select id="color-select" onchange="setGradient()">
+		</select>
+	</div>
+	<div class="page-container">
+		<div class="tab-select" id="tab-select">
+			<div class="tab-btn-active tab-btn" id="games-tab-select" onclick="changeTab('games')">
+				<img src="img/swords.png" class="tab-switch-icon">
+				<span>Games</span>
+			</div>
+			<div class="tab-btn" id="decklists-tab-select" onclick="changeTab('decklists')">
+				<img src="img/header/deck.png" class="tab-switch-icon">
+				<span>Decks</span>
+			</div>
+			<div class="tab-btn" id="stats-tab-select" onclick="changeTab('stats')">
+				<img src="img/trophy.png" class="tab-switch-icon">
+				<span>Stats</span>
 			</div>
 		</div>
-        <script>
-            let gradients = null;
-            let raw_gradients = null;
-            let gradTop = null;
-            let gradBottom = null;
-            modal = document.getElementById("modal-container");
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    document.getElementById('modal-container').style.display = 'none';
-                }
-            }
-            document.addEventListener("DOMContentLoaded", async function () {
-                try {
-                    const response = await fetch('/resources/gradients.json');
-                    raw_gradients = await response.json();
-                }
-                catch(error) {
-                    console.error('Error:', error);
-                }
-
-                gradients = raw_gradients.gradients;
-				card_backgrounds = raw_gradients.cards;
-                setGradient(localStorage.getItem("settings.gradient"));
-                prepareGradients();
-            });
-
-            function prepareGradients() {
-				let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt = document.createElement("option");
-				opt.value = defaultGradient.replace(' ', '-');
-				opt.text = defaultGradient;
-				document.getElementById("color-select").appendChild(opt);
-				let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt_rand = document.createElement("option");
-				opt_rand.value = "Random-Card";
-				opt_rand.text = "Random Card";
-
-				document.getElementById("color-select").appendChild(opt_rand);
-				for (const gradient of gradients)
-				{	
-					const opt = document.createElement("option");
-					opt.value = gradient.name.replace(' ', '-');
-					opt.text = gradient.name;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
-				}
-
-				for (const gradient in card_backgrounds) {
-					const opt = document.createElement("option");
-					opt.value = gradient.replace(' ', '-');
-					opt.text = gradient;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
-					console.log(gradient, opt);
-				}
-
-				// setGradient();
+		<div class="admin-container" id="admin">
+			<span class="text">Admin Options: </span>
+			<button class="push-gp admin-btn" id="push-gp">Push GP Round</button>
+			<button class="new-gp admin-btn" id="new-gp">Create new GP</button>
+			<button class="end-gp admin-btn" id="end-gp">End GP</button>
+		</div>
+		<div class="options-container">
+			<span class="text">Options: </span>
+			<button class="opt-btn-green" style="display: none;" id="join">Submit Deck!</button>
+			<button class="opt-btn" id="drop">Drop</button>
+			<!-- <button class="opt-btn"></button> -->
+		</div>
+		<div class="main-tab" id="main-tab">
+			<span id="ended-text" class="ended-text text">This event has ended.</span>
+			<div class="decks-tab" id="decklists"></div>
+			<div class="rounds-tab" id="games"></div>
+			<div class="stats-tab" id="stats"></div>
+		</div>
+	</div>
+	<div id="modal-container">
+		<div id="modal-content" class="popout">
+			<span class="close"
+				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+		</div>
+	</div>
+	<script>
+		let gradients = null;
+		let raw_gradients = null;
+		let gradTop = null;
+		let gradBottom = null;
+		modal = document.getElementById("modal-container");
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				document.getElementById('modal-container').style.display = 'none';
+			}
+		}
+		document.addEventListener("DOMContentLoaded", async function () {
+			try {
+				const response = await fetch('/resources/gradients.json');
+				raw_gradients = await response.json();
+			}
+			catch (error) {
+				console.error('Error:', error);
 			}
 
-			function setGradient(gradient=false) {
-				let artistCredit = "";
-				if (!gradient) { 
-					gradient = document.getElementById("color-select").value;
-				}
+			gradients = raw_gradients.gradients;
+			card_backgrounds = raw_gradients.cards;
+			setGradient(localStorage.getItem("settings.gradient"));
+			prepareGradients();
+		});
 
-				gradTop = "#000000";
-				gradBottom = "#FFFFFF";
-				for (const grad of gradients)
-				{
-					if (gradient == grad.name.replace(' ', '-'))
-					{ 	
-						gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
-					}
-				}
+		function prepareGradients() {
+			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt = document.createElement("option");
+			opt.value = defaultGradient.replace(' ', '-');
+			opt.text = defaultGradient;
+			document.getElementById("color-select").appendChild(opt);
+			let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt_rand = document.createElement("option");
+			opt_rand.value = "Random-Card";
+			opt_rand.text = "Random Card";
 
-				for (const background in card_backgrounds) {
-					if (gradient == background.replace(' ', '-'))
-					{ 	
-						gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-						artistCredit = card_backgrounds[background][0];
-						setTextColor(card_backgrounds[background][1]);
-					}
+			document.getElementById("color-select").appendChild(opt_rand);
+			for (const gradient of gradients) {
+				const opt = document.createElement("option");
+				opt.value = gradient.name.replace(' ', '-');
+				opt.text = gradient.name;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
 				}
+			}
 
-				if (gradient == "Random-Card") {
-					const bgs = Object.keys(card_backgrounds);
-					const background = bgs[reallyRand(bgs.length)];
+			for (const gradient in card_backgrounds) {
+				const opt = document.createElement("option");
+				opt.value = gradient.replace(' ', '-');
+				opt.text = gradient;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
+				}
+				console.log(gradient, opt);
+			}
+
+			// setGradient();
+		}
+
+		function setGradient(gradient = false) {
+			let artistCredit = "";
+			if (!gradient) {
+				gradient = document.getElementById("color-select").value;
+			}
+
+			gradTop = "#000000";
+			gradBottom = "#FFFFFF";
+			for (const grad of gradients) {
+				if (gradient == grad.name.replace(' ', '-')) {
+					gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
+				}
+			}
+
+			for (const background in card_backgrounds) {
+				if (gradient == background.replace(' ', '-')) {
 					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
 					artistCredit = card_backgrounds[background][0];
 					setTextColor(card_backgrounds[background][1]);
 				}
-
-				
-				document.body.style.backgroundImage = gradImage;
-				localStorage.setItem("settings.gradient", gradient);
-				console.log("CHANGE");
-				if (document.getElementsByClassName("artist-credit")[0])
-					document.getElementsByClassName("artist-credit")[0].remove();
-				const credit_text = document.createElement("span");
-				credit_text.className = "artist-credit text";
-				credit_text.innerText = `background by ${artistCredit}`;
-				if (artistCredit && document.getElementById("color-select"))
-					document.getElementById("color-select").parentElement.appendChild(credit_text);
 			}
 
-function reallyRand(x, seed = false) {
-				const date = new Date();
-				seed = seed ? seed : date.getUTCFullYear() * 10000 + 
-							 date.getUTCMonth() * 100 + 
-							 date.getUTCDate();
-
-				const a = 1103515245;
-				const c = 12345;
-				const m = Math.pow(2, 31);
-
-				let randomNumber = (a * seed + c) % m;
-				randomNumber = randomNumber / m;
-
-				return Math.floor(randomNumber * x);
+			if (gradient == "Random-Card") {
+				const bgs = Object.keys(card_backgrounds);
+				const background = bgs[reallyRand(bgs.length)];
+				gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
+				artistCredit = card_backgrounds[background][0];
+				setTextColor(card_backgrounds[background][1]);
 			}
 
-function setTextColor(c = false) {
-				if (c) {
-					localStorage.setItem("settings.textcolor", c);
-				}
-				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            	document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+			document.body.style.backgroundImage = gradImage;
+			localStorage.setItem("settings.gradient", gradient);
+			console.log("CHANGE");
+			if (document.getElementsByClassName("artist-credit")[0])
+				document.getElementsByClassName("artist-credit")[0].remove();
+			const credit_text = document.createElement("span");
+			credit_text.className = "artist-credit text";
+			credit_text.innerText = `background by ${artistCredit}`;
+			if (artistCredit && document.getElementById("color-select"))
+				document.getElementById("color-select").parentElement.appendChild(credit_text);
+		}
+
+		function reallyRand(x, seed = false) {
+			const date = new Date();
+			seed = seed ? seed : date.getUTCFullYear() * 10000 +
+				date.getUTCMonth() * 100 +
+				date.getUTCDate();
+
+			const a = 1103515245;
+			const c = 12345;
+			const m = Math.pow(2, 31);
+
+			let randomNumber = (a * seed + c) % m;
+			randomNumber = randomNumber / m;
+
+			return Math.floor(randomNumber * x);
+		}
+
+		function setTextColor(c = false) {
+			if (c) {
+				localStorage.setItem("settings.textcolor", c);
 			}
-            document.getElementById("search").addEventListener("keypress", function(event) {
-				if (event.key === "Enter") {
-					event.preventDefault();
-					const url = new URL('search', window.location.origin);
-					url.searchParams.append('search', document.getElementById("search").value);
-					window.location.href = url;
-				}
-			});
-            function randomCard() {
-				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
-				let random_card = card_list_arrayified[i];
-
-				const url = new URL('card', window.location.origin);
-				const params = {
-					set: random_card.set,
-					num: random_card.number,
-					name: random_card.card_name
-				}
-				for (const key in params) {
-					url.searchParams.append(key, params[key]);
-				}
-
+			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+		}
+		document.getElementById("search").addEventListener("keypress", function (event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				const url = new URL('search', window.location.origin);
+				url.searchParams.append('search', document.getElementById("search").value);
 				window.location.href = url;
 			}
+		});
+		function randomCard() {
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
+
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+
+			window.location.href = url;
+		}
+
+		function changeTab(tab_name) {
+			document.getElementById(tab_name).style.display = "grid";
+			document.getElementById(tab_name + "-tab-select").className = "tab-btn tab-btn-active"
+			for (const child of document.getElementById("main-tab").children) {
+				if (child.id != tab_name && child.id != "ended-text") {
+					child.style.display = "none";
+				}
+			}
+			for (const child of document.getElementById("tab-select").children) {
+				if (child.id != tab_name + "-tab-select") {
+					child.className = "tab-btn";
+				}
+			}
+		}
+	</script>
+	<script type="module">
+		// <!--MARK: init-->
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+		// https://firebase.google.com/docs/web/setup#available-libraries
+
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+			authDomain: "voyager-78e30.firebaseapp.com",
+			projectId: "voyager-78e30",
+			storageBucket: "voyager-78e30.firebasestorage.app",
+			messagingSenderId: "411191248476",
+			appId: "1:411191248476:web:591349be169d823e5f8899",
+			measurementId: "G-TQ1L48F25M"
+		};
+
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+		let username = "";
+		let password = "";
+		let sessionid = localStorage.getItem('settings.session');
+		let decks = {};
+		let admin = false;
+		const urlParams = new URLSearchParams(window.location.search);
+		const event = urlParams.get('event');
+		let card_list;
+		let event_data;
+
+		await fetch('/lists/all-cards.json')
+			.then(response => response.json())
+			.then(json => {
+				card_list = json;
+			}).catch(error => console.error('Error:', error));
+
+		let card_list_arrayified = card_list.cards;
+
+		await getDoc(doc(db, 'events', event)).then(async docSnap => {
+			// initialize
+			event_data = docSnap.data();
+		});
+
+		if (sessionid) {
+			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+				let data = docSnap.data();
+				username = data.username;
+				password = data.password;
+			});
+
+			await getDoc(doc(db, 'users', username)).then(docSnap => {
+				let data = docSnap.data();
+				decks = JSON.parse(data.decks);
+				admin = data.admin;
+			});
+		}
+
+		// #endregion
+		document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+
+		function addAdminEventListeners() {
+			document.getElementById('push-gp').addEventListener("click", (e) => {
+				pushGP();
+			});
+			document.getElementById('new-gp').addEventListener("click", (e) => {
+				newGP();
+			});
+			document.getElementById('end-gp').addEventListener("click", (e) => {
+				endGP();
+			});
+			document.getElementById('admin').style.display = "block";
+		}
+
+		function addButtonEventListeners() {
+			document.getElementById("drop").addEventListener("click", (e) => {
+				dropGP(event_data);
+			});
+			document.getElementById("join").addEventListener("click", (e) => {
+				joinGP(event_data);
+			});
+		}
+
+		async function makeRoundsTab() {
+			const rounds = JSON.parse(event_data.rounds);
+			const decks = JSON.parse(event_data.decks);
+			document.getElementById("decklists").innerHTML = "";
+			document.getElementById("games").innerHTML = "";
+			let swiss_container = document.createElement("div");
+			swiss_container.className = "swiss-container";
+			for (const round_name in rounds["swiss"]) {
+				let round_header = document.createElement("span");
+				let round_container = document.createElement("div");
+				round_header.innerText = round_name;
+				round_header.className = "round-headers text";
+				round_container.className = "round-container";
+				let round = rounds['swiss'][round_name];
+				for (const game of round) {
+					const game_container = makeGameContainer(game, round_name);
+					round_container.appendChild(game_container);
+				}
+				swiss_container.appendChild(round_header);
+				swiss_container.appendChild(round_container);
+			}
+
+			document.getElementById('games').appendChild(swiss_container);
+
+			if (event_data.stage == 'bracket') {
+				makeBracket(rounds);
+			}
+		}
+
+		function makeGameContainer(game, round_name) {
+			const rounds = JSON.parse(event_data.rounds);
+			const decks = JSON.parse(event_data.decks);
+			const round = rounds[round_name];
+			let game_container = document.createElement("div");
+			game_container.className = "game-container";
+			let game_grid = document.createElement("div");
+			game_grid.className = "game-grid";
+			let side = "top";
+			for (const player in game) {
+				let player_name = document.createElement("div");
+				let player_score = document.createElement("div");
+				let deck = decks[player];
+				player_name.className = `player-text player-text-${side}`;
+				player_name.innerText = player;
+				player_name.onclick = function () {
+					document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+					let deck_header = document.createElement("span");
+					deck_header.className = "deck-window-header";
+					deck_header.innerText = player + "'s " + deck.name;
+					document.getElementById("modal-content").appendChild(deck_header);
+					document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+					document.getElementById("modal-container").style.display = 'block';
+				}
+				let gameClass = "";
+				if (game[player] == "2") gameClass = "winner";
+				if (game[player] == "0") gameClass = "loser";
+				if (game[player] == "1") gameClass = "loser";
+				player_score.className = `player-score ${gameClass} player-score-${side}`;
+				player_score.innerText = game[player];
+				player_score.onclick = function () {
+					document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+					document.getElementById("modal-content").appendChild(reportHTML(game, round, round_name, event_data, event, decks));
+					document.getElementById("modal-container").style.display = 'block';
+				}
+				game_grid.appendChild(player_name);
+				game_grid.appendChild(player_score);
+				if (side == "top") {
+					side = "bottom";
+				}
+			}
+			let bar = document.createElement("div");
+			bar.className = "bar";
+			game_container.appendChild(bar);
+			game_container.appendChild(game_grid);
+
+			return game_container;
+		}
+
+		async function makeBracket(rounds) {
+			const decks = JSON.parse(event_data.decks);
+			const bracket_container = document.createElement("div");
+			bracket_container.className = "bracket-container";
+			const bracket_header = document.createElement('span');
+			bracket_header.className = "round-headers text";
+			bracket_header.innerText = "Top Cut Bracket";
+			document.getElementById("games").appendChild(bracket_header);
+			let topcut = await topCutHelper(rounds); // {players, matches, seedings, stats}
+			let matches = topcut.matches;
+			let structure = parseStructure(topcut.structure);
+			const layer = structure.raw[0];
+			const layer_container = document.createElement("div");
+			layer_container.className = 'layer-container';
+			layer_container.style.gridTemplateRows = `repeat(${structure.info.size}, 1fr)`;
+			for (const match_name of layer) {
+				const match = matches[match_name];
+				console.log("layer1", match);
+				let side = "top";
+				const game_grid = document.createElement("div");
+				game_grid.className = "game-grid";
+				game_grid.style.height = "fit-content";
+				for (const player_id in match) {
+					let player;
+					if (player_id != "Bye") player = topcut.seedings[player_id];
+					else player = "Bye";
+					if (player == undefined) {
+						let p_match = matches[player_id];
+						for (const p in p_match) {
+							if (p_match[p] == "2") {
+								player = topcut.seedings[p].player;
+								break;
+							}
+						}
+					} else {
+						player = player.player;
+					}
+					if (player == undefined) {
+						player = "TBD";
+					}
+					const player_name = document.createElement('div');
+					player_name.className = `player-text player-text-${side}`;
+					player_name.onclick = function () {
+						let deck = decks[player];
+						document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+						let deck_header = document.createElement("span");
+						deck_header.className = "deck-window-header";
+						deck_header.innerText = player + "'s " + deck.name;
+						document.getElementById("modal-content").appendChild(deck_header);
+						document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+						document.getElementById("modal-container").style.display = 'block';
+					}
+					const player_score = document.createElement('div');
+					let gameClass = "";
+					if (match[player_id] == "2") gameClass = "winner";
+					if (match[player_id] == "0") gameClass = "loser";
+					if (match[player_id] == "1") gameClass = "loser";
+					player_score.className = `player-score player-score-${side} ${gameClass}`;
+					player_name.innerText = player;
+					player_score.innerText = match[player_id];
+					let game = {};
+					for (const player_id in match) {
+						let player2;
+						if (player_id != "Bye") player2 = topcut.seedings[player_id];
+						else player2 = { player: "Bye" };
+						if (player2 == undefined) {
+							let p_match = matches[player_id];
+							for (const p in p_match) {
+								if (p_match[p] == "2") {
+									player2 = topcut.seedings[p].player;
+									break;
+								}
+							}
+						} else {
+							player2 = player2.player;
+						}
+						if (player2 == undefined) {
+							player2 = "TBD";
+						}
+						game[player2] = match[player_id];
+					}
+					player_score.onclick = function () {
+						document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+						document.getElementById("modal-content").appendChild(reportHTML(game, match_name, match_name, event_data, event, decks, false, match));
+						document.getElementById("modal-container").style.display = 'block';
+					}
+					game_grid.appendChild(player_name);
+					game_grid.appendChild(player_score);
+					if (side == "top") {
+						side = "bottom";
+					}
+				}
+				layer_container.appendChild(game_grid);
+			}
+			if (layer.length != 0) bracket_container.appendChild(layer_container);
+
+			for (const layer of structure.raw[1]) {
+				const layer_container = document.createElement("div");
+				layer_container.className = 'layer-container';
+				layer_container.style.gridTemplateRows = `repeat(${structure.info.size}, 1fr)`;
+				for (const match_name of layer) {
+					const match = matches[match_name];
+					let side = "top";
+					const game_grid = document.createElement("div");
+					game_grid.className = "game-grid";
+					game_grid.style.gridRow = "span " + structure.info.size / layer.length;
+					game_grid.style.height = "fit-content";
+					for (const player_id in match) {
+						let player;
+						if (player_id != "Bye") player = topcut.seedings[player_id];
+						else player = { player: "Bye" };
+						if (player == undefined) {
+							let p_match = matches[player_id];
+							for (const p in p_match) {
+								if (p_match[p] == "2" && isFinite(p)) {
+									player = topcut.seedings[p].player;
+									break;
+								}
+							}
+						} else {
+							player = player.player;
+						}
+						if (player == undefined) {
+							player = "TBD";
+						}
+						const player_name = document.createElement('div');
+						player_name.className = `player-text player-text-${side}`;
+						player_name.onclick = function () {
+							let deck = decks[player];
+							document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+							let deck_header = document.createElement("span");
+							deck_header.className = "deck-window-header";
+							deck_header.innerText = player + "'s " + deck.name;
+							document.getElementById("modal-content").appendChild(deck_header);
+							document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+							document.getElementById("modal-container").style.display = 'block';
+						}
+						const player_score = document.createElement('div');
+						let gameClass = "";
+						if (match[player_id] == "2") gameClass = "winner";
+						if (match[player_id] == "0") gameClass = "loser";
+						if (match[player_id] == "1") gameClass = "loser";
+						player_score.className = `player-score player-score-${side} ${gameClass}`;
+						player_name.innerText = player;
+						player_score.innerText = match[player_id];
+						let game = {};
+						for (const player_id in match) {
+							let player2;
+							if (player_id != "Bye") player2 = topcut.seedings[player_id];
+							else player2 = { player: "Bye" };
+							if (player2 == undefined) {
+								let p_match = matches[player_id];
+								for (const p in p_match) {
+									console.log(topcut.seedings, p, isFinite(p));
+									if (p_match[p] == "2" && isFinite(p)) {
+										player2 = topcut.seedings[p].player;
+										break;
+									}
+								}
+							} else {
+								player2 = player2.player;
+							}
+							if (player2 == undefined) {
+								player2 = "TBD";
+							}
+							game[player2] = match[player_id];
+						}
+
+						if (Object.keys(game).length == 2) {
+							player_score.onclick = function () {
+								document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+								document.getElementById("modal-content").appendChild(reportHTML(game, match_name, match_name, event_data, event, decks, false, match));
+								document.getElementById("modal-container").style.display = 'block';
+							}
+						}
+						game_grid.appendChild(player_name);
+						game_grid.appendChild(player_score);
+						if (side == "top") {
+							side = "bottom";
+						}
+					}
+					layer_container.appendChild(game_grid);
+				}
+				bracket_container.appendChild(layer_container);
+			}
+
+			document.getElementById("games").appendChild(bracket_container);
+		}
+
+		async function makeDecksTab() {
+			const decks = JSON.parse(event_data.decks);
+			for (const user in decks) {
+				let deck = decks[user];
+				let full_deck_container = document.createElement('div');
+				full_deck_container.className = "full-deck-container";
+				let deck_container = document.createElement('div');
+				deck_container.className = "deck-container";
+				let colors_container = document.createElement('div');
+				colors_container.className = "colors-container";
+				let deck_preview = document.createElement('img');
+				let card_stats;
+				for (const card of card_list_arrayified) {
+					if (deck.previewimg == card.card_name) {
+						card_stats = card;
+						break;
+					}
+				}
+				deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+				deck_preview.onclick = function () {
+					document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+					let deck_header = document.createElement("span");
+					deck_header.className = "deck-window-header";
+					deck_header.innerText = user + "'s " + deck.name;
+					document.getElementById("modal-content").appendChild(deck_header);
+					document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+					document.getElementById("modal-container").style.display = 'block';
+				}
+				deck_preview.className = "deck-preview-img";
+				let deck_name = document.createElement('div');
+				deck_name.className = "deck-name";
+				deck_name.innerText = user + "'s " + deck.name;
+				let deck_btns = document.createElement('div');
+				deck_btns.className = "deck-buttons";
+				let deck_link = document.createElement('a');
+				deck_link.href = `/deckbuilder?edeck=${event}-${user}`;
+				deck_link.innerText = "Deckbuilder";
+				deck_link.className = "deck-link-green deck-icon-shadow";
+				deck_link.target = "_blank";
+				let deck_edit_icon = document.createElement('img');
+				deck_edit_icon.src = "/img/edit.png";
+				deck_edit_icon.className = "deck-icon-green";
+				deck_link.appendChild(deck_edit_icon);
+				let deck_link2 = document.createElement('span');
+				deck_link2.innerText = "View";
+				deck_link2.className = "deck-link-blue deck-icon-shadow";
+				let deck_edit_icon2 = document.createElement('img');
+				deck_edit_icon2.src = "/img/show-white.png";
+				deck_edit_icon2.className = "deck-icon-blue";
+				deck_link2.onclick = function () {
+					document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+					let deck_header = document.createElement("span");
+					deck_header.className = "deck-window-header";
+					deck_header.innerText = user + "'s " + deck.name;
+					document.getElementById("modal-content").appendChild(deck_header);
+					document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+					document.getElementById("modal-container").style.display = 'block';
+				}
+				deck_link2.appendChild(deck_edit_icon2);
+				if (deck.colors) {
+					for (const color of deck.colors) {
+						let color_ele = document.createElement('img');
+						color_ele.src = `img/mana/mana_${color}.png`;
+						color_ele.className = "mana-img";
+						colors_container.appendChild(color_ele);
+					}
+				}
+				deck_btns.appendChild(deck_link);
+				deck_btns.appendChild(deck_link2);
+				deck_container.appendChild(deck_name);
+				deck_container.appendChild(deck_preview);
+				deck_container.appendChild(deck_btns);
+				full_deck_container.appendChild(deck_container);
+				if (deck.colors) full_deck_container.appendChild(colors_container);
+				if (deck.colors) {
+					document.getElementById("decklists").appendChild(full_deck_container);
+				} else {
+					document.getElementById("decklists").appendChild(deck_container);
+				}
+			}
+		}
+
+		async function makeStatsTab() {
+			const decks = JSON.parse(event_data.decks);
+			const rounds = JSON.parse(event_data.rounds);
+			const stats_tab = document.getElementById("stats");
+			stats_tab.innerHTML = "";
+			const stats = statsHelper(rounds.swiss);
+
+			const row_container = document.createElement("div");
+			row_container.className = "stats-row-container";
+			const rank_container = document.createElement("div");
+			rank_container.className = "stats-rank-container stats-row-item stats-row-header";
+			rank_container.innerText = "Rank";
+			const name_container = document.createElement("div");
+			name_container.className = "stats-name-container stats-row-item stats-row-header";
+			name_container.innerText = "Player";
+			const record_container = document.createElement("div");
+			record_container.className = "stats-record-container stats-row-item stats-row-header";
+			record_container.innerText = `Record`;
+			const match_total_container = document.createElement("div");
+			match_total_container.className = "stats-match-total-container stats-row-item stats-row-header";
+			match_total_container.innerText = `Game Record`;
+			const omw_container = document.createElement("div");
+			omw_container.className = "stats-omw-container stats-row-item stats-row-header";
+			omw_container.innerText = "OM%";
+			const gw_container = document.createElement("div");
+			gw_container.className = "stats-gw-container stats-row-item stats-row-header";
+			gw_container.innerText = "GW%";
+
+			row_container.appendChild(rank_container);
+			row_container.appendChild(name_container);
+			row_container.appendChild(record_container);
+			row_container.appendChild(match_total_container);
+			row_container.appendChild(omw_container);
+			row_container.appendChild(gw_container);
+
+			stats_tab.appendChild(row_container);
+
+			let seedings = [];
+
+			for (const player in stats.records) {
+				let record = stats.records[player];
+				let total = stats.match_total[player];
+				seedings.push({ player: player, record: record, match_total: total, omw: stats.omw[player], gw: stats.gw[player] });
+			}
+
+			seedings.sort(seeder);
+
+			let i = 1;
+
+			for (const player_stats of seedings) {
+				const player = player_stats.player;
+
+				if (player == "Bye")
+					continue;
+
+				const record = player_stats.record;
+				const match_total = player_stats.match_total;
+				const omw = player_stats.omw;
+				const gw = player_stats.gw;
+
+				const row_container = document.createElement("div");
+				row_container.className = "stats-row-container";
+
+				const rank_container = document.createElement("div");
+				rank_container.className = "stats-rank-container stats-row-item";
+				rank_container.innerText = i;
+
+				const name_container = document.createElement("div");
+				name_container.className = "stats-name-container stats-row-item";
+				if (event_data.dropped.includes(player))
+					name_container.className += " dropped";
+				name_container.innerText = player;
+				let deck = decks[player];
+
+				name_container.onclick = function () {
+					document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+					let deck_header = document.createElement("span");
+					deck_header.className = "deck-window-header";
+					deck_header.innerText = player + "'s " + deck.name;
+					document.getElementById("modal-content").appendChild(deck_header);
+					document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+					document.getElementById("modal-container").style.display = 'block';
+				}
+
+				const record_container = document.createElement("div");
+				record_container.className = "stats-record-container stats-row-item";
+				record_container.innerText = `${record[0]}-${record[1]}`;
+
+				const match_total_container = document.createElement("div");
+				match_total_container.className = "stats-match-total-container stats-row-item";
+				match_total_container.innerText = `${match_total[0]}-${match_total[1]}`;
+
+				const omw_container = document.createElement("div");
+				omw_container.className = "stats-omw-container stats-row-item";
+				omw_container.innerText = (omw * 100).toFixed(2) + "%";
+				omw_container.setAttribute("title", "Opponent match percentage");
+
+				const gw_container = document.createElement("div");
+				gw_container.className = "stats-gw-container stats-row-item";
+				gw_container.innerText = (gw * 100).toFixed(2) + "%";
+				gw_container.setAttribute("title", "Game win percentage");
+
+				row_container.appendChild(rank_container);
+				row_container.appendChild(name_container);
+				row_container.appendChild(record_container);
+				row_container.appendChild(match_total_container);
+				row_container.appendChild(omw_container);
+				row_container.appendChild(gw_container);
+
+				stats_tab.appendChild(row_container);
+				i++;
+			}
+		}
+
+		async function reload() {
+			const decks = JSON.parse(event_data.decks);
+			const rounds = JSON.parse(event_data.rounds);
+
+			// ended text and join button
+			if (event_data.ended)
+				document.getElementById("ended-text").style.display = "inline-block";
+			if (event_data.stage == "initial")
+				document.getElementById("join").style.display = "inline"
+
+			document.title = event;
+
+			// button listeners
+			if (admin) {
+				addAdminEventListeners();
+			}
+			addButtonEventListeners();
+
+			makeRoundsTab();
+
+			if (event_data.stage != "initial") {
+				makeDecksTab();
+				makeStatsTab();
+			} else {
+				const initial_text = document.createElement("span");
+				initial_text.className = "initial-text text";
+				initial_text.innerText = `Deck submissions are open for ${event}`;
+				document.getElementById("decklists").appendChild(initial_text);
+
+				const initial_text2 = document.createElement("span");
+				initial_text2.className = "initial-text text";
+				initial_text2.style.width = "100%";
+				initial_text2.innerText = `Deck submissions are open for ${event}`;
+				document.getElementById("games").appendChild(initial_text2);
+			}
+		}
+
+		function deckHTML(deck, card_list) {
+			let card_categories = { "creature": "", "planeswalker": "", "instant": "", "sorcery": "", "artifact": "", "enchantment": "", "land": "", "sideboard": "", "sanctum": "" };
+			const text = atob(deck.url.split(';')[1].split('&main')[0]);
+			let sideboard = [];
+			let sb_cards = false;
+			let sc_cards = false;
+			let count;
+			let card_name;
+			let card_list_arrayified = card_list.cards;
+
+			const lines = text.split('\n');
+
+			let deck_map = new Map();
+			let sb_map = new Map();
+			let sc_map = new Map();
+
+			for (const line of lines) {
+				if (line == 'sideboard' || line == '') // '' for Draftmancer files
+				{
+					sb_cards = true;
+				}
+				else if (line == 'sanctum' || (sb_cards && line == '')) // '' for Draftmancer files
+				{
+					sc_cards = true;
+					sb_cards = false;
+				}
+				else if (!sb_cards && !sc_cards) {
+					// get the count and card name
+					count = parseInt(line.substring(0, line.indexOf(' ')));
+					card_name = line.substring(line.indexOf(' ') + 1);
+
+					if (deck_map.has(card_name)) // if the deck has card name, add the new value, if it doesnt, set the value to stop keyerrors
+					{
+						deck_map.set(card_name, deck_map.get(card_name) + count);
+					}
+					else {
+						deck_map.set(card_name, count);
+					}
+				}
+				else if (sb_cards) // sideboard cards, do the same thing but with sb_map
+				{
+					count = parseInt(line.substring(0, line.indexOf(' ')));
+					card_name = line.substring(line.indexOf(' ') + 1);
+
+					if (sb_map.has(card_name)) {
+						sb_map.set(card_name, sb_map.get(card_name) + count);
+					}
+					else {
+						sb_map.set(card_name, count);
+					}
+				} else if (sc_cards) // sanctum cards, do the same thing but with sc_map
+				{
+					count = parseInt(line.substring(0, line.indexOf(' ')));
+					card_name = line.substring(line.indexOf(' ') + 1);
+
+					if (sc_map.has(card_name)) {
+						sc_map.set(card_name, sc_map.get(card_name) + count);
+					}
+					else {
+						sc_map.set(card_name, count);
+					}
+				}
+			}
+
+			// initialize card types (and sideboard)
+			let deck_cards = new Map([
+				['land', new Map([])],
+				['creature', new Map([])],
+				['instant', new Map([])],
+				['planeswalker', new Map([])],
+				['artifact', new Map([])],
+				['enchantment', new Map([])],
+				['sorcery', new Map([])],
+				['battle', new Map([])],
+				['sideboard', new Map([])],
+				['sanctum', new Map([])]
+			]);
+
+			for (const [card, copies] of deck_map) {
+				let card_type;
+				// loop through each card in deck_map and get the cardtype
+				for (const card2 of card_list_arrayified) {
+					if (card2.card_name == card) {
+						card_type = card2.type.toLowerCase();
+						break;
+					}
+				}
+
+				for (const [key, map] of deck_cards) {
+					if (card_type.includes(key)) {
+						map.set(card, copies)
+						break;
+					}
+				}
+			}
+			for (const [card, copies] of sb_map) {
+				for (const [key, map] of deck_cards) {
+					if (key == 'sideboard') {
+						map.set(card, copies)
+						break;
+					}
+				}
+			}
+			for (const [card, copies] of sc_map) {
+				for (const [key, map] of deck_cards) {
+					if (key == 'sanctum') {
+						map.set(card, copies)
+						break;
+					}
+				}
+			}
+			let total_copies = { "creature": 0, "planeswalker": 0, "instant": 0, "sorcery": 0, "artifact": 0, "enchantment": 0, "land": 0, "sideboard": 0, "sanctum": 0 };
+			for (const [k, map] of deck_cards) {
+				for (const [card, num] of map) {
+					card_categories[k] += `<span class="card-in-deck">${num}x ${card}</span><br>`;
+					total_copies[k] += num;
+				}
+			}
+
+			let finalHTML = "";
+			let column1 = document.createElement('div');
+			let column2 = document.createElement('div');
+			column1.className = "card-column";
+			column2.className = "card-column";
+			for (const section_name in card_categories) {
+				let section_html = card_categories[section_name];
+				if (section_html == "") {
+					continue;
+				}
+				let section_name_capitalized = section_name[0].toUpperCase() + section_name.substring(1, section_name.length);
+				let card_column = column1;
+				if (section_name == "land" || section_name == "sideboard" || section_name == "sanctum") {
+					card_column = column2;
+				}
+
+				// card_column.innerHTML += `<div class="${section_name} card-type-section" id="${section_name}">
+				//      <span class="${section_name}-header card-type-header" id="${section_name}-header">${section_name_capitalized} (${total_copies[section_name]})</span>
+				// <br>
+				// ${section_html}
+				// </div><br>`;
+				let section_container = document.createElement('div');
+				let section_header = document.createElement('span');
+				section_header.className = "card-type-header";
+				section_header.innerText = section_name_capitalized + " (" + total_copies[section_name] + ")";
+				let line_break = document.createElement('br');
+				let line_break2 = document.createElement('br');
+				let cards_container = document.createElement('div');
+				cards_container.innerHTML = section_html;
+				for (const card_ele of cards_container.childNodes) {
+					card_ele.onmouseover = function () {
+						let card_name = card_ele.innerText.substring(card_ele.innerText.indexOf(" ") + 1, card_ele.innerText.length);
+						let card_stats;
+						for (const card2 of card_list_arrayified) {
+							if (card2.card_name == card_name) {
+								card_stats = card2;
+								break;
+							}
+						}
+						let deck_preview_card = document.getElementById("deck-preview-card");
+						deck_preview_card.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+						//https://voyager-mtg.github.io/card?set=EXPT&num=44&name=Fyndhorn+Betrayer
+						deck_preview_card.onclick = function () {
+							window.location.href = `/card?set=${card_stats.set}&num=${card_stats.number}&name=${card_name.replaceAll(" ", "+")}`;
+						}
+					}
+				}
+				section_container.appendChild(section_header);
+				section_container.appendChild(cards_container);
+				section_container.appendChild(line_break);
+				card_column.appendChild(section_container);
+				// card_column.appendChild(line_break2);
+			}
+
+			let preview_card = document.createElement('img');
+			preview_card.src = "img/card_back.png";
+			preview_card.id = "deck-preview-card";
+			preview_card.className = "deck-preview-card";
+
+			let decklist_container = document.createElement("div");
+			decklist_container.appendChild(column1);
+			decklist_container.appendChild(column2);
+			decklist_container.appendChild(preview_card);
+			decklist_container.className = "decklist-container";
+
+			return decklist_container;
+		}
+
+		function reportHTML(game, round, round_name, event_data, event, decks, swiss = true, match = null) {
+			if (event_data.ended)
+				return;
+
+			const content_container = document.createElement("div");
+			const player_names = document.createElement("div");
+			const scores = document.createElement("div");
+			const submit_btn = document.createElement("button");
+			const p1_name = document.createElement("span");
+			const p2_name = document.createElement("span");
+			const p1_score = document.createElement("input");
+			const p2_score = document.createElement("input");
+			const divider = document.createElement("div");
+			const spacer = document.createElement("div");
+
+			content_container.className = "scores-modal-container";
+			player_names.className = "player-names-container";
+			scores.className = "scores-container";
+			submit_btn.className = "scores-submit-btn";
+			p1_name.className = "report-window-player-name";
+			p2_name.className = "report-window-player-name";
+			p1_score.className = "report-score-input";
+			p2_score.className = "report-score-input";
+			divider.className = "scores-divider";
+			spacer.className = "spacing-div";
+
+			let p1_name_text = Object.keys(game)[0];
+			let p2_name_text = Object.keys(game)[1];
+			submit_btn.innerText = "Report Scores";
+			p1_name.innerText = p1_name_text;
+			p2_name.innerText = p2_name_text;
+			p1_score.value = Object.values(game)[0];
+			p2_score.value = Object.values(game)[1];
+
+			p1_score.id = `${p1_name_text}-score`;
+			p2_score.id = `${p2_name_text}-score`;
+
+			player_names.appendChild(p1_name);
+			player_names.appendChild(spacer);
+			player_names.appendChild(p2_name);
+			scores.appendChild(p1_score);
+			scores.appendChild(divider);
+			scores.appendChild(p2_score);
+			content_container.appendChild(player_names);
+			content_container.appendChild(scores);
+			content_container.appendChild(submit_btn);
+
+			submit_btn.onclick = async function () {
+				const parsed_data = JSON.parse(event_data.rounds);
+				// [swiss ? "swiss" : "bracket"];
+				if (swiss) {
+					const round_to_mod = parsed_data.swiss[round_name];
+					for (const mod_game of round_to_mod) {
+						if (mod_game.hasOwnProperty(p1_name_text)) {
+							let new_game = {};
+							new_game[p1_name_text] = document.getElementById(`${p1_name_text}-score`).value;
+							new_game[p2_name_text] = document.getElementById(`${p2_name_text}-score`).value;
+							parsed_data.swiss[round_name][round_to_mod.indexOf(mod_game)] = new_game;
+							break;
+						}
+					}
+					await updateDoc(doc(db, 'events', event), {
+						rounds: JSON.stringify(parsed_data)
+					});
+					document.getElementById("modal-container").style.display = "none";
+					window.location.reload();
+				} else {
+					let new_game = {};
+					new_game[Object.keys(match)[0]] = document.getElementById(`${p1_name_text}-score`).value;
+					new_game[Object.keys(match)[1]] = document.getElementById(`${p2_name_text}-score`).value;
+					parsed_data.bracket.matches[round_name] = new_game;
+					await updateDoc(doc(db, 'events', event), {
+						rounds: JSON.stringify(parsed_data)
+					});
+					document.getElementById("modal-container").style.display = "none";
+					window.location.reload();
+				}
+			}
+
+			const not_in_match = document.createElement("span");
+			not_in_match.innerText = "You aren't in this match.";
+
+			if (p1_name_text == username || p2_name_text == username || admin)
+				return content_container;
+			else
+				return not_in_match;
+		}
+
+		function statsHelper(swiss_rounds) {
+			let records = {};
+			let match_total = {};
+			let seedings = [];
+			let omw = {};
+			let opps = {};
+			let num_games = {};
+			let gw = {};
+			for (const round_name in swiss_rounds) {
+				let round = swiss_rounds[round_name];
+				for (const match of round) {
+					for (const player in match) {
+						let score = Number(match[player]);
+						if (!records.hasOwnProperty(player)) {
+							records[player] = [0, 0];
+						}
+						if (!match_total.hasOwnProperty(player)) {
+							match_total[player] = [0, 0];
+						}
+						switch (score) {
+							case 2:
+								records[player][0] += 1;
+								break;
+							case 1:
+							case 0:
+								records[player][1] += 1;
+								break;
+						}
+						match_total[player][0] += (isNaN(score) ? 0 : score);
+						match_total[player][1] += (score != "-" && score < 2 ? 2 : 0);
+					}
+					let players = Object.keys(match);
+					let p1 = players[0];
+					let p2 = players[1];
+					if (!opps.hasOwnProperty(p1)) opps[p1] = [];
+					if (!opps.hasOwnProperty(p2)) opps[p2] = [];
+					opps[p1].push(p2);
+					opps[p2].push(p1);
+					num_games[p1] = num_games[p1] ? num_games[p1] + 1 : 1;
+					num_games[p2] = num_games[p2] ? num_games[p2] + 1 : 1;
+				}
+			}
+			for (const player in opps) {
+				gw[player] = records[player][0] / num_games[player];
+				for (const opp of opps[player]) {
+					if (!omw.hasOwnProperty(player)) omw[player] = [];
+					omw[player].push(records[opp][0] / num_games[opp]);
+				}
+			}
+			for (const player in omw) {
+				let total = 0;
+				let count = 0;
+				for (const wr of omw[player]) {
+					total += wr;
+					count++;
+				}
+				omw[player] = total / count;
+			}
+			return { records: records, match_total: match_total, opps: opps, omw: omw, num_games: num_games, gw: gw };
+		}
+
+		async function topCutHelper(rounds) {
+			let swiss_rounds = rounds.swiss;
+			let stats = statsHelper(swiss_rounds);
+			let players = [];
+			let matches = [];
+			let seedings = [];
+			let structure = "";
+			for (const player in stats.records) {
+				let record = stats.records[player];
+				let total = stats.match_total[player];
+				if (record[0] >= (event_data.num_rounds - 1)) {
+					console.log("in top cut", player);
+					players.push(player);
+				}
+				seedings.push({ player: player, record: record, match_total: total });
+			}
+
+			matches = rounds.bracket.matches;
+			seedings.sort(seeder);
+			return { players: players, matches: rounds.bracket.matches, seedings: seedings, stats: stats, structure: rounds.bracket.structure };
+		}
+
+		function seeder(a, b) {
+			if (a.record[0] > b.record[0]) {
+				return -1;
+			}
+			if (a.record[0] < b.record[0]) {
+				return 1;
+			}
+			if (a.record[1] > b.record[1]) {
+				return 1;
+			}
+			if (a.record[1] < b.record[1]) {
+				return -1;
+			}
+			if (a.match_total[0] > b.match_total[0]) {
+				return -1;
+			}
+			if (a.match_total[0] < b.match_total[0]) {
+				return 1;
+			}
+			if (a.match_total[1] > b.match_total[1]) {
+				return -1;
+			}
+			if (a.match_total[1] < b.match_total[1]) {
+				return 1;
+			}
+			if (a.omw > b.omw) {
+				return -1;
+			}
+			if (a.omw < b.omw) {
+				return 1;
+			}
+			return 0;
+		}
+
+		function parseStructure(structure) {
+			let splt;
+			if (structure.includes(":")) {
+				splt = structure.split(":");
+			} else {
+				splt = ["", structure]
+			}
+			let splt2 = splt[1].split(";");
+			for (let s of splt2) {
+				splt2[splt2.indexOf(s)] = s.split('');
+			}
+			let raw_structure = [splt[0].split(''), splt2];
+			let layer = 0;
+			let structure_info = { size: 0, structures: {} }
+			for (const bracket_struct of splt2) {
+				for (const game of bracket_struct) {
+					structure_info.structures[game] = layer;
+				}
+				if (layer == 0) structure_info.size = bracket_struct.length;
+				layer++;
+			}
+			return { raw: raw_structure, info: structure_info };
+		}
+
+		async function pushGP() {
+			if (event_data.ended) {
+				alert("GP has been ended, cannot push round");
+				return;
+			}
+
+			let rounds = JSON.parse(event_data.rounds);
+			if (event_data.stage == "swiss" && event_data.num_rounds != Object.keys(rounds.swiss).length) {
+				// if were in swiss and this isn't the last round
+				let stats = statsHelper(rounds.swiss);
+				let seedings = [];
+				let opps = {};
+				for (const round_name in rounds.swiss) {
+					const round = rounds.swiss[round_name];
+					for (const game of round) {
+						let players = Object.keys(game);
+						let p1 = players[0];
+						let p2 = players[1];
+						if (!opps.hasOwnProperty(p1)) opps[p1] = [p1];
+						if (!opps.hasOwnProperty(p2)) opps[p2] = [p2];
+						opps[p1].push(p2);
+						opps[p2].push(p1);
+					}
+				}
+				for (const player in stats.records) {
+					if (event_data.dropped.includes(player)) continue;
+					let record = stats.records[player];
+					let total = stats.match_total[player];
+					seedings.push({ player: player, record: record, match_total: total, opps: opps });
+				}
+				seedings.sort(seeder);
+				let games = [];
+				let in_games = [];
+				for (const p1 of seedings) {
+					let seedings_2 = [...seedings];
+					Array.prototype.swiss_sort = function (p) {
+						function compare(a, b) {
+							if (p.opps[p.player].includes(a.player) && !p.opps[p.player].includes(b.player)) {
+								return -1;
+							}
+							if (!p.opps[p.player].includes(a.player) && p.opps[p.player].includes(b.player)) {
+								return 1;
+							}
+							if (Math.abs(p.record[0] - a.record[0]) > Math.abs(p.record[0] - b.record[0])) {
+								return 1;
+							}
+							if (Math.abs(p.record[0] - a.record[0]) < Math.abs(p.record[0] - b.record[0])) {
+								return -1;
+							}
+							if (Math.abs(p.record[1] - a.record[1]) > Math.abs(p.record[1] - b.record[1])) {
+								return 1;
+							}
+							if (Math.abs(p.record[1] - a.record[1]) < Math.abs(p.record[1] - b.record[1])) {
+								return -1;
+							}
+							if (Math.abs(p.match_total[0] - a.match_total[0]) > Math.abs(p.match_total[0] - b.match_total[0])) {
+								return 1;
+							}
+							if (Math.abs(p.match_total[0] - a.match_total[0]) < Math.abs(p.match_total[0] - b.match_total[0])) {
+								return -1;
+							}
+							if (Math.abs(p.match_total[1] - a.match_total[1]) > Math.abs(p.match_total[1] - b.match_total[1])) {
+								return 1;
+							}
+							if (Math.abs(p.match_total[1] - a.match_total[1]) < Math.abs(p.match_total[1] - b.match_total[1])) {
+								return -1;
+							}
+							if (Math.abs(p.omw - a.omw) > Math.abs(p.omw - b.omw)) {
+								return 1;
+							}
+							if (Math.abs(p.omw - a.omw) < Math.abs(p.omw - b.omw)) {
+								return -1;
+							}
+							return 0;
+						}
+						this.sort(compare);
+					}
+					seedings_2.swiss_sort(p1);
+					for (const p2 of seedings_2) {
+						if (!opps[p1.player].includes(p2.player) && !in_games.includes(p1.player) && !in_games.includes(p2.player)) {
+							let new_game = {};
+							new_game[p1.player] = '-';
+							new_game[p2.player] = '-';
+							opps[p1.player].push(p2.player);
+							opps[p2.player].push(p1.player);
+							in_games.push(p1.player);
+							in_games.push(p2.player);
+							games.push(new_game);
+							break;
+						}
+					}
+					if (!in_games.includes(p1.player)) {
+						let new_game = {};
+						new_game[p1.player] = '-';
+						new_game["Bye"] = '-';
+						in_games.push(p1.player);
+						games.push(new_game);
+					}
+				}
+				rounds.swiss[`Round ${Object.keys(rounds.swiss).length + 1}`] = games;
+				let discord_msg = `Round ${Object.keys(rounds.swiss).length + 1} of ${event}. You have until <t:${Math.floor(Date.now() / 1000) + 259200}:f> to complete your matches. Contact @_hervor_ for extensions.`;
+				for (const game of games) {
+					discord_msg += `\n@${Object.keys(game)[0]} vs @${Object.keys(game)[1]}`;
+				}
+				discord_msg += ``;
+				navigator.clipboard.writeText(discord_msg);
+				await updateDoc(doc(db, 'events', event), {
+					rounds: JSON.stringify(rounds)
+				});
+				reload();
+			}
+			else if (event_data.stage == "swiss") {
+				// first top cut round
+				let stats = statsHelper(rounds.swiss);
+				let players = [];
+				let matches = [];
+				let seedings = [];
+				let structure = "";
+				for (const player in stats.records) {
+					let record = stats.records[player];
+					let total = stats.match_total[player];
+					if (record[0] >= (event_data.num_rounds - 1) && player != "Bye" && !event_data.dropped.includes(player)) {
+						console.log("added to top cut", player, stats.records[player]);
+						players.push(player);
+					}
+					seedings.push({ player: player, record: record, match_total: total });
+				}
+				const struct_obj = getStructure(players.length);
+				structure = struct_obj.structure;
+				matches = struct_obj.matches;
+				seedings.sort(seeder);
+				rounds.bracket.structure = structure;
+				rounds.bracket.matches = matches;
+				await updateDoc(doc(db, 'events', event), {
+					rounds: JSON.stringify(rounds),
+					stage: "bracket"
+				});
+				reload();
+			}
+			else if (event_data.stage == "initial") {
+				let games = [];
+				let in_games = [];
+				const decks = JSON.parse(event_data.decks);
+				let i = 0;
+				for (const player in decks) {
+					if (!in_games.includes(player)) {
+						let game = {};
+						game[player] = "-";
+						game[Object.keys(decks)[i + 1]] = "-";
+						in_games.push(player);
+						in_games.push(Object.keys(decks)[i + 1]);
+						games.push(game);
+					}
+					i++;
+				}
+				rounds.swiss["Round 1"] = games;
+				await updateDoc(doc(db, 'events', event), {
+					rounds: JSON.stringify(rounds),
+					num_rounds: numRounds(in_games.length),
+					stage: "swiss"
+				});
+				reload();
+			}
+			else {
+				alert("There's no need to push rounds in top cut, you just need to paste the discord message copied to your clipboard");
+			}
+		}
+
+		function getStructure(length) {
+			let structure;
+			let matches;
+			switch (length) {
+				case 1:
+					structure = "a";
+					matches = {
+						"a": { "0": "2", "Bye": "0" }
+					}
+					break;
+				case 2:
+					structure = "a";
+					matches = {
+						"a": { "0": "-", "1": "-" }
+					}
+					break;
+				case 3:
+					structure = "a;b";
+					matches = {
+						"a": { "1": "-", "2": "-" },
+						"b": { "a": "-", "0": "-" }
+					}
+					break;
+				case 4:
+					structure = "ab;c";
+					matches = {
+						"a": { "0": "-", "3": "-" },
+						"b": { "1": "-", "2": "-" },
+						"c": { "a": "-", "b": "-" }
+					}
+					break;
+				case 5:
+					structure = "a:bc;d";
+					matches = {
+						"a": { "3": "-", "4": "-" },
+						"b": { "0": "-", "a": "-" },
+						"c": { "1": "-", "2": "-" },
+						"d": { "b": "-", "c": "-" }
+					}
+					break;
+				case 6:
+					structure = "ab:cd;e";
+					matches = {
+						"a": { "2": "-", "5": "-" },
+						"b": { "3": "-", "4": "-" },
+						"c": { "0": "-", "a": "-" },
+						"d": { "1": "-", "b": "-" },
+						"e": { "c": "-", "d": "-" }
+					}
+					break;
+				case 7:
+					structure = "abcd;ef;g";
+					matches = {
+						"a": { "0": "2", "Bye": "0" },
+						"b": { "1": "-", "6": "-" },
+						"c": { "2": "-", "5": "-" },
+						"d": { "3": "-", "4": "-" },
+						"e": { "a": "-", "b": "-" },
+						"f": { "c": "-", "d": "-" },
+						"g": { "e": "-", "d": "f" }
+					}
+					break;
+				case 8:
+					structure = "abcd;ef;g";
+					matches = {
+						"a": { "0": "-", "7": "-" },
+						"b": { "1": "-", "6": "-" },
+						"c": { "2": "-", "5": "-" },
+						"d": { "3": "-", "4": "-" },
+						"e": { "a": "-", "b": "-" },
+						"f": { "c": "-", "d": "-" },
+						"g": { "e": "-", "f": "-" }
+					}
+					break;
+				case 9:
+					structure = "a:bcde;fg;h";
+					matches = {
+						"a": { "7": "-", "8": "-" },
+						"b": { "0": "-", "a": "-" },
+						"c": { "1": "-", "6": "-" },
+						"d": { "2": "-", "5": "-" },
+						"e": { "3": "-", "4": "-" },
+						"f": { "b": "-", "c": "-" },
+						"g": { "d": "-", "e": "-" },
+						"h": { "f": "-", "g": "-" }
+					}
+					break;
+				case 10:
+					structure = "ab:cdef;gh;i";
+					matches = {
+						"a": { "8": "-", "9": "-" },
+						"b": { "6": "-", "7": "-" },
+						"c": { "0": "-", "a": "-" },
+						"d": { "1": "-", "b": "-" },
+						"e": { "2": "-", "5": "-" },
+						"f": { "3": "-", "4": "-" },
+						"g": { "c": "-", "d": "-" },
+						"h": { "e": "-", "f": "-" },
+						"i": { "g": "-", "h": "-" }
+					}
+					break;
+				case 11:
+					structure = "abc:defg;hi;j";
+					matches = {
+						"a": { "9": "-", "10": "-" },
+						"b": { "7": "-", "8": "-" },
+						"c": { "5": "-", "6": "-" },
+						"d": { "0": "-", "a": "-" },
+						"e": { "1": "-", "b": "-" },
+						"f": { "2": "-", "c": "-" },
+						"g": { "3": "-", "4": "-" },
+						"h": { "d": "-", "e": "-" },
+						"i": { "f": "-", "g": "-" },
+						"j": { "h": "-", "i": "-" }
+					}
+					break;
+			}
+			return { structure: structure, matches: matches };
+		}
+
+		async function newGP() {
+			const event_name = window.prompt("GP Name?");
+			await setDoc(doc(db, 'events', event_name), {
+				decks: "[]",
+				rounds: '{"swiss":{},"bracket":{}}',
+				num_rounds: 0,
+				stage: "initial",
+				name: event_name,
+				winner: "TBD",
+				dropped: []
+			});
+		}
+
+		async function dropGP(event_data) {
+			await updateDoc(doc(db, 'events', event), {
+				dropped: [...event_data.dropped, username]
+			});
+			alert("Dropped " + username + ". Ping aanginer to be re-added.");
+		}
+
+		async function joinGP(event_data) {
+			document.getElementById("modal-content").innerHTML = '<span class="close" onclick="closeModal()">&times;</span>';
+			document.getElementById("modal-container").style.display = "block";
+
+			const content_container = document.createElement("div");
+			content_container.className = "deck-select-container";
+
+			for (const deck of decks) {
+				const deck_ele = gridifyDeck(deck);
+				deck_ele.onclick = () => {
+					const new_decks = JSON.parse(event_data.decks);
+					new_decks[username] = deck;
+					updateDoc(doc(db, "events", event), {
+						decks: JSON.stringify(new_decks)
+					});
+					alert("Deck Submitted!");
+					document.getElementById("modal-container").style.display = "none";
+				}
+				content_container.appendChild(deck_ele);
+			}
+
+			document.getElementById("modal-content").appendChild(content_container);
+		}
+
+		function gridifyDeck(deck) {
+			const container = document.createElement("div");
+			container.className = "deck-container";
+			const preview_img = document.createElement("img");
+			let card_stats;
+			for (const card of card_list_arrayified) {
+				if (deck.previewimg == card.card_name) {
+					card_stats = card;
+					break;
+				}
+			}
+			preview_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+			preview_img.className = "deck-preview-img";
+			// preview_img.onclick = function() {
+			//     window.location.href = `/deckbuilder?deck=${deck.user}-${deck.name}`
+			// }
+			const deck_name = document.createElement("div");
+			deck_name.className = "deck-name";
+			deck_name.innerText = deck.name;
+
+			container.appendChild(deck_name);
+			container.appendChild(preview_img);
+			return container;
+		}
+
+		function numRounds(n) {
+			if (n < 15) {
+				return 3;
+			}
+			if (n < 32) {
+				return 4;
+			}
+			if (n < 64) {
+				return 5;
+			}
+			return 6;
+		}
+
+		function endGP() {
+			updateDoc(doc(db, 'events', event), {
+				ended: true
+			});
+		}
+
+		reload();
+	</script>
+</body>
 
-            function changeTab(tab_name) {
-                document.getElementById(tab_name).style.display = "grid";
-                document.getElementById(tab_name + "-tab-select").className = "tab-btn tab-btn-active"
-                for (const child of document.getElementById("main-tab").children) {
-                    if (child.id != tab_name && child.id != "ended-text") {
-                        child.style.display = "none";
-                    }
-                }
-                for (const child of document.getElementById("tab-select").children) {
-                    if (child.id != tab_name + "-tab-select") {
-                        child.className = "tab-btn";
-                    }
-                }
-            }
-        </script>
-        <script type="module">
-            // <!--MARK: init-->
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-            import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-            // https://firebase.google.com/docs/web/setup#available-libraries
-            
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-                apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-                authDomain: "voyager-78e30.firebaseapp.com",
-                projectId: "voyager-78e30",
-                storageBucket: "voyager-78e30.firebasestorage.app",
-                messagingSenderId: "411191248476",
-                appId: "1:411191248476:web:591349be169d823e5f8899",
-                measurementId: "G-TQ1L48F25M"
-            };
-
-            
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
-            let username = "";
-            let password = "";
-            let sessionid = localStorage.getItem('settings.session');
-            let decks = {};
-            let admin = false;
-            const urlParams = new URLSearchParams(window.location.search);
-            const event = urlParams.get('event');
-            let card_list;
-            let event_data;
-
-            await fetch('/lists/all-cards.json')
-                .then(response => response.json())
-                .then(json => {
-                    card_list = json;
-            }).catch(error => console.error('Error:', error));
-
-            let card_list_arrayified = card_list.cards;
-
-            await getDoc(doc(db, 'events', event)).then(async docSnap => {
-                // initialize
-                event_data = docSnap.data();
-            });
-
-            if (sessionid) {
-                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-                    let data = docSnap.data();
-                    username = data.username;
-                    password = data.password;
-                });
-
-                await getDoc(doc(db, 'users', username)).then(docSnap => {
-                    let data = docSnap.data();
-                    decks = JSON.parse(data.decks);
-                    admin = data.admin;
-                });
-            }
-
-            // #endregion
-            document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-
-            function addAdminEventListeners() {
-                document.getElementById('push-gp').addEventListener("click", (e) => {
-                    pushGP();
-                });
-                document.getElementById('new-gp').addEventListener("click", (e) => {
-                    newGP();
-                });
-                document.getElementById('end-gp').addEventListener("click", (e) => {
-                    endGP();
-                });
-                document.getElementById('admin').style.display = "block";
-            }
-
-            function addButtonEventListeners() {
-                document.getElementById("drop").addEventListener("click", (e) => {
-                    dropGP(event_data);
-                });
-                document.getElementById("join").addEventListener("click", (e) => {
-                    joinGP(event_data);
-                });
-            }
-
-            async function makeRoundsTab() {
-                const rounds = JSON.parse(event_data.rounds);
-                const decks = JSON.parse(event_data.decks);
-                document.getElementById("decklists").innerHTML = "";
-                document.getElementById("games").innerHTML = "";
-                let swiss_container = document.createElement("div");
-                swiss_container.className = "swiss-container";
-                for (const round_name in rounds["swiss"]) {
-                    let round_header = document.createElement("span");
-                    let round_container = document.createElement("div");
-                    round_header.innerText = round_name;
-                    round_header.className = "round-headers text";
-                    round_container.className = "round-container";
-                    let round = rounds['swiss'][round_name];
-                    for (const game of round) {
-                        const game_container = makeGameContainer(game, round_name);
-                        round_container.appendChild(game_container);
-                    }
-                    swiss_container.appendChild(round_header);
-                    swiss_container.appendChild(round_container);
-                }
-
-                document.getElementById('games').appendChild(swiss_container);
-
-                if (event_data.stage == 'bracket') {
-                    makeBracket(rounds);
-                }
-            }
-
-            function makeGameContainer(game, round_name) {
-                const rounds = JSON.parse(event_data.rounds);
-                const decks = JSON.parse(event_data.decks);
-                const round = rounds[round_name];
-                let game_container = document.createElement("div");
-                game_container.className = "game-container";
-                let game_grid = document.createElement("div");
-                game_grid.className = "game-grid";
-                let side = "top";
-                for (const player in game) {
-                    let player_name = document.createElement("div");
-                    let player_score = document.createElement("div");
-                    let deck = decks[player];
-                    player_name.className = `player-text player-text-${side}`;
-                    player_name.innerText = player;
-                    player_name.onclick = function() {
-                        document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                        let deck_header = document.createElement("span");
-                        deck_header.className = "deck-window-header";
-                        deck_header.innerText = player + "'s " + deck.name;
-                        document.getElementById("modal-content").appendChild(deck_header);
-                        document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
-                        document.getElementById("modal-container").style.display = 'block';
-                    }
-                    let gameClass = "";
-                    if (game[player] == "2") gameClass = "winner";
-                    if (game[player] == "0") gameClass = "loser";
-                    if (game[player] == "1") gameClass = "loser";
-                    player_score.className = `player-score ${gameClass} player-score-${side}`;
-                    player_score.innerText = game[player];
-                    player_score.onclick = function() {
-                        document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                        document.getElementById("modal-content").appendChild(reportHTML(game, round, round_name, event_data, event, decks));
-                        document.getElementById("modal-container").style.display = 'block';
-                    }
-                    game_grid.appendChild(player_name);
-                    game_grid.appendChild(player_score);
-                    if (side == "top") {
-                        side = "bottom";
-                    }
-                }
-                let bar = document.createElement("div");
-                bar.className = "bar";
-                game_container.appendChild(bar);
-                game_container.appendChild(game_grid);
-
-                return game_container;
-            }
-
-            async function makeBracket(rounds) {
-                const decks = JSON.parse(event_data.decks);
-                const bracket_container = document.createElement("div");
-                bracket_container.className = "bracket-container";
-                const bracket_header = document.createElement('span');
-                bracket_header.className = "round-headers text";
-                bracket_header.innerText = "Top Cut Bracket";
-                document.getElementById("games").appendChild(bracket_header);
-                let topcut = await topCutHelper(rounds); // {players, matches, seedings, stats}
-                let matches = topcut.matches;
-                let structure = parseStructure(topcut.structure);
-                const layer = structure.raw[0];
-                const layer_container = document.createElement("div");
-                layer_container.className = 'layer-container';
-                layer_container.style.gridTemplateRows = `repeat(${structure.info.size}, 1fr)`;
-                for (const match_name of layer) {
-                    const match = matches[match_name];
-                    console.log("layer1", match);
-                    let side = "top";
-                    const game_grid = document.createElement("div");
-                    game_grid.className = "game-grid";
-                    game_grid.style.height = "fit-content";
-                    for (const player_id in match) {
-                        let player;
-                        if (player_id != "Bye") player = topcut.seedings[player_id];
-                        else player = "Bye";
-                        if (player == undefined) {
-                            let p_match = matches[player_id];
-                            for (const p in p_match) {
-                                if (p_match[p] == "2") {
-                                    player = topcut.seedings[p].player;
-                                    break;
-                                }
-                            }
-                        } else {
-                            player = player.player;
-                        }
-                        if (player == undefined) {
-                            player = "TBD";
-                        } 
-                        const player_name = document.createElement('div');
-                        player_name.className = `player-text player-text-${side}`;
-                        player_name.onclick = function() {
-                            let deck = decks[player];
-                            document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                            let deck_header = document.createElement("span");
-                            deck_header.className = "deck-window-header";
-                            deck_header.innerText = player + "'s " + deck.name;
-                            document.getElementById("modal-content").appendChild(deck_header);
-                            document.getElementById("modal-content").appendChild(deckHTML(deck  , card_list));
-                            document.getElementById("modal-container").style.display = 'block';
-                        }
-                        const player_score = document.createElement('div');
-                        let gameClass = "";
-                        if (match[player_id] == "2") gameClass = "winner";
-                        if (match[player_id] == "0") gameClass = "loser";
-                        if (match[player_id] == "1") gameClass = "loser";
-                        player_score.className = `player-score player-score-${side} ${gameClass}`;
-                        player_name.innerText = player;
-                        player_score.innerText = match[player_id];
-                        let game = {};
-                        for (const player_id in match) {
-                            let player2;
-                            if (player_id != "Bye") player2 = topcut.seedings[player_id];
-                            else player2 = {player: "Bye"};
-                            if (player2 == undefined) {
-                                let p_match = matches[player_id];
-                                for (const p in p_match) {
-                                    if (p_match[p] == "2") {
-                                        player2 = topcut.seedings[p].player;
-                                        break;
-                                    }
-                                }
-                            } else {
-                                player2 = player2.player;
-                            }
-                            if (player2 == undefined) {
-                                player2 = "TBD";
-                            } 
-                            game[player2] = match[player_id];
-                        }
-                        player_score.onclick = function() {
-                            document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                            document.getElementById("modal-content").appendChild(reportHTML(game, match_name, match_name, event_data, event, decks, false, match));
-                            document.getElementById("modal-container").style.display = 'block';
-                        }
-                        game_grid.appendChild(player_name);
-                        game_grid.appendChild(player_score);
-                        if (side == "top") {
-                            side = "bottom";
-                        }
-                    }
-                    layer_container.appendChild(game_grid);
-                }
-                if (layer.length != 0) bracket_container.appendChild(layer_container);
-
-                for (const layer of structure.raw[1]) {
-                    const layer_container = document.createElement("div");
-                    layer_container.className = 'layer-container';
-                    layer_container.style.gridTemplateRows = `repeat(${structure.info.size}, 1fr)`;
-                    for (const match_name of layer) {
-                        const match = matches[match_name];
-                        let side = "top";
-                        const game_grid = document.createElement("div");
-                        game_grid.className = "game-grid";
-                        game_grid.style.gridRow = "span " + structure.info.size / layer.length;
-                        game_grid.style.height = "fit-content";
-                        for (const player_id in match) {
-                            let player;
-                            if (player_id != "Bye") player = topcut.seedings[player_id];
-                            else player = {player: "Bye"};
-                            if (player == undefined) {
-                                let p_match = matches[player_id];
-                                for (const p in p_match) {
-                                    if (p_match[p] == "2") {
-                                        player = topcut.seedings[p].player;
-                                        break;
-                                    }
-                                }
-                            } else {
-                                player = player.player;
-                            }
-                            if (player == undefined) {
-                                player = "TBD";
-                            } 
-                            const player_name = document.createElement('div');
-                            player_name.className = `player-text player-text-${side}`;
-                            player_name.onclick = function() {
-                                let deck = decks[player];
-                                document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                                let deck_header = document.createElement("span");
-                                deck_header.className = "deck-window-header";
-                                deck_header.innerText = player + "'s " + deck.name;
-                                document.getElementById("modal-content").appendChild(deck_header);
-                                document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
-                                document.getElementById("modal-container").style.display = 'block';
-                            }
-                            const player_score = document.createElement('div');
-                            let gameClass = "";
-                            if (match[player_id] == "2") gameClass = "winner";
-                            if (match[player_id] == "0") gameClass = "loser";
-                            if (match[player_id] == "1") gameClass = "loser";
-                            player_score.className = `player-score player-score-${side} ${gameClass}`;
-                            player_name.innerText = player;
-                            player_score.innerText = match[player_id];
-                            let game = {};
-                            for (const player_id in match) {
-                                let player2;
-                                if (player_id != "Bye") player2 = topcut.seedings[player_id];
-                                else player2 = {player: "Bye"};
-                                if (player2 == undefined) {
-                                    let p_match = matches[player_id];
-                                    for (const p in p_match) {
-                                        if (p_match[p] == "2") {
-                                            player2 = topcut.seedings[p].player;
-                                            break;
-                                        }
-                                    }
-                                } else {
-                                    player2 = player2.player;
-                                }
-                                if (player2 == undefined) {
-                                    player2 = "TBD";
-                                } 
-                                game[player2] = match[player_id];
-                            }
-
-                            if (Object.keys(game).length == 2) {
-                                player_score.onclick = function() {
-                                    document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                                    document.getElementById("modal-content").appendChild(reportHTML(game, match_name, match_name, event_data, event, decks, false, match));
-                                    document.getElementById("modal-container").style.display = 'block';
-                                }
-                            }
-                            game_grid.appendChild(player_name);
-                            game_grid.appendChild(player_score);
-                            if (side == "top") {
-                                side = "bottom";
-                            }
-                        }
-                        layer_container.appendChild(game_grid);
-                    }
-                    bracket_container.appendChild(layer_container);
-                }
-
-                document.getElementById("games").appendChild(bracket_container);
-            }
-
-            async function makeDecksTab() {
-                const decks = JSON.parse(event_data.decks);
-                for (const user in decks) {
-                    let deck = decks[user];
-                    let full_deck_container = document.createElement('div');
-                    full_deck_container.className = "full-deck-container";
-                    let deck_container = document.createElement('div');
-                    deck_container.className = "deck-container";
-                    let colors_container = document.createElement('div');
-                    colors_container.className = "colors-container";
-                    let deck_preview = document.createElement('img');
-                    let card_stats;
-                    for (const card of card_list_arrayified) {
-                        if (deck.previewimg == card.card_name) {
-                            card_stats = card;
-                            break;
-                        }
-                    }
-                    deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
-                    deck_preview.onclick = function() {
-                        document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                        let deck_header = document.createElement("span");
-                        deck_header.className = "deck-window-header";
-                        deck_header.innerText = user + "'s " + deck.name;
-                        document.getElementById("modal-content").appendChild(deck_header);
-                        document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
-                        document.getElementById("modal-container").style.display = 'block';
-                    }
-                    deck_preview.className = "deck-preview-img";
-                    let deck_name = document.createElement('div');
-                    deck_name.className = "deck-name";
-                    deck_name.innerText = user + "'s " + deck.name;
-                    let deck_btns = document.createElement('div');
-                    deck_btns.className = "deck-buttons";
-                    let deck_link = document.createElement('a');
-                    deck_link.href = `/deckbuilder?edeck=${event}-${user}`;
-                    deck_link.innerText = "Deckbuilder";
-                    deck_link.className = "deck-link-green deck-icon-shadow";
-                    deck_link.target = "_blank";
-                    let deck_edit_icon = document.createElement('img');
-                    deck_edit_icon.src = "/img/edit.png";
-                    deck_edit_icon.className = "deck-icon-green";
-                    deck_link.appendChild(deck_edit_icon);
-                    let deck_link2 = document.createElement('span');
-                    deck_link2.innerText = "View";
-                    deck_link2.className = "deck-link-blue deck-icon-shadow";
-                    let deck_edit_icon2 = document.createElement('img');
-                    deck_edit_icon2.src = "/img/show-white.png";
-                    deck_edit_icon2.className = "deck-icon-blue";
-                    deck_link2.onclick = function() {
-                        document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                        let deck_header = document.createElement("span");
-                        deck_header.className = "deck-window-header";
-                        deck_header.innerText = user + "'s " + deck.name;
-                        document.getElementById("modal-content").appendChild(deck_header);
-                        document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
-                        document.getElementById("modal-container").style.display = 'block';
-                    }
-                    deck_link2.appendChild(deck_edit_icon2);
-                    if (deck.colors) {
-                        for (const color of deck.colors) {
-                            let color_ele = document.createElement('img');
-                            color_ele.src = `img/mana/mana_${color}.png`;
-                            color_ele.className = "mana-img";
-                            colors_container.appendChild(color_ele);
-                        }
-                    }
-                    deck_btns.appendChild(deck_link);
-                    deck_btns.appendChild(deck_link2);
-                    deck_container.appendChild(deck_name);
-                    deck_container.appendChild(deck_preview);
-                    deck_container.appendChild(deck_btns);
-                    full_deck_container.appendChild(deck_container);
-                    if(deck.colors) full_deck_container.appendChild(colors_container);
-                    if (deck.colors){
-                        document.getElementById("decklists").appendChild(full_deck_container);
-                    } else {
-                        document.getElementById("decklists").appendChild(deck_container);
-                    }
-                }
-            }
-
-            async function makeStatsTab() {
-                const decks = JSON.parse(event_data.decks);
-                const rounds = JSON.parse(event_data.rounds);
-                const stats_tab = document.getElementById("stats");
-                stats_tab.innerHTML = "";
-                const stats = statsHelper(rounds.swiss);
-
-                const row_container = document.createElement("div");
-                row_container.className = "stats-row-container";
-                const rank_container = document.createElement("div");
-                rank_container.className = "stats-rank-container stats-row-item stats-row-header";
-                rank_container.innerText = "Rank";
-                const name_container = document.createElement("div");
-                name_container.className = "stats-name-container stats-row-item stats-row-header";
-                name_container.innerText = "Player";
-                const record_container = document.createElement("div");
-                record_container.className = "stats-record-container stats-row-item stats-row-header";
-                record_container.innerText = `Record`;
-                const match_total_container = document.createElement("div");
-                match_total_container.className = "stats-match-total-container stats-row-item stats-row-header";
-                match_total_container.innerText = `Game Record`;
-                const omw_container = document.createElement("div");
-                omw_container.className = "stats-omw-container stats-row-item stats-row-header";
-                omw_container.innerText = "OM%";
-                const gw_container = document.createElement("div");
-                gw_container.className = "stats-gw-container stats-row-item stats-row-header";
-                gw_container.innerText = "GW%";
-
-                row_container.appendChild(rank_container);
-                row_container.appendChild(name_container);
-                row_container.appendChild(record_container);
-                row_container.appendChild(match_total_container);
-                row_container.appendChild(omw_container);
-                row_container.appendChild(gw_container);
-
-                stats_tab.appendChild(row_container);
-
-                let seedings = [];
-
-                for (const player in stats.records) {
-                    let record = stats.records[player];
-                    let total = stats.match_total[player];
-                    seedings.push({player: player, record: record, match_total: total, omw: stats.omw[player], gw: stats.gw[player]});
-                }
-
-                seedings.sort(seeder);
-
-                let i = 1;
-
-                for (const player_stats of seedings) {
-                    const player = player_stats.player;
-
-                    if (player == "Bye")
-                        continue;
-
-                    const record      = player_stats.record;
-                    const match_total = player_stats.match_total;
-                    const omw         = player_stats.omw;
-                    const gw          = player_stats.gw;
-
-                    const row_container = document.createElement("div");
-                    row_container.className = "stats-row-container";
-
-                    const rank_container = document.createElement("div");
-                    rank_container.className = "stats-rank-container stats-row-item";
-                    rank_container.innerText = i;
-
-                    const name_container = document.createElement("div");
-                    name_container.className = "stats-name-container stats-row-item";
-                    if (event_data.dropped.includes(player)) 
-                        name_container.className += " dropped";
-                    name_container.innerText = player;
-                    let deck = decks[player];
-
-                    name_container.onclick = function() {
-                        document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                        let deck_header = document.createElement("span");
-                        deck_header.className = "deck-window-header";
-                        deck_header.innerText = player + "'s " + deck.name;
-                        document.getElementById("modal-content").appendChild(deck_header);
-                        document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
-                        document.getElementById("modal-container").style.display = 'block';
-                    }
-
-                    const record_container = document.createElement("div");
-                    record_container.className = "stats-record-container stats-row-item";
-                    record_container.innerText = `${record[0]}-${record[1]}`;
-
-                    const match_total_container = document.createElement("div");
-                    match_total_container.className = "stats-match-total-container stats-row-item";
-                    match_total_container.innerText = `${match_total[0]}-${match_total[1]}`;
-
-                    const omw_container = document.createElement("div");
-                    omw_container.className = "stats-omw-container stats-row-item";
-                    omw_container.innerText = (omw * 100).toFixed(2) + "%";
-                    omw_container.setAttribute("title", "Opponent match percentage");
-
-                    const gw_container = document.createElement("div");
-                    gw_container.className = "stats-gw-container stats-row-item";
-                    gw_container.innerText = (gw * 100).toFixed(2) + "%";
-                    gw_container.setAttribute("title", "Game win percentage");
-
-                    row_container.appendChild(rank_container);
-                    row_container.appendChild(name_container);
-                    row_container.appendChild(record_container);
-                    row_container.appendChild(match_total_container);
-                    row_container.appendChild(omw_container);
-                    row_container.appendChild(gw_container);
-
-                    stats_tab.appendChild(row_container);
-                    i++;
-                }
-            }
-
-            async function reload() {
-                const decks = JSON.parse(event_data.decks);
-                const rounds = JSON.parse(event_data.rounds);
-
-                // ended text and join button
-                if (event_data.ended)
-                    document.getElementById("ended-text").style.display = "inline-block";
-                if (event_data.stage == "initial")
-                    document.getElementById("join").style.display = "inline"
-
-                document.title = event;
-
-                // button listeners
-                if (admin) {
-                    addAdminEventListeners();
-                }
-                addButtonEventListeners();
-
-                makeRoundsTab();
-
-                if (event_data.stage != "initial") {
-                    makeDecksTab();
-                    makeStatsTab();
-                } else {
-                    const initial_text = document.createElement("span");
-                    initial_text.className = "initial-text text";
-                    initial_text.innerText = `Deck submissions are open for ${event}`;
-                    document.getElementById("decklists").appendChild(initial_text);
-                    
-                    const initial_text2 = document.createElement("span");
-                    initial_text2.className = "initial-text text";
-                    initial_text2.style.width = "100%";
-                    initial_text2.innerText = `Deck submissions are open for ${event}`;
-                    document.getElementById("games").appendChild(initial_text2);
-                }
-            }
-
-            function deckHTML(deck, card_list) {
-                let card_categories = {"creature": "", "planeswalker": "", "instant": "", "sorcery": "", "artifact": "", "enchantment": "", "land": "", "sideboard": "", "sanctum": ""};
-                const text = atob(deck.url.split(';')[1].split('&main')[0]);
-                let sideboard = [];
-                let sb_cards = false;
-                let sc_cards = false;
-                let count;
-                let card_name;
-                let card_list_arrayified = card_list.cards;
-
-                const lines = text.split('\n');
-
-                let deck_map = new Map();
-                let sb_map = new Map();
-                let sc_map = new Map();
-
-                for (const line of lines)
-                {	
-                    if (line == 'sideboard' || line == '') // '' for Draftmancer files
-                    {
-                        sb_cards = true;
-                    }
-                    else if (line == 'sanctum' || (sb_cards && line == '')) // '' for Draftmancer files
-                    {
-                        sc_cards = true;
-                        sb_cards = false;
-                    }
-                    else if (!sb_cards && !sc_cards)
-                    {
-                        // get the count and card name
-                        count = parseInt(line.substring(0, line.indexOf(' ')));
-                        card_name = line.substring(line.indexOf(' ') + 1);
-
-                        if (deck_map.has(card_name)) // if the deck has card name, add the new value, if it doesnt, set the value to stop keyerrors
-                        {
-                            deck_map.set(card_name, deck_map.get(card_name) + count);
-                        }
-                        else
-                        {
-                            deck_map.set(card_name, count);
-                        }
-                    }
-                    else if (sb_cards) // sideboard cards, do the same thing but with sb_map
-                    {
-                        count = parseInt(line.substring(0, line.indexOf(' ')));
-                        card_name = line.substring(line.indexOf(' ') + 1);
-
-                        if (sb_map.has(card_name))
-                        {
-                            sb_map.set(card_name, sb_map.get(card_name) + count);
-                        }
-                        else
-                        {
-                            sb_map.set(card_name, count);
-                        }
-                    } else if (sc_cards) // sanctum cards, do the same thing but with sc_map
-                    {
-                        count = parseInt(line.substring(0, line.indexOf(' ')));
-                        card_name = line.substring(line.indexOf(' ') + 1);
-
-                        if (sc_map.has(card_name))
-                        {
-                            sc_map.set(card_name, sc_map.get(card_name) + count);
-                        }
-                        else
-                        {
-                            sc_map.set(card_name, count);
-                        }
-                    }
-                }
-
-                // initialize card types (and sideboard)
-                let deck_cards = new Map([
-                    ['land', new Map([])],
-                    ['creature', new Map([])],
-                    ['instant', new Map([])],
-                    ['planeswalker', new Map([])],
-                    ['artifact', new Map([])],
-                    ['enchantment', new Map([])],
-                    ['sorcery', new Map([])],
-                    ['battle', new Map([])],
-                    ['sideboard', new Map([])],
-                    ['sanctum', new Map([])]
-                ]);
-
-                for (const [card, copies] of deck_map)
-                {
-                    let card_type;
-                    // loop through each card in deck_map and get the cardtype
-                    for (const card2 of card_list_arrayified) {
-                        if (card2.card_name == card) {
-                            card_type = card2.type.toLowerCase();
-                            break;
-                        }
-                    }
-                    
-                    for (const [key, map] of deck_cards)
-                    {
-                        if (card_type.includes(key))
-                        {
-                            map.set(card, copies)
-                            break;
-                        }
-                    }
-                }
-                for (const [card, copies] of sb_map) {
-                    for (const [key, map] of deck_cards)
-                    {
-                        if (key == 'sideboard')
-                        {
-                            map.set(card, copies)
-                            break;
-                        }
-                    }
-                }
-                for (const [card, copies] of sc_map) {
-                    for (const [key, map] of deck_cards)
-                    {
-                        if (key == 'sanctum')
-                        {
-                            map.set(card, copies)
-                            break;
-                        }
-                    }
-                }
-                let total_copies = {"creature": 0, "planeswalker": 0, "instant": 0, "sorcery": 0, "artifact": 0, "enchantment": 0, "land": 0, "sideboard": 0, "sanctum": 0};
-                for (const [k, map] of deck_cards) {
-                    for (const [card, num] of map) {
-                        card_categories[k] += `<span class="card-in-deck">${num}x ${card}</span><br>`;
-                        total_copies[k] += num;
-                    }
-                }
-                
-                let finalHTML = "";
-                let column1 = document.createElement('div');
-                let column2 = document.createElement('div');
-                column1.className = "card-column";
-                column2.className = "card-column";
-                for (const section_name in card_categories) {
-                    let section_html = card_categories[section_name];
-                    if (section_html == "") {
-                        continue;
-                    }
-                    let section_name_capitalized = section_name[0].toUpperCase() + section_name.substring(1, section_name.length);
-                    let card_column = column1;
-                    if (section_name == "land" || section_name == "sideboard" || section_name == "sanctum") {
-                        card_column = column2;
-                    }
-
-                    // card_column.innerHTML += `<div class="${section_name} card-type-section" id="${section_name}">
-                    //      <span class="${section_name}-header card-type-header" id="${section_name}-header">${section_name_capitalized} (${total_copies[section_name]})</span>
-                    // <br>
-                    // ${section_html}
-                    // </div><br>`;
-                    let section_container = document.createElement('div');
-                    let section_header = document.createElement('span');
-                    section_header.className = "card-type-header";
-                    section_header.innerText = section_name_capitalized + " (" + total_copies[section_name] + ")";
-                    let line_break = document.createElement('br');
-                    let line_break2 = document.createElement('br');
-                    let cards_container = document.createElement('div');
-                    cards_container.innerHTML = section_html;
-                    for (const card_ele of cards_container.childNodes) {
-                        card_ele.onmouseover = function() {
-                            let card_name = card_ele.innerText.substring(card_ele.innerText.indexOf(" ") + 1, card_ele.innerText.length);
-                            let card_stats;
-                            for (const card2 of card_list_arrayified) {
-                                if (card2.card_name == card_name) {
-                                    card_stats = card2;
-                                    break;
-                                }
-                            }
-                            let deck_preview_card = document.getElementById("deck-preview-card");
-                            deck_preview_card.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
-                            //https://voyager-mtg.github.io/card?set=EXPT&num=44&name=Fyndhorn+Betrayer
-                            deck_preview_card.onclick = function() {
-                                window.location.href = `/card?set=${card_stats.set}&num=${card_stats.number}&name=${card_name.replaceAll(" ", "+")}`;
-                            } 
-                        }
-                    }
-                    section_container.appendChild(section_header);
-                    section_container.appendChild(cards_container);
-                    section_container.appendChild(line_break);
-                    card_column.appendChild(section_container);
-                    // card_column.appendChild(line_break2);
-                }
-
-                let preview_card = document.createElement('img');
-                preview_card.src = "img/card_back.png";
-                preview_card.id = "deck-preview-card";
-                preview_card.className = "deck-preview-card";
-                
-                let decklist_container = document.createElement("div");
-                decklist_container.appendChild(column1);
-                decklist_container.appendChild(column2);
-                decklist_container.appendChild(preview_card);
-                decklist_container.className = "decklist-container";
-
-                return decklist_container;
-            }
-
-            function reportHTML(game, round, round_name, event_data, event, decks, swiss = true, match = null) {
-                if (event_data.ended) 
-                    return;
-
-                const content_container = document.createElement("div");
-                const player_names      = document.createElement("div");
-                const scores            = document.createElement("div");
-                const submit_btn        = document.createElement("button");
-                const p1_name           = document.createElement("span");
-                const p2_name           = document.createElement("span");
-                const p1_score          = document.createElement("input");
-                const p2_score          = document.createElement("input");
-                const divider           = document.createElement("div");
-                const spacer            = document.createElement("div");
-
-                content_container.className = "scores-modal-container";
-                player_names.className      = "player-names-container";
-                scores.className            = "scores-container";
-                submit_btn.className        = "scores-submit-btn";
-                p1_name.className           = "report-window-player-name";
-                p2_name.className           = "report-window-player-name";
-                p1_score.className          = "report-score-input";
-                p2_score.className          = "report-score-input";
-                divider.className           = "scores-divider";
-                spacer.className            = "spacing-div";
-
-                let p1_name_text     = Object.keys(game)[0];
-                let p2_name_text     = Object.keys(game)[1];
-                submit_btn.innerText = "Report Scores";
-                p1_name.innerText    = p1_name_text;
-                p2_name.innerText    = p2_name_text;
-                p1_score.value       = Object.values(game)[0];
-                p2_score.value       = Object.values(game)[1];
-
-                p1_score.id = `${p1_name_text}-score`;
-                p2_score.id = `${p2_name_text}-score`;
-
-                player_names.appendChild(p1_name);
-                player_names.appendChild(spacer);
-                player_names.appendChild(p2_name);
-                scores.appendChild(p1_score);
-                scores.appendChild(divider);
-                scores.appendChild(p2_score);
-                content_container.appendChild(player_names);
-                content_container.appendChild(scores);
-                content_container.appendChild(submit_btn);
-                
-                submit_btn.onclick = async function() {
-                    const parsed_data = JSON.parse(event_data.rounds);
-                    // [swiss ? "swiss" : "bracket"];
-                    if (swiss) {
-                        const round_to_mod = parsed_data.swiss[round_name];
-                        for (const mod_game of round_to_mod) {
-                            if (mod_game.hasOwnProperty(p1_name_text)) {
-                                let new_game = {};
-                                new_game[p1_name_text] = document.getElementById(`${p1_name_text}-score`).value;
-                                new_game[p2_name_text] = document.getElementById(`${p2_name_text}-score`).value;
-                                parsed_data.swiss[round_name][round_to_mod.indexOf(mod_game)] = new_game;
-                                break;
-                            }
-                        }
-                        await updateDoc(doc(db, 'events', event), {
-                            rounds: JSON.stringify(parsed_data)
-                        });
-                        document.getElementById("modal-container").style.display = "none";
-                        window.location.reload();
-                    } else {
-                        let new_game = {};
-                        new_game[Object.keys(match)[0]] = document.getElementById(`${p1_name_text}-score`).value;
-                        new_game[Object.keys(match)[1]] = document.getElementById(`${p2_name_text}-score`).value;
-                        parsed_data.bracket.matches[round_name] = new_game;
-                        await updateDoc(doc(db, 'events', event), {
-                            rounds: JSON.stringify(parsed_data)
-                        });
-                        document.getElementById("modal-container").style.display = "none";
-                        window.location.reload();
-                    }
-                }
-
-                const not_in_match = document.createElement("span");
-                not_in_match.innerText = "You aren't in this match.";
-
-                if (p1_name_text == username || p2_name_text == username || admin)
-                    return content_container;
-                else
-                    return not_in_match;
-            }
-
-            function statsHelper(swiss_rounds) {
-                let records = {};
-                let match_total = {};
-                let seedings = [];
-                let omw = {};
-                let opps = {};
-                let num_games = {};
-                let gw = {};
-                for (const round_name in swiss_rounds) {
-                    let round = swiss_rounds[round_name];
-                    for (const match of round) {
-                        for (const player in match) {
-                            let score = Number(match[player]);
-                            if (!records.hasOwnProperty(player)) {
-                                records[player] = [0, 0];
-                            }
-                            if (!match_total.hasOwnProperty(player)) {
-                                match_total[player] = [0, 0];
-                            }
-                            switch(score) {
-                                case 2:
-                                    records[player][0] += 1;
-                                    break;
-                                case 1:
-                                case 0:
-                                    records[player][1] += 1;
-                                    break;
-                            }
-                            match_total[player][0] += (isNaN(score) ? 0 : score);
-                            match_total[player][1] += (score != "-" && score < 2 ? 2 : 0);
-                        }
-                        let players = Object.keys(match);
-                        let p1 = players[0];
-                        let p2 = players[1];
-                        if (!opps.hasOwnProperty(p1)) opps[p1] = [];
-                        if (!opps.hasOwnProperty(p2)) opps[p2] = [];
-                        opps[p1].push(p2);
-                        opps[p2].push(p1);
-                        num_games[p1] = num_games[p1] ? num_games[p1] + 1 : 1;
-                        num_games[p2] = num_games[p2] ? num_games[p2] + 1 : 1;
-                    }
-                }
-                for (const player in opps) {
-                    gw[player] = records[player][0] / num_games[player];
-                    for (const opp of opps[player]) {
-                        if (!omw.hasOwnProperty(player)) omw[player] = [];
-                        omw[player].push(records[opp][0] / num_games[opp]);
-                    }
-                }
-                for (const player in omw) {
-                    let total = 0;
-                    let count = 0;
-                    for (const wr of omw[player]) {
-                        total += wr;
-                        count++;
-                    }
-                    omw[player] = total / count;
-                }
-                return {records: records, match_total: match_total, opps: opps, omw: omw, num_games: num_games, gw: gw};
-            }
-
-            async function topCutHelper(rounds) {
-                let swiss_rounds = rounds.swiss;
-                let stats = statsHelper(swiss_rounds);
-                let players = [];
-                let matches = [];
-                let seedings = [];
-                let structure = "";
-                for (const player in stats.records) {
-                    let record = stats.records[player];
-                    let total = stats.match_total[player];
-                    if (record[0] >= (event_data.num_rounds - 1)) {
-                        console.log("in top cut", player);
-                        players.push(player);
-                    }
-                    seedings.push({player: player, record: record, match_total: total});
-                }
-                
-                matches = rounds.bracket.matches;
-                seedings.sort(seeder);
-                return {players: players, matches: rounds.bracket.matches, seedings: seedings, stats: stats, structure: rounds.bracket.structure};
-            }
-
-            function seeder(a, b) {
-                if (a.record[0] > b.record[0]) {
-                    return -1;
-                }
-                if (a.record[0] < b.record[0]) {
-                    return 1;
-                }
-                if (a.record[1] > b.record[1]) {
-                    return 1;
-                }
-                if (a.record[1] < b.record[1]) {
-                    return -1;
-                }
-                if (a.match_total[0] > b.match_total[0]) {
-                    return -1;
-                }
-                if (a.match_total[0] < b.match_total[0]) {
-                    return 1;
-                }
-                if (a.match_total[1] > b.match_total[1]) {
-                    return -1;
-                }
-                if (a.match_total[1] < b.match_total[1]) {
-                    return 1;
-                }
-                if (a.omw > b.omw) {
-                    return -1;
-                }
-                if (a.omw < b.omw) {
-                    return 1;
-                }
-                return 0;
-            }
-
-            function parseStructure(structure) {
-                let splt;
-                if (structure.includes(":")) {
-                    splt = structure.split(":");
-                } else {
-                    splt = ["", structure]
-                }
-                let splt2 = splt[1].split(";");
-                for (let s of splt2) {
-                    splt2[splt2.indexOf(s)] = s.split('');
-                }
-                let raw_structure = [splt[0].split(''), splt2];
-                let layer = 0;
-                let structure_info = {size: 0, structures: {}}
-                for (const bracket_struct of splt2) {
-                    for (const game of bracket_struct) {
-                        structure_info.structures[game] = layer;
-                    }
-                    if (layer == 0) structure_info.size = bracket_struct.length;
-                    layer++;
-                }
-                return {raw: raw_structure, info: structure_info};
-            }
-
-            async function pushGP() {
-                if (event_data.ended) {
-                    alert("GP has been ended, cannot push round");
-                    return;
-                }
-
-                let rounds = JSON.parse(event_data.rounds);
-                if (event_data.stage == "swiss" && event_data.num_rounds != Object.keys(rounds.swiss).length) {
-                    // if were in swiss and this isn't the last round
-                    let stats = statsHelper(rounds.swiss);
-                    let seedings = [];
-                    let opps = {};
-                    for (const round_name in rounds.swiss) {
-                        const round = rounds.swiss[round_name];
-                        for (const game of round) {
-                            let players = Object.keys(game);
-                            let p1 = players[0];
-                            let p2 = players[1];
-                            if (!opps.hasOwnProperty(p1)) opps[p1] = [p1];
-                            if (!opps.hasOwnProperty(p2)) opps[p2] = [p2];
-                            opps[p1].push(p2);
-                            opps[p2].push(p1);
-                        }
-                    } 
-                    for (const player in stats.records) {
-                        if (event_data.dropped.includes(player)) continue;
-                        let record = stats.records[player];
-                        let total = stats.match_total[player];
-                        seedings.push({player: player, record: record, match_total: total, opps: opps});
-                    }
-                    seedings.sort(seeder);
-                    let games = [];
-                    let in_games = [];
-                    for (const p1 of seedings) {
-                        let seedings_2 = [...seedings];
-                        Array.prototype.swiss_sort = function(p) {
-                            function compare(a, b) {
-                                if (p.opps[p.player].includes(a.player) && !p.opps[p.player].includes(b.player)) {
-                                    return -1;
-                                }
-                                if (!p.opps[p.player].includes(a.player) && p.opps[p.player].includes(b.player)) {
-                                    return 1;
-                                }
-                                if (Math.abs(p.record[0] - a.record[0]) > Math.abs(p.record[0] - b.record[0])) {
-                                    return 1;
-                                }
-                                if (Math.abs(p.record[0] - a.record[0]) < Math.abs(p.record[0] - b.record[0])) {
-                                    return -1;
-                                }
-                                if (Math.abs(p.record[1] - a.record[1]) > Math.abs(p.record[1] - b.record[1])) {
-                                    return 1;
-                                }
-                                if (Math.abs(p.record[1] - a.record[1]) < Math.abs(p.record[1] - b.record[1])) {
-                                    return -1;
-                                }
-                                if (Math.abs(p.match_total[0] - a.match_total[0]) > Math.abs(p.match_total[0] - b.match_total[0])) {
-                                    return 1;
-                                }
-                                if (Math.abs(p.match_total[0] - a.match_total[0]) < Math.abs(p.match_total[0] - b.match_total[0])) {
-                                    return -1;
-                                }
-                                if (Math.abs(p.match_total[1] - a.match_total[1]) > Math.abs(p.match_total[1] - b.match_total[1])) {
-                                    return 1;
-                                }
-                                if (Math.abs(p.match_total[1] - a.match_total[1]) < Math.abs(p.match_total[1] - b.match_total[1])) {
-                                    return -1;
-                                }
-                                if (Math.abs(p.omw - a.omw) > Math.abs(p.omw - b.omw)) {
-                                    return 1;
-                                }
-                                if (Math.abs(p.omw - a.omw) < Math.abs(p.omw - b.omw)) {
-                                    return -1;
-                                }
-                                return 0;
-                            }
-                            this.sort(compare);
-                        }
-                        seedings_2.swiss_sort(p1);
-                        for (const p2 of seedings_2) {
-                            if (!opps[p1.player].includes(p2.player) && !in_games.includes(p1.player) && !in_games.includes(p2.player)) {
-                                let new_game = {};
-                                new_game[p1.player] = '-';
-                                new_game[p2.player] = '-';
-                                opps[p1.player].push(p2.player);
-                                opps[p2.player].push(p1.player);
-                                in_games.push(p1.player);
-                                in_games.push(p2.player);
-                                games.push(new_game);
-                                break;
-                            }
-                        }
-                        if (!in_games.includes(p1.player)) {
-                            let new_game = {};
-                            new_game[p1.player] = '-';
-                            new_game["Bye"] = '-';
-                            in_games.push(p1.player);
-                            games.push(new_game);
-                        }
-                    }
-                    rounds.swiss[`Round ${Object.keys(rounds.swiss).length + 1}`] = games;
-                    let discord_msg = `Round ${Object.keys(rounds.swiss).length + 1} of ${event}. You have until <t:${Math.floor(Date.now() / 1000) + 259200}:f> to complete your matches. Contact @_hervor_ for extensions.`;
-                    for (const game of games) {
-                        discord_msg += `\n@${Object.keys(game)[0]} vs @${Object.keys(game)[1]}`;
-                    }
-                    discord_msg += ``;
-                    navigator.clipboard.writeText(discord_msg);
-                    await updateDoc(doc(db, 'events', event), {
-                        rounds: JSON.stringify(rounds)
-                    });
-                    reload();
-                } 
-                else if (event_data.stage == "swiss") {
-                    // first top cut round
-                    let stats = statsHelper(rounds.swiss);
-                    let players = [];
-                    let matches = [];
-                    let seedings = [];
-                    let structure = "";
-                    for (const player in stats.records) {
-                        let record = stats.records[player];
-                        let total = stats.match_total[player];
-                        if (record[0] >= (event_data.num_rounds - 1) && player != "Bye" && !event_data.dropped.includes(player)) {
-                            console.log("added to top cut", player, stats.records[player]);
-                            players.push(player);
-                        }
-                        seedings.push({player: player, record: record, match_total: total});
-                    }
-                    const struct_obj = getStructure(players.length);
-                    structure = struct_obj.structure;
-                    matches = struct_obj.matches;
-                    seedings.sort(seeder);
-                    rounds.bracket.structure = structure;
-                    rounds.bracket.matches = matches;
-                    await updateDoc(doc(db, 'events', event), {
-                        rounds: JSON.stringify(rounds),
-                        stage: "bracket"
-                    });
-                    reload();
-                } 
-                else if (event_data.stage == "initial") {
-                    let games = [];
-                    let in_games = [];
-                    const decks = JSON.parse(event_data.decks);
-                    let i = 0;
-                    for (const player in decks) {
-                        if (!in_games.includes(player)) {
-                            let game = {};
-                            game[player] = "-";
-                            game[Object.keys(decks)[i + 1]] = "-";
-                            in_games.push(player);
-                            in_games.push(Object.keys(decks)[i + 1]);
-                            games.push(game);
-                        }
-                        i++;
-                    }
-                    rounds.swiss["Round 1"] = games;
-                    await updateDoc(doc(db, 'events', event), {
-                        rounds: JSON.stringify(rounds),
-                        num_rounds: numRounds(in_games.length),
-                        stage: "swiss"
-                    });
-                    reload();
-                }
-                else {
-                    alert("There's no need to push rounds in top cut, you just need to paste the discord message copied to your clipboard");
-                }
-            }
-
-            function getStructure(length) {
-                let structure;
-                let matches;
-                switch (length) {
-                    case 1: 
-                        structure = "a";
-                        matches = {
-                            "a": {"0": "2", "Bye": "0"}
-                        }
-                        break;
-                    case 2: 
-                        structure = "a";
-                        matches = {
-                            "a": {"0": "-", "1": "-"}
-                        }
-                        break;
-                    case 3: 
-                        structure = "a;b";
-                        matches = {
-                            "a": {"1": "-", "2": "-"},
-                            "b": {"a": "-", "0": "-"}
-                        }
-                        break;
-                    case 4: 
-                        structure = "ab;c";
-                        matches = {
-                            "a": {"0": "-", "3": "-"},
-                            "b": {"1": "-", "2": "-"},
-                            "c": {"a": "-", "b": "-"}
-                        }
-                        break;
-                    case 5: 
-                        structure = "a:bc;d";
-                        matches = {
-                            "a": {"3": "-", "4": "-"},
-                            "b": {"0": "-", "a": "-"},
-                            "c": {"1": "-", "2": "-"},
-                            "d": {"b": "-", "c": "-"}
-                        }
-                        break;
-                    case 6: 
-                        structure = "ab:cd;e";
-                        matches = {
-                            "a": {"2": "-", "5": "-"},
-                            "b": {"3": "-", "4": "-"},
-                            "c": {"0": "-", "a": "-"},
-                            "d": {"1": "-", "b": "-"},
-                            "e": {"c": "-", "d": "-"}
-                        }
-                        break;
-                    case 7: 
-                        structure = "abcd;ef;g";
-                        matches = {
-                            "a": {"0": "2", "Bye": "0"},
-                            "b": {"1": "-", "6": "-"},
-                            "c": {"2": "-", "5": "-"},
-                            "d": {"3": "-", "4": "-"},
-                            "e": {"a": "-", "b": "-"},
-                            "f": {"c": "-", "d": "-"},
-                            "g": {"e": "-", "d": "f"}
-                        }
-                        break;
-                    case 8: 
-                        structure = "abcd;ef;g";
-                        matches = {
-                            "a": {"0": "-", "7": "-"},
-                            "b": {"1": "-", "6": "-"},
-                            "c": {"2": "-", "5": "-"},
-                            "d": {"3": "-", "4": "-"},
-                            "e": {"a": "-", "b": "-"},
-                            "f": {"c": "-", "d": "-"},
-                            "g": {"e": "-", "f": "-"}
-                        }
-                        break;
-                    case 9: 
-                        structure = "a:bcde;fg;h";
-                        matches = {
-                            "a": {"7": "-", "8": "-"},
-                            "b": {"0": "-", "a": "-"},
-                            "c": {"1": "-", "6": "-"},
-                            "d": {"2": "-", "5": "-"},
-                            "e": {"3": "-", "4": "-"},
-                            "f": {"b": "-", "c": "-"},
-                            "g": {"d": "-", "e": "-"},
-                            "h": {"f": "-", "g": "-"}
-                        }
-                        break;
-                    case 10: 
-                        structure = "ab:cdef;gh;i";
-                        matches = {
-                            "a": {"8": "-", "9": "-"},
-                            "b": {"6": "-", "7": "-"},
-                            "c": {"0": "-", "a": "-"},
-                            "d": {"1": "-", "b": "-"},
-                            "e": {"2": "-", "5": "-"},
-                            "f": {"3": "-", "4": "-"},
-                            "g": {"c": "-", "d": "-"},
-                            "h": {"e": "-", "f": "-"},
-                            "i": {"g": "-", "h": "-"}
-                        }
-                        break;
-                    case 11: 
-                        structure = "abc:defg;hi;j";
-                        matches = {
-                            "a": {"9": "-", "10": "-"},
-                            "b": {"7": "-",  "8": "-"},
-                            "c": {"5": "-",  "6": "-"},
-                            "d": {"0": "-",  "a": "-"},
-                            "e": {"1": "-",  "b": "-"},
-                            "f": {"2": "-",  "c": "-"},
-                            "g": {"3": "-",  "4": "-"},
-                            "h": {"d": "-",  "e": "-"},
-                            "i": {"f": "-",  "g": "-"},
-                            "j": {"h": "-",  "i": "-"}
-                        } 
-                        break;
-                }
-                return {structure: structure, matches: matches};
-            } 
-
-            async function newGP() {
-                const event_name = window.prompt("GP Name?");
-                await setDoc(doc(db, 'events', event_name), {
-                        decks:  "[]",
-                        rounds: '{"swiss":{},"bracket":{}}',
-                        num_rounds: 0,
-                        stage: "initial",
-                        name: event_name,
-                        winner: "TBD",
-                        dropped: []
-                });
-            }
-
-            async function dropGP(event_data) {
-                await updateDoc(doc(db, 'events', event), {
-                    dropped: [...event_data.dropped, username]
-                });
-                alert("Dropped " + username + ". Ping aanginer to be re-added.");
-            }
-
-            async function joinGP(event_data) {
-                document.getElementById("modal-content").innerHTML = '<span class="close" onclick="closeModal()">&times;</span>';
-                document.getElementById("modal-container").style.display = "block";
-
-                const content_container = document.createElement("div");
-                content_container.className = "deck-select-container";
-
-                for (const deck of decks) {
-                    const deck_ele = gridifyDeck(deck);
-                    deck_ele.onclick = () => {
-                        const new_decks = JSON.parse(event_data.decks);
-                        new_decks[username] = deck;
-                        updateDoc(doc(db, "events", event), {
-                            decks: JSON.stringify(new_decks)
-                        });
-                        alert("Deck Submitted!");
-                        document.getElementById("modal-container").style.display = "none";
-                    }
-                    content_container.appendChild(deck_ele);
-                }
-
-                document.getElementById("modal-content").appendChild(content_container);
-            }
-
-            function gridifyDeck(deck) {
-                const container = document.createElement("div");
-                container.className = "deck-container";
-                const preview_img = document.createElement("img");
-                let card_stats;
-                for (const card of card_list_arrayified) {
-                    if (deck.previewimg == card.card_name) {
-                        card_stats = card;
-                        break;
-                    }
-                }
-                preview_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
-                preview_img.className = "deck-preview-img";
-                // preview_img.onclick = function() {
-                //     window.location.href = `/deckbuilder?deck=${deck.user}-${deck.name}`
-                // }
-                const deck_name = document.createElement("div");
-                deck_name.className = "deck-name";
-                deck_name.innerText = deck.name;
-
-                container.appendChild(deck_name);
-                container.appendChild(preview_img);
-                return container;
-            }
-
-            function numRounds(n) {
-                if (n < 15) {
-                    return 3;
-                }
-                if (n < 32) {
-                    return 4;
-                }
-                if (n < 64) {
-                    return 5;
-                }
-                return 6;
-            }
-
-            function endGP() {
-                updateDoc(doc(db, 'events', event), {
-                    ended: true
-                });
-            }
-
-            reload();
-        </script>
-    </body>
 </html>
