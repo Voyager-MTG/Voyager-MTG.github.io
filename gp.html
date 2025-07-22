@@ -1232,13 +1232,7 @@
 						if (player_id != "Bye") player = topcut.seedings[player_id];
 						else player = { player: "Bye" };
 						if (player == undefined) {
-							let p_match = matches[player_id];
-							for (const p in p_match) {
-								if (p_match[p] == "2" && isFinite(p)) {
-									player = topcut.seedings[p].player;
-									break;
-								}
-							}
+							player = getTopCutMatch(topcut, player_id);
 						} else {
 							player = player.player;
 						}
@@ -1263,7 +1257,6 @@
 						if (match[player_id] == "0") gameClass = "loser";
 						if (match[player_id] == "1") gameClass = "loser";
 						player_score.className = `player-score player-score-${side} ${gameClass}`;
-						player_name.innerText = player;
 						player_score.innerText = match[player_id];
 						let game = {};
 						for (const player_id in match) {
@@ -1271,14 +1264,7 @@
 							if (player_id != "Bye") player2 = topcut.seedings[player_id];
 							else player2 = { player: "Bye" };
 							if (player2 == undefined) {
-								let p_match = matches[player_id];
-								for (const p in p_match) {
-									console.log(topcut.seedings, p, isFinite(p));
-									if (p_match[p] == "2" && isFinite(p)) {
-										player2 = topcut.seedings[p].player;
-										break;
-									}
-								}
+								player2 = getTopCutMatch(topcut, player_id);
 							} else {
 								player2 = player2.player;
 							}
@@ -1287,6 +1273,8 @@
 							}
 							game[player2] = match[player_id];
 						}
+
+						player_name.innerText = player;
 
 						if (Object.keys(game).length == 2) {
 							player_score.onclick = function () {
@@ -1307,6 +1295,19 @@
 			}
 
 			document.getElementById("games").appendChild(bracket_container);
+		}
+
+		function getTopCutMatch(topcut, player_id) {
+			if (isFinite(player_id)) {
+				return topcut.seedings[player_id].player;
+			}
+
+			const match = topcut.matches[player_id];
+			for (const player in match) {
+				if (match[player] == "2") {
+					return getTopCutMatch(topcut, player);
+				}
+			}
 		}
 
 		async function makeDecksTab() {
