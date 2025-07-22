@@ -720,7 +720,7 @@
 		}
 
 		function tokenizeTerms(searchTerms) {
-			let tokenRegex = /-?\w*[!:<>=]?(([^ "\(\)\/“”]+)|(\".+?\")|(\(.+?\))|(\/.+?\/)|(\“.+?\”))/g;
+			let tokenRegex = /-?\w*[!:<>=]?(([^ "\(\)“”]+)|(\".+?\")|(\(.+?\))|(\/.+?\/)|(\“.+?\”))/g;
 			let searchTokens = searchTerms.match(tokenRegex);
 
 			return searchTokens;
