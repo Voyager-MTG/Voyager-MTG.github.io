@@ -1,4 +1,5 @@
 ﻿<html>
+
 <head>
 	<title>Card</title>
 	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
@@ -14,10 +15,12 @@
 	colortest {
 		color: #f1824a;
 	}
+
 	@font-face {
 		font-family: Beleren;
 		src: url('/resources/beleren.ttf');
 	}
+
 	body {
 		font-family: 'Helvetica', 'Arial', sans-serif;
 		overscroll-behavior: none;
@@ -27,9 +30,11 @@
 		background-attachment: fixed;
 		background-size: cover;
 	}
+
 	a {
 		text-decoration: none;
 	}
+
 	.banner-container {
 		width: 100%;
 		/* background-color: #bbbbbb; */
@@ -37,6 +42,7 @@
 		justify-items: center;
 		align-items: center;
 	}
+
 	.set-banner {
 		font-family: Beleren;
 		display: flex;
@@ -49,9 +55,11 @@
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
+
 	.set-banner img {
 		width: 100px;
 	}
+
 	.image-grid {
 		padding-top: 40px;
 		width: 70%;
@@ -63,14 +71,17 @@
 		padding-bottom: 10px;
 		justify-items: center;
 	}
+
 	.image-grid-with-rulings {
 		width: 85%;
 		max-width: 1600px;
 		grid-template-columns: minmax(200px, 2fr) minmax(200px, 2.5fr) minmax(200px, 2fr);
 	}
+
 	.image-grid img {
 		position: relative;
 	}
+
 	.card-image {
 		float: left;
 		width: 100%;
@@ -78,6 +89,7 @@
 		height: auto;
 		display: block;
 	}
+
 	.card-text {
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -93,6 +105,7 @@
 		display: flex;
 		flex-direction: column;
 	}
+
 	.card-text div {
 		white-space: normal;
 		font-size: 15px;
@@ -101,70 +114,87 @@
 		padding-right: 12px;
 		line-height: 155%;
 	}
+
 	.card-text .name-cost {
 		font-size: 20px;
 		white-space: pre-wrap;
 	}
+
 	.name-cost {
 		font-family: beleren;
 	}
+
 	.card-text .type {
 		font-size: 16px;
 	}
+
 	.card-text .pt {
 		font-weight: bold;
 	}
+
 	.designer-notes {
 		padding-top: 10px;
 		border-top: 1px solid #171717;
 	}
+
 	.card-text br {
 		content: "";
 		display: block;
 		margin-bottom: 5px;
 	}
+
 	.card-text .related {
 		margin-top: auto;
 		font-size: 12px;
 		font-weight: bold;
 		padding-bottom: 0px;
 	}
+
 	.related {
 		display: none;
 	}
+
 	.related a {
 		color: #1338be;
 		text-decoration: none;
 		transition: 0.2s;
 	}
+
 	.related a:hover {
 		color: #0492c2;
 	}
+
 	.card-text .printings {
 		margin-top: auto;
 		font-size: 12px;
 		font-weight: bold;
 		padding-bottom: 0px;
 	}
+
 	.printings {
 		display: none;
 	}
+
 	.printings a {
 		color: #1338be;
 		text-decoration: none;
 		transition: 0.2s;
 	}
+
 	.printings a:hover {
 		color: #0492c2;
 	}
+
 	.img-container {
 		position: relative;
 		align-self: center;
 	}
+
 	.img-container img {
 		width: 100%;
 		height: auto;
 	}
+
 	.img-container .btn {
 		background-color: #ffffffaa;
 		background-size: contain;
@@ -182,15 +212,18 @@
 		border: 2px solid black;
 		padding: 3px;
 	}
+
 	.img-container .btn:hover {
 		background-size: contain;
 		background-position: center;
 		background-color: #ffffff;
 	}
+
 	.img-container .h-img {
 		transform: rotate(90deg);
 		width: 80%;
 	}
+
 	.img-container a {
 		height: 100%;
 		display: grid;
@@ -198,16 +231,20 @@
 		align-items: center;
 		justify-items: center;
 	}
-	.img-container a > * {
+
+	.img-container a>* {
 		grid-row: 1;
 		grid-column: 1;
 	}
+
 	.hidden {
 		display: none;
 	}
+
 	.add-icon {
 		max-height: 14px;
 	}
+
 	.add-to-deck {
 		border: 3px solid rgb(19, 88, 19);
 		border-radius: 8px;
@@ -225,6 +262,7 @@
 		margin: 5px;
 		float: right;
 	}
+
 	.view-stats {
 		border: 3px solid rgb(29, 19, 88);
 		border-radius: 8px;
@@ -242,14 +280,17 @@
 		margin: 5px;
 		float: right;
 	}
-	.ft-divider{
+
+	.ft-divider {
 		border-width: 1px;
 	}
+
 	.rulings-textarea {
 		display: block;
 		width: 100%;
 		height: 52px;
 	}
+
 	.rulings-container {
 		width: 100%;
 		margin-bottom: 50px;
@@ -257,40 +298,46 @@
 		flex-direction: column;
 		justify-items: center;
 	}
+
 	.rulings-list {
 		font-size: 1.2em;
 		font-style: italic;
 	}
+
 	.rulings-input-container {
 		display: flex;
 		gap: 6px;
 		align-items: center;
 		justify-items: center;
 	}
+
 	.rulings-submit-btn {
 		border: 2px solid white;
 		border-radius: 15px;
 		font-weight: bold;
 		transition: 0.2s;
-		cursor:pointer;
+		cursor: pointer;
 	}
+
 	.rulings-submit-btn:hover {
 		border-radius: 5px;
 
 	}
+
 	#modal-container {
-		display: none; 
-		position: fixed; 
-		z-index: 1; 
+		display: none;
+		position: fixed;
+		z-index: 1;
 		padding-top: 70px;
 		left: 0;
 		top: 0;
 		width: 100%;
 		height: 100%;
-		overflow: auto; 
-		background-color: rgb(0,0,0); 
-		background-color: rgba(0,0,0,0.4); 
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
 	}
+
 	#modal-content {
 		background-color: #fefefe;
 		margin: auto;
@@ -300,6 +347,7 @@
 		border-radius: 10px;
 		border: solid #777 3px;
 	}
+
 	.close {
 		color: #aaaaaa;
 		float: right;
@@ -307,19 +355,24 @@
 		font-weight: bold;
 		margin-left: 30px;
 	}
+
 	.close:hover,
 	.close:focus {
 		color: #000;
 		text-decoration: none;
 		cursor: pointer;
 	}
+
 	.stats-container {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		border-top: 2px solid black;
 		border-left: 2px solid black;
 	}
-	.stat-title, .stat-value, .is-played {
+
+	.stat-title,
+	.stat-value,
+	.is-played {
 		border-right: 2px solid black;
 		border-bottom: 2px solid black;
 		padding: 8px;
@@ -327,15 +380,20 @@
 		text-align: center;
 		transition: 0.3s;
 	}
-	.stat-title:hover, .stat-value:hover {
+
+	.stat-title:hover,
+	.stat-value:hover {
 		background-color: gray;
 	}
+
 	.played {
 		background-color: rgb(103, 201, 98);
 	}
+
 	.not-played {
 		background-color: rgb(226, 74, 74);
 	}
+
 	.is-played:hover {
 		filter: brightness(0.7);
 	}
@@ -351,22 +409,25 @@
 		/* color: #f3f3f3; */
 	}
 </style>
+
 <body>
 	<div class="header">
 		<div class="search-grid">
 			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
 			<img class="sg-icon" src="/img/header/search.png">
-			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false"
+				autocomplete="off" autocorrect="off" spellcheck="false">
 			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
 			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
 			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
 			<a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>
 			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
-                <a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
+			<a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
 		</div>
 	</div>
 
-	<input type="text" id="display" class="hidden" value="cards-and-text"> <!-- here to make img-container-defs snippet work properly -->
+	<input type="text" id="display" class="hidden" value="cards-and-text">
+	<!-- here to make img-container-defs snippet work properly -->
 	<div class="banner-container">
 		<a class="set-banner" id="set-banner">
 			<img class="set-logo" id="set-banner-logo">
@@ -379,7 +440,8 @@
 
 	<div id="modal-container">
 		<div id="modal-content" class="popout">
-			<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+			<span class="close"
+				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
 		</div>
 	</div>
 	<script>
@@ -387,7 +449,7 @@
 		let specialchars = "";
 
 		modal = document.getElementById("modal-container");
-		window.onclick = function(event) {
+		window.onclick = function (event) {
 			if (event.target == modal) {
 				modal.style.display = 'none';
 			}
@@ -395,40 +457,40 @@
 
 		document.addEventListener("DOMContentLoaded", async function () {
 			await fetch('/lists/all-cards.json')
-					.then(response => response.json())
-					.then(json => {
-						card_list = json;
+				.then(response => response.json())
+				.then(json => {
+					card_list = json;
 				}).catch(error => console.error('Error:', error));
 
-				await fetch('/resources/replacechars.txt')
-					.then(response => response.text())
-					.then(text => {
-						specialchars = text; 
+			await fetch('/resources/replacechars.txt')
+				.then(response => response.text())
+				.then(text => {
+					specialchars = text;
 				}).catch(error => console.error('Error:', error));
 
-				card_list_arrayified = card_list.cards;
+			card_list_arrayified = card_list.cards;
 
 			await fetch('/lists/all-sets.json')
-					.then(response => response.json())
-					.then(json => {
-						set_list = json;
+				.then(response => response.json())
+				.then(json => {
+					set_list = json;
 				}).catch(error => console.error('Error:', error));
 
-			
+
 			try {
 				const response = await fetch('/resources/gradients.json');
 				raw_gradients = await response.json();
 			}
-			catch(error) {
+			catch (error) {
 				console.error('Error:', error);
 			}
 
 			gradients = raw_gradients.gradients;
-				card_backgrounds = raw_gradients.cards;
+			card_backgrounds = raw_gradients.cards;
 			setGradient(localStorage.getItem("settings.gradient"));
 
 			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
 
 			if (localStorage.getItem("settings.darkthememenu") == "On") {
 				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
@@ -442,10 +504,8 @@
 			const num = params.get('num');
 			const name = params.get('name');
 
-			for (const c of card_list_arrayified)
-			{
-				if (c.card_name == name && c.set == set && c.number == num)
-				{
+			for (const c of card_list_arrayified) {
+				if (c.card_name == name && c.set == set && c.number == num) {
 					card = c;
 					break;
 				}
@@ -454,7 +514,7 @@
 			// const card_desc = card.type       + "\n" + 
 			//                   card.rules_text + "\n" +
 			// 				  card.pt
-			
+
 			// const card_stats = card;
 			// const card_img = "https://voyager-mtg.github.io/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 
@@ -475,38 +535,32 @@
 			banner.href = '/sets/' + set;
 			banner_logo.src = '/sets/' + set + '-files/icon.png';
 
-			for (const set_stats of set_list.sets)
-			{
-				if (set_stats.set_code == set)
-				{
+			for (const set_stats of set_list.sets) {
+				if (set_stats.set_code == set) {
 					banner_title.innerHTML = set_stats.set_name;
 					break;
 				}
-			}	
-			
+			}
+
 
 			document.getElementById("grid").appendChild(gridifyCard(card, false, false));
 
 			const related_cards = await fetchRelatedCards(card);
 
 			other_printings = [];
-			for (const c of card_list_arrayified)
-			{
-				if (c.card_name == card.card_name && c.type == card.type && !c.shape.includes("Token") && (c.set != card.set || c.number != card.number))
-				{
+			for (const c of card_list_arrayified) {
+				if (c.card_name == card.card_name && c.type == card.type && !c.shape.includes("Token") && (c.set != card.set || c.number != card.number)) {
 					other_printings.push(c);
 				}
 			}
 
-			if (related_cards.length > 0)
-			{
+			if (related_cards.length > 0) {
 				const others = document.createElement("div");
 				others.className = "related";
 				others.id = "related-cards";
 				others.innerText = "Related Cards: ";
 
-				for (let i = 0; i < related_cards.length; i++)
-				{
+				for (let i = 0; i < related_cards.length; i++) {
 					let related_card;
 					const related = related_cards[i];
 					const setlink = document.createElement("a");
@@ -520,8 +574,8 @@
 
 					const url = new URL('card', window.location.origin);
 					const params = {
-						set:  related_card.set,
-						num:  related_card.number,
+						set: related_card.set,
+						num: related_card.number,
 						name: related_card.card_name
 					}
 					for (const key in params) {
@@ -531,8 +585,7 @@
 
 					others.appendChild(setlink);
 
-					if (i != related_cards.length - 1)
-					{
+					if (i != related_cards.length - 1) {
 						const dot = document.createElement("text");
 						dot.innerText = " • ";
 						others.appendChild(dot);
@@ -543,15 +596,13 @@
 				document.getElementById("related-cards").style.display = "block";
 			}
 
-			if (other_printings.length > 0)
-			{
+			if (other_printings.length > 0) {
 				const printings = document.createElement("div");
 				printings.className = "printings";
 				printings.id = "other-printings";
 				printings.innerText = "Other Printings: ";
 
-				for (let i = 0; i < other_printings.length; i++)
-				{
+				for (let i = 0; i < other_printings.length; i++) {
 					const printing = other_printings[i];
 					const setlink = document.createElement("a");
 					setlink.innerText = printing.set;
@@ -569,8 +620,7 @@
 
 					printings.appendChild(setlink);
 
-					if (i != other_printings.length - 1)
-					{
+					if (i != other_printings.length - 1) {
 						const dot = document.createElement("text");
 						dot.innerText = " • ";
 						printings.appendChild(dot);
@@ -588,8 +638,8 @@
 				.then(response => response.json())
 				.then(json => {
 					related_cards_json = json;
-			}).catch(error => console.error('Error:', error));
-			
+				}).catch(error => console.error('Error:', error));
+
 			const token_matches = related_cards_json.matches;
 
 			for (const token in token_matches) {
@@ -631,27 +681,21 @@
 		function tokenize(text) {
 			let tokens = [];
 
-			for (let i = 0; i < text.length; i++)
-			{
-				if (i < text.length - 1)
-				{
-					if (text[i + 1] == '/')
-					{
+			for (let i = 0; i < text.length; i++) {
+				if (i < text.length - 1) {
+					if (text[i + 1] == '/') {
 						tokens.push(text.substring(i, i + 3));
 						i = i + 2;
 					}
-					else if (isDecimal(text[i]) && isDecimal(text[i + 1]))
-					{
+					else if (isDecimal(text[i]) && isDecimal(text[i + 1])) {
 						tokens.push(text.substring(i, i + 2));
 						i = i + 1;
 					}
-					else
-					{
+					else {
 						tokens.push(text[i]);
 					}
 				}
-				else
-				{
+				else {
 					tokens.push(text[i]);
 				}
 			}
@@ -672,9 +716,9 @@
 		}
 
 		function formatTextHTML(str) {
-			if(!str)
+			if (!str)
 				return "";
-			str = str.replace(/[{]([^}]+)[}]/g, function(matched, _1) {
+			str = str.replace(/[{]([^}]+)[}]/g, function (matched, _1) {
 				let letters = _1.toLowerCase()
 				return `<span class="mana mana-cost ${isText(letters)} mana-` + letters + '"></span>';
 			})
@@ -684,7 +728,7 @@
 		function isText(l) {
 			if (l.includes("v") || l.includes("e")) {
 				return "popout";
-			} 
+			}
 			return "";
 		}
 
@@ -699,7 +743,7 @@
 			grid.className = "image-grid";
 
 			grid.appendChild(buildImgContainer(card_stats, false, rotate_card));
-			
+
 			const text = document.createElement("div");
 			text.className = "card-text popout";
 			text.id = "card-text";
@@ -717,34 +761,29 @@
 			const effect = document.createElement("div");
 			effect.className = "effect";
 			let card_effects = "";
-			if (card_stats.rules_text != "")
-			{
+			if (card_stats.rules_text != "") {
 				card_effects = [...card_stats.rules_text.split("\n"), (card_stats.flavor_text != "[i][/i]" ? "<hr class=\"ft-divider text-bg\"></div>" + card_stats.flavor_text : "")];
 			}
-			else
-			{
+			else {
 				card_effects = card_stats.special_text.split("\n");
 			}
 			effect.innerHTML += prettifyEffects(card_effects);
 			text.appendChild(effect);
 
-			if(card_stats.pt != "")
-			{
+			if (card_stats.pt != "") {
 				const pt = document.createElement("div");
 				pt.className = "pt";
 				pt.textContent = card_stats.pt;
 				text.appendChild(pt);
 			}
-			else if (card_stats.loyalty != "")
-			{
+			else if (card_stats.loyalty != "") {
 				const loyalty = document.createElement("div");
 				loyalty.className = "pt";
 				loyalty.textContent = "[" + card_stats.loyalty + "]";
 				text.appendChild(loyalty);
 			}
 
-			if(designer_notes && card_stats.designer_notes != null)
-			{
+			if (designer_notes && card_stats.designer_notes != null) {
 				const dnotes = document.createElement("div");
 				dnotes.className = "designer-notes";
 				dnotes.innerHTML = "<u><b>Designer Notes</b></u>";
@@ -753,8 +792,7 @@
 			}
 
 			// 13-name	14-color	15-type	16-ci	17-cost	18-ability	19-pt	20-special-text	21-loyalty
-			if(card_stats.shape.includes("adventure") || card_stats.shape.includes("double") || card_stats.shape.includes("spli"))
-			{
+			if (card_stats.shape.includes("adventure") || card_stats.shape.includes("double") || card_stats.shape.includes("spli")) {
 				const name_cost_2 = document.createElement("div");
 				name_cost_2.className = "name-cost";
 				name_cost_2.innerHTML = card_stats.card_name2 + (card_stats.cost2 != "" ? '     ' + symbolize(card_stats.cost2) : "");
@@ -768,33 +806,29 @@
 				const effect_2 = document.createElement("div");
 				effect_2.className = "effect";
 				let card_effects_2 = "";
-				if (card_stats.rules_text2 != "")
-				{
+				if (card_stats.rules_text2 != "") {
 					card_effects_2 = card_stats.rules_text2.split("\n");
 				}
-				else
-				{
+				else {
 					card_effects_2 = card_stats.special_text2.split("\n");
 				}
 				effect_2.innerHTML += prettifyEffects(card_effects_2);
 				text.appendChild(effect_2);
 
-				if(card_stats.pt2 != "")
-				{
+				if (card_stats.pt2 != "") {
 					const pt_2 = document.createElement("div");
 					pt_2.className = "pt";
 					pt_2.textContent = card_stats.pt2;
 					text.appendChild(pt_2);
 				}
-				else if (card_stats.loyalty2 != "")
-				{
+				else if (card_stats.loyalty2 != "") {
 					const loyalty = document.createElement("div");
 					loyalty.className = "pt";
 					loyalty.textContent = "[" + card_stats.loyalty2 + "]";
 					text.appendChild(loyalty);
 				}
 			}
-			
+
 			textContainer.appendChild(text);
 
 			if (localStorage.getItem('info.lastdeck') != null) {
@@ -802,7 +836,7 @@
 				const lastdeck = localStorage.getItem('info.lastdeck');
 				addToDeck.className = "add-to-deck";
 				addToDeck.innerHTML = `<img src='img/plus.png' class='add-icon'>Add card to ${lastdeck}`;
-				addToDeck.onclick = function() {
+				addToDeck.onclick = function () {
 					let deck = localStorage.getItem(lastdeck);
 					deck = deck + `1 ${card_stats.card_name}`;
 					localStorage.setItem(lastdeck, deck);
@@ -826,9 +860,9 @@
 			img.id = id;
 			// (card_stats[13].includes("_") ? card_stats[13] : card_stats[0]) for posterity
 			img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
-			
+
 			const link = document.createElement("a");
-			
+
 			const url = new URL('card', window.location.origin);
 			const params = {
 				set: card_stats.set,
@@ -842,8 +876,7 @@
 
 			link.appendChild(img);
 
-			if ((card_stats.shape.includes("spli") || card_stats.type.includes("Battle")) && rotate_card)
-			{
+			if ((card_stats.shape.includes("spli") || card_stats.type.includes("Battle")) && rotate_card) {
 				const rotated_img = document.createElement("img");
 				rotated_img.className = "h-img";
 				rotated_img.id = "h-img";
@@ -856,11 +889,10 @@
 
 			imgContainer.appendChild(link);
 
-			if (card_stats.shape.includes("double"))
-			{
+			if (card_stats.shape.includes("double")) {
 				const imgFlipBtn = document.createElement("button");
 				imgFlipBtn.className = "img-flip-btn btn";
-				imgFlipBtn.onclick = async function() { imgFlip(id, rotate_card); };
+				imgFlipBtn.onclick = async function () { imgFlip(id, rotate_card); };
 				const imgFlipIcon = document.createElement("img");
 				imgFlipIcon.className = "img-flip-icon";
 				imgFlipIcon.src = '/img/flip.svg';
@@ -868,8 +900,7 @@
 				imgContainer.appendChild(imgFlipBtn);
 			}
 
-			if (hidden_title)
-			{
+			if (hidden_title) {
 				const title = document.createElement("div");
 				title.innerText = card_stats.card_name;
 				title.className = "hidden-text";
@@ -881,7 +912,7 @@
 
 		async function imgFlip(id, rotate_card = false) {
 			const img = document.getElementById(id);
-			const seconds = 0.2;
+			const seconds = 0.15;
 			const cardName = img.src;
 
 			img.style.transition = seconds.toString() + "s";
@@ -891,27 +922,23 @@
 			btn.style.transition = seconds.toString() + "s";
 			btn.style.filter = cardName.includes("_front") ? "invert()" : "";
 
-			await setTimeout(function() {
+			await setTimeout(function () {
 				const rotated_img = document.getElementById("h-img");
-				
-				if (cardName.includes("_front"))
-				{
+
+				if (cardName.includes("_front")) {
 					img.src = cardName.replace("_front", "_back");
 					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "invert()";
 
-					if (rotate_card)
-					{
+					if (rotate_card) {
 						rotated_img.style.display = "none";
 						img.style.filter = "";
 					}
 				}
-				else
-				{
+				else {
 					img.src = cardName.replace("_back", "_front");
 					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "";
 
-					if (rotate_card)
-					{
+					if (rotate_card) {
 						rotated_img.style.display = "block";
 						img.style.filter = "blur(2px) brightness(0.7)";
 					}
@@ -921,7 +948,7 @@
 				img.style.transform = "rotateY(0deg)";
 			}, seconds * 1000);
 
-			await setTimeout(function() {
+			await setTimeout(function () {
 				console.log("done");
 			}, seconds * 1000);
 		}
@@ -930,28 +957,26 @@
 		function prettifyEffects(card_effects) {
 			let HTML = "";
 
-			for (let i = 0; i < card_effects.length; i++)
-			{
-				let styled_effect = card_effects[i].replace(/\[i\]([^\]]+)\[\/i\]/gs, function(matched, _1) {
+			for (let i = 0; i < card_effects.length; i++) {
+				let styled_effect = card_effects[i].replace(/\[i\]([^\]]+)\[\/i\]/gs, function (matched, _1) {
 					return '<i>' + _1 + '</i>'
-				}).replace(/\[b\]([^\]]+)\[\/b\]/gs, function(matched, _1) {
+				}).replace(/\[b\]([^\]]+)\[\/b\]/gs, function (matched, _1) {
 					return '<b>' + _1 + '</b>'
 				})
-				
+
 				HTML += styled_effect;
 
-				if (i != card_effects.length - 1)
-				{
+				if (i != card_effects.length - 1) {
 					HTML += "<br>"
 				}
 			}
-			
+
 			let regexHTML = symbolize(HTML);
 
 			return regexHTML;
 		}
 
-		document.getElementById("search").addEventListener("keypress", function(event) {
+		document.getElementById("search").addEventListener("keypress", function (event) {
 			if (event.key === "Enter") {
 				event.preventDefault();
 				search();
@@ -965,448 +990,445 @@
 		}
 
 		function randomCard() {
-				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
-				let random_card = card_list_arrayified[i];
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
 
-				const url = new URL('card', window.location.origin);
-				const params = {
-					set: random_card.set,
-					num: random_card.number,
-					name: random_card.card_name
-				}
-				for (const key in params) {
-					url.searchParams.append(key, params[key]);
-				}
-
-				window.location.href = url;
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
 			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+
+			window.location.href = url;
+		}
 
 		function prepareGradients() {
-				let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt = document.createElement("option");
+			opt.value = defaultGradient.replace(' ', '-');
+			opt.text = defaultGradient;
+			document.getElementById("color-select").appendChild(opt);
+			let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt_rand = document.createElement("option");
+			opt_rand.value = "Random-Card";
+			opt_rand.text = "Random Card";
+
+			document.getElementById("color-select").appendChild(opt_rand);
+			for (const gradient of gradients) {
 				const opt = document.createElement("option");
-				opt.value = defaultGradient.replace(' ', '-');
-				opt.text = defaultGradient;
-				document.getElementById("color-select").appendChild(opt);
-				let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt_rand = document.createElement("option");
-				opt_rand.value = "Random-Card";
-				opt_rand.text = "Random Card";
-
-				document.getElementById("color-select").appendChild(opt_rand);
-				for (const gradient of gradients)
-				{	
-					const opt = document.createElement("option");
-					opt.value = gradient.name.replace(' ', '-');
-					opt.text = gradient.name;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
+				opt.value = gradient.name.replace(' ', '-');
+				opt.text = gradient.name;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
 				}
-
-				for (const gradient in card_backgrounds) {
-					const opt = document.createElement("option");
-					opt.value = gradient.replace(' ', '-');
-					opt.text = gradient;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
-					console.log(gradient, opt);
-				}
-
-				// setGradient();
 			}
 
-			function setGradient(gradient=false) {
-				let artistCredit = "";
-				if (!gradient) { 
-					gradient = document.getElementById("color-select").value;
+			for (const gradient in card_backgrounds) {
+				const opt = document.createElement("option");
+				opt.value = gradient.replace(' ', '-');
+				opt.text = gradient;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
 				}
+				console.log(gradient, opt);
+			}
 
-				gradTop = "#000000";
-				gradBottom = "#FFFFFF";
-				for (const grad of gradients)
-				{
-					if (gradient == grad.name.replace(' ', '-'))
-					{ 	
-						gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
-					}
+			// setGradient();
+		}
+
+		function setGradient(gradient = false) {
+			let artistCredit = "";
+			if (!gradient) {
+				gradient = document.getElementById("color-select").value;
+			}
+
+			gradTop = "#000000";
+			gradBottom = "#FFFFFF";
+			for (const grad of gradients) {
+				if (gradient == grad.name.replace(' ', '-')) {
+					gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
 				}
+			}
 
-				for (const background in card_backgrounds) {
-					if (gradient == background.replace(' ', '-'))
-					{ 	
-						gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-						artistCredit = card_backgrounds[background][0];
-						setTextColor(card_backgrounds[background][1]);
-					}
-				}
-
-				if (gradient == "Random-Card") {
-					const bgs = Object.keys(card_backgrounds);
-					const background = bgs[reallyRand(bgs.length)];
+			for (const background in card_backgrounds) {
+				if (gradient == background.replace(' ', '-')) {
 					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
 					artistCredit = card_backgrounds[background][0];
 					setTextColor(card_backgrounds[background][1]);
 				}
-
-				
-				document.body.style.backgroundImage = gradImage;
-				localStorage.setItem("settings.gradient", gradient);
-				console.log("CHANGE");
-				if (document.getElementsByClassName("artist-credit")[0])
-					document.getElementsByClassName("artist-credit")[0].remove();
-				const credit_text = document.createElement("span");
-				credit_text.className = "artist-credit text";
-				credit_text.innerText = `background by ${artistCredit}`;
-				if (artistCredit && document.getElementById("color-select"))
-					document.getElementById("color-select").parentElement.appendChild(credit_text);
 			}
 
-function reallyRand(x, seed = false) {
-				const date = new Date();
-				seed = seed ? seed : date.getUTCFullYear() * 10000 + 
-							 date.getUTCMonth() * 100 + 
-							 date.getUTCDate();
-
-				const a = 1103515245;
-				const c = 12345;
-				const m = Math.pow(2, 31);
-
-				let randomNumber = (a * seed + c) % m;
-				randomNumber = randomNumber / m;
-
-				return Math.floor(randomNumber * x);
+			if (gradient == "Random-Card") {
+				const bgs = Object.keys(card_backgrounds);
+				const background = bgs[reallyRand(bgs.length)];
+				gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
+				artistCredit = card_backgrounds[background][0];
+				setTextColor(card_backgrounds[background][1]);
 			}
 
-function setTextColor(c = false) {
-				if (c) {
-					localStorage.setItem("settings.textcolor", c);
-				}
-				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            	document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+			document.body.style.backgroundImage = gradImage;
+			localStorage.setItem("settings.gradient", gradient);
+			console.log("CHANGE");
+			if (document.getElementsByClassName("artist-credit")[0])
+				document.getElementsByClassName("artist-credit")[0].remove();
+			const credit_text = document.createElement("span");
+			credit_text.className = "artist-credit text";
+			credit_text.innerText = `background by ${artistCredit}`;
+			if (artistCredit && document.getElementById("color-select"))
+				document.getElementById("color-select").parentElement.appendChild(credit_text);
+		}
+
+		function reallyRand(x, seed = false) {
+			const date = new Date();
+			seed = seed ? seed : date.getUTCFullYear() * 10000 +
+				date.getUTCMonth() * 100 +
+				date.getUTCDate();
+
+			const a = 1103515245;
+			const c = 12345;
+			const m = Math.pow(2, 31);
+
+			let randomNumber = (a * seed + c) % m;
+			randomNumber = randomNumber / m;
+
+			return Math.floor(randomNumber * x);
+		}
+
+		function setTextColor(c = false) {
+			if (c) {
+				localStorage.setItem("settings.textcolor", c);
 			}
+			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+		}
 	</script>
 	<script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-            import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
-            
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-                apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-                authDomain: "voyager-78e30.firebaseapp.com",
-                projectId: "voyager-78e30",
-                storageBucket: "voyager-78e30.firebasestorage.app",
-                messagingSenderId: "411191248476",
-                appId: "1:411191248476:web:591349be169d823e5f8899",
-                measurementId: "G-TQ1L48F25M"
-            };
-            
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
-            let username = "";
-            let password = "";
-            let sessionid = localStorage.getItem('settings.session');
-            let decks = {};
-            const events = ["GP1", "League"];
-            let user_data;
-			const urlParams = new URLSearchParams(window.location.search);
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
 
-            if (sessionid) {
-                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-                    let data = docSnap.data();
-                    username = data.username;
-                    password = data.password;
-                });
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+			authDomain: "voyager-78e30.firebaseapp.com",
+			projectId: "voyager-78e30",
+			storageBucket: "voyager-78e30.firebasestorage.app",
+			messagingSenderId: "411191248476",
+			appId: "1:411191248476:web:591349be169d823e5f8899",
+			measurementId: "G-TQ1L48F25M"
+		};
 
-                await getDoc(doc(db, 'users', username)).then(docSnap => {
-                    let data = docSnap.data();
-                    user_data = data;
-                });
-            }
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+		let username = "";
+		let password = "";
+		let sessionid = localStorage.getItem('settings.session');
+		let decks = {};
+		const events = ["GP1", "League"];
+		let user_data;
+		const urlParams = new URLSearchParams(window.location.search);
 
-            document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+		if (sessionid) {
+			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+				let data = docSnap.data();
+				username = data.username;
+				password = data.password;
+			});
 
-			if (localStorage.getItem("settings.darkthememenu") == "On") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
-			} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
+			await getDoc(doc(db, 'users', username)).then(docSnap => {
+				let data = docSnap.data();
+				user_data = data;
+			});
+		}
+
+		document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+		document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+		if (localStorage.getItem("settings.darkthememenu") == "On") {
+			document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
+		} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
+			document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
+		}
+
+
+		async function reload() {
+			const image_grid = document.getElementsByClassName("image-grid")[0];
+
+			const rulings_container = document.createElement("div");
+			rulings_container.className = "rulings-container";
+
+			if (user_data.judge) {
+				const rulings_input_container = document.createElement("div");
+				rulings_input_container.className = "rulings-input-container";
+
+				const rulings_input = document.createElement("textarea");
+				rulings_input.style.resize = "none";
+				rulings_input.placeholder = "Add card rulings...";
+				rulings_input.className = "rulings-textarea";
+
+				const submit_rulings = document.createElement("button");
+				submit_rulings.className = "rulings-submit-btn popout";
+				submit_rulings.innerText = "Upload this ruling";
+				submit_rulings.onclick = submitRulings;
+
+				rulings_input_container.appendChild(rulings_input);
+				rulings_input_container.appendChild(submit_rulings);
+				rulings_container.appendChild(rulings_input_container);
 			}
 
-            
-            async function reload() {
-				const image_grid = document.getElementsByClassName("image-grid")[0];
+			const rulings = await fetchRulings(urlParams.get("name"));
 
-				const rulings_container = document.createElement("div");
-				rulings_container.className = "rulings-container";
+			const current_rulings = document.createElement("div");
+			current_rulings.className = "rulings-list text";
+			current_rulings.innerHTML = rulings.list;
+			rulings_container.appendChild(current_rulings);
 
-				if (user_data.judge) {
-					const rulings_input_container = document.createElement("div");
-					rulings_input_container.className = "rulings-input-container";
-
-					const rulings_input = document.createElement("textarea");
-					rulings_input.style.resize = "none";
-					rulings_input.placeholder = "Add card rulings...";
-					rulings_input.className = "rulings-textarea";
-
-					const submit_rulings = document.createElement("button");
-					submit_rulings.className = "rulings-submit-btn popout";
-					submit_rulings.innerText = "Upload this ruling";
-					submit_rulings.onclick = submitRulings;
-
-					rulings_input_container.appendChild(rulings_input);
-					rulings_input_container.appendChild(submit_rulings);
-					rulings_container.appendChild(rulings_input_container);
-				}
-
-				const rulings = await fetchRulings(urlParams.get("name"));
-
-				const current_rulings = document.createElement("div");
-				current_rulings.className = "rulings-list text";
-				current_rulings.innerHTML = rulings.list;
-				rulings_container.appendChild(current_rulings);
-
-				if (rulings.has_rulings || user_data.judge) {
-					image_grid.appendChild(rulings_container);
-					image_grid.className += " image-grid-with-rulings";
-				}
-
-				getCardStats();
-            }
-
-			async function submitRulings() {
-				const ruling_to_submit = document.getElementsByClassName("rulings-textarea")[0].value;
-				await getDoc(doc(db, "info", "rulings")).then(async docSnap => {
-					let cardl = docSnap.data()[urlParams.get("name")] ? docSnap.data()[urlParams.get("name")] : [];
-					let card_obj = {};
-					card_obj[urlParams.get("name")] = [...cardl, ruling_to_submit];
-					await updateDoc(doc(db, "info", "rulings"), card_obj);
-					window.location.reload();
-				});
+			if (rulings.has_rulings || user_data.judge) {
+				image_grid.appendChild(rulings_container);
+				image_grid.className += " image-grid-with-rulings";
 			}
 
-			async function fetchRulings(card_name) {
-				let rulings_json;
-				let firebase_list;
-				await fetch('/scripts/rulings/rulings.json')
-					.then(response => response.json())
-					.then(data => {
-						rulings_json = data; 
+			getCardStats();
+		}
+
+		async function submitRulings() {
+			const ruling_to_submit = document.getElementsByClassName("rulings-textarea")[0].value;
+			await getDoc(doc(db, "info", "rulings")).then(async docSnap => {
+				let cardl = docSnap.data()[urlParams.get("name")] ? docSnap.data()[urlParams.get("name")] : [];
+				let card_obj = {};
+				card_obj[urlParams.get("name")] = [...cardl, ruling_to_submit];
+				await updateDoc(doc(db, "info", "rulings"), card_obj);
+				window.location.reload();
+			});
+		}
+
+		async function fetchRulings(card_name) {
+			let rulings_json;
+			let firebase_list;
+			await fetch('/scripts/rulings/rulings.json')
+				.then(response => response.json())
+				.then(data => {
+					rulings_json = data;
 				}).catch(error => console.error('Error:', error));
 
-				let card_rulings = rulings_json[card_name] ? rulings_json[card_name] : [];
+			let card_rulings = rulings_json[card_name] ? rulings_json[card_name] : [];
 
-				await getDoc(doc(db, "info", "rulings")).then(docSnap => {
-					firebase_list = docSnap.data()[card_name] ? docSnap.data()[card_name] : [];
-				});
+			await getDoc(doc(db, "info", "rulings")).then(docSnap => {
+				firebase_list = docSnap.data()[card_name] ? docSnap.data()[card_name] : [];
+			});
 
-				const rulings_list = [...firebase_list, ...card_rulings];
+			const rulings_list = [...firebase_list, ...card_rulings];
 
-				return {list: convertToLi(rulings_list), has_rulings: (rulings_list.length > 0)};
+			return { list: convertToLi(rulings_list), has_rulings: (rulings_list.length > 0) };
+		}
+
+		function convertToLi(list) {
+			let ret = "";
+			ret += "<ol>";
+			for (const item of list) {
+				ret += `<li>${item}</li>`;
 			}
+			ret += "</ol>";
+			return ret
+		}
 
-			function convertToLi(list) {
-				let ret = "";
-				ret += "<ol>";
-				for (const item of list) {
-					ret += `<li>${item}</li>`;
+		async function getCardStats() {
+			const card_name = decodeURI(urlParams.get("name"));
+			let num_event_decks = 0;
+			let num_user_decks = 0;
+			let num_decks = 0;
+
+			let q = query(collection(db, "events"));
+			let all_events_docs = await getDocs(q);
+
+			q = query(collection(db, "users"));
+			let all_users_docs = await getDocs(q);
+
+			let all_event_decks = [];
+			let all_user_decks = [];
+			let all_decks = [];
+			let all_events = [];
+
+			all_events_docs.forEach((doc) => {
+				const data = doc.data();
+				all_events.push(data);
+				for (const user in JSON.parse(data.decks)) {
+					let deck = JSON.parse(data.decks)[user];
+					all_event_decks.push({ ...deck, "user": user, "event": true });
+					all_decks.push({ ...deck, "user": user, "event": true });
 				}
-				ret += "</ol>";
-				return ret
+			});
+
+			all_users_docs.forEach((doc) => {
+				const data = doc.data();
+				for (const deck of JSON.parse(data.decks)) {
+					all_user_decks.push({ ...deck, "user": data.username, "event": false });
+					all_decks.push({ ...deck, "user": data.username, "event": false });
+				}
+			});
+
+			for (const deck of all_event_decks) {
+				const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
+				for (const line of decklist.split("\n")) {
+					if (line.substring(line.indexOf(" ") + 1, line.length) == card_name) {
+						num_event_decks += 1;
+					}
+				}
 			}
 
-			async function getCardStats() {
-				const card_name = decodeURI(urlParams.get("name"));
-				let num_event_decks = 0;
-				let num_user_decks = 0;
-				let num_decks = 0;
-				
-				let q = query(collection(db, "events"));
-				let all_events_docs = await getDocs(q);
-
-				q = query(collection(db, "users"));
-				let all_users_docs  = await getDocs(q);
-
-				let all_event_decks    = [];
-				let all_user_decks     = [];
-				let all_decks          = [];
-				let all_events         = [];
-
-				all_events_docs.forEach((doc) => {
-					const data = doc.data();
-					all_events.push(data);
-					for (const user in JSON.parse(data.decks)) {
-						let deck = JSON.parse(data.decks)[user];
-						all_event_decks.push({...deck, "user": user, "event": true});
-						all_decks.push({...deck, "user": user, "event": true});
+			for (const deck of all_user_decks) {
+				const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
+				for (const line of decklist.split("\n")) {
+					if (line.substring(line.indexOf(" ") + 1, line.length) == card_name) {
+						num_user_decks += 1;
 					}
-				});
+				}
+			}
 
-				all_users_docs.forEach((doc) => {
-					const data = doc.data();
-					for (const deck of JSON.parse(data.decks)) {
-						all_user_decks.push({...deck, "user": data.username, "event": false});
-						all_decks.push({...deck, "user": data.username, "event": false});
+			for (const deck of all_decks) {
+				const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
+				for (const line of decklist.split("\n")) {
+					if (line.substring(line.indexOf(" ") + 1, line.length) == card_name) {
+						num_decks += 1;
 					}
-				});
+				}
+			}
 
-				for (const deck of all_event_decks) {
+			let total_games = 0;
+			let total_wins = 0;
+
+			for (const event of all_events) {
+				if (event.name.includes("League")) continue;
+				const swiss = JSON.parse(event.rounds).swiss;
+				const decks = JSON.parse(event.decks);
+				let players_with_card = [];
+				for (const player in decks) {
+					const deck = decks[player];
 					const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
 					for (const line of decklist.split("\n")) {
 						if (line.substring(line.indexOf(" ") + 1, line.length) == card_name) {
-							num_event_decks += 1;
+							players_with_card.push(player);
+							break;
 						}
 					}
 				}
+				for (const round_name in swiss) {
+					const round = swiss[round_name];
+					for (const game of round) {
+						const p1 = Object.keys(game)[0];
+						const p2 = Object.keys(game)[1];
 
-				for (const deck of all_user_decks) {
-					const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
-					for (const line of decklist.split("\n")) {
-						if (line.substring(line.indexOf(" ") + 1, line.length) == card_name) {
-							num_user_decks += 1;
-						}
-					}
-				}
+						const p1_score = parseInt(game[p1]);
+						const p2_score = parseInt(game[p2]);
 
-				for (const deck of all_decks) {
-					const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
-					for (const line of decklist.split("\n")) {
-						if (line.substring(line.indexOf(" ") + 1, line.length) == card_name) {
-							num_decks += 1;
-						}
-					}
-				}
+						let winner = 0;
+						if (p1_score > p2_score)
+							winner = p1;
+						if (p1_score < p2_score)
+							winner = p2;
 
-				let total_games = 0;
-				let total_wins  = 0;
-
-				for (const event of all_events) {
-					if (event.name.includes("League")) continue;
-					const swiss = JSON.parse(event.rounds).swiss;
-					const decks = JSON.parse(event.decks);
-					let players_with_card = [];
-					for (const player in decks) {
-						const deck = decks[player];
-						const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
-						for (const line of decklist.split("\n")) {
-							if (line.substring(line.indexOf(" ") + 1, line.length) == card_name) {
-								players_with_card.push(player);
-								break;
+						if (players_with_card.includes(p1)) {
+							if (winner == p1) {
+								total_wins++;
 							}
+							if (winner != 0)
+								total_games++;
 						}
-					}
-					for (const round_name in swiss) {
-						const round = swiss[round_name];
-						for (const game of round) {
-							const p1 = Object.keys(game)[0];
-							const p2 = Object.keys(game)[1];
-
-							const p1_score = parseInt(game[p1]);
-							const p2_score = parseInt(game[p2]);
-
-							let winner = 0;
-							if (p1_score > p2_score)
-								winner = p1;
-							if (p1_score < p2_score)
-								winner = p2;
-
-							if (players_with_card.includes(p1)) {
-								if (winner == p1) {
-									total_wins++;
-								}
-								if (winner != 0)
-									total_games++;
+						if (players_with_card.includes(p2)) {
+							if (winner == p2) {
+								total_wins++;
 							}
-							if (players_with_card.includes(p2)) {
-								if (winner == p2) {
-									total_wins++;
-								}
-								if (winner != 0)
-									total_games++;
-							}
+							if (winner != 0)
+								total_games++;
 						}
 					}
 				}
-
-				const winrate = ((total_wins / total_games) * 100).toFixed(2).toString() + "%";
-				const playrate_event_text = ((num_event_decks / all_event_decks.length) * 100).toFixed(2).toString() + "%";
-				const playrate_user_text  = ((num_user_decks  / all_user_decks.length)  * 100).toFixed(2).toString() + "%";
-				const playrate_text       = ((num_decks       / all_decks.length)       * 100).toFixed(2).toString() + "%";
-
-				const stats = {
-					winrate          : ["GP Winrate"      , winrate            ],
-					playrate_event   : ["Event Playrate"  , playrate_event_text],
-					playrate_user    : ["User Playrate"   , playrate_user_text ],
-					playrate_general : ["Overall Playrate", playrate_text      ]
-				}
-
-				const viewStats = document.createElement('button');
-				const lastdeck = localStorage.getItem('info.lastdeck');
-				viewStats.className = "view-stats";
-				viewStats.innerHTML = `<img src='img/show-white.png' class='add-icon'>View Stats`;
-				viewStats.onclick = () => { openStatsModal(stats) };
-				document.getElementsByClassName("text-container")[0].appendChild(viewStats);
 			}
 
-			function openStatsModal(stats) {
-				const content_container = document.createElement("div");
-				content_container.className = "stats-container";
+			const winrate = ((total_wins / total_games) * 100).toFixed(2).toString() + "%";
+			const playrate_event_text = ((num_event_decks / all_event_decks.length) * 100).toFixed(2).toString() + "%";
+			const playrate_user_text = ((num_user_decks / all_user_decks.length) * 100).toFixed(2).toString() + "%";
+			const playrate_text = ((num_decks / all_decks.length) * 100).toFixed(2).toString() + "%";
 
-				for (const stat in stats) {
-					const stat_name  = stats[stat][0];
-					const stat_value = stats[stat][1];
-
-					const stat_title = document.createElement("span");
-					stat_title.className = "stat-title";
-					stat_title.innerText = stat_name;
-
-					const stat_ele = document.createElement("span");
-					stat_ele.className = "stat-value";
-					stat_ele.innerText = stat_value;
-
-					content_container.appendChild(stat_title);
-					content_container.appendChild(stat_ele);
-				}
-
-				const is_played = document.createElement("span");
-				is_played.className = "is-played ";
-				is_played.innerText = "Played";
-				is_played.className += isPlayed(stats) ? "played" : "not-played";
-				
-				const is_staple = document.createElement("span");
-				is_staple.className = "is-played ";
-				is_staple.innerText = "Staple";
-				is_staple.className += isStaple(stats) ? "played" : "not-played";
-
-				content_container.appendChild(is_played);
-				content_container.appendChild(is_staple);
-				
-				document.getElementById("modal-content").appendChild(content_container);
-				document.getElementById("modal-container").style.display = "block";
+			const stats = {
+				winrate: ["GP Winrate", winrate],
+				playrate_event: ["Event Playrate", playrate_event_text],
+				playrate_user: ["User Playrate", playrate_user_text],
+				playrate_general: ["Overall Playrate", playrate_text]
 			}
 
-			function isPlayed(stats) {
-				const playrate = parseFloat(stats.playrate_general[1].split("%")[0]);
-				if (playrate > 3) {
-					return true;
-				}
+			const viewStats = document.createElement('button');
+			const lastdeck = localStorage.getItem('info.lastdeck');
+			viewStats.className = "view-stats";
+			viewStats.innerHTML = `<img src='img/show-white.png' class='add-icon'>View Stats`;
+			viewStats.onclick = () => { openStatsModal(stats) };
+			document.getElementsByClassName("text-container")[0].appendChild(viewStats);
+		}
+
+		function openStatsModal(stats) {
+			const content_container = document.createElement("div");
+			content_container.className = "stats-container";
+
+			for (const stat in stats) {
+				const stat_name = stats[stat][0];
+				const stat_value = stats[stat][1];
+
+				const stat_title = document.createElement("span");
+				stat_title.className = "stat-title";
+				stat_title.innerText = stat_name;
+
+				const stat_ele = document.createElement("span");
+				stat_ele.className = "stat-value";
+				stat_ele.innerText = stat_value;
+
+				content_container.appendChild(stat_title);
+				content_container.appendChild(stat_ele);
 			}
 
-			function isStaple(stats) {
-				const playrate = parseFloat(stats.playrate_general[1].split("%")[0]);
-				const playrate_event = parseFloat(stats.playrate_event[1].split("%")[0]);
-				const winrate = parseFloat(stats.winrate[1].split("%")[0]);
-				if (playrate > 10 && winrate > 20 && playrate_event > 10) {
-					return true;
-				}
-			}
+			const is_played = document.createElement("span");
+			is_played.className = "is-played ";
+			is_played.innerText = "Played";
+			is_played.className += isPlayed(stats) ? "played" : "not-played";
 
-			reload();
-        </script>
+			const is_staple = document.createElement("span");
+			is_staple.className = "is-played ";
+			is_staple.innerText = "Staple";
+			is_staple.className += isStaple(stats) ? "played" : "not-played";
+
+			content_container.appendChild(is_played);
+			content_container.appendChild(is_staple);
+
+			document.getElementById("modal-content").appendChild(content_container);
+			document.getElementById("modal-container").style.display = "block";
+		}
+
+		function isPlayed(stats) {
+			const playrate = parseFloat(stats.playrate_general[1].split("%")[0]);
+			if (playrate > 3) {
+				return true;
+			}
+		}
+
+		function isStaple(stats) {
+			const playrate = parseFloat(stats.playrate_general[1].split("%")[0]);
+			const playrate_event = parseFloat(stats.playrate_event[1].split("%")[0]);
+			const winrate = parseFloat(stats.winrate[1].split("%")[0]);
+			if (playrate > 10 && winrate > 20 && playrate_event > 10) {
+				return true;
+			}
+		}
+
+		reload();
+	</script>
 </body>
+
 </html>

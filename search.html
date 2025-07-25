@@ -1226,6 +1226,11 @@
 						if (check == "dfc") {
 							return card_shape.includes("double");
 						}
+						if (check == "mdfc") {
+							return card_shape.includes("modal") && card_shape.includes("double");
+						} if (check == "tdfc") {
+							return (card_shape.includes("transform") || card.rules_text.includes("transform")) && card_shape.includes("double");
+						}
 						if (check == "played") {
 							if (!document.getElementById("get-stats").dataset.ready) {
 								do {
@@ -1570,7 +1575,7 @@
 
 		async function imgFlip(id, rotate_card = false) {
 			const img = document.getElementById(id);
-			const seconds = 0.2;
+			const seconds = 0.15;
 			const cardName = img.src;
 
 			img.style.transition = seconds.toString() + "s";
@@ -1893,7 +1898,7 @@ Search for a keyword among cards. For example, "kw:luminous" will find all cards
 "alias"
 Search within aliases of cards. For example, "alias:gradius" will find "Gradius" and "Gradius' Option".
 "is"
-Search for cards that fall within a specialized grouping. The groupings include: = permanent = spell = commander = hybrid = sanctum = dfc = played = staple
+Search for cards that fall within a specialized grouping. The groupings include: = permanent = spell = commander = hybrid = sanctum = dfc = mdfc = tdfc = played = staple =
 "tag"
 Search for specialized tags that are added to cards via the card notes. For example, "tag:fascism" will find all cards that are tagged with fascism, such as all the cards that mention clan mordel.
 "a", "art", "artist"

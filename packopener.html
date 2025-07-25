@@ -1,63 +1,70 @@
 <html>
-    <head>
-        <title>Pack Opener</title>
-        <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-        <link rel="stylesheet" href="resources/mana.css">
-        <link rel="stylesheet" href="/resources/header.css">
-    </head>
-    <style>
-        @font-face {
+
+<head>
+	<title>Pack Opener</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
+	<link rel="stylesheet" href="resources/mana.css">
+	<link rel="stylesheet" href="/resources/header.css">
+</head>
+<style>
+	@font-face {
 		font-family: Beleren;
 		src: url('/resources/beleren.ttf');
-        }
-        body {
-            font-family: 'Helvetica', 'Arial', sans-serif;
-            overscroll-behavior: none;
-            margin: 0px;
-            background-color: #bbbbbb;
-            display: block;
-            /* overflow-y: scroll; */
-            height: 100%;
-            background-attachment: fixed;
+	}
+
+	body {
+		font-family: 'Helvetica', 'Arial', sans-serif;
+		overscroll-behavior: none;
+		margin: 0px;
+		background-color: #bbbbbb;
+		display: block;
+		/* overflow-y: scroll; */
+		height: 100%;
+		background-attachment: fixed;
 		background-size: cover;
-        }
-        select {
-            text-align: center;
-            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-            font-weight: 500;
-            cursor: pointer;
-            background-color: #F3F3F3;
-            padding: 2px;
-	    }
-        .selects {
-		    position: absolute;
-            top: 10%;
-            left: 1%;
-            z-index: 1;
-	    }
-        .img-container .btn {
-            background-color: #ffffffaa;
-            background-size: contain;
-            background-position: center;
-            width: 15%;
-            height: 11%;
-            cursor: pointer;
-            border: none;
-            position: absolute;
-            left: 50%;
-            top: 48%;
-            transform: translate(170%, -150%);
-            opacity: 0.8;
-            border-radius: 100%;
-            border: 2px solid black;
-            padding: 3px;
-        }
-        .img-container .btn:hover {
-            background-size: contain;
-            background-position: center;
-            background-color: #ffffff;
-        }
-        /*.page-container {
+	}
+
+	select {
+		text-align: center;
+		font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+		font-weight: 500;
+		cursor: pointer;
+		background-color: #F3F3F3;
+		padding: 2px;
+	}
+
+	.selects {
+		position: absolute;
+		top: 10%;
+		left: 1%;
+		z-index: 1;
+	}
+
+	.img-container .btn {
+		background-color: #ffffffaa;
+		background-size: contain;
+		background-position: center;
+		width: 15%;
+		height: 11%;
+		cursor: pointer;
+		border: none;
+		position: absolute;
+		left: 50%;
+		top: 48%;
+		transform: translate(170%, -150%);
+		opacity: 0.8;
+		border-radius: 100%;
+		border: 2px solid black;
+		padding: 3px;
+	}
+
+	.img-container .btn:hover {
+		background-size: contain;
+		background-position: center;
+		background-color: #ffffff;
+	}
+
+	/*.page-container {
             display: flex;
             align-items: center;
             justify-items: center;
@@ -65,523 +72,546 @@
             height: 100%; 
             flex-direction: column;
         }*/
-        hr {
-            width: 85%;
-            height: 4px;
-            background-color: black;
-            border-radius: 2px;
-            border: none;
-        }
-        #modal-container {
-            display: none; 
-            position: fixed; 
-            z-index: 1; 
-            padding-top: 70px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto; 
-            background-color: rgb(0,0,0); 
-            background-color: rgba(0,0,0,0.4); 
-        }
-        #modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 60%;
-            border-radius: 10px;
-            border: solid #777 3px;
-        }
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            margin-left: 30px;
-        }
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .top-section {
-            width: 100%;
-            position: relative;
-            display: flex;
-            background-color: #88888866;
-        }
-        .pack {
-            margin-top: 30px;
-            display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            gap: 13px;
-            align-items: center;
-            justify-items: center;
-            width: 95%;
-            margin-left: 2.5%;
-            padding-bottom: 25px; 
-            position: relative; 
-            /* height: 1000%; */
-        }
-        .pulls {
-            /* background-color: green; */
-            /* width: 100%;
+	hr {
+		width: 85%;
+		height: 4px;
+		background-color: black;
+		border-radius: 2px;
+		border: none;
+	}
+
+	#modal-container {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 70px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	#modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 60%;
+		border-radius: 10px;
+		border: solid #777 3px;
+	}
+
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+		margin-left: 30px;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.top-section {
+		width: 100%;
+		position: relative;
+		display: flex;
+		background-color: #88888866;
+	}
+
+	.pack {
+		margin-top: 30px;
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		gap: 13px;
+		align-items: center;
+		justify-items: center;
+		width: 95%;
+		margin-left: 2.5%;
+		padding-bottom: 25px;
+		position: relative;
+		/* height: 1000%; */
+	}
+
+	.pulls {
+		/* background-color: green; */
+		/* width: 100%;
             height: 100%; */
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            height: fit-content;
-            margin-bottom: 15px;
-            width: 80%;
-            margin-left: 10%;
-            padding-top: 20px;
-        }
-        .divider {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 2px;
-            align-items: center;
-            justify-items: center;
-            display: flex;
-            flex-direction: column;
-        }
-        .img-container {
-            position: relative;
-            align-self: center;
-            text-align: center;
-        }
-        .img-container img {
-            width: 100%;
-            height: auto;
-        }
-        .card-image {
-            border-radius: 4%;
-        }
-        .main-top-area {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            height: 100%;
-            width: 100%;
-            align-items: center;
-            justify-items: center;
-        }
-        .top-area-section {
-            width: 100%; 
-            height: 100%;
-            margin: 8px;
-            position: relative;
-        }
-        .dark-button{
-            font-size: 20px;
-            border-radius: 5px;
-            border: 1px solid white;
-            color: white;
-            background-color: #333;
-            padding: 6px;
-            display: flex;
-            align-items: center;
-            justify-items: center;
-            gap: 6px;
-            cursor: pointer;
-        }
-        .top-area-button {
-            float: right;
-            margin-right: 10px;
-            margin-top:   10px;
-        }
-        .dark-button:hover {
-            background-color: black;
-        }
-        .card-col {
-            display: grid;
-            grid-auto-rows: 30px;
-            height: fit-content;
-        }
-        .image-grid {
-            transition: 0.2s;
-        }
-        .page-container .image-grid:hover {
-            transform: scale(110%);
-            z-index: 1;
-        }
-        .input {
-            border-radius: 6px;
-            border: 1px solid white;
-            font-size: 16px;
-            padding: 4px;
-        }
-        .pack-counter {
-            margin-top: 19px; 
-            margin-right: 0%;
-            /* width: 85%; */
-            float: right;
-            text-align: center;
-            font-weight: bold;
-            font-size: 24px;
-            /* position: absolute; */
-        }
-        .save-coll-modal-container {
-            display: flex;
-            gap: 8px;
-            width: 60%;
-        }
-        .top-area-btn-icon {
-            height: 30px;
-            pointer-events: none;
-        }
-        .set-modal-container {
-            display: grid;
-            gap: 15px;
-            grid-template-columns: 70px 5fr 1fr 70px 120px;
-            align-items: center;
-            /* justify-items: center; */
-            padding: 8px;
-            margin-bottom: 70px;
-        }
-        .set-logo {
-            height: 70px;
-        }
-        .set-name {
-            font-family: beleren;
-            font-size: 28px;
-        }
-        .pack-num {
-            font-size: 30px;
-            text-align: center;
-        }
-        .total-cost {
-            font-size: 24px;
-            width: 80%;
-            font-weight: bold;
-            display: inline-block;
-            text-align: center;
-        }
-        .coll-league-set-header {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-items: center;
-            gap: 18px;
-            margin-bottom: 8px;
-        }
-        /* .set-code {
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		height: fit-content;
+		margin-bottom: 15px;
+		width: 80%;
+		margin-left: 10%;
+		padding-top: 20px;
+	}
+
+	.divider {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 2px;
+		align-items: center;
+		justify-items: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.img-container {
+		position: relative;
+		align-self: center;
+		text-align: center;
+	}
+
+	.img-container img {
+		width: 100%;
+		height: auto;
+	}
+
+	.card-image {
+		border-radius: 4%;
+	}
+
+	.main-top-area {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		height: 100%;
+		width: 100%;
+		align-items: center;
+		justify-items: center;
+	}
+
+	.top-area-section {
+		width: 100%;
+		height: 100%;
+		margin: 8px;
+		position: relative;
+	}
+
+	.dark-button {
+		font-size: 20px;
+		border-radius: 5px;
+		border: 1px solid white;
+		color: white;
+		background-color: #333;
+		padding: 6px;
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		gap: 6px;
+		cursor: pointer;
+	}
+
+	.top-area-button {
+		float: right;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+
+	.dark-button:hover {
+		background-color: black;
+	}
+
+	.card-col {
+		display: grid;
+		grid-auto-rows: 30px;
+		height: fit-content;
+	}
+
+	.image-grid {
+		transition: 0.2s;
+	}
+
+	.page-container .image-grid:hover {
+		transform: scale(110%);
+		z-index: 1;
+	}
+
+	.input {
+		border-radius: 6px;
+		border: 1px solid white;
+		font-size: 16px;
+		padding: 4px;
+	}
+
+	.pack-counter {
+		margin-top: 19px;
+		margin-right: 0%;
+		/* width: 85%; */
+		float: right;
+		text-align: center;
+		font-weight: bold;
+		font-size: 24px;
+		/* position: absolute; */
+	}
+
+	.save-coll-modal-container {
+		display: flex;
+		gap: 8px;
+		width: 60%;
+	}
+
+	.top-area-btn-icon {
+		height: 30px;
+		pointer-events: none;
+	}
+
+	.set-modal-container {
+		display: grid;
+		gap: 15px;
+		grid-template-columns: 70px 5fr 1fr 70px 120px;
+		align-items: center;
+		/* justify-items: center; */
+		padding: 8px;
+		margin-bottom: 70px;
+	}
+
+	.set-logo {
+		height: 70px;
+	}
+
+	.set-name {
+		font-family: beleren;
+		font-size: 28px;
+	}
+
+	.pack-num {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.total-cost {
+		font-size: 24px;
+		width: 80%;
+		font-weight: bold;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.coll-league-set-header {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		gap: 18px;
+		margin-bottom: 8px;
+	}
+
+	/* .set-code {
             font-weight: bold;
             font-size: 24px;
         } */
-    </style>
-    <style id="text-style">
+</style>
+<style id="text-style">
 	.text {
 		color: white;
 	}
-    </style>
-    <style id="popout-style">
-        .popout {
-            background-color: #f3f3f3;
-            /* color: #f3f3f3; */
-        }
-    </style>
-    <body>
-        <div class="header">
-            <div class="search-grid">
-                <a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-                <img class="sg-icon" src="/img/header/search.png">
-                <input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
-                <a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
-                <a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
-                <a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
-                <a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>
-                <a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
-                <a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
-                <a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
-            </div>
-        </div>
-        <input id="coll-league-inp" style="display: none;">
-        <button id="coll-league-next-pack" style="display: none;"></button>
-        <div class="selects" id="selects">
-			<select id="color-select" class="popout" onchange="setGradient()">
-			</select>
+</style>
+<style id="popout-style">
+	.popout {
+		background-color: #f3f3f3;
+		/* color: #f3f3f3; */
+	}
+</style>
+
+<body>
+	<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/header/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false"
+				autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>
+			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+			<a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
+			<a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
 		</div>
-        <div class="page-container">
-            <div class="top-section">
-                <div class="main-top-area">
-                    <div class="top-area-section">
-                        <span id="pack-counter" class="pack-counter text">Pack X/X</span>
-                    </div>
-                    <div class="top-area-section">
-                        <button onclick="importFile()" class="top-area-button dark-button">Upload file<img src="/img/create.png" class="top-area-btn-icon"></button>
-                        <button onclick="openSet()" class="top-area-button dark-button">Open set<img src="/img/header/sets.png" class="top-area-btn-icon"></button>
-                    </div>
-                    <div class="top-area-section">
-                        <button class="top-area-button dark-button" onclick="nextPack()"  id="next-pack">Next pack</button>
-                        <button class="top-area-button dark-button" onclick="savePulls()" id="save-pack">Save to collection</button>
-                    </div>
-                </div>
-                <div class="divider text-bg"></div>
-            </div>
-            <div class="pack"  id="pack">
-            </div>
-            <div class="pulls" id="pulls"></div>
-        </div>
-        <div id="modal-container">
-			<div id="modal-content" class="popout">
-				<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+	</div>
+	<input id="coll-league-inp" style="display: none;">
+	<button id="coll-league-next-pack" style="display: none;"></button>
+	<div class="selects" id="selects">
+		<select id="color-select" class="popout" onchange="setGradient()">
+		</select>
+	</div>
+	<div class="page-container">
+		<div class="top-section">
+			<div class="main-top-area">
+				<div class="top-area-section">
+					<span id="pack-counter" class="pack-counter text">Pack X/X</span>
+				</div>
+				<div class="top-area-section">
+					<button onclick="importFile()" class="top-area-button dark-button">Upload file<img
+							src="/img/create.png" class="top-area-btn-icon"></button>
+					<button onclick="openSet()" class="top-area-button dark-button">Open set<img
+							src="/img/header/sets.png" class="top-area-btn-icon"></button>
+				</div>
+				<div class="top-area-section">
+					<button class="top-area-button dark-button" onclick="nextPack()" id="next-pack">Next pack</button>
+					<button class="top-area-button dark-button" onclick="savePulls()" id="save-pack">Save to
+						collection</button>
+				</div>
 			</div>
+			<div class="divider text-bg"></div>
 		</div>
-        <input type="file" style="display: none;" id="import-file">
-        <script>
-            let gradients = null;
-            let raw_gradients = null;
-            let gradTop = null;
-            let gradBottom = null;
-            let p1p1_cards;
-            let pulls = [];
-            let firstpack = true;
-            const urlParams = new URLSearchParams(window.location.search);
-            const pack = urlParams.get('pack');
-            const source = urlParams.get('source');
-            let pack_count = 1;
-            const num_packs = urlParams.get('num') ? parseInt(urlParams.get('num')) : 999999 /* that should be enough for everyone */;
-            document.getElementById("next-pack").dataset.count = pack_count;
-            document.getElementById("next-pack").dataset.packs = num_packs;
-            modal = document.getElementById("modal-container");
-            window.onclick = function(event) {
-                let iscoll = document.getElementById("modal-container").dataset.source == "coll";
-                if (event.target == modal && !iscoll) {
-                    document.getElementById('modal-container').style.display = 'none';
-                }
-            }
-            document.addEventListener("DOMContentLoaded", async function () {
-                await fetch('/lists/all-cards.json')
-					.then(response => response.json())
-					.then(json => {
-						card_list = json;
+		<div class="pack" id="pack">
+		</div>
+		<div class="pulls" id="pulls"></div>
+	</div>
+	<div id="modal-container">
+		<div id="modal-content" class="popout">
+			<span class="close"
+				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+		</div>
+	</div>
+	<input type="file" style="display: none;" id="import-file">
+	<script>
+		let gradients = null;
+		let raw_gradients = null;
+		let gradTop = null;
+		let gradBottom = null;
+		let p1p1_cards;
+		let pulls = [];
+		let firstpack = true;
+		const urlParams = new URLSearchParams(window.location.search);
+		const pack = urlParams.get('pack');
+		const source = urlParams.get('source');
+		let pack_count = 1;
+		const num_packs = urlParams.get('num') ? parseInt(urlParams.get('num')) : 999999 /* that should be enough for everyone */;
+		document.getElementById("next-pack").dataset.count = pack_count;
+		document.getElementById("next-pack").dataset.packs = num_packs;
+		modal = document.getElementById("modal-container");
+		window.onclick = function (event) {
+			let iscoll = document.getElementById("modal-container").dataset.source == "coll";
+			if (event.target == modal && !iscoll) {
+				document.getElementById('modal-container').style.display = 'none';
+			}
+		}
+		document.addEventListener("DOMContentLoaded", async function () {
+			await fetch('/lists/all-cards.json')
+				.then(response => response.json())
+				.then(json => {
+					card_list = json;
 				}).catch(error => console.error('Error:', error));
 
-				await fetch('/resources/replacechars.txt')
-					.then(response => response.text())
-					.then(text => {
-						specialchars = text; 
+			await fetch('/resources/replacechars.txt')
+				.then(response => response.text())
+				.then(text => {
+					specialchars = text;
 				}).catch(error => console.error('Error:', error));
 
-				card_list_arrayified = card_list.cards;
+			card_list_arrayified = card_list.cards;
 
-                try {
-                    const response = await fetch('/resources/gradients.json');
-                    raw_gradients = await response.json();
-                }
-                catch(error) {
-                    console.error('Error:', error);
-                }
+			try {
+				const response = await fetch('/resources/gradients.json');
+				raw_gradients = await response.json();
+			}
+			catch (error) {
+				console.error('Error:', error);
+			}
 
-                gradients = raw_gradients.gradients;
-				card_backgrounds = raw_gradients.cards;
-                setGradient(localStorage.getItem("settings.gradient"));
-                console.log(setGradient);
-                prepareGradients();
+			gradients = raw_gradients.gradients;
+			card_backgrounds = raw_gradients.cards;
+			setGradient(localStorage.getItem("settings.gradient"));
+			console.log(setGradient);
+			prepareGradients();
 
-                document.title = `${num_packs} ${pack} packs`;
+			document.title = `${num_packs} ${pack} packs`;
 
-                if (source) {
-                    if (source.includes("coll-league")) {
-                        document.getElementById("coll-league-inp").value = source;
-                        document.getElementById("coll-league-inp").click();
-                    }
-                } else {
-                    const draft_file = await getDraftFile(pack);
-                    draftmancerToP1P1(draft_file);
-                    packOnePickOne();
-                }
-            });
+			if (source) {
+				if (source.includes("coll-league")) {
+					document.getElementById("coll-league-inp").value = source;
+					document.getElementById("coll-league-inp").click();
+				}
+			} else {
+				const draft_file = await getDraftFile(pack);
+				draftmancerToP1P1(draft_file);
+				packOnePickOne();
+			}
+		});
 
-            async function getDraftFile(pack) {
-                let file;
-                await fetch('/sets/' + pack + '-files/' + pack + '-draft.txt')
-					.then(response => response.text())
-					.then(text => {
-						file = text; 
+		async function getDraftFile(pack) {
+			let file;
+			await fetch('/sets/' + pack + '-files/' + pack + '-draft.txt')
+				.then(response => response.text())
+				.then(text => {
+					file = text;
 				}).catch(error => console.error('Error:', error));
 
-                return file;
-            }
+			return file;
+		}
 
-            function gridifyCard(card_stats, cgc = false, card_text = false, rotate_card = false, designer_notes = false) {
-                const card_name = card_stats.card_name;
+		function gridifyCard(card_stats, cgc = false, card_text = false, rotate_card = false, designer_notes = false) {
+			const card_name = card_stats.card_name;
 
-                const grid = document.createElement("div");
-                grid.className = "image-grid";
+			const grid = document.createElement("div");
+			grid.className = "image-grid";
 
-                grid.appendChild(buildImgContainer(card_stats, false, rotate_card, cgc = cgc));
-                
-                const text = document.createElement("div");
-                text.className = "card-text popout";
-                text.id = "card-text";
+			grid.appendChild(buildImgContainer(card_stats, false, rotate_card, cgc = cgc));
 
-                const name_cost = document.createElement("div");
-                name_cost.className = "name-cost";
-                name_cost.innerHTML = card_stats.card_name + (card_stats.cost != "" ? '     ' + symbolize(card_stats.cost) : "");
-                text.appendChild(name_cost);
+			const text = document.createElement("div");
+			text.className = "card-text popout";
+			text.id = "card-text";
 
-                const type = document.createElement("div");
-                type.className = "type";
-                type.textContent = card_stats.type;
-                text.appendChild(type);
+			const name_cost = document.createElement("div");
+			name_cost.className = "name-cost";
+			name_cost.innerHTML = card_stats.card_name + (card_stats.cost != "" ? '     ' + symbolize(card_stats.cost) : "");
+			text.appendChild(name_cost);
 
-                const effect = document.createElement("div");
-                effect.className = "effect";
-                let card_effects = "";
-                if (card_stats.rules_text != "")
-                {
-                    card_effects = card_stats.rules_text.split("\n");
-                }
-                else
-                {
-                    card_effects = card_stats.special_text.split("\n");
-                }
-                effect.innerHTML += prettifyEffects(card_effects);
-                text.appendChild(effect);
+			const type = document.createElement("div");
+			type.className = "type";
+			type.textContent = card_stats.type;
+			text.appendChild(type);
 
-                if(card_stats.pt != "")
-                {
-                    const pt = document.createElement("div");
-                    pt.className = "pt";
-                    pt.textContent = card_stats.pt;
-                    text.appendChild(pt);
-                }
-                else if (card_stats.loyalty != "")
-                {
-                    const loyalty = document.createElement("div");
-                    loyalty.className = "pt";
-                    loyalty.textContent = "[" + card_stats.loyalty + "]";
-                    text.appendChild(loyalty);
-                }
+			const effect = document.createElement("div");
+			effect.className = "effect";
+			let card_effects = "";
+			if (card_stats.rules_text != "") {
+				card_effects = card_stats.rules_text.split("\n");
+			}
+			else {
+				card_effects = card_stats.special_text.split("\n");
+			}
+			effect.innerHTML += prettifyEffects(card_effects);
+			text.appendChild(effect);
 
-                if(designer_notes && card_stats.designer_notes != null)
-                {
-                    const dnotes = document.createElement("div");
-                    dnotes.className = "designer-notes";
-                    dnotes.innerHTML = "<u><b>Designer Notes</b></u>";
-                    dnotes.innerHTML = dnotes.innerHTML + card_stats.designer_notes;
-                    text.appendChild(dnotes);
-                }
+			if (card_stats.pt != "") {
+				const pt = document.createElement("div");
+				pt.className = "pt";
+				pt.textContent = card_stats.pt;
+				text.appendChild(pt);
+			}
+			else if (card_stats.loyalty != "") {
+				const loyalty = document.createElement("div");
+				loyalty.className = "pt";
+				loyalty.textContent = "[" + card_stats.loyalty + "]";
+				text.appendChild(loyalty);
+			}
 
-                // 13-name	14-color	15-type	16-ci	17-cost	18-ability	19-pt	20-special-text	21-loyalty
-                if(card_stats.shape.includes("adventure") || card_stats.shape.includes("double") || card_stats.shape.includes("spli"))
-                {
-                    const name_cost_2 = document.createElement("div");
-                    name_cost_2.className = "name-cost";
-                    name_cost_2.innerHTML = card_stats.card_name2 + (card_stats.cost2 != "" ? '     ' + symbolize(card_stats.cost2) : "");
-                    text.appendChild(name_cost_2);
+			if (designer_notes && card_stats.designer_notes != null) {
+				const dnotes = document.createElement("div");
+				dnotes.className = "designer-notes";
+				dnotes.innerHTML = "<u><b>Designer Notes</b></u>";
+				dnotes.innerHTML = dnotes.innerHTML + card_stats.designer_notes;
+				text.appendChild(dnotes);
+			}
 
-                    const type_2 = document.createElement("div");
-                    type_2.className = "type";
-                    type_2.textContent = card_stats.type2;
-                    text.appendChild(type_2);
+			// 13-name	14-color	15-type	16-ci	17-cost	18-ability	19-pt	20-special-text	21-loyalty
+			if (card_stats.shape.includes("adventure") || card_stats.shape.includes("double") || card_stats.shape.includes("spli")) {
+				const name_cost_2 = document.createElement("div");
+				name_cost_2.className = "name-cost";
+				name_cost_2.innerHTML = card_stats.card_name2 + (card_stats.cost2 != "" ? '     ' + symbolize(card_stats.cost2) : "");
+				text.appendChild(name_cost_2);
 
-                    const effect_2 = document.createElement("div");
-                    effect_2.className = "effect";
-                    let card_effects_2 = "";
-                    if (card_stats.rules_text2 != "")
-                    {
-                        card_effects_2 = card_stats.rules_text2.split("\n");
-                    }
-                    else
-                    {
-                        card_effects_2 = card_stats.special_text2.split("\n");
-                    }
-                    effect_2.innerHTML += prettifyEffects(card_effects_2);
-                    text.appendChild(effect_2);
+				const type_2 = document.createElement("div");
+				type_2.className = "type";
+				type_2.textContent = card_stats.type2;
+				text.appendChild(type_2);
 
-                    if(card_stats.pt2 != "")
-                    {
-                        const pt_2 = document.createElement("div");
-                        pt_2.className = "pt";
-                        pt_2.textContent = card_stats.pt2;
-                        text.appendChild(pt_2);
-                    }
-                    else if (card_stats.loyalty2 != "")
-                    {
-                        const loyalty = document.createElement("div");
-                        loyalty.className = "pt";
-                        loyalty.textContent = "[" + card_stats.loyalty2 + "]";
-                        text.appendChild(loyalty);
-                    }
-                }
-                
-                if (card_text)
-                    grid.appendChild(text);
+				const effect_2 = document.createElement("div");
+				effect_2.className = "effect";
+				let card_effects_2 = "";
+				if (card_stats.rules_text2 != "") {
+					card_effects_2 = card_stats.rules_text2.split("\n");
+				}
+				else {
+					card_effects_2 = card_stats.special_text2.split("\n");
+				}
+				effect_2.innerHTML += prettifyEffects(card_effects_2);
+				text.appendChild(effect_2);
 
-                return grid;
-            }
+				if (card_stats.pt2 != "") {
+					const pt_2 = document.createElement("div");
+					pt_2.className = "pt";
+					pt_2.textContent = card_stats.pt2;
+					text.appendChild(pt_2);
+				}
+				else if (card_stats.loyalty2 != "") {
+					const loyalty = document.createElement("div");
+					loyalty.className = "pt";
+					loyalty.textContent = "[" + card_stats.loyalty2 + "]";
+					text.appendChild(loyalty);
+				}
+			}
 
-            function buildImgContainer(card_stats, hidden_title = false, rotate_card = false, cgc = false) {
-                const imgContainer = document.createElement("div");
-                imgContainer.className = "img-container";
-                const id = cgc ? "card-modal-card" : card_stats.set + "-" + card_stats.number;
+			if (card_text)
+				grid.appendChild(text);
 
-                const img = document.createElement("img");
-                img.className = "card-image";
-                img.id = id;
-                // (card_stats[13].includes("_") ? card_stats[13] : card_stats[0]) for posterity
-                img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
-                
-                const link = document.createElement("a");
-                
-                const url = new URL('card', window.location.origin);
-                const params = {
-                    set: card_stats.set,
-                    num: card_stats.number,
-                    name: card_stats.card_name
-                }
-                for (const key in params) {
-                    url.searchParams.append(key, params[key]);
-                }
-                // link.href = url;
+			return grid;
+		}
 
-                link.appendChild(img);
+		function buildImgContainer(card_stats, hidden_title = false, rotate_card = false, cgc = false) {
+			const imgContainer = document.createElement("div");
+			imgContainer.className = "img-container";
+			const id = cgc ? "card-modal-card" : card_stats.set + "-" + card_stats.number;
 
-                if ((card_stats.shape.includes("spli") || card_stats.type.includes("Battle")) && rotate_card)
-                {
-                    const rotated_img = document.createElement("img");
-                    rotated_img.className = "h-img";
-                    rotated_img.id = "h-img";
-                    rotated_img.src = img.src;
-                    rotated_img.style.display = "block";
-                    img.style.filter = "blur(2px) brightness(0.7)";
+			const img = document.createElement("img");
+			img.className = "card-image";
+			img.id = id;
+			// (card_stats[13].includes("_") ? card_stats[13] : card_stats[0]) for posterity
+			img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 
-                    link.appendChild(rotated_img);
-                }
+			const link = document.createElement("a");
 
-                imgContainer.appendChild(link);
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: card_stats.set,
+				num: card_stats.number,
+				name: card_stats.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+			// link.href = url;
 
-                if (card_stats.shape.includes("double"))
-                {
-                    const imgFlipBtn = document.createElement("button");
-                    imgFlipBtn.className = "btn";
-                    imgFlipBtn.onclick = async function() { imgFlip(id, rotate_card); };
-                    const imgFlipIcon = document.createElement("img");
-                    imgFlipIcon.className = "img-flip-icon";
-                    imgFlipIcon.src = '/img/flip.svg';
-                    imgFlipBtn.appendChild(imgFlipIcon);
-                    imgContainer.appendChild(imgFlipBtn);
-                }
+			link.appendChild(img);
 
-                if (hidden_title)
-                {
-                    const title = document.createElement("div");
-                    title.innerText = card_stats.card_name;
-                    title.className = "hidden-text";
-                    imgContainer.appendChild(title);
-                }
+			if ((card_stats.shape.includes("spli") || card_stats.type.includes("Battle")) && rotate_card) {
+				const rotated_img = document.createElement("img");
+				rotated_img.className = "h-img";
+				rotated_img.id = "h-img";
+				rotated_img.src = img.src;
+				rotated_img.style.display = "block";
+				img.style.filter = "blur(2px) brightness(0.7)";
 
-                return imgContainer;
-            }
+				link.appendChild(rotated_img);
+			}
 
-            async function imgFlip(id, rotate_card = false) {
+			imgContainer.appendChild(link);
+
+			if (card_stats.shape.includes("double")) {
+				const imgFlipBtn = document.createElement("button");
+				imgFlipBtn.className = "btn";
+				imgFlipBtn.onclick = async function () { imgFlip(id, rotate_card); };
+				const imgFlipIcon = document.createElement("img");
+				imgFlipIcon.className = "img-flip-icon";
+				imgFlipIcon.src = '/img/flip.svg';
+				imgFlipBtn.appendChild(imgFlipIcon);
+				imgContainer.appendChild(imgFlipBtn);
+			}
+
+			if (hidden_title) {
+				const title = document.createElement("div");
+				title.innerText = card_stats.card_name;
+				title.className = "hidden-text";
+				imgContainer.appendChild(title);
+			}
+
+			return imgContainer;
+		}
+
+		async function imgFlip(id, rotate_card = false) {
 			const img = document.getElementById(id);
-			const seconds = 0.2;
+			const seconds = 0.15;
 			const cardName = img.src;
 
 			img.style.transition = seconds.toString() + "s";
@@ -591,27 +621,23 @@
 			btn.style.transition = seconds.toString() + "s";
 			btn.style.filter = cardName.includes("_front") ? "invert()" : "";
 
-			await setTimeout(function() {
+			await setTimeout(function () {
 				const rotated_img = document.getElementById("h-img");
-				
-				if (cardName.includes("_front"))
-				{
+
+				if (cardName.includes("_front")) {
 					img.src = cardName.replace("_front", "_back");
 					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "invert()";
 
-					if (rotate_card)
-					{
+					if (rotate_card) {
 						rotated_img.style.display = "none";
 						img.style.filter = "";
 					}
 				}
-				else
-				{
+				else {
 					img.src = cardName.replace("_back", "_front");
 					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "";
 
-					if (rotate_card)
-					{
+					if (rotate_card) {
 						rotated_img.style.display = "block";
 						img.style.filter = "blur(2px) brightness(0.7)";
 					}
@@ -621,944 +647,933 @@
 				img.style.transform = "rotateY(0deg)";
 			}, seconds * 1000);
 
-			await setTimeout(function() {
+			await setTimeout(function () {
 				console.log("done");
 			}, seconds * 1000);
 		}
 
-        function prettifyEffects(card_effects) {
-                let HTML = "";
+		function prettifyEffects(card_effects) {
+			let HTML = "";
 
-                for (let i = 0; i < card_effects.length; i++)
-                {
-                    let styled_effect = card_effects[i].replace(/\[i\]([^\]]+)\[\/i\]/g, function(matched, _1) {
-                        return '<i>' + _1 + '</i>'
-                    }).replace(/\[b\]([^\]]+)\[\/b\]/g, function(matched, _1) {
-                        return '<b>' + _1 + '</b>'
-                    })
-                    
-                    HTML += styled_effect;
+			for (let i = 0; i < card_effects.length; i++) {
+				let styled_effect = card_effects[i].replace(/\[i\]([^\]]+)\[\/i\]/g, function (matched, _1) {
+					return '<i>' + _1 + '</i>'
+				}).replace(/\[b\]([^\]]+)\[\/b\]/g, function (matched, _1) {
+					return '<b>' + _1 + '</b>'
+				})
 
-                    if (i != card_effects.length - 1)
-                    {
-                        HTML += "<br>"
-                    }
-                }
-                
-                let regexHTML = symbolize(HTML);
+				HTML += styled_effect;
 
-                return regexHTML;
-            }
-
-            function symbolize(text) {
-                //This isn't needed now that the { & } are put into the cost & text by the exporter
-                //let tokens = tokenize(text);
-                //let symText = "";
-                //for (const token of tokens)
-                //{
-                //	symText = symText + "{" + token + "}";
-                //}
-
-                return formatTextHTML(text);
-            }
-
-            function formatTextHTML(str) {
-                if(!str)
-                    return "";
-                str = str.replace(/[{]([^}]+)[}]/g, function(matched, _1) {
-                    let letters = _1.toLowerCase()
-                    return '<span class="mana mana-cost mana-' + letters + '"></span>';
-                })
-                return str;
-            }
-
-
-            function prepareGradients() {
-				let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt = document.createElement("option");
-				opt.value = defaultGradient.replace(' ', '-');
-				opt.text = defaultGradient;
-				document.getElementById("color-select").appendChild(opt);
-				let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt_rand = document.createElement("option");
-				opt_rand.value = "Random-Card";
-				opt_rand.text = "Random Card";
-
-				document.getElementById("color-select").appendChild(opt_rand);
-				for (const gradient of gradients)
-				{	
-					const opt = document.createElement("option");
-					opt.value = gradient.name.replace(' ', '-');
-					opt.text = gradient.name;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
+				if (i != card_effects.length - 1) {
+					HTML += "<br>"
 				}
-
-				for (const gradient in card_backgrounds) {
-					const opt = document.createElement("option");
-					opt.value = gradient.replace(' ', '-');
-					opt.text = gradient;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
-					console.log(gradient, opt);
-				}
-
-				// setGradient();
 			}
 
-			function setGradient(gradient=false) {
-				let artistCredit = "";
-				if (!gradient) { 
-					gradient = document.getElementById("color-select").value;
-				}
+			let regexHTML = symbolize(HTML);
 
-				gradTop = "#000000";
-				gradBottom = "#FFFFFF";
-				for (const grad of gradients)
-				{
-					if (gradient == grad.name.replace(' ', '-'))
-					{ 	
-						gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
-					}
-				}
+			return regexHTML;
+		}
 
-				for (const background in card_backgrounds) {
-					if (gradient == background.replace(' ', '-'))
-					{ 	
-						gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-						artistCredit = card_backgrounds[background][0];
-						setTextColor(card_backgrounds[background][1]);
-					}
-				}
+		function symbolize(text) {
+			//This isn't needed now that the { & } are put into the cost & text by the exporter
+			//let tokens = tokenize(text);
+			//let symText = "";
+			//for (const token of tokens)
+			//{
+			//	symText = symText + "{" + token + "}";
+			//}
 
-				if (gradient == "Random-Card") {
-					const bgs = Object.keys(card_backgrounds);
-					const background = bgs[reallyRand(bgs.length)];
+			return formatTextHTML(text);
+		}
+
+		function formatTextHTML(str) {
+			if (!str)
+				return "";
+			str = str.replace(/[{]([^}]+)[}]/g, function (matched, _1) {
+				let letters = _1.toLowerCase()
+				return '<span class="mana mana-cost mana-' + letters + '"></span>';
+			})
+			return str;
+		}
+
+
+		function prepareGradients() {
+			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt = document.createElement("option");
+			opt.value = defaultGradient.replace(' ', '-');
+			opt.text = defaultGradient;
+			document.getElementById("color-select").appendChild(opt);
+			let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt_rand = document.createElement("option");
+			opt_rand.value = "Random-Card";
+			opt_rand.text = "Random Card";
+
+			document.getElementById("color-select").appendChild(opt_rand);
+			for (const gradient of gradients) {
+				const opt = document.createElement("option");
+				opt.value = gradient.name.replace(' ', '-');
+				opt.text = gradient.name;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
+				}
+			}
+
+			for (const gradient in card_backgrounds) {
+				const opt = document.createElement("option");
+				opt.value = gradient.replace(' ', '-');
+				opt.text = gradient;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
+				}
+				console.log(gradient, opt);
+			}
+
+			// setGradient();
+		}
+
+		function setGradient(gradient = false) {
+			let artistCredit = "";
+			if (!gradient) {
+				gradient = document.getElementById("color-select").value;
+			}
+
+			gradTop = "#000000";
+			gradBottom = "#FFFFFF";
+			for (const grad of gradients) {
+				if (gradient == grad.name.replace(' ', '-')) {
+					gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
+				}
+			}
+
+			for (const background in card_backgrounds) {
+				if (gradient == background.replace(' ', '-')) {
 					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
 					artistCredit = card_backgrounds[background][0];
 					setTextColor(card_backgrounds[background][1]);
 				}
-
-				
-				document.body.style.backgroundImage = gradImage;
-				localStorage.setItem("settings.gradient", gradient);
-				console.log("CHANGE");
-				if (document.getElementsByClassName("artist-credit")[0])
-					document.getElementsByClassName("artist-credit")[0].remove();
-				const credit_text = document.createElement("span");
-				credit_text.className = "artist-credit text";
-				credit_text.innerText = `background by ${artistCredit}`;
-				if (artistCredit && document.getElementById("color-select"))
-					document.getElementById("color-select").parentElement.appendChild(credit_text);
 			}
 
-function reallyRand(x, seed = false) {
-				const date = new Date();
-				seed = seed ? seed : date.getUTCFullYear() * 10000 + 
-							 date.getUTCMonth() * 100 + 
-							 date.getUTCDate();
-
-				const a = 1103515245;
-				const c = 12345;
-				const m = Math.pow(2, 31);
-
-				let randomNumber = (a * seed + c) % m;
-				randomNumber = randomNumber / m;
-
-				return Math.floor(randomNumber * x);
+			if (gradient == "Random-Card") {
+				const bgs = Object.keys(card_backgrounds);
+				const background = bgs[reallyRand(bgs.length)];
+				gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
+				artistCredit = card_backgrounds[background][0];
+				setTextColor(card_backgrounds[background][1]);
 			}
 
-function setTextColor(c = false) {
-				if (c) {
-					localStorage.setItem("settings.textcolor", c);
+
+			document.body.style.backgroundImage = gradImage;
+			localStorage.setItem("settings.gradient", gradient);
+			console.log("CHANGE");
+			if (document.getElementsByClassName("artist-credit")[0])
+				document.getElementsByClassName("artist-credit")[0].remove();
+			const credit_text = document.createElement("span");
+			credit_text.className = "artist-credit text";
+			credit_text.innerText = `background by ${artistCredit}`;
+			if (artistCredit && document.getElementById("color-select"))
+				document.getElementById("color-select").parentElement.appendChild(credit_text);
+		}
+
+		function reallyRand(x, seed = false) {
+			const date = new Date();
+			seed = seed ? seed : date.getUTCFullYear() * 10000 +
+				date.getUTCMonth() * 100 +
+				date.getUTCDate();
+
+			const a = 1103515245;
+			const c = 12345;
+			const m = Math.pow(2, 31);
+
+			let randomNumber = (a * seed + c) % m;
+			randomNumber = randomNumber / m;
+
+			return Math.floor(randomNumber * x);
+		}
+
+		function setTextColor(c = false) {
+			if (c) {
+				localStorage.setItem("settings.textcolor", c);
+			}
+			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+		}
+
+		function draftmancerToP1P1(draft_file) { // comments in here by aanginer
+			updatePackCount(); // just do this at the start
+			let draft_slots = {};
+			let p1p1_object = [];
+			let result_json = [];
+			let card_map = {};
+			let current_slot_index = 0;
+			let slot_indexes = {};
+			const draft_headers = draft_file.matchAll(/\[(.+?)\([0-9]+?\)]/g); // match text between [ and ]
+			for (const result of draft_headers) {
+				const copies = parseInt(result[0].match(/\((.*?)\)/g)[0].split("(")[1].split(")")[0]); // match text between ( and ) -- do the split thing bc js regex doesnt let me grab the group for some reason????????
+				// -- this is useless but if needed, const name = result.groups[0].match(/\[(.*)\(/g); // match text before (
+				console.log
+				draft_slots[result[0]] = copies;
+				slot_indexes[result[0]] = current_slot_index;
+				current_slot_index += copies;
+			}
+
+			for (let i = 0; i < current_slot_index; i++) { // the current index should be the total number
+				p1p1_object.push([]);
+			}
+
+			draft_slots["EOF"] = 0; // add this so when we check for the next slot in the final one we don't get an index error
+			for (let i = 0; i < Object.keys(draft_slots).length - 1; i++) {
+				const draft_slot = Object.keys(draft_slots)[i];
+				const next_slot = Object.keys(draft_slots)[i + 1];
+				const slot_size = draft_slots[draft_slot];
+
+				let card_lines = draft_file.split(draft_slot)[1].split(next_slot)[0].split("\n"); // split between the 2 slots -- splitting by EOF shouldnt be a problem as thatll yield a 1 element list
+				for (const line of card_lines) {
+					const count = parseInt(line.substring(0, line.indexOf(' ')));
+					const card_name = line.substring(line.indexOf(' ') + 1).trim();
+
+					if (!card_map[card_name]) {
+						card_map[card_name] = {};
+					}
+
+					card_map[card_name][draft_slot] = card_map[card_name][draft_slot] ? card_map[card_name][draft_slot] + count : count; // fancy way to do a null check to decide between = and +=
 				}
-				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            	document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
 			}
 
-            function draftmancerToP1P1(draft_file) { // comments in here by aanginer
-                updatePackCount(); // just do this at the start
-                let draft_slots = {};
-                let p1p1_object = [];
-                let result_json = [];
-                let card_map    = {};
-                let current_slot_index = 0;
-                let slot_indexes = {};
-                const draft_headers = draft_file.matchAll(/\[(.+?)\([0-9]+?\)]/g); // match text between [ and ]
-                for (const result of draft_headers) {
-                    const copies = parseInt(result[0].match(/\((.*?)\)/g)[0].split("(")[1].split(")")[0]); // match text between ( and ) -- do the split thing bc js regex doesnt let me grab the group for some reason????????
-                    // -- this is useless but if needed, const name = result.groups[0].match(/\[(.*)\(/g); // match text before (
-                    console.log
-                    draft_slots[result[0]] = copies;
-                    slot_indexes[result[0]] = current_slot_index;
-                    current_slot_index += copies;
-                }
+			for (const card of card_list_arrayified) { // grab the needed card data
+				if (Object.keys(card_map).includes(card.card_name)) {
+					const card_slots = card_map[card.card_name];
+					for (const slot in card_slots) {
+						const slot_copies = draft_slots[slot];
+						for (let i = 0; i < slot_copies; i++) {
+							for (let j = 0; j < card_slots[slot]; j++) {
+								p1p1_object[slot_indexes[slot] + i].push(card);
+							}
+						}
+					}
+				}
+			}
 
-                for (let i = 0; i < current_slot_index; i++) { // the current index should be the total number
-                    p1p1_object.push([]);
-                }
+			p1p1_cards = p1p1_object;
+		}
 
-                draft_slots["EOF"] = 0; // add this so when we check for the next slot in the final one we don't get an index error
-                for (let i = 0; i < Object.keys(draft_slots).length - 1; i++) {
-                    const draft_slot = Object.keys(draft_slots)[i];
-                    const next_slot  = Object.keys(draft_slots)[i + 1];
-                    const slot_size  = draft_slots[draft_slot];
+		function nextPack() {
+			let pack_count = parseInt(document.getElementById("next-pack").dataset.count);
+			const num_packs = parseInt(document.getElementById("next-pack").dataset.packs);
 
-                    let card_lines = draft_file.split(draft_slot)[1].split(next_slot)[0].split("\n"); // split between the 2 slots -- splitting by EOF shouldnt be a problem as thatll yield a 1 element list
-                    for (const line of card_lines) {
-                        const count = parseInt(line.substring(0, line.indexOf(' ')));
-                        const card_name = line.substring(line.indexOf(' ') + 1).trim();
+			if (source) {
+				if (source.includes("coll-league")) {
+					document.getElementById("coll-league-next-pack").click();
+					return;
+				}
+			}
 
-                        if (!card_map[card_name]) {
-                            card_map[card_name] = {};
-                        }
+			if (pack_count <= num_packs && (num_packs != 1 || firstpack)) {
+				pulls.push(...used_cards);
+			}
+			if (pack_count < num_packs) {
+				document.getElementById("next-pack").dataset.count = pack_count + 1;
+				packOnePickOne();
+			}
+			else {
+				document.getElementById("pack").innerHTML = "";
+			}
 
-                        card_map[card_name][draft_slot] = card_map[card_name][draft_slot] ? card_map[card_name][draft_slot] + count : count; // fancy way to do a null check to decide between = and +=
-                    }
-                }
+			pack_count = parseInt(document.getElementById("next-pack").dataset.count);
 
-                for (const card of card_list_arrayified) { // grab the needed card data
-                    if (Object.keys(card_map).includes(card.card_name)) {
-                        const card_slots = card_map[card.card_name];
-                        for (const slot in card_slots) {
-                            const slot_copies = draft_slots[slot];
-                            for (let i = 0; i < slot_copies; i++) {
-                                for (let j = 0; j < card_slots[slot]; j++) {
-                                    p1p1_object[slot_indexes[slot] + i].push(card);
-                                }
-                            }
-                        }
-                    }
-                }
+			updatePackCount();
 
-                p1p1_cards = p1p1_object;
-            }
+			if (pack_count >= num_packs) {
+				document.getElementById("next-pack").innerText = "View Pulls";
+			}
 
-            function nextPack() {
-                let pack_count = parseInt(document.getElementById("next-pack").dataset.count);
-                const num_packs = parseInt(document.getElementById("next-pack").dataset.packs);
+			buildPulls();
 
-                if (source) {
-                    if (source.includes("coll-league")) {
-                        document.getElementById("coll-league-next-pack").click();
-                        return;
-                    }
-                }
+			firstpack = false;
+		}
 
-                if (pack_count <= num_packs && (num_packs != 1 || firstpack)) {
-                    pulls.push(...used_cards);
-                }
-                if (pack_count < num_packs) {
-                    document.getElementById("next-pack").dataset.count = pack_count + 1;
-                    packOnePickOne();
-                } 
-                else {
-                    document.getElementById("pack").innerHTML = "";
-                }
+		function updatePackCount() {
+			document.getElementById("pack-counter").innerText = `Pack ${document.getElementById("next-pack").dataset.count}/${document.getElementById("next-pack").dataset.packs}`;
+		}
 
-                pack_count = parseInt(document.getElementById("next-pack").dataset.count);
+		function packOnePickOne() {
+			img_list = [];
+			used_cards = [];
+			for (const slot of p1p1_cards) {
+				if (slot.length == 0)
+					continue;
 
-                updatePackCount();
+				do {
+					rand_i = Math.floor(Math.random() * (slot.length));
+					card = slot[rand_i];
+				} while (used_cards.includes(card));
 
-                if (pack_count >= num_packs) {
-                    document.getElementById("next-pack").innerText = "View Pulls";
-                }
+				const img_url = '/sets/' + card.set + '-files/img/' + card.number + '_' + card.card_name + (card.shape.includes('double') ? '_front' : '') + '.' + card.image_type;
 
-                buildPulls();
+				const image = new Image();
+				image.src = img_url;
 
-                firstpack = false;
-            }
+				img_list.push(image);
+				used_cards.push(card);
+			}
 
-            function updatePackCount() {
-                document.getElementById("pack-counter").innerText = `Pack ${document.getElementById("next-pack").dataset.count}/${document.getElementById("next-pack").dataset.packs}`;
-            }
+			document.getElementById("pack").innerHTML = "";
 
-            function packOnePickOne() {
-                img_list = [];
-                used_cards = [];
-                for (const slot of p1p1_cards)
-                {	
-                    if (slot.length == 0)
-                        continue;
+			for (const card of used_cards) {
+				const card_ele = gridifyCard(card);
+				card_ele.onclick = () => {
+					openCardModal(card);
+				}
+				document.getElementById("pack").appendChild(card_ele);
+			}
 
-                    do {
-                        rand_i = Math.floor(Math.random() * (slot.length));
-                        card = slot[rand_i];
-                    } while (used_cards.includes(card));
+			const divider = document.createElement("div");
+			divider.className = "divider text-bg";
+			document.getElementById("pack").appendChild(divider);
 
-                    const img_url = '/sets/' + card.set + '-files/img/' + card.number + '_' + card.card_name + (card.shape.includes('double') ? '_front' : '') + '.' + card.image_type;
+			// const canvas = document.getElementById("canvas");
+			// const ctx = canvas.getContext('2d');
 
-                    const image = new Image();
-                    image.src = img_url;
+			// canvas.width = 1883;
+			// canvas.height = 1573;
 
-                    img_list.push(image);
-                    used_cards.push(card);
-                }
+			// for (let i = 0; i < img_list.length; i++)
+			// {
+			//     img_list[i].onload = function() {
+			//         x_offset = 377 * (i % 5);
+			//         y_offset = 525 * Math.floor(i / 5);
+			//         ctx.drawImage(img_list[i], x_offset, y_offset, 375, 523);
+			//     };
+			// }
 
-                document.getElementById("pack").innerHTML = "";
+			// document.getElementById("p1p1").style.display = "block";
+		}
 
-                for (const card of used_cards) {
-                    const card_ele = gridifyCard(card);
-                    card_ele.onclick = () => {
-                        openCardModal(card);
-                    }
-                    document.getElementById("pack").appendChild(card_ele);
-                }
+		function buildPulls() {
+			let col_lengths = [0, 0, 0, 0, 0, 0, 0, 0];
+			document.getElementById("pulls").innerHTML = '<div class="card-col" id="col-0"></div><div class="card-col" id="col-1"></div><div class="card-col" id="col-2"></div><div class="card-col" id="col-3"></div><div class="card-col" id="col-4"></div><div class="card-col" id="col-5"></div><div class="card-col" id="col-6"></div>';
 
-                const divider = document.createElement("div");
-                divider.className = "divider text-bg";
-                document.getElementById("pack").appendChild(divider);
+			for (const card of pulls) {
+				const card_ele = gridifyCard(card);
+				card_ele.onclick = function () {
+					openCardModal(card);
+				}
+				// card_ele.firstChild.style.height = "10px";
+				// card_ele.height = "40px";
+				const mv = Math.min(6, convertToMV(card.cost));
+				col_lengths[mv] += 1;
+				document.getElementById(`col-${mv}`).appendChild(card_ele);
+			}
 
-                // const canvas = document.getElementById("canvas");
-                // const ctx = canvas.getContext('2d');
+			for (let i = 0; i < 7; i++) {
+				document.getElementById(`col-${i}`).style.height = (col_lengths[i] * 30 + window.outerWidth * 0.125 * 1.4 * 0.8 * 1.1).toString() + "px";
+			}
+		}
 
-                // canvas.width = 1883;
-                // canvas.height = 1573;
+		const default_colls = ["Sanctum cards", "Pauper", "Full card pool"];
 
-                // for (let i = 0; i < img_list.length; i++)
-                // {
-                //     img_list[i].onload = function() {
-                //         x_offset = 377 * (i % 5);
-                //         y_offset = 525 * Math.floor(i / 5);
-                //         ctx.drawImage(img_list[i], x_offset, y_offset, 375, 523);
-                //     };
-                // }
+		function savePulls() {
+			document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+			const colls = JSON.parse(localStorage.getItem("colls.collections"));
+			const collection_dropdown = document.createElement("select");
+			collection_dropdown.className = "coll-dropdown popout";
+			collection_dropdown.id = "coll-dropdown";
 
-                // document.getElementById("p1p1").style.display = "block";
-            }
+			for (const coll in colls) {
+				if (default_colls.includes(coll))
+					continue;
+				const coll_ele = document.createElement("option");
+				coll_ele.value = coll;
+				coll_ele.innerText = coll;
+				collection_dropdown.appendChild(coll_ele);
+			}
 
-            function buildPulls() {
-                let col_lengths = [0, 0, 0, 0, 0, 0, 0, 0];
-                document.getElementById("pulls").innerHTML = '<div class="card-col" id="col-0"></div><div class="card-col" id="col-1"></div><div class="card-col" id="col-2"></div><div class="card-col" id="col-3"></div><div class="card-col" id="col-4"></div><div class="card-col" id="col-5"></div><div class="card-col" id="col-6"></div>';
+			const coll_name = document.createElement("input");
+			coll_name.className = "input coll-name popout";
+			coll_name.id = "coll-name";
+			coll_name.placeholder = "Collection name..."
 
-                for (const card of pulls) {
-                    const card_ele = gridifyCard(card);
-                    card_ele.onclick = function() {
-                        openCardModal(card);
-                    }
-                    // card_ele.firstChild.style.height = "10px";
-                    // card_ele.height = "40px";
-                    const mv = Math.min(6, convertToMV(card.cost));
-                    col_lengths[mv] += 1;
-                    document.getElementById(`col-${mv}`).appendChild(card_ele);
-                }
+			const coll_ele = document.createElement("option");
+			coll_ele.value = "new";
+			coll_ele.innerText = "New Collection +";
+			collection_dropdown.appendChild(coll_ele);
 
-                for (let i = 0; i < 7; i++) {
-                    document.getElementById(`col-${i}`).style.height = (col_lengths[i] * 30 + window.outerWidth * 0.125 * 1.4 * 0.8 * 1.1).toString() + "px";
-                }
-            }
+			if (collection_dropdown.value == "new") {
+				coll_name.style.display = "block";
+			} else {
+				coll_name.style.display = "none";
+			}
 
-            const default_colls = ["Sanctum cards", "Pauper", "Full card pool"];
+			collection_dropdown.onchange = function () {
+				if (collection_dropdown.value == "new") {
+					coll_name.style.display = "block";
+				} else {
+					coll_name.style.display = "none";
+				}
+			}
 
-            function savePulls() {
-                document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-                const colls = JSON.parse(localStorage.getItem("colls.collections"));
-                const collection_dropdown = document.createElement("select");
-                collection_dropdown.className = "coll-dropdown popout";
-                collection_dropdown.id = "coll-dropdown";
-                
-                for (const coll in colls) {
-                    if (default_colls.includes(coll))
-                        continue;
-                    const coll_ele = document.createElement("option");
-                    coll_ele.value = coll;
-                    coll_ele.innerText = coll;
-                    collection_dropdown.appendChild(coll_ele);
-                }
+			const save_btn = document.createElement("button");
+			save_btn.className = "save-btn dark-button";
+			save_btn.innerText = "Save to collection";
 
-                const coll_name = document.createElement("input");
-                coll_name.className = "input coll-name popout";
-                coll_name.id = "coll-name";
-                coll_name.placeholder = "Collection name..."
+			save_btn.onclick = function () {
+				let coll_cards = {};
+				let updated_collection = [];
+				for (const card of pulls) {
+					coll_cards[card.card_name] = !coll_cards[card.card_name] ? 1 : coll_cards[card.card_name] + 1;
+				}
 
-                const coll_ele = document.createElement("option");
-                coll_ele.value     = "new";
-                coll_ele.innerText = "New Collection +";
-                collection_dropdown.appendChild(coll_ele);
+				for (const card in coll_cards) {
+					updated_collection.push(`${coll_cards[card]} ${card}`);
+				}
 
-                if (collection_dropdown.value == "new") {
-                    coll_name.style.display = "block";
-                } else {
-                    coll_name.style.display = "none";
-                }
+				const collection_to_save = collection_dropdown.value == "new" ? coll_name.value : collection_dropdown.value;
+				const save_val = collection_dropdown.value == "new" ? updated_collection : [...colls[collection_to_save], ...updated_collection];
+				colls[collection_to_save] = save_val;
+				localStorage.setItem("colls.collections", JSON.stringify(colls));
 
-                collection_dropdown.onchange = function() {
-                    if (collection_dropdown.value == "new") {
-                        coll_name.style.display = "block";
-                    } else {
-                        coll_name.style.display = "none";
-                    }
-                }
+				document.getElementById("modal-container").style.display = "none";
+			}
 
-                const save_btn = document.createElement("button");
-                save_btn.className = "save-btn dark-button";
-                save_btn.innerText = "Save to collection";
+			const content_container = document.createElement("div");
+			content_container.className = "save-coll-modal-container";
 
-                save_btn.onclick = function() {
-                    let coll_cards = {};
-                    let updated_collection = [];
-                    for (const card of pulls) {
-                        coll_cards[card.card_name] = !coll_cards[card.card_name] ? 1 : coll_cards[card.card_name] + 1;
-                    }
+			content_container.appendChild(collection_dropdown);
+			content_container.appendChild(coll_name);
+			content_container.appendChild(save_btn);
+			document.getElementById("modal-content").appendChild(content_container);
+			document.getElementById("modal-container").style.display = 'block';
+		}
 
-                    for (const card in coll_cards) {
-                        updated_collection.push(`${coll_cards[card]} ${card}`);
-                    }
-                    
-                    const collection_to_save = collection_dropdown.value == "new" ? coll_name.value : collection_dropdown.value;
-                    const save_val = collection_dropdown.value == "new" ? updated_collection : [...colls[collection_to_save], ...updated_collection];
-                    colls[collection_to_save] = save_val;
-                    localStorage.setItem("colls.collections", JSON.stringify(colls));
+		function importFile() {
+			document.getElementById("import-file").click();
+		}
 
-                    document.getElementById("modal-container").style.display = "none";
-                }
-
-                const content_container = document.createElement("div");
-                content_container.className = "save-coll-modal-container";
-
-                content_container.appendChild(collection_dropdown);
-                content_container.appendChild(coll_name);
-                content_container.appendChild(save_btn);
-                document.getElementById("modal-content").appendChild(content_container);
-                document.getElementById("modal-container").style.display = 'block';
-            }
-
-            function importFile() {
-                document.getElementById("import-file").click();
-            }
-
-            async function openSet() {
-                await fetch('/lists/all-sets.json')
-					.then(response => response.json())
-					.then(json => {
-						set_list = json;
+		async function openSet() {
+			await fetch('/lists/all-sets.json')
+				.then(response => response.json())
+				.then(json => {
+					set_list = json;
 				}).catch(error => console.error('Error:', error));
 
-                const content_container = document.createElement("div");
-                content_container.className = "set-modal-container";
+			const content_container = document.createElement("div");
+			content_container.className = "set-modal-container";
 
-                for (const set of set_list.sets) {
-                    const set_name = document.createElement("span");
-                    set_name.className = "set-name";
-                    set_name.innerText = set.set_name;
+			for (const set of set_list.sets) {
+				const set_name = document.createElement("span");
+				set_name.className = "set-name";
+				set_name.innerText = set.set_name;
 
-                    const set_code = document.createElement("span");
-                    set_code.className = "set-code";
-                    set_code.innerText = set.set_code;
-                    
-                    const set_logo = document.createElement("img");
-                    set_logo.src = `/sets/${set.set_code}-files/logo.png`;
-                    set_logo.className = "set-logo";
+				const set_code = document.createElement("span");
+				set_code.className = "set-code";
+				set_code.innerText = set.set_code;
 
-                    const packs_num = document.createElement("input");
-                    packs_num.className = "pack-num input popout";
-                    packs_num.id = `${set.set_code}-input`;
-                    packs_num.type = "text";
-                    packs_num.value = 0;
+				const set_logo = document.createElement("img");
+				set_logo.src = `/sets/${set.set_code}-files/logo.png`;
+				set_logo.className = "set-logo";
 
-                    const open_btn = document.createElement("button");
-                    open_btn.className = "dark-button open-button";
-                    open_btn.innerText = "Open Pack";
+				const packs_num = document.createElement("input");
+				packs_num.className = "pack-num input popout";
+				packs_num.id = `${set.set_code}-input`;
+				packs_num.type = "text";
+				packs_num.value = 0;
 
-                    open_btn.onclick = function() {
-                        window.location.href = `?pack=${set.set_code}&num=${document.getElementById(`${set.set_code}-input`).value}`;
-                    }
+				const open_btn = document.createElement("button");
+				open_btn.className = "dark-button open-button";
+				open_btn.innerText = "Open Pack";
 
-                    content_container.appendChild(set_logo);
-                    content_container.appendChild(set_name);
-                    content_container.appendChild(set_code);
-                    content_container.appendChild(packs_num);
-                    content_container.appendChild(open_btn);
-                }
-
-                document.getElementById("modal-content").innerHTML = '';
-                document.getElementById("modal-content").style.width = "70%";
-                document.getElementById("modal-content").appendChild(content_container);
-                document.getElementById("modal-container").style.display = 'block';
-            }
-
-            document.getElementById("import-file").addEventListener("change", function(event) {
-                const files = event.target.files;
-
-                if (files.length > 0) {
-                    const file = files[0];
-                    const name = file.name.replace(/\.[^/.]+$/, "");
-                    const reader = new FileReader();
-                    reader.onload = function(e) {
-                        const fileContent = e.target.result;
-                        document.getElementById("next-pack").dataset.count = 1;
-                        pulls = [];
-                        buildPulls();
-                        updatePackCount();
-                        draftmancerToP1P1(fileContent);
-                        packOnePickOne();
-                    }
-
-                    reader.readAsText(file);
-                }
-            }); 
-
-            function isDecimal(char) {
-                return char >= '0' && char <= '9';
-            }
-
-            function convertToMV(cost)
-            {
-                let mv = 0;
-                
-                costTokens = cost.substring(1, cost.length - 1).replaceAll("}{"," ").split(' ');
-                for (const token of costTokens)
-                {
-                    if (isDecimal(token))
-                    {
-                        mv += parseInt(token);
-                    }
-                    // 2brid
-                    else if (token.includes('2'))
-                    {
-                        mv += 2;
-                    }
-                    else if (token != "x" && token != "")
-                    {
-                        mv += 1;
-                    }
-                }
-
-                return mv;
-            }
-
-            function openCardModal(card) {
-                document.getElementById("modal-content").style.width = "30%";
-                document.getElementById("modal-content").innerHTML = "";
-                document.getElementById("modal-content").appendChild(gridifyCard(card, cgc = true));
-                document.getElementById("modal-container").style.display = "block";
-            }
-
-            document.getElementById("search").addEventListener("keypress", function(event) {
-				if (event.key === "Enter") {
-					event.preventDefault();
-					const url = new URL('search', window.location.origin);
-					url.searchParams.append('search', document.getElementById("search").value);
-					window.location.href = url;
-				}
-			});
-            function randomCard() {
-				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
-				let random_card = card_list_arrayified[i];
-
-				const url = new URL('card', window.location.origin);
-				const params = {
-					set: random_card.set,
-					num: random_card.number,
-					name: random_card.card_name
-				}
-				for (const key in params) {
-					url.searchParams.append(key, params[key]);
+				open_btn.onclick = function () {
+					window.location.href = `?pack=${set.set_code}&num=${document.getElementById(`${set.set_code}-input`).value}`;
 				}
 
+				content_container.appendChild(set_logo);
+				content_container.appendChild(set_name);
+				content_container.appendChild(set_code);
+				content_container.appendChild(packs_num);
+				content_container.appendChild(open_btn);
+			}
+
+			document.getElementById("modal-content").innerHTML = '';
+			document.getElementById("modal-content").style.width = "70%";
+			document.getElementById("modal-content").appendChild(content_container);
+			document.getElementById("modal-container").style.display = 'block';
+		}
+
+		document.getElementById("import-file").addEventListener("change", function (event) {
+			const files = event.target.files;
+
+			if (files.length > 0) {
+				const file = files[0];
+				const name = file.name.replace(/\.[^/.]+$/, "");
+				const reader = new FileReader();
+				reader.onload = function (e) {
+					const fileContent = e.target.result;
+					document.getElementById("next-pack").dataset.count = 1;
+					pulls = [];
+					buildPulls();
+					updatePackCount();
+					draftmancerToP1P1(fileContent);
+					packOnePickOne();
+				}
+
+				reader.readAsText(file);
+			}
+		});
+
+		function isDecimal(char) {
+			return char >= '0' && char <= '9';
+		}
+
+		function convertToMV(cost) {
+			let mv = 0;
+
+			costTokens = cost.substring(1, cost.length - 1).replaceAll("}{", " ").split(' ');
+			for (const token of costTokens) {
+				if (isDecimal(token)) {
+					mv += parseInt(token);
+				}
+				// 2brid
+				else if (token.includes('2')) {
+					mv += 2;
+				}
+				else if (token != "x" && token != "") {
+					mv += 1;
+				}
+			}
+
+			return mv;
+		}
+
+		function openCardModal(card) {
+			document.getElementById("modal-content").style.width = "30%";
+			document.getElementById("modal-content").innerHTML = "";
+			document.getElementById("modal-content").appendChild(gridifyCard(card, cgc = true));
+			document.getElementById("modal-container").style.display = "block";
+		}
+
+		document.getElementById("search").addEventListener("keypress", function (event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				const url = new URL('search', window.location.origin);
+				url.searchParams.append('search', document.getElementById("search").value);
 				window.location.href = url;
 			}
-        </script>
-        <script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-            import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
-            
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-                apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-                authDomain: "voyager-78e30.firebaseapp.com",
-                projectId: "voyager-78e30",
-                storageBucket: "voyager-78e30.firebasestorage.app",
-                messagingSenderId: "411191248476",
-                appId: "1:411191248476:web:591349be169d823e5f8899",
-                measurementId: "G-TQ1L48F25M"
-            };
+		});
+		function randomCard() {
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
 
-            const color_bgs = {
-                white: "#"
-            }
-            
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
-            let username = "";
-            let password = "";
-            let sessionid = localStorage.getItem('settings.session');
-            let decks = {};
-            let draft_files;
-            let total_cards;
-            let user_data;
-            
-            document.getElementById("coll-league-inp").addEventListener("click", function() {
-                const source = document.getElementById("coll-league-inp").value;
-
-                if (source == "coll-league-set") {
-                    openCollLeagueSet();
-                } else if (source == "coll-league-pack") {
-                    openCollLeaguePack();
-                }
-            });
-
-            document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-
-			if (localStorage.getItem("settings.darkthememenu") == "On") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
-			} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
 			}
 
-            if (sessionid) {
-                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-                    let data = docSnap.data();
-                    username = data.username;
-                    password = data.password;
-                });
+			window.location.href = url;
+		}
+	</script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
 
-                await getDoc(doc(db, 'users', username)).then(docSnap => {
-                    let data = docSnap.data();
-                    user_data = data;
-                });
-            }
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+			authDomain: "voyager-78e30.firebaseapp.com",
+			projectId: "voyager-78e30",
+			storageBucket: "voyager-78e30.firebasestorage.app",
+			messagingSenderId: "411191248476",
+			appId: "1:411191248476:web:591349be169d823e5f8899",
+			measurementId: "G-TQ1L48F25M"
+		};
 
-            async function openCollLeagueSet() {
-                document.title = "Collection League - Sets";
-                document.getElementById("modal-container").dataset.source = "coll";
+		const color_bgs = {
+			white: "#"
+		}
 
-                let set_list;
-                let set_packs;
-                let coll_league_data;
-                await fetch('/lists/all-sets.json')
-					.then(response => response.json())
-					.then(json => {
-						set_list = json;
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+		let username = "";
+		let password = "";
+		let sessionid = localStorage.getItem('settings.session');
+		let decks = {};
+		let draft_files;
+		let total_cards;
+		let user_data;
+
+		document.getElementById("coll-league-inp").addEventListener("click", function () {
+			const source = document.getElementById("coll-league-inp").value;
+
+			if (source == "coll-league-set") {
+				openCollLeagueSet();
+			} else if (source == "coll-league-pack") {
+				openCollLeaguePack();
+			}
+		});
+
+		document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+		document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+		if (localStorage.getItem("settings.darkthememenu") == "On") {
+			document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
+		} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
+			document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
+		}
+
+		if (sessionid) {
+			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+				let data = docSnap.data();
+				username = data.username;
+				password = data.password;
+			});
+
+			await getDoc(doc(db, 'users', username)).then(docSnap => {
+				let data = docSnap.data();
+				user_data = data;
+			});
+		}
+
+		async function openCollLeagueSet() {
+			document.title = "Collection League - Sets";
+			document.getElementById("modal-container").dataset.source = "coll";
+
+			let set_list;
+			let set_packs;
+			let coll_league_data;
+			await fetch('/lists/all-sets.json')
+				.then(response => response.json())
+				.then(json => {
+					set_list = json;
 				}).catch(error => console.error('Error:', error));
 
-                await fetch('/resources/collectionleague/packs.json')
-					.then(response => response.json())
-					.then(json => {
-						set_packs = json;
+			await fetch('/resources/collectionleague/packs.json')
+				.then(response => response.json())
+				.then(json => {
+					set_packs = json;
 				}).catch(error => console.error('Error:', error));
 
-                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-                    let data = docSnap.data();
-                    username = data.username;
-                    password = data.password;
-                });
+			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+				let data = docSnap.data();
+				username = data.username;
+				password = data.password;
+			});
 
-                await getDoc(doc(db, "users", username)).then(docSnap => {
-                    coll_league_data = docSnap.data().coll_league;
-                });
+			await getDoc(doc(db, "users", username)).then(docSnap => {
+				coll_league_data = docSnap.data().coll_league;
+			});
 
-                let total_points = coll_league_data[0];
+			let total_points = coll_league_data[0];
 
-                const content_header = document.createElement("div");
-                content_header.className = "coll-league-set-header";
+			const content_header = document.createElement("div");
+			content_header.className = "coll-league-set-header";
 
-                const total_cost = document.createElement("span");
-                total_cost.className = "total-cost text";
-                total_cost.id = "total-cost";
-                total_cost.innerText = `Points spent: 0/${total_points}`;
+			const total_cost = document.createElement("span");
+			total_cost.className = "total-cost text";
+			total_cost.id = "total-cost";
+			total_cost.innerText = `Points spent: 0/${total_points}`;
 
-                const open_btn = document.createElement("button");
-                open_btn.className = "dark-button open-btn-coll-league";
-                open_btn.innerText = "Open Packs!";
-                open_btn.onclick = async function() {
-                    let spent_points = 0;
-                    total_cards = [];
-                    draft_files = [];
-                    for (const set of set_list.sets) {
-                        if (set_packs.set_exclude.includes(set.set_code))
-                            continue;
+			const open_btn = document.createElement("button");
+			open_btn.className = "dark-button open-btn-coll-league";
+			open_btn.innerText = "Open Packs!";
+			open_btn.onclick = async function () {
+				let spent_points = 0;
+				total_cards = [];
+				draft_files = [];
+				for (const set of set_list.sets) {
+					if (set_packs.set_exclude.includes(set.set_code))
+						continue;
 
-                        let set_points = set_packs.set_cost[set.set_code] ? set_packs.set_cost[set.set_code] : set_packs.set_cost.default;
-                        let set_packn = parseInt(document.getElementById(`${set.set_code}-input`).value);
-                        for (let i = 0; i < set_packn; i++) { 
-                            draft_files.push(await getDraftFile(set.set_code));
-                        }
-                        spent_points += set_packn * set_points;
-                    }
+					let set_points = set_packs.set_cost[set.set_code] ? set_packs.set_cost[set.set_code] : set_packs.set_cost.default;
+					let set_packn = parseInt(document.getElementById(`${set.set_code}-input`).value);
+					for (let i = 0; i < set_packn; i++) {
+						draft_files.push(await getDraftFile(set.set_code));
+					}
+					spent_points += set_packn * set_points;
+				}
 
-                    if (spent_points > total_points) {
-                        alert("Not enough points!");
-                        return;
-                    }
+				if (spent_points > total_points) {
+					alert("Not enough points!");
+					return;
+				}
 
-                    for (const file of draft_files) {
-                        draftmancerToP1P1(file);
-                        total_cards.push(p1p1_cards);
-                    }
+				for (const file of draft_files) {
+					draftmancerToP1P1(file);
+					total_cards.push(p1p1_cards);
+				}
 
-                    p1p1_cards = total_cards[0];
-                    console.log(p1p1_cards, total_cards);
-                    document.getElementById("modal-container").dataset.source = "";
-                    document.getElementById("next-pack").dataset.source = "coll";
-                    document.getElementById("next-pack").dataset.count = 1;
-                    document.getElementById("next-pack").dataset.packs = draft_files.length;
-                    document.getElementById("modal-container").style.display = "none";
-                    updatePackCount();
-                    packOnePickOne();
+				p1p1_cards = total_cards[0];
+				console.log(p1p1_cards, total_cards);
+				document.getElementById("modal-container").dataset.source = "";
+				document.getElementById("next-pack").dataset.source = "coll";
+				document.getElementById("next-pack").dataset.count = 1;
+				document.getElementById("next-pack").dataset.packs = draft_files.length;
+				document.getElementById("modal-container").style.display = "none";
+				updatePackCount();
+				packOnePickOne();
 
-                    await updateDoc(doc(db, "users", user_data.username), {
-                        coll_league: [user_data.coll_league[0] - spent_points, user_data.coll_league[1]]
-                    });
-                }
+				await updateDoc(doc(db, "users", user_data.username), {
+					coll_league: [user_data.coll_league[0] - spent_points, user_data.coll_league[1]]
+				});
+			}
 
-                content_header.appendChild(total_cost);
-                content_header.appendChild(open_btn);
+			content_header.appendChild(total_cost);
+			content_header.appendChild(open_btn);
 
-                const content_container = document.createElement("div");
-                content_container.className = "set-modal-container";
+			const content_container = document.createElement("div");
+			content_container.className = "set-modal-container";
 
-                for (const set of set_list.sets) {
-                    if (set_packs.set_exclude.includes(set.set_code))
-                        continue;
+			for (const set of set_list.sets) {
+				if (set_packs.set_exclude.includes(set.set_code))
+					continue;
 
-                    let set_points = set_packs.set_cost[set.set_code] ? set_packs.set_cost[set.set_code] : set_packs.set_cost.default;
+				let set_points = set_packs.set_cost[set.set_code] ? set_packs.set_cost[set.set_code] : set_packs.set_cost.default;
 
-                    const set_name = document.createElement("span");
-                    set_name.className = "set-name";
-                    set_name.innerText = set.set_name;
+				const set_name = document.createElement("span");
+				set_name.className = "set-name";
+				set_name.innerText = set.set_name;
 
-                    const set_code = document.createElement("span");
-                    set_code.className = "set-code";
-                    set_code.innerText = set.set_code;
-                    
-                    const set_logo = document.createElement("img");
-                    set_logo.src = `/sets/${set.set_code}-files/logo.png`;
-                    set_logo.className = "set-logo";
+				const set_code = document.createElement("span");
+				set_code.className = "set-code";
+				set_code.innerText = set.set_code;
 
-                    const packs_num = document.createElement("input");
-                    packs_num.className = "pack-num input popout";
-                    packs_num.id = `${set.set_code}-input`;
-                    packs_num.type = "number";
-                    packs_num.value = 0;
-                    packs_num.onchange = function() {
-                        if (document.getElementById(`${set.set_code}-input`).value < 0) {
-                            document.getElementById(`${set.set_code}-input`).value = 0;
-                        }
-                        let spent_points = 0;
-                        for (const set of set_list.sets) {
-                            if (set_packs.set_exclude.includes(set.set_code))
-                                continue;
+				const set_logo = document.createElement("img");
+				set_logo.src = `/sets/${set.set_code}-files/logo.png`;
+				set_logo.className = "set-logo";
 
-                            let set_points = set_packs.set_cost[set.set_code] ? set_packs.set_cost[set.set_code] : set_packs.set_cost.default;
-                            spent_points += parseInt(document.getElementById(`${set.set_code}-input`).value) * set_points;
-                        }
-                        total_cost.innerHTML = `Points spent: ${formatPoints(spent_points, total_points)}`;
-                    }
+				const packs_num = document.createElement("input");
+				packs_num.className = "pack-num input popout";
+				packs_num.id = `${set.set_code}-input`;
+				packs_num.type = "number";
+				packs_num.value = 0;
+				packs_num.onchange = function () {
+					if (document.getElementById(`${set.set_code}-input`).value < 0) {
+						document.getElementById(`${set.set_code}-input`).value = 0;
+					}
+					let spent_points = 0;
+					for (const set of set_list.sets) {
+						if (set_packs.set_exclude.includes(set.set_code))
+							continue;
 
-                    const cost_text = document.createElement("span");
-                    cost_text.className = "cost-text text";
-                    cost_text.innerText = `Cost: ${set_points}`;
+						let set_points = set_packs.set_cost[set.set_code] ? set_packs.set_cost[set.set_code] : set_packs.set_cost.default;
+						spent_points += parseInt(document.getElementById(`${set.set_code}-input`).value) * set_points;
+					}
+					total_cost.innerHTML = `Points spent: ${formatPoints(spent_points, total_points)}`;
+				}
 
-                    content_container.appendChild(set_logo);
-                    content_container.appendChild(set_name);
-                    content_container.appendChild(set_code);
-                    content_container.appendChild(packs_num);
-                    content_container.appendChild(cost_text);
-                }
+				const cost_text = document.createElement("span");
+				cost_text.className = "cost-text text";
+				cost_text.innerText = `Cost: ${set_points}`;
 
-                document.getElementById("modal-content").innerHTML = '';
-                document.getElementById("modal-content").style.width = "70%";
-                document.getElementById("modal-content").appendChild(content_header);
-                document.getElementById("modal-content").appendChild(content_container);
-                document.getElementById("modal-container").style.display = 'block';
-            }
+				content_container.appendChild(set_logo);
+				content_container.appendChild(set_name);
+				content_container.appendChild(set_code);
+				content_container.appendChild(packs_num);
+				content_container.appendChild(cost_text);
+			}
 
-            async function openCollLeaguePack() {
-                document.title = "Collection League - Packs";
+			document.getElementById("modal-content").innerHTML = '';
+			document.getElementById("modal-content").style.width = "70%";
+			document.getElementById("modal-content").appendChild(content_header);
+			document.getElementById("modal-content").appendChild(content_container);
+			document.getElementById("modal-container").style.display = 'block';
+		}
 
-                document.getElementById("modal-container").dataset.source = "coll";
-                let pack_list;
-                let packs;
-                let coll_league_data;
+		async function openCollLeaguePack() {
+			document.title = "Collection League - Packs";
 
-                await fetch('/resources/collectionleague/packs.json')
-					.then(response => response.json())
-					.then(json => {
-						pack_list = json;
+			document.getElementById("modal-container").dataset.source = "coll";
+			let pack_list;
+			let packs;
+			let coll_league_data;
+
+			await fetch('/resources/collectionleague/packs.json')
+				.then(response => response.json())
+				.then(json => {
+					pack_list = json;
 				}).catch(error => console.error('Error:', error));
 
-                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-                    let data = docSnap.data();
-                    username = data.username;
-                    password = data.password;
-                });
+			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+				let data = docSnap.data();
+				username = data.username;
+				password = data.password;
+			});
 
-                await getDoc(doc(db, "users", username)).then(docSnap => {
-                    coll_league_data = docSnap.data().coll_league;
-                });
+			await getDoc(doc(db, "users", username)).then(docSnap => {
+				coll_league_data = docSnap.data().coll_league;
+			});
 
-                let total_points = coll_league_data[1];
+			let total_points = coll_league_data[1];
 
-                const content_header = document.createElement("div");
-                content_header.className = "coll-league-set-header";
+			const content_header = document.createElement("div");
+			content_header.className = "coll-league-set-header";
 
-                const total_cost = document.createElement("span");
-                total_cost.className = "total-cost text";
-                total_cost.id = "total-cost";
-                total_cost.innerText = `Points spent: 0/${total_points}`;
+			const total_cost = document.createElement("span");
+			total_cost.className = "total-cost text";
+			total_cost.id = "total-cost";
+			total_cost.innerText = `Points spent: 0/${total_points}`;
 
-                const open_btn = document.createElement("button");
-                open_btn.className = "dark-button open-btn-coll-league";
-                open_btn.innerText = "Open Packs!";
-                open_btn.onclick = async function() {
-                    let spent_points = 0;
-                    total_cards = [];
-                    draft_files = [];
-                    for (const pack of pack_list.custom_packs) {
-                        let set_points = pack.cost;
-                        const path = `/resources/collectionleague/packs/${pack.name}`;
-                        let set_packn = parseInt(document.getElementById(`${pack.name}-input`).value);
-                        for (let i = 0; i < set_packn; i++) { 
-                            draft_files.push(await getCustomFile(`${path}/draft_file.txt`));
-                        }
-                        spent_points += set_packn * set_points;
-                    }
+			const open_btn = document.createElement("button");
+			open_btn.className = "dark-button open-btn-coll-league";
+			open_btn.innerText = "Open Packs!";
+			open_btn.onclick = async function () {
+				let spent_points = 0;
+				total_cards = [];
+				draft_files = [];
+				for (const pack of pack_list.custom_packs) {
+					let set_points = pack.cost;
+					const path = `/resources/collectionleague/packs/${pack.name}`;
+					let set_packn = parseInt(document.getElementById(`${pack.name}-input`).value);
+					for (let i = 0; i < set_packn; i++) {
+						draft_files.push(await getCustomFile(`${path}/draft_file.txt`));
+					}
+					spent_points += set_packn * set_points;
+				}
 
-                    if (spent_points > total_points) {
-                        alert("Not enough points!");
-                        return;
-                    }
+				if (spent_points > total_points) {
+					alert("Not enough points!");
+					return;
+				}
 
-                    for (const file of draft_files) {
-                        draftmancerToP1P1(file);
-                        total_cards.push(p1p1_cards);
-                    }
+				for (const file of draft_files) {
+					draftmancerToP1P1(file);
+					total_cards.push(p1p1_cards);
+				}
 
-                    p1p1_cards = total_cards[0];
-                    console.log(p1p1_cards, total_cards);
-                    document.getElementById("modal-container").dataset.source = "";
-                    document.getElementById("next-pack").dataset.source = "coll";
-                    document.getElementById("next-pack").dataset.count = 1;
-                    document.getElementById("next-pack").dataset.packs = draft_files.length;
-                    document.getElementById("modal-container").style.display = "none";
-                    updatePackCount();
-                    packOnePickOne();
+				p1p1_cards = total_cards[0];
+				console.log(p1p1_cards, total_cards);
+				document.getElementById("modal-container").dataset.source = "";
+				document.getElementById("next-pack").dataset.source = "coll";
+				document.getElementById("next-pack").dataset.count = 1;
+				document.getElementById("next-pack").dataset.packs = draft_files.length;
+				document.getElementById("modal-container").style.display = "none";
+				updatePackCount();
+				packOnePickOne();
 
-                    await updateDoc(doc(db, "users", user_data.username), {
-                        coll_league: [user_data.coll_league[0], user_data.coll_league[1] - spent_points]
-                    });
-                }
+				await updateDoc(doc(db, "users", user_data.username), {
+					coll_league: [user_data.coll_league[0], user_data.coll_league[1] - spent_points]
+				});
+			}
 
-                content_header.appendChild(total_cost);
-                content_header.appendChild(open_btn);
+			content_header.appendChild(total_cost);
+			content_header.appendChild(open_btn);
 
-                const content_container = document.createElement("div");
-                content_container.className = "set-modal-container";
+			const content_container = document.createElement("div");
+			content_container.className = "set-modal-container";
 
-                for (const pack of pack_list.custom_packs) {
-                    let set_points = pack.cost;
-                    const path = `/resources/collectionleague/packs/${pack.name}`;
+			for (const pack of pack_list.custom_packs) {
+				let set_points = pack.cost;
+				const path = `/resources/collectionleague/packs/${pack.name}`;
 
-                    const set_name = document.createElement("span");
-                    set_name.className = "set-name";
-                    set_name.innerText = pack.name;
+				const set_name = document.createElement("span");
+				set_name.className = "set-name";
+				set_name.innerText = pack.name;
 
-                    const pack_link = document.createElement("a");
-                    pack_link.className = "set-code";
-                    pack_link.innerText = "View Pack";
-                    pack_link.href = "/viewpack?pack=" + pack.name;
-                    pack_link.target = "_blank";
-                    
-                    const set_logo = document.createElement("img");
-                    set_logo.src = pack.defaulticon ? `/img/header/sets.png` : `${path}/icon.png`;
-                    set_logo.className = "set-logo";
+				const pack_link = document.createElement("a");
+				pack_link.className = "set-code";
+				pack_link.innerText = "View Pack";
+				pack_link.href = "/viewpack?pack=" + pack.name;
+				pack_link.target = "_blank";
 
-                    const packs_num = document.createElement("input");
-                    packs_num.className = "pack-num input popout";
-                    packs_num.id = `${pack.name}-input`;
-                    packs_num.type = "number";
-                    packs_num.value = 0;
-                    packs_num.onchange = function() {
-                        if (document.getElementById(`${pack.name}-input`).value < 0) {
-                            document.getElementById(`${pack.name}-input`).value = 0;
-                        }
-                        let spent_points = 0;
-                        for (const pack of pack_list.custom_packs) {
-                            let set_points = pack.cost;
-                            spent_points += parseInt(document.getElementById(`${pack.name}-input`).value) * set_points;
-                        }
-                        total_cost.innerHTML = `Points spent: ${formatPoints(spent_points, total_points)}`;
-                    }
+				const set_logo = document.createElement("img");
+				set_logo.src = pack.defaulticon ? `/img/header/sets.png` : `${path}/icon.png`;
+				set_logo.className = "set-logo";
 
-                    const cost_text = document.createElement("span");
-                    cost_text.className = "cost-text text";
-                    cost_text.innerText = `Cost: ${set_points}`;
+				const packs_num = document.createElement("input");
+				packs_num.className = "pack-num input popout";
+				packs_num.id = `${pack.name}-input`;
+				packs_num.type = "number";
+				packs_num.value = 0;
+				packs_num.onchange = function () {
+					if (document.getElementById(`${pack.name}-input`).value < 0) {
+						document.getElementById(`${pack.name}-input`).value = 0;
+					}
+					let spent_points = 0;
+					for (const pack of pack_list.custom_packs) {
+						let set_points = pack.cost;
+						spent_points += parseInt(document.getElementById(`${pack.name}-input`).value) * set_points;
+					}
+					total_cost.innerHTML = `Points spent: ${formatPoints(spent_points, total_points)}`;
+				}
 
-                    content_container.appendChild(set_logo);
-                    content_container.appendChild(set_name);
-                    content_container.appendChild(pack_link);
-                    content_container.appendChild(packs_num);
-                    content_container.appendChild(cost_text);
-                }
+				const cost_text = document.createElement("span");
+				cost_text.className = "cost-text text";
+				cost_text.innerText = `Cost: ${set_points}`;
 
-                document.getElementById("modal-content").innerHTML = '';
-                document.getElementById("modal-content").style.width = "70%";
-                document.getElementById("modal-content").appendChild(content_header);
-                document.getElementById("modal-content").appendChild(content_container);
-                document.getElementById("modal-container").style.display = 'block';
-            }
+				content_container.appendChild(set_logo);
+				content_container.appendChild(set_name);
+				content_container.appendChild(pack_link);
+				content_container.appendChild(packs_num);
+				content_container.appendChild(cost_text);
+			}
 
-            function formatPoints(spent, total) {
-                let ret = "";
-                if (spent > total) {
-                    ret += `<span style="color: red;">${spent}</span>`
-                } else {
-                    ret += spent.toString();
-                }
-                ret += `/${total}`;
+			document.getElementById("modal-content").innerHTML = '';
+			document.getElementById("modal-content").style.width = "70%";
+			document.getElementById("modal-content").appendChild(content_header);
+			document.getElementById("modal-content").appendChild(content_container);
+			document.getElementById("modal-container").style.display = 'block';
+		}
 
-                return ret;
-            }
+		function formatPoints(spent, total) {
+			let ret = "";
+			if (spent > total) {
+				ret += `<span style="color: red;">${spent}</span>`
+			} else {
+				ret += spent.toString();
+			}
+			ret += `/${total}`;
 
-            async function getCustomFile(src) {
-                let text_ret;
-                await fetch(src)
-					.then(response => response.text())
-					.then(text => {
-						text_ret = text;
+			return ret;
+		}
+
+		async function getCustomFile(src) {
+			let text_ret;
+			await fetch(src)
+				.then(response => response.text())
+				.then(text => {
+					text_ret = text;
 				}).catch(error => console.error('Error:', error));
 
-                return text_ret;
-            }
+			return text_ret;
+		}
 
-            document.getElementById("coll-league-next-pack").addEventListener("click", collLeagueNextPack);
+		document.getElementById("coll-league-next-pack").addEventListener("click", collLeagueNextPack);
 
-            function collLeagueNextPack() {
-                let pack_count  = parseInt(document.getElementById("next-pack").dataset.count);
-                const num_packs = parseInt(document.getElementById("next-pack").dataset.packs);
+		function collLeagueNextPack() {
+			let pack_count = parseInt(document.getElementById("next-pack").dataset.count);
+			const num_packs = parseInt(document.getElementById("next-pack").dataset.packs);
 
-                if (pack_count <= num_packs && (num_packs != 1 || firstpack)) {
-                    pulls.push(...used_cards);
-                }
-                if (pack_count < num_packs) {
-                    document.getElementById("next-pack").dataset.count = pack_count + 1;
-                    p1p1_cards = total_cards[pack_count];
-                    packOnePickOne();
-                } 
-                else {
-                    document.getElementById("pack").innerHTML = "";
-                }
+			if (pack_count <= num_packs && (num_packs != 1 || firstpack)) {
+				pulls.push(...used_cards);
+			}
+			if (pack_count < num_packs) {
+				document.getElementById("next-pack").dataset.count = pack_count + 1;
+				p1p1_cards = total_cards[pack_count];
+				packOnePickOne();
+			}
+			else {
+				document.getElementById("pack").innerHTML = "";
+			}
 
-                pack_count = parseInt(document.getElementById("next-pack").dataset.count);
+			pack_count = parseInt(document.getElementById("next-pack").dataset.count);
 
-                updatePackCount();
+			updatePackCount();
 
-                if (pack_count >= num_packs) {
-                    document.getElementById("next-pack").innerText = "View Pulls";
-                }
+			if (pack_count >= num_packs) {
+				document.getElementById("next-pack").innerText = "View Pulls";
+			}
 
-                buildPulls();
-                firstpack = false;
-            }
-        </script>
-    </body>
+			buildPulls();
+			firstpack = false;
+		}
+	</script>
+</body>
+
 </html>
