@@ -1261,6 +1261,27 @@
 
 							return isStaple(all_cards_stats[card.card_name]);
 						}
+						if (check == "removal") {
+							return isRemoval(card_stats);
+						}
+						if (check == "ca" || check == "cardadvantage" || check == "draw") {
+							return isCA(card_stats);
+						}
+						if (check == "wipe" || check == "wrath" || check == "boardwipe") {
+							return isWipe(card_stats);
+						}
+						if (check == "wish" || check == "fetch") {
+							return isWish(card_stats);
+						}
+						if (check == "utilityland" || check == "utility land" || check == "utility-land" || check == "utility_land") {
+							return isUtilityLand(card_stats);
+						}
+						if (check == "kindred") {
+							return isKindred(card_stats);
+						}
+						if (check == "recur" || check == "recurrable") {
+							return isRecurrable(card_stats);
+						}
 					}
 					/* unsupported flows
 					else if (modifier == "<")
@@ -1274,6 +1295,18 @@
 				}
 				if (term == "tag") {
 					if (modifier == ":" || modifier == "=" || modifier == "!") {
+						if (check == "removal") {
+							return isRemoval(card_stats);
+						}
+						if (check == "ca" || check == "cardadvantage" || check == "draw") {
+							return isCA(card_stats);
+						}
+						if (check == "wipe" || check == "wrath" || check == "boardwipe") {
+							return isWipe(card_stats);
+						}
+						if (check == "wish" || check == "fetch") {
+							return isWish(card_stats);
+						}
 						let regex = new RegExp("!tag " + check + "\\b");
 						return regex.test(card_notes);
 					}
@@ -1362,6 +1395,52 @@
 			return (regex.test(card_stats.special_text) && (localStorage.getItem('settings.searchalias') == "On")) || card_name.includes(token);
 		} function isDecimal(char) {
 			return char >= '0' && char <= '9';
+		}
+
+		function isWish(card) {
+			const regex = /(reveal|put) (.*?) from your sanctum/gi;
+
+			return regex.test(card.rules_text);
+		}
+
+		function isWipe(card) {
+			const regex = /(((destroy|exile) (all|each) creatures?)|(deals [1234567890]+? damage to each)|(each ((nonland|permanent|creature|artifact|enchantment|planeswalker|battle|land|kindred|legendary|snow) ?)+ gets [+-][1234567890]+?\/-[1234567890]+?)|((put|return) each ((nonland|permanent|creature|artifact|enchantment|planeswalker|battle|land|kindred|legendary|snow) ?)+ (to its owner['’]s hand|on (the)? ?(top|bottom)|(into its owner['’]s sanctum))))/gi;
+
+			return regex.test(card.rules_text);
+		}
+
+		function isCA(card) {
+			const regex = /(Clue token|[Ii]nvestigate)|[Dd]raw|[Dd]raft|(play|cast) ([^\n.]+ (from exile|exiled)|(one of )?those cards|them|it this turn|it until)|(graveyard to|into) your hand|\b(?:return\W+(?:\w+\W+){0,5}?to your hand|to your hand\W+(?:\w+\W+){0,5}?return)\b/gi;
+
+			return regex.test(card.rules_text);
+		}
+
+
+		function isRemoval(card) {
+			const regex = /((destroy)|(deals [1234567890]+? damage to (any|target|each) (creature|nonplayer|target|planeswalker))|((target|each) (player|opponent) sacrifices?)|(Exile (target|each) ((nonland|permanent|creature|artifact|enchantment|planeswalker|battle|land|kindred|legendary|snow) ?)+)|(fights)|(return (target|each) ((nonland|permanent|creature|artifact|enchantment|planeswalker|battle|land|kindred|legendary|snow) ?)+ to its owner['’]s hand)|(loses all abilities)|(can['’]t attack or block)|(doesn['’]t untap during its controllers untap)|((target|each) (((nonland|permanent|creature|artifact|enchantment|planeswalker|battle|land|kindred|legendary|snow) ?)+) gets [+-][1234567890X]+?\/-[X123456789]+?)|(put (?!card)(.*?) on the (top|bottom)))/gi;
+
+			if (card.rules_text.includes("exile") && card.rules_text.includes("return it to the")) return false;
+
+			return regex.test(card.rules_text);
+		}
+
+		function isKindred(card) {
+			const regex = /((Aetherborn|Alien|Angel|Antelope|Ape|Archon|Armadillo|Assembly-Worker|Astartes|Atog|Aurochs|Avatar|Azra|Badger|Balloon|Basilisk|Bat|Bear|Beast|Beaver|Beeble|Beholder|Bird|Blinkmoth|Boar|Bringer|Brushwagg|Ctan|Cabybara|Camarid|Camel|Caribou|Carrier|Cat|Centaur|Cephalid|Chimera|Cockatrice|Construct|Coyote|Crab|Crocodile|Custodes|Cyberman|Cyclops|Dalek|Dauthi|Demigod|Demon|Devil|Dinosaur|Djinn|Dog|Dragon|Drake|Dreadnought|Drone|Dryad|Dwarf|Efreet|Egg|Eldrazi|Elemental|Elephant|Elf|Elk|Eye|Faerie|Ferret|Fish|Fox|Fractal|Frog|Fungus|Gargoyle|Germ|Giant|Gith|Glimmer|Gnoll|Gnome|Goat|Goblin|God|Golem|Gorgon|Graveborn|Gremlin|Griffin|Hag|Halfling|Hamster|Harpy|Hellion|Hippo|Hippogriff|Homarid|Homunculus|Horror|Horse|Human|Hydra|Hyena|Illusion|Imp|Incarnation|Inkling|Insect|Jackal|Jellyfish|Juggernaut|Kavu|Kirin|Kithkin|Kobold|Kor|Kraken|Lamia|Lammasu|Leech|Leviathan|Lhurgoyf|Licid|Lizard|Llama|Manticore|Masticore|Merfolk|Metathran|Minotaur|Mite|Mole|Mongoose|Monkey|Moonfolk|Mouse|Mutant|Myr|Nautilus|Necron|Nephilim|Nightmare|Nightstalker|Noggle|Nymph|Octopus|Ogre|Ooze|Orb|Orc|Orgg|Otter|Ouphe|Ox|Oyster|Pangolin|Pegasus|Pentavite|Pest|Phelddagrif|Phoenix|Phyrexian|Pincher|Plant|Possum|Prism|Procupine|Rabbit|Raccoon|Rat|Reflection|Rhino|Robot|Sable|Salamander|Sand|Saproling|Satyr|Scarecrow|Scorpion|Sculpture|Serpent|Servo|Shade|Shapeshifter|Shark|Sheep|Siren|Skeleton|Skunk|Slith|Sliver|Sloth|Slug|Snail|Snake|Soltari|Spawn|Specter|Sphinx|Spider|Spike|Spirit|Splinter|Sponge|Squid|Squirrel|Starfish|Surrakar|Synth|Tentacle|Tetravite|Thalakos|Thopter|Thrull|Tiefling|TimeLord|Toy|Treefolk|Trilobite|Triskelavite|Troll|Turtle|Tyranid|Unicorn|Vampire|Varmint|Vedalken|Viashino|Volver|Wall|Walrus|Weasel|Weird|Werewolf|Whale|Wolf|Wolverine|Wombat|Worm|Wraith|Wurm|Yeti|Zombie|ZuberaAdvisor|Ally|Archer|Archon|Army|Artificer|Assassin|Barbarian|Bard|Beast|Berserker|Carrier|Child|Citizen|Cleric|Clown|Coward|Deserter|Detective|Doctor|Dreadnought|Drone|Druid|Egg|Elder|Employee|Flagbearer|Gamer|Guest|Horror|Incarnation|Inquisitor|Juggernaut|Knight|Leviathan|Mercenary|Minion|Monger|Monk|Mount|Mutant|Mystic|Ninja|Noble|Nomad|Peasant|Performer|Pilot|Pirate|Praetor|Primarch|Processor|Ranger|Rebel|Reflection|Rigger|Rogue|Samurai|Scientist|Scion|Scout|Serf|Shaman|Skeleton|Soldier|Spawn|Spellshaper|Spirit|Survivor|Thopter|Toy|Vampire|Warlock|Warrior|Werewolf|Wizard|Zombie)|creature type)/gi;
+
+			return regex.test(card.rules_text);
+		}
+
+		function isRecurrable(card) {
+			const re = `((You may cast (this card|${card.card_name}) from your graveyard)|(return (this card|${card.card_name}) from your graveyard)|(put (this card|${card.card_name}) from your graveyard))`;
+			const regex = new RegExp(re, "gi");
+
+			return regex.test(card.rules_text);
+		}
+
+		function isUtilityLand(card) {
+			const regex = /({.}+?): [^a][^d][^d].*/gi;
+
+			return regex.test(card.rules_text) && card.type.includes("land") && !card.card_name.includes("drifting");
 		}
 
 		function tokenize(text) {
@@ -1898,7 +1977,7 @@ Search for a keyword among cards. For example, "kw:luminous" will find all cards
 "alias"
 Search within aliases of cards. For example, "alias:gradius" will find "Gradius" and "Gradius' Option".
 "is"
-Search for cards that fall within a specialized grouping. The groupings include: = permanent = spell = commander = hybrid = sanctum = dfc = mdfc = tdfc = played = staple =
+Search for cards that fall within a specialized grouping. The groupings include: = permanent = spell = commander = hybrid = sanctum = dfc = mdfc = tdfc = removal = cardadvantage = boardwipe = utilityland = recurrable = kindred = wish = played = staple =
 "tag"
 Search for specialized tags that are added to cards via the card notes. For example, "tag:fascism" will find all cards that are tagged with fascism, such as all the cards that mention clan mordel.
 "a", "art", "artist"
