@@ -1,1241 +1,1648 @@
 <html>
-    <head>
-        <title>Community</title>
-        <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-        <link rel="stylesheet" href="resources/mana.css">
-        <link rel="stylesheet" href="/resources/header.css">
-    </head>
-    <style>
-        @font-face {
+
+<head>
+	<title>Community</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
+	<link rel="stylesheet" href="resources/mana.css">
+	<link rel="stylesheet" href="/resources/header.css">
+</head>
+<style>
+	@font-face {
 		font-family: Beleren;
 		src: url('/resources/beleren.ttf');
-        }
-        body {
-            font-family: 'Helvetica', 'Arial', sans-serif;
-            overscroll-behavior: none;
-            margin: 0px;
-            background-color: #bbbbbb;
-            display: block;
-            /* overflow-y: scroll; */
-            background-attachment: fixed;
+	}
+
+	body {
+		font-family: 'Helvetica', 'Arial', sans-serif;
+		overscroll-behavior: none;
+		margin: 0px;
+		background-color: #bbbbbb;
+		display: block;
+		/* overflow-y: scroll; */
+		background-attachment: fixed;
 		background-size: cover;
-        }
-        select {
-            position: absolute;
-            text-align: center;
-            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-            font-weight: 500;
-            cursor: pointer;
-            background-color: #F3F3F3;
-            padding: 2px;
-	    }
-        .selects {
-		    position: absolute;
-            top: 10%;
-            left: 1%;
-	    }
-.artist-credit {
+	}
+
+	select {
+		position: absolute;
+		text-align: center;
+		font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+		font-weight: 500;
+		cursor: pointer;
+		background-color: #F3F3F3;
+		padding: 2px;
+	}
+
+	.selects {
+		position: absolute;
+		top: 10%;
+		left: 1%;
+	}
+
+	.artist-credit {
 		left: 160px;
 		position: absolute;
-                width: 240px;
+		width: 240px;
 	}
-        .page-container {
-            display: grid;
-            align-items: center;
-            justify-items: center;
-            width: 100%;
-        }
-        hr {
-            width: 85%;
-            height: 4px;
-            background-color: black;
-            border-radius: 2px;
-            border: none;
-        }
-        #modal-container {
-            display: none; 
-            position: fixed; 
-            z-index: 1; 
-            padding-top: 70px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto; 
-            background-color: rgb(0,0,0); 
-            background-color: rgba(0,0,0,0.4); 
-        }
-        #modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 50%;
-            border-radius: 10px;
-            border: solid #777 3px;
-        }
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            margin-left: 30px;
-        }
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .event-container {
-            border: 3px solid black;
-            border-radius: 3px;
-            display: grid;
-            align-items: center;
-            justify-items: center;
-            padding: 5px;
-            background-color: #aaaaaa66;
-        }
-        .event-name {
-            font-family: beleren;
-            font-size: 32px;
-            text-decoration: underline;
-            text-underline-position: below;
-            text-underline-offset: 3px;
-            color: rgb(48, 48, 135);
-        }
-        .events-container {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 10px;
-            margin: 40px;
-        }
-        .main-tab {
-            width: 100%;
-            margin: 20px 40px 0 40px;
-            /* margin-top: 100px; */
-        }
-        .deck-section-container {
-            display: grid;
-            gap: 10px;
-            grid-template-columns: 1fr 1fr;
-            width: 82%;
-            margin: auto;
-        }
-        .deck-container {
-            display: grid;
-            gap: 5px;
-            /* grid-template-rows: 1fr 2fr 1fr; */
-            background-color: #f3f3f3;
-            border-radius: 8px; 
-            /* height: 100%; */
-            padding: 5px;
-            align-items: center;
-            justify-items: center;
-            border: 2px solid #333;
-            box-shadow: 5px 5px 2px #333;
-            padding-top: 0px;
-        }
-        .full-deck-container {
-            display: grid;
-            grid-template-columns: 1fr 0.1fr;
-            gap: -5px;
-        }
-        .colors-container {
-            position: relative;
-            top: 60px;
-            right: 14px;
-            background-color: #333;
-            height: fit-content; 
-            padding: 2px;
-            border-radius: 20px;
-        }
-        .deck-preview-img {
-            max-height: 300px;
-            border: 2px solid black;
-            box-shadow: 7px 7px 2px #999;
-            border-radius: 16px;
-            margin-bottom: 7px;
-            cursor: pointer;
-            /* box-shadow: inset 0.2em 0.2em 0.2em 0em rgba(0, 0, 0, 0.5), inset -0.2em -0.2em 0.2em 0em rgba(0,0,0,0.5); */
-            /* padding: 0.2em; */
-            /* background-color: #777; */
-        }
-        .deck-name {
-            font-size: 30px;
-            font-family: beleren;
-            background-color: #ccc;
-            /* border: 2px solid #333; */
-            /* box-shadow: 5px 5px 2px #333; */
-            border-radius: 5px;
-            padding: 5px;
-            margin-bottom: 3px;
-            width: 100%;
-            text-align: center;
-            /* color: white; */
-        }
-        .deck-section-header {
-            font-family: beleren;
-            font-size: 64px;
-        }
-        .deck-sections-container {
-            display: grid;
-            gap: 15px;
-            /* align-items: center; */
-            justify-items: center;
-            grid-template-columns: 1fr 1fr;
-        }
-        .full-deck-section-container {
-            align-items: center;
-            justify-items: center;
-            text-align: center;
-            width: 100%;
-        }
-        .users-container {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 12px;
-            margin: 15px;
-        }
-        .user-container {
-            display: grid;
-            gap: 5px;
-            /* grid-template-rows: 1fr 2fr 1fr; */
-            background-color: #f3f3f3;
-            border-radius: 8px; 
-            /* height: 100%; */
-            padding: 5px;
-            align-items: center;
-            justify-items: center;
-            border: 2px solid #333;
-            box-shadow: 5px 5px 2px #333;
-            padding-top: 0px;
-        }
-        .user-name-container {
-            font-family: beleren;
-            font-size: 28px;
-        }
-        .deck-icon-green {
-            max-height:30px;
-            background-color: #16e019;
-            border-radius: 8px;
-            padding: 8px;
-            cursor: pointer;
-        }
-        .deck-link-green {
-            background-color: #16e019;
-            color: white;
-            padding: 2px 6px 2px 6px;
-            border-radius: 8px;
-            font-weight: bold;
-            display: grid;
-            grid-template-columns: 5fr 1fr;
-            align-items: center;
-            justify-items: center;
-            font-size: 24px; 
-            cursor: pointer;
-            /* border: 2px solid #333;
-            box-shadow: 2px 2px 1px #333; */
-        }
-        .deck-link-blue {
-            background-color: #4816e0;
-            color: white;
-            padding: 2px 6px 2px 6px;
-            border-radius: 8px;
-            font-weight: bold;
-            display: grid;
-            grid-template-columns: 5fr 1fr;
-            align-items: center;
-            justify-items: center;
-            font-size: 24px; 
-            cursor: pointer;
-            /* border: 2px solid #333;
-            box-shadow: 2px 2px 1px #333; */
-        }
-        .deck-icon-blue {
-            max-height:30px;
-            background-color: #4816e0;
-            border-radius: 8px;
-            padding: 8px;
-            cursor: pointer;
-        }
-        .deck-icon-shadow {
-            /* border: 3px solid black; */
-            /* box-shadow: 2px 2px 1px #333; */
-            box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5), inset -0.2em -0.2em 0.2em 0 rgba(0,0,0,0.5);
-            padding: 0.3em;
-        }
-        .tab-btn {
-            background-color: #737373;
-            color: white;
-            border: 3px solid #ddd;
-            align-items: center;
-            justify-items: center;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            font-weight: bold;
-            font-size: 24px;
-            padding: 8px;
-            border-radius: 18px; 
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .tab-btn:not(.tab-btn-active):hover {
-            background-color: #666;
-        }
-        .tab-btn-active {
-            background-color: #333;
-        }
-        .tab-switch-icon {
-            max-height: 30px;
-        }
-        .tab-select {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            margin-top: 40px;
-        }
-        .search-input {
-            width: 70%;
-            height: 35px;
-            font-size: 16px;
-            background-color: #fafafa;
-            border: 1px solid #d5d9d9;
-            border-radius: 2px;
-            padding-left: 10px;
-            padding-right: 10px;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-        .decks-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-items: center;
-            gap: 20px;
-        }
-        .cards-container, .cards-header {
-            display: grid;
-            grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
-            /* gap: 10px; */
-            border-top: 2px solid black;
-            border-left: 2px solid black;
-            width: 70%;
-            overflow-y: scroll;
-            margin: auto;
-        }
-        .card-row-item {
-            border-right: 2px solid black;
-            border-bottom: 2px solid black;
-            padding: 5px;
-            text-align: center;
-            font-size: 20px;
-            background-color: rgba(180, 180, 180, 0.3)
-            /* font-weight: bold; */
-        }
-        .card-row-header {
-            background-color: rgba(0, 0, 0, 0.6);
-            color: white;
-        }
-        .cards-header {
-            position: sticky;
-            top: 0;
-        }
-        .card-row-name {
-            font-family: beleren;
-        }
-        .sorting-header {
-            text-decoration: underline;
-        }
-    </style>
-    <style id="text-style">
-        .text {
-            color: white;
-        }
-    </style>
-    <body>
-        <div class="header">
-            <div class="search-grid">
-                <a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-                <img class="sg-icon" src="/img/header/search.png">
-                <input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
-                <a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
-                <a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
-                <a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
-                <a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>
-                <a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
-                <a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
-            </div>
-        </div>
-        <div class="selects" id="selects">
-			<select id="color-select" onchange="setGradient()">
-			</select>
-		</div>
-        <div class="page-container">
-            <div class="tab-select" id="tab-select">
-                <div class="tab-btn" id="users-tab-select" >
-                    <img src="img/header/community.png" class="tab-switch-icon">
-                    <span>Users</span>
-                </div>
-                <div class="tab-btn" id="decks-tab-select" >
-                    <img src="img/header/deck.png" class="tab-switch-icon">
-                    <span>Decks</span>
-                </div>
-                <div class="tab-btn" id="events-tab-select">
-                    <img src="img/trophy.png" class="tab-switch-icon">
-                    <span>Events</span>
-                </div>
-                <div class="tab-btn" id="cards-tab-select">
-                    <img src="img/header/sets.png" class="tab-switch-icon">
-                    <span>Cards</span>
-                </div>
-            </div>
-            <div id="main-tab" class="main-tab">
 
-            </div>
-        </div>
-        <div id="modal-container">
-			<div id="modal-content" class="popout">
-				<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+	.page-container {
+		display: grid;
+		align-items: center;
+		justify-items: center;
+		width: 100%;
+	}
+
+	hr {
+		width: 85%;
+		height: 4px;
+		background-color: black;
+		border-radius: 2px;
+		border: none;
+	}
+
+	#modal-container {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 70px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	#modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 50%;
+		border-radius: 10px;
+		border: solid #777 3px;
+	}
+
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+		margin-left: 30px;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.event-container {
+		border: 3px solid black;
+		border-radius: 3px;
+		display: grid;
+		align-items: center;
+		justify-items: center;
+		padding: 5px;
+		background-color: #aaaaaa66;
+	}
+
+	.event-name {
+		font-family: beleren;
+		font-size: 32px;
+		text-decoration: underline;
+		text-underline-position: below;
+		text-underline-offset: 3px;
+		color: rgb(48, 48, 135);
+	}
+
+	.events-container {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 10px;
+		margin: 40px;
+	}
+
+	.main-tab {
+		width: 100%;
+		margin: 20px 40px 0 40px;
+		/* margin-top: 100px; */
+	}
+
+	.deck-section-container {
+		display: grid;
+		gap: 10px;
+		grid-template-columns: 1fr 1fr;
+		width: 82%;
+		margin: auto;
+	}
+
+	.deck-container {
+		display: grid;
+		gap: 5px;
+		/* grid-template-rows: 1fr 2fr 1fr; */
+		background-color: #f3f3f3;
+		border-radius: 8px;
+		/* height: 100%; */
+		padding: 5px;
+		align-items: center;
+		justify-items: center;
+		border: 2px solid #333;
+		box-shadow: 5px 5px 2px #333;
+		padding-top: 0px;
+	}
+
+	.full-deck-container {
+		display: grid;
+		grid-template-columns: 1fr 0.1fr;
+		gap: -5px;
+	}
+
+	.colors-container {
+		position: relative;
+		top: 60px;
+		right: 14px;
+		background-color: #333;
+		height: fit-content;
+		padding: 2px;
+		border-radius: 20px;
+	}
+
+	.deck-preview-img {
+		max-height: 300px;
+		border: 2px solid black;
+		box-shadow: 7px 7px 2px #999;
+		border-radius: 16px;
+		margin-bottom: 7px;
+		cursor: pointer;
+		/* box-shadow: inset 0.2em 0.2em 0.2em 0em rgba(0, 0, 0, 0.5), inset -0.2em -0.2em 0.2em 0em rgba(0,0,0,0.5); */
+		/* padding: 0.2em; */
+		/* background-color: #777; */
+	}
+
+	.deck-name {
+		font-size: 30px;
+		font-family: beleren;
+		background-color: #ccc;
+		/* border: 2px solid #333; */
+		/* box-shadow: 5px 5px 2px #333; */
+		border-radius: 5px;
+		padding: 5px;
+		margin-bottom: 3px;
+		width: 100%;
+		text-align: center;
+		/* color: white; */
+	}
+
+	.deck-section-header {
+		font-family: beleren;
+		font-size: 64px;
+	}
+
+	.deck-sections-container {
+		display: grid;
+		gap: 15px;
+		/* align-items: center; */
+		justify-items: center;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.full-deck-section-container {
+		align-items: center;
+		justify-items: center;
+		text-align: center;
+		width: 100%;
+	}
+
+	.users-container {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 12px;
+		margin: 15px;
+	}
+
+	.user-container {
+		display: grid;
+		gap: 5px;
+		/* grid-template-rows: 1fr 2fr 1fr; */
+		background-color: #f3f3f3;
+		border-radius: 8px;
+		/* height: 100%; */
+		padding: 5px;
+		align-items: center;
+		justify-items: center;
+		border: 2px solid #333;
+		box-shadow: 5px 5px 2px #333;
+		padding-top: 0px;
+	}
+
+	.user-name-container {
+		font-family: beleren;
+		font-size: 28px;
+	}
+
+	.deck-icon-green {
+		max-height: 30px;
+		background-color: #16e019;
+		border-radius: 8px;
+		padding: 8px;
+		cursor: pointer;
+	}
+
+	.deck-link-green {
+		background-color: #16e019;
+		color: white;
+		padding: 2px 6px 2px 6px;
+		border-radius: 8px;
+		font-weight: bold;
+		display: grid;
+		grid-template-columns: 5fr 1fr;
+		align-items: center;
+		justify-items: center;
+		font-size: 24px;
+		cursor: pointer;
+		/* border: 2px solid #333;
+            box-shadow: 2px 2px 1px #333; */
+	}
+
+	.deck-link-blue {
+		background-color: #4816e0;
+		color: white;
+		padding: 2px 6px 2px 6px;
+		border-radius: 8px;
+		font-weight: bold;
+		display: grid;
+		grid-template-columns: 5fr 1fr;
+		align-items: center;
+		justify-items: center;
+		font-size: 24px;
+		cursor: pointer;
+		/* border: 2px solid #333;
+            box-shadow: 2px 2px 1px #333; */
+	}
+
+	.deck-icon-blue {
+		max-height: 30px;
+		background-color: #4816e0;
+		border-radius: 8px;
+		padding: 8px;
+		cursor: pointer;
+	}
+
+	.deck-icon-shadow {
+		/* border: 3px solid black; */
+		/* box-shadow: 2px 2px 1px #333; */
+		box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255, 255, 255, 0.5), inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.5);
+		padding: 0.3em;
+	}
+
+	.tab-btn {
+		background-color: #737373;
+		color: white;
+		border: 3px solid #ddd;
+		align-items: center;
+		justify-items: center;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		font-weight: bold;
+		font-size: 24px;
+		padding: 8px;
+		border-radius: 18px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+
+	.tab-btn:not(.tab-btn-active):hover {
+		background-color: #666;
+	}
+
+	.tab-btn-active {
+		background-color: #333;
+	}
+
+	.tab-switch-icon {
+		max-height: 30px;
+	}
+
+	.tab-select {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 10px;
+		margin-top: 40px;
+	}
+
+	.search-input {
+		width: 70%;
+		height: 35px;
+		font-size: 16px;
+		background-color: #fafafa;
+		border: 1px solid #d5d9d9;
+		border-radius: 2px;
+		padding-left: 10px;
+		padding-right: 10px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.decks-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-items: center;
+		gap: 20px;
+	}
+
+	.cards-container,
+	.cards-header {
+		display: grid;
+		grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+		/* gap: 10px; */
+		border-top: 2px solid black;
+		border-left: 2px solid black;
+		width: 70%;
+		overflow-y: scroll;
+		margin: auto;
+	}
+
+	.card-row-item {
+		border-right: 2px solid black;
+		border-bottom: 2px solid black;
+		padding: 5px;
+		text-align: center;
+		font-size: 20px;
+		background-color: rgba(180, 180, 180, 0.3)
+			/* font-weight: bold; */
+	}
+
+	.card-row-header {
+		background-color: rgba(0, 0, 0, 0.6);
+		color: white;
+	}
+
+	.cards-header {
+		position: sticky;
+		top: 0;
+	}
+
+	.card-row-name {
+		font-family: beleren;
+	}
+
+	.sorting-header {
+		text-decoration: underline;
+	}
+
+	.img-container {
+		position: relative;
+		align-self: center;
+		text-align: center;
+	}
+
+	.img-container img {
+		width: 100%;
+		height: auto;
+	}
+
+	.img-container .btn {
+		background: url('img/flip.png') no-repeat;
+		background-size: contain;
+		background-position: center;
+		width: 15%;
+		height: 11%;
+		cursor: pointer;
+		border: none;
+		position: absolute;
+		top: 6.5%;
+		left: 8.5%;
+		transform: translate(-50%, -85%);
+		border-radius: 0px;
+		box-shadow: none;
+	}
+
+	.img-container .btn:hover {
+		background: url('img/flip-hover.png') no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+
+	.img-container .hidden-text {
+		position: absolute;
+		font-family: Beleren;
+		top: 5%;
+		left: 9%;
+		font-size: .97vw;
+		color: rgba(0, 0, 0, 0);
+	}
+
+	.full-cards-container {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		width: 80%;
+		margin: auto;
+		gap: 10px;
+	}
+
+	.card-stats-container {
+		display: grid;
+		gap: 5px;
+		/* grid-template-rows: 1fr 2fr 1fr; */
+		background-color: #f3f3f3;
+		border-radius: 8px;
+		/* height: fit-content; */
+		padding: 15px;
+		padding-top: 30px;
+		align-items: center;
+		justify-items: center;
+		border: 2px solid #333;
+		box-shadow: 5px 5px 2px #333;
+		padding-top: 0px;
+	}
+
+	.card-stats-container .img-container {
+		margin-top: 20px;
+	}
+
+	.card-stats {
+		display: flex;
+	}
+
+	.card-stats-item {
+		font-size: 1.2em;
+		padding: 0 5px 0 5px;
+	}
+
+
+	.card-rank {
+		font-weight: bold;
+		border-right: 2px solid black;
+	}
+</style>
+<style id="text-style">
+	.text {
+		color: white;
+	}
+</style>
+
+<body>
+	<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/header/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false"
+				autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>
+			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+			<a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
+		</div>
+	</div>
+	<div class="selects" id="selects">
+		<select id="color-select" onchange="setGradient()">
+		</select>
+	</div>
+	<div class="page-container">
+		<div class="tab-select" id="tab-select">
+			<div class="tab-btn" id="users-tab-select">
+				<img src="img/header/community.png" class="tab-switch-icon">
+				<span>Users</span>
+			</div>
+			<div class="tab-btn" id="decks-tab-select">
+				<img src="img/header/deck.png" class="tab-switch-icon">
+				<span>Decks</span>
+			</div>
+			<div class="tab-btn" id="events-tab-select">
+				<img src="img/trophy.png" class="tab-switch-icon">
+				<span>Events</span>
+			</div>
+			<div class="tab-btn" id="cards-tab-select">
+				<img src="img/header/sets.png" class="tab-switch-icon">
+				<span>Cards</span>
 			</div>
 		</div>
-        <script>
-            let gradients = null;
-            let raw_gradients = null;
-            let gradTop = null;
-            let gradBottom = null;
-            modal = document.getElementById("modal-container");
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    document.getElementById('modal-container').style.display = 'none';
-                }
-            }
-            document.addEventListener("DOMContentLoaded", async function () {
-                try {
-                    const response = await fetch('/resources/gradients.json');
-                    raw_gradients = await response.json();
-                }
-                catch(error) {
-                    console.error('Error:', error);
-                }
+		<div id="main-tab" class="main-tab">
 
-                gradients = raw_gradients.gradients;
-				card_backgrounds = raw_gradients.cards;
-                setGradient(localStorage.getItem("settings.gradient"));
-                console.log(setGradient);
-                prepareGradients();
-            });
-
-            function prepareGradients() {
-				let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt = document.createElement("option");
-				opt.value = defaultGradient.replace(' ', '-');
-				opt.text = defaultGradient;
-				document.getElementById("color-select").appendChild(opt);
-				let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt_rand = document.createElement("option");
-				opt_rand.value = "Random-Card";
-				opt_rand.text = "Random Card";
-
-				document.getElementById("color-select").appendChild(opt_rand);
-				for (const gradient of gradients)
-				{	
-					const opt = document.createElement("option");
-					opt.value = gradient.name.replace(' ', '-');
-					opt.text = gradient.name;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
-				}
-
-				for (const gradient in card_backgrounds) {
-					const opt = document.createElement("option");
-					opt.value = gradient.replace(' ', '-');
-					opt.text = gradient;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
-					console.log(gradient, opt);
-				}
-
-				// setGradient();
+		</div>
+	</div>
+	<div id="modal-container">
+		<div id="modal-content" class="popout">
+			<span class="close"
+				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+		</div>
+	</div>
+	<script>
+		let gradients = null;
+		let raw_gradients = null;
+		let gradTop = null;
+		let gradBottom = null;
+		modal = document.getElementById("modal-container");
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				document.getElementById('modal-container').style.display = 'none';
+			}
+		}
+		document.addEventListener("DOMContentLoaded", async function () {
+			try {
+				const response = await fetch('/resources/gradients.json');
+				raw_gradients = await response.json();
+			}
+			catch (error) {
+				console.error('Error:', error);
 			}
 
-			function setGradient(gradient=false) {
-				let artistCredit = "";
-				if (!gradient) { 
-					gradient = document.getElementById("color-select").value;
-				}
+			gradients = raw_gradients.gradients;
+			card_backgrounds = raw_gradients.cards;
+			setGradient(localStorage.getItem("settings.gradient"));
+			prepareGradients();
+		});
 
-				gradTop = "#000000";
-				gradBottom = "#FFFFFF";
-				for (const grad of gradients)
-				{
-					if (gradient == grad.name.replace(' ', '-'))
-					{ 	
-						gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
-					}
-				}
+		function prepareGradients() {
+			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt = document.createElement("option");
+			opt.value = defaultGradient.replace(' ', '-');
+			opt.text = defaultGradient;
+			document.getElementById("color-select").appendChild(opt);
+			let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt_rand = document.createElement("option");
+			opt_rand.value = "Random-Card";
+			opt_rand.text = "Random Card";
 
-				for (const background in card_backgrounds) {
-					if (gradient == background.replace(' ', '-'))
-					{ 	
-						gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-						artistCredit = card_backgrounds[background][0];
-						setTextColor(card_backgrounds[background][1]);
-					}
+			document.getElementById("color-select").appendChild(opt_rand);
+			for (const gradient of gradients) {
+				const opt = document.createElement("option");
+				opt.value = gradient.name.replace(' ', '-');
+				opt.text = gradient.name;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
 				}
+			}
 
-				if (gradient == "Random-Card") {
-					const bgs = Object.keys(card_backgrounds);
-					const background = bgs[reallyRand(bgs.length)];
+			for (const gradient in card_backgrounds) {
+				const opt = document.createElement("option");
+				opt.value = gradient.replace(' ', '-');
+				opt.text = gradient;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
+				}
+			}
+
+			// setGradient();
+		}
+
+		function setGradient(gradient = false) {
+			let artistCredit = "";
+			if (!gradient) {
+				gradient = document.getElementById("color-select").value;
+			}
+
+			gradTop = "#000000";
+			gradBottom = "#FFFFFF";
+			for (const grad of gradients) {
+				if (gradient == grad.name.replace(' ', '-')) {
+					gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
+				}
+			}
+
+			for (const background in card_backgrounds) {
+				if (gradient == background.replace(' ', '-')) {
 					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
 					artistCredit = card_backgrounds[background][0];
 					setTextColor(card_backgrounds[background][1]);
 				}
-
-				
-				document.body.style.backgroundImage = gradImage;
-				localStorage.setItem("settings.gradient", gradient);
-				console.log("CHANGE");
-				if (document.getElementsByClassName("artist-credit")[0])
-					document.getElementsByClassName("artist-credit")[0].remove();
-				const credit_text = document.createElement("span");
-				credit_text.className = "artist-credit text";
-				credit_text.innerText = `background by ${artistCredit}`;
-				if (artistCredit && document.getElementById("color-select"))
-					document.getElementById("color-select").parentElement.appendChild(credit_text);
 			}
 
-function reallyRand(x, seed = false) {
-				const date = new Date();
-				seed = seed ? seed : date.getUTCFullYear() * 10000 + 
-							 date.getUTCMonth() * 100 + 
-							 date.getUTCDate();
-
-				const a = 1103515245;
-				const c = 12345;
-				const m = Math.pow(2, 31);
-
-				let randomNumber = (a * seed + c) % m;
-				randomNumber = randomNumber / m;
-
-				return Math.floor(randomNumber * x);
+			if (gradient == "Random-Card") {
+				const bgs = Object.keys(card_backgrounds);
+				const background = bgs[reallyRand(bgs.length)];
+				gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
+				artistCredit = card_backgrounds[background][0];
+				setTextColor(card_backgrounds[background][1]);
 			}
 
-function setTextColor(c = false) {
-				if (c) {
-					localStorage.setItem("settings.textcolor", c);
-				}
-				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            	document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+			document.body.style.backgroundImage = gradImage;
+			localStorage.setItem("settings.gradient", gradient);
+			if (document.getElementsByClassName("artist-credit")[0])
+				document.getElementsByClassName("artist-credit")[0].remove();
+			const credit_text = document.createElement("span");
+			credit_text.className = "artist-credit text";
+			credit_text.innerText = `background by ${artistCredit}`;
+			if (artistCredit && document.getElementById("color-select"))
+				document.getElementById("color-select").parentElement.appendChild(credit_text);
+		}
+
+		function reallyRand(x, seed = false) {
+			const date = new Date();
+			seed = seed ? seed : date.getUTCFullYear() * 10000 +
+				date.getUTCMonth() * 100 +
+				date.getUTCDate();
+
+			const a = 1103515245;
+			const c = 12345;
+			const m = Math.pow(2, 31);
+
+			let randomNumber = (a * seed + c) % m;
+			randomNumber = randomNumber / m;
+
+			return Math.floor(randomNumber * x);
+		}
+
+		function setTextColor(c = false) {
+			if (c) {
+				localStorage.setItem("settings.textcolor", c);
 			}
-            document.getElementById("search").addEventListener("keypress", function(event) {
-				if (event.key === "Enter") {
-					event.preventDefault();
-					const url = new URL('search', window.location.origin);
-					url.searchParams.append('search', document.getElementById("search").value);
-					window.location.href = url;
-				}
-			});
-            function randomCard() {
-				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
-				let random_card = card_list_arrayified[i];
-
-				const url = new URL('card', window.location.origin);
-				const params = {
-					set: random_card.set,
-					num: random_card.number,
-					name: random_card.card_name
-				}
-				for (const key in params) {
-					url.searchParams.append(key, params[key]);
-				}
-
+			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+		}
+		document.getElementById("search").addEventListener("keypress", function (event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				const url = new URL('search', window.location.origin);
+				url.searchParams.append('search', document.getElementById("search").value);
 				window.location.href = url;
 			}
+		});
+		function randomCard() {
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
+
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+
+			window.location.href = url;
+		}
+
+		function gridifyCard(card_stats, card_text = false, rotate_card = false, designer_notes = false) {
+			const card_name = card_stats.card_name;
+
+			if (!card_text) {
+				return buildImgContainer(card_stats, true, rotate_card);
+			}
+
+			const grid = document.createElement("div");
+			grid.className = "image-grid";
+
+			grid.appendChild(buildImgContainer(card_stats, false, rotate_card));
+
+			const text = document.createElement("div");
+			text.className = "card-text popout";
+			text.id = "card-text";
+
+			const name_cost = document.createElement("div");
+			name_cost.className = "name-cost";
+			name_cost.innerHTML = card_stats.card_name + (card_stats.cost != "" ? '     ' + symbolize(card_stats.cost) : "");
+			text.appendChild(name_cost);
+
+			const type = document.createElement("div");
+			type.className = "type";
+			type.textContent = card_stats.type;
+			text.appendChild(type);
+
+			const effect = document.createElement("div");
+			effect.className = "effect";
+			let card_effects = "";
+			if (card_stats.rules_text != "") {
+				card_effects = card_stats.rules_text + "\n" + (card_stats.flavor_text != "[i][/i]" ? "<hr class=\"ft-divider text-bg\"></div>" + card_stats.flavor_text : "");
+			} else {
+				card_effects = "";
+			}
+
+			effect.innerHTML += prettifyEffects(card_effects);
+			text.appendChild(effect);
+
+			if (card_stats.pt != "") {
+				const pt = document.createElement("div");
+				pt.className = "pt";
+				pt.textContent = card_stats.pt;
+				text.appendChild(pt);
+			}
+			else if (card_stats.loyalty != "") {
+				const loyalty = document.createElement("div");
+				loyalty.className = "pt";
+				loyalty.textContent = "[" + card_stats.loyalty + "]";
+				text.appendChild(loyalty);
+			}
+
+			if (designer_notes && card_stats.designer_notes != null) {
+				const dnotes = document.createElement("div");
+				dnotes.className = "designer-notes";
+				dnotes.innerHTML = "<u><b>Designer Notes</b></u>";
+				dnotes.innerHTML = dnotes.innerHTML + card_stats.designer_notes;
+				text.appendChild(dnotes);
+			}
+
+			// 13-name	14-color	15-type	16-ci	17-cost	18-ability	19-pt	20-special-text	21-loyalty
+			if (card_stats.shape.includes("adventure") || card_stats.shape.includes("double") || card_stats.shape.includes("spli")) {
+				const name_cost_2 = document.createElement("div");
+				name_cost_2.className = "name-cost";
+				name_cost_2.innerHTML = card_stats.card_name2 + (card_stats.cost2 != "" ? '     ' + symbolize(card_stats.cost2) : "");
+				text.appendChild(name_cost_2);
+
+				const type_2 = document.createElement("div");
+				type_2.className = "type";
+				type_2.textContent = card_stats.type2;
+				text.appendChild(type_2);
+
+				const effect_2 = document.createElement("div");
+				effect_2.className = "effect";
+				let card_effects_2 = "";
+				if (card_stats.rules_text2 != "") {
+					card_effects_2 = card_stats.rules_text2 + "\n" + (card_stats.flavor_text2 != "[i][/i]" ? "<hr class=\"ft-divider text-bg\"></div>" + card_stats.flavor_text2 : "");
+				} else {
+					card_effects_2 = "";
+				}
+
+				effect_2.innerHTML += prettifyEffects(card_effects_2);
+				text.appendChild(effect_2);
+
+				if (card_stats.pt2 != "") {
+					const pt_2 = document.createElement("div");
+					pt_2.className = "pt";
+					pt_2.textContent = card_stats.pt2;
+					text.appendChild(pt_2);
+				}
+				else if (card_stats.loyalty2 != "") {
+					const loyalty = document.createElement("div");
+					loyalty.className = "pt";
+					loyalty.textContent = "[" + card_stats.loyalty2 + "]";
+					text.appendChild(loyalty);
+				}
+			}
+
+			grid.appendChild(text);
+
+			return grid;
+		}
+
+		function buildImgContainer(card_stats, hidden_title = false, rotate_card = false) {
+			const imgContainer = document.createElement("div");
+			imgContainer.className = "img-container";
+			const id = card_stats.set + "-" + card_stats.number;
+
+			const img = document.createElement("img");
+			img.className = "card-image";
+			img.id = id;
+			img.setAttribute("loading", "lazy");
+			// (card_stats[13].includes("_") ? card_stats[13] : card_stats[0]) for posterity
+			img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+
+			const link = document.createElement("a");
+
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: card_stats.set,
+				num: card_stats.number,
+				name: card_stats.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+			link.href = url;
+
+			link.appendChild(img);
+
+			if ((card_stats.shape.includes("spli") || card_stats.type.includes("Battle")) && rotate_card) {
+				const rotated_img = document.createElement("img");
+				rotated_img.className = "h-img";
+				rotated_img.id = "h-img";
+				rotated_img.src = img.src;
+				rotated_img.style.display = "block";
+				img.style.filter = "blur(2px) brightness(0.7)";
+
+				link.appendChild(rotated_img);
+			}
+
+			imgContainer.appendChild(link);
+
+			if (card_stats.shape.includes("double")) {
+				const imgFlipBtn = document.createElement("button");
+				imgFlipBtn.className = "btn";
+				imgFlipBtn.onclick = async function () { imgFlip(id, rotate_card); };
+				const imgFlipIcon = document.createElement("img");
+				imgFlipIcon.className = "img-flip-icon";
+				imgFlipIcon.src = '/img/flip.svg';
+				imgFlipBtn.appendChild(imgFlipIcon);
+				imgContainer.appendChild(imgFlipBtn);
+			}
+
+			if (hidden_title) {
+				const title = document.createElement("div");
+				title.innerText = card_stats.card_name;
+				title.className = "hidden-text";
+				imgContainer.appendChild(title);
+			}
+
+			return imgContainer;
+		}
+
+		async function imgFlip(id, rotate_card = false) {
+			const img = document.getElementById(id);
+			const seconds = 0.15;
+			const cardName = img.src;
+
+			img.style.transition = seconds.toString() + "s";
+			img.style.transform = "rotateY(90deg)";
+
+			const btn = img.parentElement.parentElement.getElementsByTagName("button")[0];
+			btn.style.transition = seconds.toString() + "s";
+			btn.style.filter = cardName.includes("_front") ? "invert()" : "";
+
+			await setTimeout(function () {
+				const rotated_img = document.getElementById("h-img");
+
+				if (cardName.includes("_front")) {
+					img.src = cardName.replace("_front", "_back");
+					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "invert()";
+
+					if (rotate_card) {
+						rotated_img.style.display = "none";
+						img.style.filter = "";
+					}
+				}
+				else {
+					img.src = cardName.replace("_back", "_front");
+					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "";
+
+					if (rotate_card) {
+						rotated_img.style.display = "block";
+						img.style.filter = "blur(2px) brightness(0.7)";
+					}
+				}
+
+				img.style.transition = (seconds * 2).toString() + "s";
+				img.style.transform = "rotateY(0deg)";
+			}, seconds * 1000);
+
+			await setTimeout(function () {
+				console.log("done");
+			}, seconds * 1000);
+		}
+
+		function prettifyEffects(card_effect) {
+			let HTML = "";
+
+			let styled_effect = card_effect.replace(/(\[i\])+(.+?)(\[\/i\])+/gs, function (matched, _1, _2) {
+				return '<i>' + _2 + '</i>'
+			}).replaceAll(/(\[b\])+(.+?)(\[\/b\])+/gs, function (matched, _1, _2) {
+				return '<b>' + _2 + '</b>'
+			});
+
+			let card_effects = styled_effect.split("\n");
+
+			for (let i = 0; i < card_effects.length; i++) {
+				HTML += card_effects[i];
+
+				if (i != card_effects.length - 1) {
+					HTML += "<br>"
+				}
+			}
+
+			let regexHTML = symbolize(HTML);
+
+			return regexHTML;
+		}
+
+		function changeTab(_tab) {
+			tab = _tab;
+			makeTab();
+		}
+	</script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+		// https://firebase.google.com/docs/web/setup#available-libraries
+
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+			authDomain: "voyager-78e30.firebaseapp.com",
+			projectId: "voyager-78e30",
+			storageBucket: "voyager-78e30.firebasestorage.app",
+			messagingSenderId: "411191248476",
+			appId: "1:411191248476:web:591349be169d823e5f8899",
+			measurementId: "G-TQ1L48F25M"
+		};
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+		let username = "";
+		let password = "";
+		let sessionid = localStorage.getItem('settings.session');
+		let decks = {};
+		const events = ["GP2", "League"];
+		const urlParams = new URLSearchParams(window.location.search);
+		let tab = urlParams.get('tab');
+		let events_html;
+		let decks_html;
+		let users_html;
+		let cards_html;
+		let sort_cards = "name";
+		let initial_load = true;
+
+		document.getElementById("users-tab-select").addEventListener("click", (e) => {
+			tab = "users";
+			document.getElementById("main-tab").innerHTML = "";
+			reload();
+		});
+
+		document.getElementById("events-tab-select").addEventListener("click", (e) => {
+			tab = "events";
+			document.getElementById("main-tab").innerHTML = "";
+			reload();
+		});
+
+		document.getElementById("decks-tab-select").addEventListener("click", async (e) => {
+			tab = "decks";
+			document.getElementById("main-tab").innerHTML = "";
+			reload();
+		});
+
+		document.getElementById("cards-tab-select").addEventListener("click", async (e) => {
+			tab = "cards";
+			document.getElementById("main-tab").innerHTML = "";
+			reload();
+		});
+
+		if (sessionid) {
+			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+				let data = docSnap.data();
+				username = data.username;
+				password = data.password;
+			});
+
+			await getDoc(doc(db, 'users', username)).then(docSnap => {
+				let data = docSnap.data();
+				decks = JSON.parse(data.decks);
+			});
+		}
+
+		document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+		document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+		// declare variables outside of functions to avoid passing nonsense
+		let q;
+		let all_users_docs;
+		let all_decks = [];
+		let all_users_decks = [];
+		let all_events_decks = [];
+		let all_users = [];
+		let all_events_docs;
+		let all_events = [];
+		let card_list;
+		let stats;
+
+		await fetch('/lists/all-cards.json')
+			.then(response => response.json())
+			.then(json => {
+				card_list = json;
+			}).catch(error => console.error('Error:', error));
+
+		let card_list_arrayified = card_list.cards;
+
+		function setTabs() {
+			document.getElementById(`events-tab-select`).className = "tab-btn";
+			document.getElementById(`users-tab-select`).className = "tab-btn";
+			document.getElementById(`decks-tab-select`).className = "tab-btn";
+			document.getElementById(`cards-tab-select`).className = "tab-btn";
+			document.getElementById(`${tab}-tab-select`).className += " tab-btn-active";
+		}
+
+		async function reload() {
+			tab = tab ? tab : "events";
+			setTabs();
+			if (initial_load) {
+				q = query(collection(db, "users"));
+				all_users_docs = await getDocs(q);
+				all_decks = [];
+				all_users = [];
+				q = query(collection(db, "events"));
+				all_events_docs = await getDocs(q);
+				all_events = [];
+				all_users_docs.forEach((doc) => {
+					const data = doc.data();
+					all_users.push(data);
+					for (const deck of JSON.parse(data.decks)) {
+						all_decks.push({ ...deck, "user": data.username, "event": false });
+						all_users_decks.push({ ...deck, "user": data.username, "event": false });
+					}
+					// all_decks.push(...JSON.parse(data.decks));
+				});
+				all_events_docs.forEach((doc) => {
+					const data = doc.data();
+					all_events.push(data);
+					for (const user in JSON.parse(data.decks)) {
+						let deck = JSON.parse(data.decks)[user];
+						all_events_decks.push({ ...deck, "user": user, "event": true });
+						all_decks.push({ ...deck, "user": user, "event": true });
+					}
+				});
+				decks_html = await makeDecksTab();
+				events_html = makeEventTab();
+				users_html = makeUsersTab();
+			}
+			if (tab == "events") {
+				document.getElementById("main-tab").appendChild(events_html);
+			}
+			if (tab == "decks") {
+				document.getElementById("main-tab").appendChild(decks_html);
+			}
+			if (tab == "users") {
+				document.getElementById("main-tab").appendChild(users_html);
+			}
+			if (tab == "cards") {
+				if (!cards_html) {
+					cards_html = await makeCardsTab();
+				}
+
+				document.getElementById("main-tab").appendChild(cards_html);
+			}
+			initial_load = false;
+		}
+
+		async function makeTab(tab) {
+			if (tab == "events") {
+				document.getElementById("main-tab").appendChild(makeEventTab());
+			}
+			if (tab == "decks") {
+				document.getElementById("main-tab").appendChild(await makeDecksTab());
+			}
+			if (tab == "users") {
+				document.getElementById("main-tab").appendChild(makeUsersTab());
+			}
+		}
+
+		function makeEventTab() {
+			const container = document.createElement("div");
+			container.className = "events-container";
+			for (const event of all_events) {
+				const event_container = document.createElement("div");
+				event_container.className = "event-container";
+
+				const event_name = document.createElement("a");
+				event_name.className = "event-name text";
+				event_name.innerText = event.name;
+				const event_type = event.type ? event.type : "gp";
+				event_name.href = `${event_type}${!event.nourl ? "?event=" + event.name : ""}`;
+				event_container.appendChild(event_name);
+
+				const event_players = document.createElement("span");
+				event_players.className = "event-players text";
+				event_players.innerText = Object.keys(JSON.parse(event.decks)).length + " players";
+				event_container.appendChild(event_players);
+
+				const event_winner = document.createElement("span");
+				event_winner.className = "event-winner text";
+				event_winner.innerText = "Winner: " + (event.winner ? event.winner : "TBD");
+				event_container.appendChild(event_winner);
+
+				container.appendChild(event_container);
+			}
+			return container;
+		}
+
+		function gridifyDeck(deck) {
+			const container = document.createElement("div");
+			container.className = "deck-container";
+			const preview_img = document.createElement("img");
+			let card_stats;
+			for (const card of card_list_arrayified) {
+				if (deck.previewimg == card.card_name) {
+					card_stats = card;
+					break;
+				}
+			}
+			preview_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+			preview_img.className = "deck-preview-img";
+			preview_img.onclick = function () {
+				if (deck.event) {
+					window.location.href = `/deckbuilder?edeck=${deck.event}-${deck.user}`;
+					return;
+				}
+				window.location.href = `/deckbuilder?deck=${deck.user}-${deck.name}`;
+			}
+			const deck_name = document.createElement("div");
+			deck_name.className = "deck-name";
+			deck_name.innerText = deck.name;
+
+			container.appendChild(deck_name);
+			container.appendChild(preview_img);
+			return container;
+		}
+
+		async function makeDecksTab() {
+			const winning_decks = await getWinningDecks();
+
+			const sections = [{ name: "New Decks", cond: "new", num: winning_decks.length }, { name: "Winning Decks", cond: "win", num: "all" }];
+
+			const content_container = document.createElement("div");
+			content_container.className = "decks-container";
+
+			const sections_container = document.createElement("div");
+			sections_container.className = "deck-sections-container";
+
+			const decksearch_input = document.createElement("input");
+			decksearch_input.className = "search-input";
+			decksearch_input.id = "decksearch-input";
+			decksearch_input.placeholder = "Search decks ...";
+			decksearch_input.addEventListener("keypress", (e) => {
+				if (e.key == "Enter") {
+					window.location.href = `/decksearch?search=${encodeURIComponent(document.getElementById("decksearch-input").value)}`;
+				}
+			});
+
+			content_container.appendChild(decksearch_input);
+
+			for (const section of sections) {
+				const name = section.name;
+				const cond = section.cond;
+
+				const section_container = document.createElement("div");
+				section_container.className = "full-deck-section-container";
+				const section_header = document.createElement("span");
+				section_header.className = "deck-section-header text";
+				section_header.innerText = name;
+				const decks_container = document.createElement("div");
+				decks_container.className = "deck-section-container";
+				const line = document.createElement("hr");
+				line.className = "text-bg";
+
+				let all_decks_2 = [...all_decks];
+				let num_decks = section.num;
+
+				// 09-04-2025, 15:35 -- dates
+				// seperate
+				if (cond == 'new') {
+					all_decks_2.sort(newDeck);
+				} else if (cond == "win") {
+					all_decks_2 = winning_decks;
+					num_decks = all_decks_2.length;
+				}
+
+				for (let i = 0; i < num_decks; i++) {
+					const deck = all_decks_2[i];
+					decks_container.appendChild(gridifyDeck(deck));
+				}
+
+				section_container.appendChild(section_header);
+				section_container.appendChild(line);
+				section_container.appendChild(decks_container);
+				sections_container.appendChild(section_container);
+			}
+
+			content_container.appendChild(sections_container);
+
+			return content_container;
+		}
+
+		function makeUsersTab() {
+			const users_container = document.createElement("div");
+			users_container.className = "users-container";
+
+			for (const user of all_users) {
+				users_container.appendChild(gridifyUser(user));
+			}
+
+			return users_container;
+		}
+
+		function gridifyUser(user) {
+			const user_container = document.createElement("div");
+			user_container.className = "user-container";
+
+			const name_container = document.createElement("span");
+			name_container.className = "user-name-container";
+			name_container.innerText = user.username;
+
+			const decks_button = document.createElement("div");
+			decks_button.className = "view-decks-button deck-link-green deck-icon-shadow";
+			decks_button.innerText = "View Decks";
+
+			const show_img = document.createElement("img");
+			show_img.className = "show-img deck-icon-green";
+			show_img.src = "img/show-white.png";
+			decks_button.appendChild(show_img);
+
+			decks_button.onclick = function () {
+				window.location.href = `/decksearch?search=user:${user.username}`;
+			}
+
+			const view_button = document.createElement("div");
+			view_button.className = "view-decks-button deck-link-blue deck-icon-shadow";
+			view_button.innerText = "View Page";
+
+			const show_img_2 = document.createElement("img");
+			show_img_2.className = "show-img deck-icon-blue";
+			show_img_2.src = "img/show-white.png";
+			view_button.appendChild(show_img_2);
+
+			view_button.onclick = function () {
+				window.location.href = `/user?user=${user.username}`;
+			}
+
+			user_container.appendChild(name_container);
+			user_container.appendChild(decks_button);
+			user_container.appendChild(view_button);
+
+			return user_container;
+		}
+
+
+
+		async function getWinningDecks() {
+			let recent_event;
+			let best_decks = [];
+			await getDoc(doc(db, 'info', 'events')).then((doc) => {
+				recent_event = doc.data().bestevent;
+			});
+
+			await getDoc(doc(db, 'events', recent_event)).then((doc) => {
+				const event = doc.data();
+				let records = getRecords(event);
+				const decks = JSON.parse(event.decks);
+				for (const user in decks) {
+					const deck = decks[user];
+					if (records[user][1] <= 1) {
+						best_decks.push({ ...deck, event: recent_event, user: user });
+					}
+				}
+			});
+
+			return best_decks;
+		}
+
+		function getRecords(event) {
+			const swiss_rounds = JSON.parse(event.rounds).swiss;
+			let records = {};
+			for (const round_name in swiss_rounds) {
+				let round = swiss_rounds[round_name];
+				for (const match of round) {
+					for (const player in match) {
+						let score = Number(match[player]);
+						if (!records.hasOwnProperty(player)) {
+							records[player] = [0, 0];
+						}
+						records[player][score == 2 ? 0 : 1] += 1;
+					}
+				}
+			}
+
+			return records;
+		}
+
+		function newDeck(a, b) {
+			if (a.last_modified && !b.last_modified) {
+				return -1;
+			}
+			if (!a.last_modified && b.last_modified) {
+				return 1;
+			}
+			if (!a.last_modified && !b.last_modified) {
+				return 0;
+			}
+
+			let a_date = {};
+			let b_date = {};
+
+			let a_split = a.last_modified.split(',');
+			let a_split2 = a_split[0].split('-');
+
+			a_date.day = Number(a_split2[0]);
+			a_date.month = Number(a_split2[1]);
+			a_date.year = Number(a_split2[2]);
+
+			a_date.hour = Number(a_split[1].split(":")[0]);
+			a_date.min = Number(a_split[1].split(":")[1]);
+
+			let b_split = b.last_modified.split(',');
+			let b_split2 = b_split[0].split('-');
+
+			b_date.day = Number(b_split2[0]);
+			b_date.month = Number(b_split2[1]);
+			b_date.year = Number(b_split2[2]);
+
+			b_date.hour = Number(b_split[1].split(":")[0]);
+			b_date.min = Number(b_split[1].split(":")[1]);
+
+			if (a_date.year > b_date.year) {
+				return -1;
+			}
+			if (a_date.year < b_date.year) {
+				return 1;
+			}
+			if (a_date.month > b_date.month) {
+				return -1;
+			}
+			if (a_date.month < b_date.month) {
+				return 1;
+			}
+			if (a_date.day > b_date.day) {
+				return -1;
+			}
+			if (a_date.day < b_date.day) {
+				return 1;
+			}
+			if (a_date.hour > b_date.hour) {
+				return -1;
+			}
+			if (a_date.hour < b_date.hour) {
+				return 1;
+			}
+			if (a_date.min > b_date.min) {
+				return -1;
+			}
+			if (a_date.min < b_date.min) {
+				return 1;
+			}
+			return 0;
+		}
+
+		async function makeCardsTab() {
+			const content_container = document.createElement("div");
+			content_container.className = "full-cards-container";
+
+			const grid_container = document.createElement("div");
+			grid_container.className = "cards-container";
+
+			stats = await getCardStats();
+
+			// const header_container = document.createElement("div");
+			// header_container.className = "cards-header popout";
+
+			// const card_name = document.createElement("div");
+			// card_name.className = "card-row-item card-row-name card-row-header";
+			// card_name.innerText = "Card Name";
+
+			// const card_wr = document.createElement("div");
+			// card_wr.className = "card-row-item card-row-wr card-row-header";
+			// card_wr.innerText = "GP Winrate";
+
+			// const card_event_playrate = document.createElement("div");
+			// card_event_playrate.className = "card-row-item card-row-event-playrate card-row-header";
+			// card_event_playrate.innerText = "Event Playrate";
+
+			// const card_user_playrate = document.createElement("div");
+			// card_user_playrate.className = "card-row-item card-row-user-playrate card-row-header";
+			// card_user_playrate.innerText = "User Playrate";
+
+			// const card_full_playrate = document.createElement("div");
+			// card_full_playrate.className = "card-row-item card-row-full-playrate card-row-header";
+			// card_full_playrate.innerText = "Playrate";
+
+			// header_container.appendChild(card_name);
+			// header_container.appendChild(card_wr);
+			// header_container.appendChild(card_event_playrate);
+			// header_container.appendChild(card_user_playrate);
+			// header_container.appendChild(card_full_playrate);
+
+			// Array.prototype.sortStats = function (stats) {
+			// 	function compare(a, b) {
+			// 		sort_cards = "winrate";
+			// 		if (sort_cards == "name") {
+			// 			if (a.card_name === b.card_name) {
+			// 				return 0;
+			// 			}
+			// 			else {
+			// 				return (a.card_name < b.card_name) ? -1 : 1;
+			// 			}
+			// 		} else if (sort_cards == "winrate") {
+			// 			const a_wr_unparsed = stats[a.card_name].winrate;
+			// 			const b_wr_unparsed = stats[b.card_name].winrate;
+
+			// 			const a_wr = a_wr_unparsed == "No Data" ? -1 : parseFloat(a_wr_unparsed.split("%")[0]);
+			// 			const b_wr = a_wr_unparsed == "No Data" ? -1 : parseFloat(a_wr_unparsed.split("%")[0]);
+
+			// 			if (a_wr === b_wr) {
+			// 				return 0;
+			// 			}
+			// 			else {
+			// 				return (a_wr < b_wr) ? -1 : 1;
+			// 			}
+			// 		}
+			// 	}
+			// }
+
+			// card_list_arrayified.sortStats(stats);
+
+			let top_100_cards = [];
+
+			for (const card of card_list_arrayified) {
+				if (card.type.includes("Basic")) continue;
+				if (top_100_cards.length < 100) {
+					top_100_cards.push(card);
+					continue;
+				}
+
+				let lowest_card_index = 0;
+				let lowest_card_val = 100;
+				let i = 0;
+				for (const top_card of top_100_cards) {
+					const top_card_playrate_unparsed = stats[top_card.card_name].playrate_general[1];
+					const top_card_playrate = parseFloat(top_card_playrate_unparsed.split("%")[0]);
+
+					if (top_card_playrate < lowest_card_val) {
+						lowest_card_val = top_card_playrate;
+						lowest_card_index = i;
+					}
+
+					i++;
+				}
+
+				top_100_cards.splice(lowest_card_index, 1, card);
+			}
+
+			let rank = 1;
+
+			top_100_cards.sort(topCardSorter);
+
+			for (const card of top_100_cards) {
+				const card_ele = makeCard(card, stats[card.card_name], rank);
+				content_container.appendChild(card_ele);
+				rank++;
+			}
+
+			//const card_eles = makeCard(card, stats[card.card_name]);
+
+			// content_container.appendChild(header_container);
+			content_container.appendChild(grid_container);
+
+
+			return content_container;
+		}
+
+		function topCardSorter(a, b) {
+			const a_playrate = parseFloat(stats[a.card_name].playrate_general[1].split("%")[0]);
+			const b_playrate = parseFloat(stats[b.card_name].playrate_general[1].split("%")[0]);
+
+			return (a_playrate > b_playrate) ? -1 : 1;
+		}
+
+		// function statsSorter(a, b) {
+		// 	if (sort_cards == name) {
+		// 		if (a.card_name === b.card_name) {
+		// 			return 0;
+		// 		}
+		// 		else {
+		// 			return (a.card_name < b.card_name) ? -1 : 1;
+		// 		}
+		// 	}
+		// }
+
+		function makeCard(card, stats, rank) {
+			// const card_name = document.createElement("div");
+			// card_name.className = "card-row-item card-row-name text";
+			// card_name.innerText = card.card_name;
+			// card_name.title = "Card's name";
+
+			// const card_wr = document.createElement("div");
+			// card_wr.className = "card-row-item card-row-wr text";
+			// card_wr.innerText = stats.winrate[1];
+			// card_wr.title = "Card winrate";
+
+			// const card_event_playrate = document.createElement("div");
+			// card_event_playrate.className = "card-row-item card-row-event-playrate text";
+			// card_event_playrate.innerText = stats.playrate_event[1];
+			// card_event_playrate.title = "Card playrate in events";
+
+			// const card_user_playrate = document.createElement("div");
+			// card_user_playrate.className = "card-row-item card-row-user-playrate text";
+			// card_user_playrate.innerText = stats.playrate_user[1];
+			// card_user_playrate.title = "Card playrate in user decks";
+
+			// const card_full_playrate = document.createElement("div");
+			// card_full_playrate.className = "card-row-item card-row-full-playrate text";
+			// card_full_playrate.innerText = stats.playrate_general[1];
+			// card_full_playrate.title = "Card overall playrate";
+
+			// return [card_name, card_wr, card_full_playrate, card_event_playrate, card_user_playrate];
+
+			const card_container = document.createElement("div");
+			card_container.className = "card-stats-container";
+
+			const card_img = gridifyCard(card, false);
+
+			const card_stats_container = document.createElement("div");
+			card_stats_container.className = "card-stats";
+
+			const card_playrate = document.createElement("span");
+			card_playrate.className = "card-playrate card-stats-item";
+			card_playrate.innerText = stats.playrate_general[1];
+
+			const card_rank = document.createElement("span");
+			card_rank.className = "card-rank card-stats-item";
+			card_rank.innerText = "#" + rank;
+
+			card_stats_container.appendChild(card_rank);
+			card_stats_container.appendChild(card_playrate);
+
+			card_container.appendChild(card_img);
+			card_container.appendChild(card_stats_container);
+
+			return card_container;
+		}
+
+		async function getCardStats() {
+			const stats = {};
+			for (const card of card_list_arrayified) {
+				let num_event_decks = 0;
+				let num_user_decks = 0;
+				let num_decks = 0;
+				let total_wins = 0;
+				let total_games = 0;
+
+				for (const event of all_events) {
+					if (event.name.includes("League")) continue;
+					const swiss = JSON.parse(event.rounds).swiss;
+					const decks = JSON.parse(event.decks);
+					let players_with_card = [];
+					for (const player in decks) {
+						const deck = decks[player];
+						const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
+						for (const line of decklist.split("\n")) {
+							if (line.substring(line.indexOf(" ") + 1, line.length) == card.card_name) {
+								players_with_card.push(player);
+								break;
+							}
+						}
+					}
+					for (const round_name in swiss) {
+						const round = swiss[round_name];
+						for (const game of round) {
+							const p1 = Object.keys(game)[0];
+							const p2 = Object.keys(game)[1];
+
+							const p1_score = parseInt(game[p1]);
+							const p2_score = parseInt(game[p2]);
+
+							let winner = 0;
+							if (p1_score > p2_score)
+								winner = p1;
+							if (p1_score < p2_score)
+								winner = p2;
+
+							if (players_with_card.includes(p1)) {
+								if (winner == p1) {
+									total_wins++;
+								}
+								if (winner != 0)
+									total_games++;
+							}
+							if (players_with_card.includes(p2)) {
+								if (winner == p2) {
+									total_wins++;
+								}
+								if (winner != 0)
+									total_games++;
+							}
+						}
+					}
+				}
+
+				for (const deck of all_decks) {
+					const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
+					for (const line of decklist.split("\n")) {
+						if (line.substring(line.indexOf(" ") + 1, line.length) == card.card_name) {
+							num_decks += 1;
+							if (deck.event)
+								num_event_decks++;
+							else
+								num_user_decks++;
+						}
+					}
+				}
+
+				let winrate = ((total_wins / total_games) * 100).toFixed(2).toString() + "%";
+				winrate = winrate.replace("NaN%", "No Data");
+				const playrate_event_text = ((num_event_decks / all_events_decks.length) * 100).toFixed(2).toString() + "%";
+				const playrate_user_text = ((num_user_decks / all_users_decks.length) * 100).toFixed(2).toString() + "%";
+				const playrate_text = ((num_decks / all_decks.length) * 100).toFixed(2).toString() + "%";
+
+				stats[card.card_name] = {
+					winrate: ["GP Winrate", winrate],
+					playrate_event: ["Event Playrate", playrate_event_text],
+					playrate_user: ["User Playrate", playrate_user_text],
+					playrate_general: ["Overall Playrate", playrate_text]
+				}
+			}
+
+			return stats;
+		}
+
+		reload();
+	</script>
+</body>
 
-            function changeTab(_tab) {
-                tab = _tab;
-                makeTab();
-            }
-        </script>
-        <script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-            import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-            // https://firebase.google.com/docs/web/setup#available-libraries
-            
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-                apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-                authDomain: "voyager-78e30.firebaseapp.com",
-                projectId: "voyager-78e30",
-                storageBucket: "voyager-78e30.firebasestorage.app",
-                messagingSenderId: "411191248476",
-                appId: "1:411191248476:web:591349be169d823e5f8899",
-                measurementId: "G-TQ1L48F25M"
-            };
-            
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
-            let username = "";
-            let password = "";
-            let sessionid = localStorage.getItem('settings.session');
-            let decks = {};
-            const events = ["GP2", "League"];
-            const urlParams = new URLSearchParams(window.location.search);
-            let tab = urlParams.get('tab');
-            let events_html;
-            let decks_html;
-            let users_html;
-            let cards_html;
-            let sort_cards = "name";
-            let initial_load = true;
-
-            document.getElementById("users-tab-select").addEventListener("click", (e) => {
-                tab = "users";
-                document.getElementById("main-tab").innerHTML = "";
-                reload();
-            });
-
-            document.getElementById("events-tab-select").addEventListener("click", (e) => {
-                tab = "events";
-                document.getElementById("main-tab").innerHTML = "";
-                reload();
-            });
-
-            document.getElementById("decks-tab-select").addEventListener("click", async (e) => {
-                tab = "decks";
-                document.getElementById("main-tab").innerHTML = "";
-                reload();
-            });
-
-            document.getElementById("cards-tab-select").addEventListener("click", async (e) => {
-                tab = "cards";
-                document.getElementById("main-tab").innerHTML = "";
-                reload();
-            });
-
-            // console.log
-
-            if (sessionid) {
-                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-                    let data = docSnap.data();
-                    username = data.username;
-                    password = data.password;
-                });
-
-                await getDoc(doc(db, 'users', username)).then(docSnap => {
-                    let data = docSnap.data();
-                    decks = JSON.parse(data.decks);
-                });
-            }
-
-            document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-
-            // declare variables outside of functions to avoid passing nonsense
-            let q;
-            let all_users_docs;
-            let all_decks = [];
-            let all_users_decks = [];
-            let all_events_decks = [];
-            let all_users = [];
-            let all_events_docs;
-            let all_events = [];
-            let card_list;
-
-            await fetch('/lists/all-cards.json')
-                .then(response => response.json())
-                .then(json => {
-                    card_list = json;
-            }).catch(error => console.error('Error:', error));
-
-            let card_list_arrayified = card_list.cards;
-
-            function setTabs() {
-                document.getElementById(`events-tab-select`).className = "tab-btn";
-                document.getElementById(`users-tab-select`).className = "tab-btn";
-                document.getElementById(`decks-tab-select`).className = "tab-btn";
-                document.getElementById(`cards-tab-select`).className = "tab-btn";
-                document.getElementById(`${tab}-tab-select`).className += " tab-btn-active";
-            }
-
-            async function reload() {
-                tab = tab ? tab : "events";
-                setTabs();
-                if (initial_load) {
-                    q = query(collection(db, "users"));
-                    all_users_docs = await getDocs(q);
-                    all_decks = [];
-                    all_users = [];
-                    q = query(collection(db, "events"));
-                    all_events_docs = await getDocs(q);
-                    all_events = [];
-                    all_users_docs.forEach((doc) => {
-                        const data = doc.data();
-                        all_users.push(data);
-                        for (const deck of JSON.parse(data.decks)) {
-                            all_decks.push({...deck, "user": data.username, "event": false});
-                            all_users_decks.push({...deck, "user": data.username, "event": false});
-                        }
-                        // all_decks.push(...JSON.parse(data.decks));
-                    });
-                    all_events_docs.forEach((doc) => {
-                        const data = doc.data();
-                        all_events.push(data);
-                        for (const user in JSON.parse(data.decks)) {
-                            let deck = JSON.parse(data.decks)[user];
-                            all_events_decks.push({...deck, "user": user, "event": true});
-                            all_decks.push({...deck, "user": user, "event": true});
-                        }
-                    });
-                    decks_html = await makeDecksTab();
-                    events_html = makeEventTab();
-                    users_html = makeUsersTab();
-                }
-                if (tab == "events") {
-                    document.getElementById("main-tab").appendChild(events_html);
-                }
-                if (tab == "decks") {
-                    document.getElementById("main-tab").appendChild(decks_html);
-                }
-                if (tab == "users") {
-                    document.getElementById("main-tab").appendChild(users_html);
-                }
-                if (tab == "cards") {
-                    if (!cards_html)   
-                        cards_html = await makeCardsTab();
-                    
-                    document.getElementById("main-tab").appendChild(cards_html);
-                }
-                initial_load = false;
-            }
-
-            async function makeTab(tab) {
-                if (tab == "events") {
-                    document.getElementById("main-tab").appendChild(makeEventTab());
-                }
-                if (tab == "decks") {
-                    document.getElementById("main-tab").appendChild(await makeDecksTab());
-                }
-                if (tab == "users") {
-                    document.getElementById("main-tab").appendChild(makeUsersTab());
-                }
-            }
-
-            function makeEventTab() {
-                const container = document.createElement("div");
-                container.className = "events-container";
-                for (const event of all_events) {   
-                    const event_container = document.createElement("div");
-                    event_container.className = "event-container";
-
-                    const event_name = document.createElement("a");
-                    event_name.className = "event-name text";
-                    event_name.innerText = event.name;
-                    const event_type = event.type ? event.type : "gp";
-                    event_name.href = `${event_type}${!event.nourl ? "?event=" + event.name : ""}`;
-                    event_container.appendChild(event_name);
-
-                    const event_players = document.createElement("span");
-                    event_players.className = "event-players text";
-                    event_players.innerText = Object.keys(JSON.parse(event.decks)).length + " players";
-                    event_container.appendChild(event_players);
-
-                    const event_winner = document.createElement("span");
-                    event_winner.className = "event-winner text";
-                    event_winner.innerText = "Winner: " + (event.winner ? event.winner : "TBD");
-                    event_container.appendChild(event_winner);
-                    
-                    container.appendChild(event_container); 
-                }
-                return container;
-            }
-
-            function gridifyDeck(deck) {
-                console.log(deck);
-                const container = document.createElement("div");
-                container.className = "deck-container";
-                const preview_img = document.createElement("img");
-                let card_stats;
-                for (const card of card_list_arrayified) {
-                    if (deck.previewimg == card.card_name) {
-                        card_stats = card;
-                        break;
-                    }
-                }
-                preview_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
-                preview_img.className = "deck-preview-img";
-                preview_img.onclick = function() {
-                    if (deck.event) {
-                        window.location.href = `/deckbuilder?edeck=${deck.event}-${deck.user}`;
-                        return;
-                    }
-                    window.location.href = `/deckbuilder?deck=${deck.user}-${deck.name}`;
-                }
-                const deck_name = document.createElement("div");
-                deck_name.className = "deck-name";
-                deck_name.innerText = deck.name;
-
-                container.appendChild(deck_name);
-                container.appendChild(preview_img);
-                return container;
-            }
-
-            async function makeDecksTab() {
-                const winning_decks = await getWinningDecks();
-
-                const sections = [{name: "New Decks", cond: "new", num: winning_decks.length}, {name: "Winning Decks", cond: "win", num: "all"}];
-
-                const content_container = document.createElement("div");
-                content_container.className = "decks-container";
-
-                const sections_container = document.createElement("div");
-                sections_container.className = "deck-sections-container";
-
-                const decksearch_input = document.createElement("input");
-                decksearch_input.className = "search-input";
-                decksearch_input.id    = "decksearch-input";
-                decksearch_input.placeholder = "Search decks ...";
-                decksearch_input.addEventListener("keypress", (e) => {
-                    if (e.key == "Enter") {
-                        window.location.href = `/decksearch?search=${encodeURIComponent(document.getElementById("decksearch-input").value)}`;
-                    }
-                });
-
-                content_container.appendChild(decksearch_input);
-
-                for (const section of sections) {
-                    const name = section.name;
-                    const cond = section.cond;
-
-                    const section_container = document.createElement("div");
-                    section_container.className = "full-deck-section-container";
-                    const section_header = document.createElement("span");
-                    section_header.className = "deck-section-header text";
-                    section_header.innerText = name;
-                    const decks_container = document.createElement("div");
-                    decks_container.className = "deck-section-container";      
-                    const line = document.createElement("hr");    
-                    line.className = "text-bg";         
-
-                    let all_decks_2 = [...all_decks];
-                    let num_decks = section.num;
-
-                    // 09-04-2025, 15:35 -- dates
-                    // seperate
-                    if (cond == 'new') {
-                        all_decks_2.sort(newDeck);
-                    } else if (cond == "win") {
-                        all_decks_2 = winning_decks;
-                        num_decks = all_decks_2.length;
-                    }
-
-                    for (let i = 0; i < num_decks; i++) {
-                        const deck = all_decks_2[i];
-                        decks_container.appendChild(gridifyDeck(deck));
-                    }
-
-                    section_container.appendChild(section_header);
-                    section_container.appendChild(line);
-                    section_container.appendChild(decks_container);
-                    sections_container.appendChild(section_container);
-                }
-                
-                content_container.appendChild(sections_container);
-
-                return content_container;
-            }
-
-            function makeUsersTab() {
-                const users_container = document.createElement("div");
-                users_container.className = "users-container";
-
-                for (const user of all_users) {
-                    users_container.appendChild(gridifyUser(user));
-                }
-
-                return users_container;
-            }
-
-            function gridifyUser(user) {
-                const user_container = document.createElement("div");
-                user_container.className = "user-container";
-                
-                const name_container = document.createElement("span");
-                name_container.className = "user-name-container";
-                name_container.innerText = user.username;
-
-                const decks_button = document.createElement("div");
-                decks_button.className = "view-decks-button deck-link-green deck-icon-shadow";
-                decks_button.innerText = "View Decks";
-                
-                const show_img = document.createElement("img");
-                show_img.className = "show-img deck-icon-green";
-                show_img.src = "img/show-white.png";
-                decks_button.appendChild(show_img);
-
-                decks_button.onclick = function() {
-                    window.location.href = `/decksearch?search=user:${user.username}`;
-                }
-
-                const view_button = document.createElement("div");
-                view_button.className = "view-decks-button deck-link-blue deck-icon-shadow";
-                view_button.innerText = "View Page";
-                
-                const show_img_2 = document.createElement("img");
-                show_img_2.className = "show-img deck-icon-blue";
-                show_img_2.src = "img/show-white.png";
-                view_button.appendChild(show_img_2);
-
-                view_button.onclick = function() {
-                    window.location.href = `/user?user=${user.username}`;
-                }
-            
-                user_container.appendChild(name_container);
-                user_container.appendChild(decks_button);
-                user_container.appendChild(view_button);
-
-                return user_container;
-            }
-
-
-
-            async function getWinningDecks() {
-                let recent_event;
-                let best_decks = [];
-                await getDoc(doc(db, 'info', 'events')).then((doc) => {
-                    recent_event = doc.data().bestevent;
-                });
-
-                await getDoc(doc(db, 'events', recent_event)).then((doc) => {
-                    const event = doc.data();
-                    let records = getRecords(event);
-                    const decks = JSON.parse(event.decks);
-                    for (const user in decks) {
-                        const deck = decks[user];
-                        if (records[user][1] <= 1) {
-                            best_decks.push({...deck, event: recent_event, user: user});
-                        }
-                    }
-                });
-
-                console.log(best_decks);
-                return best_decks;
-            }
-
-            function getRecords(event) {
-                const swiss_rounds = JSON.parse(event.rounds).swiss;
-                let records = {};
-                for (const round_name in swiss_rounds) {
-                    let round = swiss_rounds[round_name];
-                    for (const match of round) {
-                        for (const player in match) {
-                            let score = Number(match[player]);
-                            if (!records.hasOwnProperty(player)) {
-                                records[player] = [0, 0];
-                            }
-                            records[player][score == 2 ? 0 : 1] += 1;
-                        }
-                    }
-                }
-
-                return records;
-            }
-
-            function newDeck(a, b) {
-                if (a.last_modified && !b.last_modified) {
-                    return -1;
-                }
-                if (!a.last_modified && b.last_modified) {
-                    return 1;
-                }
-                if (!a.last_modified && !b.last_modified) {
-                    return 0;
-                }
-
-                let a_date = {};
-                let b_date = {};
-
-                let a_split = a.last_modified.split(',');
-                let a_split2 = a_split[0].split('-');
-
-                a_date.day   = Number(a_split2[0]);
-                a_date.month = Number(a_split2[1]);
-                a_date.year  = Number(a_split2[2]);
-
-                a_date.hour  = Number(a_split[1].split(":")[0]);
-                a_date.min   = Number(a_split[1].split(":")[1]);
-
-                let b_split = b.last_modified.split(',');
-                let b_split2 = b_split[0].split('-');
-
-                b_date.day   = Number(b_split2[0]);
-                b_date.month = Number(b_split2[1]);
-                b_date.year  = Number(b_split2[2]);
-
-                b_date.hour  = Number(b_split[1].split(":")[0]);
-                b_date.min   = Number(b_split[1].split(":")[1]);
-
-                if (a_date.year > b_date.year) {
-                    return -1;
-                }
-                if (a_date.year < b_date.year) {
-                    return 1;
-                }
-                if (a_date.month > b_date.month) {
-                    return -1;
-                }
-                if (a_date.month < b_date.month) {
-                    return 1;
-                }
-                if (a_date.day > b_date.day) {
-                    return -1;
-                }
-                if (a_date.day < b_date.day) {
-                    return 1;
-                }
-                if (a_date.hour > b_date.hour) {
-                    return -1;
-                }
-                if (a_date.hour < b_date.hour) {
-                    return 1;
-                }
-                if (a_date.min > b_date.min) {
-                    return -1;
-                }
-                if (a_date.min < b_date.min) {
-                    return 1;
-                }
-                return 0;
-            }
-
-            async function makeCardsTab() {
-                const content_container = document.createElement("div");
-                content_container.className = "full-cards-container";
-
-                const grid_container = document.createElement("div");
-                grid_container.className = "cards-container";
-
-                const stats = await getCardStats();
-
-                const header_container = document.createElement("div");
-                header_container.className = "cards-header popout";
-
-                const card_name = document.createElement("div");
-                card_name.className = "card-row-item card-row-name card-row-header";
-                card_name.innerText = "Card Name";
-                card_name.onclick = async () => {
-                    sort_cards = "name";
-                    cards_html = await makeCardsTab();
-                    reload();
-                }
-
-                const card_wr = document.createElement("div");
-                card_wr.className = "card-row-item card-row-wr card-row-header";
-                card_wr.innerText = "GP Winrate";
-                card_wr.onclick = async () => {
-                    sort_cards = "winrate";
-                    cards_html = await makeCardsTab();
-                    reload();
-                }
-
-                const card_event_playrate = document.createElement("div");
-                card_event_playrate.className = "card-row-item card-row-event-playrate card-row-header";
-                card_event_playrate.innerText = "Event Playrate";
-
-                const card_user_playrate = document.createElement("div");
-                card_user_playrate.className = "card-row-item card-row-user-playrate card-row-header";
-                card_user_playrate.innerText = "User Playrate";
-
-                const card_full_playrate = document.createElement("div");
-                card_full_playrate.className = "card-row-item card-row-full-playrate card-row-header";
-                card_full_playrate.innerText = "Playrate";
-
-                header_container.appendChild(card_name);
-                header_container.appendChild(card_wr);
-                header_container.appendChild(card_event_playrate);
-                header_container.appendChild(card_user_playrate);
-                header_container.appendChild(card_full_playrate);
-
-                Array.prototype.sortStats = function(stats) {
-                    function compare(a, b) {
-                        sort_cards = "winrate";
-                        if (sort_cards == "name") {
-                            if (a.card_name === b.card_name)
-                            {
-                                return 0;
-                            }
-                            else {
-                                return (a.card_name < b.card_name) ? -1 : 1;
-                            }
-                        } else if (sort_cards == "winrate") {
-                            const a_wr_unparsed = stats[a.card_name].winrate;
-                            const b_wr_unparsed = stats[b.card_name].winrate;
-
-                            const a_wr = a_wr_unparsed == "No Data" ? -1 : parseFloat(a_wr_unparsed.split("%")[0]);
-                            const b_wr = a_wr_unparsed == "No Data" ? -1 : parseFloat(a_wr_unparsed.split("%")[0]);
-
-                            if (a_wr === b_wr)
-                            {
-                                return 0;
-                            }
-                            else {
-                                return (a_wr < b_wr) ? -1 : 1;
-                            }
-                        }
-                    }
-                }
-
-                card_list_arrayified.sortStats(stats);
-
-                for (const card of card_list_arrayified) {
-                    const card_eles = makeCard(card, stats[card.card_name]);
-                    for (const ele of card_eles) {
-                        grid_container.appendChild(ele);
-                    }
-                }
-                
-                content_container.appendChild(header_container);
-                content_container.appendChild(grid_container);
-
-                return content_container;
-            }
-
-            function statsSorter(a, b) {
-                    if (sort_cards == name) {
-                        if (a.card_name === b.card_name)
-                        {
-                            return 0;
-                        }
-                        else {
-                            return (a.card_name < b.card_name) ? -1 : 1;
-                        }
-                    }
-            }
-
-            function makeCard(card, stats) {
-                const card_name = document.createElement("div");
-                card_name.className = "card-row-item card-row-name text";
-                card_name.innerText = card.card_name;
-                card_name.title = "Card's name";
-
-                const card_wr = document.createElement("div");
-                card_wr.className = "card-row-item card-row-wr text";
-                card_wr.innerText = stats.winrate[1];
-                card_wr.title = "Card winrate";
-
-                const card_event_playrate = document.createElement("div");
-                card_event_playrate.className = "card-row-item card-row-event-playrate text";
-                card_event_playrate.innerText = stats.playrate_event[1];
-                card_event_playrate.title = "Card playrate in events";
-
-                const card_user_playrate = document.createElement("div");
-                card_user_playrate.className = "card-row-item card-row-user-playrate text";
-                card_user_playrate.innerText = stats.playrate_user[1];
-                card_user_playrate.title = "Card playrate in user decks";
-
-                const card_full_playrate = document.createElement("div");
-                card_full_playrate.className = "card-row-item card-row-full-playrate text";
-                card_full_playrate.innerText = stats.playrate_general[1];
-                card_full_playrate.title = "Card overall playrate";
-
-                return [card_name, card_wr, card_full_playrate, card_event_playrate, card_user_playrate];
-            }
-
-            async function getCardStats() {
-                const stats = {};
-                for (const card of card_list_arrayified) {
-                    let num_event_decks = 0;
-                    let num_user_decks = 0;
-                    let num_decks = 0;
-                    let total_wins = 0;
-                    let total_games = 0;
-
-                    for (const event of all_events) {
-                        if (event.name.includes("League")) continue;
-                        const swiss = JSON.parse(event.rounds).swiss;
-                        const decks = JSON.parse(event.decks);
-                        let players_with_card = [];
-                        for (const player in decks) {
-                            const deck = decks[player];
-                            const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
-                            for (const line of decklist.split("\n")) {
-                                if (line.substring(line.indexOf(" ") + 1, line.length) == card.card_name) {
-                                    players_with_card.push(player);
-                                    break;
-                                }
-                            }
-                        }
-                        for (const round_name in swiss) {
-                            const round = swiss[round_name];
-                            for (const game of round) {
-                                const p1 = Object.keys(game)[0];
-                                const p2 = Object.keys(game)[1];
-
-                                const p1_score = parseInt(game[p1]);
-                                const p2_score = parseInt(game[p2]);
-
-                                let winner = 0;
-                                if (p1_score > p2_score)
-                                    winner = p1;
-                                if (p1_score < p2_score)
-                                    winner = p2;
-
-                                if (players_with_card.includes(p1)) {
-                                    if (winner == p1) {
-                                        total_wins++;
-                                    }
-                                    if (winner != 0)
-									    total_games++;
-                                }
-                                if (players_with_card.includes(p2)) {
-                                    if (winner == p2) {
-                                        total_wins++;
-                                    }
-                                    if (winner != 0)
-									    total_games++;
-                                }
-                            }
-                        }
-                    }
-
-                    for (const deck of all_decks) {
-                        const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
-                        for (const line of decklist.split("\n")) {
-                            if (line.substring(line.indexOf(" ") + 1, line.length) == card.card_name) {
-                                num_decks += 1;
-                                if (deck.event)
-                                    num_event_decks++;
-                                else
-                                    num_user_decks++;
-                            }
-                        }
-                    }
-
-                    let winrate = ((total_wins / total_games) * 100).toFixed(2).toString() + "%";
-                    winrate = winrate.replace("NaN%", "No Data");
-                    const playrate_event_text = ((num_event_decks / all_events_decks.length) * 100).toFixed(2).toString() + "%";
-                    const playrate_user_text  = ((num_user_decks  / all_users_decks.length)  * 100).toFixed(2).toString() + "%";
-                    const playrate_text       = ((num_decks       / all_decks.length)       * 100).toFixed(2).toString() + "%";
-
-                    stats[card.card_name] = {
-                        winrate          : ["GP Winrate"      , winrate            ],
-                        playrate_event   : ["Event Playrate"  , playrate_event_text],
-                        playrate_user    : ["User Playrate"   , playrate_user_text ],
-                        playrate_general : ["Overall Playrate", playrate_text      ]
-                    }
-                }
-
-                return stats;
-            }
-
-            reload();
-        </script>
-    </body>
 </html>

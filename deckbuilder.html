@@ -3270,49 +3270,6 @@
 			}, seconds * 1000);
 		}
 
-		async function imgFlip(id, rotate_card = false) {
-			const img = document.getElementById(id);
-			const seconds = 0.15;
-			const cardName = img.src;
-
-			img.style.transition = seconds.toString() + "s";
-			img.style.transform = "rotateY(90deg)";
-
-			const btn = img.parentElement.parentElement.getElementsByTagName("button")[0];
-			btn.style.transition = seconds.toString() + "s";
-			btn.style.filter = cardName.includes("_front") ? "invert()" : "";
-
-			await setTimeout(function () {
-				const rotated_img = document.getElementById("h-img");
-
-				if (cardName.includes("_front")) {
-					img.src = cardName.replace("_front", "_back");
-					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "invert()";
-
-					if (rotate_card) {
-						rotated_img.style.display = "none";
-						img.style.filter = "";
-					}
-				}
-				else {
-					img.src = cardName.replace("_back", "_front");
-					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "";
-
-					if (rotate_card) {
-						rotated_img.style.display = "block";
-						img.style.filter = "blur(2px) brightness(0.7)";
-					}
-				}
-
-				img.style.transition = (seconds * 2).toString() + "s";
-				img.style.transform = "rotateY(0deg)";
-			}, seconds * 1000);
-
-			await setTimeout(function () {
-				console.log("done");
-			}, seconds * 1000);
-		}
-
 		function prettifyEffects(card_effect) {
 			let HTML = "";
 
