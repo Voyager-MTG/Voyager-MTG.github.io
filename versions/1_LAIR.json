@@ -125,7 +125,7 @@
             "color": "",
             "rarity": "masterpiece",
             "type": "Land",
-            "number": 3,
+            "number": 1,
             "color_identity": "W",
             "cost": "",
             "rules_text": "{T}: Add {W}. You lose 1 life unless you control a white permanent.\nExhaust \u2014 {T}: Choose a color. \n{T}: Add one mana of the chosen color.",
@@ -233,44 +233,6 @@
             "designer": "Voyager",
             "artist": "VW",
             "notes": "!tag<lair>postcard series\n!tag<lairnumber> 2\n!tag<lairauthor> fblthp the lost"
-        },
-        {
-            "card_name": "GP Winner Promo",
-            "color": "",
-            "rarity": "masterpiece",
-            "type": "",
-            "number": 2,
-            "color_identity": "C",
-            "cost": "",
-            "rules_text": "",
-            "flavor_text": "[i][/i]",
-            "pt": "",
-            "special_text": "",
-            "shape": "normal",
-            "set": "LAIR",
-            "loyalty": "",
-            "designer": "Voyager",
-            "artist": "",
-            "notes": "!porthole"
-        },
-        {
-            "card_name": "GP Top Cut Promo",
-            "color": "",
-            "rarity": "masterpiece",
-            "type": "",
-            "number": 1,
-            "color_identity": "C",
-            "cost": "",
-            "rules_text": "",
-            "flavor_text": "[i][/i]",
-            "pt": "",
-            "special_text": "",
-            "shape": "normal",
-            "set": "LAIR",
-            "loyalty": "",
-            "designer": "Voyager",
-            "artist": "",
-            "notes": "!ocean"
         }
     ]
 }
