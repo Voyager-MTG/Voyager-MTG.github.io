@@ -793,6 +793,92 @@
 		gap: 5px;
 	}
 
+	.load-deck-container {
+		display: grid;
+		gap: 5px;
+		/* grid-template-rows: 1fr 2fr 1fr; */
+		background-color: #f3f3f3;
+		border-radius: 8px;
+		/* height: fit-content; */
+		padding: 5px;
+		align-items: center;
+		justify-items: center;
+		border: 2px solid #333;
+		box-shadow: 5px 5px 2px #333;
+		padding-top: 0px;
+		width: 90%;
+	}
+
+	#modal-content .load-deck-container {
+		width: 90%;
+		height: 90%;
+		transition: 0.3s;
+	}
+
+	#modal-content .load-deck-container:hover {
+		filter: brightness(0.7);
+	}
+
+	.full-load-deck-container {
+		display: grid;
+		grid-template-columns: 1fr 0.1fr;
+		gap: -5px;
+	}
+
+	.colors-container {
+		position: relative;
+		top: 60px;
+		right: 14px;
+		background-color: #333;
+		height: fit-content;
+		padding: 2px;
+		border-radius: 20px;
+	}
+
+	.deck-preview-img {
+		max-height: 120px;
+		border: 2px solid black;
+		box-shadow: 7px 7px 2px #999;
+		border-radius: 16px;
+		margin-bottom: 7px;
+		cursor: pointer;
+		/* box-shadow: inset 0.2em 0.2em 0.2em 0em rgba(0, 0, 0, 0.5), inset -0.2em -0.2em 0.2em 0em rgba(0,0,0,0.5); */
+		/* padding: 0.2em; */
+		/* background-color: #777; */
+	}
+
+	#modal-content .deck-preview-img {
+		border: none;
+		box-shadow: none;
+		border-radius: 6px;
+	}
+
+	.deck-name {
+		font-size: 30px;
+		font-family: beleren;
+		background-color: #ccc;
+		/* border: 2px solid #333; */
+		/* box-shadow: 5px 5px 2px #333; */
+		border-radius: 5px;
+		padding: 5px;
+		margin-bottom: 3px;
+		width: 100%;
+		color: black;
+		text-align: center;
+		/* color: white; */
+	}
+
+	#modal-content .deck-name {
+		font-size: 16px;
+	}
+
+	.load-decks-container {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 8px;
+		margin-top: 5px;
+	}
+
 	/* mobile layout*/
 	@media (max-device-width: 850px) {
 		.page-container {
@@ -1553,7 +1639,8 @@
 		});
 
 		function saveDeck() {
-			localStorage.setItem(document.getElementById("deck-name").value, generateDeckText()); // save the deck text with the key of the deck name to localstorage
+			let save_text = generateDeckText() + "\npreview card: " + JSON.parse(localStorage.getItem("settings.previewimg")).card_name;
+			localStorage.setItem(document.getElementById("deck-name").value, save_text); // save the deck text with the key of the deck name to localstorage
 			localStorage.setItem("info.lastdeck", document.getElementById("deck-name").value);
 			document.getElementById("file-menu").value = "default"; // set the value back
 			openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Deck Saved as " + document.getElementById("deck-name").value); // open the modal giving the user a notification
@@ -1905,12 +1992,63 @@
 			// Unhide the modal and add the text 'Loading Deck:'
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").innerHTML = "Loading Deck:";
+			document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>'; // add the X
+			const area_container = document.createElement("div");
+			area_container.className = "load-decks-container";
 			Object.keys(localStorage).forEach(function (key) { // Loop through each localstorage value, then check if its not a setting or collections
 				if (key != "colls.collections" && !key.startsWith("settings.") && !key.startsWith("info.")) {
-					document.getElementById("modal-content").innerHTML += `<span class="load-btn" onclick="readDeckText(localStorage.getItem('${key}'),'${key}')">${key}</span>`; // add a button that loads the deck using readDeckText and has the name of the deck (key = deck name)
+					area_container.appendChild(generateLoadContainer(key)); // add a button that loads the deck using readDeckText and has the name of the deck (key = deck name)
 				}
 			});
-			document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>'; // add the X
+			document.getElementById("modal-content").appendChild(area_container);
+
+		}
+
+		function generateLoadContainer(key) {
+			const deck = localStorage.getItem(key);
+			const lines = deck.split("\n");
+			let preview_card = "cardback";
+			for (const line of lines) {
+				if (line.includes("preview card:")) {
+					preview_card = line.split("preview card: ")[1];
+					localStorage.setItem("settings.previewcard", preview_card);
+				}
+			}
+
+			const deck_ele = gridifyDeck({ name: key, previewimg: preview_card });
+			deck_ele.onclick = function () {
+				readDeckText(deck, key);
+			}
+
+			return deck_ele;
+		}
+
+		function gridifyDeck(deck) {
+			const container = document.createElement("div");
+			container.className = "load-deck-container";
+			const preview_img = document.createElement("img");
+			let card_stats;
+			let card_stats_image = "img/card_back.png";
+			for (const card of card_list_arrayified) {
+				if (deck.previewimg == card.card_name) {
+					card_stats = card;
+					card_stats_image = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+					break;
+				}
+			}
+			preview_img.src = deck.previewimg == "cardback" ? "img/card_back.png" : card_stats_image;
+			preview_img.className = "deck-preview-img";
+			// preview_img.onclick = function() {
+			//     window.location.href = `/deckbuilder?deck=${deck.user}-${deck.name}`
+			// }
+			const deck_name = document.createElement("div");
+			deck_name.className = "deck-name";
+			deck_name.innerText = deck.name;
+
+			container.appendChild(deck_name);
+			container.appendChild(preview_img);
+
+			return container;
 		}
 
 		function openLoadCollectionWindow() {
@@ -2626,19 +2764,19 @@
 				{
 					if (modifier == "!" || modifier == "=")
 					{
-
+	
 					}
 					else if (modifier == ":")
 					{
-
+	
 					}
 					else if (modifier == "<")
 					{
-
+	
 					}
 					else if (modifier == ">")
 					{
-
+	
 					}
 				} */
 				if (term == "mv" || term == "cmc") {
@@ -2769,15 +2907,15 @@
 					/* unsupported flows
 					if (modifier == "!" || modifier == "=")
 					{
-
+	
 					}
 					else if (modifier == "<")
 					{
-
+	
 					}
 					else if (modifier == ">")
 					{
-
+	
 					} */
 				}
 				if (term == "o") {
@@ -2788,15 +2926,15 @@
 					/* unsupported flows
 					if (modifier == "!" || modifier == "=")
 					{
-
+	
 					}
 					else if (modifier == "<")
 					{
-
+	
 					}
 					else if (modifier == ">")
 					{
-
+	
 					} */
 				}
 				if (term == "pow" || term == "power") {
@@ -2869,11 +3007,11 @@
 					/* unsupported flows
 					else if (modifier == "<")
 					{
-
+	
 					}
 					else if (modifier == ">")
 					{
-
+	
 					} */
 				}
 				if (term == "keyword" || term == "kw" || term == "has") {
@@ -2885,11 +3023,11 @@
 					/* unsupported flows
 					else if (modifier == "<")
 					{
-
+	
 					}
 					else if (modifier == ">")
 					{
-
+	
 					} */
 				}
 				if (term == "alias") {
@@ -2957,11 +3095,11 @@
 					/* unsupported flows
 					else if (modifier == "<")
 					{
-
+	
 					}
 					else if (modifier == ">")
 					{
-
+	
 					} */
 				}
 				if (term == "tag") {
