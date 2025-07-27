@@ -7,7 +7,7 @@
 			"type": "Legendary Creature — Cleric God",
 			"collector_number": "3",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/3_Mother of Ants.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/3_Mother of Ants.png"
 			}
 		},
 		{
@@ -17,7 +17,7 @@
 			"type": "Legendary Creature — Elemental God",
 			"collector_number": "1",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/1_The Forge of Days.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/1_The Forge of Days.png"
 			}
 		},
 		{
@@ -27,7 +27,7 @@
 			"type": "Legendary Creature — Insect God",
 			"collector_number": "2",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/2_The Moth.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/2_The Moth.png"
 			}
 		},
 		{
@@ -37,7 +37,7 @@
 			"type": "Legendary Creature — Vampire God",
 			"collector_number": "4",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/4_The Red Grail.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/4_The Red Grail.png"
 			}
 		},
 		{
@@ -47,7 +47,7 @@
 			"type": "Legendary Creature — Human God",
 			"collector_number": "6",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/6_The Watchman.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/6_The Watchman.png"
 			}
 		},
 		{
@@ -57,7 +57,7 @@
 			"type": "Legendary Creature — Human God",
 			"collector_number": "5",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/5_The Thunderskin.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/5_The Thunderskin.png"
 			}
 		},
 		{
@@ -65,9 +65,79 @@
 			"rarity": "masterpiece",
 			"mana_cost": "",
 			"type": "Land",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/3_Drifting Field.png"
+			}
+		},
+		{
+			"name": "Mountain",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Mountain",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/9_Mountain.png"
+			}
+		},
+		{
+			"name": "Island",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Island",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/8_Island.png"
+			}
+		},
+		{
+			"name": "Plains",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Plains",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/10_Plains.png"
+			}
+		},
+		{
+			"name": "Swamp",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Swamp",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/11_Swamp.png"
+			}
+		},
+		{
+			"name": "Forest",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Forest",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/7_Forest.png"
+			}
+		},
+		{
+			"name": "GP Winner Promo",
+			"rarity": "masterpiece",
+			"mana_cost": "",
+			"type": "",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/2_GP Winner Promo.png"
+			}
+		},
+		{
+			"name": "GP Top Cut Promo",
+			"rarity": "masterpiece",
+			"mana_cost": "",
+			"type": "",
 			"collector_number": "1",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/1_Drifting Field.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/1_GP Top Cut Promo.png"
 			}
 		},
 	]
