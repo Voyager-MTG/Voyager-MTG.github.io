@@ -585,6 +585,15 @@
 		border: 2px solid gray;
 
 	}
+
+	.run-record {
+		font-weight: bold;
+		font-size: 2em;
+	}
+
+	#modal-content .run-record {
+		font-size: 1.2em;
+	}
 </style>
 <style id="text-style">
 	.text {
@@ -962,6 +971,7 @@
 			content_container.className = "runs-container";
 			for (const run of runs) {
 				const deck_ele = gridifyDeck(run.deck);
+				deck_ele.appendChild(runStatsHTML(run));
 				if (unclaimed_matches) {
 					console.log(unclaimed_matches);
 					deck_ele.onclick = () => {
@@ -991,6 +1001,22 @@
 			}
 
 			return content_container;
+		}
+
+		function runStatsHTML(run) {
+			const matches = run.matches;
+			const record = [0, 0];
+			for (const match_id of matches) {
+				const match = event_data.games[match_id];
+				const won_match = match[user_data.username] >= 2;
+				record[won_match ? 0 : 1]++;
+			}
+
+			const record_ele = document.createElement("span");
+			record_ele.innerText = `${record[0]}-${record[1]}`;
+			record_ele.className = "run-record";
+
+			return record_ele;
 		}
 
 		function openDeckSelect() {
