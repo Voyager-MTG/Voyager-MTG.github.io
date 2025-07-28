@@ -18,6 +18,8 @@
 		margin: 0px;
 		background-color: #bbbbbb;
 		display: block;
+		background-attachment: fixed;
+		background-size: cover;
 		/* overflow-y: scroll; */
 		/* height: 100%; */
 	}
@@ -895,6 +897,7 @@
 		async function makeRunsTab() {
 			const container = document.getElementById("runs");
 			const unclaimed = getUnclaimedMatches();
+			console.log(unclaimed);
 
 			const runs_top = document.createElement("div");
 			runs_top.className = "runs-top";
@@ -923,7 +926,7 @@
 			let id = 0;
 			for (const match of JSON.parse(event_data.games)) {
 				if (Object.keys(match).includes(user_data.username)) {
-					if (match[0] == "unclaimed")
+					if (match[Object.keys(match)[0]].includes("unclaimed") || match[Object.keys(match)[1]].includes("unclaimed"))
 						games.push([match, id]);
 				}
 				id++;
