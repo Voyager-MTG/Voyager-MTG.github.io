@@ -333,7 +333,7 @@
 		{
 			"name": "Warping Wolf",
 			"rarity": "uncommon",
-			"mana_cost": "{C}{C}",
+			"mana_cost": "{1}{C}",
 			"type": "Enchantment Creature — Wolf",
 			"collector_number": "78",
 			"image_uris": {
@@ -641,13 +641,13 @@
 			}
 		},
 		{
-			"name": "Shadow Eater",
+			"name": "Shadow Ghoul",
 			"rarity": "common",
 			"mana_cost": "{X}{C}{B}",
 			"type": "Creature — Zombie Spirit",
 			"collector_number": "100",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/100_Shadow Eater.png"
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/100_Shadow Ghoul.png"
 			}
 		},
 		{
@@ -1479,7 +1479,7 @@
 	8 Algael-leael
 	8 Tellavia Balwar
 	8 Writhing Sight
-	8 Shadow Eater
+	8 Shadow Ghoul
 	8 Siege Crossbow
 	8 Wisped Wings
 	8 Sanctuary of Nectars
@@ -1559,7 +1559,7 @@
 	15 Xylem Attendant
 	15 Clifftop Pishogue
 	7 Malevolent Knowledge
-	6 Shadow Eater
+	6 Shadow Ghoul
 	7 Mirrored Magic
 	6 Siege Crossbow
 	7 The Demon Within
