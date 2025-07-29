@@ -879,6 +879,9 @@
 		const urlParams = new URLSearchParams(window.location.search);
 		const event = "League";
 
+		// await getDoc(doc(db, COLLECTION, DOC)).then(docSnap => {})
+		// docSnap.data()
+		// updateDoc(doc(db, COLLECTION, DOC), {k: v, k2: v2, ...})
 		await getDoc(doc(db, 'users', username)).then(async docSnap => {
 			user_data = docSnap.data();
 		});

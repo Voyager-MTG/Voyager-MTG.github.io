@@ -512,6 +512,12 @@
 		position: absolute;
 		width: 240px;
 	}
+
+	.event-calendar-header {
+		font-family: beleren;
+		font-size: 1.5em;
+		display: block;
+	}
 </style>
 <style id="gradient-style">
 
@@ -638,6 +644,7 @@
 				<img src="/img/trophy.png" class="event-icon">
 				Collection League
 			</div>
+			<div id="calendar"></div>
 		</div>
 		<div class="p1p1-container" id="p1p1-image" onclick="openP1P1()">
 			<p>Daily "P1P1"</p>
@@ -1173,29 +1180,27 @@ Search for cards that were made into champion promo's by a specific user. For ex
 		const app = initializeApp(firebaseConfig);
 		const db = getFirestore(app);
 
-		let username = "";
-		let password = "";
-		let decks = "";
+		await getDoc(doc(db, "info", "events")).then(docSnap => {
+			const calendar = docSnap.data().calendar;
 
-		let sessionid = localStorage.getItem("settings.session");
-		let logged_in = (sessionid != null);
+			for (const item of calendar) {
+				const prop = item.split(";");
+				const name = prop[0];
+				const time = prop[1];
+				const desc = prop[2];
 
-		if (logged_in) {
-			const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-				let data = docSnap.data();
-				username = data.username;
-				password = data.password;
-			});
+				const header = document.createElement("span");
+				header.className = "event-calendar-header";
+				header.innerText = name;
 
-			await getDoc(doc(db, 'users', username)).then(docSnap => {
-				let data = docSnap.data();
-				console.log(data);
-				document.getElementById("login").innerText = username;
-			});
-		} else {
-			document.getElementById("login").innerText = "Not logged in";
-			document.getElementById("account-btn").innerHTML = `<img src="/img/header/account.png" class="btn-img">Not logged in`;
-		}
+				const time_desc = document.createElement("span");
+				time_desc.className = "time-desc";
+				time_desc.innerHTML = `${time} <b>•</b> ${desc}`;
+
+				document.getElementById("calendar").appendChild(header);
+				document.getElementById("calendar").appendChild(time_desc);
+			}
+		})
 	</script>
 </body>
 

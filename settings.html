@@ -1,132 +1,150 @@
 <html>
-    <head>
-        <title>Settings</title>
-        <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-        <link rel="stylesheet" href="resources/mana.css">
-        <link rel="stylesheet" href="/resources/header.css">
-    </head>
-    <style>
-        @font-face {
+
+<head>
+	<title>Settings</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
+	<link rel="stylesheet" href="resources/mana.css">
+	<link rel="stylesheet" href="/resources/header.css">
+</head>
+<style>
+	@font-face {
 		font-family: Beleren;
 		src: url('/resources/beleren.ttf');
-        }
-        body {
-            font-family: 'Helvetica', 'Arial', sans-serif;
-            overscroll-behavior: none;
-            margin: 0px;
-            background-color: #bbbbbb;
-            display: block;
-            /* overflow-y: scroll; */
-            height: 100%;
-            background-attachment: fixed;
+	}
+
+	body {
+		font-family: 'Helvetica', 'Arial', sans-serif;
+		overscroll-behavior: none;
+		margin: 0px;
+		background-color: #bbbbbb;
+		display: block;
+		/* overflow-y: scroll; */
+		height: 100%;
+		background-attachment: fixed;
 		background-size: cover;
-        }
-        select {
-            /* positionX: absolute; */
-            text-align: center;
-            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-            font-weight: 500;
-            cursor: pointer;
-            background-color: #F3F3F3;
-            padding: 2px;
-	    }
-        .selects {
-		    position: absolute;
-            top: 10%;
-            left: 1%;
-	    }
-.artist-credit {
+	}
+
+	select {
+		/* positionX: absolute; */
+		text-align: center;
+		font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+		font-weight: 500;
+		cursor: pointer;
+		background-color: #F3F3F3;
+		padding: 2px;
+	}
+
+	.selects {
+		position: absolute;
+		top: 10%;
+		left: 1%;
+	}
+
+	.artist-credit {
 		left: 160px;
 		position: absolute;
-                width: 240px;
+		width: 240px;
 	}
-        .page-container {
-            display: grid;
-            align-items: center;
-            justify-items: center;
-            width: 100%;
-        }
-        hr {
-            width: 85%;
-            height: 4px;
-            background-color: black;
-            border-radius: 2px;
-            border: none;
-        }
-        #modal-container {
-            display: none; 
-            position: fixed; 
-            z-index: 1; 
-            padding-top: 70px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto; 
-            background-color: rgb(0,0,0); 
-            background-color: rgba(0,0,0,0.4); 
-        }
-        #modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 50%;
-            border-radius: 10px;
-            border: solid #777 3px;
-        }
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            margin-left: 30px;
-        }
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .settings-modal-header, .settings-modal-header-active {
-            padding: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            font-size: 15px;
-            color: #646464;
-            border-bottom: #ccc solid 2px;
-            cursor: pointer;
-            transition: 0.5s;
-            /* width: 100%; */
-        }
-        .settings-modal-header-active {
-            color: #333;
-            border-color: #333;
-            font-weight: bold;
-        }
-        .settings-modal-header-container {
-            align-items: center;
-            justify-items: center;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 5px;
-            margin-bottom: 20px;
+
+	.page-container {
+		display: grid;
+		align-items: center;
+		justify-items: center;
+		width: 100%;
 	}
-    .account-grid {
+
+	hr {
+		width: 85%;
+		height: 4px;
+		background-color: black;
+		border-radius: 2px;
+		border: none;
+	}
+
+	#modal-container {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 70px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	#modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 50%;
+		border-radius: 10px;
+		border: solid #777 3px;
+	}
+
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+		margin-left: 30px;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.settings-modal-header,
+	.settings-modal-header-active {
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 15px;
+		color: #646464;
+		border-bottom: #ccc solid 2px;
+		cursor: pointer;
+		transition: 0.5s;
+		/* width: 100%; */
+	}
+
+	.settings-modal-header-active {
+		color: #333;
+		border-color: #333;
+		font-weight: bold;
+	}
+
+	.settings-modal-header-container {
+		align-items: center;
+		justify-items: center;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 5px;
+		margin-bottom: 20px;
+	}
+
+	.account-grid {
 		display: grid;
 		gap: 7px;
 		grid-template-columns: 1fr 2fr 1fr 2fr;
 		align-items: center;
 		justify-items: center;
-        margin-top: 20px;
-        margin-left: 20%;
-        width: 80%;
+		margin-top: 20px;
+		margin-left: 20%;
+		width: 80%;
 	}
+
 	#login {
 		font-weight: bold;
 		font-size: 20px;
 	}
-    .black-button {
+
+	.black-button {
 		background-color: #171717;
 		border: none;
 		color: #f3f3f3;
@@ -140,520 +158,571 @@
 		justify-content: center;
 		gap: 5px;
 	}
+
 	button:hover {
 		background-color: #000000;
 		border: 1px solid #f3f3f3;
 	}
-    .btn-img {
+
+	.btn-img {
 		width: 24px;
 	}
-    .cl-container {
-        display: flex;
-        gap: 8px;
-        justify-items: center;
-        align-items: center;
-    }
-    .coll-league-input {
-        width: 50px;
-        font-size: 24px;
-        border: 1px solid white;
-        border-radius: 5px;
-        text-align: center;
-    }
-    </style>
-    <style id="text-style">
+
+	.cl-container {
+		display: flex;
+		gap: 8px;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.coll-league-input {
+		width: 50px;
+		font-size: 24px;
+		border: 1px solid white;
+		border-radius: 5px;
+		text-align: center;
+	}
+</style>
+<style id="text-style">
 	.text {
 		color: white;
 	}
-    </style>
-    <style id="popout-style">
-        .popout {
-            background-color: #f3f3f3;
-            /* color: #f3f3f3; */
-        }
-    </style>
-    <body>
-        <button id="reload" style="display: none;"></button>
-        <div class="header">
-            <div class="search-grid">
-                <a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-                <img class="sg-icon" src="/img/header/search.png">
-                <input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
-                <a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
-                <a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
-                <a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
-                <a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>
-                <a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
-                <a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
-            </div>
-        </div>
-        <div class="selects" id="selects">
-			<select id="color-select" onchange="setGradient()">
-			</select>
+</style>
+<style id="popout-style">
+	.popout {
+		background-color: #f3f3f3;
+		/* color: #f3f3f3; */
+	}
+</style>
+
+<body>
+	<button id="reload" style="display: none;"></button>
+	<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/header/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false"
+				autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>
+			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+			<a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
 		</div>
-        <div class="page-container" id="page-container">
-            
-        </div>
+	</div>
+	<div class="selects" id="selects">
+		<select id="color-select" onchange="setGradient()">
+		</select>
+	</div>
+	<div class="page-container" id="page-container">
 
-        <div class="account-grid">
-            <button class="black-button" onclick="window.location.href = '/account'" id="account-btn"><img src="/img/header/account.png" class="btn-img">My Account</button>
-            <span id="login" class="text"></span>
-            <button class="black-button" id="sign-out"><img src="/img/export-white.png" class="btn-img">Sign Out</button>
-        </div>
+	</div>
 
-        <script>
-            let gradients = null;
-            let raw_gradients = null;
-            let gradTop = null;
-            let gradBottom = null;
-            modal = document.getElementById("modal-container");
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    document.getElementById('modal-container').style.display = 'none';
-                }
-            }
-            document.addEventListener("DOMContentLoaded", async function () {
-                try {
-                    const response = await fetch('/resources/gradients.json');
-                    raw_gradients = await response.json();
-                }
-                catch(error) {
-                    console.error('Error:', error);
-                }
+	<div class="account-grid">
+		<button class="black-button" onclick="window.location.href = '/account'" id="account-btn"><img
+				src="/img/header/account.png" class="btn-img">My Account</button>
+		<span id="login" class="text"></span>
+		<button class="black-button" id="sign-out"><img src="/img/export-white.png" class="btn-img">Sign Out</button>
+	</div>
 
-                gradients = raw_gradients.gradients;
-				card_backgrounds = raw_gradients.cards;
-                setGradient(localStorage.getItem("settings.gradient"));
-                console.log(setGradient);
-                prepareGradients();
-
-                openSettingsModal("Home");
-            });
-
-            defaultSetting("settings.compactaccount", "Off");
-            defaultSetting("settings.darkthememenus", "Off");
-            defaultSetting("settings.textcolor", "Black");
-            defaultSetting("settings.sanctumbasic", "On");
-            defaultSetting("settings.resultgradient", "On");
-            defaultSetting("settings.darktheme", "Off");
-
-            function prepareGradients() {
-				let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt = document.createElement("option");
-				opt.value = defaultGradient.replace(' ', '-');
-				opt.text = defaultGradient;
-				document.getElementById("color-select").appendChild(opt);
-				let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt_rand = document.createElement("option");
-				opt_rand.value = "Random-Card";
-				opt_rand.text = "Random Card";
-
-				document.getElementById("color-select").appendChild(opt_rand);
-				for (const gradient of gradients)
-				{	
-					const opt = document.createElement("option");
-					opt.value = gradient.name.replace(' ', '-');
-					opt.text = gradient.name;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
-				}
-
-				for (const gradient in card_backgrounds) {
-					const opt = document.createElement("option");
-					opt.value = gradient.replace(' ', '-');
-					opt.text = gradient;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
-					console.log(gradient, opt);
-				}
-
-				// setGradient();
+	<script>
+		let gradients = null;
+		let raw_gradients = null;
+		let gradTop = null;
+		let gradBottom = null;
+		modal = document.getElementById("modal-container");
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				document.getElementById('modal-container').style.display = 'none';
+			}
+		}
+		document.addEventListener("DOMContentLoaded", async function () {
+			try {
+				const response = await fetch('/resources/gradients.json');
+				raw_gradients = await response.json();
+			}
+			catch (error) {
+				console.error('Error:', error);
 			}
 
-			function setGradient(gradient=false) {
-				let artistCredit = "";
-				if (!gradient) { 
-					gradient = document.getElementById("color-select").value;
-				}
+			gradients = raw_gradients.gradients;
+			card_backgrounds = raw_gradients.cards;
+			setGradient(localStorage.getItem("settings.gradient"));
+			console.log(setGradient);
+			prepareGradients();
 
-				gradTop = "#000000";
-				gradBottom = "#FFFFFF";
-				for (const grad of gradients)
-				{
-					if (gradient == grad.name.replace(' ', '-'))
-					{ 	
-						gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
-					}
-				}
+			openSettingsModal("Home");
+		});
 
-				for (const background in card_backgrounds) {
-					if (gradient == background.replace(' ', '-'))
-					{ 	
-						gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-						artistCredit = card_backgrounds[background][0];
-						setTextColor(card_backgrounds[background][1]);
-					}
-				}
+		defaultSetting("settings.compactaccount", "Off");
+		defaultSetting("settings.darkthememenus", "Off");
+		defaultSetting("settings.textcolor", "Black");
+		defaultSetting("settings.sanctumbasic", "On");
+		defaultSetting("settings.resultgradient", "On");
+		defaultSetting("settings.darktheme", "Off");
 
-				if (gradient == "Random-Card") {
-					const bgs = Object.keys(card_backgrounds);
-					const background = bgs[reallyRand(bgs.length)];
+		function prepareGradients() {
+			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt = document.createElement("option");
+			opt.value = defaultGradient.replace(' ', '-');
+			opt.text = defaultGradient;
+			document.getElementById("color-select").appendChild(opt);
+			let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt_rand = document.createElement("option");
+			opt_rand.value = "Random-Card";
+			opt_rand.text = "Random Card";
+
+			document.getElementById("color-select").appendChild(opt_rand);
+			for (const gradient of gradients) {
+				const opt = document.createElement("option");
+				opt.value = gradient.name.replace(' ', '-');
+				opt.text = gradient.name;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
+				}
+			}
+
+			for (const gradient in card_backgrounds) {
+				const opt = document.createElement("option");
+				opt.value = gradient.replace(' ', '-');
+				opt.text = gradient;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
+				}
+				console.log(gradient, opt);
+			}
+
+			// setGradient();
+		}
+
+		function setGradient(gradient = false) {
+			let artistCredit = "";
+			if (!gradient) {
+				gradient = document.getElementById("color-select").value;
+			}
+
+			gradTop = "#000000";
+			gradBottom = "#FFFFFF";
+			for (const grad of gradients) {
+				if (gradient == grad.name.replace(' ', '-')) {
+					gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
+				}
+			}
+
+			for (const background in card_backgrounds) {
+				if (gradient == background.replace(' ', '-')) {
 					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
 					artistCredit = card_backgrounds[background][0];
 					setTextColor(card_backgrounds[background][1]);
 				}
-
-				
-				document.body.style.backgroundImage = gradImage;
-				localStorage.setItem("settings.gradient", gradient);
-				console.log("CHANGE");
-				if (document.getElementsByClassName("artist-credit")[0])
-					document.getElementsByClassName("artist-credit")[0].remove();
-				const credit_text = document.createElement("span");
-				credit_text.className = "artist-credit text";
-				credit_text.innerText = `background by ${artistCredit}`;
-				if (artistCredit && document.getElementById("color-select"))
-					document.getElementById("color-select").parentElement.appendChild(credit_text);
 			}
 
-function reallyRand(x, seed = false) {
-				const date = new Date();
-				seed = seed ? seed : date.getUTCFullYear() * 10000 + 
-							 date.getUTCMonth() * 100 + 
-							 date.getUTCDate();
-
-				const a = 1103515245;
-				const c = 12345;
-				const m = Math.pow(2, 31);
-
-				let randomNumber = (a * seed + c) % m;
-				randomNumber = randomNumber / m;
-
-				return Math.floor(randomNumber * x);
+			if (gradient == "Random-Card") {
+				const bgs = Object.keys(card_backgrounds);
+				const background = bgs[reallyRand(bgs.length)];
+				gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
+				artistCredit = card_backgrounds[background][0];
+				setTextColor(card_backgrounds[background][1]);
 			}
 
-function setTextColor(c = false) {
-				if (c) {
-					localStorage.setItem("settings.textcolor", c);
-				}
-				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            	document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+			document.body.style.backgroundImage = gradImage;
+			localStorage.setItem("settings.gradient", gradient);
+			console.log("CHANGE");
+			if (document.getElementsByClassName("artist-credit")[0])
+				document.getElementsByClassName("artist-credit")[0].remove();
+			const credit_text = document.createElement("span");
+			credit_text.className = "artist-credit text";
+			credit_text.innerText = `background by ${artistCredit}`;
+			if (artistCredit && document.getElementById("color-select"))
+				document.getElementById("color-select").parentElement.appendChild(credit_text);
+		}
+
+		function reallyRand(x, seed = false) {
+			const date = new Date();
+			seed = seed ? seed : date.getUTCFullYear() * 10000 +
+				date.getUTCMonth() * 100 +
+				date.getUTCDate();
+
+			const a = 1103515245;
+			const c = 12345;
+			const m = Math.pow(2, 31);
+
+			let randomNumber = (a * seed + c) % m;
+			randomNumber = randomNumber / m;
+
+			return Math.floor(randomNumber * x);
+		}
+
+		function setTextColor(c = false) {
+			if (c) {
+				localStorage.setItem("settings.textcolor", c);
 			}
-            document.getElementById("search").addEventListener("keypress", function(event) {
-				if (event.key === "Enter") {
-					event.preventDefault();
-					const url = new URL('search', window.location.origin);
-					url.searchParams.append('search', document.getElementById("search").value);
-					window.location.href = url;
-				}
-			});
-            function randomCard() {
-				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
-				let random_card = card_list_arrayified[i];
-
-				const url = new URL('card', window.location.origin);
-				const params = {
-					set: random_card.set,
-					num: random_card.number,
-					name: random_card.card_name
-				}
-				for (const key in params) {
-					url.searchParams.append(key, params[key]);
-				}
-
+			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+		}
+		document.getElementById("search").addEventListener("keypress", function (event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				const url = new URL('search', window.location.origin);
+				url.searchParams.append('search', document.getElementById("search").value);
 				window.location.href = url;
 			}
+		});
+		function randomCard() {
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
 
-            function openSettingsModal(menu) {
-                // initialize empty HTML then add each option and the X to it, then make the modal visible and add the content
-                let headerContainer = document.createElement("div");
-                headerContainer.className = "settings-modal-header-container";
-                const settingsMenus = ["Home", "Style", "Deckbuilder", "Admin"];
-                for (const menuName of settingsMenus) {
-                    let ele = document.createElement("span");
-                    ele.onclick = function() {
-                        openSettingsModal(menuName);
-                    }
-                    ele.innerText = menuName;
-                    ele.id = menuName;
-                    if (menuName == menu) {
-                        ele.className = "settings-modal-header-active";
-                        if (localStorage.getItem("settings.darkthememenu") == "On") {
-                            ele.style.color = "#aaa";
-                            ele.style.borderColor = "#ccc";
-                        }
-                    } else {
-                        ele.className = "settings-modal-header";
-                        if (localStorage.getItem("settings.darkthememenu") == "On") {
-                            ele.style.color = "#333";
-                            ele.style.borderColor = "#333";
-                        }
-                    }
-                    headerContainer.appendChild(ele);
-                }
-                let contentContainer = document.createElement("div");
-                contentContainer.style.display = "grid";
-                contentContainer.style.width = "80%";
-                contentContainer.style.gridTemplateColumns = "1fr 0.5fr";
-                contentContainer.style.gap = "10px";
-                let modalContent = '</select><span class="close" onclick="closeModal()">&times;</span>';
-                if (menu == "Home") {
-                    contentContainer.appendChild(createText("Include aliases in name searching: "));
-                    contentContainer.appendChild(settingsOptionHtml("Include aliases in name searching", "settings.searchalias"));
-                    
-                    // contentContainer.appendChild(createText("Format: "));
-                    // contentContainer.appendChild(settingsOptionHtml("Format", "settings.format", ["Eternal", "Collection League", "Pauper"]));
-                } else if (menu == "Style") {
-                    contentContainer.appendChild(createText("Dark theme: "));
-                    contentContainer.appendChild(settingsOptionHtml("Dark Theme", "settings.darktheme", ["On", "Off"], function() {
-                        let val = document.getElementById('settings.darktheme').value;
-                        document.getElementById("settings.darkthememenu").value = val;
-                        localStorage.setItem("settings.darkthememenu", val);
-                        document.getElementById("settings.textcolor").value = (val == "On" ? "White" : "Black");
-                        localStorage.setItem("settings.textcolor", (val == "On" ? "White" : "Black"));
-                        setGradient(val == "On" ? 'Frost (Dark theme)' : 'Voyager');
-                        document.getElementById("color-select").value = (val == "On" ? 'Frost (Dark theme)' : 'Voyager');
-                        localStorage.setItem("settings.darktheme", val);
-                        processDeck();
-                    }));
-                    contentContainer.appendChild(createText("Dark theme menus: "));
-                    contentContainer.appendChild(settingsOptionHtml("Dark Theme Menus", "settings.darkthememenu"));
-                    contentContainer.appendChild(createText("Text color: "));
-                    contentContainer.appendChild(settingsOptionHtml("Text Color: ", "settings.textcolor", ["Black", "White"]));
-                    contentContainer.appendChild(createText("Compact Account Page: "));
-                    contentContainer.appendChild(settingsOptionHtml("Compact Account Page: ", "settings.compactaccount"));
-                } else if (menu == "Deckbuilder") {
-                    contentContainer.appendChild(createText("Use sanctum indicator: "));
-                    contentContainer.appendChild(settingsOptionHtml("Use sanctum symbol", "settings.sanctumsym"));
-                    contentContainer.appendChild(createText("Include basics in sanctum indicator: "));
-                    contentContainer.appendChild(settingsOptionHtml("Include basics in sanctum indicator", "settings.sanctumbasic"));
-                    contentContainer.appendChild(createText("Gradient at bottom of search results: "));
-                    contentContainer.appendChild(settingsOptionHtml("Gradient at bottom of search results", "settings.resultgradient"));
-                    contentContainer.appendChild(createText("Scrollbar in search results: "));
-                    contentContainer.appendChild(settingsOptionHtml("Scrollbar in search results", "settings.scrollbar"));
-                    contentContainer.appendChild(createText("Disable adding over max copies in collection: "));
-                    contentContainer.appendChild(settingsOptionHtml("Disable adding over max copies in collection", "settings.maxcopies"));
-                    contentContainer.appendChild(createText("Auto save/load decks: "));
-                    contentContainer.appendChild(settingsOptionHtml("Auto save/load decks", "settings.autosave"));
-                    contentContainer.appendChild(createText("Export draftmancer as cube: "));
-                    contentContainer.appendChild(settingsOptionHtml("Export draftmancer as cube", "settings.exportcube"));
-                    contentContainer.appendChild(createText("Export draftmancer as collection league pack: "));
-                    contentContainer.appendChild(settingsOptionHtml("Export draftmancer as collection league pack", "settings.exportcollleague"));
-                } else if (menu == "Admin") {
-                    contentContainer.appendChild(createText("Add collection league packs: "));
-
-                    const set_input        = document.createElement("input");
-                    const pack_input       = document.createElement("input");
-                    const set_input_label  = document.createElement("span");
-                    const pack_input_label = document.createElement("span");
-                    const submit_btn       = document.createElement("button");
-                    const submit_icon      = document.createElement("img");
-                    const cl_container     = document.createElement("div");
-
-                    set_input.className  = "coll-league-input popout";
-                    pack_input.className = "coll-league-input popout";
-                    set_input.id  = "coll-league-set-input";
-                    pack_input.id = "coll-league-pack-input";
-                    set_input.type  = "number";
-                    pack_input.type = "number";
-                    set_input.value  = 3;
-                    pack_input.value = 3;
-
-                    set_input_label.className  = "coll-league-input-label text";
-                    pack_input_label.className = "coll-league-input-label text";
-
-                    set_input_label.innerText = "Set:";
-                    pack_input_label.innerText = "Pack:";
-
-                    submit_btn.className = "black-button";
-                    submit_btn.id = "add-packs-btn";
-                    submit_icon.className = "btn-img";
-                    submit_btn.innerHTML = `<b style="font-size: 28px;">+</b> Add Packs`;
-                    submit_btn.appendChild(submit_icon);
-
-                    cl_container.className = "cl-container";
-                    cl_container.appendChild(set_input_label);
-                    cl_container.appendChild(set_input);
-                    cl_container.appendChild(pack_input_label);
-                    cl_container.appendChild(pack_input);
-                    cl_container.appendChild(submit_btn);
-
-                    contentContainer.appendChild(cl_container);
-                }
-                document.getElementById("page-container").innerHTML = "";
-                document.getElementById("page-container").appendChild(headerContainer);
-                document.getElementById("page-container").appendChild(contentContainer);
-                prepareGradients();
-                setGradient();
-                document.getElementById("reload").click();
-            }
-
-            function settingsOptionHtml(settingname, settingtag, options=['On', 'Off'], func=false) {
-                let settingsText = document.createElement('span');
-                // add the text then :
-                settingsText.innerText = settingname + ": ";
-                // add the dropdown with an onchange to set the localStorage value of the settingtag
-                let dropdown = document.createElement("select");
-                dropdown.className = "settings-dropdown popout";
-                dropdown.id = settingtag;
-                if (!func) {
-                    dropdown.onchange = function() {
-                        localStorage.setItem(settingtag, document.getElementById(settingtag).value); 
-                        processDeck();
-                    }
-                } else {
-                    dropdown.onchange = func;
-                }
-                let defaultOption = localStorage.getItem(settingtag);
-                let dropdownOption_ = document.createElement('option');
-                dropdownOption_.innerText = defaultOption;
-                dropdownOption_.value = defaultOption;
-                dropdown.appendChild(dropdownOption_);
-
-                for (const opt of options) {
-                    if (opt == defaultOption) {
-                        continue;
-                    }
-                    let dropdownOption = document.createElement('option');
-                    dropdownOption.innerText = opt;
-                    dropdownOption.value = opt;
-                    dropdown.appendChild(dropdownOption);
-                }
-                return dropdown;
-            }
-
-            function createText(text) {
-                let ele = document.createElement('span');
-                ele.innerText = text;
-                ele.className = "text";
-                return ele;
-            }
-
-            function defaultSetting(name, default_) {
-                // if you dont have a value in localstorage, set that value to default_
-                if (localStorage.getItem(name) == null) {
-                    localStorage.setItem(name, default_);
-                }
-            }
-
-        </script>
-        <script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-            import { setDoc, addDoc, updateDoc, doc, deleteDoc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
-            
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-                apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-                authDomain: "voyager-78e30.firebaseapp.com",
-                projectId: "voyager-78e30",
-                storageBucket: "voyager-78e30.firebasestorage.app",
-                messagingSenderId: "411191248476",
-                appId: "1:411191248476:web:591349be169d823e5f8899",
-                measurementId: "G-TQ1L48F25M"
-            };
-
-            const color_bgs = {
-                white: "#"
-            }
-            
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
-            let username = "";
-            let password = "";
-            let user_data;
-            let sessionid = localStorage.getItem('settings.session');
-            let decks = {};
-            let coll_league_players;
-            const events = ["GP2", "League"];
-            // console.log
-
-            if (sessionid) {
-                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-                    let data = docSnap.data();
-                    username = data.username;
-                    password = data.password;
-                });
-
-                await getDoc(doc(db, 'users', username)).then(docSnap => {
-                    let data = docSnap.data();
-                    decks = JSON.parse(data.decks);
-                    user_data = data;
-                });
-            }
-
-            await getDoc(doc(db, "info", "collectionleague")).then(docSnap => {
-                let data = docSnap.data();
-                coll_league_players = JSON.parse(data.players); 
-            });
-
-            document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-
-            if (localStorage.getItem("settings.darkthememenu") == "On") {
-                document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
-            } else if (localStorage.getItem("settings.darkthememenu") == "Off") {
-                document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
-            }
-
-            
-            let logged_in = (sessionid != null);
-
-			if (logged_in) {
-				document.getElementById("login").innerText = username;
-			} else {
-				document.getElementById("login").innerText = "Not logged in";
-				document.getElementById("account-btn").innerHTML = `<img src="/img/header/account.png" class="btn-img">Not logged in`;
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
 			}
 
-            document.getElementById("reload").addEventListener("click", reload);
+			window.location.href = url;
+		}
 
-            const all_users_data = await getDocs(collection(db, "users"));
-            let all_users = []
-            all_users_data.forEach((doc) => {
-                all_users.push(doc.data());
-            });
+		function openSettingsModal(menu) {
+			// initialize empty HTML then add each option and the X to it, then make the modal visible and add the content
+			let headerContainer = document.createElement("div");
+			headerContainer.className = "settings-modal-header-container";
+			const settingsMenus = ["Home", "Style", "Deckbuilder", "Admin"];
+			for (const menuName of settingsMenus) {
+				let ele = document.createElement("span");
+				ele.onclick = function () {
+					openSettingsModal(menuName);
+				}
+				ele.innerText = menuName;
+				ele.id = menuName;
+				if (menuName == menu) {
+					ele.className = "settings-modal-header-active";
+					if (localStorage.getItem("settings.darkthememenu") == "On") {
+						ele.style.color = "#aaa";
+						ele.style.borderColor = "#ccc";
+					}
+				} else {
+					ele.className = "settings-modal-header";
+					if (localStorage.getItem("settings.darkthememenu") == "On") {
+						ele.style.color = "#333";
+						ele.style.borderColor = "#333";
+					}
+				}
+				headerContainer.appendChild(ele);
+			}
+			let contentContainer = document.createElement("div");
+			contentContainer.style.display = "grid";
+			contentContainer.style.width = "80%";
+			contentContainer.style.gridTemplateColumns = "1fr 0.5fr";
+			contentContainer.style.gap = "10px";
+			let modalContent = '</select><span class="close" onclick="closeModal()">&times;</span>';
+			if (menu == "Home") {
+				contentContainer.appendChild(createText("Include aliases in name searching: "));
+				contentContainer.appendChild(settingsOptionHtml("Include aliases in name searching", "settings.searchalias"));
 
-            document.getElementById("sign-out").addEventListener("click", async () => {
-                await deleteDoc(doc(db, "sessions", localStorage.getItem("settings.session")));
-                localStorage.removeItem("settings.session");
-                window.location.reload();
-            });
+				// contentContainer.appendChild(createText("Format: "));
+				// contentContainer.appendChild(settingsOptionHtml("Format", "settings.format", ["Eternal", "Collection League", "Pauper"]));
+			} else if (menu == "Style") {
+				contentContainer.appendChild(createText("Dark theme: "));
+				contentContainer.appendChild(settingsOptionHtml("Dark Theme", "settings.darktheme", ["On", "Off"], function () {
+					let val = document.getElementById('settings.darktheme').value;
+					document.getElementById("settings.darkthememenu").value = val;
+					localStorage.setItem("settings.darkthememenu", val);
+					document.getElementById("settings.textcolor").value = (val == "On" ? "White" : "Black");
+					localStorage.setItem("settings.textcolor", (val == "On" ? "White" : "Black"));
+					setGradient(val == "On" ? 'Frost (Dark theme)' : 'Voyager');
+					document.getElementById("color-select").value = (val == "On" ? 'Frost (Dark theme)' : 'Voyager');
+					localStorage.setItem("settings.darktheme", val);
+					processDeck();
+				}));
+				contentContainer.appendChild(createText("Dark theme menus: "));
+				contentContainer.appendChild(settingsOptionHtml("Dark Theme Menus", "settings.darkthememenu"));
+				contentContainer.appendChild(createText("Text color: "));
+				contentContainer.appendChild(settingsOptionHtml("Text Color: ", "settings.textcolor", ["Black", "White"]));
+				contentContainer.appendChild(createText("Compact Account Page: "));
+				contentContainer.appendChild(settingsOptionHtml("Compact Account Page: ", "settings.compactaccount"));
+			} else if (menu == "Deckbuilder") {
+				contentContainer.appendChild(createText("Use sanctum indicator: "));
+				contentContainer.appendChild(settingsOptionHtml("Use sanctum symbol", "settings.sanctumsym"));
+				contentContainer.appendChild(createText("Include basics in sanctum indicator: "));
+				contentContainer.appendChild(settingsOptionHtml("Include basics in sanctum indicator", "settings.sanctumbasic"));
+				contentContainer.appendChild(createText("Gradient at bottom of search results: "));
+				contentContainer.appendChild(settingsOptionHtml("Gradient at bottom of search results", "settings.resultgradient"));
+				contentContainer.appendChild(createText("Scrollbar in search results: "));
+				contentContainer.appendChild(settingsOptionHtml("Scrollbar in search results", "settings.scrollbar"));
+				contentContainer.appendChild(createText("Disable adding over max copies in collection: "));
+				contentContainer.appendChild(settingsOptionHtml("Disable adding over max copies in collection", "settings.maxcopies"));
+				contentContainer.appendChild(createText("Auto save/load decks: "));
+				contentContainer.appendChild(settingsOptionHtml("Auto save/load decks", "settings.autosave"));
+				contentContainer.appendChild(createText("Export draftmancer as cube: "));
+				contentContainer.appendChild(settingsOptionHtml("Export draftmancer as cube", "settings.exportcube"));
+				contentContainer.appendChild(createText("Export draftmancer as collection league pack: "));
+				contentContainer.appendChild(settingsOptionHtml("Export draftmancer as collection league pack", "settings.exportcollleague"));
+			} else if (menu == "Admin") {
+				contentContainer.appendChild(createText("Add collection league packs: "));
 
-            async function reload() {
-                if (!user_data) {
-                    document.getElementById("Admin").style.display = "none";    
-                    return;
-                }
-                if (!user_data.admin) {
-                    document.getElementById("Admin").style.display = "none";      
-                } else {
-                    document.getElementById("add-packs-btn").addEventListener("click", async function() {
-                        const set_count  = parseInt(document.getElementById("coll-league-set-input" ).value);
-                        const pack_count = parseInt(document.getElementById("coll-league-pack-input").value);
-                        for (const user of all_users) {
-                            if (!coll_league_players.includes(user.username)) {
-                                continue;
-                            }
-                            updateDoc(doc(db, "users", user.username), {
-                                coll_league : user.coll_league ? [parseInt(user.coll_league[0]) + set_count, parseInt(user.coll_league[1]) + pack_count] : [0, 0]
-                            });
-                        }
-                        alert("Added Packs!");
-                    });
-                }
-                
-            }
+				const set_input = document.createElement("input");
+				const pack_input = document.createElement("input");
+				const set_input_label = document.createElement("span");
+				const pack_input_label = document.createElement("span");
+				const submit_btn = document.createElement("button");
+				const submit_icon = document.createElement("img");
+				const cl_container = document.createElement("div");
 
-            if (sessionid) {
-                reload();
-            }
-        </script>
-    </body>
+				set_input.className = "coll-league-input popout";
+				pack_input.className = "coll-league-input popout";
+				set_input.id = "coll-league-set-input";
+				pack_input.id = "coll-league-pack-input";
+				set_input.type = "number";
+				pack_input.type = "number";
+				set_input.value = 3;
+				pack_input.value = 3;
+
+				set_input_label.className = "coll-league-input-label text";
+				pack_input_label.className = "coll-league-input-label text";
+
+				set_input_label.innerText = "Set:";
+				pack_input_label.innerText = "Pack:";
+
+				submit_btn.className = "black-button";
+				submit_btn.id = "add-packs-btn";
+				submit_icon.className = "btn-img";
+				submit_btn.innerHTML = `<b style="font-size: 28px;">+</b> Add Packs`;
+				submit_btn.appendChild(submit_icon);
+
+				cl_container.className = "cl-container";
+				cl_container.appendChild(set_input_label);
+				cl_container.appendChild(set_input);
+				cl_container.appendChild(pack_input_label);
+				cl_container.appendChild(pack_input);
+				cl_container.appendChild(submit_btn);
+
+				contentContainer.appendChild(cl_container);
+
+
+				// Events
+
+				contentContainer.appendChild(createText("Add event schedule:"))
+
+				const event_cal_container = document.createElement("div");
+				event_cal_container.className = "event-cal-container";
+
+				const event_name = document.createElement("input");
+				event_name.className = "event-name-input";
+				event_name.id = "event-name-input";
+
+				const event_timing = document.createElement("input");
+				event_timing.className = "event-time-input";
+				event_timing.id = "event-time-input";
+
+				const event_desc = document.createElement("input");
+				event_desc.className = "event-desc-input";
+				event_desc.id = "event-desc-input";
+
+				const submit_btn2 = document.createElement("button");
+				submit_btn2.className = "black-button";
+				submit_btn2.id = "add-event-btn";
+				submit_btn2.innerHTML = `<b style="font-size: 28px;">+</b> Add Event`;
+
+				event_cal_container.appendChild(event_name);
+				event_cal_container.appendChild(event_timing);
+				event_cal_container.appendChild(event_desc);
+				event_cal_container.appendChild(submit_btn2);
+
+				contentContainer.appendChild(event_cal_container);
+			}
+			document.getElementById("page-container").innerHTML = "";
+			document.getElementById("page-container").appendChild(headerContainer);
+			document.getElementById("page-container").appendChild(contentContainer);
+			prepareGradients();
+			setGradient();
+			document.getElementById("reload").click();
+		}
+
+		function settingsOptionHtml(settingname, settingtag, options = ['On', 'Off'], func = false) {
+			let settingsText = document.createElement('span');
+			// add the text then :
+			settingsText.innerText = settingname + ": ";
+			// add the dropdown with an onchange to set the localStorage value of the settingtag
+			let dropdown = document.createElement("select");
+			dropdown.className = "settings-dropdown popout";
+			dropdown.id = settingtag;
+			if (!func) {
+				dropdown.onchange = function () {
+					localStorage.setItem(settingtag, document.getElementById(settingtag).value);
+					processDeck();
+				}
+			} else {
+				dropdown.onchange = func;
+			}
+			let defaultOption = localStorage.getItem(settingtag);
+			let dropdownOption_ = document.createElement('option');
+			dropdownOption_.innerText = defaultOption;
+			dropdownOption_.value = defaultOption;
+			dropdown.appendChild(dropdownOption_);
+
+			for (const opt of options) {
+				if (opt == defaultOption) {
+					continue;
+				}
+				let dropdownOption = document.createElement('option');
+				dropdownOption.innerText = opt;
+				dropdownOption.value = opt;
+				dropdown.appendChild(dropdownOption);
+			}
+			return dropdown;
+		}
+
+		function createText(text) {
+			let ele = document.createElement('span');
+			ele.innerText = text;
+			ele.className = "text";
+			return ele;
+		}
+
+		function defaultSetting(name, default_) {
+			// if you dont have a value in localstorage, set that value to default_
+			if (localStorage.getItem(name) == null) {
+				localStorage.setItem(name, default_);
+			}
+		}
+
+	</script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+		import { setDoc, addDoc, updateDoc, doc, deleteDoc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+			authDomain: "voyager-78e30.firebaseapp.com",
+			projectId: "voyager-78e30",
+			storageBucket: "voyager-78e30.firebasestorage.app",
+			messagingSenderId: "411191248476",
+			appId: "1:411191248476:web:591349be169d823e5f8899",
+			measurementId: "G-TQ1L48F25M"
+		};
+
+		const color_bgs = {
+			white: "#"
+		}
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+		const delay = ms => new Promise(res => setTimeout(res, ms));
+		let username = "";
+		let password = "";
+		let user_data;
+		let sessionid = localStorage.getItem('settings.session');
+		let decks = {};
+		let coll_league_players;
+		const events = ["GP2", "League"];
+		// console.log
+
+		if (sessionid) {
+			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+				let data = docSnap.data();
+				username = data.username;
+				password = data.password;
+			});
+
+			await getDoc(doc(db, 'users', username)).then(docSnap => {
+				let data = docSnap.data();
+				decks = JSON.parse(data.decks);
+				user_data = data;
+			});
+		}
+
+		await getDoc(doc(db, "info", "collectionleague")).then(docSnap => {
+			let data = docSnap.data();
+			coll_league_players = JSON.parse(data.players);
+		});
+
+		document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+		document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+		if (localStorage.getItem("settings.darkthememenu") == "On") {
+			document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
+		} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
+			document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
+		}
+
+
+		let logged_in = (sessionid != null);
+
+		if (logged_in) {
+			document.getElementById("login").innerText = username;
+		} else {
+			document.getElementById("login").innerText = "Not logged in";
+			document.getElementById("account-btn").innerHTML = `<img src="/img/header/account.png" class="btn-img">Not logged in`;
+		}
+
+		document.getElementById("reload").addEventListener("click", reload);
+
+		const all_users_data = await getDocs(collection(db, "users"));
+		let all_users = []
+		all_users_data.forEach((doc) => {
+			all_users.push(doc.data());
+		});
+
+		document.getElementById("sign-out").addEventListener("click", async () => {
+			await deleteDoc(doc(db, "sessions", localStorage.getItem("settings.session")));
+			localStorage.removeItem("settings.session");
+			window.location.reload();
+		});
+
+		async function reload() {
+			if (!user_data) {
+				document.getElementById("Admin").style.display = "none";
+				return;
+			}
+			if (!user_data.admin) {
+				document.getElementById("Admin").style.display = "none";
+			} else {
+				do {
+					await delay(100);
+				} while (!document.getElementById("add-event-btn"))
+
+				document.getElementById("add-event-btn").addEventListener("click", onclick = async () => {
+					const name = document.getElementById("event-name-input").value;
+					const time = document.getElementById("event-time-input").value;
+					const desc = document.getElementById("event-desc-input").value;
+
+					await getDoc(doc(db, "info", "events")).then(docSnap => {
+						const calendar = docSnap.data().calendar;
+						updateDoc(doc(db, "info", "events"), {
+							calendar: [...calendar, `${name};${time};${desc}`]
+						});
+					})
+				});
+				document.getElementById("add-packs-btn").addEventListener("click", async function () {
+					const set_count = parseInt(document.getElementById("coll-league-set-input").value);
+					const pack_count = parseInt(document.getElementById("coll-league-pack-input").value);
+					for (const user of all_users) {
+						if (!coll_league_players.includes(user.username)) {
+							continue;
+						}
+						updateDoc(doc(db, "users", user.username), {
+							coll_league: user.coll_league ? [parseInt(user.coll_league[0]) + set_count, parseInt(user.coll_league[1]) + pack_count] : [0, 0]
+						});
+					}
+					alert("Added Packs!");
+				});
+			}
+
+		}
+
+		document.addEventListener("DOMContentLoaded", reload);
+	</script>
+</body>
+
 </html>
