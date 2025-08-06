@@ -26,6 +26,45 @@ def generateHTML(code):
   <link rel="stylesheet" href="/resources/header.css">
 </head>
 <style>
+    .community .community-dropdown {
+		display: none;
+	}
+
+	.community:hover .community-dropdown {
+		display: grid;
+	}
+
+	/* .community-dropdown:hover {
+		display: grid;
+	} */
+
+	.community-dropdown {
+		grid-template-rows: repeat(4, 1fr);
+		color: white;
+		position: absolute;
+		padding-top: 20px;
+		background-color: #171717;
+		padding: 10px;
+		width: 120px;
+		gap: 5px;
+		font-size: 0.85em;
+	}
+
+	.community-dropdown-item {
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		gap: 5px;
+	}
+
+	.community-dropdown-item:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.dropdown-icon {
+		max-height: 1em;
+	}
 	@font-face {
 		font-family: 'Beleren Small Caps';
 		src: url('/resources/beleren-caps.ttf');

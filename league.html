@@ -7,6 +7,46 @@
 	<link rel="stylesheet" href="/resources/header.css">
 </head>
 <style>
+	.community .community-dropdown {
+		display: none;
+	}
+
+	.community:hover .community-dropdown {
+		display: grid;
+	}
+
+	/* .community-dropdown:hover {
+		display: grid;
+	} */
+
+	.community-dropdown {
+		grid-template-rows: repeat(4, 1fr);
+		color: white;
+		position: absolute;
+		padding-top: 20px;
+		background-color: #171717;
+		padding: 10px;
+		width: 120px;
+		gap: 5px;
+		font-size: 0.85em;
+	}
+
+	.community-dropdown-item {
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		gap: 5px;
+	}
+
+	.community-dropdown-item:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.dropdown-icon {
+		max-height: 1em;
+	}
+
 	@font-face {
 		font-family: Beleren;
 		src: url('/resources/beleren.ttf');
@@ -617,7 +657,19 @@
 			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
 			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
 			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
-			<a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>
+			<div class="community"><a href="/community" id="account-link"><img src="/img/header/community.png"
+						class="sg-icon">Community<b>⮟</b></a>
+				<div class="community-dropdown">
+					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/header/community.png">Users</a>
+					<a href="/community?tab=decks" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/header/deck.png">Decks</a>
+					<a href="/community?tab=events" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/swords.png">Events</a>
+					<a href="/community?tab=cards" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/header/sets.png">Cards</a>
+				</div>
+			</div>
 			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
 			<a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
 		</div>
@@ -985,10 +1037,6 @@
 						const opponent = Object.keys(match)[1];
 						let new_runs = JSON.parse(event_data.runs);
 						let new_matches = JSON.parse(event_data.games);
-						console.log("runs", new_runs);
-						console.log("runs", new_matches);
-						console.log("runid", run_id);
-						console.log("matchid", match_id);
 						new_runs[user_data.username][run_id].matches.push(match_id);
 						new_matches[match_id][player][0] = run_id;
 						new_matches[match_id][opponent][0] = run_id;
@@ -1010,8 +1058,9 @@
 			const matches = run.matches;
 			const record = [0, 0];
 			for (const match_id of matches) {
-				const match = event_data.games[match_id];
-				const won_match = match[user_data.username] >= 2;
+				const match = JSON.parse(event_data.games)[match_id];
+				const won_match = parseInt(match[user_data.username]) >= 2;
+				console.log("score", (match));
 				record[won_match ? 0 : 1]++;
 			}
 

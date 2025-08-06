@@ -1,332 +1,395 @@
 <html>
-    <head>
-        <title>Login</title>
-        <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-        <link rel="stylesheet" href="resources/mana.css">
-        <link rel="stylesheet" href="/resources/header.css">
-    </head>
-    <style>
-        @font-face {
+
+<head>
+	<title>Login</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
+	<link rel="stylesheet" href="resources/mana.css">
+	<link rel="stylesheet" href="/resources/header.css">
+</head>
+<style>
+	.community .community-dropdown {
+		display: none;
+	}
+
+	.community:hover .community-dropdown {
+		display: grid;
+	}
+
+	/* .community-dropdown:hover {
+		display: grid;
+	} */
+
+	.community-dropdown {
+		grid-template-rows: repeat(4, 1fr);
+		color: white;
+		position: absolute;
+		padding-top: 20px;
+		background-color: #171717;
+		padding: 10px;
+		width: 120px;
+		gap: 5px;
+		font-size: 0.85em;
+	}
+
+	.community-dropdown-item {
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		gap: 5px;
+	}
+
+	.community-dropdown-item:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.dropdown-icon {
+		max-height: 1em;
+	}
+
+	@font-face {
 		font-family: Beleren;
 		src: url('/resources/beleren.ttf');
-        }
-        body {
-            font-family: 'Helvetica', 'Arial', sans-serif;
-            overscroll-behavior: none;
-            margin: 0px;
-            background-color: #bbbbbb;
-            display: block;
-            overflow-y: hidden;
-            background-attachment: fixed;
+	}
+
+	body {
+		font-family: 'Helvetica', 'Arial', sans-serif;
+		overscroll-behavior: none;
+		margin: 0px;
+		background-color: #bbbbbb;
+		display: block;
+		overflow-y: hidden;
+		background-attachment: fixed;
 		background-size: cover;
-        }
-        .search-grid {
+	}
+
+	.search-grid {
 		justify-content: center;
-        }
-        .sg-icon {
-            cursor: pointer;
-        }
-        select {
-            position: absolute;
-            text-align: center;
-            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-            font-weight: 500;
-            cursor: pointer;
-            background-color: #F3F3F3;
-            padding: 2px;
-	    }
-        .selects {
-		    position: absolute;
-            top: 10%;
-            left: 1%;
-	    }
-.artist-credit {
+	}
+
+	.sg-icon {
+		cursor: pointer;
+	}
+
+	select {
+		position: absolute;
+		text-align: center;
+		font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+		font-weight: 500;
+		cursor: pointer;
+		background-color: #F3F3F3;
+		padding: 2px;
+	}
+
+	.selects {
+		position: absolute;
+		top: 10%;
+		left: 1%;
+	}
+
+	.artist-credit {
 		left: 160px;
 		position: absolute;
-                width: 240px;
+		width: 240px;
 	}
-        .login-container {
-            display: grid;
-            justify-items: center;
-            align-items: center;
-            padding-top: 10vh;
-        }
-        input {
-            padding: 15px;
-            font-size: 40px;
-            border-radius: 5px;
-            border: #ddd solid 2px;
-            margin: 10px;  
-            color: #444; 
-            width: 45vw;
-        }
-        .input-icon {
-            width: 100%;
-            height: 100%;
-        }
-        .buttons-container {
-            display: grid;
-            justify-items: center;
-            align-items: center;
-            grid-template-columns: 1fr 1fr;
-            width: 45vw;
-        }
-        .submit {
-            display: block;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: #29b5e8;
-            color: white;
-            font-weight: bold;
-            font-size: 30px;
-            text-align: center;
-            margin: 3px;
-            width: 90%;
-            cursor: pointer;
-            border: #333355 solid 2px;
-        }
-    </style>
-    <style id="text-style"></style>
-    <body>
-        <div class="header">
-            <div class="search-grid">
-                <a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-                <img class="sg-icon" src="/img/header/search.png">
-                <input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
-                <a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
-                <a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
-                <a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
-                <a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>            
-                <a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
-                <a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
-            </div>
-        </div>
-        <div class="selects" id="selects">
-			<select id="color-select" onchange="setGradient()">
-			</select>
+
+	.login-container {
+		display: grid;
+		justify-items: center;
+		align-items: center;
+		padding-top: 10vh;
+	}
+
+	input {
+		padding: 15px;
+		font-size: 40px;
+		border-radius: 5px;
+		border: #ddd solid 2px;
+		margin: 10px;
+		color: #444;
+		width: 45vw;
+	}
+
+	.input-icon {
+		width: 100%;
+		height: 100%;
+	}
+
+	.buttons-container {
+		display: grid;
+		justify-items: center;
+		align-items: center;
+		grid-template-columns: 1fr 1fr;
+		width: 45vw;
+	}
+
+	.submit {
+		display: block;
+		padding: 10px;
+		border-radius: 10px;
+		background-color: #29b5e8;
+		color: white;
+		font-weight: bold;
+		font-size: 30px;
+		text-align: center;
+		margin: 3px;
+		width: 90%;
+		cursor: pointer;
+		border: #333355 solid 2px;
+	}
+</style>
+<style id="text-style"></style>
+
+<body>
+	<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/header/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false"
+				autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<div class="community"><a href="/community" id="account-link"><img src="/img/header/community.png"
+						class="sg-icon">Community<b>⮟</b></a>
+				<div class="community-dropdown">
+					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/header/community.png">Users</a>
+					<a href="/community?tab=decks" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/header/deck.png">Decks</a>
+					<a href="/community?tab=events" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/swords.png">Events</a>
+					<a href="/community?tab=cards" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/header/sets.png">Cards</a>
+				</div>
+			</div>
+			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+			<a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
 		</div>
-        <div class="login-container">
-            <input class="username-input" id="username" placeholder="Username..." type="text">
-            <input class="password-input" id="password" placeholder="Password..." type="password">
-            <div class="buttons-container">
-                <span class="submit" id="log-in">Log In</span>
-                <span class="submit" id="sign-up">Sign Up</span>
-            </div>
-        </div>
-        <script>
-            let gradients = null;
-            let raw_gradients = null;
-            let gradTop = null;
-            let gradBottom = null;
-            document.addEventListener("DOMContentLoaded", async function () {
-                try {
-                    const response = await fetch('./resources/gradients.json');
-                    raw_gradients = await response.json();
-                }
-                catch(error) {
-                    console.error('Error:', error);
-                }
-
-                gradients = raw_gradients.gradients;
-				card_backgrounds = raw_gradients.cards;
-                setGradient(localStorage.getItem("settings.gradient"));
-                console.log(setGradient);
-                prepareGradients();
-            });
-
-            function prepareGradients() {
-				let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt = document.createElement("option");
-				opt.value = defaultGradient.replace(' ', '-');
-				opt.text = defaultGradient;
-				document.getElementById("color-select").appendChild(opt);
-				let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt_rand = document.createElement("option");
-				opt_rand.value = "Random-Card";
-				opt_rand.text = "Random Card";
-
-				document.getElementById("color-select").appendChild(opt_rand);
-				for (const gradient of gradients)
-				{	
-					const opt = document.createElement("option");
-					opt.value = gradient.name.replace(' ', '-');
-					opt.text = gradient.name;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
-				}
-
-				for (const gradient in card_backgrounds) {
-					const opt = document.createElement("option");
-					opt.value = gradient.replace(' ', '-');
-					opt.text = gradient;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
-					console.log(gradient, opt);
-				}
-
-				// setGradient();
+	</div>
+	<div class="selects" id="selects">
+		<select id="color-select" onchange="setGradient()">
+		</select>
+	</div>
+	<div class="login-container">
+		<input class="username-input" id="username" placeholder="Username..." type="text">
+		<input class="password-input" id="password" placeholder="Password..." type="password">
+		<div class="buttons-container">
+			<span class="submit" id="log-in">Log In</span>
+			<span class="submit" id="sign-up">Sign Up</span>
+		</div>
+	</div>
+	<script>
+		let gradients = null;
+		let raw_gradients = null;
+		let gradTop = null;
+		let gradBottom = null;
+		document.addEventListener("DOMContentLoaded", async function () {
+			try {
+				const response = await fetch('./resources/gradients.json');
+				raw_gradients = await response.json();
+			}
+			catch (error) {
+				console.error('Error:', error);
 			}
 
-			function setGradient(gradient=false) {
-				let artistCredit = "";
-				if (!gradient) { 
-					gradient = document.getElementById("color-select").value;
-				}
+			gradients = raw_gradients.gradients;
+			card_backgrounds = raw_gradients.cards;
+			setGradient(localStorage.getItem("settings.gradient"));
+			console.log(setGradient);
+			prepareGradients();
+		});
 
-				gradTop = "#000000";
-				gradBottom = "#FFFFFF";
-				for (const grad of gradients)
-				{
-					if (gradient == grad.name.replace(' ', '-'))
-					{ 	
-						gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
-					}
-				}
+		function prepareGradients() {
+			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt = document.createElement("option");
+			opt.value = defaultGradient.replace(' ', '-');
+			opt.text = defaultGradient;
+			document.getElementById("color-select").appendChild(opt);
+			let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt_rand = document.createElement("option");
+			opt_rand.value = "Random-Card";
+			opt_rand.text = "Random Card";
 
-				for (const background in card_backgrounds) {
-					if (gradient == background.replace(' ', '-'))
-					{ 	
-						gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-						artistCredit = card_backgrounds[background][0];
-						setTextColor(card_backgrounds[background][1]);
-					}
+			document.getElementById("color-select").appendChild(opt_rand);
+			for (const gradient of gradients) {
+				const opt = document.createElement("option");
+				opt.value = gradient.name.replace(' ', '-');
+				opt.text = gradient.name;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
 				}
+			}
 
-				if (gradient == "Random-Card") {
-					const bgs = Object.keys(card_backgrounds);
-					const background = bgs[reallyRand(bgs.length)];
+			for (const gradient in card_backgrounds) {
+				const opt = document.createElement("option");
+				opt.value = gradient.replace(' ', '-');
+				opt.text = gradient;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
+				}
+				console.log(gradient, opt);
+			}
+
+			// setGradient();
+		}
+
+		function setGradient(gradient = false) {
+			let artistCredit = "";
+			if (!gradient) {
+				gradient = document.getElementById("color-select").value;
+			}
+
+			gradTop = "#000000";
+			gradBottom = "#FFFFFF";
+			for (const grad of gradients) {
+				if (gradient == grad.name.replace(' ', '-')) {
+					gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
+				}
+			}
+
+			for (const background in card_backgrounds) {
+				if (gradient == background.replace(' ', '-')) {
 					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
 					artistCredit = card_backgrounds[background][0];
 					setTextColor(card_backgrounds[background][1]);
 				}
-
-				
-				document.body.style.backgroundImage = gradImage;
-				localStorage.setItem("settings.gradient", gradient);
-				console.log("CHANGE");
-				if (document.getElementsByClassName("artist-credit")[0])
-					document.getElementsByClassName("artist-credit")[0].remove();
-				const credit_text = document.createElement("span");
-				credit_text.className = "artist-credit text";
-				credit_text.innerText = `background by ${artistCredit}`;
-				if (artistCredit && document.getElementById("color-select"))
-					document.getElementById("color-select").parentElement.appendChild(credit_text);
 			}
 
-function reallyRand(x, seed = false) {
-				const date = new Date();
-				seed = seed ? seed : date.getUTCFullYear() * 10000 + 
-							 date.getUTCMonth() * 100 + 
-							 date.getUTCDate();
-
-				const a = 1103515245;
-				const c = 12345;
-				const m = Math.pow(2, 31);
-
-				let randomNumber = (a * seed + c) % m;
-				randomNumber = randomNumber / m;
-
-				return Math.floor(randomNumber * x);
+			if (gradient == "Random-Card") {
+				const bgs = Object.keys(card_backgrounds);
+				const background = bgs[reallyRand(bgs.length)];
+				gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
+				artistCredit = card_backgrounds[background][0];
+				setTextColor(card_backgrounds[background][1]);
 			}
 
-function setTextColor(c = false) {
-				if (c) {
-					localStorage.setItem("settings.textcolor", c);
+
+			document.body.style.backgroundImage = gradImage;
+			localStorage.setItem("settings.gradient", gradient);
+			console.log("CHANGE");
+			if (document.getElementsByClassName("artist-credit")[0])
+				document.getElementsByClassName("artist-credit")[0].remove();
+			const credit_text = document.createElement("span");
+			credit_text.className = "artist-credit text";
+			credit_text.innerText = `background by ${artistCredit}`;
+			if (artistCredit && document.getElementById("color-select"))
+				document.getElementById("color-select").parentElement.appendChild(credit_text);
+		}
+
+		function reallyRand(x, seed = false) {
+			const date = new Date();
+			seed = seed ? seed : date.getUTCFullYear() * 10000 +
+				date.getUTCMonth() * 100 +
+				date.getUTCDate();
+
+			const a = 1103515245;
+			const c = 12345;
+			const m = Math.pow(2, 31);
+
+			let randomNumber = (a * seed + c) % m;
+			randomNumber = randomNumber / m;
+
+			return Math.floor(randomNumber * x);
+		}
+
+		function setTextColor(c = false) {
+			if (c) {
+				localStorage.setItem("settings.textcolor", c);
+			}
+			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+		}
+	</script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+			authDomain: "voyager-78e30.firebaseapp.com",
+			projectId: "voyager-78e30",
+			storageBucket: "voyager-78e30.firebasestorage.app",
+			messagingSenderId: "411191248476",
+			appId: "1:411191248476:web:591349be169d823e5f8899",
+			measurementId: "G-TQ1L48F25M"
+		};
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+
+		document.getElementById("log-in").addEventListener("click", async (e) => {
+			let name = document.getElementById("username").value;
+			let pw = btoa(document.getElementById("password").value);
+			let exit = false;
+
+			const data = await getDoc(doc(db, "users", name)).then(docSnap => {
+				let realPw = docSnap.data().password;
+				if (pw != realPw) {
+					alert("Incorrect Password!");
+					exit = true;
+					return;
 				}
-				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            	document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+			});
+			if (exit) {
+				return;
 			}
-        </script>
-        <script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-            import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
-          
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-              apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-              authDomain: "voyager-78e30.firebaseapp.com",
-              projectId: "voyager-78e30",
-              storageBucket: "voyager-78e30.firebasestorage.app",
-              messagingSenderId: "411191248476",
-              appId: "1:411191248476:web:591349be169d823e5f8899",
-              measurementId: "G-TQ1L48F25M"
-            };
-          
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
 
-            document.getElementById("log-in").addEventListener("click", async (e) => {
-                let name = document.getElementById("username").value;
-                let pw = btoa(document.getElementById("password").value);
-                let exit = false;
+			const uuid = "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c => (+c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> +c / 4).toString(16));
+			await setDoc(doc(db, "sessions", uuid), {
+				username: name,
+				password: pw
+			});
 
-                const data = await getDoc(doc(db, "users", name)).then(docSnap => {
-                    let realPw = docSnap.data().password;
-                    if (pw != realPw) {
-                        alert("Incorrect Password!");
-                        exit = true;
-                        return;
-                    }
-                });
-                if (exit) {
-                    return;
-                }
+			alert("Logged in as " + name);
+			// localStorage.setItem("settings.account", name);
+			localStorage.setItem("settings.session", uuid);
+			window.location.href = "/account";
+		});
+		document.getElementById("sign-up").addEventListener("click", async (e) => {
+			let name = document.getElementById("username").value;
+			let pw = btoa(document.getElementById("password").value);
+			let exit = false;
+			const q = query(collection(db, "users"), where("username", "==", name));
+			const querySnapshot = await getDocs(q).then(docSnap => {
+				let users = [];
+				docSnap.forEach((doc) => {
+					users.push({ ...doc.data(), id: doc.id });
+				});
+				if (users.length != 0) {
+					alert("Username taken!");
+					exit = true;
+					return;
+				}
+			});
+			if (exit) {
+				return;
+			}
+			await setDoc(doc(db, "users", name), {
+				username: name,
+				password: pw,
+				decks: "[]"
+			});
 
-                const uuid = "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c => (+c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> +c / 4).toString(16));
-                await setDoc(doc(db, "sessions", uuid), {
-                    username: name,
-                    password: pw
-                });
-                
-                alert("Logged in as " + name);
-                // localStorage.setItem("settings.account", name);
-                localStorage.setItem("settings.session", uuid);
-                window.location.href = "/account";
-            });
-            document.getElementById("sign-up").addEventListener("click", async (e) => {
-                let name = document.getElementById("username").value;
-                let pw = btoa(document.getElementById("password").value);
-                let exit = false;
-                const q = query(collection(db, "users"), where("username", "==", name));
-                const querySnapshot = await getDocs(q).then(docSnap => {
-                    let users = [];
-                    docSnap.forEach((doc) => {
-                        users.push({...doc.data(), id: doc.id});
-                    });
-                   if (users.length != 0) {
-                        alert("Username taken!");
-                        exit = true;
-                        return;
-                   }
-                });
-                if (exit) {
-                    return;
-                }
-                await setDoc(doc(db, "users", name), {
-                    username: name,
-                    password: pw,
-                    decks: "[]"
-                });
+			const uuid = "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c => (+c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> +c / 4).toString(16));
+			await setDoc(doc(db, "sessions", uuid), {
+				username: name,
+				password: pw
+			});
 
-                const uuid = "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c => (+c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> +c / 4).toString(16));
-                await setDoc(doc(db, "sessions", uuid), {
-                    username: name,
-                    password: pw
-                });
+			// localStorage.setItem("settings.account", name);
+			// console.log(window.location.href.split("/l")[0]);
+			localStorage.setItem("settings.session", uuid);
+			alert("Signed up as " + name);
+			window.location.href = window.location.href.split("/l")[0];
+		});
+	</script>
+</body>
 
-                // localStorage.setItem("settings.account", name);
-                // console.log(window.location.href.split("/l")[0]);
-                localStorage.setItem("settings.session", uuid);
-                alert("Signed up as " + name);
-                window.location.href = window.location.href.split("/l")[0];
-            });
-        </script>
-    </body>
 </html>

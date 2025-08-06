@@ -1,821 +1,856 @@
 <html>
-    <head>
-        <title>Login</title>
-        <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-        <link rel="stylesheet" href="resources/mana.css">
-        <link rel="stylesheet" href="/resources/header.css">
-    </head>
-    <style>
-        @font-face {
+
+<head>
+	<title>Login</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
+	<link rel="stylesheet" href="resources/mana.css">
+	<link rel="stylesheet" href="/resources/header.css">
+</head>
+<style>
+	.community .community-dropdown {
+		display: none;
+	}
+
+	.community:hover .community-dropdown {
+		display: grid;
+	}
+
+	/* .community-dropdown:hover {
+		display: grid;
+	} */
+
+	.community-dropdown {
+		grid-template-rows: repeat(4, 1fr);
+		color: white;
+		position: absolute;
+		padding-top: 20px;
+		background-color: #171717;
+		padding: 10px;
+		width: 120px;
+		gap: 5px;
+		font-size: 0.85em;
+	}
+
+	.community-dropdown-item {
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		gap: 5px;
+	}
+
+	.community-dropdown-item:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.dropdown-icon {
+		max-height: 1em;
+	}
+
+	@font-face {
 		font-family: Beleren;
 		src: url('/resources/beleren.ttf');
-        }
-        body {
-            font-family: 'Helvetica', 'Arial', sans-serif;
-            overscroll-behavior: none;
-            margin: 0px;
-            background-color: #bbbbbb;
-            display: block;
-            /* overflow-y: scroll; */
-            /* height: 100%; */
-            background-attachment: fixed;
-            background-size: cover;
-        }
-        select {
-            position: absolute;
-            text-align: center;
-            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-            font-weight: 500;
-            cursor: pointer;
-            background-color: #F3F3F3;
-            padding: 2px;
-	    }
-        .selects {
-		    position: absolute;
-            top: 10%;
-            left: 1%;
-	    }
-.artist-credit {
-		left: 0px;
-        top: 30px;
-		position: absolute;
-                width: 240px;
 	}
-        .page-container {
-            display: grid;
-            align-items: center;
-            justify-items: center;
-            width: 100%;
-        }
-        hr {
-            width: 85%;
-            height: 4px;
-            background-color: black;
-            border-radius: 2px;
-            border: none;
-        }
-        #modal-container {
-            display: none; 
-            position: fixed; 
-            z-index: 1; 
-            padding-top: 70px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto; 
-            background-color: rgb(0,0,0); 
-            background-color: rgba(0,0,0,0.4); 
-        }
-        #modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 50%;
-            border-radius: 10px;
-            border: solid #777 3px;
-        }
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            margin-left: 30px;
-        }
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .search-grid {
-            justify-content: center;
-        }
-        .search {
-            width: 100%;
-            height: 100%;
-            font-size: 26px;
-            background-color: #fafafa;
-            border: 1px solid #d5d9d9;
-            border-radius: 2px;
-            padding-left: 10px;
-            padding-right: 10px;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-        .search-container {
-            width: 60%;
-            margin-left: 5%;
-            margin-top: 12px;
-            display: grid;
-            grid-template-columns: 8fr 1fr;
-            justify-items: center;
-            align-items: center;
-        }
-        .search-btn {
-            max-width: 60px;
-            cursor: pointer;
-        }
-        .search-grid {
-            justify-content: center;
-        }
-        .results-container {
-            display: grid;
-            gap: 10px;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            width: 82%;
-            float: center;
-            margin-top: 50px;
-        }
-        .deck-container {
-            display: grid;
-            gap: 5px;
-            /* grid-template-rows: 1fr 2fr 1fr; */
-            background-color: #f3f3f3;
-            border-radius: 8px; 
-            /* height: 100%; */
-            padding: 5px;
-            align-items: center;
-            justify-items: center;
-            border: 2px solid #333;
-            box-shadow: 5px 5px 2px #333;
-            padding-top: 0px;
-        }
-        .full-deck-container {
-            display: grid;
-            grid-template-columns: 1fr 0.1fr;
-            gap: -5px;
-        }
-        .colors-container {
-            position: relative;
-            top: 60px;
-            right: 14px;
-            background-color: #333;
-            height: fit-content; 
-            padding: 2px;
-            border-radius: 20px;
-        }
-        .deck-preview-img {
-            max-height: 300px;
-            border: 2px solid black;
-            box-shadow: 7px 7px 2px #999;
-            border-radius: 16px;
-            margin-bottom: 7px;
-            cursor: pointer;
-            /* box-shadow: inset 0.2em 0.2em 0.2em 0em rgba(0, 0, 0, 0.5), inset -0.2em -0.2em 0.2em 0em rgba(0,0,0,0.5); */
-            /* padding: 0.2em; */
-            /* background-color: #777; */
-        }
-        .deck-name {
-            font-size: 30px;
-            font-family: beleren;
-            background-color: #ccc;
-            /* border: 2px solid #333; */
-            /* box-shadow: 5px 5px 2px #333; */
-            border-radius: 5px;
-            padding: 5px;
-            margin-bottom: 3px;
-            width: 100%;
-            text-align: center;
-            /* color: white; */
-        }
-    </style>
-    <style id="text-style">
-        .text {
-            color: white;
-        }
-    </style>
-    <body>
-        <div class="header">
-            <div class="search-grid">
-                <a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-                <a href="/search"><img class="sg-icon" src="/img/header/search.png"></a>
-                <a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
-                <a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
-                <a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
-                <a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>
-                <a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
-                <a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
-            </div>
-        </div>
-        <div class="selects" id="selects">
-			<select id="color-select" onchange="setGradient()">
-			</select>
-		</div>
-        <div class="page-container">
-            <div class="search-container">
-                <input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false" class="search">
-                <img class="search-btn" id="search-btn" src="/img/header/search.png">
-            </div>
-            <div class="results-container" id="deckGrid">
-                
-            </div>
-        </div>
-        <div id="modal-container">
-			<div id="modal-content" class="popout">
-				<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+
+	body {
+		font-family: 'Helvetica', 'Arial', sans-serif;
+		overscroll-behavior: none;
+		margin: 0px;
+		background-color: #bbbbbb;
+		display: block;
+		/* overflow-y: scroll; */
+		/* height: 100%; */
+		background-attachment: fixed;
+		background-size: cover;
+	}
+
+	select {
+		position: absolute;
+		text-align: center;
+		font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+		font-weight: 500;
+		cursor: pointer;
+		background-color: #F3F3F3;
+		padding: 2px;
+	}
+
+	.selects {
+		position: absolute;
+		top: 10%;
+		left: 1%;
+	}
+
+	.artist-credit {
+		left: 0px;
+		top: 30px;
+		position: absolute;
+		width: 240px;
+	}
+
+	.page-container {
+		display: grid;
+		align-items: center;
+		justify-items: center;
+		width: 100%;
+	}
+
+	hr {
+		width: 85%;
+		height: 4px;
+		background-color: black;
+		border-radius: 2px;
+		border: none;
+	}
+
+	#modal-container {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 70px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	#modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 50%;
+		border-radius: 10px;
+		border: solid #777 3px;
+	}
+
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+		margin-left: 30px;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.search-grid {
+		justify-content: center;
+	}
+
+	.search {
+		width: 100%;
+		height: 100%;
+		font-size: 26px;
+		background-color: #fafafa;
+		border: 1px solid #d5d9d9;
+		border-radius: 2px;
+		padding-left: 10px;
+		padding-right: 10px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.search-container {
+		width: 60%;
+		margin-left: 5%;
+		margin-top: 12px;
+		display: grid;
+		grid-template-columns: 8fr 1fr;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.search-btn {
+		max-width: 60px;
+		cursor: pointer;
+	}
+
+	.search-grid {
+		justify-content: center;
+	}
+
+	.results-container {
+		display: grid;
+		gap: 10px;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		width: 82%;
+		float: center;
+		margin-top: 50px;
+	}
+
+	.deck-container {
+		display: grid;
+		gap: 5px;
+		/* grid-template-rows: 1fr 2fr 1fr; */
+		background-color: #f3f3f3;
+		border-radius: 8px;
+		/* height: 100%; */
+		padding: 5px;
+		align-items: center;
+		justify-items: center;
+		border: 2px solid #333;
+		box-shadow: 5px 5px 2px #333;
+		padding-top: 0px;
+	}
+
+	.full-deck-container {
+		display: grid;
+		grid-template-columns: 1fr 0.1fr;
+		gap: -5px;
+	}
+
+	.colors-container {
+		position: relative;
+		top: 60px;
+		right: 14px;
+		background-color: #333;
+		height: fit-content;
+		padding: 2px;
+		border-radius: 20px;
+	}
+
+	.deck-preview-img {
+		max-height: 300px;
+		border: 2px solid black;
+		box-shadow: 7px 7px 2px #999;
+		border-radius: 16px;
+		margin-bottom: 7px;
+		cursor: pointer;
+		/* box-shadow: inset 0.2em 0.2em 0.2em 0em rgba(0, 0, 0, 0.5), inset -0.2em -0.2em 0.2em 0em rgba(0,0,0,0.5); */
+		/* padding: 0.2em; */
+		/* background-color: #777; */
+	}
+
+	.deck-name {
+		font-size: 30px;
+		font-family: beleren;
+		background-color: #ccc;
+		/* border: 2px solid #333; */
+		/* box-shadow: 5px 5px 2px #333; */
+		border-radius: 5px;
+		padding: 5px;
+		margin-bottom: 3px;
+		width: 100%;
+		text-align: center;
+		/* color: white; */
+	}
+</style>
+<style id="text-style">
+	.text {
+		color: white;
+	}
+</style>
+
+<body>
+	<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<a href="/search"><img class="sg-icon" src="/img/header/search.png"></a>
+			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<div class="community"><a href="/community" id="account-link"><img src="/img/header/community.png"
+						class="sg-icon">Community<b>⮟</b></a>
+				<div class="community-dropdown">
+					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/header/community.png">Users</a>
+					<a href="/community?tab=decks" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/header/deck.png">Decks</a>
+					<a href="/community?tab=events" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/swords.png">Events</a>
+					<a href="/community?tab=cards" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/header/sets.png">Cards</a>
+				</div>
 			</div>
+			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+			<a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
 		</div>
-        <script src="https://cdn.jsdelivr.net/npm/lz-string@1.5.0/libs/lz-string.min.js"></script>
-        <script>
-            let gradients = null;
-            let raw_gradients = null;
-            let gradTop = null;
-            let gradBottom = null;
-            modal = document.getElementById("modal-container");
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    document.getElementById('modal-container').style.display = 'none';
-                }
-            }
-            document.addEventListener("DOMContentLoaded", async function () {
-                await fetch('/lists/all-cards.json')
-					.then(response => response.json())
-					.then(json => {
-						card_list = json;
+	</div>
+	<div class="selects" id="selects">
+		<select id="color-select" onchange="setGradient()">
+		</select>
+	</div>
+	<div class="page-container">
+		<div class="search-container">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false"
+				autocomplete="off" autocorrect="off" spellcheck="false" class="search">
+			<img class="search-btn" id="search-btn" src="/img/header/search.png">
+		</div>
+		<div class="results-container" id="deckGrid">
+
+		</div>
+	</div>
+	<div id="modal-container">
+		<div id="modal-content" class="popout">
+			<span class="close"
+				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/lz-string@1.5.0/libs/lz-string.min.js"></script>
+	<script>
+		let gradients = null;
+		let raw_gradients = null;
+		let gradTop = null;
+		let gradBottom = null;
+		modal = document.getElementById("modal-container");
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				document.getElementById('modal-container').style.display = 'none';
+			}
+		}
+		document.addEventListener("DOMContentLoaded", async function () {
+			await fetch('/lists/all-cards.json')
+				.then(response => response.json())
+				.then(json => {
+					card_list = json;
 				}).catch(error => console.error('Error:', error));
 
-				await fetch('/resources/replacechars.txt')
-					.then(response => response.text())
-					.then(text => {
-						specialchars = text; 
+			await fetch('/resources/replacechars.txt')
+				.then(response => response.text())
+				.then(text => {
+					specialchars = text;
 				}).catch(error => console.error('Error:', error));
 
-				card_list_arrayified = card_list.cards;
+			card_list_arrayified = card_list.cards;
 
 
-				await fetch('/lists/all-sets.json')
-					.then(response => response.json())
-					.then(data => {
-						sets_json = data; 
+			await fetch('/lists/all-sets.json')
+				.then(response => response.json())
+				.then(data => {
+					sets_json = data;
 				}).catch(error => console.error('Error:', error));
 
-                try {
-                    const response = await fetch('/resources/gradients.json');
-                    raw_gradients = await response.json();
-                }
-                catch(error) {
-                    console.error('Error:', error);
-                }
-
-                gradients = raw_gradients.gradients;
-				card_backgrounds = raw_gradients.cards;
-                setGradient(localStorage.getItem("settings.gradient"));
-                console.log(setGradient);
-                prepareGradients();
-            });
-
-            function prepareGradients() {
-				let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt = document.createElement("option");
-				opt.value = defaultGradient.replace(' ', '-');
-				opt.text = defaultGradient;
-				document.getElementById("color-select").appendChild(opt);
-				let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt_rand = document.createElement("option");
-				opt_rand.value = "Random-Card";
-				opt_rand.text = "Random Card";
-
-				document.getElementById("color-select").appendChild(opt_rand);
-				for (const gradient of gradients)
-				{	
-					const opt = document.createElement("option");
-					opt.value = gradient.name.replace(' ', '-');
-					opt.text = gradient.name;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
-				}
-
-				for (const gradient in card_backgrounds) {
-					const opt = document.createElement("option");
-					opt.value = gradient.replace(' ', '-');
-					opt.text = gradient;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
-					console.log(gradient, opt);
-				}
-
-				// setGradient();
+			try {
+				const response = await fetch('/resources/gradients.json');
+				raw_gradients = await response.json();
+			}
+			catch (error) {
+				console.error('Error:', error);
 			}
 
-			function setGradient(gradient=false) {
-				let artistCredit = "";
-				if (!gradient) { 
-					gradient = document.getElementById("color-select").value;
-				}
+			gradients = raw_gradients.gradients;
+			card_backgrounds = raw_gradients.cards;
+			setGradient(localStorage.getItem("settings.gradient"));
+			console.log(setGradient);
+			prepareGradients();
+		});
 
-				gradTop = "#000000";
-				gradBottom = "#FFFFFF";
-				for (const grad of gradients)
-				{
-					if (gradient == grad.name.replace(' ', '-'))
-					{ 	
-						gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
-					}
-				}
+		function prepareGradients() {
+			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt = document.createElement("option");
+			opt.value = defaultGradient.replace(' ', '-');
+			opt.text = defaultGradient;
+			document.getElementById("color-select").appendChild(opt);
+			let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt_rand = document.createElement("option");
+			opt_rand.value = "Random-Card";
+			opt_rand.text = "Random Card";
 
-				for (const background in card_backgrounds) {
-					if (gradient == background.replace(' ', '-'))
-					{ 	
-						gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-						artistCredit = card_backgrounds[background][0];
-						setTextColor(card_backgrounds[background][1]);
-					}
+			document.getElementById("color-select").appendChild(opt_rand);
+			for (const gradient of gradients) {
+				const opt = document.createElement("option");
+				opt.value = gradient.name.replace(' ', '-');
+				opt.text = gradient.name;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
 				}
+			}
 
-				if (gradient == "Random-Card") {
-					const bgs = Object.keys(card_backgrounds);
-					const background = bgs[reallyRand(bgs.length)];
+			for (const gradient in card_backgrounds) {
+				const opt = document.createElement("option");
+				opt.value = gradient.replace(' ', '-');
+				opt.text = gradient;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
+				}
+				console.log(gradient, opt);
+			}
+
+			// setGradient();
+		}
+
+		function setGradient(gradient = false) {
+			let artistCredit = "";
+			if (!gradient) {
+				gradient = document.getElementById("color-select").value;
+			}
+
+			gradTop = "#000000";
+			gradBottom = "#FFFFFF";
+			for (const grad of gradients) {
+				if (gradient == grad.name.replace(' ', '-')) {
+					gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
+				}
+			}
+
+			for (const background in card_backgrounds) {
+				if (gradient == background.replace(' ', '-')) {
 					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
 					artistCredit = card_backgrounds[background][0];
 					setTextColor(card_backgrounds[background][1]);
 				}
-
-				
-				document.body.style.backgroundImage = gradImage;
-				localStorage.setItem("settings.gradient", gradient);
-				console.log("CHANGE");
-				if (document.getElementsByClassName("artist-credit")[0])
-					document.getElementsByClassName("artist-credit")[0].remove();
-				const credit_text = document.createElement("span");
-				credit_text.className = "artist-credit text";
-				credit_text.innerText = `background by ${artistCredit}`;
-				if (artistCredit && document.getElementById("color-select"))
-					document.getElementById("color-select").parentElement.appendChild(credit_text);
 			}
 
-function reallyRand(x, seed = false) {
-				const date = new Date();
-				seed = seed ? seed : date.getUTCFullYear() * 10000 + 
-							 date.getUTCMonth() * 100 + 
-							 date.getUTCDate();
-
-				const a = 1103515245;
-				const c = 12345;
-				const m = Math.pow(2, 31);
-
-				let randomNumber = (a * seed + c) % m;
-				randomNumber = randomNumber / m;
-
-				return Math.floor(randomNumber * x);
+			if (gradient == "Random-Card") {
+				const bgs = Object.keys(card_backgrounds);
+				const background = bgs[reallyRand(bgs.length)];
+				gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
+				artistCredit = card_backgrounds[background][0];
+				setTextColor(card_backgrounds[background][1]);
 			}
 
-function setTextColor(c = false) {
-				if (c) {
-					localStorage.setItem("settings.textcolor", c);
+
+			document.body.style.backgroundImage = gradImage;
+			localStorage.setItem("settings.gradient", gradient);
+			console.log("CHANGE");
+			if (document.getElementsByClassName("artist-credit")[0])
+				document.getElementsByClassName("artist-credit")[0].remove();
+			const credit_text = document.createElement("span");
+			credit_text.className = "artist-credit text";
+			credit_text.innerText = `background by ${artistCredit}`;
+			if (artistCredit && document.getElementById("color-select"))
+				document.getElementById("color-select").parentElement.appendChild(credit_text);
+		}
+
+		function reallyRand(x, seed = false) {
+			const date = new Date();
+			seed = seed ? seed : date.getUTCFullYear() * 10000 +
+				date.getUTCMonth() * 100 +
+				date.getUTCDate();
+
+			const a = 1103515245;
+			const c = 12345;
+			const m = Math.pow(2, 31);
+
+			let randomNumber = (a * seed + c) % m;
+			randomNumber = randomNumber / m;
+
+			return Math.floor(randomNumber * x);
+		}
+
+		function setTextColor(c = false) {
+			if (c) {
+				localStorage.setItem("settings.textcolor", c);
+			}
+			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+		}
+		// document.getElementById("search").addEventListener("keypress", function(event) {
+		// 	if (event.key === "Enter") {
+		// 		event.preventDefault();
+		// 		const url = new URL('search', window.location.origin);
+		// 		url.searchParams.append('search', document.getElementById("search").value);
+		// 		window.location.href = url;
+		// 	}
+		// });
+		function randomCard() {
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
+
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+
+			window.location.href = url;
+		}
+	</script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+		// https://firebase.google.com/docs/web/setup#available-libraries
+
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+			authDomain: "voyager-78e30.firebaseapp.com",
+			projectId: "voyager-78e30",
+			storageBucket: "voyager-78e30.firebasestorage.app",
+			messagingSenderId: "411191248476",
+			appId: "1:411191248476:web:591349be169d823e5f8899",
+			measurementId: "G-TQ1L48F25M"
+		};
+
+		const color_bgs = {
+			white: "#"
+		}
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+		let username = "";
+		let password = "";
+		let admin = false;
+		let sessionid = localStorage.getItem('settings.session');
+		let decks = {};
+		const events = ["GP2", "League"];
+		let urlParams = new URLSearchParams(window.location.search);
+		let card_list;
+		let card_list_arrayified;
+
+		await fetch('/lists/all-cards.json')
+			.then(response => response.json())
+			.then(json => {
+				card_list = json;
+			}).catch(error => console.error('Error:', error));
+
+		card_list_arrayified = card_list.cards;
+
+		if (sessionid) {
+			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+				let data = docSnap.data();
+				username = data.username;
+				password = data.password;
+			});
+
+			await getDoc(doc(db, 'users', username)).then(docSnap => {
+				let data = docSnap.data();
+				decks = JSON.parse(data.decks);
+				admin = data.admin;
+			});
+		}
+
+		document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+
+
+		async function reload() {
+			let date = new Date();
+			document.getElementById("search").value = urlParams.get("search");
+			let q = query(collection(db, "users"));
+			const all_users = await getDocs(q);
+			const all_decks = [];
+			all_users.forEach((doc) => {
+				const data = doc.data();
+				for (const deck of JSON.parse(data.decks)) {
+					all_decks.push({ ...deck, "user": data.username })
 				}
-				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            	document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-			}
-            // document.getElementById("search").addEventListener("keypress", function(event) {
-			// 	if (event.key === "Enter") {
-			// 		event.preventDefault();
-			// 		const url = new URL('search', window.location.origin);
-			// 		url.searchParams.append('search', document.getElementById("search").value);
-			// 		window.location.href = url;
-			// 	}
-			// });
-            function randomCard() {
-				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
-				let random_card = card_list_arrayified[i];
-
-				const url = new URL('card', window.location.origin);
-				const params = {
-					set: random_card.set,
-					num: random_card.number,
-					name: random_card.card_name
+				// all_decks.push(...JSON.parse(data.decks));
+			});
+			q = query(collection(db, "events"));
+			const all_events_docs = await getDocs(q);
+			const all_events = [];
+			all_events_docs.forEach((doc) => {
+				const data = doc.data();
+				all_events.push(data);
+				for (const user in JSON.parse(data.decks)) {
+					let deck = JSON.parse(data.decks)[user];
+					all_decks.push({ ...deck, "user": user, "event": data.name });
 				}
-				for (const key in params) {
-					url.searchParams.append(key, params[key]);
+			});
+			console.log(all_decks);
+			// const all_decks = JSON.parse(LZString.decompress(localStorage.getItem("info.alldecks")));
+			document.getElementById("search-btn").addEventListener("click", (e) => {
+				let url = (window.location.href.indexOf("?") == -1 ? new URL(window.location.href) : new URL(window.location.href.substring(0, window.location.href.indexOf("?"))));
+				history.pushState({}, '', url.pathname + `?search=${document.getElementById('search').value}`);
+				urlParams = new URLSearchParams(window.location.search);
+				search(all_decks);
+			});
+			document.getElementById("search").addEventListener("keypress", function (event) {
+				if (event.key === "Enter") {
+					event.preventDefault();
+					let url = (window.location.href.indexOf("?") == -1 ? new URL(window.location.href) : new URL(window.location.href.substring(0, window.location.href.indexOf("?"))));
+					history.pushState({}, '', url.pathname + `?search=${document.getElementById('search').value}`);
+					urlParams = new URLSearchParams(window.location.search);
+					search(all_decks);
+				}
+			});
+			search(all_decks);
+			// await getDoc(doc(db, 'users', username)).then(async docSnap => {
+			//     let user_data = docSnap.data();
+			//     // firebase code
+			// }); 
+		}
+
+		function search(all_decks) {
+			let searchTerms = document.getElementById("search").value.toLowerCase();
+			let search_results = [];
+
+			let deckGrid = document.getElementById("deckGrid");
+			deckGrid.innerHTML = "";
+
+			for (const deck of all_decks) {
+				let searched = searchAllTokens(deck, tokenizeTerms(searchTerms));
+
+				if (searched) {
+					search_results.push(deck);
+				}
+			}
+
+			for (let i = 0; i < search_results.length; i++) {
+				const imgContainer = document.createElement("div");
+				const deck = search_results[i];
+				const id = deck.url;
+				const card_sr_grid = gridifyDeck(search_results[i]);
+
+				deckGrid.appendChild(card_sr_grid);
+			}
+		}
+
+		function gridifyDeck(deck) {
+			const container = document.createElement("div");
+			container.className = "deck-container";
+			const preview_img = document.createElement("img");
+			let card_stats;
+			for (const card of card_list_arrayified) {
+				if (deck.previewimg == card.card_name) {
+					card_stats = card;
+					break;
+				}
+			}
+			preview_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+			preview_img.className = "deck-preview-img";
+			preview_img.onclick = function () {
+				window.location.href = `/deckbuilder?deck=${deck.user}-${deck.name}`
+			}
+			const deck_name = document.createElement("div");
+			deck_name.className = "deck-name";
+			deck_name.innerText = deck.name;
+
+			container.appendChild(deck_name);
+			container.appendChild(preview_img);
+			return container;
+		}
+
+
+		function tokenizeTerms(searchTerms) {
+			let tokenRegex = /-?\w*[!:<>=]?(([^ \[\]"\(\)\/“”]+)|(\".+?\")|(\[.+\])|(\(.+?\))|(\/.+?\/)|(\“.+?\”))/g;
+			let searchTokens = searchTerms.match(tokenRegex);
+
+			return searchTokens;
+		}
+
+		function searchAllTokens(deck, tokens) {
+			if (tokens == null || tokens == '') {
+				return true;
+			}
+			for (let i = 0; i < tokens.length; i++) {
+				if (tokens[i].charAt(0) == '+') {
+					return searchAllTokens(deck, tokens.slice(0, i)) && searchAllTokens(deck, tokens.slice(i + 1));
+				}
+				if (tokens[i] == "or") {
+					return searchAllTokens(deck, tokens.slice(0, i)) || searchAllTokens(deck, tokens.slice(i + 1));
+				}
+			}
+
+			for (let token of tokens) {
+				if (token.charAt(0) == '-') {
+					return !searchToken(deck, token.substring(1)) && (tokens.length == 1 ? true : searchAllTokens(deck, tokens.slice(1)));
+				}
+				if (token.charAt(0) == '(') {
+					return searchAllTokens(deck, tokenizeTerms(token.substring(1, token.length - 1))) && (tokens.length == 1 ? true : searchAllTokens(deck, tokens.slice(1)));
+				}
+				else {
+					return searchToken(deck, token) && (tokens.length == 1 ? true : searchAllTokens(deck, tokens.slice(1)));
+				}
+			}
+		}
+
+		function removeDuplicateChars(str) {
+			let ret_str = '';
+
+			for (const c of str) {
+				if (!ret_str.includes(c)) {
+					ret_str += c;
+				}
+			}
+
+			return ret_str;
+		}
+
+		function searchToken(deck, token) {
+			let deck_stats = [];
+
+			for (var key in deck) {
+				if (isNaN(deck[key])) {
+					deck_stats[key] = deck[key].toLowerCase();
+				}
+				else {
+					deck_stats[key] = deck[key];
+				}
+			}
+
+			const deck_name = deck_stats.name;
+			const decklist = atob(deck.url.split(";")[1].split("&main")[0]).toLowerCase();
+			// console.log(dec  klist);
+			const deck_user = deck_stats.user;
+			let deck_color = "";
+			if (deck_stats.colors) {
+				deck_color = deck_stats.colors;
+			}
+
+			let color_map = new Map([
+				["azorius", "wu"],
+				["dimir", "ub"],
+				["rakdos", "br"],
+				["gruul", "rg"],
+				["selesnya", "gw"],
+				["orzhov", "wb"],
+				["golgari", "bg"],
+				["simic", "gu"],
+				["izzet", "ur"],
+				["boros", "rw"],
+				["esper", "wub"],
+				["grixis", "ubr"],
+				["jund", "brg"],
+				["naya", "rgw"],
+				["bant", "gwu"],
+				["abzan", "wbg"],
+				["sultai", "bgu"],
+				["temur", "gur"],
+				["jeskai", "urw"],
+				["mardu", "rwb"],
+			]);
+
+			token = token.replaceAll("~", deck_name).replaceAll("cardname", deck_name).replaceAll('"', '').replaceAll('“', '').replaceAll('”', '');
+
+			const modifierRegex = /[!:<>=]+/g;
+			const match = token.match(modifierRegex);
+
+			if (match) {
+				const modifier = match[0];
+				const term = token.substring(0, token.indexOf(modifier));
+				let check = token.substring(token.indexOf(modifier) + modifier.length);
+
+				if (check.charAt(0) == '/') {
+					check = check.substring(1);
+				}
+				if (check.charAt(check.length - 1) == '/') {
+					check = check.substring(0, check.length - 1);
 				}
 
-				window.location.href = url;
+
+				// availableTokens = ["mv", "c", "ci", "t", "o", "pow", "tou", "r", "is"]
+
+				/* template
+				if (term == "mv")
+				{
+					if (modifier == "!" || modifier == "=")
+					{
+
+					}
+					else if (modifier == ":")
+					{
+
+					}
+					else if (modifier == "<")
+					{
+
+					}
+					else if (modifier == ">")
+					{
+
+					}
+				} */
+				if (term == "c" || term == "card") {
+					if (modifier == "!" || modifier == "=" || modifier == ":") {
+						return decklist.includes(check);
+					}
+					// unsupported flows: 
+					// else if (modifier == "<")
+					// {
+
+					// }
+					// else if (modifier == ">")
+					// {
+
+					// }
+				}
+				if (term == "user") {
+					if (modifier == "!" || modifier == "=") {
+						return deck_user == check;
+					}
+					else if (modifier == ":") {
+						return deck_user.includes(check);
+					}
+					// else if (modifier == "<")
+					// {
+
+					// }
+					// else if (modifier == ">")
+					// {
+
+					// }
+				}
+				if (term == "color" || term == "colors") {
+					if (modifier == "!" || modifier == "=") {
+						return deck_color == check;
+					}
+					else if (modifier == ":") {
+						return deck_color.includes(check);
+					}
+					else if (modifier == "<") {
+						return deck_color < check;
+					}
+					else if (modifier == ">") {
+						return deck_color > check;
+					}
+				}
+				if (term == "event") {
+					console.log("event", deck.event, modifier);
+					if (modifier == "!" || modifier == "=" || modifier == ":") {
+						return deck.event ? deck.event.toLowerCase().includes(check) : false;
+					}
+				}
 			}
-        </script>
-        <script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-            import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-            // https://firebase.google.com/docs/web/setup#available-libraries
-            
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-                apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-                authDomain: "voyager-78e30.firebaseapp.com",
-                projectId: "voyager-78e30",
-                storageBucket: "voyager-78e30.firebasestorage.app",
-                messagingSenderId: "411191248476",
-                appId: "1:411191248476:web:591349be169d823e5f8899",
-                measurementId: "G-TQ1L48F25M"
-            };
 
-            const color_bgs = {
-                white: "#"
-            }
-            
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
-            let username = "";
-            let password = "";
-            let admin = false;
-            let sessionid = localStorage.getItem('settings.session');
-            let decks = {};
-            const events = ["GP2", "League"];
-            let urlParams = new URLSearchParams(window.location.search);
-            let card_list;
-            let card_list_arrayified;
+			const tl = token.length;
 
-            await fetch('/lists/all-cards.json')
-                .then(response => response.json())
-                .then(json => {
-                    card_list = json;
-            }).catch(error => console.error('Error:', error));
+			if (token.substring(0, 2) == "[[" && token.substring(tl - 2) == "]]") {
+				console.log("card", token)
+				return decklist.includes(token.split("[[")[1].split("]]")[0].toLowerCase())
+			}
 
-            card_list_arrayified = card_list.cards;
+			return deck_name.includes(token);
+		}
 
-            if (sessionid) {
-                await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-                    let data = docSnap.data();
-                    username = data.username;
-                    password = data.password;
-                });
+		function isDecimal(char) {
+			return char >= '0' && char <= '9';
+		}
 
-                await getDoc(doc(db, 'users', username)).then(docSnap => {
-                    let data = docSnap.data();
-                    decks = JSON.parse(data.decks);
-                    admin = data.admin;
-                });
-            }
+		function tokenize(text) {
+			let tokens = [];
 
-            document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+			for (let i = 0; i < text.length; i++) {
+				if (i < text.length - 1) {
+					if (text[i + 1] == '/') {
+						tokens.push(text.substring(i, i + 3));
+						i = i + 2;
+					}
+					else if (isDecimal(text[i]) && isDecimal(text[i + 1])) {
+						tokens.push(text.substring(i, i + 2));
+						i = i + 1;
+					}
+					else {
+						tokens.push(text[i]);
+					}
+				}
+				else {
+					tokens.push(text[i]);
+				}
+			}
 
-            
-            async function reload() {
-                let date = new Date();
-                document.getElementById("search").value = urlParams.get("search");
-                    let q = query(collection(db, "users"));
-                    const all_users = await getDocs(q);
-                    const all_decks = [];
-                    all_users.forEach((doc) => {
-                        const data = doc.data();
-                        for (const deck of JSON.parse(data.decks)) {
-                            all_decks.push({...deck, "user": data.username})
-                        }
-                        // all_decks.push(...JSON.parse(data.decks));
-                    });
-                    q = query(collection(db, "events"));
-                    const all_events_docs = await getDocs(q);
-                    const all_events = [];
-                    all_events_docs.forEach((doc) => {
-                        const data = doc.data();
-                        all_events.push(data);
-                        for (const user in JSON.parse(data.decks)) {
-                            let deck = JSON.parse(data.decks)[user];
-                            all_decks.push({...deck, "user": user, "event": data.name});
-                        }
-                    });
-                    console.log(all_decks);
-                // const all_decks = JSON.parse(LZString.decompress(localStorage.getItem("info.alldecks")));
-                document.getElementById("search-btn").addEventListener("click", (e) => {
-                    let url = (window.location.href.indexOf("?") == -1 ? new URL(window.location.href) : new URL(window.location.href.substring(0, window.location.href.indexOf("?"))));
-                    history.pushState({}, '', url.pathname + `?search=${document.getElementById('search').value}`);
-                    urlParams = new URLSearchParams(window.location.search);
-                    search(all_decks);
-                });
-                document.getElementById("search").addEventListener("keypress", function(event) {
-                    if (event.key === "Enter") {
-                        event.preventDefault();
-                        let url = (window.location.href.indexOf("?") == -1 ? new URL(window.location.href) : new URL(window.location.href.substring(0, window.location.href.indexOf("?"))));
-                        history.pushState({}, '', url.pathname + `?search=${document.getElementById('search').value}`);
-                        urlParams = new URLSearchParams(window.location.search);
-                        search(all_decks);
-                    }
-                });
-                search(all_decks);
-                // await getDoc(doc(db, 'users', username)).then(async docSnap => {
-                //     let user_data = docSnap.data();
-                //     // firebase code
-                // }); 
-            }
+			return tokens;
+		}
 
-            function search(all_decks) {
-                let searchTerms = document.getElementById("search").value.toLowerCase();
-                let search_results = [];
+		reload();
 
-                let deckGrid = document.getElementById("deckGrid");
-                deckGrid.innerHTML = "";
+	</script>
+</body>
 
-                for (const deck of all_decks) {
-                    let searched = searchAllTokens(deck, tokenizeTerms(searchTerms));
-
-                    if (searched)
-                    {
-                        search_results.push(deck);
-                    }
-                }
-
-                for (let i = 0; i < search_results.length; i++)
-                {
-                    const imgContainer = document.createElement("div");
-                    const deck = search_results[i];
-                    const id = deck.url;
-                    const card_sr_grid = gridifyDeck(search_results[i]);
-
-                    deckGrid.appendChild(card_sr_grid);
-                }
-            }
-
-            function gridifyDeck(deck) {
-                const container = document.createElement("div");
-                container.className = "deck-container";
-                const preview_img = document.createElement("img");
-                let card_stats;
-                for (const card of card_list_arrayified) {
-                    if (deck.previewimg == card.card_name) {
-                        card_stats = card;
-                        break;
-                    }
-                }
-                preview_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
-                preview_img.className = "deck-preview-img";
-                preview_img.onclick = function() {
-                    window.location.href = `/deckbuilder?deck=${deck.user}-${deck.name}`
-                }
-                const deck_name = document.createElement("div");
-                deck_name.className = "deck-name";
-                deck_name.innerText = deck.name;
-
-                container.appendChild(deck_name);
-                container.appendChild(preview_img);
-                return container;
-            }
-
-
-            function tokenizeTerms(searchTerms)
-            {
-                let tokenRegex = /-?\w*[!:<>=]?(([^ \[\]"\(\)\/“”]+)|(\".+?\")|(\[.+\])|(\(.+?\))|(\/.+?\/)|(\“.+?\”))/g;
-                let searchTokens = searchTerms.match(tokenRegex);
-
-                return searchTokens;
-            }
-
-            function searchAllTokens(deck, tokens)
-            {
-                if (tokens == null || tokens == '')
-                {
-                    return true;
-                }
-                for (let i = 0; i < tokens.length; i++)
-                {
-                    if (tokens[i].charAt(0) == '+')
-                    {
-                        return searchAllTokens(deck, tokens.slice(0, i)) && searchAllTokens(deck, tokens.slice(i + 1));
-                    }
-                    if (tokens[i] == "or")
-                    {
-                        return searchAllTokens(deck, tokens.slice(0, i)) || searchAllTokens(deck, tokens.slice(i + 1));
-                    }
-                }
-
-                for (let token of tokens)
-                {
-                    if (token.charAt(0) == '-')
-                    {
-                        return !searchToken(deck, token.substring(1)) && (tokens.length == 1 ? true : searchAllTokens(deck, tokens.slice(1)));
-                    }
-                    if (token.charAt(0) == '(')
-                    {
-                        return searchAllTokens(deck, tokenizeTerms(token.substring(1, token.length - 1))) && (tokens.length == 1 ? true : searchAllTokens(deck, tokens.slice(1)));
-                    }
-                    else
-                    {
-                        return searchToken(deck, token) && (tokens.length == 1 ? true : searchAllTokens(deck, tokens.slice(1)));
-                    }
-                }
-            }
-
-            function removeDuplicateChars(str)
-            {
-                let ret_str = '';
-
-                for (const c of str)
-                {
-                    if (!ret_str.includes(c))
-                    {
-                        ret_str += c;
-                    }
-                }
-
-                return ret_str;
-            }
-
-            function searchToken(deck, token) 
-            {
-                let deck_stats = [];
-
-                for (var key in deck)
-                {
-                    if (isNaN(deck[key]))
-                    {
-                        deck_stats[key] = deck[key].toLowerCase();
-                    }
-                    else
-                    {
-                        deck_stats[key] = deck[key];
-                    }
-                }
-
-                const deck_name = deck_stats.name;
-                const decklist = atob(deck.url.split(";")[1].split("&main")[0]).toLowerCase();
-                // console.log(dec  klist);
-                const deck_user = deck_stats.user;  
-                let deck_color = "";
-                if (deck_stats.colors) {
-                    deck_color = deck_stats.colors;
-                }
-
-                let color_map = new Map([
-                    ["azorius", "wu"],
-                    ["dimir", "ub"],
-                    ["rakdos", "br"],
-                    ["gruul", "rg"],
-                    ["selesnya", "gw"],
-                    ["orzhov", "wb"],
-                    ["golgari", "bg"],
-                    ["simic", "gu"],
-                    ["izzet", "ur"],
-                    ["boros", "rw"],
-                    ["esper", "wub"],
-                    ["grixis", "ubr"],
-                    ["jund", "brg"],
-                    ["naya", "rgw"],
-                    ["bant", "gwu"],
-                    ["abzan", "wbg"],
-                    ["sultai", "bgu"],
-                    ["temur", "gur"],
-                    ["jeskai", "urw"],
-                    ["mardu", "rwb"],
-                ]);
-
-                token = token.replaceAll("~", deck_name).replaceAll("cardname", deck_name).replaceAll('"','').replaceAll('“','').replaceAll('”','');
-
-                const modifierRegex = /[!:<>=]+/g;
-                const match = token.match(modifierRegex);
-
-                if (match)
-                {
-                    const modifier = match[0];
-                    const term = token.substring(0, token.indexOf(modifier));
-                    let check = token.substring(token.indexOf(modifier) + modifier.length);
-
-                    if (check.charAt(0) == '/')
-                    {
-                        check = check.substring(1);
-                    }
-                    if (check.charAt(check.length - 1) == '/')
-                    {
-                        check = check.substring(0,check.length - 1);
-                    }
-
-
-                    // availableTokens = ["mv", "c", "ci", "t", "o", "pow", "tou", "r", "is"]
-
-                    /* template
-                    if (term == "mv")
-                    {
-                        if (modifier == "!" || modifier == "=")
-                        {
-
-                        }
-                        else if (modifier == ":")
-                        {
-
-                        }
-                        else if (modifier == "<")
-                        {
-
-                        }
-                        else if (modifier == ">")
-                        {
-
-                        }
-                    } */
-                    if (term == "c" || term == "card")
-                    {
-                        if (modifier == "!" || modifier == "=" || modifier == ":")
-                        {
-                            return decklist.includes(check);
-                        }
-                        // unsupported flows: 
-                        // else if (modifier == "<")
-                        // {
-
-                        // }
-                        // else if (modifier == ">")
-                        // {
-
-                        // }
-                    }
-                    if (term == "user")
-                    {
-                        if (modifier == "!" || modifier == "=")
-                        {
-                            return deck_user == check;
-                        }
-                        else if (modifier == ":")
-                        {
-                            return deck_user.includes(check);
-                        }
-                        // else if (modifier == "<")
-                        // {
-
-                        // }
-                        // else if (modifier == ">")
-                        // {
-
-                        // }
-                    }
-                    if (term == "color" || term == "colors")
-                    {
-                        if (modifier == "!" || modifier == "=")
-                        {
-                            return deck_color == check;
-                        }
-                        else if (modifier == ":")
-                        {
-                            return deck_color.includes(check);
-                        }
-                        else if (modifier == "<")
-                        {
-                            return deck_color < check;
-                        }
-                        else if (modifier == ">")
-                        {
-                            return deck_color > check;
-                        }
-                    }
-                    if (term == "event") {
-                        console.log("event", deck.event, modifier);
-                        if (modifier == "!" || modifier == "=" || modifier == ":") {
-                            return deck.event ? deck.event.toLowerCase().includes(check) : false;
-                        }
-                    }
-                }   
-
-                const tl = token.length;
-                
-                if (token.substring(0, 2) == "[[" && token.substring(tl - 2) == "]]")
-                {
-                    console.log("card", token)
-                    return decklist.includes(token.split("[[")[1].split("]]")[0].toLowerCase())
-                }
-                    
-                return deck_name.includes(token);
-            }
-
-            function isDecimal(char) {
-                return char >= '0' && char <= '9';
-            }
-
-            function tokenize(text) {
-                let tokens = [];
-
-                for (let i = 0; i < text.length; i++)
-                {
-                    if (i < text.length - 1)
-                    {
-                        if (text[i + 1] == '/')
-                        {
-                            tokens.push(text.substring(i, i + 3));
-                            i = i + 2;
-                        }
-                        else if (isDecimal(text[i]) && isDecimal(text[i + 1]))
-                        {
-                            tokens.push(text.substring(i, i + 2));
-                            i = i + 1;
-                        }
-                        else
-                        {
-                            tokens.push(text[i]);
-                        }
-                    }
-                    else
-                    {
-                        tokens.push(text[i]);
-                    }
-                }
-
-                return tokens;
-            }
-
-            reload();
-
-        </script>
-    </body>
 </html>

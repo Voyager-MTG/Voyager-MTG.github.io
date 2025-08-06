@@ -1,164 +1,242 @@
 ﻿<html>
-	<head>
-	  <title>All Sets</title>
-	  <link rel="icon" type="image/x-icon" href="/img/header/sets.png">
-	  <link rel="stylesheet" href="/resources/mana.css">
-	  <link rel="stylesheet" href="/resources/header.css">
-	</head>
-	<style>
-		@font-face {
-			font-family: 'Beleren Small Caps';
-			src: url('/resources/beleren-caps.ttf');
-		}
-		@font-face {
-			font-family: Beleren;
-			src: url('/resources/beleren.ttf');
-		}
-		body {
-			font-family: 'Helvetica', 'Arial', sans-serif;
-			overscroll-behavior: none;
-			margin: 0px;
-			background-color: #f3f3f3;
-			font-size: 20px;
-			padding-bottom: 30px;
-			background-attachment: fixed;
-			background-size: cover;
-		}
-		a {
-			text-decoration: none;
-			color: #171717;
-		}
-		.set-table {
-			width: 60%;
-			max-width: 1000px;
-			display: grid;
-			grid-template-columns: 1fr;
-			padding-top: 20px;
-			margin: auto;
-		}
-		.set-header-row {
-			width: 100%;
-			display: grid;
-			grid-template-columns: 0.5fr 2.5fr 0.5fr 0.5fr;
-			gap: 5px;
-			font-weight: bold;
-			padding-bottom: 10px;
-		}
-		.set-row {
-			height: 6em;
-			width: 100%;
-			display: grid;
-			grid-template-columns: 0.5fr 2.5fr 0.5fr 0.5fr;
-			gap: 5px;
-			align-items: center;
-			border-top: 1px solid #171717;
-		}
-		.set-row:hover {
-			background-color: #fafafa;
-		}
-		.set-row:nth-child(2n) {
-		  background-color: #dedede;
-		}
-		.set-row:nth-child(2n):hover {
-			background-color: #e6e6e6;
-		}
-		.set-row img {
-			width: 70%;
-			justify-self: center;
-		}
-		.set-title {
-			font-family: Beleren;
-			letter-spacing: .02em;
-			font-size: 22px;
-		}
-		.set-group {
-			font-family: Beleren Small Caps;
-			text-align: center;
-			font-size: 40px;
-			padding-top: 20px;
-		}
-		.set-icon-container {
-			font-family: 'Beleren Small Caps';
-			font-size: 20px;
-			text-align: center;
-			display: grid;
-			justify-items: center;
-			align-items: center;
-			gap: 2px;
-			width: 100%;
-			/* height: 100%; */
-		}
-		.set-icon-container a {
-			text-decoration: none;
-			color: #171717;
-			/* height: 100%; */
-		}
-		.set-icon {
-			/* height: 60px; */
-			display: grid;
-			align-items: center;
-			justify-items: center;
-		}
-		.set-icon img {
-			width: 10vw;
-			transition: 0.3s;
-		}
-		.set-icon img:hover {
-			filter: brightness(0.6);
-		}
-		hr {
-			width: 90%;
-		}
-		.set-info-container {
-			width: 100%;
-			text-align: center;
-		}
-		.set-area {
-			display: grid;
-			grid-template-columns: repeat(7, 1fr);
-			/* grid-auto-rows: 0.01fr 50px; */
-			align-items: center;
-			justify-items: center;
-			width: 80%;
-			margin-left: 10%;
-			gap: 8px;
-			margin-bottom: 20px;
-		}
-		.set-icon-name {
-			margin-top: 10px;
-			font-size: 1.2em;
-		}
-		.area-header {
-			font-family: beleren;
-			font-size: 75px;
-			text-align: center;
-			width: 100%;
-			margin-bottom: 15px;
-			display: inline-block;
-		}
-		.top-divider {
-			height: 3px;
-			width: 70%;
-			margin: auto;
-		}
-	</style>
-	<style id="text-style">
-		.text {
-			color: white;
-		}
-    </style>
-	<body>
-		<div class="header">
+
+<head>
+	<title>All Sets</title>
+	<link rel="icon" type="image/x-icon" href="/img/header/sets.png">
+	<link rel="stylesheet" href="/resources/mana.css">
+	<link rel="stylesheet" href="/resources/header.css">
+</head>
+<style>
+	@font-face {
+		font-family: 'Beleren Small Caps';
+		src: url('/resources/beleren-caps.ttf');
+	}
+
+	@font-face {
+		font-family: Beleren;
+		src: url('/resources/beleren.ttf');
+	}
+
+	body {
+		font-family: 'Helvetica', 'Arial', sans-serif;
+		overscroll-behavior: none;
+		margin: 0px;
+		background-color: #f3f3f3;
+		font-size: 20px;
+		padding-bottom: 30px;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+
+	a {
+		text-decoration: none;
+		color: #171717;
+	}
+
+	.set-table {
+		width: 60%;
+		max-width: 1000px;
+		display: grid;
+		grid-template-columns: 1fr;
+		padding-top: 20px;
+		margin: auto;
+	}
+
+	.set-header-row {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 0.5fr 2.5fr 0.5fr 0.5fr;
+		gap: 5px;
+		font-weight: bold;
+		padding-bottom: 10px;
+	}
+
+	.set-row {
+		height: 6em;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 0.5fr 2.5fr 0.5fr 0.5fr;
+		gap: 5px;
+		align-items: center;
+		border-top: 1px solid #171717;
+	}
+
+	.set-row:hover {
+		background-color: #fafafa;
+	}
+
+	.set-row:nth-child(2n) {
+		background-color: #dedede;
+	}
+
+	.set-row:nth-child(2n):hover {
+		background-color: #e6e6e6;
+	}
+
+	.set-row img {
+		width: 70%;
+		justify-self: center;
+	}
+
+	.set-title {
+		font-family: Beleren;
+		letter-spacing: .02em;
+		font-size: 22px;
+	}
+
+	.set-group {
+		font-family: Beleren Small Caps;
+		text-align: center;
+		font-size: 40px;
+		padding-top: 20px;
+	}
+
+	.set-icon-container {
+		font-family: 'Beleren Small Caps';
+		font-size: 20px;
+		text-align: center;
+		display: grid;
+		justify-items: center;
+		align-items: center;
+		gap: 2px;
+		width: 100%;
+		/* height: 100%; */
+	}
+
+	.set-icon-container a {
+		text-decoration: none;
+		color: #171717;
+		/* height: 100%; */
+	}
+
+	.set-icon {
+		/* height: 60px; */
+		display: grid;
+		align-items: center;
+		justify-items: center;
+	}
+
+	.set-icon img {
+		width: 10vw;
+		transition: 0.3s;
+	}
+
+	.set-icon img:hover {
+		filter: brightness(0.6);
+	}
+
+	hr {
+		width: 90%;
+	}
+
+	.set-info-container {
+		width: 100%;
+		text-align: center;
+	}
+
+	.set-area {
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		/* grid-auto-rows: 0.01fr 50px; */
+		align-items: center;
+		justify-items: center;
+		width: 80%;
+		margin-left: 10%;
+		gap: 8px;
+		margin-bottom: 20px;
+	}
+
+	.set-icon-name {
+		margin-top: 10px;
+		font-size: 1.2em;
+	}
+
+	.area-header {
+		font-family: beleren;
+		font-size: 75px;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 15px;
+		display: inline-block;
+	}
+
+	.top-divider {
+		height: 3px;
+		width: 70%;
+		margin: auto;
+	}
+
+	.community .community-dropdown {
+		display: none;
+	}
+
+	.community:hover .community-dropdown {
+		display: grid;
+	}
+
+	/* .community-dropdown:hover {
+		display: grid;
+	} */
+
+	.community-dropdown {
+		grid-template-rows: repeat(4, 1fr);
+		color: white;
+		position: absolute;
+		padding-top: 20px;
+		background-color: #171717;
+		padding: 10px;
+		width: 120px;
+		gap: 5px;
+		font-size: 0.85em;
+	}
+
+	.community-dropdown-item {
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		gap: 5px;
+	}
+
+	.community-dropdown-item:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.dropdown-icon {
+		max-height: 1em;
+	}
+</style>
+<style id="text-style">
+	.text {
+		color: white;
+	}
+</style>
+
+<body>
+	<div class="header">
 		<div class="search-grid">
 			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
 			<img class="sg-icon" src="/img/header/search.png">
-			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false"
+				autocomplete="off" autocorrect="off" spellcheck="false">
 			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
 			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
 			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
-			<a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>
+			<div class="community"><a href="/community" id="account-link"><img src="/img/header/community.png"
+						class="sg-icon">Community<b>⮟</b></a>
+				<div class="community-dropdown">
+					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/header/community.png">Users</a>
+					<a href="/community?tab=decks" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/header/deck.png">Decks</a>
+					<a href="/community?tab=events" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/swords.png">Events</a>
+					<a href="/community?tab=cards" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/header/sets.png">Cards</a>
+				</div>
+			</div>
 			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
-                <a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
+			<a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
 		</div>
 	</div>
 	<div class="page-container" id="page-container">
@@ -176,47 +254,47 @@
 		let displayStyle = "";
 
 		document.addEventListener("DOMContentLoaded", async function () {
-				await fetch('/lists/all-cards.json')
-					.then(response => response.json())
-					.then(json => {
-						card_list = json;
+			await fetch('/lists/all-cards.json')
+				.then(response => response.json())
+				.then(json => {
+					card_list = json;
 				}).catch(error => console.error('Error:', error));
 
-				await fetch('/lists/all-sets.json')
-					.then(response => response.json())
-					.then(json => {
-						set_list = json;
+			await fetch('/lists/all-sets.json')
+				.then(response => response.json())
+				.then(json => {
+					set_list = json;
 				}).catch(error => console.error('Error:', error));
 
-				await fetch('/resources/replacechars.txt')
-					.then(response => response.text())
-					.then(text => {
-						specialchars = text; 
+			await fetch('/resources/replacechars.txt')
+				.then(response => response.text())
+				.then(text => {
+					specialchars = text;
 				}).catch(error => console.error('Error:', error));
 
-				card_list_arrayified = card_list.cards;
-				set_list_arrayified = set_list.sets;
+			card_list_arrayified = card_list.cards;
+			set_list_arrayified = set_list.sets;
 
-				try {
-                    const response = await fetch('/resources/gradients.json');
-                    raw_gradients = await response.json();
-                }
-                catch(error) {
-                    console.error('Error:', error);
-                }
+			try {
+				const response = await fetch('/resources/gradients.json');
+				raw_gradients = await response.json();
+			}
+			catch (error) {
+				console.error('Error:', error);
+			}
 
-                gradients = raw_gradients.gradients;
-				card_backgrounds = raw_gradients.cards;
-                setGradient(localStorage.getItem("settings.gradient"));
-                // prepareGradients();
-				
-				generateHTML();
+			gradients = raw_gradients.gradients;
+			card_backgrounds = raw_gradients.cards;
+			setGradient(localStorage.getItem("settings.gradient"));
+			// prepareGradients();
+
+			generateHTML();
 		});
 
 		function generateHTML() {
 			generateSetHTML();
 		}
-		
+
 		function generateSetHTML() {
 			let set_counts = {}
 			for (const card of card_list_arrayified) {
@@ -264,7 +342,7 @@
 			link.appendChild(set_icon);
 			link.appendChild(set_icon_name);
 			container.appendChild(link);
-			
+
 			return container;
 		}
 
@@ -281,7 +359,7 @@
 
 			container.appendChild(divider);
 			container.appendChild(set_icon_info);
-			
+
 			return container;
 		}
 
@@ -289,82 +367,79 @@
 			return char >= '0' && char <= '9';
 		}
 
-		function setGradient(gradient=false) {
-				let artistCredit = "";
-				if (!gradient) { 
-					gradient = document.getElementById("color-select").value;
-				}
+		function setGradient(gradient = false) {
+			let artistCredit = "";
+			if (!gradient) {
+				gradient = document.getElementById("color-select").value;
+			}
 
-				gradTop = "#000000";
-				gradBottom = "#FFFFFF";
-				for (const grad of gradients)
-				{
-					if (gradient == grad.name.replace(' ', '-'))
-					{ 	
-						gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
-					}
+			gradTop = "#000000";
+			gradBottom = "#FFFFFF";
+			for (const grad of gradients) {
+				if (gradient == grad.name.replace(' ', '-')) {
+					gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
 				}
+			}
 
-				for (const background in card_backgrounds) {
-					if (gradient == background.replace(' ', '-'))
-					{ 	
-						gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-						artistCredit = card_backgrounds[background][0];
-						setTextColor(card_backgrounds[background][1]);
-					}
-				}
-
-				if (gradient == "Random-Card") {
-					const bgs = Object.keys(card_backgrounds);
-					const background = bgs[reallyRand(bgs.length)];
+			for (const background in card_backgrounds) {
+				if (gradient == background.replace(' ', '-')) {
 					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
 					artistCredit = card_backgrounds[background][0];
 					setTextColor(card_backgrounds[background][1]);
 				}
-
-				
-				document.body.style.backgroundImage = gradImage;
-				localStorage.setItem("settings.gradient", gradient);
-				console.log("CHANGE");
-				if (document.getElementsByClassName("artist-credit")[0])
-					document.getElementsByClassName("artist-credit")[0].remove();
-				const credit_text = document.createElement("span");
-				credit_text.className = "artist-credit text";
-				credit_text.innerText = `background by ${artistCredit}`;
-				if (artistCredit && document.getElementById("color-select"))
-					document.getElementById("color-select").parentElement.appendChild(credit_text);
 			}
 
-function reallyRand(x, seed = false) {
-				const date = new Date();
-				seed = seed ? seed : date.getUTCFullYear() * 10000 + 
-							 date.getUTCMonth() * 100 + 
-							 date.getUTCDate();
-
-				const a = 1103515245;
-				const c = 12345;
-				const m = Math.pow(2, 31);
-
-				let randomNumber = (a * seed + c) % m;
-				randomNumber = randomNumber / m;
-
-				return Math.floor(randomNumber * x);
-			}
-
-function setTextColor(c = false) {
-				if (c) {
-					localStorage.setItem("settings.textcolor", c);
-				}
-				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            	document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+			if (gradient == "Random-Card") {
+				const bgs = Object.keys(card_backgrounds);
+				const background = bgs[reallyRand(bgs.length)];
+				gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
+				artistCredit = card_backgrounds[background][0];
+				setTextColor(card_backgrounds[background][1]);
 			}
 
 
-		document.getElementById("search").addEventListener("keypress", function(event) {
-		  if (event.key === "Enter") {
+			document.body.style.backgroundImage = gradImage;
+			localStorage.setItem("settings.gradient", gradient);
+			console.log("CHANGE");
+			if (document.getElementsByClassName("artist-credit")[0])
+				document.getElementsByClassName("artist-credit")[0].remove();
+			const credit_text = document.createElement("span");
+			credit_text.className = "artist-credit text";
+			credit_text.innerText = `background by ${artistCredit}`;
+			if (artistCredit && document.getElementById("color-select"))
+				document.getElementById("color-select").parentElement.appendChild(credit_text);
+		}
+
+		function reallyRand(x, seed = false) {
+			const date = new Date();
+			seed = seed ? seed : date.getUTCFullYear() * 10000 +
+				date.getUTCMonth() * 100 +
+				date.getUTCDate();
+
+			const a = 1103515245;
+			const c = 12345;
+			const m = Math.pow(2, 31);
+
+			let randomNumber = (a * seed + c) % m;
+			randomNumber = randomNumber / m;
+
+			return Math.floor(randomNumber * x);
+		}
+
+		function setTextColor(c = false) {
+			if (c) {
+				localStorage.setItem("settings.textcolor", c);
+			}
+			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+		}
+
+
+		document.getElementById("search").addEventListener("keypress", function (event) {
+			if (event.key === "Enter") {
 				event.preventDefault();
 				search();
-		  }
+			}
 		});
 
 		function search() {
@@ -374,21 +449,22 @@ function setTextColor(c = false) {
 		}
 
 		function randomCard() {
-				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
-				let random_card = card_list_arrayified[i];
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
 
-				const url = new URL('card', window.location.origin);
-				const params = {
-					set: random_card.set,
-					num: random_card.number,
-					name: random_card.card_name
-				}
-				for (const key in params) {
-					url.searchParams.append(key, params[key]);
-				}
-
-				window.location.href = url;
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
 			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+
+			window.location.href = url;
+		}
 	</script>
 </body>
+
 </html>

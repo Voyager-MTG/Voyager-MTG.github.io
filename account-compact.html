@@ -1,74 +1,126 @@
 <html>
-    <head>
-        <title>Login</title>
-        <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-        <link rel="stylesheet" href="resources/mana.css">
-        <link rel="stylesheet" href="/resources/header.css">
-    </head>
-    <style>
-        @font-face {
+
+<head>
+	<title>Login</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
+	<link rel="stylesheet" href="resources/mana.css">
+	<link rel="stylesheet" href="/resources/header.css">
+</head>
+<style>
+	.community .community-dropdown {
+		display: none;
+	}
+
+	.community:hover .community-dropdown {
+		display: grid;
+	}
+
+	/* .community-dropdown:hover {
+		display: grid;
+	} */
+
+	.community-dropdown {
+		grid-template-rows: repeat(4, 1fr);
+		color: white;
+		position: absolute;
+		padding-top: 20px;
+		background-color: #171717;
+		padding: 10px;
+		width: 120px;
+		gap: 5px;
+		font-size: 0.85em;
+	}
+
+	.community-dropdown-item {
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		gap: 5px;
+	}
+
+	.community-dropdown-item:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.dropdown-icon {
+		max-height: 1em;
+	}
+
+	@font-face {
 		font-family: Beleren;
 		src: url('/resources/beleren.ttf');
-        }
-        body {
-            font-family: 'Helvetica', 'Arial', sans-serif;
-            overscroll-behavior: none;
-            margin: 0px;
-            background-color: #bbbbbb;
-            display: block;
-            /* overflow-y: scroll; */
-            height: 100%;
-            background-attachment: fixed;
+	}
+
+	body {
+		font-family: 'Helvetica', 'Arial', sans-serif;
+		overscroll-behavior: none;
+		margin: 0px;
+		background-color: #bbbbbb;
+		display: block;
+		/* overflow-y: scroll; */
+		height: 100%;
+		background-attachment: fixed;
 		background-size: cover;
-        }
-        .search-grid {
-		    justify-content: center;
-        }
-        .sg-icon {
-            cursor: pointer;
-        }
-        select {
-            position: absolute;
-            text-align: center;
-            font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-            font-weight: 500;
-            cursor: pointer;
-            background-color: #F3F3F3;
-            padding: 2px;
-	    }
-        .selects {
-		    position: absolute;
-            top: 10%;
-            left: 1%;
-	    }
-.artist-credit {
+	}
+
+	.search-grid {
+		justify-content: center;
+	}
+
+	.sg-icon {
+		cursor: pointer;
+	}
+
+	select {
+		position: absolute;
+		text-align: center;
+		font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+		font-weight: 500;
+		cursor: pointer;
+		background-color: #F3F3F3;
+		padding: 2px;
+	}
+
+	.selects {
+		position: absolute;
+		top: 10%;
+		left: 1%;
+	}
+
+	.artist-credit {
 		left: 160px;
 		position: absolute;
-                width: 240px;
+		width: 240px;
 	}
-        .page-container {
-            display: grid;
-            align-items: center;
-            justify-items: center;
-            width: 100%;
-        }
-        .username {
-            font-size: 80px;
-            /* color: white; */
-            align-items: center;
-            justify-items: center;
-            text-align: center;
-            width: 100%;
-            margin: 20px;
-            font-family: beleren;
-        }
-        .decks-container {
-            display: grid;
-            gap: 5px;
-            grid-template-columns: 2fr auto 1fr 1fr auto;
-            width: 85%;
-            margin-bottom: 20px;
-        }/*
+
+	.page-container {
+		display: grid;
+		align-items: center;
+		justify-items: center;
+		width: 100%;
+	}
+
+	.username {
+		font-size: 80px;
+		/* color: white; */
+		align-items: center;
+		justify-items: center;
+		text-align: center;
+		width: 100%;
+		margin: 20px;
+		font-family: beleren;
+	}
+
+	.decks-container {
+		display: grid;
+		gap: 5px;
+		grid-template-columns: 2fr auto 1fr 1fr auto;
+		width: 85%;
+		margin-bottom: 20px;
+	}
+
+	/*
         .collections-container {
             display: grid;
             gap: 10px;
@@ -97,53 +149,57 @@
             border-radius: 16px;
             margin-bottom: 7px;
             /* box-shadow: inset 0.2em 0.2em 0.2em 0em rgba(0, 0, 0, 0.5), inset -0.2em -0.2em 0.2em 0em rgba(0,0,0,0.5); */
-            /* padding: 0.2em; */
-            /* background-color: #777; 
+	/* padding: 0.2em; */
+	/* background-color: #777; 
         }*/
-        .deck-name {
-            font-weight: bold;
-            font-size: 24px;
-            font-family: beleren;
-            /* border: 2px solid #333; */
-            /* box-shadow: 5px 5px 2px #333;  */
-            text-align: center;
-            /* border: 2px solid black;
+	.deck-name {
+		font-weight: bold;
+		font-size: 24px;
+		font-family: beleren;
+		/* border: 2px solid #333; */
+		/* box-shadow: 5px 5px 2px #333;  */
+		text-align: center;
+		/* border: 2px solid black;
             color: white;
             background-color: rgba(0,0,0,0.5); */
-            padding: 3px;
-            border-bottom: 2px solid black;
-            color: rgb(79, 79, 189);
-            text-decoration: underline;
-            cursor: pointer;
-        }
-        .format {
-            font-size: 22px;
-            text-align: center;
-            /* border: 2px solid black;
+		padding: 3px;
+		border-bottom: 2px solid black;
+		color: rgb(79, 79, 189);
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.format {
+		font-size: 22px;
+		text-align: center;
+		/* border: 2px solid black;
             color: white;
             background-color: rgba(0,0,0,0.5); */
-            padding: 3px;
-            border-bottom: 2px solid black;
-        }
-        .colors {
-            font-size: 22px;
-            text-align: center;
-            /* border: 2px solid black;
+		padding: 3px;
+		border-bottom: 2px solid black;
+	}
+
+	.colors {
+		font-size: 22px;
+		text-align: center;
+		/* border: 2px solid black;
             color: white;
             background-color: rgba(0,0,0,0.5); */
-            padding: 3px;
-            border-bottom: 2px solid black;
-        }
-        .updated {
-            font-size: 22px;
-            text-align: center;
-            /* border: 2px solid black;
+		padding: 3px;
+		border-bottom: 2px solid black;
+	}
+
+	.updated {
+		font-size: 22px;
+		text-align: center;
+		/* border: 2px solid black;
             color: white;
             background-color: rgba(0,0,0,0.5); */
-            padding: 3px;
-            border-bottom: 2px solid black;
-        }
-        /*
+		padding: 3px;
+		border-bottom: 2px solid black;
+	}
+
+	/*
         .deck-buttons {
             display: grid;
             gap: 12px;
@@ -165,34 +221,38 @@
             justify-items: center;
             grid-template-columns: 1fr;
         }*/
-        .deck-icon-shadow {
-            box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5), inset -0.2em -0.2em 0.2em 0 rgba(0,0,0,0.5);
-            padding: 0.3em;
-        }
-        .deck-link {
-            /*font-family: beleren; */
-            background-color: #1652e0;
-            color: white;
-            padding: 2px 6px 2px 6px;
-            border-radius: 8px;
-            font-weight: bold;
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            align-items: center;
-            justify-items: center;
-            font-size: 28px;    
-        }  
-        .deck-section-header {
-            font-size: 60px;
-            font-weight: bold;
-            color: white; 
-            align-items: center;
-            justify-items: center;
-            text-align: center;
-            width: 100%;
-            margin: 20px;
-            font-family: beleren;
-        }/*
+	.deck-icon-shadow {
+		box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255, 255, 255, 0.5), inset -0.2em -0.2em 0.2em 0 rgba(0, 0, 0, 0.5);
+		padding: 0.3em;
+	}
+
+	.deck-link {
+		/*font-family: beleren; */
+		background-color: #1652e0;
+		color: white;
+		padding: 2px 6px 2px 6px;
+		border-radius: 8px;
+		font-weight: bold;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		align-items: center;
+		justify-items: center;
+		font-size: 28px;
+	}
+
+	.deck-section-header {
+		font-size: 60px;
+		font-weight: bold;
+		color: white;
+		align-items: center;
+		justify-items: center;
+		text-align: center;
+		width: 100%;
+		margin: 20px;
+		font-family: beleren;
+	}
+
+	/*
         .event-link {
             background-color: #1652e0;
             color: white;
@@ -213,492 +273,518 @@
             align-items: center;
             justify-items: center;
         }*/
-        .deck-icon-blue {
-            max-height:30px;
-            /* background-color: #1652e0; */
-            border-radius: 8px; 
-            padding: 5px;
-            cursor: pointer;
-        }
-        .deck-icon-red {
-            max-height:30px;
-            background-color: #e01616;
-            border-radius: 8px;
-            padding: 8px;
-            cursor: pointer;
-        }
-        .deck-icon-green {
-            max-height:30px;
-            background-color: #16e019;
-            border-radius: 8px;
-            padding: 8px;
-            cursor: pointer;
-        }
-        .deck-link-green {
-            background-color: #16e019;
-            color: white;
-            padding: 2px 6px 2px 6px;
-            border-radius: 8px;
-            font-weight: bold;
-            display: grid;
-            grid-template-columns: 5fr 1fr;
-            align-items: center;
-            justify-items: center;
-            font-size: 20px; 
-            /* border: 2px solid #333;
+	.deck-icon-blue {
+		max-height: 30px;
+		/* background-color: #1652e0; */
+		border-radius: 8px;
+		padding: 5px;
+		cursor: pointer;
+	}
+
+	.deck-icon-red {
+		max-height: 30px;
+		background-color: #e01616;
+		border-radius: 8px;
+		padding: 8px;
+		cursor: pointer;
+	}
+
+	.deck-icon-green {
+		max-height: 30px;
+		background-color: #16e019;
+		border-radius: 8px;
+		padding: 8px;
+		cursor: pointer;
+	}
+
+	.deck-link-green {
+		background-color: #16e019;
+		color: white;
+		padding: 2px 6px 2px 6px;
+		border-radius: 8px;
+		font-weight: bold;
+		display: grid;
+		grid-template-columns: 5fr 1fr;
+		align-items: center;
+		justify-items: center;
+		font-size: 20px;
+		/* border: 2px solid #333;
             box-shadow: 2px 2px 1px #333; */
-        }
-        .deck-link-green .deck-icon-green {
-            background-color: rgba(0,0,0,0);
-        } 
-        hr {
-            width: 85%;
-            height: 4px;
-            background-color: black;
-            border-radius: 2px;
-            border: none;
-        }
-        .mana-img {
-            max-height: 22px;
-        }
-        .deck-icon {
-            max-height: 24px;
-            position: relative;
-            top: 15%;
-            cursor: pointer;
-        }
-        .deck-icon-container {
-            border-bottom: 2px solid black;
-            align-items: center;
-            justify-self: center;
-        }
-        .mana-img-dark {
-            max-height: 22px;
-            filter: brightness(0.5);
-        }
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            margin-left: 30px;
-        }
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        #modal-container {
-            display: none; 
-            position: fixed; 
-            z-index: 1; 
-            padding-top: 70px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto; 
-            background-color: rgb(0,0,0); 
-            background-color: rgba(0,0,0,0.4); 
-        }
-        #modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 50%;
-            border-radius: 10px;
-            border: solid #777 3px;
-        }
-    </style>
-    <style id="text-style">
-        .text {
-            color: white;
-        }
-    </style>
-    <body>
-        <div class="header">
-            <div class="search-grid">
-                <a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-                <img class="sg-icon" src="/img/header/search.png">
-                <input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
-                <a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
-                <a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
-                <a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
-                <a href="/community" id="account-link"><img src="/img/header/community.png" class="sg-icon">Community</a>            </div>
-        </div>
-        <div class="selects" id="selects">
-			<select id="color-select" onchange="setGradient()">
-			</select>
-		</div>
-        <div class="page-container">
-            <div class="top-section">
-                <div class="username text" id="username"></div>
-            </div>
-            <div class="deck-section-header text">My Decks</div>
-            <hr>
-            <div class="decks-container" id="decks">
-            </div>
-            <div class="deck-section-header text">My Collections</div>
-            <hr>
-            <div class="collections-container" id="colls">
-                <!-- test -->
-            </div>
-        </div>
-        <div id="modal-container">
-			<div id="modal-content" class="popout">
-				<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+	}
+
+	.deck-link-green .deck-icon-green {
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+	hr {
+		width: 85%;
+		height: 4px;
+		background-color: black;
+		border-radius: 2px;
+		border: none;
+	}
+
+	.mana-img {
+		max-height: 22px;
+	}
+
+	.deck-icon {
+		max-height: 24px;
+		position: relative;
+		top: 15%;
+		cursor: pointer;
+	}
+
+	.deck-icon-container {
+		border-bottom: 2px solid black;
+		align-items: center;
+		justify-self: center;
+	}
+
+	.mana-img-dark {
+		max-height: 22px;
+		filter: brightness(0.5);
+	}
+
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+		margin-left: 30px;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	#modal-container {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		padding-top: 70px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	#modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 50%;
+		border-radius: 10px;
+		border: solid #777 3px;
+	}
+</style>
+<style id="text-style">
+	.text {
+		color: white;
+	}
+</style>
+
+<body>
+	<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/header/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false"
+				autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<div class="community"><a href="/community" id="account-link"><img src="/img/header/community.png"
+						class="sg-icon">Community<b>⮟</b></a>
+				<div class="community-dropdown">
+					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/header/community.png">Users</a>
+					<a href="/community?tab=decks" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/header/deck.png">Decks</a>
+					<a href="/community?tab=events" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/swords.png">Events</a>
+					<a href="/community?tab=cards" class="community-dropdown-item"><img class="dropdown-icon"
+							src="img/header/sets.png">Cards</a>
+				</div>
 			</div>
 		</div>
-        <script>
-            let gradients = null;
-            let raw_gradients = null;
-            let gradTop = null;
-            let gradBottom = null;
-            modal = document.getElementById("modal-container");
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    document.getElementById('modal-container').style.display = 'none';
-                }
-            }
-            document.addEventListener("DOMContentLoaded", async function () {
-                try {
-                    const response = await fetch('./resources/gradients.json');
-                    raw_gradients = await response.json();
-                }
-                catch(error) {
-                    console.error('Error:', error);
-                }
-
-                gradients = raw_gradients.gradients;
-				card_backgrounds = raw_gradients.cards;
-                setGradient(localStorage.getItem("settings.gradient"));
-                console.log(setGradient);
-                prepareGradients();
-            });
-
-            function prepareGradients() {
-				let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt = document.createElement("option");
-				opt.value = defaultGradient.replace(' ', '-');
-				opt.text = defaultGradient;
-				document.getElementById("color-select").appendChild(opt);
-				let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
-				const opt_rand = document.createElement("option");
-				opt_rand.value = "Random-Card";
-				opt_rand.text = "Random Card";
-
-				document.getElementById("color-select").appendChild(opt_rand);
-				for (const gradient of gradients)
-				{	
-					const opt = document.createElement("option");
-					opt.value = gradient.name.replace(' ', '-');
-					opt.text = gradient.name;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
-				}
-
-				for (const gradient in card_backgrounds) {
-					const opt = document.createElement("option");
-					opt.value = gradient.replace(' ', '-');
-					opt.text = gradient;
-					if (gradient.name != defaultGradient) {
-						document.getElementById("color-select").appendChild(opt);
-					}
-					console.log(gradient, opt);
-				}
-
-				// setGradient();
+	</div>
+	<div class="selects" id="selects">
+		<select id="color-select" onchange="setGradient()">
+		</select>
+	</div>
+	<div class="page-container">
+		<div class="top-section">
+			<div class="username text" id="username"></div>
+		</div>
+		<div class="deck-section-header text">My Decks</div>
+		<hr>
+		<div class="decks-container" id="decks">
+		</div>
+		<div class="deck-section-header text">My Collections</div>
+		<hr>
+		<div class="collections-container" id="colls">
+			<!-- test -->
+		</div>
+	</div>
+	<div id="modal-container">
+		<div id="modal-content" class="popout">
+			<span class="close"
+				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+		</div>
+	</div>
+	<script>
+		let gradients = null;
+		let raw_gradients = null;
+		let gradTop = null;
+		let gradBottom = null;
+		modal = document.getElementById("modal-container");
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				document.getElementById('modal-container').style.display = 'none';
+			}
+		}
+		document.addEventListener("DOMContentLoaded", async function () {
+			try {
+				const response = await fetch('./resources/gradients.json');
+				raw_gradients = await response.json();
+			}
+			catch (error) {
+				console.error('Error:', error);
 			}
 
-			function setGradient(gradient=false) {
-				let artistCredit = "";
-				if (!gradient) { 
-					gradient = document.getElementById("color-select").value;
-				}
+			gradients = raw_gradients.gradients;
+			card_backgrounds = raw_gradients.cards;
+			setGradient(localStorage.getItem("settings.gradient"));
+			console.log(setGradient);
+			prepareGradients();
+		});
 
-				gradTop = "#000000";
-				gradBottom = "#FFFFFF";
-				for (const grad of gradients)
-				{
-					if (gradient == grad.name.replace(' ', '-'))
-					{ 	
-						gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
-					}
-				}
+		function prepareGradients() {
+			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt = document.createElement("option");
+			opt.value = defaultGradient.replace(' ', '-');
+			opt.text = defaultGradient;
+			document.getElementById("color-select").appendChild(opt);
+			let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
+			const opt_rand = document.createElement("option");
+			opt_rand.value = "Random-Card";
+			opt_rand.text = "Random Card";
 
-				for (const background in card_backgrounds) {
-					if (gradient == background.replace(' ', '-'))
-					{ 	
-						gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-						artistCredit = card_backgrounds[background][0];
-						setTextColor(card_backgrounds[background][1]);
-					}
+			document.getElementById("color-select").appendChild(opt_rand);
+			for (const gradient of gradients) {
+				const opt = document.createElement("option");
+				opt.value = gradient.name.replace(' ', '-');
+				opt.text = gradient.name;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
 				}
+			}
 
-				if (gradient == "Random-Card") {
-					const bgs = Object.keys(card_backgrounds);
-					const background = bgs[reallyRand(bgs.length)];
+			for (const gradient in card_backgrounds) {
+				const opt = document.createElement("option");
+				opt.value = gradient.replace(' ', '-');
+				opt.text = gradient;
+				if (gradient.name != defaultGradient) {
+					document.getElementById("color-select").appendChild(opt);
+				}
+				console.log(gradient, opt);
+			}
+
+			// setGradient();
+		}
+
+		function setGradient(gradient = false) {
+			let artistCredit = "";
+			if (!gradient) {
+				gradient = document.getElementById("color-select").value;
+			}
+
+			gradTop = "#000000";
+			gradBottom = "#FFFFFF";
+			for (const grad of gradients) {
+				if (gradient == grad.name.replace(' ', '-')) {
+					gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
+				}
+			}
+
+			for (const background in card_backgrounds) {
+				if (gradient == background.replace(' ', '-')) {
 					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
 					artistCredit = card_backgrounds[background][0];
 					setTextColor(card_backgrounds[background][1]);
 				}
-
-				
-				document.body.style.backgroundImage = gradImage;
-				localStorage.setItem("settings.gradient", gradient);
-				console.log("CHANGE");
-				if (document.getElementsByClassName("artist-credit")[0])
-					document.getElementsByClassName("artist-credit")[0].remove();
-				const credit_text = document.createElement("span");
-				credit_text.className = "artist-credit text";
-				credit_text.innerText = `background by ${artistCredit}`;
-				if (artistCredit && document.getElementById("color-select"))
-					document.getElementById("color-select").parentElement.appendChild(credit_text);
 			}
 
-function reallyRand(x, seed = false) {
-				const date = new Date();
-				seed = seed ? seed : date.getUTCFullYear() * 10000 + 
-							 date.getUTCMonth() * 100 + 
-							 date.getUTCDate();
-
-				const a = 1103515245;
-				const c = 12345;
-				const m = Math.pow(2, 31);
-
-				let randomNumber = (a * seed + c) % m;
-				randomNumber = randomNumber / m;
-
-				return Math.floor(randomNumber * x);
+			if (gradient == "Random-Card") {
+				const bgs = Object.keys(card_backgrounds);
+				const background = bgs[reallyRand(bgs.length)];
+				gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
+				artistCredit = card_backgrounds[background][0];
+				setTextColor(card_backgrounds[background][1]);
 			}
 
-function setTextColor(c = false) {
-				if (c) {
-					localStorage.setItem("settings.textcolor", c);
+
+			document.body.style.backgroundImage = gradImage;
+			localStorage.setItem("settings.gradient", gradient);
+			console.log("CHANGE");
+			if (document.getElementsByClassName("artist-credit")[0])
+				document.getElementsByClassName("artist-credit")[0].remove();
+			const credit_text = document.createElement("span");
+			credit_text.className = "artist-credit text";
+			credit_text.innerText = `background by ${artistCredit}`;
+			if (artistCredit && document.getElementById("color-select"))
+				document.getElementById("color-select").parentElement.appendChild(credit_text);
+		}
+
+		function reallyRand(x, seed = false) {
+			const date = new Date();
+			seed = seed ? seed : date.getUTCFullYear() * 10000 +
+				date.getUTCMonth() * 100 +
+				date.getUTCDate();
+
+			const a = 1103515245;
+			const c = 12345;
+			const m = Math.pow(2, 31);
+
+			let randomNumber = (a * seed + c) % m;
+			randomNumber = randomNumber / m;
+
+			return Math.floor(randomNumber * x);
+		}
+
+		function setTextColor(c = false) {
+			if (c) {
+				localStorage.setItem("settings.textcolor", c);
+			}
+			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+		}
+	</script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+			authDomain: "voyager-78e30.firebaseapp.com",
+			projectId: "voyager-78e30",
+			storageBucket: "voyager-78e30.firebasestorage.app",
+			messagingSenderId: "411191248476",
+			appId: "1:411191248476:web:591349be169d823e5f8899",
+			measurementId: "G-TQ1L48F25M"
+		};
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+		const events = ["GP2", "League"];
+		let username = "";
+		let password = "";
+		let sessionid = localStorage.getItem('settings.session');
+		let decks = {};
+		// console.log
+
+		if (!sessionid) {
+			window.location.href = "/login";
+		}
+
+		const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+			let data = docSnap.data();
+			username = data.username;
+			password = data.password;
+		});
+
+		await getDoc(doc(db, 'users', username)).then(docSnap => {
+			let data = docSnap.data();
+			decks = JSON.parse(data.decks);
+		});
+
+		document.getElementById("username").innerText = username;
+		document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+
+		async function reload() {
+			const deck_data = await getDoc(doc(db, 'users', username)).then(async docSnap => {
+				let user_data = docSnap.data();
+				let colls;
+				let decks = JSON.parse(user_data.decks);
+				if (user_data.colls) {
+					colls = JSON.parse(user_data.colls);
+				} else {
+					colls = [];
 				}
-				document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            	document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-			}
-        </script>
-        <script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-            import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
-            
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-                apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-                authDomain: "voyager-78e30.firebaseapp.com",
-                projectId: "voyager-78e30",
-                storageBucket: "voyager-78e30.firebasestorage.app",
-                messagingSenderId: "411191248476",
-                appId: "1:411191248476:web:591349be169d823e5f8899",
-                measurementId: "G-TQ1L48F25M"
-            };
-            
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
-            const events = ["GP2", "League"];
-            let username = "";
-            let password = "";
-            let sessionid = localStorage.getItem('settings.session');
-            let decks = {};
-            // console.log
+				console.log(decks);
+				document.getElementById('decks').innerHTML = "";
+				for (const deck of decks) {
+					let name = document.createElement('div');
+					let colors = document.createElement('div');
+					let format = document.createElement('div');
+					let modified = document.createElement('div');
+					let settings_container = document.createElement('div');
+					let settings = document.createElement('img');
+					name.innerText = deck.name;
+					name.className = 'deck-name';
+					name.onclick = function () {
+						window.location.href = deck.url;
+					}
+					format.innerText = deck.format;
+					format.className = 'format';
+					modified.innerText = deck.last_modified;
+					modified.className = 'updated';
+					for (const color of 'WUBRGI') {
+						let color_ele = document.createElement('img');
+						color_ele.src = `img/mana/mana_${color}.png`;
+						if (deck.colors.includes(color)) {
+							color_ele.className = "mana-img";
+						} else {
+							color_ele.className = "mana-img-dark";
+						}
+						colors.appendChild(color_ele);
+					}
+					colors.className = "colors";
+					settings.src = "img/header/settings.png";
+					settings.className = "deck-icon";
+					console.log(settings_container);
+					settings_container.className = "deck-icon-container";
+					settings_container.append(settings);
+					settings.onclick = function () {
+						document.getElementById('modal-container').style.display = 'block';
+						let modal_content = document.getElementById('modal-content');
+						modal_content.innerHTML = "";
+						let deck_link = document.createElement('a');
+						deck_link.href = deck.url;
+						let deck_edit_icon = document.createElement('img');
+						deck_edit_icon.src = "/img/edit.png";
+						deck_edit_icon.className = "deck-icon-green";
+						deck_link.innerText = "Edit in Deckbuilder";
+						deck_link.className = "deck-link-green deck-icon-shadow";
+						deck_link.appendChild(deck_edit_icon);
+						modal_content.appendChild(deck_link);
+						let deck_delete_icon = document.createElement('img');
+						deck_delete_icon.src = "/img/trash.png";
+						deck_delete_icon.className = "deck-icon-red deck-icon-shadow";
+						deck_delete_icon.onclick = async function () {
+							let new_decks = decks;
+							// let index = 0;
+							let user_deck = {};
+							console.log(user_data.decks);
+							for (let i = 0; i < decks.length; i++) {
+								user_deck = decks[i];
+								console.log(user_deck, i, deck.name);
+								if (user_deck["name"] == deck.name) {
+									new_decks.splice(i, 1);
+								}
+								// index += 1;
+							}
+							await setDoc(doc(db, "users", username), {
+								username: username,
+								password: password,
+								decks: JSON.stringify(new_decks)
+							});
+							document.getElementById('modal-container').style.display = 'none';
+							alert("Deck Deleted!");
+							reload();
+						}
+						modal_content.appendChild(deck_delete_icon);
+						for (const event of events) {
+							let deck_submit_text = document.createElement("div");
+							deck_submit_text.innerText = event;
+							deck_submit_text.className = "deck-link deck-icon-shadow";
+							let deck_submit_icon = document.createElement('img');
+							deck_submit_icon.src = "/img/export-white.png";
+							deck_submit_icon.className = "deck-icon-blue";
+							deck_submit_text.style.cursor = "pointer";
+							deck_submit_text.onclick = async function () {
+								await getDoc(doc(db, "events", event)).then(async docSnap2 => {
+									let tourndata = docSnap2.data();
+									let decks_ = JSON.parse(tourndata.decks);
+									decks_[username] = deck;
+									await setDoc(doc(db, "events", event), {
+										decks: JSON.stringify(decks_)
+									});
+								});
+								alert("Submitted deck " + deck.name + " to" + event + "!");
+							}
+							deck_submit_text.appendChild(deck_submit_icon);
+							modal_content.appendChild(deck_submit_text);
+						}
+					}
+					document.getElementById('decks').appendChild(name);
+					document.getElementById('decks').appendChild(colors);
+					document.getElementById('decks').appendChild(format);
+					document.getElementById('decks').appendChild(modified);
+					document.getElementById('decks').appendChild(settings_container);
+				}
+				for (const deck of colls) {
+					let deck_container = document.createElement('div');
+					deck_container.className = "deck-container";
+					let deck_preview = document.createElement('img');
+					deck_preview.src = deck.previewimg;
+					deck_preview.className = "deck-preview-img";
+					deck_preview.onclick = function () {
+						window.location.href = deck.url;
+					}
+					deck_preview.style.cursor = "pointer";
+					let deck_name = document.createElement('div');
+					deck_name.className = "deck-name";
+					deck_name.innerText = deck.name;
+					let deck_btns = document.createElement('div');
+					deck_btns.className = "coll-buttons";
+					let deck_link = document.createElement('a');
+					deck_link.href = deck.url;
+					let deck_edit_icon = document.createElement('img');
+					deck_edit_icon.src = "/img/edit.png";
+					deck_edit_icon.className = "deck-icon-green deck-icon-shadow";
+					deck_link.appendChild(deck_edit_icon);
+					let deck_delete_icon = document.createElement('img');
+					deck_delete_icon.src = "/img/trash.png";
+					deck_delete_icon.className = "deck-icon-red deck-icon-shadow";
+					deck_delete_icon.onclick = async function () {
+						let new_decks = decks;
+						// let index = 0;
+						let user_deck = {};
+						console.log(user_data.decks);
+						for (let i = 0; i < decks.length; i++) {
+							user_deck = decks[i];
+							console.log(user_deck, i, deck.name);
+							if (user_deck["name"] == deck.name) {
+								new_decks.splice(i, 1);
+							}
+							// index += 1;
+						}
+						await setDoc(doc(db, "users", username), {
+							username: username,
+							password: password,
+							decks: JSON.stringify(new_decks)
+						});
+						alert("Deck Deleted!");
+						reload();
+					}
+					deck_btns.appendChild(deck_link);
+					// deck_btns.appendChild(deck_submit_text);
+					deck_btns.appendChild(deck_delete_icon);
+					deck_container.appendChild(deck_name);
+					deck_container.appendChild(deck_preview);
+					deck_container.appendChild(deck_btns);
+					document.getElementById('colls').appendChild(deck_container);
+				}
+			});
+		}
 
-            if (!sessionid) {
-                window.location.href = "/login";
-            }
+		reload();
+	</script>
+</body>
 
-            const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-                let data = docSnap.data();
-                username = data.username;
-                password = data.password;
-            });
-
-            await getDoc(doc(db, 'users', username)).then(docSnap => {
-                let data = docSnap.data();
-                decks = JSON.parse(data.decks);
-		    });
-
-            document.getElementById("username").innerText = username;
-            document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-            
-            async function reload() {
-                const deck_data = await getDoc(doc(db, 'users', username)).then(async docSnap => {
-                    let user_data = docSnap.data();
-                    let colls;
-                    let decks = JSON.parse(user_data.decks);
-                    if (user_data.colls) { 
-                        colls = JSON.parse(user_data.colls);
-                    } else {
-                        colls = [];
-                    }
-                    console.log(decks);
-                    document.getElementById('decks').innerHTML = "";
-                    for (const deck of decks) {
-                        let name = document.createElement('div');
-                        let colors = document.createElement('div');
-                        let format = document.createElement('div');
-                        let modified = document.createElement('div');
-                        let settings_container = document.createElement('div');
-                        let settings = document.createElement('img');
-                        name.innerText = deck.name;
-                        name.className = 'deck-name';
-                        name.onclick = function() {
-                            window.location.href = deck.url;
-                        }
-                        format.innerText = deck.format;
-                        format.className = 'format';
-                        modified.innerText = deck.last_modified;
-                        modified.className = 'updated';
-                        for (const color of 'WUBRGI') {
-                            let color_ele = document.createElement('img');
-                            color_ele.src = `img/mana/mana_${color}.png`;
-                            if (deck.colors.includes(color)) {
-                                color_ele.className = "mana-img";
-                            } else {
-                                color_ele.className = "mana-img-dark";
-                            }
-                            colors.appendChild(color_ele);
-                        }
-                        colors.className = "colors";
-                        settings.src = "img/header/settings.png";
-                        settings.className = "deck-icon";
-                        console.log(settings_container);
-                        settings_container.className = "deck-icon-container";
-                        settings_container.append(settings);
-                        settings.onclick = function() {
-                            document.getElementById('modal-container').style.display = 'block';
-                            let modal_content = document.getElementById('modal-content');
-                            modal_content.innerHTML = "";
-                            let deck_link = document.createElement('a');
-                            deck_link.href = deck.url;
-                            let deck_edit_icon = document.createElement('img');
-                            deck_edit_icon.src = "/img/edit.png";
-                            deck_edit_icon.className = "deck-icon-green";
-                            deck_link.innerText = "Edit in Deckbuilder";
-                            deck_link.className = "deck-link-green deck-icon-shadow";
-                            deck_link.appendChild(deck_edit_icon);
-                            modal_content.appendChild(deck_link);
-                            let deck_delete_icon = document.createElement('img');
-                            deck_delete_icon.src = "/img/trash.png";
-                            deck_delete_icon.className = "deck-icon-red deck-icon-shadow";
-                            deck_delete_icon.onclick = async function() {
-                                let new_decks = decks;
-                                // let index = 0;
-                                let user_deck = {};
-                                console.log(user_data.decks);
-                                for (let i = 0; i < decks.length; i++) {
-                                    user_deck = decks[i];
-                                    console.log(user_deck, i, deck.name);
-                                    if (user_deck["name"] == deck.name) {
-                                        new_decks.splice(i,1);
-                                    }
-                                    // index += 1;
-                                }
-                                await setDoc(doc(db, "users", username), {
-                                    username: username,
-                                    password: password,
-                                    decks: JSON.stringify(new_decks)
-                                });
-                                document.getElementById('modal-container').style.display = 'none';
-                                alert("Deck Deleted!");
-                                reload();
-                            }
-                            modal_content.appendChild(deck_delete_icon);
-                            for (const event of events) {
-                                let deck_submit_text = document.createElement("div");
-                                deck_submit_text.innerText = event;
-                                deck_submit_text.className = "deck-link deck-icon-shadow";
-                                let deck_submit_icon = document.createElement('img');
-                                deck_submit_icon.src = "/img/export-white.png";
-                                deck_submit_icon.className = "deck-icon-blue";
-                                deck_submit_text.style.cursor = "pointer";
-                                deck_submit_text.onclick = async function() {
-                                    await getDoc(doc(db, "events", event)).then(async docSnap2 => {
-                                        let tourndata = docSnap2.data();
-                                        let decks_ = JSON.parse(tourndata.decks);
-                                        decks_[username] = deck;
-                                        await setDoc(doc(db, "events", event), {
-                                            decks: JSON.stringify(decks_)
-                                        });
-                                    });
-                                    alert("Submitted deck " + deck.name + " to" + event + "!");
-                                }
-                                deck_submit_text.appendChild(deck_submit_icon);
-                                modal_content.appendChild(deck_submit_text);
-                            }
-                        }
-                        document.getElementById('decks').appendChild(name);
-                        document.getElementById('decks').appendChild(colors);
-                        document.getElementById('decks').appendChild(format);
-                        document.getElementById('decks').appendChild(modified);
-                        document.getElementById('decks').appendChild(settings_container);
-                    }
-                    for (const deck of colls) {
-                        let deck_container = document.createElement('div');
-                        deck_container.className = "deck-container";
-                        let deck_preview = document.createElement('img');
-                        deck_preview.src = deck.previewimg;
-                        deck_preview.className = "deck-preview-img";
-                        deck_preview.onclick = function() {
-                            window.location.href = deck.url;
-                        }
-                        deck_preview.style.cursor = "pointer";
-                        let deck_name = document.createElement('div');
-                        deck_name.className = "deck-name";
-                        deck_name.innerText = deck.name;
-                        let deck_btns = document.createElement('div');
-                        deck_btns.className = "coll-buttons";
-                        let deck_link = document.createElement('a');
-                        deck_link.href = deck.url;
-                        let deck_edit_icon = document.createElement('img');
-                        deck_edit_icon.src = "/img/edit.png";
-                        deck_edit_icon.className = "deck-icon-green deck-icon-shadow";
-                        deck_link.appendChild(deck_edit_icon);
-                        let deck_delete_icon = document.createElement('img');
-                        deck_delete_icon.src = "/img/trash.png";
-                        deck_delete_icon.className = "deck-icon-red deck-icon-shadow";
-                        deck_delete_icon.onclick = async function() {
-                            let new_decks = decks;
-                            // let index = 0;
-                            let user_deck = {};
-                            console.log(user_data.decks);
-                            for (let i = 0; i < decks.length; i++) {
-                                user_deck = decks[i];
-                                console.log(user_deck, i, deck.name);
-                                if (user_deck["name"] == deck.name) {
-                                    new_decks.splice(i,1);
-                                }
-                                // index += 1;
-                            }
-                            await setDoc(doc(db, "users", username), {
-                                username: username,
-                                password: password,
-                                decks: JSON.stringify(new_decks)
-                            });
-                            alert("Deck Deleted!");
-                            reload();
-                        }
-                        deck_btns.appendChild(deck_link);
-                        // deck_btns.appendChild(deck_submit_text);
-                        deck_btns.appendChild(deck_delete_icon);
-                        deck_container.appendChild(deck_name);
-                        deck_container.appendChild(deck_preview);
-                        deck_container.appendChild(deck_btns);
-                        document.getElementById('colls').appendChild(deck_container);
-                    }
-                });
-            }
-
-            reload();
-        </script>
-    </body>
 </html>
