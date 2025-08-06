@@ -627,7 +627,11 @@
 		let decks = {};
 		let card_list_arrayified;
 		let card_list;
-		const events = ["GP2", "League"];
+		let events = ["League"];
+
+		await getDoc(doc(db, "info", "events")).then(docSnap => {
+			events.push(docSnap.data().recent);
+		});
 
 		if (!sessionid) {
 			window.location.href = "/login";
@@ -837,20 +841,8 @@
 				for (const event of events) {
 					let deck_submit_text = createDeckIconText("export-white", "blue", "Submit to " + event, "");
 
-					deck_submit_text.onclick = async function () {
-						await getDoc(doc(db, "events", event)).then(async docSnap2 => {
-							let tourndata = docSnap2.data();
-							let decks_ = JSON.parse(tourndata.decks);
-							if (event.toLowerCase().includes("league")) {
-								decks_.push({ ...deck, user: username });
-							} else {
-								decks_[username] = deck;
-							}
-							updateDoc(doc(db, "events", event), {
-								decks: JSON.stringify(decks_)
-							});
-						});
-						alert("Submitted deck " + deck.name + " to" + event + "!");
+					deck_submit_text.onclick = function () {
+						handleEventSubmission(event, deck);
 					}
 
 					content_container.appendChild(deck_submit_text);
@@ -894,6 +886,32 @@
 			full_deck_container.appendChild(deck_container);
 			full_deck_container.appendChild(colors_container);
 			return (full_deck_container);
+		}
+
+		async function handleEventSubmission(event, deck) {
+			await getDoc(doc(db, "events", event)).then(async docSnap2 => {
+				let tourndata = docSnap2.data();
+				if (tourndata.name.includes("League")) {
+					let runs = JSON.parse(tourndata.runs);
+					let user_runs = runs[username] ? runs[username] : [];
+					user_runs.push({ deck: deck, matches: [] });
+					runs[username] = user_runs;
+					updateDoc(doc(db, "events", event), {
+						runs: JSON.stringify(runs)
+					});
+					return;
+				}
+				let decks_ = JSON.parse(tourndata.decks);
+				if (event.toLowerCase().includes("league")) {
+					decks_.push({ ...deck, user: username });
+				} else {
+					decks_[username] = deck;
+				}
+				updateDoc(doc(db, "events", event), {
+					decks: JSON.stringify(decks_)
+				});
+			});
+			alert("Submitted deck " + deck.name + " to" + event + "!");
 		}
 
 		function createDeckIcon(img, color) {

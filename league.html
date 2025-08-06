@@ -119,7 +119,7 @@
 		margin: auto;
 		padding: 20px;
 		border: 1px solid #888;
-		width: 50%;
+		width: 70%;
 		border-radius: 10px;
 		border: solid #777 3px;
 	}
@@ -556,7 +556,7 @@
 	.deck-select-container,
 	#modal-content .runs-container {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(6, 1fr);
 		gap: 8px;
 		align-items: center;
 		justify-items: center;
@@ -1028,7 +1028,6 @@
 				const deck_ele = gridifyDeck(run.deck);
 				deck_ele.appendChild(runStatsHTML(run));
 				if (unclaimed_matches) {
-					console.log(unclaimed_matches);
 					deck_ele.onclick = () => {
 						const run_id = runs.indexOf(run);
 						const match_id = unclaimed_matches[1];
@@ -1046,6 +1045,16 @@
 						});
 						document.getElementById("modal-container").style.display = "none";
 						alert("Match claimed!");
+					}
+				} else {
+					deck_ele.onclick = () => {
+						document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+						let deck_header = document.createElement("span");
+						deck_header.className = "deck-window-header";
+						deck_header.innerText = user_data.username + "'s " + run.deck.name;
+						document.getElementById("modal-content").appendChild(deck_header);
+						document.getElementById("modal-content").appendChild(deckHTML(run.deck, card_list_arrayified));
+						document.getElementById("modal-container").style.display = 'block';
 					}
 				}
 				content_container.appendChild(deck_ele);
@@ -1245,26 +1254,33 @@
 			}
 		}
 
-		function deckHTML(deck, card_list_arrayified) {
-			let card_categories = { "creature": "", "planeswalker": "", "instant": "", "sorcery": "", "artifact": "", "enchantment": "", "land": "", "sideboard": "" };
+		function deckHTML(deck, card_list) {
+			let card_categories = { "creature": "", "planeswalker": "", "instant": "", "sorcery": "", "artifact": "", "enchantment": "", "land": "", "sideboard": "", "sanctum": "" };
 			const text = atob(deck.url.split(';')[1].split('&main')[0]);
 			let sideboard = [];
 			let sb_cards = false;
+			let sc_cards = false;
 			let count;
 			let card_name;
-			// let card_list_arrayified = card_list.cards;
+			let card_list_arrayified = card_list;
 
 			const lines = text.split('\n');
 
 			let deck_map = new Map();
 			let sb_map = new Map();
+			let sc_map = new Map();
 
 			for (const line of lines) {
 				if (line == 'sideboard' || line == '') // '' for Draftmancer files
 				{
 					sb_cards = true;
 				}
-				else if (!sb_cards) {
+				else if (line == 'sanctum' || (sb_cards && line == '')) // '' for Draftmancer files
+				{
+					sc_cards = true;
+					sb_cards = false;
+				}
+				else if (!sb_cards && !sc_cards) {
 					// get the count and card name
 					count = parseInt(line.substring(0, line.indexOf(' ')));
 					card_name = line.substring(line.indexOf(' ') + 1);
@@ -1277,7 +1293,7 @@
 						deck_map.set(card_name, count);
 					}
 				}
-				else // sideboard cards, do the same thing but with sb_map
+				else if (sb_cards) // sideboard cards, do the same thing but with sb_map
 				{
 					count = parseInt(line.substring(0, line.indexOf(' ')));
 					card_name = line.substring(line.indexOf(' ') + 1);
@@ -1287,6 +1303,17 @@
 					}
 					else {
 						sb_map.set(card_name, count);
+					}
+				} else if (sc_cards) // sanctum cards, do the same thing but with sc_map
+				{
+					count = parseInt(line.substring(0, line.indexOf(' ')));
+					card_name = line.substring(line.indexOf(' ') + 1);
+
+					if (sc_map.has(card_name)) {
+						sc_map.set(card_name, sc_map.get(card_name) + count);
+					}
+					else {
+						sc_map.set(card_name, count);
 					}
 				}
 			}
@@ -1301,7 +1328,8 @@
 				['enchantment', new Map([])],
 				['sorcery', new Map([])],
 				['battle', new Map([])],
-				['sideboard', new Map([])]
+				['sideboard', new Map([])],
+				['sanctum', new Map([])]
 			]);
 
 			for (const [card, copies] of deck_map) {
@@ -1329,7 +1357,15 @@
 					}
 				}
 			}
-			let total_copies = { "creature": 0, "planeswalker": 0, "instant": 0, "sorcery": 0, "artifact": 0, "enchantment": 0, "land": 0, "sideboard": 0 };
+			for (const [card, copies] of sc_map) {
+				for (const [key, map] of deck_cards) {
+					if (key == 'sanctum') {
+						map.set(card, copies)
+						break;
+					}
+				}
+			}
+			let total_copies = { "creature": 0, "planeswalker": 0, "instant": 0, "sorcery": 0, "artifact": 0, "enchantment": 0, "land": 0, "sideboard": 0, "sanctum": 0 };
 			for (const [k, map] of deck_cards) {
 				for (const [card, num] of map) {
 					card_categories[k] += `<span class="card-in-deck">${num}x ${card}</span><br>`;
@@ -1349,7 +1385,7 @@
 				}
 				let section_name_capitalized = section_name[0].toUpperCase() + section_name.substring(1, section_name.length);
 				let card_column = column1;
-				if (section_name == "land" || section_name == "sideboard") {
+				if (section_name == "land" || section_name == "sideboard" || section_name == "sanctum") {
 					card_column = column2;
 				}
 
@@ -1404,7 +1440,6 @@
 
 			return decklist_container;
 		}
-
 		function makeGamesTab() {
 			const content_container = document.createElement("div");
 			content_container.className = "report-container";
