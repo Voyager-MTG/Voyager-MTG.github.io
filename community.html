@@ -1016,11 +1016,6 @@
 
 			return regexHTML;
 		}
-
-		function changeTab(_tab) {
-			tab = _tab;
-			makeTab();
-		}
 	</script>
 	<script type="module">
 		// Import the functions you need from the SDKs you need
@@ -1069,7 +1064,7 @@
 			reload();
 		});
 
-		document.getElementById("decks-tab-select").addEventListener("click", async (e) => {
+		document.getElementById("decks-tab-select").addEventListener("click", (e) => {
 			tab = "decks";
 			document.getElementById("main-tab").innerHTML = "";
 			reload();
@@ -1164,6 +1159,7 @@
 				decks_html = await makeDecksTab();
 				events_html = makeEventTab();
 				users_html = makeUsersTab();
+				initial_load = false;
 			}
 			if (tab == "events") {
 				document.getElementById("main-tab").appendChild(events_html);
@@ -1180,19 +1176,6 @@
 				}
 
 				document.getElementById("main-tab").appendChild(cards_html);
-			}
-			initial_load = false;
-		}
-
-		async function makeTab(tab) {
-			if (tab == "events") {
-				document.getElementById("main-tab").appendChild(makeEventTab());
-			}
-			if (tab == "decks") {
-				document.getElementById("main-tab").appendChild(await makeDecksTab());
-			}
-			if (tab == "users") {
-				document.getElementById("main-tab").appendChild(makeUsersTab());
 			}
 		}
 
@@ -2560,7 +2543,16 @@
 		function getTop100(list) {
 			let top_100_cards = [];
 			for (const card of list) {
-				if (card.type.includes("Basic")) continue;
+				let skip_iter = (card.type.includes("Basic") && !search_value.includes("t:basic"));
+
+				for (const top_card of top_100_cards) {
+					if (card.card_name == top_card.card_name) {
+						skip_iter = true;
+					}
+				}
+
+				if (skip_iter) continue;
+
 				if (top_100_cards.length < 100) {
 					top_100_cards.push(card);
 					continue;
