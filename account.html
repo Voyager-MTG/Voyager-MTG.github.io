@@ -681,7 +681,7 @@
 			}
 			card_list_arrayified = card_list.cards;
 
-			const deck_data = await getDoc(doc(db, 'users', username)).then(async docSnap => {
+			await getDoc(doc(db, 'users', username)).then(async docSnap => {
 				let user_data = docSnap.data();
 				let colls;
 				let used_formats = [];

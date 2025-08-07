@@ -953,6 +953,7 @@
 		// console.log(card_list_arrayified);    
 
 		async function reload() {
+			document.getElementById("main-tab").innerHTML = `<div class="decks-tab" id="decklists"></div><div class="rounds-tab" id="games"></div><div class="runs-tab" id="runs"></div>`;
 			makeDecksTab();
 			makeGamesTab();
 			makeRunsTab();
@@ -1045,6 +1046,7 @@
 						});
 						document.getElementById("modal-container").style.display = "none";
 						alert("Match claimed!");
+						reload();
 					}
 				} else {
 					deck_ele.onclick = () => {
@@ -1141,6 +1143,7 @@
 					});
 					alert("Created new run!");
 					document.getElementById("modal-container").style.display = "none";
+					reload();
 				}
 				document.getElementById("deck-select-container").appendChild(deck_ele);
 			}

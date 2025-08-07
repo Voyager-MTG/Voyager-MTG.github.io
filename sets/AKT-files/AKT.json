@@ -2,7 +2,7 @@
     "name": "Akellan Transcendence",
     "formats": "",
     "trimmed": "y",
-    "image_type": "png",
+    "image_type": "jpg",
     "draft_structure": "play booster",
     "designer": "Myr",
     "cards": [
@@ -3204,7 +3204,7 @@
             "number": 106,
             "color_identity": "B",
             "cost": "{1}{B}",
-            "rules_text": "Flash, menace\nWhen Hired Bouncer enters, each player sacrifices a creature.",
+            "rules_text": "Flash, menace\nWhen Hired Bouncer enters, if it was cast, each player sacrifices a creature.",
             "flavor_text": "[i]\u201cLowly humans like us've got no chance in a fair fight with a callwolf. So convince them it's unfair.\u201d[/i]",
             "pt": "1/1",
             "special_text": "",
