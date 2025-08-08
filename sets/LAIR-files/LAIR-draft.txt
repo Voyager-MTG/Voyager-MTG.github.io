@@ -65,9 +65,9 @@
 			"rarity": "masterpiece",
 			"mana_cost": "",
 			"type": "Land",
-			"collector_number": "2",
+			"collector_number": "3",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/2_Drifting Field.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/3_Drifting Field.jpg"
 			}
 		},
 		{
@@ -125,9 +125,19 @@
 			"rarity": "masterpiece",
 			"mana_cost": "{1}{U}",
 			"type": "Instant",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/2_Drown in Self Reflection.jpg"
+			}
+		},
+		{
+			"name": "Apostle Entheate",
+			"rarity": "masterpiece",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Creature — Angel Cleric",
 			"collector_number": "1",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/1_Drown in Self Reflection.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/1_Apostle Entheate.jpg"
 			}
 		},
 	]

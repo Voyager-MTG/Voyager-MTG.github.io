@@ -125,7 +125,7 @@
             "color": "",
             "rarity": "masterpiece",
             "type": "Land",
-            "number": 2,
+            "number": 3,
             "color_identity": "W",
             "cost": "",
             "rules_text": "{T}: Add {W}. You lose 1 life unless you control a white permanent.\nExhaust \u2014 {T}: Choose a color. \n{T}: Add one mana of the chosen color.",
@@ -239,7 +239,7 @@
             "color": "U",
             "rarity": "masterpiece",
             "type": "Instant",
-            "number": 1,
+            "number": 2,
             "color_identity": "U",
             "cost": "{1}{U}",
             "rules_text": "Surveil 2, then draw a card.\nWhenever Drown in Self Reflection leaves your graveyard during your turn, you may cast a copy of it.",
@@ -249,9 +249,28 @@
             "shape": "normal",
             "set": "LAIR",
             "loyalty": "",
-            "designer": "Voyager",
+            "designer": "Trewq",
             "artist": "Henri Grobet",
-            "notes": "!porthole"
+            "notes": "!porthole\n!tag<champion> kogane\n!tag<is> champion\n!designer Trewq"
+        },
+        {
+            "card_name": "Apostle Entheate",
+            "color": "W",
+            "rarity": "masterpiece",
+            "type": "Creature \u2014 Angel Cleric",
+            "number": 1,
+            "color_identity": "W",
+            "cost": "{2}{W}{W}",
+            "rules_text": "When Apostle Entheate enters, you may exile target nonland permanent. It becomes foretold. [i](Its foretell cost is its mana cost if it isn't already specified.)[/i]\nYour opponents can't cast spells with the same name as the exiled card.",
+            "flavor_text": "[i][/i]",
+            "pt": "3/2",
+            "special_text": "",
+            "shape": "normal",
+            "set": "LAIR",
+            "loyalty": "",
+            "designer": "Kogane",
+            "artist": "Vanripper",
+            "notes": "!ocean\n!tag<champion> silverparabellum\n!tag<is> champion\n!designer Kogane"
         }
     ]
 }
