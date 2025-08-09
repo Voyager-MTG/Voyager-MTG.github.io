@@ -1218,6 +1218,12 @@
 					card_list = json;
 				}).catch(error => console.error('Error:', error));
 
+			await fetch('/lists/all-sets.json')
+				.then(response => response.json())
+				.then(json => {
+					set_list = json;
+				}).catch(error => console.error('Error:', error));
+
 			await fetch('/resources/replacechars.txt')
 				.then(response => response.text())
 				.then(text => {

@@ -681,6 +681,17 @@
 			}
 			cardGrid.innerHTML = "";
 
+			await fetch('/resources/search-replace.json')
+				.then(response => response.json())
+				.then(json => {
+					search_replace = json;
+				}).catch(error => console.error('Error:', error));
+
+			for (const to_replace in search_replace) {
+				const replace_with = search_replace[to_replace];
+				searchTerms = searchTerms.replaceAll(to_replace, replace_with);
+			}
+
 			for (const card of card_list_arrayified) {
 				if (card.shape.includes("token") && !searchTerms.includes("+t:token") && !searchTerms.includes("t:token")) {
 					continue;
@@ -1182,11 +1193,12 @@
 					for (const set of set_list.sets) {
 						if (set.set_code.toLowerCase() == card_set) {
 							set_longname = set.set_name.toLowerCase();
+							set_designer = set.designer.toLowerCase();
 							break;
 						}
 					}
 					if (modifier == ":" || modifier == "!" || modifier == "=") {
-						return (card_set == check || set_longname.includes(check));
+						return (card_set == check || set_longname.includes(check) || set_designer.includes(check));
 					}
 					/* unsupported flows
 					else if (modifier == "<")
