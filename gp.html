@@ -1518,14 +1518,16 @@
 				name_container.innerText = player;
 				let deck = decks[player];
 
-				name_container.onclick = function () {
-					document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-					let deck_header = document.createElement("span");
-					deck_header.className = "deck-window-header";
-					deck_header.innerText = player + "'s " + deck.name;
-					document.getElementById("modal-content").appendChild(deck_header);
-					document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
-					document.getElementById("modal-container").style.display = 'block';
+				if (event_data.stage != "initial") {
+					name_container.onclick = function () {
+						document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+						let deck_header = document.createElement("span");
+						deck_header.className = "deck-window-header";
+						deck_header.innerText = player + "'s " + deck.name;
+						document.getElementById("modal-content").appendChild(deck_header);
+						document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+						document.getElementById("modal-container").style.display = 'block';
+					}
 				}
 
 				const record_container = document.createElement("div");
@@ -1577,10 +1579,10 @@
 			addButtonEventListeners();
 
 			makeRoundsTab();
+			makeStatsTab();
 
 			if (event_data.stage != "initial") {
 				makeDecksTab();
-				makeStatsTab();
 			} else {
 				const initial_text = document.createElement("span");
 				initial_text.className = "initial-text text";
@@ -1878,6 +1880,17 @@
 			let opps = {};
 			let num_games = {};
 			let gw = {};
+			if (event_data.stage == "initial") {
+				for (const player in JSON.parse(event_data.decks)) {
+					records[player] = [0, 0];
+					match_total[player] = [0, 0];
+					opps[player] = [];
+					omw[player] = 0;
+					num_games[player] = 0;
+					gw[player] = 0;
+				}
+				return { records: records, match_total: match_total, opps: opps, omw: omw, num_games: num_games, gw: gw };
+			}
 			for (const round_name in swiss_rounds) {
 				let round = swiss_rounds[round_name];
 				for (const match of round) {
@@ -2302,7 +2315,7 @@
 		async function newGP() {
 			const event_name = window.prompt("GP Name?");
 			await setDoc(doc(db, 'events', event_name), {
-				decks: "[]",
+				decks: "{}",
 				rounds: '{"swiss":{},"bracket":{}}',
 				num_rounds: 0,
 				stage: "initial",
