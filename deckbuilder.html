@@ -925,6 +925,14 @@
 		margin-top: 5px;
 	}
 
+	.deck-select-container {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 8px;
+		align-items: center;
+		justify-items: center;
+	}
+
 	/* mobile layout*/
 	@media (max-device-width: 850px) {
 		.page-container {
@@ -2052,20 +2060,81 @@
 			}
 		}
 
-		function loadDeck() { // this name is misleading, this opens the load modal
-			// Unhide the modal and add the text 'Loading Deck:'
-			document.getElementById("modal-container").style.display = "block";
-			document.getElementById("modal-content").innerHTML = "Loading Deck:";
-			document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>'; // add the X
-			const area_container = document.createElement("div");
-			area_container.className = "load-decks-container";
-			Object.keys(localStorage).forEach(function (key) { // Loop through each localstorage value, then check if its not a setting or collections
-				if (key != "colls.collections" && !key.startsWith("settings.") && !key.startsWith("info.")) {
-					area_container.appendChild(generateLoadContainer(key)); // add a button that loads the deck using readDeckText and has the name of the deck (key = deck name)
-				}
-			});
-			document.getElementById("modal-content").appendChild(area_container);
+		// function loadDeck() { // this name is misleading, this opens the load modal
+		// 	// Unhide the modal and add the text 'Loading Deck:'
+		// 	document.getElementById("modal-container").style.display = "block";
+		// 	document.getElementById("modal-content").innerHTML = "Loading Deck:";
+		// 	document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>'; // add the X
+		// 	const area_container = document.createElement("div");
+		// 	area_container.className = "load-decks-container";
+		// 	Object.keys(localStorage).forEach(function (key) { // Loop through each localstorage value, then check if its not a setting or collections
+		// 		if (key != "colls.collections" && !key.startsWith("settings.") && !key.startsWith("info.")) {
+		// 			area_container.appendChild(generateLoadContainer(key)); // add a button that loads the deck using readDeckText and has the name of the deck (key = deck name)
+		// 		}
+		// 	});
+		// 	document.getElementById("modal-content").appendChild(area_container);
 
+		// }
+
+		function loadDeck() {
+			document.getElementById("modal-content").innerHTML = '<span class="close" onclick="closeModal()">&times;</span>';
+			document.getElementById("modal-container").style.display = "block";
+
+			const content_container = document.createElement("div");
+			content_container.className = "deck-select-container";
+			content_container.id = "deck-select-container";
+
+			const deck_search_input = document.createElement("input");
+			deck_search_input.className = "new-run-search-input";
+			deck_search_input.placeholder = "Search decks...";
+			deck_search_input.id = "new-run-search-input";
+			deck_search_input.onkeyup = runSearch;
+
+			document.getElementById("modal-content").appendChild(deck_search_input);
+			document.getElementById("modal-content").appendChild(content_container);
+
+			runSearch();
+		}
+
+		function runSearch() {
+			const search_terms = document.getElementById("new-run-search-input").value.matchAll(/(\[\[.*?\]\]|\S+)/g);
+			let search_terms_arrayified = [];
+			let search_results = [];
+			let keys = {};
+
+			console.log(Object.keys(localStorage));
+			for (const key of Object.keys(localStorage)) {
+				if (key != "colls.collections" && !key.startsWith("settings.") && !key.startsWith("info."))
+					keys[key] = localStorage.getItem(key);
+			}
+
+			for (const t of search_terms) {
+				search_terms_arrayified.push(t);
+			}
+
+			if (search_terms_arrayified.length == 0) search_terms_arrayified = [["", ""]];
+
+			for (const key in keys) {
+				const decklist = keys[key].toLowerCase();
+				for (const term_ of search_terms_arrayified) {
+					const term = term_[0];
+					if (term.includes("[[") && term.includes("]]")) {
+						if (decklist.includes(term.split("[[")[1].split("]]")[0].toLowerCase())) {
+							search_results.push(key);
+						}
+					}
+					else if (key.toLowerCase().includes(term.toLowerCase())) {
+						search_results.push(key);
+					}
+				}
+			}
+
+			document.getElementById("deck-select-container").innerHTML = "";
+
+			for (const key of search_results) {
+				const deck_ele = generateLoadContainer(key);
+				document.getElementById("deck-select-container").appendChild(deck_ele);
+			}
 		}
 
 		function generateLoadContainer(key) {

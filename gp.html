@@ -848,6 +848,51 @@
 		let raw_gradients = null;
 		let gradTop = null;
 		let gradBottom = null;
+
+		Array.prototype.swiss_sort = function (p) {
+			function compare(a, b) {
+				if (p.opps[p.player].includes(a.player) && !p.opps[p.player].includes(b.player)) {
+					return -1;
+				}
+				if (!p.opps[p.player].includes(a.player) && p.opps[p.player].includes(b.player)) {
+					return 1;
+				}
+				if (Math.abs(p.record[0] - a.record[0]) > Math.abs(p.record[0] - b.record[0])) {
+					return 1;
+				}
+				if (Math.abs(p.record[0] - a.record[0]) < Math.abs(p.record[0] - b.record[0])) {
+					return -1;
+				}
+				if (Math.abs(p.record[1] - a.record[1]) > Math.abs(p.record[1] - b.record[1])) {
+					return 1;
+				}
+				if (Math.abs(p.record[1] - a.record[1]) < Math.abs(p.record[1] - b.record[1])) {
+					return -1;
+				}
+				if (Math.abs(p.match_total[0] - a.match_total[0]) > Math.abs(p.match_total[0] - b.match_total[0])) {
+					return 1;
+				}
+				if (Math.abs(p.match_total[0] - a.match_total[0]) < Math.abs(p.match_total[0] - b.match_total[0])) {
+					return -1;
+				}
+				if (Math.abs(p.match_total[1] - a.match_total[1]) > Math.abs(p.match_total[1] - b.match_total[1])) {
+					return 1;
+				}
+				if (Math.abs(p.match_total[1] - a.match_total[1]) < Math.abs(p.match_total[1] - b.match_total[1])) {
+					return -1;
+				}
+				if (Math.abs(p.omw - a.omw) > Math.abs(p.omw - b.omw)) {
+					return 1;
+				}
+				if (Math.abs(p.omw - a.omw) < Math.abs(p.omw - b.omw)) {
+					return -1;
+				}
+				return 0;
+			}
+			this.sort(compare);
+		}
+
+
 		modal = document.getElementById("modal-container");
 		window.onclick = function (event) {
 			if (event.target == modal) {
@@ -1127,15 +1172,20 @@
 			const rounds = JSON.parse(event_data.rounds);
 			const decks = JSON.parse(event_data.decks);
 			const round = rounds[round_name];
+
 			let game_container = document.createElement("div");
 			game_container.className = "game-container";
+
 			let game_grid = document.createElement("div");
 			game_grid.className = "game-grid";
+
 			let side = "top";
+
 			for (const player in game) {
 				let player_name = document.createElement("div");
 				let player_score = document.createElement("div");
 				let deck = decks[player];
+
 				player_name.className = `player-text player-text-${side}`;
 				player_name.innerText = player;
 				player_name.onclick = function () {
@@ -1147,10 +1197,13 @@
 					document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
 					document.getElementById("modal-container").style.display = 'block';
 				}
+
 				let gameClass = "";
+
 				if (game[player] == "2") gameClass = "winner";
 				if (game[player] == "0") gameClass = "loser";
 				if (game[player] == "1") gameClass = "loser";
+
 				player_score.className = `player-score ${gameClass} player-score-${side}`;
 				player_score.innerText = game[player];
 				player_score.onclick = function () {
@@ -1158,14 +1211,18 @@
 					document.getElementById("modal-content").appendChild(reportHTML(game, round, round_name, event_data, event, decks));
 					document.getElementById("modal-container").style.display = 'block';
 				}
+
 				game_grid.appendChild(player_name);
 				game_grid.appendChild(player_score);
+
 				if (side == "top") {
 					side = "bottom";
 				}
 			}
+
 			let bar = document.createElement("div");
 			bar.className = "bar";
+
 			game_container.appendChild(bar);
 			game_container.appendChild(game_grid);
 
@@ -1174,30 +1231,39 @@
 
 		async function makeBracket(rounds) {
 			const decks = JSON.parse(event_data.decks);
+
 			const bracket_container = document.createElement("div");
 			bracket_container.className = "bracket-container";
+
 			const bracket_header = document.createElement('span');
 			bracket_header.className = "round-headers text";
 			bracket_header.innerText = "Top Cut Bracket";
+
 			document.getElementById("games").appendChild(bracket_header);
+
 			let topcut = await topCutHelper(rounds); // {players, matches, seedings, stats}
 			let matches = topcut.matches;
 			let structure = parseStructure(topcut.structure);
+
 			const layer = structure.raw[0];
 			const layer_container = document.createElement("div");
 			layer_container.className = 'layer-container';
 			layer_container.style.gridTemplateRows = `repeat(${structure.info.size}, 1fr)`;
+
 			for (const match_name of layer) {
 				const match = matches[match_name];
-				console.log("layer1", match);
 				let side = "top";
+
 				const game_grid = document.createElement("div");
 				game_grid.className = "game-grid";
 				game_grid.style.height = "fit-content";
+
 				for (const player_id in match) {
 					let player;
+
 					if (player_id != "Bye") player = topcut.seedings[player_id];
 					else player = "Bye";
+
 					if (player == undefined) {
 						let p_match = matches[player_id];
 						for (const p in p_match) {
@@ -1209,9 +1275,11 @@
 					} else {
 						player = player.player;
 					}
+
 					if (player == undefined) {
 						player = "TBD";
 					}
+
 					const player_name = document.createElement('div');
 					player_name.className = `player-text player-text-${side}`;
 					player_name.onclick = function () {
@@ -1224,15 +1292,21 @@
 						document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
 						document.getElementById("modal-container").style.display = 'block';
 					}
+
 					const player_score = document.createElement('div');
+
 					let gameClass = "";
+
 					if (match[player_id] == "2") gameClass = "winner";
 					if (match[player_id] == "0") gameClass = "loser";
 					if (match[player_id] == "1") gameClass = "loser";
+
 					player_score.className = `player-score player-score-${side} ${gameClass}`;
 					player_name.innerText = player;
 					player_score.innerText = match[player_id];
+
 					let game = {};
+
 					for (const player_id in match) {
 						let player2;
 						if (player_id != "Bye") player2 = topcut.seedings[player_id];
@@ -1253,46 +1327,60 @@
 						}
 						game[player2] = match[player_id];
 					}
+
 					player_score.onclick = function () {
 						document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
 						document.getElementById("modal-content").appendChild(reportHTML(game, match_name, match_name, event_data, event, decks, false, match));
 						document.getElementById("modal-container").style.display = 'block';
 					}
+
 					game_grid.appendChild(player_name);
 					game_grid.appendChild(player_score);
+
 					if (side == "top") {
 						side = "bottom";
 					}
 				}
+
 				layer_container.appendChild(game_grid);
 			}
+
 			if (layer.length != 0) bracket_container.appendChild(layer_container);
 
 			for (const layer of structure.raw[1]) {
 				const layer_container = document.createElement("div");
 				layer_container.className = 'layer-container';
 				layer_container.style.gridTemplateRows = `repeat(${structure.info.size}, 1fr)`;
+
 				for (const match_name of layer) {
 					const match = matches[match_name];
+
 					let side = "top";
+
 					const game_grid = document.createElement("div");
 					game_grid.className = "game-grid";
 					game_grid.style.gridRow = "span " + structure.info.size / layer.length;
 					game_grid.style.height = "fit-content";
+
 					for (const player_id in match) {
 						let player;
+
 						if (player_id != "Bye") player = topcut.seedings[player_id];
 						else player = { player: "Bye" };
+
 						if (player == undefined) {
 							player = getTopCutMatch(topcut, player_id);
 						} else {
 							player = player.player;
 						}
+
 						if (player == undefined) {
 							player = "TBD";
 						}
+
 						const player_name = document.createElement('div');
 						player_name.className = `player-text player-text-${side}`;
+
 						player_name.onclick = function () {
 							let deck = decks[player];
 							document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
@@ -1303,26 +1391,36 @@
 							document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
 							document.getElementById("modal-container").style.display = 'block';
 						}
+
 						const player_score = document.createElement('div');
+
 						let gameClass = "";
+
 						if (match[player_id] == "2") gameClass = "winner";
 						if (match[player_id] == "0") gameClass = "loser";
 						if (match[player_id] == "1") gameClass = "loser";
+
 						player_score.className = `player-score player-score-${side} ${gameClass}`;
 						player_score.innerText = match[player_id];
+
 						let game = {};
+
 						for (const player_id in match) {
 							let player2;
+
 							if (player_id != "Bye") player2 = topcut.seedings[player_id];
 							else player2 = { player: "Bye" };
+
 							if (player2 == undefined) {
 								player2 = getTopCutMatch(topcut, player_id);
 							} else {
 								player2 = player2.player;
 							}
+
 							if (player2 == undefined) {
 								player2 = "TBD";
 							}
+
 							game[player2] = match[player_id];
 						}
 
@@ -1335,14 +1433,18 @@
 								document.getElementById("modal-container").style.display = 'block';
 							}
 						}
+
 						game_grid.appendChild(player_name);
 						game_grid.appendChild(player_score);
+
 						if (side == "top") {
 							side = "bottom";
 						}
 					}
+
 					layer_container.appendChild(game_grid);
 				}
+
 				bracket_container.appendChild(layer_container);
 			}
 
@@ -1364,23 +1466,31 @@
 
 		async function makeDecksTab() {
 			const decks = JSON.parse(event_data.decks);
+
 			for (const user in decks) {
 				let deck = decks[user];
+
 				let full_deck_container = document.createElement('div');
 				full_deck_container.className = "full-deck-container";
+
 				let deck_container = document.createElement('div');
 				deck_container.className = "deck-container";
+
 				let colors_container = document.createElement('div');
 				colors_container.className = "colors-container";
+
 				let deck_preview = document.createElement('img');
 				let card_stats;
+
 				for (const card of card_list_arrayified) {
 					if (deck.previewimg == card.card_name) {
 						card_stats = card;
 						break;
 					}
 				}
+
 				deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+
 				deck_preview.onclick = function () {
 					document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
 					let deck_header = document.createElement("span");
@@ -1390,27 +1500,36 @@
 					document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
 					document.getElementById("modal-container").style.display = 'block';
 				}
+
 				deck_preview.className = "deck-preview-img";
+
 				let deck_name = document.createElement('div');
 				deck_name.className = "deck-name";
 				deck_name.innerText = user + "'s " + deck.name;
+
 				let deck_btns = document.createElement('div');
 				deck_btns.className = "deck-buttons";
+
 				let deck_link = document.createElement('a');
 				deck_link.href = `/deckbuilder?edeck=${event}-${user}`;
 				deck_link.innerText = "Deckbuilder";
 				deck_link.className = "deck-link-green deck-icon-shadow";
 				deck_link.target = "_blank";
+
 				let deck_edit_icon = document.createElement('img');
 				deck_edit_icon.src = "/img/edit.png";
 				deck_edit_icon.className = "deck-icon-green";
+
 				deck_link.appendChild(deck_edit_icon);
+
 				let deck_link2 = document.createElement('span');
 				deck_link2.innerText = "View";
 				deck_link2.className = "deck-link-blue deck-icon-shadow";
+
 				let deck_edit_icon2 = document.createElement('img');
 				deck_edit_icon2.src = "/img/show-white.png";
 				deck_edit_icon2.className = "deck-icon-blue";
+
 				deck_link2.onclick = function () {
 					document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
 					let deck_header = document.createElement("span");
@@ -1420,7 +1539,9 @@
 					document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
 					document.getElementById("modal-container").style.display = 'block';
 				}
+
 				deck_link2.appendChild(deck_edit_icon2);
+
 				if (deck.colors) {
 					for (const color of deck.colors) {
 						let color_ele = document.createElement('img');
@@ -1429,13 +1550,18 @@
 						colors_container.appendChild(color_ele);
 					}
 				}
+
 				deck_btns.appendChild(deck_link);
 				deck_btns.appendChild(deck_link2);
+
 				deck_container.appendChild(deck_name);
 				deck_container.appendChild(deck_preview);
 				deck_container.appendChild(deck_btns);
+
 				full_deck_container.appendChild(deck_container);
+
 				if (deck.colors) full_deck_container.appendChild(colors_container);
+
 				if (deck.colors) {
 					document.getElementById("decklists").appendChild(full_deck_container);
 				} else {
@@ -1453,21 +1579,27 @@
 
 			const row_container = document.createElement("div");
 			row_container.className = "stats-row-container";
+
 			const rank_container = document.createElement("div");
 			rank_container.className = "stats-rank-container stats-row-item stats-row-header";
 			rank_container.innerText = "Rank";
+
 			const name_container = document.createElement("div");
 			name_container.className = "stats-name-container stats-row-item stats-row-header";
 			name_container.innerText = "Player";
+
 			const record_container = document.createElement("div");
 			record_container.className = "stats-record-container stats-row-item stats-row-header";
 			record_container.innerText = `Record`;
+
 			const match_total_container = document.createElement("div");
 			match_total_container.className = "stats-match-total-container stats-row-item stats-row-header";
 			match_total_container.innerText = `Game Record`;
+
 			const omw_container = document.createElement("div");
 			omw_container.className = "stats-omw-container stats-row-item stats-row-header";
 			omw_container.innerText = "OM%";
+
 			const gw_container = document.createElement("div");
 			gw_container.className = "stats-gw-container stats-row-item stats-row-header";
 			gw_container.innerText = "GW%";
@@ -1513,8 +1645,10 @@
 
 				const name_container = document.createElement("div");
 				name_container.className = "stats-name-container stats-row-item";
+
 				if (event_data.dropped.includes(player))
 					name_container.className += " dropped";
+
 				name_container.innerText = player;
 				let deck = decks[player];
 
@@ -1708,7 +1842,9 @@
 					}
 				}
 			}
+
 			let total_copies = { "creature": 0, "planeswalker": 0, "instant": 0, "sorcery": 0, "artifact": 0, "enchantment": 0, "land": 0, "sideboard": 0, "sanctum": 0 };
+
 			for (const [k, map] of deck_cards) {
 				for (const [card, num] of map) {
 					card_categories[k] += `<span class="card-in-deck">${num}x ${card}</span><br>`;
@@ -1717,57 +1853,63 @@
 			}
 
 			let finalHTML = "";
+
 			let column1 = document.createElement('div');
 			let column2 = document.createElement('div');
+
 			column1.className = "card-column";
 			column2.className = "card-column";
+
 			for (const section_name in card_categories) {
 				let section_html = card_categories[section_name];
+
 				if (section_html == "") {
 					continue;
 				}
+
 				let section_name_capitalized = section_name[0].toUpperCase() + section_name.substring(1, section_name.length);
 				let card_column = column1;
+
 				if (section_name == "land" || section_name == "sideboard" || section_name == "sanctum") {
 					card_column = column2;
 				}
 
-				// card_column.innerHTML += `<div class="${section_name} card-type-section" id="${section_name}">
-				//      <span class="${section_name}-header card-type-header" id="${section_name}-header">${section_name_capitalized} (${total_copies[section_name]})</span>
-				// <br>
-				// ${section_html}
-				// </div><br>`;
 				let section_container = document.createElement('div');
 				let section_header = document.createElement('span');
 				section_header.className = "card-type-header";
 				section_header.innerText = section_name_capitalized + " (" + total_copies[section_name] + ")";
+
 				let line_break = document.createElement('br');
 				let line_break2 = document.createElement('br');
 				let cards_container = document.createElement('div');
+
 				cards_container.innerHTML = section_html;
+
 				for (const card_ele of cards_container.childNodes) {
 					card_ele.onmouseover = function () {
 						let card_name = card_ele.innerText.substring(card_ele.innerText.indexOf(" ") + 1, card_ele.innerText.length);
 						let card_stats;
+
 						for (const card2 of card_list_arrayified) {
 							if (card2.card_name == card_name) {
 								card_stats = card2;
 								break;
 							}
 						}
+
 						let deck_preview_card = document.getElementById("deck-preview-card");
 						deck_preview_card.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
-						//https://voyager-mtg.github.io/card?set=EXPT&num=44&name=Fyndhorn+Betrayer
+
 						deck_preview_card.onclick = function () {
 							window.location.href = `/card?set=${card_stats.set}&num=${card_stats.number}&name=${card_name.replaceAll(" ", "+")}`;
 						}
 					}
 				}
+
 				section_container.appendChild(section_header);
 				section_container.appendChild(cards_container);
 				section_container.appendChild(line_break);
 				card_column.appendChild(section_container);
-				// card_column.appendChild(line_break2);
 			}
 
 			let preview_card = document.createElement('img');
@@ -1812,9 +1954,12 @@
 
 			let p1_name_text = Object.keys(game)[0];
 			let p2_name_text = Object.keys(game)[1];
+
 			submit_btn.innerText = "Report Scores";
+
 			p1_name.innerText = p1_name_text;
 			p2_name.innerText = p2_name_text;
+
 			p1_score.value = Object.values(game)[0];
 			p2_score.value = Object.values(game)[1];
 
@@ -1824,9 +1969,11 @@
 			player_names.appendChild(p1_name);
 			player_names.appendChild(spacer);
 			player_names.appendChild(p2_name);
+
 			scores.appendChild(p1_score);
 			scores.appendChild(divider);
 			scores.appendChild(p2_score);
+
 			content_container.appendChild(player_names);
 			content_container.appendChild(scores);
 			content_container.appendChild(submit_btn);
@@ -1836,29 +1983,41 @@
 				// [swiss ? "swiss" : "bracket"];
 				if (swiss) {
 					const round_to_mod = parsed_data.swiss[round_name];
+
 					for (const mod_game of round_to_mod) {
 						if (mod_game.hasOwnProperty(p1_name_text)) {
 							let new_game = {};
+
 							new_game[p1_name_text] = document.getElementById(`${p1_name_text}-score`).value;
 							new_game[p2_name_text] = document.getElementById(`${p2_name_text}-score`).value;
+
 							parsed_data.swiss[round_name][round_to_mod.indexOf(mod_game)] = new_game;
+
 							break;
 						}
 					}
+
 					await updateDoc(doc(db, 'events', event), {
 						rounds: JSON.stringify(parsed_data)
 					});
+
 					document.getElementById("modal-container").style.display = "none";
+
 					window.location.reload();
 				} else {
 					let new_game = {};
+
 					new_game[Object.keys(match)[0]] = document.getElementById(`${p1_name_text}-score`).value;
 					new_game[Object.keys(match)[1]] = document.getElementById(`${p2_name_text}-score`).value;
+
 					parsed_data.bracket.matches[round_name] = new_game;
+
 					await updateDoc(doc(db, 'events', event), {
 						rounds: JSON.stringify(parsed_data)
 					});
+
 					document.getElementById("modal-container").style.display = "none";
+
 					window.location.reload();
 				}
 			}
@@ -1880,6 +2039,7 @@
 			let opps = {};
 			let num_games = {};
 			let gw = {};
+
 			if (event_data.stage == "initial") {
 				for (const player in JSON.parse(event_data.decks)) {
 					records[player] = [0, 0];
@@ -1889,19 +2049,25 @@
 					num_games[player] = 0;
 					gw[player] = 0;
 				}
+
 				return { records: records, match_total: match_total, opps: opps, omw: omw, num_games: num_games, gw: gw };
 			}
+
 			for (const round_name in swiss_rounds) {
 				let round = swiss_rounds[round_name];
+
 				for (const match of round) {
 					for (const player in match) {
 						let score = Number(match[player]);
+
 						if (!records.hasOwnProperty(player)) {
 							records[player] = [0, 0];
 						}
+
 						if (!match_total.hasOwnProperty(player)) {
 							match_total[player] = [0, 0];
 						}
+
 						switch (score) {
 							case 2:
 								records[player][0] += 1;
@@ -1911,34 +2077,44 @@
 								records[player][1] += 1;
 								break;
 						}
+
 						match_total[player][0] += (isNaN(score) ? 0 : score);
 						match_total[player][1] += (score != "-" && score < 2 ? 2 : 0);
 					}
+
 					let players = Object.keys(match);
+
 					let p1 = players[0];
 					let p2 = players[1];
+
 					if (!opps.hasOwnProperty(p1)) opps[p1] = [];
 					if (!opps.hasOwnProperty(p2)) opps[p2] = [];
+
 					opps[p1].push(p2);
 					opps[p2].push(p1);
+
 					num_games[p1] = num_games[p1] ? num_games[p1] + 1 : 1;
 					num_games[p2] = num_games[p2] ? num_games[p2] + 1 : 1;
 				}
 			}
 			for (const player in opps) {
 				gw[player] = records[player][0] / num_games[player];
+
 				for (const opp of opps[player]) {
 					if (!omw.hasOwnProperty(player)) omw[player] = [];
 					omw[player].push(records[opp][0] / num_games[opp]);
 				}
 			}
+
 			for (const player in omw) {
 				let total = 0;
 				let count = 0;
+
 				for (const wr of omw[player]) {
 					total += wr;
 					count++;
 				}
+
 				omw[player] = total / count;
 			}
 			return { records: records, match_total: match_total, opps: opps, omw: omw, num_games: num_games, gw: gw };
@@ -1951,6 +2127,7 @@
 			let matches = [];
 			let seedings = [];
 			let structure = "";
+
 			for (const player in stats.records) {
 				let record = stats.records[player];
 				let total = stats.match_total[player];
@@ -1963,6 +2140,7 @@
 
 			matches = rounds.bracket.matches;
 			seedings.sort(seeder);
+
 			return { players: players, matches: rounds.bracket.matches, seedings: seedings, stats: stats, structure: rounds.bracket.structure };
 		}
 
@@ -2002,189 +2180,170 @@
 
 		function parseStructure(structure) {
 			let splt;
+
 			if (structure.includes(":")) {
 				splt = structure.split(":");
 			} else {
 				splt = ["", structure]
 			}
+
 			let splt2 = splt[1].split(";");
+
 			for (let s of splt2) {
 				splt2[splt2.indexOf(s)] = s.split('');
 			}
+
 			let raw_structure = [splt[0].split(''), splt2];
 			let layer = 0;
 			let structure_info = { size: 0, structures: {} }
+
 			for (const bracket_struct of splt2) {
 				for (const game of bracket_struct) {
 					structure_info.structures[game] = layer;
 				}
+
 				if (layer == 0) structure_info.size = bracket_struct.length;
+
 				layer++;
 			}
+
 			return { raw: raw_structure, info: structure_info };
 		}
 
 		async function pushGP() {
+			if (!confirm("Are you sure you want to push a GP round?")) return;
+
 			if (event_data.ended) {
 				alert("GP has been ended, cannot push round");
 				return;
 			}
 
 			let rounds = JSON.parse(event_data.rounds);
+
 			if (event_data.stage == "swiss" && event_data.num_rounds != Object.keys(rounds.swiss).length) {
 				// if were in swiss and this isn't the last round
 				let stats = statsHelper(rounds.swiss);
 				let seedings = [];
 				let opps = {};
+
 				for (const round_name in rounds.swiss) {
 					const round = rounds.swiss[round_name];
+
 					for (const game of round) {
 						let players = Object.keys(game);
+
 						let p1 = players[0];
 						let p2 = players[1];
+
 						if (!opps.hasOwnProperty(p1)) opps[p1] = [p1];
 						if (!opps.hasOwnProperty(p2)) opps[p2] = [p2];
+
 						opps[p1].push(p2);
 						opps[p2].push(p1);
 					}
 				}
+
 				for (const player in stats.records) {
 					if (event_data.dropped.includes(player)) continue;
+
 					let record = stats.records[player];
 					let total = stats.match_total[player];
+
 					seedings.push({ player: player, record: record, match_total: total, opps: opps });
 				}
+
 				seedings.sort(seeder);
-				let games = [];
-				let in_games = [];
-				for (const p1 of seedings) {
-					let seedings_2 = [...seedings];
-					Array.prototype.swiss_sort = function (p) {
-						function compare(a, b) {
-							if (p.opps[p.player].includes(a.player) && !p.opps[p.player].includes(b.player)) {
-								return -1;
-							}
-							if (!p.opps[p.player].includes(a.player) && p.opps[p.player].includes(b.player)) {
-								return 1;
-							}
-							if (Math.abs(p.record[0] - a.record[0]) > Math.abs(p.record[0] - b.record[0])) {
-								return 1;
-							}
-							if (Math.abs(p.record[0] - a.record[0]) < Math.abs(p.record[0] - b.record[0])) {
-								return -1;
-							}
-							if (Math.abs(p.record[1] - a.record[1]) > Math.abs(p.record[1] - b.record[1])) {
-								return 1;
-							}
-							if (Math.abs(p.record[1] - a.record[1]) < Math.abs(p.record[1] - b.record[1])) {
-								return -1;
-							}
-							if (Math.abs(p.match_total[0] - a.match_total[0]) > Math.abs(p.match_total[0] - b.match_total[0])) {
-								return 1;
-							}
-							if (Math.abs(p.match_total[0] - a.match_total[0]) < Math.abs(p.match_total[0] - b.match_total[0])) {
-								return -1;
-							}
-							if (Math.abs(p.match_total[1] - a.match_total[1]) > Math.abs(p.match_total[1] - b.match_total[1])) {
-								return 1;
-							}
-							if (Math.abs(p.match_total[1] - a.match_total[1]) < Math.abs(p.match_total[1] - b.match_total[1])) {
-								return -1;
-							}
-							if (Math.abs(p.omw - a.omw) > Math.abs(p.omw - b.omw)) {
-								return 1;
-							}
-							if (Math.abs(p.omw - a.omw) < Math.abs(p.omw - b.omw)) {
-								return -1;
-							}
-							return 0;
-						}
-						this.sort(compare);
-					}
-					seedings_2.swiss_sort(p1);
-					for (const p2 of seedings_2) {
-						if (!opps[p1.player].includes(p2.player) && !in_games.includes(p1.player) && !in_games.includes(p2.player)) {
-							let new_game = {};
-							new_game[p1.player] = '-';
-							new_game[p2.player] = '-';
-							opps[p1.player].push(p2.player);
-							opps[p2.player].push(p1.player);
-							in_games.push(p1.player);
-							in_games.push(p2.player);
-							games.push(new_game);
-							break;
-						}
-					}
-					if (!in_games.includes(p1.player)) {
-						let new_game = {};
-						new_game[p1.player] = '-';
-						new_game["Bye"] = '-';
-						in_games.push(p1.player);
-						games.push(new_game);
-					}
-				}
-				rounds.swiss[`Round ${Object.keys(rounds.swiss).length + 1}`] = games;
-				let discord_msg = `Round ${Object.keys(rounds.swiss).length + 1} of ${event}. You have until <t:${Math.floor(Date.now() / 1000) + 259200}:f> to complete your matches. Contact @_hervor_ for extensions.`;
+
+				const games = swissMatchmaking(seedings);
+				const round_number = Object.keys(rounds.swiss).length + 1;
+				const in_3_days = Math.floor(Date.now() / 1000) + 259200;
+
+				rounds.swiss[`Round ${round_number}`] = games;
+
+				let discord_msg = `Round ${round_number} of ${event}. You have until <t:${in_3_days}:f> to complete your matches. Contact @_hervor_ for extensions.`;
+
 				for (const game of games) {
 					discord_msg += `\n@${Object.keys(game)[0]} vs @${Object.keys(game)[1]}`;
 				}
+
 				discord_msg += ``;
+
 				navigator.clipboard.writeText(discord_msg);
+
 				await updateDoc(doc(db, 'events', event), {
 					rounds: JSON.stringify(rounds)
 				});
+
 				reload();
 			}
 			else if (event_data.stage == "swiss") {
 				// first top cut round
 				let stats = statsHelper(rounds.swiss);
+
 				let players = [];
 				let matches = [];
 				let seedings = [];
 				let structure = "";
+
 				for (const player in stats.records) {
 					let record = stats.records[player];
 					let total = stats.match_total[player];
+
 					if (record[0] >= (event_data.num_rounds - 1) && player != "Bye" && !event_data.dropped.includes(player)) {
-						console.log("added to top cut", player, stats.records[player]);
 						players.push(player);
 					}
+
 					seedings.push({ player: player, record: record, match_total: total });
 				}
+
 				const struct_obj = getStructure(players.length);
+
 				structure = struct_obj.structure;
 				matches = struct_obj.matches;
+
 				seedings.sort(seeder);
+
 				rounds.bracket.structure = structure;
 				rounds.bracket.matches = matches;
+
 				await updateDoc(doc(db, 'events', event), {
 					rounds: JSON.stringify(rounds),
 					stage: "bracket"
 				});
+
 				reload();
 			}
 			else if (event_data.stage == "initial") {
 				let games = [];
 				let in_games = [];
+
 				const decks = JSON.parse(event_data.decks);
 				let i = 0;
+
 				for (const player in decks) {
 					if (!in_games.includes(player)) {
 						let game = {};
+
 						game[player] = "-";
 						game[Object.keys(decks)[i + 1]] = "-";
+
 						in_games.push(player);
 						in_games.push(Object.keys(decks)[i + 1]);
+
 						games.push(game);
 					}
+
 					i++;
 				}
+
 				rounds.swiss["Round 1"] = games;
+
 				await updateDoc(doc(db, 'events', event), {
 					rounds: JSON.stringify(rounds),
 					num_rounds: numRounds(in_games.length),
 					stage: "swiss"
 				});
+
 				reload();
 			}
 			else {
@@ -2192,9 +2351,51 @@
 			}
 		}
 
+		function swissMatchmaking(seedings) {
+			let games = [];
+			let in_games = [];
+
+			for (const p1 of seedings) {
+				let seedings_2 = [...seedings];
+
+				seedings_2.swiss_sort(p1);
+
+				for (const p2 of seedings_2) {
+					if (!opps[p1.player].includes(p2.player) && !in_games.includes(p1.player) && !in_games.includes(p2.player)) {
+						let new_game = {};
+
+						new_game[p1.player] = '-';
+						new_game[p2.player] = '-';
+
+						opps[p1.player].push(p2.player);
+						opps[p2.player].push(p1.player);
+
+						in_games.push(p1.player);
+						in_games.push(p2.player);
+
+						games.push(new_game);
+
+						break;
+					}
+				}
+
+				if (!in_games.includes(p1.player)) {
+					let new_game = {};
+
+					new_game[p1.player] = '-';
+					new_game["Bye"] = '-';
+
+					in_games.push(p1.player);
+					games.push(new_game);
+				}
+			}
+
+		}
+
 		function getStructure(length) {
 			let structure;
 			let matches;
+
 			switch (length) {
 				case 1:
 					structure = "a";
@@ -2309,11 +2510,15 @@
 					}
 					break;
 			}
+
 			return { structure: structure, matches: matches };
 		}
 
 		async function newGP() {
+			if (!confirm("Are you sure you want to create a new gp?")) return;
+
 			const event_name = window.prompt("GP Name?");
+
 			await setDoc(doc(db, 'events', event_name), {
 				decks: "{}",
 				rounds: '{"swiss":{},"bracket":{}}',
@@ -2323,12 +2528,17 @@
 				winner: "TBD",
 				dropped: []
 			});
+
+			alert("Created new GP!");
 		}
 
 		async function dropGP(event_data) {
+			if (!confirm("Are you sure you want to drop?")) return;
+
 			await updateDoc(doc(db, 'events', event), {
 				dropped: [...event_data.dropped, username]
 			});
+
 			alert("Dropped " + username + ". Ping aanginer to be re-added.");
 		}
 
@@ -2341,15 +2551,20 @@
 
 			for (const deck of decks) {
 				const deck_ele = gridifyDeck(deck);
+
 				deck_ele.onclick = () => {
 					const new_decks = JSON.parse(event_data.decks);
 					new_decks[username] = deck;
+
 					updateDoc(doc(db, "events", event), {
 						decks: JSON.stringify(new_decks)
 					});
+
 					alert("Deck Submitted!");
+
 					document.getElementById("modal-container").style.display = "none";
 				}
+
 				content_container.appendChild(deck_ele);
 			}
 
@@ -2359,25 +2574,28 @@
 		function gridifyDeck(deck) {
 			const container = document.createElement("div");
 			container.className = "deck-container";
+
 			const preview_img = document.createElement("img");
+
 			let card_stats;
+
 			for (const card of card_list_arrayified) {
 				if (deck.previewimg == card.card_name) {
 					card_stats = card;
 					break;
 				}
 			}
+
 			preview_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 			preview_img.className = "deck-preview-img";
-			// preview_img.onclick = function() {
-			//     window.location.href = `/deckbuilder?deck=${deck.user}-${deck.name}`
-			// }
+
 			const deck_name = document.createElement("div");
 			deck_name.className = "deck-name";
 			deck_name.innerText = deck.name;
 
 			container.appendChild(deck_name);
 			container.appendChild(preview_img);
+
 			return container;
 		}
 
@@ -2395,6 +2613,8 @@
 		}
 
 		function endGP() {
+			if (!confirm("Are you sure you want to end this gp?")) return;
+
 			updateDoc(doc(db, 'events', event), {
 				ended: true
 			});
