@@ -1083,7 +1083,7 @@
 		let decks = {};
 		let admin = false;
 		const urlParams = new URLSearchParams(window.location.search);
-		const event = urlParams.get('event');
+		let event = urlParams.get('event');
 		let card_list;
 		let event_data;
 
@@ -1095,8 +1095,15 @@
 
 		let card_list_arrayified = card_list.cards;
 
+		if (!event) {
+			await getDoc(doc(db, "info", "events")).then(docSnap => {
+				event = docSnap.data().recent;
+				const url = new URL(window.location.href);
+				history.pushState({}, "", `${url.pathname}?event=${event}`);
+			})
+		}
+
 		await getDoc(doc(db, 'events', event)).then(async docSnap => {
-			// initialize
 			event_data = docSnap.data();
 		});
 
@@ -1114,7 +1121,6 @@
 			});
 		}
 
-		// #endregion
 		document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
 
 		function addAdminEventListeners() {
