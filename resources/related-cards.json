@@ -1,11 +1,11 @@
 {
-    "matches": {
-        "Embraced Cards": "(E|e)mbrace",
-        "Liberated Dragon": "(L|l)iberate",
-        "Trace Reminder": "(C|c)reate (a|two|three|four|five|X) trace(s?) of",
-        "Vertex Reminder": "{V",
-        "Reserves": "(I|i)n your reserves",
-        "~ Token;": "Reflect {[0-9WUBRGIXYZ]+?}",
-        "~ ITD": "Iterate"
-    }
+	"matches": {
+		"Embraced Cards": "[Ee]mbrace",
+		"Liberated Dragon": "[Ll]iberate",
+		"Trace Reminder": "([Cc]reate (a|two|three|four|five|X) trace(s?) of|[Tt]race a)",
+		"Vertex Reminder": "{V",
+		"Reserves": "[Ii]n your reserves",
+		"~ Token;": "Reflect {[0-9WUBRGIXYZ]+?}",
+		"~ ITD": "Iterate"
+	}
 }
