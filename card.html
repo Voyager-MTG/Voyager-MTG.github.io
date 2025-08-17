@@ -665,8 +665,17 @@
 				const effect = document.getElementsByClassName("effect")[0];
 
 				for (const card of related_cards) {
-					effect.innerHTML = effect.innerHTML.replaceAll(card, `<span class="card-hover" onmouseover="showCardHover('${card}')" onmousemove="moveCardHover(event)" onmouseout="hideCardHover()">${card}</span>`);
-				}
+					if (effect.innerHTML.includes(`<b>${card}</b>`)) {
+						effect.innerHTML = effect.innerHTML.replaceAll(/trace (it|this [^ ])'?s? skill/gs, function (_1) {
+							return `<span class="card-hover" onmouseover="showCardHover('${card}')" onmousemove="moveCardHover(event)" onmouseout="hideCardHover()">${_1}</span>`;
+						});
+					}
+
+					effect.innerHTML = effect.innerHTML.replaceAll(new RegExp(`${card}[^']`, "gs"), function (_1) {
+						return `<span class="card-hover" onmouseover="showCardHover('${card}')" onmousemove="moveCardHover(event)" onmouseout="hideCardHover()">${card}</span>${_1.replace(card, "")}`;
+					});
+				};
+
 
 				for (const token in related_cards_json.matches) {
 					const match = related_cards_json.matches[token];
@@ -677,41 +686,42 @@
 
 				document.getElementById("card-text").appendChild(others);
 				document.getElementById("related-cards").style.display = "block";
-			}
 
-			if (other_printings.length > 0) {
-				const printings = document.createElement("div");
-				printings.className = "printings";
-				printings.id = "other-printings";
-				printings.innerText = "Other Printings: ";
 
-				for (let i = 0; i < other_printings.length; i++) {
-					const printing = other_printings[i];
-					const setlink = document.createElement("a");
-					setlink.innerText = printing.set;
+				if (other_printings.length > 0) {
+					const printings = document.createElement("div");
+					printings.className = "printings";
+					printings.id = "other-printings";
+					printings.innerText = "Other Printings: ";
 
-					const url = new URL('card', window.location.origin);
-					const params = {
-						set: printing.set,
-						num: printing.number,
-						name: printing.card_name
+					for (let i = 0; i < other_printings.length; i++) {
+						const printing = other_printings[i];
+						const setlink = document.createElement("a");
+						setlink.innerText = printing.set;
+
+						const url = new URL('card', window.location.origin);
+						const params = {
+							set: printing.set,
+							num: printing.number,
+							name: printing.card_name
+						}
+						for (const key in params) {
+							url.searchParams.append(key, params[key]);
+						}
+						setlink.href = url;
+
+						printings.appendChild(setlink);
+
+						if (i != other_printings.length - 1) {
+							const dot = document.createElement("text");
+							dot.innerText = " • ";
+							printings.appendChild(dot);
+						}
 					}
-					for (const key in params) {
-						url.searchParams.append(key, params[key]);
-					}
-					setlink.href = url;
 
-					printings.appendChild(setlink);
-
-					if (i != other_printings.length - 1) {
-						const dot = document.createElement("text");
-						dot.innerText = " • ";
-						printings.appendChild(dot);
-					}
+					document.getElementById("card-text").appendChild(printings);
+					document.getElementById("other-printings").style.display = "block";
 				}
-
-				document.getElementById("card-text").appendChild(printings);
-				document.getElementById("other-printings").style.display = "block";
 			}
 		});
 
@@ -749,11 +759,19 @@
 				}
 			}
 
-			const name_match = new RegExp(/(card|token) named /);
 			for (const name of card.rules_text.matchAll(/^(.*)(card|token)s? named (.*?) (into|,|with)/gs)) {
 				for (const card_ of card_list_arrayified) {
 					if (card_.card_name == name[3] && !related_cards.includes(name[3])) {
 						related_cards.push(name[3]);
+					}
+				}
+			}
+
+			const skill_match = /trace (it|this [^ ])'?s? skill/g;
+			if (card.rules_text.match(skill_match)) {
+				for (const name of card.rules_text.matchAll(/\[b\](.*)\[\/b\]/gs)) {
+					if (!related_cards.includes(name[1])) {
+						related_cards.push(name[1]);
 					}
 				}
 			}
