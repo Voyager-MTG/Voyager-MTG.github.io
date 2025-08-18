@@ -2217,7 +2217,9 @@
 		}
 
 		async function pushGP() {
-			if (!confirm("Are you sure you want to push a GP round?")) return;
+			const confirmed = confirm("Are you sure you want to push a GP round?");
+			console.log(confirmed);
+			if (!confirmed) return;
 
 			if (event_data.ended) {
 				alert("GP has been ended, cannot push round");
@@ -2260,7 +2262,7 @@
 
 				seedings.sort(seeder);
 
-				const games = swissMatchmaking(seedings);
+				const games = swissMatchmaking(seedings, opps);
 				const round_number = Object.keys(rounds.swiss).length + 1;
 				const in_3_days = Math.floor(Date.now() / 1000) + 259200;
 
@@ -2357,7 +2359,7 @@
 			}
 		}
 
-		function swissMatchmaking(seedings) {
+		function swissMatchmaking(seedings, opps) {
 			let games = [];
 			let in_games = [];
 
@@ -2396,6 +2398,7 @@
 				}
 			}
 
+			return games;
 		}
 
 		function getStructure(length) {

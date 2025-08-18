@@ -65,9 +65,9 @@
 			"rarity": "masterpiece",
 			"mana_cost": "",
 			"type": "Land",
-			"collector_number": "3",
+			"collector_number": "4",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/3_Drifting Field.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/4_Drifting Field.jpg"
 			}
 		},
 		{
@@ -75,9 +75,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Mountain",
-			"collector_number": "9",
+			"collector_number": "11",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/9_Mountain.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/11_Mountain.jpg"
 			}
 		},
 		{
@@ -85,9 +85,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Island",
-			"collector_number": "8",
+			"collector_number": "9",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/8_Island.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/9_Island.jpg"
 			}
 		},
 		{
@@ -95,9 +95,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Plains",
-			"collector_number": "10",
+			"collector_number": "12",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/10_Plains.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/12_Plains.jpg"
 			}
 		},
 		{
@@ -105,9 +105,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Swamp",
-			"collector_number": "11",
+			"collector_number": "15",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/11_Swamp.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/15_Swamp.jpg"
 			}
 		},
 		{
@@ -140,21 +140,92 @@
 				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/1_Apostle Entheate.jpg"
 			}
 		},
+		{
+			"name": "Identity Connoisseur",
+			"rarity": "masterpiece",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Creature — Human Assassin",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/3_Identity Connoisseur.jpg"
+			}
+		},
+		{
+			"name": "Illuminant Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/8_Illuminant Spire.jpg"
+			}
+		},
+		{
+			"name": "Ivory Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/10_Ivory Spire.jpg"
+			}
+		},
+		{
+			"name": "Searing Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/13_Searing Spire.jpg"
+			}
+		},
+		{
+			"name": "Silent Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/14_Silent Spire.jpg"
+			}
+		},
+		{
+			"name": "Twisted Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/16_Twisted Spire.jpg"
+			}
+		},
+		{
+			"name": "Verdant Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/17_Verdant Spire.jpg"
+			}
+		},
 	]
 
-[rare(1)]
-	2 Mother of Ants
+[cube(15)]
+	1 Mother of Ants
 	1 The Forge of Days
 	1 The Moth
 	1 The Red Grail
-	2 The Watchman
+	1 The Watchman
 	1 The Thunderskin
-[uncommon(4)]
-[common(7)]
-[wildcard(2)]
-	7 Mother of Ants
-	4 The Forge of Days
-	4 The Moth
-	4 The Red Grail
-	7 The Watchman
-	4 The Thunderskin
+	1 Drifting Field
+	1 Drown in Self Reflection
+	1 Apostle Entheate
+	1 Identity Connoisseur
+	1 Illuminant Spire
+	1 Ivory Spire
+	1 Searing Spire
+	1 Silent Spire
+	1 Twisted Spire
+	1 Verdant Spire
