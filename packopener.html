@@ -1306,7 +1306,7 @@
 					set_list = json;
 				}).catch(error => console.error('Error:', error));
 
-			await fetch('/resources/collectionleague/packs.json')
+			await fetch('/data/collectionleague/packs.json')
 				.then(response => response.json())
 				.then(json => {
 					set_packs = json;
@@ -1446,7 +1446,7 @@
 			let packs;
 			let coll_league_data;
 
-			await fetch('/resources/collectionleague/packs.json')
+			await fetch('/data/collectionleague/packs.json')
 				.then(response => response.json())
 				.then(json => {
 					pack_list = json;
@@ -1481,7 +1481,7 @@
 				draft_files = [];
 				for (const pack of pack_list.custom_packs) {
 					let set_points = pack.cost;
-					const path = `/resources/collectionleague/packs/${pack.name}`;
+					const path = `/data/collectionleague/packs/${pack.name}`;
 					let set_packn = parseInt(document.getElementById(`${pack.name}-input`).value);
 					for (let i = 0; i < set_packn; i++) {
 						draft_files.push(await getCustomFile(`${path}/draft_file.txt`));
@@ -1522,7 +1522,7 @@
 
 			for (const pack of pack_list.custom_packs) {
 				let set_points = pack.cost;
-				const path = `/resources/collectionleague/packs/${pack.name}`;
+				const path = `/data/collectionleague/packs/${pack.name}`;
 
 				const set_name = document.createElement("span");
 				set_name.className = "set-name";

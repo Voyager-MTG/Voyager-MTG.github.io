@@ -1108,6 +1108,7 @@
 		let all_events_docs;
 		let all_events = [];
 		let card_list;
+		let set_list;
 		let stats;
 		let search_value = "";
 
@@ -1115,6 +1116,12 @@
 			.then(response => response.json())
 			.then(json => {
 				card_list = json;
+			}).catch(error => console.error('Error:', error));
+
+		await fetch('/lists/all-sets.json')
+			.then(response => response.json())
+			.then(json => {
+				set_list = json;
 			}).catch(error => console.error('Error:', error));
 
 		let card_list_arrayified = card_list.cards;

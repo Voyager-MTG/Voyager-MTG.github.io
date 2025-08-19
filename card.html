@@ -206,7 +206,7 @@
 
 	.card-text .printings {
 		margin-top: auto;
-		font-size: 12px;
+		font-size: 13px;
 		font-weight: bold;
 		padding-bottom: 0px;
 	}
@@ -215,14 +215,25 @@
 		display: none;
 	}
 
-	.printings a {
+	.printings a:not(.current-printing) {
 		color: #1338be;
 		text-decoration: none;
 		transition: 0.2s;
 	}
 
-	.printings a:hover {
+	.printings a:hover:not(.current-printing) {
 		color: #0492c2;
+	}
+
+	.current-printing {
+		color: black;
+		transition: 0.2s;
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	.current-printing:hover {
+		color: rgb(81, 81, 81);
 	}
 
 	.img-container {
@@ -601,13 +612,7 @@
 			banner.href = '/sets/' + set;
 			banner_logo.src = '/sets/' + set + '-files/icon.png';
 
-			for (const set_stats of set_list.sets) {
-				if (set_stats.set_code == set) {
-					banner_title.innerHTML = set_stats.set_name;
-					break;
-				}
-			}
-
+			banner_title.innerHTML = getSetName(set);
 
 			document.getElementById("grid").appendChild(gridifyCard(card, false, false));
 
@@ -615,7 +620,7 @@
 
 			other_printings = [];
 			for (const c of card_list_arrayified) {
-				if (c.card_name == card.card_name && c.type == card.type && !c.shape.includes("Token") && (c.set != card.set || c.number != card.number)) {
+				if (c.card_name == card.card_name && c.type == card.type && !c.shape.includes("Token")) {
 					other_printings.push(c);
 				}
 			}
@@ -686,48 +691,57 @@
 
 				document.getElementById("card-text").appendChild(others);
 				document.getElementById("related-cards").style.display = "block";
+			}
 
+			const printings = document.createElement("div");
+			printings.className = "printings";
+			printings.id = "other-printings";
+			printings.innerText = "Printings: ";
 
-				if (other_printings.length > 0) {
-					const printings = document.createElement("div");
-					printings.className = "printings";
-					printings.id = "other-printings";
-					printings.innerText = "Other Printings: ";
+			for (let i = 0; i < other_printings.length; i++) {
+				const printing = other_printings[i];
+				const setlink = document.createElement("a");
+				setlink.innerText = getSetName(printing.set) + " (#" + printing.number + ")";
 
-					for (let i = 0; i < other_printings.length; i++) {
-						const printing = other_printings[i];
-						const setlink = document.createElement("a");
-						setlink.innerText = printing.set;
+				const url = new URL('card', window.location.origin);
+				const params = {
+					set: printing.set,
+					num: printing.number,
+					name: printing.card_name
+				}
+				for (const key in params) {
+					url.searchParams.append(key, params[key]);
+				}
 
-						const url = new URL('card', window.location.origin);
-						const params = {
-							set: printing.set,
-							num: printing.number,
-							name: printing.card_name
-						}
-						for (const key in params) {
-							url.searchParams.append(key, params[key]);
-						}
-						setlink.href = url;
+				if (printing.set == card.set && printing.num == card.num) {
+					setlink.className = "current-printing";
+				} else {
+					setlink.href = url;
+				}
 
-						printings.appendChild(setlink);
+				setlink.onmousemove = function (event) { moveCardHover(event) };
+				setlink.onmouseover = function () { showCardHover(printing.card_name, printing.set, printing.number) };
+				setlink.onmouseout = hideCardHover;
 
-						if (i != other_printings.length - 1) {
-							const dot = document.createElement("text");
-							dot.innerText = " • ";
-							printings.appendChild(dot);
-						}
-					}
+				printings.appendChild(setlink);
 
-					document.getElementById("card-text").appendChild(printings);
-					document.getElementById("other-printings").style.display = "block";
+				if (i != other_printings.length - 1) {
+					const dot = document.createElement("text");
+					dot.innerText = " • ";
+					printings.appendChild(dot);
 				}
 			}
+
+			document.getElementById("card-text").appendChild(printings);
+			document.getElementById("other-printings").style.display = "block";
+
 		});
 
-		function showCardHover(card_name) {
+		function showCardHover(card_name, set = false, num = false) {
+			// console.log(set, num);
 			for (const card_stats of card_list_arrayified) {
-				if (card_stats.card_name == card_name) {
+				if (card_stats.card_name == card_name && (!set || card_stats.set == set) && (!num || card_stats.number == num)) {
+					console.log(card_stats, set, num);
 					const src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 
 					const hover_card = document.getElementById("hover-card");
@@ -745,6 +759,14 @@
 
 		function hideCardHover() {
 			document.getElementById("hover-card").style.display = "none";
+		}
+
+		function getSetName(code) {
+			for (const set_stats of set_list.sets) {
+				if (set_stats.set_code == code) {
+					return set_stats.set_name;
+				}
+			}
 		}
 
 		async function fetchRelatedCards(card) {
@@ -1332,7 +1354,7 @@
 		async function fetchRulings(card_name) {
 			let rulings_json;
 			let firebase_list;
-			await fetch('/scripts/rulings/rulings.json')
+			await fetch('/data/rulings/rulings.json')
 				.then(response => response.json())
 				.then(data => {
 					rulings_json = data;

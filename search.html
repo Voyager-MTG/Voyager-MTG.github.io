@@ -701,9 +701,9 @@
 					continue;
 				}
 
-				if (card.rarity.includes("masterpiece") && !searchTerms.includes("+r:masterpiece") && !searchTerms.includes("+r:mp") && !searchTerms.includes("t:basic")) {
-					continue;
-				}
+				// if (card.rarity.includes("masterpiece") && !searchTerms.includes("+r:masterpiece") && !searchTerms.includes("+r:mp") && !searchTerms.includes("t:basic")) {
+				// 	continue;
+				// }
 
 				searched = await searchAllTokens(card, tokenizeTerms(searchTerms));
 

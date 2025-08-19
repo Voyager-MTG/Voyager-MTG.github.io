@@ -311,7 +311,7 @@
 		});
 
 		async function loadCards(pack) {
-			const path = `/resources/collectionleague/packs/${pack}`;
+			const path = `/data/collectionleague/packs/${pack}`;
 			let draft_file;
 			await fetch(`${path}/draft_file.txt`)
 				.then(response => response.text())
