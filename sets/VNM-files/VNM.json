@@ -4802,7 +4802,7 @@
             "number": 205,
             "color_identity": "WB",
             "cost": "{WB}{WB}{WB}",
-            "rules_text": "Lifelink \nWard\u2014Pay 3 life.\nWhenever you attack, target creature you control gets +1/+1 until end of turn.\nMaterialize 4 [i](Tap one or more other enchantments you control with total mana value 4 or more: This also becomes an Icon creature until end of turn.)[/i]",
+            "rules_text": "Lifelink \nWard\u2014Pay 3 life.\nWhenever you attack, target creature you control gets +1/+1 until end of turn.\nMaterialize 4 [i](Tap one or more other enchantments you control with total mana value 4 or more: This also becomes an Icon creature until your next upkeep.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "4/4",
             "special_text": "",
