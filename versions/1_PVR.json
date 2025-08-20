@@ -5413,7 +5413,7 @@
             "number": 50,
             "color_identity": "U",
             "cost": "{2}{U}{U}",
-            "rules_text": "Create a token that's a copy of target permanent, except its name is Mirrored Entity.\nRetopology {2}{U}{U}{U}{U} [i](Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)[/i]",
+            "rules_text": "Create a token that's a copy of target permanent, except its name is Mirrored Entity.\nRetopology {2}{U}{U}{U}{U} [i](Cast a copy of this from your graveyard by exiling it and paying {2}{U}{U}{U}{U}. Spend only mana from differently named sources this way.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
