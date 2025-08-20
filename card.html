@@ -708,7 +708,7 @@
 			for (let i = 0; i < other_printings.length; i++) {
 				const printing = other_printings[i];
 				const setlink = document.createElement("a");
-				setlink.innerText = getSetName(printing.set) + " (#" + printing.number + ")";
+				setlink.innerText = getSetName(printing.set) + " (" + (rarityCode(printing.rarity)) + "#" + printing.number + ")";
 
 				const url = new URL('card', window.location.origin);
 				const params = {
@@ -755,6 +755,23 @@
 			image_grid.appendChild(rulings_container);
 			image_grid.appendChild(changes_container);
 		});
+
+		function rarityCode(r) {
+			switch (r) {
+				case "common":
+					return "C"
+				case "uncommon":
+					return "U"
+				case "rare":
+					return "R"
+				case "mythic rare":
+					return "M"
+				case "masterpiece":
+					return "MP"
+				case "special":
+					return "S"
+			}
+		}
 
 		function showCardHover(card_name, set = false, num = false) {
 			// console.log(set, num);

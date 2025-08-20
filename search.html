@@ -707,7 +707,7 @@
 
 				searched = await searchAllTokens(card, tokenizeTerms(searchTerms));
 
-				if (searched && !containsCard(search_results, card)) {
+				if (searched && (!containsCard(search_results, card) || searchTerms.includes("include:extras") || searchTerms.includes("include:printings") || searchTerms.includes("include:prints"))) {
 					search_results.push(card);
 				}
 			}
@@ -1403,6 +1403,9 @@
 					if (modifier == "!" || modifier == "=" || modifier == ":") {
 						return card_stats.designer.includes(check);
 					}
+				}
+				if (term == "sort" || term == "include") {
+					return true;
 				}
 				if (term == "size" || term == "pt") {
 					let searched_power = parseInt(check.split("/")[0]);
