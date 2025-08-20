@@ -1586,16 +1586,49 @@
 
 			preset_dropdown.value = getCurrentPreset();
 
-			let top_100_cards = search();
+			let top_100_cards_obj = search();
+			let full_top_100_cards = top_100_cards_obj.full;
+			let top_100_cards = top_100_cards_obj.searched;
 
 			top_100_cards.sort(topCardSorter);
+			full_top_100_cards.sort(topCardSorter);
 
 			let rank = 1;
+			let i = 0;
+			let j = 0;
+			let prev_card;
+
+			let full_ranks = {};
+			let full_rank_temp = 1;
+
+			for (const card of full_top_100_cards) {
+				if (prev_card) {
+					const prev_card_rate = parseFloat(stats[prev_card.card_name].playrate_general[1].split("%")[0]);
+					const card_rate = parseFloat(stats[card.card_name].playrate_general[1].split("%")[0]);
+					if (prev_card_rate > card_rate) {
+						full_rank_temp = j + 1;
+					}
+				}
+
+				full_ranks[card.card_name] = full_rank_temp;
+
+				j++;
+				prev_card = full_top_100_cards[j - 1];
+			}
 
 			for (const card of top_100_cards) {
-				const card_ele = makeCard(card, stats[card.card_name], rank);
+				if (prev_card) {
+					const prev_card_rate = parseFloat(stats[prev_card.card_name].playrate_general[1].split("%")[0]);
+					const card_rate = parseFloat(stats[card.card_name].playrate_general[1].split("%")[0]);
+					if (prev_card_rate > card_rate) {
+						rank = i + 1;
+					}
+				}
+				let full_rank = full_ranks[card.card_name];
+				const card_ele = makeCard(card, stats[card.card_name], rank, full_rank);
 				cards_container.appendChild(card_ele);
-				rank++;
+				i++;
+				prev_card = top_100_cards[i - 1];
 			}
 
 			header_container.appendChild(search_input);
@@ -1648,7 +1681,7 @@
 		// 	}
 		// }
 
-		function makeCard(card, stats, rank) {
+		function makeCard(card, stats, rank, full_rank) {
 			// const card_name = document.createElement("div");
 			// card_name.className = "card-row-item card-row-name text";
 			// card_name.innerText = card.card_name;
@@ -1690,7 +1723,7 @@
 
 			const card_rank = document.createElement("span");
 			card_rank.className = "card-rank card-stats-item";
-			card_rank.innerText = "#" + rank;
+			card_rank.innerText = "#" + rank + " (#" + full_rank + ")";
 
 			card_stats_container.appendChild(card_rank);
 			card_stats_container.appendChild(card_playrate);
@@ -1785,17 +1818,31 @@
 				}
 			}
 
+			console.log(all_decks.length);
+
 			return stats;
 		}
 
 		function search() {
 			let search_results = [];
+			let card_list_cleaned = [];
 			let searchTerms = search_value.toLowerCase();
 
 			for (const card of card_list_arrayified) {
-				if (card.shape.includes("token") && !searchTerms.includes("*t:token") && !searchTerms.includes("t:token")) {
+				if ((card.shape.includes("token") && !searchTerms.includes("*t:token") && !searchTerms.includes("t:token")) || (card.type.includes("Basic") && !searchTerms.includes("t:basic"))) {
 					continue;
 				}
+
+				let skip_iter = false;
+				for (const _card of card_list_cleaned) {
+					if (_card.card_name == card.card_name) {
+						skip_iter = true;
+					}
+				}
+
+				if (skip_iter) continue;
+
+				card_list_cleaned.push(card);
 
 				let searched = searchAllTokens(card, tokenizeTerms(searchTerms));
 
@@ -1804,7 +1851,7 @@
 				}
 			}
 
-			return getTop100(search_results);
+			return { searched: getTop100(search_results), full: (card_list_cleaned) };
 		}
 
 		function tokenizeTerms(searchTerms) {
@@ -1977,19 +2024,19 @@
 				{
 					if (modifier == "!" || modifier == "=")
 					{
-
+	
 					}
 					else if (modifier == ":")
 					{
-
+	
 					}
 					else if (modifier == "<")
 					{
-
+	
 					}
 					else if (modifier == ">")
 					{
-
+	
 					}
 				} */
 				if (term == "mv" || term == "cmc") {
@@ -2120,15 +2167,15 @@
 					/* unsupported flows
 					if (modifier == "!" || modifier == "=")
 					{
-
+	
 					}
 					else if (modifier == "<")
 					{
-
+	
 					}
 					else if (modifier == ">")
 					{
-
+	
 					} */
 				}
 				if (term == "o" || term == "oracle" || term == "text") {
@@ -2139,15 +2186,15 @@
 					/* unsupported flows
 					if (modifier == "!" || modifier == "=")
 					{
-
+	
 					}
 					else if (modifier == "<")
 					{
-
+	
 					}
 					else if (modifier == ">")
 					{
-
+	
 					} */
 				}
 				if (term == "pow" || term == "power") {
@@ -2227,11 +2274,11 @@
 					/* unsupported flows
 					else if (modifier == "<")
 					{
-
+	
 					}
 					else if (modifier == ">")
 					{
-
+	
 					} */
 				}
 				if (term == "keyword" || term == "kw" || term == "has") {
@@ -2243,11 +2290,11 @@
 					/* unsupported flows
 					else if (modifier == "<")
 					{
-
+	
 					}
 					else if (modifier == ">")
 					{
-
+	
 					} */
 				}
 				if (term == "alias") {
@@ -2344,11 +2391,11 @@
 					/* unsupported flows
 					else if (modifier == "<")
 					{
-
+	
 					}
 					else if (modifier == ">")
 					{
-
+	
 					} */
 				}
 				if (term == "tag") {
@@ -2550,7 +2597,7 @@
 		function getTop100(list) {
 			let top_100_cards = [];
 			for (const card of list) {
-				let skip_iter = (card.type.includes("Basic") && !search_value.includes("t:basic"));
+				let skip_iter = false;
 
 				for (const top_card of top_100_cards) {
 					if (card.card_name == top_card.card_name) {
