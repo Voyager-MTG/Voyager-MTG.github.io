@@ -1948,13 +1948,13 @@
 			}
 		},
 		{
-			"name": "Whitaker Sigil",
+			"name": "House Sigil",
 			"rarity": "special",
 			"mana_cost": "{2}",
 			"type": "Artifact",
-			"collector_number": "329",
+			"collector_number": "315",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/329_Whitaker Sigil.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/315_House Sigil.jpg"
 			}
 		},
 		{
@@ -3078,23 +3078,23 @@
 			}
 		},
 		{
-			"name": "Intisuyus Armies",
+			"name": "Intisuyu's Armies",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Enchantment",
 			"collector_number": "3",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/3_Intisuyus Armies.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/3_Intisuyu's Armies.jpg"
 			}
 		},
 		{
-			"name": "Suyay's Soldier",
+			"name": "Soldier",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Soldier",
-			"collector_number": "6",
+			"collector_number": "5",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/6_Suyay's Soldier.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/5_Soldier.jpg"
 			}
 		},
 		{
@@ -3138,13 +3138,13 @@
 			}
 		},
 		{
-			"name": "Vances Claw",
+			"name": "Vance's Claw",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Legendary Creature — Elf Soldier",
 			"collector_number": "12",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/12_Vances Claw.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/12_Vance's Claw.jpg"
 			}
 		},
 		{
@@ -3188,23 +3188,23 @@
 			}
 		},
 		{
-			"name": "Dewold Army",
+			"name": "Army",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Army",
 			"collector_number": "10",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/10_Dewold Army.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/10_Army.jpg"
 			}
 		},
 		{
-			"name": "Young Soldier",
+			"name": "Soldier",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Soldier",
 			"collector_number": "14",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/14_Young Soldier.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/14_Soldier.jpg"
 			}
 		},
 		{
@@ -3218,13 +3218,13 @@
 			}
 		},
 		{
-			"name": "Destroyed-Knight",
+			"name": "Knight",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Knight",
 			"collector_number": "19",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/19_Destroyed-Knight.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/19_Knight.jpg"
 			}
 		},
 		{
@@ -3232,9 +3232,49 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Plains",
-			"collector_number": "300",
+			"collector_number": "301",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/300_Plains.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/301_Plains.jpg"
+			}
+		},
+		{
+			"name": "Island",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Island",
+			"collector_number": "304",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/304_Island.jpg"
+			}
+		},
+		{
+			"name": "Swamp",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Swamp",
+			"collector_number": "308",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/308_Swamp.jpg"
+			}
+		},
+		{
+			"name": "Mountain",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Mountain",
+			"collector_number": "309",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/309_Mountain.jpg"
+			}
+		},
+		{
+			"name": "Forest",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Forest",
+			"collector_number": "312",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/312_Forest.jpg"
 			}
 		},
 		{
@@ -3262,9 +3302,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Mountain",
-			"collector_number": "309",
+			"collector_number": "310",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/309_Mountain.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/310_Mountain.jpg"
 			}
 		},
 		{
@@ -3272,109 +3312,69 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Forest",
-			"collector_number": "312",
+			"collector_number": "314",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/312_Forest.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/314_Forest.jpg"
 			}
 		},
 		{
-			"name": "Island2",
-			"rarity": "common",
-			"mana_cost": "",
-			"type": "Basic Land — Island",
-			"collector_number": "304",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/304_Island2.jpg"
-			}
-		},
-		{
-			"name": "Swamp2",
-			"rarity": "common",
-			"mana_cost": "",
-			"type": "Basic Land — Swamp",
-			"collector_number": "307",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/307_Swamp2.jpg"
-			}
-		},
-		{
-			"name": "Mountain2",
-			"rarity": "common",
-			"mana_cost": "",
-			"type": "Basic Land — Mountain",
-			"collector_number": "310",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/310_Mountain2.jpg"
-			}
-		},
-		{
-			"name": "Forest2",
-			"rarity": "common",
-			"mana_cost": "",
-			"type": "Basic Land — Forest",
-			"collector_number": "313",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/313_Forest2.jpg"
-			}
-		},
-		{
-			"name": "Plains3",
+			"name": "Plains",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Plains",
 			"collector_number": "302",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/302_Plains3.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/302_Plains.jpg"
 			}
 		},
 		{
-			"name": "Island3",
+			"name": "Island",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Island",
 			"collector_number": "305",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/305_Island3.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/305_Island.jpg"
 			}
 		},
 		{
-			"name": "Swamp3",
+			"name": "Swamp",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Swamp",
-			"collector_number": "308",
+			"collector_number": "307",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/308_Swamp3.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/307_Swamp.jpg"
 			}
 		},
 		{
-			"name": "Mountain3",
+			"name": "Mountain",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Mountain",
 			"collector_number": "311",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/311_Mountain3.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/311_Mountain.jpg"
 			}
 		},
 		{
-			"name": "Forest3",
+			"name": "Forest",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Forest",
-			"collector_number": "314",
+			"collector_number": "313",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/314_Forest3.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/313_Forest.jpg"
 			}
 		},
 		{
-			"name": "Plains2",
+			"name": "Plains",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Plains",
-			"collector_number": "301",
+			"collector_number": "300",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/301_Plains2.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/300_Plains.jpg"
 			}
 		},
 		{
@@ -3382,9 +3382,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Soldier",
-			"collector_number": "5",
+			"collector_number": "6",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/5_Soldier.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/6_Soldier.jpg"
 			}
 		},
 		{
@@ -3458,143 +3458,143 @@
 			}
 		},
 		{
-			"name": "Vance Sigil",
-			"rarity": "special",
-			"mana_cost": "{2}",
-			"type": "Artifact",
-			"collector_number": "328",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/328_Vance Sigil.jpg"
-			}
-		},
-		{
-			"name": "Turnberry Sigil",
-			"rarity": "special",
-			"mana_cost": "{2}",
-			"type": "Artifact",
-			"collector_number": "327",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/327_Turnberry Sigil.jpg"
-			}
-		},
-		{
-			"name": "Terrel Sigil",
-			"rarity": "special",
-			"mana_cost": "{2}",
-			"type": "Artifact",
-			"collector_number": "326",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/326_Terrel Sigil.jpg"
-			}
-		},
-		{
-			"name": "Sapner Sigil",
-			"rarity": "special",
-			"mana_cost": "{2}",
-			"type": "Artifact",
-			"collector_number": "325",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/325_Sapner Sigil.jpg"
-			}
-		},
-		{
-			"name": "Rivers Sigil",
-			"rarity": "special",
-			"mana_cost": "{2}",
-			"type": "Artifact",
-			"collector_number": "324",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/324_Rivers Sigil.jpg"
-			}
-		},
-		{
-			"name": "Rey Sigil",
-			"rarity": "special",
-			"mana_cost": "{2}",
-			"type": "Artifact",
-			"collector_number": "323",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/323_Rey Sigil.jpg"
-			}
-		},
-		{
-			"name": "Radcliff Sigil",
-			"rarity": "special",
-			"mana_cost": "{2}",
-			"type": "Artifact",
-			"collector_number": "322",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/322_Radcliff Sigil.jpg"
-			}
-		},
-		{
-			"name": "Plaskett Sigil",
-			"rarity": "special",
-			"mana_cost": "{2}",
-			"type": "Artifact",
-			"collector_number": "321",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/321_Plaskett Sigil.jpg"
-			}
-		},
-		{
-			"name": "Phyre Sigil",
-			"rarity": "special",
-			"mana_cost": "{2}",
-			"type": "Artifact",
-			"collector_number": "320",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/320_Phyre Sigil.jpg"
-			}
-		},
-		{
-			"name": "Attwater Sigil",
-			"rarity": "special",
-			"mana_cost": "{2}",
-			"type": "Artifact",
-			"collector_number": "315",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/315_Attwater Sigil.jpg"
-			}
-		},
-		{
-			"name": "Perle House Sigil",
-			"rarity": "special",
-			"mana_cost": "{2}",
-			"type": "Artifact",
-			"collector_number": "319",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/319_Perle House Sigil.jpg"
-			}
-		},
-		{
-			"name": "Nye Sigil",
-			"rarity": "special",
-			"mana_cost": "{2}",
-			"type": "Artifact",
-			"collector_number": "318",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/318_Nye Sigil.jpg"
-			}
-		},
-		{
-			"name": "Hook Sigil",
-			"rarity": "special",
-			"mana_cost": "{2}",
-			"type": "Artifact",
-			"collector_number": "317",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/317_Hook Sigil.jpg"
-			}
-		},
-		{
-			"name": "Banefort Sigil",
+			"name": "House Sigil",
 			"rarity": "special",
 			"mana_cost": "{2}",
 			"type": "Artifact",
 			"collector_number": "316",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/316_Banefort Sigil.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/316_House Sigil.jpg"
+			}
+		},
+		{
+			"name": "House Sigil",
+			"rarity": "special",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "329",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/329_House Sigil.jpg"
+			}
+		},
+		{
+			"name": "House Sigil",
+			"rarity": "special",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "317",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/317_House Sigil.jpg"
+			}
+		},
+		{
+			"name": "House Sigil",
+			"rarity": "special",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "318",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/318_House Sigil.jpg"
+			}
+		},
+		{
+			"name": "House Sigil",
+			"rarity": "special",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "319",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/319_House Sigil.jpg"
+			}
+		},
+		{
+			"name": "House Sigil",
+			"rarity": "special",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "320",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/320_House Sigil.jpg"
+			}
+		},
+		{
+			"name": "House Sigil",
+			"rarity": "special",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "321",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/321_House Sigil.jpg"
+			}
+		},
+		{
+			"name": "House Sigil",
+			"rarity": "special",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "322",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/322_House Sigil.jpg"
+			}
+		},
+		{
+			"name": "House Sigil",
+			"rarity": "special",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "323",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/323_House Sigil.jpg"
+			}
+		},
+		{
+			"name": "House Sigil",
+			"rarity": "special",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "324",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/324_House Sigil.jpg"
+			}
+		},
+		{
+			"name": "House Sigil",
+			"rarity": "special",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "325",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/325_House Sigil.jpg"
+			}
+		},
+		{
+			"name": "House Sigil",
+			"rarity": "special",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "326",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/326_House Sigil.jpg"
+			}
+		},
+		{
+			"name": "House Sigil",
+			"rarity": "special",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "327",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/327_House Sigil.jpg"
+			}
+		},
+		{
+			"name": "House Sigil",
+			"rarity": "special",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "328",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/328_House Sigil.jpg"
 			}
 		},
 		{

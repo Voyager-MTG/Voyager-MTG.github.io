@@ -278,103 +278,103 @@
 			}
 		},
 		{
-			"name": "PTN Plains",
-			"rarity": "common",
-			"mana_cost": "",
-			"type": "Basic Land — Plains",
-			"collector_number": "260",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/260_PTN Plains.jpg"
-			}
-		},
-		{
-			"name": "PTN Plains 2",
+			"name": "Plains",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Plains",
 			"collector_number": "261",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/261_PTN Plains 2.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/261_Plains.jpg"
 			}
 		},
 		{
-			"name": "PTN Island",
+			"name": "Plains",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Plains",
+			"collector_number": "260",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/260_Plains.jpg"
+			}
+		},
+		{
+			"name": "Island",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Island",
 			"collector_number": "262",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/262_PTN Island.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/262_Island.jpg"
 			}
 		},
 		{
-			"name": "PTN Island 2",
+			"name": "Island",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Island",
 			"collector_number": "263",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/263_PTN Island 2.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/263_Island.jpg"
 			}
 		},
 		{
-			"name": "PTN Swamp",
-			"rarity": "common",
-			"mana_cost": "",
-			"type": "Basic Land — Swamp",
-			"collector_number": "264",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/264_PTN Swamp.jpg"
-			}
-		},
-		{
-			"name": "PTN Swamp 2",
+			"name": "Swamp",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Swamp",
 			"collector_number": "265",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/265_PTN Swamp 2.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/265_Swamp.jpg"
 			}
 		},
 		{
-			"name": "PTN Mountain",
+			"name": "Swamp",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Swamp",
+			"collector_number": "264",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/264_Swamp.jpg"
+			}
+		},
+		{
+			"name": "Mountain",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Mountain",
 			"collector_number": "266",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/266_PTN Mountain.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/266_Mountain.jpg"
 			}
 		},
 		{
-			"name": "PTN Mountain 2",
+			"name": "Mountain",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Mountain",
 			"collector_number": "267",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/267_PTN Mountain 2.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/267_Mountain.jpg"
 			}
 		},
 		{
-			"name": "PTN Forest",
+			"name": "Forest",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Forest",
 			"collector_number": "268",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/268_PTN Forest.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/268_Forest.jpg"
 			}
 		},
 		{
-			"name": "PTN Forest 2",
+			"name": "Forest",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Forest",
 			"collector_number": "269",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/269_PTN Forest 2.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/269_Forest.jpg"
 			}
 		},
 		{
@@ -1028,13 +1028,13 @@
 			}
 		},
 		{
-			"name": "Scar Boon",
+			"name": "Scar",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Boon",
 			"collector_number": "4",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/4_Scar Boon.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/4_Scar.jpg"
 			}
 		},
 		{
@@ -1928,13 +1928,13 @@
 			}
 		},
 		{
-			"name": "God Horror Token",
+			"name": "God Horror",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — God Horror",
 			"collector_number": "3",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/3_God Horror Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/3_God Horror.jpg"
 			}
 		},
 		{
@@ -2428,13 +2428,13 @@
 			}
 		},
 		{
-			"name": "Cleric Token",
+			"name": "Cleric",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Cleric",
 			"collector_number": "1",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/1_Cleric Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/1_Cleric.jpg"
 			}
 		},
 		{
@@ -2448,33 +2448,33 @@
 			}
 		},
 		{
-			"name": "Angel Token",
+			"name": "Angel",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Angel",
 			"collector_number": "5",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/5_Angel Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/5_Angel.jpg"
 			}
 		},
 		{
-			"name": "Worm Token",
+			"name": "Worm",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Worm",
 			"collector_number": "6",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/6_Worm Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/6_Worm.jpg"
 			}
 		},
 		{
-			"name": "Wolf Token",
+			"name": "Wolf",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Wolf",
 			"collector_number": "7",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/7_Wolf Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PTN-files/img/7_Wolf.jpg"
 			}
 		},
 		{

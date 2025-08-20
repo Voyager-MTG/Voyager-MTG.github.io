@@ -708,7 +708,7 @@
             "number": 144,
             "color_identity": "R",
             "cost": "{4}{R}",
-            "rules_text": "Haste\n{T}: Create a token that's a copy of target non-Ouphe creature you control. That token has haste. At the beginning of your next end step, forsake. [i](To forsake, sacrifice creatures with total toughness 3 or more.)[/i]",
+            "rules_text": "Haste\n{T}: Create a token that's a copy of target non-Ouphe creature you control. That token has haste. At the beginning of your next end step, forsake. [i](Sacrifice creatures with total toughness 3 or more.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "3/3",
             "special_text": "",
@@ -2855,7 +2855,7 @@
             "number": 182,
             "color_identity": "G",
             "cost": "{4}{G}",
-            "rules_text": "Vigilance\nBloom [i](Whenever you cast a spell that targets this permanent, you may pay that spell's mana cost. If you do, copy that spell. You may choose new targets for the copy.)[/i]\nWhenever you cast or copy a noncreature spell, creatures you control get +1/+1 until end of turn.",
+            "rules_text": "Vigilance\nBloom [i](Whenever you cast a spell that targets this creature, you may pay that spell's mana cost. If you do, copy that spell. You may choose new targets for the copy.)[/i]\nWhenever you cast or copy a noncreature spell, creatures you control get +1/+1 until end of turn.",
             "flavor_text": "[i][/i]",
             "pt": "5/5",
             "special_text": "",
@@ -3703,11 +3703,11 @@
             "notes": "!tag Dewold"
         },
         {
-            "card_name": "Whitaker Sigil",
+            "card_name": "House Sigil",
             "color": "",
             "rarity": "special",
             "type": "Artifact",
-            "number": 329,
+            "number": 315,
             "color_identity": "C",
             "cost": "{2}",
             "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{3}, {T}, Sacrifice House Sigil: Choose a name. Create a legendary 3/3 Knight creature token that's all colors with that name. It can't block this turn.",
@@ -3719,7 +3719,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Agus Sx",
-            "notes": "!tag Dewold\n!exportname Whitaker Sigil\n!tag Whitaker"
+            "notes": "!tag Dewold\nWhitaker Sigil\n!tag Whitaker"
         },
         {
             "card_name": "Ardleby Hold",
@@ -4622,7 +4622,7 @@
             "number": 148,
             "color_identity": "R",
             "cost": "{3}{R}",
-            "rules_text": "As an additional cost to cast this spell, you may forsake. [i](To forsake, sacrifice creatures with total toughness 3 or more.)[/i]\nExile the top three cards of your library. You may play them until the end of your next turn. If Innocent Rendezvous was forsaken, add {R}{R}{R}{R}{R}.",
+            "rules_text": "As an additional cost to cast this spell, you may forsake. [i](Sacrifice creatures with total toughness 3 or more.)[/i]\nExile the top three cards of your library. You may play them until the end of your next turn. If Innocent Rendezvous was forsaken, add {R}{R}{R}{R}{R}.",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -5850,7 +5850,7 @@
             "notes": "!tag Dewold"
         },
         {
-            "card_name": "Intisuyus Armies",
+            "card_name": "Intisuyu's Armies",
             "color": "W",
             "rarity": "common",
             "type": "Token Enchantment",
@@ -5866,14 +5866,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Frank Abarca",
-            "notes": "!tag Dewold\n!exportname Intisuyus Armies\n!related Capac Suyay, Grim Seeker<2>;"
+            "notes": "!tag Dewold\nIntisuyus Armies\n!related Capac Suyay, Grim Seeker<2>;"
         },
         {
-            "card_name": "Suyay's Soldier",
+            "card_name": "Soldier",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Soldier",
-            "number": 6,
+            "number": 5,
             "color_identity": "W",
             "cost": "",
             "rules_text": "",
@@ -5885,7 +5885,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Frank Abarca",
-            "notes": "!tag Dewold\n!exportname Suyay's Soldier\n!related Capac Suyay, Grim Seeker<2>; Intisuyu's Armies;"
+            "notes": "!tag Dewold\nSuyay's Soldier\n!related Capac Suyay, Grim Seeker<2>; Intisuyu's Armies;"
         },
         {
             "card_name": "Messenger of Absent Messages",
@@ -5964,7 +5964,7 @@
             "notes": "!tag Dewold\n!related House Negotiations;"
         },
         {
-            "card_name": "Vances Claw",
+            "card_name": "Vance's Claw",
             "color": "B",
             "rarity": "common",
             "type": "Token Legendary Creature \u2014 Elf Soldier",
@@ -5980,7 +5980,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Anton Tareev",
-            "notes": "!tag Dewold\n!exportname Vances Claw\nRenowned Cycle\n!related Blessing at Graven Laughs;"
+            "notes": "!tag Dewold\nVances Claw\nRenowned Cycle\n!related Blessing at Graven Laughs;"
         },
         {
             "card_name": "Lover to All",
@@ -6059,7 +6059,7 @@
             "notes": "!tag Dewold\n!related Gosfridus Turnberry;"
         },
         {
-            "card_name": "Dewold Army",
+            "card_name": "Army",
             "color": "B",
             "rarity": "common",
             "type": "Token Creature \u2014 Army",
@@ -6075,10 +6075,10 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Daria Rashev",
-            "notes": "!tag Dewold\n!exportname Dewold Army\n!related Left to Wander"
+            "notes": "!tag Dewold\nDewold Army\n!related Left to Wander"
         },
         {
-            "card_name": "Young Soldier",
+            "card_name": "Soldier",
             "color": "R",
             "rarity": "common",
             "type": "Token Creature \u2014 Soldier",
@@ -6094,7 +6094,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Viviane Souza",
-            "notes": "!tag Dewold\n!exportname Young Soldier\n!related Whitaker Captain; Turnberry Scout <2>; Patrol the Geistwald; Leon's Claim; Hulking Vessel;"
+            "notes": "!tag Dewold\nYoung Soldier\n!related Whitaker Captain; Turnberry Scout <2>; Patrol the Geistwald; Leon's Claim; Hulking Vessel;"
         },
         {
             "card_name": "Reserves",
@@ -6116,7 +6116,7 @@
             "notes": "!tag Dewold"
         },
         {
-            "card_name": "Destroyed-Knight",
+            "card_name": "Knight",
             "color": "WUBRG",
             "rarity": "common",
             "type": "Token Creature \u2014 Knight",
@@ -6132,14 +6132,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Madness Demon",
-            "notes": "!tag Dewold\n!exportname Destroyed-Knight\n!related Knight of Skyspire; Banefort Archer; Replenishing Camp; Resolute Elk; Turnberry Overseer;"
+            "notes": "!tag Dewold\nDestroyed-Knight\n!related Knight of Skyspire; Banefort Archer; Replenishing Camp; Resolute Elk; Turnberry Overseer;"
         },
         {
             "card_name": "Plains",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Plains",
-            "number": 300,
+            "number": 301,
             "color_identity": "W",
             "cost": "",
             "rules_text": "",
@@ -6158,7 +6158,7 @@
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Island",
-            "number": 303,
+            "number": 304,
             "color_identity": "U",
             "cost": "",
             "rules_text": "",
@@ -6177,7 +6177,7 @@
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Swamp",
-            "number": 306,
+            "number": 308,
             "color_identity": "B",
             "cost": "",
             "rules_text": "",
@@ -6230,11 +6230,11 @@
             "notes": "!tag Dewold\nSword Cycle"
         },
         {
-            "card_name": "Island2",
+            "card_name": "Island",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Island",
-            "number": 304,
+            "number": 303,
             "color_identity": "U",
             "cost": "",
             "rules_text": "",
@@ -6246,14 +6246,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Alvaro Jimenez",
-            "notes": "!tag Dewold\n!exportname Island2"
+            "notes": "!tag Dewold\nIsland2"
         },
         {
-            "card_name": "Swamp2",
+            "card_name": "Swamp",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Swamp",
-            "number": 307,
+            "number": 306,
             "color_identity": "B",
             "cost": "",
             "rules_text": "",
@@ -6265,10 +6265,10 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "David Honz",
-            "notes": "!tag Dewold\n!exportname Swamp2"
+            "notes": "!tag Dewold\nSwamp2"
         },
         {
-            "card_name": "Mountain2",
+            "card_name": "Mountain",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Mountain",
@@ -6284,14 +6284,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Timothee Mathon",
-            "notes": "!tag Dewold\n!exportname Mountain2"
+            "notes": "!tag Dewold\nMountain2"
         },
         {
-            "card_name": "Forest2",
+            "card_name": "Forest",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Forest",
-            "number": 313,
+            "number": 314,
             "color_identity": "G",
             "cost": "",
             "rules_text": "",
@@ -6303,10 +6303,10 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Grady Frederick",
-            "notes": "!tag Dewold\n!exportname Forest2"
+            "notes": "!tag Dewold\nForest2"
         },
         {
-            "card_name": "Plains3",
+            "card_name": "Plains",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Plains",
@@ -6322,10 +6322,10 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Gilles Beloeil",
-            "notes": "!tag Dewold\n!exportname Plains3"
+            "notes": "!tag Dewold\nPlains3"
         },
         {
-            "card_name": "Island3",
+            "card_name": "Island",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Island",
@@ -6341,14 +6341,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Grady Frederick",
-            "notes": "!tag Dewold\n!exportname Island3"
+            "notes": "!tag Dewold\nIsland3"
         },
         {
-            "card_name": "Swamp3",
+            "card_name": "Swamp",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Swamp",
-            "number": 308,
+            "number": 307,
             "color_identity": "B",
             "cost": "",
             "rules_text": "",
@@ -6360,10 +6360,10 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Uzali_Art - Quentin Gillet",
-            "notes": "!tag Dewold\n!exportname Swamp3"
+            "notes": "!tag Dewold\nSwamp3"
         },
         {
-            "card_name": "Mountain3",
+            "card_name": "Mountain",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Mountain",
@@ -6379,14 +6379,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Asur Misoa",
-            "notes": "!tag Dewold\n!exportname Mountain3"
+            "notes": "!tag Dewold\nMountain3"
         },
         {
-            "card_name": "Forest3",
+            "card_name": "Forest",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Forest",
-            "number": 314,
+            "number": 313,
             "color_identity": "G",
             "cost": "",
             "rules_text": "",
@@ -6398,14 +6398,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Ksanda CreepyCrafts",
-            "notes": "!tag Dewold\n!exportname Forest3"
+            "notes": "!tag Dewold\nForest3"
         },
         {
-            "card_name": "Plains2",
+            "card_name": "Plains",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Plains",
-            "number": 301,
+            "number": 300,
             "color_identity": "W",
             "cost": "",
             "rules_text": "",
@@ -6417,14 +6417,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Virginie Juteau",
-            "notes": "!tag Dewold\n!exportname Plains2"
+            "notes": "!tag Dewold\nPlains2"
         },
         {
             "card_name": "Soldier",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Soldier",
-            "number": 5,
+            "number": 6,
             "color_identity": "W",
             "cost": "",
             "rules_text": "Defender",
@@ -6572,11 +6572,11 @@
             "notes": "!tag Dewold"
         },
         {
-            "card_name": "Vance Sigil",
+            "card_name": "House Sigil",
             "color": "",
             "rarity": "special",
             "type": "Artifact",
-            "number": 328,
+            "number": 316,
             "color_identity": "C",
             "cost": "{2}",
             "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{3}, {T}, Sacrifice House Sigil: Choose a name. Create a legendary 3/3 Knight creature token that's all colors with that name. It can't block this turn.",
@@ -6588,14 +6588,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Efflam Mercier",
-            "notes": "!tag Dewold\n!exportname Vance Sigil\n!tag Vance"
+            "notes": "!tag Dewold\nVance Sigil\n!tag Vance"
         },
         {
-            "card_name": "Turnberry Sigil",
+            "card_name": "House Sigil",
             "color": "",
             "rarity": "special",
             "type": "Artifact",
-            "number": 327,
+            "number": 329,
             "color_identity": "C",
             "cost": "{2}",
             "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{3}, {T}, Sacrifice House Sigil: Choose a name. Create a legendary 3/3 Knight creature token that's all colors with that name. It can't block this turn.",
@@ -6607,14 +6607,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Stefan Kopinski",
-            "notes": "!tag Dewold\n!exportname Turnberry Sigil\n!tag Turnberry"
+            "notes": "!tag Dewold\nTurnberry Sigil\n!tag Turnberry"
         },
         {
-            "card_name": "Terrel Sigil",
+            "card_name": "House Sigil",
             "color": "",
             "rarity": "special",
             "type": "Artifact",
-            "number": 326,
+            "number": 317,
             "color_identity": "C",
             "cost": "{2}",
             "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{3}, {T}, Sacrifice House Sigil: Choose a name. Create a legendary 3/3 Knight creature token that's all colors with that name. It can't block this turn.",
@@ -6626,14 +6626,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Hue Teo",
-            "notes": "!tag Dewold\n!exportname Terrel Sigil\n!tag Terrel"
+            "notes": "!tag Dewold\nTerrel Sigil\n!tag Terrel"
         },
         {
-            "card_name": "Sapner Sigil",
+            "card_name": "House Sigil",
             "color": "",
             "rarity": "special",
             "type": "Artifact",
-            "number": 325,
+            "number": 318,
             "color_identity": "C",
             "cost": "{2}",
             "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{3}, {T}, Sacrifice House Sigil: Choose a name. Create a legendary 3/3 Knight creature token that's all colors with that name. It can't block this turn.",
@@ -6645,14 +6645,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Teejay Ralph",
-            "notes": "!tag Dewold\n!exportname Sapner Sigil\n!tag Sapner"
+            "notes": "!tag Dewold\nSapner Sigil\n!tag Sapner"
         },
         {
-            "card_name": "Rivers Sigil",
+            "card_name": "House Sigil",
             "color": "",
             "rarity": "special",
             "type": "Artifact",
-            "number": 324,
+            "number": 319,
             "color_identity": "C",
             "cost": "{2}",
             "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{3}, {T}, Sacrifice House Sigil: Choose a name. Create a legendary 3/3 Knight creature token that's all colors with that name. It can't block this turn.",
@@ -6664,14 +6664,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Josep Perez",
-            "notes": "!tag Dewold\n!exportname Rivers Sigil\n!tag Rivers"
+            "notes": "!tag Dewold\nRivers Sigil\n!tag Rivers"
         },
         {
-            "card_name": "Rey Sigil",
+            "card_name": "House Sigil",
             "color": "",
             "rarity": "special",
             "type": "Artifact",
-            "number": 323,
+            "number": 320,
             "color_identity": "C",
             "cost": "{2}",
             "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{3}, {T}, Sacrifice House Sigil: Choose a name. Create a legendary 3/3 Knight creature token that's all colors with that name. It can't block this turn.",
@@ -6683,14 +6683,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Irvan Pradivta",
-            "notes": "!tag Dewold\n!exportname Rey Sigil\n!tag Rey"
+            "notes": "!tag Dewold\nRey Sigil\n!tag Rey"
         },
         {
-            "card_name": "Radcliff Sigil",
+            "card_name": "House Sigil",
             "color": "",
             "rarity": "special",
             "type": "Artifact",
-            "number": 322,
+            "number": 321,
             "color_identity": "C",
             "cost": "{2}",
             "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{3}, {T}, Sacrifice House Sigil: Choose a name. Create a legendary 3/3 Knight creature token that's all colors with that name. It can't block this turn.",
@@ -6702,14 +6702,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Hue Teo",
-            "notes": "!tag Dewold\n!exportname Radcliff Sigil\n!tag Radcliff"
+            "notes": "!tag Dewold\nRadcliff Sigil\n!tag Radcliff"
         },
         {
-            "card_name": "Plaskett Sigil",
+            "card_name": "House Sigil",
             "color": "",
             "rarity": "special",
             "type": "Artifact",
-            "number": 321,
+            "number": 322,
             "color_identity": "C",
             "cost": "{2}",
             "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{3}, {T}, Sacrifice House Sigil: Choose a name. Create a legendary 3/3 Knight creature token that's all colors with that name. It can't block this turn.",
@@ -6721,14 +6721,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Joachim Gerlings",
-            "notes": "!tag Dewold\n!exportname Plaskett Sigil\n!tag Plaskett"
+            "notes": "!tag Dewold\nPlaskett Sigil\n!tag Plaskett"
         },
         {
-            "card_name": "Phyre Sigil",
+            "card_name": "House Sigil",
             "color": "",
             "rarity": "special",
             "type": "Artifact",
-            "number": 320,
+            "number": 323,
             "color_identity": "C",
             "cost": "{2}",
             "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{3}, {T}, Sacrifice House Sigil: Choose a name. Create a legendary 3/3 Knight creature token that's all colors with that name. It can't block this turn.",
@@ -6740,14 +6740,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "J Alexander",
-            "notes": "!tag Dewold\n!tag Phyre\n!exportname Phyre Sigil"
+            "notes": "!tag Dewold\n!tag Phyre\nPhyre Sigil"
         },
         {
-            "card_name": "Attwater Sigil",
+            "card_name": "House Sigil",
             "color": "",
             "rarity": "special",
             "type": "Artifact",
-            "number": 315,
+            "number": 324,
             "color_identity": "C",
             "cost": "{2}",
             "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{3}, {T}, Sacrifice House Sigil: Choose a name. Create a legendary 3/3 Knight creature token that's all colors with that name. It can't block this turn.",
@@ -6759,14 +6759,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Kieran Yanner",
-            "notes": "!tag Dewold\n!exportname Attwater Sigil\n!tag Attwater"
+            "notes": "!tag Dewold\nAttwater Sigil\n!tag Attwater"
         },
         {
-            "card_name": "Perle House Sigil",
+            "card_name": "House Sigil",
             "color": "",
             "rarity": "special",
             "type": "Artifact",
-            "number": 319,
+            "number": 325,
             "color_identity": "C",
             "cost": "{2}",
             "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{3}, {T}, Sacrifice House Sigil: Choose a name. Create a legendary 3/3 Knight creature token that's all colors with that name. It can't block this turn.",
@@ -6778,14 +6778,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Felix Hidayat",
-            "notes": "!tag Dewold\n!tag Perle\n!exportname Perle House Sigil"
+            "notes": "!tag Dewold\n!tag Perle\nPerle House Sigil"
         },
         {
-            "card_name": "Nye Sigil",
+            "card_name": "House Sigil",
             "color": "",
             "rarity": "special",
             "type": "Artifact",
-            "number": 318,
+            "number": 326,
             "color_identity": "C",
             "cost": "{2}",
             "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{3}, {T}, Sacrifice House Sigil: Choose a name. Create a legendary 3/3 Knight creature token that's all colors with that name. It can't block this turn.",
@@ -6797,14 +6797,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Anna Mur",
-            "notes": "!tag Dewold\n!exportname Nye Sigil\n!tag Nye"
+            "notes": "!tag Dewold\nNye Sigil\n!tag Nye"
         },
         {
-            "card_name": "Hook Sigil",
+            "card_name": "House Sigil",
             "color": "",
             "rarity": "special",
             "type": "Artifact",
-            "number": 317,
+            "number": 327,
             "color_identity": "C",
             "cost": "{2}",
             "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{3}, {T}, Sacrifice House Sigil: Choose a name. Create a legendary 3/3 Knight creature token that's all colors with that name. It can't block this turn.",
@@ -6816,14 +6816,14 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Arash Razavi",
-            "notes": "!tag Dewold\n!exportname Hook Sigil\n!tag Hook"
+            "notes": "!tag Dewold\nHook Sigil\n!tag Hook"
         },
         {
-            "card_name": "Banefort Sigil",
+            "card_name": "House Sigil",
             "color": "",
             "rarity": "special",
             "type": "Artifact",
-            "number": 316,
+            "number": 328,
             "color_identity": "C",
             "cost": "{2}",
             "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{3}, {T}, Sacrifice House Sigil: Choose a name. Create a legendary 3/3 Knight creature token that's all colors with that name. It can't block this turn.",
@@ -6835,7 +6835,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Kiri Leonard",
-            "notes": "!tag Dewold\n!exportname Banefort Sigil\n!tag Banefort"
+            "notes": "!tag Dewold\nBanefort Sigil\n!tag Banefort"
         },
         {
             "card_name": "Hann, Herald of the Conqueror",

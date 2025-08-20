@@ -812,7 +812,7 @@
             "number": 230,
             "color_identity": "C",
             "cost": "{1}",
-            "rules_text": "Defender\n{1}, {T}: [b][Add one mana of any color.][/b]\nImpetus {1} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for {1}. Then exile it.)[/i]",
+            "rules_text": "Defender\n{1}, {T}: [b][Add one mana of any color.][/b]\nImpetus {1} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)[/i]",
             "flavor_text": "[i]The structure of the Wonderlands is ever-shifting, and its motivations are inscrutable.[/i]",
             "pt": "0/4",
             "special_text": "",
@@ -1033,7 +1033,7 @@
             "notes": ""
         },
         {
-            "card_name": "New Tensuo Luminary Token;",
+            "card_name": "New Tensuo Luminary",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Wonder Elf Knight",
@@ -1049,7 +1049,7 @@
             "loyalty": "",
             "designer": "Wende",
             "artist": "Sonech",
-            "notes": "!exportname New Tensuo Luminary Token;\n!related New Tensuo Luminary;"
+            "notes": "New Tensuo Luminary Token;\n!related New Tensuo Luminary;"
         },
         {
             "card_name": "New Tensuo Luminary",
@@ -1173,7 +1173,7 @@
             "number": 98,
             "color_identity": "B",
             "cost": "{B}",
-            "rules_text": "[b][Mill two cards][/b], then you may pay 1 life to return one of the milled cards to your hand.\nImpetus {B} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for {B}. Then exile it.)[/i]",
+            "rules_text": "[b][Mill two cards][/b], then you may pay 1 life to return one of the milled cards to your hand.\nImpetus {B} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)[/i]",
             "flavor_text": "[i]\u201cAnother meteor. Damn place is taunting me.\u201d\n\u2014Chance-in-Hell[/i]",
             "pt": "",
             "special_text": "",
@@ -1382,7 +1382,7 @@
             "number": 42,
             "color_identity": "UG",
             "cost": "{1}{U}",
-            "rules_text": "Counter target spell unless its controller pays {2}. If they do, [b][create a 1/1 Wonder creature token that's all colors.][/b]\nImpetus {G} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for {G}. Then exile it.)[/i]",
+            "rules_text": "Counter target spell unless its controller pays {2}. If they do, [b][create a 1/1 Wonder creature token that's all colors.][/b]\nImpetus {G} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -1401,7 +1401,7 @@
             "number": 77,
             "color_identity": "BG",
             "cost": "{1}{B}",
-            "rules_text": "When Blossoming Dissenter dies, [b][create a 1/1 Wonder creature token that's all colors.][/b]\nImpetus {G} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for {G}. Then exile it.)[/i]",
+            "rules_text": "When Blossoming Dissenter dies, [b][create a 1/1 Wonder creature token that's all colors.][/b]\nImpetus {G} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)[/i]",
             "flavor_text": "[i]\u201cHe was weak. Forget him. Remain steady.\u201d\n\u2014Ajha, the Wish for Home[/i]",
             "pt": "2/1",
             "special_text": "",
@@ -1515,7 +1515,7 @@
             "number": 85,
             "color_identity": "B",
             "cost": "{1}{B}",
-            "rules_text": "Whenever Deepmists Vindicator becomes blocked, [b][each opponent sacrifices a creature or planeswalker.][/b]\nImpetus {4}{B} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for {4}{B}. Then exile it.)[/i]",
+            "rules_text": "Whenever Deepmists Vindicator becomes blocked, [b][each opponent sacrifices a creature or planeswalker.][/b]\nImpetus {4}{B} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)[/i]",
             "flavor_text": "[i]She had forgotten the reason for her resentment for the living, but the plane still enabled it.[/i]",
             "pt": "3/1",
             "special_text": "",
@@ -1610,7 +1610,7 @@
             "number": 20,
             "color_identity": "WB",
             "cost": "{1}{W}",
-            "rules_text": "[b][Target creature you control gains indestructible and lifelink until end of turn.][/b] Put a +1/+1 counter on it.\nImpetus {1}{B} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for {1}{B}. Then exile it.)[/i]",
+            "rules_text": "[b][Target creature you control gains indestructible and lifelink until end of turn.][/b] Put a +1/+1 counter on it.\nImpetus {1}{B} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -1660,7 +1660,7 @@
             "notes": ""
         },
         {
-            "card_name": "Lakebed Wrudge Token;",
+            "card_name": "Lakebed Wrudge",
             "color": "U",
             "rarity": "common",
             "type": "Creature \u2014 Wonder Fish",
@@ -1676,7 +1676,7 @@
             "loyalty": "",
             "designer": "Wende",
             "artist": "Guillermo Martinedz",
-            "notes": "!exportname Lakebed Wrudge Token;\n!related Lakebed Wrudge;"
+            "notes": "Lakebed Wrudge Token;\n!related Lakebed Wrudge;"
         },
         {
             "card_name": "Liberators of the Soul",
@@ -1705,7 +1705,7 @@
             "number": 23,
             "color_identity": "W",
             "cost": "{1}{W}",
-            "rules_text": "Flash\nWhen Lifelighter enters, you may [b][return target permanent you control not named Lifelighter to its owner's hand.][/b]\nImpetus {W} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for {W}. Then exile it.)[/i]",
+            "rules_text": "Flash\nWhen Lifelighter enters, you may [b][return target permanent you control not named Lifelighter to its owner's hand.][/b]\nImpetus {W} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "2/1",
             "special_text": "",
@@ -1819,7 +1819,7 @@
             "number": 127,
             "color_identity": "R",
             "cost": "{1}{R}",
-            "rules_text": "{T}: [b][Target creature you control gains haste until end of turn.][/b]\nImpetus {R} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for {R}. Then exile it.)[/i]",
+            "rules_text": "{T}: [b][Target creature you control gains haste until end of turn.][/b]\nImpetus {R} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "2/2",
             "special_text": "",
@@ -2161,7 +2161,7 @@
             "number": 1,
             "color_identity": "WUBRG",
             "cost": "{3}",
-            "rules_text": "Choose one\u2014\n\u2022 [b][Exile up to one target nonland permanent with mana value 1 or less.][/b]\n\u2022 [b][Scry 2, then draw a card.][/b]\n\u2022 [b][Create a 3/3 green Beast creature token.][/b]\nImpetus {W}{U}{B}{R}{G} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for {W}{U}{B}{R}{G}. Then exile it.)[/i]",
+            "rules_text": "Choose one\u2014\n\u2022 [b][Exile up to one target nonland permanent with mana value 1 or less.][/b]\n\u2022 [b][Scry 2, then draw a card.][/b]\n\u2022 [b][Create a 3/3 green Beast creature token.][/b]\nImpetus {W}{U}{B}{R}{G} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -2218,7 +2218,7 @@
             "number": 12,
             "color_identity": "WG",
             "cost": "{2}{W}",
-            "rules_text": "Destroy target creature or enchantment. Its controller may [b][create a 1/1 Wonder creature token that's all colors.][/b]\nImpetus {G} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for {G}. Then exile it.)[/i]",
+            "rules_text": "Destroy target creature or enchantment. Its controller may [b][create a 1/1 Wonder creature token that's all colors.][/b]\nImpetus {G} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)[/i]",
             "flavor_text": "[i]\u201cWe have all we want now. Why fight?\u201d[/i]",
             "pt": "",
             "special_text": "",
@@ -2306,7 +2306,7 @@
             "notes": ""
         },
         {
-            "card_name": "Cloudeater Drake token;",
+            "card_name": "Cloudeater Drake",
             "color": "U",
             "rarity": "common",
             "type": "Token Creature \u2014 Wonder Drake",
@@ -2322,7 +2322,7 @@
             "loyalty": "",
             "designer": "Wende",
             "artist": "Florian Herold",
-            "notes": "!exportname Cloudeater Drake token;\n!related Cloudeater Drake;"
+            "notes": "Cloudeater Drake token;\n!related Cloudeater Drake;"
         },
         {
             "card_name": "Copy",
@@ -2515,7 +2515,7 @@
             "notes": ""
         },
         {
-            "card_name": "Flowering Germinus Token;",
+            "card_name": "Flowering Germinus",
             "color": "WG",
             "rarity": "common",
             "type": "Token Creature \u2014 Wonder",
@@ -2531,10 +2531,10 @@
             "loyalty": "",
             "designer": "Wende",
             "artist": "Kyle Enochs",
-            "notes": "!exportname Flowering Germinus Token;\n!related Flowering Germinus;"
+            "notes": "Flowering Germinus Token;\n!related Flowering Germinus;"
         },
         {
-            "card_name": "Gilded Ancient Token;",
+            "card_name": "Gilded Ancient",
             "color": "G",
             "rarity": "common",
             "type": "Token Creature \u2014 Wonder Cat",
@@ -2550,7 +2550,7 @@
             "loyalty": "",
             "designer": "Wende",
             "artist": "Martin Roca",
-            "notes": "!exportname Gilded Ancient Token;\n!related Gilded Ancient;"
+            "notes": "Gilded Ancient Token;\n!related Gilded Ancient;"
         },
         {
             "card_name": "Grifters' Ambush",
@@ -2667,7 +2667,7 @@
             "notes": ""
         },
         {
-            "card_name": "Kindly Skywinder Token;",
+            "card_name": "Kindly Skywinder",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Wonder Drake",
@@ -2683,7 +2683,7 @@
             "loyalty": "",
             "designer": "Wende",
             "artist": "Emily Bland",
-            "notes": "!exportname Kindly Skywinder Token;\n!related Kindly Skywinder;"
+            "notes": "Kindly Skywinder Token;\n!related Kindly Skywinder;"
         },
         {
             "card_name": "Manuela, the Known",
@@ -2762,7 +2762,7 @@
             "notes": ""
         },
         {
-            "card_name": "Music of the Deepholt Token;",
+            "card_name": "Music of the Deepholt",
             "color": "U",
             "rarity": "common",
             "type": "Token Enchantment Creature \u2014 Wonder",
@@ -2778,7 +2778,7 @@
             "loyalty": "",
             "designer": "Wende",
             "artist": "Tien Can",
-            "notes": "!exportname Music of the Deepholt Token;\n!related Music of the Deepholt;"
+            "notes": "Music of the Deepholt Token;\n!related Music of the Deepholt;"
         },
         {
             "card_name": "New Tensuo Clergy",
@@ -2800,7 +2800,7 @@
             "notes": ""
         },
         {
-            "card_name": "New Tensuo Clergy Token;",
+            "card_name": "New Tensuo Clergy",
             "color": "B",
             "rarity": "common",
             "type": "Token Creature \u2014 Wonder Elf Cleric",
@@ -2816,10 +2816,10 @@
             "loyalty": "",
             "designer": "Wende",
             "artist": "Beka Chipicuri",
-            "notes": "!exportname New Tensuo Clergy Token;\n!related New Tensuo Clergy;"
+            "notes": "New Tensuo Clergy Token;\n!related New Tensuo Clergy;"
         },
         {
-            "card_name": "New Tensuo Vanguard Token;",
+            "card_name": "New Tensuo Vanguard",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Wonder Elf Knight",
@@ -2835,7 +2835,7 @@
             "loyalty": "",
             "designer": "Wende",
             "artist": "Jexion",
-            "notes": "!exportname New Tensuo Vanguard Token;\n!related New Tensuo Vanguard"
+            "notes": "New Tensuo Vanguard Token;\n!related New Tensuo Vanguard"
         },
         {
             "card_name": "Out of Options",
@@ -3415,7 +3415,7 @@
             "number": 148,
             "color_identity": "G",
             "cost": "{3}{G}",
-            "rules_text": "{4}{G}, Exile a card from your graveyard: [b][Create a 3/3 green Beast creature token.][/b] Activate only as a sorcery. \nImpetus {4}{G} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for {4}{G}. Then exile it.)[/i]",
+            "rules_text": "{4}{G}, Exile a card from your graveyard: [b][Create a 3/3 green Beast creature token.][/b] Activate only as a sorcery. \nImpetus {4}{G} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)[/i]",
             "flavor_text": "[i]\u201cThis plane is a truly marvelous ecosystem, able to sustain friends from a hundred worlds.\u201d[/i]",
             "pt": "3/5",
             "special_text": "",
@@ -3539,7 +3539,7 @@
             "number": 44,
             "color_identity": "U",
             "cost": "{3}{U}",
-            "rules_text": "[b][Tap up to two target creatures][/b], then put a stun counter on each of them. [i](If a permanent with a stun counter would become untapped, remove one from it instead.)[/i]\nImpetus {2}{U} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for {2}{U}. Then exile it.)[/i]",
+            "rules_text": "[b][Tap up to two target creatures][/b], then put a stun counter on each of them. [i](If a permanent with a stun counter would become untapped, remove one from it instead.)[/i]\nImpetus {2}{U} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -3900,7 +3900,7 @@
             "number": 126,
             "color_identity": "UR",
             "cost": "{3}{R}",
-            "rules_text": "When Pensive Swordmaster enters, you may discard a card. If you do, [b][draw a card.][/b]\nImpetus {2}{U} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for {2}{U}. Then exile it.)[/i]",
+            "rules_text": "When Pensive Swordmaster enters, you may discard a card. If you do, [b][draw a card.][/b]\nImpetus {2}{U} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)[/i]",
             "flavor_text": "[i]\u201cThe armor wasn't built for this climate, but... it might be the only suit left of its kind.\u201d[/i]",
             "pt": "4/2",
             "special_text": "",
@@ -4026,7 +4026,7 @@
             "notes": ""
         },
         {
-            "card_name": "Stardust Haze Token;",
+            "card_name": "Stardust Haze",
             "color": "W",
             "rarity": "common",
             "type": "Token Enchantment Creature \u2014 Wonder",
@@ -4042,7 +4042,7 @@
             "loyalty": "",
             "designer": "Wende",
             "artist": "Ian MacNair",
-            "notes": "!exportname Stardust Haze Token;\n!related Stardust Haze;"
+            "notes": "Stardust Haze Token;\n!related Stardust Haze;"
         },
         {
             "card_name": "Sunset Study",
@@ -4311,7 +4311,7 @@
             "notes": ""
         },
         {
-            "card_name": "Ageless Caretaker Token;",
+            "card_name": "Ageless Caretaker",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Wonder Demigod Cleric",
@@ -4327,7 +4327,7 @@
             "loyalty": "",
             "designer": "Wende",
             "artist": "Entin W Lk",
-            "notes": "!exportname Ageless Caretaker Token;\n!related Ageless Caretaker;"
+            "notes": "Ageless Caretaker Token;\n!related Ageless Caretaker;"
         },
         {
             "card_name": "Cackling Thunderbeast",
@@ -4337,7 +4337,7 @@
             "number": 114,
             "color_identity": "R",
             "cost": "{4}{R}",
-            "rules_text": "When Cackling Thunderbeast enters or attacks, [b][monocolored creatures can't block this turn.][/b]\nImpetus {4}{R} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for {4}{R}. Then exile it.)[/i]",
+            "rules_text": "When Cackling Thunderbeast enters or attacks, [b][monocolored creatures can't block this turn.][/b]\nImpetus {4}{R} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)[/i]",
             "flavor_text": "[i]It's not hungry, it's just mean.[/i]",
             "pt": "5/3",
             "special_text": "",
@@ -4641,7 +4641,7 @@
             "number": 54,
             "color_identity": "U",
             "cost": "{4}{U}",
-            "rules_text": "When Leyseeker enters, [b][draw X cards][/b], where X is the number of colors among monocolored permanents you control. When you do, discard that many cards.\nImpetus {X}{X}{U} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for {X}{X}{U}. Then exile it.)[/i]",
+            "rules_text": "When Leyseeker enters, [b][draw X cards][/b], where X is the number of colors among monocolored permanents you control. When you do, discard that many cards.\nImpetus {X}{X}{U} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "4/3",
             "special_text": "",
@@ -4786,7 +4786,7 @@
             "notes": ""
         },
         {
-            "card_name": "New Tensuo Physician Token;",
+            "card_name": "New Tensuo Physician",
             "color": "G",
             "rarity": "common",
             "type": "Token Creature \u2014 Wonder Elf Druid",
@@ -4802,7 +4802,7 @@
             "loyalty": "",
             "designer": "Wende",
             "artist": "Sean Usyk",
-            "notes": "!exportname New Tensuo Physician Token;\n!related New Tensuo Physician;"
+            "notes": "New Tensuo Physician Token;\n!related New Tensuo Physician;"
         },
         {
             "card_name": "New Tensuo Vanguard",
@@ -5014,7 +5014,7 @@
             "notes": ""
         },
         {
-            "card_name": "Vrep token;",
+            "card_name": "Vrep",
             "color": "G",
             "rarity": "common",
             "type": "Token Creature \u2014 Wonder Salamander",
@@ -5030,7 +5030,7 @@
             "loyalty": "",
             "designer": "Wende",
             "artist": "Tyler Wittereid",
-            "notes": "!exportname Vrep token;\n!related Vrep;"
+            "notes": "Vrep token;\n!related Vrep;"
         },
         {
             "card_name": "Wish for Death",

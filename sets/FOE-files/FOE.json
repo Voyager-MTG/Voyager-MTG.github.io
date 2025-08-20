@@ -369,7 +369,7 @@
             "notes": ""
         },
         {
-            "card_name": "Apprentices Drake",
+            "card_name": "Apprentice's Drake",
             "color": "U",
             "rarity": "common",
             "type": "Creature \u2014 Drake",
@@ -385,7 +385,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Ironshod",
-            "notes": "!tag fadove;\n!exportname Apprentices Drake"
+            "notes": "!tag fadove;\nApprentices Drake"
         },
         {
             "card_name": "Crystalline Cover",
@@ -702,7 +702,7 @@
             "notes": "!port-noon"
         },
         {
-            "card_name": "You Cant Face Me",
+            "card_name": "You Can't Face Me",
             "color": "B",
             "rarity": "common",
             "type": "Sorcery",
@@ -718,7 +718,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Scott Uminga",
-            "notes": "!exportname You Cant Face Me"
+            "notes": "You Cant Face Me"
         },
         {
             "card_name": "Duskcharm Drake",
@@ -1035,7 +1035,7 @@
             "notes": "!tag clanless;"
         },
         {
-            "card_name": "Willbournes Flame",
+            "card_name": "Willbourne's Flame",
             "color": "R",
             "rarity": "common",
             "type": "Instant",
@@ -1051,7 +1051,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "elgrimlock",
-            "notes": "!exportname Willbournes Flame"
+            "notes": "Willbournes Flame"
         },
         {
             "card_name": "Fiery Absolver",
@@ -1168,7 +1168,7 @@
             "notes": "!tag fascism;"
         },
         {
-            "card_name": "Drakes Intuition",
+            "card_name": "Drake's Intuition",
             "color": "R",
             "rarity": "common",
             "type": "Sorcery",
@@ -1184,7 +1184,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Alsares .",
-            "notes": "!exportname Drakes Intuition"
+            "notes": "Drakes Intuition"
         },
         {
             "card_name": "Smelt Corruption",
@@ -1470,7 +1470,7 @@
             "number": 206,
             "color_identity": "G",
             "cost": "{4}{G}",
-            "rules_text": "Trample\nWhen this creature enters, draft a card from your sanctum. [i](Look at three random cards from your sanctum. Put one into your hand.)[/i]",
+            "rules_text": "Trample\nWhen this creature enters, draft a card from your sanctum. [i](Look at three random cards from your sanctum. Put one into your hand. )[/i]",
             "flavor_text": "[i]\u201cYou need safe passage to the rift, right? Me and my friend here have survived the worst Vinimroth could throw at us.\u201d[/i]",
             "pt": "4/4",
             "special_text": "",
@@ -2328,7 +2328,7 @@
             "notes": "!related Chirps, Spice Seeker;"
         },
         {
-            "card_name": "Beast-01",
+            "card_name": "Beast",
             "color": "G",
             "rarity": "common",
             "type": "Token Creature \u2014 Beast",
@@ -2344,10 +2344,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Taran Fiddler",
-            "notes": "!related Lasting Discovery;Outlands Caretaker;Brightblossom Enclave;\n!exportname Beast-01"
+            "notes": "!related Lasting Discovery;Outlands Caretaker;Brightblossom Enclave;\nBeast-01"
         },
         {
-            "card_name": "Bird-01",
+            "card_name": "Bird",
             "color": "B",
             "rarity": "common",
             "type": "Token Creature \u2014 Bird",
@@ -2363,10 +2363,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "windfalcon",
-            "notes": "!related A Flock is Born<3>;\n!exportname Bird-01"
+            "notes": "!related A Flock is Born<3>;\nBird-01"
         },
         {
-            "card_name": "Bird-03",
+            "card_name": "Bird",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Bird",
@@ -2382,10 +2382,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Urban Rode",
-            "notes": "!related Feather Piper<2>;\n!exportname Bird-03"
+            "notes": "!related Feather Piper<2>;\nBird-03"
         },
         {
-            "card_name": "Butterfly-01",
+            "card_name": "Insect",
             "color": "WI",
             "rarity": "common",
             "type": "Token Creature \u2014 Insect",
@@ -2401,10 +2401,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Andrej Z.T.",
-            "notes": "!related Chimarel Clearing;\n!exportname Butterfly-01"
+            "notes": "!related Chimarel Clearing;\nButterfly-01"
         },
         {
-            "card_name": "Cat-01",
+            "card_name": "Cat",
             "color": "G",
             "rarity": "common",
             "type": "Token Creature \u2014 Cat",
@@ -2420,10 +2420,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Sarah Smith",
-            "notes": "!related Outlands Rescuer;Ancient Font;Enduring Woodland;\n!exportname Cat-01"
+            "notes": "!related Outlands Rescuer;Ancient Font;Enduring Woodland;\nCat-01"
         },
         {
-            "card_name": "Crab-01",
+            "card_name": "Crab",
             "color": "I",
             "rarity": "common",
             "type": "Token Creature \u2014 Crab",
@@ -2439,7 +2439,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Gabriel Ramos",
-            "notes": "!related Enlightening Crescents;\n!exportname Crab-01"
+            "notes": "!related Enlightening Crescents;\nCrab-01"
         },
         {
             "card_name": "Draft Archetypes",
@@ -2461,7 +2461,7 @@
             "notes": ""
         },
         {
-            "card_name": "Dragon Eye-01",
+            "card_name": "Dragon Eye",
             "color": "U",
             "rarity": "common",
             "type": "Token Creature \u2014 Dragon Eye",
@@ -2477,14 +2477,14 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Pencil Equipped",
-            "notes": "!related Lasting Discovery;Promise of Hunger;Waterscape Mystic; Coiled Sight; Waterscape Mystic // Coiled Sight;\n!exportname Dragon Eye-01"
+            "notes": "!related Lasting Discovery;Promise of Hunger;Waterscape Mystic; Coiled Sight; Waterscape Mystic // Coiled Sight;\nDragon Eye-01"
         },
         {
-            "card_name": "Drake-05",
+            "card_name": "Drake",
             "color": "U",
             "rarity": "common",
             "type": "Token Creature \u2014 Drake",
-            "number": 14,
+            "number": 13,
             "color_identity": "C",
             "cost": "",
             "rules_text": "Flying",
@@ -2496,10 +2496,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Adam Wesierski",
-            "notes": "!related Tiderock Passage;\n!exportname Drake-05"
+            "notes": "!related Tiderock Passage;\nDrake-05"
         },
         {
-            "card_name": "Drake-04",
+            "card_name": "Drake",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Drake",
@@ -2515,14 +2515,14 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Jose Miguel Dom\u00ednguez Bobillo",
-            "notes": "!related Fadove Battle-Cleric;Soarwing Coast;\n!exportname Drake-04"
+            "notes": "!related Fadove Battle-Cleric;Soarwing Coast;\nDrake-04"
         },
         {
-            "card_name": "Drake-02",
+            "card_name": "Drake",
             "color": "U",
             "rarity": "common",
             "type": "Token Creature \u2014 Drake",
-            "number": 13,
+            "number": 14,
             "color_identity": "C",
             "cost": "",
             "rules_text": "Flying",
@@ -2534,10 +2534,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Alsares .",
-            "notes": "!related Cerise, Auger of Flow;\n!exportname Drake-02"
+            "notes": "!related Cerise, Auger of Flow;\nDrake-02"
         },
         {
-            "card_name": "Drake-01",
+            "card_name": "Drake",
             "color": "B",
             "rarity": "common",
             "type": "Token Creature \u2014 Drake",
@@ -2553,10 +2553,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Marcos Ruiz",
-            "notes": "!related Drake-Brood Peak;Pioneer's Premonition;\n!exportname Drake-01"
+            "notes": "!related Drake-Brood Peak;Pioneer's Premonition;\nDrake-01"
         },
         {
-            "card_name": "Drake-03",
+            "card_name": "Drake",
             "color": "I",
             "rarity": "common",
             "type": "Token Creature \u2014 Drake",
@@ -2572,10 +2572,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Alsares .",
-            "notes": "!related Adventurous Pair;Emigrating Pilgrim;Emigrating Pilgrim // Free to Fly;Calign<2>;Aerial Assurance;Ignelscor Witch;\n!exportname Drake-03"
+            "notes": "!related Adventurous Pair;Emigrating Pilgrim;Emigrating Pilgrim // Free to Fly;Calign<2>;Aerial Assurance;Ignelscor Witch;\nDrake-03"
         },
         {
-            "card_name": "Elemental Demon-01",
+            "card_name": "Elemental Demon",
             "color": "BR",
             "rarity": "common",
             "type": "Token Creature \u2014 Elemental Demon",
@@ -2591,10 +2591,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Fesbra",
-            "notes": "!related Ignelscor Weaver;\n!exportname Elemental Demon-01"
+            "notes": "!related Ignelscor Weaver;\nElemental Demon-01"
         },
         {
-            "card_name": "Elk Plant-01",
+            "card_name": "Elk Plant",
             "color": "G",
             "rarity": "common",
             "type": "Token Creature \u2014 Elk Plant",
@@ -2610,10 +2610,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "noor taufeeq",
-            "notes": "https://www.artstation.com/artwork/vD0zgE\n!related Cervus Sprouting;Voice of the Thicket;\n!exportname Elk Plant-01"
+            "notes": "https://www.artstation.com/artwork/vD0zgE\n!related Cervus Sprouting;Voice of the Thicket;\nElk Plant-01"
         },
         {
-            "card_name": "Fish-01",
+            "card_name": "Fish",
             "color": "G",
             "rarity": "common",
             "type": "Token Creature \u2014 Fish",
@@ -2629,10 +2629,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Lana Ansay",
-            "notes": "!related CG02 Gold-Streaked Obelisks;\n!exportname Fish-01"
+            "notes": "!related CG02 Gold-Streaked Obelisks;\nFish-01"
         },
         {
-            "card_name": "Fox-01",
+            "card_name": "Fox",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Fox",
@@ -2648,10 +2648,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Pencil Equipped",
-            "notes": "!related Meirel Caretaker;Staggering Spires;Meirel Pathwalker;Clerics Claymore;\n!exportname Fox-01"
+            "notes": "!related Meirel Caretaker;Staggering Spires;Meirel Pathwalker;Clerics Claymore;\nFox-01"
         },
         {
-            "card_name": "Fox-02",
+            "card_name": "Fox",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Fox",
@@ -2667,10 +2667,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Nathan Hale",
-            "notes": "!related Lasting Discovery;\n!exportname Fox-02"
+            "notes": "!related Lasting Discovery;\nFox-02"
         },
         {
-            "card_name": "Lizard-01",
+            "card_name": "Lizard",
             "color": "B",
             "rarity": "common",
             "type": "Token Creature \u2014 Lizard",
@@ -2686,10 +2686,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Ilya Popov",
-            "notes": "!related Hedgecrow;Scaled Rippler;Scaled Ripper // Lunging Mitosis;Lizturbance;\n!exportname Lizard-01"
+            "notes": "!related Hedgecrow;Scaled Rippler;Scaled Ripper // Lunging Mitosis;Lizturbance;\nLizard-01"
         },
         {
-            "card_name": "Lizard-02",
+            "card_name": "Lizard",
             "color": "B",
             "rarity": "common",
             "type": "Token Creature \u2014 Lizard",
@@ -2705,10 +2705,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Miqdam ul ghani",
-            "notes": "!related Eroding River;\n!exportname Lizard-02"
+            "notes": "!related Eroding River;\nLizard-02"
         },
         {
-            "card_name": "Mongoose-01",
+            "card_name": "Mongoose",
             "color": "I",
             "rarity": "common",
             "type": "Token Creature \u2014 Mongoose",
@@ -2724,14 +2724,14 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Tatii Lange",
-            "notes": "!related Lasting Discovery;\n!exportname Mongoose-01"
+            "notes": "!related Lasting Discovery;\nMongoose-01"
         },
         {
-            "card_name": "Orb-01",
+            "card_name": "Orb",
             "color": "",
             "rarity": "common",
             "type": "Token Artifact Creature \u2014 Orb",
-            "number": 44,
+            "number": 43,
             "color_identity": "C",
             "cost": "",
             "rules_text": "This creature can't block.\nWhenever this creature deals combat damage to a player, target player mills two cards.",
@@ -2743,10 +2743,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Krystyna Nowek",
-            "notes": "!exportname Orb-01\n!related Mirdrim Summit;"
+            "notes": "Orb-01\n!related Mirdrim Summit;"
         },
         {
-            "card_name": "Shark-01",
+            "card_name": "Shark",
             "color": "W",
             "rarity": "common",
             "type": "Token Enchantment Creature \u2014 Shark",
@@ -2762,10 +2762,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Z5art Borysek",
-            "notes": "!related Pathward Riftcalling;Kaln-Ocean Seahorse;\n!exportname Shark-01"
+            "notes": "!related Pathward Riftcalling;Kaln-Ocean Seahorse;\nShark-01"
         },
         {
-            "card_name": "Whale-01",
+            "card_name": "Whale",
             "color": "WB",
             "rarity": "common",
             "type": "Token Enchantment Creature \u2014 Whale",
@@ -2781,10 +2781,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Reinforced/\uae40\ub808\uc778",
-            "notes": "!related Pathward Riftcalling;\n!exportname Whale-01"
+            "notes": "!related Pathward Riftcalling;\nWhale-01"
         },
         {
-            "card_name": "Wurm-01",
+            "card_name": "Wurm",
             "color": "R",
             "rarity": "common",
             "type": "Token Creature \u2014 Wurm",
@@ -2800,10 +2800,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "M\u00e1rton Gyula Kiss (Kimagu)",
-            "notes": "!related Bosket Peak;Warforged Pair;Encouraging Passage;\n!exportname Wurm-01"
+            "notes": "!related Bosket Peak;Warforged Pair;Encouraging Passage;\nWurm-01"
         },
         {
-            "card_name": "Wurm-02",
+            "card_name": "Wurm",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Wurm",
@@ -2819,14 +2819,14 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "BobKehl",
-            "notes": "!related Clanless Tunneler;\n!exportname Wurm-02\n\n!tag clanless;"
+            "notes": "!related Clanless Tunneler;\nWurm-02\n\n!tag clanless;"
         },
         {
-            "card_name": "Wurm-03",
+            "card_name": "Wurm",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Wurm",
-            "number": 10,
+            "number": 8,
             "color_identity": "C",
             "cost": "",
             "rules_text": "Vigilance",
@@ -2838,14 +2838,14 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Anato Finnstark",
-            "notes": "!related Korna Adventuring Historian;\n!exportname Wurm-03"
+            "notes": "!related Korna Adventuring Historian;\nWurm-03"
         },
         {
-            "card_name": "Wurm Dragon-02",
+            "card_name": "Wurm Dragon",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Wurm Dragon",
-            "number": 8,
+            "number": 10,
             "color_identity": "C",
             "cost": "",
             "rules_text": "Flying",
@@ -2857,10 +2857,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Anato Finnstark",
-            "notes": "!related Yearn for the Sky;\n!exportname Wurm Dragon-02"
+            "notes": "!related Yearn for the Sky;\nWurm Dragon-02"
         },
         {
-            "card_name": "Wurm Dragon-01",
+            "card_name": "Wurm Dragon",
             "color": "",
             "rarity": "common",
             "type": "Token Enchantment \u2014 Wurm Dragon",
@@ -2876,7 +2876,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Ilya Popov",
-            "notes": "!related Homestead Pair;\n!exportname Wurm Dragon-01"
+            "notes": "!related Homestead Pair;\nWurm Dragon-01"
         },
         {
             "card_name": "Morraire Shimmer Patrol",
@@ -3677,7 +3677,7 @@
             "notes": "could be 4 cards"
         },
         {
-            "card_name": "When Words Dont Work",
+            "card_name": "When Words Don't Work",
             "color": "I",
             "rarity": "common",
             "type": "Instant",
@@ -3693,7 +3693,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Petra Rame\u0161ov\u00e1",
-            "notes": "!exportname When Words Dont Work\ncan possibly hit enchantments\nManifest"
+            "notes": "When Words Dont Work\ncan possibly hit enchantments\nManifest"
         },
         {
             "card_name": "Illuminated black",
@@ -3810,11 +3810,11 @@
             "notes": "!related Bitter Inspection;Cervus Sprouting;Clanless Combatant;Coalesced Company;Crystalline Refraction;Cydina Storm Drake;Disciple of the Thicket;Fadove Lawkeeper;Foolish Footing;Gripping Truths;Howling Gasp;Kaln-Ocean Streamliner;Keras Appointed;Lizturbance;Lost Sunset;Meirel Evacuator;Meirel Explorer;Migratory Flotilla;Moonscale Koi;Mordel Flamespeaker;Perspective Shift;Prismatic Weasel;Soul of Vinimroth;Voice of the Thicket;Your Strength is Fading;"
         },
         {
-            "card_name": "Fault-01",
+            "card_name": "Fault",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Fault",
-            "number": 376,
+            "number": 379,
             "color_identity": "C",
             "cost": "",
             "rules_text": "",
@@ -3826,10 +3826,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Caelan Stokkermans",
-            "notes": "!exportname Fault-01"
+            "notes": "Fault-01"
         },
         {
-            "card_name": "Fault-03",
+            "card_name": "Fault",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Fault",
@@ -3845,10 +3845,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Karl Sisson",
-            "notes": "!exportname Fault-03"
+            "notes": "Fault-03"
         },
         {
-            "card_name": "Fault-02",
+            "card_name": "Fault",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Fault",
@@ -3864,14 +3864,14 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "NEBELMAHR",
-            "notes": "!exportname Fault-02"
+            "notes": "Fault-02"
         },
         {
-            "card_name": "Fault-04",
+            "card_name": "Fault",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Fault",
-            "number": 379,
+            "number": 376,
             "color_identity": "C",
             "cost": "",
             "rules_text": "",
@@ -3883,10 +3883,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Mark Komorowski",
-            "notes": "!exportname Fault-04"
+            "notes": "Fault-04"
         },
         {
-            "card_name": "Forest-01",
+            "card_name": "Forest",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Forest",
@@ -3902,10 +3902,29 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Alessandro Emanuelli",
-            "notes": "!exportname Forest-01"
+            "notes": "Forest-01"
         },
         {
-            "card_name": "Forest-03",
+            "card_name": "Forest",
+            "color": "",
+            "rarity": "common",
+            "type": "Basic Land \u2014 Forest",
+            "number": 375,
+            "color_identity": "G",
+            "cost": "",
+            "rules_text": "",
+            "flavor_text": "[i][/i]",
+            "pt": "",
+            "special_text": "",
+            "shape": "normal",
+            "set": "FOE",
+            "loyalty": "",
+            "designer": "TVP",
+            "artist": "Michal Kv\u00e1\u010d",
+            "notes": "Forest-03"
+        },
+        {
+            "card_name": "Forest",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Forest",
@@ -3921,10 +3940,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Michal Kv\u00e1\u010d",
-            "notes": "!exportname Forest-03"
+            "notes": "Forest-02"
         },
         {
-            "card_name": "Forest-02",
+            "card_name": "Forest",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Forest",
@@ -3939,34 +3958,15 @@
             "set": "FOE",
             "loyalty": "",
             "designer": "TVP",
-            "artist": "Michal Kv\u00e1\u010d",
-            "notes": "!exportname Forest-02"
-        },
-        {
-            "card_name": "Forest-04",
-            "color": "",
-            "rarity": "common",
-            "type": "Basic Land \u2014 Forest",
-            "number": 375,
-            "color_identity": "G",
-            "cost": "",
-            "rules_text": "",
-            "flavor_text": "[i][/i]",
-            "pt": "",
-            "special_text": "",
-            "shape": "normal",
-            "set": "FOE",
-            "loyalty": "",
-            "designer": "TVP",
             "artist": "Alessandro Emanuelli",
-            "notes": "!exportname Forest-04"
+            "notes": "Forest-04"
         },
         {
-            "card_name": "Island-01",
+            "card_name": "Island",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Island",
-            "number": 360,
+            "number": 362,
             "color_identity": "U",
             "cost": "",
             "rules_text": "",
@@ -3978,14 +3978,14 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Alessandro Emanuelli",
-            "notes": "!exportname Island-01"
+            "notes": "Island-01"
         },
         {
-            "card_name": "Island-03",
+            "card_name": "Island",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Island",
-            "number": 362,
+            "number": 360,
             "color_identity": "U",
             "cost": "",
             "rules_text": "",
@@ -3997,10 +3997,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Alessandro Emanuelli",
-            "notes": "!exportname Island-03"
+            "notes": "Island-03"
         },
         {
-            "card_name": "Island-02",
+            "card_name": "Island",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Island",
@@ -4016,10 +4016,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Alessandro Emanuelli",
-            "notes": "!exportname Island-02"
+            "notes": "Island-02"
         },
         {
-            "card_name": "Island-04",
+            "card_name": "Island",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Island",
@@ -4035,67 +4035,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Alessandro Emanuelli",
-            "notes": "!exportname Island-04"
+            "notes": "Island-04"
         },
         {
-            "card_name": "Mountain-01",
-            "color": "",
-            "rarity": "common",
-            "type": "Basic Land \u2014 Mountain",
-            "number": 368,
-            "color_identity": "R",
-            "cost": "",
-            "rules_text": "",
-            "flavor_text": "[i][/i]",
-            "pt": "",
-            "special_text": "",
-            "shape": "normal",
-            "set": "FOE",
-            "loyalty": "",
-            "designer": "TVP",
-            "artist": "Alessandro Emanuelli",
-            "notes": "!exportname Mountain-01"
-        },
-        {
-            "card_name": "Mountain-02",
-            "color": "",
-            "rarity": "common",
-            "type": "Basic Land \u2014 Mountain",
-            "number": 369,
-            "color_identity": "R",
-            "cost": "",
-            "rules_text": "",
-            "flavor_text": "[i][/i]",
-            "pt": "",
-            "special_text": "",
-            "shape": "normal",
-            "set": "FOE",
-            "loyalty": "",
-            "designer": "TVP",
-            "artist": "Alessandro Emanuelli",
-            "notes": "!exportname Mountain-02"
-        },
-        {
-            "card_name": "Mountain-03",
-            "color": "",
-            "rarity": "common",
-            "type": "Basic Land \u2014 Mountain",
-            "number": 370,
-            "color_identity": "R",
-            "cost": "",
-            "rules_text": "",
-            "flavor_text": "[i][/i]",
-            "pt": "",
-            "special_text": "",
-            "shape": "normal",
-            "set": "FOE",
-            "loyalty": "",
-            "designer": "TVP",
-            "artist": "Alessandro Emanuelli",
-            "notes": "!exportname Mountain-03"
-        },
-        {
-            "card_name": "Mountain-04",
+            "card_name": "Mountain",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Mountain",
@@ -4111,14 +4054,71 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Alessandro Emanuelli",
-            "notes": "!exportname Mountain-04"
+            "notes": "Mountain-01"
         },
         {
-            "card_name": "Plains-04",
+            "card_name": "Mountain",
+            "color": "",
+            "rarity": "common",
+            "type": "Basic Land \u2014 Mountain",
+            "number": 370,
+            "color_identity": "R",
+            "cost": "",
+            "rules_text": "",
+            "flavor_text": "[i][/i]",
+            "pt": "",
+            "special_text": "",
+            "shape": "normal",
+            "set": "FOE",
+            "loyalty": "",
+            "designer": "TVP",
+            "artist": "Alessandro Emanuelli",
+            "notes": "Mountain-02"
+        },
+        {
+            "card_name": "Mountain",
+            "color": "",
+            "rarity": "common",
+            "type": "Basic Land \u2014 Mountain",
+            "number": 369,
+            "color_identity": "R",
+            "cost": "",
+            "rules_text": "",
+            "flavor_text": "[i][/i]",
+            "pt": "",
+            "special_text": "",
+            "shape": "normal",
+            "set": "FOE",
+            "loyalty": "",
+            "designer": "TVP",
+            "artist": "Alessandro Emanuelli",
+            "notes": "Mountain-03"
+        },
+        {
+            "card_name": "Mountain",
+            "color": "",
+            "rarity": "common",
+            "type": "Basic Land \u2014 Mountain",
+            "number": 368,
+            "color_identity": "R",
+            "cost": "",
+            "rules_text": "",
+            "flavor_text": "[i][/i]",
+            "pt": "",
+            "special_text": "",
+            "shape": "normal",
+            "set": "FOE",
+            "loyalty": "",
+            "designer": "TVP",
+            "artist": "Alessandro Emanuelli",
+            "notes": "Mountain-04"
+        },
+        {
+            "card_name": "Plains",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Plains",
-            "number": 359,
+            "number": 357,
             "color_identity": "W",
             "cost": "",
             "rules_text": "",
@@ -4130,10 +4130,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Maojin.Lee",
-            "notes": "!exportname Plains-04"
+            "notes": "Plains-04"
         },
         {
-            "card_name": "Plains-01",
+            "card_name": "Plains",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Plains",
@@ -4149,14 +4149,14 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Philipp A. Urlich",
-            "notes": "!exportname Plains-01"
+            "notes": "Plains-01"
         },
         {
-            "card_name": "Plains-03",
+            "card_name": "Plains",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Plains",
-            "number": 358,
+            "number": 359,
             "color_identity": "W",
             "cost": "",
             "rules_text": "",
@@ -4168,14 +4168,14 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Artem Chebokha",
-            "notes": "!exportname Plains-03"
+            "notes": "Plains-03"
         },
         {
-            "card_name": "Plains-02",
+            "card_name": "Plains",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Plains",
-            "number": 357,
+            "number": 358,
             "color_identity": "W",
             "cost": "",
             "rules_text": "",
@@ -4187,10 +4187,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "sathish kumar",
-            "notes": "!exportname Plains-02"
+            "notes": "Plains-02"
         },
         {
-            "card_name": "Swamp-01",
+            "card_name": "Swamp",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Swamp",
@@ -4206,29 +4206,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Alessandro Emanuelli",
-            "notes": "!exportname Swamp-01"
+            "notes": "Swamp-01"
         },
         {
-            "card_name": "Swamp-03",
-            "color": "",
-            "rarity": "common",
-            "type": "Basic Land \u2014 Swamp",
-            "number": 366,
-            "color_identity": "B",
-            "cost": "",
-            "rules_text": "",
-            "flavor_text": "[i][/i]",
-            "pt": "",
-            "special_text": "",
-            "shape": "normal",
-            "set": "FOE",
-            "loyalty": "",
-            "designer": "TVP",
-            "artist": "Alessandro Emanuelli",
-            "notes": "!exportname Swamp-03"
-        },
-        {
-            "card_name": "Swamp-02",
+            "card_name": "Swamp",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Swamp",
@@ -4243,11 +4224,30 @@
             "set": "FOE",
             "loyalty": "",
             "designer": "TVP",
-            "artist": "sathish kumar",
-            "notes": "!exportname Swamp-02"
+            "artist": "Alessandro Emanuelli",
+            "notes": "Swamp-03"
         },
         {
-            "card_name": "Swamp-04",
+            "card_name": "Swamp",
+            "color": "",
+            "rarity": "common",
+            "type": "Basic Land \u2014 Swamp",
+            "number": 366,
+            "color_identity": "B",
+            "cost": "",
+            "rules_text": "",
+            "flavor_text": "[i][/i]",
+            "pt": "",
+            "special_text": "",
+            "shape": "normal",
+            "set": "FOE",
+            "loyalty": "",
+            "designer": "TVP",
+            "artist": "sathish kumar",
+            "notes": "Swamp-02"
+        },
+        {
+            "card_name": "Swamp",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Swamp",
@@ -4263,7 +4263,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Alessandro Emanuelli",
-            "notes": "!exportname Swamp-04"
+            "notes": "Swamp-04"
         },
         {
             "card_name": "Healing Counter",
@@ -4304,7 +4304,7 @@
             "notes": "!related Vestige Prowler;Meirel Evacuator;Branching Paths;Captivate;"
         },
         {
-            "card_name": "plus one plus one counter",
+            "card_name": "+1/+1 Counter",
             "color": "WUBRGI",
             "rarity": "special",
             "type": "Reminder",
@@ -4320,7 +4320,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "",
-            "notes": "!exportname plus one plus one counter\n!related Whisperer of the Paths;Disciplined Seeker;Ignelscor Frontliner;Ignelscor Weaver;Dominator of Drakes;Clanless Weaver;Safeguarded Pair;Shard Bearer;Tiderock Passage;Tiderock Passage Promo;Light of Hope;Meditation<2>;Open Eternity;Alternate Path;Lasting Discovery<2>;Scale the Heights;Start of an Adventure;\n\n!framed!readable"
+            "notes": "plus one plus one counter\n!related Whisperer of the Paths;Disciplined Seeker;Ignelscor Frontliner;Ignelscor Weaver;Dominator of Drakes;Clanless Weaver;Safeguarded Pair;Shard Bearer;Tiderock Passage;Tiderock Passage Promo;Light of Hope;Meditation<2>;Open Eternity;Alternate Path;Lasting Discovery<2>;Scale the Heights;Start of an Adventure;\n\n!framed!readable"
         },
         {
             "card_name": "Iconic Challenger",
@@ -4428,7 +4428,7 @@
             "notes": "4Multicolor\nFGU"
         },
         {
-            "card_name": "Kornas Forward",
+            "card_name": "Korna's Forward",
             "color": "I",
             "rarity": "uncommon",
             "type": "Creature \u2014 Wurm Scout",
@@ -4444,7 +4444,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "ALRadeck on Deviantart",
-            "notes": "!exportname Kornas Forward"
+            "notes": "Kornas Forward"
         },
         {
             "card_name": "Meirel Evacuator",
@@ -5088,7 +5088,7 @@
             "color": "",
             "rarity": "common",
             "type": "Token Artifact Creature \u2014 Orb Wizard",
-            "number": 43,
+            "number": 44,
             "color_identity": "C",
             "cost": "",
             "rules_text": "{1}, Sacrifice this creature: Counter target noncreature spell unless its controller pays {1}.",
@@ -5122,7 +5122,7 @@
             "notes": "!tag outlands;"
         },
         {
-            "card_name": "Julius Skyknight of Morriare",
+            "card_name": "Julius, Skyknight of Morriare",
             "color": "W",
             "rarity": "uncommon",
             "type": "Legendary Creature \u2014 Mouse Bird Knight",
@@ -5138,7 +5138,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "David Petersen",
-            "notes": "!exportname Julius Skyknight of Morriare\nWRU\nMulticolor"
+            "notes": "Julius Skyknight of Morriare\nWRU\nMulticolor"
         },
         {
             "card_name": "Yearn for the Sky",
@@ -5255,7 +5255,7 @@
             "notes": "https://www.artstation.com/artwork/BXQYzA"
         },
         {
-            "card_name": "Hengs Intercession",
+            "card_name": "Heng's Intercession",
             "color": "W",
             "rarity": "uncommon",
             "type": "Instant",
@@ -5271,7 +5271,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Kent Davis",
-            "notes": "!exportname Hengs Intercession\nwatch in testing"
+            "notes": "Hengs Intercession\nwatch in testing"
         },
         {
             "card_name": "Mentor of Engagement",
@@ -5558,7 +5558,7 @@
             "number": 85,
             "color_identity": "U",
             "cost": "{2}{U}",
-            "rules_text": "Enchant creature\nWhen this enchantment enters, tap enchanted permanent.\nEnchanted permanent doesn't untap during its controller's untap step.\nWhen this enchantment leaves the battlefield, draft a card from your sanctum. [i](Look at three random cards from your sanctum. Put one into your hand.)[/i]",
+            "rules_text": "Enchant creature\nWhen this enchantment enters, tap enchanted permanent.\nEnchanted permanent doesn't untap during its controller's untap step.\nWhen this enchantment leaves the battlefield, draft a card from your sanctum. [i](Look at three random cards from your sanctum. Put one into your hand. )[/i]",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -5713,7 +5713,7 @@
             "notes": ""
         },
         {
-            "card_name": "I Wont Stand Alone",
+            "card_name": "I Won't Stand Alone",
             "color": "B",
             "rarity": "uncommon",
             "type": "Sorcery",
@@ -5729,7 +5729,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Timi Honkanen",
-            "notes": "!exportname I Wont Stand Alone\n// mini bleak return :)"
+            "notes": "I Wont Stand Alone\n// mini bleak return :)"
         },
         {
             "card_name": "Ditto Dagger",
@@ -6190,7 +6190,7 @@
             "notes": "FRG\nMulticolor"
         },
         {
-            "card_name": "Our March Wont End",
+            "card_name": "Our March Won't End",
             "color": "R",
             "rarity": "uncommon",
             "type": "Sorcery",
@@ -6206,7 +6206,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Dominik Mayer",
-            "notes": "!exportname Our March Wont End\n!tag fascism;"
+            "notes": "Our March Wont End\n!tag fascism;"
         },
         {
             "card_name": "Call to Revolution",
@@ -6418,7 +6418,7 @@
             "notes": ""
         },
         {
-            "card_name": "Cartographers Survey",
+            "card_name": "Cartographer's Survey",
             "color": "G",
             "rarity": "uncommon",
             "type": "Sorcery",
@@ -6434,10 +6434,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Eren ARIK",
-            "notes": "!exportname Cartographers Survey"
+            "notes": "Cartographers Survey"
         },
         {
-            "card_name": "Hunters Strength",
+            "card_name": "Hunter's Strength",
             "color": "G",
             "rarity": "uncommon",
             "type": "Instant",
@@ -6453,10 +6453,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Kenneth Solis",
-            "notes": "!exportname Hunters Strength"
+            "notes": "Hunters Strength"
         },
         {
-            "card_name": "Keras Appointed",
+            "card_name": "Kera's Appointed",
             "color": "G",
             "rarity": "uncommon",
             "type": "Creature \u2014 Treefolk Warrior",
@@ -6472,7 +6472,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Sandro Rybak",
-            "notes": "!exportname Keras Appointed"
+            "notes": "Keras Appointed"
         },
         {
             "card_name": "Nurtured Landscape",
@@ -6608,7 +6608,7 @@
             "notes": "RB07,Noncreature,3,,Sword-Point Diplomacy"
         },
         {
-            "card_name": "Korna Adventuring Historian",
+            "card_name": "Korna, Adventuring Historian",
             "color": "WR",
             "rarity": "rare",
             "type": "Legendary Enchantment \u2014 Wurm Entity",
@@ -6624,10 +6624,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Peter-Ortiz",
-            "notes": "!exportname Korna Adventuring Historian"
+            "notes": "Korna Adventuring Historian"
         },
         {
-            "card_name": "Zoslera Exiled Visionary",
+            "card_name": "Zoslera, Exiled Visionary",
             "color": "RG",
             "rarity": "rare",
             "type": "Legendary Planeswalker \u2014 Zoslera",
@@ -6643,7 +6643,7 @@
             "loyalty": "3",
             "designer": "TVP",
             "artist": "VV I T C H T R I X on Tumblr",
-            "notes": "!exportname Zoslera Exiled Visionary\n\nMaybe the zero is a -1"
+            "notes": "Zoslera Exiled Visionary\n\nMaybe the zero is a -1"
         },
         {
             "card_name": "Trade Routes",
@@ -6684,7 +6684,7 @@
             "notes": "RG09,Noncreature,3,,Growing Rites of Itlimoc"
         },
         {
-            "card_name": "Aurel Born Through Discord",
+            "card_name": "Aurel, Born Through Discord",
             "color": "WUR",
             "rarity": "rare",
             "type": "Legendary Creature \u2014 Angel",
@@ -6700,10 +6700,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Anthony Catillaz",
-            "notes": "!exportname Aurel Born Through Discord"
+            "notes": "Aurel Born Through Discord"
         },
         {
-            "card_name": "Sonnet Meirel Lancer",
+            "card_name": "Sonnet, Meirel Lancer",
             "color": "W",
             "rarity": "rare",
             "type": "Legendary Creature \u2014 Fox Warrior",
@@ -6719,10 +6719,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Cygames, Inc",
-            "notes": "!exportname Sonnet Meirel Lancer"
+            "notes": "Sonnet Meirel Lancer"
         },
         {
-            "card_name": "Marie Hungerbound",
+            "card_name": "Marie, Hungerbound",
             "color": "",
             "rarity": "mythic",
             "type": "Legendary Planeswalker \u2014 Marie",
@@ -6738,7 +6738,7 @@
             "loyalty": "3",
             "designer": "TVP",
             "artist": "Yi. // YizhiY",
-            "notes": "!exportname Marie Hungerbound"
+            "notes": "Marie Hungerbound"
         },
         {
             "card_name": "Skyskif Flying Fish",
@@ -6760,7 +6760,7 @@
             "notes": ""
         },
         {
-            "card_name": "Gael Spiteflame Phoenix",
+            "card_name": "Gael, Spiteflame Phoenix",
             "color": "UBR",
             "rarity": "rare",
             "type": "Legendary Creature \u2014 Phoenix",
@@ -6776,10 +6776,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Jelena Pjevic",
-            "notes": "!exportname Gael Spiteflame Phoenix"
+            "notes": "Gael Spiteflame Phoenix"
         },
         {
-            "card_name": "Jothi Awakened Flock",
+            "card_name": "Jothi, Awakened Flock",
             "color": "WB",
             "rarity": "rare",
             "type": "Legendary Planeswalker \u2014 Jothi",
@@ -6795,7 +6795,7 @@
             "loyalty": "2",
             "designer": "TVP",
             "artist": "FleetingEmber, Edited by TVP",
-            "notes": "!exportname Jothi Awakened Flock"
+            "notes": "Jothi Awakened Flock"
         },
         {
             "card_name": "Jothi",
@@ -7064,7 +7064,7 @@
             "notes": "RG03,Medium Creature,3,,Deathgorge Scavenger\n#updated#"
         },
         {
-            "card_name": "Chirps Spice Seeker",
+            "card_name": "Chirps, Spice Seeker",
             "color": "I",
             "rarity": "rare",
             "type": "Legendary Enchantment Creature \u2014 Bird",
@@ -7080,10 +7080,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Henrique Dld",
-            "notes": "!exportname Chirps Spice Seeker"
+            "notes": "Chirps Spice Seeker"
         },
         {
-            "card_name": "Melodia Explorer at Heart",
+            "card_name": "Melodia, Drifter at Heart",
             "color": "I",
             "rarity": "rare",
             "type": "Legendary Enchantment Creature \u2014 Human Wizard",
@@ -7099,7 +7099,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Wenqing Yan",
-            "notes": "!smallbox \n!exportname Melodia Explorer at Heart"
+            "notes": "!smallbox \nMelodia Explorer at Heart"
         },
         {
             "card_name": "Outlands Chimera",
@@ -7121,7 +7121,7 @@
             "notes": "!tag outlands;\nrecreate"
         },
         {
-            "card_name": "Lisse Bound by the King",
+            "card_name": "Lisse, Bound by the King",
             "color": "B",
             "rarity": "rare",
             "type": "Legendary Creature \u2014 Zombie Cleric",
@@ -7137,10 +7137,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Andrej Z.T.",
-            "notes": "!exportname Lisse Bound by the King\nalira\nFWB\nMulticolor"
+            "notes": "Lisse Bound by the King\nalira\nFWB\nMulticolor"
         },
         {
-            "card_name": "Lorenz Ascendant King of Alira",
+            "card_name": "Lorenz, Ascendant King of Alira",
             "color": "U",
             "rarity": "rare",
             "type": "Legendary Creature \u2014 Human Noble",
@@ -7156,7 +7156,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "cyanidechicken aka Miriam",
-            "notes": "Lisse\nAlira\nUWB\nMulticolor\n!exportname Lorenz Ascendant King of Alira"
+            "notes": "Lisse\nAlira\nUWB\nMulticolor\nLorenz Ascendant King of Alira"
         },
         {
             "card_name": "Soul of Vinimroth",
@@ -7197,7 +7197,7 @@
             "notes": ""
         },
         {
-            "card_name": "Cerise Auger of Flow",
+            "card_name": "Cerise, Augur of Flow",
             "color": "WUI",
             "rarity": "rare",
             "type": "Legendary Creature \u2014 Human Wizard",
@@ -7213,7 +7213,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Veronica O'Neill",
-            "notes": "!exportname Cerise Auger of Flow"
+            "notes": "Cerise Auger of Flow"
         },
         {
             "card_name": "Realmshaper",
@@ -7311,7 +7311,7 @@
             "notes": ""
         },
         {
-            "card_name": "Heng Hien Reifer of Justice",
+            "card_name": "Heng Hien, Reifer of Justice",
             "color": "WU",
             "rarity": "rare",
             "type": "Legendary Planeswalker \u2014 Heng",
@@ -7327,7 +7327,7 @@
             "loyalty": "3",
             "designer": "TVP",
             "artist": "Caio Santos",
-            "notes": "!exportname Heng Hien Reifer of Justice"
+            "notes": "Heng Hien Reifer of Justice"
         },
         {
             "card_name": "Kera, Mordel's New Hope",
@@ -7445,7 +7445,7 @@
             "notes": "!related Lucillica Dreamscape<attach>;\n!addtoken Lucillica Dreamscape;transform;\nVerdant\n!backname Lucillica Dreamscape"
         },
         {
-            "card_name": "Lisse Hope Through Sin",
+            "card_name": "Lisse, Hope Through Sin",
             "color": "B",
             "rarity": "mythic",
             "type": "Legendary Creature \u2014 Demon Cleric",
@@ -7471,7 +7471,7 @@
             "special_text2": "",
             "loyalty2": "",
             "artist2": "",
-            "notes": "!related Alira Glade<attach>;\nVerdant\n!exportname Lisse Hope Through Sin\n!backname Alira Glade\n!addtoken Alira Glade;transform;"
+            "notes": "!related Alira Glade<attach>;\nVerdant\nLisse Hope Through Sin\n!backname Alira Glade\n!addtoken Alira Glade;transform;"
         },
         {
             "card_name": "Argent, Flash of Mirdrim",
@@ -7952,7 +7952,7 @@
             "notes": "!alt\nClan Mordel made enemies both inside and out their walls."
         },
         {
-            "card_name": "Jothi-01",
+            "card_name": "Jothi Token",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Bird",
@@ -7968,7 +7968,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Dasom Hyun, Edited by TVP",
-            "notes": "!related Jothi;\n!exportname Jothi-01"
+            "notes": "!related Jothi;\nJothi-01"
         },
         {
             "card_name": "Exhuberant Genesis",
@@ -8795,7 +8795,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Ahmad Alromeadheen",
-            "notes": "!related Dominator of Drakes;Lasting Discovery;Calamitous Koi;\n!exportname Flying Counter\n!framed!readable"
+            "notes": "!related Dominator of Drakes;Lasting Discovery;Calamitous Koi;\nFlying Counter\n!framed!readable"
         },
         {
             "card_name": "Tangled Heart",

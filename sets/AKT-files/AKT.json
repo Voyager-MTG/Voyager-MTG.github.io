@@ -1812,7 +1812,7 @@
             "color": "",
             "rarity": "common",
             "type": "Creature \u2014 Erysite Dragon",
-            "number": 1,
+            "number": 2,
             "color_identity": "C",
             "cost": "{6}",
             "rules_text": "Transcend {6} [i](At the beginning of combat, cast your chosen Erysite from outside the game by paying its Transcend cost and exiling a Dragon creature you control.)[/i]\nTrample",
@@ -3692,7 +3692,7 @@
             "notes": "OTHERMYTHIC\nUSURPATE\nPENCILIN"
         },
         {
-            "card_name": "PrithiteWordlyDicta",
+            "card_name": "Prithite's Worldly Dicta",
             "color": "R",
             "rarity": "rare",
             "type": "Enchantment Creature \u2014 Dragon Saga",
@@ -3708,7 +3708,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timi Honkanen",
-            "notes": "REDRARE03\n\n!exportname PrithiteWordlyDicta"
+            "notes": "REDRARE03\n\nPrithiteWordlyDicta"
         },
         {
             "card_name": "Triaja, Astral Apostate",
@@ -5205,11 +5205,11 @@
             "notes": ""
         },
         {
-            "card_name": "Denizen of New Akella Alt",
+            "card_name": "Denizen of New Akella",
             "color": "",
             "rarity": "common",
             "type": "Creature \u2014 Erysite Dragon",
-            "number": 2,
+            "number": 1,
             "color_identity": "C",
             "cost": "{6}",
             "rules_text": "Transcend {6} [i](At the beginning of combat, cast your chosen Erysite from outside the game by paying its Transcend cost and exiling a Dragon creature you control.)[/i]\nTrample",
@@ -5221,7 +5221,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jocarra",
-            "notes": "COLOURLESSCOMMON\n!exportname Denizen of New Akella Alt"
+            "notes": "COLOURLESSCOMMON\nDenizen of New Akella Alt"
         },
         {
             "card_name": "Gigant Nestcrafter",

@@ -159,7 +159,7 @@
             "notes": "!note hybrid\n!addtoken GreenWurm;RedWurm;"
         },
         {
-            "card_name": "Multaphs Riftwarden",
+            "card_name": "Multaph's Riftwarden",
             "color": "UG",
             "rarity": "uncommon",
             "type": "Creature \u2014 Elk Shaman",
@@ -175,7 +175,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Sasho Dimitrov",
-            "notes": "!note hybrid\n!exportname Multaphs Riftwarden\n!persistent Voidstone Shard"
+            "notes": "!note hybrid\nMultaphs Riftwarden\n!persistent Voidstone Shard"
         },
         {
             "card_name": "Rush Down",
@@ -216,7 +216,7 @@
             "notes": "!note hybrid\n!tag fascism;"
         },
         {
-            "card_name": "Survivors Instinct",
+            "card_name": "Survivor's Instinct",
             "color": "WG",
             "rarity": "uncommon",
             "type": "Instant",
@@ -232,7 +232,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "CD Project Red",
-            "notes": "!note hybrid\n!exportname Survivors Instinct"
+            "notes": "!note hybrid\nSurvivors Instinct"
         },
         {
             "card_name": "Entrance of Hunger",
@@ -470,7 +470,7 @@
             "number": 204,
             "color_identity": "UG",
             "cost": "{1}{GU}{GU}",
-            "rules_text": "Flash\nWhen this enchantment enters, up to one target creature or enchantment you control becomes a 4/4 blue and green Turtle creature until end of turn.\nMaterialize 2 [i](Tap one or more other enchantments you control with total mana value 2 or more: This also becomes an Icon creature until your next upkeep.)[/i]",
+            "rules_text": "Flash\nWhen this enchantment enters, up to one target creature or enchantment you control becomes a 4/4 blue and green Turtle creature until end of turn.\nMaterialize 2 [i](Tap one or more other enchantments you control with total mana value 2 or more: This also becomes an Icon creature until end of turn.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "2/2",
             "special_text": "",
@@ -793,7 +793,7 @@
             "number": 217,
             "color_identity": "UB",
             "cost": "{1}{UB}",
-            "rules_text": "Flash\nWhen this enchantment enters, draw a card.\nMaterialize 2 [i](Tap one or more other enchantments you control with total mana value 2 or more: This also becomes an Icon creature until your next upkeep.)[/i]",
+            "rules_text": "Flash\nWhen this enchantment enters, draw a card.\nMaterialize 2 [i](Tap one or more other enchantments you control with total mana value 2 or more: This also becomes an Icon creature until end of turn.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "2/2",
             "special_text": "",
@@ -1793,7 +1793,7 @@
             "notes": "!addtoken GreenWurm;2;"
         },
         {
-            "card_name": "Multaphs Watch",
+            "card_name": "Multaph's Watch",
             "color": "G",
             "rarity": "common",
             "type": "Creature \u2014 Elk",
@@ -1809,7 +1809,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "BenWootten",
-            "notes": "!exportname Multaphs Watch"
+            "notes": "Multaphs Watch"
         },
         {
             "card_name": "Progeny of Mordel",
@@ -2135,7 +2135,7 @@
             "notes": "Preview"
         },
         {
-            "card_name": "Explorers Compass",
+            "card_name": "Explorer's Compass",
             "color": "",
             "rarity": "uncommon",
             "type": "Artifact \u2014 Equipment",
@@ -2151,7 +2151,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Aaron Lovett",
-            "notes": "!exportname Explorers Compass"
+            "notes": "Explorers Compass"
         },
         {
             "card_name": "Pinnacle Wanderer",
@@ -2420,7 +2420,7 @@
             "notes": ""
         },
         {
-            "card_name": "Multaphs Resplendant",
+            "card_name": "Multaph's Resplendant",
             "color": "G",
             "rarity": "uncommon",
             "type": "Enchantment Creature \u2014 Icon Elk",
@@ -2436,7 +2436,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Tuomas Korpi",
-            "notes": "!exportname Multaphs Resplendant"
+            "notes": "Multaphs Resplendant"
         },
         {
             "card_name": "Bruin Outlander",
@@ -2579,7 +2579,7 @@
             "number": 265,
             "color_identity": "WU",
             "cost": "{2}{WU}{WU}",
-            "rules_text": "Flash \nVigilance\nWhen this enchantment enters, tap target permanent.\nMaterialize 4 [i](Tap one or more other enchantments you control with total mana value 4 or more: This also becomes an Icon creature until your next upkeep.)[/i]",
+            "rules_text": "Flash \nVigilance\nWhen this enchantment enters, tap target permanent.\nMaterialize 4 [i](Tap one or more other enchantments you control with total mana value 4 or more: This also becomes an Icon creature until end of turn.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "4/4",
             "special_text": "",
@@ -3016,7 +3016,7 @@
             "number": 142,
             "color_identity": "R",
             "cost": "{R}",
-            "rules_text": "Flying\nAt the beginning of combat on your turn, target creature you control gets +1/+1 until end of turn and may attack this turn as though it didn't have defender.\nMaterialize 3 [i](Tap one or more other enchantments you control with total mana value 3 or more: This also becomes an Icon creature until your next upkeep.)[/i]",
+            "rules_text": "Flying\nAt the beginning of combat on your turn, target creature you control gets +1/+1 until end of turn and may attack this turn as though it didn't have defender.\nMaterialize 3 [i](Tap one or more other enchantments you control with total mana value 3 or more: This also becomes an Icon creature until end of turn.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "2/2",
             "special_text": "",
@@ -3047,7 +3047,7 @@
             "notes": ""
         },
         {
-            "card_name": "Giants Blade",
+            "card_name": "Giant's Blade",
             "color": "W",
             "rarity": "uncommon",
             "type": "Artifact \u2014 Equipment",
@@ -3063,7 +3063,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Thibaud Matras",
-            "notes": "!exportname Giants Blade\n!addtoken Subdued Rift;conjured;"
+            "notes": "Giants Blade\n!addtoken Subdued Rift;conjured;"
         },
         {
             "card_name": "Voidborn Entity",
@@ -3073,7 +3073,7 @@
             "number": 274,
             "color_identity": "BR",
             "cost": "{1}{BR}",
-            "rules_text": "Menace\nWhen this enchantment enters, target opponent may discard a card. If they don't, this enchantment deals 3 damage to that player.\nMaterialize 2 [i](Tap one or more other enchantments you control with total mana value 2 or more: This also becomes an Icon creature until your next upkeep.)[/i]",
+            "rules_text": "Menace\nWhen this enchantment enters, target opponent may discard a card. If they don't, this enchantment deals 3 damage to that player.\nMaterialize 2 [i](Tap one or more other enchantments you control with total mana value 2 or more: This also becomes an Icon creature until end of turn.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "2/1",
             "special_text": "",
@@ -3579,7 +3579,7 @@
             "notes": "!related Raze the Clanless;\n!conjured"
         },
         {
-            "card_name": "Vin-Mountain",
+            "card_name": "Mountain",
             "color": "",
             "rarity": "special",
             "type": "Basic Land \u2014 Mountain",
@@ -3595,7 +3595,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Adrian Virlan",
-            "notes": "!related Warped Exploration;\n!conjured\n!exportname Vin-Mountain"
+            "notes": "!related Warped Exploration;\n!conjured\nVin-Mountain"
         },
         {
             "card_name": "Subdued Rift",
@@ -3861,7 +3861,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Kate Miterko",
-            "notes": "!center\n!related Subdued Rift VNM;Kier, Acolyte of Avlod Respite;Path of the Rift;\n!exportname Cat Token\nPreview"
+            "notes": "!center\n!related Subdued Rift VNM;Kier, Acolyte of Avlod Respite;Path of the Rift;\nCat Token\nPreview"
         },
         {
             "card_name": "Warped Exploration",
@@ -3902,7 +3902,7 @@
             "notes": "!related Aerial Roost<2>;Drake Wrangler;Outlands Bulwark;Path of the Roost;"
         },
         {
-            "card_name": "Vin-Plains",
+            "card_name": "Plains",
             "color": "",
             "rarity": "special",
             "type": "Basic Land \u2014 Plains",
@@ -3918,10 +3918,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Philipp A. Urlich",
-            "notes": "!related Warped Exploration;\n!conjured\n!exportname Vin-Plains"
+            "notes": "!related Warped Exploration;\n!conjured\nVin-Plains"
         },
         {
-            "card_name": "Vin-Island",
+            "card_name": "Island",
             "color": "",
             "rarity": "special",
             "type": "Basic Land \u2014 Island",
@@ -3937,10 +3937,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Simon Kopp",
-            "notes": "!related Warped Exploration;\n!conjured\n!exportname Vin-Island"
+            "notes": "!related Warped Exploration;\n!conjured\nVin-Island"
         },
         {
-            "card_name": "Vin-Swamp",
+            "card_name": "Swamp",
             "color": "",
             "rarity": "special",
             "type": "Basic Land \u2014 Swamp",
@@ -3956,10 +3956,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Ari-Matti Toivonen",
-            "notes": "!related Warped Exploration;\n!conjured\n!exportname Vin-Swamp"
+            "notes": "!related Warped Exploration;\n!conjured\nVin-Swamp"
         },
         {
-            "card_name": "Vin-Forest",
+            "card_name": "Forest",
             "color": "",
             "rarity": "special",
             "type": "Basic Land \u2014 Forest",
@@ -3975,7 +3975,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Pascal Quidault",
-            "notes": "!related Warped Exploration;\n!conjured\n!exportname Vin-Forest"
+            "notes": "!related Warped Exploration;\n!conjured\nVin-Forest"
         },
         {
             "card_name": "Harsh Reprise",
@@ -4016,7 +4016,7 @@
             "notes": ""
         },
         {
-            "card_name": "Multaph Riftborn God",
+            "card_name": "Multaph, Riftborn God",
             "color": "UB",
             "rarity": "rare",
             "type": "Legendary Enchantment Creature \u2014 Icon Elk God",
@@ -4032,7 +4032,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Satoru Wada",
-            "notes": "!smallbox \n!gold\n!exportname Multaph Riftborn God"
+            "notes": "!smallbox \n!gold\nMultaph Riftborn God"
         },
         {
             "card_name": "Will of Roduth",
@@ -4149,7 +4149,7 @@
             "notes": ""
         },
         {
-            "card_name": "Najael Travelling Shaman",
+            "card_name": "Najael, Travelling Shaman",
             "color": "UG",
             "rarity": "rare",
             "type": "Legendary Creature \u2014 Human Shaman",
@@ -4165,7 +4165,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Iga Oliwiak 'IgsonArt'",
-            "notes": "!exportname Najael Travelling Shaman"
+            "notes": "Najael Travelling Shaman"
         },
         {
             "card_name": "Called by the Void",
@@ -4225,7 +4225,7 @@
             "notes": ""
         },
         {
-            "card_name": "Roduth God of Conflict",
+            "card_name": "Roduth, God of Conflict",
             "color": "WRG",
             "rarity": "rare",
             "type": "Legendary Enchantment Creature \u2014 Wurm Elk God",
@@ -4241,7 +4241,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "clockbirds",
-            "notes": "!smallbox \n!exportname Roduth God of Conflict"
+            "notes": "!smallbox \nRoduth God of Conflict"
         },
         {
             "card_name": "Thargle",
@@ -4415,7 +4415,7 @@
             "notes": ""
         },
         {
-            "card_name": "Dromencals Respite",
+            "card_name": "Dromencal's Respite",
             "color": "",
             "rarity": "common",
             "type": "Enchantment Artifact",
@@ -4431,7 +4431,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Minea Juntura",
-            "notes": "!exportname Dromencals Respite"
+            "notes": "Dromencals Respite"
         },
         {
             "card_name": "Outlands Respite",
@@ -4453,7 +4453,7 @@
             "notes": "!tag outlands;"
         },
         {
-            "card_name": "Melodia Voidtouched",
+            "card_name": "Melodia, Voidtouched",
             "color": "I",
             "rarity": "rare",
             "type": "Legendary Enchantment Creature \u2014 Human Wizard",
@@ -4469,10 +4469,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "yuumei wenqing yan",
-            "notes": "!smallbox \n!exportname Melodia Voidtouched\n!addtoken Blue Drake Token;"
+            "notes": "!smallbox \nMelodia Voidtouched\n!addtoken Blue Drake Token;"
         },
         {
-            "card_name": "Calia Oracle of Tofnet Plains",
+            "card_name": "Calia, Oracle of Tofnet Plains",
             "color": "W",
             "rarity": "rare",
             "type": "Legendary Enchantment Creature \u2014 Icon Wizard",
@@ -4488,10 +4488,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Vladimir Matyukhin FT",
-            "notes": "!exportname Calia Oracle of Tofnet Plains"
+            "notes": "Calia Oracle of Tofnet Plains"
         },
         {
-            "card_name": "Ola Kaln-Ocean Spellkeeper",
+            "card_name": "Ola, Kaln-Ocean Spellkeeper",
             "color": "U",
             "rarity": "rare",
             "type": "Legendary Enchantment Creature \u2014 Icon Wurm",
@@ -4507,10 +4507,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Vladimir Matyukhin FT",
-            "notes": "!exportname Ola Kaln-Ocean Spellkeeper"
+            "notes": "Ola Kaln-Ocean Spellkeeper"
         },
         {
-            "card_name": "Kier Acolyte of Avlod Respite",
+            "card_name": "Kier, Acolyte of Avlod Respite",
             "color": "B",
             "rarity": "rare",
             "type": "Legendary Enchantment Creature \u2014 Icon Warlock",
@@ -4526,10 +4526,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Vladimir Matyukhin FT",
-            "notes": "!exportname Kier Acolyte of Avlod Respite\n!tag avlod;"
+            "notes": "Kier Acolyte of Avlod Respite\n!tag avlod;"
         },
         {
-            "card_name": "Vane Verem-Volcano Scorcher",
+            "card_name": "Vane, Verem-Volcano Scorcher",
             "color": "R",
             "rarity": "rare",
             "type": "Legendary Enchantment Creature \u2014 Icon Dragon",
@@ -4545,7 +4545,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Vladimir Matyukhin FT",
-            "notes": "!exportname Vane Verem-Volcano Scorcher"
+            "notes": "Vane Verem-Volcano Scorcher"
         },
         {
             "card_name": "Somma, Blade of Faloden Woods",
@@ -4567,7 +4567,7 @@
             "notes": ""
         },
         {
-            "card_name": "Khestri Fadove Clanleader",
+            "card_name": "Khestri, Fadove Clanleader",
             "color": "W",
             "rarity": "rare",
             "type": "Legendary Creature \u2014 Human Knight",
@@ -4583,7 +4583,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "jenniferaberin",
-            "notes": "!exportname Khestri Fadove Clanleader\n!addtoken WhiteWurm;"
+            "notes": "Khestri Fadove Clanleader\n!addtoken WhiteWurm;"
         },
         {
             "card_name": "Shivta, Avlod Clanleader",
@@ -4605,7 +4605,7 @@
             "notes": "!tag avlod;"
         },
         {
-            "card_name": "Urkial Outlands Clanleader",
+            "card_name": "Urkial, Outlands Clanleader",
             "color": "",
             "rarity": "rare",
             "type": "Legendary Creature \u2014 Bear Shaman",
@@ -4621,7 +4621,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Kaue Daiprai",
-            "notes": "!tag outlands;\n!exportname Urkial Outlands Clanleader"
+            "notes": "!tag outlands;\nUrkial Outlands Clanleader"
         },
         {
             "card_name": "Bruin Mentor",
@@ -4700,7 +4700,7 @@
             "notes": ""
         },
         {
-            "card_name": "Zoslera Mordel Clanleader",
+            "card_name": "Zoslera, Mordel Clanleader",
             "color": "RG",
             "rarity": "rare",
             "type": "Legendary Creature \u2014 Human Knight",
@@ -4716,10 +4716,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Danila Kalinin",
-            "notes": "!exportname Zoslera Mordel Clanleader\n!tag fascism;"
+            "notes": "Zoslera Mordel Clanleader\n!tag fascism;"
         },
         {
-            "card_name": "Prophellos Pathborn Hunger",
+            "card_name": "Prophellos, Pathborn Hunger",
             "color": "",
             "rarity": "rare",
             "type": "Legendary Creature \u2014 God",
@@ -4735,7 +4735,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Ari-Matti Toivonen",
-            "notes": "!exportname Prophellos Pathborn Hunger"
+            "notes": "Prophellos Pathborn Hunger"
         },
         {
             "card_name": "Dust for Dust",
@@ -4802,7 +4802,7 @@
             "number": 205,
             "color_identity": "WB",
             "cost": "{WB}{WB}{WB}",
-            "rules_text": "Lifelink \nWard\u2014Pay 3 life.\nWhenever you attack, target creature you control gets +1/+1 until end of turn.\nMaterialize 4 [i](Tap one or more other enchantments you control with total mana value 4 or more: This also becomes an Icon creature until end of turn.)[/i]",
+            "rules_text": "Lifelink \nWard\u2014Pay 3 life.\nWhenever you attack, target creature you control gets +1/+1 until end of turn.\nMaterialize 4 [i](Tap one or more other enchantments you control with total mana value 4 or more: This also becomes an Icon creature until your next upkeep.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "4/4",
             "special_text": "",
@@ -4821,7 +4821,7 @@
             "number": 212,
             "color_identity": "BG",
             "cost": "{BG}{BG}{BG}",
-            "rules_text": "Reach, haste\nWhenever you attack, target creature you control gains deathtouch until end of turn.\nMaterialize 4 [i](Tap one or more other enchantments you control with total mana value 4 or more: This also becomes an Icon creature until your next upkeep.)[/i]",
+            "rules_text": "Reach, haste\nWhenever you attack, target creature you control gains deathtouch until end of turn.\nMaterialize 4 [i](Tap one or more other enchantments you control with total mana value 4 or more: This also becomes an Icon creature until end of turn.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "3/5",
             "special_text": "",
@@ -4859,7 +4859,7 @@
             "number": 218,
             "color_identity": "UR",
             "cost": "{UR}{UR}{UR}",
-            "rules_text": "This enchantment can't be blocked except by creatures with defender.\nWhenever you attack, draw a card, then discard a card.\nMaterialize 4 [i](Tap one or more other enchantments you control with total mana value 4 or more: This also becomes an Icon creature until your next upkeep.)[/i]",
+            "rules_text": "This enchantment can't be blocked except by creatures with defender.\nWhenever you attack, draw a card, then discard a card.\nMaterialize 4 [i](Tap one or more other enchantments you control with total mana value 4 or more: This also becomes an Icon creature until end of turn.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "3/3",
             "special_text": "",
@@ -4878,7 +4878,7 @@
             "number": 251,
             "color_identity": "WR",
             "cost": "{RW}{RW}{RW}",
-            "rules_text": "Double strike\nWhenever you attack, target creature can't block this turn.\nMaterialize 4 [i](Tap one or more other enchantments you control with total mana value 4 or more: This also becomes an Icon creature until end of turn.)[/i]",
+            "rules_text": "Double strike\nWhenever you attack, target creature can't block this turn.\nMaterialize 4 [i](Tap one or more other enchantments you control with total mana value 4 or more: This also becomes an Icon creature until your next upkeep.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "2/4",
             "special_text": "",
@@ -5574,7 +5574,7 @@
             "notes": ""
         },
         {
-            "card_name": "Vin Plains",
+            "card_name": "Plains",
             "color": "",
             "rarity": "special",
             "type": "Basic Land \u2014 Plains",
@@ -5590,10 +5590,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Sam Burley",
-            "notes": "!exportname Vin Plains\n!related Warped Exploration;"
+            "notes": "Vin Plains\n!related Warped Exploration;"
         },
         {
-            "card_name": "Vin Island",
+            "card_name": "Island",
             "color": "",
             "rarity": "special",
             "type": "Basic Land \u2014 Island",
@@ -5609,10 +5609,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Sam Burley",
-            "notes": "!exportname Vin Island\n !related Warped Exploration;"
+            "notes": "Vin Island\n !related Warped Exploration;"
         },
         {
-            "card_name": "Vin Swamp",
+            "card_name": "Swamp",
             "color": "",
             "rarity": "special",
             "type": "Basic Land \u2014 Swamp",
@@ -5628,10 +5628,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Sam Burley",
-            "notes": "!exportname Vin Swamp\n !related Warped Exploration;"
+            "notes": "Vin Swamp\n !related Warped Exploration;"
         },
         {
-            "card_name": "Vin Mountain",
+            "card_name": "Mountain",
             "color": "",
             "rarity": "special",
             "type": "Basic Land \u2014 Mountain",
@@ -5647,10 +5647,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Sam Burley",
-            "notes": "!exportname Vin Mountain\n !related Warped Exploration;"
+            "notes": "Vin Mountain\n !related Warped Exploration;"
         },
         {
-            "card_name": "Vin Forest",
+            "card_name": "Forest",
             "color": "",
             "rarity": "special",
             "type": "Basic Land \u2014 Forest",
@@ -5666,7 +5666,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Sam Burley",
-            "notes": "!exportname Vin Forest\n !related Warped Exploration;"
+            "notes": "Vin Forest\n !related Warped Exploration;"
         },
         {
             "card_name": "Crackling Plains",
@@ -6125,7 +6125,7 @@
             "notes": ""
         },
         {
-            "card_name": "Vin-Fault-Conjure",
+            "card_name": "Fault",
             "color": "",
             "rarity": "special",
             "type": "Basic Land \u2014 Fault",
@@ -6141,10 +6141,10 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Anthony Avon",
-            "notes": "!related Warped Exploration;\n!conjured\n!exportname Vin-Fault-Conjure"
+            "notes": "!related Warped Exploration;\n!conjured\nVin-Fault-Conjure"
         },
         {
-            "card_name": "Vin-Fault",
+            "card_name": "Fault",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Fault",
@@ -6160,7 +6160,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Anthony Avon",
-            "notes": "!related Warped Exploration;\n!conjured\n!exportname Vin-Fault"
+            "notes": "!related Warped Exploration;\n!conjured\nVin-Fault"
         },
         {
             "card_name": "Restored Fault",
@@ -6201,7 +6201,7 @@
             "notes": ""
         },
         {
-            "card_name": "Scouts Bow",
+            "card_name": "Scout's Bow",
             "color": "G",
             "rarity": "uncommon",
             "type": "Artifact \u2014 Equipment",
@@ -6217,7 +6217,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Joseph Qiu",
-            "notes": "!exportname Scouts Bow"
+            "notes": "Scouts Bow"
         },
         {
             "card_name": "xXDust420Xx",
@@ -6581,7 +6581,7 @@
             "notes": "!tokentag Icon 2;"
         },
         {
-            "card_name": "Vin Fault",
+            "card_name": "Fault",
             "color": "",
             "rarity": "special",
             "type": "Basic Land \u2014 Fault",
@@ -6597,7 +6597,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "pauk20000",
-            "notes": "!exportname Vin Fault\n!related Warped Exploration;"
+            "notes": "Vin Fault\n!related Warped Exploration;"
         }
     ]
 }

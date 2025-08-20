@@ -530,26 +530,7 @@
             "notes": "!tapped"
         },
         {
-            "card_name": "PTN Plains",
-            "color": "",
-            "rarity": "common",
-            "type": "Basic Land \u2014 Plains",
-            "number": 260,
-            "color_identity": "W",
-            "cost": "",
-            "rules_text": "",
-            "flavor_text": "[i][/i]",
-            "pt": "",
-            "special_text": "",
-            "shape": "normal",
-            "set": "PTN",
-            "loyalty": "",
-            "designer": "Kogane",
-            "artist": "Julie Dillon",
-            "notes": "!exportname PTN Plains"
-        },
-        {
-            "card_name": "PTN Plains 2",
+            "card_name": "Plains",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Plains",
@@ -564,11 +545,30 @@
             "set": "PTN",
             "loyalty": "",
             "designer": "Kogane",
-            "artist": "Andreas Rocha",
-            "notes": "!exportname PTN Plains 2\n!subname Plains 2"
+            "artist": "Julie Dillon",
+            "notes": "PTN Plains"
         },
         {
-            "card_name": "PTN Island",
+            "card_name": "Plains",
+            "color": "",
+            "rarity": "common",
+            "type": "Basic Land \u2014 Plains",
+            "number": 260,
+            "color_identity": "W",
+            "cost": "",
+            "rules_text": "",
+            "flavor_text": "[i][/i]",
+            "pt": "",
+            "special_text": "",
+            "shape": "normal",
+            "set": "PTN",
+            "loyalty": "",
+            "designer": "Kogane",
+            "artist": "Andreas Rocha",
+            "notes": "PTN Plains 2\n!subname Plains 2"
+        },
+        {
+            "card_name": "Island",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Island",
@@ -584,10 +584,10 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Julie Dillon",
-            "notes": "!exportname PTN Island"
+            "notes": "PTN Island"
         },
         {
-            "card_name": "PTN Island 2",
+            "card_name": "Island",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Island",
@@ -603,29 +603,10 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Andreas Rocha",
-            "notes": "!exportname PTN Island 2\n!subname Island 2"
+            "notes": "PTN Island 2\n!subname Island 2"
         },
         {
-            "card_name": "PTN Swamp",
-            "color": "",
-            "rarity": "common",
-            "type": "Basic Land \u2014 Swamp",
-            "number": 264,
-            "color_identity": "B",
-            "cost": "",
-            "rules_text": "",
-            "flavor_text": "[i][/i]",
-            "pt": "",
-            "special_text": "",
-            "shape": "normal",
-            "set": "PTN",
-            "loyalty": "",
-            "designer": "Kogane",
-            "artist": "Julie Dillon",
-            "notes": "!exportname PTN Swamp"
-        },
-        {
-            "card_name": "PTN Swamp 2",
+            "card_name": "Swamp",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Swamp",
@@ -640,11 +621,30 @@
             "set": "PTN",
             "loyalty": "",
             "designer": "Kogane",
-            "artist": "Andreas Rocha",
-            "notes": "!exportname PTN Swamp 2\n!subname Swamp 2"
+            "artist": "Julie Dillon",
+            "notes": "PTN Swamp"
         },
         {
-            "card_name": "PTN Mountain",
+            "card_name": "Swamp",
+            "color": "",
+            "rarity": "common",
+            "type": "Basic Land \u2014 Swamp",
+            "number": 264,
+            "color_identity": "B",
+            "cost": "",
+            "rules_text": "",
+            "flavor_text": "[i][/i]",
+            "pt": "",
+            "special_text": "",
+            "shape": "normal",
+            "set": "PTN",
+            "loyalty": "",
+            "designer": "Kogane",
+            "artist": "Andreas Rocha",
+            "notes": "PTN Swamp 2\n!subname Swamp 2"
+        },
+        {
+            "card_name": "Mountain",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Mountain",
@@ -660,10 +660,10 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Julie Dillon",
-            "notes": "!exportname PTN Mountain"
+            "notes": "PTN Mountain"
         },
         {
-            "card_name": "PTN Mountain 2",
+            "card_name": "Mountain",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Mountain",
@@ -679,10 +679,10 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Andreas Rocha",
-            "notes": "!exportname PTN Mountain 2\n!subname Mountain 2"
+            "notes": "PTN Mountain 2\n!subname Mountain 2"
         },
         {
-            "card_name": "PTN Forest",
+            "card_name": "Forest",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Forest",
@@ -698,10 +698,10 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Julie Dillon",
-            "notes": "!exportname PTN Forest"
+            "notes": "PTN Forest"
         },
         {
-            "card_name": "PTN Forest 2",
+            "card_name": "Forest",
             "color": "",
             "rarity": "common",
             "type": "Basic Land \u2014 Forest",
@@ -717,7 +717,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Andreas Rocha",
-            "notes": "!exportname PTN Forest 2\n!subname Forest 2"
+            "notes": "PTN Forest 2\n!subname Forest 2"
         },
         {
             "card_name": "Burgeoning Risen",
@@ -1955,7 +1955,7 @@
             "notes": ""
         },
         {
-            "card_name": "Scar Boon",
+            "card_name": "Scar",
             "color": "",
             "rarity": "common",
             "type": "Boon",
@@ -1971,7 +1971,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Rai-mond",
-            "notes": "!exportname Scar Boon\n!related Broken Sun-Servent;Ragged Sun's Angel;Root of Mercy;Expose Mortality;Opener of Realities;Perfect Stillness;Seven-Coil's Scion;Implant the Seeds;Nowhere Stygian;Sky-Scar Angel;Open the Self;Stained Silver;Tattered Cyprian;Carapace Disciple;Debilitated Tragulari;The Old Forms;Ravenous Unmaker;Wolven Hatred;Flames of Emnity;Horomachist Ending;Nowhere Deathlord;The Frangiclave;Ritual Daggar;\n!tokentag Scar"
+            "notes": "Scar Boon\n!related Broken Sun-Servent;Ragged Sun's Angel;Root of Mercy;Expose Mortality;Opener of Realities;Perfect Stillness;Seven-Coil's Scion;Implant the Seeds;Nowhere Stygian;Sky-Scar Angel;Open the Self;Stained Silver;Tattered Cyprian;Carapace Disciple;Debilitated Tragulari;The Old Forms;Ravenous Unmaker;Wolven Hatred;Flames of Emnity;Horomachist Ending;Nowhere Deathlord;The Frangiclave;Ritual Daggar;\n!tokentag Scar"
         },
         {
             "card_name": "Flames of Emnity",
@@ -3665,7 +3665,7 @@
             "notes": ""
         },
         {
-            "card_name": "God Horror Token",
+            "card_name": "God Horror",
             "color": "",
             "rarity": "common",
             "type": "Token Creature \u2014 God Horror",
@@ -3681,7 +3681,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Antonio J. Manzanedo",
-            "notes": "!tokentag God Horror\n!exportname God Horror Token\n!related Monument of Rags;The Red Grail;"
+            "notes": "!tokentag God Horror\nGod Horror Token\n!related Monument of Rags;The Red Grail;"
         },
         {
             "card_name": "Carapace Ancestor",
@@ -4615,7 +4615,7 @@
             "notes": ""
         },
         {
-            "card_name": "Cleric Token",
+            "card_name": "Cleric",
             "color": "",
             "rarity": "common",
             "type": "Token Creature \u2014 Cleric",
@@ -4631,7 +4631,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Alessia H. Valastro",
-            "notes": "!exportname Cleric Token\n!related Burgeoning Risen;Bringer of Glory;Defacement;Glassgarden Elder;Glassgarden Watcheye;Ignite Fervor;Ignite Fervor<2>;Mystical Trail;The Sky, The Soul;Moonlit Augury;Seaside Smuggler;Take Prisoners;Twins' Guardian;Veil of Dreams;Carapace Ancestor;Escape into the Night;Indulgent Cyprian;Scarring Servitude;Callidate Invocation;Corrivality;High Cyprian;Rite Flamecaller;Carapace Threadbearer;Cartographed Risen;Discover the Stone Gods;Flesh Weaver;Ring-Yew's Chosen;Student of Defiance;Tireless Recruiter;Unceasing Initiation;The Allure's Light;Covert Cloak;The Geminiad;Society Headquarters;\ninduct"
+            "notes": "Cleric Token\n!related Burgeoning Risen;Bringer of Glory;Defacement;Glassgarden Elder;Glassgarden Watcheye;Ignite Fervor;Ignite Fervor<2>;Mystical Trail;The Sky, The Soul;Moonlit Augury;Seaside Smuggler;Take Prisoners;Twins' Guardian;Veil of Dreams;Carapace Ancestor;Escape into the Night;Indulgent Cyprian;Scarring Servitude;Callidate Invocation;Corrivality;High Cyprian;Rite Flamecaller;Carapace Threadbearer;Cartographed Risen;Discover the Stone Gods;Flesh Weaver;Ring-Yew's Chosen;Student of Defiance;Tireless Recruiter;Unceasing Initiation;The Allure's Light;Covert Cloak;The Geminiad;Society Headquarters;\ninduct"
         },
         {
             "card_name": "Foretell",
@@ -4653,7 +4653,7 @@
             "notes": "!related Apostle Entheate;Extract Secrets;Glass Guardian;Guided Crusader;Iron Verdict;Legacy of Amber;Merciless Illumination;Rarefied Illuminator;Sun-Scorched Tempering;Fucine Translator;Augury Raven;Forgotten Tongues;Greater Deceiver;Mirrorwing Sphinx;Moonlit Deceiver;Rite of Twins' Union;Skin's Division;Cindered Tally;The Crowned Growth;Dream Whisperer;Enflamed Caligine;Malleary Smelter;Subvert the Light;Seven-Coiled Strength;The Allure's Light;Roost Augur;The Watchman;Noonstone Amulet;True Blood of Saint Janus;"
         },
         {
-            "card_name": "Angel Token",
+            "card_name": "Angel",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Angel",
@@ -4669,10 +4669,10 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Samuel Bourguignon",
-            "notes": "!exportname Angel Token\n!related Guided Crusader;"
+            "notes": "Angel Token\n!related Guided Crusader;"
         },
         {
-            "card_name": "Worm Token",
+            "card_name": "Worm",
             "color": "B",
             "rarity": "common",
             "type": "Token Creature \u2014 Worm",
@@ -4688,10 +4688,10 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Cinemamind",
-            "notes": "https://www.deviantart.com/cinemamind/art/Carrion-852775919\n!exportname Worm Token\n!related The Museum of Worms<X>;"
+            "notes": "https://www.deviantart.com/cinemamind/art/Carrion-852775919\nWorm Token\n!related The Museum of Worms<X>;"
         },
         {
-            "card_name": "Wolf Token",
+            "card_name": "Wolf",
             "color": "G",
             "rarity": "common",
             "type": "Token Creature \u2014 Wolf",
@@ -4707,7 +4707,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Susante",
-            "notes": "!exportname Wolf Token\n!related Smoldering Pack;Wolf-Splinter;Flames of Emnity;"
+            "notes": "Wolf Token\n!related Smoldering Pack;Wolf-Splinter;Flames of Emnity;"
         },
         {
             "card_name": "Noon Delver Serpent",
