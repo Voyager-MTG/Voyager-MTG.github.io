@@ -112,12 +112,6 @@
 		justify-items: center;
 	}
 
-	.image-grid-with-rulings {
-		width: 85%;
-		max-width: 1600px;
-		grid-template-columns: minmax(200px, 2fr) minmax(200px, 2.5fr) minmax(200px, 2fr);
-	}
-
 	.image-grid img {
 		position: relative;
 	}
@@ -456,6 +450,19 @@
 		width: 188px;
 		pointer-events: none;
 	}
+
+	ul {
+		margin-top: 5px;
+	}
+
+	.card-changes {
+		font-size: 17px;
+	}
+
+	.changes-header {
+		font-size: 18px;
+		font-weight: bold;
+	}
 </style>
 <style id="text-style">
 	.text {
@@ -735,6 +742,18 @@
 			document.getElementById("card-text").appendChild(printings);
 			document.getElementById("other-printings").style.display = "block";
 
+			const changes_html = await fetchCardChanges(card);
+
+			const changes_container = document.createElement("div");
+			changes_container.innerHTML = changes_html;
+
+			const rulings_container = document.createElement("div");
+			rulings_container.className = "rulings-container";
+
+			const image_grid = document.getElementsByClassName("image-grid")[0];
+
+			image_grid.appendChild(rulings_container);
+			image_grid.appendChild(changes_container);
 		});
 
 		function showCardHover(card_name, set = false, num = false) {
@@ -812,6 +831,45 @@
 			}
 
 			return related_cards;
+		}
+
+		async function fetchCardChanges(card) {
+			await fetch('/data/changelogs.json')
+				.then(response => response.json())
+				.then(json => {
+					change_list = json;
+				}).catch(error => console.error('Error:', error));
+
+			let changes = [];
+
+			for (const date in change_list) {
+				const changelog = change_list[date];
+				const card_match = new RegExp(`\\*\\*${RegExp.escape(card.card_name)}(\\'s)?\\*\\* (.*?)\\n`, "g");
+				if (card_match.test(changelog)) {
+					const match = changelog.match(card_match);
+					changes.push([date, match[0].split("**")[2]]);
+				}
+			}
+
+			let html = '<span class="changes-header text">Changes:</span><div class="card-changes text"><ul>';
+
+			for (let change of changes) {
+				change[1] = change[1].trim();
+				html += "<li>" + change[0] + ": " + formatChange(change[1]) + "</li>";
+			}
+
+			html += "</ul></div>";
+
+			return html;
+		}
+
+		function formatChange(change) {
+			change = change.replaceAll(/<:mana([wubrgivxt0-9]+?):[0-9]+?>/g, function (_1, mana_type) {
+				return symbolize("{" + mana_type + "}");
+			})
+			change = change[0].toUpperCase() + change.substring(1);
+
+			return change;
 		}
 
 		function isDecimal(char) {
@@ -1303,8 +1361,7 @@
 		async function reload() {
 			const image_grid = document.getElementsByClassName("image-grid")[0];
 
-			const rulings_container = document.createElement("div");
-			rulings_container.className = "rulings-container";
+			const rulings_container = document.getElementsByClassName("rulings-container")[0];
 
 			if (user_data.judge) {
 				const rulings_input_container = document.createElement("div");
@@ -1329,7 +1386,7 @@
 
 			const current_rulings = document.createElement("div");
 			current_rulings.className = "rulings-list text";
-			current_rulings.innerHTML = rulings.list;
+			current_rulings.innerHTML = "Rulings:<br>" + rulings.list;
 			rulings_container.appendChild(current_rulings);
 
 			if (rulings.has_rulings || user_data.judge) {

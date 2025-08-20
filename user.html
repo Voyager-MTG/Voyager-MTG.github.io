@@ -558,6 +558,16 @@
 
 		async function reload() {
 			const deck_data = await getDoc(doc(db, 'users', username)).then(async docSnap => {
+				let card_list;
+				let card_list_arrayified;
+				if (!card_list_arrayified) {
+					await fetch('/lists/all-cards.json')
+						.then(response => response.json())
+						.then(json => {
+							card_list = json;
+						}).catch(error => console.error('Error:', error));
+				}
+				card_list_arrayified = card_list.cards;
 				let user_data = docSnap.data();
 				let colls;
 				let used_formats = [];
