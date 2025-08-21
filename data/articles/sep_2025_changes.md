@@ -1,8 +1,11 @@
-# September 2025 Changelog
-##### Written by the captains
+name: September 2025 Changes
+
+author: The Captains
 
 ## Frontiers of Eternity
 
+<set-cards>
+<left-card>
 ### Branching Paths
 <change-preview>
 https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/FOE-files/img/61_Branching%20Paths.jpg?raw=true
@@ -11,6 +14,8 @@ https://cdn.discordapp.com/attachments/1341926153631563826/1408194145343901696/i
 
 This change was made because the ability to "time walk" someone for 1 mana, even if it requires 5 differently named lands is bad gameplay. If used correctly, branching paths had the ability to ["yata-lock"](https://yugipedia.com/wiki/Yata-Garasu_Lockdown) (stop the opponent from drawing).
 
+</left-card>
+<right-card>
 ### Meirel Pathrunner
 <change-preview>
 https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/FOE-files/img/309_Meirel%20Pathrunner.jpg?raw=true
@@ -19,6 +24,8 @@ https://media.discordapp.net/attachments/1393023972161093663/1407411290443485204
 
 Meirel Pathrunner's cost change was done in an effort to reduce or remove the upside of ["scamming"](/search?search=c%3Ab+t%3Ainstant+o%3Awhen+o%3Adies+o%3Areturn). The card was also changed to no longer have the upside of becoming a 7/7 menace as that was provably egregious.
 
+</right-card>
+<left-card>
 ### Mordel Spritcaller
 
 <change-preview>
@@ -28,6 +35,8 @@ https://media.discordapp.net/attachments/1393023972161093663/1407411290720436324
 
 At 1 mana evoke it was provably silly. Had synergies with cards that interacted with lands in graveyards, and *at worst* was a mishra's bauble. The buff in pt was made to make the card more playable in fair decks.
 
+</left-card>
+<right-card>
 ### Morraire Shimmer Patrol
 
 <change-preview>
@@ -37,6 +46,8 @@ https://media.discordapp.net/attachments/1393023972161093663/1407411291030818957
 
 Shimmer Patrol was given a change to prevent it from being abusable with flickers as it would represent an on-board bounce for spells, however, in the process it needed to get a toughness boost so it could function in combat.
 
+</right-card>
+<left-card>
 ### Omen of Hunger
 
 <change-preview>
@@ -46,6 +57,8 @@ https://media.discordapp.net/attachments/1393023972161093663/1407411291324289156
 
 Changed to not work with up the beanstalk-style effects. Flying over menace to make it less blockable with the prevalence of tokens made it difficult for it to get in.
 
+</left-card>
+<right-card>
 ### Outlands Duelists
 
 <change-preview>
@@ -55,6 +68,8 @@ https://media.discordapp.net/attachments/1393023972161093663/1407411291605434368
 
 Evoke cost changed from 1 to not act as a cantrip as well as to prevent scamming. MV lowere from 5 to prevent beans silliness.
 
+</right-card>
+<left-card>
 ### Shadow of Grace
 
 <change-preview>
@@ -64,6 +79,8 @@ https://cdn.discordapp.com/attachments/1341926153631563826/1408204154018726030/i
 
 Another beans related change.
 
+</left-card>
+<right-card>
 ### Skyskif Flying Fish
 
 <change-preview>
@@ -73,6 +90,8 @@ https://media.discordapp.net/attachments/1393023972161093663/1407411292196835358
 
 BEANS
 
+</right-card>
+<left-card>
 ### Marie, Hungerbound
 
 <change-preview>
@@ -82,6 +101,8 @@ https://cdn.discordapp.com/attachments/1341926153631563826/1408205308005974147/i
 
 Marie was able to start at a high loyalty and acrew too much loyalty by locking down creatures that would attack it as well as removing noncreatures. In combination with [[Far-off Door]], you could completely control combat as well as get lots of card selection and work towards killing your opponent. The rework splits up the ability to stop creatures from attacking and the card selection/damage ability so it doesn't do so much at once. (NOTE: This was a card that should've been flagged early but wasn't due to a number of factors.)
 
+</left-card>
+<right-card>
 ### Faloden Barrier Scout
 <change-preview>
 https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/FOE-files/img/27_Faloden%20Barrier%20Scout.jpg?raw=true
@@ -89,9 +110,11 @@ https://media.discordapp.net/attachments/1393023972161093663/1407920002945781842
 </change-preview>
 
 Faloden Barrier Scout proved to be an integral part of the format, however, with its original toughness of 3, it was found very difficult to remove; In combat as well as with toughness-based removal. This change brings it a bit more in line with how powerful its effect is, but does not bring it down to the point that [anything can kill it](/search?search=center+mass).
-
+</right-card>
+</set-cards>
 ## Itera: Into the Dream
 
+<set-cards><left-card>
 ### Aeon, of the Living Coffin
 
 <change-preview>
@@ -101,6 +124,8 @@ https://media.discordapp.net/attachments/1393023972161093663/1405966770313101312
 
 This card was overtuned and was too strong and kept itself alive while having an extremely impactful enters.
 
+</left-card>
+<right-card>
 ### The Gardener, Crowned
 
 <change-preview>
@@ -110,6 +135,8 @@ https://media.discordapp.net/attachments/1393023972161093663/1405966770635804814
 
 This card was a little too easy to cast for cheap. Ramping allowed you to get it out very easily. Should be harder to cast now, and be more like a virtual 7-8 mana card.
 
+</right-card>
+<left-card>
 ### MX-04, Electric Usurper
 
 <change-preview>
@@ -119,6 +146,8 @@ https://media.discordapp.net/attachments/1393023972161093663/1405966771055493120
 
 Minor buff to the replicants.
 
+</left-card>
+<right-card>
 ### New-Life Acolyte
 
 <change-preview>
@@ -128,6 +157,8 @@ https://media.discordapp.net/attachments/1393023972161093663/1405966771394969610
 
 This was too strong in multiples.
 
+</right-card>
+<left-card>
 ### Gravewalking
 
 <change-preview>
@@ -137,6 +168,8 @@ https://media.discordapp.net/attachments/1393023972161093663/1405966771852152942
 
 Minor nerf, card was and is very strong.
 
+</left-card>
+<right-card>
 ### Necromantic Overspill
 
 <change-preview>
@@ -146,6 +179,8 @@ https://media.discordapp.net/attachments/1393023972161093663/1405966802818830356
 
 This card never directly caused problems, but came very close and served as a major power outlier. Hopefully needing a creature in order to get a 5-drop is fine.
 
+</right-card>
+<left-card>
 ### Callous Observer
 
 <change-preview>
@@ -155,6 +190,8 @@ https://media.discordapp.net/attachments/1393023972161093663/1405967362955411607
 
 This card previously did a lot by being able to double the damage dealt by the drains and scale passively.
 
+</left-card>
+<right-card>
 ### Far-off Door
 
 <change-preview>
@@ -164,6 +201,8 @@ https://media.discordapp.net/attachments/1393023972161093663/1405967648835240118
 
 Far-off door has been changed to require mana investment to gain more uses of loyalty abilities.
 
+</right-card>
+<left-card>
 ### The Howling Door
 
 <change-preview>
@@ -173,6 +212,8 @@ https://media.discordapp.net/attachments/1393023972161093663/1405967955165974529
 
 This ability probably should always have costed mana.
 
+</left-card>
+<right-card>
 ### Shifting Silverscape
 
 <change-preview>
@@ -182,6 +223,8 @@ https://cdn.discordapp.com/attachments/1341926153631563826/1408212447843844237/i
 
 Shifting Silverscape was always strong as an artifact land. However, it being a land that gave you discard fodder for no cost pushed it over the line. However, losing total mana should make it more fair for discard.
 
+</right-card>
+<left-card>
 ### Template
 
 <change-preview>
@@ -189,6 +232,8 @@ Shifting Silverscape was always strong as an artifact land. However, it being a 
 
 </change-preview>
 
+</left-card>
+<right-card>
 ### Template
 
 <change-preview>
@@ -196,6 +241,8 @@ Shifting Silverscape was always strong as an artifact land. However, it being a 
 
 </change-preview>
 
+</right-card>
+<left-card>
 ### Template
 
 <change-preview>
@@ -203,9 +250,13 @@ Shifting Silverscape was always strong as an artifact land. However, it being a 
 
 </change-preview>
 
+</left-card>
+<right-card>
 ### Template
 
 <change-preview>
 
 
 </change-preview>
+</right-card>
+</set-cards>
