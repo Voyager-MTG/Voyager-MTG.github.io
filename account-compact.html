@@ -691,7 +691,7 @@
 							await setDoc(doc(db, "users", username), {
 								username: username,
 								password: password,
-								decks: JSON.stringify(new_decks)
+								decks: (new_decks)
 							});
 							document.getElementById('modal-container').style.display = 'none';
 							alert("Deck Deleted!");
@@ -712,7 +712,7 @@
 									let decks_ = tourndata.decks;
 									decks_[username] = deck;
 									await setDoc(doc(db, "events", event), {
-										decks: JSON.stringify(decks_)
+										decks: (decks_)
 									});
 								});
 								alert("Submitted deck " + deck.name + " to" + event + "!");
@@ -767,7 +767,7 @@
 						await setDoc(doc(db, "users", username), {
 							username: username,
 							password: password,
-							decks: JSON.stringify(new_decks)
+							decks: (new_decks)
 						});
 						alert("Deck Deleted!");
 						reload();

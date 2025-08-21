@@ -646,7 +646,7 @@
 						//             let decks_ = JSON.parse(tourndata.decks);
 						//             decks_[username] = deck;
 						//             await updateDoc(doc(db, "events", "GP1"), {
-						//                 decks: JSON.stringify(decks_)
+						//                 decks:(decks_)
 						//             });
 						//         });
 						//         alert("Submitted deck " + deck.name + "to GP1!");
@@ -669,7 +669,7 @@
 								// index += 1;
 							}
 							await updateDoc(doc(db, "users", username), {
-								decks: JSON.stringify(new_decks)
+								decks: (new_decks)
 							});
 							alert("Deck Deleted!");
 							reload();

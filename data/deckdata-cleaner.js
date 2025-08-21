@@ -21,9 +21,17 @@ const db = getFirestore(app);
 
 const names = {
 	//unclean: clean
+	"": ""
+}
+
+function isString(obj) {
+	return typeof obj === "string";
 }
 
 function swapUserDeckNames(decks) {
+	if (isString(decks)) {
+		decks = JSON.parse(decks);
+	}
 	for (const deck of decks) {
 		let to_replace = deck.url.split(';')[1].split('&main')[0];
 		let list = atob(deck.url.split(';')[1].split('&main')[0]);
@@ -42,6 +50,9 @@ function swapUserDeckNames(decks) {
 }
 
 function swapEventDeckNames(decks) {
+	if (isString(decks)) {
+		decks = JSON.parse(decks);
+	}
 	for (const user in decks) {
 		const deck = decks[user];
 

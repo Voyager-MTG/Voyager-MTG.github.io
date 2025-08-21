@@ -4649,7 +4649,7 @@
 				}
 				decks.push(deckObj);
 				updateDoc(doc(db, "users", username), {
-					decks: JSON.stringify(decks)
+					decks: (decks)
 				});
 			});
 			window.beforeunload = function () {
@@ -4667,7 +4667,7 @@
 				}
 				decks.push(deckObj);
 				updateDoc(doc(db, "users", username), {
-					decks: JSON.stringify(decks)
+					decks: (decks)
 				});
 			}
 			document.getElementById("file-menu").addEventListener("change", function (event) { // Watch the dropdown that says Actions...

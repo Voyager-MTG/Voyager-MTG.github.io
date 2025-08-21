@@ -753,7 +753,7 @@
 							// index += 1;
 						}
 						await updateDocs(doc(db, "users", username), {
-							decks: JSON.stringify(new_decks)
+							decks: (new_decks)
 						});
 						alert("Deck Deleted!");
 						reload();
@@ -871,13 +871,15 @@
 					// index += 1;
 				}
 				await updateDoc(doc(db, "users", username), {
-					decks: JSON.stringify(new_decks)
+					decks: (new_decks)
 				});
 				alert("Deck Deleted!");
 				reload();
 			}
 
-			for (const color of deck.colors) {
+			const colors = deck.colors ? deck.colors : "";
+
+			for (const color of colors) {
 				let color_ele = document.createElement('img');
 				color_ele.src = `/img/mana/mana_${color}.png`; // fuck you git
 				color_ele.className = "mana-img";
@@ -915,7 +917,7 @@
 					decks_[username] = deck;
 				}
 				updateDoc(doc(db, "events", event), {
-					decks: JSON.stringify(decks_)
+					decks: (decks_)
 				});
 			});
 			alert("Submitted deck " + deck.name + " to" + event + "!");

@@ -2570,7 +2570,7 @@
 					new_decks[username] = deck;
 
 					updateDoc(doc(db, "events", event), {
-						decks: JSON.stringify(new_decks)
+						decks: (new_decks)
 					});
 
 					alert("Deck Submitted!");
