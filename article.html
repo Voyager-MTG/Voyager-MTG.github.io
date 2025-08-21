@@ -165,6 +165,26 @@
 		border-radius: 20px;
 		padding: 30px;
 	}
+
+	body {
+		font-size: 1.1em;
+	}
+
+	h1 {
+		font-size: 3em;
+		padding-bottom: 10px;
+		border-bottom: 2px solid gray;
+	}
+
+	h2 {
+		font-size: 2em;
+		padding-bottom: 10px;
+		border-bottom: 1px solid gray;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
 </style>
 <style id="text-style">
 	.text {
@@ -280,8 +300,12 @@
 		}
 
 		function parseMarkdown(md) {
-			// Linebreaks
-			md = md.replaceAll(/\n(\r)?\n/gm, "<br><br>");
+			md = md.replaceAll("\r", "");
+
+			// Change preview
+			md = md.replaceAll(/<change-preview>\n?(.*?)\n(.*?)\n?<\/change-preview>/gm, function (_1, image_1, image_2) {
+				return `<div style="display: flex; gap: 10px; align-items: center; justify-items: center;"><img style="max-height: 300px;" src="${image_1}"><span style="font-weight: bold; font-size: 100px;">›</span><img style="max-height: 300px;" src="${image_2}"></div>`;
+			});
 
 			// Italic bold
 			md = md.replaceAll(/\*\*\*(.*?)\*\*\*/g, function (_1, _2) {
@@ -310,11 +334,12 @@
 
 			// Links
 			md = md.replaceAll(/\[(.*?)\]\((.*?)\)/g, function (_1, _2, _3) {
-				return `<a href="${_3}">${_2}</a>"`;
+				return `<a href="${_3}">${_2}</a>`;
 			});
 
 			// Headers
-			md = md.replaceAll(/(\#+)(.*)/g, function (_1, _2, _3, _4) {
+			md = md.replaceAll(/(\#+)(.*?)\n/g, function (_1, _2, _3, _4) {
+				console.log(_1, _2, _3, _4);
 				return `<h${_2.length}>${_3}</h${_2.length}>`;
 			});
 
@@ -322,6 +347,9 @@
 			md = md.replaceAll(/\[\[(.*?)\]\]/g, function (_1, card_name) {
 				return `<span class="card-hover-text" onmouseover="showCardHover('${card_name}')" onmousemove="moveCardHover(event)" onmouseout="hideCardHover()">${card_name}</span>`
 			});
+
+			// Linebreaks
+			md = md.replaceAll(/\n\n/gm, "<br><br>");
 
 			return `<div class="popout article-content">${md}</div>`;
 		}
