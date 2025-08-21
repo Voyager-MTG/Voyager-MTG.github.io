@@ -21,13 +21,10 @@ const db = getFirestore(app);
 
 const names = {
 	//unclean: clean
-	"Island": "Plains"
 }
 
 function swapUserDeckNames(decks) {
 	for (const deck of decks) {
-		deck.colors = deck.colors ? deck.colors : "";
-		if (deck.colors.includes("U")) continue;
 		let to_replace = deck.url.split(';')[1].split('&main')[0];
 		let list = atob(deck.url.split(';')[1].split('&main')[0]);
 
@@ -47,8 +44,6 @@ function swapUserDeckNames(decks) {
 function swapEventDeckNames(decks) {
 	for (const user in decks) {
 		const deck = decks[user];
-		deck.colors = deck.colors ? deck.colors : "";
-		if (deck.colors.includes("U")) continue;
 
 		let to_replace = deck.url.split(';')[1].split('&main')[0];
 		let list = atob(deck.url.split(';')[1].split('&main')[0]);
