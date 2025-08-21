@@ -260,3 +260,9 @@ Shifting Silverscape was always strong as an artifact land. However, it being a 
 </change-preview>
 </right-card>
 </set-cards>
+
+<style>
+	h3 {
+		text-align: center;
+	}
+</style>
