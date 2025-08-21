@@ -1085,7 +1085,7 @@
 
 			await getDoc(doc(db, 'users', username)).then(docSnap => {
 				let data = docSnap.data();
-				decks = JSON.parse(data.decks);
+				decks = data.decks;
 			});
 		}
 
@@ -1148,17 +1148,17 @@
 				all_users_docs.forEach((doc) => {
 					const data = doc.data();
 					all_users.push(data);
-					for (const deck of JSON.parse(data.decks)) {
+					for (const deck of data.decks) {
 						all_decks.push({ ...deck, "user": data.username, "event": false });
 						all_users_decks.push({ ...deck, "user": data.username, "event": false });
 					}
-					// all_decks.push(...JSON.parse(data.decks));
+					// all_decks.push(...data.decks);
 				});
 				all_events_docs.forEach((doc) => {
 					const data = doc.data();
 					all_events.push(data);
-					for (const user in JSON.parse(data.decks)) {
-						let deck = JSON.parse(data.decks)[user];
+					for (const user in data.decks) {
+						let deck = data.decks[user];
 						all_events_decks.push({ ...deck, "user": user, "event": true });
 						all_decks.push({ ...deck, "user": user, "event": true });
 					}
@@ -1202,7 +1202,7 @@
 
 				const event_players = document.createElement("span");
 				event_players.className = "event-players text";
-				event_players.innerText = Object.keys(JSON.parse(event.decks)).length + " players";
+				event_players.innerText = Object.keys(event.decks).length + " players";
 				event_container.appendChild(event_players);
 
 				const event_winner = document.createElement("span");
@@ -1373,7 +1373,7 @@
 			await getDoc(doc(db, 'events', recent_event)).then((doc) => {
 				const event = doc.data();
 				let records = getRecords(event);
-				const decks = JSON.parse(event.decks);
+				const decks = event.decks;
 				for (const user in decks) {
 					const deck = decks[user];
 					if (records[user][1] <= 1) {
@@ -1746,7 +1746,7 @@
 				for (const event of all_events) {
 					if (event.name.includes("League")) continue;
 					const swiss = JSON.parse(event.rounds).swiss;
-					const decks = JSON.parse(event.decks);
+					const decks = event.decks;
 					let players_with_card = [];
 					for (const player in decks) {
 						const deck = decks[player];

@@ -1103,7 +1103,7 @@
 		}
 
 		function runSearch() {
-			const decks = JSON.parse(user_data.decks);
+			const decks = user_data.decks;
 			const search_terms = document.getElementById("new-run-search-input").value.matchAll(/(\[\[.*?\]\]|\S+)/g);
 			let search_terms_arrayified = [];
 			let search_results = [];
@@ -1176,7 +1176,7 @@
 
 		function makeDecksTab() {
 			// console.log(card_list_arrayified);
-			const decks = JSON.parse(event_data.decks);
+			const decks = event_data.decks;
 			for (const deck of decks) {
 				let user = deck.user;
 				let full_deck_container = document.createElement('div');

@@ -2135,7 +2135,7 @@ Search for cards that were made into champion promo's by a specific user. For ex
 				for (const event of all_events) {
 					if (event.name.includes("League")) continue;
 					const swiss = JSON.parse(event.rounds).swiss;
-					const decks = JSON.parse(event.decks);
+					const decks = event.decks;
 					let players_with_card = [];
 					for (const player in decks) {
 						const deck = decks[player];
@@ -2219,8 +2219,8 @@ Search for cards that were made into champion promo's by a specific user. For ex
 		all_events_docs.forEach((doc) => {
 			const data = doc.data();
 			all_events.push(data);
-			for (const user in JSON.parse(data.decks)) {
-				let deck = JSON.parse(data.decks)[user];
+			for (const user in data.decks) {
+				let deck = data.decks[user];
 				all_event_decks.push({ ...deck, "user": user, "event": true });
 				all_decks.push({ ...deck, "user": user, "event": true });
 			}
@@ -2228,7 +2228,7 @@ Search for cards that were made into champion promo's by a specific user. For ex
 
 		all_users_docs.forEach((doc) => {
 			const data = doc.data();
-			for (const deck of JSON.parse(data.decks)) {
+			for (const deck of data.decks) {
 				all_user_decks.push({ ...deck, "user": data.username, "event": false });
 				all_decks.push({ ...deck, "user": data.username, "event": false });
 			}

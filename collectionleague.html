@@ -1123,7 +1123,7 @@
 			const content_container = document.createElement("div");
 			content_container.className = "deck-select-container";
 
-			for (const deck of JSON.parse(user_data.decks)) {
+			for (const deck of user_data.decks) {
 				const deck_ele = gridifyDeck(deck);
 				deck_ele.onclick = () => {
 					const new_runs = JSON.parse(event_data.runs);
@@ -1168,7 +1168,7 @@
 
 		function makeDecksTab() {
 			// console.log(card_list_arrayified);
-			const decks = JSON.parse(event_data.decks);
+			const decks = event_data.decks;
 			for (const deck of decks) {
 				let user = deck.user;
 				let full_deck_container = document.createElement('div');

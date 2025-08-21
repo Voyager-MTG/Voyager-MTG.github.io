@@ -4529,7 +4529,7 @@
 			let colls; // comment
 			const admin = data.admin;
 			let coll_league = data.coll_league;
-			decks = JSON.parse(data.decks);
+			decks = data.decks;
 			if (data.colls != null) {
 				colls = JSON.parse(data.colls);
 			} else {
@@ -4546,7 +4546,7 @@
 					const deck_name = splitted[1];
 					await getDoc(doc(db, 'users', deck_user)).then(docSnap => {
 						let data2 = docSnap.data();
-						let decks = JSON.parse(data2.decks);
+						let decks = data2.decks;
 						for (const deck of decks) {
 							if (deck.name == deck_name) {
 								let text = atob(deck.url.split(";")[1].split("&")[0]);
@@ -4565,7 +4565,7 @@
 				const deck_user = splitted[1];
 				await getDoc(doc(db, 'events', deck_event)).then(docSnap => {
 					let data3 = docSnap.data();
-					let decks = JSON.parse(data3.decks);
+					let decks = data3.decks;
 					for (const user in decks) {
 						if (user == deck_user) {
 							let deck = decks[user];

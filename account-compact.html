@@ -609,7 +609,7 @@
 
 		await getDoc(doc(db, 'users', username)).then(docSnap => {
 			let data = docSnap.data();
-			decks = JSON.parse(data.decks);
+			decks = data.decks;
 		});
 
 		document.getElementById("username").innerText = username;
@@ -619,7 +619,7 @@
 			const deck_data = await getDoc(doc(db, 'users', username)).then(async docSnap => {
 				let user_data = docSnap.data();
 				let colls;
-				let decks = JSON.parse(user_data.decks);
+				let decks = user_data.decks;
 				if (user_data.colls) {
 					colls = JSON.parse(user_data.colls);
 				} else {
@@ -709,7 +709,7 @@
 							deck_submit_text.onclick = async function () {
 								await getDoc(doc(db, "events", event)).then(async docSnap2 => {
 									let tourndata = docSnap2.data();
-									let decks_ = JSON.parse(tourndata.decks);
+									let decks_ = tourndata.decks;
 									decks_[username] = deck;
 									await setDoc(doc(db, "events", event), {
 										decks: JSON.stringify(decks_)
