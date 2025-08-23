@@ -1,6 +1,6 @@
 name: September 2025 Changes
 
-author: The Captains
+author: The Captains of Voyager
 
 ## Frontiers of Eternity
 
@@ -185,7 +185,7 @@ This card never directly caused problems, but came very close and served as a ma
 
 <change-preview>
 https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/ITD-files/img/140_Callous%20Observer.jpg?raw=true
-https://media.discordapp.net/attachments/1393023972161093663/1405967362955411607/image.png?ex=68a8a9a4&is=68a75824&hm=25a1005347d2bd6d3f0dd69cbdc9b40b2a358bbd7433d40b3391b6f52906b791&=&format=webp&quality=lossless&width=469&height=654
+https://media.discordapp.net/attachments/1393023972161093663/1405967363332903032/image.png?ex=68aaa3e5&is=68a95265&hm=35976bdc78cb58cb979947a50f2908b1f16a4e64fd1b3e24da6779930b9470fe&=&format=webp&quality=lossless&width=469&height=654
 </change-preview>
 
 This card previously did a lot by being able to double the damage dealt by the drains and scale passively.
@@ -224,6 +224,179 @@ https://cdn.discordapp.com/attachments/1341926153631563826/1408212447843844237/i
 Shifting Silverscape was always strong as an artifact land. However, it being a land that gave you discard fodder for no cost pushed it over the line. However, losing total mana should make it more fair for discard.
 
 </right-card>
+</set-cards>
+## Port Noon: Occult Islands of Vespera
+<set-cards>
+<left-card>
+### The Geminiad
+
+<change-preview>
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/PTN-files/img/241_The%20Geminiad.jpg?raw=true
+https://media.discordapp.net/attachments/1393023972161093663/1403165308025311282/image.png?ex=68aa5586&is=68a90406&hm=3eac66c4dbe1f06df4669342d235722a9dbbc79710f1ac10f1a3683d60ef4c1d&=&format=webp&quality=lossless&width=469&height=654
+</change-preview>
+
+The Geminiad got changed because it was a card that was very efficient at stopping aggressive decks by generating a chumper every turn while also getting you ahead on mana. The first line of text on the card is mostly trinket text, but can be very relevant in matchups such as [[Prithite, Grand Orator]] combo. Overall, the card was just above rate for a 3mv manarock so we decided to change it so it didn't put you ahead on mana unless you invested some mana into it. 
+
+</left-card>
+<right-card>
+### Ambitions of Ascension
+
+<change-preview>
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/PTN-files/img/9_Ambitions%20of%20Ascension.jpg?raw=true
+https://media.discordapp.net/attachments/1337449535416307896/1407445763432251533/image.png?ex=68aa1603&is=68a8c483&hm=8a7da8c00bcba6691312d8b29b75db9a56ca7710510e8ac121f7d636e0f740e3&=&format=webp&quality=lossless&width=469&height=654
+</change-preview>
+
+Effect was simplified.
+
+</right-card>
+<left-card>
+### Rarefied Illuminator
+
+<change-preview>
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/PTN-files/img/38_Rarefied%20Illuminator.jpg?raw=true
+https://media.discordapp.net/attachments/1337449535416307896/1407449043805667460/image.png?ex=68aa1911&is=68a8c791&hm=7bb9639a70e9eeae8b97932ead7f66200456bc86a577c09ab68ca87cfd08ebfe&=&format=webp&quality=lossless&width=469&height=654
+</change-preview>
+
+This card just overall had way too much text before and has gotten its text shortened with not much change to its functionality (though losing vigilance is relevant).
+
+</left-card>
+<right-card>
+### Glassgarden Watcheye
+
+<change-preview>
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/PTN-files/img/25_Glassgarden%20Watcheye.jpg?raw=true
+https://cdn.discordapp.com/attachments/1337449535416307896/1407453978383356045/image.png?ex=68aa1da9&is=68a8cc29&hm=782a2f8c6cc6289a76d399e734d558171e215d5e85c24e1169320bca8b629dbe&
+</change-preview>
+
+Grants first strike instead of vigilance as the induct gods can't block.
+
+</right-card>
+<left-card>
+### Guardian Percussigant
+
+<change-preview>
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/PTN-files/img/27_Guardian%20Percussigant.jpg?raw=true
+https://cdn.discordapp.com/attachments/1337449535416307896/1407454337294405763/image.png?ex=68aa1dff&is=68a8cc7f&hm=1de0bac81c3b61ea6d1029d0b5b458a1264d27e34817bdddd0181ee8a2925214&
+</change-preview>
+
+Similar idea here, except the card itself has gained vigilance instead of changing what it grants.
+
+</left-card>
+<right-card></right-card>
+</set-cards>
+## Vinimroth Eternities
+<set-cards>
+<left-card>
+### Awakened Harmony
+
+<change-preview>
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/VNM-files/img/152_Awakened%20Harmony.jpg?raw=true
+https://media.discordapp.net/attachments/1337208262965203024/1407242548879163392/image.png?ex=68aaaa40&is=68a958c0&hm=79dbc563e6e61f0c5fc4ed7e742a9bf779b1bcd6176798987ff94430ff29e112&=&format=webp&quality=lossless&width=469&height=654
+</change-preview>
+
+Limited change.
+
+</left-card>
+<right-card>
+### Brood Protector
+
+<change-preview>
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/VNM-files/img/118_Brood%20Protector.jpg?raw=true
+https://media.discordapp.net/attachments/1337208262965203024/1407242549231353938/image.png?ex=68aaaa41&is=68a958c1&hm=bccdc068edf4024c255781929964d07b65e37b6d7ad173bd5c8e76a64566e52f&=&format=webp&quality=lossless&width=469&height=654
+</change-preview>
+
+Primarily a limited change, but does allow protector to dodge shocks which is at least notable as it saw some play in jeskai [[Gigant Nestcrafter]].
+
+</right-card>
+<left-card>
+### Conflict Mentor
+
+<change-preview>
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/VNM-files/img/216_Conflict%20Mentor.jpg?raw=true
+https://media.discordapp.net/attachments/1337208262965203024/1407242550024077332/image.png?ex=68aaaa41&is=68a958c1&hm=85e874cd630932009430add47a91ee335afbfad07fa859ea93f28d3476fe2cad&=&format=webp&quality=lossless&width=469&height=654
+</change-preview>
+
+Limited change.
+
+</left-card>
+<right-card>
+### Frostborn Glimmer
+
+<change-preview>
+https://media.discordapp.net/attachments/1337208262965203024/1407242550284386374/image.png?ex=68aaaa41&is=68a958c1&hm=edc89d06c7b2809310159c2a11cdfa28c8b455aa7dac2a4060b389095deb01a9&=&format=webp&quality=lossless&width=469&height=654
+https://media.discordapp.net/attachments/1337208262965203024/1407242550284386374/image.png?ex=68aaaa41&is=68a958c1&hm=edc89d06c7b2809310159c2a11cdfa28c8b455aa7dac2a4060b389095deb01a9&=&format=webp&quality=lossless&width=469&height=654
+</change-preview>
+
+Limited change.
+
+</right-card>
+<left-card>
+### Mistblade Rogue
+
+<change-preview>
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/VNM-files/img/102_Mistblade%20Rogue.jpg?raw=true
+https://media.discordapp.net/attachments/1337208262965203024/1407242550552563712/image.png?ex=68aaaa41&is=68a958c1&hm=03858ae82c1891ed299280d6cce46a027ecdb65305f7c46a8a64caa4f9f75580&=&format=webp&quality=lossless&width=469&height=654
+</change-preview>
+
+Limited change.
+
+</left-card>
+<right-card>
+### Mistveil Drake
+
+<change-preview>
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/VNM-files/img/4_Mistveil%20Drake.jpg?raw=true
+https://media.discordapp.net/attachments/1337208262965203024/1407242550854684733/image.png?ex=68aaaa41&is=68a958c1&hm=3c5622a19bbeb3f961b9a39731b116af9e4f5a23c66cbc43ac7394fc337f64d6&=&format=webp&quality=lossless&width=469&height=654
+</change-preview>
+
+NOTE: Drake uses the wrong frame in the right preview. This should get fixed shortly.
+
+Changed to well, not suck. It wasn't really doing anything at all after it's previous (deserved) nerf, and this rework should help it not be completely irrelevant in decks that might run it.
+
+</right-card>
+<left-card>
+### Prophellos, Pathborn Hunger
+
+<change-preview>
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/VNM-files/img/7_Prophellos,%20Pathborn%20Hunger.jpg?raw=true
+https://media.discordapp.net/attachments/1337208262965203024/1407242551131377764/image.png?ex=68aaaa41&is=68a958c1&hm=043cef1aac730cd2519a483744eb9a54eac2431f919c20c0038d474a94743516&=&format=webp&quality=lossless&width=469&height=654
+</change-preview>
+
+NOTE: Prophellos uses the wrong frame in the right preview. This should get fixed shortly.
+
+Prophellos being at escape 4 cards was likely slightly too much so it was toned down a bit.
+
+</left-card>
+<right-card>
+### Resolute Watcher
+
+<change-preview>
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/VNM-files/img/71_Resolute%20Watcher.jpg?raw=true
+https://media.discordapp.net/attachments/1337208262965203024/1407242551441887252/image.png?ex=68aaaa41&is=68a958c1&hm=6360836d8863b36a66241ae3db78c235ea3b1aec950f29cf3655c8b02a6ded95&=&format=webp&quality=lossless&width=469&height=654
+</change-preview>
+
+Primarily a limited change but could have some impact on constructed.
+
+</right-card>
+<left-card>
+### Respite Partisan
+
+<change-preview>
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/VNM-files/img/72_Respite%20Partisan.jpg?raw=true
+https://media.discordapp.net/attachments/1337208262965203024/1407242551718707200/image.png?ex=68aaaa41&is=68a958c1&hm=dbe32f6ed144e40bcd06afba1f47882bdd984aecb9bdc22346699596f753b619&=&format=webp&quality=lossless&width=469&height=654
+</change-preview>
+
+Limited change.
+
+</left-card>
+<right-card>
+### Template
+
+<change-preview>
+
+
+</change-preview>
+</right-card>
 <left-card>
 ### Template
 
@@ -240,7 +413,108 @@ Shifting Silverscape was always strong as an artifact land. However, it being a 
 
 
 </change-preview>
+</right-card>
+<left-card>
+### Template
 
+<change-preview>
+
+
+</change-preview>
+
+</left-card>
+<right-card>
+### Template
+
+<change-preview>
+
+
+</change-preview>
+</right-card>
+<left-card>
+### Template
+
+<change-preview>
+
+
+</change-preview>
+
+</left-card>
+<right-card>
+### Template
+
+<change-preview>
+
+
+</change-preview>
+</right-card>
+<left-card>
+### Template
+
+<change-preview>
+
+
+</change-preview>
+
+</left-card>
+<right-card>
+### Template
+
+<change-preview>
+
+
+</change-preview>
+</right-card>
+<left-card>
+### Template
+
+<change-preview>
+
+
+</change-preview>
+
+</left-card>
+<right-card>
+### Template
+
+<change-preview>
+
+
+</change-preview>
+</right-card>
+<left-card>
+### Template
+
+<change-preview>
+
+
+</change-preview>
+
+</left-card>
+<right-card>
+### Template
+
+<change-preview>
+
+
+</change-preview>
+</right-card>
+<left-card>
+### Template
+
+<change-preview>
+
+
+</change-preview>
+
+</left-card>
+<right-card>
+### Template
+
+<change-preview>
+
+
+</change-preview>
 </right-card>
 <left-card>
 ### Template

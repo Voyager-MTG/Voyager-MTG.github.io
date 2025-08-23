@@ -140,30 +140,53 @@
 		cursor: pointer;
 	}
 
-	.hover-card {
-		display: none;
-		position: absolute;
-		height: 262px;
-		width: 188px;
-		pointer-events: none;
-	}
-
-	.card-hover-text {
+	.tab-btn {
+		background-color: #737373;
+		color: white;
+		border: 3px solid #ddd;
+		align-items: center;
+		justify-items: center;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
 		font-weight: bold;
-		color: #1338be;
-		transition: 0.2s;
+		font-size: 24px;
+		padding: 8px;
+		border-radius: 18px;
+		cursor: pointer;
+		transition: 0.3s;
 	}
 
-	.card-hover-text:hover {
-		color: #0492c2;
+	.tab-btn:not(.tab-btn-active):hover {
+		background-color: #666;
 	}
 
-	.article-content {
-		width: 80%;
-		margin: auto;
-		margin-top: 80px;
-		border-radius: 20px;
-		padding: 30px;
+	.tab-btn-active {
+		background-color: #333;
+	}
+
+	.tab-switch-icon {
+		max-height: 30px;
+	}
+
+	.tab-select {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+		margin-top: 40px;
+	}
+
+	textarea {
+		width: 70%;
+		margin: 0 15% 0 15%;
+		height: 400px;
+		resize: none;
+	}
+
+	.main-tab {
+		width: 100%;
+		height: 100%;
+		margin: 20px 40px 0 40px;
+		/* margin-top: 100px; */
 	}
 
 	body {
@@ -212,6 +235,78 @@
 
 	h2:hover .header-hover {
 		display: inline;
+	}
+
+	.article-content {
+		width: 80%;
+		margin: auto;
+		border-radius: 20px;
+		padding: 30px;
+	}
+
+	.rc-menu {
+		display: none;
+		position: absolute;
+		/* background-color: #f3f3f3; */
+		border-top: 1px solid #d5d9d9;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+		z-index: 2;
+		font-size: 12px;
+	}
+
+	.rc-menu ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.rc-menu li {
+		padding: 8px 12px;
+		border: 1px solid #d5d9d9;
+		border-top: none;
+		cursor: pointer;
+	}
+
+	.rc-menu li:hover {
+		background-color: #ffffff;
+	}
+
+	.btn-icon {
+		max-height: 30px;
+	}
+
+	.publish-btn {
+		background-color: rgb(23, 140, 33);
+		padding: 8px;
+		font-size: 1.2em;
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		color: white;
+		border: 2px solid white;
+		border-radius: 8px;
+		font-weight: bold;
+		cursor: pointer;
+		transition: 0.2s;
+	}
+
+	.publish-btn:hover {
+		background-color: rgb(15, 85, 21);
+	}
+
+	#publish {
+		width: 70%;
+		margin: 0 15% 0 15%;
+	}
+
+	.article-input {
+		padding: 8px;
+		border: 2px solid gray;
+		border-radius: 5px;
+		font-size: 1.25em;
+		display: block;
+		margin-bottom: 25px;
+		width: 600px;
 	}
 
 	@media (max-width: 750px) {
@@ -264,20 +359,55 @@
 		<select id="color-select" onchange="setGradient()">
 		</select>
 	</div>
-	<div class="page-container" id="page-container">
+	<div class="page-container">
+		<div class="tab-select" id="tab-select">
+			<div class="tab-btn" id="write-tab-select" onclick="changeTab('write')">
+				<img src="img/edit.png" class="tab-switch-icon">
+				<span>Write</span>
+			</div>
+			<div class="tab-btn" id="preview-tab-select" onclick="changeTab('preview')">
+				<img src="img/show-white.png" class="tab-switch-icon">
+				<span>Preview</span>
+			</div>
+			<div class="tab-btn" id="publish-tab-select" onclick="changeTab('publish')">
+				<img src="img/export-white.png" class="tab-switch-icon">
+				<span>Publish</span>
+			</div>
+		</div>
+		<div id="main-tab" class="main-tab">
+			<div id="write">
+				<textarea id="article-text"></textarea>
+			</div>
+			<div id="preview">
+			</div>
+			<div id="publish">
+				<input id="article-name" placeholder="The Article's Name ..." class="article-input">
+				<input id="article-author" placeholder="Who wrote it? ..." class="article-input">
+				<button class="publish-btn" id="publish-btn"><img src="img/export-white.png"
+						class="btn-icon">Publish</button>
+			</div>
+		</div>
 	</div>
-	<img id="hover-card" class="hover-card">
 	<div id="modal-container">
 		<div id="modal-content" class="popout">
 			<span class="close"
 				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
 		</div>
 	</div>
+	<div id="myContextMenu" class="rc-menu popout">
+		<ul>
+			<li id="add-header">Add Header</li>
+			<li id="add-bold">Bold</li>
+			<li id="add-card">Add Card</li>
+		</ul>
+	</div>
 	<script>
 		let gradients = null;
 		let raw_gradients = null;
 		let gradTop = null;
 		let gradBottom = null;
+		let tab = "write";
+
 		modal = document.getElementById("modal-container");
 		window.onclick = function (event) {
 			if (event.target == modal) {
@@ -293,135 +423,12 @@
 				console.error('Error:', error);
 			}
 
-			await fetch('/lists/all-cards.json')
-				.then(response => response.json())
-				.then(json => {
-					card_list = json;
-				}).catch(error => console.error('Error:', error));
-
-			card_list_arrayified = card_list.cards;
-
 			gradients = raw_gradients.gradients;
 			card_backgrounds = raw_gradients.cards;
 			setGradient(localStorage.getItem("settings.gradient"));
 			prepareGradients();
-
-			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-
-			if (localStorage.getItem("settings.darkthememenu") == "On") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
-			} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
-			}
-
-			loadArticle();
+			changeTab("write");
 		});
-
-		async function loadArticle() {
-			const urlParams = new URLSearchParams(window.location.search);
-			const article = urlParams.get("article");
-			let article_text;
-
-			await fetch(`/data/articles/${article}.md`)
-				.then(response => response.text())
-				.then(text => {
-					article_text = text;
-				}).catch(error => console.error('Error:', error));
-
-			const article_html = parseMarkdown(article_text);
-
-			document.getElementById("page-container").innerHTML = article_html;
-		}
-
-		function parseMarkdown(md) {
-			md = md.replaceAll("\r", "");
-
-			// Name
-			md = md.replaceAll(/name: (.*?)\n/g, function (_1, name) {
-				document.title = name;
-				return "# " + name;
-			});
-
-			// Writer
-			md = md.replaceAll(/author: (.*?)\n/g, function (_1, author) {
-				return "#### Written by " + author;
-			});
-
-			// Change preview
-			md = md.replaceAll(/<change-preview>\n?(.*?)\n(.*?)\n?<\/change-preview>/gm, function (_1, image_1, image_2) {
-				return `<div style="display: grid; grid-template-columns: 1fr 0.1fr 1fr; gap: 10px; align-items: center; justify-items: center; width: 100%;"><img style="max-height: 300px;" src="${image_1}"><span style="font-weight: bold; font-size: 100px;">›</span><img style="max-height: 300px;" src="${image_2}"></div>`;
-			});
-
-			// Italic bold
-			md = md.replaceAll(/\*\*\*(.*?)\*\*\*/g, function (_1, _2) {
-				return `<i><b>${_2}</i></b>`;
-			});
-
-			// Bold
-			md = md.replaceAll(/\*\*(.*?)\*\*/g, function (_1, _2) {
-				return `<b>${_2}</b>`;
-			});
-
-			// Italic
-			md = md.replaceAll(/\*(.*?)\*/g, function (_1, _2) {
-				return `<i>${_2}</i>`;
-			});
-
-			// Underline
-			md = md.replaceAll(/\_\_(.*?)\_\_/g, function (_1, _2) {
-				return `<span style="text-decoration: underline;">${_2}</span>`;
-			});
-
-			// Strikethrough
-			md = md.replaceAll(/\~\~(.*?)\~\~/g, function (_1, _2) {
-				return `<span style="text-decoration: line-through;">${_2}</span>`;
-			});
-
-			// Links
-			md = md.replaceAll(/\[(.*?)\]\((.*?)\)/g, function (_1, _2, _3) {
-				return `<a href="${_3}" target="_blank">${_2}</a>`;
-			});
-
-			// Headers
-			md = md.replaceAll(/(\#+)(.*?)\n/g, function (_1, _2, _3, _4) {
-				return `<h${_2.length} id="${_3}">${_3}</h${_2.length}>`;
-			});
-
-			// Cards
-			md = md.replaceAll(/\[\[(.*?)\]\]/g, function (_1, card_name) {
-				return `<span class="card-hover-text" onmouseover="showCardHover('${card_name}')" onmousemove="moveCardHover(event)" onmouseout="hideCardHover()">${card_name}</span>`
-			});
-
-			// Linebreaks
-			md = md.replaceAll(/\n\n/gm, "<br><br>");
-
-			return `<div class="popout article-content">${md}</div>`;
-		}
-
-		function showCardHover(card_name, set = false, num = false) {
-			// console.log(set, num);
-			for (const card_stats of card_list_arrayified) {
-				if (card_stats.card_name == card_name && (!set || card_stats.set == set) && (!num || card_stats.number == num)) {
-					console.log(card_stats, set, num);
-					const src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
-
-					const hover_card = document.getElementById("hover-card");
-					hover_card.style.display = "block";
-					hover_card.src = src;
-					return;
-				}
-			}
-		}
-
-		function moveCardHover(event) {
-			document.getElementById("hover-card").style.left = event.pageX + "px";
-			document.getElementById("hover-card").style.top = event.pageY - 262 + "px";
-		}
-
-		function hideCardHover() {
-			document.getElementById("hover-card").style.display = "none";
-		}
 
 		function prepareGradients() {
 			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
@@ -500,6 +507,113 @@
 				document.getElementById("color-select").parentElement.appendChild(credit_text);
 		}
 
+		const tabs = [
+			"write",
+			"publish",
+			"preview"
+		]
+
+		function changeTab(_tab) {
+			tab = _tab;
+			tab_to_edit = tab;
+			if (tab == "preview") {
+				makePreviewTab();
+			}
+			if (tab == "publish") {
+				fillPublishValues();
+			}
+
+			for (const tab_not_to_edit of tabs) {
+				document.getElementById(`${tab_not_to_edit}-tab-select`).className = "tab-btn";
+				document.getElementById(`${tab_not_to_edit}`).style.display = "none";
+			}
+
+			document.getElementById(`${tab_to_edit}-tab-select`).className = "tab-btn tab-btn-active";
+			document.getElementById(`${tab_to_edit}`).style.display = "block";
+		}
+
+		function fillPublishValues() {
+			const article_text = document.getElementById("article-text").value;
+			const article_name = article_text.match(/name: (.*?)\n/g)[0].split("name:")[1].trim();
+			const article_author = article_text.match(/author: (.*?)\n/g)[0].split("author:")[1].trim();
+
+			if (article_name)
+				document.getElementById("article-name").value = article_name;
+			if (article_author)
+				document.getElementById("article-author").value = article_author;
+		}
+
+		function makePreviewTab() {
+			const article_text = document.getElementById("article-text").value;
+			const article_html = parseMarkdown(article_text);
+			document.getElementById("preview").innerHTML = article_html;
+		}
+
+		function parseMarkdown(md) {
+			md = md.replaceAll("\r", "");
+
+			// Name
+			md = md.replaceAll(/name: (.*?)\n/g, function (_1, name) {
+				document.title = name;
+				return "# " + name;
+			});
+
+			// Writer
+			md = md.replaceAll(/author: (.*?)\n/g, function (_1, author) {
+				return "#### Written by " + author;
+			});
+
+			// Change preview
+			md = md.replaceAll(/<change-preview>\n?(.*?)\n(.*?)\n?<\/change-preview>/gm, function (_1, image_1, image_2) {
+				return `<div style="display: grid; grid-template-columns: 1fr 0.1fr 1fr; gap: 10px; align-items: center; justify-items: center; width: 100%;"><img style="max-height: 300px;" src="${image_1}"><span style="font-weight: bold; font-size: 100px;">›</span><img style="max-height: 300px;" src="${image_2}"></div>`;
+			});
+
+			// Italic bold
+			md = md.replaceAll(/\*\*\*(.*?)\*\*\*/g, function (_1, _2) {
+				return `<i><b>${_2}</i></b>`;
+			});
+
+			// Bold
+			md = md.replaceAll(/\*\*(.*?)\*\*/g, function (_1, _2) {
+				return `<b>${_2}</b>`;
+			});
+
+			// Italic
+			md = md.replaceAll(/\*(.*?)\*/g, function (_1, _2) {
+				return `<i>${_2}</i>`;
+			});
+
+			// Underline
+			md = md.replaceAll(/\_\_(.*?)\_\_/g, function (_1, _2) {
+				return `<span style="text-decoration: underline;">${_2}</span>`;
+			});
+
+			// Strikethrough
+			md = md.replaceAll(/\~\~(.*?)\~\~/g, function (_1, _2) {
+				return `<span style="text-decoration: line-through;">${_2}</span>`;
+			});
+
+			// Links
+			md = md.replaceAll(/\[(.*?)\]\((.*?)\)/g, function (_1, _2, _3) {
+				return `<a href="${_3}" target="_blank">${_2}</a>`;
+			});
+
+			// Headers
+			md = md.replaceAll(/(\#+)(.*?)\n/g, function (_1, _2, _3, _4) {
+				return `<h${_2.length} id="${_3}">${_3}</h${_2.length}>`;
+			});
+
+			// Cards
+			md = md.replaceAll(/\[\[(.*?)\]\]/g, function (_1, card_name) {
+				return `<span class="card-hover-text" onmouseover="showCardHover('${card_name}')" onmousemove="moveCardHover(event)" onmouseout="hideCardHover()">${card_name}</span>`
+			});
+
+			// Linebreaks
+			md = md.replaceAll(/\n\n/gm, "<br><br>");
+
+			return `<div class="popout article-content">${md}</div>`;
+		}
+
 		function reallyRand(x, seed = false) {
 			const date = new Date();
 			seed = seed ? seed : date.getUTCFullYear() * 10000 +
@@ -548,7 +662,7 @@
 			window.location.href = url;
 		}
 	</script>
-	<!-- <script type="module">
+	<script type="module">
 		// Import the functions you need from the SDKs you need
 		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
 		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
@@ -605,7 +719,7 @@
 		}
 
 		reload();
-	</script> -->
+	</script>
 </body>
 
 </html>
