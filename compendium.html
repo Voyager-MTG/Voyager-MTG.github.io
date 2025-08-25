@@ -316,28 +316,67 @@
 			const container = document.createElement("div");
 			container.className = "compendium-grid";
 			let card_stats;
+			let cards = [];
 
 			for (const card of card_list) {
-				console.log(card);
 				for (const card_ of card_list_arrayified) {
 					if (card_.type.includes("Token")) continue;
 					if (card == card_.card_name) {
-						card_stats = card_;
+						cards.push(card_);
 						break;
 					}
 				}
 
-				if (card_stats) {
-					const img = buildImgContainer(card_stats, true);
-					console.log(img);
-					container.appendChild(img);
+			}
+
+			cards.sort(cardSorter);
+
+			for (const card_stats of cards) {
+				const img = buildImgContainer(card_stats, true);
+				container.appendChild(img);
+			}
+
+			return container;
+		}
+
+		function cardSorter(a, b) {
+			color_sort_order = ["W", "U", "B", "R", "G", "I", "WU", "UB", "BR", "RG", "GW", "WB", "UR", "BG", "RW", 'IW', 'IU', 'IB', 'IR', 'IG', "GU", "WUB", "UBR", "BRG", "RGW", "GWU", "RWB", "GUR", "WBG", "URW", "BGU", 'IWU', 'IUB', 'IBR', 'IRG', 'IGW', 'IWB', 'IBG', 'IGU', 'IUR', 'IRW', "WUBR", "UBRG", "BRGW", "RGWU", "GWUB", "IWUB", "IUBR", "IBRG", "IRGW", "IGWU", "IRWB", "IGUR", "IWBG", "IURW", "IBGU", "WUBRG", "IWUBR", "IUBRG", "IBRGW", "IRGWU", "IGWUB", ""];
+			a_color_index = -1;
+			b_color_index = -1;
+
+			for (let i = 0; i < color_sort_order.length; i++) {
+				if (a.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join('')) {
+					a_color_index = i;
+				}
+				if (b.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join('')) {
+					b_color_index = i;
 				}
 			}
 
+			if (a_color_index === b_color_index) {
+				//since cost is now formatted like {1}{U} instead of 1U, we need to remove the brackets from the string first
+				//CE: undoing this because we're counting { chars for MV
+				a_mv = isDecimal(a.cost.charAt(1)) ? parseInt(a.cost.substring(1, a.cost.indexOf('}'))) + a.cost.replaceAll('x', '').split('{').length - 2 : a.cost.replaceAll('x', '').split('{').length - 1;
+				b_mv = isDecimal(b.cost.charAt(1)) ? parseInt(b.cost.substring(1, b.cost.indexOf('}'))) + b.cost.replaceAll('x', '').split('{').length - 2 : b.cost.replaceAll('x', '').split('{').length - 1;
+				if (a_mv === b_mv) {
+					if (a.card_name === b.card_name) {
+						return 0;
+					}
+					else {
+						return (a.card_name < b.card_name) ? -1 : 1;
+					}
+				}
+				else {
+					return (a_mv < b_mv) ? -1 : 1;
+				}
+			}
+			else {
+				return (a_color_index < b_color_index) ? -1 : 1;
+			}
+		}
 
-			console.log(container.children);
-
-			return container;
+		function isDecimal(char) {
+			return char >= '0' && char <= '9';
 		}
 
 		function buildImgContainer(card_stats, hidden_title = false, rotate_card = false) {
