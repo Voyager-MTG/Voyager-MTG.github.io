@@ -1,7 +1,7 @@
 <html>
 
 <head>
-	<title>TITLE</title>
+	<title>Compendium</title>
 	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
 	<link rel="stylesheet" href="resources/mana.css">
 	<link rel="stylesheet" href="/resources/header.css">
@@ -90,7 +90,8 @@
 		display: grid;
 		align-items: center;
 		justify-items: center;
-		width: 100%;
+		width: 80%;
+		margin-left: 10%;
 	}
 
 	hr {
@@ -139,6 +140,53 @@
 		text-decoration: none;
 		cursor: pointer;
 	}
+
+	.section-header,
+	.sub-section-header {
+		border-bottom: 1px solid white;
+		width: fit-content;
+	}
+
+	.section-header {
+		font-size: 4em;
+	}
+
+	.sub-section-header {
+		font-size: 2.5em;
+	}
+
+	.compendium-grid {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 8px;
+		position: relative;
+	}
+
+	.img-container {
+		position: relative;
+		align-self: center;
+		text-align: center;
+	}
+
+	.img-container img {
+		width: 100%;
+		height: auto;
+	}
+
+	.hidden-text {
+		font-size: 1.2em;
+		margin-top: 4px;
+		font-family: beleren;
+	}
+
+	.card-image {
+		border-radius: 10px;
+		transition: 0.2s;
+	}
+
+	.card-image:hover {
+		filter: brightness(0.7);
+	}
 </style>
 <style id="text-style">
 	.text {
@@ -183,7 +231,7 @@
 		<select id="color-select" onchange="setGradient()">
 		</select>
 	</div>
-	<div class="page-container">
+	<div class="page-container" id="page-container">
 	</div>
 	<div id="modal-container">
 		<div id="modal-content" class="popout">
@@ -215,7 +263,254 @@
 			card_backgrounds = raw_gradients.cards;
 			setGradient(localStorage.getItem("settings.gradient"));
 			prepareGradients();
+
+			await fetch('/lists/all-cards.json')
+				.then(response => response.json())
+				.then(json => {
+					card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+			card_list_arrayified = card_list.cards;
+
+			await fetch(`/data/compendium.json`)
+				.then(response => response.json())
+				.then(json => {
+					compendium = json;
+				}).catch(error => console.error('Error:', error));
+
+			renderPage(compendium);
 		});
+
+		function renderPage(compendium) {
+			const container = document.getElementById("page-container");
+			for (const header in compendium) {
+				const header_ele = document.createElement("h1");
+				header_ele.innerText = header;
+				header_ele.className = "section-header text";
+
+				const section = renderSection(compendium[header]);
+
+				container.appendChild(header_ele);
+				container.appendChild(section);
+			}
+		}
+
+		function renderSection(section_to_render) {
+			const container = document.createElement("div");
+
+			for (const sub_header in section_to_render) {
+				const sub_header_ele = document.createElement("h2");
+				sub_header_ele.innerText = sub_header;
+				sub_header_ele.className = "sub-section-header text";
+
+				const table = renderGrid(section_to_render[sub_header]);
+
+				container.appendChild(sub_header_ele);
+				container.appendChild(table);
+			}
+
+			return container;
+		}
+
+		function renderGrid(card_list) {
+			const container = document.createElement("div");
+			container.className = "compendium-grid";
+			let card_stats;
+
+			for (const card of card_list) {
+				console.log(card);
+				for (const card_ of card_list_arrayified) {
+					if (card_.type.includes("Token")) continue;
+					if (card == card_.card_name) {
+						card_stats = card_;
+						break;
+					}
+				}
+
+				if (card_stats) {
+					const img = buildImgContainer(card_stats, true);
+					console.log(img);
+					container.appendChild(img);
+				}
+			}
+
+
+			console.log(container.children);
+
+			return container;
+		}
+
+		function buildImgContainer(card_stats, hidden_title = false, rotate_card = false) {
+			const imgContainer = document.createElement("div");
+			imgContainer.className = "img-container";
+			const id = card_stats.set + "-" + card_stats.number;
+
+			const img = document.createElement("img");
+			img.className = "card-image";
+			img.id = id;
+			img.setAttribute("loading", "lazy");
+			// (card_stats[13].includes("_") ? card_stats[13] : card_stats[0]) for posterity
+			img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+
+			const link = document.createElement("a");
+
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: card_stats.set,
+				num: card_stats.number,
+				name: card_stats.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+			link.href = url;
+
+			link.appendChild(img);
+
+			if ((card_stats.shape.includes("spli") || card_stats.type.includes("Battle")) && rotate_card) {
+				const rotated_img = document.createElement("img");
+				rotated_img.className = "h-img";
+				rotated_img.id = "h-img";
+				rotated_img.src = img.src;
+				rotated_img.style.display = "block";
+				img.style.filter = "blur(2px) brightness(0.7)";
+
+				link.appendChild(rotated_img);
+			}
+
+			imgContainer.appendChild(link);
+
+			if (card_stats.shape.includes("double")) {
+				const imgFlipBtn = document.createElement("button");
+				imgFlipBtn.className = "btn";
+				imgFlipBtn.onclick = async function () { imgFlip(id, rotate_card); };
+				const imgFlipIcon = document.createElement("img");
+				imgFlipIcon.className = "img-flip-icon";
+				imgFlipIcon.src = '/img/flip.svg';
+				imgFlipBtn.appendChild(imgFlipIcon);
+				imgContainer.appendChild(imgFlipBtn);
+			}
+
+			if (hidden_title) {
+				const title = document.createElement("div");
+				title.innerText = card_stats.card_name;
+				title.className = "hidden-text text";
+				imgContainer.appendChild(title);
+			}
+
+			return imgContainer;
+		}
+
+		async function imgFlip(id, rotate_card = false) {
+			const img = document.getElementById(id);
+			const seconds = 0.15;
+			const cardName = img.src;
+
+			img.style.transition = seconds.toString() + "s";
+			img.style.transform = "rotateY(90deg)";
+
+			const btn = img.parentElement.parentElement.getElementsByTagName("button")[0];
+			btn.style.transition = seconds.toString() + "s";
+			btn.style.filter = cardName.includes("_front") ? "invert()" : "";
+
+			await setTimeout(function () {
+				const rotated_img = document.getElementById("h-img");
+
+				if (cardName.includes("_front")) {
+					img.src = cardName.replace("_front", "_back");
+					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "invert()";
+
+					if (rotate_card) {
+						rotated_img.style.display = "none";
+						img.style.filter = "";
+					}
+				}
+				else {
+					img.src = cardName.replace("_back", "_front");
+					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "";
+
+					if (rotate_card) {
+						rotated_img.style.display = "block";
+						img.style.filter = "blur(2px) brightness(0.7)";
+					}
+				}
+
+				img.style.transition = (seconds * 2).toString() + "s";
+				img.style.transform = "rotateY(0deg)";
+			}, seconds * 1000);
+
+			await setTimeout(function () {
+				console.log("done");
+			}, seconds * 1000);
+		}
+
+		async function imgFlip(id, rotate_card = false) {
+			const img = document.getElementById(id);
+			const seconds = 0.15;
+			const cardName = img.src;
+
+			img.style.transition = seconds.toString() + "s";
+			img.style.transform = "rotateY(90deg)";
+
+			const btn = img.parentElement.parentElement.getElementsByTagName("button")[0];
+			btn.style.transition = seconds.toString() + "s";
+			btn.style.filter = cardName.includes("_front") ? "invert()" : "";
+
+			await setTimeout(function () {
+				const rotated_img = document.getElementById("h-img");
+
+				if (cardName.includes("_front")) {
+					img.src = cardName.replace("_front", "_back");
+					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "invert()";
+
+					if (rotate_card) {
+						rotated_img.style.display = "none";
+						img.style.filter = "";
+					}
+				}
+				else {
+					img.src = cardName.replace("_back", "_front");
+					img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "";
+
+					if (rotate_card) {
+						rotated_img.style.display = "block";
+						img.style.filter = "blur(2px) brightness(0.7)";
+					}
+				}
+
+				img.style.transition = (seconds * 2).toString() + "s";
+				img.style.transform = "rotateY(0deg)";
+			}, seconds * 1000);
+
+			await setTimeout(function () {
+				console.log("done");
+			}, seconds * 1000);
+		}
+
+		function prettifyEffects(card_effect) {
+			let HTML = "";
+
+			let styled_effect = card_effect.replace(/(\[i\])+(.+?)(\[\/i\])+/gs, function (matched, _1, _2) {
+				return '<i>' + _2 + '</i>'
+			}).replaceAll(/(\[b\])+(.+?)(\[\/b\])+/gs, function (matched, _1, _2) {
+				return '<b>' + _2 + '</b>'
+			});
+
+			let card_effects = styled_effect.split("\n");
+
+			for (let i = 0; i < card_effects.length; i++) {
+				HTML += card_effects[i];
+
+				if (i != card_effects.length - 1) {
+					HTML += "<br>"
+				}
+			}
+
+			let regexHTML = symbolize(HTML);
+
+			return regexHTML;
+		}
+
 
 		function prepareGradients() {
 			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
@@ -340,7 +635,7 @@
 			window.location.href = url;
 		}
 	</script>
-	<script type="module">
+	<!--script type="module">
 		// Import the functions you need from the SDKs you need
 		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
 		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
@@ -397,7 +692,7 @@
 		}
 
 		reload();
-	</script>
+	</script-->
 </body>
 
 </html>
