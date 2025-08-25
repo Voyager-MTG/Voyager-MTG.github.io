@@ -1471,6 +1471,7 @@
 			let all_user_decks = [];
 			let all_decks = [];
 			let all_events = [];
+			let decks_with_card = [];
 
 			all_events_docs.forEach((doc) => {
 				const data = doc.data();
@@ -1495,6 +1496,7 @@
 				for (const line of decklist.split("\n")) {
 					if (line.substring(line.indexOf(" ") + 1, line.length) == card_name) {
 						num_event_decks += 1;
+						decks_with_card.push(deck);
 					}
 				}
 			}
@@ -1504,18 +1506,12 @@
 				for (const line of decklist.split("\n")) {
 					if (line.substring(line.indexOf(" ") + 1, line.length) == card_name) {
 						num_user_decks += 1;
+						decks_with_card.push(deck);
 					}
 				}
 			}
 
-			for (const deck of all_decks) {
-				const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
-				for (const line of decklist.split("\n")) {
-					if (line.substring(line.indexOf(" ") + 1, line.length) == card_name) {
-						num_decks += 1;
-					}
-				}
-			}
+			num_decks = num_user_decks + num_event_decks;
 
 			let total_games = 0;
 			let total_wins = 0;
@@ -1567,6 +1563,8 @@
 					}
 				}
 			}
+
+			console.log("[STATS]: Exports...");
 
 			const winrate = ((total_wins / total_games) * 100).toFixed(2).toString() + "%";
 			const playrate_event_text = ((num_event_decks / all_event_decks.length) * 100).toFixed(2).toString() + "%";
@@ -1621,13 +1619,14 @@
 			content_container.appendChild(is_played);
 			content_container.appendChild(is_staple);
 
+			document.getElementById("modal-content").innerHTML = "";
 			document.getElementById("modal-content").appendChild(content_container);
 			document.getElementById("modal-container").style.display = "block";
 		}
 
 		function isPlayed(stats) {
 			const playrate = parseFloat(stats.playrate_general[1].split("%")[0]);
-			if (playrate > 3) {
+			if (playrate > 2) {
 				return true;
 			}
 		}
@@ -1636,7 +1635,7 @@
 			const playrate = parseFloat(stats.playrate_general[1].split("%")[0]);
 			const playrate_event = parseFloat(stats.playrate_event[1].split("%")[0]);
 			const winrate = parseFloat(stats.winrate[1].split("%")[0]);
-			if (playrate > 10 && winrate > 20 && playrate_event > 10) {
+			if (playrate > 8 && winrate > 30 && playrate_event > 0.01) {
 				return true;
 			}
 		}
