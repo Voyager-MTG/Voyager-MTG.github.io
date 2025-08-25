@@ -111,6 +111,29 @@ https://media.discordapp.net/attachments/1393023972161093663/1407920002945781842
 
 Faloden Barrier Scout proved to be an integral part of the format, however, with its original toughness of 3, it was found very difficult to remove; In combat as well as with toughness-based removal. This change brings it a bit more in line with how powerful its effect is, but does not bring it down to the point that [anything can kill it](/search?search=center+mass).
 </right-card>
+<left-card>
+### MDFC Lands
+
+<change-preview>
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/FOE-files/img/100_Zesha,%20Dream%20Hedonist_back.jpg?raw=true
+https://cdn.discordapp.com/attachments/1341926153631563826/1408851017902325800/image.png?ex=68ab3e41&is=68a9ecc1&hm=cb2ee99b35972bb5cf83d7f693eb22f70d92d732f2f0c4dc2783b87748c56f65&
+</change-preview>
+
+(Cycle of 5 colored MDFCs)
+
+The MDFCs now enter tapped unconditionally as they were a bit too splashable and also had some unfair applications.
+</left-card>
+<right-card>
+### Maal and Sevol, Twin Sentries
+
+<change-preview>
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/FOE-files/img/9_Maal%20and%20Sevol,%20Twin%20Sentries_front.jpg?raw=true
+https://media.discordapp.net/attachments/1341926153631563826/1408852271445446696/mall_and_secol.png?ex=68ab3f6c&is=68a9edec&hm=212da8a0a9463d17d5d5cbe596a3f00f7853897de56dc8c2ff725a47ff596b2d&=&format=webp&quality=lossless&width=468&height=654
+</change-preview>
+
+reasoning
+
+</right-card>
 </set-cards>
 ## Itera: Into the Dream
 
@@ -390,149 +413,51 @@ Limited change.
 
 </left-card>
 <right-card>
-### Template
-
-<change-preview>
-
-
-</change-preview>
 </right-card>
+</set-cards>
+## TVP Silver Expansion
+<set-cards>
 <left-card>
-### Template
+### Identity Granter
 
 <change-preview>
-
-
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/EXPT-files/img/39_Identity%20Granter.jpg?raw=true
+https://cdn.discordapp.com/attachments/1341926153631563826/1408849956852203551/image.png?ex=68ab3d44&is=68a9ebc4&hm=60ab440b00ca7e748f6f9b514ed6458249fa93144e21a2f0794790c36dc226f4&
 </change-preview>
 
 </left-card>
 <right-card>
-### Template
-
-<change-preview>
-
-
-</change-preview>
 </right-card>
+</set-cards>
+## Houses of Dewold
+<set-cards>
 <left-card>
-### Template
+### Edict of the Mirrorkin
 
 <change-preview>
-
-
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/HOD-files/img/254_Edict%20of%20the%20Mirrorkin.jpg?raw=true
+https://media.discordapp.net/attachments/1341926153631563826/1408853340636319845/image.png?ex=68ab406b&is=68a9eeeb&hm=844f5f0761bdd9e05e7e8984c4dc018325e9c59e03995a4633b89ecbcbb5b42f&=&format=webp&quality=lossless&width=469&height=654
 </change-preview>
+
+Changed to sorcery as it was just slightly over the line.
 
 </left-card>
-<right-card>
-### Template
-
-<change-preview>
-
-
-</change-preview>
-</right-card>
+<right-card></right-card>
+</set-cards>
+## Primivir
+<set-cards>
 <left-card>
-### Template
+### Dynotopic Stampede
 
 <change-preview>
-
-
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/PVR-files/img/145_Dynotopic%20Stampede.jpg?raw=true
+https://media.discordapp.net/attachments/1337434281521189000/1408197487096889396/image.png?ex=68aad7db&is=68a9865b&hm=4441e4de51d76f5d3529c8830d3514c09dccacc0702d9394a71cdd11a873e724&=&format=webp&quality=lossless&width=469&height=654
 </change-preview>
+
+Dynotopic Stampede caused problems with cards such as [[The Ring-Yew]] and Astrus Quandry. In addition, cards like [[Virulent Hexer]] and [[Faloden Barrier Scout]] could be used in combination with it to repeatedly stone rain the opponent. Overall, the captains deemed it too powerful of a ramp, fixing, and land destruction piece for voyager.
 
 </left-card>
-<right-card>
-### Template
-
-<change-preview>
-
-
-</change-preview>
-</right-card>
-<left-card>
-### Template
-
-<change-preview>
-
-
-</change-preview>
-
-</left-card>
-<right-card>
-### Template
-
-<change-preview>
-
-
-</change-preview>
-</right-card>
-<left-card>
-### Template
-
-<change-preview>
-
-
-</change-preview>
-
-</left-card>
-<right-card>
-### Template
-
-<change-preview>
-
-
-</change-preview>
-</right-card>
-<left-card>
-### Template
-
-<change-preview>
-
-
-</change-preview>
-
-</left-card>
-<right-card>
-### Template
-
-<change-preview>
-
-
-</change-preview>
-</right-card>
-<left-card>
-### Template
-
-<change-preview>
-
-
-</change-preview>
-
-</left-card>
-<right-card>
-### Template
-
-<change-preview>
-
-
-</change-preview>
-</right-card>
-<left-card>
-### Template
-
-<change-preview>
-
-
-</change-preview>
-
-</left-card>
-<right-card>
-### Template
-
-<change-preview>
-
-
-</change-preview>
-</right-card>
+<right-card></right-card>
 </set-cards>
 
 <style>

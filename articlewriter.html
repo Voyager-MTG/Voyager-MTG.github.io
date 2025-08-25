@@ -407,6 +407,8 @@
 		let gradTop = null;
 		let gradBottom = null;
 		let tab = "write";
+		let has_name = false;
+		let has_author = false;
 
 		modal = document.getElementById("modal-container");
 		window.onclick = function (event) {
@@ -534,8 +536,12 @@
 
 		function fillPublishValues() {
 			const article_text = document.getElementById("article-text").value;
-			const article_name = article_text.match(/name: (.*?)\n/g)[0].split("name:")[1].trim();
-			const article_author = article_text.match(/author: (.*?)\n/g)[0].split("author:")[1].trim();
+
+			const match_name = article_text.match(/name: (.*?)\n/g);
+			const article_name = match_name ? match_name[0].split("name:")[1].trim() : "";
+
+			const match_author = article_text.match(/author: (.*?)\n/g);
+			const article_author = match_author ? match_author[0].split("author:")[1].trim() : "";
 
 			if (article_name)
 				document.getElementById("article-name").value = article_name;
@@ -713,12 +719,57 @@
 			document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
 		}
 
+		document.getElementById("publish-btn").addEventListener("click", async function () {
+			const article_name = document.getElementById("article-name").value;
 
-		async function reload() {
-			//firebase code
+			const article_text = cleanArticleText(article_name, document.getElementById("article-text"));
+
+			if (!user_data) {
+				alert("You can't post an article unless you're signed in.");
+				return;
+			}
+			const docRef = doc(db, "articles", user_data.username);
+			const user_articles = await getDoc(docRef);
+
+			if (user_articles.exists()) {
+				let articles = user_articles.data();
+				updateDoc(doc(db, "articles", username), {
+					[article_name]: article_text
+				});
+			} else {
+				setDoc(doc(db, "articles", username), {
+					[article_name]: article_text
+				});
+			}
+
+			if (user_data.admin) {
+				alert("Article published! Redirecting now.");
+				window.location.href = `/article?article=${encodeURI(article_name)}`;
+			} else {
+				alert("Article published! An admin should review it soon.")
+			}
+		});
+
+		function cleanArticleText(name, textarea) {
+			let text = textarea.value;
+
+			if (text.match(/author: (.*?)\n/g)) {
+				text = text.replaceAll(/author: (.*?)\n/g, `author: ${username}\n`);
+			} else {
+				text = `author: ${usernamex}\n\n` + text;
+			}
+
+			if (text.match(/name: (.*?)\n/g)) {
+				text = text.replaceAll(/name: (.*?)\n/g, `name: ${name}\n`);
+			} else {
+				text = `name: ${name}\n\n` + text;
+			}
+
+			textarea.value = text;
+
+			return text;
 		}
 
-		reload();
 	</script>
 </body>
 
