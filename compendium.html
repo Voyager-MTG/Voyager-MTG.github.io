@@ -239,6 +239,7 @@
 	}
 
 	.sidebar a {
+		display: block;
 		color: rgb(65, 138, 223);
 	}
 
@@ -302,13 +303,16 @@
 	<div class="page-container" id="page-container">
 		<div id="sidebar" class="sidebar">
 			<div class="color-selects">
-			<div class="color-select mana mana-cost mana-w" id="color-w"></div>
-			<div class="color-select mana mana-cost mana-u" id="color-u"></div>
-			<div class="color-select mana mana-cost mana-b" id="color-b"></div>
-			<div class="color-select mana mana-cost mana-r" id="color-r"></div>
-			<div class="color-select mana mana-cost mana-g" id="color-g"></div>
-			<div class="color-select mana mana-cost mana-i" id="color-i"></div></div>
+				<div class="color-select mana mana-cost mana-w" id="color-w"></div>
+				<div class="color-select mana mana-cost mana-u" id="color-u"></div>
+				<div class="color-select mana mana-cost mana-b" id="color-b"></div>
+				<div class="color-select mana mana-cost mana-r" id="color-r"></div>
+				<div class="color-select mana mana-cost mana-g" id="color-g"></div>
+				<div class="color-select mana mana-cost mana-i" id="color-i"></div>
+			</div>
+			<div></div>
 		</div>
+		<div></div>
 	</div>
 	<div id="modal-container">
 		<div id="modal-content" class="popout">
@@ -370,6 +374,8 @@
 						inactive_colors.push(color);
 						document.getElementById(`color-${color}`).className = document.getElementById(`color-${color}`).className.replaceAll("color-select", "color-select-inactive");
 					}
+
+					renderPage(compendium);
 				});
 			}
 
@@ -379,8 +385,14 @@
 		function renderPage(compendium) {
 			const page_container = document.getElementById("page-container");
 
+			page_container.children[1].remove();
+
 			const container = document.createElement("div");
 			const sidebar = document.getElementById("sidebar");
+
+			const sidebar_container = document.createElement("div");
+
+			sidebar.children[1].remove();
 
 			for (const header in compendium) {
 				const header_ele = document.createElement("h1");
@@ -393,14 +405,16 @@
 				header_link.className = "section-link";
 				header_link.href = `#${header}`;
 
-				sidebar.appendChild(header_link);
+				sidebar_container.appendChild(header_link);
 
-				const section = renderSection(compendium[header], sidebar);
+				const section = renderSection(compendium[header], sidebar_container);
 
 				container.appendChild(header_ele);
 				container.appendChild(section);
 			}
 
+			sidebar.appendChild(sidebar_container);
+			
 			page_container.appendChild(sidebar);
 			page_container.appendChild(container);
 		}
@@ -441,7 +455,7 @@
 					if (card_.type.includes("Token")) continue;
 					let cont = false;
 					for (const color of inactive_colors) {
-						if (card_.cost.includes(color))
+						if (card_.cost.toLowerCase().includes(color))
 							cont = true;
 					}
 					if (cont) continue;	
