@@ -88,10 +88,12 @@
 
 	.page-container {
 		display: grid;
-		align-items: center;
+		/* align-items: center; */
 		justify-items: center;
-		width: 80%;
-		margin-left: 10%;
+		width: 75%;
+		margin-left: 8%;
+		grid-template-columns: 0.3fr 1fr;
+		gap: 20px;
 	}
 
 	hr {
@@ -157,7 +159,7 @@
 
 	.compendium-grid {
 		display: grid;
-		grid-template-columns: repeat(5, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 		gap: 8px;
 		position: relative;
 	}
@@ -186,6 +188,34 @@
 
 	.card-image:hover {
 		filter: brightness(0.7);
+	}
+
+	.section-link {
+		display: inline-block;
+	}
+
+	.sidebar {
+		position: sticky;
+		top: 15%;
+		height: fit-content;
+		display: grid;
+		gap: 5px;
+		background-color: #00000088;
+		padding: 15px;
+		border-radius: 15px;
+	}
+
+	.indent {
+		margin-left: 15px;
+	}
+
+	.sidebar a:not(.indent) {
+		font-weight: bold;
+		font-size: 1.1em;
+	}
+
+	.sidebar a {
+		color: rgb(65, 138, 223);
 	}
 </style>
 <style id="text-style">
@@ -282,26 +312,50 @@
 		});
 
 		function renderPage(compendium) {
-			const container = document.getElementById("page-container");
+			const page_container = document.getElementById("page-container");
+
+			const container = document.createElement("div");
+			const sidebar = document.createElement("div");
+			sidebar.className = "sidebar";
+
 			for (const header in compendium) {
 				const header_ele = document.createElement("h1");
 				header_ele.innerText = header;
 				header_ele.className = "section-header text";
+				header_ele.id = header;
 
-				const section = renderSection(compendium[header]);
+				const header_link = document.createElement("a");
+				header_link.innerText = header;
+				header_link.className = "section-link";
+				header_link.href = `#${header}`;
+
+				sidebar.appendChild(header_link);
+
+				const section = renderSection(compendium[header], sidebar);
 
 				container.appendChild(header_ele);
 				container.appendChild(section);
 			}
+
+			page_container.appendChild(sidebar);
+			page_container.appendChild(container);
 		}
 
-		function renderSection(section_to_render) {
+		function renderSection(section_to_render, sidebar) {
 			const container = document.createElement("div");
 
 			for (const sub_header in section_to_render) {
 				const sub_header_ele = document.createElement("h2");
 				sub_header_ele.innerText = sub_header;
 				sub_header_ele.className = "sub-section-header text";
+				sub_header_ele.id = sub_header;
+
+				const sub_header_link = document.createElement("a");
+				sub_header_link.innerText = sub_header;
+				sub_header_link.className = "section-link indent";
+				sub_header_link.href = `#${sub_header}`;
+
+				sidebar.appendChild(sub_header_link);
 
 				const table = renderGrid(section_to_render[sub_header]);
 
