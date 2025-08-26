@@ -381,6 +381,8 @@
 		overflow: auto;
 		background-color: rgb(0, 0, 0);
 		background-color: rgba(0, 0, 0, 0.4);
+		padding-bottom: 100px;
+		margin-bottom: 100px;
 	}
 
 	#modal-content {
@@ -462,6 +464,75 @@
 	.changes-header {
 		font-size: 18px;
 		font-weight: bold;
+	}
+
+	.deck-container {
+		display: grid;
+		gap: 5px;
+		/* grid-template-rows: 1fr 2fr 1fr; */
+		background-color: #f3f3f3;
+		border-radius: 8px;
+		/* height: 100%; */
+		padding: 5px;
+		align-items: center;
+		justify-items: center;
+		border: 2px solid #333;
+		box-shadow: 5px 5px 2px #333;
+		padding-top: 0px;
+		transition: 0.2s;
+	}
+
+	.full-deck-container {
+		display: grid;
+		grid-template-columns: 1fr 0.1fr;
+		gap: -5px;
+	}
+
+	.colors-container {
+		position: relative;
+		top: 60px;
+		right: 14px;
+		background-color: #333;
+		height: fit-content;
+		padding: 2px;
+		border-radius: 20px;
+	}
+
+	.deck-preview-img {
+		max-height: 250px;
+		border: 2px solid black;
+		box-shadow: 7px 7px 2px #999;
+		border-radius: 16px;
+		margin-bottom: 7px;
+		cursor: pointer;
+		/* box-shadow: inset 0.2em 0.2em 0.2em 0em rgba(0, 0, 0, 0.5), inset -0.2em -0.2em 0.2em 0em rgba(0,0,0,0.5); */
+		/* padding: 0.2em; */
+		/* background-color: #777; */
+	}
+
+	.deck-name {
+		font-size: 25px;
+		font-family: beleren;
+		background-color: #ccc;
+		/* border: 2px solid #333; */
+		/* box-shadow: 5px 5px 2px #333; */
+		border-radius: 5px;
+		padding: 5px;
+		margin-bottom: 3px;
+		width: 100%;
+		text-align: center;
+		/* color: white; */
+	}
+
+	.decks-stats-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 10px;
+		margin-bottom: 100px;
+	}
+
+	.deck-container:hover {
+		filter: brightness(0.7);
 	}
 </style>
 <style id="text-style">
@@ -1564,8 +1635,6 @@
 				}
 			}
 
-			console.log("[STATS]: Exports...");
-
 			const winrate = ((total_wins / total_games) * 100).toFixed(2).toString() + "%";
 			const playrate_event_text = ((num_event_decks / all_event_decks.length) * 100).toFixed(2).toString() + "%";
 			const playrate_user_text = ((num_user_decks / all_user_decks.length) * 100).toFixed(2).toString() + "%";
@@ -1575,7 +1644,8 @@
 				winrate: ["GP Winrate", winrate],
 				playrate_event: ["Event Playrate", playrate_event_text],
 				playrate_user: ["User Playrate", playrate_user_text],
-				playrate_general: ["Overall Playrate", playrate_text]
+				playrate_general: ["Overall Playrate", playrate_text],
+				decks: [false, decks_with_card]
 			}
 
 			const viewStats = document.createElement('button');
@@ -1587,10 +1657,23 @@
 		}
 
 		function openStatsModal(stats) {
+			const card_name = decodeURI(urlParams.get("name"));
+
 			const content_container = document.createElement("div");
-			content_container.className = "stats-container";
+			content_container.className = "full-stats-container";
+
+			const table_container = document.createElement("div");
+			table_container.className = "stats-container";
+
+			const decks_container = document.createElement("div");
+			decks_container.className = "decks-stats-container";
+
+			const stats_header = document.createElement("h2");
+			stats_header.className = "decks-header";
+			stats_header.innerText = `Stats`;
 
 			for (const stat in stats) {
+				if (!stats[stat][0]) continue;
 				const stat_name = stats[stat][0];
 				const stat_value = stats[stat][1];
 
@@ -1602,8 +1685,8 @@
 				stat_ele.className = "stat-value";
 				stat_ele.innerText = stat_value;
 
-				content_container.appendChild(stat_title);
-				content_container.appendChild(stat_ele);
+				table_container.appendChild(stat_title);
+				table_container.appendChild(stat_ele);
 			}
 
 			const is_played = document.createElement("span");
@@ -1616,12 +1699,136 @@
 			is_staple.innerText = "Staple";
 			is_staple.className += isStaple(stats) ? "played" : "not-played";
 
-			content_container.appendChild(is_played);
-			content_container.appendChild(is_staple);
+			const decks_header = document.createElement("h2");
+			decks_header.className = "decks-header";
+			decks_header.innerText = `Decks with ${card_name}`;
+
+			let decks = stats.decks[1];
+
+			decks.sort(newDeck);
+
+			for (let i = 0; i < Math.min(6, decks.length); i++) {
+				const deck = decks[i];
+
+				const deck_container = gridifyDeck(deck);
+
+				decks_container.appendChild(deck_container);
+			}
+
+			if (decks.length == 0) {
+				const text = document.createElement("span");
+				text.innerText = "⚠️ No decks found containing " + card_name;
+				decks_container.appendChild(text);
+				decks_container.style.display = "block";
+			}
+
+			table_container.appendChild(is_played);
+			table_container.appendChild(is_staple);
+
+			content_container.appendChild(stats_header);
+			content_container.appendChild(table_container);
+			content_container.appendChild(decks_header);
+			content_container.appendChild(decks_container);
 
 			document.getElementById("modal-content").innerHTML = "";
 			document.getElementById("modal-content").appendChild(content_container);
 			document.getElementById("modal-container").style.display = "block";
+		}
+
+		function gridifyDeck(deck) {
+			const container = document.createElement("div");
+			container.className = "deck-container";
+			const preview_img = document.createElement("img");
+			let card_stats;
+			for (const card of card_list_arrayified) {
+				if (deck.previewimg == card.card_name) {
+					card_stats = card;
+					break;
+				}
+			}
+			preview_img.src = card_stats ? "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type : "img/card_back.png";
+			preview_img.className = "deck-preview-img";
+			preview_img.onclick = function () {
+				if (deck.event) {
+					window.location.href = `/deckbuilder?edeck=${deck.event}-${deck.user}`;
+					return;
+				}
+				window.location.href = `/deckbuilder?deck=${deck.user}-${encodeURI(deck.name)}`;
+			}
+			const deck_name = document.createElement("div");
+			deck_name.className = "deck-name";
+			deck_name.innerText = deck.name;
+
+			container.appendChild(deck_name);
+			container.appendChild(preview_img);
+			return container;
+		}
+
+		function newDeck(a, b) {
+			if (a.last_modified && !b.last_modified) {
+				return -1;
+			}
+			if (!a.last_modified && b.last_modified) {
+				return 1;
+			}
+			if (!a.last_modified && !b.last_modified) {
+				return 0;
+			}
+
+			let a_date = {};
+			let b_date = {};
+
+			let a_split = a.last_modified.split(',');
+			let a_split2 = a_split[0].split('-');
+
+			a_date.day = Number(a_split2[0]);
+			a_date.month = Number(a_split2[1]);
+			a_date.year = Number(a_split2[2]);
+
+			a_date.hour = Number(a_split[1].split(":")[0]);
+			a_date.min = Number(a_split[1].split(":")[1]);
+
+			let b_split = b.last_modified.split(',');
+			let b_split2 = b_split[0].split('-');
+
+			b_date.day = Number(b_split2[0]);
+			b_date.month = Number(b_split2[1]);
+			b_date.year = Number(b_split2[2]);
+
+			b_date.hour = Number(b_split[1].split(":")[0]);
+			b_date.min = Number(b_split[1].split(":")[1]);
+
+			if (a_date.year > b_date.year) {
+				return -1;
+			}
+			if (a_date.year < b_date.year) {
+				return 1;
+			}
+			if (a_date.month > b_date.month) {
+				return -1;
+			}
+			if (a_date.month < b_date.month) {
+				return 1;
+			}
+			if (a_date.day > b_date.day) {
+				return -1;
+			}
+			if (a_date.day < b_date.day) {
+				return 1;
+			}
+			if (a_date.hour > b_date.hour) {
+				return -1;
+			}
+			if (a_date.hour < b_date.hour) {
+				return 1;
+			}
+			if (a_date.min > b_date.min) {
+				return -1;
+			}
+			if (a_date.min < b_date.min) {
+				return 1;
+			}
+			return 0;
 		}
 
 		function isPlayed(stats) {

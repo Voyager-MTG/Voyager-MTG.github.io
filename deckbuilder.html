@@ -2172,7 +2172,7 @@
 			preview_img.src = deck.previewimg == "cardback" ? "img/card_back.png" : card_stats_image;
 			preview_img.className = "deck-preview-img";
 			// preview_img.onclick = function() {
-			//     window.location.href = `/deckbuilder?deck=${deck.user}-${deck.name}`
+			//     window.location.href = `/deckbuilder?deck=${deck.user}-${encodeURI(deck.name)}`
 			// }
 			const deck_name = document.createElement("div");
 			deck_name.className = "deck-name";
