@@ -175,6 +175,30 @@
 		height: auto;
 	}
 
+	.img-container .btn {
+		background-color: #ffffffaa;
+		background-size: contain;
+		background-position: center;
+		width: 15%;
+		height: 11%;
+		cursor: pointer;
+		border: none;
+		position: absolute;
+		left: 50%;
+		top: 48%;
+		transform: translate(170%, -150%);
+		opacity: 0.8;
+		border-radius: 100%;
+		border: 2px solid black;
+		padding: 3px;
+	}
+
+	.img-container .btn:hover {
+		background-size: contain;
+		background-position: center;
+		background-color: #ffffff;
+	}
+
 	.hidden-text {
 		font-size: 1.2em;
 		margin-top: 4px;
@@ -217,6 +241,20 @@
 	.sidebar a {
 		color: rgb(65, 138, 223);
 	}
+
+	.color-select {
+		font-size: 1em;	
+		cursor: pointer;
+		transition: 0.2s;
+	}
+
+	.color-select-inactive {
+		filter: brightness(0.5);
+		font-size: 1em;	
+		cursor: pointer;
+		transition: 0.2s;
+	}
+	
 </style>
 <style id="text-style">
 	.text {
@@ -262,6 +300,15 @@
 		</select>
 	</div>
 	<div class="page-container" id="page-container">
+		<div id="sidebar" class="sidebar">
+			<div class="color-selects">
+			<div class="color-select mana mana-cost mana-w" id="color-w"></div>
+			<div class="color-select mana mana-cost mana-u" id="color-u"></div>
+			<div class="color-select mana mana-cost mana-b" id="color-b"></div>
+			<div class="color-select mana mana-cost mana-r" id="color-r"></div>
+			<div class="color-select mana mana-cost mana-g" id="color-g"></div>
+			<div class="color-select mana mana-cost mana-i" id="color-i"></div></div>
+		</div>
 	</div>
 	<div id="modal-container">
 		<div id="modal-content" class="popout">
@@ -274,6 +321,7 @@
 		let raw_gradients = null;
 		let gradTop = null;
 		let gradBottom = null;
+		let inactive_colors = [];
 		modal = document.getElementById("modal-container");
 		window.onclick = function (event) {
 			if (event.target == modal) {
@@ -308,6 +356,23 @@
 					compendium = json;
 				}).catch(error => console.error('Error:', error));
 
+
+			const colors = 'wubrgi';
+			
+			for (const color of colors) {
+				document.getElementById(`color-${color}`).addEventListener("click", function() {
+					const color_is_active = !inactive_colors.includes(color);
+
+					if (!color_is_active) {
+						inactive_colors.splice(inactive_colors.indexOf(color), 1);
+						document.getElementById(`color-${color}`).className = document.getElementById(`color-${color}`).className.replaceAll("color-select-inactive", "color-select");
+					} else {
+						inactive_colors.push(color);
+						document.getElementById(`color-${color}`).className = document.getElementById(`color-${color}`).className.replaceAll("color-select", "color-select-inactive");
+					}
+				});
+			}
+
 			renderPage(compendium);
 		});
 
@@ -315,8 +380,7 @@
 			const page_container = document.getElementById("page-container");
 
 			const container = document.createElement("div");
-			const sidebar = document.createElement("div");
-			sidebar.className = "sidebar";
+			const sidebar = document.getElementById("sidebar");
 
 			for (const header in compendium) {
 				const header_ele = document.createElement("h1");
@@ -375,6 +439,12 @@
 			for (const card of card_list) {
 				for (const card_ of card_list_arrayified) {
 					if (card_.type.includes("Token")) continue;
+					let cont = false;
+					for (const color of inactive_colors) {
+						if (card_.cost.includes(color))
+							cont = true;
+					}
+					if (cont) continue;	
 					if (card == card_.card_name) {
 						cards.push(card_);
 						break;
