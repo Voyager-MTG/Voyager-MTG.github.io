@@ -346,7 +346,7 @@ Limited change.
 ### Frostborn Glimmer
 
 <change-preview>
-https://media.discordapp.net/attachments/1337208262965203024/1407242550284386374/image.png?ex=68aaaa41&is=68a958c1&hm=edc89d06c7b2809310159c2a11cdfa28c8b455aa7dac2a4060b389095deb01a9&=&format=webp&quality=lossless&width=469&height=654
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/VNM-files/img/60_Frostborn%20Glimmer.jpg?raw=true
 https://media.discordapp.net/attachments/1337208262965203024/1407242550284386374/image.png?ex=68aaaa41&is=68a958c1&hm=edc89d06c7b2809310159c2a11cdfa28c8b455aa7dac2a4060b389095deb01a9&=&format=webp&quality=lossless&width=469&height=654
 </change-preview>
 
@@ -455,6 +455,21 @@ https://media.discordapp.net/attachments/1337434281521189000/1408197487096889396
 </change-preview>
 
 Dynotopic Stampede caused problems with cards such as [[The Ring-Yew]] and Astrus Quandry. In addition, cards like [[Virulent Hexer]] and [[Faloden Barrier Scout]] could be used in combination with it to repeatedly stone rain the opponent. Overall, the captains deemed it too powerful of a ramp, fixing, and land destruction piece for voyager.
+
+</left-card>
+<right-card></right-card>
+</set-cards>
+## The Wonderland's Wishes
+<set-cards>
+<left-card>
+### Condensed Memory
+
+<change-preview>
+https://raw.githubusercontent.com/Voyager-MTG/Voyager-MTG.github.io/cadb7bc054d2ad849c8c300f158d39fd5ad47037/sets/WAW-files/img/229_Condensed%20Memory.jpg
+https://cdn.discordapp.com/attachments/1393023972161093663/1409948184830152917/image.png?ex=68b3d952&is=68b287d2&hm=eceafab767279fb5fa5d932bb31ddd55f245cf1e17b74e23f1f32ca5302a8593&
+</change-preview>
+
+The broken colorless ramp deck we had in voyager highlighted a lot of issues with our mana rocks that weren't seen before. Although condensed memory looks innocuous at first, a mana rock that turns into a 5/5 is no joke. It gets you to the late game, then helps win it, while also fixing colors along the way if needed. We're keeping an eye on the other 2 mana mana rocks, but since its so close to the end of the month we only wanted to change the most egregious for now.
 
 </left-card>
 <right-card></right-card>

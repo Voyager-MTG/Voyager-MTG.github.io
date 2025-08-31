@@ -1699,6 +1699,11 @@
 			is_staple.innerText = "Staple";
 			is_staple.className += isStaple(stats) ? "played" : "not-played";
 
+			const page_link = document.createElement("a");
+			page_link.className = "stats-link stat-value";
+			page_link.innerText = "View detailed stats";
+			page_link.href = window.location.href.replace("card", "stats");
+
 			const decks_header = document.createElement("h2");
 			decks_header.className = "decks-header";
 			decks_header.innerText = `Decks with ${card_name}`;
@@ -1724,6 +1729,7 @@
 
 			table_container.appendChild(is_played);
 			table_container.appendChild(is_staple);
+			table_container.appendChild(page_link);
 
 			content_container.appendChild(stats_header);
 			content_container.appendChild(table_container);
