@@ -159,7 +159,7 @@
             "notes": "landslot"
         },
         {
-            "card_name": "Dragon Token",
+            "card_name": "Dragon",
             "color": "R",
             "rarity": "common",
             "type": "Token Creature \u2014 Dragon",
@@ -710,11 +710,11 @@
             "notes": ""
         },
         {
-            "card_name": "Wonder Archon Token",
+            "card_name": "Wonder Archon",
             "color": "",
             "rarity": "common",
             "type": "Token Creature \u2014 Wonder Archon",
-            "number": 22,
+            "number": 23,
             "color_identity": "WUBRGI",
             "cost": "",
             "rules_text": "This creature is all colors.",
@@ -1458,7 +1458,7 @@
             "number": 229,
             "color_identity": "C",
             "cost": "{2}",
-            "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{5}, {T}, Exile five cards from your graveyard: Put five +1/+1 counters on Condensed Memory. It becomes a 0/0 Wonder artifact creature that's all colors. Activate only if Condensed Memory isn't a creature.",
+            "rules_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{2}, {T}, Exile two cards from your graveyard: Put five +1/+1 counters on Condensed Memory. If it isn't a creature, becomes a 0/0 Wonder artifact creature that's all colors.",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -2173,7 +2173,7 @@
             "notes": "!tokens Beast Token;"
         },
         {
-            "card_name": "Beast Token",
+            "card_name": "Beast",
             "color": "G",
             "rarity": "common",
             "type": "Token Creature \u2014 Beast",
@@ -2382,7 +2382,7 @@
             "notes": ""
         },
         {
-            "card_name": "Demon Token",
+            "card_name": "Demon",
             "color": "B",
             "rarity": "common",
             "type": "Token Creature \u2014 Demon",
@@ -3275,11 +3275,11 @@
             "notes": ""
         },
         {
-            "card_name": "Wonder Token",
+            "card_name": "Wonder",
             "color": "",
             "rarity": "common",
             "type": "Token Creature \u2014 Wonder",
-            "number": 23,
+            "number": 22,
             "color_identity": "WUBRGI",
             "cost": "",
             "rules_text": "This creature is all colors.",

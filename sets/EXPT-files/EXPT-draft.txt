@@ -21,13 +21,13 @@
 			}
 		},
 		{
-			"name": "Icon Token",
+			"name": "Icon",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Enchantment Creature — Icon",
-			"collector_number": "12",
+			"collector_number": "11",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/12_Icon Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/11_Icon.jpg"
 			}
 		},
 		{
@@ -255,9 +255,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Horror",
-			"collector_number": "11",
+			"collector_number": "10",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/11_Horror.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/10_Horror.jpg"
 			}
 		},
 		{
@@ -475,9 +475,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{C}{C}",
 			"type": "Creature — Bird Incarnation",
-			"collector_number": "7",
+			"collector_number": "6",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/7_Distant Vulture.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/6_Distant Vulture.jpg"
 			}
 		},
 		{
@@ -551,13 +551,13 @@
 			}
 		},
 		{
-			"name": "Insect Plant Token",
+			"name": "Insect Plant",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Insect Plant",
 			"collector_number": "42",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/42_Insect Plant Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/42_Insect Plant.jpg"
 			}
 		},
 		{
@@ -601,13 +601,13 @@
 			}
 		},
 		{
-			"name": "Wall Token",
+			"name": "Wall",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Artifact Creature — Wall",
 			"collector_number": "107",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/107_Wall Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/107_Wall.jpg"
 			}
 		},
 		{
@@ -771,23 +771,23 @@
 			}
 		},
 		{
-			"name": "Shapeshifter Token",
+			"name": "Shapeshifter",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Shapeshifter",
 			"collector_number": "1",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/1_Shapeshifter Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/1_Shapeshifter.jpg"
 			}
 		},
 		{
-			"name": "Robot Token",
+			"name": "Robot",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Artifact Creature — Robot",
 			"collector_number": "106",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/106_Robot Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/106_Robot.jpg"
 			}
 		},
 		{
@@ -945,69 +945,59 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Demon",
-			"collector_number": "6",
+			"collector_number": "5",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/6_Demon.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/5_Demon.jpg"
 			}
 		},
 		{
-			"name": "Drake Token",
+			"name": "Drake",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Drake",
-			"collector_number": "8",
+			"collector_number": "7",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/8_Drake Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/7_Drake.jpg"
 			}
 		},
 		{
-			"name": "Fox Token",
+			"name": "Fox",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Fox",
-			"collector_number": "4",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/4_Fox Token.jpg"
-			}
-		},
-		{
-			"name": "Wurm Dragon Token",
-			"rarity": "common",
-			"mana_cost": "",
-			"type": "Token Kindred Enchantment — Wurm Dragon",
 			"collector_number": "3",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/3_Wurm Dragon Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/3_Fox.jpg"
 			}
 		},
 		{
-			"name": "Elemental Token",
+			"name": "Flying Elemental",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Elemental",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/8_Flying Elemental.jpg"
+			}
+		},
+		{
+			"name": "Lifelink Elemental",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Elemental",
 			"collector_number": "9",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/9_Elemental Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/9_Lifelink Elemental.jpg"
 			}
 		},
 		{
-			"name": "Elemental Token",
-			"rarity": "common",
-			"mana_cost": "",
-			"type": "Token Creature — Elemental",
-			"collector_number": "10",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/10_Elemental Token.jpg"
-			}
-		},
-		{
-			"name": "Dragon Eye Token",
+			"name": "Dragon Eye",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Dragon Eye",
-			"collector_number": "5",
+			"collector_number": "4",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/5_Dragon Eye Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/4_Dragon Eye.jpg"
 			}
 		},
 		{
@@ -1015,19 +1005,19 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Artifact Creature — Orb Wizard",
-			"collector_number": "13",
+			"collector_number": "12",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/13_Orb Wizard.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/12_Orb Wizard.jpg"
 			}
 		},
 		{
-			"name": "Treasure Token",
+			"name": "Treasure",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Artifact Creature — Treasure",
-			"collector_number": "14",
+			"collector_number": "13",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/14_Treasure Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/13_Treasure.jpg"
 			}
 		},
 		{
@@ -1361,13 +1351,13 @@
 			}
 		},
 		{
-			"name": "Fish Token",
+			"name": "Fish",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Fish",
 			"collector_number": "2",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/2_Fish Token.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/2_Fish.jpg"
 			}
 		},
 		{
@@ -1435,12 +1425,12 @@
 	1 Draconic Reflection
 	1 Sryyn Spawner
 	1 Algael-leael
-	1 Insect Plant Token
+	1 Insect Plant
 	1 Syphroid
 	1 Tellavia Balwar
 	1 Refraction Mech
 	1 Writhing Sight
-	1 Wall Token
+	1 Wall
 	1 Xylem Attendant
 	1 Clifftop Pishogue
 	1 Malevolent Knowledge
@@ -1457,8 +1447,8 @@
 	1 Duet of Loss and Life
 	1 Abstracted Mark
 	1 Whimsy Unbound
-	1 Shapeshifter Token
-	1 Robot Token
+	1 Shapeshifter
+	1 Robot
 	1 Sample Skimmer
 	1 Sentinel of the Afterlife
 	1 Our Fates Change

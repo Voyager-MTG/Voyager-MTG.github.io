@@ -708,7 +708,7 @@
             "number": 144,
             "color_identity": "R",
             "cost": "{4}{R}",
-            "rules_text": "Haste\n{T}: Create a token that's a copy of target non-Ouphe creature you control. That token has haste. At the beginning of your next end step, forsake. [i](Sacrifice creatures with total toughness 3 or more.)[/i]",
+            "rules_text": "Haste\n{T}: Create a token that's a copy of target non-Ouphe creature you control. That token has haste. At the beginning of your next end step, forsake. [i](To forsake, sacrifice creatures with total toughness 3 or more.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "3/3",
             "special_text": "",
@@ -1293,7 +1293,7 @@
             "card_name": "Edict of the Mirrorkin",
             "color": "WUR",
             "rarity": "rare",
-            "type": "Instant",
+            "type": "Sorcery",
             "number": 254,
             "color_identity": "WUR",
             "cost": "{U}{R}{W}",
@@ -4622,7 +4622,7 @@
             "number": 148,
             "color_identity": "R",
             "cost": "{3}{R}",
-            "rules_text": "As an additional cost to cast this spell, you may forsake. [i](Sacrifice creatures with total toughness 3 or more.)[/i]\nExile the top three cards of your library. You may play them until the end of your next turn. If Innocent Rendezvous was forsaken, add {R}{R}{R}{R}{R}.",
+            "rules_text": "As an additional cost to cast this spell, you may forsake. [i](To forsake, sacrifice creatures with total toughness 3 or more.)[/i]\nExile the top three cards of your library. You may play them until the end of your next turn. If Innocent Rendezvous was forsaken, add {R}{R}{R}{R}{R}.",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -5869,11 +5869,11 @@
             "notes": "!tag Dewold\nIntisuyus Armies\n!related Capac Suyay, Grim Seeker<2>;"
         },
         {
-            "card_name": "Soldier",
+            "card_name": "White Soldier 11",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Soldier",
-            "number": 5,
+            "number": 6,
             "color_identity": "W",
             "cost": "",
             "rules_text": "",
@@ -5885,7 +5885,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Frank Abarca",
-            "notes": "!tag Dewold\nSuyay's Soldier\n!related Capac Suyay, Grim Seeker<2>; Intisuyu's Armies;"
+            "notes": "!tag Dewold\nSuyay's Soldier\n!related Capac Suyay, Grim Seeker<2>; Intisuyu's Armies;\n!exportname White Soldier 11"
         },
         {
             "card_name": "Messenger of Absent Messages",
@@ -6078,7 +6078,7 @@
             "notes": "!tag Dewold\nDewold Army\n!related Left to Wander"
         },
         {
-            "card_name": "Soldier",
+            "card_name": "Red Soldier",
             "color": "R",
             "rarity": "common",
             "type": "Token Creature \u2014 Soldier",
@@ -6094,7 +6094,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Viviane Souza",
-            "notes": "!tag Dewold\nYoung Soldier\n!related Whitaker Captain; Turnberry Scout <2>; Patrol the Geistwald; Leon's Claim; Hulking Vessel;"
+            "notes": "!tag Dewold\nYoung Soldier\n!related Whitaker Captain; Turnberry Scout <2>; Patrol the Geistwald; Leon's Claim; Hulking Vessel;\n!exportname Red Soldier"
         },
         {
             "card_name": "Reserves",
@@ -6116,7 +6116,7 @@
             "notes": "!tag Dewold"
         },
         {
-            "card_name": "Knight",
+            "card_name": "Knight all colors",
             "color": "WUBRG",
             "rarity": "common",
             "type": "Token Creature \u2014 Knight",
@@ -6132,7 +6132,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Madness Demon",
-            "notes": "!tag Dewold\nDestroyed-Knight\n!related Knight of Skyspire; Banefort Archer; Replenishing Camp; Resolute Elk; Turnberry Overseer;"
+            "notes": "!tag Dewold\nDestroyed-Knight\n!related Knight of Skyspire; Banefort Archer; Replenishing Camp; Resolute Elk; Turnberry Overseer;\n\n!exportname Knight all colors"
         },
         {
             "card_name": "Plains",
@@ -6420,11 +6420,11 @@
             "notes": "!tag Dewold\nPlains2"
         },
         {
-            "card_name": "Soldier",
+            "card_name": "Defender Soldier",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Soldier",
-            "number": 6,
+            "number": 5,
             "color_identity": "W",
             "cost": "",
             "rules_text": "Defender",
@@ -6436,10 +6436,10 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Youngmin Seo",
-            "notes": "!tag Dewold"
+            "notes": "!tag Dewold\n!exportname Defender Soldier"
         },
         {
-            "card_name": "Knight",
+            "card_name": "Green Knight",
             "color": "G",
             "rarity": "common",
             "type": "Token Creature \u2014 Knight",
@@ -6455,7 +6455,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Ekaterina Kazartseva",
-            "notes": "!tag Dewold"
+            "notes": "!tag Dewold\n!exportname Green Knight"
         },
         {
             "card_name": "The True Heir",

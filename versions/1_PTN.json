@@ -23,7 +23,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Weather Factory",
-            "notes": "#"
+            "notes": ""
         },
         {
             "card_name": "Mother of Ants",
@@ -128,7 +128,7 @@
             "special_text2": "",
             "loyalty2": "",
             "artist2": "Weather Factory",
-            "notes": "#"
+            "notes": ""
         },
         {
             "card_name": "The Wolf Divided",
@@ -1382,7 +1382,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Davide Lazzoni",
-            "notes": ">FT"
+            "notes": ""
         },
         {
             "card_name": "Ragged Sun's Angel",
@@ -1487,7 +1487,7 @@
             "number": 38,
             "color_identity": "W",
             "cost": "{2}{W}",
-            "rules_text": "Vigilance\nWhen Rarefied Illuminator enters, look at the top three cards of your library. You may exile a creature card with mana value 3 or less from among them. It becomes foretold. Put the rest on the bottom of your library in any order. [i](Its foretell cost is its mana cost if it isn't already specified.)[/i]\nForetell {W} [i](During your turn, you may pay {2} and exile this card from your hand face down. Play it on a later turn for its foretell cost.)[/i]",
+            "rules_text": "When Rarefied Illuminator enters, scry 3, then you may exile the top card of your library. If a creature card with mana value 3 or less was exiled this way. It becomes foretold. [i](Its foretell cost is its mana cost if it isn't already specified.)[/i]\nForetell {W} [i](During your turn, you may pay {2} and exile this card from your hand face down. Play it on a later turn for its foretell cost.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "2/3",
             "special_text": "",
@@ -1515,7 +1515,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Jojo",
-            "notes": ">FT"
+            "notes": ""
         },
         {
             "card_name": "Paradoxical Inquiry",
@@ -1686,7 +1686,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Christos Karapanos",
-            "notes": ">FT"
+            "notes": ""
         },
         {
             "card_name": "Acolyte of Agony",
@@ -1715,7 +1715,7 @@
             "number": 241,
             "color_identity": "C",
             "cost": "{3}",
-            "rules_text": "Spells your opponents cast from exile cost {1} more to cast.\n{T}: Add {C}. Induct. [i](Create a 0/1 Cleric creature token with \u201cAs a sorcery, sacrifice two other Clerics: Transform into a 4/4 God Horror that can't block.\u201d)[/i]",
+            "rules_text": "Spells your opponents cast from exile cost {1} more to cast.\n{T}: Induct. [i](Create a 0/1 Cleric creature token with \u201cAs a sorcery, sacrifice two other Clerics: Transform into a 4/4 God Horror that can't block.\u201d)[/i]\n{3}: The Geminiad gains \u201cWhenever this artifact becomes tapped, add {C}.\u201d Activate only once.",
             "flavor_text": "[i]It might be as old as the seventh century, and its page-edges are sharp enough to slash a throat.[/i]",
             "pt": "",
             "special_text": "",
@@ -2275,7 +2275,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Nanna Skytte",
-            "notes": ">FT"
+            "notes": ""
         },
         {
             "card_name": "Merciless Illumination",
@@ -2351,7 +2351,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Aaron Nakahara",
-            "notes": ">FT"
+            "notes": ""
         },
         {
             "card_name": "Augury Raven",
@@ -2370,7 +2370,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Alessia H. Valastro",
-            "notes": "https://alessiahv.artstation.com/projects/8waYYw\nreprint\n>FT"
+            "notes": "https://alessiahv.artstation.com/projects/8waYYw\nreprint"
         },
         {
             "card_name": "Eyes Everywhere",
@@ -2408,7 +2408,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Ivan Vukovic",
-            "notes": ">FT"
+            "notes": ""
         },
         {
             "card_name": "Moonlit Augury",
@@ -2465,7 +2465,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Jason Nguyen",
-            "notes": ">FT"
+            "notes": ""
         },
         {
             "card_name": "Nowhere Wormhost",
@@ -2522,7 +2522,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Satyaki Sarkar",
-            "notes": ">FT"
+            "notes": ""
         },
         {
             "card_name": "Roost Nyctodromist",
@@ -2655,7 +2655,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Tyler James",
-            "notes": "https://www.deviantart.com/artofty/art/Lovecraft-Landscape-875251383\n>Not a fan of this FT"
+            "notes": "https://www.deviantart.com/artofty/art/Lovecraft-Landscape-875251383"
         },
         {
             "card_name": "White Reaper",
@@ -2712,7 +2712,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Eyari",
-            "notes": ">FT?"
+            "notes": ""
         },
         {
             "card_name": "Cyprian Haemomancer",
@@ -2750,7 +2750,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Andrej Z.T.",
-            "notes": ">FT"
+            "notes": ""
         },
         {
             "card_name": "Escape from Nowhere",
@@ -2845,7 +2845,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Maxime Minard",
-            "notes": "#?"
+            "notes": ""
         },
         {
             "card_name": "Scarring Servitude",
@@ -2883,7 +2883,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Jens Kuczwara",
-            "notes": "!addtoken Scar;1\n>FT"
+            "notes": "!addtoken Scar;1"
         },
         {
             "card_name": "Students of Rememberance",
@@ -2902,7 +2902,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Asya Yordanova",
-            "notes": "https://www.deviantart.com/kotnonekot/art/TwistedConsecration-541312543\n>FT"
+            "notes": "https://www.deviantart.com/kotnonekot/art/TwistedConsecration-541312543"
         },
         {
             "card_name": "Callidate Invocation",
@@ -3073,7 +3073,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Aaron Nakahara",
-            "notes": ">FT"
+            "notes": ""
         },
         {
             "card_name": "Rite Flamecaller",
@@ -3111,7 +3111,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Leon Leclerc",
-            "notes": ">FT"
+            "notes": ""
         },
         {
             "card_name": "Traitorous Blood",
@@ -3225,7 +3225,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "XennaDemonorph",
-            "notes": ">FT"
+            "notes": ""
         },
         {
             "card_name": "Cartographed Risen",
@@ -3263,7 +3263,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Louise Goalby",
-            "notes": ">FT\n!addtoken Scar;1"
+            "notes": "!addtoken Scar;1"
         },
         {
             "card_name": "The Old Forms",
@@ -3567,7 +3567,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Louise Goalby",
-            "notes": ">FT"
+            "notes": ""
         },
         {
             "card_name": "Vengeful Restorer",
@@ -3681,7 +3681,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Antonio J. Manzanedo",
-            "notes": "!tokentag God Horror\nGod Horror Token\n!related Monument of Rags;The Red Grail;"
+            "notes": "!tokentag God Horror\nGod Horror Token\n!related Monument of Rags;The Red Grail;Cleric;"
         },
         {
             "card_name": "Carapace Ancestor",
@@ -3729,7 +3729,7 @@
             "number": 9,
             "color_identity": "W",
             "cost": "{3}{W}",
-            "rules_text": "[i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]\nTarget non-God creature becomes a God in addition to its other types. Put two +1/+1 counters on it.\nSearch for library for a God card with mana value greater than the greatest mana value among Gods you control.\nChoose a card in your hand or graveyard. Reveal it. Up to one target God gains the revealed card's abilities. [i](This effect lasts indefinitely)[/i]",
+            "rules_text": "[i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]\nTarget non-God creature becomes a God in addition to its other types. Put two +1/+1 counters on it.\nSearch your library for a God card, reveal it, put it into your hand, then shuffle.\nReveal a card in your hand. Target God you control gains the revealed card's abilities. [i](This effect lasts indefinitely)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -3738,7 +3738,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "u/HoundArchon",
-            "notes": "USED TO BE BROUGHT BACK"
+            "notes": ""
         },
         {
             "card_name": "Glassgarden Watcheye",
@@ -3748,7 +3748,7 @@
             "number": 25,
             "color_identity": "W",
             "cost": "{3}{W}",
-            "rules_text": "Gods and other Clerics you control get +1/+0 and have vigilance.\nWhenever Glassgarden Watcheye attacks, induct twice. Tokens created this way are tapped and attacking. [i](Create a 0/1 Cleric creature token with \u201cAs a sorcery, sacrifice two other Clerics: Transform into a 4/4 God Horror that can't block.\u201d)[/i]",
+            "rules_text": "Gods and other Clerics you control get +1/+0 and have first strike.\nWhenever Glassgarden Watcheye attacks, induct twice. Tokens created this way are tapped and attacking. [i](Create a 0/1 Cleric creature token with \u201cAs a sorcery, sacrifice two other Clerics: Transform into a 4/4 God Horror that can't block.\u201d)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "3/4",
             "special_text": "",
@@ -3871,7 +3871,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Harkal\u00e9 Lina\u00ef",
-            "notes": ">FT"
+            "notes": ""
         },
         {
             "card_name": "Malleary Seer",
@@ -3919,7 +3919,7 @@
             "number": 145,
             "color_identity": "R",
             "cost": "{2}{R}",
-            "rules_text": "Haste\nWhenever Opener of Glass is dealt damage, it deals that much damage to any target.",
+            "rules_text": "Haste\nWhenever Opener of Glass is dealt damage, it deals that much damage to any other target.",
             "flavor_text": "[i]Something half-seen flits from shard to shard, unseen.[/i]",
             "pt": "3/2",
             "special_text": "",
@@ -4167,8 +4167,8 @@
             "color_identity": "UG",
             "cost": "{2}{G}{U}",
             "rules_text": "Whenever you draw a card, put a loyalty counter on The Vagabond.\n[0]: Draw a card.\n[-3]: Return target permanent to its owner's hand.\n[-X]: Create a token that's a copy of target land, except its an X/X blue Merfolk creature with hexproof in addition to its other types.",
-            "flavor_text": "[i][/i]",
-            "pt": "2/3",
+            "flavor_text": "[i]Draw a card.[/i]",
+            "pt": "",
             "special_text": "",
             "shape": "planeswalker",
             "set": "PTN",
@@ -4631,7 +4631,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Alessia H. Valastro",
-            "notes": "Cleric Token\n!related Burgeoning Risen;Bringer of Glory;Defacement;Glassgarden Elder;Glassgarden Watcheye;Ignite Fervor;Ignite Fervor<2>;Mystical Trail;The Sky, The Soul;Moonlit Augury;Seaside Smuggler;Take Prisoners;Twins' Guardian;Veil of Dreams;Carapace Ancestor;Escape into the Night;Indulgent Cyprian;Scarring Servitude;Callidate Invocation;Corrivality;High Cyprian;Rite Flamecaller;Carapace Threadbearer;Cartographed Risen;Discover the Stone Gods;Flesh Weaver;Ring-Yew's Chosen;Student of Defiance;Tireless Recruiter;Unceasing Initiation;The Allure's Light;Covert Cloak;The Geminiad;Society Headquarters;\ninduct"
+            "notes": "Cleric Token\ninduct"
         },
         {
             "card_name": "Foretell",
@@ -4793,7 +4793,7 @@
             "number": 27,
             "color_identity": "W",
             "cost": "{3}{W}",
-            "rules_text": "Guardian Percussigant gets +1/+1 for each Sanctuary you control and each Sanctuary card in your graveyard.\nGods you control have vigilance.",
+            "rules_text": "Vigilance\nGuardian Percussigant gets +1/+1 for each Sanctuary you control and each Sanctuary card in your graveyard.",
             "flavor_text": "[i]It thrives in the rhythms and chants of worship, its unending dance grows in intensity.[/i]",
             "pt": "2/3",
             "special_text": "",
@@ -5040,7 +5040,7 @@
             "number": 90,
             "color_identity": "B",
             "cost": "{3}{B}{B}",
-            "rules_text": "Deathtouch\nWhenever a creature dealt damage by The Crowned Growth this turn leaves the battlefield, its controller gets 2 poison counters.\nWhenever one or more poison counters are put a player or The Crowned Growth dies, exile up to one target creature. Its controller creates a token that's a copy of The Crowned Growth, except it isn't legendary.",
+            "rules_text": "Deathtouch\nWhenever a creature dealt damage by The Crowned Growth this turn leaves the battlefield, its controller gets 2 poison counters.\nWhenever one or more poison counters are put on a player or The Crowned Growth dies, exile up to one target creature. Its controller creates a token that's a copy of The Crowned Growth, except it isn't legendary.",
             "flavor_text": "[i][/i]",
             "pt": "5/5",
             "special_text": "",
