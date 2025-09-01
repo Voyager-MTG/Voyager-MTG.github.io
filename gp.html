@@ -2533,7 +2533,7 @@
 			const event_name = window.prompt("GP Name?");
 
 			await setDoc(doc(db, 'events', event_name), {
-				decks: "{}",
+				decks: {},
 				rounds: '{"swiss":{},"bracket":{}}',
 				num_rounds: 0,
 				stage: "initial",
