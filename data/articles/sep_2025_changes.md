@@ -178,8 +178,8 @@ This was too strong in multiples.
 ### Gravewalking
 
 <change-preview>
-https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/e8caf2d6965325aff7d248e5d77342699bb46321/sets/ITD-files/img/179_Shifting%20Silverscape.jpg?raw=true
-https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/a9828f13b6e6e7721c904138be9f891764ec3b8b/sets/ITD-files/img/179_Shifting%20Silverscape.jpg?raw=true
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/e8caf2d6965325aff7d248e5d77342699bb46321/sets/ITD-files/img/74_Gravewalking.jpg?raw=true
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/498d82cadc453fad6fb186323960f831358392c4/sets/ITD-files/img/74_Gravewalking.jpg?raw=true
 </change-preview>
 
 Minor nerf, card was and is very strong.
@@ -233,8 +233,8 @@ This ability probably should always have costed mana.
 ### Shifting Silverscape
 
 <change-preview>
-https://cdn.discordapp.com/attachments/1341926153631563826/1408213112980508694/image.png?ex=68a8ec29&is=68a79aa9&hm=ac840bddaa56cd5a998a1d04e6c98682f36dd94fc8f0abb3091a35d0e95149a1&
-https://cdn.discordapp.com/attachments/1341926153631563826/1408212447843844237/image.png?ex=68a8eb8a&is=68a79a0a&hm=57cc99f80cfadc3ab546e22ad3fb57e0207a2aef7675f070560979ce05677edc&
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/e8caf2d6965325aff7d248e5d77342699bb46321/sets/ITD-files/img/179_Shifting%20Silverscape.jpg?raw=true
+https://github.com/Voyager-MTG/Voyager-MTG.github.io/blob/a9828f13b6e6e7721c904138be9f891764ec3b8b/sets/ITD-files/img/179_Shifting%20Silverscape.jpg?raw=true
 </change-preview>
 
 Shifting Silverscape was always strong as an artifact land. However, it being a land that gave you discard fodder for no cost pushed it over the line. However, losing total mana should make it more fair for discard.
