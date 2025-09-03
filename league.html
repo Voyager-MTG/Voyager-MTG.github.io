@@ -5,6 +5,7 @@
 	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
 	<link rel="stylesheet" href="resources/mana.css">
 	<link rel="stylesheet" href="/resources/header.css">
+	<link rel="stylesheet" href="/resources/theme.css">
 </head>
 <style>
 	.community .community-dropdown {
@@ -140,8 +141,8 @@
 	}
 
 	.tab-btn {
-		background-color: #737373;
-		color: white;
+		background-color: var(--bg-color);
+		color: var(--popout-text-color);
 		border: 3px solid #ddd;
 		align-items: center;
 		justify-items: center;
@@ -156,11 +157,11 @@
 	}
 
 	.tab-btn:not(.tab-btn-active):hover {
-		background-color: #666;
+		background-color: var(--light-accent);
 	}
 
 	.tab-btn-active {
-		background-color: #333;
+		background-color: var(--mid-accent);
 	}
 
 	.tab-switch-icon {
@@ -202,14 +203,14 @@
 		display: grid;
 		gap: 5px;
 		/* grid-template-rows: 1fr 2fr 1fr; */
-		background-color: #f3f3f3;
+		background-color: var(--bg-color);
 		border-radius: 8px;
 		/* height: fit-content; */
 		padding: 5px;
 		align-items: center;
 		justify-items: center;
-		border: 2px solid #333;
-		box-shadow: 5px 5px 2px #333;
+		border: 2px solid var(--dark-accent);
+		box-shadow: 5px 5px 2px var(--dark-accent);
 		padding-top: 0px;
 		width: 90%;
 	}
@@ -243,7 +244,7 @@
 	.deck-preview-img {
 		max-height: 300px;
 		border: 2px solid black;
-		box-shadow: 7px 7px 2px #999;
+		box-shadow: 7px 7px 2px var(--dark-accent);
 		border-radius: 16px;
 		margin-bottom: 7px;
 		cursor: pointer;
@@ -261,14 +262,14 @@
 	.deck-name {
 		font-size: 30px;
 		font-family: beleren;
-		background-color: #ccc;
-		/* border: 2px solid #333; */
-		/* box-shadow: 5px 5px 2px #333; */
+		background-color: var(--light-accent);
+		color: var(--popout-text-color);
+		/* border: 2px solid var(--dark-accent); */
+		/* box-shadow: 5px 5px 2px var(--dark-accent); */
 		border-radius: 5px;
 		padding: 5px;
 		margin-bottom: 3px;
 		width: 100%;
-		color: black;
 		text-align: center;
 		/* color: white; */
 	}
@@ -517,7 +518,7 @@
 
 	.player-score-input {
 		font-size: 32px;
-		color: #333;
+		color: var(--popout-text-color);
 		width: 40px;
 		padding: 3px;
 		text-align: center;
@@ -546,7 +547,7 @@
 	}
 
 	.opponent-container:hover {
-		filter: brightness(0.6);
+		color: var(--dark-accent);
 	}
 
 	.active-opponent {
@@ -629,23 +630,14 @@
 	.run-record {
 		font-weight: bold;
 		font-size: 2em;
+		color: var(--popout-text-color);
 	}
 
 	#modal-content .run-record {
 		font-size: 1.2em;
 	}
 </style>
-<style id="text-style">
-	.text {
-		color: white;
-	}
-</style>
-<style id="popout-style">
-	.popout {
-		background-color: #f3f3f3;
-		/* color: #f3f3f3; */
-	}
-</style>
+
 
 <body>
 	<div class="header">
@@ -705,6 +697,7 @@
 				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
 		</div>
 	</div>
+	<script src="background.js"></script>
 	<script>
 		let gradients = null;
 		let raw_gradients = null;
@@ -716,122 +709,9 @@
 				document.getElementById('modal-container').style.display = 'none';
 			}
 		}
-		document.addEventListener("DOMContentLoaded", async function () {
-			try {
-				const response = await fetch('/resources/gradients.json');
-				raw_gradients = await response.json();
-			}
-			catch (error) {
-				console.error('Error:', error);
-			}
-
-			gradients = raw_gradients.gradients;
-			card_backgrounds = raw_gradients.cards;
-			setGradient(localStorage.getItem("settings.gradient"));
-			console.log(setGradient);
-			prepareGradients();
-		});
-
-		function prepareGradients() {
-			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
-			const opt = document.createElement("option");
-			opt.value = defaultGradient.replace(' ', '-');
-			opt.text = defaultGradient;
-			document.getElementById("color-select").appendChild(opt);
-			let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
-			const opt_rand = document.createElement("option");
-			opt_rand.value = "Random-Card";
-			opt_rand.text = "Random Card";
-
-			document.getElementById("color-select").appendChild(opt_rand);
-			for (const gradient of gradients) {
-				const opt = document.createElement("option");
-				opt.value = gradient.name.replace(' ', '-');
-				opt.text = gradient.name;
-				if (gradient.name != defaultGradient) {
-					document.getElementById("color-select").appendChild(opt);
-				}
-			}
-
-			for (const gradient in card_backgrounds) {
-				const opt = document.createElement("option");
-				opt.value = gradient.replace(' ', '-');
-				opt.text = gradient;
-				if (gradient.name != defaultGradient) {
-					document.getElementById("color-select").appendChild(opt);
-				}
-				console.log(gradient, opt);
-			}
-
-			// setGradient();
-		}
-
-		function setGradient(gradient = false) {
-			let artistCredit = "";
-			if (!gradient) {
-				gradient = document.getElementById("color-select").value;
-			}
-
-			gradTop = "#000000";
-			gradBottom = "#FFFFFF";
-			for (const grad of gradients) {
-				if (gradient == grad.name.replace(' ', '-')) {
-					gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
-				}
-			}
-
-			for (const background in card_backgrounds) {
-				if (gradient == background.replace(' ', '-')) {
-					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-					artistCredit = card_backgrounds[background][0];
-					setTextColor(card_backgrounds[background][1]);
-				}
-			}
-
-			if (gradient == "Random-Card") {
-				const bgs = Object.keys(card_backgrounds);
-				const background = bgs[reallyRand(bgs.length)];
-				gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-				artistCredit = card_backgrounds[background][0];
-				setTextColor(card_backgrounds[background][1]);
-			}
 
 
-			document.body.style.backgroundImage = gradImage;
-			localStorage.setItem("settings.gradient", gradient);
-			console.log("CHANGE");
-			if (document.getElementsByClassName("artist-credit")[0])
-				document.getElementsByClassName("artist-credit")[0].remove();
-			const credit_text = document.createElement("span");
-			credit_text.className = "artist-credit text";
-			credit_text.innerText = `background by ${artistCredit}`;
-			if (artistCredit && document.getElementById("color-select"))
-				document.getElementById("color-select").parentElement.appendChild(credit_text);
-		}
 
-		function reallyRand(x, seed = false) {
-			const date = new Date();
-			seed = seed ? seed : date.getUTCFullYear() * 10000 +
-				date.getUTCMonth() * 100 +
-				date.getUTCDate();
-
-			const a = 1103515245;
-			const c = 12345;
-			const m = Math.pow(2, 31);
-
-			let randomNumber = (a * seed + c) % m;
-			randomNumber = randomNumber / m;
-
-			return Math.floor(randomNumber * x);
-		}
-
-		function setTextColor(c = false) {
-			if (c) {
-				localStorage.setItem("settings.textcolor", c);
-			}
-			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-		}
 		document.getElementById("search").addEventListener("keypress", function (event) {
 			if (event.key === "Enter") {
 				event.preventDefault();
@@ -915,15 +795,6 @@
 				username = data.username;
 				password = data.password;
 			});
-		}
-
-		document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-		document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-
-		if (localStorage.getItem("settings.darkthememenu") == "On") {
-			document.getElementById("popout-style").innerHTML = ".popout { background-color: #000; color: #f3f3f3; }";
-		} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
-			document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
 		}
 
 		let user_data;
@@ -1464,14 +1335,14 @@
 			scores_number_container.className = "scores-number-container";
 
 			const p1_score_input = document.createElement("input");
-			p1_score_input.className = "player-score-input";
+			p1_score_input.className = "player-score-input popout";
 			p1_score_input.id = "p1-score-input";
 
 			const divider = document.createElement("div");
 			divider.className = "report-score-divider text-bg";
 
 			const p2_score_input = document.createElement("input");
-			p2_score_input.className = "player-score-input";
+			p2_score_input.className = "player-score-input popout";
 			p2_score_input.id = "p2-score-input";
 
 			const submit_scores_btn = document.createElement("button");

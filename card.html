@@ -5,6 +5,7 @@
 	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
 	<link rel="stylesheet" href="/resources/mana.css">
 	<link rel="stylesheet" href="/resources/header.css">
+	<link rel="stylesheet" href="/resources/theme.css">
 	<!-- <meta id="meta-card-name" content="CARDNAME" property="og:title" />
 	<meta id="meta-card-desc" content="DESCRIPTION" property="og:description" />
 	<meta id="meta-card-url" content="MYLINK" property="og:url" />
@@ -127,11 +128,10 @@
 	.card-text {
 		padding-top: 20px;
 		padding-bottom: 20px;
-		background: #fcfcfc;
 		width: 100%;
-		border: 1px solid #d5d9d9;
-		border-top: 3px solid #171717;
-		border-bottom: 3px solid #171717;
+		border: 1px solid var(--light-accent);
+		border-top: 3px solid var(--opposite);
+		border-bottom: 3px solid var(--opposite);
 		border-radius: 6px;
 		height: fit-content;
 		min-height: 75%;
@@ -168,7 +168,7 @@
 
 	.designer-notes {
 		padding-top: 10px;
-		border-top: 1px solid #171717;
+		border-top: 1px solid var(--opposite);
 	}
 
 	.card-text br {
@@ -220,14 +220,13 @@
 	}
 
 	.current-printing {
-		color: black;
-		transition: 0.2s;
+		transition: 0.3s;
 		cursor: pointer;
 		text-decoration: underline;
 	}
 
 	.current-printing:hover {
-		color: rgb(81, 81, 81);
+		color: var(--mid-accent)
 	}
 
 	.img-container {
@@ -386,7 +385,6 @@
 	}
 
 	#modal-content {
-		background-color: #fefefe;
 		margin: auto;
 		padding: 20px;
 		border: 1px solid #888;
@@ -413,15 +411,15 @@
 	.stats-container {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		border-top: 2px solid black;
-		border-left: 2px solid black;
+		border-top: 2px solid var(--text-color);
+		border-left: 2px solid var(--text-color);
 	}
 
 	.stat-title,
 	.stat-value,
 	.is-played {
-		border-right: 2px solid black;
-		border-bottom: 2px solid black;
+		border-right: 2px solid var(--text-color);
+		border-bottom: 2px solid var(--text-color);
 		padding: 8px;
 		font-size: 18px;
 		text-align: center;
@@ -430,7 +428,7 @@
 
 	.stat-title:hover,
 	.stat-value:hover {
-		background-color: gray;
+		background-color: var(--light-accent);
 	}
 
 	.played {
@@ -470,14 +468,13 @@
 		display: grid;
 		gap: 5px;
 		/* grid-template-rows: 1fr 2fr 1fr; */
-		background-color: #f3f3f3;
 		border-radius: 8px;
 		/* height: 100%; */
 		padding: 5px;
 		align-items: center;
 		justify-items: center;
-		border: 2px solid #333;
-		box-shadow: 5px 5px 2px #333;
+		border: 2px solid var(--dark-accent);
+		box-shadow: 5px 5px 2px var(--dark-accent);
 		padding-top: 0px;
 		transition: 0.2s;
 	}
@@ -492,7 +489,7 @@
 		position: relative;
 		top: 60px;
 		right: 14px;
-		background-color: #333;
+		background-color: var(--dark-accent);
 		height: fit-content;
 		padding: 2px;
 		border-radius: 20px;
@@ -501,7 +498,7 @@
 	.deck-preview-img {
 		max-height: 250px;
 		border: 2px solid black;
-		box-shadow: 7px 7px 2px #999;
+		box-shadow: 7px 7px 2px var(--mid-accent);
 		border-radius: 16px;
 		margin-bottom: 7px;
 		cursor: pointer;
@@ -513,7 +510,7 @@
 	.deck-name {
 		font-size: 25px;
 		font-family: beleren;
-		background-color: #ccc;
+		background-color: var(--light-accent);
 		/* border: 2px solid #333; */
 		/* box-shadow: 5px 5px 2px #333; */
 		border-radius: 5px;
@@ -533,17 +530,6 @@
 
 	.deck-container:hover {
 		filter: brightness(0.7);
-	}
-</style>
-<style id="text-style">
-	.text {
-		color: white;
-	}
-</style>
-<style id="popout-style">
-	.popout {
-		background-color: #f3f3f3;
-		/* color: #f3f3f3; */
 	}
 </style>
 
@@ -593,6 +579,7 @@
 				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
 		</div>
 	</div>
+	<script src="background.js"></script>
 	<script>
 		let card_list_arrayified = [];
 		let specialchars = "";
@@ -631,27 +618,6 @@
 					related_cards_json = json;
 				}).catch(error => console.error('Error:', error));
 
-
-			try {
-				const response = await fetch('/resources/gradients.json');
-				raw_gradients = await response.json();
-			}
-			catch (error) {
-				console.error('Error:', error);
-			}
-
-			gradients = raw_gradients.gradients;
-			card_backgrounds = raw_gradients.cards;
-			setGradient(localStorage.getItem("settings.gradient"));
-
-			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-
-			if (localStorage.getItem("settings.darkthememenu") == "On") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
-			} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
-			}
 
 			const params = new URLSearchParams(window.location.search);
 
@@ -1244,12 +1210,7 @@
 			let HTML = "";
 
 			for (let i = 0; i < card_effects.length; i++) {
-				let styled_effect = card_effects[i].replace(/\[i\](.*?)\[\/i\]/gs, function (matched, _1) {
-					return '<i>' + _1 + '</i>'
-				}).replace(/\[b\](.*?)\[\/b\]/gs, function (matched, _1) {
-					return '<b>' + _1 + '</b>'
-				})
-
+				let styled_effect = card_effects[i].replaceAll("[i]", "<i>").replaceAll("[/i]", "</i>").replaceAll("[b]", "<b>").replaceAll("[/b]", "</b>");
 				HTML += styled_effect;
 
 				if (i != card_effects.length - 1) {
@@ -1290,107 +1251,6 @@
 			}
 
 			window.location.href = url;
-		}
-
-		function prepareGradients() {
-			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
-			const opt = document.createElement("option");
-			opt.value = defaultGradient.replace(' ', '-');
-			opt.text = defaultGradient;
-			document.getElementById("color-select").appendChild(opt);
-			let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
-			const opt_rand = document.createElement("option");
-			opt_rand.value = "Random-Card";
-			opt_rand.text = "Random Card";
-
-			document.getElementById("color-select").appendChild(opt_rand);
-			for (const gradient of gradients) {
-				const opt = document.createElement("option");
-				opt.value = gradient.name.replace(' ', '-');
-				opt.text = gradient.name;
-				if (gradient.name != defaultGradient) {
-					document.getElementById("color-select").appendChild(opt);
-				}
-			}
-
-			for (const gradient in card_backgrounds) {
-				const opt = document.createElement("option");
-				opt.value = gradient.replace(' ', '-');
-				opt.text = gradient;
-				if (gradient.name != defaultGradient) {
-					document.getElementById("color-select").appendChild(opt);
-				}
-				console.log(gradient, opt);
-			}
-
-			// setGradient();
-		}
-
-		function setGradient(gradient = false) {
-			let artistCredit = "";
-			if (!gradient) {
-				gradient = document.getElementById("color-select").value;
-			}
-
-			gradTop = "#000000";
-			gradBottom = "#FFFFFF";
-			for (const grad of gradients) {
-				if (gradient == grad.name.replace(' ', '-')) {
-					gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
-				}
-			}
-
-			for (const background in card_backgrounds) {
-				if (gradient == background.replace(' ', '-')) {
-					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-					artistCredit = card_backgrounds[background][0];
-					setTextColor(card_backgrounds[background][1]);
-				}
-			}
-
-			if (gradient == "Random-Card") {
-				const bgs = Object.keys(card_backgrounds);
-				const background = bgs[reallyRand(bgs.length)];
-				gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-				artistCredit = card_backgrounds[background][0];
-				setTextColor(card_backgrounds[background][1]);
-			}
-
-
-			document.body.style.backgroundImage = gradImage;
-			localStorage.setItem("settings.gradient", gradient);
-			console.log("CHANGE");
-			if (document.getElementsByClassName("artist-credit")[0])
-				document.getElementsByClassName("artist-credit")[0].remove();
-			const credit_text = document.createElement("span");
-			credit_text.className = "artist-credit text";
-			credit_text.innerText = `background by ${artistCredit}`;
-			if (artistCredit && document.getElementById("color-select"))
-				document.getElementById("color-select").parentElement.appendChild(credit_text);
-		}
-
-		function reallyRand(x, seed = false) {
-			const date = new Date();
-			seed = seed ? seed : date.getUTCFullYear() * 10000 +
-				date.getUTCMonth() * 100 +
-				date.getUTCDate();
-
-			const a = 1103515245;
-			const c = 12345;
-			const m = Math.pow(2, 31);
-
-			let randomNumber = (a * seed + c) % m;
-			randomNumber = randomNumber / m;
-
-			return Math.floor(randomNumber * x);
-		}
-
-		function setTextColor(c = false) {
-			if (c) {
-				localStorage.setItem("settings.textcolor", c);
-			}
-			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
 		}
 	</script>
 	<script type="module">
@@ -1436,14 +1296,6 @@
 			});
 		}
 
-		document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-		document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-
-		if (localStorage.getItem("settings.darkthememenu") == "On") {
-			document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
-		} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
-			document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
-		}
 
 
 		async function reload() {

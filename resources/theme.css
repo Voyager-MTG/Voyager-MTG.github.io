@@ -1,0 +1,60 @@
+body[data-theme=Dark] {
+	--bg-color: #171717;
+	--popout-text-color: white;
+	--text-color: white;
+	--dark-text-color: #d5d9d9;
+	--light-accent: #333;
+	--mid-accent: #777;
+	--dark-accent: #666;
+	--opposite: #f3f3f3;
+}
+
+body[data-theme=Light] {
+	--bg-color: #f3f3f3;
+	--popout-text-color: black;
+	--text-color: white;
+	--light-accent: #ccc;
+	--mid-accent: #999;
+	--dark-accent: #333;
+	--opposite: #171717;
+	--dark-text-color: #d5d9d9;
+}
+
+body[data-theme=Blue] {
+	--bg-color: #1a3573;
+	--popout-text-color: white;
+	--text-color: white;
+	--light-accent: #15567c;
+	--mid-accent: #2295c3;
+	--dark-accent: #66c7e8;
+	--opposite: #62c8ec;
+	--dark-text-color: #d5d9d9;
+}
+
+/* body[data-theme=Voyager] {
+	--bg-color: #feac2d;
+	--popout-text-color: #a1e1ff;
+	--text-color: white;
+	--light-accent: #da9225;
+	--mid-accent: #c18428;
+	--dark-accent: #905d11;
+	--opposite: #137bb1;
+	--dark-text-color: #d5d9d9;
+} */
+
+.text {
+	color: var(--text-color);
+}
+
+.text-bg {
+	background-color: var(--text-color);
+}
+
+.popout {
+	background-color: var(--bg-color);
+	color: var(--popout-text-color);
+}
+
+body[data-theme="Light"] .tab-switch-icon {
+	filter: invert();
+}

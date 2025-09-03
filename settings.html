@@ -5,6 +5,7 @@
 	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
 	<link rel="stylesheet" href="resources/mana.css">
 	<link rel="stylesheet" href="/resources/header.css">
+	<link rel="stylesheet" href="/resources/theme.css">
 </head>
 <style>
 	.community .community-dropdown {
@@ -70,7 +71,8 @@
 		font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 		font-weight: 500;
 		cursor: pointer;
-		background-color: #F3F3F3;
+		background-color: var(--bg-color);
+		color: var(--text-color);
 		padding: 2px;
 	}
 
@@ -96,7 +98,7 @@
 	hr {
 		width: 85%;
 		height: 4px;
-		background-color: black;
+		background-color: var(--text-color);
 		border-radius: 2px;
 		border: none;
 	}
@@ -116,7 +118,7 @@
 	}
 
 	#modal-content {
-		background-color: #fefefe;
+		background-color: var(--bg-color);
 		margin: auto;
 		padding: 20px;
 		border: 1px solid #888;
@@ -146,16 +148,16 @@
 		padding-left: 20px;
 		padding-right: 20px;
 		font-size: 15px;
-		color: #646464;
-		border-bottom: #ccc solid 2px;
+		color: var(--mid-accent);
+		border-bottom: var(--mid-accent) solid 2px;
 		cursor: pointer;
 		transition: 0.5s;
 		/* width: 100%; */
 	}
 
 	.settings-modal-header-active {
-		color: #333;
-		border-color: #333;
+		color: var(--text-color);
+		border-color: var(--text-color);
 		font-weight: bold;
 	}
 
@@ -223,17 +225,6 @@
 		text-align: center;
 	}
 </style>
-<style id="text-style">
-	.text {
-		color: white;
-	}
-</style>
-<style id="popout-style">
-	.popout {
-		background-color: #f3f3f3;
-		/* color: #f3f3f3; */
-	}
-</style>
 
 <body>
 	<button id="reload" style="display: none;"></button>
@@ -277,9 +268,8 @@
 		<span id="login" class="text"></span>
 		<button class="black-button" id="sign-out"><img src="/img/export-white.png" class="btn-img">Sign Out</button>
 	</div>
-
+	<script src="background.js"></script>
 	<script>
-		let gradients = null;
 		let raw_gradients = null;
 		let gradTop = null;
 		let gradBottom = null;
@@ -290,20 +280,6 @@
 			}
 		}
 		document.addEventListener("DOMContentLoaded", async function () {
-			try {
-				const response = await fetch('/resources/gradients.json');
-				raw_gradients = await response.json();
-			}
-			catch (error) {
-				console.error('Error:', error);
-			}
-
-			gradients = raw_gradients.gradients;
-			card_backgrounds = raw_gradients.cards;
-			setGradient(localStorage.getItem("settings.gradient"));
-			console.log(setGradient);
-			prepareGradients();
-
 			openSettingsModal("Home");
 		});
 
@@ -313,107 +289,8 @@
 		defaultSetting("settings.sanctumbasic", "On");
 		defaultSetting("settings.resultgradient", "On");
 		defaultSetting("settings.darktheme", "Off");
+		defaultSetting("settings.theme", "Light");
 
-		function prepareGradients() {
-			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
-			const opt = document.createElement("option");
-			opt.value = defaultGradient.replace(' ', '-');
-			opt.text = defaultGradient;
-			document.getElementById("color-select").appendChild(opt);
-			let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
-			const opt_rand = document.createElement("option");
-			opt_rand.value = "Random-Card";
-			opt_rand.text = "Random Card";
-
-			document.getElementById("color-select").appendChild(opt_rand);
-			for (const gradient of gradients) {
-				const opt = document.createElement("option");
-				opt.value = gradient.name.replace(' ', '-');
-				opt.text = gradient.name;
-				if (gradient.name != defaultGradient) {
-					document.getElementById("color-select").appendChild(opt);
-				}
-			}
-
-			for (const gradient in card_backgrounds) {
-				const opt = document.createElement("option");
-				opt.value = gradient.replace(' ', '-');
-				opt.text = gradient;
-				if (gradient.name != defaultGradient) {
-					document.getElementById("color-select").appendChild(opt);
-				}
-				console.log(gradient, opt);
-			}
-
-			// setGradient();
-		}
-
-		function setGradient(gradient = false) {
-			let artistCredit = "";
-			if (!gradient) {
-				gradient = document.getElementById("color-select").value;
-			}
-
-			gradTop = "#000000";
-			gradBottom = "#FFFFFF";
-			for (const grad of gradients) {
-				if (gradient == grad.name.replace(' ', '-')) {
-					gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
-				}
-			}
-
-			for (const background in card_backgrounds) {
-				if (gradient == background.replace(' ', '-')) {
-					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-					artistCredit = card_backgrounds[background][0];
-					setTextColor(card_backgrounds[background][1]);
-				}
-			}
-
-			if (gradient == "Random-Card") {
-				const bgs = Object.keys(card_backgrounds);
-				const background = bgs[reallyRand(bgs.length)];
-				gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-				artistCredit = card_backgrounds[background][0];
-				setTextColor(card_backgrounds[background][1]);
-			}
-
-
-			document.body.style.backgroundImage = gradImage;
-			localStorage.setItem("settings.gradient", gradient);
-			console.log("CHANGE");
-			if (document.getElementsByClassName("artist-credit")[0])
-				document.getElementsByClassName("artist-credit")[0].remove();
-			const credit_text = document.createElement("span");
-			credit_text.className = "artist-credit text";
-			credit_text.innerText = `background by ${artistCredit}`;
-			if (artistCredit && document.getElementById("color-select"))
-				document.getElementById("color-select").parentElement.appendChild(credit_text);
-		}
-
-		function reallyRand(x, seed = false) {
-			const date = new Date();
-			seed = seed ? seed : date.getUTCFullYear() * 10000 +
-				date.getUTCMonth() * 100 +
-				date.getUTCDate();
-
-			const a = 1103515245;
-			const c = 12345;
-			const m = Math.pow(2, 31);
-
-			let randomNumber = (a * seed + c) % m;
-			randomNumber = randomNumber / m;
-
-			return Math.floor(randomNumber * x);
-		}
-
-		function setTextColor(c = false) {
-			if (c) {
-				localStorage.setItem("settings.textcolor", c);
-			}
-			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-		}
 		document.getElementById("search").addEventListener("keypress", function (event) {
 			if (event.key === "Enter") {
 				event.preventDefault();
@@ -453,16 +330,8 @@
 				ele.id = menuName;
 				if (menuName == menu) {
 					ele.className = "settings-modal-header-active";
-					if (localStorage.getItem("settings.darkthememenu") == "On") {
-						ele.style.color = "#aaa";
-						ele.style.borderColor = "#ccc";
-					}
 				} else {
 					ele.className = "settings-modal-header";
-					if (localStorage.getItem("settings.darkthememenu") == "On") {
-						ele.style.color = "#333";
-						ele.style.borderColor = "#333";
-					}
 				}
 				headerContainer.appendChild(ele);
 			}
@@ -491,8 +360,8 @@
 					localStorage.setItem("settings.darktheme", val);
 					processDeck();
 				}));
-				contentContainer.appendChild(createText("Dark theme menus: "));
-				contentContainer.appendChild(settingsOptionHtml("Dark Theme Menus", "settings.darkthememenu"));
+				contentContainer.appendChild(createText("Theme: "));
+				contentContainer.appendChild(settingsOptionHtml("Theme", "settings.theme", ["Light", "Dark", "Blue"]));
 				contentContainer.appendChild(createText("Text color: "));
 				contentContainer.appendChild(settingsOptionHtml("Text Color: ", "settings.textcolor", ["Black", "White"]));
 				contentContainer.appendChild(createText("Compact Account Page: "));
@@ -590,8 +459,6 @@
 			document.getElementById("page-container").innerHTML = "";
 			document.getElementById("page-container").appendChild(headerContainer);
 			document.getElementById("page-container").appendChild(contentContainer);
-			prepareGradients();
-			setGradient();
 			document.getElementById("reload").click();
 		}
 
@@ -698,16 +565,6 @@
 			let data = docSnap.data();
 			coll_league_players = JSON.parse(data.players);
 		});
-
-		document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-		document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-
-		if (localStorage.getItem("settings.darkthememenu") == "On") {
-			document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
-		} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
-			document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
-		}
-
 
 		let logged_in = (sessionid != null);
 

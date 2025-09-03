@@ -5,6 +5,7 @@
 	<link rel="icon" type="image/x-icon" href="/img/header/sets.png">
 	<link rel="stylesheet" href="/resources/mana.css">
 	<link rel="stylesheet" href="/resources/header.css">
+	<link rel="stylesheet" href="/resources/theme.css">
 </head>
 <style>
 	@font-face {
@@ -206,11 +207,6 @@
 		max-height: 1em;
 	}
 </style>
-<style id="text-style">
-	.text {
-		color: white;
-	}
-</style>
 
 <body>
 	<div class="header">
@@ -248,6 +244,7 @@
 		<div class="pack-area" id="pack-area">
 		</div>-->
 	</div>
+	<script src="background.js"></script>
 	<script>
 		let card_list_arrayified = [];
 		let specialchars = "";
@@ -274,18 +271,6 @@
 
 			card_list_arrayified = card_list.cards;
 			set_list_arrayified = set_list.sets;
-
-			try {
-				const response = await fetch('/resources/gradients.json');
-				raw_gradients = await response.json();
-			}
-			catch (error) {
-				console.error('Error:', error);
-			}
-
-			gradients = raw_gradients.gradients;
-			card_backgrounds = raw_gradients.cards;
-			setGradient(localStorage.getItem("settings.gradient"));
 			// prepareGradients();
 
 			generateHTML();

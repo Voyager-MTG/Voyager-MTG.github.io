@@ -5,6 +5,7 @@
 	<link rel="icon" type="image/x-icon" href="/img/header/deck.png">
 	<link rel="stylesheet" href="resources/mana.css">
 	<link rel="stylesheet" href="/resources/header.css">
+	<link rel="stylesheet" href="/resources/theme.css">
 </head>
 <style>
 	.community .community-dropdown {
@@ -119,8 +120,8 @@
 		/* background-color: #f3f3f3; */
 		justify-items: center;
 		align-items: center;
-		border-bottom: 3px solid #000;
-		border-top: 4px solid #171717;
+		border-bottom: 3px solid var(--opposite);
+		border-top: 4px solid var(--opposite);
 		border-radius: 6px;
 	}
 
@@ -128,8 +129,8 @@
 		width: 100%;
 		height: 35px;
 		font-size: 16px;
-		background-color: #fafafa;
-		border: 1px solid #d5d9d9;
+		background-color: var(--bg-color);
+		border: 1px solid var(--mid-accent);
 		border-radius: 2px;
 		padding-left: 10px;
 		padding-right: 10px;
@@ -143,10 +144,10 @@
 	}
 
 	button {
-		background-color: #fafafa;
-		border: 1px solid #d5d9d9;
+		background-color: var(--bg-color);
+		border: 1px solid var(--mid-accent);
 		border-radius: 8px;
-		box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+		box-shadow: color-mix(in srgb, var(--mid-accent) 50%, transparent) 0 2px 5px 0;
 		color: #171717;
 		cursor: pointer;
 		font-size: 13px;
@@ -156,21 +157,21 @@
 	}
 
 	button:hover {
-		background-color: #ffffff;
+		background-color: var(--text-color);
 	}
 
 	button:focus {
-		border-color: #171717;
-		box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+		border-color: var(--opposite);
+		box-shadow: color-mix(in srgb, var(--mid-accent) 50%, transparent) 0 2px 5px 0;
 		outline: 0;
 	}
 
 	button:disabled {
 		cursor: auto;
-		background-color: #f7fafa;
+		background-color: var(--light-accent);
 		font-style: italic;
 		box-shadow: none;
-		color: #cccccc;
+		color: var(--mid-accent);
 	}
 
 	.deckbuilder-search-grid .select-text {
@@ -185,9 +186,9 @@
 
 	select {
 		/* background-color: #fafafa; */
-		border: 1px solid #d5d9d9;
+		border: 1px solid var(--light-accent);
 		border-radius: 8px;
-		box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+		box-shadow: color-mix(in srgb, var(--mid-accent), transparent) 0 2px 5px 0;
 		text-align: center;
 		/* color: #171717; */
 		font-size: 13px;
@@ -195,7 +196,7 @@
 	}
 
 	select:focus {
-		outline-color: #4f4f4f;
+		outline-color: var(--dark-accent);
 	}
 
 	.search-image-grid-container {
@@ -245,7 +246,7 @@
 	}
 
 	.card-text {
-		border: 3px solid #171717;
+		border: 3px solid var(--opposite);
 		border-radius: 6px;
 		overflow-y: scroll;
 		scrollbar-width: none;
@@ -294,7 +295,7 @@
 	}
 
 	.img-container .btn {
-		background-color: #ffffffaa;
+		background-color: color-mix(in srgb, var(--bg-color), transparent);
 		background-size: contain;
 		background-position: center;
 		width: 8%;
@@ -307,14 +308,14 @@
 		transform: translate(170%, -150%);
 		opacity: 0.8;
 		border-radius: 100%;
-		border: 2px solid black;
+		border: 2px solid var(--text-color);
 		padding: 3px;
 	}
 
 	.img-container .btn:hover {
 		background-size: contain;
 		background-position: center;
-		background-color: #ffffff;
+		background-color: var(--bg-color);
 	}
 
 	.img-container .hidden-text {
@@ -392,7 +393,7 @@
 		width: 100%;
 		text-align: center;
 		font-style: italic;
-		color: #494949;
+		color: var(--dark-accent);
 	}
 
 	.deck-container {
@@ -433,8 +434,8 @@
 		grid-template-columns: 6fr 3fr 3fr 1fr 1fr 1fr 3fr;
 		gap: 3px;
 		padding: 5px 2.5%;
-		border-bottom: 3px solid #000;
-		border-top: 4px solid #171717;
+		border-bottom: 3px solid var(--text-color);
+		border-top: 4px solid var(--opposite);
 		border-radius: 6px;
 		/* background-color: #f3f3f3; */
 		justify-items: center;
@@ -486,7 +487,7 @@
 	}
 
 	.deck-line {
-		border-top: 1px solid #d5d9d9;
+		border-top: 1px solid var(--dark-text-color);
 		display: grid;
 		grid-template-columns: 1fr 1fr 13fr 1fr;
 		gap: 5px;
@@ -534,7 +535,7 @@
 		display: none;
 		position: absolute;
 		/* background-color: #f3f3f3; */
-		border-top: 1px solid #d5d9d9;
+		border-top: 1px solid var(--dark-text-color);
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 		z-index: 2;
 		font-size: 12px;
@@ -548,13 +549,13 @@
 
 	.rc-menu li {
 		padding: 8px 12px;
-		border: 1px solid #d5d9d9;
+		border: 1px solid var(--dark-text-color);
 		border-top: none;
 		cursor: pointer;
 	}
 
 	.rc-menu li:hover {
-		background-color: #ffffff;
+		background-color: var(--light-accent);
 	}
 
 	.search-grid {
@@ -575,7 +576,6 @@
 		width: 100%;
 		height: 100%;
 		overflow: auto;
-		background-color: rgb(0, 0, 0);
 		background-color: rgba(0, 0, 0, 0.4);
 	}
 
@@ -588,7 +588,7 @@
 	}
 
 	.close {
-		color: #aaaaaa;
+		color: var(--mid-accent);
 		float: right;
 		font-size: 28px;
 		font-weight: bold;
@@ -597,7 +597,7 @@
 
 	.close:hover,
 	.close:focus {
-		color: #000;
+		color: var(--opposite);
 		text-decoration: none;
 		cursor: pointer;
 	}
@@ -617,27 +617,12 @@
 	}
 
 	#modal-content {
-		background-color: #fefefe;
 		margin: auto;
 		padding: 20px;
 		border: 1px solid #888;
 		width: 50%;
 		border-radius: 10px;
 		border: solid #777 3px;
-	}
-
-	.close {
-		color: #aaaaaa;
-		float: right;
-		font-size: 28px;
-		font-weight: bold;
-	}
-
-	.close:hover,
-	.close:focus {
-		color: #000;
-		text-decoration: none;
-		cursor: pointer;
 	}
 
 	.load-btn {
@@ -791,14 +776,14 @@
 		padding-left: 20px;
 		padding-right: 20px;
 		font-size: 15px;
-		color: #aaa;
-		border-bottom: #ccc solid 2px;
+		color: var(--mid-accent);
+		border-bottom: var(--mid-accent) solid 2px;
 		/* width: 100%; */
 	}
 
 	.settings-modal-header-active {
-		color: #333;
-		border-color: #333;
+		color: var(--dark-accent);
+		border-color: var(--dark-accent);
 	}
 
 	.settings-modal-header-container {
@@ -843,14 +828,14 @@
 		display: grid;
 		gap: 5px;
 		/* grid-template-rows: 1fr 2fr 1fr; */
-		background-color: #f3f3f3;
+		background-color: var(--bg-color);
 		border-radius: 8px;
 		/* height: fit-content; */
 		padding: 5px;
 		align-items: center;
 		justify-items: center;
-		border: 2px solid #333;
-		box-shadow: 5px 5px 2px #333;
+		border: 2px solid var(--dark-accent);
+		box-shadow: 5px 5px 2px var(--dark-accent);
 		padding-top: 0px;
 		width: 90%;
 	}
@@ -883,8 +868,8 @@
 
 	.deck-preview-img {
 		max-height: 120px;
-		border: 2px solid black;
-		box-shadow: 7px 7px 2px #999;
+		border: 2px solid var(--opposite);
+		box-shadow: 7px 7px 2px var(--dark-accent);
 		border-radius: 16px;
 		margin-bottom: 7px;
 		cursor: pointer;
@@ -902,14 +887,14 @@
 	.deck-name {
 		font-size: 30px;
 		font-family: beleren;
-		background-color: #ccc;
+		background-color: var(--light-accent);
 		/* border: 2px solid #333; */
 		/* box-shadow: 5px 5px 2px #333; */
 		border-radius: 5px;
 		padding: 5px;
 		margin-bottom: 3px;
 		width: 100%;
-		color: black;
+		color: var(--popout-text-color);
 		text-align: center;
 		/* color: white; */
 	}
@@ -943,17 +928,6 @@
 		.card-img-container {
 			height: 50px;
 		}
-	}
-</style>
-<style id="text-style">
-	.text {
-		color: white;
-	}
-</style>
-<style id="popout-style">
-	.popout {
-		background-color: #f3f3f3;
-		/* color: #f3f3f3; */
 	}
 </style>
 
@@ -1142,6 +1116,7 @@
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
+	<script src="background.js"></script>
 	<script>
 		// initialize variables
 		let search_results = [];
@@ -1538,83 +1513,6 @@
 
 		}
 
-		function prepareGradients() {
-			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
-			const opt = document.createElement("option");
-			opt.value = defaultGradient.replace(' ', '-');
-			opt.text = defaultGradient;
-			document.getElementById("color-select").appendChild(opt);
-			let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
-			const opt_rand = document.createElement("option");
-			opt_rand.value = "Random-Card";
-			opt_rand.text = "Random Card";
-
-			document.getElementById("color-select").appendChild(opt_rand);
-			for (const gradient of gradients) {
-				const opt = document.createElement("option");
-				opt.value = gradient.name.replace(' ', '-');
-				opt.text = gradient.name;
-				if (gradient.name != defaultGradient) {
-					document.getElementById("color-select").appendChild(opt);
-				}
-			}
-
-			for (const gradient in card_backgrounds) {
-				const opt = document.createElement("option");
-				opt.value = gradient.replace(' ', '-');
-				opt.text = gradient;
-				if (gradient.name != defaultGradient) {
-					document.getElementById("color-select").appendChild(opt);
-				}
-				console.log(gradient, opt);
-			}
-
-			// setGradient();
-		}
-
-		function setGradient(gradient = false) {
-			let artistCredit = "";
-			if (!gradient) {
-				gradient = document.getElementById("color-select").value;
-			}
-
-			gradTop = "#000000";
-			gradBottom = "#FFFFFF";
-			for (const grad of gradients) {
-				if (gradient == grad.name.replace(' ', '-')) {
-					gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
-				}
-			}
-
-			for (const background in card_backgrounds) {
-				if (gradient == background.replace(' ', '-')) {
-					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-					artistCredit = card_backgrounds[background][0];
-					setTextColor(card_backgrounds[background][1]);
-				}
-			}
-
-			if (gradient == "Random-Card") {
-				const bgs = Object.keys(card_backgrounds);
-				const background = bgs[reallyRand(bgs.length)];
-				gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-				artistCredit = card_backgrounds[background][0];
-				setTextColor(card_backgrounds[background][1]);
-			}
-
-
-			document.body.style.backgroundImage = gradImage;
-			localStorage.setItem("settings.gradient", gradient);
-			console.log("CHANGE");
-			if (document.getElementsByClassName("artist-credit")[0])
-				document.getElementsByClassName("artist-credit")[0].remove();
-			const credit_text = document.createElement("span");
-			credit_text.className = "artist-credit text";
-			credit_text.innerText = `background by ${artistCredit}`;
-			if (artistCredit && document.getElementById("color-select"))
-				document.getElementById("color-select").parentElement.appendChild(credit_text);
-		}
-
 		function reallyRand(x, seed = false) {
 			const date = new Date();
 			seed = seed ? seed : date.getUTCFullYear() * 10000 +
@@ -1629,14 +1527,6 @@
 			randomNumber = randomNumber / m;
 
 			return Math.floor(randomNumber * x);
-		}
-
-		function setTextColor(c = false) {
-			if (c) {
-				localStorage.setItem("settings.textcolor", c);
-			}
-			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
 		}
 
 		document.getElementById("sort-by").onchange = displayChangeListener;
@@ -2085,7 +1975,7 @@
 			content_container.id = "deck-select-container";
 
 			const deck_search_input = document.createElement("input");
-			deck_search_input.className = "new-run-search-input";
+			deck_search_input.className = "new-run-search-input popout";
 			deck_search_input.placeholder = "Search decks...";
 			deck_search_input.id = "new-run-search-input";
 			deck_search_input.onkeyup = runSearch;
@@ -3784,14 +3674,6 @@
 			const display_style = document.getElementById("display-select").value;
 			if (display_style != "stats") {
 				document.getElementsByClassName("deck-cards-container")[0].innerHTML = deck_cards_html;
-			}
-			// handle settings at the top
-			if (localStorage.getItem("settings.darkthememenu") == "On") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
-				document.getElementById("export-btn").childNodes[1].src = "/img/export-white.png";
-			} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
-				document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
-				document.getElementById("export-btn").childNodes[1].src = "/img/export.png";
 			}
 
 			if (localStorage.getItem("settings.resultgradient") == "Off") {
