@@ -192,11 +192,11 @@
 	.card-text {
 		padding-top: 20px;
 		padding-bottom: 20px;
-		background: #fcfcfc;
+		background: var(--bg-color);
 		width: 100%;
-		border: 1px solid #d5d9d9;
-		border-top: 3px solid #171717;
-		border-bottom: 3px solid #171717;
+		border: 1px solid var(--light-accent);
+		border-top: 3px solid var(--opposite);
+		border-bottom: 3px solid var(--opposite);
 		border-radius: 6px;
 		height: fit-content;
 		min-height: 75%;
@@ -214,6 +214,7 @@
 
 	.card-text .name-cost {
 		font-size: 20px;
+		font-family: beleren;
 		white-space: pre-wrap;
 	}
 
@@ -1737,12 +1738,7 @@
 			let HTML = "";
 
 			for (let i = 0; i < card_effects.length; i++) {
-				let styled_effect = card_effects[i].replace(/\[i\]([^\]]+)\[\/i\]/g, function (matched, _1) {
-					return '<i>' + _1 + '</i>'
-				}).replace(/\[b\]([^\]]+)\[\/b\]/g, function (matched, _1) {
-					return '<b>' + _1 + '</b>'
-				})
-
+				let styled_effect = card_effects[i].replaceAll("[i]", "<i>").replaceAll("[/i]", "</i>").replaceAll("[b]", "<b>").replaceAll("[/b]", "</b>");
 				HTML += styled_effect;
 
 				if (i != card_effects.length - 1) {
