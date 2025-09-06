@@ -894,42 +894,57 @@
 
 		function gridifyRuns(unclaimed_matches = false) {
 			const runs = JSON.parse(event_data.runs)[user_data.username];
+
 			const content_container = document.createElement("div");
 			content_container.className = "runs-container";
+
 			for (const run of runs) {
 				const deck_ele = gridifyDeck(run.deck);
 				deck_ele.appendChild(runStatsHTML(run));
+
 				if (unclaimed_matches) {
 					deck_ele.onclick = () => {
 						const run_id = runs.indexOf(run);
+
 						const match_id = unclaimed_matches[1];
 						const match = unclaimed_matches[0];
+
 						const player = Object.keys(match)[0];
 						const opponent = Object.keys(match)[1];
+
 						let new_runs = JSON.parse(event_data.runs);
 						let new_matches = JSON.parse(event_data.games);
+
 						new_runs[user_data.username][run_id].matches.push(match_id);
 						new_matches[match_id][player][0] = run_id;
 						new_matches[match_id][opponent][0] = run_id;
+
 						updateDoc(doc(db, "events", event), {
 							runs: JSON.stringify(new_runs),
 							games: JSON.stringify(new_matches)
 						});
+
 						document.getElementById("modal-container").style.display = "none";
+
 						alert("Match claimed!");
+
 						reload();
 					}
 				} else {
 					deck_ele.onclick = () => {
 						document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+
 						let deck_header = document.createElement("span");
 						deck_header.className = "deck-window-header";
 						deck_header.innerText = user_data.username + "'s " + run.deck.name;
+
 						document.getElementById("modal-content").appendChild(deck_header);
 						document.getElementById("modal-content").appendChild(deckHTML(run.deck, card_list_arrayified));
+
 						document.getElementById("modal-container").style.display = 'block';
 					}
 				}
+
 				content_container.appendChild(deck_ele);
 			}
 
@@ -939,10 +954,14 @@
 		function runStatsHTML(run) {
 			const matches = run.matches;
 			const record = [0, 0];
+			console.log("matches", matches);
+
 			for (const match_id of matches) {
 				const match = JSON.parse(event_data.games)[match_id];
-				const won_match = parseInt(match[user_data.username]) >= 2;
-				console.log("score", (match));
+				console.log(matches[9])
+				const won_match = parseInt(match[user_data.username][1]) >= 2;
+				console.log("stats", match);
+
 				record[won_match ? 0 : 1]++;
 			}
 

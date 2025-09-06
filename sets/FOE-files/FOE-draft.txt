@@ -2007,9 +2007,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Fault",
-			"collector_number": "380",
+			"collector_number": "379",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/380_Fault.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/379_Fault.jpg"
 			}
 		},
 		{
@@ -2027,9 +2027,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Fault",
-			"collector_number": "379",
+			"collector_number": "377",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/379_Fault.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/377_Fault.jpg"
 			}
 		},
 		{
@@ -2037,9 +2037,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Fault",
-			"collector_number": "377",
+			"collector_number": "376",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/377_Fault.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/376_Fault.jpg"
 			}
 		},
 		{
@@ -2050,16 +2050,6 @@
 			"collector_number": "375",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/375_Forest.jpg"
-			}
-		},
-		{
-			"name": "Forest",
-			"rarity": "common",
-			"mana_cost": "",
-			"type": "Basic Land — Forest",
-			"collector_number": "376",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/376_Forest.jpg"
 			}
 		},
 		{
@@ -2083,23 +2073,13 @@
 			}
 		},
 		{
-			"name": "Island",
+			"name": "Forest",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Basic Land — Island",
-			"collector_number": "364",
+			"type": "Basic Land — Forest",
+			"collector_number": "372",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/364_Island.jpg"
-			}
-		},
-		{
-			"name": "Island",
-			"rarity": "common",
-			"mana_cost": "",
-			"type": "Basic Land — Island",
-			"collector_number": "361",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/361_Island.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/372_Forest.jpg"
 			}
 		},
 		{
@@ -2117,6 +2097,26 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Island",
+			"collector_number": "360",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/360_Island.jpg"
+			}
+		},
+		{
+			"name": "Island",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Island",
+			"collector_number": "361",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/361_Island.jpg"
+			}
+		},
+		{
+			"name": "Island",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Island",
 			"collector_number": "362",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/362_Island.jpg"
@@ -2127,19 +2127,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Mountain",
-			"collector_number": "371",
+			"collector_number": "368",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/371_Mountain.jpg"
-			}
-		},
-		{
-			"name": "Mountain",
-			"rarity": "common",
-			"mana_cost": "",
-			"type": "Basic Land — Mountain",
-			"collector_number": "370",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/370_Mountain.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/368_Mountain.jpg"
 			}
 		},
 		{
@@ -2157,9 +2147,19 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Mountain",
-			"collector_number": "372",
+			"collector_number": "370",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/372_Mountain.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/370_Mountain.jpg"
+			}
+		},
+		{
+			"name": "Mountain",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Mountain",
+			"collector_number": "371",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/371_Mountain.jpg"
 			}
 		},
 		{
@@ -2167,9 +2167,19 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Plains",
-			"collector_number": "358",
+			"collector_number": "356",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/358_Plains.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/356_Plains.jpg"
+			}
+		},
+		{
+			"name": "Plains",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Plains",
+			"collector_number": "359",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/359_Plains.jpg"
 			}
 		},
 		{
@@ -2187,39 +2197,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Basic Land — Plains",
-			"collector_number": "360",
+			"collector_number": "358",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/360_Plains.jpg"
-			}
-		},
-		{
-			"name": "Plains",
-			"rarity": "common",
-			"mana_cost": "",
-			"type": "Basic Land — Plains",
-			"collector_number": "359",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/359_Plains.jpg"
-			}
-		},
-		{
-			"name": "Swamp",
-			"rarity": "common",
-			"mana_cost": "",
-			"type": "Basic Land — Swamp",
-			"collector_number": "368",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/368_Swamp.jpg"
-			}
-		},
-		{
-			"name": "Swamp",
-			"rarity": "common",
-			"mana_cost": "",
-			"type": "Basic Land — Swamp",
-			"collector_number": "367",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/367_Swamp.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/358_Plains.jpg"
 			}
 		},
 		{
@@ -2240,6 +2220,26 @@
 			"collector_number": "365",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/365_Swamp.jpg"
+			}
+		},
+		{
+			"name": "Swamp",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Swamp",
+			"collector_number": "364",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/364_Swamp.jpg"
+			}
+		},
+		{
+			"name": "Swamp",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Swamp",
+			"collector_number": "367",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/367_Swamp.jpg"
 			}
 		},
 		{
@@ -2654,9 +2654,9 @@
 			"rarity": "mythic",
 			"mana_cost": "",
 			"type": "Land",
-			"collector_number": "356",
+			"collector_number": "355",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/356_Tavern Sanctum.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/355_Tavern Sanctum.jpg"
 			}
 		},
 		{
@@ -4109,9 +4109,9 @@
 			"rarity": "mythic",
 			"mana_cost": "",
 			"type": "Land",
-			"collector_number": "355",
+			"collector_number": "354",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/355_Shifting Spire.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/354_Shifting Spire.jpg"
 			}
 		},
 		{
@@ -4891,16 +4891,6 @@
 				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/249_Kalim, Shivta's Ear.jpg"
 			}
 		},
-		{
-			"name": "Frontier of Eternity",
-			"rarity": "mythic",
-			"mana_cost": "",
-			"type": "Land — Frontier",
-			"collector_number": "354",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/FOE-files/img/354_Frontier of Eternity.jpg"
-			}
-		},
 	]
 
 [cube(15)]
@@ -5306,4 +5296,3 @@
 	1 Form of the Paths
 	1 Stinging Surveyor
 	1 Kalim, Shivta's Ear
-	1 Frontier of Eternity
