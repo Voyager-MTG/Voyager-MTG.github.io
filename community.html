@@ -872,19 +872,12 @@
 			}, seconds * 1000);
 		}
 
-		function prettifyEffects(card_effect) {
+		function prettifyEffects(card_effects) {
 			let HTML = "";
 
-			let styled_effect = card_effect.replace(/(\[i\])+(.+?)(\[\/i\])+/gs, function (matched, _1, _2) {
-				return '<i>' + _2 + '</i>'
-			}).replaceAll(/(\[b\])+(.+?)(\[\/b\])+/gs, function (matched, _1, _2) {
-				return '<b>' + _2 + '</b>'
-			});
-
-			let card_effects = styled_effect.split("\n");
-
 			for (let i = 0; i < card_effects.length; i++) {
-				HTML += card_effects[i];
+				let styled_effect = card_effects[i].replaceAll("[i]", "<i>").replaceAll("[/i]", "</i>").replaceAll("[b]", "<b>").replaceAll("[/b]", "</b>");
+				HTML += styled_effect;
 
 				if (i != card_effects.length - 1) {
 					HTML += "<br>"

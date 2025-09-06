@@ -422,7 +422,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Ryky",
-            "notes": "!designer Kogane"
+            "notes": "!tag<lairnumber> 4\n!tag<lairauthor> voyager\n!tag<lair> top cards I\n!designer Kogane"
         },
         {
             "card_name": "The Heart of Ischav",
@@ -441,7 +441,7 @@
             "loyalty": "",
             "designer": "Wende",
             "artist": "Ryky",
-            "notes": "!designer Wende"
+            "notes": "!tag<lairnumber> 4\n!tag<lairauthor> voyager\n!tag<lair> top cards I\n!designer Wende"
         },
         {
             "card_name": "Found Family",
@@ -460,7 +460,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ryky",
-            "notes": "WHITEUNCOMMON\nUW10\n!designer Myr"
+            "notes": "!tag<lairnumber> 4\n!tag<lairauthor> voyager\n!tag<lair> top cards I\nWHITEUNCOMMON\nUW10\n!designer Myr"
         },
         {
             "card_name": "Delete",
@@ -479,7 +479,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ryky",
-            "notes": "BLACKCOMMON\nCB12\n!designer Myr"
+            "notes": "!tag<lairnumber> 4\n!tag<lairauthor> voyager\n!tag<lair> top cards I\nBLACKCOMMON\nCB12\n!designer Myr"
         },
         {
             "card_name": "The Calm Belt",
@@ -498,7 +498,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Ryky",
-            "notes": "!designer TVP"
+            "notes": "!tag<lairnumber> 4\n!tag<lairauthor> voyager\n!tag<lair> top cards I\n!designer TVP"
         },
         {
             "card_name": "Wanderer's Shrine",
@@ -517,7 +517,7 @@
             "loyalty": "",
             "designer": "Wende",
             "artist": "Ryky",
-            "notes": "!designer Wende"
+            "notes": "!tag<lairnumber> 4\n!tag<lairauthor> voyager\n!tag<lair> top cards I\n!designer Wende"
         },
         {
             "card_name": "Falling Sparks",
@@ -536,7 +536,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Ryky",
-            "notes": "!designer TVP"
+            "notes": "!tag<lairnumber> 4\n!tag<lairauthor> voyager\n!tag<lair> top cards I\n!designer TVP"
         },
         {
             "card_name": "Sundown",
@@ -555,7 +555,7 @@
             "loyalty": "",
             "designer": "Aanginer",
             "artist": "Ryky",
-            "notes": "!designer Aanginer\n\nhttps://www.deviantart.com/ryky/art/ALL-COMMISSIONS-FOR-75-USD-READ-DESCRIPTIONS-744213721"
+            "notes": "!tag<lairnumber> 4\n!tag<lairauthor> voyager\n!tag<lair> top cards I\n!designer Aanginer\n\nhttps://www.deviantart.com/ryky/art/ALL-COMMISSIONS-FOR-75-USD-READ-DESCRIPTIONS-744213721"
         },
         {
             "card_name": "Restored Plains",
@@ -574,7 +574,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "T1na",
-            "notes": "!tapped\n!designer TVP"
+            "notes": "!tag<lairnumber> 5\n!tag<lairauthor> aanginer\n!tag<lair> restoration\n!tapped\n!designer TVP"
         },
         {
             "card_name": "Restored Island",
@@ -593,7 +593,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "T1Na",
-            "notes": "!designer TVP\n!tapped"
+            "notes": "!tag<lairnumber> 5\n!tag<lairauthor> aanginer\n!tag<lair> restoration\n!designer TVP\n!tapped"
         },
         {
             "card_name": "Restored Swamp",
@@ -612,7 +612,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "T1na",
-            "notes": "!designer TVP\n!tapped\n"
+            "notes": "!tag<lairnumber> 5\n!tag<lairauthor> aanginer\n!tag<lair> restoration\n!designer TVP\n!tapped\n"
         },
         {
             "card_name": "Restored Mountain",
@@ -631,7 +631,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "T1na",
-            "notes": "!designer TVP\n!tapped"
+            "notes": "!tag<lairnumber> 5\n!tag<lairauthor> aanginer\n!tag<lair> restoration\n!designer TVP\n!tapped"
         },
         {
             "card_name": "Restored Fault",
@@ -650,7 +650,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "T1na",
-            "notes": "!designer TVP\n!tapped"
+            "notes": "!tag<lairnumber> 5\n!tag<lairauthor> aanginer\n!tag<lair> restoration\n!designer TVP\n!tapped"
         },
         {
             "card_name": "Restored Forest",
@@ -669,7 +669,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "T1na",
-            "notes": "!designer TVP\n!tapped"
+            "notes": "!tag<lairnumber> 5\n!tag<lairauthor> aanginer\n!tag<lair> restoration\n!designer TVP\n!tapped"
         },
         {
             "card_name": "Call of the Rose",
@@ -688,7 +688,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "T1na",
-            "notes": "!tag Dewold\n!tag Rey\n!ocean\n!designer Zangy"
+            "notes": "!tag<is> champion\n!tag<champion> aanginer\n!tag Dewold\n!tag Rey\n!ocean\n!designer Zangy"
         }
     ]
 }

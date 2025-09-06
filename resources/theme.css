@@ -31,6 +31,17 @@ body[data-theme=Blue] {
 	--dark-text-color: #d5d9d9;
 }
 
+body[data-theme=Purple] {
+	--bg-color: #461a73;
+	--popout-text-color: white;
+	--text-color: white;
+	--light-accent: #45157c;
+	--mid-accent: #6d22c3;
+	--dark-accent: #9466e8;
+	--opposite: #a562ec;
+	--dark-text-color: #d5d9d9;
+}
+
 /* body[data-theme=Voyager] {
 	--bg-color: #feac2d;
 	--popout-text-color: #a1e1ff;
