@@ -765,6 +765,15 @@
 		color: rgb(211, 22, 56);
 	}
 
+	.new-run-search-input {
+		width: 100%;
+		padding: 3px;
+		font-size: 1.1em;
+		border-radius: 4px;
+		border: 2px solid gray;
+
+	}
+
 	/* mobile layout changes*/
 	@media (max-device-width: 850px) {
 		.round-container {
@@ -2441,16 +2450,87 @@
 			alert("Dropped " + username + ". Ping aanginer to be re-added.");
 		}
 
-		async function joinGP(event_data) {
+		// async function joinGP(event_data) {
+		// 	document.getElementById("modal-content").innerHTML = '<span class="close" onclick="closeModal()">&times;</span>';
+		// 	document.getElementById("modal-container").style.display = "block";
+
+		// 	const content_container = document.createElement("div");
+		// 	content_container.className = "deck-select-container";
+
+		// 	for (const deck of decks) {
+		// 		const deck_ele = gridifyDeck(deck);
+
+		// 		deck_ele.onclick = () => {
+		// 			const new_decks = event_data.decks;
+		// 			new_decks[username] = deck;
+
+		// 			updateDoc(doc(db, "events", event), {
+		// 				decks: (new_decks)
+		// 			});
+
+		// 			alert("Deck Submitted!");
+
+		// 			document.getElementById("modal-container").style.display = "none";
+		// 		}
+
+		// 		content_container.appendChild(deck_ele);
+		// 	}
+
+		// 	document.getElementById("modal-content").appendChild(content_container);
+		// }
+
+		function joinGP() {
 			document.getElementById("modal-content").innerHTML = '<span class="close" onclick="closeModal()">&times;</span>';
 			document.getElementById("modal-container").style.display = "block";
 
 			const content_container = document.createElement("div");
 			content_container.className = "deck-select-container";
+			content_container.id = "deck-select-container";
+
+			const deck_search_input = document.createElement("input");
+			deck_search_input.className = "new-run-search-input";
+			deck_search_input.placeholder = "Search decks...";
+			deck_search_input.id = "new-run-search-input";
+			deck_search_input.onkeyup = runSearch;
+
+			document.getElementById("modal-content").appendChild(deck_search_input);
+			console.log(deck_search_input);
+			document.getElementById("modal-content").appendChild(content_container);
+
+			runSearch();
+		}
+
+		function runSearch() {
+			const search_terms = document.getElementById("new-run-search-input").value.matchAll(/(\[\[.*?\]\]|\S+)/g);
+			let search_terms_arrayified = [];
+			let search_results = [];
+
+			for (const t of search_terms) {
+				search_terms_arrayified.push(t);
+			}
+
+			if (search_terms_arrayified.length == 0) search_terms_arrayified = [["", ""]];
 
 			for (const deck of decks) {
-				const deck_ele = gridifyDeck(deck);
+				const decklist = atob(deck.url.split(";")[1].split("&main")[0]).toLowerCase();
+				for (const term_ of search_terms_arrayified) {
+					const term = term_[0];
+					console.log(term);
+					if (term.includes("[[") && term.includes("]]")) {
+						if (decklist.includes(term.split("[[")[1].split("]]")[0].toLowerCase())) {
+							search_results.push(deck);
+						}
+					}
+					else if (deck.name.toLowerCase().includes(term.toLowerCase())) {
+						search_results.push(deck);
+					}
+				}
+			}
 
+			document.getElementById("deck-select-container").innerHTML = "";
+
+			for (const deck of search_results) {
+				const deck_ele = gridifyDeck(deck);
 				deck_ele.onclick = () => {
 					const new_decks = event_data.decks;
 					new_decks[username] = deck;
@@ -2463,38 +2543,32 @@
 
 					document.getElementById("modal-container").style.display = "none";
 				}
-
-				content_container.appendChild(deck_ele);
+				document.getElementById("deck-select-container").appendChild(deck_ele);
 			}
-
-			document.getElementById("modal-content").appendChild(content_container);
 		}
 
 		function gridifyDeck(deck) {
 			const container = document.createElement("div");
 			container.className = "deck-container";
-
 			const preview_img = document.createElement("img");
-
 			let card_stats;
-
 			for (const card of card_list_arrayified) {
 				if (deck.previewimg == card.card_name) {
 					card_stats = card;
 					break;
 				}
 			}
-
-			preview_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+			preview_img.src = card_stats ? "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type : "/img/card_back.png";
 			preview_img.className = "deck-preview-img";
-
+			// preview_img.onclick = function() {
+			//     window.location.href = `/deckbuilder?deck=${deck.user}-${encodeURI(deck.name)}`
+			// }
 			const deck_name = document.createElement("div");
 			deck_name.className = "deck-name";
 			deck_name.innerText = deck.name;
 
 			container.appendChild(deck_name);
 			container.appendChild(preview_img);
-
 			return container;
 		}
 
