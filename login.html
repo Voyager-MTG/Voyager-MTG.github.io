@@ -242,9 +242,13 @@
 				if (!data.salt) {
 					data.salt = generateSalt();
 					data.password = await sha256(data.password + data.salt + data.username);
+					await updateDoc(doc(db, "users", name), {
+						salt: data.salt,
+						password: data.password
+					});
 				}
 
-				let current_password_hashed = await sha256(password + data.salt + data.username);
+				let current_password_hashed = await sha256(pw + data.salt + data.username);
 
 				if (current_password_hashed != data.password) {
 					alert("Incorrect Password!");

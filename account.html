@@ -518,6 +518,11 @@
 
 		const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
 			let data = docSnap.data();
+
+			if (!data) {
+				window.location.href = "/login";
+			}
+
 			username = data.username;
 			password = data.password;
 		});
