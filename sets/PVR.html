@@ -4,6 +4,7 @@
   <link rel="icon" type="image/x-icon" href="/sets/PVR-files/icon.png">
   <link rel="stylesheet" href="/resources/mana.css">
   <link rel="stylesheet" href="/resources/header.css">
+  <link rel="stylesheet" href="/resources/theme.css">
 </head>
 <style>
     .community .community-dropdown {
@@ -57,14 +58,21 @@
 		font-family: 'Helvetica', 'Arial', sans-serif;
 		overscroll-behavior: none;
 		margin: 0px;
-		background-color: #f3f3f3;
-               background-attachment: fixed;
+		background-color: var(--bg-color);
+        background-attachment: fixed;
 		background-size: cover;
+		background-image: url("PVR-files/bg.jpg");
 	}
 	.banner {
 		width: 100%;
-		background-color: #bbbbbb;
+		background-color: color-mix(in srgb, var(--mid-accent) 60%, transparent);
+		position: sticky;
+		top: 0;
+		z-index: 1;
+		border-bottom: 2px solid var(--popout-text-color);
+		color: var(--popout-text-color);
 	}
+
 	.banner-container {
 		width: 85%;
 		max-width: 1100px;
@@ -74,13 +82,13 @@
 		align-items: center;
 		margin: auto;
 	}
+
 	.set-banner {
 		font-family: Beleren;
 		display: flex;
 		align-items: center;
 		justify-items: center;
 		font-size: 26px;
-		color: #171717;
 		margin: auto;
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -88,18 +96,18 @@
 		width: 100%;
 		white-space: nowrap;
 	}
+
 	.set-banner img {
 		width: 50px;
 		padding-right: 8px;
 	}
+
 	.set-banner a {
 		font-size: 18px;
 		padding-top: 6px;
-		color: #1338be;
-		text-decoration: none;
-	}
-	.set-banner a:hover {
-		color: #0492c2;
+		color: var(--popout-text-color);
+		transition: 0.2s;
+		text-decoration: underline;
 	}
 	.select-text {
 		display: flex;
@@ -111,12 +119,12 @@
 		text-align: center;
 	}
 	select {
-		background-color: #fafafa;
-		border: 1px solid #656565;
+		background-color: var(--bg-color);
+		border: 1px solid var(--mid-accent);
 		border-radius: 8px;
 		box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
 		text-align: center;
-		color: #171717;
+		color: var(--popout-text-color);
 		font-size: 13px;
 		height: 30px;
 	}
@@ -197,11 +205,10 @@
 	.card-text {
 		padding-top: 20px;
 		padding-bottom: 20px;
-		background: #fcfcfc;
 		width: 100%;
-		border: 1px solid #d5d9d9;
-		border-top: 3px solid #171717;
-		border-bottom: 3px solid #171717;
+		border: 1px solid var(--mid-accent);
+		border-top: 3px solid var(--dark-accent);
+		border-bottom: 3px solid var(--dark-accent);
 		border-radius: 6px;
 		height: fit-content;
 		min-height: 75%;
@@ -363,13 +370,13 @@
 						class="sg-icon">Community<b>⮟</b></a>
 				<div class="community-dropdown">
 					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/header/community.png">Users</a>
+							src="/img/header/community.png">Users</a>
 					<a href="/community?tab=decks" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/header/deck.png">Decks</a>
+							src="/img/header/deck.png">Decks</a>
 					<a href="/community?tab=events" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/swords.png">Events</a>
+							src="/img/swords.png">Events</a>
 					<a href="/community?tab=cards" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/header/sets.png">Cards</a>
+							src="/img/header/sets.png">Cards</a>
 				</div>
 			</div>
 			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
@@ -414,7 +421,7 @@
 			<canvas id="canvas" class="canvas"></canvas>
 		</div>
 	</div>
-
+	<script src="/background.js"></script>
 	<script>
 		let card_list_arrayified = [];
 		let set_list_arrayified = [];
@@ -455,6 +462,9 @@
 			}
 					buttons.style.display = 'none';
 		setCardView();
+		
+		document.body.style.backgroundImage = 'url("PVR-files/bg.jpg")';
+		
 		});
 
 		document.getElementById("sort-by").onchange = displayChangeListener;

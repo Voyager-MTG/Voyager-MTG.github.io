@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 	document.body.style.setProperty("--text-color", localStorage.getItem("settings.textcolor"));
 
 	try {
-		const response = await fetch('./resources/gradients.json');
+		const response = await fetch('/resources/gradients.json');
 		raw_gradients = await response.json();
 	}
 	catch (error) {

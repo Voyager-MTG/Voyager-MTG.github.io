@@ -24,6 +24,7 @@ def generateHTML(code):
   <link rel="icon" type="image/x-icon" href="/sets/''' + code + '''-files/icon.png">
   <link rel="stylesheet" href="/resources/mana.css">
   <link rel="stylesheet" href="/resources/header.css">
+  <link rel="stylesheet" href="/resources/theme.css">
 </head>
 <style>
     .community .community-dropdown {
@@ -77,14 +78,26 @@ def generateHTML(code):
 		font-family: 'Helvetica', 'Arial', sans-serif;
 		overscroll-behavior: none;
 		margin: 0px;
-		background-color: #f3f3f3;
-               background-attachment: fixed;
+		background-color: var(--bg-color);
+        background-attachment: fixed;
 		background-size: cover;
+		''' 
+	bg_path = os.path.join("sets", code + "-files", "bg.jpg")
+	if os.path.exists(bg_path):
+		html_content += f'background-image: url("{code}-files/bg.jpg");'
+		 			
+	html_content += '''
 	}
 	.banner {
 		width: 100%;
-		background-color: #bbbbbb;
+		background-color: color-mix(in srgb, var(--mid-accent) 60%, transparent);
+		position: sticky;
+		top: 0;
+		z-index: 1;
+		border-bottom: 2px solid var(--popout-text-color);
+		color: var(--popout-text-color);
 	}
+
 	.banner-container {
 		width: 85%;
 		max-width: 1100px;
@@ -94,13 +107,13 @@ def generateHTML(code):
 		align-items: center;
 		margin: auto;
 	}
+
 	.set-banner {
 		font-family: Beleren;
 		display: flex;
 		align-items: center;
 		justify-items: center;
 		font-size: 26px;
-		color: #171717;
 		margin: auto;
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -108,18 +121,18 @@ def generateHTML(code):
 		width: 100%;
 		white-space: nowrap;
 	}
+
 	.set-banner img {
 		width: 50px;
 		padding-right: 8px;
 	}
+
 	.set-banner a {
 		font-size: 18px;
 		padding-top: 6px;
-		color: #1338be;
-		text-decoration: none;
-	}
-	.set-banner a:hover {
-		color: #0492c2;
+		color: var(--popout-text-color);
+		transition: 0.2s;
+		text-decoration: underline;
 	}
 	.select-text {
 		display: flex;
@@ -131,12 +144,12 @@ def generateHTML(code):
 		text-align: center;
 	}
 	select {
-		background-color: #fafafa;
-		border: 1px solid #656565;
+		background-color: var(--bg-color);
+		border: 1px solid var(--mid-accent);
 		border-radius: 8px;
 		box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
 		text-align: center;
-		color: #171717;
+		color: var(--popout-text-color);
 		font-size: 13px;
 		height: 30px;
 	}
@@ -217,11 +230,10 @@ def generateHTML(code):
 	.card-text {
 		padding-top: 20px;
 		padding-bottom: 20px;
-		background: #fcfcfc;
 		width: 100%;
-		border: 1px solid #d5d9d9;
-		border-top: 3px solid #171717;
-		border-bottom: 3px solid #171717;
+		border: 1px solid var(--mid-accent);
+		border-top: 3px solid var(--dark-accent);
+		border-bottom: 3px solid var(--dark-accent);
 		border-radius: 6px;
 		height: fit-content;
 		min-height: 75%;
@@ -450,7 +462,7 @@ def generateHTML(code):
 			<canvas id="canvas" class="canvas"></canvas>
 		</div>
 	</div>
-
+	<script src="/background.js"></script>
 	<script>
 		let card_list_arrayified = [];
 		let set_list_arrayified = [];
@@ -488,7 +500,10 @@ def generateHTML(code):
 		html_content += '''		switchView('splash');'''
 	else:
 		html_content += '''		buttons.style.display = 'none';
-		setCardView();'''
+		setCardView();
+		
+		document.body.style.backgroundImage = 'url("''' + code + '''-files/bg.jpg")';
+		'''
 
 	html_content += '''
 		});
