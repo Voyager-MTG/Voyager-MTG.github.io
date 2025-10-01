@@ -1,8 +1,10 @@
-await fetch('/lists/banlist.json')
-	.then(response => response.json())
-	.then(json => {
-		banlist = json;
-	}).catch(error => console.error('Error:', error));
+document.addEventListener("DOMContentLoaded", async () => {
+	await fetch('/lists/banlist.json')
+		.then(response => response.json())
+		.then(json => {
+			banlist = json;
+		}).catch(error => console.error('Error:', error));
+});
 
 function isBannedCard(card_name) {
 	return banlist.banned.includes(card_name);
