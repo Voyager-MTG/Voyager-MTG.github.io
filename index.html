@@ -4,6 +4,11 @@
 	<title>Voyager</title>
 	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="src/css/pages/index.css">
+	<link rel="stylesheet" href="src/css/modal.css">
+	<link rel="stylesheet" href="src/css/img-container.css">
+	<link rel="stylesheet" href="src/css/theme.css">
+	<link rel="stylesheet" href="src/css/header.css">
 </head>
 
 <style id="gradient-style">
@@ -24,6 +29,7 @@
 		<select id="color-select" onchange="setGradient()">
 		</select>
 		<img src="img/header/settings.png" class="settings-icon" onclick="openSettingsModal()">
+		<img src="img/header/account.png" class="settings-icon" onclick="window.location.href = `/account`">
 	</div>
 	<div id="gradient"></div>
 	<div class="item-container">
@@ -168,6 +174,7 @@
 			<canvas id="canvas2"></canvas>
 		</div>
 	</div>
+	<script src="src/js/background.js"></script>
 	<script>
 		const delay = ms => new Promise(res => setTimeout(res, ms));
 		let gradients = [];

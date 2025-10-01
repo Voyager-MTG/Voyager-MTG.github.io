@@ -48,15 +48,6 @@ body::before {
 	padding-bottom: 20px;
 }
 
-select {
-	position: absolute;
-	text-align: center;
-	font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-	font-weight: 500;
-	cursor: pointer;
-	background-color: #F3F3F3;
-}
-
 div:has(input) {
 	width: 100%;
 	max-width: 700px;
@@ -131,6 +122,8 @@ input:focus {
 	gap: 20px;
 	padding-top: 10px;
 	padding-bottom: 20px;
+	width: fit-content;
+	padding-right: 4%;
 }
 
 .button-grid button {
@@ -338,8 +331,8 @@ button:hover {
 .settings {
 	position: relative;
 	float: right;
-	/* width: fit-content; */
-	margin: 10px;
+	margin: 20px;
+	width: 98%;
 }
 
 #modal-container {
