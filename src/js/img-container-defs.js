@@ -78,7 +78,7 @@ function gridifyCard(card_stats, card_text = false, rotate_card = false, designe
 		display_type = false;
 	}
 
-	card_text = false; // WHYYYYYYYYYYY DO I HAVE TO DO THIS JS
+	// card_text = false; // WHYYYYYYYYYYY DO I HAVE TO DO THIS JS
 
 	let _card_text = false;
 
@@ -214,6 +214,7 @@ function buildImgContainer(card_stats, hidden_title = false, rotate_card = false
 	let banned_overlay;
 
 	if (isBannedCard(card_stats.card_name)) {
+		banned_overlay = document.createElement("div");
 		banned_overlay.className = "banned-overlay";
 	}
 
