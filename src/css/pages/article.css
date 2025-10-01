@@ -1,0 +1,101 @@
+.artist-credit {
+	left: 160px;
+	position: absolute;
+	width: 240px;
+}
+
+.page-container {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	width: 100%;
+}
+
+hr {
+	width: 85%;
+	height: 4px;
+	background-color: black;
+	border-radius: 2px;
+	border: none;
+}
+
+.hover-card {
+	display: none;
+	position: absolute;
+	height: 262px;
+	width: 188px;
+	pointer-events: none;
+}
+
+.card-hover-text {
+	font-weight: bold;
+	color: #1338be;
+	transition: 0.2s;
+}
+
+.card-hover-text:hover {
+	color: #0492c2;
+}
+
+.article-content {
+	width: 80%;
+	margin: auto;
+	margin-top: 80px;
+	border-radius: 20px;
+	padding: 30px;
+}
+
+body {
+	font-size: 1.1em;
+}
+
+h1 {
+	font-size: 3em;
+	padding-bottom: 10px;
+	border-bottom: 2px solid gray;
+}
+
+h2 {
+	font-size: 2em;
+	padding-bottom: 10px;
+	border-bottom: 1px solid gray;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+set-cards {
+	grid-template-columns: 1fr 1fr;
+	display: grid;
+}
+
+left-card {
+	border-right: 1px solid gray;
+	border-top: 1px solid gray;
+	padding: 20px;
+}
+
+right-card {
+	/* border-right: 1px solid gray; */
+	border-top: 1px solid gray;
+	padding: 20px;
+}
+
+.header-hover {
+	margin-left: 15px;
+	color: rgb(99, 103, 219);
+	display: none;
+	cursor: pointer;
+}
+
+h2:hover .header-hover {
+	display: inline;
+}
+
+@media (max-width: 750px) {
+	set-cards {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}

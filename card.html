@@ -3,535 +3,14 @@
 <head>
 	<title>Card</title>
 	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
-	<link rel="stylesheet" href="/resources/mana.css">
-	<link rel="stylesheet" href="/resources/header.css">
-	<link rel="stylesheet" href="/resources/theme.css">
-	<!-- <meta id="meta-card-name" content="CARDNAME" property="og:title" />
-	<meta id="meta-card-desc" content="DESCRIPTION" property="og:description" />
-	<meta id="meta-card-url" content="MYLINK" property="og:url" />
-	<meta id="meta-card-img" content="CARDIMG" property="og:image" />
-	<meta content="#f1824a" data-react-helmet="true" name="theme-color" /> -->
+	<link rel="stylesheet" href="/src/css/mana.css">
+	<link rel="stylesheet" href="/src/css/header.css">
+	<link rel="stylesheet" href="/src/css/theme.css">
+	<link rel="stylesheet" href="/src/css/modal.css">
+	<link rel="stylesheet" href="/src/css/deck-container.css">
+	<link rel="stylesheet" href="/src/css/img-container.css">
+	<link rel="stylesheet" href="/src/css/pages/card.css">
 </head>
-<style>
-	.community .community-dropdown {
-		display: none;
-	}
-
-	.community:hover .community-dropdown {
-		display: grid;
-	}
-
-	/* .community-dropdown:hover {
-		display: grid;
-	} */
-
-	.community-dropdown {
-		grid-template-rows: repeat(4, 1fr);
-		color: white;
-		position: absolute;
-		padding-top: 20px;
-		background-color: #171717;
-		padding: 10px;
-		width: 120px;
-		gap: 5px;
-		font-size: 0.85em;
-	}
-
-	.community-dropdown-item {
-		display: flex;
-		align-items: center;
-		justify-items: center;
-		gap: 5px;
-	}
-
-	.community-dropdown-item:hover {
-		text-decoration: underline;
-		cursor: pointer;
-	}
-
-	.dropdown-icon {
-		max-height: 1em;
-	}
-
-	colortest {
-		color: #f1824a;
-	}
-
-	@font-face {
-		font-family: Beleren;
-		src: url('/resources/beleren.ttf');
-	}
-
-	body {
-		font-family: 'Helvetica', 'Arial', sans-serif;
-		overscroll-behavior: none;
-		margin: 0px;
-		background-color: #f3f3f3;
-		height: 100%;
-		background-attachment: fixed;
-		background-size: cover;
-	}
-
-	a {
-		text-decoration: none;
-	}
-
-	.banner-container {
-		width: 100%;
-		/* background-color: #bbbbbb; */
-		display: flex;
-		justify-items: center;
-		align-items: center;
-	}
-
-	.set-banner {
-		font-family: Beleren;
-		display: flex;
-		gap: 30px;
-		align-items: center;
-		justify-items: center;
-		font-size: 40px;
-		color: #171717;
-		margin: auto;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-
-	.set-banner img {
-		width: 100px;
-	}
-
-	.image-grid {
-		padding-top: 40px;
-		width: 70%;
-		max-width: 1000px;
-		margin: auto;
-		display: grid;
-		grid-template-columns: minmax(200px, 2fr) minmax(200px, 2.5fr);
-		gap: 30px;
-		padding-bottom: 10px;
-		justify-items: center;
-	}
-
-	.image-grid img {
-		position: relative;
-	}
-
-	.card-image {
-		float: left;
-		width: 100%;
-		max-width: 375px;
-		height: auto;
-		display: block;
-	}
-
-	.card-text {
-		padding-top: 20px;
-		padding-bottom: 20px;
-		width: 100%;
-		border: 1px solid var(--light-accent);
-		border-top: 3px solid var(--opposite);
-		border-bottom: 3px solid var(--opposite);
-		border-radius: 6px;
-		height: fit-content;
-		min-height: 75%;
-		margin-top: 3%;
-		display: flex;
-		flex-direction: column;
-	}
-
-	.card-text div {
-		white-space: normal;
-		font-size: 15px;
-		padding-bottom: 10px;
-		padding-left: 12px;
-		padding-right: 12px;
-		line-height: 155%;
-	}
-
-	.card-text .name-cost {
-		font-size: 20px;
-		white-space: pre-wrap;
-	}
-
-	.name-cost {
-		font-family: beleren;
-	}
-
-	.card-text .type {
-		font-size: 16px;
-	}
-
-	.card-text .pt {
-		font-weight: bold;
-	}
-
-	.designer-notes {
-		padding-top: 10px;
-		border-top: 1px solid var(--opposite);
-	}
-
-	.card-text br {
-		content: "";
-		display: block;
-		margin-bottom: 5px;
-	}
-
-	.card-text .related {
-		margin-top: auto;
-		font-size: 12px;
-		font-weight: bold;
-		padding-bottom: 0px;
-	}
-
-	.related {
-		display: none;
-	}
-
-	.related a {
-		color: #1338be;
-		text-decoration: none;
-		transition: 0.2s;
-	}
-
-	.related a:hover {
-		color: #0492c2;
-	}
-
-	.card-text .printings {
-		margin-top: auto;
-		font-size: 13px;
-		font-weight: bold;
-		padding-bottom: 0px;
-	}
-
-	.printings {
-		display: none;
-	}
-
-	.printings a:not(.current-printing) {
-		color: #1338be;
-		text-decoration: none;
-		transition: 0.2s;
-	}
-
-	.printings a:hover:not(.current-printing) {
-		color: #0492c2;
-	}
-
-	.current-printing {
-		transition: 0.3s;
-		cursor: pointer;
-		text-decoration: underline;
-	}
-
-	.current-printing:hover {
-		color: var(--mid-accent)
-	}
-
-	.img-container {
-		position: relative;
-		align-self: center;
-	}
-
-	.img-container img {
-		width: 100%;
-		height: auto;
-	}
-
-	.img-container .btn {
-		background-color: #ffffffaa;
-		background-size: contain;
-		background-position: center;
-		width: 15%;
-		height: 11%;
-		cursor: pointer;
-		border: none;
-		position: absolute;
-		left: 50%;
-		top: 48%;
-		transform: translate(170%, -150%);
-		opacity: 0.8;
-		border-radius: 100%;
-		border: 2px solid black;
-		padding: 3px;
-	}
-
-	.img-container .btn:hover {
-		background-size: contain;
-		background-position: center;
-		background-color: #ffffff;
-	}
-
-	.img-container .h-img {
-		transform: rotate(90deg);
-		width: 80%;
-	}
-
-	.img-container a {
-		height: 100%;
-		display: grid;
-		justify-self: center;
-		align-items: center;
-		justify-items: center;
-	}
-
-	.img-container a>* {
-		grid-row: 1;
-		grid-column: 1;
-	}
-
-	.hidden {
-		display: none;
-	}
-
-	.add-icon {
-		max-height: 14px;
-	}
-
-	.add-to-deck {
-		border: 3px solid rgb(19, 88, 19);
-		border-radius: 8px;
-		background-color: rgb(91, 196, 93);
-		color: white;
-		font-weight: bold;
-		font-size: 12px;
-		padding: 5px;
-		width: fit-content;
-		align-items: center;
-		justify-items: center;
-		display: flex;
-		gap: 10px;
-		cursor: pointer;
-		margin: 5px;
-		float: right;
-	}
-
-	.view-stats {
-		border: 3px solid rgb(29, 19, 88);
-		border-radius: 8px;
-		background-color: rgb(91, 101, 196);
-		color: white;
-		font-weight: bold;
-		font-size: 12px;
-		padding: 5px;
-		width: fit-content;
-		align-items: center;
-		justify-items: center;
-		display: flex;
-		gap: 10px;
-		cursor: pointer;
-		margin: 5px;
-		float: right;
-	}
-
-	.ft-divider {
-		border-width: 1px;
-	}
-
-	.rulings-textarea {
-		display: block;
-		width: 100%;
-		height: 52px;
-	}
-
-	.rulings-container {
-		width: 100%;
-		margin-bottom: 50px;
-		display: flex;
-		flex-direction: column;
-		justify-items: center;
-	}
-
-	.rulings-list {
-		font-size: 1.2em;
-		font-style: italic;
-	}
-
-	.rulings-input-container {
-		display: flex;
-		gap: 6px;
-		align-items: center;
-		justify-items: center;
-	}
-
-	.rulings-submit-btn {
-		border: 2px solid white;
-		border-radius: 15px;
-		font-weight: bold;
-		transition: 0.2s;
-		cursor: pointer;
-	}
-
-	.rulings-submit-btn:hover {
-		border-radius: 5px;
-
-	}
-
-	#modal-container {
-		display: none;
-		position: fixed;
-		z-index: 1;
-		padding-top: 70px;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		overflow: auto;
-		background-color: rgb(0, 0, 0);
-		background-color: rgba(0, 0, 0, 0.4);
-		padding-bottom: 100px;
-		margin-bottom: 100px;
-	}
-
-	#modal-content {
-		margin: auto;
-		padding: 20px;
-		border: 1px solid #888;
-		width: 50%;
-		border-radius: 10px;
-		border: solid #777 3px;
-	}
-
-	.close {
-		color: #aaaaaa;
-		float: right;
-		font-size: 28px;
-		font-weight: bold;
-		margin-left: 30px;
-	}
-
-	.close:hover,
-	.close:focus {
-		color: #000;
-		text-decoration: none;
-		cursor: pointer;
-	}
-
-	.stats-container {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		border-top: 2px solid var(--text-color);
-		border-left: 2px solid var(--text-color);
-	}
-
-	.stat-title,
-	.stat-value,
-	.is-played {
-		border-right: 2px solid var(--text-color);
-		border-bottom: 2px solid var(--text-color);
-		padding: 8px;
-		font-size: 18px;
-		text-align: center;
-		transition: 0.3s;
-	}
-
-	.stat-title:hover,
-	.stat-value:hover {
-		background-color: var(--light-accent);
-	}
-
-	.played {
-		background-color: rgb(103, 201, 98);
-	}
-
-	.not-played {
-		background-color: rgb(226, 74, 74);
-	}
-
-	.is-played:hover {
-		filter: brightness(0.7);
-	}
-
-	.hover-card {
-		display: none;
-		position: absolute;
-		height: 262px;
-		width: 188px;
-		pointer-events: none;
-	}
-
-	ul {
-		margin-top: 5px;
-	}
-
-	.card-changes {
-		font-size: 17px;
-	}
-
-	.changes-header {
-		font-size: 18px;
-		font-weight: bold;
-	}
-
-	.deck-container {
-		display: grid;
-		gap: 5px;
-		/* grid-template-rows: 1fr 2fr 1fr; */
-		border-radius: 8px;
-		/* height: 100%; */
-		padding: 5px;
-		align-items: center;
-		justify-items: center;
-		border: 2px solid var(--dark-accent);
-		box-shadow: 5px 5px 2px var(--dark-accent);
-		padding-top: 0px;
-		transition: 0.2s;
-	}
-
-	.full-deck-container {
-		display: grid;
-		grid-template-columns: 1fr 0.1fr;
-		gap: -5px;
-	}
-
-	.colors-container {
-		position: relative;
-		top: 60px;
-		right: 14px;
-		background-color: var(--dark-accent);
-		height: fit-content;
-		padding: 2px;
-		border-radius: 20px;
-	}
-
-	.deck-preview-img {
-		max-height: 250px;
-		border: 2px solid black;
-		box-shadow: 7px 7px 2px var(--mid-accent);
-		border-radius: 16px;
-		margin-bottom: 7px;
-		cursor: pointer;
-		/* box-shadow: inset 0.2em 0.2em 0.2em 0em rgba(0, 0, 0, 0.5), inset -0.2em -0.2em 0.2em 0em rgba(0,0,0,0.5); */
-		/* padding: 0.2em; */
-		/* background-color: #777; */
-	}
-
-	.deck-name {
-		font-size: 25px;
-		font-family: beleren;
-		background-color: var(--light-accent);
-		/* border: 2px solid #333; */
-		/* box-shadow: 5px 5px 2px #333; */
-		border-radius: 5px;
-		padding: 5px;
-		margin-bottom: 3px;
-		width: 100%;
-		text-align: center;
-		/* color: white; */
-	}
-
-	.decks-stats-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		gap: 10px;
-		margin-bottom: 100px;
-	}
-
-	.deck-container:hover {
-		filter: brightness(0.7);
-	}
-</style>
 
 <body>
 	<div class="header">
@@ -579,7 +58,7 @@
 				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
 		</div>
 	</div>
-	<script src="background.js"></script>
+	<script src="src/js/background.js"></script>
 	<script>
 		let card_list_arrayified = [];
 		let specialchars = "";
@@ -618,6 +97,11 @@
 					related_cards_json = json;
 				}).catch(error => console.error('Error:', error));
 
+			await fetch('/lists/banlist.json')
+				.then(response => response.json())
+				.then(json => {
+					banlist = json;
+				}).catch(error => console.error('Error:', error));
 
 			const params = new URLSearchParams(window.location.search);
 
@@ -792,6 +276,11 @@
 			image_grid.appendChild(rulings_container);
 			image_grid.appendChild(changes_container);
 		});
+
+		function isBannedCard(card_name) {
+			return banlist.banned.includes(card_name);
+		}
+
 
 		function rarityCode(r) {
 			switch (r) {
@@ -1113,6 +602,23 @@
 			// (card_stats[13].includes("_") ? card_stats[13] : card_stats[0]) for posterity
 			img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 
+			let not_in_voyager;
+
+			if (card_stats.set == "HEL") {
+				img.style.filter = "grayscale()";
+
+				not_in_voyager = document.createElement("span");
+				not_in_voyager.className = "not-in-voyager";
+				not_in_voyager.innerText = "This card is no longer legal in voyager.";
+			}
+
+			let banned_overlay;
+
+			if (isBannedCard(card_stats.card_name)) {
+				banned_overlay = document.createElement("div");
+				banned_overlay.className = "banned-overlay";
+			}
+
 			const link = document.createElement("a");
 
 			const url = new URL('card', window.location.origin);
@@ -1139,6 +645,10 @@
 				link.appendChild(rotated_img);
 			}
 
+			if (banned_overlay) {
+				link.appendChild(banned_overlay);
+			}
+
 			imgContainer.appendChild(link);
 
 			if (card_stats.shape.includes("double")) {
@@ -1157,6 +667,10 @@
 				title.innerText = card_stats.card_name;
 				title.className = "hidden-text";
 				imgContainer.appendChild(title);
+			}
+
+			if (not_in_voyager) {
+				imgContainer.appendChild(not_in_voyager);
 			}
 
 			return imgContainer;

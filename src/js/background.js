@@ -98,7 +98,6 @@ function setTextColor(c = false) {
 	document.body.style.setProperty("--text-color", localStorage.getItem("settings.textcolor"));
 }
 
-
 document.addEventListener("DOMContentLoaded", async () => {
 	let theme = localStorage.getItem("settings.theme");
 
@@ -115,7 +114,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 	document.body.style.setProperty("--text-color", localStorage.getItem("settings.textcolor"));
 
 	try {
-		const response = await fetch('/resources/gradients.json');
+		const response = await fetch('/data/gradients.json');
 		raw_gradients = await response.json();
 	}
 	catch (error) {

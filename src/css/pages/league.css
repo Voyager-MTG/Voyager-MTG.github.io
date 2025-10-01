@@ -1,0 +1,269 @@
+.page-container {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	width: 100%;
+}
+
+hr {
+	width: 85%;
+	height: 4px;
+	background-color: black;
+	border-radius: 2px;
+	border: none;
+}
+
+.tab-select {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	margin-top: 40px;
+}
+
+/* .decks-container {
+            margin-bottom: 20px;
+            width: 85%;
+        } */
+.decks-tab {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 10px;
+	display: none;
+}
+
+.main-tab {
+	margin: 25px 0 25px 0;
+	width: 84%;
+}
+
+#modal-content .deck-container {
+	width: 90%;
+	height: 90%;
+	transition: 0.3s;
+}
+
+#modal-content .deck-container:hover {
+	filter: brightness(0.7);
+}
+
+#modal-content .deck-preview-img {
+	border: none;
+	box-shadow: none;
+	border-radius: 6px;
+}
+
+#modal-content .deck-name {
+	font-size: 16px;
+}
+
+hr {
+	width: 85%;
+	height: 4px;
+	background-color: black;
+	border-radius: 2px;
+	border: none;
+}
+
+.mana-img {
+	max-height: 26px;
+	margin: 2px;
+}
+
+.decklist-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+}
+
+.card-type-header {
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-family: beleren;
+}
+
+.deck-preview-card {
+	max-width: 300px;
+	cursor: pointer;
+}
+
+.deck-window-header {
+	font-family: beleren;
+	font-size: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+
+.report-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-items: center;
+}
+
+.scores-container {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	gap: 15px;
+}
+
+.scores-number-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	align-items: center;
+	justify-items: center;
+}
+
+.report-username {
+	font-family: beleren;
+	font-size: 30px;
+}
+
+.report-scores-btn,
+.new-run-btn {
+	background-color: #16e019;
+	color: white;
+	border: 2px solid darkgreen;
+	border-radius: 8px;
+	font-weight: bold;
+	padding: 4px;
+	font-size: 24px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.report-scores-btn:hover,
+.new-run-btn:hover {
+	background-color: #149316;
+}
+
+.player-score-input {
+	font-size: 32px;
+	color: var(--popout-text-color);
+	width: 40px;
+	padding: 3px;
+	text-align: center;
+}
+
+.report-score-divider {
+	height: 8px;
+	width: 90%;
+	border-radius: 4px;
+}
+
+.opponents-container {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 8px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.opponent-container {
+	font-size: 1.5em;
+	font-family: beleren;
+	padding: 4px;
+	transition: 0.2s;
+}
+
+.opponent-container:hover {
+	color: var(--dark-accent);
+}
+
+.active-opponent {
+	color: rgb(103, 206, 103);
+}
+
+.deck-select-container,
+#modal-content .runs-container {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 8px;
+	align-items: center;
+	justify-items: center;
+}
+
+#modal-content .deck-preview-img {
+	max-width: 80px;
+}
+
+.runs-tab {
+	display: none;
+}
+
+.unclaimed-notif {
+	background-color: rgba(209, 42, 42, 0.5);
+	border: 2px solid white;
+	padding: 5px;
+	font-size: 1.2em;
+	font-weight: bold;
+	border-radius: 10px;
+	cursor: pointer;
+	/* width: fit-content; */
+}
+
+.runs-top {
+	display: flex;
+	gap: 10px;
+	width: 100%;
+	align-items: center;
+	justify-items: center;
+}
+
+.runs-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-items: center;
+	gap: 8px;
+}
+
+.new-run-btn {
+	margin-left: auto;
+	padding: 8px;
+}
+
+.unclaimed-match-container {
+	padding: 10px;
+	border: 2px solid gray;
+	font-weight: bold;
+	border-radius: 8px;
+	font-size: 1.4em;
+	width: fit-content;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.unclaimed-match-container:hover {
+	background-color: gray;
+}
+
+.new-run-search-input {
+	width: 100%;
+	padding: 3px;
+	font-size: 1.1em;
+	border-radius: 4px;
+	border: 2px solid gray;
+
+}
+
+.run-record {
+	font-weight: bold;
+	font-size: 2em;
+	color: var(--popout-text-color);
+}
+
+#modal-content .run-record {
+	font-size: 1.2em;
+}
+
+#modal-content {
+	width: 70%;
+}
+
+.deck-container {
+	width: 95%;
+}

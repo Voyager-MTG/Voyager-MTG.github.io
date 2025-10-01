@@ -1,0 +1,148 @@
+body[data-theme=Dark] {
+	--bg-color: #171717;
+	--popout-text-color: white;
+	--text-color: white;
+	--dark-text-color: #d5d9d9;
+	--light-accent: #333;
+	--mid-accent: #777;
+	--dark-accent: #666;
+	--opposite: #f3f3f3;
+}
+
+body[data-theme=Light] {
+	--bg-color: #f3f3f3;
+	--popout-text-color: black;
+	--text-color: white;
+	--light-accent: #ccc;
+	--mid-accent: #999;
+	--dark-accent: #333;
+	--opposite: #171717;
+	--dark-text-color: #d5d9d9;
+}
+
+body[data-theme=Blue] {
+	--bg-color: #1a3573;
+	--popout-text-color: white;
+	--text-color: white;
+	--light-accent: #15567c;
+	--mid-accent: #2295c3;
+	--dark-accent: #66c7e8;
+	--opposite: #62c8ec;
+	--dark-text-color: #d5d9d9;
+}
+
+body[data-theme=Purple] {
+	--bg-color: #461a73;
+	--popout-text-color: white;
+	--text-color: white;
+	--light-accent: #45157c;
+	--mid-accent: #6d22c3;
+	--dark-accent: #9466e8;
+	--opposite: #a562ec;
+	--dark-text-color: #d5d9d9;
+}
+
+.text {
+	color: var(--text-color);
+}
+
+.text-bg {
+	background-color: var(--text-color);
+}
+
+.popout {
+	background-color: var(--bg-color);
+	color: var(--popout-text-color);
+}
+
+body[data-theme="Light"] .tab-switch-icon {
+	filter: invert();
+}
+
+/* Beleren Fonts */
+@font-face {
+	font-family: Beleren;
+	src: url('/resources/beleren.ttf');
+}
+
+@font-face {
+	font-family: 'Beleren Small Caps';
+	src: url('/resources/beleren-caps.ttf');
+}
+
+/* Global styling stuff */
+.img-container .not-in-voyager {
+	position: absolute;
+	font-family: Beleren;
+	top: 12%;
+	left: 8%;
+	width: 82%;
+	font-size: 1.15em;
+	color: darkred;
+	background-color: #fffa;
+	padding: 2px;
+	border-radius: 2px;
+	text-align: center;
+}
+
+body {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	overscroll-behavior: none;
+	margin: 0px;
+	background-color: var(--bg-color);
+	display: block;
+	/* overflow-y: scroll; */
+	height: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.artist-credit {
+	left: 160px;
+	position: absolute;
+	width: 240px;
+}
+
+select {
+	/* background-color: #fafafa; */
+	border: 1px solid var(--light-accent);
+	border-radius: 8px;
+	box-shadow: color-mix(in srgb, var(--mid-accent), transparent) 0 2px 5px 0;
+	text-align: center;
+	/* color: #171717; */
+	font-size: 13px;
+	height: 30px;
+}
+
+select:focus {
+	outline-color: var(--dark-accent);
+}
+
+.selects {
+	position: absolute;
+	top: 10%;
+	left: 1%;
+}
+
+.banned-overlay {
+	background-color: #db142b77;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+
+.banned-overlay:before {
+	/* background-image: url("/img/ban.png"); */
+	content: url("/img/bansmall.png");
+	color: rgba(0, 0, 0, 0);
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: -15px;
+	left: -15px;
+}
+
+.banned-overlay:before img {
+	height: 30px;
+	width: 30px;
+}

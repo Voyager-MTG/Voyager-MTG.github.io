@@ -10,8 +10,8 @@ def generateHTML():
 	<head>
 	  <title>All Sets</title>
 	  <link rel="icon" type="image/x-icon" href="/img/header/sets.png">
-	  <link rel="stylesheet" href="/resources/mana.css">
-	  <link rel="stylesheet" href="/resources/header.css">
+	  <link rel="stylesheet" href="/src/css/mana.css">
+	  <link rel="stylesheet" href="/src/css/header.css">
 	</head>
 	<style>
 		@font-face {

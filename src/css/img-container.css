@@ -1,0 +1,167 @@
+.card-image {
+	float: left;
+	width: 100%;
+	max-width: 375px;
+	height: auto;
+	display: block;
+}
+
+.card-text {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	border: 1px solid var(--light-accent);
+	border-top: 3px solid var(--opposite);
+	border-bottom: 3px solid var(--opposite);
+	border-radius: 6px;
+	height: fit-content;
+	min-height: 75%;
+	margin-top: 3%;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-text div {
+	white-space: normal;
+	font-size: 15px;
+	padding-bottom: 10px;
+	padding-left: 12px;
+	padding-right: 12px;
+	line-height: 155%;
+}
+
+.card-text .name-cost {
+	font-size: 20px;
+	white-space: pre-wrap;
+}
+
+.name-cost {
+	font-family: beleren;
+}
+
+.card-text .type {
+	font-size: 16px;
+}
+
+.card-text .pt {
+	font-weight: bold;
+}
+
+.designer-notes {
+	padding-top: 10px;
+	border-top: 1px solid var(--opposite);
+}
+
+.card-text br {
+	content: "";
+	display: block;
+	margin-bottom: 5px;
+}
+
+.card-text .related {
+	margin-top: auto;
+	font-size: 12px;
+	font-weight: bold;
+	padding-bottom: 0px;
+}
+
+.related {
+	display: none;
+}
+
+.related a {
+	color: #1338be;
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+.related a:hover {
+	color: #0492c2;
+}
+
+.card-text .printings {
+	margin-top: auto;
+	font-size: 13px;
+	font-weight: bold;
+	padding-bottom: 0px;
+}
+
+.printings {
+	display: none;
+}
+
+.printings a:not(.current-printing) {
+	color: #1338be;
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+.printings a:hover:not(.current-printing) {
+	color: #0492c2;
+}
+
+.current-printing {
+	transition: 0.3s;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.current-printing:hover {
+	color: var(--mid-accent)
+}
+
+.img-container {
+	position: relative;
+	align-self: center;
+}
+
+.img-container img {
+	width: 100%;
+	height: auto;
+}
+
+.img-container .btn {
+	background-color: #ffffffaa;
+	background-size: contain;
+	background-position: center;
+	width: 15%;
+	height: 11%;
+	cursor: pointer;
+	border: none;
+	position: absolute;
+	left: 50%;
+	top: 48%;
+	transform: translate(170%, -150%);
+	opacity: 0.8;
+	border-radius: 100%;
+	border: 2px solid black;
+	padding: 3px;
+}
+
+.img-container .btn:hover {
+	background-size: contain;
+	background-position: center;
+	background-color: #ffffff;
+}
+
+.img-container .h-img {
+	transform: rotate(90deg);
+	width: 80%;
+}
+
+.img-container a {
+	height: 100%;
+	display: grid;
+	justify-self: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.img-container a>* {
+	grid-row: 1;
+	grid-column: 1;
+}
+
+.hidden {
+	display: none;
+}

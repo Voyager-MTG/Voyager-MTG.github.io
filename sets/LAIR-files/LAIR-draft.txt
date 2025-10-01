@@ -65,9 +65,9 @@
 			"rarity": "masterpiece",
 			"mana_cost": "",
 			"type": "Land",
-			"collector_number": "5",
+			"collector_number": "8",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/5_Drifting Field.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/8_Drifting Field.jpg"
 			}
 		},
 		{
@@ -125,9 +125,9 @@
 			"rarity": "masterpiece",
 			"mana_cost": "{1}{U}",
 			"type": "Instant",
-			"collector_number": "2",
+			"collector_number": "4",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/2_Drown in Self Reflection.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/4_Drown in Self Reflection.jpg"
 			}
 		},
 		{
@@ -135,9 +135,9 @@
 			"rarity": "masterpiece",
 			"mana_cost": "{2}{W}{W}",
 			"type": "Creature — Angel Cleric",
-			"collector_number": "1",
+			"collector_number": "2",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/1_Apostle Entheate.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/2_Apostle Entheate.jpg"
 			}
 		},
 		{
@@ -145,9 +145,9 @@
 			"rarity": "masterpiece",
 			"mana_cost": "{1}{B}{B}",
 			"type": "Creature — Human Assassin",
-			"collector_number": "3",
+			"collector_number": "5",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/3_Identity Connoisseur.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/5_Identity Connoisseur.jpg"
 			}
 		},
 		{
@@ -355,9 +355,49 @@
 			"rarity": "masterpiece",
 			"mana_cost": "{1}{R}",
 			"type": "Instant",
-			"collector_number": "4",
+			"collector_number": "6",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/4_Call of the Rose.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/6_Call of the Rose.jpg"
+			}
+		},
+		{
+			"name": "The Gardener, Crowned",
+			"rarity": "masterpiece",
+			"mana_cost": "{12}",
+			"type": "Legendary Planeswalker — Gardener",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/1_The Gardener, Crowned.jpg"
+			}
+		},
+		{
+			"name": "Wonder",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Wonder",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/1_Wonder.jpg"
+			}
+		},
+		{
+			"name": "Blinding Majesty",
+			"rarity": "masterpiece",
+			"mana_cost": "{2}{W}",
+			"type": "Instant",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/3_Blinding Majesty.jpg"
+			}
+		},
+		{
+			"name": "Shimmer From Beyond",
+			"rarity": "masterpiece",
+			"mana_cost": "{3}{R}",
+			"type": "Sorcery",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/7_Shimmer From Beyond.jpg"
 			}
 		},
 	]
@@ -394,3 +434,6 @@
 	1 Restored Fault
 	1 Restored Forest
 	1 Call of the Rose
+	1 The Gardener, Crowned
+	1 Blinding Majesty
+	1 Shimmer From Beyond

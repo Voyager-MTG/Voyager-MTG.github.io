@@ -263,7 +263,7 @@ def generateHTML():
 
 			document.addEventListener("DOMContentLoaded", async function () {
 				try {
-					const response = await fetch('./resources/gradients.json');
+					const response = await fetch('./data/gradients.json');
 					raw_gradients = await response.json();
 				}
 				catch(error) {

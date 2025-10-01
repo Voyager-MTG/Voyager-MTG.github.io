@@ -1,0 +1,98 @@
+.page-container {
+	display: grid;
+	/* align-items: center; */
+	justify-items: center;
+	width: 75%;
+	margin-left: 8%;
+	grid-template-columns: 0.3fr 1fr;
+	gap: 20px;
+}
+
+hr {
+	width: 85%;
+	height: 4px;
+	background-color: black;
+	border-radius: 2px;
+	border: none;
+}
+
+
+
+.section-header,
+.sub-section-header {
+	border-bottom: 1px solid white;
+	width: fit-content;
+}
+
+.section-header {
+	font-size: 4em;
+}
+
+.sub-section-header {
+	font-size: 2.5em;
+}
+
+.compendium-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 8px;
+	position: relative;
+}
+
+.card-image {
+	border-radius: 10px;
+	transition: 0.2s;
+}
+
+.section-link {
+	display: inline-block;
+}
+
+.sidebar {
+	position: sticky;
+	top: 15%;
+	height: fit-content;
+	display: grid;
+	gap: 5px;
+	background-color: #00000088;
+	padding: 15px;
+	border-radius: 15px;
+}
+
+.indent {
+	margin-left: 15px;
+}
+
+.sidebar a:not(.indent) {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.sidebar a {
+	display: block;
+	color: rgb(65, 138, 223);
+}
+
+.color-select {
+	font-size: 1em;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.color-select-inactive {
+	filter: brightness(0.5);
+	font-size: 1em;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.hidden-text {
+	font-size: 1.2em;
+	margin-top: 4px;
+	font-family: beleren;
+	text-align: center;
+}
+
+.card-image:hover {
+	filter: brightness(0.7);
+}

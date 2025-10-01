@@ -22,9 +22,9 @@ def generateHTML(code):
 <head>
   <title>''' + set_name + '''</title>
   <link rel="icon" type="image/x-icon" href="/sets/''' + code + '''-files/icon.png">
-  <link rel="stylesheet" href="/resources/mana.css">
-  <link rel="stylesheet" href="/resources/header.css">
-  <link rel="stylesheet" href="/resources/theme.css">
+  <link rel="stylesheet" href="/src/css/mana.css">
+  <link rel="stylesheet" href="/src/css/header.css">
+  <link rel="stylesheet" href="/src/css/theme.css">
 </head>
 <style>
     .community .community-dropdown {
@@ -70,10 +70,7 @@ def generateHTML(code):
 		font-family: 'Beleren Small Caps';
 		src: url('/resources/beleren-caps.ttf');
 	}
-	@font-face {
-		font-family: Beleren;
-		src: url('/resources/beleren.ttf');
-	}
+	
 	body {
 		font-family: 'Helvetica', 'Arial', sans-serif;
 		overscroll-behavior: none;
@@ -462,7 +459,7 @@ def generateHTML(code):
 			<canvas id="canvas" class="canvas"></canvas>
 		</div>
 	</div>
-	<script src="/background.js"></script>
+	<script src="/src/js/background.js"></script>
 	<script>
 		let card_list_arrayified = [];
 		let set_list_arrayified = [];

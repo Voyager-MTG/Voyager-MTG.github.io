@@ -1,0 +1,81 @@
+a {
+	text-decoration: none;
+	color: #171717;
+}
+
+
+
+.set-icon-container {
+	font-family: 'Beleren Small Caps';
+	font-size: 20px;
+	text-align: center;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	gap: 2px;
+	width: 100%;
+	/* height: 100%; */
+}
+
+.set-icon-container a {
+	text-decoration: none;
+	color: #171717;
+	/* height: 100%; */
+}
+
+.set-icon {
+	/* height: 60px; */
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
+.set-icon img {
+	width: 10vw;
+	transition: 0.3s;
+}
+
+.set-icon img:hover {
+	filter: brightness(0.6);
+}
+
+hr {
+	width: 90%;
+}
+
+.set-info-container {
+	width: 100%;
+	text-align: center;
+}
+
+.set-area {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	/* grid-auto-rows: 0.01fr 50px; */
+	align-items: center;
+	justify-items: center;
+	width: 80%;
+	margin-left: 10%;
+	gap: 8px;
+	margin-bottom: 20px;
+}
+
+.set-icon-name {
+	margin-top: 10px;
+	font-size: 1.2em;
+}
+
+.area-header {
+	font-family: beleren;
+	font-size: 75px;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 15px;
+	display: inline-block;
+}
+
+.top-divider {
+	height: 3px;
+	width: 70%;
+	margin: auto;
+}

@@ -1,0 +1,34 @@
+.tab-btn {
+	background-color: var(--bg-color);
+	color: var(--popout-text-color);
+	border: 3px solid #ddd;
+	align-items: center;
+	justify-items: center;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	font-weight: bold;
+	font-size: 24px;
+	padding: 8px;
+	border-radius: 18px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.tab-btn:not(.tab-btn-active):hover {
+	background-color: var(--light-accent);
+}
+
+.tab-btn-active {
+	background-color: var(--mid-accent);
+}
+
+.tab-switch-icon {
+	max-height: 30px;
+}
+
+.tab-select {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	margin-top: 40px;
+}

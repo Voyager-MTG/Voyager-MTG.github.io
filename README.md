@@ -113,7 +113,7 @@ To add designer notes to a card, add `card-notes/<cardname>.md` to "custom/sets/
 
 ### Changing the homepage's background gradient
 
-There are 34 gradients you can choose from on the homepage, which are stored in `resources/gradients.json`. You can always switch between them using the select in the top left of the homepage. If you'd like to set a new gradient as the default, simply edit `gradients.json` and move your favorite gradient's entry to the top of the text file.
+There are 34 gradients you can choose from on the homepage, which are stored in `data/gradients.json`. You can always switch between them using the select in the top left of the homepage. If you'd like to set a new gradient as the default, simply edit `gradients.json` and move your favorite gradient's entry to the top of the text file.
 
 ### HTML addenda
 
