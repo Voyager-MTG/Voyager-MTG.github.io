@@ -259,3 +259,10 @@ select {
 select {
 	position: static;
 }
+
+.hidden-text {
+	font-size: 1.2em;
+	margin-top: 4px;
+	font-family: beleren;
+	text-align: center;
+}
