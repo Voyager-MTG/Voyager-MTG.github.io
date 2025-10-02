@@ -26,13 +26,13 @@
 						class="sg-icon">Community<b>⮟</b></a>
 				<div class="community-dropdown">
 					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/header/community.png">Users</a>
+							src="/img/header/community.png">Users</a>
 					<a href="/community?tab=decks" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/header/deck.png">Decks</a>
+							src="/img/header/deck.png">Decks</a>
 					<a href="/community?tab=events" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/swords.png">Events</a>
+							src="/img/swords.png">Events</a>
 					<a href="/community?tab=cards" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/header/sets.png">Cards</a>
+							src="/img/header/sets.png">Cards</a>
 				</div>
 			</div>
 			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
@@ -46,15 +46,15 @@
 	<div class="page-container">
 		<div class="tab-select" id="tab-select">
 			<div class="tab-btn-active tab-btn" id="games-tab-select" onclick="changeTab('games')">
-				<img src="img/swords.png" class="tab-switch-icon">
+				<img src="/img/swords.png" class="tab-switch-icon">
 				<span>Games</span>
 			</div>
 			<div class="tab-btn" id="decklists-tab-select" onclick="changeTab('decklists')">
-				<img src="img/header/deck.png" class="tab-switch-icon">
+				<img src="/img/header/deck.png" class="tab-switch-icon">
 				<span>Decks</span>
 			</div>
 			<div class="tab-btn" id="runs-tab-select" onclick="changeTab('runs')">
-				<img src="img/trophy.png" class="tab-switch-icon">
+				<img src="/img/trophy.png" class="tab-switch-icon">
 				<span>Runs</span>
 			</div>
 		</div>
@@ -70,7 +70,7 @@
 				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
 		</div>
 	</div>
-	<script src="src/js/background.js"></script>
+	<script src="/src/js/background.js"></script>
 	<script>
 		let gradients = null;
 		let raw_gradients = null;
@@ -458,7 +458,7 @@
 				}
 
 				if (!card_stats) {
-					deck_preview.src = "img/card_back.png"
+					deck_preview.src = "/img/card_back.png"
 				} else {
 					deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 				}
@@ -506,7 +506,7 @@
 				if (deck.colors) {
 					for (const color of deck.colors) {
 						let color_ele = document.createElement('img');
-						color_ele.src = `img/mana/mana_${color}.png`;
+						color_ele.src = `/img/mana/mana_${color}.png`;
 						color_ele.className = "mana-img";
 						colors_container.appendChild(color_ele);
 					}
@@ -700,7 +700,7 @@
 			}
 
 			let preview_card = document.createElement('img');
-			preview_card.src = "img/card_back.png";
+			preview_card.src = "/img/card_back.png";
 			preview_card.id = "deck-preview-card";
 			preview_card.className = "deck-preview-card";
 
