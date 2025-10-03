@@ -280,7 +280,7 @@
 				event_name.className = "event-name text";
 				event_name.innerText = event.name;
 				const event_type = event.type ? event.type : "gp";
-				event_name.href = `${event_type}${!event.nourl ? "?event=" + event.name : ""}`;
+				event_name.href = `/events/${event_type}${!event.nourl ? "?event=" + event.name : ""}`;
 				event_container.appendChild(event_name);
 
 				const event_players = document.createElement("span");

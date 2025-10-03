@@ -78,6 +78,7 @@ def generateHTML(code):
 		background-color: var(--bg-color);
         background-attachment: fixed;
 		background-size: cover;
+		height: auto;
 		''' 
 	bg_path = os.path.join("sets", code + "-files", "bg.jpg")
 	if os.path.exists(bg_path):
