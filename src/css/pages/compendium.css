@@ -87,12 +87,15 @@ hr {
 }
 
 .hidden-text {
-	font-size: 1.2em;
-	margin-top: 4px;
+	font-size: 1.4em;
 	font-family: beleren;
 	text-align: center;
 }
 
 .card-image:hover {
 	filter: brightness(0.7);
+}
+
+.img-container a {
+	height: auto;
 }

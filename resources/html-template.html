@@ -3,37 +3,11 @@
 <head>
 	<title>TITLE</title>
 	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
-	<link rel="stylesheet" href="src/css/mana.css">
+	<link rel="stylesheet" href="/src/css/mana.css">
 	<link rel="stylesheet" href="/src/css/header.css">
+	<link rel="stylesheet" href="/src/css/theme.css">
+	<link rel="stylesheet" href="/src/css/modal.css">
 </head>
-<style>
-	.page-container {
-		display: grid;
-		align-items: center;
-		justify-items: center;
-		width: 100%;
-	}
-
-	hr {
-		width: 85%;
-		height: 4px;
-		background-color: black;
-		border-radius: 2px;
-		border: none;
-	}
-</style>
-<style id="text-style">
-	.text {
-		color: white;
-	}
-</style>
-<style id="popout-style">
-	.popout {
-		background-color: #f3f3f3;
-		/* color: #f3f3f3; */
-	}
-</style>
-
 <body>
 	<div class="header">
 		<div class="search-grid">
@@ -48,13 +22,13 @@
 						class="sg-icon">Community<b>⮟</b></a>
 				<div class="community-dropdown">
 					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/header/community.png">Users</a>
+							src="/img/header/community.png">Users</a>
 					<a href="/community?tab=decks" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/header/deck.png">Decks</a>
+							src="/img/header/deck.png">Decks</a>
 					<a href="/community?tab=events" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/swords.png">Events</a>
+							src="/img/swords.png">Events</a>
 					<a href="/community?tab=cards" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/header/sets.png">Cards</a>
+							src="/img/header/sets.png">Cards</a>
 				</div>
 			</div>
 			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
@@ -73,130 +47,16 @@
 				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
 		</div>
 	</div>
+	<script src="/src/js/background.js"></script>
 	<script>
-		let gradients = null;
-		let raw_gradients = null;
-		let gradTop = null;
-		let gradBottom = null;
+
 		modal = document.getElementById("modal-container");
 		window.onclick = function (event) {
 			if (event.target == modal) {
 				document.getElementById('modal-container').style.display = 'none';
 			}
 		}
-		document.addEventListener("DOMContentLoaded", async function () {
-			try {
-				const response = await fetch('/data/gradients.json');
-				raw_gradients = await response.json();
-			}
-			catch (error) {
-				console.error('Error:', error);
-			}
 
-			gradients = raw_gradients.gradients;
-			card_backgrounds = raw_gradients.cards;
-			setGradient(localStorage.getItem("settings.gradient"));
-			prepareGradients();
-		});
-
-		function prepareGradients() {
-			let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
-			const opt = document.createElement("option");
-			opt.value = defaultGradient.replace(' ', '-');
-			opt.text = defaultGradient;
-			document.getElementById("color-select").appendChild(opt);
-			let random_card = localStorage.getItem("settings.gradient").replace('-', ' ');
-			const opt_rand = document.createElement("option");
-			opt_rand.value = "Random-Card";
-			opt_rand.text = "Random Card";
-
-			document.getElementById("color-select").appendChild(opt_rand);
-			for (const gradient of gradients) {
-				const opt = document.createElement("option");
-				opt.value = gradient.name.replace(' ', '-');
-				opt.text = gradient.name;
-				if (gradient.name != defaultGradient) {
-					document.getElementById("color-select").appendChild(opt);
-				}
-			}
-
-			for (const gradient in card_backgrounds) {
-				const opt = document.createElement("option");
-				opt.value = gradient.replace(' ', '-');
-				opt.text = gradient;
-				if (gradient.name != defaultGradient) {
-					document.getElementById("color-select").appendChild(opt);
-				}
-			}
-
-			// setGradient();
-		}
-
-		function setGradient(gradient = false) {
-			let artistCredit = "";
-			if (!gradient) {
-				gradient = document.getElementById("color-select").value;
-			}
-
-			gradTop = "#000000";
-			gradBottom = "#FFFFFF";
-			for (const grad of gradients) {
-				if (gradient == grad.name.replace(' ', '-')) {
-					gradImage = `linear-gradient(to bottom, ${grad.color1}, ${grad.color2})`
-				}
-			}
-
-			for (const background in card_backgrounds) {
-				if (gradient == background.replace(' ', '-')) {
-					gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-					artistCredit = card_backgrounds[background][0];
-					setTextColor(card_backgrounds[background][1]);
-				}
-			}
-
-			if (gradient == "Random-Card") {
-				const bgs = Object.keys(card_backgrounds);
-				const background = bgs[reallyRand(bgs.length)];
-				gradImage = `url("/img/backgrounds/${background.toLowerCase()}.jpg")`;
-				artistCredit = card_backgrounds[background][0];
-				setTextColor(card_backgrounds[background][1]);
-			}
-
-
-			document.body.style.backgroundImage = gradImage;
-			localStorage.setItem("settings.gradient", gradient);
-			if (document.getElementsByClassName("artist-credit")[0])
-				document.getElementsByClassName("artist-credit")[0].remove();
-			const credit_text = document.createElement("span");
-			credit_text.className = "artist-credit text";
-			credit_text.innerText = `background by ${artistCredit}`;
-			if (artistCredit && document.getElementById("color-select"))
-				document.getElementById("color-select").parentElement.appendChild(credit_text);
-		}
-
-		function reallyRand(x, seed = false) {
-			const date = new Date();
-			seed = seed ? seed : date.getUTCFullYear() * 10000 +
-				date.getUTCMonth() * 100 +
-				date.getUTCDate();
-
-			const a = 1103515245;
-			const c = 12345;
-			const m = Math.pow(2, 31);
-
-			let randomNumber = (a * seed + c) % m;
-			randomNumber = randomNumber / m;
-
-			return Math.floor(randomNumber * x);
-		}
-
-		function setTextColor(c = false) {
-			if (c) {
-				localStorage.setItem("settings.textcolor", c);
-			}
-			document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
-		}
 		document.getElementById("search").addEventListener("keypress", function (event) {
 			if (event.key === "Enter") {
 				event.preventDefault();

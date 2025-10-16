@@ -628,6 +628,7 @@
 				document.getElementById("deck-name").value = "Untitled Deck"; // reset deck name
 				processDeck();
 				document.getElementById("file-menu").value = "default"; // set the value back
+				history.pushState({}, '', window.location.pathname);
 			}
 			else if (option == "import") {
 				document.getElementById("import-file").click(); // Import a file by clicking a certain element
