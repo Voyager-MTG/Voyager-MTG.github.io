@@ -1060,24 +1060,30 @@
 			deck_search_input.className = "new-run-search-input popout";
 			deck_search_input.placeholder = "Search decks...";
 			deck_search_input.id = "new-run-search-input";
-			deck_search_input.onkeyup = runSearch;
+			deck_search_input.onkeyup = loadDeckSearch;
 
 			document.getElementById("modal-content").appendChild(deck_search_input);
 			document.getElementById("modal-content").appendChild(content_container);
 
-			runSearch();
+			loadDeckSearch();
 		}
 
-		function runSearch() {
+		function loadDeckSearch() {
 			const search_terms = document.getElementById("new-run-search-input").value.matchAll(/(\[\[.*?\]\]|\S+)/g);
 			let search_terms_arrayified = [];
 			let search_results = [];
 			let keys = {};
 
-			console.log(Object.keys(localStorage));
 			for (const key of Object.keys(localStorage)) {
 				if (key != "colls.collections" && !key.startsWith("settings.") && !key.startsWith("info."))
 					keys[key] = localStorage.getItem(key);
+			}
+
+			if (window.user_decks) {
+				for (const deck of window.user_decks) {
+					const key = deck.name;
+					keys[key] = atob(deck.url.split(";")[1].split("&main")[0]) + "\n\npreview card: " + deck.previewimg + "\naccount deck: true";
+				}
 			}
 
 			for (const t of search_terms) {
@@ -1104,15 +1110,15 @@
 			document.getElementById("deck-select-container").innerHTML = "";
 
 			for (const key of search_results) {
-				const deck_ele = generateLoadContainer(key);
+				const deck_ele = generateLoadContainer(key, keys[key]);
 				document.getElementById("deck-select-container").appendChild(deck_ele);
 			}
 		}
 
-		function generateLoadContainer(key) {
-			const deck = localStorage.getItem(key);
+		function generateLoadContainer(key, deck) {
 			const lines = deck.split("\n");
 			let preview_card = "cardback";
+
 			for (const line of lines) {
 				if (line.includes("preview card:")) {
 					preview_card = line.split("preview card: ")[1];
@@ -3227,6 +3233,10 @@
 				colls = JSON.parse(data.colls);
 			} else {
 				colls = []
+			}
+
+			if (decks) {
+				window.user_decks = decks;
 			}
 
 			const urlParams = new URLSearchParams(window.location.search);
