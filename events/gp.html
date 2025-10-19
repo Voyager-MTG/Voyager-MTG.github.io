@@ -844,6 +844,9 @@
 			// button listeners
 			if (admin) {
 				addAdminEventListeners();
+				if (urlParams.get("action") == "push") {
+					pushGP();
+				}
 			}
 			addButtonEventListeners();
 
