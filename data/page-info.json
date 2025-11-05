@@ -1,0 +1,49 @@
+{
+    "pages": [
+        {
+            "name": "Collection League",
+            "url": "/events/collectionleague",
+            "desc": "Collection league is a limited format based off your personal collection. When you draft, the cards you pick are added to your seasonal collection, and added to your eternal collection at the end of the season. Players in the league build decks just like they would in regular league (60 mainboard cards, 15 sideboard cards, and 7 sanctum cards), except they're limited only to their collection."
+        },
+        {
+            "name": "GP",
+            "url": "/events/gp",
+            "desc": "Voyager Grand Prixs are monthly swiss to top cut tournaments with open entry. This page is used for viewing them and will take you to the current one by default."
+        },
+        {
+            "name": "League",
+            "url": "/events/league",
+            "desc": "League runs throughout the month, and like GPs is free to hop into. Just submit a deck and start playing games. You can have multiple league runs happening at once unlike some other formats. Simply add a new run and allocate the matches correctly to manage them!"
+        },
+        {
+            "name": "Account",
+            "url": "/account",
+            "desc": "The page for your account, contains all the online decks you've saved. Redirects to login if you're not signed in."
+        },
+        {
+            "name": "All Sets",
+            "url": "/all-sets",
+            "desc": "All the sets in voyager; Links to each individual set page and provides some extra info such as the designer and how many cards are in it."
+        },
+        {
+            "name": "Article Viewer",
+            "url": "/article",
+            "desc": "Viewer for articles, doesn't do anything without a url param telling the page which article to try to grab."
+        },
+        {
+            "name": "Article Writer",
+            "url": "/articlewriter",
+            "desc": "The article writer which allows you to write and publish articles. If you're not a site admin, you require admin approval before your article is publicly viewable."
+        },
+        {
+            "name": "Card Viewer",
+            "url": "/card",
+            "desc": "Viewer for cards, doesn't do anything without a url param telling the page which card to try to grab."
+        },
+        {
+            "name": "Community",
+            "url": "/community",
+            "desc": "Contains various different things such as the event archive, list of users, most played cards, and public decks."
+        }
+    ]
+}

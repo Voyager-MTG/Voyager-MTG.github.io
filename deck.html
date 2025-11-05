@@ -1,0 +1,417 @@
+<html>
+
+<head>
+	<title>TITLE</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
+	<link rel="stylesheet" href="/src/css/mana.css">
+	<link rel="stylesheet" href="/src/css/header.css">
+	<link rel="stylesheet" href="/src/css/theme.css">
+	<link rel="stylesheet" href="/src/css/modal.css">
+	<link rel="stylesheet" href="/src/css/img-container.css">
+	<link rel="stylesheet" href="/src/css/pages/deck.css">
+</head>
+<body>
+	<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/header/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false"
+				autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<div class="community"><a href="/community" id="account-link"><img src="/img/header/community.png"
+						class="sg-icon">Community<b>⮟</b></a>
+				<div class="community-dropdown">
+					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
+							src="/img/header/community.png">Users</a>
+					<a href="/community?tab=decks" class="community-dropdown-item"><img class="dropdown-icon"
+							src="/img/header/deck.png">Decks</a>
+					<a href="/community?tab=events" class="community-dropdown-item"><img class="dropdown-icon"
+							src="/img/swords.png">Events</a>
+					<a href="/community?tab=cards" class="community-dropdown-item"><img class="dropdown-icon"
+							src="/img/header/sets.png">Cards</a>
+				</div>
+			</div>
+			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+			<a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
+		</div>
+	</div>
+	<div class="selects" id="selects">
+		<select id="color-select" onchange="setGradient()">
+		</select>
+	</div>
+	<div class="page-container">
+		<h1 class="deck-name" id="deck-name">Deck Name</h1>
+		<div class="deck-container" id="deck-container">
+
+		</div>
+	</div>
+	<div id="modal-container">
+		<div id="modal-content" class="popout">
+			<span class="close"
+				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+		</div>
+	</div>
+	<script src="/src/js/background.js"></script>
+	<script src="/src/js/img-container-defs.js"></script>
+	<script>
+
+		modal = document.getElementById("modal-container");
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				document.getElementById('modal-container').style.display = 'none';
+			}
+		}
+
+		document.getElementById("search").addEventListener("keypress", function (event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				const url = new URL('search', window.location.origin);
+				url.searchParams.append('search', document.getElementById("search").value);
+				window.location.href = url;
+			}
+		});
+		function randomCard() {
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
+
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+
+			window.location.href = url;
+		}
+	</script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+			authDomain: "voyager-78e30.firebaseapp.com",
+			projectId: "voyager-78e30",
+			storageBucket: "voyager-78e30.firebasestorage.app",
+			messagingSenderId: "411191248476",
+			appId: "1:411191248476:web:591349be169d823e5f8899",
+			measurementId: "G-TQ1L48F25M"
+		};
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+		let username = "";
+		let password = "";
+		let sessionid = localStorage.getItem('settings.session');
+		let decks = {};
+		const events = ["GP1", "League"];
+		let user_data;
+
+		const group_cards = false;
+		const card_spacing = 38;
+		const card_height = 300;
+
+		document.body.style.setProperty("--card-height", card_height + "px");
+		document.body.style.setProperty("--card-spacing", card_spacing + "px");
+
+		if (sessionid) {
+			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+				let data = docSnap.data();
+				username = data.username;
+				password = data.password;
+			});
+
+			await getDoc(doc(db, 'users', username)).then(docSnap => {
+				let data = docSnap.data();
+				user_data = data;
+			});
+		}
+
+		let card_list;
+
+		await fetch('/lists/all-cards.json')
+				.then(response => response.json())
+				.then(json => {
+					card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+		let card_list_arrayified = card_list.cards;
+
+		async function reload() {
+			const urlParams = new URLSearchParams(window.location.search);
+
+			if (urlParams.get('deck') != null) { // check if deck exists
+				if (urlParams.get('deck').includes(';')) { // check if deck has the ';' (for deck names)
+					let splitted = urlParams.get('deck').split(';'); // get the deck name and text by splitting
+					loadDeck(atob(splitted[1]), splitted[0]);
+				}
+
+				if (urlParams.get("deck").includes("-") && !urlParams.get("deck").includes(";")) {
+					const splitted = urlParams.get('deck').split('-');
+					const deck_user = splitted[0];
+					const deck_name = splitted[1];
+					await getDoc(doc(db, 'users', deck_user)).then(docSnap => {
+						let data2 = docSnap.data();
+						let decks = data2.decks;
+						for (const deck of decks) {
+							if (deck.name == deck_name) {
+								let text = atob(deck.url.split(";")[1].split("&")[0]);
+								loadDeck(text, deck.name);
+								window.fireimport = true;
+								break;
+							}
+						}
+					});
+				}
+			}
+
+			if (urlParams.get('edeck') != null) { // check if deck exists
+				const splitted = urlParams.get('edeck').split('-');
+				const deck_event = splitted[0];
+				const deck_user = splitted[1];
+				await getDoc(doc(db, 'events', deck_event)).then(docSnap => {
+					let data3 = docSnap.data();
+					let decks = data3.decks;
+					for (const user in decks) {
+						if (user == deck_user) {
+							let deck = decks[user];
+							let text = atob(deck.url.split(";")[1].split("&")[0]);
+							loadDeck(text, deck.name);
+							window.fireimport = true;
+							break;
+						}
+					}
+				});
+			}
+		}
+
+		function loadDeck(deck, name) {
+			document.getElementById("deck-name").innerText = name;
+			let sideboard = [];
+			let sanctum = [];
+			let sb_cards = false;
+			let sc_cards = false;
+
+			const lines = deck.split('\n');
+
+			let deck_map = new Map();
+			let land_map = new Map();
+			let sb_map = new Map();
+			let sc_map = new Map();
+
+			for (const line of lines) {
+				if (line == 'sideboard' || line == '') // '' for Draftmancer files
+				{
+					sb_cards = true;
+				}
+				else if (line == 'sanctum' || (sb_cards && line == '')) // '' for Draftmancer files
+				{
+					sc_cards = true;
+					sb_cards = false;
+				}
+				else if (!sb_cards && !sc_cards) {
+					// get the count and card name
+					let count = parseInt(line.substring(0, line.indexOf(' ')));
+					let card_name = line.substring(line.indexOf(' ') + 1);
+					
+					if (deck_map.has(card_name)) // if the deck has card name, add the new value, if it doesnt, set the value to stop keyerrors
+					{
+						deck_map.set(card_name, deck_map.get(card_name) + count);
+					}
+					else {
+						deck_map.set(card_name, count);
+					}
+				}
+				else if (sb_cards) // sideboard cards, do the same thing but with sb_map
+				{
+					let count = parseInt(line.substring(0, line.indexOf(' ')));
+					let card_name = line.substring(line.indexOf(' ') + 1);
+
+					if (sb_map.has(card_name)) {
+						sb_map.set(card_name, sb_map.get(card_name) + count);
+					}
+					else {
+						sb_map.set(card_name, count);
+					}
+				} else if (sc_cards) // sanctum cards, do the same thing but with sc_map
+				{
+					let count = parseInt(line.substring(0, line.indexOf(' ')));
+					let card_name = line.substring(line.indexOf(' ') + 1);
+
+					if (sc_map.has(card_name)) {
+						sc_map.set(card_name, sc_map.get(card_name) + count);
+					}
+					else {
+						sc_map.set(card_name, count);
+					}
+				}
+			} 
+
+			for (const card of card_list_arrayified) {
+				if (deck_map.has(card.card_name)) {
+					if (card.type.includes("Land")) {
+						land_map.set(card.card_name, [card, deck_map.get(card.card_name)]);
+						deck_map.delete(card.card_name);
+					} else {
+						deck_map.set(card.card_name, [card, deck_map.get(card.card_name)]);
+					}
+				}
+			}
+
+			const indexes = {};
+			let current_row = 0;
+			let current_col = 0;
+
+			let card_3copies = [];
+			let card_2copies = [];
+			let card_1copies = [];
+			
+			deck_map.forEach((copies_obj, card_name, map) => {
+				const copies = copies_obj[1];
+				const card = copies_obj[0];
+
+				if (copies == 4) {
+					if (current_col == 6) {
+						current_row += 4;
+						current_col = 0;
+					}
+
+					indexes[card_name] = [card, ...calculateIndexes4Copies(current_row, current_col)];
+					current_col++;
+
+				}
+				
+				if (copies == 3) {
+					card_3copies.push(card);
+				}
+				
+				if (copies == 2) {
+					card_2copies.push(card);
+				}
+				
+				if (copies == 1) {
+					card_1copies.push(card);
+				}
+			});
+
+			const pairs_3and1 = Math.min(card_3copies.length, card_1copies.length);
+
+			console.log(card_3copies, card_2copies, card_1copies);
+
+			for (let i = 0;  i < pairs_3and1; i++) {
+				const card3 = card_3copies[0];
+				const card1 = card_1copies[0];
+
+				console.log(card1, card3, i, card_3copies);
+
+				if (current_col == 6) {
+					current_row += 4;
+					current_col = 0;
+				}
+
+				const calculated = calculateIndexes3and1Copies(current_row, current_col, card1, card3);
+				
+				indexes[card1.card_name] = calculated[0];
+				indexes[card3.card_name] = calculated[1];
+
+				card_3copies.splice(0, 1);
+				card_1copies.splice(0, 1);
+
+				current_col++;
+			}
+
+			const pairs_2and2 = Math.floor(card_2copies.length / 2);
+
+			for (let i = 0;  i < pairs_2and2; i += 2) {
+				const card3 = card_2copies[0];
+				const card1 = card_2copies[1];
+
+				console.log(card1, card3, i, card_3copies);
+
+				if (current_col == 6) {
+					current_row += 4;
+					current_col = 0;
+				}
+
+				const calculated = calculateIndexes2pairCopies(current_row, current_col, card1, card3);
+				
+				indexes[card1.card_name] = calculated[0];
+				indexes[card3.card_name] = calculated[1];
+
+				card_2copies.splice(0, 1);
+				card_2copies.splice(1, 1);
+
+				current_col++;
+			}
+
+			const new_indexes = [];
+
+			for (const card_name in indexes) {
+				const card_locs = indexes[card_name].slice(1, indexes[card_name].length);
+				const card = indexes[card_name][0];
+
+				for (const index of card_locs) {
+					new_indexes[index] = card;
+				}
+			}
+
+			console.log(new_indexes);
+
+			for (const card of new_indexes) {
+				if(card) {
+					document.getElementById("deck-container").appendChild(buildImgContainer(card));
+				} else {
+					document.getElementById("deck-container").appendChild(document.createElement("div"));
+				}
+			}
+			/*
+
+			for (const card of card_list_arrayified) {
+				// for every card, if it's in the deck map, add it to the deck, then remove it from the deck map; repeat with the sideboard map
+				if (deck_map.has(card.card_name)) {
+					for (let i = 0; i < deck_map.get(card.card_name); i++) {
+						document.getElementById("deck-container").appendChild(buildImgContainer(card));
+					}
+					deck_map.delete(card.card_name);
+				}
+			}
+
+			for (const card of card_list_arrayified) {
+				// for every card, if it's in the deck map, add it to the deck, then remove it from the deck map; repeat with the sideboard map
+				if (land_map.has(card.card_name)) {
+					for (let i = 0; i < land_map.get(card.card_name); i++) {
+						document.getElementById("deck-container").appendChild(buildImgContainer(card));
+					}
+					land_map.delete(card.card_name);
+				}
+			}*/
+		}
+
+		function calculateIndexes4Copies(current_row, current_col) {
+			return [current_row * 6 + current_col, (current_row + 1) * 6 + current_col, (current_row + 2) * 6 + current_col, (current_row + 3) * 6 + current_col];
+		}
+
+		function calculateIndexes3and1Copies(current_row, current_col, card1, card3) {
+			return [[card1, current_row * 6 + current_col], [card3, (current_row + 1) * 6 + current_col, (current_row + 2) * 6 + current_col, (current_row + 3) * 6 + current_col]];
+		}
+
+		function calculateIndexes2pairCopies(current_row, current_col, card1, card2) {
+			return [[card1, current_row * 6 + current_col, (current_row + 1) * 6 + current_col], [card2, (current_row + 2) * 6 + current_col, (current_row + 3) * 6 + current_col]];
+		}
+
+		reload();
+	</script>
+</body>
+
+</html>

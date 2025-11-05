@@ -1,0 +1,205 @@
+<html>
+
+<head>
+	<title>Page Directory</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
+	<link rel="stylesheet" href="/src/css/mana.css">
+	<link rel="stylesheet" href="/src/css/header.css">
+	<link rel="stylesheet" href="/src/css/theme.css">
+	<link rel="stylesheet" href="/src/css/modal.css">
+	<link rel="stylesheet" href="/src/css/pages/page-directory.css">
+</head>
+<body>
+	<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/header/search.png">
+			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<div class="community"><a href="/community" id="account-link"><img src="/img/header/community.png"
+						class="sg-icon">Community<b>⮟</b></a>
+				<div class="community-dropdown">
+					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
+							src="/img/header/community.png">Users</a>
+					<a href="/community?tab=decks" class="community-dropdown-item"><img class="dropdown-icon"
+							src="/img/header/deck.png">Decks</a>
+					<a href="/community?tab=events" class="community-dropdown-item"><img class="dropdown-icon"
+							src="/img/swords.png">Events</a>
+					<a href="/community?tab=cards" class="community-dropdown-item"><img class="dropdown-icon"
+							src="/img/header/sets.png">Cards</a>
+				</div>
+			</div>
+			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+			<a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
+		</div>
+	</div>
+	<div class="selects" id="selects">
+		<select id="color-select" onchange="setGradient()">
+		</select>
+	</div>
+	<div class="page-container">
+        <input type="text" inputmode="search" placeholder="Search pages ..." name="search" id="search" class="search" spellcheck="false"
+				autocomplete="off" autocorrect="off" spellcheck="false">
+        <div class="pages-grid" id="pages-grid"></div>
+	</div>
+	<div id="modal-container">
+		<div id="modal-content" class="popout">
+			<span class="close"
+				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+		</div>
+	</div>
+	<script src="/src/js/background.js"></script>
+	<script>
+        let page_info;
+		modal = document.getElementById("modal-container");
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				document.getElementById('modal-container').style.display = 'none';
+			}
+		}
+
+        document.addEventListener("DOMContentLoaded", async () => {
+            await fetch('/lists/all-cards.json')
+				.then(response => response.json())
+				.then(json => {
+					card_list = json;
+				}).catch(error => console.error('Error:', error));
+                
+            card_list_arrayified = card_list.cards;
+
+            await fetch('/data/page-info.json')
+				.then(response => response.json())
+				.then(json => {
+					page_info = json;
+				}).catch(error => console.error('Error:', error));
+
+            renderPages();
+        });
+
+        function renderPages() {
+            document.getElementById("pages-grid").innerHTML = "";
+            for (const page of page_info.pages) {
+                const total_page_text = page.name + " " + page.desc + " " + page.url;
+                let page_found = true;
+
+                for (const search_term of document.getElementById("search").value.split(" ")) {
+                    if (!total_page_text.includes(search_term)) {
+                        page_found = false;
+                        break;
+                    }
+                }
+
+                if (page_found) {
+                    document.getElementById("pages-grid").appendChild(renderPage(page));
+                }
+            }
+        }
+
+        function renderPage(page) {
+            const page_container = document.createElement("div");
+            const page_title = document.createElement("span");
+            const page_url = document.createElement("a");
+            const page_desc = document.createElement("span");
+
+            page_container.className = "a-page-container popout";
+
+            page_title.innerText = page.name;
+            page_title.className = "page-title";
+
+            page_url.innerHTML = page.url.replaceAll("/", "</b> › <b>") + "</b>";
+            page_url.className = "page-url";
+            page_url.href = page.url;
+
+            page_desc.innerText = page.desc;
+            page_desc.className = "page-desc";
+
+            page_container.appendChild(page_title);
+            page_container.appendChild(page_url);
+            page_container.appendChild(page_desc);
+
+            return page_container;
+        }
+
+		document.getElementById("search").addEventListener("keyup", function (event) {
+			renderPages();
+		});
+
+		function randomCard() {
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
+
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+
+			window.location.href = url;
+		}
+	</script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+			authDomain: "voyager-78e30.firebaseapp.com",
+			projectId: "voyager-78e30",
+			storageBucket: "voyager-78e30.firebasestorage.app",
+			messagingSenderId: "411191248476",
+			appId: "1:411191248476:web:591349be169d823e5f8899",
+			measurementId: "G-TQ1L48F25M"
+		};
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+		let username = "";
+		let password = "";
+		let sessionid = localStorage.getItem('settings.session');
+		let decks = {};
+		const events = ["GP1", "League"];
+		let user_data;
+
+		if (sessionid) {
+			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+				let data = docSnap.data();
+				username = data.username;
+				password = data.password;
+			});
+
+			await getDoc(doc(db, 'users', username)).then(docSnap => {
+				let data = docSnap.data();
+				user_data = data;
+			});
+		}
+
+		document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
+		document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
+
+		if (localStorage.getItem("settings.darkthememenu") == "On") {
+			document.getElementById("popout-style").innerHTML = ".popout { background-color: #000 !important; color: #f3f3f3 !important; }";
+		} else if (localStorage.getItem("settings.darkthememenu") == "Off") {
+			document.getElementById("popout-style").innerHTML = ".popout { background-color: #f3f3f3 !important;  }";
+		}
+
+
+		async function reload() {
+			//firebase code
+		}
+
+		reload();
+	</script>
+</body>
+
+</html>

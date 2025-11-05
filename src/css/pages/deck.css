@@ -1,0 +1,20 @@
+.deck-container {
+    display: grid;
+    /* grid-template-columns: repeat(calc(70vw / calc(var(--card-height) / 1.4)), 1fr); */
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: 15vw;
+    width: 70vw;
+}
+
+.deck-container .img-container {
+    height: var(--card-height);
+}
+
+.deck-container .img-container img {
+    height: var(--card-height);
+    width: auto;
+}
+
+.deck-container .img-container {
+    height: var(--card-spacing);
+}
