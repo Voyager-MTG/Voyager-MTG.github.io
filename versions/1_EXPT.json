@@ -3,7 +3,7 @@
     "formats": "",
     "trimmed": "n",
     "image_type": "jpg",
-    "draft_structure": "cube",
+    "draft_structure": "play booster",
     "designer": "Voyager",
     "cards": [
         {
@@ -356,7 +356,7 @@
             "number": 29,
             "color_identity": "I",
             "cost": "{1}{I}",
-            "rules_text": "Flying\nWhenever Eschewer of Form deals combat damage to a player, you may embrace a card with a creature type from your hand. If you do, draw a card. [i](Exile it. You may play it on a later turn that a source you control that shares a creature type with it dealt damage to an opponent.)[/i]",
+            "rules_text": "Flying\nWhenever Eschewer of Form deals combat damage to a player, you may embrace a card with a creature type from your hand. If you do, draw a card. [i](Exile it. You may play it on a later turn that a source you control that shares a creature type with it dealt damage to an opponent.)[/i] [i]()[/i]",
             "flavor_text": "[i][/i]",
             "pt": "1/3",
             "special_text": "",
@@ -2218,7 +2218,7 @@
             "number": 55,
             "color_identity": "I",
             "cost": "{I}{I}",
-            "rules_text": "Vigilance\nAs long as your complexity is three or greater, Nildiver is also a creature. [i](Your complexity is the number of spells you've cast and nonland abilities you've activated this turn.)[/i] [i](Your complexity is the number of spells you've cast and nonland abilities you've activated this turn.)[/i]\nMaterialize 4 [i](Tap one or more other enchantments you control with total mana value 4 or more: This also becomes an Icon creature until end of turn.)[/i]",
+            "rules_text": "Vigilance\nAs long as your complexity is three or greater, Nildiver is also a creature. [i](Your complexity is the number of spells you've cast and nonland abilities you've activated this turn.)[/i] [i](Your complexity is the number of spells you've cast and nonland abilities you've activated this turn.)[/i]\nMaterialize 4 [i](Tap one or more other enchantments you control with total mana value 4 or more: This also becomes an Icon creature until your next upkeep.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "4/4",
             "special_text": "",

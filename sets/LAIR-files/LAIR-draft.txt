@@ -1,0 +1,460 @@
+﻿[CustomCards]
+	[
+		{
+			"name": "Mother of Ants",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{R}",
+			"type": "Legendary Creature — Cleric God",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/8_Mother of Ants.jpg"
+			}
+		},
+		{
+			"name": "The Forge of Days",
+			"rarity": "mythic",
+			"mana_cost": "{2}{R}{R}{W}",
+			"type": "Legendary Creature — Elemental God",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/6_The Forge of Days.jpg"
+			}
+		},
+		{
+			"name": "The Moth",
+			"rarity": "mythic",
+			"mana_cost": "{3}{B}{G}",
+			"type": "Legendary Creature — Insect God",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/7_The Moth.jpg"
+			}
+		},
+		{
+			"name": "The Red Grail",
+			"rarity": "mythic",
+			"mana_cost": "{3}{B}{R}",
+			"type": "Legendary Creature — Vampire God",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/9_The Red Grail.jpg"
+			}
+		},
+		{
+			"name": "The Watchman",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Legendary Creature — Human God",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/11_The Watchman.jpg"
+			}
+		},
+		{
+			"name": "The Thunderskin",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}{W}",
+			"type": "Legendary Creature — Human God",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/10_The Thunderskin.jpg"
+			}
+		},
+		{
+			"name": "Drifting Field",
+			"rarity": "masterpiece",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/8_Drifting Field.jpg"
+			}
+		},
+		{
+			"name": "Mountain",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Mountain",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/18_Mountain.jpg"
+			}
+		},
+		{
+			"name": "Island",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Island",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/16_Island.jpg"
+			}
+		},
+		{
+			"name": "Plains",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Plains",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/19_Plains.jpg"
+			}
+		},
+		{
+			"name": "Swamp",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Swamp",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/28_Swamp.jpg"
+			}
+		},
+		{
+			"name": "Forest",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Forest",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/13_Forest.jpg"
+			}
+		},
+		{
+			"name": "Drown in Self Reflection",
+			"rarity": "masterpiece",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/4_Drown in Self Reflection.jpg"
+			}
+		},
+		{
+			"name": "Apostle Entheate",
+			"rarity": "masterpiece",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Creature — Angel Cleric",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/2_Apostle Entheate.jpg"
+			}
+		},
+		{
+			"name": "Identity Connoisseur",
+			"rarity": "masterpiece",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Creature — Human Assassin",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/5_Identity Connoisseur.jpg"
+			}
+		},
+		{
+			"name": "Illuminant Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/15_Illuminant Spire.jpg"
+			}
+		},
+		{
+			"name": "Ivory Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/17_Ivory Spire.jpg"
+			}
+		},
+		{
+			"name": "Searing Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/26_Searing Spire.jpg"
+			}
+		},
+		{
+			"name": "Silent Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/27_Silent Spire.jpg"
+			}
+		},
+		{
+			"name": "Twisted Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "29",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/29_Twisted Spire.jpg"
+			}
+		},
+		{
+			"name": "Verdant Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/30_Verdant Spire.jpg"
+			}
+		},
+		{
+			"name": "True Blood of Saint Janus",
+			"rarity": "mythic",
+			"mana_cost": "{2}",
+			"type": "Legendary Artifact",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/12_True Blood of Saint Janus.jpg"
+			}
+		},
+		{
+			"name": "The Heart of Ischav",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/14_The Heart of Ischav.jpg"
+			}
+		},
+		{
+			"name": "Found Family",
+			"rarity": "mythic",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/2_Found Family.jpg"
+			}
+		},
+		{
+			"name": "Delete",
+			"rarity": "mythic",
+			"mana_cost": "{B}",
+			"type": "Instant",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/3_Delete.jpg"
+			}
+		},
+		{
+			"name": "The Calm Belt",
+			"rarity": "mythic",
+			"mana_cost": "{1}",
+			"type": "Enchantment — Realm",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/1_The Calm Belt.jpg"
+			}
+		},
+		{
+			"name": "Wanderer's Shrine",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/31_Wanderer's Shrine.jpg"
+			}
+		},
+		{
+			"name": "Falling Sparks",
+			"rarity": "mythic",
+			"mana_cost": "{X}{1}{C}{R}",
+			"type": "Sorcery",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/5_Falling Sparks.jpg"
+			}
+		},
+		{
+			"name": "Sundown",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/4_Sundown.jpg"
+			}
+		},
+		{
+			"name": "Restored Plains",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land — Plains",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/24_Restored Plains.jpg"
+			}
+		},
+		{
+			"name": "Restored Island",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land — Island",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/22_Restored Island.jpg"
+			}
+		},
+		{
+			"name": "Restored Swamp",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land — Swamp",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/25_Restored Swamp.jpg"
+			}
+		},
+		{
+			"name": "Restored Mountain",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land — Mountain",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/23_Restored Mountain.jpg"
+			}
+		},
+		{
+			"name": "Restored Fault",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land — Fault",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/20_Restored Fault.jpg"
+			}
+		},
+		{
+			"name": "Restored Forest",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land — Forest",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/21_Restored Forest.jpg"
+			}
+		},
+		{
+			"name": "Call of the Rose",
+			"rarity": "masterpiece",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/6_Call of the Rose.jpg"
+			}
+		},
+		{
+			"name": "The Gardener, Crowned",
+			"rarity": "masterpiece",
+			"mana_cost": "{12}",
+			"type": "Legendary Planeswalker — Gardener",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/1_The Gardener, Crowned.jpg"
+			}
+		},
+		{
+			"name": "Wonder",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Wonder",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/1_Wonder.jpg"
+			}
+		},
+		{
+			"name": "Blinding Majesty",
+			"rarity": "masterpiece",
+			"mana_cost": "{2}{W}",
+			"type": "Instant",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/3_Blinding Majesty.jpg"
+			}
+		},
+		{
+			"name": "Shimmer From Beyond",
+			"rarity": "masterpiece",
+			"mana_cost": "{3}{R}",
+			"type": "Sorcery",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/7_Shimmer From Beyond.jpg"
+			}
+		},
+	]
+
+[rare(1)]
+	2 Mother of Ants
+	1 The Forge of Days
+	1 The Moth
+	1 The Red Grail
+	2 The Watchman
+	1 The Thunderskin
+	1 True Blood of Saint Janus
+	1 The Heart of Ischav
+	1 Found Family
+	1 Delete
+	1 The Calm Belt
+	1 Wanderer's Shrine
+	1 Falling Sparks
+	1 Sundown
+	1 Restored Plains
+	1 Restored Island
+	1 Restored Swamp
+	1 Restored Mountain
+	1 Restored Fault
+	1 Restored Forest
+[uncommon(4)]
+	4 Illuminant Spire
+	4 Ivory Spire
+	4 Searing Spire
+	4 Silent Spire
+	4 Twisted Spire
+	4 Verdant Spire
+[common(7)]
+[wildcard(2)]
+	7 Mother of Ants
+	4 The Forge of Days
+	4 The Moth
+	4 The Red Grail
+	7 The Watchman
+	4 The Thunderskin
+	15 Illuminant Spire
+	15 Ivory Spire
+	15 Searing Spire
+	15 Silent Spire
+	15 Twisted Spire
+	15 Verdant Spire
+	4 True Blood of Saint Janus
+	4 The Heart of Ischav
+	4 Found Family
+	4 Delete
+	4 The Calm Belt
+	4 Wanderer's Shrine
+	4 Falling Sparks
+	4 Sundown
+	4 Restored Plains
+	4 Restored Island
+	4 Restored Swamp
+	4 Restored Mountain
+	4 Restored Fault
+	4 Restored Forest

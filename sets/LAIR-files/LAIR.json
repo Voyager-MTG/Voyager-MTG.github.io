@@ -1,7 +1,7 @@
 ﻿{
     "name": "Secret Lair Drops",
     "formats": "",
-    "trimmed": "n",
+    "trimmed": "y",
     "image_type": "jpg",
     "draft_structure": "play booster",
     "designer": "Voyager",
@@ -766,5 +766,6 @@
             "artist": "Jennifer Beam",
             "notes": "!porthole\n!designer TVP\n!tag<is> champion\n!tag<champion> TVP"
         }
-    ]
+    ],
+    "version": 1
 }
