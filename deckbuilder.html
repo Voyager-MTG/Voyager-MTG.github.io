@@ -3278,7 +3278,7 @@
 						for (const deck of decks) {
 							if (deck.name == deck_name) {
 								let text = atob(deck.url.split(";")[1].split("&")[0]);
-								readDeckText(text, deck.name);
+								if (!deck.private) readDeckText(text, deck.name);
 								window.fireimport = true;
 								break;
 							}
@@ -3298,7 +3298,7 @@
 						if (user == deck_user) {
 							let deck = decks[user];
 							let text = atob(deck.url.split(";")[1].split("&")[0]);
-							readDeckText(text, deck.name);
+							if (!deck.private) readDeckText(text, deck.name);
 							window.fireimport = true;
 							break;
 						}
