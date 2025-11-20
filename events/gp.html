@@ -1461,6 +1461,8 @@
 				let i = 0;
 
 				for (const player in decks) {
+					decks[player].private = false;
+
 					if (!in_games.includes(player)) {
 						let game = {};
 
@@ -1482,6 +1484,10 @@
 					rounds: JSON.stringify(rounds),
 					num_rounds: numRounds(in_games.length),
 					stage: "swiss"
+				});
+
+				await updateDoc(doc(db, 'events', event), {
+					decks: decks
 				});
 
 				reload();
