@@ -42,7 +42,20 @@
 		</select>
 	</div>
 	<div class="page-container">
-		<h1 class="deck-name" id="deck-name">Deck Name</h1>
+		<h1 class="deck-name text" id="deck-name">Deck Name</h1>
+		<span class="deck-author text" id="deck-author">by Unknown</span>
+		<div class="deck-options">
+			<button class="deck-button">Export <img class="deck-button-icon" src="/img/export-white.png"></button>
+			<a id="editb"><button class="deck-button">Edit <img class="deck-button-icon" src="/img/edit.png"></button></a>
+			<div class="deck-opt-section">
+				<span class="deck-opt-label">Displayed as:</span>
+				<select class="deck-opt-select" id="displayed-as">
+					<option>Sorted by MV</option>
+					<option>Text</option>
+					<option>Grid</option>
+				</select>
+			</div>
+		</div>
 		<div class="deck-container" id="deck-container">
 
 		</div>
@@ -53,6 +66,7 @@
 				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
 		</div>
 	</div>
+	<img id="hover-card" class="hover-card">
 	<script src="/src/js/background.js"></script>
 	<script src="/src/js/img-container-defs.js"></script>
 	<script>
@@ -139,6 +153,7 @@
 		}
 
 		let card_list;
+		let deck_author;
 
 		await fetch('/lists/all-cards.json')
 				.then(response => response.json())
@@ -154,12 +169,14 @@
 			if (urlParams.get('deck') != null) { // check if deck exists
 				if (urlParams.get('deck').includes(';')) { // check if deck has the ';' (for deck names)
 					let splitted = urlParams.get('deck').split(';'); // get the deck name and text by splitting
+					deck_author = "Unknown";
 					loadDeck(atob(splitted[1]), splitted[0]);
 				}
 
 				if (urlParams.get("deck").includes("-") && !urlParams.get("deck").includes(";")) {
 					const splitted = urlParams.get('deck').split('-');
 					const deck_user = splitted[0];
+					deck_author = deck_user;
 					const deck_name = splitted[1];
 					await getDoc(doc(db, 'users', deck_user)).then(docSnap => {
 						let data2 = docSnap.data();
@@ -180,6 +197,7 @@
 				const splitted = urlParams.get('edeck').split('-');
 				const deck_event = splitted[0];
 				const deck_user = splitted[1];
+				deck_author = deck_user;
 				await getDoc(doc(db, 'events', deck_event)).then(docSnap => {
 					let data3 = docSnap.data();
 					let decks = data3.decks;
@@ -196,8 +214,11 @@
 			}
 		}
 
-		function loadDeck(deck, name) {
+		function makeMaps(deck, name) {
 			document.getElementById("deck-name").innerText = name;
+			document.getElementById("deck-author").innerText = "by " + deck_author;
+			document.getElementById("editb").href = "/deckbuilder" + window.location.search;
+
 			let sideboard = [];
 			let sanctum = [];
 			let sb_cards = false;
@@ -256,18 +277,253 @@
 						sc_map.set(card_name, count);
 					}
 				}
-			} 
+			}
+
+			const deck_done = [];
+			const sb_done = [];
+			const sc_done = [];
 
 			for (const card of card_list_arrayified) {
-				if (deck_map.has(card.card_name)) {
-					if (card.type.includes("Land")) {
-						land_map.set(card.card_name, [card, deck_map.get(card.card_name)]);
-						deck_map.delete(card.card_name);
-					} else {
-						deck_map.set(card.card_name, [card, deck_map.get(card.card_name)]);
-					}
+				if (deck_map.has(card.card_name) && !deck_done.includes(card.card_name)) {
+					deck_done.push(card.card_name);
+					deck_map.set(card.card_name, [card, deck_map.get(card.card_name)]);
+				}
+
+				if (sb_map.has(card.card_name) && !sb_done.includes(card.card_name)) {
+					sb_done.push(card.card_name);
+					sb_map.set(card.card_name, [card, sb_map.get(card.card_name)]);
+				}
+
+				if (sc_map.has(card.card_name) && !sc_done.includes(card.card_name)) {
+					sc_done.push(card.card_name);
+					sc_map.set(card.card_name, [card, sc_map.get(card.card_name)]);
 				}
 			}
+
+			return [deck_map, sb_map, sc_map];
+		}
+
+		function convertToMV(cost) {
+			let mv = 0;
+
+			const costTokens = cost.substring(1, cost.length - 1).replaceAll("}{", " ").split(' ');
+			for (const token of costTokens) {
+				if (isDecimal(token)) {
+					mv += parseInt(token);
+				}
+				// 2brid
+				else if (token.includes('2')) {
+					mv += 2;
+				}
+				else if (token != "X" && token != "") {
+					mv += 1;
+				}
+			}
+
+			return mv;
+		}
+
+		function showCardHover(card_name, set = false, num = false) {
+			// console.log(set, num);
+			for (const card_stats of card_list_arrayified) {
+				if (card_stats.card_name == card_name && (!set || card_stats.set == set) && (!num || card_stats.number == num)) {
+					const src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+
+					const hover_card = document.getElementById("hover-card");
+					hover_card.style.display = "block";
+					hover_card.src = src;
+					return;
+				}
+			}
+		}
+
+		function moveCardHover(event) {
+			document.getElementById("hover-card").style.left = event.pageX + "px";
+			document.getElementById("hover-card").style.top = event.pageY - 350 + "px";
+		}
+
+		function hideCardHover() {
+			document.getElementById("hover-card").style.display = "none";
+		}
+
+		function loadDeck(deck, name) {
+			document.getElementById("deck-container").style.gridTemplateColumns = "repeat(10, 1fr)";
+
+			const small_width = window.innerWidth < 1200;
+
+			const card_width = window.innerWidth * 0.87 / 10 * (small_width ? 2 : 1);
+			const card_height = card_width * 3.5 / 2.5;
+
+			if (small_width) {
+				document.getElementById("deck-container").style.gridTemplateColumns = "repeat(5, 1fr)";
+			}
+			
+			document.body.style.setProperty("--card-height", card_height + "px");
+			document.body.style.setProperty("--card-spacing", card_height / 8 + "px");
+
+			const maps = makeMaps(deck, name);
+			const deck_map = maps[0];
+			const sb_map = maps[1];
+			const sc_map = maps[2];
+
+			console.log(sb_map, sc_map);
+
+			const mv_list = ["0-1", "0-2", 1, 2, 3, 4, 5, "6+", "Sideboard", "Sanctum"];
+			let mv0s = []; 
+			for (const mv of mv_list) {
+				const mv_container = document.createElement("div");
+				mv_container.className = "mv-container";
+				mv_container.id = `mv-${mv}`;
+
+				const mv_label = document.createElement("span");
+				mv_label.className = "mv-label text";
+				mv_label.id = `mv-label-${mv}`;
+				mv_label.innerText = mv;
+
+				const mv_cards_container = document.createElement("div");
+				mv_cards_container.className = "mv-cards-container";
+				mv_cards_container.id = `mv-cards-${mv}`;
+
+				mv_container.appendChild(mv_label);
+				mv_container.appendChild(mv_cards_container);
+
+				document.getElementById("deck-container").appendChild(mv_container);
+			}
+
+			deck_map.forEach((copies_obj, card_name, map) => {
+				const copies = copies_obj[1];
+				const card = copies_obj[0];
+
+				const cardMv = convertToMV(card.cost);
+
+				if (cardMv == 0) { 
+					mv0s.push([card, copies]);
+				} else if (cardMv >= 6) {
+					for (let i = 0; i < copies; i++) { // onmouseover="showCardHover('${card_name}')" onmousemove="moveCardHover(event)" onmouseout="hideCardHover()"
+						const img_container = buildImgContainer(card);
+
+						img_container.onmouseover = () => {
+							showCardHover(card.card_name);
+						}
+
+						img_container.onmousemove = (event) => {
+							moveCardHover(event);
+						}
+
+						img_container.onmouseout = () => {
+							hideCardHover();
+						}
+
+						document.getElementById("mv-cards-6+").appendChild(img_container);
+					}
+				} else {
+					for (let i = 0; i < copies; i++) {
+						const img_container = buildImgContainer(card);
+
+						img_container.onmouseover = () => {
+							showCardHover(card.card_name);
+						}
+
+						img_container.onmousemove = (event) => {
+							moveCardHover(event);
+						}
+
+						img_container.onmouseout = () => {
+							hideCardHover();
+						}
+
+						document.getElementById(`mv-cards-${cardMv}`).appendChild(img_container);
+					}
+				}
+			});
+
+			sb_map.forEach((copies_obj, card_name, map) => {
+				const copies = copies_obj[1];
+				const card = copies_obj[0];
+
+				for (let i = 0; i < copies; i++) { // onmouseover="showCardHover('${card_name}')" onmousemove="moveCardHover(event)" onmouseout="hideCardHover()"
+					const img_container = buildImgContainer(card);
+
+					img_container.onmouseover = () => {
+						showCardHover(card.card_name);
+					}
+
+					img_container.onmousemove = (event) => {
+						moveCardHover(event);
+					}
+
+					img_container.onmouseout = () => {
+						hideCardHover();
+					}
+
+					document.getElementById("mv-cards-Sideboard").appendChild(img_container);
+				}				
+			});
+
+			sc_map.forEach((copies_obj, card_name, map) => {
+				const copies = copies_obj[1];
+				const card = copies_obj[0];
+
+				for (let i = 0; i < copies; i++) { // onmouseover="showCardHover('${card_name}')" onmousemove="moveCardHover(event)" onmouseout="hideCardHover()"
+					const img_container = buildImgContainer(card);
+
+					img_container.onmouseover = () => {
+						showCardHover(card.card_name);
+					}
+
+					img_container.onmousemove = (event) => {
+						moveCardHover(event);
+					}
+
+					img_container.onmouseout = () => {
+						hideCardHover();
+					}
+
+					document.getElementById("mv-cards-Sanctum").appendChild(img_container);
+				}
+			});
+
+			let half = 0;
+			let counter = 0;
+
+			for (const l of mv0s) {
+				const copies = l[1];
+
+				for (let i = 0; i < copies; i++) {
+					half += 0.5;
+				}
+			}
+
+			half = Math.floor(half);
+
+			for (const l of mv0s) {
+				const card = l[0];
+				const copies = l[1];
+
+				for (let i = 0; i < copies; i++) {
+					const img_container = buildImgContainer(card);
+
+					img_container.onmouseover = () => {
+						showCardHover(card.card_name);
+					}
+
+					img_container.onmousemove = (event) => {
+						moveCardHover(event);
+					}
+
+					img_container.onmouseout = () => {
+						hideCardHover();
+					}
+					
+					document.getElementById(`mv-cards-0-${counter <= half ? '1' : '2'}`).appendChild(img_container);
+					counter++;
+				}
+			}
+		}
+
+		function loadDeckOld(deck, name) {
+			const maps = makeMaps(deck, name);
+			const deck_map = maps[0];
 
 			const indexes = {};
 			let current_row = 0;
@@ -307,13 +563,11 @@
 
 			const pairs_3and1 = Math.min(card_3copies.length, card_1copies.length);
 
-			console.log(card_3copies, card_2copies, card_1copies);
-
 			for (let i = 0;  i < pairs_3and1; i++) {
 				const card3 = card_3copies[0];
 				const card1 = card_1copies[0];
 
-				console.log(card1, card3, i, card_3copies);
+				console.log(card1, card3, i, [...card_3copies]);
 
 				if (current_col == 6) {
 					current_row += 4;
@@ -337,8 +591,6 @@
 				const card3 = card_2copies[0];
 				const card1 = card_2copies[1];
 
-				console.log(card1, card3, i, card_3copies);
-
 				if (current_col == 6) {
 					current_row += 4;
 					current_col = 0;
@@ -350,10 +602,66 @@
 				indexes[card3.card_name] = calculated[1];
 
 				card_2copies.splice(0, 1);
-				card_2copies.splice(1, 1);
+				card_2copies.splice(0, 1);
 
 				current_col++;
 			}
+
+			const pairs_332 = Math.min(card_3copies.length / 2, card_2copies.length);
+
+			for (let i = 0;  i < pairs_332; i++) {
+				const card31 = card_3copies[0];
+				const card32 = card_3copies[1];
+				const card2 = card_2copies[0];
+
+				if (current_col == 6) {
+					current_row += 4;
+					current_col = 0;
+				}
+
+				const calculated = calculateIndexes332Copies(current_row, current_col, card31, card32, card2);
+
+				console.log(card31.card_name, card32.card_name, card2.card_name, calculated, card_3copies);
+				console.log(current_row, current_col);
+				
+				indexes[card31.card_name] = calculated[0];
+				indexes[card32.card_name] = calculated[1];
+				indexes[card2.card_name] = calculated[2];
+
+				card_3copies.splice(0, 1);
+				card_3copies.splice(0, 1);
+				card_2copies.splice(0, 1);
+
+				current_col += 2;
+				
+				if (current_col == 7) {
+					current_col = 1;
+					current_row += 4;
+				}
+			}
+
+			let unplaced = [...card_1copies, ...card_2copies, ...card_2copies, ...card_3copies, ...card_3copies, ...card_3copies];
+
+			for (let i = 0;  i < unplaced.length; i++) {
+				
+
+				if (current_col == 6) {
+					current_row += 4;
+					current_col = 0;
+				}
+
+				const card = unplaced[i];
+
+				if (!indexes[card.card_name]) {
+					indexes[card.card_name] = [card, current_row * 6 + current_col];
+				} else {
+					indexes[card.card_name].push(current_row * 6 + current_col);
+				}
+
+				current_col++;
+			} 
+
+			console.log(indexes);
 
 			const new_indexes = [];
 
@@ -408,6 +716,32 @@
 
 		function calculateIndexes2pairCopies(current_row, current_col, card1, card2) {
 			return [[card1, current_row * 6 + current_col, (current_row + 1) * 6 + current_col], [card2, (current_row + 2) * 6 + current_col, (current_row + 3) * 6 + current_col]];
+		}
+
+		function calculateIndexes332Copies(current_row, current_col, card31, card32, card2) {
+			/*if (current_col == 5) {
+				return [[card31, (current_row + 1) * 6 + current_col, (current_row + 2) * 6 + current_col, (current_row + 3) * 6 + current_col], [card32, (current_row + 5) * 6 + 1, (current_row + 6) * 6 + 1, (current_row + 7) * 6 + 1], [card2, current_row * 6 + 3 + current_col, (current_row + 4) * 6 + 5]];
+			}*/
+
+			console.log(current_row, current_col, current_row * 6 + current_col, 
+					current_row * 6 + 1 + current_col);
+
+			return [
+				[card31, 
+					(current_row + 1) * 6 + current_col, 
+					(current_row + 2) * 6 + current_col, 
+					(current_row + 3) * 6 + current_col
+				], 
+				[card32, 
+					(current_row + 1) * 6 + current_col + 1, 
+					(current_row + 2) * 6 + current_col + 1, 
+					(current_row + 3) * 6 + current_col + 1
+				], 
+				[card2, 
+					current_row * 6 + current_col, 
+					current_row * 6 + 1 + current_col
+				]
+			];
 		}
 
 		reload();

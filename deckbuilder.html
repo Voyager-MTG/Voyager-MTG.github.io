@@ -386,6 +386,7 @@
 			defaultSetting('settings.gradient', 'Default-(White)');
 			defaultSetting('settings.darkthememenu', 'Off');
 			defaultSetting('settings.format', 'Eternal');
+			defaultSetting('settings.deck_privacy', 'Public');
 
 			setGradient(localStorage.getItem("settings.gradient"));
 
@@ -893,93 +894,116 @@
 			let headerContainer = document.createElement("div");
 			headerContainer.className = "settings-modal-header-container";
 			const settingsMenus = ["Home", "Preview Card"]
+
 			for (const menuName of settingsMenus) {
 				let ele = document.createElement("span");
+
 				ele.onclick = function () {
 					openSettingsModal(menuName);
 				}
+
 				ele.innerText = menuName;
+
 				if (menuName == menu) {
 					ele.className = "settings-modal-header-active";
+
 					if (localStorage.getItem("settings.darkthememenu") == "On") {
 						ele.style.color = "#aaa";
 						ele.style.borderColor = "#ccc";
 					}
 				} else {
 					ele.className = "settings-modal-header";
+
 					if (localStorage.getItem("settings.darkthememenu") == "On") {
 						ele.style.color = "#333";
 						ele.style.borderColor = "#333";
 					}
 				}
+
 				headerContainer.appendChild(ele);
 			}
+
 			let contentContainer = document.createElement("div");
+
 			contentContainer.style.display = "grid";
 			contentContainer.style.gridTemplateColumns = "1fr 0.5fr";
 			contentContainer.style.gap = "10px";
+
 			let modalContent = '</select><span class="close" onclick="closeModal()">&times;</span>';
+
 			if (menu == "Home") {
 				contentContainer.appendChild(createText("Format: "));
 				contentContainer.appendChild(settingsOptionHtml("Format", "settings.format", ["Eternal", "EDH", "Collection League", "Pauper"]));
-				let gradientDropdown = document.createElement('select');
+
+				const gradientDropdown = document.createElement('select');
 				gradientDropdown.id = 'color-select';
 				gradientDropdown.className = "popout"
+
 				gradientDropdown.onchange = function () {
 					setGradient();
 				}
-				let gradientText = document.createElement('span');
+
+				const gradientText = document.createElement('span');
 				gradientText.innerText = "Background Gradient:"
+
 				contentContainer.appendChild(gradientText);
 				contentContainer.appendChild(gradientDropdown);
-				contentContainer.appendChild(createText("Dark theme: "));
-				contentContainer.appendChild(settingsOptionHtml("Dark Theme", "settings.darktheme", ["On", "Off"], function () {
-					let val = document.getElementById('settings.darktheme').value;
-					document.getElementById("settings.darkthememenu").value = val;
-					localStorage.setItem("settings.darkthememenu", val);
-					document.getElementById("settings.textcolor").value = (val == "On" ? "White" : "Black");
-					localStorage.setItem("settings.textcolor", (val == "On" ? "White" : "Black"));
-					setGradient(val == "On" ? 'Frost (Dark theme' : 'Voyager');
-					document.getElementById("color-select").value = (val == "On" ? 'Frost (Dark theme' : 'Voyager');
-					localStorage.setItem("settings.darktheme", val);
-					processDeck();
-				}));
+				
+				const privacyText = createText("Deck Privacy");
+				
+				const privacyDropdown = settingsOptionHtml("Privacy", "settings.deck_privacy", ["Public", "Private"]);
+
+				contentContainer.appendChild(privacyText);
+				contentContainer.appendChild(privacyDropdown);
+
 				const settingsBtn = document.createElement("button");
 				settingsBtn.className = "settings-modal-button popout";
 				settingsBtn.innerText = "Go to settings page";
+
 				settingsBtn.onclick = function () {
 					window.location.href = "settings";
 				}
+
 				contentContainer.appendChild(settingsBtn);
 			} else if (menu == "Preview Card") {
 				let preview_card_img = document.createElement("img");
 				let card_stats = JSON.parse(localStorage.getItem("settings.previewimg"));
+
 				preview_card_img.className = "card-image preview-card-image";
 				preview_card_img.id = "preview-card-image";
 				preview_card_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+
 				let card_dropdown = document.createElement("select");
 				card_dropdown.id = "card-dropdown";
 				card_dropdown.className = "popout";
+
 				let deck_list = [];
 				let option_ = document.createElement('option');
+
 				option_.innerText = card_stats.card_name;
 				option_.value = localStorage.getItem('settings.previewimg');
+
 				card_dropdown.appendChild(option_);
 				for (const card of deck) {
 					if (deck_list.includes(card) || card == localStorage.getItem('settings.previewimg')) {
 						continue
 					}
+
 					let card_stats = JSON.parse(card);
 					let option = document.createElement('option');
+
 					option.value = card;
 					option.innerText = card_stats.card_name;
+
 					deck_list.push(card);
 					card_dropdown.appendChild(option);
 				}
+
 				card_dropdown.onchange = function () {
 					localStorage.setItem("settings.previewimg", document.getElementById("card-dropdown").value);
 					openSettingsModal("Preview Card");
 				}
+
 				contentContainer.appendChild(preview_card_img);
 				contentContainer.appendChild(card_dropdown);
 			}
@@ -987,6 +1011,7 @@
 			document.getElementById("modal-content").innerHTML = modalContent;
 			document.getElementById("modal-content").appendChild(headerContainer);
 			document.getElementById("modal-content").appendChild(contentContainer);
+
 			prepareGradients();
 			setGradient();
 		}
@@ -3309,70 +3334,91 @@
 			document.getElementById('save-btn').addEventListener("click", (e) => {
 				let colorsList = [];
 				let colors = "";
+
 				for (const card of deck) {
-					let card_stats = JSON.parse(card); // because egg hub is cursed and stores strings for literally no reason
+					let card_stats = JSON.parse(card);
+
 					for (const color of card_stats.color) {
 						if (!colorsList.includes(color)) {
 							colorsList.push(color);
 						}
 					}
 				}
+
 				if (colorsList.includes('W')) {
 					colors += "W";
 				}
+
 				if (colorsList.includes('U')) {
 					colors += "U";
 				}
+
 				if (colorsList.includes('B')) {
 					colors += "B";
 				}
+
 				if (colorsList.includes('R')) {
 					colors += "R";
 				}
+
 				if (colorsList.includes('G')) {
 					colors += "G";
 				}
+
 				if (colorsList.includes('I')) {
 					colors += "I";
 				}
-				let card_stats = JSON.parse(localStorage.getItem('settings.previewimg'));
-				let date = new Date();
-				let deckObj = {
+
+				const card_stats = JSON.parse(localStorage.getItem('settings.previewimg'));
+				const date = new Date();
+
+				const deckObj = {
 					name: document.getElementById("deck-name").value,
 					previewimg: card_stats.card_name,
 					url: `https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`,
 					colors: colors,
 					last_modified: `${leadingZero(date.getDate())}-${leadingZero(date.getMonth())}-${date.getYear() + 1900}, ${date.getHours()}:${leadingZero(date.getMinutes())}`,
-					format: localStorage.getItem('settings.format')
+					format: localStorage.getItem('settings.format'),
+					private: localStorage.getItem("settings.deck_privacy") == "Private"
 				};
+
 				for (const deck_ of decks) {
 					if (deck_.name == deckObj.name) {
 						decks.splice(decks.indexOf(deck_), 1);
 					}
 				}
+
 				decks.push(deckObj);
+
 				updateDoc(doc(db, "users", username), {
 					decks: (decks)
 				});
 			});
+
 			window.beforeunload = function () {
 				if (localStorage.getItem("settings.autosave") != "On") return;
+
 				let card_stats = JSON.parse(localStorage.getItem('settings.previewimg'));
+
 				let deckObj = {
 					name: document.getElementById("deck-name").value,
 					previewimg: card_stats.card_name,
 					url: `https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`
 				};
+
 				for (const deck_ of decks) {
 					if (deck_.name == deckObj.name) {
 						decks.splice(decks.indexOf(deck_), 1);
 					}
 				}
+
 				decks.push(deckObj);
+
 				updateDoc(doc(db, "users", username), {
 					decks: (decks)
 				});
 			}
+
 			document.getElementById("file-menu").addEventListener("change", function (event) { // Watch the dropdown that says Actions...
 				let option = document.getElementById("file-menu").value; // get the chosen option
 				if (option == "save-collection") {
