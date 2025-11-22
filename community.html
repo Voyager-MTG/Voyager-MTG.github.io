@@ -319,7 +319,7 @@
 					window.location.href = `/deckbuilder?edeck=${deck.event}-${deck.user}`;
 					return;
 				}
-				window.location.href = `/deckbuilder?deck=${deck.user}-${encodeURI(deck.name)}`;
+				window.location.href = `/deck?deck=${deck.user}-${encodeURI(deck.name)}`;
 			}
 			const deck_name = document.createElement("div");
 			deck_name.className = "deck-name";

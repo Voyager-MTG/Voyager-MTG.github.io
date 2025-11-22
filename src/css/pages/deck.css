@@ -120,3 +120,30 @@ body[data-theme=Light]  .deck-button-icon {
     font-weight: bold;
     margin-top: 0;
 }
+
+.export-modal-button {
+	color: #fff;
+	background-color: rgba(14, 126, 246, 1);
+	padding: 10px;
+	margin: 10px;
+	display: inline-block;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.2s;
+	display: inline-flex;
+	gap: 5px;
+	flex-direction: row-reverse;
+	width: fit-content;
+	align-items: center;
+	justify-items: center;
+}
+
+.export-modal-button:hover {
+	background-color: rgb(16, 70, 128);
+}
+
+.export-icon {
+	width: 28px;
+}

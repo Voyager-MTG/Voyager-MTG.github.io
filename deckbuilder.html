@@ -856,7 +856,7 @@
 			document.getElementById("modal-content").innerHTML = `<span class="close" onclick="closeModal()">&times;</span>`;
 			let modalContent = document.createElement("div");
 			modalContent.appendChild(exportButtonHtml("Deck URL", function () {
-				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText(true, true))}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`); // write the url + ?deck= + the name with spaces replaced + ; + base64 encoded deck text + &main = deck count + &side= + sideboard count + &sanctum= + sanctum count
+				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deck?deck=${encodeURIComponent(document.getElementById("deck-name")) + ';' + btoa(generateDeckText(true, true))}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`); // write the url + ?deck= + the name with spaces replaced + ; + base64 encoded deck text + &main = deck count + &side= + sideboard count + &sanctum= + sanctum count
 				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Url copied to clipboard"); // open the modal notifying the user
 			}, "/img/copy-white.png"));
 
@@ -867,7 +867,7 @@
 			}, "/img/copy-white.png"));
 
 			modalContent.appendChild(exportButtonHtml("Discord Message", function () {
-				navigator.clipboard.writeText(`# [${document.getElementById("deck-name").value}](https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length})\n\`\`\`${generateDeckText()}\`\`\``); // CURSED
+				navigator.clipboard.writeText(`# [${document.getElementById("deck-name").value}](https://voyager-mtg.github.io/deck?deck=${encodeURIComponent(document.getElementById("deck-name")) + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length})\n\`\`\`${generateDeckText()}\`\`\``); // CURSED
 				document.getElementById("file-menu").value = "default";
 				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Discord message copied to clipboard"); // open the modal to notify the user
 			}, "/img/copy-white.png"));
@@ -1181,7 +1181,7 @@
 			preview_img.src = deck.previewimg == "cardback" ? "img/card_back.png" : card_stats_image;
 			preview_img.className = "deck-preview-img";
 			// preview_img.onclick = function() {
-			//     window.location.href = `/deckbuilder?deck=${deck.user}-${encodeURI(deck.name)}`
+			//     window.location.href = `/deck?deck=${deck.user}-${encodeURI(deck.name)}`
 			// }
 			const deck_name = document.createElement("div");
 			deck_name.className = "deck-name";
@@ -3416,7 +3416,7 @@
 				const deckObj = {
 					name: document.getElementById("deck-name").value,
 					previewimg: card_stats.card_name,
-					url: `https://voyager-mtg.github.io/deckbuilder?deck=${encodeURIComponent(document.getElementById("deck-name")) + ';' + btoa(generateDeckText(true, true))}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`,
+					url: `https://voyager-mtg.github.io/deck?deck=${encodeURIComponent(document.getElementById("deck-name")) + ';' + btoa(generateDeckText(true, true))}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`,
 					colors: colors,
 					last_modified: `${leadingZero(date.getDate())}-${leadingZero(date.getMonth())}-${date.getYear() + 1900}, ${date.getHours()}:${leadingZero(date.getMinutes())}`,
 					format: localStorage.getItem('settings.format'),
@@ -3444,7 +3444,7 @@
 				let deckObj = {
 					name: document.getElementById("deck-name").value,
 					previewimg: card_stats.card_name,
-					url: `https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`
+					url: `https://voyager-mtg.github.io/deck?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`
 				};
 
 				for (const deck_ of decks) {

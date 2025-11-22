@@ -45,14 +45,14 @@
 		<h1 class="deck-name text" id="deck-name">Deck Name</h1>
 		<span class="deck-author text" id="deck-author">by Unknown</span>
 		<div class="deck-options">
-			<button class="deck-button">Export <img class="deck-button-icon" src="/img/export-white.png"></button>
+			<button class="deck-button" onclick="openExportModal()">Export <img class="deck-button-icon" src="/img/export-white.png"></button>
 			<a id="editb"><button class="deck-button">Edit <img class="deck-button-icon" src="/img/edit.png"></button></a>
 			<div class="deck-opt-section">
 				<span class="deck-opt-label">Displayed as:</span>
 				<select class="deck-opt-select" id="displayed-as">
 					<option>Sorted by MV</option>
-					<option>Text</option>
-					<option>Grid</option>
+					<!-- <option>Text</option>
+					<option>Grid</option> -->
 				</select>
 			</div>
 		</div>
@@ -101,6 +101,354 @@
 			}
 
 			window.location.href = url;
+		}
+
+		function exportButtonHtml(name, func, img = false) {
+			const button = document.createElement("span");
+			button.className = "export-modal-button";
+			button.innerText = name;
+
+			button.onclick = func;
+
+			if (img) {
+				const btn_img = document.createElement("img");
+				btn_img.className = "export-icon";
+				btn_img.src = img;
+				button.appendChild(btn_img);
+			}
+
+			return button;
+		}
+
+		// jumphere
+
+		function openExportModal() {
+			const deck = window.deck;
+			const sideboard = window.sideboard;
+			const sanctum = window.sanctum;
+
+			document.getElementById("modal-content").innerHTML = `<span class="close" onclick="closeModal()">&times;</span>`;
+			let modalContent = document.createElement("div");
+			modalContent.appendChild(exportButtonHtml("Deck URL", function () {
+				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deck?deck=${encodeURIComponent(document.getElementById("deck-name").innerText) + ';' + btoa(generateDeckText(true, true))}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`); // write the url + ?deck= + the name with spaces replaced + ; + base64 encoded deck text + &main = deck count + &side= + sideboard count + &sanctum= + sanctum count
+				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Url copied to clipboard"); // open the modal notifying the user
+			}, "/img/copy-white.png"));
+
+			modalContent.appendChild(exportButtonHtml("Decklist", function () {
+				navigator.clipboard.writeText(generateDeckText()); // copy the deck text to clipboard
+				document.getElementById("file-menu").value = "default"; // set the dropdown back
+				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Decklist copied to clipboard"); // open the modal to notify the user
+			}, "/img/copy-white.png"));
+
+			modalContent.appendChild(exportButtonHtml("Discord Message", function () {
+				navigator.clipboard.writeText(`# [${document.getElementById("deck-name").value}](https://voyager-mtg.github.io/deck?deck=${encodeURIComponent(document.getElementById("deck-name").innerText) + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length})\n\`\`\`${generateDeckText()}\`\`\``); // CURSED
+				document.getElementById("file-menu").value = "default";
+				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Discord message copied to clipboard"); // open the modal to notify the user
+			}, "/img/copy-white.png"));
+
+			modalContent.appendChild(exportButtonHtml("Draftmancer", exportDraftmancer, "/img/download.png"));
+			modalContent.appendChild(exportButtonHtml(".txt file", function () {
+				exportFile("export-txt");
+			}, "/img/download.png"));
+
+			modalContent.appendChild(exportButtonHtml(".dek file", function () {
+				exportFile("export-dek");
+			}, "/img/download.png"));
+
+			modalContent.appendChild(exportButtonHtml("Cockatrice (.cod)", function () {
+				exportFile("export-cod");
+			}, "/img/download.png"));
+
+			document.getElementById("modal-container").style.display = "block";
+			document.getElementById("modal-content").appendChild(modalContent);
+		}
+
+		function generateDeckText(seperate_sanctum = true, set_info = false) {
+			const deck = window.deck;
+			const sideboard = window.sideboard;
+			const sanctum = window.sanctum;
+
+
+			let deck_text = "";
+			let map = new Map([]);
+
+			for (const card of deck) {
+				if (map.has(card)) {
+					map.set(card, map.get(card) + 1);
+				}
+				else {
+					map.set(card, 1);
+				}
+			}
+
+			for (const card_map of Array.from(map.keys())) {
+				console.log(set_info, (set_info ? ` (${JSON.parse(card_map).set}) ${JSON.parse(card_map).number}` : ""));
+				deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + (set_info ? ` (${JSON.parse(card_map).set}) ${JSON.parse(card_map).number}` : "") + "\n";
+			}
+
+			if (sideboard.length != 0 || (sanctum.length != 0 && !seperate_sanctum)) {
+				deck_text += "sideboard\n";
+				map = new Map([]);
+
+				for (const card of sideboard) {
+					if (map.has(card)) {
+						map.set(card, map.get(card) + 1);
+					}
+					else {
+						map.set(card, 1);
+					}
+				}
+
+				if (!seperate_sanctum) {
+					for (const card of sanctum) {
+						if (map.has(card)) {
+							map.set(card, map.get(card) + 1);
+						}
+						else {
+							map.set(card, 1);
+						}
+					}
+				}
+
+				for (const card_map of Array.from(map.keys())) {
+					deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + (set_info ? ` (${JSON.parse(card_map).set}) ${JSON.parse(card_map).number}` : "") + "\n";
+				}
+			}
+
+			if (seperate_sanctum && sanctum.length != 0) {
+				deck_text += "sanctum\n";
+				map = new Map([]);
+
+				for (const card of sanctum) {
+					if (map.has(card)) {
+						map.set(card, map.get(card) + 1);
+					}
+					else {
+						map.set(card, 1);
+					}
+				}
+
+				for (const card_map of Array.from(map.keys())) {
+					deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + (set_info ? ` (${JSON.parse(card_map).set}) ${JSON.parse(card_map).number}` : "") + "\n";
+				}
+			}
+
+			return deck_text;
+		}
+
+
+		async function exportDraftmancer() {
+			const deck = window.deck;
+			const sideboard = window.sideboard;
+			const sanctum = window.sanctum;
+
+			let output_text = "";
+			let cards = new Map();
+
+
+			for (const card of deck) {
+				const c = JSON.parse(card);
+				if (cards.has(c.card_name)) {
+					cards.get(c.card_name).count += 1;
+				}
+				else {
+					cards.set(c.card_name, { ...c, count: 1 });
+				}
+			}
+
+			const URLDomain = window.location.href.split("/deckbuilder")[0]; // FIXME: Shouldn't be hardcoded.
+
+			// 			let slots = ''; // disabled slots for now
+
+			if (localStorage.getItem('settings.exportcollleague') == "On") {
+				slots = { common: 8, uncommon: 5, rare: 2 };
+			} else if (localStorage.getItem('settings.exportcube') == "On") {
+				slots = { rare: 15 };
+			} else {
+				slots = { rare: 1, uncommon: 3, common: 10 };
+			}
+
+			// 			output_text += `[Settings]
+			// {
+			//   "layouts": {
+			//     "default": {
+			//       "weight": 1,
+			//       "slots": {
+			// 		${slots}
+			//       }
+			// 	}
+			//   }
+			// }
+			// `;
+			output_text += "[CustomCards]\n[\n";
+			for (const c of cards.values()) {
+				const img_url = URLDomain + "/sets/" + c.set + "-files/img/" + c.number + "_" + c.card_name + ((c.shape.includes("double")) ? "_front" : "") + "." + c.image_type;
+				output_text += "  {\n";
+				output_text += `    "name": "${c.card_name}",\n`;
+				if (c.cost)
+					output_text += `    "mana_cost": "${convertManaCostForDraftmancer(c.cost)}",\n`;
+				else
+					output_text += `    "mana_cost": "",\n`;
+				if (c.rarity)
+					output_text += `    "rarity": "${c.rarity}",\n`;
+				if (c.set)
+					output_text += `    "set": "${c.set}",\n`;
+				if (c.number)
+					output_text += `    "collector_number": "${c.number}",\n`;
+				if (c.type) {
+					output_text += `    "type": "${c.type.split(" – ")[0]}",\n`;
+					const subtypes = c.type.split(" – ")[1];
+					if (subtypes)
+						output_text += `    "subtypes": ["${subtypes.split(" ").join("", "")}"],\n`;
+				}
+				if (c.rules_text)
+					output_text += `    "oracle_text": ${JSON.stringify(c.rules_text)},\n`;
+				output_text += `    "image": "${img_url}"\n`;
+				if (c.shape.includes("double")) {
+					const back_url = URLDomain + "/sets/" + c.set + "-files/img/" + c.number + "_" + c.card_name + "_back" + "." + c.image_type;
+					output_text += `,\n    "back": {`
+					output_text += `      "name": "${c.card_name2}",\n`;
+					if (c.cost2)
+						output_text += `      "mana_cost": "${convertManaCostForDraftmancer(c.cost2)}",\n`;
+					else
+						output_text += `    "mana_cost": "",\n`;
+					if (c.rarity2)
+						output_text += `      "rarity": "${c.rarity2}",\n`;
+					if (c.set2)
+						output_text += `      "set": "${c.set2}",\n`;
+					if (c.number2)
+						output_text += `      "collector_number": "${c.number2}",\n`;
+					if (c.type2) {
+						output_text += `      "type": "${c.type2.split(" – ")[0]}",\n`;
+						const subtypes = c.type2.split(" – ")[1];
+						if (subtypes)
+							output_text += `    "subtypes": ["${subtypes.split(" ").join("", "")}"],\n`;
+					}
+					if (c.rules_text2)
+						output_text += `      "oracle_text": ${JSON.stringify(c.rules_text2)},\n`;
+					output_text += `      "image": "${back_url}"`
+					output_text += `    }\n`;
+				}
+				output_text += "  },";
+			}
+			output_text = output_text.substring(0, output_text.length - 1)
+			output_text += "\n]\n";
+
+			if (localStorage.getItem('settings.exportcube') == "on") {
+				output_text += `[rare(15)]
+`;
+				for (const c of cards.values()) {
+					output_text += `${c.count} ${c.card_name}
+`;
+				}
+			} else {
+				const rarities = [...(new Set([...cards.values().map(c => convertRarity(c))]))];
+
+				for (const r of rarities) {
+					output_text += `[${r}(${slots[r]})]
+`;
+					for (const c of cards.values()) {
+						if (convertRarity(c) === r) {
+							output_text += `\t${c.count} ${c.card_name}\n`;
+						}
+					}
+				}
+			}
+
+			let downloadableLink = document.createElement('a');
+			downloadableLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(output_text));
+			downloadableLink.download = document.getElementById("deck-name").value + ".txt";
+			document.body.appendChild(downloadableLink);
+			downloadableLink.click();
+			document.body.removeChild(downloadableLink);
+
+			document.getElementById("file-menu").value = "default";
+
+		}
+
+		function convertRarity(c) {
+			if (c.rarity == "mythic" || c.rarity == "special")
+				return "rare";
+
+			return c.rarity;
+		}
+
+		async function exportFile(export_as) {
+			const deck = window.deck;
+			const sideboard = window.sideboard;
+			const sanctum = window.sanctum;
+
+			let deck_text = "";
+			let deck_name = document.getElementById("deck-name").value;
+			let export_cod = (export_as == "export-cod");
+
+			if (export_cod) {
+				deck_text += `<?xml version="1.0" encoding="UTF-8"?>\n<cockatrice_deck version="1">\n\t<deckname>${deck_name}</deckname>\n\t<zone name="main">\n`;
+			}
+
+			let map = new Map([]);
+			for (const card of deck) {
+				if (map.has(card)) {
+					map.set(card, map.get(card) + 1);
+				}
+				else {
+					map.set(card, 1);
+				}
+			}
+			for (const card_map of Array.from(map.keys())) {
+				let card_number = map.get(card_map);
+				if (export_cod) {
+					deck_text += `\t\t<card number="${card_number}" name="${JSON.parse(card_map).card_name}"/>\n`;
+					continue; // continue instead of writing else
+				}
+				deck_text += card_number + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name + "\n");
+			}
+			if (sideboard.length != 0) {
+				deck_text += export_cod ? '\t</zone>\n\t<zone name="side">\n' : "sideboard\n";
+				map = new Map([]);
+				for (const card of sideboard) {
+					if (map.has(card)) {
+						map.set(card, map.get(card) + 1);
+					}
+					else {
+						map.set(card, 1);
+					}
+				}
+				for (const card of sanctum) {
+					if (map.has(card)) {
+						map.set(card, map.get(card) + 1);
+					}
+					else {
+						map.set(card, 1);
+					}
+				}
+				for (const card_map of Array.from(map.keys())) {
+					let card_number = map.get(card_map);
+					if (export_cod) {
+						deck_text += `\t\t<card number="${card_number}" name="${JSON.parse(card_map).card_name}"/>\n`;
+						continue; // continue instead of writing else
+					}
+					deck_text += card_number + " " + (export_as == "export-dek" ? card_map : JSON.parse(card_map).card_name + "\n");
+				}
+			}
+
+			if (export_cod) {
+				deck_text += "\t</zone>\n</cockatrice_deck>";
+			}
+
+			let downloadableLink = document.createElement('a');
+			downloadableLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(deck_text));
+			downloadableLink.download = deck_name + ("." + export_as.split("-")[1]);
+			document.body.appendChild(downloadableLink);
+			downloadableLink.click();
+			document.body.removeChild(downloadableLink);
+
+			document.getElementById("file-menu").value = "default";
+		}
+
+		function openModal(html) {
+			document.getElementById("modal-container").style.display = "block";
+			document.getElementById("modal-content").innerHTML = html;
 		}
 	</script>
 	<script type="module">
@@ -219,6 +567,7 @@
 			document.getElementById("deck-author").innerText = "by " + deck_author;
 			document.getElementById("editb").href = "/deckbuilder" + window.location.search;
 
+			let _deck = [];
 			let sideboard = [];
 			let sanctum = [];
 			let sb_cards = false;
@@ -245,7 +594,6 @@
 					// get the count and card name
 					let count = parseInt(line.substring(0, line.indexOf(' ')));
 					let card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
-					console.log(card_name, line);
 					
 					if (deck_map.has(card_name)) // if the deck has card name, add the new value, if it doesnt, set the value to stop keyerrors
 					{
@@ -288,18 +636,34 @@
 				if (deck_map.has(card.card_name) && !deck_done.includes(card.card_name)) {
 					deck_done.push(card.card_name);
 					deck_map.set(card.card_name, [card, deck_map.get(card.card_name)]);
+				
+					for (let i = 0; i < deck_map.get(card.card_name)[1]; i++) {
+						_deck.push(JSON.stringify(card));
+					}
 				}
 
 				if (sb_map.has(card.card_name) && !sb_done.includes(card.card_name)) {
 					sb_done.push(card.card_name);
 					sb_map.set(card.card_name, [card, sb_map.get(card.card_name)]);
+					
+					for (let i = 0; i < sb_map.get(card.card_name)[1]; i++) {
+						sideboard.push(JSON.stringify(card));
+					}
 				}
 
 				if (sc_map.has(card.card_name) && !sc_done.includes(card.card_name)) {
 					sc_done.push(card.card_name);
 					sc_map.set(card.card_name, [card, sc_map.get(card.card_name)]);
+					
+					for (let i = 0; i < sc_map.get(card.card_name)[1]; i++) {
+						sanctum.push(JSON.stringify(card));
+					}
 				}
 			}
+
+			window.deck = _deck;
+			window.sideboard = sideboard;
+			window.sanctum = sanctum;
 
 			return [deck_map, sb_map, sc_map];
 		}
