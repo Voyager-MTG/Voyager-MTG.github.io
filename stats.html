@@ -823,7 +823,7 @@
 					else if (!sb_cards && !sc_cards) {
 						// get the count and card name
 						let count = parseInt(line.substring(0, line.indexOf(' ')));
-						let deck_card_name = line.substring(line.indexOf(' ') + 1);
+						let deck_card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
 
 						if (deck_map.has(deck_card_name)) // if the deck has card name, add the new value, if it doesnt, set the value to stop keyerrors
 						{
@@ -836,7 +836,7 @@
 					else if (sb_cards) // sideboard cards, do the same thing but with sb_map
 					{
 						let count = parseInt(line.substring(0, line.indexOf(' ')));
-						let deck_card_name = line.substring(line.indexOf(' ') + 1);
+						let deck_card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
 
 						if (sb_map.has(deck_card_name)) {
 							sb_map.set(deck_card_name, sb_map.get(deck_card_name) + count);
@@ -847,7 +847,7 @@
 					} else if (sc_cards) // sanctum cards, do the same thing but with sc_map
 					{
 						let count = parseInt(line.substring(0, line.indexOf(' ')));
-						let deck_card_name = line.substring(line.indexOf(' ') + 1);
+						let deck_card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
 
 						if (sc_map.has(deck_card_name)) {
 							sc_map.set(deck_card_name, sc_map.get(deck_card_name) + count);

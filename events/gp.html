@@ -898,7 +898,7 @@
 				else if (!sb_cards && !sc_cards) {
 					// get the count and card name
 					count = parseInt(line.substring(0, line.indexOf(' ')));
-					card_name = line.substring(line.indexOf(' ') + 1);
+					card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
 
 					if (deck_map.has(card_name)) // if the deck has card name, add the new value, if it doesnt, set the value to stop keyerrors
 					{
@@ -911,7 +911,7 @@
 				else if (sb_cards) // sideboard cards, do the same thing but with sb_map
 				{
 					count = parseInt(line.substring(0, line.indexOf(' ')));
-					card_name = line.substring(line.indexOf(' ') + 1);
+					card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
 
 					if (sb_map.has(card_name)) {
 						sb_map.set(card_name, sb_map.get(card_name) + count);
@@ -922,7 +922,7 @@
 				} else if (sc_cards) // sanctum cards, do the same thing but with sc_map
 				{
 					count = parseInt(line.substring(0, line.indexOf(' ')));
-					card_name = line.substring(line.indexOf(' ') + 1);
+					card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
 
 					if (sc_map.has(card_name)) {
 						sc_map.set(card_name, sc_map.get(card_name) + count);

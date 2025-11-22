@@ -856,29 +856,35 @@
 			document.getElementById("modal-content").innerHTML = `<span class="close" onclick="closeModal()">&times;</span>`;
 			let modalContent = document.createElement("div");
 			modalContent.appendChild(exportButtonHtml("Deck URL", function () {
-				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`); // write the url + ?deck= + the name with spaces replaced + ; + base64 encoded deck text + &main = deck count + &side= + sideboard count + &sanctum= + sanctum count
+				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText(true, true))}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`); // write the url + ?deck= + the name with spaces replaced + ; + base64 encoded deck text + &main = deck count + &side= + sideboard count + &sanctum= + sanctum count
 				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Url copied to clipboard"); // open the modal notifying the user
 			}, "/img/copy-white.png"));
+
 			modalContent.appendChild(exportButtonHtml("Decklist", function () {
 				navigator.clipboard.writeText(generateDeckText()); // copy the deck text to clipboard
 				document.getElementById("file-menu").value = "default"; // set the dropdown back
 				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Decklist copied to clipboard"); // open the modal to notify the user
 			}, "/img/copy-white.png"));
+
 			modalContent.appendChild(exportButtonHtml("Discord Message", function () {
 				navigator.clipboard.writeText(`# [${document.getElementById("deck-name").value}](https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length})\n\`\`\`${generateDeckText()}\`\`\``); // CURSED
 				document.getElementById("file-menu").value = "default";
 				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Discord message copied to clipboard"); // open the modal to notify the user
 			}, "/img/copy-white.png"));
+
 			modalContent.appendChild(exportButtonHtml("Draftmancer", exportDraftmancer, "/img/download.png"));
 			modalContent.appendChild(exportButtonHtml(".txt file", function () {
 				exportFile("export-txt");
 			}, "/img/download.png"));
+
 			modalContent.appendChild(exportButtonHtml(".dek file", function () {
 				exportFile("export-dek");
 			}, "/img/download.png"));
+
 			modalContent.appendChild(exportButtonHtml("Cockatrice (.cod)", function () {
 				exportFile("export-cod");
 			}, "/img/download.png"));
+
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").appendChild(modalContent);
 		}
@@ -1296,64 +1302,87 @@
 				else if (!sb_cards && !sc_cards) {
 					// get the count and card name
 					count = parseInt(line.substring(0, line.indexOf(' ')));
-					card_name = line.substring(line.indexOf(' ') + 1);
+					card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
+					card_set = line.match(/[0-9]+ .*? \((.*?)\)/);
+					card_num = line.match(/[0-9]+ .*? \(.*?\) ([0-9]+)/);
 
-					if (deck_map.has(card_name)) // if the deck has card name, add the new value, if it doesnt, set the value to stop keyerrors
+					card_set = card_set == null ? "XXX" : card_set[1];
+					card_num = card_num == null ? "0" : card_num[1];
+					
+					console.log([card_name, card_set, card_num]);
+
+					if (deck_map.has([card_name, card_set, card_num])) // if the deck has card name, add the new value, if it doesnt, set the value to stop keyerrors
 					{
-						deck_map.set(card_name, deck_map.get(card_name) + count);
+						deck_map.set([card_name, card_set, card_num], deck_map.get(card_name) + count);
 					}
 					else {
-						deck_map.set(card_name, count);
+						deck_map.set([card_name, card_set, card_num], count);
 					}
 				}
 				else if (sb_cards) // sideboard cards, do the same thing but with sb_map
 				{
 					count = parseInt(line.substring(0, line.indexOf(' ')));
-					card_name = line.substring(line.indexOf(' ') + 1);
+					card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
+					card_set = line.match(/[0-9]+ .*? \((.*?)\)/);
+					card_num = line.match(/[0-9]+ .*? \(.*?\) ([0-9]+)/);
 
-					if (sb_map.has(card_name)) {
-						sb_map.set(card_name, sb_map.get(card_name) + count);
+					card_set = card_set == null ? "XXX" : card_set[1];
+					card_num = card_num == null ? "0" : card_num[1];
+
+					if (sb_map.has([card_name, card_set, card_num])) {
+						sb_map.set([card_name, card_set, card_num], sb_map.get(card_name) + count);
 					}
 					else {
-						sb_map.set(card_name, count);
+						sb_map.set([card_name, card_set, card_num], count);
 					}
 				} else if (sc_cards) // sanctum cards, do the same thing but with sc_map
 				{
 					count = parseInt(line.substring(0, line.indexOf(' ')));
-					card_name = line.substring(line.indexOf(' ') + 1);
+					card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
+					card_set = line.match(/[0-9]+ .*? \((.*?)\)/);
+					card_num = line.match(/[0-9]+ .*? \(.*?\) ([0-9]+)/);
 
-					if (sc_map.has(card_name)) {
-						sc_map.set(card_name, sc_map.get(card_name) + count);
+					card_set = card_set == null ? "XXX" : card_set[1];
+					card_num = card_num == null ? "0" : card_num[1];
+
+					if (sc_map.has([card_name, card_set, card_num])) {
+						sc_map.set([card_name, card_set, card_num], sc_map.get(card_name) + count);
 					}
 					else {
-						sc_map.set(card_name, count);
+						sc_map.set([card_name, card_set, card_num], count);
 					}
 				}
 			}
+
 			for (const card of card_list_arrayified) {
-				// for every card, if it's in the deck map, add it to the deck, then remove it from the deck map; repeat with the sideboard map
-				if (deck_map.has(card.card_name)) {
-					for (let i = 0; i < deck_map.get(card.card_name); i++) {
-						addCardToDeck(JSON.stringify(card), false);
+				for (const [ key, value ] of deck_map.entries()) {
+					if (key[0] == card.card_name && (key[1] == card.set || key[1] == "XXX") && (key[2] == card.number.toString() || key[2] == "0")) {
+						for (let i = 0; i < value; i++) {
+							addCardToDeck(JSON.stringify(card), false);
+						}
+						deck_map.delete(key);
 					}
-					deck_map.delete(card.card_name);
 				}
 
-				if (sb_map.has(card.card_name)) {
-					for (let i = 0; i < sb_map.get(card.card_name); i++) {
-						addCardToSideboard(JSON.stringify(card), false);
+				for (const [ key, value ] of sb_map.entries()) {
+					if (key[0] == card.card_name && (key[1] == card.set || key[1] == "XXX") && (key[2] == card.number.toString() || key[2] == "0")) {
+						for (let i = 0; i < value; i++) {
+							addCardToDeck(JSON.stringify(card), false);
+						}
+						sb_map.delete(key);
 					}
-					sb_map.delete(card.card_name);
 				}
 
-				if (sc_map.has(card.card_name)) {
-					for (let i = 0; i < sc_map.get(card.card_name); i++) {
-						addCardToSanctum(JSON.stringify(card), false);
+				for (const [ key, value ] of sc_map.entries()) {
+					if (key[0] == card.card_name && (key[1] == card.set || key[1] == "XXX") && (key[2] == card.number.toString() || key[2] == "0")) {
+						for (let i = 0; i < value; i++) {
+							addCardToDeck(JSON.stringify(card), false);
+						}
+						sc_map.delete(key);
 					}
-					sc_map.delete(card.card_name);
 				}
 			}
-			// reader.readAsText(file);
+			
 			document.getElementById("modal-container").style.display = "none";
 			document.getElementById("file-menu").value = "default";
 
@@ -1437,7 +1466,7 @@
 							else if (!sb_cards) {
 								// get the count and card name
 								count = parseInt(line.substring(0, line.indexOf(' ')));
-								card_name = line.substring(line.indexOf(' ') + 1);
+								card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
 
 								if (deck_map.has(card_name)) // if the deck has card name, add the new value, if it doesnt, set the value to stop keyerrors
 								{
@@ -1450,7 +1479,7 @@
 							else if (sb_cards) // sideboard cards, do the same thing but with sb_map
 							{
 								count = parseInt(line.substring(0, line.indexOf(' ')));
-								card_name = line.substring(line.indexOf(' ') + 1);
+								card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
 
 								if (sb_map.has(card_name)) {
 									sb_map.set(card_name, sb_map.get(card_name) + count);
@@ -1461,7 +1490,7 @@
 							} else if (sc_cards) // sanctum cards, do the same thing but with sc_map
 							{
 								count = parseInt(line.substring(0, line.indexOf(' ')));
-								card_name = line.substring(line.indexOf(' ') + 1);
+								card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
 
 								if (sc_map.has(card_name)) {
 									sc_map.set(card_name, sc_map.get(card_name) + count);
@@ -1488,7 +1517,7 @@
 							}
 							else if (!sb_cards) {
 								count = parseInt(line.substring(0, line.indexOf(' ')));
-								card_name = line.substring(line.indexOf(' ') + 1);
+								card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
 
 								if (deck_map.has(card_name)) {
 									deck_map.set(card_name, deck_map.get(card_name) + count);
@@ -1499,7 +1528,7 @@
 							}
 							else {
 								count = parseInt(line.substring(0, line.indexOf(' ')));
-								card_name = line.substring(line.indexOf(' ') + 1);
+								card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
 
 								if (sb_map.has(card_name)) {
 									sb_map.set(card_name, sb_map.get(card_name) + count);
@@ -2845,9 +2874,10 @@
 			cards_ele.appendChild(card_row);
 		}
 
-		function generateDeckText(seperate_sanctum = true) {
+		function generateDeckText(seperate_sanctum = true, set_info = false) {
 			let deck_text = "";
 			let map = new Map([]);
+
 			for (const card of deck) {
 				if (map.has(card)) {
 					map.set(card, map.get(card) + 1);
@@ -2856,12 +2886,16 @@
 					map.set(card, 1);
 				}
 			}
+
 			for (const card_map of Array.from(map.keys())) {
-				deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + "\n";
+				console.log(set_info, (set_info ? ` (${JSON.parse(card_map).set}) ${JSON.parse(card_map).number}` : ""));
+				deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + (set_info ? ` (${JSON.parse(card_map).set}) ${JSON.parse(card_map).number}` : "") + "\n";
 			}
+
 			if (sideboard.length != 0 || (sanctum.length != 0 && !seperate_sanctum)) {
 				deck_text += "sideboard\n";
 				map = new Map([]);
+
 				for (const card of sideboard) {
 					if (map.has(card)) {
 						map.set(card, map.get(card) + 1);
@@ -2870,6 +2904,7 @@
 						map.set(card, 1);
 					}
 				}
+
 				if (!seperate_sanctum) {
 					for (const card of sanctum) {
 						if (map.has(card)) {
@@ -2880,13 +2915,16 @@
 						}
 					}
 				}
+
 				for (const card_map of Array.from(map.keys())) {
-					deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + "\n";
+					deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + (set_info ? ` (${JSON.parse(card_map).set}) ${JSON.parse(card_map).number}` : "") + "\n";
 				}
 			}
+
 			if (seperate_sanctum && sanctum.length != 0) {
 				deck_text += "sanctum\n";
 				map = new Map([]);
+
 				for (const card of sanctum) {
 					if (map.has(card)) {
 						map.set(card, map.get(card) + 1);
@@ -2895,10 +2933,12 @@
 						map.set(card, 1);
 					}
 				}
+
 				for (const card_map of Array.from(map.keys())) {
-					deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + "\n";
+					deck_text += map.get(card_map) + " " + (JSON.parse(card_map).card_name) + (set_info ? ` (${JSON.parse(card_map).set}) ${JSON.parse(card_map).number}` : "") + "\n";
 				}
 			}
+
 			return deck_text;
 		}
 
@@ -3278,6 +3318,7 @@
 						for (const deck of decks) {
 							if (deck.name == deck_name) {
 								let text = atob(deck.url.split(";")[1].split("&")[0]);
+								console.log(text);
 								if (!deck.private) readDeckText(text, deck.name);
 								window.fireimport = true;
 								break;
@@ -3375,7 +3416,7 @@
 				const deckObj = {
 					name: document.getElementById("deck-name").value,
 					previewimg: card_stats.card_name,
-					url: `https://voyager-mtg.github.io/deckbuilder?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`,
+					url: `https://voyager-mtg.github.io/deckbuilder?deck=${encodeURIComponent(document.getElementById("deck-name")) + ';' + btoa(generateDeckText(true, true))}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`,
 					colors: colors,
 					last_modified: `${leadingZero(date.getDate())}-${leadingZero(date.getMonth())}-${date.getYear() + 1900}, ${date.getHours()}:${leadingZero(date.getMinutes())}`,
 					format: localStorage.getItem('settings.format'),
