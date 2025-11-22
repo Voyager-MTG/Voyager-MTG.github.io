@@ -45,6 +45,10 @@
 	<div class="page-container">
 		<div class="top-section">
 			<div class="username text" id="username"></div>
+			<div class="discord-login" id="discord-link">
+				Your discord account is not linked. Without it, you won't have access to the discord bot's full functionality.
+				<a href="https://discord.com/oauth2/authorize?client_id=1355416783804301382&response_type=code&redirect_uri=https%3A%2F%2Fvoyager-bot-4jg3.onrender.com%2Fdiscord%2Flink%2Fcallback&scope=identify"><button class="discord-link-btn"><img src="/img/discord.webp" class="btn-icon">Login with Discord</button></a>
+			</div>
 		</div>
 		<div class="deck-section-header text">My Decks</div>
 		<hr class="text-bg">
@@ -180,20 +184,35 @@
 						card_list = json;
 					}).catch(error => console.error('Error:', error));
 			}
+
 			card_list_arrayified = card_list.cards;
+			
+			await getDoc(doc(db, "info", "accountlinks")).then(docSnap => {
+				const data = docSnap.data();
+
+				let found = false;
+				for (const user in data) {
+					if (data[user] == username) found = true;
+				}
+
+				if (!found) document.getElementById("discord-link").style.display = "flex";
+			});
 
 			await getDoc(doc(db, 'users', username)).then(async docSnap => {
-				let user_data = docSnap.data();
+				const user_data = docSnap.data();
 				let colls;
 				let used_formats = [];
 				document.title = username;
 				let decks = user_data.decks;
+
 				if (user_data.colls) {
 					colls = JSON.parse(user_data.colls);
 				} else {
 					colls = [];
 				}
+
 				document.getElementById('decks').innerHTML = "";
+
 				for (const deck of decks) {
 
 					if (!used_formats.includes(deck.format)) {
@@ -205,15 +224,19 @@
 					document.getElementById(deck.format).appendChild(createDeckContainer(user_data, deck, card_list_arrayified));
 
 				}
+
 				if (!document.getElementById("Collection League")) {
 					createFormatContainer("Collection League");
 				}
+
 				createCollectionLeaguePacks(user_data);
+
 				for (const deck of colls) {
 					let deck_container = document.createElement('div');
 					deck_container.className = "deck-container";
 					let card_stats;
 					let deck_preview = document.createElement('img');
+
 					for (const card of card_list_arrayified) {
 						if (deck.previewimg == card.card_name) {
 							card_stats = card;
@@ -229,19 +252,24 @@
 					let deck_name = document.createElement('div');
 					deck_name.className = "deck-name";
 					deck_name.innerText = deck.name;
+
 					let deck_btns = document.createElement('div');
 					deck_btns.className = "coll-buttons";
+
 					let deck_link = document.createElement('a');
 					deck_link.href = deck.url;
+
 					let deck_edit_icon = document.createElement('img');
 					deck_edit_icon.src = "/img/create.png";
 					deck_edit_icon.className = "deck-icon-green";
 					deck_link.innerText = "Create Deck";
 					deck_link.className = "deck-link-green deck-icon-shadow";
 					deck_link.appendChild(deck_edit_icon);
+
 					let deck_delete_icon = document.createElement('img');
 					deck_delete_icon.src = "/img/trash.png";
 					deck_delete_icon.className = "deck-icon-red deck-icon-shadow";
+
 					deck_delete_icon.onclick = async function () {
 						let new_decks = decks;
 						// let index = 0;
@@ -259,6 +287,7 @@
 						alert("Deck Deleted!");
 						reload();
 					}
+
 					deck_btns.appendChild(deck_link);
 					// deck_btns.appendChild(deck_submit_text);
 					deck_btns.appendChild(deck_delete_icon);

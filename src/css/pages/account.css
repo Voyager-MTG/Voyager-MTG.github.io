@@ -208,3 +208,41 @@ hr {
 .deck-icon-blue {
 	background: none;
 }
+
+.discord-login {
+	display: none;
+	align-items: center;
+	font-size: 1.2em;
+	gap: 10px;
+	color: var(--text-color);
+}
+
+.discord-link-btn {
+	background-color: #5a69dd;
+	color: white;
+	padding: 8px;
+	display: flex;
+	gap: 4px;
+	align-items: center;
+	border: none;
+	border-radius: 5px;
+	text-decoration-line: none;
+	/* font-weight: bold; */
+	outline: none;
+	font-size: 1em;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.discord-link-btn:hover {
+	background-color: #3f4999;
+}
+
+.btn-icon {
+	height: 30px;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+}
