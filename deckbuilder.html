@@ -1367,7 +1367,7 @@
 				for (const [ key, value ] of sb_map.entries()) {
 					if (key[0] == card.card_name && (key[1] == card.set || key[1] == "XXX") && (key[2] == card.number.toString() || key[2] == "0")) {
 						for (let i = 0; i < value; i++) {
-							addCardToDeck(JSON.stringify(card), false);
+							addCardToSideboard(JSON.stringify(card), false);
 						}
 						sb_map.delete(key);
 					}
@@ -1376,7 +1376,7 @@
 				for (const [ key, value ] of sc_map.entries()) {
 					if (key[0] == card.card_name && (key[1] == card.set || key[1] == "XXX") && (key[2] == card.number.toString() || key[2] == "0")) {
 						for (let i = 0; i < value; i++) {
-							addCardToDeck(JSON.stringify(card), false);
+							addCardToSanctum(JSON.stringify(card), false);
 						}
 						sc_map.delete(key);
 					}
