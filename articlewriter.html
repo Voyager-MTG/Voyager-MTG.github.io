@@ -3,8 +3,10 @@
 <head>
 	<title>TITLE</title>
 	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
-	<link rel="stylesheet" href="src/css/mana.css">
+	<link rel="stylesheet" href="/src/css/mana.css">
 	<link rel="stylesheet" href="/src/css/header.css">
+	<link rel="stylesheet" href="/src/css/modal.css">
+	<link rel="stylesheet" href="/src/css/tab.css">
 </head>
 <style>
 	.page-container {
@@ -13,6 +15,15 @@
 		justify-items: center;
 		width: 100%;
 	}
+
+	.hover-card {
+		display: none;
+		position: absolute;
+		height: 262px;
+		width: 188px;
+		pointer-events: none;
+	}
+
 
 	hr {
 		width: 85%;
@@ -285,6 +296,7 @@
 			<li id="add-card">Add Card</li>
 		</ul>
 	</div>
+	<img id="hover-card" class="hover-card">
 	<script>
 		let gradients = null;
 		let raw_gradients = null;
@@ -301,6 +313,14 @@
 			}
 		}
 		document.addEventListener("DOMContentLoaded", async function () {
+			await fetch('/lists/all-cards.json')
+				.then(response => response.json())
+				.then(json => {
+					card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+			card_list_arrayified = card_list.cards;
+
 			try {
 				const response = await fetch('/data/gradients.json');
 				raw_gradients = await response.json();
@@ -518,6 +538,30 @@
 			randomNumber = randomNumber / m;
 
 			return Math.floor(randomNumber * x);
+		}
+
+		function showCardHover(card_name, set = false, num = false) {
+			// console.log(set, num);
+			for (const card_stats of card_list_arrayified) {
+				if (card_stats.type.includes("Token")) continue;
+				if (card_stats.card_name == card_name && (!set || card_stats.set == set) && (!num || card_stats.number == num)) {
+					const src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+
+					const hover_card = document.getElementById("hover-card");
+					hover_card.style.display = "block";
+					hover_card.src = src;
+					return;
+				}
+			}
+		}
+
+		function moveCardHover(event) {
+			document.getElementById("hover-card").style.left = event.pageX + "px";
+			document.getElementById("hover-card").style.top = event.pageY - 350 + "px";
+		}
+
+		function hideCardHover() {
+			document.getElementById("hover-card").style.display = "none";
 		}
 
 		function setTextColor(c = false) {

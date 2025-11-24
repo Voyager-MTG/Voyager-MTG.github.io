@@ -26,7 +26,6 @@ function prepareGradients() {
 		if (gradient.name != defaultGradient) {
 			document.getElementById("color-select").appendChild(opt);
 		}
-		console.log(gradient, opt);
 	}
 
 	// setGradient();
