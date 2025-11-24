@@ -50,7 +50,20 @@
 			<div class="deck-opt-section">
 				<span class="deck-opt-label">Displayed as:</span>
 				<select class="deck-opt-select" id="displayed-as">
-					<option>Sorted by MV</option>
+					<option value="vstacks">Visual Stacks</option>
+					<option value="nstacks">Numbered Stacks</option>
+					<option value="text">Text</option>
+					<!-- <option>Text</option>
+					<option>Grid</option> -->
+				</select>
+			</div>
+			<div class="deck-opt-section">
+				<span class="deck-opt-label">Sorted by:</span>
+				<select class="deck-opt-select" id="sort-type">
+					<option value="mv">Mana Value</option>
+					<option value="cardtype">Card Type</option>
+					<option value="color">Color</option>
+					<!-- <option value="rarity">Rarity</option> -->
 					<!-- <option>Text</option>
 					<option>Grid</option> -->
 				</select>
@@ -511,7 +524,12 @@
 
 		let card_list_arrayified = card_list.cards;
 
+		document.getElementById("sort-type").onchange = reload;
+		document.getElementById("displayed-as").onchange = reload;
+
 		async function reload() {
+			document.getElementById("deck-container").innerHTML = "";
+
 			const urlParams = new URLSearchParams(window.location.search);
 
 			if (urlParams.get('deck') != null) { // check if deck exists
@@ -633,6 +651,7 @@
 			const sc_done = [];
 
 			for (const card of card_list_arrayified) {
+				if (card.type.includes("Token")) continue;
 				if (deck_map.has(card.card_name) && !deck_done.includes(card.card_name)) {
 					deck_done.push(card.card_name);
 					deck_map.set(card.card_name, [card, deck_map.get(card.card_name)]);
@@ -691,6 +710,7 @@
 		function showCardHover(card_name, set = false, num = false) {
 			// console.log(set, num);
 			for (const card_stats of card_list_arrayified) {
+				if (card_stats.type.includes("Token")) continue;
 				if (card_stats.card_name == card_name && (!set || card_stats.set == set) && (!num || card_stats.number == num)) {
 					const src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 
@@ -712,6 +732,7 @@
 		}
 
 		function loadDeck(deck, name) {
+			document.title = name;
 			document.getElementById("deck-container").style.gridTemplateColumns = "repeat(10, 1fr)";
 
 			const small_width = window.innerWidth < 1200;
@@ -727,61 +748,85 @@
 			document.body.style.setProperty("--card-spacing", card_height / 8 + "px");
 
 			const maps = makeMaps(deck, name);
-			const deck_map = maps[0];
-			const sb_map = maps[1];
-			const sc_map = maps[2];
+			const sorted = sortDeck(maps);
 
-			console.log(sb_map, sc_map);
-
-			const mv_list = ["0-1", "0-2", 1, 2, 3, 4, 5, "6+", "Sideboard", "Sanctum"];
-			let mv0s = []; 
-			for (const mv of mv_list) {
-				const mv_container = document.createElement("div");
-				mv_container.className = "mv-container";
-				mv_container.id = `mv-${mv}`;
-
-				const mv_label = document.createElement("span");
-				mv_label.className = "mv-label text";
-				mv_label.id = `mv-label-${mv}`;
-				mv_label.innerText = mv;
-
-				const mv_cards_container = document.createElement("div");
-				mv_cards_container.className = "mv-cards-container";
-				mv_cards_container.id = `mv-cards-${mv}`;
-
-				mv_container.appendChild(mv_label);
-				mv_container.appendChild(mv_cards_container);
-
-				document.getElementById("deck-container").appendChild(mv_container);
+			const view_map = {
+				vstacks: loadDeckVStacks,
+				nstacks: loadDeckNStacks,
+				text: loadDeckText
 			}
 
-			deck_map.forEach((copies_obj, card_name, map) => {
-				const copies = copies_obj[1];
-				const card = copies_obj[0];
+			view_map[document.getElementById("displayed-as").value](sorted);
+		}
 
-				const cardMv = convertToMV(card.cost);
+		function loadDeckText(sorted) {
+			for (const group_id in sorted) {
+				for (const [ card, copies ] of sorted[group_id]) {
+					const card_container = document.createElement("div");
+					card_container.className = "card-container";
 
-				if (cardMv == 0) { 
-					mv0s.push([card, copies]);
-				} else if (cardMv >= 6) {
-					for (let i = 0; i < copies; i++) { // onmouseover="showCardHover('${card_name}')" onmousemove="moveCardHover(event)" onmouseout="hideCardHover()"
-						const img_container = buildImgContainer(card);
+					const card_name = document.createElement("span");
+					card_name.className = "card-name";
+					card_name.innerText = card.card_name;
 
-						img_container.onmouseover = () => {
-							showCardHover(card.card_name);
-						}
+					const card_copies = document.createElement("span");
+					card_copies.className = "card-copies";
+					card_copies.innerText = copies + "x";
 
-						img_container.onmousemove = (event) => {
-							moveCardHover(event);
-						}
+					card_container.appendChild(card_copies);
+					card_container.appendChild(card_name);
 
-						img_container.onmouseout = () => {
-							hideCardHover();
-						}
-
-						document.getElementById("mv-cards-6+").appendChild(img_container);
+					card_container.onmouseover = () => {
+						showCardHover(card.card_name);
 					}
-				} else {
+
+					card_container.onmousemove = (event) => {
+						moveCardHover(event);
+					}
+
+					card_container.onmouseout = () => {
+						hideCardHover();
+					}
+
+					document.getElementById(`group-cards-${group_id}`).appendChild(card_container);
+					
+				}
+			}
+		}
+
+		function loadDeckNStacks(sorted) {	
+			document.body.style.setProperty("--card-spacing", card_height / 5 + "px");
+			for (const group_id in sorted) {
+				for (const [ card, copies ] of sorted[group_id]) {
+					const img_container = buildImgContainer(card);
+
+					img_container.onmouseover = () => {
+						showCardHover(card.card_name);
+					}
+
+					img_container.onmousemove = (event) => {
+						moveCardHover(event);
+					}
+
+					img_container.onmouseout = () => {
+						hideCardHover();
+					}
+
+					const copies_container = document.createElement("div");
+					copies_container.className = "copies-indicator";
+					copies_container.innerText = copies;
+
+					if (copies != 1) img_container.appendChild(copies_container);
+
+					document.getElementById(`group-cards-${group_id}`).appendChild(img_container);
+					
+				}
+			}
+		}
+
+		function loadDeckVStacks(sorted) {	
+			for (const group_id in sorted) {
+				for (const [ card, copies ] of sorted[group_id]) {
 					for (let i = 0; i < copies; i++) {
 						const img_container = buildImgContainer(card);
 
@@ -797,93 +842,139 @@
 							hideCardHover();
 						}
 
-						document.getElementById(`mv-cards-${cardMv}`).appendChild(img_container);
+						document.getElementById(`group-cards-${group_id}`).appendChild(img_container);
+					}
+				}
+			}
+		}
+
+		function sortDeck(maps, duplicateCopies = false) {
+			const [ deck_map, sb_map, sc_map ] = maps;
+
+			const sort_mv = {
+				l1:   ["Land/0", (card) => { return convertToMV(card.cost) == 0 }],
+				l2:   ["Land/0", (card) => { return convertToMV(card.cost) == 0 }],
+				mv1:  ["1",      (card) => { return convertToMV(card.cost) == 1 }],
+				mv2:  ["2",      (card) => { return convertToMV(card.cost) == 2 }],
+				mv3:  ["3",      (card) => { return convertToMV(card.cost) == 3 }],
+				mv4:  ["4",      (card) => { return convertToMV(card.cost) == 4 }],
+				mv5:  ["5",      (card) => { return convertToMV(card.cost) == 5 }],
+				mv6:  ["6+",     (card) => { return convertToMV(card.cost) >= 6 }],
+
+				sideboard: ["Sideboard", (card) => { return false }],
+				sanctum:   ["Sanctum",   (card) => { return false }],
+
+				callback: (groups) => {
+					const half = Math.floor(groups.l1.length / 2) - 1;
+
+					groups.l2 = [];
+
+					for (let i = 0; i < half; i++) {
+						const card = groups.l1[0];
+						groups.l1.splice(0, 1);
+						groups.l2.push(card);
+					}
+				}
+			};
+
+			const sort_card_type = {
+				land:         ["Land"        , (card) => { return (card.type.includes("Land"        ))}],
+				creature:     ["Creature"    , (card) => { return (card.type.includes("Creature"    ))}],
+				enchantment:  ["Enchantment" , (card) => { return (card.type.includes("Enchantment" ))}],
+				artifact:     ["Artifact"    , (card) => { return (card.type.includes("Artifact"    ))}],
+				instant:      ["Instant"     , (card) => { return (card.type.includes("Instant"     ))}],
+				sorcery:      ["Sorcery"     , (card) => { return (card.type.includes("Sorcery"     ))}],
+				planeswalker: ["Planeswalker", (card) => { return (card.type.includes("Planeswalker"))}],
+				battle:       ["Battle"      , (card) => { return (card.type.includes("Battle"      ))}],
+
+				sideboard: ["Sideboard", (card) => { return false }],
+				sanctum:   ["Sanctum",   (card) => { return false }],
+
+				callback: (groups) => {}
+			};
+
+			const sort_color = {
+				colorless:  ["Colorless",  (card) => { return (card.color == ""  ) }],
+				white:      ["White",      (card) => { return (card.color == "W" ) }],
+				blue:       ["Blue",       (card) => { return (card.color == "U" ) }],
+				black:      ["Black",      (card) => { return (card.color == "B" ) }],
+				red:        ["Red",        (card) => { return (card.color == "R" ) }],
+				green:      ["Green",      (card) => { return (card.color == "G" ) }],
+				silver:     ["Silver",     (card) => { return (card.color == "I" ) }],
+				multicolor: ["Multicolor", (card) => { return true }],
+
+				sideboard: ["Sideboard", (card) => { return false }],
+				sanctum:   ["Sanctum",   (card) => { return false }],
+
+				callback: (groups) => {}
+			};
+
+			const sort_map = {
+				mv: sort_mv,
+				cardtype: sort_card_type,
+				color: sort_color
+			};
+
+			const sorted = {};
+			const sort_type = sort_map[document.getElementById("sort-type").value];
+
+			for (const group_id in sort_type) {
+				if (group_id == "callback") continue;
+
+				sorted[group_id] = [];
+				const label = sort_type[group_id][0];
+
+				const group_container = document.createElement("div");
+				group_container.className = "group-container";
+				group_container.id = `group-${group_id}`;
+
+				const group_label = document.createElement("span");
+				group_label.className = "group-label text";
+				group_label.id = `group-label-${group_id}`;
+				group_label.innerText = label;
+
+				const group_cards_container = document.createElement("div");
+				group_cards_container.className = "group-cards-container";
+				group_cards_container.id = `group-cards-${group_id}`;
+
+				group_container.appendChild(group_label);
+				group_container.appendChild(group_cards_container);
+
+				document.getElementById("deck-container").appendChild(group_container);
+			}
+
+			deck_map.forEach((copies_obj, card_name, map) => {
+				const copies = copies_obj[1];
+				const card = copies_obj[0];
+				
+				for (const group_id in sort_type) {
+					if (group_id == "callback") continue;
+					const fn = sort_type[group_id][1];
+
+					if (fn(card)) {
+						sorted[group_id].push([card, copies]);
+						break;
 					}
 				}
 			});
-
+			
 			sb_map.forEach((copies_obj, card_name, map) => {
 				const copies = copies_obj[1];
 				const card = copies_obj[0];
 
-				for (let i = 0; i < copies; i++) { // onmouseover="showCardHover('${card_name}')" onmousemove="moveCardHover(event)" onmouseout="hideCardHover()"
-					const img_container = buildImgContainer(card);
-
-					img_container.onmouseover = () => {
-						showCardHover(card.card_name);
-					}
-
-					img_container.onmousemove = (event) => {
-						moveCardHover(event);
-					}
-
-					img_container.onmouseout = () => {
-						hideCardHover();
-					}
-
-					document.getElementById("mv-cards-Sideboard").appendChild(img_container);
-				}				
+				sorted.sideboard.push([card, copies]);
 			});
 
 			sc_map.forEach((copies_obj, card_name, map) => {
 				const copies = copies_obj[1];
 				const card = copies_obj[0];
 
-				for (let i = 0; i < copies; i++) { // onmouseover="showCardHover('${card_name}')" onmousemove="moveCardHover(event)" onmouseout="hideCardHover()"
-					const img_container = buildImgContainer(card);
-
-					img_container.onmouseover = () => {
-						showCardHover(card.card_name);
-					}
-
-					img_container.onmousemove = (event) => {
-						moveCardHover(event);
-					}
-
-					img_container.onmouseout = () => {
-						hideCardHover();
-					}
-
-					document.getElementById("mv-cards-Sanctum").appendChild(img_container);
-				}
+				sorted.sanctum.push([card, copies]);
 			});
 
-			let half = 0;
-			let counter = 0;
+			sort_type.callback(sorted);
 
-			for (const l of mv0s) {
-				const copies = l[1];
-
-				for (let i = 0; i < copies; i++) {
-					half += 0.5;
-				}
-			}
-
-			half = Math.floor(half);
-
-			for (const l of mv0s) {
-				const card = l[0];
-				const copies = l[1];
-
-				for (let i = 0; i < copies; i++) {
-					const img_container = buildImgContainer(card);
-
-					img_container.onmouseover = () => {
-						showCardHover(card.card_name);
-					}
-
-					img_container.onmousemove = (event) => {
-						moveCardHover(event);
-					}
-
-					img_container.onmouseout = () => {
-						hideCardHover();
-					}
-					
-					document.getElementById(`mv-cards-0-${counter <= half ? '1' : '2'}`).appendChild(img_container);
-					counter++;
-				}
-			}
+			return sorted;
 		}
 
 		function loadDeckOld(deck, name) {
