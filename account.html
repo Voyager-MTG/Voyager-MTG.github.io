@@ -117,7 +117,11 @@
 		const db = getFirestore(app);
 
 		const urlParams = new URLSearchParams(window.location.search);
-		if (urlParams.get("setsession")) localStorage.setItem('settings.session', urlParams.get("setsession"));
+		if (urlParams.get("setsession")) { 
+			localStorage.setItem('settings.session', urlParams.get("setsession"));
+			history.pushState({}, document.title, "account");
+		}
+		
 
 		let username = "";
 		let password = "";
