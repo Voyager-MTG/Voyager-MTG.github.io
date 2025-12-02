@@ -2198,7 +2198,7 @@
             "type": "Instant",
             "number": 11,
             "color_identity": "W",
-            "cost": "{2}{W}",
+            "cost": "{3}{W}",
             "rules_text": "Create two 1/1 Wonder creature tokens that are all colors. When you do, up to one target creature gets +X/+X until end of turn, where X is the number of creatures you control.",
             "flavor_text": "[i][/i]",
             "pt": "",
@@ -3291,7 +3291,7 @@
             "loyalty": "",
             "designer": "Wende",
             "artist": "Vivian Poetzscher",
-            "notes": "!related Scrappy Wisp-Speaker; Abrasive Trailblazer<2>; Blossoming Comprehension; Blossoming Dissenter; Antlerweaver; Blinding Majesty<2>; Blossoming Conscience; Citadel Repository; Cathexis, Soul Aspect; Starsea Slayer<3>; Starseeker Deva; New Tensuo Calmkeeper; Polymorphic Wispweaver<2>;"
+            "notes": "!related Scrappy Wisp-Speaker; Abrasive Trailblazer<2>; Blossoming Comprehension; Blossoming Dissenter; Antlerweaver; Blossoming Conscience; Citadel Repository; Cathexis, Soul Aspect; Starsea Slayer<3>; Starseeker Deva; New Tensuo Calmkeeper; Polymorphic Wispweaver<2>;"
         },
         {
             "card_name": "Worldsoul Phoenix",
@@ -3519,7 +3519,7 @@
             "type": "Kindred Sorcery \u2014 Wonder",
             "number": 184,
             "color_identity": "WBRG",
-            "cost": "{2}{B}{R}{G}{W}",
+            "cost": "{B}{R}{G}{W}",
             "rules_text": "Each player discards their hand, then draws a card. You may put a land card from among cards put into graveyards this way onto the battlefield under your control.",
             "flavor_text": "[i]The space spasmed and lurched around Manuela and Chance-in-Hell, and suddenly they were alone somewhere incomprehensible.[/i]",
             "pt": "",
