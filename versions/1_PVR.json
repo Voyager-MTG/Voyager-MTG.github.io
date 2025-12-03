@@ -5508,7 +5508,7 @@
             "number": 286,
             "color_identity": "C",
             "cost": "{3}{C}",
-            "rules_text": "Trample, haste\nRetopology {C}{C}{C} [i](Cast a copy of this from your graveyard by exiling it and paying {C}{C}{C}. Spend only mana from differently named sources this way.)[/i]",
+            "rules_text": "Trample, haste\nRetopology {C}{C}{C} [i](Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "4/4",
             "special_text": "",
