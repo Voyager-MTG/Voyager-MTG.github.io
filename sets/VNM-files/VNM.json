@@ -2085,7 +2085,7 @@
             "number": 13,
             "color_identity": "C",
             "cost": "{1}",
-            "rules_text": "Whenever this enchantment attacks, scry 1.\nMaterialize 1 [i](Tap one or more other enchantments you control with total mana value 1 or more: This also becomes an Icon creature until your next upkeep.)[/i]",
+            "rules_text": "Whenever this enchantment attacks, scry 1.\nMaterialize 1 [i](Tap one or more other enchantments you control with total mana value 1 or more: This also becomes an Icon creature until end of turn.)[/i]",
             "flavor_text": "[i]Icons begin their life as entities, choosing a form given what they've first seen upon their birth. If one isn't available, they default to cats. [/i]",
             "pt": "2/2",
             "special_text": "",
