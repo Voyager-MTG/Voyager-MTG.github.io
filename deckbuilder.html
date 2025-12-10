@@ -3280,29 +3280,22 @@
 		let decks = "";
 
 		let sessionid = localStorage.getItem("settings.session");
-		let user_data;
 
-		if (sessionid) {
-			const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-				let data = docSnap.data();
-				username = data.username;
-				password = data.password;
-			});
+		const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+			let data = docSnap.data();
+			username = data.username;
+			password = data.password;
+		});
 
-			await getDoc(doc(db, 'users', username)).then(docSnap => {
-				const data = docSnap.data();
-				user_data = data;
-			});
-		}
 
-		async function reload() {
-			const data = user_data;
+		await getDoc(doc(db, 'users', username)).then(async docSnap => {
+			let data = docSnap.data();
 			let colls; // comment
-			const admin = data?.admin;
-			let coll_league = data?.coll_league;
-			decks = data?.decks;
-			if (data?.colls != null) {
-				colls = JSON.parse(data?.colls);
+			const admin = data.admin;
+			let coll_league = data.coll_league;
+			decks = data.decks;
+			if (data.colls != null) {
+				colls = JSON.parse(data.colls);
 			} else {
 				colls = []
 			}
@@ -3487,10 +3480,7 @@
 					});
 				}
 			});
-		}
-
-		document.addEventListener("DOMContentLoaded", reload);
-
+		});
 		function leadingZero(n) {
 			if (n.toString().length == 1) {
 				return "0" + n;

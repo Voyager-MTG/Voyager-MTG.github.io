@@ -951,7 +951,7 @@
 					if (group_id == "callback") continue;
 					const fn = sort_type[group_id][1];
 
-					if (card && fn(card)) {
+					if (fn(card)) {
 						sorted[group_id].push([card, copies]);
 						break;
 					}

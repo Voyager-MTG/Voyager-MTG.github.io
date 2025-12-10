@@ -817,7 +817,7 @@
 
 			const rulings_container = document.getElementsByClassName("rulings-container")[0];
 
-			if (user_data?.judge) {
+			if (user_data.judge) {
 				const rulings_input_container = document.createElement("div");
 				rulings_input_container.className = "rulings-input-container";
 
@@ -843,7 +843,7 @@
 			current_rulings.innerHTML = "Rulings:<br>" + rulings.list;
 			rulings_container.appendChild(current_rulings);
 
-			if (rulings.has_rulings || user_data?.judge) {
+			if (rulings.has_rulings || user_data.judge) {
 				image_grid.appendChild(rulings_container);
 				image_grid.className += " image-grid-with-rulings";
 			}
@@ -1219,14 +1219,7 @@
 			}
 		}
 
-		const delay = ms => new Promise(res => setTimeout(res, ms));
-
-		document.addEventListener("DOMContentLoaded", async () => {
-			while (document.getElementsByClassName("rulings-container").length == 0) {
-				await delay(100);
-			}
-			reload();
-		});
+		reload();
 	</script>
 </body>
 
