@@ -265,4 +265,5 @@ select {
 	margin-top: 4px;
 	font-family: beleren;
 	text-align: center;
+	color: var(--popout-text-color);
 }
