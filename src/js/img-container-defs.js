@@ -189,7 +189,7 @@ function gridifyCard(card_stats, card_text = false, rotate_card = false, designe
 	return grid;
 }
 
-function buildImgContainer(card_stats, hidden_title = false, rotate_card = false, display_type = false) {
+function buildImgContainer(card_stats, hidden_title = false, rotate_card = false, display_type = false, img_src = "") {
 	const imgContainer = document.createElement("div");
 	imgContainer.className = "img-container";
 	const id = card_stats.set + "-" + card_stats.number + (display_type ? "-" + document.getElementById("display").value : "");
@@ -199,17 +199,17 @@ function buildImgContainer(card_stats, hidden_title = false, rotate_card = false
 	img.id = id;
 	img.setAttribute("loading", "lazy");
 	// (card_stats[13].includes("_") ? card_stats[13] : card_stats[0]) for posterity
-	img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+	img.src = img_src + "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 
-	let not_in_voyager;
+	// let not_in_voyager;
 
-	if (card_stats.set == "HEL") {
-		img.style.filter = "grayscale()";
+	// if (card_stats.set == "HEL") {
+	// 	img.style.filter = "grayscale()";
 
-		not_in_voyager = document.createElement("span");
-		not_in_voyager.className = "not-in-voyager";
-		not_in_voyager.innerText = "This card is no longer legal in voyager.";
-	}
+	// 	not_in_voyager = document.createElement("span");
+	// 	not_in_voyager.className = "not-in-voyager";
+	// 	not_in_voyager.innerText = "This card is no longer legal in voyager.";
+	// }
 
 	let banned_overlay;
 
@@ -264,9 +264,9 @@ function buildImgContainer(card_stats, hidden_title = false, rotate_card = false
 		imgContainer.appendChild(title);
 	}
 
-	if (not_in_voyager) {
-		imgContainer.appendChild(not_in_voyager);
-	}
+	// if (not_in_voyager) {
+	// 	imgContainer.appendChild(not_in_voyager);
+	// }
 
 	if (banned_overlay) {
 		imgContainer.appendChild(banned_overlay);

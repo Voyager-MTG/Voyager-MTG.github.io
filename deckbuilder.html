@@ -1274,7 +1274,6 @@
 		}
 
 		function readDeckText(text, name) {
-			// get the deck name and initialize variables
 			document.getElementById("deck-name").value = name;
 
 			deck = [];
@@ -1379,6 +1378,68 @@
 							addCardToSanctum(JSON.stringify(card), false);
 						}
 						sc_map.delete(key);
+					}
+				}
+			}
+
+			if (deck_map.size > 1 || sb_map.size > 1 || sc_map.size > 1) {
+				for (const card of card_list_arrayified) {
+						for (const [ key, value ] of deck_map.entries()) {
+						if (key[0] == card.card_name && (key[1] == card.set || key[1] == "XXX")) {
+							for (let i = 0; i < value; i++) {
+								addCardToDeck(JSON.stringify(card), false);
+							}
+							deck_map.delete(key);
+						}
+					}
+
+					for (const [ key, value ] of sb_map.entries()) {
+						if (key[0] == card.card_name && (key[1] == card.set || key[1] == "XXX")) {
+							for (let i = 0; i < value; i++) {
+								addCardToSideboard(JSON.stringify(card), false);
+							}
+							sb_map.delete(key);
+						}
+					}
+
+					for (const [ key, value ] of sc_map.entries()) {
+						if (key[0] == card.card_name && (key[1] == card.set || key[1] == "XXX")) {
+							for (let i = 0; i < value; i++) {
+								addCardToSanctum(JSON.stringify(card), false);
+							}
+							sc_map.delete(key);
+						}
+					}
+				}
+			}
+
+			if (deck_map.size > 1 || sb_map.size > 1 || sc_map.size > 1) {
+				for (const card of card_list_arrayified) {
+						for (const [ key, value ] of deck_map.entries()) {
+						if (key[0] == card.card_name) {
+							for (let i = 0; i < value; i++) {
+								addCardToDeck(JSON.stringify(card), false);
+							}
+							deck_map.delete(key);
+						}
+					}
+
+					for (const [ key, value ] of sb_map.entries()) {
+						if (key[0] == card.card_name) {
+							for (let i = 0; i < value; i++) {
+								addCardToSideboard(JSON.stringify(card), false);
+							}
+							sb_map.delete(key);
+						}
+					}
+
+					for (const [ key, value ] of sc_map.entries()) {
+						if (key[0] == card.card_name) {
+							for (let i = 0; i < value; i++) {
+								addCardToSanctum(JSON.stringify(card), false);
+							}
+							sc_map.delete(key);
+						}
 					}
 				}
 			}

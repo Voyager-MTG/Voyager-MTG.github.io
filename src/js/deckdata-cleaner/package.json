@@ -1,0 +1,13 @@
+{
+    "name": "voyager-deckdata-cleaner",
+    "description": "",
+    "version": "1.0.0",
+    "main": "main.js",
+    "dependencies": {
+        "firebase": "^12.6.0"
+    },
+    "scripts": {
+        "start": "node main.js"
+    },
+    "type": "module"
+}

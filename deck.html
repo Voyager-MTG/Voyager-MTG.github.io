@@ -68,6 +68,13 @@
 					<option>Grid</option> -->
 				</select>
 			</div>
+			<div class="deck-opt-section">
+				<span class="deck-opt-label">Card versions:</span>
+				<select class="deck-opt-select" id="format-select">
+					<option value="old">Deck Last Modified</option>
+					<option value="current">Current Versions</option>
+				</select>
+			</div>
 		</div>
 		<div class="deck-container" id="deck-container">
 
@@ -79,7 +86,7 @@
 				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
 		</div>
 	</div>
-	<img id="hover-card" class="hover-card">
+	<div id="hover-card" class="hover-card">
 	<script src="/src/js/background.js"></script>
 	<script src="/src/js/img-container-defs.js"></script>
 	<script>
@@ -522,10 +529,11 @@
 					card_list = json;
 				}).catch(error => console.error('Error:', error));
 
-		let card_list_arrayified = card_list.cards;
+		let card_list_arrayified = card_list.cards; // default card list
 
 		document.getElementById("sort-type").onchange = reload;
 		document.getElementById("displayed-as").onchange = reload;
+		document.getElementById("format-select").onchange = reload;
 
 		async function reload() {
 			document.getElementById("deck-container").innerHTML = "";
@@ -536,7 +544,7 @@
 				if (urlParams.get('deck').includes(';')) { // check if deck has the ';' (for deck names)
 					let splitted = urlParams.get('deck').split(';'); // get the deck name and text by splitting
 					deck_author = "Unknown";
-					loadDeck(atob(splitted[1]), splitted[0]);
+					await loadDeck(atob(splitted[1]), splitted[0]);
 				}
 
 				if (urlParams.get("deck").includes("-") && !urlParams.get("deck").includes(";")) {
@@ -544,13 +552,13 @@
 					const deck_user = splitted[0];
 					deck_author = deck_user;
 					const deck_name = splitted[1];
-					await getDoc(doc(db, 'users', deck_user)).then(docSnap => {
+					await getDoc(doc(db, 'users', deck_user)).then(async docSnap => {
 						let data2 = docSnap.data();
 						let decks = data2.decks;
 						for (const deck of decks) {
 							if (deck.name == deck_name) {
 								let text = atob(deck.url.split(";")[1].split("&")[0]);
-								if (!deck.private) loadDeck(text, deck.name);
+								if (!deck.private) await loadDeck(text, deck.name, deck);
 								window.fireimport = true;
 								break;
 							}
@@ -564,14 +572,14 @@
 				const deck_event = splitted[0];
 				const deck_user = splitted[1];
 				deck_author = deck_user;
-				await getDoc(doc(db, 'events', deck_event)).then(docSnap => {
+				await getDoc(doc(db, 'events', deck_event)).then(async docSnap => {
 					let data3 = docSnap.data();
 					let decks = data3.decks;
 					for (const user in decks) {
 						if (user == deck_user) {
 							let deck = decks[user];
 							let text = atob(deck.url.split(";")[1].split("&")[0]);
-							if (!deck.private) loadDeck(text, deck.name);
+							if (!deck.private) await loadDeck(text, deck.name, deck);
 							window.fireimport = true;
 							break;
 						}
@@ -707,19 +715,11 @@
 			return mv;
 		}
 
-		function showCardHover(card_name, set = false, num = false) {
-			// console.log(set, num);
-			for (const card_stats of card_list_arrayified) {
-				if (card_stats.type.includes("Token")) continue;
-				if (card_stats.card_name == card_name && (!set || card_stats.set == set) && (!num || card_stats.number == num)) {
-					const src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
-
-					const hover_card = document.getElementById("hover-card");
-					hover_card.style.display = "block";
-					hover_card.src = src;
-					return;
-				}
-			}
+		function showCardHover(card) {
+			const hover_card = document.getElementById("hover-card");
+			hover_card.innerHTML = "";
+			hover_card.style.display = "block";
+			hover_card.appendChild(buildImgContainer(card, false, false, false, img_src));
 		}
 
 		function moveCardHover(event) {
@@ -731,7 +731,7 @@
 			document.getElementById("hover-card").style.display = "none";
 		}
 
-		function loadDeck(deck, name) {
+		async function loadDeck(deck, name, deck_obj) {
 			document.title = name;
 			document.getElementById("deck-container").style.gridTemplateColumns = "repeat(10, 1fr)";
 
@@ -747,9 +747,13 @@
 			document.body.style.setProperty("--card-height", card_height + "px");
 			document.body.style.setProperty("--card-spacing", card_height / 8 + "px");
 
-			const maps = makeMaps(deck, name);
-			const sorted = sortDeck(maps);
+			await checkDeckFormat(deck_obj);
 
+			const maps = makeMaps(deck, name);
+			/*console.log("maps", maps);
+			console.log("deck", deck);*/
+			const sorted = sortDeck(maps);
+			
 			const view_map = {
 				vstacks: loadDeckVStacks,
 				nstacks: loadDeckNStacks,
@@ -757,6 +761,56 @@
 			}
 
 			view_map[document.getElementById("displayed-as").value](sorted);
+		}
+
+		async function checkDeckFormat(deck) {
+			if (!deck) return;
+
+			deck.last_modified = deck.last_modified || "31-05-2025";
+			
+			const deck_date = deck.last_modified.split(",")[0];
+			const [ deck_day, deck_month, deck_year ] = deck_date.split("-").map(n => parseInt(n));
+			let formats;
+
+			await fetch('/data/formats.json')
+				.then(response => response.json())
+				.then(json => {
+					formats = json;
+				}).catch(error => console.error('Error:', error));
+
+			
+			if (document.getElementById("format-select").value == "current") {
+				await setFormat(formats[formats.current]);
+				return;
+			}
+
+			for (const [ format_date, format_hash ] of Object.entries(formats)) {
+				const [ format_year, format_month, format_day ] = format_date.split("-").map(n => parseInt(n));
+				
+				console.log("f", format_year, format_month, format_day, "d", deck_year, deck_month, deck_day, "h", format_hash);
+
+				if (format_year > deck_year) continue;
+				if (format_month > deck_month) continue;
+				if (format_day > deck_day) continue;
+
+				await setFormat(format_hash);
+			}
+		}
+
+		let img_src = "";
+
+		async function setFormat(hash) {
+			await fetch(`https://raw.githubusercontent.com/Voyager-MTG/Voyager-MTG.github.io/${hash}/lists/all-cards.json`)
+				.then(response => response.json())
+				.then(json => {
+					card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+			card_list_arrayified = card_list.cards;
+
+			console.log(card_list_arrayified);
+
+			img_src = `https://raw.githubusercontent.com/Voyager-MTG/Voyager-MTG.github.io/${hash}`;
 		}
 
 		function loadDeckText(sorted) {
@@ -777,7 +831,7 @@
 					card_container.appendChild(card_name);
 
 					card_container.onmouseover = () => {
-						showCardHover(card.card_name);
+						showCardHover(card);
 					}
 
 					card_container.onmousemove = (event) => {
@@ -798,10 +852,10 @@
 			document.body.style.setProperty("--card-spacing", card_height / 5 + "px");
 			for (const group_id in sorted) {
 				for (const [ card, copies ] of sorted[group_id]) {
-					const img_container = buildImgContainer(card);
+					const img_container = buildImgContainer(card, false, false, false, img_src);
 
 					img_container.onmouseover = () => {
-						showCardHover(card.card_name);
+						showCardHover(card);
 					}
 
 					img_container.onmousemove = (event) => {
@@ -828,10 +882,10 @@
 			for (const group_id in sorted) {
 				for (const [ card, copies ] of sorted[group_id]) {
 					for (let i = 0; i < copies; i++) {
-						const img_container = buildImgContainer(card);
+						const img_container = buildImgContainer(card, false, false, false, img_src);
 
 						img_container.onmouseover = () => {
-							showCardHover(card.card_name);
+							showCardHover(card);
 						}
 
 						img_container.onmousemove = (event) => {
@@ -852,17 +906,17 @@
 			const [ deck_map, sb_map, sc_map ] = maps;
 
 			const sort_mv = {
-				l1:   ["Land/0", (card) => { return convertToMV(card.cost) == 0 }],
-				l2:   ["Land/0", (card) => { return convertToMV(card.cost) == 0 }],
-				mv1:  ["1",      (card) => { return convertToMV(card.cost) == 1 }],
-				mv2:  ["2",      (card) => { return convertToMV(card.cost) == 2 }],
-				mv3:  ["3",      (card) => { return convertToMV(card.cost) == 3 }],
-				mv4:  ["4",      (card) => { return convertToMV(card.cost) == 4 }],
-				mv5:  ["5",      (card) => { return convertToMV(card.cost) == 5 }],
-				mv6:  ["6+",     (card) => { return convertToMV(card.cost) >= 6 }],
+				l1:   ["Land/0", card => convertToMV(card.cost) == 0 ],
+				l2:   ["Land/0", card => convertToMV(card.cost) == 0 ],
+				mv1:  ["1",      card => convertToMV(card.cost) == 1 ],
+				mv2:  ["2",      card => convertToMV(card.cost) == 2 ],
+				mv3:  ["3",      card => convertToMV(card.cost) == 3 ],
+				mv4:  ["4",      card => convertToMV(card.cost) == 4 ],
+				mv5:  ["5",      card => convertToMV(card.cost) == 5 ],
+				mv6:  ["6+",     card => convertToMV(card.cost) >= 6 ],
 
-				sideboard: ["Sideboard", (card) => { return false }],
-				sanctum:   ["Sanctum",   (card) => { return false }],
+				sideboard: ["Sideboard", card => false],
+				sanctum:   ["Sanctum",   card => false],
 
 				callback: (groups) => {
 					const half = Math.floor(groups.l1.length / 2) - 1;
@@ -878,33 +932,33 @@
 			};
 
 			const sort_card_type = {
-				land:         ["Land"        , (card) => { return (card.type.includes("Land"        ))}],
-				creature:     ["Creature"    , (card) => { return (card.type.includes("Creature"    ))}],
-				enchantment:  ["Enchantment" , (card) => { return (card.type.includes("Enchantment" ))}],
-				artifact:     ["Artifact"    , (card) => { return (card.type.includes("Artifact"    ))}],
-				instant:      ["Instant"     , (card) => { return (card.type.includes("Instant"     ))}],
-				sorcery:      ["Sorcery"     , (card) => { return (card.type.includes("Sorcery"     ))}],
-				planeswalker: ["Planeswalker", (card) => { return (card.type.includes("Planeswalker"))}],
-				battle:       ["Battle"      , (card) => { return (card.type.includes("Battle"      ))}],
+				land:         ["Land"        , card => card.type.includes("Land"        )],
+				creature:     ["Creature"    , card => card.type.includes("Creature"    )],
+				enchantment:  ["Enchantment" , card => card.type.includes("Enchantment" )],
+				artifact:     ["Artifact"    , card => card.type.includes("Artifact"    )],
+				instant:      ["Instant"     , card => card.type.includes("Instant"     )],
+				sorcery:      ["Sorcery"     , card => card.type.includes("Sorcery"     )],
+				planeswalker: ["Planeswalker", card => card.type.includes("Planeswalker")],
+				battle:       ["Battle"      , card => card.type.includes("Battle"      )],
 
-				sideboard: ["Sideboard", (card) => { return false }],
-				sanctum:   ["Sanctum",   (card) => { return false }],
+				sideboard: ["Sideboard", card => false],
+				sanctum:   ["Sanctum",   card => false],
 
 				callback: (groups) => {}
 			};
 
 			const sort_color = {
-				colorless:  ["Colorless",  (card) => { return (card.color == ""  ) }],
-				white:      ["White",      (card) => { return (card.color == "W" ) }],
-				blue:       ["Blue",       (card) => { return (card.color == "U" ) }],
-				black:      ["Black",      (card) => { return (card.color == "B" ) }],
-				red:        ["Red",        (card) => { return (card.color == "R" ) }],
-				green:      ["Green",      (card) => { return (card.color == "G" ) }],
-				silver:     ["Silver",     (card) => { return (card.color == "I" ) }],
-				multicolor: ["Multicolor", (card) => { return true }],
+				colorless:  ["Colorless",  card => card.color == ""  ],
+				white:      ["White",      card => card.color == "W" ],
+				blue:       ["Blue",       card => card.color == "U" ],
+				black:      ["Black",      card => card.color == "B" ],
+				red:        ["Red",        card => card.color == "R" ],
+				green:      ["Green",      card => card.color == "G" ],
+				silver:     ["Silver",     card => card.color == "I" ],
+				multicolor: ["Multicolor", card => true],
 
-				sideboard: ["Sideboard", (card) => { return false }],
-				sanctum:   ["Sanctum",   (card) => { return false }],
+				sideboard: ["Sideboard", card => false],
+				sanctum:   ["Sanctum",   card => false],
 
 				callback: (groups) => {}
 			};
@@ -946,6 +1000,8 @@
 			deck_map.forEach((copies_obj, card_name, map) => {
 				const copies = copies_obj[1];
 				const card = copies_obj[0];
+
+				if (!card) return;
 				
 				for (const group_id in sort_type) {
 					if (group_id == "callback") continue;
@@ -977,7 +1033,7 @@
 			return sorted;
 		}
 
-		function loadDeckOld(deck, name) {
+		function loadDeckOld(decklist, name) {
 			const maps = makeMaps(deck, name);
 			const deck_map = maps[0];
 
@@ -1130,11 +1186,9 @@
 				}
 			}
 
-			console.log(new_indexes);
-
 			for (const card of new_indexes) {
 				if(card) {
-					document.getElementById("deck-container").appendChild(buildImgContainer(card));
+					document.getElementById("deck-container").appendChild(buildImgContainer(card, false, false, false, img_src));
 				} else {
 					document.getElementById("deck-container").appendChild(document.createElement("div"));
 				}
