@@ -1122,7 +1122,7 @@
 			preview_img.className = "deck-preview-img";
 			preview_img.onclick = function () {
 				if (deck.event) {
-					window.location.href = `/deckbuilder?edeck=${deck.event}-${deck.user}`;
+					window.location.href = `/deck?edeck=${deck.event}-${deck.user}`;
 					return;
 				}
 				window.location.href = `/deck?deck=${deck.user}-${encodeURI(deck.name)}`;
