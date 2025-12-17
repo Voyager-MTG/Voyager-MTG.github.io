@@ -156,13 +156,11 @@
 
 			modalContent.appendChild(exportButtonHtml("Decklist", function () {
 				navigator.clipboard.writeText(generateDeckText()); // copy the deck text to clipboard
-				document.getElementById("file-menu").value = "default"; // set the dropdown back
 				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Decklist copied to clipboard"); // open the modal to notify the user
 			}, "/img/copy-white.png"));
 
 			modalContent.appendChild(exportButtonHtml("Discord Message", function () {
 				navigator.clipboard.writeText(`# [${document.getElementById("deck-name").value}](https://voyager-mtg.github.io/deck?deck=${encodeURIComponent(document.getElementById("deck-name").innerText) + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length})\n\`\`\`${generateDeckText()}\`\`\``); // CURSED
-				document.getElementById("file-menu").value = "default";
 				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Discord message copied to clipboard"); // open the modal to notify the user
 			}, "/img/copy-white.png"));
 
@@ -382,7 +380,6 @@
 			downloadableLink.click();
 			document.body.removeChild(downloadableLink);
 
-			document.getElementById("file-menu").value = "default";
 
 		}
 
@@ -463,7 +460,6 @@
 			downloadableLink.click();
 			document.body.removeChild(downloadableLink);
 
-			document.getElementById("file-menu").value = "default";
 		}
 
 		function openModal(html) {
