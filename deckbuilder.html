@@ -772,7 +772,7 @@
 
 			minus_button_sc.onclick = function () {
 				sanctum.splice(sanctum.indexOf(card), 1);
-				modifySB2(`${card_stats['set']}-${card_stats['number']}`, "-");
+				modifySC2(`${card_stats['set']}-${card_stats['number']}`, "-");
 				processDeck();
 				document.getElementsByClassName("card-modal-sanctum-text")[0].innerText = "Sanctum (" + getCopies2("sanctum", card_stats.set + '-' + card_stats.number) + ")";
 			}
