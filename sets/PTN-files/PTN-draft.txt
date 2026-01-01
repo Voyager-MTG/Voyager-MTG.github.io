@@ -2,7 +2,7 @@
 	[
 		{
 			"name": "The Horned-Axe",
-			"rarity": "mythic",
+			"rarity": "special",
 			"mana_cost": "{5}",
 			"type": "Legendary Creature — God",
 			"collector_number": "2",
@@ -12,7 +12,7 @@
 		},
 		{
 			"name": "Mother of Ants",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}{U}{R}",
 			"type": "Legendary Creature — Cleric God",
 			"collector_number": "217",
@@ -22,7 +22,7 @@
 		},
 		{
 			"name": "The Elegiast",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{1}{U}{B}",
 			"type": "Legendary Creature — Bird God",
 			"collector_number": "204",
@@ -32,7 +32,7 @@
 		},
 		{
 			"name": "The Mirror-Queen",
-			"rarity": "mythic",
+			"rarity": "special",
 			"mana_cost": "{1}{U}{R}",
 			"type": "Legendary Creature — Reflection God",
 			"collector_number": "215",
@@ -42,7 +42,7 @@
 		},
 		{
 			"name": "The Red Grail",
-			"rarity": "mythic",
+			"rarity": "special",
 			"mana_cost": "{3}{B}{R}",
 			"type": "Legendary Creature — Vampire God",
 			"collector_number": "223",
@@ -52,7 +52,7 @@
 		},
 		{
 			"name": "The Witch-and-Sister",
-			"rarity": "mythic",
+			"rarity": "special",
 			"mana_cost": "{1}{U}{R}",
 			"type": "Legendary Creature — Wizard God",
 			"collector_number": "236",
@@ -69,7 +69,7 @@
 		},
 		{
 			"name": "The Wolf Divided",
-			"rarity": "mythic",
+			"rarity": "special",
 			"mana_cost": "{B}{R}{G}",
 			"type": "Legendary Creature — Wolf God",
 			"collector_number": "237",
@@ -79,7 +79,7 @@
 		},
 		{
 			"name": "The Frangiclave",
-			"rarity": "mythic",
+			"rarity": "special",
 			"mana_cost": "{2}",
 			"type": "Legendary Artifact — Equipment",
 			"collector_number": "240",
@@ -89,7 +89,7 @@
 		},
 		{
 			"name": "Glassgarden Prophet",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{W}",
 			"type": "Creature — Human Cleric Wizard",
 			"collector_number": "23",
@@ -99,7 +99,7 @@
 		},
 		{
 			"name": "Dreamway Key",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{U}",
 			"type": "Creature — Bird Spirit",
 			"collector_number": "50",
@@ -109,7 +109,7 @@
 		},
 		{
 			"name": "Perfect Stillness",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{U}{U}",
 			"type": "Instant",
 			"collector_number": "68",
@@ -119,7 +119,7 @@
 		},
 		{
 			"name": "Sensation Ascender",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{B}",
 			"type": "Creature — Vampire Cleric",
 			"collector_number": "112",
@@ -129,7 +129,7 @@
 		},
 		{
 			"name": "Wood's Deceiver",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{3}{B}",
 			"type": "Creature — Insect Shapeshifter",
 			"collector_number": "121",
@@ -139,7 +139,7 @@
 		},
 		{
 			"name": "Blazing Crescendo",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{R}",
 			"type": "Instant",
 			"collector_number": "122",
@@ -149,7 +149,7 @@
 		},
 		{
 			"name": "Lessons of Strife",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{R}",
 			"type": "Instant",
 			"collector_number": "136",
@@ -159,7 +159,7 @@
 		},
 		{
 			"name": "Map's Edge Explorer",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{G}",
 			"type": "Creature — Human Scout",
 			"collector_number": "176",
@@ -169,7 +169,7 @@
 		},
 		{
 			"name": "Society Headquarters",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Land — Sanctuary",
 			"collector_number": "249",
@@ -179,7 +179,7 @@
 		},
 		{
 			"name": "Sanctuary of Enlightenment",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Land — Sanctuary",
 			"collector_number": "250",
@@ -189,7 +189,7 @@
 		},
 		{
 			"name": "Sanctuary of Glory",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Land — Sanctuary",
 			"collector_number": "251",
@@ -199,7 +199,7 @@
 		},
 		{
 			"name": "Sanctuary of Movement",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Land — Sanctuary",
 			"collector_number": "252",
@@ -209,7 +209,7 @@
 		},
 		{
 			"name": "Sanctuary of Openings",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Land — Sanctuary",
 			"collector_number": "253",
@@ -219,7 +219,7 @@
 		},
 		{
 			"name": "Sanctuary of Remembrance",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Land — Sanctuary",
 			"collector_number": "254",
@@ -229,7 +229,7 @@
 		},
 		{
 			"name": "Sanctuary of Reshaping",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Land — Sanctuary",
 			"collector_number": "255",
@@ -239,7 +239,7 @@
 		},
 		{
 			"name": "Sanctuary of Sensation",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Land — Sanctuary",
 			"collector_number": "256",
@@ -249,7 +249,7 @@
 		},
 		{
 			"name": "Sanctuary of Shedding",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Land — Sanctuary",
 			"collector_number": "257",
@@ -259,7 +259,7 @@
 		},
 		{
 			"name": "Sanctuary of Strength",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Land — Sanctuary",
 			"collector_number": "258",
@@ -269,7 +269,7 @@
 		},
 		{
 			"name": "Sanctuary of Time",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Land — Sanctuary",
 			"collector_number": "259",
@@ -279,7 +279,7 @@
 		},
 		{
 			"name": "Plains",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Basic Land — Plains",
 			"collector_number": "261",
@@ -289,7 +289,7 @@
 		},
 		{
 			"name": "Plains",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Basic Land — Plains",
 			"collector_number": "260",
@@ -299,7 +299,7 @@
 		},
 		{
 			"name": "Island",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Basic Land — Island",
 			"collector_number": "262",
@@ -309,7 +309,7 @@
 		},
 		{
 			"name": "Island",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Basic Land — Island",
 			"collector_number": "263",
@@ -319,7 +319,7 @@
 		},
 		{
 			"name": "Swamp",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Basic Land — Swamp",
 			"collector_number": "265",
@@ -329,7 +329,7 @@
 		},
 		{
 			"name": "Swamp",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Basic Land — Swamp",
 			"collector_number": "264",
@@ -339,7 +339,7 @@
 		},
 		{
 			"name": "Mountain",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Basic Land — Mountain",
 			"collector_number": "266",
@@ -349,7 +349,7 @@
 		},
 		{
 			"name": "Mountain",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Basic Land — Mountain",
 			"collector_number": "267",
@@ -359,7 +359,7 @@
 		},
 		{
 			"name": "Forest",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Basic Land — Forest",
 			"collector_number": "268",
@@ -369,7 +369,7 @@
 		},
 		{
 			"name": "Forest",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Basic Land — Forest",
 			"collector_number": "269",
@@ -379,7 +379,7 @@
 		},
 		{
 			"name": "Burgeoning Risen",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}",
 			"type": "Creature — Treefolk Zombie",
 			"collector_number": "1",
@@ -389,7 +389,7 @@
 		},
 		{
 			"name": "Mirrored Wolf",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}",
 			"type": "Creature — Wolf Reflection",
 			"collector_number": "4",
@@ -399,7 +399,7 @@
 		},
 		{
 			"name": "Banisher Priest",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{W}{W}",
 			"type": "Creature — Human Cleric",
 			"collector_number": "12",
@@ -409,7 +409,7 @@
 		},
 		{
 			"name": "Bars Across the Sun",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{W}",
 			"type": "Enchantment — Aura",
 			"collector_number": "13",
@@ -419,7 +419,7 @@
 		},
 		{
 			"name": "Broken Sun-Servant",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{W}",
 			"type": "Creature — Angel Cleric",
 			"collector_number": "15",
@@ -429,7 +429,7 @@
 		},
 		{
 			"name": "Forge Secretkeeper",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{3}{W}",
 			"type": "Creature — Human Artificer",
 			"collector_number": "20",
@@ -439,7 +439,7 @@
 		},
 		{
 			"name": "Glass Guardian",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{4}{W}",
 			"type": "Creature — Reflection Golem",
 			"collector_number": "21",
@@ -449,7 +449,7 @@
 		},
 		{
 			"name": "Iron Verdict",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{W}",
 			"type": "Instant",
 			"collector_number": "31",
@@ -459,7 +459,7 @@
 		},
 		{
 			"name": "Legacy of Tides",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}{B}",
 			"type": "Kindred Enchantment — God",
 			"collector_number": "103",
@@ -469,7 +469,7 @@
 		},
 		{
 			"name": "Legacy of Coils",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}{G}",
 			"type": "Kindred Enchantment — God",
 			"collector_number": "174",
@@ -479,7 +479,7 @@
 		},
 		{
 			"name": "Subverted Cyprian",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{W}",
 			"type": "Creature — Vampire Cleric",
 			"collector_number": "42",
@@ -489,7 +489,7 @@
 		},
 		{
 			"name": "Nowhere Inhabits",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{U}",
 			"type": "Instant",
 			"collector_number": "62",
@@ -499,7 +499,7 @@
 		},
 		{
 			"name": "Rite of Twins' Union",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}{U}",
 			"type": "Sorcery",
 			"collector_number": "70",
@@ -509,7 +509,7 @@
 		},
 		{
 			"name": "Sea's Feasting",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{U}",
 			"type": "Instant",
 			"collector_number": "73",
@@ -519,7 +519,7 @@
 		},
 		{
 			"name": "Seven-Coil Shipbreaker",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{4}{U}{U}",
 			"type": "Creature — Serpent Horror",
 			"collector_number": "75",
@@ -529,7 +529,7 @@
 		},
 		{
 			"name": "Carapace Shearer",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{B}",
 			"type": "Creature — Human Cleric Shaman",
 			"collector_number": "87",
@@ -539,7 +539,7 @@
 		},
 		{
 			"name": "Dry-Soul Angel",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{B}",
 			"type": "Creature — Skeleton Angel",
 			"collector_number": "95",
@@ -549,7 +549,7 @@
 		},
 		{
 			"name": "Flesh Asunder",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{B}",
 			"type": "Instant",
 			"collector_number": "98",
@@ -559,7 +559,7 @@
 		},
 		{
 			"name": "The Vitulation",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{B}",
 			"type": "Enchantment",
 			"collector_number": "120",
@@ -569,7 +569,7 @@
 		},
 		{
 			"name": "Stained Silver",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{R}",
 			"type": "Artifact — Equipment",
 			"collector_number": "153",
@@ -579,7 +579,7 @@
 		},
 		{
 			"name": "Subvert the Light",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{R}",
 			"type": "Instant",
 			"collector_number": "154",
@@ -589,7 +589,7 @@
 		},
 		{
 			"name": "Subverting Insurgent",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{R}",
 			"type": "Creature — Elf Wizard Berserker",
 			"collector_number": "155",
@@ -599,7 +599,7 @@
 		},
 		{
 			"name": "Unlucky Witness",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{R}",
 			"type": "Creature — Human Citizen",
 			"collector_number": "158",
@@ -609,7 +609,7 @@
 		},
 		{
 			"name": "Life's Legacy",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{1}{G}",
 			"type": "Sorcery",
 			"collector_number": "175",
@@ -619,7 +619,7 @@
 		},
 		{
 			"name": "Ezeem, the Second Thirstly",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}{B}{R}",
 			"type": "Legendary Creature — Vampire God",
 			"collector_number": "205",
@@ -629,7 +629,7 @@
 		},
 		{
 			"name": "King Crucible",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}{R}{R}{W}",
 			"type": "Legendary Creature — Elemental God",
 			"collector_number": "211",
@@ -639,7 +639,7 @@
 		},
 		{
 			"name": "Moth's Yearning",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{B}{G}",
 			"type": "Sorcery",
 			"collector_number": "218",
@@ -649,7 +649,7 @@
 		},
 		{
 			"name": "House of the Moon",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Land — Sanctuary",
 			"collector_number": "247",
@@ -659,7 +659,7 @@
 		},
 		{
 			"name": "Extract Secrets",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{W}",
 			"type": "Instant",
 			"collector_number": "19",
@@ -669,7 +669,7 @@
 		},
 		{
 			"name": "Ignite Fervor",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{W}",
 			"type": "Instant",
 			"collector_number": "30",
@@ -679,7 +679,7 @@
 		},
 		{
 			"name": "Lended Light",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{3}{W}{W}",
 			"type": "Instant",
 			"collector_number": "33",
@@ -689,7 +689,7 @@
 		},
 		{
 			"name": "Unscarred Wolf",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{W}",
 			"type": "Creature — Wolf Angel",
 			"collector_number": "45",
@@ -699,7 +699,7 @@
 		},
 		{
 			"name": "Fucine Translator",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{U}",
 			"type": "Creature — Elf Cleric Advisor",
 			"collector_number": "56",
@@ -709,7 +709,7 @@
 		},
 		{
 			"name": "Forgotten Tongues",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{U}",
 			"type": "Sorcery",
 			"collector_number": "55",
@@ -719,7 +719,7 @@
 		},
 		{
 			"name": "Take Prisoners",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{U}",
 			"type": "Instant",
 			"collector_number": "79",
@@ -729,7 +729,7 @@
 		},
 		{
 			"name": "Ragged Sun's Angel",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{4}{W}{W}",
 			"type": "Creature — Angel",
 			"collector_number": "37",
@@ -739,7 +739,7 @@
 		},
 		{
 			"name": "Sun-Scorched Tempering",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{W}",
 			"type": "Instant",
 			"collector_number": "43",
@@ -749,7 +749,7 @@
 		},
 		{
 			"name": "Lost Seraph",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{4}",
 			"type": "Creature — Angel Demon",
 			"collector_number": "3",
@@ -759,7 +759,7 @@
 		},
 		{
 			"name": "Misguiding Lighthouse",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{5}",
 			"type": "Creature — Horror",
 			"collector_number": "5",
@@ -769,7 +769,7 @@
 		},
 		{
 			"name": "Angel of the True Sun",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{3}{W}{W}",
 			"type": "Creature — Angel",
 			"collector_number": "10",
@@ -779,7 +779,7 @@
 		},
 		{
 			"name": "Rarefied Illuminator",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{W}",
 			"type": "Creature — Human Cleric",
 			"collector_number": "38",
@@ -789,7 +789,7 @@
 		},
 		{
 			"name": "Sunshard Protector",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{W}",
 			"type": "Creature — Angel Knight",
 			"collector_number": "44",
@@ -799,7 +799,7 @@
 		},
 		{
 			"name": "Paradoxical Inquiry",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{B}",
 			"type": "Sorcery",
 			"collector_number": "108",
@@ -809,7 +809,7 @@
 		},
 		{
 			"name": "Rite of Crucible Soul",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{R}",
 			"type": "Sorcery",
 			"collector_number": "151",
@@ -819,7 +819,7 @@
 		},
 		{
 			"name": "Seven-Coil Invocation",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{B}",
 			"type": "Instant",
 			"collector_number": "113",
@@ -829,7 +829,7 @@
 		},
 		{
 			"name": "Rite of Beast's Division",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{B}{B}",
 			"type": "Sorcery",
 			"collector_number": "109",
@@ -839,7 +839,7 @@
 		},
 		{
 			"name": "The Lionsmith",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}{R}{R}",
 			"type": "Legendary Creature — Cat God",
 			"collector_number": "137",
@@ -849,7 +849,7 @@
 		},
 		{
 			"name": "The Knotwingknot",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{1}{B}{G}",
 			"type": "Legendary Creature — God Horror",
 			"collector_number": "212",
@@ -859,7 +859,7 @@
 		},
 		{
 			"name": "The Watchman",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{1}{W}{U}",
 			"type": "Legendary Creature — Human God",
 			"collector_number": "235",
@@ -869,7 +869,7 @@
 		},
 		{
 			"name": "Preemptive Purge",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{R}",
 			"type": "Instant",
 			"collector_number": "146",
@@ -879,7 +879,7 @@
 		},
 		{
 			"name": "Reshaping Phoenix",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}{R}",
 			"type": "Creature — Phoenix",
 			"collector_number": "148",
@@ -889,7 +889,7 @@
 		},
 		{
 			"name": "Acolyte of Agony",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{B}{R}",
 			"type": "Creature — Human Warrior",
 			"collector_number": "198",
@@ -899,7 +899,7 @@
 		},
 		{
 			"name": "The Geminiad",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{3}",
 			"type": "Legendary Artifact",
 			"collector_number": "241",
@@ -909,7 +909,7 @@
 		},
 		{
 			"name": "Discover the Stone Gods",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{G}",
 			"type": "Sorcery",
 			"collector_number": "171",
@@ -919,7 +919,7 @@
 		},
 		{
 			"name": "Noonstone Amulet",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{3}",
 			"type": "Artifact",
 			"collector_number": "242",
@@ -929,7 +929,7 @@
 		},
 		{
 			"name": "Forged Conflagration",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{R}{W}",
 			"type": "Instant",
 			"collector_number": "208",
@@ -939,7 +939,7 @@
 		},
 		{
 			"name": "Nowhere Razer",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{R}{R}",
 			"type": "Creature — Skeleton",
 			"collector_number": "143",
@@ -949,7 +949,7 @@
 		},
 		{
 			"name": "Wildwood Containment",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{G}",
 			"type": "Instant",
 			"collector_number": "193",
@@ -959,7 +959,7 @@
 		},
 		{
 			"name": "Wolven Hatred",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{G}",
 			"type": "Sorcery",
 			"collector_number": "195",
@@ -969,7 +969,7 @@
 		},
 		{
 			"name": "Open the Self",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{R}",
 			"type": "Sorcery",
 			"collector_number": "144",
@@ -979,7 +979,7 @@
 		},
 		{
 			"name": "Bringer of Glory",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{3}{W}{W}",
 			"type": "Creature — Angel Cleric",
 			"collector_number": "14",
@@ -989,7 +989,7 @@
 		},
 		{
 			"name": "Relic Vial",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{3}",
 			"type": "Artifact",
 			"collector_number": "243",
@@ -999,7 +999,7 @@
 		},
 		{
 			"name": "Ritual Daggar",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{4}",
 			"type": "Artifact",
 			"collector_number": "244",
@@ -1009,7 +1009,7 @@
 		},
 		{
 			"name": "Nowhere Deathlord",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{U}{B}",
 			"type": "Creature — Skeleton Warrior",
 			"collector_number": "219",
@@ -1019,7 +1019,7 @@
 		},
 		{
 			"name": "Nowhere Dreadsteed",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{U}{B}",
 			"type": "Creature — Skeleton Horse",
 			"collector_number": "220",
@@ -1029,7 +1029,7 @@
 		},
 		{
 			"name": "Scar",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Boon",
 			"collector_number": "4",
@@ -1039,7 +1039,7 @@
 		},
 		{
 			"name": "Flames of Emnity",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{R}{G}",
 			"type": "Enchantment",
 			"collector_number": "206",
@@ -1049,7 +1049,7 @@
 		},
 		{
 			"name": "Guided Crusader",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{W}{W}",
 			"type": "Creature — Human Knight",
 			"collector_number": "28",
@@ -1059,7 +1059,7 @@
 		},
 		{
 			"name": "Cindered Tally",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{B}{B}",
 			"type": "Sorcery",
 			"collector_number": "88",
@@ -1069,7 +1069,7 @@
 		},
 		{
 			"name": "Escape into the Night",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{B}",
 			"type": "Instant",
 			"collector_number": "97",
@@ -1079,7 +1079,7 @@
 		},
 		{
 			"name": "Raw Prophet",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{R}",
 			"type": "Creature — Horror",
 			"collector_number": "147",
@@ -1089,7 +1089,7 @@
 		},
 		{
 			"name": "Seven-Coiled Strength",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{G}",
 			"type": "Instant",
 			"collector_number": "184",
@@ -1099,7 +1099,7 @@
 		},
 		{
 			"name": "Ring-Yew's Chosen",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{G}",
 			"type": "Creature — Human Cleric Druid",
 			"collector_number": "182",
@@ -1109,7 +1109,7 @@
 		},
 		{
 			"name": "The Allure's Light",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{W}{U}",
 			"type": "Enchantment",
 			"collector_number": "199",
@@ -1119,7 +1119,7 @@
 		},
 		{
 			"name": "The Sky, The Soul",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{W}",
 			"type": "Enchantment",
 			"collector_number": "41",
@@ -1129,7 +1129,7 @@
 		},
 		{
 			"name": "Roost Messengers",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{3}",
 			"type": "Creature — Bird",
 			"collector_number": "8",
@@ -1139,7 +1139,7 @@
 		},
 		{
 			"name": "Apostle Entheate",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}{W}{W}",
 			"type": "Creature — Angel Cleric",
 			"collector_number": "11",
@@ -1149,7 +1149,7 @@
 		},
 		{
 			"name": "Cat o'lic Priests",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{1}{W}{W}",
 			"type": "Creature — Cat Cleric",
 			"collector_number": "16",
@@ -1159,7 +1159,7 @@
 		},
 		{
 			"name": "Glassgarden Elder",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{W}",
 			"type": "Creature — Human Cleric",
 			"collector_number": "22",
@@ -1169,7 +1169,7 @@
 		},
 		{
 			"name": "Glassgarden Seer",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{W}",
 			"type": "Creature — Human Cleric",
 			"collector_number": "24",
@@ -1179,7 +1179,7 @@
 		},
 		{
 			"name": "Glorious Enforcer",
-			"rarity": "mythic",
+			"rarity": "special",
 			"mana_cost": "{5}{W}{W}",
 			"type": "Creature — Angel",
 			"collector_number": "26",
@@ -1189,7 +1189,7 @@
 		},
 		{
 			"name": "Horomachist Sacrifice",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{W}",
 			"type": "Creature — Angel",
 			"collector_number": "29",
@@ -1199,7 +1199,7 @@
 		},
 		{
 			"name": "Merciless Illumination",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{4}{W}{W}",
 			"type": "Sorcery",
 			"collector_number": "34",
@@ -1209,7 +1209,7 @@
 		},
 		{
 			"name": "Mystical Trail",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{W}",
 			"type": "Enchantment — Aura",
 			"collector_number": "35",
@@ -1219,7 +1219,7 @@
 		},
 		{
 			"name": "Root of Mercy",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{W}",
 			"type": "Instant",
 			"collector_number": "39",
@@ -1229,7 +1229,7 @@
 		},
 		{
 			"name": "Seven-Coil Glider",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{W}",
 			"type": "Creature — Angel Serpent",
 			"collector_number": "40",
@@ -1239,7 +1239,7 @@
 		},
 		{
 			"name": "Augury Raven",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{3}{U}",
 			"type": "Creature — Bird",
 			"collector_number": "47",
@@ -1249,7 +1249,7 @@
 		},
 		{
 			"name": "Eyes Everywhere",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{U}",
 			"type": "Enchantment",
 			"collector_number": "54",
@@ -1259,7 +1259,7 @@
 		},
 		{
 			"name": "Map's Edge Monstrosity",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{6}{U}{U}",
 			"type": "Creature — Kraken Horror",
 			"collector_number": "58",
@@ -1269,7 +1269,7 @@
 		},
 		{
 			"name": "Moonlit Augury",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{U}",
 			"type": "Enchantment",
 			"collector_number": "59",
@@ -1279,7 +1279,7 @@
 		},
 		{
 			"name": "Dreamway Imposter",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{U}",
 			"type": "Creature — Demon",
 			"collector_number": "49",
@@ -1289,7 +1289,7 @@
 		},
 		{
 			"name": "Nowhere Soul Collector",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{U}",
 			"type": "Creature — Skeleton Cleric Shaman",
 			"collector_number": "63",
@@ -1299,7 +1299,7 @@
 		},
 		{
 			"name": "Nowhere Wormhost",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{U}",
 			"type": "Creature — Skeleton",
 			"collector_number": "64",
@@ -1309,7 +1309,7 @@
 		},
 		{
 			"name": "Opener of Realities",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{U}",
 			"type": "Creature — Shapeshifter Cleric",
 			"collector_number": "65",
@@ -1319,7 +1319,7 @@
 		},
 		{
 			"name": "River Drowner",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{4}{U}",
 			"type": "Creature — Merfolk Horror",
 			"collector_number": "71",
@@ -1329,7 +1329,7 @@
 		},
 		{
 			"name": "Roost Nyctodromist",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{U}",
 			"type": "Creature — Bird Cleric",
 			"collector_number": "72",
@@ -1339,7 +1339,7 @@
 		},
 		{
 			"name": "Seaside Smuggler",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{U}",
 			"type": "Creature — Merfolk Cleric Scout",
 			"collector_number": "74",
@@ -1349,7 +1349,7 @@
 		},
 		{
 			"name": "Seven-Coil's Scion",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{3}{U}{U}",
 			"type": "Creature — Leviathan Serpent",
 			"collector_number": "76",
@@ -1359,7 +1359,7 @@
 		},
 		{
 			"name": "Silent Drowner",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{U}",
 			"type": "Creature — Merfolk Wizard",
 			"collector_number": "77",
@@ -1369,7 +1369,7 @@
 		},
 		{
 			"name": "Evening Isles Skycomber",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{U}",
 			"type": "Creature — Human Cleric Wizard",
 			"collector_number": "52",
@@ -1379,7 +1379,7 @@
 		},
 		{
 			"name": "Twins' Guardian",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{3}{U}",
 			"type": "Creature — Spirit Knight",
 			"collector_number": "80",
@@ -1389,7 +1389,7 @@
 		},
 		{
 			"name": "Veil of Dreams",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{U}",
 			"type": "Instant",
 			"collector_number": "81",
@@ -1399,7 +1399,7 @@
 		},
 		{
 			"name": "White Reaper",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{U}",
 			"type": "Creature — Elemental Bird",
 			"collector_number": "83",
@@ -1409,7 +1409,7 @@
 		},
 		{
 			"name": "Carapace Guardian",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{B}",
 			"type": "Creature — Insect",
 			"collector_number": "85",
@@ -1419,7 +1419,7 @@
 		},
 		{
 			"name": "Carapace Scavenger",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{B}",
 			"type": "Creature — Skeleton Insect",
 			"collector_number": "86",
@@ -1429,7 +1429,7 @@
 		},
 		{
 			"name": "Cyprian Haemomancer",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{B}",
 			"type": "Creature — Vampire Cleric Wizard",
 			"collector_number": "91",
@@ -1439,7 +1439,7 @@
 		},
 		{
 			"name": "Despairing Devotee",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{B}",
 			"type": "Creature — Vampire Cleric",
 			"collector_number": "93",
@@ -1449,7 +1449,7 @@
 		},
 		{
 			"name": "Escape from Nowhere",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{3}{B}{B}",
 			"type": "Sorcery",
 			"collector_number": "96",
@@ -1459,7 +1459,7 @@
 		},
 		{
 			"name": "Gloom Sower",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{5}{B}{B}",
 			"type": "Creature — Horror",
 			"collector_number": "99",
@@ -1469,7 +1469,7 @@
 		},
 		{
 			"name": "Indulgent Cyprian",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{B}",
 			"type": "Creature — Vampire Cleric",
 			"collector_number": "102",
@@ -1479,7 +1479,7 @@
 		},
 		{
 			"name": "Nowhere Ascender",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{B}",
 			"type": "Creature — Skeleton Angel",
 			"collector_number": "106",
@@ -1489,7 +1489,7 @@
 		},
 		{
 			"name": "Rite of Watchman's Sorrow",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{B}",
 			"type": "Instant",
 			"collector_number": "110",
@@ -1499,7 +1499,7 @@
 		},
 		{
 			"name": "Scarring Servitude",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{B}",
 			"type": "Enchantment",
 			"collector_number": "111",
@@ -1509,7 +1509,7 @@
 		},
 		{
 			"name": "Sky-Scar Angel",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{3}{B}{B}",
 			"type": "Creature — Angel Cleric",
 			"collector_number": "115",
@@ -1519,7 +1519,7 @@
 		},
 		{
 			"name": "Students of Rememberance",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{4}{B}",
 			"type": "Creature — Cleric Warlock",
 			"collector_number": "116",
@@ -1529,7 +1529,7 @@
 		},
 		{
 			"name": "Callidate Invocation",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{3}{R}{R}",
 			"type": "Instant",
 			"collector_number": "123",
@@ -1539,7 +1539,7 @@
 		},
 		{
 			"name": "Cyprian Sacristan",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{R}",
 			"type": "Creature — Vampire Cleric Rogue",
 			"collector_number": "126",
@@ -1549,7 +1549,7 @@
 		},
 		{
 			"name": "Enflamed Caligine",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{4}{R}",
 			"type": "Creature — Elemental",
 			"collector_number": "127",
@@ -1559,7 +1559,7 @@
 		},
 		{
 			"name": "Entry Consultant",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{5}{R}",
 			"type": "Creature — Human Wizard",
 			"collector_number": "128",
@@ -1569,7 +1569,7 @@
 		},
 		{
 			"name": "Forces of Opening",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{1}{R}",
 			"type": "Enchantment",
 			"collector_number": "129",
@@ -1579,7 +1579,7 @@
 		},
 		{
 			"name": "Ghirbi, the Gatekeeper",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{1}{R}{R}",
 			"type": "Legendary Artifact Creature — Cleric Wall",
 			"collector_number": "131",
@@ -1589,7 +1589,7 @@
 		},
 		{
 			"name": "Ironsmoke Caligine",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{7}{R}",
 			"type": "Creature — Elemental",
 			"collector_number": "134",
@@ -1599,7 +1599,7 @@
 		},
 		{
 			"name": "Malleary Novice",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{R}",
 			"type": "Creature — Human Cleric Artificer",
 			"collector_number": "139",
@@ -1609,7 +1609,7 @@
 		},
 		{
 			"name": "Malleary Reforged",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{3}{R}{R}",
 			"type": "Creature — Elemental Cleric",
 			"collector_number": "140",
@@ -1619,7 +1619,7 @@
 		},
 		{
 			"name": "Rite Flamecaller",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{R}",
 			"type": "Creature — Cat Cleric Shaman",
 			"collector_number": "149",
@@ -1629,7 +1629,7 @@
 		},
 		{
 			"name": "Smoldering Pack",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{R}",
 			"type": "Creature — Elemental Wolf",
 			"collector_number": "152",
@@ -1639,7 +1639,7 @@
 		},
 		{
 			"name": "Traitorous Blood",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{R}{R}",
 			"type": "Sorcery",
 			"collector_number": "157",
@@ -1649,7 +1649,7 @@
 		},
 		{
 			"name": "Carapace Crusader",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{3}{G}",
 			"type": "Creature — Insect Warrior",
 			"collector_number": "163",
@@ -1659,7 +1659,7 @@
 		},
 		{
 			"name": "Carapace Disciple",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{G}",
 			"type": "Creature — Insect Cleric",
 			"collector_number": "164",
@@ -1669,7 +1669,7 @@
 		},
 		{
 			"name": "Carapace Threadbearer",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{3}{G}",
 			"type": "Creature — Insect Spider Cleric",
 			"collector_number": "165",
@@ -1679,7 +1679,7 @@
 		},
 		{
 			"name": "Carapace Voyager",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{G}",
 			"type": "Creature — Insect Cleric",
 			"collector_number": "166",
@@ -1689,7 +1689,7 @@
 		},
 		{
 			"name": "Carapace Youngling",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{G}",
 			"type": "Creature — Insect",
 			"collector_number": "167",
@@ -1699,7 +1699,7 @@
 		},
 		{
 			"name": "Cartographed Risen",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{4}{G}",
 			"type": "Creature — Zombie",
 			"collector_number": "168",
@@ -1709,7 +1709,7 @@
 		},
 		{
 			"name": "Debilitated Tragulari",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{G}",
 			"type": "Creature — Cat Warrior",
 			"collector_number": "170",
@@ -1719,7 +1719,7 @@
 		},
 		{
 			"name": "The Old Forms",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{G}",
 			"type": "Instant",
 			"collector_number": "178",
@@ -1729,7 +1729,7 @@
 		},
 		{
 			"name": "Ordeal of Defiance",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{G}",
 			"type": "Enchantment — Aura",
 			"collector_number": "179",
@@ -1739,7 +1739,7 @@
 		},
 		{
 			"name": "Pupil of Defiance",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{G}",
 			"type": "Creature — Cat Cleric Monk",
 			"collector_number": "180",
@@ -1749,7 +1749,7 @@
 		},
 		{
 			"name": "Thyrsine Hunter",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{3}{G}",
 			"type": "Creature — Spirit Warrior Cleric",
 			"collector_number": "187",
@@ -1759,7 +1759,7 @@
 		},
 		{
 			"name": "Tireless Recruiter",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{G}",
 			"type": "Creature — Spirit Cleric Scout",
 			"collector_number": "189",
@@ -1769,7 +1769,7 @@
 		},
 		{
 			"name": "Unceasing Initiation",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{G}",
 			"type": "Sorcery",
 			"collector_number": "190",
@@ -1779,7 +1779,7 @@
 		},
 		{
 			"name": "Way to the Wood",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{G}",
 			"type": "Enchantment",
 			"collector_number": "192",
@@ -1789,7 +1789,7 @@
 		},
 		{
 			"name": "Study the Histories",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{G}{U}",
 			"type": "Instant",
 			"collector_number": "229",
@@ -1799,7 +1799,7 @@
 		},
 		{
 			"name": "Seven-Coil's Successor",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{X}{R}{G}",
 			"type": "Legendary Creature — Hydra Serpent",
 			"collector_number": "226",
@@ -1809,7 +1809,7 @@
 		},
 		{
 			"name": "Teferi's Banishment",
-			"rarity": "mythic",
+			"rarity": "special",
 			"mana_cost": "{W}{U}",
 			"type": "Instant",
 			"collector_number": "231",
@@ -1819,7 +1819,7 @@
 		},
 		{
 			"name": "Breaching Vespera",
-			"rarity": "mythic",
+			"rarity": "special",
 			"mana_cost": "{3}{U}{B}",
 			"type": "Sorcery",
 			"collector_number": "200",
@@ -1829,7 +1829,7 @@
 		},
 		{
 			"name": "Carapace Shell-Burster",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{B}{G}",
 			"type": "Creature — Insect Warrior",
 			"collector_number": "201",
@@ -1839,7 +1839,7 @@
 		},
 		{
 			"name": "Lorescale Coatl",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{G}{U}",
 			"type": "Creature — Snake",
 			"collector_number": "213",
@@ -1849,7 +1849,7 @@
 		},
 		{
 			"name": "Malleary Phantasm",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{R}{W}",
 			"type": "Creature — Spirit Cleric",
 			"collector_number": "214",
@@ -1859,7 +1859,7 @@
 		},
 		{
 			"name": "Places of Peace",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{G}{W}",
 			"type": "Artifact",
 			"collector_number": "222",
@@ -1869,7 +1869,7 @@
 		},
 		{
 			"name": "Roost Augur",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{W}{U}",
 			"type": "Creature — Bird",
 			"collector_number": "225",
@@ -1879,7 +1879,7 @@
 		},
 		{
 			"name": "Vengeful Restorer",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{W}{B}",
 			"type": "Creature — Angel",
 			"collector_number": "234",
@@ -1889,7 +1889,7 @@
 		},
 		{
 			"name": "Wound the World",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{U}{R}",
 			"type": "Enchantment",
 			"collector_number": "238",
@@ -1899,7 +1899,7 @@
 		},
 		{
 			"name": "Covert Cloak",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}",
 			"type": "Artifact — Equipment",
 			"collector_number": "239",
@@ -1909,7 +1909,7 @@
 		},
 		{
 			"name": "Field of Ruin",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Land",
 			"collector_number": "246",
@@ -1919,7 +1919,7 @@
 		},
 		{
 			"name": "Sanctuary of Mysteries",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Land — Sanctuary",
 			"collector_number": "248",
@@ -1929,7 +1929,7 @@
 		},
 		{
 			"name": "God Horror",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Creature — God Horror",
 			"collector_number": "3",
@@ -1939,7 +1939,7 @@
 		},
 		{
 			"name": "Carapace Ancestor",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{B}",
 			"type": "Creature — Human Insect Cleric",
 			"collector_number": "84",
@@ -1949,7 +1949,7 @@
 		},
 		{
 			"name": "Musician's Remnant",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}{G}{G}",
 			"type": "Creature — Horror",
 			"collector_number": "177",
@@ -1959,7 +1959,7 @@
 		},
 		{
 			"name": "Ambitions of Ascension",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{3}{W}",
 			"type": "Enchantment — Saga",
 			"collector_number": "9",
@@ -1969,7 +1969,7 @@
 		},
 		{
 			"name": "Glassgarden Watcheye",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{3}{W}",
 			"type": "Creature — Human Cleric",
 			"collector_number": "25",
@@ -1979,7 +1979,7 @@
 		},
 		{
 			"name": "Expose Mortality",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{U}",
 			"type": "Instant",
 			"collector_number": "53",
@@ -1989,7 +1989,7 @@
 		},
 		{
 			"name": "Ophidian Soul",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{1}{U}",
 			"type": "Creature — Snake Spirit",
 			"collector_number": "66",
@@ -1999,7 +1999,7 @@
 		},
 		{
 			"name": "Prison of Glass",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{U}",
 			"type": "Enchantment — Aura",
 			"collector_number": "69",
@@ -2009,7 +2009,7 @@
 		},
 		{
 			"name": "The Museum of Worms",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{B}",
 			"type": "Legendary Artifact",
 			"collector_number": "105",
@@ -2019,7 +2019,7 @@
 		},
 		{
 			"name": "Legacy of Flint",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}{R}",
 			"type": "Kindred Enchantment — God",
 			"collector_number": "135",
@@ -2029,7 +2029,7 @@
 		},
 		{
 			"name": "Malleary Augmenter",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{1}{R}",
 			"type": "Creature — Elemental Cleric",
 			"collector_number": "138",
@@ -2039,7 +2039,7 @@
 		},
 		{
 			"name": "Malleary Seer",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{R}",
 			"type": "Creature — Elemental Knight",
 			"collector_number": "141",
@@ -2049,7 +2049,7 @@
 		},
 		{
 			"name": "Malleary Smelter",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{3}{R}",
 			"type": "Creature — Shapeshifter Cleric Artificer",
 			"collector_number": "142",
@@ -2059,7 +2059,7 @@
 		},
 		{
 			"name": "Opener of Glass",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{R}",
 			"type": "Creature — Human Rogue",
 			"collector_number": "145",
@@ -2069,7 +2069,7 @@
 		},
 		{
 			"name": "Tattered Cyprian",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{R}",
 			"type": "Creature — Vampire Cleric",
 			"collector_number": "156",
@@ -2079,7 +2079,7 @@
 		},
 		{
 			"name": "Drowning Cyprian",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{B}{R}",
 			"type": "Creature — Vampire Rogue",
 			"collector_number": "203",
@@ -2089,7 +2089,7 @@
 		},
 		{
 			"name": "Isidra, Foreign Goddess",
-			"rarity": "mythic",
+			"rarity": "special",
 			"mana_cost": "{3}{U}{B}",
 			"type": "Legendary Planeswalker — Isidra",
 			"collector_number": "210",
@@ -2099,7 +2099,7 @@
 		},
 		{
 			"name": "Sister of Venoms",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{U}{R}",
 			"type": "Creature — Human Shaman Cleric",
 			"collector_number": "227",
@@ -2109,7 +2109,7 @@
 		},
 		{
 			"name": "The Forge of Days",
-			"rarity": "mythic",
+			"rarity": "special",
 			"mana_cost": "{2}{R}{R}{W}",
 			"type": "Legendary Creature — Elemental God",
 			"collector_number": "207",
@@ -2119,7 +2119,7 @@
 		},
 		{
 			"name": "The Thunderskin",
-			"rarity": "mythic",
+			"rarity": "special",
 			"mana_cost": "{2}{G}{W}",
 			"type": "Legendary Creature — Human God",
 			"collector_number": "232",
@@ -2129,7 +2129,7 @@
 		},
 		{
 			"name": "Dappled Wing-Clippers",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{G}",
 			"type": "Creature — Insect Cleric",
 			"collector_number": "169",
@@ -2139,7 +2139,7 @@
 		},
 		{
 			"name": "Ravenous Unmaker",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{3}{G}{G}",
 			"type": "Creature — Wolf Berserker",
 			"collector_number": "181",
@@ -2149,7 +2149,7 @@
 		},
 		{
 			"name": "Seven-Coil Ambusher",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{G}",
 			"type": "Creature — Serpent Warrior",
 			"collector_number": "183",
@@ -2159,7 +2159,7 @@
 		},
 		{
 			"name": "Wolf-Splinter",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{G}",
 			"type": "Creature — Wolf Spirit",
 			"collector_number": "194",
@@ -2169,7 +2169,7 @@
 		},
 		{
 			"name": "Wood's Devourer",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{4}{G}{G}",
 			"type": "Creature — Wolf Demon Horror",
 			"collector_number": "196",
@@ -2179,7 +2179,7 @@
 		},
 		{
 			"name": "The Sun-In-Rags",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{3}{W}{B}{B}",
 			"type": "Legendary Creature — God",
 			"collector_number": "230",
@@ -2189,7 +2189,7 @@
 		},
 		{
 			"name": "The Vagabond",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}{G}{U}",
 			"type": "Legendary Planeswalker — Vagabond",
 			"collector_number": "233",
@@ -2199,7 +2199,7 @@
 		},
 		{
 			"name": "Thyrsine Tracker",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{G}",
 			"type": "Creature — Human Ranger Cleric",
 			"collector_number": "188",
@@ -2209,7 +2209,7 @@
 		},
 		{
 			"name": "Verse Reshape",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{R}",
 			"type": "Sorcery",
 			"collector_number": "159",
@@ -2219,7 +2219,7 @@
 		},
 		{
 			"name": "Verse Aggress",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{G}",
 			"type": "Sorcery",
 			"collector_number": "191",
@@ -2229,7 +2229,7 @@
 		},
 		{
 			"name": "Ignus Rites",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{R}",
 			"type": "Instant",
 			"collector_number": "133",
@@ -2239,7 +2239,7 @@
 		},
 		{
 			"name": "Ascent from Snakes",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{G}",
 			"type": "Instant",
 			"collector_number": "161",
@@ -2249,7 +2249,7 @@
 		},
 		{
 			"name": "Rite Intercalate",
-			"rarity": "mythic",
+			"rarity": "special",
 			"mana_cost": "{3}{R}{R}",
 			"type": "Sorcery",
 			"collector_number": "150",
@@ -2259,7 +2259,7 @@
 		},
 		{
 			"name": "Foul Alteration",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{R}{R}",
 			"type": "Sorcery",
 			"collector_number": "130",
@@ -2269,7 +2269,7 @@
 		},
 		{
 			"name": "The Moth",
-			"rarity": "mythic",
+			"rarity": "special",
 			"mana_cost": "{3}{B}{G}",
 			"type": "Legendary Creature — Insect God",
 			"collector_number": "216",
@@ -2279,7 +2279,7 @@
 		},
 		{
 			"name": "Spirit of Defiance",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{R}{G}",
 			"type": "Creature — Elemental Wolf Horror",
 			"collector_number": "228",
@@ -2289,7 +2289,7 @@
 		},
 		{
 			"name": "True Blood of Saint Janus",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}",
 			"type": "Legendary Artifact",
 			"collector_number": "245",
@@ -2299,7 +2299,7 @@
 		},
 		{
 			"name": "Corrivality",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{R}",
 			"type": "Enchantment",
 			"collector_number": "125",
@@ -2309,7 +2309,7 @@
 		},
 		{
 			"name": "The Chiliarch",
-			"rarity": "mythic",
+			"rarity": "special",
 			"mana_cost": "{2}{G}{U}",
 			"type": "Legendary Creature — Human God",
 			"collector_number": "202",
@@ -2319,7 +2319,7 @@
 		},
 		{
 			"name": "The Ring-Yew",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{1}{G}{W}",
 			"type": "Legendary Creature — Plant God",
 			"collector_number": "224",
@@ -2329,7 +2329,7 @@
 		},
 		{
 			"name": "High Cyprian",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{3}{R}",
 			"type": "Creature — Vampire Noble",
 			"collector_number": "132",
@@ -2339,7 +2339,7 @@
 		},
 		{
 			"name": "Wandering Unmaker",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{3}{R}",
 			"type": "Creature — Shapeshifter Cleric",
 			"collector_number": "160",
@@ -2349,7 +2349,7 @@
 		},
 		{
 			"name": "Flesh Weaver",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{G}{G}",
 			"type": "Creature — Insect",
 			"collector_number": "173",
@@ -2359,7 +2359,7 @@
 		},
 		{
 			"name": "Dyad's Dance",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{G}",
 			"type": "Sorcery",
 			"collector_number": "172",
@@ -2369,7 +2369,7 @@
 		},
 		{
 			"name": "Splinter-Blossom",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{G}",
 			"type": "Creature — Wolf Spirit",
 			"collector_number": "185",
@@ -2379,7 +2379,7 @@
 		},
 		{
 			"name": "Buzzings in the World",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{X}{G}{G}",
 			"type": "Sorcery",
 			"collector_number": "162",
@@ -2389,7 +2389,7 @@
 		},
 		{
 			"name": "Yew Colossus",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{6}{G}",
 			"type": "Creature — Treefolk",
 			"collector_number": "197",
@@ -2399,7 +2399,7 @@
 		},
 		{
 			"name": "Territorial Yew-Maw",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{1}{G}{G}",
 			"type": "Creature — Treefolk Beast",
 			"collector_number": "186",
@@ -2409,7 +2409,7 @@
 		},
 		{
 			"name": "Horomachist Ending",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{W}{B}",
 			"type": "Instant",
 			"collector_number": "209",
@@ -2419,7 +2419,7 @@
 		},
 		{
 			"name": "Percussigant",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{G}{W}",
 			"type": "Creature — Bear Horror",
 			"collector_number": "221",
@@ -2429,7 +2429,7 @@
 		},
 		{
 			"name": "Cleric",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Creature — Cleric",
 			"collector_number": "1",
@@ -2439,7 +2439,7 @@
 		},
 		{
 			"name": "Foretell",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Enchantment",
 			"collector_number": "2",
@@ -2449,7 +2449,7 @@
 		},
 		{
 			"name": "Angel",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Creature — Angel",
 			"collector_number": "5",
@@ -2459,7 +2459,7 @@
 		},
 		{
 			"name": "Worm",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Creature — Worm",
 			"collector_number": "6",
@@ -2469,7 +2469,7 @@
 		},
 		{
 			"name": "Wolf",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Creature — Wolf",
 			"collector_number": "7",
@@ -2479,7 +2479,7 @@
 		},
 		{
 			"name": "Noon Delver Serpent",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{5}",
 			"type": "Creature — Serpent",
 			"collector_number": "6",
@@ -2489,7 +2489,7 @@
 		},
 		{
 			"name": "Planar Lockdown",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{1}",
 			"type": "Enchantment",
 			"collector_number": "7",
@@ -2499,7 +2499,7 @@
 		},
 		{
 			"name": "Defacement",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{W}",
 			"type": "Instant",
 			"collector_number": "17",
@@ -2509,7 +2509,7 @@
 		},
 		{
 			"name": "Echoing Charger",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{W}",
 			"type": "Creature — Unicorn",
 			"collector_number": "18",
@@ -2519,7 +2519,7 @@
 		},
 		{
 			"name": "Guardian Percussigant",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{3}{W}",
 			"type": "Creature — Elk Bear Horror",
 			"collector_number": "27",
@@ -2529,7 +2529,7 @@
 		},
 		{
 			"name": "Legacy of Amber",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}{W}",
 			"type": "Kindred Enchantment — God",
 			"collector_number": "32",
@@ -2539,7 +2539,7 @@
 		},
 		{
 			"name": "Pulsing Vitality",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{W}",
 			"type": "Instant",
 			"collector_number": "36",
@@ -2549,7 +2549,7 @@
 		},
 		{
 			"name": "Verse Illuminate",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{2}{W}{W}",
 			"type": "Sorcery",
 			"collector_number": "46",
@@ -2559,7 +2559,7 @@
 		},
 		{
 			"name": "Devoured Messenger",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}{U}",
 			"type": "Creature — Bird Skeleton",
 			"collector_number": "48",
@@ -2569,7 +2569,7 @@
 		},
 		{
 			"name": "Evening Isles Gravemouth",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{3}{U}",
 			"type": "Creature — Human Cleric Shaman",
 			"collector_number": "51",
@@ -2579,7 +2579,7 @@
 		},
 		{
 			"name": "Legacy of the Wheel",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}{U}",
 			"type": "Kindred Enchantment — God",
 			"collector_number": "57",
@@ -2589,7 +2589,7 @@
 		},
 		{
 			"name": "Names of the Dead",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{U}",
 			"type": "Instant",
 			"collector_number": "60",
@@ -2599,7 +2599,7 @@
 		},
 		{
 			"name": "Nowhere Illuminator",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{U}",
 			"type": "Creature — Skeleton Wizard",
 			"collector_number": "61",
@@ -2609,7 +2609,7 @@
 		},
 		{
 			"name": "Painted Distorter",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{5}{U}",
 			"type": "Creature — Merfolk Demon",
 			"collector_number": "67",
@@ -2619,7 +2619,7 @@
 		},
 		{
 			"name": "Skin's Division",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{1}{U}",
 			"type": "Instant",
 			"collector_number": "78",
@@ -2629,7 +2629,7 @@
 		},
 		{
 			"name": "Verse Open",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{U}",
 			"type": "Sorcery",
 			"collector_number": "82",
@@ -2639,7 +2639,7 @@
 		},
 		{
 			"name": "Crowned Ghoul",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{2}{B}{B}",
 			"type": "Creature — Zombie Angel",
 			"collector_number": "89",
@@ -2649,7 +2649,7 @@
 		},
 		{
 			"name": "The Crowned Growth",
-			"rarity": "mythic",
+			"rarity": "special",
 			"mana_cost": "{3}{B}{B}",
 			"type": "Legendary Creature — Fungus God",
 			"collector_number": "90",
@@ -2659,7 +2659,7 @@
 		},
 		{
 			"name": "Cyprian Ophiomancer",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{3}{B}",
 			"type": "Creature — Vampire Shaman",
 			"collector_number": "92",
@@ -2669,7 +2669,7 @@
 		},
 		{
 			"name": "Dream Whisperer",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{4}{B}{B}",
 			"type": "Creature — Horror Spirit",
 			"collector_number": "94",
@@ -2679,7 +2679,7 @@
 		},
 		{
 			"name": "Herald of Loss",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{B}",
 			"type": "Creature — Angel Cleric",
 			"collector_number": "100",
@@ -2689,7 +2689,7 @@
 		},
 		{
 			"name": "Implant the Seeds",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{B}",
 			"type": "Sorcery",
 			"collector_number": "101",
@@ -2699,7 +2699,7 @@
 		},
 		{
 			"name": "Monument of Rags",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{B}{B}",
 			"type": "Artifact",
 			"collector_number": "104",
@@ -2709,7 +2709,7 @@
 		},
 		{
 			"name": "Nowhere Stygian",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{3}{B}",
 			"type": "Creature — Skeleton Wizard",
 			"collector_number": "107",
@@ -2719,7 +2719,7 @@
 		},
 		{
 			"name": "Skintwist",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{1}{B}",
 			"type": "Enchantment — Aura",
 			"collector_number": "114",
@@ -2729,7 +2729,7 @@
 		},
 		{
 			"name": "Tenacious Illuminator",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{2}{B}",
 			"type": "Creature — Angel Cleric",
 			"collector_number": "117",
@@ -2739,7 +2739,7 @@
 		},
 		{
 			"name": "Throat of Remnants",
-			"rarity": "uncommon",
+			"rarity": "special",
 			"mana_cost": "{B}",
 			"type": "Artifact",
 			"collector_number": "118",
@@ -2749,7 +2749,7 @@
 		},
 		{
 			"name": "Verse Change",
-			"rarity": "common",
+			"rarity": "special",
 			"mana_cost": "{1}{B}",
 			"type": "Sorcery",
 			"collector_number": "119",
@@ -2759,7 +2759,7 @@
 		},
 		{
 			"name": "Carnal Thirst",
-			"rarity": "rare",
+			"rarity": "special",
 			"mana_cost": "{X}{1}{R}",
 			"type": "Instant",
 			"collector_number": "124",
@@ -2769,525 +2769,263 @@
 		},
 	]
 
-[rare(1)]
+[cube(15)]
 	1 The Horned-Axe
-	2 Mother of Ants
-	2 The Elegiast
+	1 Mother of Ants
+	1 The Elegiast
 	1 The Mirror-Queen
 	1 The Red Grail
 	1 The Witch-and-Sister
 	1 The Wolf Divided
 	1 The Frangiclave
-	2 Legacy of Tides
-	2 Legacy of Coils
-	2 Rite of Twins' Union
-	2 Life's Legacy
-	2 Ezeem, the Second Thirstly
-	2 King Crucible
-	2 House of the Moon
-	2 Angel of the True Sun
-	2 The Lionsmith
-	2 The Knotwingknot
-	2 The Watchman
-	2 Reshaping Phoenix
-	2 The Geminiad
-	2 Relic Vial
-	2 Apostle Entheate
-	2 Cat o'lic Priests
+	1 Glassgarden Prophet
+	1 Dreamway Key
+	1 Perfect Stillness
+	1 Sensation Ascender
+	1 Wood's Deceiver
+	1 Blazing Crescendo
+	1 Lessons of Strife
+	1 Map's Edge Explorer
+	1 Society Headquarters
+	1 Sanctuary of Enlightenment
+	1 Sanctuary of Glory
+	1 Sanctuary of Movement
+	1 Sanctuary of Openings
+	1 Sanctuary of Remembrance
+	1 Sanctuary of Reshaping
+	1 Sanctuary of Sensation
+	1 Sanctuary of Shedding
+	1 Sanctuary of Strength
+	1 Sanctuary of Time
+	1 Burgeoning Risen
+	1 Mirrored Wolf
+	1 Banisher Priest
+	1 Bars Across the Sun
+	1 Broken Sun-Servant
+	1 Forge Secretkeeper
+	1 Glass Guardian
+	1 Iron Verdict
+	1 Legacy of Tides
+	1 Legacy of Coils
+	1 Subverted Cyprian
+	1 Nowhere Inhabits
+	1 Rite of Twins' Union
+	1 Sea's Feasting
+	1 Seven-Coil Shipbreaker
+	1 Carapace Shearer
+	1 Dry-Soul Angel
+	1 Flesh Asunder
+	1 The Vitulation
+	1 Stained Silver
+	1 Subvert the Light
+	1 Subverting Insurgent
+	1 Unlucky Witness
+	1 Life's Legacy
+	1 Ezeem, the Second Thirstly
+	1 King Crucible
+	1 Moth's Yearning
+	1 House of the Moon
+	1 Extract Secrets
+	1 Ignite Fervor
+	1 Lended Light
+	1 Unscarred Wolf
+	1 Fucine Translator
+	1 Forgotten Tongues
+	1 Take Prisoners
+	1 Ragged Sun's Angel
+	1 Sun-Scorched Tempering
+	1 Lost Seraph
+	1 Misguiding Lighthouse
+	1 Angel of the True Sun
+	1 Rarefied Illuminator
+	1 Sunshard Protector
+	1 Paradoxical Inquiry
+	1 Rite of Crucible Soul
+	1 Seven-Coil Invocation
+	1 Rite of Beast's Division
+	1 The Lionsmith
+	1 The Knotwingknot
+	1 The Watchman
+	1 Preemptive Purge
+	1 Reshaping Phoenix
+	1 Acolyte of Agony
+	1 The Geminiad
+	1 Discover the Stone Gods
+	1 Noonstone Amulet
+	1 Forged Conflagration
+	1 Nowhere Razer
+	1 Wildwood Containment
+	1 Wolven Hatred
+	1 Open the Self
+	1 Bringer of Glory
+	1 Relic Vial
+	1 Ritual Daggar
+	1 Nowhere Deathlord
+	1 Nowhere Dreadsteed
+	1 Flames of Emnity
+	1 Guided Crusader
+	1 Cindered Tally
+	1 Escape into the Night
+	1 Raw Prophet
+	1 Seven-Coiled Strength
+	1 Ring-Yew's Chosen
+	1 The Allure's Light
+	1 The Sky, The Soul
+	1 Roost Messengers
+	1 Apostle Entheate
+	1 Cat o'lic Priests
+	1 Glassgarden Elder
+	1 Glassgarden Seer
 	1 Glorious Enforcer
-	2 Merciless Illumination
-	2 Seven-Coil's Scion
-	2 Rite of Watchman's Sorrow
-	2 Forces of Opening
-	2 Ghirbi, the Gatekeeper
-	2 Ironsmoke Caligine
-	2 Carapace Voyager
-	2 Seven-Coil's Successor
+	1 Horomachist Sacrifice
+	1 Merciless Illumination
+	1 Mystical Trail
+	1 Root of Mercy
+	1 Seven-Coil Glider
+	1 Augury Raven
+	1 Eyes Everywhere
+	1 Map's Edge Monstrosity
+	1 Moonlit Augury
+	1 Dreamway Imposter
+	1 Nowhere Soul Collector
+	1 Nowhere Wormhost
+	1 Opener of Realities
+	1 River Drowner
+	1 Roost Nyctodromist
+	1 Seaside Smuggler
+	1 Seven-Coil's Scion
+	1 Silent Drowner
+	1 Evening Isles Skycomber
+	1 Twins' Guardian
+	1 Veil of Dreams
+	1 White Reaper
+	1 Carapace Guardian
+	1 Carapace Scavenger
+	1 Cyprian Haemomancer
+	1 Despairing Devotee
+	1 Escape from Nowhere
+	1 Gloom Sower
+	1 Indulgent Cyprian
+	1 Nowhere Ascender
+	1 Rite of Watchman's Sorrow
+	1 Scarring Servitude
+	1 Sky-Scar Angel
+	1 Students of Rememberance
+	1 Callidate Invocation
+	1 Cyprian Sacristan
+	1 Enflamed Caligine
+	1 Entry Consultant
+	1 Forces of Opening
+	1 Ghirbi, the Gatekeeper
+	1 Ironsmoke Caligine
+	1 Malleary Novice
+	1 Malleary Reforged
+	1 Rite Flamecaller
+	1 Smoldering Pack
+	1 Traitorous Blood
+	1 Carapace Crusader
+	1 Carapace Disciple
+	1 Carapace Threadbearer
+	1 Carapace Voyager
+	1 Carapace Youngling
+	1 Cartographed Risen
+	1 Debilitated Tragulari
+	1 The Old Forms
+	1 Ordeal of Defiance
+	1 Pupil of Defiance
+	1 Thyrsine Hunter
+	1 Tireless Recruiter
+	1 Unceasing Initiation
+	1 Way to the Wood
+	1 Study the Histories
+	1 Seven-Coil's Successor
 	1 Teferi's Banishment
 	1 Breaching Vespera
-	2 Musician's Remnant
-	2 Ambitions of Ascension
-	2 Glassgarden Watcheye
-	2 Ophidian Soul
-	2 The Museum of Worms
-	2 Legacy of Flint
-	2 Malleary Augmenter
+	1 Carapace Shell-Burster
+	1 Lorescale Coatl
+	1 Malleary Phantasm
+	1 Places of Peace
+	1 Roost Augur
+	1 Vengeful Restorer
+	1 Wound the World
+	1 Covert Cloak
+	1 Field of Ruin
+	1 Sanctuary of Mysteries
+	1 Carapace Ancestor
+	1 Musician's Remnant
+	1 Ambitions of Ascension
+	1 Glassgarden Watcheye
+	1 Expose Mortality
+	1 Ophidian Soul
+	1 Prison of Glass
+	1 The Museum of Worms
+	1 Legacy of Flint
+	1 Malleary Augmenter
+	1 Malleary Seer
+	1 Malleary Smelter
+	1 Opener of Glass
+	1 Tattered Cyprian
+	1 Drowning Cyprian
 	1 Isidra, Foreign Goddess
+	1 Sister of Venoms
 	1 The Forge of Days
 	1 The Thunderskin
-	2 The Sun-In-Rags
-	2 The Vagabond
+	1 Dappled Wing-Clippers
+	1 Ravenous Unmaker
+	1 Seven-Coil Ambusher
+	1 Wolf-Splinter
+	1 Wood's Devourer
+	1 The Sun-In-Rags
+	1 The Vagabond
+	1 Thyrsine Tracker
+	1 Verse Reshape
+	1 Verse Aggress
+	1 Ignus Rites
+	1 Ascent from Snakes
 	1 Rite Intercalate
+	1 Foul Alteration
 	1 The Moth
-	2 True Blood of Saint Janus
+	1 Spirit of Defiance
+	1 True Blood of Saint Janus
+	1 Corrivality
 	1 The Chiliarch
-	2 The Ring-Yew
-	2 Dyad's Dance
-	2 Buzzings in the World
-	2 Territorial Yew-Maw
-	2 Planar Lockdown
-	2 Legacy of Amber
-	2 Devoured Messenger
-	2 Evening Isles Gravemouth
-	2 Legacy of the Wheel
-	2 Painted Distorter
-	2 Crowned Ghoul
+	1 The Ring-Yew
+	1 High Cyprian
+	1 Wandering Unmaker
+	1 Flesh Weaver
+	1 Dyad's Dance
+	1 Splinter-Blossom
+	1 Buzzings in the World
+	1 Yew Colossus
+	1 Territorial Yew-Maw
+	1 Horomachist Ending
+	1 Percussigant
+	1 Noon Delver Serpent
+	1 Planar Lockdown
+	1 Defacement
+	1 Echoing Charger
+	1 Guardian Percussigant
+	1 Legacy of Amber
+	1 Pulsing Vitality
+	1 Verse Illuminate
+	1 Devoured Messenger
+	1 Evening Isles Gravemouth
+	1 Legacy of the Wheel
+	1 Names of the Dead
+	1 Nowhere Illuminator
+	1 Painted Distorter
+	1 Skin's Division
+	1 Verse Open
+	1 Crowned Ghoul
 	1 The Crowned Growth
-	2 Dream Whisperer
-	2 Nowhere Stygian
-	2 Skintwist
-	2 Carnal Thirst
-[uncommon(4)]
-	4 Mirrored Wolf
-	4 Banisher Priest
-	4 Nowhere Inhabits
-	4 Dry-Soul Angel
-	4 Flesh Asunder
-	4 The Vitulation
-	4 Unlucky Witness
-	4 Moth's Yearning
-	4 Ragged Sun's Angel
-	4 Sun-Scorched Tempering
-	4 Misguiding Lighthouse
-	4 Rarefied Illuminator
-	4 Sunshard Protector
-	4 Preemptive Purge
-	4 Acolyte of Agony
-	4 Forged Conflagration
-	4 Nowhere Razer
-	4 Ritual Daggar
-	4 Nowhere Deathlord
-	4 Nowhere Dreadsteed
-	4 Flames of Emnity
-	4 The Allure's Light
-	4 The Sky, The Soul
-	4 Horomachist Sacrifice
-	4 Root of Mercy
-	4 Seven-Coil Glider
-	4 Eyes Everywhere
-	4 Map's Edge Monstrosity
-	4 Moonlit Augury
-	4 Nowhere Soul Collector
-	4 Opener of Realities
-	4 Roost Nyctodromist
-	4 Silent Drowner
-	4 Evening Isles Skycomber
-	4 Carapace Guardian
-	4 Cyprian Haemomancer
-	4 Scarring Servitude
-	4 Students of Rememberance
-	4 Cyprian Sacristan
-	4 Malleary Reforged
-	4 Smoldering Pack
-	4 Carapace Youngling
-	4 Debilitated Tragulari
-	4 Ordeal of Defiance
-	4 Thyrsine Hunter
-	4 Tireless Recruiter
-	4 Study the Histories
-	4 Carapace Shell-Burster
-	4 Lorescale Coatl
-	4 Malleary Phantasm
-	4 Places of Peace
-	4 Roost Augur
-	4 Vengeful Restorer
-	4 Wound the World
-	4 Field of Ruin
-	4 Sanctuary of Mysteries
-	4 Carapace Ancestor
-	4 Expose Mortality
-	4 Malleary Smelter
-	4 Opener of Glass
-	4 Drowning Cyprian
-	4 Sister of Venoms
-	4 Ravenous Unmaker
-	4 Wolf-Splinter
-	4 Ignus Rites
-	4 Ascent from Snakes
-	4 Foul Alteration
-	4 Spirit of Defiance
-	4 Corrivality
-	4 Flesh Weaver
-	4 Splinter-Blossom
-	4 Yew Colossus
-	4 Horomachist Ending
-	4 Percussigant
-	4 Defacement
-	4 Guardian Percussigant
-	4 Skin's Division
-	4 Monument of Rags
-	4 Tenacious Illuminator
-	4 Throat of Remnants
-[common(7)]
-	8 Glassgarden Prophet
-	8 Dreamway Key
-	8 Perfect Stillness
-	8 Sensation Ascender
-	8 Wood's Deceiver
-	8 Blazing Crescendo
-	8 Lessons of Strife
-	8 Map's Edge Explorer
-	8 Society Headquarters
-	8 Sanctuary of Enlightenment
-	8 Sanctuary of Glory
-	8 Sanctuary of Movement
-	8 Sanctuary of Openings
-	8 Sanctuary of Remembrance
-	8 Sanctuary of Reshaping
-	8 Sanctuary of Sensation
-	8 Sanctuary of Shedding
-	8 Sanctuary of Strength
-	8 Sanctuary of Time
-	8 Burgeoning Risen
-	8 Bars Across the Sun
-	8 Broken Sun-Servant
-	8 Forge Secretkeeper
-	8 Glass Guardian
-	8 Iron Verdict
-	8 Subverted Cyprian
-	8 Sea's Feasting
-	8 Seven-Coil Shipbreaker
-	8 Carapace Shearer
-	8 Stained Silver
-	8 Subvert the Light
-	8 Subverting Insurgent
-	8 Extract Secrets
-	8 Ignite Fervor
-	8 Lended Light
-	8 Unscarred Wolf
-	8 Fucine Translator
-	8 Forgotten Tongues
-	8 Take Prisoners
-	8 Lost Seraph
-	8 Paradoxical Inquiry
-	8 Rite of Crucible Soul
-	8 Seven-Coil Invocation
-	8 Rite of Beast's Division
-	8 Discover the Stone Gods
-	8 Noonstone Amulet
-	8 Wildwood Containment
-	8 Wolven Hatred
-	8 Open the Self
-	8 Bringer of Glory
-	8 Guided Crusader
-	8 Cindered Tally
-	8 Escape into the Night
-	8 Raw Prophet
-	8 Seven-Coiled Strength
-	8 Ring-Yew's Chosen
-	8 Roost Messengers
-	8 Glassgarden Elder
-	8 Glassgarden Seer
-	8 Mystical Trail
-	8 Augury Raven
-	8 Dreamway Imposter
-	8 Nowhere Wormhost
-	8 River Drowner
-	8 Seaside Smuggler
-	8 Twins' Guardian
-	8 Veil of Dreams
-	8 White Reaper
-	8 Carapace Scavenger
-	8 Despairing Devotee
-	8 Escape from Nowhere
-	8 Gloom Sower
-	8 Indulgent Cyprian
-	8 Nowhere Ascender
-	8 Sky-Scar Angel
-	8 Callidate Invocation
-	8 Enflamed Caligine
-	8 Entry Consultant
-	8 Malleary Novice
-	8 Rite Flamecaller
-	8 Traitorous Blood
-	8 Carapace Crusader
-	8 Carapace Disciple
-	8 Carapace Threadbearer
-	8 Cartographed Risen
-	8 The Old Forms
-	8 Pupil of Defiance
-	8 Unceasing Initiation
-	8 Way to the Wood
-	8 Covert Cloak
-	8 Prison of Glass
-	8 Malleary Seer
-	8 Tattered Cyprian
-	8 Dappled Wing-Clippers
-	8 Seven-Coil Ambusher
-	8 Wood's Devourer
-	8 Thyrsine Tracker
-	8 Verse Reshape
-	8 Verse Aggress
-	8 High Cyprian
-	8 Wandering Unmaker
-	8 Noon Delver Serpent
-	8 Echoing Charger
-	8 Pulsing Vitality
-	8 Verse Illuminate
-	8 Names of the Dead
-	8 Nowhere Illuminator
-	8 Verse Open
-	8 Cyprian Ophiomancer
-	8 Herald of Loss
-	8 Implant the Seeds
-	8 Verse Change
-[wildcard(2)]
-	4 The Horned-Axe
-	7 Mother of Ants
-	7 The Elegiast
-	4 The Mirror-Queen
-	4 The Red Grail
-	4 The Witch-and-Sister
-	4 The Wolf Divided
-	4 The Frangiclave
-	6 Glassgarden Prophet
-	6 Dreamway Key
-	6 Perfect Stillness
-	6 Sensation Ascender
-	6 Wood's Deceiver
-	6 Blazing Crescendo
-	6 Lessons of Strife
-	6 Map's Edge Explorer
-	6 Society Headquarters
-	6 Sanctuary of Enlightenment
-	6 Sanctuary of Glory
-	6 Sanctuary of Movement
-	6 Sanctuary of Openings
-	6 Sanctuary of Remembrance
-	6 Sanctuary of Reshaping
-	6 Sanctuary of Sensation
-	6 Sanctuary of Shedding
-	6 Sanctuary of Strength
-	6 Sanctuary of Time
-	6 Burgeoning Risen
-	15 Mirrored Wolf
-	15 Banisher Priest
-	6 Bars Across the Sun
-	6 Broken Sun-Servant
-	6 Forge Secretkeeper
-	6 Glass Guardian
-	6 Iron Verdict
-	7 Legacy of Tides
-	7 Legacy of Coils
-	6 Subverted Cyprian
-	15 Nowhere Inhabits
-	7 Rite of Twins' Union
-	6 Sea's Feasting
-	6 Seven-Coil Shipbreaker
-	6 Carapace Shearer
-	15 Dry-Soul Angel
-	15 Flesh Asunder
-	15 The Vitulation
-	6 Stained Silver
-	6 Subvert the Light
-	6 Subverting Insurgent
-	15 Unlucky Witness
-	7 Life's Legacy
-	7 Ezeem, the Second Thirstly
-	7 King Crucible
-	15 Moth's Yearning
-	7 House of the Moon
-	6 Extract Secrets
-	6 Ignite Fervor
-	6 Lended Light
-	6 Unscarred Wolf
-	6 Fucine Translator
-	6 Forgotten Tongues
-	6 Take Prisoners
-	15 Ragged Sun's Angel
-	15 Sun-Scorched Tempering
-	6 Lost Seraph
-	15 Misguiding Lighthouse
-	7 Angel of the True Sun
-	15 Rarefied Illuminator
-	15 Sunshard Protector
-	6 Paradoxical Inquiry
-	6 Rite of Crucible Soul
-	6 Seven-Coil Invocation
-	6 Rite of Beast's Division
-	7 The Lionsmith
-	7 The Knotwingknot
-	7 The Watchman
-	15 Preemptive Purge
-	7 Reshaping Phoenix
-	15 Acolyte of Agony
-	7 The Geminiad
-	6 Discover the Stone Gods
-	6 Noonstone Amulet
-	15 Forged Conflagration
-	15 Nowhere Razer
-	6 Wildwood Containment
-	6 Wolven Hatred
-	6 Open the Self
-	6 Bringer of Glory
-	7 Relic Vial
-	15 Ritual Daggar
-	15 Nowhere Deathlord
-	15 Nowhere Dreadsteed
-	15 Flames of Emnity
-	6 Guided Crusader
-	6 Cindered Tally
-	6 Escape into the Night
-	6 Raw Prophet
-	6 Seven-Coiled Strength
-	6 Ring-Yew's Chosen
-	15 The Allure's Light
-	15 The Sky, The Soul
-	6 Roost Messengers
-	7 Apostle Entheate
-	7 Cat o'lic Priests
-	6 Glassgarden Elder
-	6 Glassgarden Seer
-	4 Glorious Enforcer
-	15 Horomachist Sacrifice
-	7 Merciless Illumination
-	6 Mystical Trail
-	15 Root of Mercy
-	15 Seven-Coil Glider
-	6 Augury Raven
-	15 Eyes Everywhere
-	15 Map's Edge Monstrosity
-	15 Moonlit Augury
-	6 Dreamway Imposter
-	15 Nowhere Soul Collector
-	6 Nowhere Wormhost
-	15 Opener of Realities
-	6 River Drowner
-	15 Roost Nyctodromist
-	6 Seaside Smuggler
-	7 Seven-Coil's Scion
-	15 Silent Drowner
-	15 Evening Isles Skycomber
-	6 Twins' Guardian
-	6 Veil of Dreams
-	6 White Reaper
-	15 Carapace Guardian
-	6 Carapace Scavenger
-	15 Cyprian Haemomancer
-	6 Despairing Devotee
-	6 Escape from Nowhere
-	6 Gloom Sower
-	6 Indulgent Cyprian
-	6 Nowhere Ascender
-	7 Rite of Watchman's Sorrow
-	15 Scarring Servitude
-	6 Sky-Scar Angel
-	15 Students of Rememberance
-	6 Callidate Invocation
-	15 Cyprian Sacristan
-	6 Enflamed Caligine
-	6 Entry Consultant
-	7 Forces of Opening
-	7 Ghirbi, the Gatekeeper
-	7 Ironsmoke Caligine
-	6 Malleary Novice
-	15 Malleary Reforged
-	6 Rite Flamecaller
-	15 Smoldering Pack
-	6 Traitorous Blood
-	6 Carapace Crusader
-	6 Carapace Disciple
-	6 Carapace Threadbearer
-	7 Carapace Voyager
-	15 Carapace Youngling
-	6 Cartographed Risen
-	15 Debilitated Tragulari
-	6 The Old Forms
-	15 Ordeal of Defiance
-	6 Pupil of Defiance
-	15 Thyrsine Hunter
-	15 Tireless Recruiter
-	6 Unceasing Initiation
-	6 Way to the Wood
-	15 Study the Histories
-	7 Seven-Coil's Successor
-	4 Teferi's Banishment
-	4 Breaching Vespera
-	15 Carapace Shell-Burster
-	15 Lorescale Coatl
-	15 Malleary Phantasm
-	15 Places of Peace
-	15 Roost Augur
-	15 Vengeful Restorer
-	15 Wound the World
-	6 Covert Cloak
-	15 Field of Ruin
-	15 Sanctuary of Mysteries
-	15 Carapace Ancestor
-	7 Musician's Remnant
-	7 Ambitions of Ascension
-	7 Glassgarden Watcheye
-	15 Expose Mortality
-	7 Ophidian Soul
-	6 Prison of Glass
-	7 The Museum of Worms
-	7 Legacy of Flint
-	7 Malleary Augmenter
-	6 Malleary Seer
-	15 Malleary Smelter
-	15 Opener of Glass
-	6 Tattered Cyprian
-	15 Drowning Cyprian
-	4 Isidra, Foreign Goddess
-	15 Sister of Venoms
-	4 The Forge of Days
-	4 The Thunderskin
-	6 Dappled Wing-Clippers
-	15 Ravenous Unmaker
-	6 Seven-Coil Ambusher
-	15 Wolf-Splinter
-	6 Wood's Devourer
-	7 The Sun-In-Rags
-	7 The Vagabond
-	6 Thyrsine Tracker
-	6 Verse Reshape
-	6 Verse Aggress
-	15 Ignus Rites
-	15 Ascent from Snakes
-	4 Rite Intercalate
-	15 Foul Alteration
-	4 The Moth
-	15 Spirit of Defiance
-	7 True Blood of Saint Janus
-	15 Corrivality
-	4 The Chiliarch
-	7 The Ring-Yew
-	6 High Cyprian
-	6 Wandering Unmaker
-	15 Flesh Weaver
-	7 Dyad's Dance
-	15 Splinter-Blossom
-	7 Buzzings in the World
-	15 Yew Colossus
-	7 Territorial Yew-Maw
-	15 Horomachist Ending
-	15 Percussigant
-	6 Noon Delver Serpent
-	7 Planar Lockdown
-	15 Defacement
-	6 Echoing Charger
-	15 Guardian Percussigant
-	7 Legacy of Amber
-	6 Pulsing Vitality
-	6 Verse Illuminate
-	7 Devoured Messenger
-	7 Evening Isles Gravemouth
-	7 Legacy of the Wheel
-	6 Names of the Dead
-	6 Nowhere Illuminator
-	7 Painted Distorter
-	15 Skin's Division
-	6 Verse Open
-	7 Crowned Ghoul
-	4 The Crowned Growth
-	6 Cyprian Ophiomancer
-	7 Dream Whisperer
-	6 Herald of Loss
-	6 Implant the Seeds
-	15 Monument of Rags
-	7 Nowhere Stygian
-	7 Skintwist
-	15 Tenacious Illuminator
-	15 Throat of Remnants
-	6 Verse Change
-	7 Carnal Thirst
+	1 Cyprian Ophiomancer
+	1 Dream Whisperer
+	1 Herald of Loss
+	1 Implant the Seeds
+	1 Monument of Rags
+	1 Nowhere Stygian
+	1 Skintwist
+	1 Tenacious Illuminator
+	1 Throat of Remnants
+	1 Verse Change
+	1 Carnal Thirst

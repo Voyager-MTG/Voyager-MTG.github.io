@@ -1,1 +1,64 @@
-﻿{"sets": [{"set_code": "AKT", "set_name": "Akellan Transcendence", "formats": "", "designer": "Myr"}, {"set_code": "EXPT", "set_name": "Voyager Foundations", "formats": "", "designer": "Voyager"}, {"set_code": "FOE", "set_name": "Frontiers of Eternity", "formats": "", "designer": "TVP"}, {"set_code": "HOD", "set_name": "Houses of Dewold", "formats": "", "designer": "Zangy"}, {"set_code": "ITD", "set_name": "Itera: Into the Dream", "formats": "", "designer": "Trewq"}, {"set_code": "LAIR", "set_name": "Secret Lair Drops", "formats": "", "designer": "Voyager"}, {"set_code": "PTN", "set_name": "Port Noon: Occult Islands of Vespera", "formats": "", "designer": "Kogane</soft-line></soft-line></soft-line></soft-line></soft-line></soft-line></soft-line></soft-line></soft-line>"}, {"set_code": "PVR", "set_name": "Primivir", "formats": "", "designer": "Myr"}, {"set_code": "VNM", "set_name": "Vinimroth Eternities", "formats": "", "designer": "TVP"}, {"set_code": "WAW", "set_name": "The Wonderlands\u2019 Wishes", "formats": "", "designer": "Wende"}]}
+﻿{
+    "sets": [
+        {
+            "set_code": "AKT",
+            "set_name": "Akellan Transcendence",
+            "formats": "",
+            "designer": "Myr"
+        },
+        {
+            "set_code": "EXPT",
+            "set_name": "Voyager Foundations",
+            "formats": "",
+            "designer": "Voyager"
+        },
+        {
+            "set_code": "FOE",
+            "set_name": "Frontiers of Eternity",
+            "formats": "",
+            "designer": "TVP"
+        },
+        {
+            "set_code": "HOD",
+            "set_name": "Houses of Dewold",
+            "formats": "",
+            "designer": "Zangy"
+        },
+        {
+            "set_code": "ITD",
+            "set_name": "Itera: Into the Dream",
+            "formats": "",
+            "designer": "Trewq"
+        },
+        {
+            "set_code": "LAIR",
+            "set_name": "Secret Lair Drops",
+            "formats": "",
+            "designer": "Voyager"
+        },
+        {
+            "set_code": "PTN",
+            "set_name": "Port Noon: Occult Islands of Vespera",
+            "formats": "",
+            "designer": "Kogane</soft-line></soft-line></soft-line></soft-line></soft-line></soft-line></soft-line></soft-line></soft-line>"
+        },
+        {
+            "set_code": "PVR",
+            "set_name": "Primivir",
+            "formats": "",
+            "designer": "Myr"
+        },
+        {
+            "set_code": "VNM",
+            "set_name": "Vinimroth Eternities",
+            "formats": "",
+            "designer": "TVP"
+        },
+        {
+            "set_code": "WAW",
+            "set_name": "The Wonderlands\u2019 Wishes",
+            "formats": "",
+            "designer": "Wende"
+        }
+    ]
+}
