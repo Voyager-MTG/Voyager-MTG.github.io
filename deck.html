@@ -788,6 +788,7 @@
 				if (format_year > deck_year) continue;
 				if (format_month > deck_month) continue;
 				if (format_day > deck_day) continue;
+				if (!format_month) continue;
 
 				await setFormat(format_hash);
 			}
