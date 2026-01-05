@@ -357,7 +357,7 @@ def render_card(card, tokens, /, *, back=False, flipped=False, token=False):
 	return card_string
 
 def generateSet(code):
-	with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8-sig') as j:
+	with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8') as j:
 		set_data = json.load(j)
 
 	return f'''
@@ -380,7 +380,7 @@ def generateFile(set_codes):
 	tokens = []
 	cards = []
 
-	with open(os.path.join('lists', 'all-cards.json'), encoding='utf-8-sig') as j:
+	with open(os.path.join('lists', 'all-cards.json'), encoding='utf-8') as j:
 		all_cards = json.load(j)
 
 	for card in all_cards['cards']:

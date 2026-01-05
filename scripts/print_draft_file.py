@@ -11,13 +11,13 @@ def filtered(card, filters):
 	return False
 
 def generateFile(code):
-	with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8-sig') as j:
+	with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8') as j:
 		set_data = json.load(j)
 
 	structure_path = os.path.join('resources', set_data['draft_structure'].replace(' ','-') + '-structure.json')
 	if os.path.isfile(os.path.join('sets', code + '-files', 'structure.json')):
 		structure_path = os.path.join('sets', code + '-files', 'structure.json')
-	with open(structure_path, encoding='utf-8-sig') as j:
+	with open(structure_path, encoding='utf-8') as j:
 		structure = json.load(j)
 
 	filters = []
@@ -131,5 +131,5 @@ def generateFile(code):
 
 	draft_string = draft_string.replace("{I", "{C")
 
-	with open(os.path.join('sets', code + '-files', code + '-draft.txt'), 'w', encoding='utf-8-sig') as f:
+	with open(os.path.join('sets', code + '-files', code + '-draft.txt'), 'w', encoding='utf-8') as f:
 		f.write(draft_string)

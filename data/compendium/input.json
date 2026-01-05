@@ -1,0 +1,51 @@
+{
+    "manual_exclude": {
+        "Interaction": {
+            "Small Removal": [
+                "Unending Malice",
+                "Wulfric Hook, Lord of Ends",
+                "Occult Occlusion",
+                "Lost in the Horizon",
+                "Wildwood Containment"
+            ],
+            "Unconditional Removal": [
+                "Unending Malice",
+                "Hostile Pillars",
+                "Nirvanha Bloom",
+                "Omnipresent Vessel"
+            ],
+            "Other Removal": [
+                "Occult Occlusion",
+                "Nirvanha Bloom"
+            ]
+        },
+        "Value": {
+            "Draw/Selection": [
+                "True Blood of Saint Janus",
+                "Leon Terrel, Unspoken Heir"
+            ],
+            "Ramp": [
+                "Wind Worn Peaks",
+                "Writ of Supplies",
+                "The Geminiad",
+                "Pathbound Bloom",
+                "Ancient Viewdrifter"
+            ]
+        }
+    },
+    "manual_include": {
+        "Interaction": {
+            "Small Removal": [
+                "Starsea Bloomqueen"
+            ],
+            "Unconditional Removal": [
+                "Found Family"
+            ]
+        }
+    },
+    "sizes": {
+        "Value": {
+            "Ramp": 8
+        }
+    }
+}

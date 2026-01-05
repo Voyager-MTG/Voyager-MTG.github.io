@@ -87,11 +87,11 @@ def generateHTML():
 	<body>
 		'''
 
-	with open(os.path.join('resources', 'snippets', 'header.txt'), encoding='utf-8-sig') as f:
+	with open(os.path.join('resources', 'snippets', 'header.txt'), encoding='utf-8') as f:
 		snippet = f.read()
 		html_content += snippet
 
-	with open(os.path.join('lists', 'set-order.json'), encoding='utf-8-sig') as j:
+	with open(os.path.join('lists', 'set-order.json'), encoding='utf-8') as j:
 		so_json = json.load(j)
 
 	for key in so_json:
@@ -111,7 +111,7 @@ def generateHTML():
 		set_codes = so_json[key]
 		for code in set_codes:
 			set_name = 'MISSING'
-			with open(os.path.join('lists', 'all-sets.json'), encoding='utf-8-sig') as f:
+			with open(os.path.join('lists', 'all-sets.json'), encoding='utf-8') as f:
 				data = json.load(f)
 				for s in data['sets']:
 					if s['set_code'] == code:
@@ -119,7 +119,7 @@ def generateHTML():
 						break
 					set_name = 'MISSING'
 
-			with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8-sig') as f:
+			with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8') as f:
 				data = json.load(f)
 				set_count = 0
 				for entry in data['cards']:
@@ -147,7 +147,7 @@ def generateHTML():
 		document.addEventListener("DOMContentLoaded", async function () {
 			'''
 
-	with open(os.path.join('resources', 'snippets', 'load-files.txt'), encoding='utf-8-sig') as f:
+	with open(os.path.join('resources', 'snippets', 'load-files.txt'), encoding='utf-8') as f:
 		snippet = f.read()
 		html_content += snippet
 
@@ -173,7 +173,7 @@ def generateHTML():
 
 		'''
 
-	with open(os.path.join('resources', 'snippets', 'random-card.txt'), encoding='utf-8-sig') as f:
+	with open(os.path.join('resources', 'snippets', 'random-card.txt'), encoding='utf-8') as f:
 		snippet = f.read()
 		html_content += snippet
 
@@ -183,7 +183,7 @@ def generateHTML():
 </html>'''
 
 	# Write the HTML content to the output HTML file
-	with open(output_html_file, 'w', encoding='utf-8-sig') as file:
+	with open(output_html_file, 'w', encoding='utf-8') as file:
 		file.write(html_content)
 
 	print(f"HTML file saved as {output_html_file}")

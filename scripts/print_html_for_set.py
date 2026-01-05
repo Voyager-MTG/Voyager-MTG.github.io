@@ -10,7 +10,7 @@ def generateHTML(code):
 	#F: /sets/SET.html
 	output_html_file = "sets/" + code + ".html"
 	
-	with open(os.path.join('lists', 'all-sets.json'), encoding='utf-8-sig') as f:
+	with open(os.path.join('lists', 'all-sets.json'), encoding='utf-8') as f:
 		data = json.load(f)
 		for s in data['sets']:
 			if s['set_code'] == code:
@@ -384,7 +384,7 @@ def generateHTML(code):
 	'''
 	
 	#F: /resources/snippets/header.txt
-	with open(os.path.join('resources', 'snippets', 'header.txt'), encoding='utf-8-sig') as f:
+	with open(os.path.join('resources', 'snippets', 'header.txt'), encoding='utf-8') as f:
 		snippet = f.read()
 		html_content += snippet
 
@@ -430,7 +430,7 @@ def generateHTML(code):
 			if img_name == 'logo' or img_name == 'icon' or img_name == 'bg':
 				img_path = '/'.join([ '/sets', code + '-files', img_name + '.png' ])
 			else:
-				with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8-sig') as f:
+				with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8') as f:
 					set_json = json.load(f)
 				for card in set_json['cards']:
 					if card['card_name'] == img_name:
@@ -471,7 +471,7 @@ def generateHTML(code):
 		document.addEventListener("DOMContentLoaded", async function () {
 			'''
 
-	with open(os.path.join('resources', 'snippets', 'load-files.txt'), encoding='utf-8-sig') as f:
+	with open(os.path.join('resources', 'snippets', 'load-files.txt'), encoding='utf-8') as f:
 		snippet = f.read()
 		html_content += snippet
 
@@ -722,7 +722,7 @@ def generateHTML(code):
 
 	#F: /resources/snippets/compare-function.txt
 	#F: this is where compareFunction is from
-	with open(os.path.join('resources', 'snippets', 'compare-function.txt'), encoding='utf-8-sig') as f:
+	with open(os.path.join('resources', 'snippets', 'compare-function.txt'), encoding='utf-8') as f:
 		snippet = f.read()
 		html_content += snippet
 
@@ -732,7 +732,7 @@ def generateHTML(code):
 
 	#F: /resources/snippets/tokenize-symbolize.txt
 	#F: this holds the isDecimal function used in compare-function.txt, as well as something for encoding/decoding symbols
-	with open(os.path.join('resources', 'snippets', 'tokenize-symbolize.txt'), encoding='utf-8-sig') as f:
+	with open(os.path.join('resources', 'snippets', 'tokenize-symbolize.txt'), encoding='utf-8') as f:
 		snippet = f.read()
 		html_content += snippet
 	
@@ -749,7 +749,7 @@ def generateHTML(code):
 		'''
 
 	#F: /resources/snippets/img-container-defs.txt
-	with open(os.path.join('resources', 'snippets', 'img-container-defs.txt'), encoding='utf-8-sig') as f:
+	with open(os.path.join('resources', 'snippets', 'img-container-defs.txt'), encoding='utf-8') as f:
 		snippet = f.read()
 		html_content += snippet
 
@@ -771,7 +771,7 @@ def generateHTML(code):
 		'''
 
 	#F: resources/snippets/random-card.txt
-	with open(os.path.join('resources', 'snippets', 'random-card.txt'), encoding='utf-8-sig') as f:
+	with open(os.path.join('resources', 'snippets', 'random-card.txt'), encoding='utf-8') as f:
 		snippet = f.read()
 		html_content += snippet
 
@@ -781,7 +781,7 @@ def generateHTML(code):
 </html>'''
 
 	# Write the HTML content to the output HTML file
-	with open(output_html_file, 'w', encoding='utf-8-sig') as file:
+	with open(output_html_file, 'w', encoding='utf-8') as file:
 		file.write(html_content)
 
 	print(f"HTML file saved as {output_html_file}")

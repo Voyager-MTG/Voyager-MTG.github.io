@@ -1,0 +1,13 @@
+{
+    "name": "voyager-compendum-generator",
+    "description": "",
+    "version": "1.0.0",
+    "main": "generator.js",
+    "dependencies": {
+        "firebase": "^12.6.0"
+    },
+    "scripts": {
+        "start": "node generator.js"
+    },
+    "type": "module"
+}

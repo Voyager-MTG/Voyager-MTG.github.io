@@ -99,3 +99,10 @@ hr {
 .img-container a {
 	height: auto;
 }
+
+.generating-text {
+	font-size: 30px;
+	font-weight: bold;
+	color: var(--text-color);
+	top: 100px;
+}
