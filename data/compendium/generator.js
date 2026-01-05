@@ -14,7 +14,7 @@ function isWipe(card) {
     return regex.test(card.rules_text);
 }
 
-function isCA(card) {
+function isCA(card) { // (play|cast) ([^\\n.]+ (from exile|exiled)|(one of )?those cards|them|it this turn|it until)
     const regex = /(Clue token|[Ii]nvestigate)|[Dd]raw|[Dd]raft|(play|cast) ([^\n.]+ (from exile|exiled)|(one of )?those cards|them|it this turn|it until)|(graveyard to|into) your hand|\b(?:return\W+(?:\w+\W+){0,5}?to your hand|to your hand\W+(?:\w+\W+){0,5}?return)\b/gi;
 
     return regex.test(card.rules_text);
@@ -64,7 +64,7 @@ function isCounterspell(card) {
 }
 
 function isThreat(card) {
-    return card.rules_text.match(/creature token|becomes? a? ?creatures?|are creature|is a creature/gi) || card.type.match(/creature/gi);
+    return card.type.match(/creature/gi) && !card.rules_text.match(/^pathbound/gi);
 }
 
 function isRamp(card) {
@@ -89,7 +89,17 @@ const compendium_rules = {
         'Draw/Selection': card => isCA(card) && !card.type.match(/land/i),
         'Ramp': card => isRamp(card),
         'Tutors': card => isTutor(card),
-        'Combo': card => false // Manual ordering
+        'Combo': card => false // Manual categorization
+    },
+    Manabase: {
+        'Spires': card => /spire/i.test(card.card_name) && /spire: search your library for a/i.test(card.rules_text),
+        'Ominous Lands': card => /land/i.test(card.type) && /ominous/i.test(card.rules_text),
+        'Restored Lands': card => /restored/i.test(card.card_name) && /land/i.test(card.type) && /^pathbound/i.test(card.rules_text),
+        'Shockpools': card => /land/i.test(card.type) && /add one mana of any color a land you control/i.test(card.rules_text) && /the/i.test(card.card_name),
+        'Driftings': card => /drifting/i.test(card.card_name) && card.set === 'FOE',
+        'Castles': card => card.set === 'HOD' && /1 damage to you unless you control three or more/i.test(card.rules_text),
+        'Gold Lands': card => false, // Manual categorization
+        'Utility Lands': card => false // Manual categorization
     },
     Sanctum: {
         'Pathbound': card => /^pathbound/gi.test(card.rules_text),
@@ -102,8 +112,6 @@ const compendium_rules = {
 function isInCategory(card, category, subcategory) {
     return (compendium_rules[category]?.[subcategory]?.(card) || manual_include[category]?.[subcategory]?.includes?.(card.card_name)) && !manual_exclude[category]?.[subcategory]?.includes?.(card.card_name);
 }
-
-const delay = ms => new Promise(res => setTimeout(res, ms));
 
 function generateCompendium() {
     const compendium = {};
@@ -119,10 +127,7 @@ function generateCompendium() {
         if (card.shape.includes("token") || card.card_name.includes('ITD')) continue;
         for (const [ headingName, subheadings ] of Object.entries(compendium_rules)) {
             for (const [ subheadingName, rule ] of Object.entries(subheadings)) {
-                // if ((rule(card) && meetsPlayrate(card) && !manual_exclude[headingName]?.[subheadingName]?.includes?.(card.card_name)) || manual_include[headingName]?.[subheadingName]?.includes?.(card.card_name)) 
-                if (card.card_name === "Delete" && subheadingName === 'Small Removal') 
-                    console.log(isInCategory(card, headingName, subheadingName) && meetsPlayrate(card));
-                if (isInCategory(card, headingName, subheadingName) && meetsPlayrate(card))
+                if (isInCategory(card, headingName, subheadingName) && meetsPlayrate(card, headingName))
                     compendium[headingName][subheadingName].push(card.card_name);
             }
         }
@@ -132,7 +137,7 @@ function generateCompendium() {
         for (const [ subheadingName, rule ] of Object.entries(subheadings)) {
             compendium[headingName][subheadingName] = [...new Set(compendium[headingName][subheadingName])];
             compendium[headingName][subheadingName].sort(playrateFn);
-            const size = sizes?.[headingName]?.[subheadingName] || 12;
+            const size = sizes?.[headingName]?.[subheadingName] || 15;
             compendium[headingName][subheadingName] = compendium[headingName][subheadingName].slice(0, size);
         }
     }
@@ -164,9 +169,10 @@ function convertToMV(cost) {
     return mv;
 }
 
-function meetsPlayrate(card) {
+function meetsPlayrate(card, category) {
     const pr = playrates[card.card_name] / numDecks;
-    return pr > 0.015;
+    const threshold = pr_override?.[category] ?? 0.015;
+    return pr > threshold;
 }
 
 function playrateFn(a, b) {
@@ -187,8 +193,20 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+function sigmoid(x) {
+    return 1 / (1 + Math.exp(-x));
+}
+
+let totalWeight;
+
 async function getCardStats() {
     const stats = {};
+
+    totalWeight = 0;
+    const now = new Date();
+    const date = now.getDate();
+    const month = now.getMonth();
+    const year = now.getYear();
 
     for (const card of card_list_arrayified) {
         stats[card.card_name] = 0;
@@ -196,6 +214,11 @@ async function getCardStats() {
 
     for (const deck of all_decks) {
         const decklist = atob(deck.url.split(';')[1].split('&main')[0]);
+        // const { deckDate, deckMonth, deckYear } = (deck.last_modified || '2025-04-01').split('-').map(d => parseInt(d));
+        // const difference = (date - deckDate) + (month - deckMonth) * 30 + (year - deckYear) * 365;
+        // const weight = sigmoid(difference) * 2 + 0.5;
+        // totalWeight += weight;
+
         for (const line of decklist.split("\n")) {
             const card_name = line.substring(line.indexOf(" ") + 1, line.length).split('(')[0].trim();
 
@@ -232,7 +255,7 @@ all_users_docs.forEach((doc) => {
     }
 });
 
-const { manual_exclude, manual_include, sizes } = JSON.parse(fs.readFileSync('input.json'));
+const { manual_exclude, manual_include, sizes, pr_override } = JSON.parse(fs.readFileSync('input.json'));
 let card_list_arrayified, playrates, numDecks;
 
 
@@ -246,5 +269,6 @@ fs.readFile('../../lists/all-cards.json', 'utf8', async (err, data) => {
     const compendium = generateCompendium();
 
     fs.writeFileSync('compendium.json', JSON.stringify(compendium));
+    console.log("Succesfully generated compendium @ ./compendium.json !")
     process.exit(0);
 });

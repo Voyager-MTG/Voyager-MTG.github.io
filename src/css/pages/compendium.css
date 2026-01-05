@@ -2,8 +2,8 @@
 	display: grid;
 	/* align-items: center; */
 	justify-items: center;
-	width: 75%;
-	margin-left: 8%;
+	width: 90%;
+	margin-left: 0;
 	grid-template-columns: 0.3fr 1fr;
 	gap: 20px;
 }
@@ -34,7 +34,7 @@ hr {
 
 .compendium-grid {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	gap: 8px;
 	position: relative;
 }
@@ -87,7 +87,7 @@ hr {
 }
 
 .hidden-text {
-	font-size: 1.4em;
+	font-size: 1.15em;
 	font-family: beleren;
 	text-align: center;
 }
@@ -105,4 +105,8 @@ hr {
 	font-weight: bold;
 	color: var(--text-color);
 	top: 100px;
+}
+
+.img-container {
+	align-self: auto;
 }

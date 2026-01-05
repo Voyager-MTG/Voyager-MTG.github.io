@@ -16,13 +16,29 @@
             ],
             "Other Removal": [
                 "Occult Occlusion",
-                "Nirvanha Bloom"
+                "Nirvanha Bloom",
+                "Lightning Sarajii",
+                "Neverbloom"
             ]
         },
         "Value": {
             "Draw/Selection": [
                 "True Blood of Saint Janus",
-                "Leon Terrel, Unspoken Heir"
+                "Leon Terrel, Unspoken Heir",
+                "The Eternal Echo",
+                "Important Parcel",
+                "Ancient Viewdrifter",
+                "Standoff at Beachside",
+                "The Moth",
+                "Yklev, In a Strange Land",
+                "Star-Binding Command",
+                "Apostle Entheate",
+                "Path of Revival",
+                "Writ of Supplies",
+                "Pathbound Bloom",
+                "Mesmerize",
+                "Stellar Spymasters",
+                "Guardian Roost"
             ],
             "Ramp": [
                 "Wind Worn Peaks",
@@ -30,6 +46,26 @@
                 "The Geminiad",
                 "Pathbound Bloom",
                 "Ancient Viewdrifter"
+            ]
+        },
+        "Threats": {
+            "Early Threats": [
+                "Hired Bouncer",
+                "Geistwald Amalgam",
+                "Ichor-Drowned",
+                "Cryptic Columns"
+            ],
+            "Midrange Threats": [
+                "Existence Flutter"
+            ],
+            "Topend Threats": [
+                "Omnipresent Vessel",
+                "Omnipotent Vessel"
+            ]
+        },
+        "Manabase": {
+            "Driftings": [
+                "Drifting Sands"
             ]
         }
     },
@@ -41,11 +77,42 @@
             "Unconditional Removal": [
                 "Found Family"
             ]
+        },
+        "Threats": {
+            "Topend Threats": [
+                "Geistwald Amalgam"
+            ]
+        },
+        "Manabase": {
+            "Gold Lands": [
+                "A Beloved World",
+                "The Heart of Ischav",
+                "Wanderer's Shrine",
+                "Rip to Today"
+            ],
+            "Utility Lands": [
+                "Ominous Temple",
+                "Hexer's Cave",
+                "Midrim Summit",
+                "The Gardener's Saga",
+                "Shifting Silverscape",
+                "Clearing in the Glade",
+                "Shifting Spire",
+                "Spitting Caldera"
+            ]
         }
     },
     "sizes": {
         "Value": {
-            "Ramp": 8
+            "Ramp": 10,
+            "Draw/Selection": 10
+        },
+        "Threats": {
+            "Midrange Threats": 20,
+            "Early Threats": 20
         }
+    },
+    "pr_override": {
+        "Manabase": 0
     }
 }
