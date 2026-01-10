@@ -1,3 +1,5 @@
+
+
 function prepareGradients() {
 	let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
 	const opt = document.createElement("option");
@@ -27,8 +29,6 @@ function prepareGradients() {
 			document.getElementById("color-select").appendChild(opt);
 		}
 	}
-
-	// setGradient();
 }
 
 function setGradient(gradient = false) {
@@ -97,7 +97,28 @@ function setTextColor(c = false) {
 	document.body.style.setProperty("--text-color", localStorage.getItem("settings.textcolor"));
 }
 
+function defaultSetting(name, default_) {
+	// if you dont have a value in localstorage, set that value to default_
+	if (localStorage.getItem(name) == null) {
+		localStorage.setItem(name, default_);
+	}
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
+	defaultSetting('settings.autosave', 'On');
+	defaultSetting('settings.searchalias', 'On');
+	defaultSetting('settings.exportcube', 'On');
+	defaultSetting('settings.maxcopies', 'On');
+	defaultSetting('settings.sanctumbasic', 'On');
+	defaultSetting('settings.textcolor', 'Black');
+	defaultSetting('settings.gradient', 'Random-Card');
+	defaultSetting('settings.format', 'Eternal');
+	defaultSetting('settings.deck_privacy', 'Public');
+	defaultSetting("settings.compactaccount", "Off");
+	defaultSetting("settings.resultgradient", "On");
+	defaultSetting("settings.darktheme", "Off");
+	defaultSetting("settings.theme", "Light");
+
 	let theme = localStorage.getItem("settings.theme");
 
 	if (!theme && localStorage.getItem("settings.darkthememenu") == "On") {
@@ -108,7 +129,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 	}
 
 	document.body.dataset.theme = theme;
-	console.log(document.body.dataset.theme);
 
 	document.body.style.setProperty("--text-color", localStorage.getItem("settings.textcolor"));
 
@@ -122,7 +142,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 	gradients = raw_gradients.gradients;
 	card_backgrounds = raw_gradients.cards;
-	console.log(gradients);
 	setGradient(localStorage.getItem("settings.gradient"));
 	prepareGradients();
 });

@@ -374,19 +374,7 @@
 			if (localStorage.getItem("settings.autosave") == "On" && !deckURL && !window.fireimport) {
 				readDeckText(localStorage.getItem(localStorage.getItem("info.lastdeck")));
 				document.getElementById("deck-name").value = localStorage.getItem("info.lastdeck");
-			}
-
-			// Initialize default settings
-			defaultSetting('settings.autosave', 'On');
-			defaultSetting('settings.searchalias', 'On');
-			defaultSetting('settings.exportcube', 'On');
-			defaultSetting('settings.maxcopies', 'On');
-			defaultSetting('settings.sanctumbasic', 'On');
-			defaultSetting('settings.textcolor', 'Black');
-			defaultSetting('settings.gradient', 'Default-(White)');
-			defaultSetting('settings.darkthememenu', 'Off');
-			defaultSetting('settings.format', 'Eternal');
-			defaultSetting('settings.deck_privacy', 'Public');
+			}			
 
 			setGradient(localStorage.getItem("settings.gradient"));
 
@@ -1054,13 +1042,6 @@
 				dropdown.appendChild(dropdownOption);
 			}
 			return dropdown;
-		}
-
-		function defaultSetting(name, default_) {
-			// if you dont have a value in localstorage, set that value to default_
-			if (localStorage.getItem(name) == null) {
-				localStorage.setItem(name, default_);
-			}
 		}
 
 		// function loadDeck() { // this name is misleading, this opens the load modal
