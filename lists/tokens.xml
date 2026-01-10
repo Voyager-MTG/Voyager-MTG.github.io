@@ -15,6 +15,8 @@
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			
+			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
 			<name>Insect Advisor AKT</name>
@@ -46,6 +48,9 @@
 				<cmc>0</cmc>
 			</prop>
 			<tablerow>1</tablerow>
+			
+			<related>Can Be Cast From Exile EXPT</related>
+			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
 			<name>Recruit AKT</name>
@@ -662,6 +667,8 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<coloridentity>WUBRGI</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
+			
+			<related>Luminous VNM</related>
 		</card>
 		<card>
 			<name>Dragon Eye FOE</name>
@@ -1829,6 +1836,8 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<cmc>0</cmc>
 			</prop>
 			<tablerow>1</tablerow>
+			
+			<related>Reserves HOD</related>
 		</card>
 		<card>
 			<name>Knight all colors HOD</name>
@@ -3570,6 +3579,8 @@ Impetus {W}{U}{B}{R}{G} (You may cast this from your graveyard as a sorcery with
 			</prop>
 			<tablerow>3</tablerow>
 			<related>Beast Token</related>
+			
+			<related>Beast WAW</related>
 		</card>
 		<card>
 			<name>Beast WAW</name>
@@ -3702,6 +3713,8 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 			</prop>
 			<tablerow>2</tablerow>
 			<related>Beast Token</related>
+			
+			<related>Beast WAW</related>
 		</card>
 		<card>
 			<name>Ilcan Keyseeker WAW</name>
@@ -3848,6 +3861,8 @@ Impetus {4}{G} (You may cast this from your graveyard as a sorcery with only the
 			</prop>
 			<tablerow>2</tablerow>
 			<related>Beast Token</related>
+			
+			<related>Beast WAW</related>
 		</card>
 		<card>
 			<name>Redefinition WAW</name>
@@ -3967,6 +3982,8 @@ Augmented – At the beginning of combat on your turn, if you&apos;ve spent {W}{
 			</prop>
 			<tablerow>2</tablerow>
 			<related>Beast Token</related>
+			
+			<related>Beast WAW</related>
 		</card>
 	</cards>
 </cockatrice_carddatabase>

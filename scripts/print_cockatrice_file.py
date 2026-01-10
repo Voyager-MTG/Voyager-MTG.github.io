@@ -204,14 +204,15 @@ TOKENMATCHES = {
 def auto_related(card, tokens):
 	related_cards = []
 
-	for token, exp in TOKENMATCHES.items():
+	for token in TOKENMATCHES.keys():
+		exp = TOKENMATCHES[token]
 		if not card["rules_text"] or card["rules_text"] == None or card["rules_text"] == "":
 			continue
 
 		token = token.replace("~", card["card_name"])
 		token = token.replace("CARDNAME", card["card_name"])
 		# token = token.replace("CARDTYPE", card["type"])
-		token = token.replace("CARDSET" , card["set" ])
+		token = token.replace("CARDSET" , card["set"])
 		
 		if re.findall(exp, card["rules_text"]):
 			related_cards.append([token, 1])
@@ -248,13 +249,11 @@ def auto_related(card, tokens):
 						related_cards.append([token_to_script, count])
 						
 				else:
-					if token_to_script == None: print(card, token_type, token_colors, pt, card['set'])
 					related_cards.append([token_to_script, count])
 
 	return format_auto_related(related_cards)
 
 def format_auto_related(related):
-	# if len(related) != 0: print('related', related)
 	return [f"<related{getCount(card[1])}>{card[0]}</related>" for card in related]
 
 def render_card(card, tokens, /, *, back=False, flipped=False, token=False):
@@ -335,8 +334,7 @@ def render_card(card, tokens, /, *, back=False, flipped=False, token=False):
 
 	reverse_related = get_related(card['notes'], '!related', 'reverse-related')
 	auto_reverse_related = auto_related(card, tokens)
-	print(auto_reverse_related)
-	if len(reverse_related):
+	if len(reverse_related) or len(auto_reverse_related):
 		card_string += f'''
 			{'\n			'.join(reverse_related)}
 			{'\n			'.join(auto_reverse_related)}'''
