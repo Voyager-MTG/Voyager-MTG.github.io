@@ -430,7 +430,7 @@ def generateHTML(code):
 			if img_name == 'logo' or img_name == 'icon' or img_name == 'bg':
 				img_path = '/'.join([ '/sets', code + '-files', img_name + '.png' ])
 			else:
-				with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8') as f:
+				with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8-sig') as f:
 					set_json = json.load(f)
 				for card in set_json['cards']:
 					if card['card_name'] == img_name:

@@ -15,7 +15,7 @@ def convertList(setCode):
 	blank1 = {'card_name':'e'}
 	blank2 = {'card_name':'er'}
 	#F: open up the inputList file
-	with open(inputList, encoding='utf-8') as f:
+	with open(inputList, encoding='utf-8-sig') as f:
 		raw = json.load(f)
 	cards = raw['cards']
 
@@ -207,7 +207,7 @@ def convertList(setCode):
 	if os.path.isfile(os.path.join('sets', setCode + '-files', 'preview-order.json')):
 		preview_path = os.path.join('sets', setCode + '-files')
 
-	with open(os.path.join(preview_path, 'preview-order.json'), encoding='utf-8') as j:
+	with open(os.path.join(preview_path, 'preview-order.json'), encoding='utf-8-sig') as j:
 		list_order = json.load(j)
 
 	for r in list_order:

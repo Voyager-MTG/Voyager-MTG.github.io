@@ -9,7 +9,7 @@
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Dragon</type>
-				<maintype>Dragon</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>3/2</pt>
@@ -24,7 +24,7 @@
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Insect Advisor</type>
-				<maintype>Advisor</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -72,7 +72,7 @@
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact – Treasure</type>
-				<maintype>Treasure</maintype>
+				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 			</prop>
@@ -86,7 +86,7 @@
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Human</type>
-				<maintype>Human</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
@@ -103,7 +103,7 @@
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Incarnation</type>
-				<maintype>Incarnation</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>R</colors>
@@ -120,7 +120,7 @@
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Hex Citizen</type>
-				<maintype>Citizen</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
@@ -137,7 +137,7 @@
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Werewolf Citizen</type>
-				<maintype>Citizen</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
@@ -154,7 +154,7 @@
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Incarnation Soldier</type>
-				<maintype>Soldier</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>R</colors>
@@ -171,7 +171,7 @@
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Soldier</type>
-				<maintype>Soldier</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -189,7 +189,7 @@ Equip creature of the chosen type {1}</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact – Equipment</type>
-				<maintype>Equipment</maintype>
+				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 			</prop>
@@ -203,7 +203,7 @@ Equip creature of the chosen type {1}</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Dragon</type>
-				<maintype>Dragon</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>4/4</pt>
@@ -218,7 +218,7 @@ Equip creature of the chosen type {1}</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Enchantment Creature – Icon</type>
-				<maintype>Icon</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>WI</colors>
@@ -236,7 +236,7 @@ Equip creature of the chosen type {1}</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Horror</type>
-				<maintype>Horror</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
@@ -253,7 +253,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Creature – Bird Incarnation</type>
-				<maintype>Incarnation</maintype>
+				<maintype>Creature</maintype>
 				<manacost>2II</manacost>
 				<cmc>4</cmc>
 				<colors>I</colors>
@@ -272,7 +272,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Insect Plant</type>
-				<maintype>Plant</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
@@ -288,7 +288,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact Creature – Wall</type>
-				<maintype>Wall</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>0/3</pt>
@@ -303,7 +303,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Shapeshifter</type>
-				<maintype>Shapeshifter</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>1/1</pt>
@@ -318,7 +318,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact Creature – Robot</type>
-				<maintype>Robot</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>1/1</pt>
@@ -349,7 +349,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Demon</type>
-				<maintype>Demon</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
@@ -367,7 +367,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Drake</type>
-				<maintype>Drake</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
@@ -390,7 +390,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Fox</type>
-				<maintype>Fox</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -408,7 +408,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Elemental</type>
-				<maintype>Elemental</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
@@ -426,7 +426,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Elemental</type>
-				<maintype>Elemental</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
@@ -444,7 +444,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Dragon Eye</type>
-				<maintype>Eye</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>U</colors>
@@ -462,7 +462,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact Creature – Orb Wizard</type>
-				<maintype>Wizard</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>1/1</pt>
@@ -479,7 +479,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact Creature – Treasure</type>
-				<maintype>Treasure</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>1/1</pt>
@@ -496,7 +496,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Fish</type>
-				<maintype>Fish</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
@@ -514,7 +514,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Legendary Token Creature – Drake</type>
-				<maintype>Drake</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>RI</colors>
@@ -532,7 +532,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Beast</type>
-				<maintype>Beast</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
@@ -550,7 +550,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Bird</type>
-				<maintype>Bird</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
@@ -569,7 +569,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Bird</type>
-				<maintype>Bird</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -585,7 +585,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Insect</type>
-				<maintype>Insect</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>WI</colors>
@@ -603,7 +603,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Cat</type>
-				<maintype>Cat</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
@@ -623,7 +623,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Crab</type>
-				<maintype>Crab</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
@@ -671,7 +671,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Dragon Eye</type>
-				<maintype>Eye</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>U</colors>
@@ -693,7 +693,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Drake</type>
-				<maintype>Drake</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>U</colors>
@@ -711,7 +711,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Drake</type>
-				<maintype>Drake</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -730,7 +730,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Drake</type>
-				<maintype>Drake</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>U</colors>
@@ -748,7 +748,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Drake</type>
-				<maintype>Drake</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
@@ -767,7 +767,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Drake</type>
-				<maintype>Drake</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
@@ -790,7 +790,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Elemental Demon</type>
-				<maintype>Demon</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>BR</colors>
@@ -808,7 +808,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Elk Plant</type>
-				<maintype>Plant</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
@@ -827,7 +827,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Fish</type>
-				<maintype>Fish</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
@@ -845,7 +845,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Fox</type>
-				<maintype>Fox</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -866,7 +866,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Fox</type>
-				<maintype>Fox</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -884,7 +884,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Lizard</type>
-				<maintype>Lizard</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
@@ -905,7 +905,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Lizard</type>
-				<maintype>Lizard</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
@@ -923,7 +923,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Mongoose</type>
-				<maintype>Mongoose</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
@@ -942,7 +942,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact Creature – Orb</type>
-				<maintype>Orb</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>1/1</pt>
@@ -959,7 +959,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Enchantment Creature – Shark</type>
-				<maintype>Shark</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -975,7 +975,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Enchantment Creature – Whale</type>
-				<maintype>Whale</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>WB</colors>
@@ -993,7 +993,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wurm</type>
-				<maintype>Wurm</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>R</colors>
@@ -1013,7 +1013,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wurm</type>
-				<maintype>Wurm</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -1031,7 +1031,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wurm</type>
-				<maintype>Wurm</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -1049,7 +1049,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wurm Dragon</type>
-				<maintype>Dragon</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -1068,7 +1068,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Enchantment – Wurm Dragon</type>
-				<maintype>Dragon</maintype>
+				<maintype>Enchantment</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>3/3</pt>
@@ -1085,7 +1085,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wurm Plant Scout</type>
-				<maintype>Scout</maintype>
+				<maintype>Creature</maintype>
 				<manacost>G</manacost>
 				<cmc>1</cmc>
 				<colors>G</colors>
@@ -1421,7 +1421,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact Creature – Orb Wizard</type>
-				<maintype>Wizard</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>1/1</pt>
@@ -1477,7 +1477,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact – Food</type>
-				<maintype>Food</maintype>
+				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 			</prop>
@@ -1493,7 +1493,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact – Blood</type>
-				<maintype>Blood</maintype>
+				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 			</prop>
@@ -1509,7 +1509,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact – Clue</type>
-				<maintype>Clue</maintype>
+				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 			</prop>
@@ -1525,7 +1525,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Goat</type>
-				<maintype>Goat</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>WB</colors>
@@ -1607,7 +1607,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Soldier</type>
-				<maintype>Soldier</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -1627,7 +1627,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Legendary Creature – Orc Soldier</type>
-				<maintype>Soldier</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>R</colors>
@@ -1648,7 +1648,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Scout</type>
-				<maintype>Scout</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>U</colors>
@@ -1665,7 +1665,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Legendary Creature – Azra Knight</type>
-				<maintype>Knight</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
@@ -1684,7 +1684,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Legendary Creature – Elf Soldier</type>
-				<maintype>Soldier</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
@@ -1703,7 +1703,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Legendary Creature – Human Noble</type>
-				<maintype>Noble</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>R</colors>
@@ -1723,7 +1723,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Legendary Creature – Human Pirate</type>
-				<maintype>Pirate</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>U</colors>
@@ -1742,7 +1742,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Legendary Creature – Human Wizard</type>
-				<maintype>Wizard</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -1762,7 +1762,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Horror</type>
-				<maintype>Horror</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
@@ -1781,7 +1781,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Army</type>
-				<maintype>Army</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
@@ -1800,7 +1800,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Soldier</type>
-				<maintype>Soldier</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>R</colors>
@@ -1838,7 +1838,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Knight</type>
-				<maintype>Knight</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>WUBRG</colors>
@@ -1861,7 +1861,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Soldier</type>
-				<maintype>Soldier</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -1878,7 +1878,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Knight</type>
-				<maintype>Knight</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
@@ -1895,7 +1895,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Legendary Creature – Human Noble</type>
-				<maintype>Noble</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -1912,7 +1912,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact – Treasure</type>
-				<maintype>Treasure</maintype>
+				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 			</prop>
@@ -1932,7 +1932,7 @@ Equip {2}</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact – Equipment</type>
-				<maintype>Equipment</maintype>
+				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 			</prop>
@@ -1952,7 +1952,7 @@ Equip {2}</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact – Food</type>
-				<maintype>Food</maintype>
+				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 			</prop>
@@ -1969,7 +1969,7 @@ Equip {2}</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact – Clue</type>
-				<maintype>Clue</maintype>
+				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 			</prop>
@@ -1986,7 +1986,7 @@ Equip {2}</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Spirit</type>
-				<maintype>Spirit</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>R</colors>
@@ -2018,7 +2018,7 @@ This creature can&apos;t block.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Faerie Horror</type>
-				<maintype>Horror</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>1/1</pt>
@@ -2033,7 +2033,7 @@ This creature can&apos;t block.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Horror</type>
-				<maintype>Horror</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>*/*</pt>
@@ -2062,7 +2062,7 @@ This creature can&apos;t block.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Illusion</type>
-				<maintype>Illusion</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -2079,7 +2079,7 @@ This creature can&apos;t block.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Nightmare</type>
-				<maintype>Nightmare</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -2111,7 +2111,7 @@ This creature can&apos;t block.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Planeswalker – Echo</type>
-				<maintype>Echo</maintype>
+				<maintype>Planeswalker</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 			</prop>
@@ -2128,7 +2128,7 @@ When this creature enters, it deals 1 damage to each opponent. It deals 2 damage
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Artifact Creature – Construct</type>
-				<maintype>Construct</maintype>
+				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
 				<pt>4/4</pt>
@@ -2145,7 +2145,7 @@ When this creature enters, it deals 1 damage to each opponent. It deals 2 damage
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Artifact Creature – Drone</type>
-				<maintype>Drone</maintype>
+				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
 				<pt>4/4</pt>
@@ -2163,7 +2163,7 @@ When this creature enters, surveil X, where X is its power.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Artifact Creature – Sphinx</type>
-				<maintype>Sphinx</maintype>
+				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
 				<pt>4/4</pt>
@@ -2181,7 +2181,7 @@ Whenever this creature attacks, tap up to one target creature.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Artifact Creature – Horror</type>
-				<maintype>Horror</maintype>
+				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
 				<pt>4/4</pt>
@@ -2199,7 +2199,7 @@ Whenever an opponent casts a noncreature spell with mana value less than this cr
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Artifact Creature – Demigod Construct</type>
-				<maintype>Construct</maintype>
+				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
 				<pt>4/4</pt>
@@ -2217,7 +2217,7 @@ When this creature enters, return target instant or sorcery card from your grave
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Legendary Artifact Creature – Sphinx</type>
-				<maintype>Sphinx</maintype>
+				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
 				<pt>4/4</pt>
@@ -2234,7 +2234,7 @@ When this creature enters, return target instant or sorcery card from your grave
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Artifact Creature – Horror</type>
-				<maintype>Horror</maintype>
+				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
 				<pt>4/4</pt>
@@ -2251,7 +2251,7 @@ When this creature enters, return target instant or sorcery card from your grave
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Artifact Creature – Warlock</type>
-				<maintype>Warlock</maintype>
+				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
 				<pt>4/4</pt>
@@ -2268,7 +2268,7 @@ When this creature enters, return target instant or sorcery card from your grave
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Artifact Creature – Cleric</type>
-				<maintype>Cleric</maintype>
+				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
 				<pt>4/4</pt>
@@ -2286,7 +2286,7 @@ When this creature enters, return target instant or sorcery card from your grave
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Artifact Creature – Shapeshifter</type>
-				<maintype>Shapeshifter</maintype>
+				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
 				<pt>4/4</pt>
@@ -2304,7 +2304,7 @@ This creature can&apos;t block.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact Creature – Insect</type>
-				<maintype>Insect</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>1/1</pt>
@@ -2319,7 +2319,7 @@ This creature can&apos;t block.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wonder</type>
-				<maintype>Wonder</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>1/1</pt>
@@ -2373,7 +2373,7 @@ When a creature you control dies, you may pay {1}. If you do, draw a card.</text
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – God Horror</type>
-				<maintype>Horror</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>4/4</pt>
@@ -2392,7 +2392,7 @@ When a creature you control dies, you may pay {1}. If you do, draw a card.</text
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Cleric</type>
-				<maintype>Cleric</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>0/1</pt>
@@ -2452,7 +2452,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Angel</type>
-				<maintype>Angel</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -2470,7 +2470,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Worm</type>
-				<maintype>Worm</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
@@ -2488,7 +2488,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wolf</type>
-				<maintype>Wolf</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
@@ -2522,7 +2522,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact Creature – Bird</type>
-				<maintype>Bird</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>U</colors>
@@ -2539,7 +2539,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Artifact – Treasure</type>
-				<maintype>Treasure</maintype>
+				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 			</prop>
@@ -2553,7 +2553,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Dinosaur</type>
-				<maintype>Dinosaur</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
@@ -2570,7 +2570,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Fractal Horror</type>
-				<maintype>Horror</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<pt>0/0</pt>
@@ -2585,7 +2585,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Fractal Reflection</type>
-				<maintype>Reflection</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<coloridentity>UG</coloridentity>
@@ -2601,7 +2601,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Horror</type>
-				<maintype>Horror</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
@@ -2618,7 +2618,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Human</type>
-				<maintype>Human</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -2706,7 +2706,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Basic Land – Mountain</type>
-				<maintype>Mountain</maintype>
+				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<coloridentity>R</coloridentity>
@@ -2906,7 +2906,7 @@ Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Drake</type>
-				<maintype>Drake</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -2927,7 +2927,7 @@ Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Human Scout</type>
-				<maintype>Scout</maintype>
+				<maintype>Creature</maintype>
 				<manacost>1G/UG/U</manacost>
 				<cmc>3</cmc>
 				<colors>UG</colors>
@@ -3010,7 +3010,7 @@ This can&apos;t block.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Drake</type>
-				<maintype>Drake</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>U</colors>
@@ -3031,7 +3031,7 @@ This can&apos;t block.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Basic Land – Plains</type>
-				<maintype>Plains</maintype>
+				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<coloridentity>W</coloridentity>
@@ -3048,7 +3048,7 @@ This can&apos;t block.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Basic Land – Island</type>
-				<maintype>Island</maintype>
+				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<coloridentity>U</coloridentity>
@@ -3065,7 +3065,7 @@ This can&apos;t block.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Basic Land – Swamp</type>
-				<maintype>Swamp</maintype>
+				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<coloridentity>B</coloridentity>
@@ -3082,7 +3082,7 @@ This can&apos;t block.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Basic Land – Forest</type>
-				<maintype>Forest</maintype>
+				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<coloridentity>G</coloridentity>
@@ -3270,7 +3270,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Basic Land – Fault</type>
-				<maintype>Fault</maintype>
+				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 			</prop>
@@ -3286,7 +3286,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Enchantment Creature – Icon</type>
-				<maintype>Icon</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
@@ -3304,7 +3304,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wurm</type>
-				<maintype>Wurm</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
@@ -3324,7 +3324,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wurm</type>
-				<maintype>Wurm</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
@@ -3346,7 +3346,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wurm</type>
-				<maintype>Wurm</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>R</colors>
@@ -3369,7 +3369,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wurm</type>
-				<maintype>Wurm</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
@@ -3406,7 +3406,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Enchantment Creature – Icon</type>
-				<maintype>Icon</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
@@ -3422,7 +3422,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Dragon</type>
-				<maintype>Dragon</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>R</colors>
@@ -3457,7 +3457,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Spirit</type>
-				<maintype>Spirit</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
@@ -3499,7 +3499,7 @@ Sacrifice this enchantment: Until end of turn, lands you control gain &quot;{T}:
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wonder Archon</type>
-				<maintype>Archon</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<coloridentity>WUBRGI</coloridentity>
@@ -3519,7 +3519,7 @@ Sacrifice this enchantment: Until end of turn, lands you control gain &quot;{T}:
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wonder Elf Knight</type>
-				<maintype>Knight</maintype>
+				<maintype>Creature</maintype>
 				<manacost>W</manacost>
 				<cmc>1</cmc>
 				<colors>W</colors>
@@ -3540,7 +3540,7 @@ Sacrifice this enchantment: Until end of turn, lands you control gain &quot;{T}:
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Creature – Wonder Fish</type>
-				<maintype>Fish</maintype>
+				<maintype>Creature</maintype>
 				<manacost>1U</manacost>
 				<cmc>2</cmc>
 				<colors>U</colors>
@@ -3579,7 +3579,7 @@ Impetus {W}{U}{B}{R}{G} (You may cast this from your graveyard as a sorcery with
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Beast</type>
-				<maintype>Beast</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
@@ -3597,7 +3597,7 @@ When this creature enters, draw a card.
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wonder Drake</type>
-				<maintype>Drake</maintype>
+				<maintype>Creature</maintype>
 				<manacost>2U</manacost>
 				<cmc>3</cmc>
 				<colors>U</colors>
@@ -3632,7 +3632,7 @@ This creature can&apos;t block.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Demon</type>
-				<maintype>Demon</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
@@ -3651,7 +3651,7 @@ This creature can&apos;t block.</text>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wonder</type>
-				<maintype>Wonder</maintype>
+				<maintype>Creature</maintype>
 				<manacost>1G/WG/W</manacost>
 				<cmc>3</cmc>
 				<colors>WG</colors>
@@ -3672,7 +3672,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wonder Cat</type>
-				<maintype>Cat</maintype>
+				<maintype>Creature</maintype>
 				<manacost>5G</manacost>
 				<cmc>6</cmc>
 				<colors>G</colors>
@@ -3693,7 +3693,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Creature – Kor Wizard</type>
-				<maintype>Wizard</maintype>
+				<maintype>Creature</maintype>
 				<manacost>2U</manacost>
 				<cmc>3</cmc>
 				<colors>U</colors>
@@ -3712,7 +3712,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wonder Human Wizard</type>
-				<maintype>Wizard</maintype>
+				<maintype>Creature</maintype>
 				<manacost>1W</manacost>
 				<cmc>2</cmc>
 				<colors>W</colors>
@@ -3730,7 +3730,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wonder Drake</type>
-				<maintype>Drake</maintype>
+				<maintype>Creature</maintype>
 				<manacost>3W</manacost>
 				<cmc>4</cmc>
 				<colors>W</colors>
@@ -3750,7 +3750,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Enchantment Creature – Wonder</type>
-				<maintype>Wonder</maintype>
+				<maintype>Creature</maintype>
 				<manacost>2U</manacost>
 				<cmc>3</cmc>
 				<colors>U</colors>
@@ -3770,7 +3770,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wonder Elf Cleric</type>
-				<maintype>Cleric</maintype>
+				<maintype>Creature</maintype>
 				<manacost>2B</manacost>
 				<cmc>3</cmc>
 				<colors>B</colors>
@@ -3790,7 +3790,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wonder Elf Knight</type>
-				<maintype>Knight</maintype>
+				<maintype>Creature</maintype>
 				<manacost>4W</manacost>
 				<cmc>5</cmc>
 				<colors>W</colors>
@@ -3809,7 +3809,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wonder</type>
-				<maintype>Wonder</maintype>
+				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<coloridentity>WUBRGI</coloridentity>
@@ -3839,7 +3839,7 @@ Impetus {4}{G} (You may cast this from your graveyard as a sorcery with only the
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Creature – Elf Druid</type>
-				<maintype>Druid</maintype>
+				<maintype>Creature</maintype>
 				<manacost>3G</manacost>
 				<cmc>4</cmc>
 				<colors>G</colors>
@@ -3858,7 +3858,7 @@ Impetus {4}{G} (You may cast this from your graveyard as a sorcery with only the
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wonder Jellyfish</type>
-				<maintype>Jellyfish</maintype>
+				<maintype>Creature</maintype>
 				<manacost>3U</manacost>
 				<cmc>4</cmc>
 				<colors>U</colors>
@@ -3878,7 +3878,7 @@ When this enchantment enters, exile target nonland permanent you don&apos;t cont
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Enchantment Creature – Wonder</type>
-				<maintype>Wonder</maintype>
+				<maintype>Creature</maintype>
 				<manacost>3W</manacost>
 				<cmc>4</cmc>
 				<colors>W</colors>
@@ -3899,7 +3899,7 @@ This creature gets +1/+0 for each other creature you control.
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wonder Demigod Cleric</type>
-				<maintype>Cleric</maintype>
+				<maintype>Creature</maintype>
 				<manacost>4W</manacost>
 				<cmc>5</cmc>
 				<colors>W</colors>
@@ -3919,7 +3919,7 @@ This creature gets +1/+0 for each other creature you control.
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wonder Elf Druid</type>
-				<maintype>Druid</maintype>
+				<maintype>Creature</maintype>
 				<manacost>4G</manacost>
 				<cmc>5</cmc>
 				<colors>G</colors>
@@ -3940,7 +3940,7 @@ Augmented – At the beginning of combat on your turn, if you&apos;ve spent {W}{
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Token Creature – Wonder Salamander</type>
-				<maintype>Salamander</maintype>
+				<maintype>Creature</maintype>
 				<manacost>4G</manacost>
 				<cmc>5</cmc>
 				<colors>G</colors>
@@ -3960,7 +3960,7 @@ Augmented – At the beginning of combat on your turn, if you&apos;ve spent {W}{
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Creature – Elemental</type>
-				<maintype>Elemental</maintype>
+				<maintype>Creature</maintype>
 				<manacost>7</manacost>
 				<cmc>7</cmc>
 				<pt>4/5</pt>
