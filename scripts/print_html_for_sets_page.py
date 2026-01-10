@@ -119,7 +119,7 @@ def generateHTML():
 						break
 					set_name = 'MISSING'
 
-			with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8') as f:
+			with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8-sig') as f:
 				data = json.load(f)
 				set_count = 0
 				for entry in data['cards']:

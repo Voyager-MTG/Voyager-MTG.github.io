@@ -26,7 +26,7 @@ def genAllCards(codes):
 		#CE: non-indented JSON is driving me insane
 		prettifyJSON(os.path.join('sets', code + '-files', code + '.json'))	
 		#F: grabs the corresponding file,
-		with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8') as f:
+		with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8-sig') as f:
 			#F: puts its card data into a temp dictionary,
 			raw = json.load(f)
 			for card in raw['cards']:
@@ -61,9 +61,9 @@ def genAllCards(codes):
 		json.dump(set_input, f, indent=4)
 
 def prettifyJSON(filepath):
-	with open(filepath, encoding='utf-8') as f:
+	with open(filepath, encoding='utf-8-sig') as f:
 		js_data = json.load(f)
-	with open(filepath, 'w', encoding='utf-8') as f:
+	with open(filepath, 'w', encoding='utf-8-sig') as f:
 		json.dump(js_data, f, indent=4)
 
 def portCustomFiles(custom_dir, export_dir):
@@ -133,7 +133,7 @@ for code in set_codes:
 	set_order.append(code)
 	image_flip.flipImages(code)
 	set_dir = code + '-files'
-	with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8') as f:
+	with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8-sig') as f:
 		raw = json.load(f)
 	if 'draft_structure' in raw and not raw['draft_structure'] == 'none' and not os.path.isfile(os.path.join('custom', 'sets', code + '-files', code + '-draft.txt')):
 		try:
@@ -147,7 +147,7 @@ for code in set_codes:
 		raw['trimmed'] = 'y'
 		card_edge_trimmer.batch_process_images(code)
 
-	with open(os.path.join('sets', code + '-files', code + '.json'), 'w', encoding='utf-8') as f:
+	with open(os.path.join('sets', code + '-files', code + '.json'), 'w', encoding='utf-8-sig') as f:
 		json.dump(raw, f, indent=4)
 
 	#F: list_to_list.convertList is a long and important function

@@ -46,7 +46,7 @@ def cost_to_cmc(cost):
 	return cmc
 
 def get_maintype(type):
-	first_half = type.split('\u2014')[0].strip()
+	first_half = type.split('–')[0].strip()
 	return first_half.split(' ')[-1].strip()
 
 def get_related(notes, instruction, tag):
@@ -357,7 +357,7 @@ def render_card(card, tokens, /, *, back=False, flipped=False, token=False):
 	return card_string
 
 def generateSet(code):
-	with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8') as j:
+	with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8-sig') as j:
 		set_data = json.load(j)
 
 	return f'''
