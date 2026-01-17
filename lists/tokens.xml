@@ -17,6 +17,7 @@
 			<tablerow>2</tablerow>
 			
 			<related>Liberated Dragon AKT</related>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Insect Advisor AKT</name>
@@ -34,6 +35,7 @@
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Embraced Cards AKT</name>
@@ -51,6 +53,7 @@
 			
 			<related>Can Be Cast From Exile EXPT</related>
 			<related>Embraced Cards AKT</related>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Recruit AKT</name>
@@ -68,6 +71,7 @@
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Treasure AKT</name>
@@ -82,6 +86,7 @@
 				<cmc>0</cmc>
 			</prop>
 			<tablerow>1</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Human AKT</name>
@@ -99,6 +104,7 @@
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Incarnation AKT</name>
@@ -116,6 +122,7 @@
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Hex Citizen AKT</name>
@@ -133,6 +140,7 @@
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Werewolf Citizen AKT</name>
@@ -150,6 +158,7 @@
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Incarnation Soldier AKT</name>
@@ -167,6 +176,7 @@
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Soldier AKT</name>
@@ -184,6 +194,7 @@
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>House AKT</name>
@@ -199,6 +210,7 @@ Equip creature of the chosen type {1}</text>
 				<cmc>0</cmc>
 			</prop>
 			<tablerow>1</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Dragon AKT</name>
@@ -214,6 +226,7 @@ Equip creature of the chosen type {1}</text>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Icon EXPT</name>
@@ -232,6 +245,7 @@ Equip creature of the chosen type {1}</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Soul Splintering</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Horror EXPT</name>
@@ -248,6 +262,7 @@ Equip creature of the chosen type {1}</text>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Distant Vulture EXPT</name>
@@ -268,6 +283,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Distant Vulture</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Insect Plant EXPT</name>
@@ -284,6 +300,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Wall EXPT</name>
@@ -299,6 +316,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<pt>0/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Shapeshifter EXPT</name>
@@ -314,6 +332,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Robot EXPT</name>
@@ -331,6 +350,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Extant Surveyor</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Can Be Cast From Exile EXPT</name>
@@ -345,6 +365,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<cmc>0</cmc>
 			</prop>
 			<tablerow>1</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Demon EXPT</name>
@@ -363,6 +384,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>The Demon Within</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Drake EXPT</name>
@@ -386,6 +408,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<reverse-related>Ignelscor Witch</reverse-related>
 			<reverse-related>Kindred Spirits</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Fox EXPT</name>
@@ -404,6 +427,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Kindred Spirits</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Flying Elemental EXPT</name>
@@ -422,6 +446,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Unveiling</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Lifelink Elemental EXPT</name>
@@ -440,6 +465,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Unveiling</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Dragon Eye EXPT</name>
@@ -458,6 +484,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Promise of Hunger</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Orb Wizard EXPT</name>
@@ -475,6 +502,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Wandering Travelers</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Treasure EXPT</name>
@@ -492,6 +520,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Inkblot Artist</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Fish EXPT</name>
@@ -510,6 +539,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Kaiju Sighting</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Aubrey FOE</name>
@@ -528,6 +558,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Chirps, Spice Seeker</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Beast FOE</name>
@@ -546,6 +577,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Lasting Discovery</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Bird FOE</name>
@@ -565,6 +597,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<reverse-related count="1">A Flock is Born</reverse-related>
 			<reverse-related count="3">A Flock is Born</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Bird FOE</name>
@@ -581,6 +614,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Insect FOE</name>
@@ -599,6 +633,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Chimarel Clearing</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Cat FOE</name>
@@ -619,6 +654,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<reverse-related>Ancient Font</reverse-related>
 			<reverse-related>Enduring Woodland</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Crab FOE</name>
@@ -637,6 +673,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Enlightening Crescents</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Draft Archetypes FOE</name>
@@ -669,6 +706,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>1</tablerow>
 			
 			<related>Luminous VNM</related>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Dragon Eye FOE</name>
@@ -691,6 +729,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<reverse-related>Coiled Sight</reverse-related>
 			<reverse-related>Waterscape Mystic // Coiled Sight</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Blue Drake 21 FOE</name>
@@ -709,6 +748,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Tiderock Passage</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>White Drake FOE</name>
@@ -728,6 +768,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<reverse-related>Fadove Battle-Cleric</reverse-related>
 			<reverse-related>Soarwing Coast</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Blue Drake 11 FOE</name>
@@ -746,6 +787,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Cerise, Auger of Flow</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Black Drake 11 FOE</name>
@@ -765,6 +807,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<reverse-related>Drake-Brood Peak</reverse-related>
 			<reverse-related>Pioneer&apos;s Premonition</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Silver Drake 11 FOE</name>
@@ -788,6 +831,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<reverse-related>Aerial Assurance</reverse-related>
 			<reverse-related>Ignelscor Witch</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Elemental Demon FOE</name>
@@ -806,6 +850,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Ignelscor Weaver</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Elk Plant FOE</name>
@@ -825,6 +870,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<reverse-related>Cervus Sprouting</reverse-related>
 			<reverse-related>Voice of the Thicket</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Fish FOE</name>
@@ -843,6 +889,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>CG02 Gold-Streaked Obelisks</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Fox 11 FOE</name>
@@ -864,6 +911,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<reverse-related>Meirel Pathwalker</reverse-related>
 			<reverse-related>Clerics Claymore</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Fox 02 FOE</name>
@@ -882,6 +930,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Lasting Discovery</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Lizard 11 FOE</name>
@@ -903,6 +952,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<reverse-related>Scaled Ripper // Lunging Mitosis</reverse-related>
 			<reverse-related>Lizturbance</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Lizard 21 FOE</name>
@@ -921,6 +971,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Eroding River</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Mongoose FOE</name>
@@ -939,6 +990,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Lasting Discovery</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Orb FOE</name>
@@ -957,6 +1009,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 			<tablerow>2</tablerow>
 			<reverse-related>Mirdrim Summit</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Shark FOE</name>
@@ -973,6 +1026,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Whale FOE</name>
@@ -991,6 +1045,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 			<tablerow>2</tablerow>
 			<reverse-related>Pathward Riftcalling</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Red Wurm FOE</name>
@@ -1011,6 +1066,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 			<reverse-related>Warforged Pair</reverse-related>
 			<reverse-related>Encouraging Passage</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>White Wurm 11 FOE</name>
@@ -1029,6 +1085,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 			<tablerow>2</tablerow>
 			<reverse-related>Clanless Tunneler</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>White Wurm 22 FOE</name>
@@ -1047,6 +1104,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 			<tablerow>2</tablerow>
 			<reverse-related>Korna Adventuring Historian</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>White Wurm Dragon FOE</name>
@@ -1065,6 +1123,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 			<tablerow>2</tablerow>
 			<reverse-related>Yearn for the Sky</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Wurm Dragon FOE</name>
@@ -1083,6 +1142,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 			<tablerow>1</tablerow>
 			<reverse-related>Homestead Pair</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Depthscout Token FOE</name>
@@ -1100,6 +1160,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Illuminated black FOE</name>
@@ -1141,6 +1202,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 			<reverse-related>Voice of the Thicket</reverse-related>
 			<reverse-related>Your Strength is Fading</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Illuminated Blue FOE</name>
@@ -1182,6 +1244,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 			<reverse-related>Voice of the Thicket</reverse-related>
 			<reverse-related>Your Strength is Fading</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Illuminated Green FOE</name>
@@ -1223,6 +1286,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 			<reverse-related>Voice of the Thicket</reverse-related>
 			<reverse-related>Your Strength is Fading</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Illuminated Red FOE</name>
@@ -1264,6 +1328,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 			<reverse-related>Voice of the Thicket</reverse-related>
 			<reverse-related>Your Strength is Fading</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Illuminated Silver FOE</name>
@@ -1305,6 +1370,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 			<reverse-related>Voice of the Thicket</reverse-related>
 			<reverse-related>Your Strength is Fading</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Illuminated White FOE</name>
@@ -1346,6 +1412,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 			<reverse-related>Voice of the Thicket</reverse-related>
 			<reverse-related>Your Strength is Fading</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Healing Counter FOE</name>
@@ -1364,6 +1431,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 			<tablerow>1</tablerow>
 			<reverse-related>Calamitous Koi</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Stun Counter FOE</name>
@@ -1385,6 +1453,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 			<reverse-related>Branching Paths</reverse-related>
 			<reverse-related>Captivate</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>+1/+1 Counter FOE</name>
@@ -1419,6 +1488,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 			<reverse-related>Scale the Heights</reverse-related>
 			<reverse-related>Start of an Adventure</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Orb Wizard FOE</name>
@@ -1434,6 +1504,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Luminous in All Colors FOE</name>
@@ -1475,6 +1546,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 			<reverse-related>Voice of the Thicket</reverse-related>
 			<reverse-related>Your Strength is Fading</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Food FOE</name>
@@ -1491,6 +1563,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 			<tablerow>1</tablerow>
 			<reverse-related>Bone Salesman</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Blood FOE</name>
@@ -1507,6 +1580,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 			<tablerow>1</tablerow>
 			<reverse-related>Bone Salesman</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Clue FOE</name>
@@ -1523,6 +1597,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 			<tablerow>1</tablerow>
 			<reverse-related>Bone Salesman</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Goat FOE</name>
@@ -1541,6 +1616,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Carrigol Tender</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Jura FOE</name>
@@ -1556,6 +1632,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<cmc>0</cmc>
 			</prop>
 			<tablerow>0</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Law of Nature FOE</name>
@@ -1573,6 +1650,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 			<tablerow>1</tablerow>
 			<reverse-related>Zoslera Exiled Visionary</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Powerstone Shard FOE</name>
@@ -1587,6 +1665,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<cmc>0</cmc>
 			</prop>
 			<tablerow>1</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Intisuyu&apos;s Armies HOD</name>
@@ -1605,6 +1684,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 			<tablerow>1</tablerow>
 			<reverse-related count="2">Capac Suyay, Grim Seeker</reverse-related>
 			<related>White Soldier 11 HOD</related>
+			<token>1</token>
 		</card>
 		<card>
 			<name>White Soldier 11 HOD</name>
@@ -1625,6 +1705,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 			<reverse-related count="2">Capac Suyay, Grim Seeker</reverse-related>
 			<reverse-related>Intisuyu&apos;s Armies</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>The Sword of Perle HOD</name>
@@ -1646,6 +1727,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 			<reverse-related>Kirsa&apos;s Page</reverse-related>
 			<reverse-related>Beckon Greatness</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Scout HOD</name>
@@ -1663,6 +1745,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>The Gentle Giant HOD</name>
@@ -1682,6 +1765,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 			<tablerow>2</tablerow>
 			<reverse-related>House Negotiations</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Vance&apos;s Claw HOD</name>
@@ -1701,6 +1785,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 			<tablerow>2</tablerow>
 			<reverse-related>Blessing at Graven Laughs</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Lover to All HOD</name>
@@ -1721,6 +1806,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 			<reverse-related>Beckon Greatness</reverse-related>
 			<reverse-related>William&apos;s Page</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>The Diamond of the Nye HOD</name>
@@ -1740,6 +1826,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 			<tablerow>2</tablerow>
 			<reverse-related>Tavern Dealings</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>The Occultist HOD</name>
@@ -1760,6 +1847,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 			<reverse-related>Call of the King</reverse-related>
 			<reverse-related>Wystan&apos;s Page</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Horror HOD</name>
@@ -1779,6 +1867,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 			<tablerow>2</tablerow>
 			<reverse-related>Gosfridus Turnberry</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Army HOD</name>
@@ -1798,6 +1887,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 			<tablerow>2</tablerow>
 			<reverse-related>Left to Wander</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Red Soldier HOD</name>
@@ -1821,6 +1911,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 			<reverse-related>Leon&apos;s Claim</reverse-related>
 			<reverse-related>Hulking Vessel</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Reserves HOD</name>
@@ -1838,6 +1929,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 			<tablerow>1</tablerow>
 			
 			<related>Reserves HOD</related>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Knight all colors HOD</name>
@@ -1861,6 +1953,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 			<reverse-related>Resolute Elk</reverse-related>
 			<reverse-related>Turnberry Overseer</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Defender Soldier HOD</name>
@@ -1878,6 +1971,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Green Knight HOD</name>
@@ -1895,6 +1989,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>The True Heir HOD</name>
@@ -1912,6 +2007,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Treasure HOD</name>
@@ -1931,6 +2027,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 			<reverse-related>Wealthy Slabman</reverse-related>
 			<reverse-related>Writ of Supplies</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Weapon HOD</name>
@@ -1952,6 +2049,7 @@ Equip {2}</text>
 			<reverse-related>Heirloom Sword</reverse-related>
 			<reverse-related>Wealthy Slabman</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Food HOD</name>
@@ -1969,6 +2067,7 @@ Equip {2}</text>
 			<reverse-related>Orcish Shepherd</reverse-related>
 			<reverse-related>Writ of Supplies</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Clue HOD</name>
@@ -1986,6 +2085,7 @@ Equip {2}</text>
 			<reverse-related>Overt Warning</reverse-related>
 			<reverse-related>Writ of Supplies</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Spirit HOD</name>
@@ -2003,6 +2103,7 @@ Equip {2}</text>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Heir Tracking HOD</name>
@@ -2017,6 +2118,7 @@ Equip {2}</text>
 				<cmc>0</cmc>
 			</prop>
 			<tablerow>1</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Faerie Horror ITD</name>
@@ -2033,6 +2135,7 @@ This creature can&apos;t block.</text>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Horror ITD</name>
@@ -2048,6 +2151,7 @@ This creature can&apos;t block.</text>
 				<pt>*/*</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Ringing Noise ITD</name>
@@ -2062,6 +2166,7 @@ This creature can&apos;t block.</text>
 				<cmc>0</cmc>
 			</prop>
 			<tablerow>1</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Illusion ITD</name>
@@ -2078,6 +2183,7 @@ This creature can&apos;t block.</text>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Nightmare ITD</name>
@@ -2095,6 +2201,7 @@ This creature can&apos;t block.</text>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Everywhere ITD</name>
@@ -2111,6 +2218,7 @@ This creature can&apos;t block.</text>
 			<tablerow>0</tablerow>
 			<reverse-related>Strange Wayfarer</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Echo ITD</name>
@@ -2127,6 +2235,7 @@ This creature can&apos;t block.</text>
 			<tablerow>1</tablerow>
 			<reverse-related>The Eternal Echo</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Ancient Forerunner ITD</name>
@@ -2145,6 +2254,7 @@ When this creature enters, it deals 1 damage to each opponent. It deals 2 damage
 			<tablerow>2</tablerow>
 			<reverse-related>Ancient Forerunner</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Cloudscape Observer ITD</name>
@@ -2162,6 +2272,7 @@ When this creature enters, it deals 1 damage to each opponent. It deals 2 damage
 			<tablerow>2</tablerow>
 			<reverse-related>Cloudscape Observer</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Deepmind Oracle ITD</name>
@@ -2180,6 +2291,7 @@ When this creature enters, surveil X, where X is its power.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Deepmind Oracle</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Emergent Anomaly ITD</name>
@@ -2198,6 +2310,7 @@ Whenever this creature attacks, tap up to one target creature.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Emergent Anomaly</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Fracture of Divinity ITD</name>
@@ -2216,6 +2329,7 @@ Whenever an opponent casts a noncreature spell with mana value less than this cr
 			<tablerow>2</tablerow>
 			<reverse-related>Fracture of Divinity</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Lammasu, Dream-Stilled ITD</name>
@@ -2234,6 +2348,7 @@ When this creature enters, return target instant or sorcery card from your grave
 			<tablerow>2</tablerow>
 			<reverse-related>Lammasu, Dream-Stilled</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Mechanised Hunter ITD</name>
@@ -2251,6 +2366,7 @@ When this creature enters, return target instant or sorcery card from your grave
 			<tablerow>2</tablerow>
 			<reverse-related>Mechanised Hunter</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>New-Life Acolyte ITD</name>
@@ -2268,6 +2384,7 @@ When this creature enters, return target instant or sorcery card from your grave
 			<tablerow>2</tablerow>
 			<reverse-related>New-Life Acolyte</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Priest of Perfection ITD</name>
@@ -2285,6 +2402,7 @@ When this creature enters, return target instant or sorcery card from your grave
 			<tablerow>2</tablerow>
 			<reverse-related>Priest of Perfection</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Shifting Silverscape ITD</name>
@@ -2303,6 +2421,7 @@ When this creature enters, return target instant or sorcery card from your grave
 			<tablerow>2</tablerow>
 			<reverse-related>Shifting Silverscape</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Insect ITD</name>
@@ -2319,6 +2438,7 @@ This creature can&apos;t block.</text>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Wonder LAIR</name>
@@ -2334,6 +2454,7 @@ This creature can&apos;t block.</text>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Scar PTN</name>
@@ -2373,6 +2494,7 @@ When a creature you control dies, you may pay {1}. If you do, draw a card.</text
 			<reverse-related>The Frangiclave</reverse-related>
 			<reverse-related>Ritual Daggar</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>God Horror PTN</name>
@@ -2392,6 +2514,7 @@ When a creature you control dies, you may pay {1}. If you do, draw a card.</text
 			<reverse-related>The Red Grail</reverse-related>
 			<reverse-related>Cleric</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Cleric PTN</name>
@@ -2407,6 +2530,7 @@ When a creature you control dies, you may pay {1}. If you do, draw a card.</text
 				<pt>0/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Foretell PTN</name>
@@ -2452,6 +2576,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 			<reverse-related>Noonstone Amulet</reverse-related>
 			<reverse-related>True Blood of Saint Janus</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Angel PTN</name>
@@ -2470,6 +2595,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Guided Crusader</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Worm PTN</name>
@@ -2488,6 +2614,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 			<tablerow>2</tablerow>
 			<reverse-related count="X">The Museum of Worms</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Wolf PTN</name>
@@ -2508,6 +2635,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 			<reverse-related>Wolf-Splinter</reverse-related>
 			<reverse-related>Flames of Emnity</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Vertex Reminder PVR</name>
@@ -2522,6 +2650,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<cmc>0</cmc>
 			</prop>
 			<tablerow>1</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Bird PVR</name>
@@ -2539,6 +2668,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Treasure PVR</name>
@@ -2553,6 +2683,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<cmc>0</cmc>
 			</prop>
 			<tablerow>1</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Dinosaur PVR</name>
@@ -2570,6 +2701,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Fractal Horror PVR</name>
@@ -2585,6 +2717,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<pt>0/0</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Fractal Reflection PVR</name>
@@ -2601,6 +2734,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Horror PVR</name>
@@ -2618,6 +2752,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Human PVR</name>
@@ -2635,6 +2770,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Nilvoid PVR</name>
@@ -2650,6 +2786,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<cmc>0</cmc>
 			</prop>
 			<tablerow>0</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Voidstone Shard VNM</name>
@@ -2689,6 +2826,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 			<reverse-related>Triumphant Riftcaller</reverse-related>
 			<reverse-related>Waterspout</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Reformed Rift VNM</name>
@@ -2706,6 +2844,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 			<tablerow>0</tablerow>
 			<reverse-related>Raze the Clanless</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Mountain VNM</name>
@@ -2723,6 +2862,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 			<tablerow>0</tablerow>
 			<reverse-related>Warped Exploration</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Subdued Rift VNM</name>
@@ -2746,6 +2886,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 			<reverse-related>Avlod Watchers</reverse-related>
 			<reverse-related>Outlands Riftbearer</reverse-related>
 			<related>None</related>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Hollow Graze VNM</name>
@@ -2764,6 +2905,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 			<tablerow>3</tablerow>
 			<reverse-related>Malevolent Naginata</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Ever Vigilant VNM</name>
@@ -2784,6 +2926,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 			<reverse-related>Outlands Protector</reverse-related>
 			<reverse-related>Outlands Wanderer</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Steady Growth VNM</name>
@@ -2804,6 +2947,7 @@ Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
 			<reverse-related>Keeper of Calm</reverse-related>
 			<reverse-related>Scout&apos;s Bow</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Prepared Strike VNM</name>
@@ -2824,6 +2968,7 @@ Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
 			<reverse-related>Flaming Iron</reverse-related>
 			<reverse-related>Minotaur Outlander</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>In the Moment VNM</name>
@@ -2844,6 +2989,7 @@ Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
 			<reverse-related>Pinnacle of Vinimroth</reverse-related>
 			<reverse-related>Mordel Excursionist</reverse-related>
 			<related>Can Be Cast From Exile EXPT</related>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Reshape Will VNM</name>
@@ -2865,6 +3011,7 @@ Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
 			<reverse-related>Skillful Blade</reverse-related>
 			<reverse-related>Windshaper Drake</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Readied Assault VNM</name>
@@ -2885,6 +3032,7 @@ Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
 			<reverse-related>Warforged Herald</reverse-related>
 			<reverse-related>Chromaboon Blade</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Military Training VNM</name>
@@ -2906,6 +3054,7 @@ Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
 			<reverse-related>Bruin Challenger</reverse-related>
 			<reverse-related>Bruin Mentor</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>White Drake VNM</name>
@@ -2926,6 +3075,7 @@ Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
 			<reverse-related>Crumbling Plains</reverse-related>
 			<reverse-related>Drake Rider</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Icebound Reinforcements Copy VNM</name>
@@ -2946,6 +3096,7 @@ Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Icebound Reinforcements</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Luminous VNM</name>
@@ -2991,6 +3142,7 @@ Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
 			<reverse-related>Verem-Volcano Rumbler</reverse-related>
 			<reverse-related>Weight of Betrayal</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Warped Exploration VNM</name>
@@ -3009,6 +3161,7 @@ Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
 			<reverse-related>Wings of New Horizons</reverse-related>
 			<reverse-related>Multaphs Respites Spellbook</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Blue Drake VNM</name>
@@ -3031,6 +3184,7 @@ This can&apos;t block.</text>
 			<reverse-related>Outlands Bulwark</reverse-related>
 			<reverse-related>Path of the Roost</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Plains VNM</name>
@@ -3048,6 +3202,7 @@ This can&apos;t block.</text>
 			<tablerow>0</tablerow>
 			<reverse-related>Warped Exploration</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Island VNM</name>
@@ -3065,6 +3220,7 @@ This can&apos;t block.</text>
 			<tablerow>0</tablerow>
 			<reverse-related>Warped Exploration</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Swamp VNM</name>
@@ -3082,6 +3238,7 @@ This can&apos;t block.</text>
 			<tablerow>0</tablerow>
 			<reverse-related>Warped Exploration</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Forest VNM</name>
@@ -3099,6 +3256,7 @@ This can&apos;t block.</text>
 			<tablerow>0</tablerow>
 			<reverse-related>Warped Exploration</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Harsh Reprise VNM</name>
@@ -3118,6 +3276,7 @@ This can&apos;t block.</text>
 			<reverse-related>Avakin Avenger</reverse-related>
 			<reverse-related>Avakin Mentor</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Cut from Void VNM</name>
@@ -3139,6 +3298,7 @@ This can&apos;t block.</text>
 			<reverse-related>Sage of Truths</reverse-related>
 			<reverse-related>Storm Bearer</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Sanctum Reminder VNM</name>
@@ -3206,6 +3366,7 @@ You can move cards in and out of your sanctum in sideboarding, provided that all
 			<reverse-related>Flashing Path</reverse-related>
 			<reverse-related>Shimmering Path</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Pathbound VNM</name>
@@ -3270,6 +3431,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 			<reverse-related>Unstable Rift</reverse-related>
 			<reverse-related>Verem-Volcano Keeper</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Fault VNM</name>
@@ -3286,6 +3448,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 			<tablerow>0</tablerow>
 			<reverse-related>Warped Exploration</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Icon VNM</name>
@@ -3304,6 +3467,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 			<tablerow>2</tablerow>
 			<reverse-related>Splendid Genesis</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Black Wurm VNM</name>
@@ -3324,6 +3488,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 			<reverse-related>Outlands Bulwark</reverse-related>
 			<reverse-related>Path of the Rift</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Green Wurm VNM</name>
@@ -3346,6 +3511,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 			<reverse-related>Bruin Wanderer</reverse-related>
 			<reverse-related>Path of the Mighty</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Red Wurm VNM</name>
@@ -3369,6 +3535,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 			<reverse-related>Passage Patroller</reverse-related>
 			<reverse-related>Path of the Brood</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>White Wurm VNM</name>
@@ -3392,6 +3559,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 			<reverse-related>Path of the Proud</reverse-related>
 			<reverse-related count="2">Triumphant Entrance</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Trace Reminder VNM</name>
@@ -3406,6 +3574,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<cmc>0</cmc>
 			</prop>
 			<tablerow>1</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Icon 22 VNM</name>
@@ -3422,6 +3591,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Dragon WAW</name>
@@ -3440,6 +3610,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 			<tablerow>2</tablerow>
 			<reverse-related>Starstruck Skitter</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Memory of Home WAW</name>
@@ -3457,6 +3628,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 			<tablerow>1</tablerow>
 			<reverse-related>Norr, Ajha&apos;s Lieutenant</reverse-related>
 			<related>None</related>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Spirit Token WAW</name>
@@ -3481,6 +3653,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 			<reverse-related>Wish for Destruction</reverse-related>
 			<reverse-related>Wish for Power</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Story of a Dead Plane WAW</name>
@@ -3499,6 +3672,7 @@ Sacrifice this enchantment: Until end of turn, lands you control gain &quot;{T}:
 			<tablerow>1</tablerow>
 			<reverse-related>Dhere, Preserver of Memories</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Wonder Archon WAW</name>
@@ -3518,6 +3692,7 @@ Sacrifice this enchantment: Until end of turn, lands you control gain &quot;{T}:
 			<reverse-related>Memory Lane</reverse-related>
 			<reverse-related>Cathexis, Soul Aspect</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>New Tensuo Luminary WAW</name>
@@ -3538,6 +3713,7 @@ Sacrifice this enchantment: Until end of turn, lands you control gain &quot;{T}:
 			<tablerow>2</tablerow>
 			<reverse-related>New Tensuo Luminary</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Lakebed Wrudge WAW</name>
@@ -3559,6 +3735,7 @@ Sacrifice this enchantment: Until end of turn, lands you control gain &quot;{T}:
 			<tablerow>2</tablerow>
 			<reverse-related>Lakebed Wrudge</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Anything and Everything WAW</name>
@@ -3581,6 +3758,7 @@ Impetus {W}{U}{B}{R}{G} (You may cast this from your graveyard as a sorcery with
 			<related>Beast Token</related>
 			
 			<related>Beast WAW</related>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Beast WAW</name>
@@ -3597,6 +3775,7 @@ Impetus {W}{U}{B}{R}{G} (You may cast this from your graveyard as a sorcery with
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Cloudeater Drake WAW</name>
@@ -3618,6 +3797,7 @@ When this creature enters, draw a card.
 			<tablerow>2</tablerow>
 			<reverse-related>Cloudeater Drake</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Copy WAW</name>
@@ -3633,6 +3813,7 @@ When this creature enters, draw a card.
 				<colors>W</colors>
 			</prop>
 			<tablerow>1</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Demon WAW</name>
@@ -3652,6 +3833,7 @@ This creature can&apos;t block.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Tenuous Partners</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Flowering Germinus WAW</name>
@@ -3672,6 +3854,7 @@ This creature can&apos;t block.</text>
 			<tablerow>2</tablerow>
 			<reverse-related>Flowering Germinus</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Gilded Ancient WAW</name>
@@ -3693,6 +3876,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 			<tablerow>2</tablerow>
 			<reverse-related>Gilded Ancient</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Ilcan Entrancer WAW</name>
@@ -3715,6 +3899,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 			<related>Beast Token</related>
 			
 			<related>Beast WAW</related>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Ilcan Keyseeker WAW</name>
@@ -3733,6 +3918,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Kindly Skywinder WAW</name>
@@ -3753,6 +3939,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 			<tablerow>2</tablerow>
 			<reverse-related>Kindly Skywinder</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Music of the Deepholt WAW</name>
@@ -3773,6 +3960,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 			<tablerow>2</tablerow>
 			<reverse-related>Music of the Deepholt</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>New Tensuo Clergy WAW</name>
@@ -3793,6 +3981,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 			<tablerow>2</tablerow>
 			<reverse-related>New Tensuo Clergy</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>New Tensuo Vanguard WAW</name>
@@ -3813,6 +4002,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 			<tablerow>2</tablerow>
 			<reverse-related>New Tensuo Vanguard</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Wonder WAW</name>
@@ -3842,6 +4032,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 			<reverse-related>New Tensuo Calmkeeper</reverse-related>
 			<reverse-related count="2">Polymorphic Wispweaver</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Borderholt Herdcaller WAW</name>
@@ -3863,6 +4054,7 @@ Impetus {4}{G} (You may cast this from your graveyard as a sorcery with only the
 			<related>Beast Token</related>
 			
 			<related>Beast WAW</related>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Redefinition WAW</name>
@@ -3882,6 +4074,7 @@ Impetus {4}{G} (You may cast this from your graveyard as a sorcery with only the
 			</prop>
 			<tablerow>2</tablerow>
 			<related>Redefinition Token</related>
+			<token>1</token>
 		</card>
 		<card>
 			<name>Stardust Haze WAW</name>
@@ -3903,6 +4096,7 @@ When this enchantment enters, exile target nonland permanent you don&apos;t cont
 			<tablerow>2</tablerow>
 			<reverse-related>Stardust Haze</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Ageless Caretaker WAW</name>
@@ -3924,6 +4118,7 @@ This creature gets +1/+0 for each other creature you control.
 			<tablerow>2</tablerow>
 			<reverse-related>Ageless Caretaker</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>New Tensuo Physician WAW</name>
@@ -3944,6 +4139,7 @@ This creature gets +1/+0 for each other creature you control.
 			<tablerow>2</tablerow>
 			<reverse-related>New Tensuo Physician</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Vrep WAW</name>
@@ -3965,6 +4161,7 @@ Augmented – At the beginning of combat on your turn, if you&apos;ve spent {W}{
 			<tablerow>2</tablerow>
 			<reverse-related>Vrep</reverse-related>
 			
+			<token>1</token>
 		</card>
 		<card>
 			<name>Worldsoul Ambassador WAW</name>
@@ -3984,6 +4181,7 @@ Augmented – At the beginning of combat on your turn, if you&apos;ve spent {W}{
 			<related>Beast Token</related>
 			
 			<related>Beast WAW</related>
+			<token>1</token>
 		</card>
 	</cards>
 </cockatrice_carddatabase>

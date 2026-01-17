@@ -342,6 +342,10 @@ def render_card(card, tokens, /, *, back=False, flipped=False, token=False):
 	if '!tapped' in card['notes']:
 		card_string += f'''
 			<cipt>1</cipt>'''
+		
+	if token:
+		card_string += f'''
+			<token>1</token>'''
 
 	card_string += '''
 		</card>'''
