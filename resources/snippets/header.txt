@@ -1,4 +1,4 @@
-<img src="img/header/menu.png" class="header-control" onclick="toggleHeader()">
+<img src="/img/header/menu.png" class="header-control" onclick="toggleHeader()">
 <div class="header">
 	<div class="search-grid">
 		<a href="/"><img class="sg-logo" src="/img/banner.png"></a>

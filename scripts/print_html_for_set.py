@@ -379,6 +379,33 @@ def generateHTML(code):
 	.card-image:hover {
 		filter: brightness(0.7);
 	}
+	@media (max-device-width: 750px) {
+		.image-grid-container {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.banner-container {
+			grid-template-rows: 1fr 1fr;
+			grid-template-columns: none;
+			justify-items: center;
+			align-items: center;
+			gap: 0;
+		}
+
+		.select-text {
+			justify-self: center;
+			font-size: 24px;
+		}
+
+		select {
+			font-size: 20px;
+		}
+
+		.set-banner {
+			justify-self: center;
+			width: auto;
+		}
+	}
 </style>
 <body>
 	'''
