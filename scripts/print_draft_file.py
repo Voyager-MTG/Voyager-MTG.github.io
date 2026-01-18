@@ -10,6 +10,12 @@ def filtered(card, filters):
 			return True
 	return False
 
+def customFilter(card, _filter):
+	cardProp = card[_filter[0]]
+	_match = _filter[1]
+
+	return re.findall(_match, cardProp)
+
 def generateFile(code):
 	with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8-sig') as j:
 		set_data = json.load(j)
@@ -43,6 +49,8 @@ def generateFile(code):
 			slot_name = slot['name']
 			if slot_name == 'wildcard' and not filtered(card, filters) and not 'Basic' in card['type'] and not 'token' in card['shape']:
 				booster[slot_name].append(card)
+			elif slot.get('customFilter'):
+				if customFilter(card, slot['filter']): booster[slot_name].append(card)
 			elif not slot['custom']:
 				if (((card['rarity'] == 'mythic' and slot_name == 'rare') or card['rarity'] == slot_name) or slot_name == "cube") and not filtered(card, filters) and not 'Basic' in card['type'] and not 'token' in card['shape']:
 					booster[slot_name].append(card)
