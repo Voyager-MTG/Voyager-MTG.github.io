@@ -5,6 +5,8 @@
 	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
 	<link rel="stylesheet" href="src/css/mana.css">
 	<link rel="stylesheet" href="/src/css/header.css">
+	<link rel="stylesheet" href="/src/css/modal.css">
+	<link rel="stylesheet" href="/src/css/theme.css">
 </head>
 <style>
 	select {
@@ -805,7 +807,6 @@
 			for (const result of draft_headers) {
 				const copies = parseInt(result[0].match(/\((.*?)\)/g)[0].split("(")[1].split(")")[0]); // match text between ( and ) -- do the split thing bc js regex doesnt let me grab the group for some reason????????
 				// -- this is useless but if needed, const name = result.groups[0].match(/\[(.*)\(/g); // match text before (
-				console.log
 				draft_slots[result[0]] = copies;
 				slot_indexes[result[0]] = current_slot_index;
 				current_slot_index += copies;
@@ -847,7 +848,7 @@
 					}
 				}
 			}
-
+			
 			p1p1_cards = p1p1_object;
 		}
 
@@ -1271,7 +1272,7 @@
 			content_header.className = "coll-league-set-header";
 
 			const total_cost = document.createElement("span");
-			total_cost.className = "total-cost text";
+			total_cost.className = "total-cost";
 			total_cost.id = "total-cost";
 			total_cost.innerText = `Points spent: 0/${total_points}`;
 
@@ -1364,7 +1365,7 @@
 				}
 
 				const cost_text = document.createElement("span");
-				cost_text.className = "cost-text text";
+				cost_text.className = "cost-text";
 				cost_text.innerText = `Cost: ${set_points}`;
 
 				content_container.appendChild(set_logo);
@@ -1411,7 +1412,7 @@
 			content_header.className = "coll-league-set-header";
 
 			const total_cost = document.createElement("span");
-			total_cost.className = "total-cost text";
+			total_cost.className = "total-cost";
 			total_cost.id = "total-cost";
 			total_cost.innerText = `Points spent: 0/${total_points}`;
 
