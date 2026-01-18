@@ -12,6 +12,7 @@
 </head>
 
 <body>
+	<img src="img/header/menu.png" class="header-control" onclick="toggleHeader()">
 	<div class="header">
 		<div class="search-grid">
 			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
@@ -137,6 +138,8 @@
 			const sidebar_container = document.createElement("div");
 
 			sidebar.children[1].remove();
+
+			container.innerHTML = '<span class="text note-text">Note: The compendium is semi-auto-generated with some manual intervention. Please report any errors to the captains.</span>'
 
 			for (const header in compendium) {
 				const header_ele = document.createElement("h1");

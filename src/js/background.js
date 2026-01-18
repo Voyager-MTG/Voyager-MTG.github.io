@@ -104,6 +104,11 @@ function defaultSetting(name, default_) {
 	}
 }
 
+function toggleHeader() {
+	const header = document.querySelector('.header');
+	header.style.transform = header.style.transform === '' ? 'translate(0)' : '';
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
 	defaultSetting('settings.autosave', 'On');
 	defaultSetting('settings.searchalias', 'On');

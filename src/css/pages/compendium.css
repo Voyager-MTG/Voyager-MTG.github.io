@@ -110,3 +110,23 @@ hr {
 .img-container {
 	align-self: auto;
 }
+
+.note-text {
+	top: 80px;
+	position: absolute;
+}
+
+@media (max-device-width: 750px) {
+	.compendium-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.page-container {
+		grid-template-columns: 0.6fr 1fr;
+	}
+
+	.sidebar {
+		width: 80%;
+		font-size: 1.6em;
+	}
+}
