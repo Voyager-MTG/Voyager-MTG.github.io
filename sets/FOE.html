@@ -354,7 +354,6 @@
 	.card-image:hover {
 		filter: brightness(0.7);
 	}
-
 	@media (max-device-width: 750px) {
 		.image-grid-container {
 			grid-template-columns: 1fr 1fr;
@@ -385,37 +384,37 @@
 </style>
 <body>
 	<img src="/img/header/menu.png" class="header-control" onclick="toggleHeader()">
-	<div class="header">
-		<div class="search-grid">
-			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-			<img class="sg-icon" src="/img/header/search.png">
-			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false"
-				autocomplete="off" autocorrect="off" spellcheck="false">
-			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
-			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
-			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
-			<div class="community"><a href="/community"><img src="/img/header/community.png"
-						class="sg-icon">Community<b>⮟</b></a>
-				<div class="community-dropdown">
-					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/header/community.png">Users</a>
-					<a href="/community?tab=decks" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/header/deck.png">Decks</a>
-					<a href="/community?tab=events" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/swords.png">Events</a>
-					<a href="/community?tab=cards" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/header/sets.png">Cards</a>
-				</div>
-			</div>
-			<a href="/settings" class="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
-			<a href="/account" class="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
-			<div class="mobile-buttons">
-				<a href="/search"><img src="/img/header/search.png" class="sg-icon"></a>
-				<a href="/settings"><img src="/img/header/settings.png" class="sg-icon"></a>
-				<a href="/account"><img src="/img/header/account.png" class="sg-icon"></a>
+<div class="header">
+	<div class="search-grid">
+		<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+		<img class="sg-icon" src="/img/header/search.png">
+		<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false"
+			autocomplete="off" autocorrect="off" spellcheck="false">
+		<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
+		<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
+		<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+		<div class="community"><a href="/community"><img src="/img/header/community.png"
+					class="sg-icon">Community<b>⮟</b></a>
+			<div class="community-dropdown">
+				<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
+						src="img/header/community.png">Users</a>
+				<a href="/community?tab=decks" class="community-dropdown-item"><img class="dropdown-icon"
+						src="img/header/deck.png">Decks</a>
+				<a href="/community?tab=events" class="community-dropdown-item"><img class="dropdown-icon"
+						src="img/swords.png">Events</a>
+				<a href="/community?tab=cards" class="community-dropdown-item"><img class="dropdown-icon"
+						src="img/header/sets.png">Cards</a>
 			</div>
 		</div>
+		<a href="/settings" class="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+		<a href="/account" class="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
+		<div class="mobile-buttons">
+			<a href="/search"><img src="/img/header/search.png" class="sg-icon"></a>
+			<a href="/settings"><img src="/img/header/settings.png" class="sg-icon"></a>
+			<a href="/account"><img src="/img/header/account.png" class="sg-icon"></a>
+		</div>
 	</div>
+</div>
 	<div class="banner">
 		<div class="banner-container">
 			<div class="set-banner" id="set-banner">

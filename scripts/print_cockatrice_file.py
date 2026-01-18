@@ -3,6 +3,8 @@ import json
 import re
 from datetime import datetime
 
+uuid = 0
+
 def get_picurl(card, back=False):
 	return (
 		f'https://voyager-mtg.github.io/sets/{card['set']}-files/img/' +
@@ -257,6 +259,7 @@ def format_auto_related(related):
 	return [f"<related{getCount(card[1])}>{card[0]}</related>" for card in related]
 
 def render_card(card, tokens, /, *, back=False, flipped=False, token=False):
+	global uuid
 	is_split = 'split' in card['shape'] or 'aftermath' in card['shape']
 	is_two_cards = is_split or 'adventure' in card['shape']
 	suffix = '2' if back or flipped else ''
@@ -314,10 +317,12 @@ def render_card(card, tokens, /, *, back=False, flipped=False, token=False):
 		<card>
 			<name>{xml_escape(card_name)}</name>
 			<text>{re.sub(r'\[/?i\]', '', xml_escape(get_text(card, back, flipped)))}</text>
-			<set rarity="{'rare' if card['rarity'] == 'cube' else card['rarity']}" picurl="{xml_escape(get_picurl(card, back))}" num="{get_number(card, back)}">{xml_escape(card['set'])}</set>
+			<set rarity="{'rare' if card['rarity'] == 'cube' else card['rarity']}" picurl="{xml_escape(get_picurl(card, back))}" num="{get_number(card, back)}" uuid="{uuid}">{xml_escape(card['set'])}</set>
 			<prop>{props}
 			</prop>
 			<tablerow>{get_tablerow(card_type)}</tablerow>'''
+
+	uuid += 1
 
 	if flipped:
 		card_string += '''

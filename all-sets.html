@@ -1,87 +1,15 @@
 <html>
-	<head>
-	  <title>All Sets</title>
-	  <link rel="icon" type="image/x-icon" href="/img/header/sets.png">
-	  <link rel="stylesheet" href="/src/css/mana.css">
-	  <link rel="stylesheet" href="/src/css/header.css">
-	  <link rel="stylesheet" href="/src/css/theme.css">
-	</head>
-	<style>
-		@font-face {
-			font-family: 'Beleren Small Caps';
-			src: url('/resources/beleren-caps.ttf');
-		}
-		@font-face {
-			font-family: Beleren;
-			src: url('/resources/beleren.ttf');
-		}
-		body {
-			font-family: 'Helvetica', 'Arial', sans-serif;
-			overscroll-behavior: none;
-			margin: 0px;
-			background-color: #f3f3f3;
-			font-size: 20px;
-			padding-bottom: 30px;
-		}
-		a {
-			text-decoration: none;
-			color: #171717;
-		}
-		.set-table {
-			width: 60%;
-			max-width: 1000px;
-			display: grid;
-			grid-template-columns: 1fr;
-			padding-top: 20px;
-			margin: auto;
-		}
-		.set-header-row {
-			width: 100%;
-			display: grid;
-			grid-template-columns: 0.5fr 2.5fr 0.5fr 0.5fr;
-			gap: 5px;
-			font-weight: bold;
-			padding-bottom: 10px;
-		}
-		.set-row {
-			height: 6em;
-			width: 100%;
-			display: grid;
-			grid-template-columns: 0.5fr 2.5fr 0.5fr 0.5fr;
-			gap: 5px;
-			align-items: center;
-			border-top: 1px solid #171717;
-			color: var(--popout-text-color);
-			background-color: color-mix(in srgb, var(--light-accent), transparent 30%);
-			transition: 0.2s;
-		}
-		.set-row:hover {
-			background-color: color-mix(in srgb, var(--mid-accent), transparent 30%);
-		}
-		.set-row:nth-child(2n) {
-		  background-color: color-mix(in srgb, var(--bg-color), transparent 30%);
-		}
-		.set-row:nth-child(2n):hover {
-			background-color: color-mix(in srgb, var(--light-accent), transparent 30%);
-		}
-		.set-row img {
-			width: 70%;
-			justify-self: center;
-		}
-		.set-title {
-			font-family: Beleren;
-			letter-spacing: .02em;
-			font-size: 22px;
-		}
-		.set-group {
-			font-family: Beleren Small Caps;
-			text-align: center;
-			font-size: 40px;
-			padding-top: 20px;
-		}
-	</style>
-	<body>
-		<img src="img/header/menu.png" class="header-control" onclick="toggleHeader()">
+
+<head>
+	<title>All Sets</title>
+	<link rel="icon" type="image/x-icon" href="/img/header/sets.png">
+	<link rel="stylesheet" href="/src/css/mana.css">
+	<link rel="stylesheet" href="/src/css/header.css">
+	<link rel="stylesheet" href="/src/css/theme.css">
+	<link rel="stylesheet" href="/src/css/pages/all-sets.css">
+</head>
+
+<body>
 	<div class="header">
 		<div class="search-grid">
 			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
@@ -91,7 +19,7 @@
 			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
 			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
 			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
-			<div class="community"><a href="/community"><img src="/img/header/community.png"
+			<div class="community"><a href="/community" id="account-link"><img src="/img/header/community.png"
 						class="sg-icon">Community<b>⮟</b></a>
 				<div class="community-dropdown">
 					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
@@ -104,95 +32,19 @@
 							src="img/header/sets.png">Cards</a>
 				</div>
 			</div>
-			<a href="/settings" class="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
-			<a href="/account" class="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
-			<div class="mobile-buttons">
-				<a href="/search"><img src="/img/header/search.png" class="sg-icon"></a>
-				<a href="/settings"><img src="/img/header/settings.png" class="sg-icon"></a>
-				<a href="/account"><img src="/img/header/account.png" class="sg-icon"></a>
-			</div>
+			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+			<a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
 		</div>
 	</div>
-			<div class="set-group"></div>
-		
-			<div class="set-table text">
-			<div class="set-header-row">
-				<div></div> <!-- empty div for spacing -->
-				<div>NAME</div>
-				<div>CODE</div>
-				<div>CARDS</div>
-			</div>
-		
-			<a href="/sets/AKT" class="set-row"> 
-				<img src="/sets/AKT-files/icon.png">
-				<div class="set-title">Akellan Transcendence</div>
-				<div>AKT</div>
-				<div>286</div>
-			</a>
-			
-			<a href="/sets/EXPT" class="set-row"> 
-				<img src="/sets/EXPT-files/icon.png">
-				<div class="set-title">Voyager Foundations</div>
-				<div>EXPT</div>
-				<div>114</div>
-			</a>
-			
-			<a href="/sets/FOE" class="set-row"> 
-				<img src="/sets/FOE-files/icon.png">
-				<div class="set-title">Frontiers of Eternity</div>
-				<div>FOE</div>
-				<div>401</div>
-			</a>
-			
-			<a href="/sets/HOD" class="set-row"> 
-				<img src="/sets/HOD-files/icon.png">
-				<div class="set-title">Houses of Dewold</div>
-				<div>HOD</div>
-				<div>324</div>
-			</a>
-			
-			<a href="/sets/ITD" class="set-row"> 
-				<img src="/sets/ITD-files/icon.png">
-				<div class="set-title">Itera: Into the Dream</div>
-				<div>ITD</div>
-				<div>185</div>
-			</a>
-			
-			<a href="/sets/LAIR" class="set-row"> 
-				<img src="/sets/LAIR-files/icon.png">
-				<div class="set-title">Secret Lair Drops</div>
-				<div>LAIR</div>
-				<div>47</div>
-			</a>
-			
-			<a href="/sets/PTN" class="set-row"> 
-				<img src="/sets/PTN-files/icon.png">
-				<div class="set-title">Port Noon: Occult Islands of Vespera</div>
-				<div>PTN</div>
-				<div>259</div>
-			</a>
-			
-			<a href="/sets/PVR" class="set-row"> 
-				<img src="/sets/PVR-files/icon.png">
-				<div class="set-title">Primivir</div>
-				<div>PVR</div>
-				<div>311</div>
-			</a>
-			
-			<a href="/sets/VNM" class="set-row"> 
-				<img src="/sets/VNM-files/icon.png">
-				<div class="set-title">Vinimroth Eternities</div>
-				<div>VNM</div>
-				<div>307</div>
-			</a>
-			
-			<a href="/sets/WAW" class="set-row"> 
-				<img src="/sets/WAW-files/icon.png">
-				<div class="set-title">The Wonderlands’ Wishes</div>
-				<div>WAW</div>
-				<div>257</div>
-			</a>
-			</div>
+	<div class="page-container" id="page-container">
+		<span class="area-header text">Sets</span>
+		<hr class="text-bg top-dividder">
+		<div class="set-area" id="set-area">
+		</div>
+		<!--<span class="area-header text">Collection league packs</span>
+		<div class="pack-area" id="pack-area">
+		</div>-->
+	</div>
 	<script src="src/js/background.js"></script>
 	<script>
 		let card_list_arrayified = [];
@@ -201,30 +53,112 @@
 
 		document.addEventListener("DOMContentLoaded", async function () {
 			await fetch('/lists/all-cards.json')
-					.then(response => response.json())
-					.then(json => {
-						card_list = json;
+				.then(response => response.json())
+				.then(json => {
+					card_list = json;
 				}).catch(error => console.error('Error:', error));
 
-				await fetch('/resources/replacechars.txt')
-					.then(response => response.text())
-					.then(text => {
-						specialchars = text; 
+			await fetch('/lists/all-sets.json')
+				.then(response => response.json())
+				.then(json => {
+					set_list = json;
 				}).catch(error => console.error('Error:', error));
 
-				card_list_arrayified = card_list.cards;
+			await fetch('/resources/replacechars.txt')
+				.then(response => response.text())
+				.then(text => {
+					specialchars = text;
+				}).catch(error => console.error('Error:', error));
 
+			card_list_arrayified = card_list.cards;
+			set_list_arrayified = set_list.sets;
+			// prepareGradients();
+
+			generateHTML();
 		});
+
+		function generateHTML() {
+			generateSetHTML();
+		}
+
+		function generateSetHTML() {
+			let set_counts = {}
+			for (const card of card_list_arrayified) {
+				set_counts[card.set] = set_counts[card.set] ? set_counts[card.set] + 1 : 1;
+			}
+			let n = 0;
+			let flag = true;
+			while (n < set_list_arrayified.length) {
+				let i;
+				for (let i = 0; i < 7 && n + i < set_list_arrayified.length; i++) {
+					const set = set_list_arrayified[n + i];
+					document.getElementById("set-area").appendChild(generateSetIcon(set));
+				}
+				for (let j = 0; j < (n + 7 - set_list_arrayified.length); j++) {
+					document.getElementById("set-area").appendChild(document.createElement("div"));
+				}
+				for (let i = 0; i < 7 && n + i < set_list_arrayified.length; i++) {
+					const set = set_list_arrayified[n + i];
+					document.getElementById("set-area").appendChild(generateSetInfo(set, set_counts));
+				}
+				n += 7;
+			}
+		}
+
+		function generateSetIcon(set) {
+			const container = document.createElement("div");
+			container.className = "set-icon-container";
+
+			const link = document.createElement("a");
+			link.href = `/sets/${set.set_code}`;
+
+			const set_icon = document.createElement("div");
+			set_icon.className = "set-icon";
+
+			const set_icon_img = document.createElement("img");
+			set_icon_img.src = `/sets/${set.set_code}-files/icon.png`;
+			set_icon_img.title = set.set_name;
+
+			const set_icon_name = document.createElement("div");
+			set_icon_name.className = "set-icon-name text";
+			set_icon_name.innerText = set.set_name;
+			set_icon_name.id = set.set_name;
+
+			set_icon.appendChild(set_icon_img);
+			link.appendChild(set_icon);
+			link.appendChild(set_icon_name);
+			container.appendChild(link);
+
+			return container;
+		}
+
+		function generateSetInfo(set, set_counts) {
+			const container = document.createElement("div");
+			container.className = "set-info-container";
+
+			const divider = document.createElement("hr");
+			divider.className = "text-bg";
+
+			const set_icon_info = document.createElement("div");
+			set_icon_info.className = "set-icon-info text";
+			set_icon_info.innerHTML = `${set.set_code} - ${set_counts[set.set_code]} cards<br>By ${set.designer}`;
+
+			container.appendChild(divider);
+			container.appendChild(set_icon_info);
+
+			return container;
+		}
 
 		function isDecimal(char) {
 			return char >= '0' && char <= '9';
 		}
 
-		document.getElementById("search").addEventListener("keypress", function(event) {
-		  if (event.key === "Enter") {
+
+		document.getElementById("search").addEventListener("keypress", function (event) {
+			if (event.key === "Enter") {
 				event.preventDefault();
 				search();
-		  }
+			}
 		});
 
 		function search() {
@@ -234,21 +168,22 @@
 		}
 
 		function randomCard() {
-				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
-				let random_card = card_list_arrayified[i];
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
 
-				const url = new URL('card', window.location.origin);
-				const params = {
-					set: random_card.set,
-					num: random_card.number,
-					name: random_card.card_name
-				}
-				for (const key in params) {
-					url.searchParams.append(key, params[key]);
-				}
-
-				window.location.href = url;
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
 			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+
+			window.location.href = url;
+		}
 	</script>
 </body>
+
 </html>
