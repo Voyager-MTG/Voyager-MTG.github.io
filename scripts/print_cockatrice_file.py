@@ -66,6 +66,8 @@ def get_related(notes, instruction, tag):
 				continue
 
 			name, num = match.groups()
+			if num == 'attach': continue
+			
 			if not num:
 				extra = ''
 			elif num.isdecimal() or num == "x" or num == "X":
@@ -168,11 +170,12 @@ def convertColors(c):
 		"red"   : "R",
 		"green" : "G",
 		"silver": "I",
+		"all colors": "WUBRGI"
 	}
 	for k, v in colormap.items():
 		s += v if k in c else ""
 	
-	return s if s else None
+	return s
 
 def getToken(tokens, type = None, colors = None, pt = None, set = None):
 	if type == "" and colors == "":
@@ -200,7 +203,8 @@ TOKENMATCHES = {
 	"Luminous VNM": "(L|l)uminous",
 	"Reserves HOD": "(I|i)n your reserves",
 	"~ WAW": "Reflect {[0-9WUBRGIXYZ]+?}",
-	"~ ITD": "Iterate"
+	"~ ITD": "Iterate",
+	"Cleric PTN": "Induct"
 }
 
 def auto_related(card, tokens):
@@ -242,6 +246,7 @@ def auto_related(card, tokens):
 
 				count = englishToNumber(tokenMatch[0])
 				token_to_script = getToken(tokens, token_type, token_colors, pt, card["set"])
+				if "The Gardener" in card["card_name"]: print(token_to_script, token_type, token_colors, pt)
 
 				if token_type == "":
 					token_name = re.findall("[N|n]amed (.*?) (with|that)", str(tokenMatch[17]))
@@ -295,13 +300,11 @@ def render_card(card, tokens, /, *, back=False, flipped=False, token=False):
 				<manacost>{xml_escape(mana_cost)}</manacost>
 				<cmc>{cmc}</cmc>'''
 
-	if len(card[f'color{suffix}']):
-		props += f'''
+	props += f'''
 				<colors>{card[f'color{suffix}']}</colors>'''
 
 	color_identity = card['color_identity'].replace('C', '')
-	if len(color_identity):
-		props += f'''
+	props += f'''
 				<coloridentity>{color_identity}</coloridentity>'''
 
 	if len(card[f'pt{suffix}']):
