@@ -23,7 +23,7 @@
 
 .card-text div {
 	white-space: normal;
-	font-size: 15px;
+	font-size: 15em;
 	padding-bottom: 10px;
 	padding-left: 12px;
 	padding-right: 12px;
@@ -31,7 +31,7 @@
 }
 
 .card-text .name-cost {
-	font-size: 20px;
+	font-size: 20em;
 	white-space: pre-wrap;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .card-text .type {
-	font-size: 16px;
+	font-size: 16em;
 }
 
 .card-text .pt {
@@ -60,7 +60,7 @@
 
 .card-text .related {
 	margin-top: auto;
-	font-size: 12px;
+	font-size: 12em;
 	font-weight: bold;
 	padding-bottom: 0px;
 }
@@ -81,7 +81,7 @@
 
 .card-text .printings {
 	margin-top: auto;
-	font-size: 13px;
+	font-size: 13em;
 	font-weight: bold;
 	padding-bottom: 0px;
 }
@@ -164,4 +164,22 @@
 
 .hidden {
 	display: none;
+}
+
+.card-text {
+	font-size: 1px; /* set em to be px */
+}
+
+@media (max-device-width: 750px) {
+	.card-text {
+		font-size: 1.7px;
+	}
+
+	.img-container {
+		width: 100%;
+	}
+
+	.card-image {
+		max-width: none;
+	}
 }

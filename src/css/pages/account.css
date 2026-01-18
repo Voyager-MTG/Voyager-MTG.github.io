@@ -1,7 +1,3 @@
-.search-grid {
-	justify-content: center;
-}
-
 .sg-icon {
 	cursor: pointer;
 }
@@ -245,4 +241,10 @@ hr {
 a {
 	outline: none;
 	text-decoration: none;
+}
+
+@media (max-device-width: 750px) {
+	.format-container {
+		grid-template-columns: 1fr 1fr;
+	}
 }

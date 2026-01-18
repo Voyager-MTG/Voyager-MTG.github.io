@@ -194,3 +194,37 @@ ul {
 .deck-container:hover {
 	filter: brightness(0.7);
 }
+
+@media (max-device-width: 750px) {
+	.image-grid {
+		grid-template-columns: auto;
+	}
+
+	.view-stats, .add-to-deck {
+		font-size: 1.5em;
+	}
+
+	.add-icon {
+		max-height: 1.5em;
+	}
+
+	.image-grid div:last-child {
+		width: 100%;
+	}
+
+	.stats-container {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.decks-stats-container {
+		grid-template-columns: 1fr;
+	}
+
+	.changes-header {
+		font-size: 2em;
+	}
+
+	.card-changes {
+		font-size: 2em;
+	}
+}

@@ -17,6 +17,22 @@
 		background-size: cover;
 	}
 
+	#mobile-search {
+		margin-left: 15%;
+		margin-top: 5%;
+		width: 70%;
+		height: 50px;
+		font-size: 30px;
+		background-color: #fafafa;
+		border: 1px solid #d5d9d9;
+		border-radius: 2px;
+		padding-left: 10px;
+		padding-right: 10px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
 	.button-grid {
 		width: 70%;
 		max-width: 1200px;
@@ -265,17 +281,17 @@
 
 
 <body>
+	<img src="img/header/menu.png" class="header-control" onclick="toggleHeader()">
 	<div class="header">
 		<div class="search-grid">
 			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
 			<img class="sg-icon" src="/img/header/search.png">
-			<div><input type="text" inputmode="search" placeholder="Search ..." name="search" id="search"
-					spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false"><img src="img/info.png"
-					class="search-info" onclick="goToOnboard()"></div>
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false"
+				autocomplete="off" autocorrect="off" spellcheck="false">
 			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
 			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
 			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
-			<div class="community"><a href="/community" id="account-link"><img src="/img/header/community.png"
+			<div class="community"><a href="/community"><img src="/img/header/community.png"
 						class="sg-icon">Community<b>⮟</b></a>
 				<div class="community-dropdown">
 					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
@@ -288,10 +304,18 @@
 							src="img/header/sets.png">Cards</a>
 				</div>
 			</div>
-			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
-			<a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
+			<a href="/settings" class="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+			<a href="/account" class="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
+			<div class="mobile-buttons">
+				<a href="/search"><img src="/img/header/search.png" class="sg-icon"></a>
+				<a href="/settings"><img src="/img/header/settings.png" class="sg-icon"></a>
+				<a href="/account"><img src="/img/header/account.png" class="sg-icon"></a>
+			</div>
 		</div>
 	</div>
+	<input type="text" inputmode="search" placeholder="Search ..." name="search" id="mobile-search"
+					spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false"><img src="img/info.png"
+					class="search-info" onclick="goToOnboard()"></div> 
 	<div class="button-grid">
 		<div class="select-text text">
 			<div class="results-text" id="results-text">Loading ...</div>Cards displayed as<select name="display"
@@ -397,7 +421,7 @@
 			// refresh page values
 			const params = new URLSearchParams(window.location.search);
 			page = params.get("page") ? params.get("page") : 0;
-			document.getElementById("search").value = params.get("search") ? decodeURIComponent(params.get("search")) : "";
+			searchInput.value = params.get("search") ? decodeURIComponent(params.get("search")) : "";
 
 			if (sessionStorage.getItem("sortMethod")) {
 				document.getElementById("sort-by").value = sessionStorage.getItem("sortMethod");
@@ -771,7 +795,7 @@
 
 		window.addEventListener('popstate', function (event) {
 			let params = decodeURIComponent(window.location.href.indexOf("?search") == -1 ? "" : window.location.href.substring(window.location.href.indexOf("?search") + 8), (window.location.href.indexOf("page=") == -1 ? window.location.href.length : window.location.href.indexOf("page=")));
-			document.getElementById("search").value = (params.indexOf("&page=") == -1 ? params.replaceAll("+", " ") : params.substring(0, params.indexOf("&page=")).replaceAll("+", " "));
+			searchInput.value = (params.indexOf("&page=") == -1 ? params.replaceAll("+", " ") : params.substring(0, params.indexOf("&page=")).replaceAll("+", " "));
 			page = window.location.href.indexOf("page=") == -1 ? 0 : parseInt(window.location.href.substring(window.location.href.indexOf("page=") + 5)) - 1;
 
 			preSearch(false);
@@ -925,7 +949,7 @@
 		}
 
 		async function search(setNewState) {
-			searchTerms = document.getElementById("search").value.toLowerCase();
+			searchTerms = searchInput.value.toLowerCase();
 
 			if (searchTerms != "") {
 				if (setNewState) {
@@ -1821,7 +1845,9 @@
 			return retVal && (strOut.length > strIn.length);
 		}
 
-		document.getElementById("search").addEventListener("keypress", function (event) {
+		const searchInput = screen.width < 750 ? document.getElementById("mobile-search") : document.getElementById("search");
+
+		searchInput.addEventListener("keypress", function (event) {
 			if (event.key === "Enter") {
 				event.preventDefault();
 				preSearch(true);

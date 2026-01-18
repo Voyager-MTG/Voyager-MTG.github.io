@@ -58,15 +58,18 @@ def generateHTML():
 			gap: 5px;
 			align-items: center;
 			border-top: 1px solid #171717;
+			color: var(--popout-text-color);
+			background-color: color-mix(in srgb, var(--light-accent), transparent 30%);
+			transition: 0.2s;
 		}
 		.set-row:hover {
-			background-color: #fafafa;
+			background-color: color-mix(in srgb, var(--mid-accent), transparent 30%);
 		}
 		.set-row:nth-child(2n) {
-		  background-color: #dedede;
+		  background-color: color-mix(in srgb, var(--bg-color), transparent 30%);
 		}
 		.set-row:nth-child(2n):hover {
-			background-color: #e6e6e6;
+			background-color: color-mix(in srgb, var(--light-accent), transparent 30%);
 		}
 		.set-row img {
 			width: 70%;
@@ -127,7 +130,7 @@ def generateHTML():
 						set_count += 1
 
 			html_content += '''
-			<a href="/sets/''' + code + '''" class="set-row"> 
+			<a href="/sets/''' + code + '''" class="set-row text"> 
 				<img src="/sets/''' + code + '''-files/icon.png">
 				<div class="set-title">''' + set_name + '''</div>
 				<div>''' + code + '''</div>
@@ -139,6 +142,7 @@ def generateHTML():
 		'''
 
 	html_content += '''
+	<script src="src/js/background.js"></script>
 	<script>
 		let card_list_arrayified = [];
 		let specialchars = "";

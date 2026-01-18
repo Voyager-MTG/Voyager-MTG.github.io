@@ -267,3 +267,35 @@ select {
 	text-align: center;
 	color: var(--popout-text-color);
 }
+
+@media (max-device-width: 750px) {
+	.tab-select {
+		grid-template-columns: 1fr 1fr;
+		font-size: 30px;
+	}
+	
+	.full-cards-container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.events-container {
+		grid-template-columns: 1fr 1fr;
+		font-size: 30px;
+	}
+
+	.event-name {
+		font-size: 2em;
+	}
+
+	.users-container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.deck-section-container {
+		grid-template-columns: 1fr;
+	}
+
+	.selects {
+		display: none;
+	}
+}

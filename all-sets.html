@@ -4,6 +4,7 @@
 	  <link rel="icon" type="image/x-icon" href="/img/header/sets.png">
 	  <link rel="stylesheet" href="/src/css/mana.css">
 	  <link rel="stylesheet" href="/src/css/header.css">
+	  <link rel="stylesheet" href="/src/css/theme.css">
 	</head>
 	<style>
 		@font-face {
@@ -50,15 +51,18 @@
 			gap: 5px;
 			align-items: center;
 			border-top: 1px solid #171717;
+			color: var(--popout-text-color);
+			background-color: color-mix(in srgb, var(--light-accent), transparent 30%);
+			transition: 0.2s;
 		}
 		.set-row:hover {
-			background-color: #fafafa;
+			background-color: color-mix(in srgb, var(--mid-accent), transparent 30%);
 		}
 		.set-row:nth-child(2n) {
-		  background-color: #dedede;
+		  background-color: color-mix(in srgb, var(--bg-color), transparent 30%);
 		}
 		.set-row:nth-child(2n):hover {
-			background-color: #e6e6e6;
+			background-color: color-mix(in srgb, var(--light-accent), transparent 30%);
 		}
 		.set-row img {
 			width: 70%;
@@ -77,33 +81,41 @@
 		}
 	</style>
 	<body>
-		<div class="header">
+		<img src="img/header/menu.png" class="header-control" onclick="toggleHeader()">
+	<div class="header">
 		<div class="search-grid">
 			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
 			<img class="sg-icon" src="/img/header/search.png">
-			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false"
+				autocomplete="off" autocorrect="off" spellcheck="false">
 			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
 			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
 			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
-			<div class="community"><a href="/community" id="account-link"><img src="/img/header/community.png"
+			<div class="community"><a href="/community"><img src="/img/header/community.png"
 						class="sg-icon">Community<b>⮟</b></a>
 				<div class="community-dropdown">
 					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
-							src="/img/header/community.png">Users</a>
+							src="img/header/community.png">Users</a>
 					<a href="/community?tab=decks" class="community-dropdown-item"><img class="dropdown-icon"
-							src="/img/header/deck.png">Decks</a>
+							src="img/header/deck.png">Decks</a>
 					<a href="/community?tab=events" class="community-dropdown-item"><img class="dropdown-icon"
-							src="/img/swords.png">Events</a>
+							src="img/swords.png">Events</a>
 					<a href="/community?tab=cards" class="community-dropdown-item"><img class="dropdown-icon"
-							src="/img/header/sets.png">Cards</a>
+							src="img/header/sets.png">Cards</a>
 				</div>
 			</div>
-			<a href="/settings" id="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
-                <a href="/account" id="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
+			<a href="/settings" class="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+			<a href="/account" class="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
+			<div class="mobile-buttons">
+				<a href="/search"><img src="/img/header/search.png" class="sg-icon"></a>
+				<a href="/settings"><img src="/img/header/settings.png" class="sg-icon"></a>
+				<a href="/account"><img src="/img/header/account.png" class="sg-icon"></a>
+			</div>
 		</div>
-	</div>			<div class="set-group"></div>
+	</div>
+			<div class="set-group"></div>
 		
-			<div class="set-table">
+			<div class="set-table text">
 			<div class="set-header-row">
 				<div></div> <!-- empty div for spacing -->
 				<div>NAME</div>
@@ -181,7 +193,7 @@
 				<div>257</div>
 			</a>
 			</div>
-		
+	<script src="src/js/background.js"></script>
 	<script>
 		let card_list_arrayified = [];
 		let specialchars = "";

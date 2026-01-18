@@ -7,9 +7,9 @@
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 1.5em;
 	padding: 8px;
-	border-radius: 18px;
+	border-radius: 1.125em;
 	cursor: pointer;
 	transition: 0.3s;
 }
@@ -23,7 +23,7 @@
 }
 
 .tab-switch-icon {
-	max-height: 30px;
+	max-height: 1.1em;
 }
 
 .tab-select {

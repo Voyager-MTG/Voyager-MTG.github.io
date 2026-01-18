@@ -50,3 +50,9 @@
 	float: center;
 	margin-top: 50px;
 }
+
+@media (max-device-width: 750px) {
+	.results-container {
+		grid-template-columns: 1fr 1fr;
+	}
+}
