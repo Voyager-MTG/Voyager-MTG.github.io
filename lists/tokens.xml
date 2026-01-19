@@ -12,6 +12,8 @@
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -48,6 +50,8 @@
 				<maintype>Reminder</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -84,6 +88,8 @@
 				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<token>1</token>
@@ -208,6 +214,8 @@ Equip creature of the chosen type {1}</text>
 				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<token>1</token>
@@ -223,6 +231,8 @@ Equip creature of the chosen type {1}</text>
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -240,6 +250,7 @@ Equip creature of the chosen type {1}</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>WI</colors>
+				<coloridentity></coloridentity>
 				<pt>*/*</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -259,6 +270,7 @@ Equip creature of the chosen type {1}</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
+				<coloridentity></coloridentity>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -297,6 +309,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
+				<coloridentity></coloridentity>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -313,6 +326,8 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>0/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -329,6 +344,8 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -345,6 +362,8 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -363,6 +382,8 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<maintype>Reminder</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<token>1</token>
@@ -379,6 +400,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
+				<coloridentity></coloridentity>
 				<pt>X/X</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -398,6 +420,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -422,6 +445,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
+				<coloridentity></coloridentity>
 				<pt>0/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -441,6 +465,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -460,6 +485,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -479,6 +505,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>U</colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -497,6 +524,8 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -515,6 +544,8 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -534,6 +565,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
+				<coloridentity></coloridentity>
 				<pt>X/X</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -553,6 +585,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>RI</colors>
+				<coloridentity></coloridentity>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -572,6 +605,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
+				<coloridentity></coloridentity>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -591,6 +625,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -611,6 +646,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -628,6 +664,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>WI</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -647,6 +684,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
+				<coloridentity></coloridentity>
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -668,6 +706,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
+				<coloridentity></coloridentity>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -720,6 +759,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>U</colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -743,6 +783,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>U</colors>
+				<coloridentity></coloridentity>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -762,6 +803,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
+				<coloridentity></coloridentity>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -782,6 +824,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>U</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -801,6 +844,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -821,6 +865,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -845,6 +890,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>BR</colors>
+				<coloridentity></coloridentity>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -864,6 +910,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -884,6 +931,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
+				<coloridentity></coloridentity>
 				<pt>6/6</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -903,6 +951,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -925,6 +974,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
+				<coloridentity></coloridentity>
 				<pt>0/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -944,6 +994,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -966,6 +1017,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
+				<coloridentity></coloridentity>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -985,6 +1037,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
+				<coloridentity></coloridentity>
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -1004,6 +1057,8 @@ Whenever this creature deals combat damage to a player, target player mills two 
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -1023,6 +1078,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -1040,6 +1096,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>WB</colors>
+				<coloridentity></coloridentity>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -1059,6 +1116,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>R</colors>
+				<coloridentity></coloridentity>
 				<pt>3/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -1080,6 +1138,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -1099,6 +1158,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
+				<coloridentity></coloridentity>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -1118,6 +1178,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -1137,6 +1198,8 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<maintype>Enchantment</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>1</tablerow>
@@ -1174,6 +1237,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Bitter Inspection</reverse-related>
@@ -1216,6 +1280,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>U</colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Bitter Inspection</reverse-related>
@@ -1258,6 +1323,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Bitter Inspection</reverse-related>
@@ -1300,6 +1366,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>R</colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Bitter Inspection</reverse-related>
@@ -1342,6 +1409,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>I</colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Bitter Inspection</reverse-related>
@@ -1384,6 +1452,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Bitter Inspection</reverse-related>
@@ -1501,6 +1570,8 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -1518,6 +1589,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>WUBRGI</colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Bitter Inspection</reverse-related>
@@ -1559,6 +1631,8 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Bone Salesman</reverse-related>
@@ -1576,6 +1650,8 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Bone Salesman</reverse-related>
@@ -1593,6 +1669,8 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Bone Salesman</reverse-related>
@@ -1611,6 +1689,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>WB</colors>
+				<coloridentity></coloridentity>
 				<pt>0/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -1630,6 +1709,8 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 				<maintype>Token</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<token>1</token>
@@ -1646,6 +1727,8 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Zoslera Exiled Visionary</reverse-related>
@@ -1663,6 +1746,8 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<token>1</token>
@@ -1925,6 +2010,8 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<maintype>Reminder</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -2020,6 +2107,8 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Bounty Collectors</reverse-related>
@@ -2041,6 +2130,8 @@ Equip {2}</text>
 				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Camp Supplier</reverse-related>
@@ -2062,6 +2153,8 @@ Equip {2}</text>
 				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Orcish Shepherd</reverse-related>
@@ -2080,6 +2173,8 @@ Equip {2}</text>
 				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Overt Warning</reverse-related>
@@ -2116,6 +2211,8 @@ Equip {2}</text>
 				<maintype>Reminder</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<token>1</token>
@@ -2132,6 +2229,8 @@ This creature can&apos;t block.</text>
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2148,6 +2247,8 @@ This creature can&apos;t block.</text>
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>*/*</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2164,6 +2265,8 @@ This creature can&apos;t block.</text>
 				<maintype>Enchantment</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<token>1</token>
@@ -2180,6 +2283,7 @@ This creature can&apos;t block.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
+				<coloridentity></coloridentity>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2198,6 +2302,7 @@ This creature can&apos;t block.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2214,6 +2319,8 @@ This creature can&apos;t block.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<reverse-related>Strange Wayfarer</reverse-related>
@@ -2231,6 +2338,8 @@ This creature can&apos;t block.</text>
 				<maintype>Planeswalker</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>The Eternal Echo</reverse-related>
@@ -2249,6 +2358,8 @@ When this creature enters, it deals 1 damage to each opponent. It deals 2 damage
 				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2267,6 +2378,8 @@ When this creature enters, it deals 1 damage to each opponent. It deals 2 damage
 				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2286,6 +2399,8 @@ When this creature enters, surveil X, where X is its power.</text>
 				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2305,6 +2420,8 @@ Whenever this creature attacks, tap up to one target creature.</text>
 				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2324,6 +2441,8 @@ Whenever an opponent casts a noncreature spell with mana value less than this cr
 				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2343,6 +2462,8 @@ When this creature enters, return target instant or sorcery card from your grave
 				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2361,6 +2482,8 @@ When this creature enters, return target instant or sorcery card from your grave
 				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2379,6 +2502,8 @@ When this creature enters, return target instant or sorcery card from your grave
 				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2397,6 +2522,8 @@ When this creature enters, return target instant or sorcery card from your grave
 				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2416,6 +2543,8 @@ When this creature enters, return target instant or sorcery card from your grave
 				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2435,6 +2564,8 @@ This creature can&apos;t block.</text>
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2451,6 +2582,8 @@ This creature can&apos;t block.</text>
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2468,6 +2601,8 @@ When a creature you control dies, you may pay {1}. If you do, draw a card.</text
 				<maintype>Boon</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Broken Sun-Servent</reverse-related>
@@ -2507,6 +2642,8 @@ When a creature you control dies, you may pay {1}. If you do, draw a card.</text
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2527,6 +2664,8 @@ When a creature you control dies, you may pay {1}. If you do, draw a card.</text
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>0/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2544,6 +2683,8 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<maintype>Enchantment</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Apostle Entheate</reverse-related>
@@ -2590,6 +2731,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
+				<coloridentity></coloridentity>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2609,6 +2751,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2628,6 +2771,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
+				<coloridentity></coloridentity>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2648,6 +2792,8 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<maintype>Reminder</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<token>1</token>
@@ -2681,6 +2827,8 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<maintype>Artifact</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<token>1</token>
@@ -2714,6 +2862,8 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>0/0</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2730,6 +2880,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UG</coloridentity>
 				<pt>1/1</pt>
 			</prop>
@@ -2784,6 +2935,8 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<token>1</token>
@@ -2799,6 +2952,8 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<maintype>Enchantment</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related count="2">Blessing of Faloden Woods</reverse-related>
@@ -2840,6 +2995,8 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<reverse-related>Raze the Clanless</reverse-related>
@@ -2857,6 +3014,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -3068,6 +3226,7 @@ Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
+				<coloridentity></coloridentity>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -3109,6 +3268,8 @@ Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
 				<maintype>Reminder</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Abrupt Death</reverse-related>
@@ -3155,6 +3316,8 @@ Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
 				<maintype>Sorcery</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
 			<reverse-related>Explorers Compass</reverse-related>
@@ -3176,6 +3339,7 @@ This can&apos;t block.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>U</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -3197,6 +3361,7 @@ This can&apos;t block.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -3215,6 +3380,7 @@ This can&apos;t block.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -3233,6 +3399,7 @@ This can&apos;t block.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -3251,6 +3418,7 @@ This can&apos;t block.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -3313,6 +3481,8 @@ You can move cards in and out of your sanctum in sideboarding, provided that all
 				<maintype>Reminder</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Avlod Pathshaper</reverse-related>
@@ -3380,6 +3550,8 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<maintype>Reminder</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Avlod Pathshaper</reverse-related>
@@ -3444,6 +3616,8 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<reverse-related>Warped Exploration</reverse-related>
@@ -3462,6 +3636,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
+				<coloridentity></coloridentity>
 				<pt>X/X</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -3481,6 +3656,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -3502,6 +3678,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -3525,6 +3702,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>R</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -3549,6 +3727,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -3572,6 +3751,8 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<maintype>Reminder</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<token>1</token>
@@ -3588,6 +3769,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
+				<coloridentity></coloridentity>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -3605,6 +3787,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>R</colors>
+				<coloridentity></coloridentity>
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -3624,6 +3807,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Norr, Ajha&apos;s Lieutenant</reverse-related>
@@ -3642,6 +3826,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
+				<coloridentity></coloridentity>
 				<pt>*/*</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -3667,6 +3852,7 @@ Sacrifice this enchantment: Until end of turn, lands you control gain &quot;{T}:
 				<maintype>Enchantment</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WUBRGI</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
@@ -3685,6 +3871,7 @@ Sacrifice this enchantment: Until end of turn, lands you control gain &quot;{T}:
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WUBRGI</coloridentity>
 				<pt>5/5</pt>
 			</prop>
@@ -3752,6 +3939,7 @@ Impetus {W}{U}{B}{R}{G} (You may cast this from your graveyard as a sorcery with
 				<maintype>Sorcery</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
 				<coloridentity>WUBRG</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
@@ -3772,6 +3960,7 @@ Impetus {W}{U}{B}{R}{G} (You may cast this from your graveyard as a sorcery with
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>G</colors>
+				<coloridentity></coloridentity>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -3811,6 +4000,7 @@ When this creature enters, draw a card.
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>W</colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<token>1</token>
@@ -3828,6 +4018,7 @@ This creature can&apos;t block.</text>
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>B</colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -4015,6 +4206,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WUBRGI</coloridentity>
 				<pt>1/1</pt>
 			</prop>
@@ -4175,6 +4367,8 @@ Augmented – At the beginning of combat on your turn, if you&apos;ve spent {W}{
 				<maintype>Creature</maintype>
 				<manacost>7</manacost>
 				<cmc>7</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/5</pt>
 			</prop>
 			<tablerow>2</tablerow>

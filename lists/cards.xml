@@ -1131,7 +1131,7 @@ That creature deals 4 damage to any target.</text>
 			<tablerow>2</tablerow>
 			<related attach="transform">Hazardous Technician</related>
 			
-			<related>None</related>
+			<related>Treasure AKT</related>
 		</card>
 		<card>
 			<name>Hazardous Technician</name>
@@ -1155,7 +1155,7 @@ Hazardous Technician gets +1/+1 for each artifact and/or enchantment you control
 			<tablerow>2</tablerow>
 			<related attach="transform">Hazard Technician</related>
 			
-			<related>None</related>
+			<related>Treasure AKT</related>
 		</card>
 		<card>
 			<name>Hazenwyld Groundskeeper</name>
@@ -1904,6 +1904,8 @@ Trample</text>
 				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -1920,6 +1922,8 @@ Trample</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -1936,6 +1940,8 @@ Trample</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -1951,6 +1957,8 @@ Trample</text>
 				<maintype>Artifact</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -1967,6 +1975,8 @@ Trample</text>
 				<maintype>Creature</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -2029,7 +2039,7 @@ When Hazenwyld Beastmaster enters or dies, create a tapped Treasure token.
 			<tablerow>2</tablerow>
 			<related attach="transform">Hazenwyld Ransacker</related>
 			
-			<related>None</related>
+			<related>Treasure AKT</related>
 		</card>
 		<card>
 			<name>Hazenwyld Ransacker</name>
@@ -2052,7 +2062,7 @@ When Hazenwyld Beastmaster enters or dies, create a tapped Treasure token.
 			<tablerow>2</tablerow>
 			<related attach="transform">Hazenwyld Beastmaster</related>
 			
-			<related>None</related>
+			<related>Treasure AKT</related>
 		</card>
 		<card>
 			<name>Whispering Tutor</name>
@@ -2084,6 +2094,8 @@ When Hazenwyld Beastmaster enters or dies, create a tapped Treasure token.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -2529,6 +2541,7 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WB</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -2548,6 +2561,7 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -2567,6 +2581,7 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>RG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -2586,6 +2601,7 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -2605,6 +2621,7 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WU</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -2624,6 +2641,7 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -2643,6 +2661,7 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>BG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -2662,6 +2681,7 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>BR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -2681,6 +2701,7 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -2700,6 +2721,7 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UB</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -2793,6 +2815,7 @@ When Omniscient Vessel enters, return another target permanent to its owner&apos
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -2808,6 +2831,7 @@ When Omniscient Vessel enters, return another target permanent to its owner&apos
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -2823,6 +2847,7 @@ When Omniscient Vessel enters, return another target permanent to its owner&apos
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -2838,6 +2863,7 @@ When Omniscient Vessel enters, return another target permanent to its owner&apos
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -2853,6 +2879,7 @@ When Omniscient Vessel enters, return another target permanent to its owner&apos
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -3533,7 +3560,7 @@ When Accommodation enters and at the beginning of your upkeep, create a colorles
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>House AKT</related>
 		</card>
 		<card>
 			<name>Relentless Firefighter</name>
@@ -3725,6 +3752,7 @@ Enchanted permanent is kindred and loses all other card types. (It still has its
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WUBRG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -3941,6 +3969,8 @@ At the beginning of your upkeep, Witness Totality deals 2 damage to each opponen
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -4558,6 +4588,8 @@ When Omnificient Vessel enters, each player may discard their hand. Each player 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -4793,10 +4825,12 @@ Spells of the chosen type cost {1} more to cast.</text>
 				<maintype>Enchantment</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>Dragon AKT</related>
 		</card>
 		<card>
 			<name>Decay</name>
@@ -5077,6 +5111,8 @@ Exile a card with a creature type from your graveyard: Until end of turn, Unexti
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -5095,6 +5131,7 @@ Submerged Spires enters tapped.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -5134,6 +5171,8 @@ Trample</text>
 				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -5411,7 +5450,7 @@ You choose if creatures with a chosen name attack or block each combat and how t
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Clue FOE</related>
 		</card>
 		<card>
 			<name>Prithite&apos;s Summons</name>
@@ -5461,6 +5500,7 @@ Sacrifice a land: Exile the top card of your library. You may play it without pa
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -5480,6 +5520,7 @@ Sacrifice a land: Exile the top card of your library. You may play it without pa
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -5498,6 +5539,7 @@ Sacrifice a land: Exile the top card of your library. You may play it without pa
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -5517,6 +5559,7 @@ Sacrifice a land: Exile the top card of your library. You may play it without pa
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -5535,6 +5578,7 @@ Sacrifice a land: Exile the top card of your library. You may play it without pa
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -5554,6 +5598,7 @@ Sacrifice a land: Exile the top card of your library. You may play it without pa
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -5572,6 +5617,7 @@ Sacrifice a land: Exile the top card of your library. You may play it without pa
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -5591,6 +5637,7 @@ Sacrifice a land: Exile the top card of your library. You may play it without pa
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -5609,6 +5656,7 @@ Sacrifice a land: Exile the top card of your library. You may play it without pa
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -5628,6 +5676,7 @@ Sacrifice a land: Exile the top card of your library. You may play it without pa
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -5646,6 +5695,8 @@ Sacrifice a land: Exile the top card of your library. You may play it without pa
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -5661,6 +5712,8 @@ Whenever you cast a spell, if you control two or more other permanents that shar
 				<maintype>Creature</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -5699,6 +5752,8 @@ Flying</text>
 				<maintype>Artifact</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -5924,6 +5979,8 @@ Whenever Swiftmind Sage deals damage to an opponent, exile the top card of your 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -5938,6 +5995,8 @@ Whenever Swiftmind Sage deals damage to an opponent, exile the top card of your 
 				<maintype>Sorcery</maintype>
 				<manacost>10</manacost>
 				<cmc>10</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
 		</card>
@@ -5990,6 +6049,8 @@ When Callwolf Replica dies, it deals damage equal to its power to each opponent.
 				<maintype>Creature</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -6029,7 +6090,7 @@ When Callwolf Replica dies, it deals damage equal to its power to each opponent.
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Treasure AKT</related>
 		</card>
 		<card>
 			<name>Falling Sparks</name>
@@ -6659,6 +6720,8 @@ This spell deals damage to any target equal to the number of tokens you control.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -6673,6 +6736,8 @@ This spell deals damage to any target equal to the number of tokens you control.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -6687,6 +6752,8 @@ This spell deals damage to any target equal to the number of tokens you control.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -6701,6 +6768,8 @@ This spell deals damage to any target equal to the number of tokens you control.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -6715,6 +6784,8 @@ This spell deals damage to any target equal to the number of tokens you control.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -6729,6 +6800,8 @@ This spell deals damage to any target equal to the number of tokens you control.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -6856,7 +6929,7 @@ Flashback–{3}{I}{I}, Tap two untapped silver creatures you control. (You may c
 			</prop>
 			<tablerow>3</tablerow>
 			<reverse-related>Wall Token</reverse-related>
-			<related>None</related>
+			<related>Wall EXPT</related>
 		</card>
 		<card>
 			<name>Lost Cause</name>
@@ -6876,7 +6949,7 @@ When you sacrifice this enchantment, search your library for a basic land card, 
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>Shapeshifter EXPT</related>
 		</card>
 		<card>
 			<name>Sieve</name>
@@ -7470,6 +7543,7 @@ Once each turn, whenever one or more cards are put into a sanctum from anywhere,
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -7485,6 +7559,7 @@ Once each turn, whenever one or more cards are put into a sanctum from anywhere,
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -7500,6 +7575,7 @@ Once each turn, whenever one or more cards are put into a sanctum from anywhere,
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -7515,6 +7591,7 @@ Once each turn, whenever one or more cards are put into a sanctum from anywhere,
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -7530,6 +7607,7 @@ Once each turn, whenever one or more cards are put into a sanctum from anywhere,
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -7545,6 +7623,8 @@ Once each turn, whenever one or more cards are put into a sanctum from anywhere,
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -7561,6 +7641,7 @@ Once each turn, whenever one or more cards are put into a sanctum from anywhere,
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>GI</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -7579,6 +7660,7 @@ Once each turn, whenever one or more cards are put into a sanctum from anywhere,
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WI</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -7597,6 +7679,7 @@ Once each turn, whenever one or more cards are put into a sanctum from anywhere,
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UI</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -7615,6 +7698,7 @@ Once each turn, whenever one or more cards are put into a sanctum from anywhere,
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>BI</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -7633,6 +7717,7 @@ Once each turn, whenever one or more cards are put into a sanctum from anywhere,
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>RI</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -7651,6 +7736,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -7671,6 +7757,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -7691,6 +7778,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -7710,6 +7798,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -7729,6 +7818,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -7836,6 +7926,7 @@ Materialize 4 (Tap one or more other enchantments you control with total mana va
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -8075,7 +8166,7 @@ When this creature enters, create a 1/1 silver Drake creature token with flying.
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Blank</name>
@@ -8182,6 +8273,8 @@ When this artifact enters, draft a card from your sanctum. (Look at three random
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -8199,11 +8292,11 @@ Explorer – {2}, {T}: Transform this realm. Activate only if you control five o
 				<maintype>Enchantment</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Polychromatic Peaks</related>
-			<reverse-related>Polychromatic Peaks</reverse-related>
-			
 		</card>
 		<card>
 			<name>Polychromatic Peaks</name>
@@ -8218,11 +8311,11 @@ Explorer – {2}, {T}: Transform this realm. Activate only if you control five o
 				<maintype>Enchantment</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Wind Worn Peaks</related>
-			<reverse-related>Polychromatic Peaks</reverse-related>
-			
 		</card>
 		<card>
 			<name>Light of Hope</name>
@@ -8316,7 +8409,7 @@ Prevent the next 3 damage that would be dealt to any target this turn. (Then put
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Monument In Unity</related>
-			<reverse-related>Monument In Unity</reverse-related>
+			
 			<related>Fox 11 FOE</related>
 		</card>
 		<card>
@@ -8337,7 +8430,7 @@ Prevent the next 3 damage that would be dealt to any target this turn. (Then put
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Staggering Spires</related>
-			<reverse-related>Monument In Unity</reverse-related>
+			
 			<related>Fox 11 FOE</related>
 		</card>
 		<card>
@@ -8601,7 +8694,7 @@ Target creature you control gains hexproof until end of turn. (Then put this int
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Misty Aisle</related>
-			<reverse-related>Misty Aisle</reverse-related>
+			
 			<related>Blue Drake 21 FOE</related>
 		</card>
 		<card>
@@ -8622,7 +8715,7 @@ Target creature you control gains hexproof until end of turn. (Then put this int
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Tiderock Passage</related>
-			<reverse-related>Misty Aisle</reverse-related>
+			
 			<related>Blue Drake 21 FOE</related>
 		</card>
 		<card>
@@ -8932,7 +9025,7 @@ Whenever you cast a noncreature spell, each opponent loses 1 life and you gain 1
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Pinnacle Spillaway</related>
-			<reverse-related>Pinnacle Spillway</reverse-related>
+			
 			<related>Lizard 21 FOE</related>
 		</card>
 		<card>
@@ -8953,7 +9046,7 @@ Whenever you cast a noncreature spell, each opponent loses 1 life and you gain 1
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Eroding River</related>
-			<reverse-related>Pinnacle Spillway</reverse-related>
+			
 			<related>Lizard 21 FOE</related>
 		</card>
 		<card>
@@ -9469,7 +9562,7 @@ Whenever you attack with exactly two creatures, transform this realm.
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Deepwoods Pillars</related>
-			<reverse-related>Deepwoods Pillars</reverse-related>
+			
 			<related>Cat FOE</related>
 		</card>
 		<card>
@@ -9490,7 +9583,7 @@ Whenever you attack with exactly two creatures, transform this realm.
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Enduring Woodland</related>
-			<reverse-related>Deepwoods Pillars</reverse-related>
+			
 			<related>Cat FOE</related>
 		</card>
 		<card>
@@ -10046,7 +10139,7 @@ When this creature enters, draw a card.</text>
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Depths of Change</related>
-			<reverse-related>Depths of Change</reverse-related>
+			
 			<related>Crab FOE</related>
 		</card>
 		<card>
@@ -10067,7 +10160,7 @@ When this creature enters, draw a card.</text>
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Enlightening Crescents</related>
-			<reverse-related>Depths of Change</reverse-related>
+			
 			<related>Crab FOE</related>
 		</card>
 		<card>
@@ -10100,6 +10193,7 @@ This land enters tapped.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>BG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -10117,6 +10211,7 @@ This land enters tapped.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>BR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -10134,6 +10229,7 @@ This land enters tapped.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -10151,6 +10247,7 @@ This land enters tapped.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UB</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -10168,6 +10265,7 @@ This land enters tapped.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -10185,6 +10283,7 @@ This land enters tapped.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -10202,6 +10301,7 @@ This land enters tapped.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -10219,6 +10319,7 @@ This land enters tapped.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -10236,6 +10337,8 @@ This land enters tapped.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -10251,6 +10354,8 @@ Explorer – {2}, {T}: Target creature you control gets +2/+2 and gains trample 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -10265,6 +10370,8 @@ Explorer – {2}, {T}: Target creature you control gets +2/+2 and gains trample 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<cipt>1</cipt>
@@ -10281,6 +10388,8 @@ Explorer – {2}, {T}: Target creature you control gets +2/+2 and gains trample 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -10296,6 +10405,8 @@ Explorer – {2}, {T}: Target creature you control gets +2/+2 and gains trample 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -10311,6 +10422,8 @@ Explorer – {2}, {T}: Target creature you control gets +2/+2 and gains trample 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			
@@ -10328,6 +10441,7 @@ This land enters tapped.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>RG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -10345,6 +10459,7 @@ This land enters tapped.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -10362,6 +10477,7 @@ This land enters tapped.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WB</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -10379,6 +10495,7 @@ This land enters tapped.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WU</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -10396,6 +10513,7 @@ This land enters tapped.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -10413,6 +10531,7 @@ This land enters tapped.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -10430,6 +10549,7 @@ This land enters tapped.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -10978,11 +11098,10 @@ Evoke {BR} (You may cast this spell for its evoke cost. If you do, it&apos;s sac
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>BG</colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<reverse-related>Remnants of the War</reverse-related>
-			
 		</card>
 		<card>
 			<name>Mourncast Disciple</name>
@@ -11021,8 +11140,6 @@ When this battle enters or is defeated, choose one that has not been chosen–
 				<loyalty>5</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
-			<reverse-related>Guardian of the Cinders</reverse-related>
-			
 		</card>
 		<card>
 			<name>Monument to Forever</name>
@@ -11037,6 +11154,8 @@ Exile target permanent.</text>
 				<maintype>Instant</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
 		</card>
@@ -11053,6 +11172,8 @@ This creature gets +1/+0 for each enchantment you control.</text>
 				<maintype>Creature</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>0/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -11069,6 +11190,8 @@ This creature gets +1/+0 for each enchantment you control.</text>
 				<maintype>Creature</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -11084,6 +11207,8 @@ This creature gets +1/+0 for each enchantment you control.</text>
 				<maintype>Artifact</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -11100,6 +11225,8 @@ Equipped creature has healing 2. (Damage dealt by that creature also causes you 
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -11116,6 +11243,7 @@ Whenever you cast a spell that is one or more colors, if you&apos;ve illuminated
 				<maintype>Creature</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
 				<coloridentity>WUBRGI</coloridentity>
 				<pt>2/2</pt>
 			</prop>
@@ -11157,6 +11285,8 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Creature</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -11205,6 +11335,8 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -11219,6 +11351,8 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -11233,6 +11367,8 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -11247,6 +11383,8 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -11261,6 +11399,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11276,6 +11415,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11291,6 +11431,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11306,6 +11447,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11321,6 +11463,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11336,6 +11479,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11351,6 +11495,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11366,6 +11511,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11381,6 +11527,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11396,6 +11543,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11411,6 +11559,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11426,6 +11575,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11441,6 +11591,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11456,6 +11607,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11471,6 +11623,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11486,6 +11639,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11501,6 +11655,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11516,6 +11671,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11531,6 +11687,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11546,6 +11703,7 @@ Reveal it, shuffle, then put that card on top of your library.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11605,8 +11763,6 @@ Discard a card: This creature has size 4/4 until end of turn.</text>
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Concealed Passage</related>
-			<reverse-related>Concealed Passage</reverse-related>
-			
 		</card>
 		<card>
 			<name>Concealed Passage</name>
@@ -11626,8 +11782,6 @@ Discard a card: This creature has size 4/4 until end of turn.</text>
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Concealing Ruins</related>
-			<reverse-related>Concealed Passage</reverse-related>
-			
 		</card>
 		<card>
 			<name>Blade Reifier // Shimmered Form</name>
@@ -11737,6 +11891,7 @@ When this land enters tapped, up to one target creature you control gets +1/+0 a
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11754,6 +11909,7 @@ When this land enters tapped, up to one target creature you control gets +1/+0 a
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11770,6 +11926,7 @@ When this land enters tapped, up to one target creature you control gets +1/+0 a
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11843,6 +12000,7 @@ When this land enters tapped, up to one target creature you control gets +1/+0 a
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11860,6 +12018,7 @@ When this land enters tapped, up to one target creature you control gets +1/+0 a
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11880,6 +12039,8 @@ When this land enters tapped, up to one target creature you control gets +1/+0 a
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			
@@ -11899,6 +12060,7 @@ Flying
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11917,6 +12079,7 @@ Trample
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11935,6 +12098,7 @@ Menace
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11951,6 +12115,7 @@ Menace
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -11969,6 +12134,8 @@ Menace
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -11986,6 +12153,7 @@ Reach
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -12002,6 +12170,7 @@ Reach
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -12019,6 +12188,7 @@ Reach
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -12037,6 +12207,8 @@ Reach
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -12054,6 +12226,7 @@ Vigilance
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -12071,6 +12244,7 @@ When this land enters tapped, up to one target creature you control gains flying
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -12088,6 +12262,7 @@ When this land enters tapped, up to one target creature gets +0/+1 and gains vig
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -12105,6 +12280,7 @@ When this land enters tapped, up to one target creature gains deathtouch until e
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -12122,6 +12298,7 @@ When this land enters tapped, up to one target creature gains trample and hexpro
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -12139,6 +12316,7 @@ When this land enters tapped, up to one target creature you control gains haste 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -12155,6 +12333,8 @@ When this land enters tapped, up to one target creature you control gains haste 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -12171,6 +12351,8 @@ When this land enters tapped, up to one target creature you control gains haste 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -12187,10 +12369,12 @@ When this land enters tapped, up to one target creature you control gains haste 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			
-			<related>None</related>
+			<related>Orb FOE</related>
 		</card>
 		<card>
 			<name>Splitting Caldera</name>
@@ -12206,6 +12390,8 @@ When this land enters tapped, up to one target creature you control gains haste 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -12222,6 +12408,8 @@ When this land enters tapped, up to one target creature you control gains haste 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -12238,6 +12426,8 @@ When this land enters tapped, up to one target creature you control gains haste 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -12260,7 +12450,7 @@ When this land enters tapped, up to one target creature you control gains haste 
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Peaks of War</related>
-			<reverse-related>Peaks of War</reverse-related>
+			
 			<related>Red Wurm FOE</related>
 		</card>
 		<card>
@@ -12281,7 +12471,7 @@ When this land enters tapped, up to one target creature you control gains haste 
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Bosket Peak</related>
-			<reverse-related>Peaks of War</reverse-related>
+			
 			<related>Red Wurm FOE</related>
 		</card>
 		<card>
@@ -12553,7 +12743,7 @@ Sacrifice this creature: Target creature gains indestructible until end of turn.
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Restful Clearing</related>
-			<reverse-related>Restful Clearing</reverse-related>
+			
 			<related>Insect FOE</related>
 		</card>
 		<card>
@@ -12574,7 +12764,7 @@ Sacrifice this creature: Target creature gains indestructible until end of turn.
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Chimarel Clearing</related>
-			<reverse-related>Restful Clearing</reverse-related>
+			
 			<related>Insect FOE</related>
 		</card>
 		<card>
@@ -12596,8 +12786,6 @@ Sacrifice this creature: Target creature gains indestructible until end of turn.
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Ancient Aurora</related>
-			<reverse-related>Ancient Aurora</reverse-related>
-			
 		</card>
 		<card>
 			<name>Ancient Aurora</name>
@@ -12617,8 +12805,6 @@ Sacrifice this creature: Target creature gains indestructible until end of turn.
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Ancient Sigils</related>
-			<reverse-related>Ancient Aurora</reverse-related>
-			
 		</card>
 		<card>
 			<name>Storm Striker</name>
@@ -12832,8 +13018,6 @@ You may cast instant and sorcery cards from your sanctum on any turn you drew tw
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Skycliff Dens</related>
-			<reverse-related>Skycliff Dens</reverse-related>
-			
 		</card>
 		<card>
 			<name>Skycliff Dens</name>
@@ -12853,8 +13037,6 @@ You may cast instant and sorcery cards from your sanctum on any turn you drew tw
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Skycliff Flow</related>
-			<reverse-related>Skycliff Dens</reverse-related>
-			
 		</card>
 		<card>
 			<name>Slipstream Cyprinus</name>
@@ -13054,8 +13236,6 @@ Whenever you attack, if you&apos;ve illuminated black, each opponent loses 2 lif
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Drake-Brood Peak</related>
-			<reverse-related>Drake-Brood Peak</reverse-related>
-			
 		</card>
 		<card>
 			<name>Drake-Brood Peak</name>
@@ -13075,8 +13255,6 @@ Whenever you attack, if you&apos;ve illuminated black, each opponent loses 2 lif
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Bloodstained Fields</related>
-			<reverse-related>Drake-Brood Peak</reverse-related>
-			
 		</card>
 		<card>
 			<name>Spire of Rebirth</name>
@@ -13136,7 +13314,7 @@ Target player sacrifices an enchantment. (Then put this into your sanctum.)</tex
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Green-Streaked Ruins</related>
-			<reverse-related>Green-Streaked Ruins</reverse-related>
+			
 			<related>Fish FOE</related>
 		</card>
 		<card>
@@ -13157,7 +13335,7 @@ Target player sacrifices an enchantment. (Then put this into your sanctum.)</tex
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Gold-Streaked Obelisks</related>
-			<reverse-related>Green-Streaked Ruins</reverse-related>
+			
 			<related>Fish FOE</related>
 		</card>
 		<card>
@@ -13180,8 +13358,6 @@ Whenever a creature you control with power 2 or less attacks, this enchantment d
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Fervent Monuments</related>
-			<reverse-related>Fervent Monuments</reverse-related>
-			
 		</card>
 		<card>
 			<name>Fervent Monuments</name>
@@ -13201,8 +13377,6 @@ Whenever a creature you control with power 2 or less attacks, this enchantment d
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Fervent Canyon</related>
-			<reverse-related>Fervent Monuments</reverse-related>
-			
 		</card>
 		<card>
 			<name>Ignelscor Jidiao // Tear a Path</name>
@@ -13296,8 +13470,6 @@ Cycling {2} ({2}, Discard this card: Draw a card.)</text>
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Dawnlist Adherent</related>
-			<reverse-related>Dawnlit Adherent</reverse-related>
-			
 		</card>
 		<card>
 			<name>Dawnlist Adherent</name>
@@ -13317,8 +13489,6 @@ Cycling {2} ({2}, Discard this card: Draw a card.)</text>
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Moonlit Congregation</related>
-			<reverse-related>Dawnlit Adherent</reverse-related>
-			
 		</card>
 		<card>
 			<name>Bare Your Fangs</name>
@@ -13825,6 +13995,8 @@ Once during each of your turns, you may play a card from your sanctum.</text>
 				<maintype>Artifact</maintype>
 				<manacost>9</manacost>
 				<cmc>9</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -13968,6 +14140,8 @@ When Sonnet enters, she deals damage equal to the number of creatures you contro
 				<maintype>Planeswalker</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<loyalty>3</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
@@ -14106,6 +14280,8 @@ Explorer – Whenever this creature attacks, if you control five or more differe
 				<maintype>Sorcery</maintype>
 				<manacost>X</manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
 		</card>
@@ -14177,6 +14353,8 @@ Whenever an opponent draws a card except the first one they draw in each of thei
 				<maintype>Enchantment</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -14192,6 +14370,8 @@ At the beginning of your first main phase, add {C}{C}. You can&apos;t spend this
 				<maintype>Enchantment</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -14460,6 +14640,8 @@ When this artifact enters, you may exile a land card from your hand or sanctum.
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -14475,6 +14657,8 @@ When this artifact enters, you may exile a land card from your hand or sanctum.
 				<maintype>Artifact</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -14507,6 +14691,8 @@ Activated abilities of sources with the chosen name can&apos;t be activated unle
 				<maintype>Enchantment</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -14561,6 +14747,7 @@ At the end of your second main phase, if this creature entered the battlefield t
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>R</colors>
+				<coloridentity></coloridentity>
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -14625,8 +14812,6 @@ When this creature enters or transforms, exile up to one other target nonland pe
 			</prop>
 			<tablerow>2</tablerow>
 			<related attach="transform">Asahr Sahel</related>
-			<reverse-related>Asahr Sahel</reverse-related>
-			
 		</card>
 		<card>
 			<name>Asahr Sahel</name>
@@ -14643,12 +14828,11 @@ When this creature enters or transforms, exile up to one other target nonland pe
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<related attach="transform">Themia, Steward of Sanctity</related>
-			<reverse-related>Asahr Sahel</reverse-related>
-			
 		</card>
 		<card>
 			<name>Zesha, Dream Hedonist</name>
@@ -14671,8 +14855,6 @@ You may play land cards from among face up cards you don&apos;t own in exile.
 			</prop>
 			<tablerow>2</tablerow>
 			<related attach="transform">Lucillica Dreamscape</related>
-			<reverse-related>Lucillica Dreamscape</reverse-related>
-			
 		</card>
 		<card>
 			<name>Lucillica Dreamscape</name>
@@ -14689,12 +14871,11 @@ You may play land cards from among face up cards you don&apos;t own in exile.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<related attach="transform">Zesha, Dream Hedonist</related>
-			<reverse-related>Lucillica Dreamscape</reverse-related>
-			
 		</card>
 		<card>
 			<name>Lisse, Hope Through Sin</name>
@@ -14716,8 +14897,6 @@ Whenever this creature attacks, this creature deals 1 damage to any target.
 			</prop>
 			<tablerow>2</tablerow>
 			<related attach="transform">Alira Glade</related>
-			<reverse-related>Alira Glade</reverse-related>
-			
 		</card>
 		<card>
 			<name>Alira Glade</name>
@@ -14734,12 +14913,11 @@ Whenever this creature attacks, this creature deals 1 damage to any target.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<related attach="transform">Lisse, Hope Through Sin</related>
-			<reverse-related>Alira Glade</reverse-related>
-			
 		</card>
 		<card>
 			<name>Argent, Flash of Mirdrim</name>
@@ -14763,8 +14941,6 @@ When this creature deals combat damage, choose up to one–
 			</prop>
 			<tablerow>2</tablerow>
 			<related attach="transform">Midrim Cleave</related>
-			<reverse-related>Mirdrim Cleave</reverse-related>
-			
 		</card>
 		<card>
 			<name>Midrim Cleave</name>
@@ -14781,12 +14957,11 @@ When this creature deals combat damage, choose up to one–
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<related attach="transform">Argent, Flash of Mirdrim</related>
-			<reverse-related>Mirdrim Cleave</reverse-related>
-			
 		</card>
 		<card>
 			<name>Maal and Sevol, Twin Sentries</name>
@@ -14802,11 +14977,13 @@ Whenever Maal and Sevol attacks, create a 3/4 colorless Dragon creature token wi
 				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
 			<related attach="transform">Astrus Quandry</related>
-			<reverse-related>Astrus Quandry</reverse-related>
+			
 			<related>None</related>
 		</card>
 		<card>
@@ -14824,10 +15001,12 @@ Whenever Maal and Sevol attacks, create a 3/4 colorless Dragon creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<related attach="transform">Maal and Sevol, Twin Sentries</related>
-			<reverse-related>Astrus Quandry</reverse-related>
+			
 			<related>None</related>
 		</card>
 		<card>
@@ -14850,8 +15029,6 @@ Whenever this creature attacks, other creatures you control get +1/+0 until end 
 			</prop>
 			<tablerow>2</tablerow>
 			<related attach="transform">Mangriel Precipice</related>
-			<reverse-related>Mangreil Precipice</reverse-related>
-			
 		</card>
 		<card>
 			<name>Mangriel Precipice</name>
@@ -14868,12 +15045,11 @@ Whenever this creature attacks, other creatures you control get +1/+0 until end 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<related attach="transform">Scout, Maw of the Moon</related>
-			<reverse-related>Mangreil Precipice</reverse-related>
-			
 		</card>
 		<card>
 			<name>Prophellos, Hungering Manipulator</name>
@@ -14888,6 +15064,8 @@ Escape–{6}, Exile a Realm card from your graveyard. (You may cast this card fr
 				<maintype>Creature</maintype>
 				<manacost>7</manacost>
 				<cmc>7</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -14912,8 +15090,6 @@ This creature can&apos;t be blocked by creatures with power 2 or less.
 			</prop>
 			<tablerow>2</tablerow>
 			<related attach="transform">Foruden Shrine</related>
-			<reverse-related>Foruden Shrine</reverse-related>
-			
 		</card>
 		<card>
 			<name>Foruden Shrine</name>
@@ -14930,12 +15106,11 @@ This creature can&apos;t be blocked by creatures with power 2 or less.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<related attach="transform">Reichen, Verdant Guard</related>
-			<reverse-related>Foruden Shrine</reverse-related>
-			
 		</card>
 		<card>
 			<name>The Shattering of Meirel</name>
@@ -14948,6 +15123,8 @@ This creature can&apos;t be blocked by creatures with power 2 or less.
 				<maintype>Sorcery</maintype>
 				<manacost>7</manacost>
 				<cmc>7</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
 		</card>
@@ -15063,6 +15240,8 @@ Enchanted permanent loses all abilities and is a colorless enchantment.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -15139,7 +15318,7 @@ Whenever this creature attacks, create a Treasure token.</text>
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Treasure AKT</related>
 		</card>
 		<card>
 			<name>A Flock is Born // Winged Guide</name>
@@ -15156,6 +15335,8 @@ Search your library for a basic land card, reveal it, put it into your hand. The
 				<maintype>Sorcery</maintype>
 				<manacost>5 // 2</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
 			
@@ -15365,6 +15546,8 @@ Mill four cards, then return up to one nonpermanent card from among the milled c
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -15417,6 +15600,7 @@ If a player would gain life, put a +1/+1 counter on this creature instead.</text
 				<maintype>Creature</maintype>
 				<manacost>3I</manacost>
 				<cmc>4</cmc>
+				<colors></colors>
 				<coloridentity>I</coloridentity>
 				<pt>4/4</pt>
 			</prop>
@@ -15456,7 +15640,7 @@ Whenever you cast a spell, you may cast a face-up card from your sanctum that ha
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Blood FOE</related>
 		</card>
 		<card>
 			<name>Mordel Charm</name>
@@ -15584,6 +15768,7 @@ Cycling {2} ({2}, Discard this card: Draw a card.)</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -15600,6 +15785,7 @@ Cycling {2} ({2}, Discard this card: Draw a card.)</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -15616,6 +15802,7 @@ Cycling {2} ({2}, Discard this card: Draw a card.)</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -15632,6 +15819,7 @@ Cycling {2} ({2}, Discard this card: Draw a card.)</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -15648,6 +15836,7 @@ Cycling {2} ({2}, Discard this card: Draw a card.)</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -15664,6 +15853,7 @@ Cycling {2} ({2}, Discard this card: Draw a card.)</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -15680,6 +15870,8 @@ Cycling {2} ({2}, Discard this card: Draw a card.)</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -15696,6 +15888,7 @@ Exhaust – {T}: Choose a color. (Activate each exhaust ability only once.)
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -15713,6 +15906,7 @@ Exhaust – {T}: Choose a color. (Activate each exhaust ability only once.)
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -15730,6 +15924,7 @@ Exhaust – {T}: Choose a color. (Activate each exhaust ability only once.)
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -15747,6 +15942,7 @@ Exhaust – {T}: Choose a color. (Activate each exhaust ability only once.)
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -15764,6 +15960,7 @@ Exhaust – {T}: Choose a color. (Activate each exhaust ability only once.)
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -15781,6 +15978,7 @@ Exhaust – {T}: Choose a color. (Activate each exhaust ability only once.)
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -15798,6 +15996,8 @@ Exhaust – {T}: Choose a color. (Activate each exhaust ability only once.)
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -15816,6 +16016,7 @@ Choose one–
 				<maintype>Instant</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
 				<coloridentity>WUBRGI</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
@@ -15894,6 +16095,8 @@ Whenever you own seven or more exiled kindred cards and/or creature cards with a
 				<maintype>Enchantment</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Shalewing, Age of Dragons</related>
@@ -15912,6 +16115,8 @@ Whenever this creature attacks, you may cast an exiled card you own with an ance
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -16393,6 +16598,8 @@ Equip {2}</text>
 				<maintype>Artifact</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -17936,7 +18143,7 @@ At the beginning of each end step, if you lost 4 or more life this turn, create 
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Treasure HOD</related>
 		</card>
 		<card>
 			<name>Edith Rey, the Just</name>
@@ -17988,6 +18195,7 @@ Whenever Elric Nye deals combat damage to a player or planeswalker, if it isn&ap
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -18005,6 +18213,7 @@ Whenever Elric Nye deals combat damage to a player or planeswalker, if it isn&ap
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -18022,6 +18231,7 @@ Whenever Elric Nye deals combat damage to a player or planeswalker, if it isn&ap
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -18041,11 +18251,12 @@ Whenever Elric Nye deals combat damage to a player or planeswalker, if it isn&ap
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			
-			<related>None</related>
+			<related>Treasure HOD</related>
 		</card>
 		<card>
 			<name>Fort Sapner</name>
@@ -18060,6 +18271,7 @@ Whenever Elric Nye deals combat damage to a player or planeswalker, if it isn&ap
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -18077,6 +18289,8 @@ Equip creature {3}</text>
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -18093,6 +18307,8 @@ Equip creature {3}</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -18108,6 +18324,8 @@ Equip creature {3}</text>
 				<maintype>Artifact</maintype>
 				<manacost>0</manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -18124,6 +18342,8 @@ Equip creature {3}</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -18139,6 +18359,8 @@ At the beginning of combat on your turn, you may return a creature you control t
 				<maintype>Artifact</maintype>
 				<manacost>4</manacost>
 				<cmc>4</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>1</tablerow>
@@ -18462,7 +18684,7 @@ Whenever Pilferer of Shrouded Coasts deals combat damage to a player or planeswa
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Treasure HOD</related>
 		</card>
 		<card>
 			<name>Attwater Drakerider</name>
@@ -18627,7 +18849,7 @@ Whenever another creature you control dies, Vance Soulsapper deals 1 damage to t
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Treasure HOD</related>
 		</card>
 		<card>
 			<name>Voyage to the End of the World</name>
@@ -19508,7 +19730,7 @@ Enchanted creature gets +1/+1 for each enchantment you control and each noncreat
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Treasure HOD</related>
 		</card>
 		<card>
 			<name>Kirsa, the Sword of Perle</name>
@@ -19772,7 +19994,7 @@ When Secluded Arachnomorph enters, Secluded Arachnomorph deals 3 damage to targe
 			<tablerow>1</tablerow>
 			
 			<related>Scout HOD</related>
-			<related>None</related>
+			<related>Treasure HOD</related>
 			<related>None</related>
 		</card>
 		<card>
@@ -19971,6 +20193,8 @@ Islandcycling {2}, Mountaincycling {2}, Plainscycling {2} ({2}, Discard this car
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -19987,6 +20211,8 @@ Islandcycling {2}, Mountaincycling {2}, Plainscycling {2} ({2}, Discard this car
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -20003,6 +20229,7 @@ Islandcycling {2}, Mountaincycling {2}, Plainscycling {2} ({2}, Discard this car
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>RG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -20018,6 +20245,7 @@ Islandcycling {2}, Mountaincycling {2}, Plainscycling {2} ({2}, Discard this car
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -20033,6 +20261,7 @@ Islandcycling {2}, Mountaincycling {2}, Plainscycling {2} ({2}, Discard this car
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>BR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -20048,6 +20277,7 @@ Islandcycling {2}, Mountaincycling {2}, Plainscycling {2} ({2}, Discard this car
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UB</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -20063,6 +20293,7 @@ Islandcycling {2}, Mountaincycling {2}, Plainscycling {2} ({2}, Discard this car
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -20078,6 +20309,7 @@ Islandcycling {2}, Mountaincycling {2}, Plainscycling {2} ({2}, Discard this car
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -20093,6 +20325,7 @@ Islandcycling {2}, Mountaincycling {2}, Plainscycling {2} ({2}, Discard this car
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WU</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -20108,6 +20341,7 @@ Islandcycling {2}, Mountaincycling {2}, Plainscycling {2} ({2}, Discard this car
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WB</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -20123,6 +20357,7 @@ Islandcycling {2}, Mountaincycling {2}, Plainscycling {2} ({2}, Discard this car
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -20138,6 +20373,7 @@ Islandcycling {2}, Mountaincycling {2}, Plainscycling {2} ({2}, Discard this car
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>BG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -20154,6 +20390,8 @@ Exile two cards from your graveyard: Dreadship Vessel becomes an artifact creatu
 				<maintype>Artifact</maintype>
 				<manacost>4</manacost>
 				<cmc>4</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>5/4</pt>
 			</prop>
 			<tablerow>1</tablerow>
@@ -20170,6 +20408,8 @@ Crew 3 (Tap any number of creatures you control with total power 3 or more: This
 				<maintype>Artifact</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>1</tablerow>
@@ -20188,11 +20428,13 @@ Crew 3 (Tap any number of creatures you control with total power 3 or more: This
 				<maintype>Artifact</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
 			<related>Reserves HOD</related>
-			<related>None</related>
+			<related>Clue HOD</related>
 		</card>
 		<card>
 			<name>War Map</name>
@@ -20206,6 +20448,8 @@ Crew 3 (Tap any number of creatures you control with total power 3 or more: This
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -20220,11 +20464,13 @@ Crew 3 (Tap any number of creatures you control with total power 3 or more: This
 				<maintype>Creature</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Treasure HOD</related>
 		</card>
 		<card>
 			<name>Terrel Recruit</name>
@@ -20455,7 +20701,7 @@ Sycophant (Whenever this creature deals damage to a player or planeswalker, the 
 			<tablerow>2</tablerow>
 			
 			<related>Reserves HOD</related>
-			<related>None</related>
+			<related>Treasure HOD</related>
 		</card>
 		<card>
 			<name>Bout on the Deck</name>
@@ -21164,7 +21410,7 @@ When Honored Eagle enters, create a 1/1 blue Scout creature token.</text>
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Treasure HOD</related>
 		</card>
 		<card>
 			<name>Measured Strike</name>
@@ -21992,11 +22238,13 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			
 			<related>Reserves HOD</related>
-			<related>None</related>
+			<related>Food HOD</related>
 		</card>
 		<card>
 			<name>Messenger of Absent Messages</name>
@@ -22009,6 +22257,8 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Creature</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -22024,6 +22274,7 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -22039,6 +22290,7 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -22054,6 +22306,7 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -22069,6 +22322,7 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -22084,6 +22338,7 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -22099,6 +22354,7 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -22114,6 +22370,7 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -22129,6 +22386,7 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -22144,6 +22402,7 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -22159,6 +22418,7 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -22174,6 +22434,7 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -22189,6 +22450,7 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -22204,6 +22466,7 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -22219,6 +22482,7 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -22234,6 +22498,7 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -22251,6 +22516,8 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -22269,6 +22536,8 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -22287,6 +22556,8 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -22305,6 +22576,8 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -22323,6 +22596,8 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -22341,6 +22616,8 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -22359,6 +22636,8 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -22377,6 +22656,8 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -22395,6 +22676,8 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -22413,6 +22696,8 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -22431,6 +22716,8 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -22449,6 +22736,8 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -22467,6 +22756,8 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -22485,6 +22776,8 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -22593,6 +22886,8 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			
@@ -22629,6 +22924,8 @@ Crew 3</text>
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>1</tablerow>
@@ -22644,6 +22941,8 @@ Crew 3</text>
 				<maintype>Creature</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -22660,6 +22959,8 @@ Crew 3</text>
 				<maintype>Creature</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -22676,6 +22977,8 @@ When this creature dies, or is exiled from the battlefield, if it had base tough
 				<maintype>Creature</maintype>
 				<manacost>8</manacost>
 				<cmc>8</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>8/8</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -22692,6 +22995,8 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Creature</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -22711,6 +23016,8 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Creature</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -22847,6 +23154,8 @@ Draw a card, then mill a card.</text>
 				<maintype>Creature</maintype>
 				<manacost>7</manacost>
 				<cmc>7</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>6/6</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -22865,6 +23174,8 @@ III – Search your library for a non-Saga land card and put it onto the battlef
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -22915,6 +23226,8 @@ Deep dwelling – As long as your library contains a number of cards less than o
 				<maintype>Creature</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -23007,6 +23320,8 @@ Deep dwelling – As long as your library contains a number of cards less than o
 				<maintype>Planeswalker</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<loyalty>3</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
@@ -23061,6 +23376,8 @@ Ward {2}
 				<maintype>Creature</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -23093,6 +23410,8 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Artifact</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -23289,6 +23608,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -23307,6 +23627,8 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Artifact</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -23346,7 +23668,7 @@ When Symbiotic Host leaves your graveyard during your turn or attacks, you may p
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Insect ITD</related>
 		</card>
 		<card>
 			<name>Identity Shatter</name>
@@ -23379,6 +23701,8 @@ Equip {4}</text>
 				<maintype>Artifact</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -23490,6 +23814,8 @@ Exile Edge of a Precipice.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -23542,6 +23868,8 @@ Whenever you cast a spell with mana value 1, copy it. You may choose new targets
 				<maintype>Creature</maintype>
 				<manacost>4</manacost>
 				<cmc>4</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -23559,6 +23887,7 @@ When this creature enters, you may search your library for a land card, put it o
 				<maintype>Creature</maintype>
 				<manacost>7</manacost>
 				<cmc>7</cmc>
+				<colors></colors>
 				<coloridentity>WUBRG</coloridentity>
 				<pt>3/3</pt>
 			</prop>
@@ -23635,6 +23964,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>BG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -23711,6 +24041,8 @@ Equip {3}</text>
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -23876,6 +24208,8 @@ If you would draw a card while your library has no cards in it, you may instead 
 				<maintype>Creature</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -23893,6 +24227,8 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			
@@ -23945,6 +24281,8 @@ When Antisun&apos;s Domain enters, if you control five or more lands with differ
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			
@@ -24232,6 +24570,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>BR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -24251,6 +24590,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WB</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -24340,6 +24680,8 @@ Sacrifice a nonland permanent: You may play an additional land this turn.</text>
 				<maintype>Artifact</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -24485,6 +24827,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>RG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -24504,6 +24847,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -24577,6 +24921,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -24978,6 +25323,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WU</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -25002,7 +25348,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>Faerie Horror ITD</related>
 		</card>
 		<card>
 			<name>The Gardener, Waning</name>
@@ -25075,6 +25421,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UB</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -25240,6 +25587,8 @@ Whenever one or more creatures you control deal combat damage to a player, that 
 				<maintype>Creature</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -25257,6 +25606,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -25276,6 +25626,8 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -25292,6 +25644,8 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<maintype>Planeswalker</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<loyalty>1</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
@@ -25310,6 +25664,7 @@ Lands you control are Swamps.</text>
 				<manacost>4</manacost>
 				<cmc>4</cmc>
 				<colors>B</colors>
+				<coloridentity></coloridentity>
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -25563,6 +25918,8 @@ When Eye of the Abominable enters, return target creature card from your graveya
 				<maintype>Instant</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
 		</card>
@@ -25653,6 +26010,8 @@ When this creature enters, exile another target nonland permanent until this cre
 				<maintype>Planeswalker</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<loyalty>1</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
@@ -25705,6 +26064,8 @@ When this creature enters, exile another target nonland permanent until this cre
 				<maintype>Sorcery</maintype>
 				<manacost>4</manacost>
 				<cmc>4</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
 		</card>
@@ -25759,11 +26120,13 @@ When this creature attacks, if it has power 4 or greater and no counters on it, 
 				<maintype>Planeswalker</maintype>
 				<manacost>12</manacost>
 				<cmc>12</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<loyalty>7</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related count="3">None</related>
+			<related count="3">Faerie Horror ITD</related>
 		</card>
 		<card>
 			<name>The Howling Door</name>
@@ -25778,6 +26141,8 @@ You may cast artifact spells and colorless spells from the top of your library.
 				<maintype>Artifact</maintype>
 				<manacost>4</manacost>
 				<cmc>4</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -25796,6 +26161,8 @@ You may cast artifact spells and colorless spells from the top of your library.
 				<maintype>Planeswalker</maintype>
 				<manacost>4</manacost>
 				<cmc>4</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<loyalty>3</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
@@ -26000,6 +26367,7 @@ Exhaust – {T}: Choose a color.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -26015,6 +26383,7 @@ Exhaust – {T}: Choose a color.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -26030,6 +26399,7 @@ Exhaust – {T}: Choose a color.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -26045,6 +26415,7 @@ Exhaust – {T}: Choose a color.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -26060,6 +26431,7 @@ Exhaust – {T}: Choose a color.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -26075,6 +26447,7 @@ Exhaust – {T}: Choose a color.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -26148,6 +26521,8 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -26162,6 +26537,8 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -26176,6 +26553,8 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -26190,6 +26569,8 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -26204,6 +26585,8 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -26218,6 +26601,8 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -26233,6 +26618,8 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -26249,6 +26636,8 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -26298,6 +26687,8 @@ Activated abilities of sources with the chosen name can&apos;t be activated unle
 				<maintype>Enchantment</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -26312,6 +26703,8 @@ Activated abilities of sources with the chosen name can&apos;t be activated unle
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -26362,6 +26755,7 @@ When this land enters, surveil 1.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -26381,6 +26775,7 @@ When this land enters, surveil 1.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -26400,6 +26795,7 @@ When this land enters, surveil 1.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -26419,6 +26815,7 @@ When this land enters, surveil 1.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -26438,6 +26835,8 @@ When Restored Fault enters, surveil 1.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<cipt>1</cipt>
@@ -26456,6 +26855,7 @@ When this land enters, surveil 1.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -26494,11 +26894,13 @@ Create Lover to All in your reserves. He&apos;s a legendary 2/3 red Human Noble 
 				<maintype>Planeswalker</maintype>
 				<manacost>12</manacost>
 				<cmc>12</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<loyalty>7</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related count="3">None</related>
+			<related count="3">Faerie Horror ITD</related>
 		</card>
 		<card>
 			<name>Blinding Majesty</name>
@@ -26516,7 +26918,7 @@ Create Lover to All in your reserves. He&apos;s a legendary 2/3 red Human Noble 
 			</prop>
 			<tablerow>3</tablerow>
 			
-			<related count="2">None</related>
+			<related count="2">Wonder LAIR</related>
 		</card>
 		<card>
 			<name>Shimmer From Beyond</name>
@@ -26565,8 +26967,12 @@ Whenever Territorial Yew-Maw is dealt damage during your turn, destroy up to one
 				<maintype>Artifact</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
+			
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Naval Diplomacy</name>
@@ -26683,6 +27089,8 @@ Exile Rite of Resurrection.</text>
 				<maintype>Artifact</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -26769,6 +27177,8 @@ When you cast The Horned-Axe, until your next turn, your life total can&apos;t c
 				<maintype>Creature</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -26922,6 +27332,8 @@ Equip–Discard a card.</text>
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -27077,10 +27489,12 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Sanctuary of Enlightenment</name>
@@ -27095,6 +27509,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WU</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27113,6 +27528,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WB</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27131,6 +27547,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27149,6 +27566,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27167,6 +27585,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UB</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27185,6 +27604,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27203,6 +27623,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>BR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27221,6 +27642,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>BG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27239,6 +27661,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>RG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27257,6 +27680,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27273,6 +27697,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27288,6 +27713,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27303,6 +27729,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27318,6 +27745,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27333,6 +27761,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27348,6 +27777,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27363,6 +27793,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27378,6 +27809,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27393,6 +27825,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27408,6 +27841,7 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -27423,11 +27857,13 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<maintype>Creature</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Mirrored Wolf</name>
@@ -27441,6 +27877,8 @@ When Mirrored Wolf enters, if target opponent controls no basic lands, put a +1/
 				<maintype>Creature</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -27888,6 +28326,8 @@ Ezeem, the Second Thirstly gets +X/+0, where X is the greatest amount of life a 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -27925,7 +28365,8 @@ Foretell {2}{W} (During your turn, you may pay {2} and exile this card from your
 			</prop>
 			<tablerow>3</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Lended Light</name>
@@ -28013,7 +28454,8 @@ Foretell {U} (During your turn, you may pay {2} and exile this card from your ha
 			</prop>
 			<tablerow>3</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Ragged Sun&apos;s Angel</name>
@@ -28062,6 +28504,8 @@ As long as you control a God, Cleric, or another Angel, Lost Seraph has &quot;Wh
 				<maintype>Creature</maintype>
 				<manacost>4</manacost>
 				<cmc>4</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -28078,6 +28522,8 @@ When Misguiding Lighthouse enters, destroy target tapped artifact or creature an
 				<maintype>Creature</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -28330,10 +28776,13 @@ You may cast this spell from your graveyard if you exiled one or more cards this
 				<maintype>Artifact</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Discover the Stone Gods</name>
@@ -28352,7 +28801,8 @@ Induct. (Create a 0/1 Cleric creature token with &quot;As a sorcery, sacrifice t
 			</prop>
 			<tablerow>3</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Noonstone Amulet</name>
@@ -28366,6 +28816,8 @@ Induct. (Create a 0/1 Cleric creature token with &quot;As a sorcery, sacrifice t
 				<maintype>Artifact</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -28479,7 +28931,7 @@ Whenever Bringer of Glory enters or attacks, you may pay {1}. If you do, induct.
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Relic Vial</name>
@@ -28493,6 +28945,8 @@ As long as you control a Cleric, Relic Vial has &quot;Whenever a creature you co
 				<maintype>Artifact</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -28507,6 +28961,8 @@ As long as you control a Cleric, Relic Vial has &quot;Whenever a creature you co
 				<maintype>Artifact</maintype>
 				<manacost>4</manacost>
 				<cmc>4</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -28621,7 +29077,8 @@ Induct (Create a 0/1 Cleric creature token with &quot;As a sorcery, sacrifice tw
 			</prop>
 			<tablerow>3</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Raw Prophet</name>
@@ -28676,7 +29133,7 @@ Foretell {G} (During your turn, you may pay {2} and exile this card from your ha
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>The Allure&apos;s Light</name>
@@ -28710,7 +29167,7 @@ Foretell {G} (During your turn, you may pay {2} and exile this card from your ha
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Roost Messengers</name>
@@ -28724,6 +29181,8 @@ When Roost Messengers enters, you may search your library for a basic land or Sa
 				<maintype>Creature</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -28785,7 +29244,7 @@ Exile Cat o&apos;lic Priests: Exile all graveyards. Activate only as a sorcery.<
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Glassgarden Seer</name>
@@ -28877,7 +29336,7 @@ Enchanted creature gets +1/+1 and has vigilance.</text>
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Root of Mercy</name>
@@ -28982,7 +29441,7 @@ This spell costs {2} less to cast for each card you&apos;ve drawn this turn.</te
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Dreamway Imposter</name>
@@ -29111,7 +29570,8 @@ Whenever another Cleric you control enters, untap Roost Nyctodromist.
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Seven-Coil&apos;s Scion</name>
@@ -29185,7 +29645,7 @@ When Twins&apos; Guardian dies, induct. (Create a 0/1 Cleric creature token with
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Veil of Dreams</name>
@@ -29203,7 +29663,8 @@ When Twins&apos; Guardian dies, induct. (Create a 0/1 Cleric creature token with
 			</prop>
 			<tablerow>3</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>White Reaper</name>
@@ -29240,7 +29701,7 @@ When White Reaper dies, tap target creature you don&apos;t control. Put a stun c
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Carapace Scavenger</name>
@@ -29347,7 +29808,7 @@ When Indulgent Cyprian enters, induct. (Create a 0/1 Cleric creature token with 
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Nowhere Ascender</name>
@@ -29399,7 +29860,7 @@ When Nowhere Ascender enters, you may sacrifice a creature. If you do, put a +1/
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Sky-Scar Angel</name>
@@ -29452,7 +29913,8 @@ When Sky-Scar Angel enters, target creature gets -2/-2 until end of turn and you
 			</prop>
 			<tablerow>3</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Cyprian Sacristan</name>
@@ -29618,7 +30080,7 @@ Whenever Malleary Reforged attacks, if you control a God, it deals 2 damage to a
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Smoldering Pack</name>
@@ -29708,7 +30170,7 @@ When Carapace Threadbearer enters, if there are three or more creature cards in 
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Carapace Voyager</name>
@@ -29766,7 +30228,7 @@ Whenever you draw your second card each turn, induct. (Create a 0/1 Cleric creat
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Debilitated Tragulari</name>
@@ -29839,7 +30301,8 @@ When you sacrifice Ordeal of Defiance, you may have target creature you control 
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Thyrsine Hunter</name>
@@ -29876,7 +30339,7 @@ When Thyrsine Hunter enters, if you control a Sanctuary or there is a Sanctuary 
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Unceasing Initiation</name>
@@ -29894,7 +30357,7 @@ When Thyrsine Hunter enters, if you control a Sanctuary or there is a Sanctuary 
 			</prop>
 			<tablerow>3</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Way to the Wood</name>
@@ -30115,10 +30578,12 @@ Equip {2}</text>
 				<maintype>Artifact</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Field of Ruin</name>
@@ -30132,6 +30597,8 @@ Equip {2}</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -30147,6 +30614,8 @@ Equip {2}</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -30167,7 +30636,7 @@ Equip {2}</text>
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Musician&apos;s Remnant</name>
@@ -30225,7 +30694,7 @@ Whenever Glassgarden Watcheye attacks, induct twice. Tokens created this way are
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Expose Mortality</name>
@@ -30802,6 +31271,8 @@ Whenever you attack, you may deal 1 damage to target attacking creature. If you 
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -30821,7 +31292,7 @@ Whenever you attack, you may deal 1 damage to target attacking creature. If you 
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>The Chiliarch</name>
@@ -30875,7 +31346,7 @@ If damage would be dealt to The Chiliarch while it isn&apos;t blocking, prevent 
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Wandering Unmaker</name>
@@ -30914,7 +31385,8 @@ Whenever Flesh Weaver attacks, you gain 1 life and surveil 1. Then exile a card 
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Dyad&apos;s Dance</name>
@@ -31047,6 +31519,8 @@ Activated abilities of Sanctuaries you control cost {1} less to activate.</text>
 				<maintype>Creature</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -31063,6 +31537,8 @@ Whenever a planeswalker enters, remove all but one loyalty counter from it.</tex
 				<maintype>Enchantment</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -31082,7 +31558,7 @@ Whenever a planeswalker enters, remove all but one loyalty counter from it.</tex
 			</prop>
 			<tablerow>3</tablerow>
 			
-			<related>None</related>
+			<related>Cleric PTN</related>
 		</card>
 		<card>
 			<name>Echoing Charger</name>
@@ -31435,7 +31911,7 @@ You get a Scar. (They&apos;re boons with &quot;When a creature you control dies,
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>God Horror PTN</related>
 		</card>
 		<card>
 			<name>Nowhere Stygian</name>
@@ -31594,7 +32070,7 @@ Retopology {W}{W}{W}{W}{W}{W} (Cast a copy of this from your graveyard by exilin
 			</prop>
 			<tablerow>3</tablerow>
 			
-			<related count="6">None</related>
+			<related count="6">Fractal Horror PVR</related>
 		</card>
 		<card>
 			<name>Gathering Olorosaurs</name>
@@ -31627,10 +32103,12 @@ Equip {4}</text>
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>Treasure PVR</related>
 		</card>
 		<card>
 			<name>Abstraction Peeler</name>
@@ -31643,6 +32121,8 @@ Equip {4}</text>
 				<maintype>Creature</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>1/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -31660,6 +32140,8 @@ Equip {4}</text>
 				<maintype>Creature</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -31676,6 +32158,8 @@ Equip {4}</text>
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -31691,6 +32175,8 @@ Equip {4}</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -31714,7 +32200,7 @@ Equip {4}</text>
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related count="2">None</related>
+			<related count="2">Fractal Reflection PVR</related>
 		</card>
 		<card>
 			<name>Extruded Skyscraper</name>
@@ -31729,6 +32215,7 @@ Equip {4}</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -32085,6 +32572,7 @@ Creatures you control get +2/+0 until end of turn.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -32355,6 +32843,7 @@ Whenever enchanted land is tapped for mana, choose a color among cards in your g
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -32404,6 +32893,7 @@ The first Vertex spell you cast each turn has &quot;Add two mana in any combinat
 				<maintype>Artifact</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
@@ -32672,7 +33162,7 @@ Activated abilities of nonland permanents cost {1} more to activate.</text>
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Treasure PVR</related>
 		</card>
 		<card>
 			<name>Parallaxadaisical Dengon</name>
@@ -32795,6 +33285,8 @@ Whenever Font of Decadence attacks, it gains first strike until end of turn. Eac
 				<maintype>Creature</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -33025,6 +33517,8 @@ Equip {2}, {T}</text>
 				<maintype>Artifact</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -33463,6 +33957,7 @@ You get {VW}. (Spend {V} to cast copies of Vertex spells.)</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -33496,6 +33991,7 @@ When Occluded Bog enters, exile up to one target card from a graveyard.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -33920,6 +34416,8 @@ Whenever a player casts a noncreature spell that isn&apos;t a copy, exile it. Th
 				<maintype>Artifact</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -33938,6 +34436,7 @@ Whenever a player casts a noncreature spell that isn&apos;t a copy, exile it. Th
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -34056,6 +34555,8 @@ Exile target creature or planeswalker. Scry 2.</text>
 				<maintype>Artifact</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -34106,6 +34607,7 @@ Exile target creature or planeswalker. Scry 2.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -34123,6 +34625,7 @@ Exile target creature or planeswalker. Scry 2.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -34140,6 +34643,7 @@ Exile target creature or planeswalker. Scry 2.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -34157,6 +34661,7 @@ Exile target creature or planeswalker. Scry 2.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -34172,6 +34677,7 @@ Exile target creature or planeswalker. Scry 2.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -34187,6 +34693,7 @@ Exile target creature or planeswalker. Scry 2.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -34202,6 +34709,7 @@ Exile target creature or planeswalker. Scry 2.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -34217,6 +34725,7 @@ Exile target creature or planeswalker. Scry 2.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -34258,7 +34767,7 @@ Whenever Burning Devastatasaur attacks, you may sacrifice a land or exile a land
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Treasure PVR</related>
 		</card>
 		<card>
 			<name>Harsurfir&apos;s Folly</name>
@@ -34401,7 +34910,7 @@ Retopology {X} (Cast a copy of this from your graveyard by exiling it and paying
 			</prop>
 			<tablerow>3</tablerow>
 			
-			<related>None</related>
+			<related>Fractal Horror PVR</related>
 		</card>
 		<card>
 			<name>Excessive Decadence</name>
@@ -34855,6 +35364,7 @@ Whenever you spend four or more mana to cast a spell or activate an ability, put
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -34871,6 +35381,7 @@ Whenever you spend four or more mana to cast a spell or activate an ability, put
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -34888,6 +35399,7 @@ Whenever you spend four or more mana to cast a spell or activate an ability, put
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -34905,6 +35417,7 @@ Whenever you spend four or more mana to cast a spell or activate an ability, put
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -34921,6 +35434,8 @@ Whenever you spend four or more mana to cast a spell or activate an ability, put
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -35082,6 +35597,7 @@ At the beginning of each end step, if no spells were cast this turn, sacrifice T
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -35170,6 +35686,8 @@ Each attacking creature doesn&apos;t untap during its controller&apos;s next unt
 				<maintype>Artifact</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -35288,6 +35806,8 @@ Equip {3}, {T}</text>
 				<maintype>Artifact</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -35303,6 +35823,8 @@ Equip {3}, {T}</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -35318,6 +35840,8 @@ Crew 3 (Tap any number of other creatures you control with total power 3 or grea
 				<maintype>Creature</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -35333,6 +35857,8 @@ Crew 3 (Tap any number of other creatures you control with total power 3 or grea
 				<maintype>Artifact</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -35348,6 +35874,7 @@ Crew 3 (Tap any number of other creatures you control with total power 3 or grea
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -35676,7 +36203,7 @@ If your complexity is three or greater, draw a card. (Your complexity is the num
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Treasure PVR</related>
 		</card>
 		<card>
 			<name>Procedural Generation</name>
@@ -35708,6 +36235,8 @@ Basic lands you control are the chosen land type in addition to their other type
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -35768,7 +36297,7 @@ Whenever Turbulence Algorithm attacks, you may put the cards in your hand on the
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Treasure PVR</related>
 		</card>
 		<card>
 			<name>Kinema, Queen Eternal</name>
@@ -36285,6 +36814,7 @@ Exile each creature card in your graveyard with mana value X or less. For each c
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -36625,6 +37155,8 @@ Whenever Paleoartistic Masterpiece attacks, the next spell you cast this turn co
 				<maintype>Creature</maintype>
 				<manacost>14</manacost>
 				<cmc>14</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -36641,6 +37173,8 @@ Retopology {C}{C}{C} (Cast a copy of this from your graveyard by exiling it and 
 				<maintype>Creature</maintype>
 				<manacost>3C</manacost>
 				<cmc>4</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -36659,6 +37193,8 @@ Rhystic Palace enters tapped.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -36691,6 +37227,8 @@ Whenever you tap Deprecated Dump for mana, add {C}.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -36931,6 +37469,7 @@ III – Enchantment – You may put a land card from your graveyard or hand onto
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -37069,6 +37608,7 @@ At the beginning of the end step, sacrifice Rapid Terraforming.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WUBRG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -39119,6 +39659,8 @@ When you cast this spell, draw a card and you gain 3 life.
 				<maintype>Creature</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -39153,6 +39695,8 @@ Materialize 4 (Tap one or more other enchantments you control with total mana va
 				<maintype>Enchantment</maintype>
 				<manacost>4</manacost>
 				<cmc>4</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>1</tablerow>
@@ -39172,6 +39716,8 @@ Trace a basic land of any type into your hand.</text>
 				<maintype>Artifact</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -39190,6 +39736,8 @@ When this enchantment enters, scry 2.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -39207,6 +39755,7 @@ When this enchantment enters, scry 2.</text>
 				<maintype>Artifact</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
@@ -39223,6 +39772,8 @@ Materialize 1 (Tap one or more other enchantments you control with total mana va
 				<maintype>Enchantment</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>1</tablerow>
@@ -39256,6 +39807,8 @@ Whenever this creature deals combat damage to a player or noncreature, scry 2, t
 				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -39274,6 +39827,8 @@ Trace a basic land card of any type into your hand.</text>
 				<maintype>Artifact</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -40071,6 +40626,8 @@ Fracture – At the beginning of combat on your turn, up to one target creature 
 				<maintype>Artifact</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 			
@@ -40490,6 +41047,8 @@ Tap an untapped silver or green permanent you control: Target creature gets +1/+
 				<maintype>Creature</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -40525,6 +41084,8 @@ Tap an untapped silver or green permanent you control: Target creature gets +1/+
 				<maintype>Creature</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>5/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -40695,6 +41256,7 @@ Materialize 3 (Tap one or more other enchantments you control with total mana va
 				<manacost></manacost>
 				<cmc>0</cmc>
 				<colors>WB</colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -40827,8 +41389,6 @@ Once each turn, when you cast a noncreature spell, you may pay {2}. If you do, c
 				<coloridentity>WURI</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<reverse-related>Multaph&apos;s Respite&apos;s Spellbook</reverse-related>
-			
 		</card>
 		<card>
 			<name>The Wandering Cook</name>
@@ -40912,6 +41472,8 @@ Whenever you attack with two or more nontoken creatures, you may pay {2}. If you
 				<maintype>Creature</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -40965,6 +41527,8 @@ At the beginning of each opponent&apos;s upkeep, that player loses 3 life unless
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -41096,6 +41660,8 @@ When this enchantment enters, scry 2.</text>
 				<maintype>Artifact</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -41113,6 +41679,8 @@ When this enchantment enters, scry 2.</text>
 				<maintype>Enchantment</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -41284,6 +41852,7 @@ Creatures you control get healing 2 as long as you&apos;ve illuminated white. Th
 				<maintype>Creature</maintype>
 				<manacost>4</manacost>
 				<cmc>4</cmc>
+				<colors></colors>
 				<coloridentity>WUBRGI</coloridentity>
 				<pt>4/4</pt>
 			</prop>
@@ -41401,6 +41970,8 @@ Escape–{5}, Exile five other cards from your graveyard. (You may cast this car
 				<maintype>Creature</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -41553,6 +42124,8 @@ This land enters tapped. As this land enters, pay {1} or sacrifice this land.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<cipt>1</cipt>
@@ -41645,6 +42218,8 @@ Fracture – When this creature attacks, if it&apos;s attacking alone or you&apo
 				<maintype>Creature</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -41898,6 +42473,7 @@ Whenever you tap enchanted land, add {I}.
 				<maintype>Enchantment</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
@@ -42058,6 +42634,7 @@ Fracture – At the beginning of combat, this creature has flying and can attack
 				<maintype>Creature</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
 				<coloridentity>I</coloridentity>
 				<pt>1/3</pt>
 			</prop>
@@ -42166,6 +42743,8 @@ Creature spells you cast with mana value 5 or greater cost {1} less to cast.</te
 				<maintype>Artifact</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -42180,6 +42759,7 @@ Creature spells you cast with mana value 5 or greater cost {1} less to cast.</te
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -42197,6 +42777,7 @@ Creature spells you cast with mana value 5 or greater cost {1} less to cast.</te
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -42212,6 +42793,7 @@ Creature spells you cast with mana value 5 or greater cost {1} less to cast.</te
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -42227,6 +42809,7 @@ Creature spells you cast with mana value 5 or greater cost {1} less to cast.</te
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -42242,6 +42825,7 @@ Creature spells you cast with mana value 5 or greater cost {1} less to cast.</te
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -42259,6 +42843,7 @@ This land enters tapped unless you control two or more basic lands.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WI</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -42278,6 +42863,7 @@ When this land enters, surveil 1.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -42296,6 +42882,7 @@ This land enters tapped unless you control two or more basic lands.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UI</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -42314,6 +42901,8 @@ This land enters tapped unless you control two or more basic lands.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<cipt>1</cipt>
@@ -42332,6 +42921,7 @@ When this land enters, surveil 1.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -42351,6 +42941,7 @@ When this land enters, surveil 1.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -42370,6 +42961,7 @@ When this land enters, surveil 1.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -42389,6 +42981,7 @@ When this land enters, surveil 1.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -42407,6 +43000,8 @@ When this land enters, surveil 1.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -42423,6 +43018,7 @@ This land enters tapped unless you control two or more basic lands.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>GI</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -42441,6 +43037,7 @@ This land enters tapped unless you control two or more basic lands.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>BI</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -42458,6 +43055,8 @@ This land enters tapped unless you control two or more basic lands.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -42474,6 +43073,8 @@ This land enters tapped unless you control two or more basic lands.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -42490,6 +43091,7 @@ This land enters tapped unless you control two or more basic lands.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -42507,6 +43109,7 @@ This land enters tapped unless you control two or more basic lands.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -42630,6 +43233,8 @@ Whenever this creature attacks, if you control three or more tokens, this creatu
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -42664,6 +43269,8 @@ Whenever this creature becomes the target of a spell or ability, its controller 
 				<maintype>Creature</maintype>
 				<manacost>6</manacost>
 				<cmc>6</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>7/6</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -42679,6 +43286,8 @@ Whenever this creature becomes the target of a spell or ability, its controller 
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<reverse-related>Warped Exploration</reverse-related>
@@ -42698,6 +43307,8 @@ When this land enters, surveil 1.
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -42968,6 +43579,8 @@ Scry 1, then draw a card.</text>
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 			<reverse-related>Warped Exploration</reverse-related>
@@ -42986,6 +43599,8 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -43001,6 +43616,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>URG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43017,6 +43633,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UBG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43034,6 +43651,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WUBRG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43051,6 +43669,8 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -43066,6 +43686,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WUB</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43082,6 +43703,8 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -43097,6 +43720,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>BRG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43112,6 +43736,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43127,6 +43752,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43143,6 +43769,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WUG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43158,6 +43785,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43175,6 +43803,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WUG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43191,6 +43820,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WBR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43206,6 +43836,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43223,6 +43854,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43240,6 +43872,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43257,6 +43890,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43274,6 +43908,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43291,6 +43926,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43307,6 +43943,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WUR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43324,6 +43961,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>BRG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43340,6 +43978,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>UBR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43356,6 +43995,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WRG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43372,6 +44012,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>WBG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43387,6 +44028,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43404,6 +44046,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43421,6 +44064,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43438,6 +44082,8 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -43454,6 +44100,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43471,6 +44118,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43488,6 +44136,7 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
@@ -43503,6 +44152,8 @@ Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved W
 				<maintype>Land</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
 		</card>
@@ -43536,6 +44187,8 @@ Ploy–Exile target nonbasic land. Its controller may search their library for a
 				<maintype>Creature</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -43587,6 +44240,8 @@ Impetus {1} (You may cast this from your graveyard as a sorcery with only the te
 				<maintype>Creature</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>0/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -43620,6 +44275,8 @@ Impetus {1} (You may cast this from your graveyard as a sorcery with only the te
 				<maintype>Creature</maintype>
 				<manacost>1</manacost>
 				<cmc>1</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>0/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -43861,7 +44518,7 @@ When Scrappy Wisp-Speaker dies, if there is a card exiled with it, create a 1/1 
 			<tablerow>2</tablerow>
 			
 			<related>Can Be Cast From Exile EXPT</related>
-			<related>None</related>
+			<related>Wonder WAW</related>
 		</card>
 		<card>
 			<name>Shapes in the Pools</name>
@@ -44061,7 +44718,7 @@ You may cast Worldsoul Wanderer from your graveyard by paying {W}{U}{B}{R}{G} ra
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related count="2">None</related>
+			<related count="2">Wonder WAW</related>
 		</card>
 		<card>
 			<name>Ageless Wayfarer</name>
@@ -44115,7 +44772,7 @@ Impetus {G} (You may cast this from your graveyard as a sorcery with only the te
 			</prop>
 			<tablerow>3</tablerow>
 			
-			<related>None</related>
+			<related>Wonder WAW</related>
 		</card>
 		<card>
 			<name>Blossoming Dissenter</name>
@@ -44135,7 +44792,7 @@ Impetus {G} (You may cast this from your graveyard as a sorcery with only the te
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Wonder WAW</related>
 		</card>
 		<card>
 			<name>Calculated Risk</name>
@@ -44187,6 +44844,8 @@ Whenever you attack, you may discard a card. If you do, draw a card. If Collecto
 				<maintype>Artifact</maintype>
 				<manacost>2</manacost>
 				<cmc>2</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -44425,7 +45084,7 @@ Impetus {1}{W} (You may cast this from your graveyard as a sorcery with only the
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>Wonder Archon WAW</related>
 		</card>
 		<card>
 			<name>New Tensuo Spy</name>
@@ -44810,7 +45469,7 @@ Destroy target creature if it&apos;s tapped or if this spell emerged. You gain 3
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Wonder WAW</related>
 		</card>
 		<card>
 			<name>Blinding Majesty</name>
@@ -44828,7 +45487,7 @@ Destroy target creature if it&apos;s tapped or if this spell emerged. You gain 3
 			</prop>
 			<tablerow>3</tablerow>
 			
-			<related count="2">None</related>
+			<related count="2">Wonder WAW</related>
 		</card>
 		<card>
 			<name>Blossoming Conscience</name>
@@ -44847,7 +45506,7 @@ Impetus {G} (You may cast this from your graveyard as a sorcery with only the te
 			</prop>
 			<tablerow>3</tablerow>
 			
-			<related>None</related>
+			<related>Wonder WAW</related>
 		</card>
 		<card>
 			<name>Brazen Confidence</name>
@@ -44918,7 +45577,7 @@ When enchanted creature dies, target opponent may pay 3 life. If they don&apos;t
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>Wonder WAW</related>
 		</card>
 		<card>
 			<name>Crafty Cutthroat</name>
@@ -44984,6 +45643,8 @@ When Epitaph Hermit dies, put it on the bottom of its owner&apos;s library.</tex
 				<maintype>Creature</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -45578,7 +46239,7 @@ Augmented – Whenever Tranquil Cloudray enters or attacks, if you&apos;ve spent
 			</prop>
 			<tablerow>3</tablerow>
 			
-			<related count="3">None</related>
+			<related count="3">Wonder WAW</related>
 		</card>
 		<card>
 			<name>Wish for Discord</name>
@@ -45979,7 +46640,7 @@ Whenever you cast an instant or sorcery spell with a noted mana value, copy that
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
+			<related>Wonder WAW</related>
 		</card>
 		<card>
 			<name>Ilcan Ghostbound</name>
@@ -46046,6 +46707,8 @@ If Khiare would leave the battlefield, shuffle it into its owner&apos;s library 
 				<maintype>Creature</maintype>
 				<manacost>3</manacost>
 				<cmc>3</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>0/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -46088,7 +46751,7 @@ Reflect {U} ({U}: Create a token copy of this creature, except it&apos;s a 1/1 W
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Wonder WAW</related>
 		</card>
 		<card>
 			<name>New Tensuo Pathlayer</name>
@@ -46469,6 +47132,8 @@ When Wish for Safety enters, scry 1.</text>
 				<maintype>Creature</maintype>
 				<manacost>4</manacost>
 				<cmc>4</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -46600,8 +47265,8 @@ Impetus {4}{R} (You may cast this from your graveyard as a sorcery with only the
 			</prop>
 			<tablerow>1</tablerow>
 			
-			<related>None</related>
-			<related count="2">None</related>
+			<related>Wonder Archon WAW</related>
+			<related count="2">Wonder WAW</related>
 		</card>
 		<card>
 			<name>Curious Observer</name>
@@ -46615,6 +47280,8 @@ Hexproof, vigilance</text>
 				<maintype>Creature</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -46684,6 +47351,7 @@ Augmented – At the beginning of your end step, if you&apos;ve spent {W}{U}{B}{
 				<maintype>Creature</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
 				<coloridentity>WUBRG</coloridentity>
 				<pt>3/3</pt>
 			</prop>
@@ -46762,7 +47430,7 @@ When Faceless Watchtower enters, put a +1/+1 counter on target creature. If that
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related>None</related>
+			<related>Wonder WAW</related>
 		</card>
 		<card>
 			<name>Give Out</name>
@@ -47105,12 +47773,13 @@ Augmented – At the beginning of your end step, if you&apos;ve spent {W}{U}{B}{
 				<maintype>Creature</maintype>
 				<manacost>5</manacost>
 				<cmc>5</cmc>
+				<colors></colors>
 				<coloridentity>WUBRG</coloridentity>
 				<pt>10/10</pt>
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related count="3">None</related>
+			<related count="3">Wonder WAW</related>
 		</card>
 		<card>
 			<name>Starseeker Deva</name>
@@ -47132,7 +47801,7 @@ Reflect {2} ({2}: Create a token copy of this creature, except it&apos;s a 1/1 W
 			<tablerow>2</tablerow>
 			
 			<related>Starseeker Deva WAW</related>
-			<related>None</related>
+			<related>Wonder WAW</related>
 		</card>
 		<card>
 			<name>Territorial Wanderer</name>
@@ -47430,7 +48099,7 @@ When New Tensuo Calmkeeper enters, create a 3/3 green Beast creature token and a
 			</prop>
 			<tablerow>2</tablerow>
 			
-			<related count="2">None</related>
+			<related count="2">Wonder WAW</related>
 		</card>
 		<card>
 			<name>Skyview Chronomancer</name>
@@ -47555,6 +48224,8 @@ When Paradel Prism enters, target opponent sacrifices a monocolored permanent, t
 				<maintype>Creature</maintype>
 				<manacost>7</manacost>
 				<cmc>7</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
