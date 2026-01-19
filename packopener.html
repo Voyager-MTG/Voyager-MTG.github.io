@@ -436,7 +436,7 @@
 				}
 			} else {
 				const draft_file = await getDraftFile(pack);
-				draftmancerToP1P1(draft_file);
+				draftmancerToP1P1(draft_file, pack);
 				packOnePickOne();
 			}
 		});
@@ -795,7 +795,7 @@
 			document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
 		}
 
-		function draftmancerToP1P1(draft_file) { // comments in here by aanginer
+		function draftmancerToP1P1(draft_file, default_set) { // comments in here by aanginer
 			updatePackCount(); // just do this at the start
 			let draft_slots = {};
 			let p1p1_object = [];
@@ -835,7 +835,21 @@
 				}
 			}
 
-			for (const card of card_list_arrayified) { // grab the needed card data
+			const card_list_cleaned = [];
+			const seen_cards = [];
+
+			for (const card of card_list_arrayified) {
+				if (default_set && card.set !== default_set) continue;
+				if (seen_cards.includes(card.card_name)) continue;
+				if (card.shape.includes('token')) continue;
+				if (card.card_name === "Kera, New Mordel's Hope" || card.card_name === "Guardian of the Cinders") continue;
+
+					
+				card_list_cleaned.push(card);
+				seen_cards.push(card);
+			}
+
+			for (const card of card_list_cleaned) { // grab the needed card data
 				if (Object.keys(card_map).includes(card.card_name)) {
 					const card_slots = card_map[card.card_name];
 					for (const slot in card_slots) {
@@ -848,7 +862,7 @@
 					}
 				}
 			}
-			
+
 			p1p1_cards = p1p1_object;
 		}
 
@@ -1290,7 +1304,7 @@
 					let set_points = set_packs.set_cost[set.set_code] ? set_packs.set_cost[set.set_code] : set_packs.set_cost.default;
 					let set_packn = parseInt(document.getElementById(`${set.set_code}-input`).value);
 					for (let i = 0; i < set_packn; i++) {
-						draft_files.push(await getDraftFile(set.set_code));
+						draft_files.push([await getDraftFile(set.set_code), set.set_code]);
 					}
 					spent_points += set_packn * set_points;
 				}
@@ -1300,8 +1314,8 @@
 					return;
 				}
 
-				for (const file of draft_files) {
-					draftmancerToP1P1(file);
+				for (const [file, code] of draft_files) {
+					draftmancerToP1P1(file, code);
 					total_cards.push(p1p1_cards);
 				}
 
