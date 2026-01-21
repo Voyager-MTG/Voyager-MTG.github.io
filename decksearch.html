@@ -239,33 +239,59 @@
 		}
 
 		function gridifyDeck(deck) {
-			const container = document.createElement("div");
-			container.className = "deck-container popout";
-			const preview_img = document.createElement("img");
+			let full_deck_container = document.createElement('div');
+			full_deck_container.className = "full-deck-container";
+
+			let deck_container = document.createElement('div');
+			deck_container.className = "deck-container";
+
+			let colors_container = document.createElement('div');
+			colors_container.className = "colors-container";
+
 			let card_stats;
+			let deck_preview = document.createElement('img');
+
 			for (const card of card_list_arrayified) {
 				if (deck.previewimg == card.card_name) {
 					card_stats = card;
 					break;
 				}
 			}
+
 			if (!card_stats) {
-				preview_img.src = "img/card_back.png"
+				deck_preview.src = "img/card_back.png"
 			} else {
-				preview_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+				deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 			}
-			preview_img.className = "deck-preview-img";
-			preview_img.onclick = function () {
-				window.location.href = `/deck?deck=${deck.user}-${encodeURI(deck.name)}`
+
+			deck_preview.onclick = function () {
+				window.location.href = deck.url;
 			}
-			const deck_name = document.createElement("div");
+
+			deck_preview.style.cursor = "pointer";
+			deck_preview.className = "deck-preview-img";
+
+			const deck_name = document.createElement('div');
 			deck_name.className = "deck-name";
 			deck_name.innerText = deck.name;
 
-			container.appendChild(deck_name);
-			container.appendChild(preview_img);
-			return container;
+
+			const colors = deck.colors ? deck.colors : "";
+
+			for (const color of colors) {
+				const color_ele = document.createElement('img');
+				color_ele.src = `/img/mana/mana_${color}.png`; // fuck you git
+				color_ele.className = "mana-img";
+				colors_container.appendChild(color_ele);
+			}
+
+			deck_container.appendChild(deck_name);
+			deck_container.appendChild(deck_preview);
+			full_deck_container.appendChild(deck_container);
+			full_deck_container.appendChild(colors_container);
+			return (full_deck_container);
 		}
+
 
 
 		function tokenizeTerms(searchTerms) {

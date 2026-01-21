@@ -1,3 +1,7 @@
 {
-	"is:graveyard": "(o:discard OR o:surveil OR o:mill OR o:graveyard)"
+	"is:graveyard": "(o:discard OR o:surveil OR o:mill OR o:graveyard)",
+	"dont": "don't",
+	"cant": "can't",
+	"wont": "won't",
+	"é": "e"
 }

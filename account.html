@@ -339,7 +339,7 @@
 			full_deck_container.className = "full-deck-container";
 
 			let deck_container = document.createElement('div');
-			deck_container.className = "deck-container popout";
+			deck_container.className = "deck-container";
 
 			let colors_container = document.createElement('div');
 			colors_container.className = "colors-container";
@@ -367,30 +367,30 @@
 			deck_preview.style.cursor = "pointer";
 			deck_preview.className = "deck-preview-img";
 
-			let deck_name = document.createElement('div');
+			const deck_name = document.createElement('div');
 			deck_name.className = "deck-name";
 			deck_name.innerText = deck.name;
 
-			let deck_btns = document.createElement('div');
+			const deck_btns = document.createElement('div');
 			deck_btns.className = "deck-buttons";
 
-			let deck_link = document.createElement('a');
+			const deck_link = document.createElement('a');
 			deck_link.href = deck.url;
-			let deck_edit_icon = createDeckIcon("edit", "green");
+			const deck_edit_icon = createDeckIcon("header/deck", "green");
 
 			deck_link.appendChild(deck_edit_icon);
-			let deck_submit_text = createDeckIconText("export-white", "blue", "Submit!", "");
+			const deck_submit_text = createDeckIconText("export-white", "blue", "Submit!", "");
 			deck_submit_text.style.cursor = "pointer";
 			deck_submit_text.onclick = async function () {
 
 				document.getElementById('modal-container').style.display = 'block';
-				let modal_content = document.getElementById('modal-content');
-				let content_container = document.createElement("div");
+				const modal_content = document.getElementById('modal-content');
+				const content_container = document.createElement("div");
 				content_container.className = "submit-modal";
 				modal_content.innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
 
 				for (const event of events) {
-					let deck_submit_text = createDeckIconText("export-white", "blue", "Submit to " + event, "");
+					const deck_submit_text = createDeckIconText("export-white", "blue", "Submit to " + event, "");
 
 					deck_submit_text.onclick = function () {
 						handleEventSubmission(event, deck);
@@ -401,12 +401,12 @@
 				modal_content.appendChild(content_container);
 			}
 
-			let deck_delete_icon = createDeckIcon("trash", "red");
+			const deck_delete_icon = createDeckIcon("trash", "red");
 
 			deck_delete_icon.onclick = async function () {
-				let new_decks = decks;
+				const new_decks = decks;
 				// let index = 0;
-				let user_deck = {};
+				const user_deck = {};
 				for (let i = 0; i < decks.length; i++) {
 					user_deck = decks[i];
 					if (user_deck["name"] == deck.name) {
@@ -424,18 +424,18 @@
 			const colors = deck.colors ? deck.colors : "";
 
 			for (const color of colors) {
-				let color_ele = document.createElement('img');
+				const color_ele = document.createElement('img');
 				color_ele.src = `/img/mana/mana_${color}.png`; // fuck you git
 				color_ele.className = "mana-img";
 				colors_container.appendChild(color_ele);
 			}
 
 			deck_btns.appendChild(deck_link);
-			deck_btns.appendChild(deck_submit_text);
+			// deck_btns.appendChild(deck_submit_text);
 			deck_btns.appendChild(deck_delete_icon);
 			deck_container.appendChild(deck_name);
-			deck_container.appendChild(deck_preview);
 			deck_container.appendChild(deck_btns);
+			deck_container.appendChild(deck_preview);
 			full_deck_container.appendChild(deck_container);
 			full_deck_container.appendChild(colors_container);
 			return (full_deck_container);

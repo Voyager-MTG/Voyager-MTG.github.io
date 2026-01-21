@@ -1372,118 +1372,235 @@
 		},
 	]
 
-[cube(15)]
-	1 Falling Sparks
-	1 Soul Splintering
-	1 Towing Steladiuys
-	1 Information Recovery Crew
-	1 Exuberant Archaeologist
-	1 Tepid Tamer
-	1 Striking Reflection
-	1 Unbothered Alchemist
-	1 Scouting Party
-	1 Back to Market
-	1 Center Mass
-	1 Murky Politics
-	1 Memory Restored
-	1 Neverbloom
-	1 The Lost Heir
-	1 Unveiling
-	1 To Survive in Some Form
-	1 Eschewer of Form
-	1 Era, Hymn to Creation
-	1 Infraruin Predator
-	1 Sealed Deepborn
-	1 Kaiju Sighting
-	1 Interstellar Traveller
-	1 The Depths Talk Loudly
+[rare(1)]
+	2 Falling Sparks
+	2 Soul Splintering
+	2 Memory Restored
+	2 Neverbloom
+	2 The Lost Heir
+	2 Unveiling
+	2 Eschewer of Form
+	2 Era, Hymn to Creation
+	2 Infraruin Predator
+	2 Kaiju Sighting
+	2 Interstellar Traveller
 	1 Lost in Dreams of Life
-	1 Iridescent Summit
-	1 One Last Sunset
+	2 Iridescent Summit
+	2 One Last Sunset
 	1 Winged Turtle
-	1 Wandering Dislocation
 	1 Sundown
-	1 Against the Night
-	1 Warping Wolf
-	1 Risen Earthdragon
-	1 Shell's Scraping
-	1 Illuminant Spire
-	1 Ivory Spire
-	1 Searing Spire
-	1 Silent Spire
-	1 Twisted Spire
-	1 Verdant Spire
-	1 Swirling Moon
-	1 Sever the Oracle
-	1 Curious Dexteria
-	1 Searing Sigils
-	1 Distant Vulture
-	1 Extant Surveyor
-	1 Hopeless Summit
-	1 Lost Cause
-	1 Sieve
-	1 Draconic Reflection
-	1 Sryyn Spawner
-	1 Algael-leael
-	1 Syphroid
-	1 Tellavia Balwar
-	1 Refraction Mech
-	1 Writhing Sight
-	1 Xylem Attendant
-	1 Clifftop Pishogue
-	1 Malevolent Knowledge
-	1 Shadow Eater
-	1 Mirrored Magic
-	1 Siege Crossbow
-	1 The Demon Within
-	1 Unending Toils
-	1 Beautiful Headhuntress
-	1 Wisped Wings
-	1 Scholigaunt
-	1 Godhead's Interdiction
-	1 Incessant Intercession
-	1 Duet of Loss and Life
-	1 Abstracted Mark
-	1 Whimsy Unbound
-	1 Sample Skimmer
-	1 Sentinel of the Afterlife
-	1 Our Fates Change
-	1 Caught in the Confusion
-	1 Madness Broadcaster
-	1 Reflection Tender
-	1 The Usurper
-	1 The Chanter of Paths
-	1 Sanctuary of Nectars
-	1 Sanctuary of Resonance
-	1 Sanctuary of Moonlight
-	1 Sanctuary of Scales
-	1 Sanctuary of Journeys
-	1 Bygone Monoliths
-	1 Foreboding Falls
-	1 Forbidding Spires
-	1 Suffocating Path
-	1 Dreaded Clearing
-	1 Mooyan Curry
-	1 Yaiba Robo
-	1 Blooming Peculiarity
-	1 Mark of Insanity
-	1 Nildiver
-	1 The Boundary
-	1 Ashen Wisps
-	1 Fyndhorn Betrayer
-	1 Groaning Lullaby
-	1 Moonlight Charm
-	1 Spiteful Coil-Servants
-	1 Ego Entwined
-	1 Reto-Polo
+	2 Against the Night
+	2 Shell's Scraping
+	2 Swirling Moon
+	2 Distant Vulture
+	2 Extant Surveyor
+	2 Refraction Mech
+	2 Malevolent Knowledge
+	2 Mirrored Magic
+	2 The Demon Within
+	2 Godhead's Interdiction
+	2 Whimsy Unbound
+	2 Sentinel of the Afterlife
+	2 Our Fates Change
+	2 Caught in the Confusion
+	2 Madness Broadcaster
+	2 Reflection Tender
+	2 The Usurper
+	2 The Chanter of Paths
+	2 Bygone Monoliths
+	2 Foreboding Falls
+	2 Forbidding Spires
+	2 Suffocating Path
+	2 Dreaded Clearing
+	2 Mark of Insanity
+	2 The Boundary
+	2 Groaning Lullaby
+	2 Ego Entwined
 	1 Identity Granter
-	1 Empty Body Practitioner
-	1 Raging Rubigrug
-	1 Ferryman's Price
-	1 Dessigry
-	1 Woods' Procession
-	1 Blank
-	1 Edification
-	1 Canyon Crustacean
-	1 Cowering Lightbringer
-	1 Faulty Recreation
+	2 Raging Rubigrug
+[uncommon(1)]
+	4 To Survive in Some Form
+	4 Sealed Deepborn
+	4 The Depths Talk Loudly
+	4 Warping Wolf
+	4 Risen Earthdragon
+	4 Illuminant Spire
+	4 Ivory Spire
+	4 Searing Spire
+	4 Silent Spire
+	4 Twisted Spire
+	4 Verdant Spire
+	4 Sever the Oracle
+	4 Curious Dexteria
+	4 Searing Sigils
+	4 Sryyn Spawner
+	4 Syphroid
+	4 Xylem Attendant
+	4 Clifftop Pishogue
+	4 Unending Toils
+	4 Beautiful Headhuntress
+	4 Scholigaunt
+	4 Incessant Intercession
+	4 Duet of Loss and Life
+	4 Abstracted Mark
+	4 Sample Skimmer
+	4 Blooming Peculiarity
+	4 Nildiver
+	4 Fyndhorn Betrayer
+	4 Reto-Polo
+	4 Woods' Procession
+	4 Cowering Lightbringer
+[common(2)]
+	8 Towing Steladiuys
+	8 Information Recovery Crew
+	8 Exuberant Archaeologist
+	8 Tepid Tamer
+	8 Striking Reflection
+	8 Unbothered Alchemist
+	8 Scouting Party
+	8 Back to Market
+	8 Center Mass
+	8 Murky Politics
+	8 Wandering Dislocation
+	8 Hopeless Summit
+	8 Lost Cause
+	8 Sieve
+	8 Draconic Reflection
+	8 Algael-leael
+	8 Tellavia Balwar
+	8 Writhing Sight
+	8 Shadow Eater
+	8 Siege Crossbow
+	8 Wisped Wings
+	8 Sanctuary of Nectars
+	8 Sanctuary of Resonance
+	8 Sanctuary of Moonlight
+	8 Sanctuary of Scales
+	8 Sanctuary of Journeys
+	8 Mooyan Curry
+	8 Yaiba Robo
+	8 Ashen Wisps
+	8 Moonlight Charm
+	8 Spiteful Coil-Servants
+	8 Empty Body Practitioner
+	8 Ferryman's Price
+	8 Dessigry
+	8 Blank
+	8 Edification
+	8 Canyon Crustacean
+	8 Faulty Recreation
+[wildcard(1)]
+	7 Falling Sparks
+	7 Soul Splintering
+	6 Towing Steladiuys
+	6 Information Recovery Crew
+	6 Exuberant Archaeologist
+	6 Tepid Tamer
+	6 Striking Reflection
+	6 Unbothered Alchemist
+	6 Scouting Party
+	6 Back to Market
+	6 Center Mass
+	6 Murky Politics
+	7 Memory Restored
+	7 Neverbloom
+	7 The Lost Heir
+	7 Unveiling
+	15 To Survive in Some Form
+	7 Eschewer of Form
+	7 Era, Hymn to Creation
+	7 Infraruin Predator
+	15 Sealed Deepborn
+	7 Kaiju Sighting
+	7 Interstellar Traveller
+	15 The Depths Talk Loudly
+	4 Lost in Dreams of Life
+	7 Iridescent Summit
+	7 One Last Sunset
+	4 Winged Turtle
+	6 Wandering Dislocation
+	4 Sundown
+	7 Against the Night
+	15 Warping Wolf
+	15 Risen Earthdragon
+	7 Shell's Scraping
+	15 Illuminant Spire
+	15 Ivory Spire
+	15 Searing Spire
+	15 Silent Spire
+	15 Twisted Spire
+	15 Verdant Spire
+	7 Swirling Moon
+	15 Sever the Oracle
+	15 Curious Dexteria
+	15 Searing Sigils
+	7 Distant Vulture
+	7 Extant Surveyor
+	6 Hopeless Summit
+	6 Lost Cause
+	6 Sieve
+	6 Draconic Reflection
+	15 Sryyn Spawner
+	6 Algael-leael
+	15 Syphroid
+	6 Tellavia Balwar
+	7 Refraction Mech
+	6 Writhing Sight
+	15 Xylem Attendant
+	15 Clifftop Pishogue
+	7 Malevolent Knowledge
+	6 Shadow Eater
+	7 Mirrored Magic
+	6 Siege Crossbow
+	7 The Demon Within
+	15 Unending Toils
+	15 Beautiful Headhuntress
+	6 Wisped Wings
+	15 Scholigaunt
+	7 Godhead's Interdiction
+	15 Incessant Intercession
+	15 Duet of Loss and Life
+	15 Abstracted Mark
+	7 Whimsy Unbound
+	15 Sample Skimmer
+	7 Sentinel of the Afterlife
+	7 Our Fates Change
+	7 Caught in the Confusion
+	7 Madness Broadcaster
+	7 Reflection Tender
+	7 The Usurper
+	7 The Chanter of Paths
+	6 Sanctuary of Nectars
+	6 Sanctuary of Resonance
+	6 Sanctuary of Moonlight
+	6 Sanctuary of Scales
+	6 Sanctuary of Journeys
+	7 Bygone Monoliths
+	7 Foreboding Falls
+	7 Forbidding Spires
+	7 Suffocating Path
+	7 Dreaded Clearing
+	6 Mooyan Curry
+	6 Yaiba Robo
+	15 Blooming Peculiarity
+	7 Mark of Insanity
+	15 Nildiver
+	7 The Boundary
+	6 Ashen Wisps
+	15 Fyndhorn Betrayer
+	7 Groaning Lullaby
+	6 Moonlight Charm
+	6 Spiteful Coil-Servants
+	7 Ego Entwined
+	15 Reto-Polo
+	4 Identity Granter
+	6 Empty Body Practitioner
+	7 Raging Rubigrug
+	6 Ferryman's Price
+	6 Dessigry
+	15 Woods' Procession
+	6 Blank
+	6 Edification
+	6 Canyon Crustacean
+	15 Cowering Lightbringer
+	6 Faulty Recreation

@@ -384,11 +384,13 @@
 		let p1p1_cards;
 		let pulls = [];
 		let firstpack = true;
+		const card_list_cleaned = [];
 		const urlParams = new URLSearchParams(window.location.search);
 		const pack = urlParams.get('pack');
 		const source = urlParams.get('source');
 		let pack_count = 1;
 		const num_packs = urlParams.get('num') ? parseInt(urlParams.get('num')) : 999999 /* that should be enough for everyone */;
+		const masterPack = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], []];
 		document.getElementById("next-pack").dataset.count = pack_count;
 		document.getElementById("next-pack").dataset.packs = num_packs;
 		modal = document.getElementById("modal-container");
@@ -398,6 +400,24 @@
 				document.getElementById('modal-container').style.display = 'none';
 			}
 		}
+
+		function isSanctum(card) {
+			const regex = new RegExp("((P|p)athbound|(H|h)eir–)");
+			if (regex.test(card.rules_text.toLowerCase())) {
+				return true;
+			} else {
+				if (card.type.match(/wonder/i) || card.type.match(/erysite/i) || card.type.match(/realm/i) || card.type.match(/frontier/i)) {
+					return true;
+				} else {
+					if (card.special_text.includes("sanctum")) {
+						return true;
+					} else {
+						return false;
+					}
+				}
+			}
+		}
+
 		document.addEventListener("DOMContentLoaded", async function () {
 			await fetch('/lists/all-cards.json')
 				.then(response => response.json())
@@ -429,12 +449,99 @@
 
 			document.title = `${num_packs} ${pack} packs`;
 
+			const seen_cards = [];
+
+			for (const card of card_list_arrayified) {
+				if (seen_cards.includes(card.card_name)) continue;
+				if (card.shape.includes('token')) continue;
+				if (card.card_name === "Kera, New Mordel's Hope" || card.card_name === "Guardian of the Cinders") continue;
+
+					
+				card_list_cleaned.push(card);
+				seen_cards.push(card);
+			}
+
+			/*
+			1 r/m
+			2 >=w c/u
+			2 >=u c/u
+			2 >=b c/u
+			2 >=r c/u
+			2 >=g c/u
+			2 >=i c/u
+			1 sanctum
+			1 land
+			*/
+
+			for (const card of card_list_cleaned) {
+				if (card.rarity === 'rare' || card.rarity === 'mythic') { 
+					masterPack[0].push(card);
+				}
+				if (card.rarity === 'uncommon' || card.rarity === 'common') {
+					if (card.color.includes("W")) { 
+						for (let i = 0; i < 5; i++) {
+							masterPack[1].push(card);
+							masterPack[2].push(card);
+						}
+					}
+
+					if (card.color.includes("U")) { 
+						for (let i = 0; i < 5; i++) {
+							masterPack[3].push(card);
+							masterPack[4].push(card);
+						}
+					}
+
+					if (card.color.includes("B")) { 
+						for (let i = 0; i < 5; i++) {
+							masterPack[5].push(card);
+							masterPack[6].push(card);
+						}
+					}
+
+					if (card.color.includes("R")) { 
+						for (let i = 0; i < 5; i++) {
+							masterPack[7].push(card);
+							masterPack[8].push(card);
+						}
+					}
+
+					if (card.color.includes("G")) { 
+						for (let i = 0; i < 5; i++) {
+							masterPack[9].push(card);
+							masterPack[10].push(card);
+						}
+					}
+
+					if (card.color.includes("I")) { 
+						for (let i = 0; i < 5; i++) {
+							masterPack[11].push(card);
+							masterPack[12].push(card);
+						}
+					}
+
+					if (card.card_color === '') {
+						for (let i = 1; i <= 12; i++)
+							masterPack[i].push(card);
+					}
+				}
+				if (isSanctum(card)) masterPack[13].push(card);
+				if (card.type.includes("Land"))
+					masterPack[14].push(card); 
+			}
+
 			if (source) {
 				if (source.includes("coll-league")) {
 					document.getElementById("coll-league-inp").value = source;
 					document.getElementById("coll-league-inp").click();
 				}
 			} else {
+				if (pack === 'MasterPack') {
+					p1p1_cards = masterPack.slice();
+					packOnePickOne();
+					return;
+				}
+
 				const draft_file = await getDraftFile(pack);
 				draftmancerToP1P1(draft_file, pack);
 				packOnePickOne();
@@ -722,7 +829,6 @@
 				if (gradient.name != defaultGradient) {
 					document.getElementById("color-select").appendChild(opt);
 				}
-				console.log(gradient, opt);
 			}
 
 			// setGradient();
@@ -761,7 +867,6 @@
 
 			document.body.style.backgroundImage = gradImage;
 			localStorage.setItem("settings.gradient", gradient);
-			console.log("CHANGE");
 			if (document.getElementsByClassName("artist-credit")[0])
 				document.getElementsByClassName("artist-credit")[0].remove();
 			const credit_text = document.createElement("span");
@@ -850,17 +955,15 @@
 			}
 
 			for (const card of card_list_cleaned) { // grab the needed card data
-				if (Object.keys(card_map).includes(card.card_name)) {
-					const card_slots = card_map[card.card_name];
-					for (const slot in card_slots) {
-						const slot_copies = draft_slots[slot];
-						for (let i = 0; i < slot_copies; i++) {
-							for (let j = 0; j < card_slots[slot]; j++) {
-								p1p1_object[slot_indexes[slot] + i].push(card);
-							}
-						}
+				if (!Object.keys(card_map).includes(card.card_name)) continue; 
+				const card_slots = card_map[card.card_name];
+				for (const slot in card_slots) {
+					const slot_copies = draft_slots[slot];
+					for (let i = 0; i < slot_copies; i++) {
+						for (let j = 0; j < card_slots[slot]; j++)
+							p1p1_object[slot_indexes[slot] + i].push(card);
 					}
-				}
+				}		
 			}
 
 			p1p1_cards = p1p1_object;
@@ -879,9 +982,9 @@
 
 			if (pack_count <= num_packs && (num_packs != 1 || firstpack)) {
 				pulls.push(...used_cards);
+				document.getElementById("next-pack").dataset.count = pack_count + 1;
 			}
 			if (pack_count < num_packs) {
-				document.getElementById("next-pack").dataset.count = pack_count + 1;
 				packOnePickOne();
 			}
 			else {
@@ -1067,6 +1170,11 @@
 
 			const content_container = document.createElement("div");
 			content_container.className = "set-modal-container";
+
+			set_list.sets.push({
+				set_name: 'Master Pack',
+				set_code: 'MasterPack',
+			});
 
 			for (const set of set_list.sets) {
 				const set_name = document.createElement("span");
@@ -1320,7 +1428,6 @@
 				}
 
 				p1p1_cards = total_cards[0];
-				console.log(p1p1_cards, total_cards);
 				document.getElementById("modal-container").dataset.source = "";
 				document.getElementById("next-pack").dataset.source = "coll";
 				document.getElementById("next-pack").dataset.count = 1;

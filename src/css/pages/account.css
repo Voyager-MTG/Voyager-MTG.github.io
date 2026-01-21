@@ -129,7 +129,7 @@ select {
 }
 
 .deck-icon-red {
-	max-height: 30px;
+	max-height: 40px;
 	background-color: #e01616;
 	border-radius: 8px;
 	padding: 8px;
@@ -137,7 +137,7 @@ select {
 }
 
 .deck-icon-green {
-	max-height: 30px;
+	max-height: 40px;
 	background-color: #16e019;
 	border-radius: 8px;
 	padding: 8px;
@@ -169,11 +169,6 @@ hr {
 	background-color: black;
 	border-radius: 2px;
 	border: none;
-}
-
-.mana-img {
-	max-height: 26px;
-	margin: 2px;
 }
 
 .submit-modal {
