@@ -246,7 +246,6 @@ def auto_related(card, tokens):
 
 				count = englishToNumber(tokenMatch[0])
 				token_to_script = getToken(tokens, token_type, token_colors, pt, card["set"])
-				if "The Gardener" in card["card_name"]: print(token_to_script, token_type, token_colors, pt)
 
 				if token_type == "":
 					token_name = re.findall("[N|n]amed (.*?) (with|that)", str(tokenMatch[17]))

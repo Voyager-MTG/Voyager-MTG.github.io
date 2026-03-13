@@ -219,7 +219,7 @@
 				let colls;
 				let used_formats = [];
 				document.title = username;
-				let decks = user_data.decks;
+				let decks = user_data.decks.reverse();
 
 				if (user_data.colls) {
 					colls = JSON.parse(user_data.colls);
@@ -230,7 +230,6 @@
 				document.getElementById('decks').innerHTML = "";
 
 				for (const deck of decks) {
-
 					if (!used_formats.includes(deck.format)) {
 						used_formats.push(deck.format);
 						const full_format_container = createFormatContainer(deck.format);
@@ -238,7 +237,6 @@
 					}
 
 					document.getElementById(deck.format).appendChild(createDeckContainer(user_data, deck, card_list_arrayified));
-
 				}
 
 				if (!document.getElementById("Collection League")) {
