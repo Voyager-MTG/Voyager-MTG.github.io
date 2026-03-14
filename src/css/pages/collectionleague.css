@@ -377,11 +377,15 @@ span {
 .home-tab h1 {
     width: 100%;
     text-align: center;
-    color: var(--text-color);
+    color: var(--popout-text-color);
 }
 
 .monthly-pack {
     height: fit-content;
+}
+
+.monthly-pack h1 {
+    color: var(--text-color);
 }
 
 .monthly-pack img {
@@ -405,4 +409,8 @@ span {
     width: fit-content;
     display: block;
     margin-top: 10px;
+}
+
+body[data-theme="Light"] .btn-icon, body[data-theme="Light"] .view-pack img {
+    filter: invert();
 }

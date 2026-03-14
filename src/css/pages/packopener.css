@@ -391,3 +391,7 @@ h1 {
     text-align: center;
     font-size: 1.2em;
 }
+
+#modal-content h1, .no-packs-text {
+    color: white;
+}
