@@ -22,11 +22,11 @@
 	<img class="preload-hidden" src="/img/save.png">
 	<img class="preload-hidden" src="/img/download.png">
 	<img class="preload-hidden" src="/img/copy-white.png">
-	<img src="img/header/menu.png" class="header-control" onclick="toggleHeader()">
+	<img src="/img/header/menu.png" class="header-control" onclick="toggleHeader()">
 	<div class="header">
 		<div class="search-grid">
 			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-			<img class="sg-icon" src="/img/header/search.png">
+			<img class="sg-icon" src="/img/header/search.png" onclick="window.location.href = '/search'" style="cursor: pointer;">
 			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
 			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
 			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
@@ -34,13 +34,13 @@
 						class="sg-icon">Community<b>⮟</b></a>
 				<div class="community-dropdown">
 					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/header/community.png">Users</a>
+							src="/img/header/community.png">Users</a>
 					<a href="/community?tab=decks" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/header/deck.png">Decks</a>
+							src="/img/header/deck.png">Decks</a>
 					<a href="/community?tab=events" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/swords.png">Events</a>
+							src="/img/swords.png">Events</a>
 					<a href="/community?tab=cards" class="community-dropdown-item"><img class="dropdown-icon"
-							src="img/header/sets.png">Cards</a>
+							src="/img/header/sets.png">Cards</a>
 				</div>
 			</div>
 			<a href="/settings" class="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
@@ -1255,7 +1255,7 @@
 			container.className = "load-deck-container";
 			const preview_img = document.createElement("img");
 			let card_stats;
-			let card_stats_image = "img/card_back.png";
+			let card_stats_image = "/img/card_back.png";
 			for (const card of card_list_arrayified) {
 				if (deck.previewimg == card.card_name) {
 					card_stats = card;
@@ -1263,7 +1263,7 @@
 					break;
 				}
 			}
-			preview_img.src = deck.previewimg == "cardback" ? "img/card_back.png" : card_stats_image;
+			preview_img.src = deck.previewimg == "cardback" ? "/img/card_back.png" : card_stats_image;
 			preview_img.className = "deck-preview-img";
 			// preview_img.onclick = function() {
 			//     window.location.href = `/deck?deck=${deck.user}-${encodeURI(deck.name)}`
@@ -1354,20 +1354,23 @@
 				card_set = card_set == null ? "XXX" : card_set[1];
 				card_num = card_num == null ? "0" : card_num[1];
 				
-				if (deck_map.has([card_name, card_set, card_num])) // if the deck has card name, add the new value, if it doesnt, set the value to stop keyerrors
+				if (deck_map.has(`${card_name} (${card_set}) ${card_num}`)) // if the deck has card name, add the new value, if it doesnt, set the value to stop keyerrors
 				{
-					deck_map.set([card_name, card_set, card_num], deck_map.get(card_name) + count);
+					deck_map.set(`${card_name} (${card_set}) ${card_num}`, deck_map.get(`${card_name} (${card_set}) ${card_num}`) + count);
 				}
 				else {
-					deck_map.set([card_name, card_set, card_num], count);
+					deck_map.set(`${card_name} (${card_set}) ${card_num}`, count);
 				}
 			}
 
 			for (const card of card_list.cards) {
 				for (const [ key, value ] of deck_map.entries()) {
-					if (key[0] == card.card_name && (key[1] == card.set || key[1] == "XXX") && (key[2] == card.number.toString() || key[2] == "0")) {
+					const card_match = key.match(/(.*) \(([A-Z\-_0-9]+)\) (\d+)/);
+					if (!card_match) continue;
+					const [_, name, set, num] = card_match;
+					if (name == card.card_name && (set == card.set || set == "XXX") && (num == card.number.toString() || num == "0")) {
 						new_list.push(card);
-						cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${value}x"; display: block; position: absolute; border-radius: 20px;}\n`;
+						cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}-cards-and-text):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${value}x"; display: block; position: absolute; border-radius: 20px; z-index: 1;}\n`;
 						deck_map.delete(key);
 					}
 				}
@@ -1376,9 +1379,12 @@
 			if (deck_map.size > 1) {
 				for (const card of card_list.cards) {
 					for (const [ key, value ] of deck_map.entries()) {
-						if (key[0] == card.card_name && (key[1] == card.set || key[1] == "XXX")) {
+						const card_match = key.match(/(.*) \(([A-Z\-_0-9]+)\) (\d+)/);
+						if (!card_match) continue;
+						const [_, name, set, num] = card_match;
+						if (name == card.card_name && (set == card.set || set == "XXX")) {
 							new_list.push(card);
-							cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${value}x"; display: block; position: absolute; border-radius: 20px;}\n`;
+							cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}-cards-and-text):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${value}x"; display: block; position: absolute; border-radius: 20px; z-index: 1;}\n`;
 							deck_map.delete(key);
 						}
 					}
@@ -1387,10 +1393,13 @@
 
 			if (deck_map.size > 1) {
 				for (const card of card_list.cards) {
-						for (const [ key, value ] of deck_map.entries()) {
-						if (key[0] == card.card_name) {
+					for (const [ key, value ] of deck_map.entries()) {
+						const card_match = key.match(/(.*) \(([A-Z\-_0-9]+)\) (\d+)/);
+						if (!card_match) continue;
+						const [_, name, set, num] = card_match;
+						if (name == card.card_name) {
 							new_list.push(card);
-							cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${value}x"; display: block; position: absolute; border-radius: 20px;}\n`;
+							cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}-cards-and-text):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${value}x"; display: block; position: absolute; border-radius: 20px; z-index: 1;}\n`;
 							deck_map.delete(key);
 						}
 					}
@@ -2595,10 +2604,10 @@
 			password = data.password;
 		});
 
-
+		console.log('????');
 		await getDoc(doc(db, 'users', username)).then(async docSnap => {
 			let data = docSnap.data();
-			let colls; // comment
+			let colls;
 			const admin = data.admin;
 			let coll_league = data.coll_league;
 			decks = data.decks;
@@ -2613,7 +2622,7 @@
 			}
 
 			const urlParams = new URLSearchParams(window.location.search);
-
+			console.log('HELLO');
 
 			if (urlParams.get('deck') != null) { // check if deck exists
 				if (urlParams.get("deck").includes("-") && !urlParams.get("deck").includes(";")) {
@@ -2679,6 +2688,17 @@
 				}
 			}
 
+			console.log('whyyyy');
+			if (window.location.search.includes('collectionleague')) {
+				console.log('whyyyy');
+				let collection;
+				await fetch(`https://voyager-api-pq2h.onrender.com/collectionleague/collection/view?session=${localStorage.getItem('settings.session')}`)
+					.then(response => response.text())
+					.then(data => {
+						collection = data;
+					}).catch(error => console.error('Error:', error));
+				loadCollection('Collection League', collection.split('\n'));
+			}
 
 			document.getElementById('save-btn').addEventListener("click", (e) => {
 				let colorsList = [];
