@@ -1364,6 +1364,11 @@
 			}
 
 			for (const card of card_list.cards) {
+				if (card.type.includes('Basic')) {
+					new_list.push(card);
+					continue;
+				} 
+				
 				for (const [ key, value ] of deck_map.entries()) {
 					const card_match = key.match(/(.*) \(([A-Z\-_0-9]+)\) (\d+)/);
 					if (!card_match) continue;
@@ -2688,9 +2693,7 @@
 				}
 			}
 
-			console.log('whyyyy');
 			if (window.location.search.includes('collectionleague')) {
-				console.log('whyyyy');
 				let collection;
 				await fetch(`https://voyager-api-pq2h.onrender.com/collectionleague/collection/view?session=${localStorage.getItem('settings.session')}`)
 					.then(response => response.text())
