@@ -392,6 +392,6 @@ h1 {
     font-size: 1.2em;
 }
 
-#modal-content h1, .no-packs-text {
+#modal-content {
     color: white;
 }

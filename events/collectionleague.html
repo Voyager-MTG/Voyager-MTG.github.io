@@ -442,7 +442,6 @@
 			let cards_already_checked = [];
 			collection_cards = [];
 			const _collection_copies = new Map(collection_copies);
-			console.log(Array.from(_collection_copies.entries()));
 
 			for (const [i, card] of card_list_arrayified.entries()) {
 				const card_id = `${card.card_name} (${card.set}) ${card.number}`;
@@ -453,12 +452,9 @@
 				}
 			}
 
-			console.log(cards_already_checked.map(i => card_list_arrayified[i]));
 			cards_to_check = card_list_arrayified.filter((_, i) => !cards_already_checked.includes(i));
 
-			console.log(_collection_copies);
 			for (const collection_card of _collection_copies.keys()) {
-				console.log(collection_card);
 				const [_, card_name, set, num] = collection_card.match(/(.*?) \(([A-Z\-_0-9]+)\) (\d+)/);
 				for (const [i, card] of cards_to_check.entries()) {
 					if (card.card_name == card_name && card.set == set) {
@@ -482,7 +478,7 @@
 					}
 				}
 			}
-
+			
 			if (collection.includes('500 Internal Server Error')) return;
 			await fetch(`https://voyager-api-pq2h.onrender.com/collectionleague/collection/write?session=${localStorage.getItem('settings.session')}&collection=${btoa(collection)}`);
 		}
