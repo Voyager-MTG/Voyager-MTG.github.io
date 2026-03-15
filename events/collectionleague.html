@@ -286,7 +286,6 @@
 
 
 		function makeRecordsTab() {
-			const records_container = document.querySelector('.records-container');
 			let group;
 			let cards = [];
 
@@ -302,102 +301,109 @@
 					continue;
 				}
 
-				const [_, name, time] = group;
-
-				const row = document.createElement('div');
-				row.className = 'record-row';
-
-				const name_label = document.createElement('div');
-				name_label.className = 'record-label';
-				name_label.innerText = name;
-
-				const date_time_label = document.createElement('div');
-				date_time_label.className = 'record-date';
-				date_time_label.innerText = time;
-
-				const summary = document.createElement('div');
-				summary.className = 'record-summary';
-
-				const card_jsons = [];
-				for (const card of cards) {
-					if (card == '') continue;
-					const [_, card_name, set, num] = card.match(/\d+ (.*?) \(([A-Z\-_0-9]+)\) (\d+)/);
-					let card_stats;
-					for (const _card of card_list_arrayified)
-						if (_card.card_name == card_name && set == _card.set && num == _card.number) card_stats = _card;
-					card_jsons.push(card_stats);
-				}
-
-				card_jsons.sort((a, b) => {
-					if (a.type.includes('Basic') && !b.type.includes('Basic')) return 1;
-					if (!a.type.includes('Basic') && b.type.includes('Basic')) return -1;
-					const rarity_sort_order = ["mythic", "rare", "uncommon", "common"];
-					let a_rarity_index = 100;
-					let b_rarity_index = 100;
-
-					for (const [i, rarity] of rarity_sort_order.entries()) {
-						if (a.rarity.toLowerCase() == rarity)
-							a_rarity_index = i;
-						if (b.rarity.toLowerCase() == rarity)
-							b_rarity_index = i;	
-					}
-
-					return a_rarity_index - b_rarity_index;
-				});
-
-				let first = true;
-				for (const card of card_jsons) {
-					const card_preview = document.createElement('span');
-					card_preview.innerText = (first ? '' : ', ') + card.card_name;
-					card_preview.className = 'card-preview';
-					card_preview.onmouseover = () => showCardHover(card);
-					card_preview.onmousemove = (event) => moveCardHover(event);
-					card_preview.onmouseout = () => hideCardHover();
-					summary.appendChild(card_preview);
-					first = false;
-				}
-
-				const view = document.createElement('div');
-				view.onclick = () => {
-					const modal_container = document.querySelector('#modal-container');
-					const modal_content = document.querySelector('#modal-content');
-
-					modal_content.innerHTML = '';
-					modal_container.style.display = 'block';
-					// modal_content.style.background = 'var(--bg-color)';
-					modal_content.style.width = '70%';
-					modal_content.style.overflow = 'auto';
-					modal_container.style.overflow = 'auto';
-					modal_container.style.paddingTop = '70px';
-
-					const pulls_container = document.createElement('div');
-					pulls_container.className = 'view-pack-container';
-
-					for (const card of card_jsons) {
-						pulls_container.appendChild(buildImgContainer(card));
-					}
-
-					modal_content.appendChild(pulls_container);
-				}
-				view.className = 'view-pack';
-
-				const view_img = document.createElement('img');
-				view_img.src = '/img/show-white.png';
-
-				const view_label = document.createElement('span');
-				view_label.innerText = 'View Pulls';
-
-				view.appendChild(view_img);
-				view.appendChild(view_label);
-
-				row.appendChild(date_time_label);
-				row.appendChild(name_label);
-				row.appendChild(summary);
-				row.appendChild(view);
-				records_container.appendChild(row);
+				makeRecordGroup(group, cards);
 				group = group_match;
 				cards = [];
 			}
+
+			makeRecordGroup(group, cards);
+		}
+
+		function makeRecordGroup(group, cards) {
+			const records_container = document.querySelector('.records-container');
+			const [_, name, time] = group;
+
+			const row = document.createElement('div');
+			row.className = 'record-row';
+
+			const name_label = document.createElement('div');
+			name_label.className = 'record-label';
+			name_label.innerText = name;
+
+			const date_time_label = document.createElement('div');
+			date_time_label.className = 'record-date';
+			date_time_label.innerText = time;
+
+			const summary = document.createElement('div');
+			summary.className = 'record-summary';
+
+			const card_jsons = [];
+			for (const card of cards) {
+				if (card == '') continue;
+				const [_, card_name, set, num] = card.match(/\d+ (.*?) \(([A-Z\-_0-9]+)\) (\d+)/);
+				let card_stats;
+				for (const _card of card_list_arrayified)
+					if (_card.card_name == card_name && set == _card.set && num == _card.number) card_stats = _card;
+				card_jsons.push(card_stats);
+			}
+
+			card_jsons.sort((a, b) => {
+				if (a.type.includes('Basic') && !b.type.includes('Basic')) return 1;
+				if (!a.type.includes('Basic') && b.type.includes('Basic')) return -1;
+				const rarity_sort_order = ["mythic", "rare", "uncommon", "common"];
+				let a_rarity_index = 100;
+				let b_rarity_index = 100;
+
+				for (const [i, rarity] of rarity_sort_order.entries()) {
+					if (a.rarity.toLowerCase() == rarity)
+						a_rarity_index = i;
+					if (b.rarity.toLowerCase() == rarity)
+						b_rarity_index = i;	
+				}
+
+				return a_rarity_index - b_rarity_index;
+			});
+
+			let first = true;
+			for (const card of card_jsons) {
+				const card_preview = document.createElement('span');
+				card_preview.innerText = (first ? '' : ', ') + card.card_name;
+				card_preview.className = 'card-preview';
+				card_preview.onmouseover = () => showCardHover(card);
+				card_preview.onmousemove = (event) => moveCardHover(event);
+				card_preview.onmouseout = () => hideCardHover();
+				summary.appendChild(card_preview);
+				first = false;
+			}
+
+			const view = document.createElement('div');
+			view.onclick = () => {
+				const modal_container = document.querySelector('#modal-container');
+				const modal_content = document.querySelector('#modal-content');
+
+				modal_content.innerHTML = '';
+				modal_container.style.display = 'block';
+				// modal_content.style.background = 'var(--bg-color)';
+				modal_content.style.width = '70%';
+				modal_content.style.overflow = 'auto';
+				modal_container.style.overflow = 'auto';
+				modal_container.style.paddingTop = '70px';
+
+				const pulls_container = document.createElement('div');
+				pulls_container.className = 'view-pack-container';
+
+				for (const card of card_jsons) {
+					pulls_container.appendChild(buildImgContainer(card));
+				}
+
+				modal_content.appendChild(pulls_container);
+			}
+			view.className = 'view-pack';
+
+			const view_img = document.createElement('img');
+			view_img.src = '/img/show-white.png';
+
+			const view_label = document.createElement('span');
+			view_label.innerText = 'View Pulls';
+
+			view.appendChild(view_img);
+			view.appendChild(view_label);
+
+			row.appendChild(date_time_label);
+			row.appendChild(name_label);
+			row.appendChild(summary);
+			row.appendChild(view);
+			records_container.appendChild(row);
 		}
 
 		function showCardHover(card_stats) {
@@ -834,7 +840,7 @@
 
 		window.openMaster = async () => {
 			await setDoc(doc(db, 'collectionleague', username), {
-				'packs': Array(5).fill('MASTER'),
+				'packs': Array(7).fill('MASTER'),
 				'packsOpened': 0,
 				'collection': ''
 			});

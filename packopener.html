@@ -590,12 +590,10 @@
 			else packs = Array(num_packs).fill(pack);
 
 			for (const pack_to_open of packs) {
-				console.log(pack_to_open, packs);
 				if (pack_to_open != prev) await getPack(pack_to_open);
-				console.log(p1p1_cards);
 				const generated = generatePack();
 				all_packs.push(generated);
-				await fetch(`https://voyager-api-pq2h.onrender.com/collectionleague/collection/edit?session=${localStorage.getItem('settings.session')}&group=1 ${pack_to_open}&collection=${packToText(generated)}`) 
+				await fetch(`https://voyager-api-pq2h.onrender.com/collectionleague/collection/edit?session=${localStorage.getItem('settings.session')}&group=1 ${pack_to_open}&collection=${packToText(generated)}`);
 				prev = pack_to_open;
 			}				
 		}
