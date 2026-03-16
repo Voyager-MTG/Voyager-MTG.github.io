@@ -35,6 +35,10 @@ def generateHTML(code):
 		display: grid;
 	}
 
+	.card-image {
+		border-radius: 5%;
+	}
+
 	/* .community-dropdown:hover {
 		display: grid;
 	} */
