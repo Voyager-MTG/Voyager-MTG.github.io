@@ -267,7 +267,7 @@
 					bonusI[2].push(card);
 				}
 
-				if (card.card_color === '') {
+				if (card.color === '' && !card.type.includes("Land")) {
 					for (let i = 1; i <= 12; i++)
 						masterPack[i].push(card);
 					bonusC[0].push(card);

@@ -56,29 +56,31 @@
     width: 100%;
     text-align: center;
     font-family: beleren;
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: normal;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .deck-author {
     width: 100%;
     text-align: center;
     font-family: beleren;
-    font-size: 2em;
+    font-size: 1.4em;
     font-weight: normal;
     display: block;
     margin-bottom: 10px;
 }
 
 .deck-options {
-    position: absolute; 
     display: flex;
     padding: 8px;
     gap: 15px;
     border-radius: 5px;
-    right: 1vw;
-    top: 9.5vw;
+    /* right: 1vw;
+    top: 9.5vw; */
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 18px;
     background-color: color-mix(in srgb, var(--mid-accent) 60%, transparent);
     border: 2px solid var(--light-accent);
 }

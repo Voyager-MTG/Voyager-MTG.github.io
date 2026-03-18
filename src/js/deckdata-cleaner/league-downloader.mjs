@@ -23,8 +23,9 @@ const db = getFirestore(app);
 await getDoc(doc(db, 'events', 'League')).then(async docSnap => {
 	const event_data = docSnap.data();
 
-	event_data.runs = JSON.parse(event_data.runs);
-	event_data.games = JSON.parse(event_data.games);
+	// event_data.runs = JSON.parse(event_data.runs);
+	// event_data.games = JSON.parse(event_data.games);
+	// event_data.decks = JSON.parse(event_data.games);
 
 	fs.writeFile('league.json', JSON.stringify(event_data, null, 2), () => {});
 });
