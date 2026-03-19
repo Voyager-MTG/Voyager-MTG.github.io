@@ -225,6 +225,7 @@
 		let collection_copies = {};
 		let gradients = [];
 		let all_cards_stats;
+		const on_cl_page = false;
 
 		const deck_cards_html = `<div class="deck-col" id="col1">
 					<div class="deck-section" id="deck-creature">
@@ -1043,16 +1044,19 @@
 
 				const gradientText = document.createElement('span');
 				gradientText.innerText = "Background Gradient:"
-
 				contentContainer.appendChild(gradientText);
 				contentContainer.appendChild(gradientDropdown);
 				
 				const privacyText = createText("Deck Privacy");
-				
 				const privacyDropdown = settingsOptionHtml("Privacy", "settings.deck_privacy", ["Public", "Private"]);
-
 				contentContainer.appendChild(privacyText);
 				contentContainer.appendChild(privacyDropdown);
+
+				const sortText = createText("Sort deck");
+				const sortDropdown = settingsOptionHtml("Sort", "settings.deck_sort", ["Name", "Mana value", "Color"]);
+				contentContainer.appendChild(sortText);
+				contentContainer.appendChild(sortDropdown);
+
 
 				const settingsBtn = document.createElement("button");
 				settingsBtn.className = "settings-modal-button popout";
@@ -1296,7 +1300,7 @@
 			readDeckText(deck, key);
 		}
 
-		function loadCollection(name, fullcoll = false) {
+		function loadCollection(name, fullcoll = false, cleague = false) {
 			// remove the copies style so we can change it later
 			var e = document.getElementById("copies-style");
 			if (e != null) { e.remove(); }
@@ -1316,40 +1320,15 @@
 			if (fullcoll) {
 				collectionToLoad_ = fullcoll;
 			}
-			// for (const item of collectionToLoad_) {
-			// 	// for each item in collections, push the card name (the number will be cut off)
-			// 	collectionToLoad.push(item.slice(2));
-			// }
-			// for (const card of card_list.cards) { // Loop through the card JSON
-			// 	if (collectionToLoad.includes(card.card_name)) { // If the collection has this card, add it to new_list, if it's undefined, don't do the next part
-			// 		new_list.push(card);
-			// 		if (collectionToLoad_[i] == undefined) {
-			// 			continue;
-			// 		}
-			// 		// add to the css to add the copy indicator in the topleft corner
-			// 		collection_copies[`${card["set"]}-${card["number"]}`] = Number(collectionToLoad_[i].split(" ")[0]);
-			// 		cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${collectionToLoad_[i].split(" ")[0]}x"; display: block; position: absolute; border-radius: 20px;}\n`
-			// 		// modify deck and sideboard 2 and incrementy i
-			// 		i++;
-			// 		deck_2[`${card["set"]}-${card["number"]}`] = 0;
-			// 		sideboard_2[`${card["set"]}-${card["number"]}`] = 0;
-			// 		sanctum_2[`${card["set"]}-${card["number"]}`] = 0;
-			// 	}
-			// }
-
-			// {
-			// 	new_list.push(card);
-			// 	cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${collectionToLoad_[i].split(" ")[0]}x"; display: block; position: absolute; border-radius: 20px;}\n`;
-			// }
 
 			let deck_map = new Map();
 
 			for (let line of collectionToLoad_) {
 				// get the count and card name
-				count = parseInt(line.substring(0, line.indexOf(' ')));
-				card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
-				card_set = line.match(/[0-9]+ .*? \((.*?)\)/);
-				card_num = line.match(/[0-9]+ .*? \(.*?\) ([0-9]+)/);
+				const count = parseInt(line.substring(0, line.indexOf(' ')));
+				let card_name = line.substring(line.indexOf(' ') + 1).split(" (")[0];
+				let card_set = line.match(/[0-9]+ .*? \((.*?)\)/);
+				let card_num = line.match(/[0-9]+ .*? \(.*?\) ([0-9]+)/);
 
 				card_set = card_set == null ? "XXX" : card_set[1];
 				card_num = card_num == null ? "0" : card_num[1];
@@ -1763,6 +1742,7 @@
 								}
 							}
 						}
+						
 						for (const card of card_list_arrayified) {
 							if (deck_map.has(card.card_name)) {
 								for (let i = 0; i < deck_map.get(card.card_name); i++) {
@@ -1929,6 +1909,34 @@
 			if (process) processDeck();
 		}
 
+		function sortColor(a, b) {
+			color_sort_order = ["W", "U", "B", "R", "G", "I", "WU", "UB", "BR", "RG", "GW", "WB", "UR", "BG", "RW", 'IW', 'IU', 'IB', 'IR', 'IG', "GU", "WUB", "UBR", "BRG", "RGW", "GWU", "RWB", "GUR", "WBG", "URW", "BGU", 'IWU', 'IUB', 'IBR', 'IRG', 'IGW', 'IWB', 'IBG', 'IGU', 'IUR', 'IRW', "WUBR", "UBRG", "BRGW", "RGWU", "GWUB", "IWUB", "IUBR", "IBRG", "IRGW", "IGWU", "IRWB", "IGUR", "IWBG", "IURW", "IBGU", "WUBRG", "IWUBR", "IUBRG", "IBRGW", "IRGWU", "IGWUB", ""];
+
+			a_color_index = -1;
+			b_color_index = -1;
+
+			for (let i = 0; i < color_sort_order.length; i++) {
+				if (a.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join('')) {
+					a_color_index = i;
+				}
+				if (b.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join('')) {
+					b_color_index = i;
+				}
+			}
+
+			if (a_color_index === b_color_index) {
+				if (a.card_name === b.card_name) {
+					return 0;
+				}
+				else {
+					return (a.card_name < b.card_name) ? -1 : 1;
+				}
+			}
+			else {
+				return (a_color_index < b_color_index) ? -1 : 1;
+			}
+		}
+
 		function processDeck() {
 			const display_style = document.getElementById("display-select").value;
 			if (display_style != "stats") {
@@ -2048,12 +2056,19 @@
 					// get the cards section and and reset its html
 					cards_ele = document.getElementById(deck_section_cards_id);
 					cards_ele.innerHTML = "";
-					const cards_list = Array.from(map.keys()).sort();
-					for (const card of cards_list) {
+					const sort_order = localStorage.getItem('settings.deck_sort') || 'Name';
+					const cards_list = Array.from(map.keys()).map(c => JSON.parse(c)).sort((a, b) => {
+						if (sort_order == 'Name') return a.card_name.localeCompare(b.card_name);
+						if (sort_order == 'Mana value') return convertToMV(a.cost) - convertToMV(b.cost);
+						if (sort_order == 'Color') return sortColor(a, b);
+					});
+					// console.log(Array.from(map.keys()));
+					// const cards_list = Array.from(map.keys()).sort();
+					for (const card_stats of cards_list) {
 						// loop through each card in the deck with the card type
 						// get the display style (text or image), the card json, and the name
-						const card_stats = JSON.parse(card);
 						const card_name = card_stats.card_name;
+						const card = JSON.stringify(card_stats);
 
 						if (display_style == "text") // if text is selected as the display mode
 						{
@@ -2700,7 +2715,8 @@
 					.then(data => {
 						collection = data;
 					}).catch(error => console.error('Error:', error));
-				loadCollection('Collection League', collection.split('\n'));
+					
+				loadCollection('Collection League', collection.split('\n'), true);
 			}
 
 			document.getElementById('save-btn').addEventListener("click", (e) => {

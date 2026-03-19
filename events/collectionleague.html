@@ -288,6 +288,7 @@
 		function makeRecordsTab() {
 			let group;
 			let cards = [];
+			let groups = [];
 
 			for (const line of collection.split('\n')) {
 				const group_match = line.match(/(.*?) (\d+?\/\d+?\/\d+? \d+?:\d+?:\d+?):/);
@@ -301,12 +302,16 @@
 					continue;
 				}
 
-				makeRecordGroup(group, cards);
+				groups.push([group, cards.slice()]);
 				group = group_match;
 				cards = [];
 			}
 
-			makeRecordGroup(group, cards);
+			groups.push([group, cards.slice()]);
+			groups.reverse();
+			
+			for (const [group, cards] of groups) 
+				makeRecordGroup(group, cards);
 		}
 
 		function makeRecordGroup(group, cards) {
