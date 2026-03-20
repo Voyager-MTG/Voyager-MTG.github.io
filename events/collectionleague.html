@@ -74,7 +74,10 @@
 				<div class="new-cards">
 					<h1>New Cards</h1>
 					<div class="new-cards-grid">
-						This is a work in progress.
+						<div class="left">⮜</div>
+						<div class="new-cards-image-container">
+						</div>
+						<div class="right">⮞</div>
 					</div>
 				</div>
 				<div class="monthly-pack">
@@ -271,7 +274,8 @@
 				document.querySelector('#modal-container').style.display = 'block';
 				document.querySelector('#modal-content').innerHTML = `<div class="new-to-cl"><h1 class="not-joined">You're not in Collection League.</h1><p>To start, you'll get to open some packs!</p><button class="go" onclick="jumpStart()">Continue</button></div>`;			
 			}
-
+			
+			makeNewCards();
 			await reloadCollection();
 			preSearch();
 			makeRecordsTab();
@@ -284,6 +288,40 @@
 			}
 		}
 
+		function makeNewCards() {
+			const newest_pack = collection.split(':\n')
+										.slice(-1)[0]
+										.split('\n')
+										.map(l => l.substring(l.indexOf(' ') + 1))
+										.map(l => l.split(' (')[0]);
+			const pack = [];
+			let ci = 0;
+			
+			for (const line of newest_pack) {
+				for (const card of card_list_arrayified) {
+					if (line == card.card_name) {
+						pack.push(card);
+						break;
+					}
+				}
+			}
+
+			document.querySelector('.new-cards-image-container').appendChild(buildImgContainer(pack[0]));
+
+			document.querySelector('.left').onclick = () => {
+				document.querySelector('.new-cards-image-container').innerHTML = '';
+				ci--;
+				if (ci == -1) ci = 2;
+				document.querySelector('.new-cards-image-container').appendChild(buildImgContainer(pack[ci]));
+			}
+
+			document.querySelector('.right').onclick = () => {
+				document.querySelector('.new-cards-image-container').innerHTML = '';
+				ci++;
+				if (ci == 3) ci = 0;
+				document.querySelector('.new-cards-image-container').appendChild(buildImgContainer(pack[ci]));
+			}
+		}
 
 		function makeRecordsTab() {
 			let group;
