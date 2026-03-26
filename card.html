@@ -261,20 +261,13 @@
 				others.innerText = "Related Cards: ";
 
 				for (let i = 0; i < related_cards.length; i++) {
-					let related_card;
-					const related = related_cards[i];
+					const related_card = related_cards[i];
 					const setlink = document.createElement("a");
-					setlink.innerText = related;
+					setlink.innerText = related_card.card_name;
 
-					setlink.onmouseover = function () { showCardHover(related) };
+					setlink.onmouseover = function () { showCardHover(related_card) };
 					setlink.onmousemove = function (event) { moveCardHover(event) };
 					setlink.onmouseout = hideCardHover;
-
-					for (const card_ of card_list_arrayified) {
-						if (card_.card_name == related) {
-							related_card = card_;
-						}
-					}
 
 					const url = new URL('card', window.location.origin);
 					const params = {
@@ -294,28 +287,6 @@
 						dot.innerText = " • ";
 						others.appendChild(dot);
 					}
-				}
-
-				const effect = document.getElementsByClassName("effect")[0];
-
-				for (const card of related_cards) {
-					if (effect.innerHTML.includes(`<b>${card}</b>`)) {
-						effect.innerHTML = effect.innerHTML.replaceAll(/trace (it|this [^ ])'?s? skill/gs, function (_1) {
-							return `<span class="card-hover" onmouseover="showCardHover('${card}')" onmousemove="moveCardHover(event)" onmouseout="hideCardHover()">${_1}</span>`;
-						});
-					}
-
-					effect.innerHTML = effect.innerHTML.replaceAll(new RegExp(`${card}[^']`, "gs"), function (_1) {
-						return `<span class="card-hover" onmouseover="showCardHover('${card}')" onmousemove="moveCardHover(event)" onmouseout="hideCardHover()">${card}</span>${_1.replace(card, "")}`;
-					});
-				};
-
-
-				for (const token in related_cards_json.matches) {
-					const match = related_cards_json.matches[token];
-					effect.innerHTML = effect.innerHTML.replaceAll(new RegExp(match, "gs"), function (_1, _2) {
-						return `<span class="card-hover" onmouseover="showCardHover('${token}')" onmousemove="moveCardHover(event)" onmouseout="hideCardHover()">${_1}</span>`;
-					});
 				}
 
 				document.getElementById("card-text").appendChild(others);
@@ -349,7 +320,7 @@
 				}
 
 				setlink.onmousemove = function (event) { moveCardHover(event) };
-				setlink.onmouseover = function () { showCardHover(printing.card_name, printing.set, printing.number) };
+				setlink.onmouseover = function () { showCardHover(printing) };
 				setlink.onmouseout = hideCardHover;
 
 				printings.appendChild(setlink);
@@ -376,13 +347,13 @@
 
 			image_grid.appendChild(rulings_container);
 			image_grid.appendChild(changes_container);
+			getCardStats();
 			reload();
 		});
 
 		function isBannedCard(card_name) {
 			return banlist.banned.includes(card_name);
 		}
-
 
 		function rarityCode(r) {
 			switch (r) {
@@ -401,19 +372,12 @@
 			}
 		}
 
-		function showCardHover(card_name, set = false, num = false) {
-			// console.log(set, num);
-			for (const card_stats of card_list_arrayified) {
-				if (card_stats.card_name == card_name && (!set || card_stats.set == set) && (!num || card_stats.number == num)) {
-					console.log(card_stats, set, num);
-					const src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+		function showCardHover(card_stats) {
+			const src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 
-					const hover_card = document.getElementById("hover-card");
-					hover_card.style.display = "block";
-					hover_card.src = src;
-					return;
-				}
-			}
+			const hover_card = document.getElementById("hover-card");
+			hover_card.style.display = "block";
+			hover_card.src = src;
 		}
 
 		function moveCardHover(event) {
@@ -434,45 +398,19 @@
 		}
 
 		async function fetchRelatedCards(card) {
-			let related_cards = [];
+			const related_cards = [];
 
-			const token_matches = related_cards_json.matches;
-
-			for (const token in token_matches) {
-				const match = new RegExp(token_matches[token]);
-				if (match.test(card.rules_text)) {
-					related_cards.push(token.replaceAll("~", card.card_name));
-				}
-			}
-
-			for (const name of card.rules_text.matchAll(/^(.*)(card|token)s? named (.*?) (into|,|with)/gs)) {
-				for (const card_ of card_list_arrayified) {
-					if (card_.card_name == name[3] && !related_cards.includes(name[3])) {
-						related_cards.push(name[3]);
+			for (const [token, data] of Object.entries(card.related)) {
+				for (const _card of card_list_arrayified) {
+					if (_card.card_name == token && _card.set == data.set) {
+						related_cards.push(_card);
+						break;
 					}
 				}
 			}
 
-			const skill_match = /trace (it|this [^ ])'?s? skill/g;
-			if (card.rules_text.match(skill_match)) {
-				for (const name of card.rules_text.matchAll(/\[b\](.*)\[\/b\]/gs)) {
-					if (!related_cards.includes(name[1])) {
-						related_cards.push(name[1]);
-					}
-				}
-			}
-
-			for (const tk of card_list_arrayified) {
-				if (tk.shape == "token") {
-					if (card.notes.includes(`!addtoken ${tk.card_name}` && !related_cards.includes(tk.card_name))) {
-						related_cards.push(tk.card_name);
-					}
-					for (const name of tk.notes.matchAll(/!related (.*?)[\n;!]/gs)) {
-						if (name[1] == card.card_name && !related_cards.includes(tk.card_name)) {
-							related_cards.push(tk.card_name);
-						}
-					}
-				}
+			for (const _card of card_list_arrayified) {
+				if (Object.keys(_card.related).includes(card.card_name) && _card.related[card.card_name]?.reverse) related_cards.push(_card);
 			}
 
 			return related_cards;
@@ -839,163 +777,8 @@
 			return regexHTML;
 		}
 
-		document.getElementById("search").addEventListener("keypress", function (event) {
-			if (event.key === "Enter") {
-				event.preventDefault();
-				search();
-			}
-		});
-
-		function search() {
-			const url = new URL('search', window.location.origin);
-			url.searchParams.append('search', document.getElementById("search").value);
-			window.location.href = url;
-		}
-
-		function randomCard() {
-			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
-			let random_card = card_list_arrayified[i];
-
-			const url = new URL('card', window.location.origin);
-			const params = {
-				set: random_card.set,
-				num: random_card.number,
-				name: random_card.card_name
-			}
-			for (const key in params) {
-				url.searchParams.append(key, params[key]);
-			}
-
-			window.location.href = url;
-		}
-	</script>
-	<script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-		// TODO: Add SDKs for Firebase products that you want to use
-		// https://firebase.google.com/docs/web/setup#available-libraries
-
-		// Your web app's Firebase configuration
-		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-		const firebaseConfig = {
-			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-			authDomain: "voyager-78e30.firebaseapp.com",
-			projectId: "voyager-78e30",
-			storageBucket: "voyager-78e30.firebasestorage.app",
-			messagingSenderId: "411191248476",
-			appId: "1:411191248476:web:591349be169d823e5f8899",
-			measurementId: "G-TQ1L48F25M"
-		};
-
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-		const db = getFirestore(app);
-		let username = "";
-		let password = "";
-		let sessionid = localStorage.getItem('settings.session');
-		let decks = {};
-		const events = ["GP1", "League"];
-		let user_data;
-		const urlParams = new URLSearchParams(window.location.search);
-
-		if (sessionid) {
-			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-				let data = docSnap.data();
-				username = data.username;
-				password = data.password;
-			});
-
-			await getDoc(doc(db, 'users', username)).then(docSnap => {
-				let data = docSnap.data();
-				user_data = data;
-			});
-		}
-
-
-
-		async function reload() {
-			const image_grid = document.getElementsByClassName("image-grid")[0];
-
-			const rulings_container = document.getElementsByClassName("rulings-container")[0];
-
-			if (user_data && user_data.judge) {
-				const rulings_input_container = document.createElement("div");
-				rulings_input_container.className = "rulings-input-container";
-
-				const rulings_input = document.createElement("textarea");
-				rulings_input.style.resize = "none";
-				rulings_input.placeholder = "Add card rulings...";
-				rulings_input.className = "rulings-textarea";
-
-				const submit_rulings = document.createElement("button");
-				submit_rulings.className = "rulings-submit-btn popout";
-				submit_rulings.innerText = "Upload this ruling";
-				submit_rulings.onclick = submitRulings;
-
-				rulings_input_container.appendChild(rulings_input);
-				rulings_input_container.appendChild(submit_rulings);
-				rulings_container.appendChild(rulings_input_container);
-			}
-
-			const rulings = await fetchRulings(urlParams.get("name"));
-
-			const current_rulings = document.createElement("div");
-			current_rulings.className = "rulings-list text";
-			current_rulings.innerHTML = "Rulings:<br>" + rulings.list;
-			rulings_container.appendChild(current_rulings);
-
-			if (rulings.has_rulings || (user_data && user_data.judge)) {
-				image_grid.appendChild(rulings_container);
-				image_grid.className += " image-grid-with-rulings";
-			}
-
-			await getCardStats();
-		}
-
-		async function submitRulings() {
-			const ruling_to_submit = document.getElementsByClassName("rulings-textarea")[0].value;
-			await getDoc(doc(db, "info", "rulings")).then(async docSnap => {
-				let cardl = docSnap.data()[urlParams.get("name")] ? docSnap.data()[urlParams.get("name")] : [];
-				let card_obj = {};
-				card_obj[urlParams.get("name")] = [...cardl, ruling_to_submit];
-				await updateDoc(doc(db, "info", "rulings"), card_obj);
-				window.location.reload();
-			});
-		}
-
-		async function fetchRulings(card_name) {
-			let rulings_json;
-			let firebase_list;
-			await fetch('/data/rulings/rulings.json')
-				.then(response => response.json())
-				.then(data => {
-					rulings_json = data;
-				}).catch(error => console.error('Error:', error));
-
-			let card_rulings = rulings_json[card_name] ? rulings_json[card_name] : [];
-
-			await getDoc(doc(db, "info", "rulings")).then(docSnap => {
-				firebase_list = docSnap.data()[card_name] ? docSnap.data()[card_name] : [];
-			});
-
-			const rulings_list = [...firebase_list, ...card_rulings];
-
-			return { list: convertToLi(rulings_list), has_rulings: (rulings_list.length > 0) };
-		}
-
-		function convertToLi(list) {
-			let ret = "";
-			ret += "<ol>";
-			for (const item of list) {
-				ret += `<li>${item}</li>`;
-			}
-			ret += "</ol>";
-			return ret
-		}
-
 		async function getCardStats() {
-			const card_name = decodeURI(urlParams.get("name"));
+			const card_name = card.card_name;
 			let _stats, decks_with_card;
 			await fetch('https://voyager-api-pq2h.onrender.com/stats')
 				.then(response => response.json())
@@ -1009,7 +792,6 @@
 					decks_with_card = json;
 				}).catch(error => console.error('Error:', error));
 
-			fetch('https://voyager-api-pq2h.onrender.com/stats/regenerate');
 			const card_stats = _stats[card_name];
 
 			const winrate = card_stats.winrate != -1 ? (card_stats.winrate * 100).toFixed(2).toString() + "%" : 'N/A';
@@ -1030,10 +812,11 @@
 			viewStats.innerHTML = `<img src='img/show-white.png' class='add-icon'>View Stats`;
 			viewStats.onclick = () => { openStatsModal(stats) };
 			document.getElementsByClassName("text-container")[0].appendChild(viewStats);
+			fetch('https://voyager-api-pq2h.onrender.com/stats/regenerate');
 		}
 
 		function openStatsModal(stats) {
-			const card_name = decodeURI(urlParams.get("name"));
+			const card_name = card.card_name;
 
 			const content_container = document.createElement("div");
 			content_container.className = "full-stats-container";
@@ -1213,6 +996,36 @@
 			return 0;
 		}
 
+		document.getElementById("search").addEventListener("keypress", function (event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				search();
+			}
+		});
+
+		function search() {
+			const url = new URL('search', window.location.origin);
+			url.searchParams.append('search', document.getElementById("search").value);
+			window.location.href = url;
+		}
+
+		function randomCard() {
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
+
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+
+			window.location.href = url;
+		}
+
 		function isPlayed(stats) {
 			const playrate = parseFloat(stats.playrate_general[1].split("%")[0]);
 			if (playrate > 2) {
@@ -1227,6 +1040,127 @@
 			if (playrate > 8 && winrate > 30 && playrate_event > 0.01) {
 				return true;
 			}
+		}
+	</script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+			authDomain: "voyager-78e30.firebaseapp.com",
+			projectId: "voyager-78e30",
+			storageBucket: "voyager-78e30.firebasestorage.app",
+			messagingSenderId: "411191248476",
+			appId: "1:411191248476:web:591349be169d823e5f8899",
+			measurementId: "G-TQ1L48F25M"
+		};
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+		let username = "";
+		let password = "";
+		let sessionid = localStorage.getItem('settings.session');
+		let decks = {};
+		const events = ["GP1", "League"];
+		let user_data;
+		const urlParams = new URLSearchParams(window.location.search);
+
+		if (sessionid) {
+			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+				let data = docSnap.data();
+				username = data.username;
+				password = data.password;
+			});
+
+			await getDoc(doc(db, 'users', username)).then(docSnap => {
+				let data = docSnap.data();
+				user_data = data;
+			});
+		}
+
+		async function reload() {
+			const image_grid = document.getElementsByClassName("image-grid")[0];
+
+			const rulings_container = document.getElementsByClassName("rulings-container")[0];
+
+			if (user_data && user_data.judge) {
+				const rulings_input_container = document.createElement("div");
+				rulings_input_container.className = "rulings-input-container";
+
+				const rulings_input = document.createElement("textarea");
+				rulings_input.style.resize = "none";
+				rulings_input.placeholder = "Add card rulings...";
+				rulings_input.className = "rulings-textarea";
+
+				const submit_rulings = document.createElement("button");
+				submit_rulings.className = "rulings-submit-btn popout";
+				submit_rulings.innerText = "Upload this ruling";
+				submit_rulings.onclick = submitRulings;
+
+				rulings_input_container.appendChild(rulings_input);
+				rulings_input_container.appendChild(submit_rulings);
+				rulings_container.appendChild(rulings_input_container);
+			}
+
+			const rulings = await fetchRulings(urlParams.get("name"));
+
+			const current_rulings = document.createElement("div");
+			current_rulings.className = "rulings-list text";
+			current_rulings.innerHTML = "Rulings:<br>" + rulings.list;
+			rulings_container.appendChild(current_rulings);
+
+			if (rulings.has_rulings || (user_data && user_data.judge)) {
+				image_grid.appendChild(rulings_container);
+				image_grid.className += " image-grid-with-rulings";
+			}
+		}
+
+		async function submitRulings() {
+			const ruling_to_submit = document.getElementsByClassName("rulings-textarea")[0].value;
+			await getDoc(doc(db, "info", "rulings")).then(async docSnap => {
+				let cardl = docSnap.data()[urlParams.get("name")] ? docSnap.data()[urlParams.get("name")] : [];
+				let card_obj = {};
+				card_obj[urlParams.get("name")] = [...cardl, ruling_to_submit];
+				await updateDoc(doc(db, "info", "rulings"), card_obj);
+				window.location.reload();
+			});
+		}
+
+		async function fetchRulings(card_name) {
+			let rulings_json;
+			let firebase_list;
+			await fetch('/data/rulings/rulings.json')
+				.then(response => response.json())
+				.then(data => {
+					rulings_json = data;
+				}).catch(error => console.error('Error:', error));
+
+			let card_rulings = rulings_json[card_name] ? rulings_json[card_name] : [];
+
+			await getDoc(doc(db, "info", "rulings")).then(docSnap => {
+				firebase_list = docSnap.data()[card_name] ? docSnap.data()[card_name] : [];
+			});
+
+			const rulings_list = [...firebase_list, ...card_rulings];
+
+			return { list: convertToLi(rulings_list), has_rulings: (rulings_list.length > 0) };
+		}
+
+		function convertToLi(list) {
+			let ret = "";
+			ret += "<ol>";
+			for (const item of list) {
+				ret += `<li>${item}</li>`;
+			}
+			ret += "</ol>";
+			return ret
 		}
 
 		window.reload = reload;

@@ -13,6 +13,7 @@ import print_html_for_index
 import print_html_for_set
 import print_html_for_sets_page
 import print_cockatrice_file
+import related_cards
 
 import markdown
 
@@ -55,6 +56,26 @@ def genAllCards(codes):
 			set_data['designer'] = raw['designer']
 			if code in packs['theme']: set_data['pack'] = True
 			set_input['sets'].append(set_data)
+
+	#A: related cards
+	tokens = []
+	cards = []
+	for card in card_input['cards']:
+		l = tokens if 'token' in card['shape'] else cards
+		l.append(card)
+	
+	for card in card_input['cards']:
+		related = related_cards.auto_related(card, tokens) + related_cards.notes_related(card, card_input['cards'])
+		card['related'] = {}
+
+		for tk, num, persistent, reverse in related:
+			card['related'][tk['card_name']] = {
+				'count': num,
+				'persistent': persistent,
+				'reverse': reverse,
+				'set': tk['set']
+			}
+
 	#F: opens a path,
 	with open(os.path.join('lists', 'all-cards.json'), 'w', encoding='utf-8') as f:
 		#F: turns the dictionary into a json object, and puts it into the all-cards.json file

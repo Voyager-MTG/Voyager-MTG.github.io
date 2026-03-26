@@ -39,8 +39,9 @@ select {
 }
 
 .decks-container {
+	width: 90%;
+	margin: auto;
 	margin-bottom: 20px;
-	width: 85%;
 }
 
 .format-container {
@@ -82,7 +83,6 @@ select {
 	align-items: center;
 	justify-items: center;
 	text-align: center;
-	width: 100%;
 	margin: 20px;
 	font-family: beleren;
 }
@@ -247,4 +247,13 @@ a {
 	.format-container {
 		grid-template-columns: 1fr 1fr;
 	}
+}
+
+.tab-select {
+	grid-template-columns: 1fr 1fr;
+	margin-top: 0;
+}
+
+.main-tab {
+	width: 100%;
 }

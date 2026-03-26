@@ -1,74 +1,50 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <cockatrice_carddatabase version='4'>
 	<sets>
-		
-		
 			<set>
 				<name>AKT</name>
 				<longname>Akellan Transcendence</longname>
 			</set>
-	
-
 			<set>
 				<name>EXPT</name>
 				<longname>Voyager Foundations</longname>
 			</set>
-	
-
 			<set>
 				<name>FOE</name>
 				<longname>Frontiers of Eternity</longname>
 			</set>
-	
-
 			<set>
 				<name>HOD</name>
 				<longname>Houses of Dewold</longname>
 			</set>
-	
-
 			<set>
 				<name>ITD</name>
 				<longname>Itera: Into the Dream</longname>
 			</set>
-	
-
 			<set>
 				<name>LAIR</name>
 				<longname>Secret Lair Drops</longname>
 			</set>
-	
-
 			<set>
 				<name>PTN</name>
 				<longname>Port Noon: Occult Islands of Vespera</longname>
 			</set>
-	
-
 			<set>
 				<name>PVR</name>
 				<longname>Primivir</longname>
 			</set>
-	
-
 			<set>
 				<name>TZE-01</name>
 				<longname>Zeta</longname>
 			</set>
-	
-
 			<set>
 				<name>VNM</name>
 				<longname>Vinimroth Eternities</longname>
 			</set>
-	
-
 			<set>
 				<name>WAW</name>
 				<longname>The Wonderlands&apos; Wishes</longname>
 			</set>
-	
-
 	</sets>
 	<cards>
 		<card>
@@ -106,9 +82,8 @@
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Ur-Gifted Surgeon</related>
-			
 			<related>Hex Citizen AKT</related>
+			<related attach="transform">Ur-Gifted Surgeon</related>
 		</card>
 		<card>
 			<name>Ur-Gifted Surgeon</name>
@@ -128,9 +103,8 @@
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<related attach="transform">Heart of Prithite</related>
-			
 			<related>Hex Citizen AKT</related>
+			<related attach="transform">Heart of Prithite</related>
 		</card>
 		<card>
 			<name>Put Under Custody</name>
@@ -165,7 +139,6 @@ When Put Under Custody enters, exile up to one target creature or planeswalker u
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -184,7 +157,6 @@ When Put Under Custody enters, exile up to one target creature or planeswalker u
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -221,7 +193,6 @@ When Old Guard Recruiter enters, you may embrace a card in your hand with a crea
 				<pt>1/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -309,7 +280,6 @@ When Culture Industry enters, if you control an artifact or enchantment, return 
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -386,7 +356,6 @@ Mobile Home gets +1/+0 as long as you control an enchantment.</text>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -405,7 +374,6 @@ Mobile Home gets +1/+0 as long as you control an enchantment.</text>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -563,7 +531,6 @@ When Disdainful Throng enters, target creature you don&apos;t control gets -X/-X
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -715,7 +682,6 @@ Defender
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 			<related count="2">Soldier AKT</related>
 		</card>
@@ -778,7 +744,6 @@ Whenever you cast a spell from anywhere other than your hand, liberate Curious Q
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -1034,7 +999,6 @@ That creature deals 4 damage to any target.</text>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -1070,9 +1034,7 @@ That creature deals 4 damage to any target.</text>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Tender to Old Groves</name>
@@ -1135,9 +1097,8 @@ That creature deals 4 damage to any target.</text>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<related attach="transform">Hazardous Technician</related>
-			
 			<related>Treasure AKT</related>
+			<related attach="transform">Hazardous Technician</related>
 		</card>
 		<card>
 			<name>Hazardous Technician</name>
@@ -1159,9 +1120,8 @@ Hazardous Technician gets +1/+1 for each artifact and/or enchantment you control
 				<pt>0/0</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<related attach="transform">Hazard Technician</related>
-			
 			<related>Treasure AKT</related>
+			<related attach="transform">Hazard Technician</related>
 		</card>
 		<card>
 			<name>Hazenwyld Groundskeeper</name>
@@ -1196,7 +1156,6 @@ Hazardous Technician gets +1/+1 for each artifact and/or enchantment you control
 				<pt>8/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -1272,7 +1231,6 @@ Hazardous Technician gets +1/+1 for each artifact and/or enchantment you control
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -1310,7 +1268,6 @@ Equip {4}</text>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -1346,7 +1303,6 @@ Destroy target artifact, enchantment, or creature with flying.</text>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -1400,7 +1356,6 @@ Destroy target artifact, enchantment, or creature with flying.</text>
 				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -1637,7 +1592,6 @@ When Eaveshopper enters, tap target creature you don&apos;t control and put a st
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -1691,7 +1645,6 @@ When Signal Officer enters, surveil 1. (Look at the top card of your library. Yo
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Hex Citizen AKT</related>
 		</card>
 		<card>
@@ -1808,7 +1761,6 @@ When Signal Officer enters, surveil 1. (Look at the top card of your library. Yo
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -1843,7 +1795,6 @@ Draw a card.</text>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -1861,7 +1812,6 @@ Draw a card.</text>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -1967,7 +1917,6 @@ Trample</text>
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -2021,7 +1970,6 @@ Trample</text>
 				<pt>0/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Incarnation Soldier AKT</related>
 		</card>
 		<card>
@@ -2043,9 +1991,8 @@ When Hazenwyld Beastmaster enters or dies, create a tapped Treasure token.
 				<pt>4/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<related attach="transform">Hazenwyld Ransacker</related>
-			
 			<related>Treasure AKT</related>
+			<related attach="transform">Hazenwyld Ransacker</related>
 		</card>
 		<card>
 			<name>Hazenwyld Ransacker</name>
@@ -2066,9 +2013,8 @@ When Hazenwyld Beastmaster enters or dies, create a tapped Treasure token.
 				<pt>2/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<related attach="transform">Hazenwyld Beastmaster</related>
-			
 			<related>Treasure AKT</related>
+			<related attach="transform">Hazenwyld Beastmaster</related>
 		</card>
 		<card>
 			<name>Whispering Tutor</name>
@@ -2159,9 +2105,8 @@ Whenever this attacks or transforms into Sarajex Rescuer, create a 1/1 white Sol
 				<pt>1/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<related attach="transform">Sarajex Protector</related>
-			
 			<related>Soldier AKT</related>
+			<related attach="transform">Sarajex Protector</related>
 		</card>
 		<card>
 			<name>Sarajex Protector</name>
@@ -2182,9 +2127,8 @@ Whenever Sarajex Protector attacks, you may discard a card. If you do, put a +1/
 				<pt>3/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<related attach="transform">Sarajex Rescuer</related>
-			
 			<related>Soldier AKT</related>
+			<related attach="transform">Sarajex Rescuer</related>
 		</card>
 		<card>
 			<name>Spokesman of the Mothweft</name>
@@ -2203,7 +2147,6 @@ Whenever Sarajex Protector attacks, you may discard a card. If you do, put a +1/
 				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Insect Advisor AKT</related>
 		</card>
 		<card>
@@ -2243,9 +2186,8 @@ Whenever Callwolf Chanter attacks, exile the top card of your library. You may p
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<related attach="transform">Skarrgsong</related>
-			
 			<related>Can Be Cast From Exile EXPT</related>
+			<related attach="transform">Skarrgsong</related>
 		</card>
 		<card>
 			<name>Skarrgsong</name>
@@ -2266,9 +2208,8 @@ Skarrgsong can&apos;t be blocked by creatures with power 2 or less.
 				<pt>4/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<related attach="transform">Callwolf Chanter</related>
-			
 			<related>Can Be Cast From Exile EXPT</related>
+			<related attach="transform">Callwolf Chanter</related>
 		</card>
 		<card>
 			<name>Hyethian Protége</name>
@@ -2305,7 +2246,6 @@ Pay 2 life, Sacrifice a creature, Embrace Scathing Critique from your hand: Draw
 				<pt>4/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -2380,7 +2320,6 @@ Whenever another Citizen card is put into your graveyard from anywhere, put a +1
 				<coloridentity>RG</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -2416,7 +2355,6 @@ At the beginning of your end step, you may exile three cards from your graveyard
 				<coloridentity>UG</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -2435,7 +2373,6 @@ At the beginning of your end step, you may exile three cards from your graveyard
 				<coloridentity>BR</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 			<related>Incarnation AKT</related>
 		</card>
@@ -2455,9 +2392,7 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<coloridentity>WR</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
-			<related>Soldier AKT</related>
 			<related>Soldier AKT</related>
 		</card>
 		<card>
@@ -2475,7 +2410,6 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<coloridentity>WU</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -2493,7 +2427,6 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<coloridentity>UB</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -2512,7 +2445,6 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<coloridentity>WB</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -2531,7 +2463,6 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<coloridentity>UR</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -2551,7 +2482,6 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<coloridentity>WB</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -2571,7 +2501,6 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<coloridentity>UG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -2591,7 +2520,6 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<coloridentity>RG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -2611,7 +2539,6 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<coloridentity>UR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -2631,7 +2558,6 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<coloridentity>WU</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -2651,7 +2577,6 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<coloridentity>WG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -2671,7 +2596,6 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<coloridentity>BG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -2691,7 +2615,6 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<coloridentity>BR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -2711,7 +2634,6 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<coloridentity>WR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -2731,7 +2653,6 @@ Tap two untapped creatures you control, Embrace Northern Tactics from your hand:
 				<coloridentity>UB</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -2959,7 +2880,6 @@ Whenever a creature dies, that creature deals 1 damage to each of your opponents
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 			<related count="2">Soldier AKT</related>
 		</card>
@@ -2995,7 +2915,6 @@ Whenever a creature dies, that creature deals 1 damage to each of your opponents
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Soldier AKT</related>
 		</card>
 		<card>
@@ -3031,7 +2950,6 @@ At the beginning of combat on your turn, up to two target creatures of the chose
 				<coloridentity>WBR</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -3049,7 +2967,6 @@ At the beginning of combat on your turn, up to two target creatures of the chose
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -3069,7 +2986,6 @@ At the beginning of combat on your turn, up to two target creatures of the chose
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -3147,7 +3063,6 @@ Gatrix Vaultwarden doesn&apos;t untap during your untap steps.
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -3166,7 +3081,6 @@ Gatrix Vaultwarden doesn&apos;t untap during your untap steps.
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -3240,7 +3154,6 @@ When Percival&apos;s Chosen dies, embrace it. (Exile it. You may play it on a la
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -3260,7 +3173,6 @@ When Injector Evangelist leaves the battlefield, liberate another target creatur
 				<pt>1/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -3279,7 +3191,6 @@ When Injector Evangelist leaves the battlefield, liberate another target creatur
 				<coloridentity>WBG</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -3369,7 +3280,6 @@ When you cast your second non-Human spell in a turn, liberate Urdonic Attendant.
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -3504,7 +3414,6 @@ When Melting Pot enters, destroy up to one target nonbasic land. Its controller 
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Hex Citizen AKT</related>
 		</card>
 		<card>
@@ -3565,7 +3474,6 @@ When Accommodation enters and at the beginning of your upkeep, create a colorles
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>House AKT</related>
 		</card>
 		<card>
@@ -3639,7 +3547,6 @@ Creatures you control get +2/+2 and gain trample until end of turn.</text>
 				<coloridentity>UBG</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -3726,7 +3633,6 @@ Whenever you cast a transcended Erysite spell, draw two cards.</text>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -3762,7 +3668,6 @@ Enchanted permanent is kindred and loses all other card types. (It still has its
 				<coloridentity>WUBRG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -3840,7 +3745,6 @@ Prithite&apos;s Worldly Dicta deals damage to target creature or planeswalker eq
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -3893,7 +3797,6 @@ Mill five cards. For each card milled this way, put it into your hand unless an 
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -3979,7 +3882,6 @@ At the beginning of your upkeep, Witness Totality deals 2 damage to each opponen
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -4031,7 +3933,6 @@ Create a token that&apos;s a copy of target permanent you control.</text>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -4175,7 +4076,6 @@ Trounce deals 4 damage divided among one or two targets.</text>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -4368,7 +4268,6 @@ III – If you control no non-Dragon creatures, you gain 5 life.
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -4449,7 +4348,6 @@ Infested Fortress can&apos;t attack or block unless you sacrifice a creature.</t
 				<pt>5/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="2">Hex Citizen AKT</related>
 		</card>
 		<card>
@@ -4468,7 +4366,6 @@ Infested Fortress can&apos;t attack or block unless you sacrifice a creature.</t
 				<coloridentity>WUR</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -4505,7 +4402,6 @@ When Minister of Welfare enters, if an opponent has more cards in hand than you,
 				<coloridentity>URG</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 			<related>Liberated Dragon AKT</related>
 		</card>
@@ -4525,7 +4421,6 @@ Tap an untapped Dragon you control: Add one mana of any color.</text>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -4544,7 +4439,6 @@ Tap an untapped Dragon you control: Add one mana of any color.</text>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -4651,8 +4545,6 @@ Once each turn, when you cast a spell with only one of the chosen types, you may
 				<loyalty>3</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Ithian Highblood</name>
@@ -4703,7 +4595,6 @@ Prowess abilities of permanents you control also trigger whenever another Lizard
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Incarnation AKT</related>
 		</card>
 		<card>
@@ -4723,7 +4614,6 @@ Prowess abilities of permanents you control also trigger whenever another Lizard
 				<pt>0/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Incarnation AKT</related>
 		</card>
 		<card>
@@ -4779,7 +4669,6 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -4835,7 +4724,6 @@ Spells of the chosen type cost {1} more to cast.</text>
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Dragon AKT</related>
 		</card>
 		<card>
@@ -4915,7 +4803,6 @@ Steal the Ur-Gift deals X damage to any target.
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -4937,7 +4824,6 @@ When Lunette enters, create two 1/1 white Soldier creature tokens.
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="2">Soldier AKT</related>
 		</card>
 		<card>
@@ -5011,9 +4897,7 @@ When Algaja enters, mill ten cards.</text>
 				<pt>4/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Embraced Cards AKT</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Hyyiroe, Revolution&apos;s Steed</name>
@@ -5084,7 +4968,6 @@ At the beginning of your end step, choose left or right. Starting with you, each
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -5218,7 +5101,6 @@ Whenever you cast an artifact or enchantment spell, create a 1/1 green Hex Citiz
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Hex Citizen AKT</related>
 		</card>
 		<card>
@@ -5455,7 +5337,6 @@ You choose if creatures with a chosen name attack or block each combat and how t
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Clue FOE</related>
 		</card>
 		<card>
@@ -5742,7 +5623,6 @@ Flying</text>
 				<pt>5/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 			<related>Embraced Cards AKT</related>
 		</card>
@@ -5762,7 +5642,6 @@ Flying</text>
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -5864,7 +5743,6 @@ Destroy all creatures.</text>
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -5945,9 +5823,8 @@ Whenever you play a card from exile, this creature gains double strike until end
 				<pt>3/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<related attach="transform">Swiftmind Sage</related>
-			
 			<related>Can Be Cast From Exile EXPT</related>
+			<related attach="transform">Swiftmind Sage</related>
 		</card>
 		<card>
 			<name>Swiftmind Sage</name>
@@ -5969,9 +5846,8 @@ Whenever Swiftmind Sage deals damage to an opponent, exile the top card of your 
 				<pt>1/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<related attach="transform">Swiftpaw Striker</related>
-			
 			<related>Can Be Cast From Exile EXPT</related>
+			<related attach="transform">Swiftpaw Striker</related>
 		</card>
 		<card>
 			<name>Tranquil Marketplace</name>
@@ -6060,7 +5936,6 @@ When Callwolf Replica dies, it deals damage equal to its power to each opponent.
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -6095,7 +5970,6 @@ When Callwolf Replica dies, it deals damage equal to its power to each opponent.
 				<pt>1/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Treasure AKT</related>
 		</card>
 		<card>
@@ -6129,8 +6003,6 @@ When Callwolf Replica dies, it deals damage equal to its power to each opponent.
 				<coloridentity>WI</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Towing Steladiuys</name>
@@ -6203,7 +6075,6 @@ When this creature enters the battlefield, exile up to one target nonland card f
 				<pt>1/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<reverse-related>Drake Token</reverse-related>
 			<related>Drake EXPT</related>
 		</card>
 		<card>
@@ -6242,7 +6113,6 @@ When this artifact enters, draw a card.
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Trace Reminder VNM</related>
 		</card>
 		<card>
@@ -6383,8 +6253,6 @@ Once each turn, if an opponent would cast a spell from anywhere other than their
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			<reverse-related>Elemental Token 2</reverse-related>
-			<reverse-related>Elemental Token 3</reverse-related>
 			<related>Flying Elemental EXPT</related>
 		</card>
 		<card>
@@ -6420,7 +6288,6 @@ Whenever this creature deals combat damage to a player, you may embrace a card w
 				<pt>1/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -6442,7 +6309,6 @@ Whenever a token you control attacks, each opponent loses 1 life.</text>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -6479,7 +6345,6 @@ Whenever a token you control attacks, each opponent loses 1 life.</text>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Liberated Dragon AKT</related>
 		</card>
 		<card>
@@ -6498,7 +6363,6 @@ Create an X/X silver Fish creature token, where X is the number of permanents ta
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			<reverse-related>Fish Token</reverse-related>
 			<related>Fish EXPT</related>
 		</card>
 		<card>
@@ -6536,7 +6400,6 @@ Whenever one or more tokens you control deal combat damage to a player, you may 
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>Horror</reverse-related>
-			<related>Horror EXPT</related>
 		</card>
 		<card>
 			<name>Lost in Dreams of Life</name>
@@ -6570,7 +6433,6 @@ At the beginning of your end step, you may exile target card from your graveyard
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Trace Reminder VNM</related>
 		</card>
 		<card>
@@ -6712,8 +6574,6 @@ This spell deals damage to any target equal to the number of tokens you control.
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
-			<related count="2">None</related>
 		</card>
 		<card>
 			<name>Illuminant Spire</name>
@@ -6915,8 +6775,6 @@ Whenever this creature deals combat damage to an opponent, put up to one target 
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<reverse-related>Robot Token</reverse-related>
-			
 		</card>
 		<card>
 			<name>Hopeless Summit</name>
@@ -6934,7 +6792,6 @@ Flashback–{3}{I}{I}, Tap two untapped silver creatures you control. (You may c
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			<reverse-related>Wall Token</reverse-related>
 			<related>Wall EXPT</related>
 		</card>
 		<card>
@@ -6954,7 +6811,6 @@ When you sacrifice this enchantment, search your library for a basic land card, 
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Shapeshifter EXPT</related>
 		</card>
 		<card>
@@ -7010,7 +6866,6 @@ When this creature dies, create a 2/2 silver Insect Plant token with decayed. (I
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Insect Plant EXPT</related>
 		</card>
 		<card>
@@ -7031,7 +6886,6 @@ When this creature enters, create a 2/2 silver Insect Plant creature token with 
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Insect Plant EXPT</related>
 		</card>
 		<card>
@@ -7123,8 +6977,6 @@ Channel – {2}{I}, Discard this: Draw two cards. Activate only if you control a
 				<pt>1/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Clifftop Pishogue</name>
@@ -7231,7 +7083,6 @@ Flashback {I}{U} (You may cast this card from your graveyard for its flashback c
 				<coloridentity>UI</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Demon EXPT</related>
 		</card>
 		<card>
@@ -7305,8 +7156,6 @@ When this creature enters, create two 2/2 Insect Plant creature tokens with deca
 				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<reverse-related>Insect Plant Token</reverse-related>
-			<related count="2">None</related>
 		</card>
 		<card>
 			<name>Godhead&apos;s Interdiction</name>
@@ -7746,7 +7595,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 			<cipt>1</cipt>
 		</card>
@@ -7767,7 +7615,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 			<cipt>1</cipt>
 		</card>
@@ -7788,7 +7635,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -7808,7 +7654,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -7828,7 +7673,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -8115,7 +7959,6 @@ Whenever this creature becomes the target of a spell for the first time each tur
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -8153,7 +7996,6 @@ When this creature enters, create a 1/1 silver Drake creature token with flying.
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Drake EXPT</related>
 		</card>
 		<card>
@@ -8171,7 +8013,6 @@ When this creature enters, create a 1/1 silver Drake creature token with flying.
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -8227,7 +8068,6 @@ When this creature dies, create a trace of Fault into your hand.
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Trace Reminder VNM</related>
 		</card>
 		<card>
@@ -8247,7 +8087,6 @@ When this creature dies, create a trace of Fault into your hand.
 				<pt>1/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -8569,9 +8408,8 @@ Prevent the next 3 damage that would be dealt to any target this turn. (Then put
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Monument In Unity</related>
-			
 			<related>Fox 11 FOE</related>
+			<related attach="transform">Monument In Unity</related>
 		</card>
 		<card>
 			<name>Monument In Unity</name>
@@ -8590,9 +8428,8 @@ Prevent the next 3 damage that would be dealt to any target this turn. (Then put
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Staggering Spires</related>
-			
 			<related>Fox 11 FOE</related>
+			<related attach="transform">Staggering Spires</related>
 		</card>
 		<card>
 			<name>Pathfinder Wurm</name>
@@ -8646,7 +8483,6 @@ This creature gets +1/+1 as long as you&apos;ve illuminated white.</text>
 				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 			<related>Fox 11 FOE</related>
 		</card>
@@ -8684,7 +8520,6 @@ This creature gets +0/+1 and has vigilance as long as you&apos;ve illuminated wh
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -8704,7 +8539,6 @@ This creature gets +0/+1 and has vigilance as long as you&apos;ve illuminated wh
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -8725,8 +8559,6 @@ When this creature enters, create a tapped Powerstone token. (It&apos;s an artif
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Veteran Party</name>
@@ -8794,7 +8626,6 @@ Draw a card.</text>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Fox 11 FOE</related>
 		</card>
 		<card>
@@ -8854,9 +8685,8 @@ Target creature you control gains hexproof until end of turn. (Then put this int
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Misty Aisle</related>
-			
 			<related>Blue Drake 21 FOE</related>
+			<related attach="transform">Misty Aisle</related>
 		</card>
 		<card>
 			<name>Misty Aisle</name>
@@ -8875,9 +8705,8 @@ Target creature you control gains hexproof until end of turn. (Then put this int
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Tiderock Passage</related>
-			
 			<related>Blue Drake 21 FOE</related>
+			<related attach="transform">Tiderock Passage</related>
 		</card>
 		<card>
 			<name>Fold the Truth</name>
@@ -9037,7 +8866,6 @@ This creature gets +1/+1 and has vigilance as long as you&apos;ve illuminated bl
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -9108,7 +8936,6 @@ Threshold – This creature has flying as long as you have seven or more cards i
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Blue Drake 11 FOE</related>
 		</card>
 		<card>
@@ -9185,9 +9012,8 @@ Whenever you cast a noncreature spell, each opponent loses 1 life and you gain 1
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Pinnacle Spillaway</related>
-			
 			<related>Lizard 21 FOE</related>
+			<related attach="transform">Pinnacle Spillaway</related>
 		</card>
 		<card>
 			<name>Pinnacle Spillaway</name>
@@ -9206,9 +9032,8 @@ Whenever you cast a noncreature spell, each opponent loses 1 life and you gain 1
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Eroding River</related>
-			
 			<related>Lizard 21 FOE</related>
+			<related attach="transform">Eroding River</related>
 		</card>
 		<card>
 			<name>Foolish Footing</name>
@@ -9226,7 +9051,6 @@ Destroy target creature or planeswalker if it has mana value 2 or less or if you
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -9387,7 +9211,6 @@ This spell costs {2} less to cast if you&apos;ve illuminated black or if you con
 				<pt>7/6</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -9424,7 +9247,6 @@ Create a 1/1 black Drake creature token with flying.</text>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Black Drake 11 FOE</related>
 		</card>
 		<card>
@@ -9465,7 +9287,6 @@ As long as you&apos;ve illuminated red, this creature gets +2/+0 and has first s
 				<pt>1/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -9535,7 +9356,6 @@ When this creature enters, create a 3/1 red Wurm creature token.</text>
 				<pt>1/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Red Wurm FOE</related>
 		</card>
 		<card>
@@ -9595,7 +9415,6 @@ As long as you&apos;ve illuminated red, this creature gets +1/+1 and has trample
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -9683,6 +9502,7 @@ Draw a card from your sanctum or library.</text>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<related>Depthscout Token FOE</related>
 		</card>
 		<card>
 			<name>Disciple of the Thicket</name>
@@ -9701,7 +9521,6 @@ Landfall – Whenever a land enters the battlefield under your control, this cre
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -9722,9 +9541,8 @@ Whenever you attack with exactly two creatures, transform this realm.
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Deepwoods Pillars</related>
-			
 			<related>Cat FOE</related>
+			<related attach="transform">Deepwoods Pillars</related>
 		</card>
 		<card>
 			<name>Deepwoods Pillars</name>
@@ -9743,9 +9561,8 @@ Whenever you attack with exactly two creatures, transform this realm.
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Enduring Woodland</related>
-			
 			<related>Cat FOE</related>
+			<related attach="transform">Enduring Woodland</related>
 		</card>
 		<card>
 			<name>Surubim Harpoon // Piercing Throw</name>
@@ -9856,8 +9673,6 @@ When this creature enters, put a +1/+1 counter on target creature you control.</
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Inspiring Recruit</name>
@@ -10075,7 +9890,6 @@ As long as you&apos;ve illuminated silver, this creature gets +2/+1 and has flyi
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -10131,7 +9945,6 @@ Draw a card from your library or sanctum. (Then put this into your sanctum.)</te
 				<pt>0/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="2">Silver Drake 11 FOE</related>
 		</card>
 		<card>
@@ -10168,7 +9981,6 @@ When this creature enters, create a 1/1 silver Drake creature token with flying.
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Silver Drake 11 FOE</related>
 		</card>
 		<card>
@@ -10206,7 +10018,6 @@ Target creature becomes an enchantment land. (It loses all other card types.) It
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -10299,9 +10110,8 @@ When this creature enters, draw a card.</text>
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Depths of Change</related>
-			
 			<related>Crab FOE</related>
+			<related attach="transform">Depths of Change</related>
 		</card>
 		<card>
 			<name>Depths of Change</name>
@@ -10320,9 +10130,8 @@ When this creature enters, draw a card.</text>
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Enlightening Crescents</related>
-			
 			<related>Crab FOE</related>
+			<related attach="transform">Enlightening Crescents</related>
 		</card>
 		<card>
 			<name>Mutated Pioneer</name>
@@ -10586,7 +10395,6 @@ Explorer – {2}, {T}: Target creature you control gets +2/+2 and gains trample 
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>White Drake FOE</related>
 		</card>
 		<card>
@@ -10789,7 +10597,6 @@ Evoke {2}{RW} (You may cast this spell for its evoke cost. If you do, it&apos;s 
 				<pt>1/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="2">Bird FOE</related>
 		</card>
 		<card>
@@ -10881,7 +10688,6 @@ Once each turn, when you cast an enchantment spell, you may create a 1/1 white S
 				<coloridentity>WB</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Whale FOE</related>
 			<related>Shark FOE</related>
 		</card>
@@ -10923,7 +10729,6 @@ Sorcery spells you cast cost {2} less to cast if you&apos;ve illuminated silver.
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -11243,7 +11048,6 @@ Evoke {BR} (You may cast this spell for its evoke cost. If you do, it&apos;s sac
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Elemental Demon FOE</related>
 		</card>
 		<card>
@@ -11414,7 +11218,6 @@ Whenever you cast a spell that is one or more colors, if you&apos;ve illuminated
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -11434,7 +11237,6 @@ When this creature enters, create a colorless 3/3 Wurm Dragon kindred enchantmen
 				<pt>0/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -12024,7 +11826,6 @@ Whenever you attack, draw a card from your sanctum or library, then discard a ca
 				<pt>2/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -12113,8 +11914,6 @@ When this land enters tapped, up to one target creature you control gets +1/+0 a
 				<pt>1/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Reflected Inclination</name>
@@ -12150,8 +11949,6 @@ When this land enters tapped, up to one target creature you control gets +1/+0 a
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Bloomrock Enclave</name>
@@ -12186,7 +11983,6 @@ When this land enters tapped, up to one target creature you control gets +1/+0 a
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Cat FOE</related>
 		</card>
 		<card>
@@ -12206,7 +12002,6 @@ When this land enters tapped, up to one target creature you control gets +1/+0 a
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -12533,7 +12328,6 @@ When this land enters tapped, up to one target creature you control gains haste 
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Orb FOE</related>
 		</card>
 		<card>
@@ -12609,9 +12403,8 @@ When this land enters tapped, up to one target creature you control gains haste 
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Peaks of War</related>
-			
 			<related>Red Wurm FOE</related>
+			<related attach="transform">Peaks of War</related>
 		</card>
 		<card>
 			<name>Peaks of War</name>
@@ -12630,9 +12423,8 @@ When this land enters tapped, up to one target creature you control gains haste 
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Bosket Peak</related>
-			
 			<related>Red Wurm FOE</related>
+			<related attach="transform">Bosket Peak</related>
 		</card>
 		<card>
 			<name>Outlands Recruiter // Follow My Call</name>
@@ -12707,7 +12499,6 @@ Tokens you control have vigilance. (Attacking doesn&apos;t cause them to tap.)</
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Fox 11 FOE</related>
 		</card>
 		<card>
@@ -12746,7 +12537,6 @@ Explorer – When this creature attacks, if you control five or more differently
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>White Wurm 11 FOE</related>
 		</card>
 		<card>
@@ -12767,7 +12557,6 @@ This creature has vigilance and flying as long as you&apos;ve illuminated white.
 				<pt>*/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -12804,7 +12593,6 @@ Exile target nonland permanent.</text>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -12902,9 +12690,8 @@ Sacrifice this creature: Target creature gains indestructible until end of turn.
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Restful Clearing</related>
-			
 			<related>Insect FOE</related>
+			<related attach="transform">Restful Clearing</related>
 		</card>
 		<card>
 			<name>Restful Clearing</name>
@@ -12923,9 +12710,8 @@ Sacrifice this creature: Target creature gains indestructible until end of turn.
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Chimarel Clearing</related>
-			
 			<related>Insect FOE</related>
+			<related attach="transform">Chimarel Clearing</related>
 		</card>
 		<card>
 			<name>Ancient Sigils</name>
@@ -13042,7 +12828,6 @@ Whenever you attack, sift 1. (Look at the top card of your library. You may put 
 				<pt>1/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -13267,7 +13052,6 @@ This creature gets +2/+0 if you&apos;ve illuminated black.</text>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -13322,7 +13106,6 @@ Creature tokens you control gain haste until end of turn.</text>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -13374,7 +13157,6 @@ Whenever you attack, if you&apos;ve illuminated black, each opponent loses 2 lif
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -13473,9 +13255,8 @@ Target player sacrifices an enchantment. (Then put this into your sanctum.)</tex
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Green-Streaked Ruins</related>
-			
 			<related>Fish FOE</related>
+			<related attach="transform">Green-Streaked Ruins</related>
 		</card>
 		<card>
 			<name>Green-Streaked Ruins</name>
@@ -13494,9 +13275,8 @@ Target player sacrifices an enchantment. (Then put this into your sanctum.)</tex
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related attach="transform">Gold-Streaked Obelisks</related>
-			
 			<related>Fish FOE</related>
+			<related attach="transform">Gold-Streaked Obelisks</related>
 		</card>
 		<card>
 			<name>Fervent Canyon</name>
@@ -13684,7 +13464,6 @@ Haste
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -13720,7 +13499,6 @@ Haste
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -13841,7 +13619,6 @@ Creatures you control have trample.</text>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related count="2">Red Wurm FOE</related>
 		</card>
 		<card>
@@ -13976,7 +13753,6 @@ Create two 1/1 green Elk Plant creature tokens. Then If you illuminated green, p
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Luminous VNM</related>
 			<related count="2">Elk Plant FOE</related>
 		</card>
@@ -14048,7 +13824,6 @@ Whenever this creature attacks, you gain 2 life. If you&apos;ve illuminated gree
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -14084,7 +13859,6 @@ At the beginning of your end step, create a 3/3 green Beast creature token if yo
 				<pt>2/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Beast FOE</related>
 		</card>
 		<card>
@@ -14194,7 +13968,6 @@ Materialize 2 (Tap any number of other enchantments you control with total mana 
 				<pt>6/6</pt>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>White Wurm 22 FOE</related>
 		</card>
 		<card>
@@ -14401,7 +14174,6 @@ At the beginning of your end step, you may pay {2} and sacrifice a token. If you
 				<pt>1/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Insect FOE</related>
 			<related>Beast FOE</related>
 		</card>
@@ -14554,8 +14326,6 @@ Create a tapped Powerstone token. (It&apos;s an artifact with &quot;{T}: Add {C}
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Pathshaping</name>
@@ -14592,7 +14362,6 @@ Whenever this creature attacks, if you&apos;ve illuminated silver, create a tapp
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -14632,7 +14401,6 @@ If a card would be put from an opponents sanctum into anywhere other than exile,
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -14744,7 +14512,6 @@ For each color you&apos;ve illuminated, this creature gets +1/+1.</text>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -14783,7 +14550,6 @@ For each color you&apos;ve illuminated, this creature gets +1/+1.</text>
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Blue Drake 11 FOE</related>
 		</card>
 		<card>
@@ -15145,8 +14911,6 @@ Whenever Maal and Sevol attacks, create a 3/4 colorless Dragon creature token wi
 			</prop>
 			<tablerow>2</tablerow>
 			<related attach="transform">Astrus Quandry</related>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Astrus Quandry</name>
@@ -15168,8 +14932,6 @@ Whenever Maal and Sevol attacks, create a 3/4 colorless Dragon creature token wi
 			</prop>
 			<tablerow>0</tablerow>
 			<related attach="transform">Maal and Sevol, Twin Sentries</related>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Scout, Maw of the Moon</name>
@@ -15231,7 +14993,6 @@ Escape–{6}, Exile a Realm card from your graveyard. (You may cast this card fr
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -15425,7 +15186,6 @@ Attacking creature tokens you control get +1/+0.</text>
 				<coloridentity>I</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Silver Drake 11 FOE</related>
 		</card>
 		<card>
@@ -15481,7 +15241,6 @@ Whenever this creature attacks, create a Treasure token.</text>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Treasure AKT</related>
 		</card>
 		<card>
@@ -15503,7 +15262,6 @@ Search your library for a basic land card, reveal it, put it into your hand. The
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related count="4">Bird FOE</related>
 		</card>
 		<card>
@@ -15582,7 +15340,6 @@ When Jothi enters, put a +1/+1 counter on up to one target creature.
 			</prop>
 			<tablerow>2</tablerow>
 			<reverse-related>Jothi</reverse-related>
-			
 		</card>
 		<card>
 			<name>Exhuberant Genesis</name>
@@ -15656,7 +15413,6 @@ Prevent all combat damage that would be dealt to players this turn. (Then put th
 				<coloridentity>WG</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -15802,7 +15558,6 @@ Whenever you cast a spell, you may cast a face-up card from your sanctum that ha
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Blood FOE</related>
 		</card>
 		<card>
@@ -15823,7 +15578,6 @@ Whenever you cast a spell, you may cast a face-up card from your sanctum that ha
 				<coloridentity>RGI</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -15844,7 +15598,6 @@ Whenever you cast a spell, you may cast a face-up card from your sanctum that ha
 				<coloridentity>WUI</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related count="2">Bird FOE</related>
 		</card>
 		<card>
@@ -16219,7 +15972,6 @@ Choose one–
 				<coloridentity>BRI</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related count="3">Insect FOE</related>
 		</card>
 		<card>
@@ -16239,8 +15991,6 @@ Choose one–
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Call of Ancestry</name>
@@ -16315,10 +16065,8 @@ Whenever this creature attacks, you may cast an exiled card you own with an ance
 				<coloridentity>UB</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<reverse-related>Dominator of Drakes</reverse-related>
 			<reverse-related>Lasting Discovery</reverse-related>
 			<reverse-related>Calamitous Koi</reverse-related>
-			
 		</card>
 		<card>
 			<name>Tangled Heart</name>
@@ -16372,7 +16120,6 @@ Once each turn, when you gain life, you may put a +1/+1 counter on target creatu
 				<pt>1/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="2">Goat FOE</related>
 		</card>
 		<card>
@@ -16608,7 +16355,6 @@ Whenever you cast or copy a noncreature spell, create a 1/1 white Shark enchantm
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Shark FOE</related>
 		</card>
 		<card>
@@ -16670,7 +16416,6 @@ This spell deals 1 damage to any target. Scry 1. (Then put this into your sanctu
 				<loyalty>6</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Red Wurm FOE</related>
 		</card>
 		<card>
@@ -16798,7 +16543,6 @@ Whenever you create a token outside of your reserves, create a token that&apos;s
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 		</card>
 		<card>
@@ -16818,9 +16562,7 @@ Equipment you control have &quot;Sacrifice this Equipment: Equipped creature gai
 				<pt>1/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Sapner Vindicator</name>
@@ -16857,7 +16599,6 @@ Escape–{4}{W}{W}, Exile X cards from your graveyard. (You may cast this card f
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Green Knight HOD</related>
 		</card>
 		<card>
@@ -16950,9 +16691,7 @@ Destroy all creatures.</text>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Red Soldier HOD</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Mirrorkin&apos;s Bargain</name>
@@ -16969,7 +16708,6 @@ Destroy all creatures.</text>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Horror HOD</related>
 		</card>
 		<card>
@@ -16988,7 +16726,6 @@ Destroy all creatures.</text>
 				<pt>1/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 		</card>
 		<card>
@@ -17122,7 +16859,6 @@ As long as it&apos;s your turn, Marilye is a 3/2 Elf Rogue creature with hexproo
 				<loyalty>4</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -17142,7 +16878,6 @@ Whenever an opponent casts their first creature spell each turn, create a token 
 				<pt>6/6</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 		</card>
 		<card>
@@ -17163,7 +16898,6 @@ At the beginning of each opponent&apos;s upkeep, draw a card unless that player 
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Red Soldier HOD</related>
 		</card>
 		<card>
@@ -17181,7 +16915,6 @@ At the beginning of each opponent&apos;s upkeep, draw a card unless that player 
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Reserves HOD</related>
 		</card>
 		<card>
@@ -17292,7 +17025,6 @@ Whenever Plaskett Trickster deals combat damage to a player or planeswalker, cho
 				<pt>1/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -17349,7 +17081,6 @@ Whenever a nontoken creature you control dies, create a token that&apos;s a copy
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 		</card>
 		<card>
@@ -17410,7 +17141,6 @@ When Waldemar dies, each opponent discards a card.
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -17448,7 +17178,6 @@ Whenever Caryl Rey, the Rose attacks, exile the top card of your library. You ma
 				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 		</card>
 		<card>
@@ -17519,7 +17248,6 @@ Escape–{3}{R}, Exile X other cards from your graveyard. (You may cast this car
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -17595,7 +17323,6 @@ Enchanted creature has &quot;Whenever this creature deals combat damage to a pla
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related count="x">Red Soldier HOD</related>
 		</card>
@@ -17669,9 +17396,7 @@ When Geistwald Abomination dies, choose two names. For each chosen name, create 
 				<pt>7/7</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Choice of Salvations</name>
@@ -17688,7 +17413,6 @@ When Geistwald Abomination dies, choose two names. For each chosen name, create 
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Scout HOD</related>
 		</card>
 		<card>
@@ -17763,7 +17487,6 @@ Whenever enchanted player spends their sixteenth total mana during a turn, creat
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Horror HOD</related>
 		</card>
 		<card>
@@ -17860,10 +17583,8 @@ Whenever a creature you control enters, if you didn&apos;t cast it and it wasn&a
 				<loyalty>4</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related count="2">White Soldier 11 HOD</related>
-			<related count="2">Intisuyu's Armies HOD</related>
 		</card>
 		<card>
 			<name>Roul Banefort, the Stern</name>
@@ -17882,9 +17603,7 @@ Whenever you attack with three or more other Knights, you may return target card
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Conrad Whitaker, Protector</name>
@@ -17903,7 +17622,6 @@ Whenever you cast a spell that targets another creature you control, create a to
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 		</card>
 		<card>
@@ -17923,7 +17641,6 @@ Whenever Minna Radcliff enters, if you cast her, exile X cards of your library, 
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -17943,7 +17660,6 @@ Whenever Gosfridus Turnberry enters or you attack with one or more nontoken crea
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Horror HOD</related>
 		</card>
@@ -18002,7 +17718,6 @@ Escape–{R}{G}{W}, Exile four other cards from your graveyard. (You may cast th
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -18090,7 +17805,6 @@ Whenever you attack, Armies you control gain trample until end of turn if their 
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Army HOD</related>
 		</card>
 		<card>
@@ -18301,7 +18015,6 @@ At the beginning of each end step, if you lost 4 or more life this turn, create 
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Treasure HOD</related>
 		</card>
 		<card>
@@ -18394,8 +18107,6 @@ Whenever Elric Nye deals combat damage to a player or planeswalker, if it isn&ap
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
-			<related count="x">None</related>
 		</card>
 		<card>
 			<name>Hall of Graven Laughs</name>
@@ -18414,7 +18125,6 @@ Whenever Elric Nye deals combat damage to a player or planeswalker, if it isn&ap
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Treasure HOD</related>
 		</card>
 		<card>
@@ -18539,7 +18249,6 @@ At the beginning of combat on your turn, you may return a creature you control t
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Red Soldier HOD</related>
 		</card>
@@ -18595,8 +18304,6 @@ Escape–{2}{W}, Exile four other cards from your graveyard. (You may cast this 
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Imani Whitaker</name>
@@ -18614,7 +18321,6 @@ Escape–{2}{W}, Exile four other cards from your graveyard. (You may cast this 
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Scout HOD</related>
 		</card>
@@ -18635,7 +18341,6 @@ Whenever an opponent casts a spell, if the amount of mana spent to cast it was l
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related count="x">Scout HOD</related>
 		</card>
@@ -18657,7 +18362,6 @@ At the beginning of combat on your turn, you may forsake. If you do, put a +1/+1
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Red Soldier HOD</related>
 		</card>
 		<card>
@@ -18678,7 +18382,6 @@ Sacrifice a creature: Wystan Terrel gains indestructible until end of turn.</tex
 				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="2">Scout HOD</related>
 		</card>
 		<card>
@@ -18698,7 +18401,6 @@ Whenever you cast or copy a noncreature spell, create a 1/1 blue Scout creature 
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Scout HOD</related>
 		</card>
 		<card>
@@ -18766,7 +18468,6 @@ When In Hopeful Caress enters, exile target nonland, nonlegendary permanent an o
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Scout HOD</related>
 		</card>
@@ -18842,7 +18543,6 @@ Whenever Pilferer of Shrouded Coasts deals combat damage to a player or planeswa
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Treasure HOD</related>
 		</card>
 		<card>
@@ -18862,7 +18562,6 @@ Whenever one or more creatures you control deal combat damage to an opponent or 
 				<pt>1/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Scout HOD</related>
 		</card>
@@ -18935,8 +18634,6 @@ Whenever one or more creatures you control deal combat damage to a player, put t
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Beginning of a Grand Heist</name>
@@ -19007,7 +18704,6 @@ Whenever another creature you control dies, Vance Soulsapper deals 1 damage to t
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Treasure HOD</related>
 		</card>
 		<card>
@@ -19059,7 +18755,6 @@ When Reaper of Graven Laughs enters, create a 1/1 blue Scout token in your reser
 				<pt>5/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Scout HOD</related>
 		</card>
@@ -19079,7 +18774,6 @@ Enchanted creature gets +2/+0 and has &quot;Whenever this creature dies, create 
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Reserves HOD</related>
 		</card>
 		<card>
@@ -19275,7 +18969,6 @@ Escape–{1}{R}, Exile two other cards from your graveyard. (You may cast this c
 				<pt>4/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -19437,7 +19130,6 @@ Whenever The Call to Adventure enters during combat or a creature you control de
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Reserves HOD</related>
 		</card>
 		<card>
@@ -19455,7 +19147,6 @@ Whenever The Call to Adventure enters during combat or a creature you control de
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Reserves HOD</related>
 		</card>
 		<card>
@@ -19564,9 +19255,7 @@ When Turnberry Overseer enters, choose a name. Create a legendary 3/3 Knight cre
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Silberwald Trailblazer</name>
@@ -19620,7 +19309,6 @@ Flashback–{W}{U}, Forsake (You may cast this card from your graveyard for its 
 				<coloridentity>WU</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related count="4">Spirit HOD</related>
 		</card>
 		<card>
@@ -19778,10 +19466,8 @@ Exile three tokens from your reserves: Choose a name. Create a legendary 3/3 Kni
 				<coloridentity>WG</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Scout HOD</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Whitaker Cavalry</name>
@@ -19867,9 +19553,7 @@ Enchanted creature gets +1/+1 for each enchantment you control and each noncreat
 				<coloridentity>BG</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Reserves HOD</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Restorative Hexer</name>
@@ -19888,7 +19572,6 @@ Enchanted creature gets +1/+1 for each enchantment you control and each noncreat
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Treasure HOD</related>
 		</card>
 		<card>
@@ -19908,8 +19591,6 @@ Enchanted creature gets +1/+1 for each enchantment you control and each noncreat
 				<pt>3/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Renodet, the Shield of Perle</name>
@@ -20075,7 +19756,6 @@ Whenever Respected Captain attacks, create two 1/1 blue Scout creature tokens th
 				<pt>*/6</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="2">Scout HOD</related>
 		</card>
 		<card>
@@ -20114,9 +19794,7 @@ At the beginning of each end step, create a 1/1 blue Scout creature token if you
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Scout HOD</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Secluded Arachnomorph</name>
@@ -20151,10 +19829,8 @@ When Secluded Arachnomorph enters, Secluded Arachnomorph deals 3 damage to targe
 				<coloridentity>WRG</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Scout HOD</related>
 			<related>Treasure HOD</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Faceless Mirrorkin</name>
@@ -20209,7 +19885,6 @@ Equip–Forsake. (Sacrifice creatures with total toughness three or more.)</text
 				<coloridentity>WUR</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related count="3">Scout HOD</related>
 		</card>
 		<card>
@@ -20320,8 +19995,6 @@ Plainscycling {2}, Swampcycling {2}, Forestcycling {2} ({2}, Discard this card: 
 				<coloridentity>WUBRGI</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Highborn Sovereign</name>
@@ -20374,8 +20047,6 @@ Islandcycling {2}, Mountaincycling {2}, Plainscycling {2} ({2}, Discard this car
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Ardleby Hold</name>
@@ -20572,7 +20243,6 @@ Crew 3 (Tap any number of creatures you control with total power 3 or more: This
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related count="2">Scout HOD</related>
 		</card>
 		<card>
@@ -20591,7 +20261,6 @@ Crew 3 (Tap any number of creatures you control with total power 3 or more: This
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Clue HOD</related>
 		</card>
@@ -20628,7 +20297,6 @@ Crew 3 (Tap any number of creatures you control with total power 3 or more: This
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Treasure HOD</related>
 		</card>
 		<card>
@@ -20699,9 +20367,7 @@ Flying</text>
 				<pt>6/6</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Glimpse</name>
@@ -20858,7 +20524,6 @@ Sycophant (Whenever this creature deals damage to a player or planeswalker, the 
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Treasure HOD</related>
 		</card>
@@ -20911,9 +20576,7 @@ Choose a name. Create a legendary 3/3 Knight creature token that&apos;s all colo
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Reserves HOD</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Debt Collection</name>
@@ -21071,8 +20734,6 @@ Legendary creatures and Knights you control have vigilance.</text>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Naval Diplomacy</name>
@@ -21090,7 +20751,6 @@ Legendary creatures and Knights you control have vigilance.</text>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related count="2">Scout HOD</related>
 		</card>
@@ -21110,9 +20770,7 @@ Legendary creatures and Knights you control have vigilance.</text>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Summer Tryst</name>
@@ -21218,7 +20876,6 @@ Exile the top three cards of your library. You may play them until the end of yo
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -21236,7 +20893,6 @@ Exile the top three cards of your library. You may play them until the end of yo
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Red Soldier HOD</related>
 		</card>
@@ -21311,7 +20967,6 @@ When Truetower Lookout enters, exile the top card of your library. You may play 
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -21439,8 +21094,6 @@ Escape–{4}{W}, Exile five other cards from your graveyard. (You may cast this 
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Enduring Turtle</name>
@@ -21493,7 +21146,6 @@ Create Lover to All in your reserves. He&apos;s a legendary 2/3 red Human Noble 
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Reserves HOD</related>
 		</card>
 		<card>
@@ -21531,7 +21183,6 @@ When Honored Eagle enters, create a 1/1 blue Scout creature token.</text>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Scout HOD</related>
 		</card>
 		<card>
@@ -21568,7 +21219,6 @@ When Honored Eagle enters, create a 1/1 blue Scout creature token.</text>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Treasure HOD</related>
 		</card>
 		<card>
@@ -21640,7 +21290,6 @@ Escape–{5}{G}, Exile four other cards from your graveyard. (You may cast this 
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related count="2">Scout HOD</related>
 		</card>
@@ -21766,9 +21415,7 @@ Whenever Castle Delta Lookout deals combat damage to a player or planeswalker, d
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Reserves HOD</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Call to Strength</name>
@@ -21807,7 +21454,6 @@ Choose one –
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 		</card>
 		<card>
@@ -21881,9 +21527,7 @@ Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Reserves HOD</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Charitable Faerie</name>
@@ -21938,9 +21582,7 @@ Whenever Ardent Warsworn deals combat damage to a player or planeswalker, you ma
 				<pt>8/6</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Kirsa&apos;s Page</name>
@@ -21995,7 +21637,6 @@ Whenever Ardent Warsworn deals combat damage to a player or planeswalker, you ma
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Red Soldier HOD</related>
 		</card>
@@ -22016,7 +21657,6 @@ Sacrifice a token: Surveil 2.</text>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Scout HOD</related>
 		</card>
 		<card>
@@ -22053,7 +21693,6 @@ At the beginning of your end step, create a 1/1 blue Scout creature token in you
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Scout HOD</related>
 		</card>
@@ -22092,7 +21731,6 @@ When Brotherly Comradery enters or enchanted creature attacks, create a 1/1 blue
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Scout HOD</related>
 		</card>
@@ -22147,9 +21785,7 @@ If you attacked this turn, instead that player reveals their hand. You choose a 
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Reserves HOD</related>
-			<related>None</related>
 		</card>
 		<card>
 			<name>Aggressive Urge</name>
@@ -22303,7 +21939,6 @@ At the beginning of your end step, create a 1/1 blue Scout creature token in you
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Scout HOD</related>
 		</card>
@@ -22324,7 +21959,6 @@ Whenever you cast a spell during an opponent&apos;s turn, create a 1/1 blue Scou
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Scout HOD</related>
 		</card>
@@ -22345,7 +21979,6 @@ When Bounty Collector dies, create a token that&apos;s a copy of it in your rese
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Reserves HOD</related>
 		</card>
 		<card>
@@ -22364,7 +21997,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Scout HOD</related>
 		</card>
@@ -22383,7 +22015,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Reserves HOD</related>
 		</card>
 		<card>
@@ -22402,7 +22033,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related>Food HOD</related>
 		</card>
@@ -22680,8 +22310,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>House Sigil</name>
@@ -22700,8 +22328,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>House Sigil</name>
@@ -22720,8 +22346,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>House Sigil</name>
@@ -22740,8 +22364,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>House Sigil</name>
@@ -22760,8 +22382,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>House Sigil</name>
@@ -22780,8 +22400,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>House Sigil</name>
@@ -22800,8 +22418,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>House Sigil</name>
@@ -22820,8 +22436,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>House Sigil</name>
@@ -22840,8 +22454,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>House Sigil</name>
@@ -22860,8 +22472,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>House Sigil</name>
@@ -22880,8 +22490,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>House Sigil</name>
@@ -22900,8 +22508,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>House Sigil</name>
@@ -22920,8 +22526,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>House Sigil</name>
@@ -22940,8 +22544,6 @@ At the beginning of combat on your turn, you may move a token in your reserves o
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Hann, Herald of the Conqueror</name>
@@ -23011,8 +22613,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Emergent Anomaly ITD</related>
+			<related persistent="">Emergent Anomaly ITD</related>
 		</card>
 		<card>
 			<name>Priest of Perfection</name>
@@ -23031,8 +22632,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Priest of Perfection ITD</related>
+			<related persistent="">Priest of Perfection ITD</related>
 		</card>
 		<card>
 			<name>Far-Off Factory</name>
@@ -23050,7 +22650,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -23160,7 +22759,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -23181,7 +22779,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -23201,8 +22798,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Mechanised Hunter ITD</related>
+			<related persistent="">Mechanised Hunter ITD</related>
 		</card>
 		<card>
 			<name>Deepmind Oracle</name>
@@ -23222,8 +22818,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Deepmind Oracle ITD</related>
+			<related persistent="">Deepmind Oracle ITD</related>
 		</card>
 		<card>
 			<name>New-Life Acolyte</name>
@@ -23242,8 +22837,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>1/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>New-Life Acolyte ITD</related>
+			<related persistent="">New-Life Acolyte ITD</related>
 		</card>
 		<card>
 			<name>Thought-Theft</name>
@@ -23261,7 +22855,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -23427,7 +23020,6 @@ Deep dwelling – As long as your library contains a number of cards less than o
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Nightmare ITD</related>
 		</card>
 		<card>
@@ -23445,7 +23037,6 @@ Deep dwelling – As long as your library contains a number of cards less than o
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related count="3">Nightmare ITD</related>
 		</card>
 		<card>
@@ -23464,7 +23055,6 @@ Deep dwelling – As long as your library contains a number of cards less than o
 				<coloridentity>WB</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Nightmare ITD</related>
 		</card>
 		<card>
@@ -23574,7 +23164,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -23629,8 +23218,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Lammasu, Dream-Stilled ITD</related>
+			<related persistent="">Lammasu, Dream-Stilled ITD</related>
 		</card>
 		<card>
 			<name>Ichor-Drowned</name>
@@ -23772,7 +23360,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity>UR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 			<cipt>1</cipt>
 		</card>
@@ -23828,7 +23415,6 @@ When Symbiotic Host leaves your graveyard during your turn or attacks, you may p
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Insect ITD</related>
 		</card>
 		<card>
@@ -23883,7 +23469,6 @@ Create two 1/1 white Nightmare creature tokens with lifelink and &quot;This crea
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related count="2">Nightmare ITD</related>
 		</card>
 		<card>
@@ -23921,7 +23506,6 @@ Enchanted creature has +1/+1 for each land in your realm. (Your realm consists o
 				<loyalty>5</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -24090,8 +23674,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Fracture of Divinity ITD</related>
+			<related persistent="">Fracture of Divinity ITD</related>
 		</card>
 		<card>
 			<name>Warden of Scorching Days</name>
@@ -24129,7 +23712,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity>BG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 			<cipt>1</cipt>
 		</card>
@@ -24187,7 +23769,6 @@ Whenever Angel of the Forest leaves your graveyard during your turn or attacks, 
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Nightmare ITD</related>
 		</card>
 		<card>
@@ -24318,7 +23899,6 @@ Whenever this creature attacks, put a loyalty counter on it and mill a card.
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="2">Nightmare ITD</related>
 		</card>
 		<card>
@@ -24393,8 +23973,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
-			<related>Shifting Silverscape ITD</related>
+			<related persistent="">Shifting Silverscape ITD</related>
 		</card>
 		<card>
 			<name>To Be Forgotten in a Dream</name>
@@ -24447,7 +24026,6 @@ When Antisun&apos;s Domain enters, if you control five or more lands with differ
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related count="2">Nightmare ITD</related>
 		</card>
 		<card>
@@ -24736,7 +24314,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity>BR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 			<cipt>1</cipt>
 		</card>
@@ -24757,7 +24334,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity>WB</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 			<cipt>1</cipt>
 		</card>
@@ -24977,7 +24553,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity>RG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 			<cipt>1</cipt>
 		</card>
@@ -24998,7 +24573,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity>WR</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 			<cipt>1</cipt>
 		</card>
@@ -25073,7 +24647,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity>UG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 			<cipt>1</cipt>
 		</card>
@@ -25094,7 +24667,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Nightmare ITD</related>
 		</card>
 		<card>
@@ -25327,7 +24899,6 @@ Flashback {3}{W}{W}{U}{U} (You may cast this card from your graveyard for its fl
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -25365,8 +24936,6 @@ When this creature enters or dies, create a tapped colorless land token named Ev
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Everywhere ITD</related>
 		</card>
 		<card>
 			<name>Reshape Reality</name>
@@ -25456,8 +25025,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Cloudscape Observer ITD</related>
+			<related persistent="">Cloudscape Observer ITD</related>
 		</card>
 		<card>
 			<name>Celestial Realm</name>
@@ -25476,7 +25044,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity>WU</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 			<cipt>1</cipt>
 		</card>
@@ -25497,7 +25064,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<loyalty>1</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Faerie Horror ITD</related>
 		</card>
 		<card>
@@ -25536,7 +25102,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<loyalty>3</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -25575,7 +25140,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity>UB</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 			<cipt>1</cipt>
 		</card>
@@ -25665,8 +25229,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Ancient Forerunner ITD</related>
+			<related persistent="">Ancient Forerunner ITD</related>
 		</card>
 		<card>
 			<name>The Ephemeral Piper</name>
@@ -25687,8 +25250,6 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<loyalty>4</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>Ringing Noise ITD</related>
 		</card>
 		<card>
 			<name>Wyrm&apos;s Death</name>
@@ -25761,7 +25322,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity>WG</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 			<cipt>1</cipt>
 		</card>
@@ -26074,6 +25634,7 @@ When Eye of the Abominable enters, return target creature card from your graveya
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
+			<related>Through Violence ITD</related>
 		</card>
 		<card>
 			<name>Illuminant Master</name>
@@ -26093,7 +25654,6 @@ Whenever this creature attacks alone, it gets +1/+1 until end of turn for each N
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Nightmare ITD</related>
 		</card>
 		<card>
@@ -26168,7 +25728,6 @@ When this creature enters, exile another target nonland permanent until this cre
 			</prop>
 			<tablerow>1</tablerow>
 			<reverse-related>MX-04, Electric Usurper</reverse-related>
-			
 		</card>
 		<card>
 			<name>Drain</name>
@@ -26277,7 +25836,6 @@ When this creature attacks, if it has power 4 or greater and no counters on it, 
 				<loyalty>7</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related count="3">Faerie Horror ITD</related>
 		</card>
 		<card>
@@ -26390,7 +25948,6 @@ Whenever you attack, put a +1/+1 counter on target attacking Nightmare you contr
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Nightmare ITD</related>
 		</card>
 		<card>
@@ -26503,8 +26060,6 @@ Whenever The Thunderskin attacks, create an enchantment token named Heartbeat wi
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Heartbeat LAIR</related>
 		</card>
 		<card>
 			<name>Drifting Field</name>
@@ -26639,7 +26194,6 @@ Your opponents can&apos;t cast spells with the same name as the exiled card.</te
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -26659,7 +26213,6 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -26808,7 +26361,6 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Embraced Cards AKT</related>
 		</card>
 		<card>
@@ -27029,7 +26581,6 @@ Create Lover to All in your reserves. He&apos;s a legendary 2/3 red Human Noble 
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Reserves HOD</related>
 		</card>
 		<card>
@@ -27051,7 +26602,6 @@ Create Lover to All in your reserves. He&apos;s a legendary 2/3 red Human Noble 
 				<loyalty>7</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related count="3">Faerie Horror ITD</related>
 		</card>
 		<card>
@@ -27069,7 +26619,6 @@ Create Lover to All in your reserves. He&apos;s a legendary 2/3 red Human Noble 
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related count="2">Wonder LAIR</related>
 		</card>
 		<card>
@@ -27123,8 +26672,6 @@ Whenever Territorial Yew-Maw is dealt damage during your turn, destroy up to one
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>Cleric PTN</related>
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -27143,7 +26690,6 @@ Whenever Territorial Yew-Maw is dealt damage during your turn, destroy up to one
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Reserves HOD</related>
 			<related count="2">Scout HOD</related>
 		</card>
@@ -27402,7 +26948,6 @@ When Eye of the Abominable enters, return target creature card from your graveya
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -27579,7 +27124,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -27650,7 +27194,6 @@ Sacrifice this enchantment: Creatures you control get +2/+0 until end of turn.</
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -27815,7 +27358,6 @@ You get {VW}.</text>
 				<coloridentity>WG</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -27944,7 +27486,6 @@ Exile the top card of your library. You may play it this turn.</text>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -28085,8 +27626,6 @@ Once each turn, when you discard a card, you may mill a card. If you do, put up 
 				<coloridentity>BI</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Fadove Reinforcement</name>
@@ -28139,7 +27678,6 @@ Create a 1/1 red Wurm creature token with haste.</text>
 				<coloridentity>RI</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Red Wurm VNM</related>
 		</card>
 		<card>
@@ -28157,8 +27695,7 @@ Create a 1/1 red Wurm creature token with haste.</text>
 				<coloridentity>GI</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
-			<related>None</related>
+			<related>Icon EXPT</related>
 		</card>
 		<card>
 			<name>Paths Strider</name>
@@ -28368,6 +27905,7 @@ Equip–Discard a card.</text>
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>Glassgarden Prophet</name>
@@ -28386,7 +27924,6 @@ Whenever you play a card from exile, Glassgarden Prophet gets +1/+0 until end of
 				<pt>1/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -28422,6 +27959,7 @@ Whenever Dreamway Key deals combat damage to a player, untap up to one target cr
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>Sensation Ascender</name>
@@ -28525,7 +28063,6 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -28894,7 +28431,6 @@ When Society Headquarters enters, induct. (Create a 0/1 Cleric creature token wi
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -28965,6 +28501,7 @@ Enchanted creature can&apos;t attack, block, or be sacrificed.</text>
 				<pt>1/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>Forge Secretkeeper</name>
@@ -29221,6 +28758,7 @@ Equip {1}{R}</text>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>Subvert the Light</name>
@@ -29273,7 +28811,6 @@ Subverting Insurgent can&apos;t block.</text>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -29396,8 +28933,6 @@ Foretell {2}{W} (During your turn, you may pay {2} and exile this card from your
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
-			<related>Cleric PTN</related>
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -29485,8 +29020,6 @@ Foretell {U} (During your turn, you may pay {2} and exile this card from your ha
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
-			<related>Cleric PTN</related>
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -29506,6 +29039,7 @@ Whenever you exile one or more cards, you get a Scar if this is the first time t
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>Sun-Scorched Tempering</name>
@@ -29774,7 +29308,6 @@ You may cast this spell from your graveyard if you exiled one or more cards this
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -29812,8 +29345,6 @@ You may cast this spell from your graveyard if you exiled one or more cards this
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>Cleric PTN</related>
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -29832,8 +29363,6 @@ Induct. (Create a 0/1 Cleric creature token with &quot;As a sorcery, sacrifice t
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
-			<related>Cleric PTN</related>
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -29870,7 +29399,6 @@ Forged Conflagration deals 2 damage to any target.</text>
 				<coloridentity>WR</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -29927,6 +29455,7 @@ Target creature you control fights up to one target creature you don&apos;t cont
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>Open the Self</name>
@@ -29944,6 +29473,7 @@ You get a Scar. (They&apos;re boons with &quot;When a creature you control dies,
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>Bringer of Glory</name>
@@ -29962,7 +29492,6 @@ Whenever Bringer of Glory enters or attacks, you may pay {1}. If you do, induct.
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -29997,6 +29526,7 @@ As long as you control a Cleric, Relic Vial has &quot;Whenever a creature you co
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>Nowhere Deathlord</name>
@@ -30015,6 +29545,7 @@ Whenever you sacrifice a nontoken creature, you get a Scar. (They&apos;re boons 
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>Nowhere Dreadsteed</name>
@@ -30050,8 +29581,8 @@ Whenever you sacrifice a nontoken creature, you get a Scar. (They&apos;re boons 
 				<coloridentity>RG</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Wolf PTN</related>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>Guided Crusader</name>
@@ -30071,7 +29602,6 @@ Foretell {4}{W}{W} (During your turn, you may pay {2} and exile this card from y
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Angel PTN</related>
 		</card>
 		<card>
@@ -30108,8 +29638,6 @@ Induct (Create a 0/1 Cleric creature token with &quot;As a sorcery, sacrifice tw
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
-			<related>Cleric PTN</related>
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -30164,7 +29692,6 @@ Foretell {G} (During your turn, you may pay {2} and exile this card from your ha
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -30198,7 +29725,6 @@ Foretell {G} (During your turn, you may pay {2} and exile this card from your ha
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -30237,7 +29763,6 @@ Your opponents can&apos;t cast spells with the same name as the exiled card.</te
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -30275,7 +29800,6 @@ Exile Cat o&apos;lic Priests: Exile all graveyards. Activate only as a sorcery.<
 				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -30367,7 +29891,6 @@ Enchanted creature gets +1/+1 and has vigilance.</text>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -30385,6 +29908,7 @@ Enchanted creature gets +1/+1 and has vigilance.</text>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>Seven-Coil Glider</name>
@@ -30472,7 +29996,6 @@ This spell costs {2} less to cast for each card you&apos;ve drawn this turn.</te
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -30545,6 +30068,7 @@ Whenever Opener of Realities deals combat damage to a player, you get a Scar. (T
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>River Drowner</name>
@@ -30601,8 +30125,6 @@ Whenever another Cleric you control enters, untap Roost Nyctodromist.
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Cleric PTN</related>
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -30622,6 +30144,7 @@ Whenever Seven-Coil&apos;s Scion becomes the target of a spell or ability an opp
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>Silent Drowner</name>
@@ -30676,7 +30199,6 @@ When Twins&apos; Guardian dies, induct. (Create a 0/1 Cleric creature token with
 				<pt>2/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -30694,8 +30216,6 @@ When Twins&apos; Guardian dies, induct. (Create a 0/1 Cleric creature token with
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
-			<related>Cleric PTN</related>
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -30732,7 +30252,6 @@ When White Reaper dies, tap target creature you don&apos;t control. Put a stun c
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -30839,7 +30358,6 @@ When Indulgent Cyprian enters, induct. (Create a 0/1 Cleric creature token with 
 				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -30891,7 +30409,6 @@ When Nowhere Ascender enters, you may sacrifice a creature. If you do, put a +1/
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -30911,6 +30428,7 @@ When Sky-Scar Angel enters, target creature gets -2/-2 until end of turn and you
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>Students of Rememberance</name>
@@ -30944,8 +30462,6 @@ When Sky-Scar Angel enters, target creature gets -2/-2 until end of turn and you
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
-			<related>Cleric PTN</related>
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -31018,7 +30534,6 @@ Whenever one or more creatures you control become blocked, you may cast a spell 
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -31111,7 +30626,6 @@ Whenever Malleary Reforged attacks, if you control a God, it deals 2 damage to a
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -31131,7 +30645,6 @@ Whenever Malleary Reforged attacks, if you control a God, it deals 2 damage to a
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Wolf PTN</related>
 		</card>
 		<card>
@@ -31183,6 +30696,7 @@ Whenever Malleary Reforged attacks, if you control a God, it deals 2 damage to a
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>Carapace Threadbearer</name>
@@ -31201,7 +30715,6 @@ When Carapace Threadbearer enters, if there are three or more creature cards in 
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -31259,7 +30772,6 @@ Whenever you draw your second card each turn, induct. (Create a 0/1 Cleric creat
 				<pt>3/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -31279,6 +30791,7 @@ When Debilitated Tragulari enters, choose two target creatures controlled by dif
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>The Old Forms</name>
@@ -31295,6 +30808,7 @@ When Debilitated Tragulari enters, choose two target creatures controlled by dif
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
+			<related>Scar PTN</related>
 		</card>
 		<card>
 			<name>Ordeal of Defiance</name>
@@ -31332,8 +30846,6 @@ When you sacrifice Ordeal of Defiance, you may have target creature you control 
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Cleric PTN</related>
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -31370,7 +30882,6 @@ When Thyrsine Hunter enters, if you control a Sanctuary or there is a Sanctuary 
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -31388,7 +30899,6 @@ When Thyrsine Hunter enters, if you control a Sanctuary or there is a Sanctuary 
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -31614,7 +31124,6 @@ Equip {2}</text>
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -31667,7 +31176,6 @@ Equip {2}</text>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -31725,7 +31233,6 @@ Whenever Glassgarden Watcheye attacks, induct twice. Tokens created this way are
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -31796,7 +31303,6 @@ Remove twice X omen counters from The Museum of Worms and sacrifice it: Create X
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Worm PTN</related>
 		</card>
 		<card>
@@ -31994,8 +31500,6 @@ Whenever The Thunderskin attacks, create an enchantment token named Heartbeat wi
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Heartbeat PTN</related>
 		</card>
 		<card>
 			<name>Dappled Wing-Clippers</name>
@@ -32035,7 +31539,6 @@ Whenever a boon you own triggers, create a 2/2 green Wolf creature token.</text>
 				<pt>4/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Wolf PTN</related>
 		</card>
 		<card>
@@ -32072,7 +31575,6 @@ Seven-Coil Ambusher can&apos;t be blocked by tokens.</text>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Wolf PTN</related>
 		</card>
 		<card>
@@ -32202,7 +31704,6 @@ Until the end of your next turn, you may play the exiled card.</text>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -32323,7 +31824,6 @@ Whenever you attack, you may deal 1 damage to target attacking creature. If you 
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -32377,7 +31877,6 @@ If damage would be dealt to The Chiliarch while it isn&apos;t blocking, prevent 
 				<pt>4/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -32416,8 +31915,6 @@ Whenever Flesh Weaver attacks, you gain 1 life and surveil 1. Then exile a card 
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Cleric PTN</related>
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -32589,7 +32086,6 @@ Whenever a planeswalker enters, remove all but one loyalty counter from it.</tex
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Cleric PTN</related>
 		</card>
 		<card>
@@ -32728,7 +32224,6 @@ Discard X cards, Sacrifice Legacy of the Wheel: Until end of turn, you may play 
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -32942,7 +32437,6 @@ You get a Scar. (They&apos;re boons with &quot;When a creature you control dies,
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>God Horror PTN</related>
 		</card>
 		<card>
@@ -33101,7 +32595,6 @@ Retopology {W}{W}{W}{W}{W}{W} (Cast a copy of this from your graveyard by exilin
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related count="6">Fractal Horror PVR</related>
 		</card>
 		<card>
@@ -33139,7 +32632,6 @@ Equip {4}</text>
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Treasure PVR</related>
 		</card>
 		<card>
@@ -33158,7 +32650,6 @@ Equip {4}</text>
 				<pt>1/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -33231,7 +32722,6 @@ Equip {4}</text>
 				<loyalty>4</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related count="2">Fractal Reflection PVR</related>
 		</card>
 		<card>
@@ -33251,7 +32741,6 @@ Equip {4}</text>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -33392,7 +32881,6 @@ Retopology {2}{R}{R} (Cast a copy of this from your graveyard by exiling it and 
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -33411,7 +32899,6 @@ Retopology {2}{R}{R} (Cast a copy of this from your graveyard by exiling it and 
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -33499,7 +32986,6 @@ Retopology {2}{R}{R} (Cast a copy of this from your graveyard by exiling it and 
 				<coloridentity>WR</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -33552,7 +33038,6 @@ You get {VW}. (Spend {V} to cast copies of Vertex spells.)</text>
 				<coloridentity>WR</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -33589,7 +33074,6 @@ Creatures you control get +2/+0 until end of turn.</text>
 				<coloridentity>UR</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -33625,7 +33109,6 @@ Cubic Flames deals 2 damage to each creature.</text>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -33645,7 +33128,6 @@ Whenever you cast an Aura or Equipment spell, you get {V}. (Spend {V} to cast co
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -33681,7 +33163,6 @@ Whenever you cast an Aura or Equipment spell, you get {V}. (Spend {V} to cast co
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -33788,7 +33269,6 @@ You get {VW}. (Spend {V} to cast copies of Vertex spells.)</text>
 				<coloridentity>WG</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -33843,7 +33323,6 @@ Whenever enchanted land is tapped for mana, choose a color among cards in your g
 				<coloridentity>UG</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -33929,7 +33408,6 @@ The first Vertex spell you cast each turn has &quot;Add two mana in any combinat
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -33990,7 +33468,6 @@ Melt deals 3 damage to any target.</text>
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -34079,7 +33556,6 @@ When Stampeding Goliath enters, you get {VU}. (Spend {V} to cast copies of Verte
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -34122,7 +33598,6 @@ Target creature loses all abilities until end of turn.</text>
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -34193,7 +33668,6 @@ Activated abilities of nonland permanents cost {1} more to activate.</text>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Treasure PVR</related>
 		</card>
 		<card>
@@ -34285,7 +33759,6 @@ Whenever Font of Decadence attacks, it gains first strike until end of turn. Eac
 				<loyalty>6</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 			<related>Horror PVR</related>
 		</card>
@@ -34391,7 +33864,6 @@ Retopology {1}{BG}{BG}{BG}{BG}{BG} (Cast a copy of this from your graveyard by e
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Human PVR</related>
 		</card>
 		<card>
@@ -34428,7 +33900,6 @@ Whenever your complexity is three or greater, create a 3/3 green Dinosaur creatu
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Dinosaur PVR</related>
 		</card>
 		<card>
@@ -34517,7 +33988,6 @@ Whenever a creature token you control enters, it deals damage equal to its power
 				<coloridentity>BR</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -34637,7 +34107,6 @@ Burn Barren deals 4 damage to any target and you gain 4 life.</text>
 				<coloridentity>WU</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Human PVR</related>
 		</card>
 		<card>
@@ -34708,7 +34177,6 @@ Retopology {2}{W}{W} (Cast a copy of this from your graveyard by exiling it and 
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Human PVR</related>
 		</card>
 		<card>
@@ -34745,7 +34213,6 @@ Enchanted permanent has ward {2}.</text>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related count="2">Human PVR</related>
 		</card>
 		<card>
@@ -34868,7 +34335,6 @@ Whenever a spell or ability puts one or more nontoken cards into your hand, you 
 				<coloridentity>WU</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -34956,7 +34422,6 @@ You get {VW}. (Spend {V} to cast copies of Vertex spells.)</text>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -35078,7 +34543,6 @@ You get {VW}. (Spend {V} to cast copies of Vertex spells.)</text>
 				<coloridentity>WB</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -35167,7 +34631,6 @@ Retopology {2}{B}{B} (Cast a copy of this from your graveyard by exiling it and 
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -35185,7 +34648,6 @@ Retopology {2}{B}{B} (Cast a copy of this from your graveyard by exiling it and 
 				<coloridentity>UB</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -35275,7 +34737,6 @@ When this permanent leaves the battlefield, you get {VW}. (Spend {V} to cast cop
 				<pt>4/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -35452,7 +34913,6 @@ Whenever a player casts a noncreature spell that isn&apos;t a copy, exile it. Th
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -35607,7 +35067,6 @@ Exile target creature or planeswalker. Scry 2.</text>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -35798,7 +35257,6 @@ Whenever Burning Devastatasaur attacks, you may sacrifice a land or exile a land
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Treasure PVR</related>
 		</card>
 		<card>
@@ -35853,7 +35311,6 @@ Whenever Terror of Harsurfir deals combat damage to a player, you get an amount 
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -35888,7 +35345,6 @@ Spawn Volcano deals 6 damage to any target.</text>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -35941,7 +35397,6 @@ Retopology {X} (Cast a copy of this from your graveyard by exiling it and paying
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Fractal Horror PVR</related>
 		</card>
 		<card>
@@ -35994,7 +35449,6 @@ Equip {1}, {T}</text>
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Horror PVR</related>
 		</card>
 		<card>
@@ -36038,7 +35492,6 @@ Search your library for a creature card, reveal it, put it into your hand, then 
 				<pt>0/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -36161,8 +35614,6 @@ Whenever three or more creatures you control deal combat damage to a player, cre
 				<coloridentity>UB</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Mirrortusk</name>
@@ -36343,7 +35794,6 @@ Whenever one or more creatures you control die, each opponent loses 1 life and y
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -36380,7 +35830,6 @@ You get {VW}. (Spend {V} to cast copies of Vertex spells.)</text>
 				<coloridentity>WG</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -36487,7 +35936,6 @@ Whenever you spend four or more mana to cast a spell or activate an ability, put
 				<pt>7/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -36505,7 +35953,6 @@ Whenever you spend four or more mana to cast a spell or activate an ability, put
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -36525,7 +35972,6 @@ Whenever Catechesis Engine attacks, you may sacrifice a land or exile a land car
 				<pt>4/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -36597,7 +36043,6 @@ At the beginning of each end step, if no spells were cast this turn, sacrifice T
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related count="2">Human PVR</related>
 		</card>
 		<card>
@@ -36703,7 +36148,6 @@ Each attacking creature doesn&apos;t untap during its controller&apos;s next unt
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -36774,7 +36218,6 @@ You get {VU}. (Spend {V} to cast copies of Vertex spells.)</text>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -36798,7 +36241,6 @@ Put a +1/+1 counter on each creature you control.</text>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -36822,7 +36264,6 @@ Return target creature card with mana value 3 or less from your graveyard to the
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -36927,7 +36368,6 @@ You get {VW}. (Spend {V} to cast copies of Vertex spells.)</text>
 				<coloridentity>WU</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -36983,7 +36423,6 @@ Whenever Migrating Songon deals combat damage to a player, you get {V}. (Spend {
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -37143,7 +36582,6 @@ Whenever a spell or ability puts one or more nontoken cards into your hand, you 
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -37234,7 +36672,6 @@ If your complexity is three or greater, draw a card. (Your complexity is the num
 				<pt>6/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Treasure PVR</related>
 		</card>
 		<card>
@@ -37288,7 +36725,6 @@ Target player draws four cards, gains 4 life, and gets {VB}. (Spend {V} to cast 
 				<coloridentity>WUB</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -37328,7 +36764,6 @@ Whenever Turbulence Algorithm attacks, you may put the cards in your hand on the
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Treasure PVR</related>
 		</card>
 		<card>
@@ -37367,7 +36802,6 @@ If you would copy a spell or create a token that&apos;s a copy of a permanent on
 				<pt>5/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="2">Human PVR</related>
 		</card>
 		<card>
@@ -37425,7 +36859,6 @@ Pay 1 life: Untap target nonland permanent you control without a stun counter on
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -37461,7 +36894,6 @@ Middleware Distributor gets +1/+1 for each nontoken card a spell or ability has 
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -37514,7 +36946,6 @@ Retopology {1}{W}{W}{W} (Cast a copy of this from your graveyard by exiling it a
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -37533,7 +36964,6 @@ Whenever you cast a spell spending an amount of mana greater than its mana value
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related count="x">Human PVR</related>
 		</card>
 		<card>
@@ -37553,7 +36983,6 @@ When enchanted creature dies, create five 1/1 white Human creature tokens.</text
 				<coloridentity>WG</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related count="5">Human PVR</related>
 		</card>
 		<card>
@@ -37681,7 +37110,6 @@ When Flesh Centrifuge enters, it deals 3 damage to any target and you gain 3 lif
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -37703,7 +37131,6 @@ If X is 4 or greater, do all of the above.</text>
 				<coloridentity>RI</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Dinosaur PVR</related>
 		</card>
 		<card>
@@ -37770,7 +37197,6 @@ Whenever your complexity is three or greater, untap up to one target creature an
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -37813,7 +37239,6 @@ Exile each creature card in your graveyard with mana value X or less. For each c
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -37832,7 +37257,6 @@ Exile each creature card in your graveyard with mana value X or less. For each c
 				<coloridentity>UB</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -37922,7 +37346,6 @@ Whenever your complexity is three or greater, create a 1/1 white Human creature 
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Human PVR</related>
 		</card>
 		<card>
@@ -37959,7 +37382,6 @@ Whenever your complexity is three or greater, create a 1/1 white Human creature 
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -37996,7 +37418,6 @@ Whenever a nontoken card is put into your hand and wasn&apos;t drawn, you may ta
 				<coloridentity>WU</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -38171,7 +37592,6 @@ Whenever a player casts a spell from their hand, they get {VW}. Then they discar
 				<coloridentity>WBR</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -38282,7 +37702,6 @@ Equip artifact creature {1}, {T}</text>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Horror PVR</related>
 		</card>
 		<card>
@@ -38322,7 +37741,6 @@ At the beginning of your upkeep, Wound deals 1 damage to each opponent.</text>
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -38342,7 +37760,6 @@ You draw cards equal to the sacrificed creature&apos;s power, get an amount of {
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -38361,7 +37778,6 @@ You draw cards equal to the sacrificed creature&apos;s power, get an amount of {
 				<coloridentity>UG</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -38505,7 +37921,6 @@ III – Enchantment – You may put a land card from your graveyard or hand onto
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>0</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -38539,7 +37954,6 @@ III – Enchantment – You may put a land card from your graveyard or hand onto
 				<coloridentity>UB</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -38608,7 +38022,6 @@ At the beginning of the end step, sacrifice Rapid Terraforming.</text>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -38660,7 +38073,6 @@ At the beginning of the end step, sacrifice Rapid Terraforming.</text>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Bird PVR</related>
 		</card>
 		<card>
@@ -38679,7 +38091,6 @@ Until end of turn, you may cast spells exiled this way.</text>
 				<coloridentity>RG</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -38717,8 +38128,6 @@ Rather than pay an amount of mana, you may sacrifice that many permanents instea
 				<coloridentity>BG</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related count="x">None</related>
 		</card>
 		<card>
 			<name>Sudden Emergence</name>
@@ -38881,7 +38290,6 @@ Equip {4}</text>
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Treasure AKT</related>
 		</card>
 		<card>
@@ -38901,7 +38309,6 @@ Crew 3 (Tap any number of creatures you control with total power 3 or more: This
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related count="2">Scout TZE-01</related>
 		</card>
 		<card>
@@ -38941,7 +38348,6 @@ Whenever Catechesis Engine attacks, you may sacrifice a land or exile a land car
 				<pt>4/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vertex Reminder PVR</related>
 		</card>
 		<card>
@@ -39016,8 +38422,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Ancient Forerunner ITD</related>
+			<related persistent="">Ancient Forerunner ITD</related>
 		</card>
 		<card>
 			<name>Asset Manager</name>
@@ -39036,7 +38441,6 @@ Retopology {2}{W}{W} (Cast a copy of this from your graveyard by exiling it and 
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Human TZE-01</related>
 		</card>
 		<card>
@@ -39311,8 +38715,8 @@ Create a 1/1 black and white Cat enchantment creature token.</text>
 				<coloridentity>WB</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Cat Token VNM</related>
+			<related>Subdued Rift VNM</related>
 		</card>
 		<card>
 			<name>Covert Cloak</name>
@@ -39331,7 +38735,6 @@ Equip {2}</text>
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Cleric TZE-01</related>
 		</card>
 		<card>
@@ -39445,8 +38848,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Mechanised Hunter ITD</related>
+			<related persistent="">Mechanised Hunter ITD</related>
 		</card>
 		<card>
 			<name>Mechanised Hunter</name>
@@ -39464,8 +38866,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<reverse-related persistent="">Mechanised Hunter</reverse-related>
-			
+			<reverse-related count="conjure" persistent="">Mechanised Hunter</reverse-related>
 		</card>
 		<card>
 			<name>New-Life Acolyte</name>
@@ -39484,8 +38885,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>1/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>New-Life Acolyte ITD</related>
+			<related persistent="">New-Life Acolyte ITD</related>
 		</card>
 		<card>
 			<name>Aspect of Logic</name>
@@ -39523,8 +38923,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Cloudscape Observer ITD</related>
+			<related persistent="">Cloudscape Observer ITD</related>
 		</card>
 		<card>
 			<name>Corpse-Shell Container</name>
@@ -39634,8 +39033,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Deepmind Oracle ITD</related>
+			<related persistent="">Deepmind Oracle ITD</related>
 		</card>
 		<card>
 			<name>Emergent Anomaly</name>
@@ -39655,8 +39053,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Emergent Anomaly ITD</related>
+			<related persistent="">Emergent Anomaly ITD</related>
 		</card>
 		<card>
 			<name>Endless Distortion Line</name>
@@ -39730,8 +39127,6 @@ Whenever this creature deals combat damage to an opponent, put up to one target 
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<reverse-related>Robot Token</reverse-related>
-			
 		</card>
 		<card>
 			<name>Extraplanar Portal</name>
@@ -39839,7 +39234,6 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -39860,8 +39254,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Fracture of Divinity ITD</related>
+			<related persistent="">Fracture of Divinity ITD</related>
 		</card>
 		<card>
 			<name>Hazard Technician</name>
@@ -39882,9 +39275,8 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<related attach="transform">Hazardous Technician</related>
-			
 			<related>Treasure AKT</related>
+			<related attach="transform">Hazardous Technician</related>
 		</card>
 		<card>
 			<name>Hazardous Technician</name>
@@ -39906,9 +39298,8 @@ Hazardous Technician gets +1/+1 for each artifact and/or enchantment you control
 				<pt>0/0</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<related attach="transform">Hazard Technician</related>
-			
 			<related>Treasure AKT</related>
+			<related attach="transform">Hazard Technician</related>
 		</card>
 		<card>
 			<name>Hierarch of Expiration</name>
@@ -39981,7 +39372,6 @@ Sycophant, sycophant (Whenever this permanent deals damage to a player or planes
 				<coloridentity>WG</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -40019,7 +39409,6 @@ Infested Fortress can&apos;t attack or block unless you sacrifice a creature.</t
 				<pt>5/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="2">Hex Citizen AKT</related>
 		</card>
 		<card>
@@ -40129,7 +39518,6 @@ Whenever this creature becomes untapped, sift 1. (Look at the top card of your l
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>God Horror TZE-01</related>
 		</card>
 		<card>
@@ -40183,8 +39571,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Priest of Perfection ITD</related>
+			<related persistent="">Priest of Perfection ITD</related>
 		</card>
 		<card>
 			<name>Prismatic Powerstone</name>
@@ -40203,7 +39590,6 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -40277,7 +39663,6 @@ Equip–Forsake. (Sacrifice creatures with total toughness three or more.)</text
 				<coloridentity>WUR</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related count="3">Scout TZE-01</related>
 		</card>
 		<card>
@@ -40476,7 +39861,6 @@ Drakes you control get +1/+1 and have &quot;Whenever this creature attacks, as l
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -40531,7 +39915,6 @@ Drakes you control get +1/+1 and have &quot;Whenever this creature attacks, as l
 				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Green Wurm VNM</related>
 		</card>
 		<card>
@@ -40571,7 +39954,6 @@ Creatures you control can attack as though they didn&apos;t have defender as lon
 				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -40591,7 +39973,6 @@ Once each turn, when a spell or ability puts a card into your hand, you may have
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -40612,7 +39993,6 @@ Whenever this creature attacks, put a +1/+1 counter on target attacking token cr
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Green Wurm VNM</related>
 		</card>
 		<card>
@@ -40736,7 +40116,6 @@ When this enchantment enters, scry 2.</text>
 				<coloridentity>UB</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related count="2">Blue Drake VNM</related>
 		</card>
 		<card>
@@ -40862,7 +40241,6 @@ Materialize 1 (Tap one or more other enchantments you control with total mana va
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Black Wurm VNM</related>
 		</card>
 		<card>
@@ -41009,7 +40387,6 @@ Tokens you control have menace.</text>
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Red Wurm VNM</related>
 		</card>
 		<card>
@@ -41029,7 +40406,6 @@ Creature tokens you control have haste.</text>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -41049,7 +40425,6 @@ This creature gets +2/+1 as long as you&apos;ve illuminated white.</text>
 				<pt>1/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -41177,7 +40552,6 @@ Put a +1/+1 counter on target creature you control. Cast only outside of combat.
 				<pt>4/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="2">White Wurm VNM</related>
 		</card>
 		<card>
@@ -41197,7 +40571,6 @@ As long as you control another creature with flying, this creature has flying.</
 				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>White Drake VNM</related>
 		</card>
 		<card>
@@ -41253,7 +40626,6 @@ This spell deals 3 damage to target attacking or blocking creature. If you&apos;
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -41484,7 +40856,6 @@ Whenever this creature deals combat damage to a noncreature permanent or player,
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -41541,8 +40912,8 @@ Create a 1/1 black and white Cat enchantment creature token.</text>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cat Token VNM</related>
+			<related>Subdued Rift VNM</related>
 		</card>
 		<card>
 			<name>Avakin Riftwalker</name>
@@ -41561,7 +40932,6 @@ This creature has flying as long as you&apos;ve illuminated black.</text>
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -41582,8 +40952,8 @@ Create a 1/1 black and white Cat enchantment creature token.</text>
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cat Token VNM</related>
+			<related>Subdued Rift VNM</related>
 		</card>
 		<card>
 			<name>Waking Words</name>
@@ -41688,7 +41058,6 @@ Enchanted creature gets -1/-1. If you&apos;ve illuminated black, instead enchant
 				<coloridentity>B</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -41780,7 +41149,6 @@ This creature gets +1/+1 and gains &quot;Whenever you attack, each opponent lose
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -41892,7 +41260,6 @@ Exile the top card of your library. You may play it this turn.</text>
 				<pt>5/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -41913,7 +41280,6 @@ Creatures you control get +1/+0 as long as you&apos;ve illuminated red.</text>
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -41967,7 +41333,6 @@ Gain control of target creature until end of turn. Untap it. It gains haste unti
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -42004,7 +41369,6 @@ Exile the top two cards of your library. Until the end of your next turn, you ma
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -42024,7 +41388,6 @@ Fracture – At the beginning of combat on your turn, create a 1/1 red Wurm crea
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Red Wurm VNM</related>
 		</card>
 		<card>
@@ -42064,7 +41427,6 @@ Exile the top card of your library. You may play it this turn.</text>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -42101,7 +41463,6 @@ This spell deals 2 damage to any target. If you&apos;ve illuminated red, this sp
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -42193,7 +41554,6 @@ Creature tokens you control get +0/+1.</text>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="2">Green Wurm VNM</related>
 		</card>
 		<card>
@@ -42264,7 +41624,6 @@ Target creature you control gets +2/+2 until end of turn. If you&apos;ve illumin
 				<coloridentity>G</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -42303,7 +41662,6 @@ Creatures you control get +1/+1 as long as you&apos;ve illuminated green.</text>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -42689,7 +42047,6 @@ Target creature you control gains double strike until end of turn. If you&apos;v
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -42782,7 +42139,6 @@ Scry 2, then draw two cards. If you&apos;ve illuminated blue, instead scry 4, th
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -42928,7 +42284,6 @@ Whenever this creature attacks, draw a card, then discard a card unless you&apos
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -42950,6 +42305,7 @@ Scry 1, then draw a card.</text>
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<related>Cut from Void VNM</related>
 		</card>
 		<card>
 			<name>Stalwart Guard</name>
@@ -43062,7 +42418,6 @@ Draw two cards. If you&apos;ve illuminated blue, draw an additional card.</text>
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -43102,7 +42457,6 @@ This creature gets +1/+1 as long as you&apos;ve illuminated white or blue.</text
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -43123,7 +42477,6 @@ This creature gets +1/+1 as long as you&apos;ve illuminated blue or black.</text
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -43144,7 +42497,6 @@ This creature gets +1/+1 as long as you&apos;ve illuminated black or red.</text>
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -43165,7 +42517,6 @@ This creature gets +1/+1 as long as you&apos;ve illuminated red or green.</text>
 				<pt>4/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -43186,7 +42537,6 @@ This creature gets +1/+1 as long as you&apos;ve illuminated green or white.</tex
 				<pt>3/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -43207,7 +42557,6 @@ This creature gets +1/+1 as long as you&apos;ve illuminated white or black.</tex
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -43228,7 +42577,6 @@ This creature gets +1/+1 as long as you&apos;ve illuminated black or green.</tex
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -43249,7 +42597,6 @@ This creature gets +1/+1 as long as you&apos;ve illuminated green or blue.</text
 				<pt>4/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -43270,7 +42617,6 @@ This creature gets +1/+1 and can attack as though it didn&apos;t have defender a
 				<pt>4/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -43291,7 +42637,6 @@ This creature gets +1/+1 as long as you&apos;ve illuminated white or red.</text>
 				<pt>3/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -43346,7 +42691,6 @@ Fracture – At the beginning of combat on your turn, up to one target creature 
 				<coloridentity></coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -43463,8 +42807,8 @@ Create a 1/1 black and white Cat enchantment creature token.</text>
 				<coloridentity>WB</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Cat Token VNM</related>
+			<related>Subdued Rift VNM</related>
 		</card>
 		<card>
 			<name>Voidborn Entity</name>
@@ -43556,7 +42900,6 @@ Whenever you attack with one or more tokens, you gain 1 life.</text>
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related count="2">White Wurm VNM</related>
 		</card>
 		<card>
@@ -43597,8 +42940,8 @@ Create a 1/1 black and white Cat enchantment creature token.</text>
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cat Token VNM</related>
+			<related>Subdued Rift VNM</related>
 		</card>
 		<card>
 			<name>Mordel Clanwarden</name>
@@ -43729,8 +43072,8 @@ Create a 1/1 black and white Cat enchantment creature token.</text>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cat Token VNM</related>
+			<related>Subdued Rift VNM</related>
 		</card>
 		<card>
 			<name>Faloden Thickets</name>
@@ -43899,7 +43242,6 @@ Materialize 5 (Tap one or more other enchantments you control with total mana va
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Green Wurm VNM</related>
 		</card>
 		<card>
@@ -44012,7 +43354,6 @@ Whenever you attack with two or more nontoken creatures, you may pay {1}{W}. If 
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<reverse-related>WhiteWurm</reverse-related>
 			<related count="2">White Wurm VNM</related>
 		</card>
 		<card>
@@ -44244,7 +43585,6 @@ Evoke {IW} (You may cast this spell for its evoke cost. If you do, it&apos;s sac
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			<reverse-related>WhiteWurm</reverse-related>
 			<related>White Wurm VNM</related>
 		</card>
 		<card>
@@ -44264,7 +43604,6 @@ Evoke {IW} (You may cast this spell for its evoke cost. If you do, it&apos;s sac
 				<pt>1/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Blue Drake VNM</related>
 		</card>
 		<card>
@@ -44303,7 +43642,6 @@ A deck can have any number of cards named Pathborn Crackle.</text>
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="2">Green Wurm VNM</related>
 		</card>
 		<card>
@@ -44396,7 +43734,6 @@ Whenever Melodia attacks, up to one target attacking creature token you control 
 				<pt>2/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Blue Drake VNM</related>
 		</card>
 		<card>
@@ -44513,7 +43850,6 @@ Whenever you attack, trace a skill from among permanents you control. (Create th
 				<pt>1/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>White Wurm VNM</related>
 		</card>
 		<card>
@@ -44552,7 +43888,6 @@ Creatures you control get healing 2 as long as you&apos;ve illuminated white. Th
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -44574,7 +43909,6 @@ Put a +1/+1 counter on target creature you control. Cast only outside of combat.
 			</prop>
 			<tablerow>2</tablerow>
 			<reverse-related>Military Training</reverse-related>
-			
 		</card>
 		<card>
 			<name>Raze the Clanless</name>
@@ -44594,6 +43928,7 @@ Draw a card.
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
+			<related>Reformed Rift VNM</related>
 		</card>
 		<card>
 			<name>Prismatic Offense</name>
@@ -44707,7 +44042,6 @@ Exile the top card of your library. You may play it this turn.</text>
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -45080,7 +44414,6 @@ At the beginning of your end step, create a 2/2 white Drake creature token with 
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>White Drake VNM</related>
 		</card>
 		<card>
@@ -45404,7 +44737,6 @@ When this enchantment enters, create a 1/1 red Wurm creature token with haste.
 				<coloridentity>R</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Red Wurm VNM</related>
 		</card>
 		<card>
@@ -45459,7 +44791,6 @@ Creature spells you cast with mana value 5 or greater cost {1} less to cast.</te
 			</prop>
 			<tablerow>0</tablerow>
 			<reverse-related>Warped Exploration</reverse-related>
-			
 		</card>
 		<card>
 			<name>Island</name>
@@ -45986,7 +45317,6 @@ Whenever this creature becomes the target of a spell or ability, its controller 
 			</prop>
 			<tablerow>0</tablerow>
 			<reverse-related>Warped Exploration</reverse-related>
-			
 		</card>
 		<card>
 			<name>Restored Fault</name>
@@ -46148,7 +45478,6 @@ This creature gets +2/+0 as long as you&apos;ve illuminated silver.</text>
 				<pt>1/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Luminous VNM</related>
 		</card>
 		<card>
@@ -46183,8 +45512,6 @@ Draw a card.</text>
 				<coloridentity>BI</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Scars of Oil</name>
@@ -46218,8 +45545,7 @@ Once each turn, when you discard a card, you may mill a card. If you do, put up 
 				<coloridentity>GI</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
-			<related>None</related>
+			<related>Icon EXPT</related>
 		</card>
 		<card>
 			<name>Volatile Visions</name>
@@ -46237,7 +45563,6 @@ Create a 1/1 red Wurm creature token with haste.</text>
 				<coloridentity>RI</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Red Wurm VNM</related>
 		</card>
 		<card>
@@ -46260,8 +45585,10 @@ Scry 1, then draw a card.</text>
 				<coloridentity>WUB</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Cat Token VNM</related>
+			<related>Subdued Rift VNM</related>
+			<related>Warped Exploration VNM</related>
+			<related>Cut from Void VNM</related>
 		</card>
 		<card>
 			<name>Fault</name>
@@ -46279,7 +45606,6 @@ Scry 1, then draw a card.</text>
 			</prop>
 			<tablerow>0</tablerow>
 			<reverse-related>Warped Exploration</reverse-related>
-			
 		</card>
 		<card>
 			<name>A Beloved World</name>
@@ -46975,8 +46301,6 @@ Impetus {1} (You may cast this from your graveyard as a sorcery with only the te
 				<pt>0/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Story of a Dead Plane WAW</related>
 		</card>
 		<card>
 			<name>Dissolution Specimen</name>
@@ -47153,7 +46477,6 @@ Reflect {3} ({3}: Create a token copy of this creature, except it&apos;s a 1/1 W
 				<pt>1/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>New Tensuo Luminary WAW</related>
 		</card>
 		<card>
@@ -47211,7 +46534,6 @@ When Scrappy Wisp-Speaker dies, if there is a card exiled with it, create a 1/1 
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 			<related>Wonder WAW</related>
 		</card>
@@ -47231,8 +46553,6 @@ Impetus–{X}{B}, Pay X life (You may cast this from your graveyard as a sorcery
 				<coloridentity>UB</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Smug Upstart</name>
@@ -47286,7 +46606,6 @@ Augmented – At the beginning of your end step, if you&apos;ve spent {W}{U}{B}{
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Dragon WAW</related>
 		</card>
 		<card>
@@ -47412,7 +46731,6 @@ You may cast Worldsoul Wanderer from your graveyard by paying {W}{U}{B}{R}{G} ra
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="2">Wonder WAW</related>
 		</card>
 		<card>
@@ -47466,7 +46784,6 @@ Impetus {G} (You may cast this from your graveyard as a sorcery with only the te
 				<coloridentity>UG</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Wonder WAW</related>
 		</card>
 		<card>
@@ -47486,7 +46803,6 @@ Impetus {G} (You may cast this from your graveyard as a sorcery with only the te
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Wonder WAW</related>
 		</card>
 		<card>
@@ -47668,7 +46984,6 @@ Reflect {3}{W} ({3}{W}: Create a token copy of this creature, except it&apos;s a
 				<pt>1/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Ilcan Keyseeker WAW</related>
 		</card>
 		<card>
@@ -47723,7 +47038,6 @@ Reflect {3} ({3}: Create a token copy of this creature, except it&apos;s a 1/1 W
 				<pt>1/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Lakebed Wrudge WAW</related>
 		</card>
 		<card>
@@ -47778,7 +47092,6 @@ Impetus {1}{W} (You may cast this from your graveyard as a sorcery with only the
 				<coloridentity>U</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Wonder Archon WAW</related>
 		</card>
 		<card>
@@ -48163,7 +47476,6 @@ Destroy target creature if it&apos;s tapped or if this spell emerged. You gain 3
 				<pt>3/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Wonder WAW</related>
 		</card>
 		<card>
@@ -48181,7 +47493,6 @@ Destroy target creature if it&apos;s tapped or if this spell emerged. You gain 3
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related count="2">Wonder WAW</related>
 		</card>
 		<card>
@@ -48200,7 +47511,6 @@ Impetus {G} (You may cast this from your graveyard as a sorcery with only the te
 				<coloridentity>WG</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Wonder WAW</related>
 		</card>
 		<card>
@@ -48271,7 +47581,6 @@ When enchanted creature dies, target opponent may pay 3 life. If they don&apos;t
 				<coloridentity>WBG</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Wonder WAW</related>
 		</card>
 		<card>
@@ -48507,7 +47816,6 @@ When Irresistible Calling enters, pursue Wonder. (Reveal a basic land or Wonder 
 				<loyalty>4</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -48562,7 +47870,6 @@ Reflect {1}{R} ({1}{R}: Create a token copy of this enchantment, except it&apos;
 				<coloridentity>UR</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Music of the Deepholt WAW</related>
 		</card>
 		<card>
@@ -48582,7 +47889,6 @@ Reflect {1} ({1}: Create a token copy of this creature, except it&apos;s a 1/1 W
 				<pt>1/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>New Tensuo Clergy WAW</related>
 		</card>
 		<card>
@@ -48672,8 +47978,6 @@ Whenever a creature you control dies, exile it. Then if it didn&apos;t have a +1
 				<coloridentity>BRG</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Retreat to the Borderholt</name>
@@ -48708,7 +48012,6 @@ Whenever a creature you control dies, if it attacked this turn, exile the top ca
 				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -48933,7 +48236,6 @@ Augmented – Whenever Tranquil Cloudray enters or attacks, if you&apos;ve spent
 				<coloridentity>WBR</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related count="3">Wonder WAW</related>
 		</card>
 		<card>
@@ -49190,7 +48492,6 @@ Reflect {3} ({3}: Create a token copy of this creature, except it&apos;s a 1/1 W
 				<pt>2/1</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Cloudeater Drake WAW</related>
 		</card>
 		<card>
@@ -49260,7 +48561,6 @@ Whenever a creature you control becomes blocked, defending player discards a car
 				<coloridentity>BG</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Beast WAW</related>
 		</card>
 		<card>
@@ -49314,7 +48614,6 @@ Reflect {3} ({3}: Create a token copy of this creature, except it&apos;s a 1/1 W
 				<pt>1/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Flowering Germinus WAW</related>
 		</card>
 		<card>
@@ -49334,7 +48633,6 @@ Whenever you cast an instant or sorcery spell with a noted mana value, copy that
 				<coloridentity>WUBR</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Wonder WAW</related>
 		</card>
 		<card>
@@ -49425,7 +48723,6 @@ Reflect {U} ({U}: Create a token copy of this creature, except it&apos;s a 1/1 W
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Kindly Skywinder WAW</related>
 		</card>
 		<card>
@@ -49445,7 +48742,6 @@ Reflect {U} ({U}: Create a token copy of this creature, except it&apos;s a 1/1 W
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Wonder WAW</related>
 		</card>
 		<card>
@@ -49498,8 +48794,6 @@ When New Tensuo Pathlayer enters, pursue Wonder, then you may put a land card fr
 				<pt>4/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Memory of Home WAW</related>
 		</card>
 		<card>
 			<name>Numberless Procession</name>
@@ -49518,7 +48812,6 @@ When Numberless Procession leaves the battlefield, create a 3/3 green Beast crea
 				<pt>2/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Beast WAW</related>
 		</card>
 		<card>
@@ -49590,7 +48883,6 @@ Reflect {1} ({1}: Create a token copy of this creature, except it&apos;s a 1/1 W
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Redefinition WAW</related>
 		</card>
 		<card>
@@ -49665,7 +48957,6 @@ Reflect {2}{W} ({2}{W}: Create a token copy of this enchantment, except it&apos;
 				<coloridentity>W</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Stardust Haze WAW</related>
 		</card>
 		<card>
@@ -49684,7 +48975,6 @@ Augmented – {5}, Sacrifice Sunset Study: Put each card exiled with Sunset Stud
 				<coloridentity>WUBRG</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Can Be Cast From Exile EXPT</related>
 		</card>
 		<card>
@@ -49703,7 +48993,6 @@ Augmented – {5}, Sacrifice Sunset Study: Put each card exiled with Sunset Stud
 				<pt>3/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Demon WAW</related>
 		</card>
 		<card>
@@ -49920,7 +49209,6 @@ Reflect {1}{G} ({1}{G}: Create a token copy of this creature, except it&apos;s a
 				<pt>1/6</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Ageless Caretaker WAW</related>
 		</card>
 		<card>
@@ -49959,7 +49247,6 @@ Impetus {4}{R} (You may cast this from your graveyard as a sorcery with only the
 				<loyalty>1</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
-			
 			<related>Wonder Archon WAW</related>
 			<related count="2">Wonder WAW</related>
 		</card>
@@ -49997,7 +49284,6 @@ Creatures you control get +2/+2 until end of turn.</text>
 				<coloridentity>WUBRG</coloridentity>
 			</prop>
 			<tablerow>3</tablerow>
-			
 			<related>Beast WAW</related>
 		</card>
 		<card>
@@ -50087,8 +49373,6 @@ Augmented – At the beginning of your end step, if you&apos;ve spent {W}{U}{B}{
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>None</related>
 		</card>
 		<card>
 			<name>Faceless Watchtower</name>
@@ -50124,7 +49408,6 @@ When Faceless Watchtower enters, put a +1/+1 counter on target creature. If that
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Wonder WAW</related>
 		</card>
 		<card>
@@ -50358,7 +49641,6 @@ Reflect {1} ({1}: Create a token copy of this creature, except it&apos;s a 1/1 W
 				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>New Tensuo Physician WAW</related>
 		</card>
 		<card>
@@ -50378,7 +49660,6 @@ Reflect {3}{W} ({3}{W}: Create a token copy of this creature, except it&apos;s a
 				<pt>4/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>New Tensuo Vanguard WAW</related>
 		</card>
 		<card>
@@ -50454,7 +49735,6 @@ Whenever you cast a green or red spell, create two 1/1 Wonder creature tokens th
 				<pt>3/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="2">Wonder WAW</related>
 		</card>
 		<card>
@@ -50475,7 +49755,6 @@ Augmented – At the beginning of your end step, if you&apos;ve spent {W}{U}{B}{
 				<pt>10/10</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="3">Wonder WAW</related>
 		</card>
 		<card>
@@ -50496,8 +49775,6 @@ Reflect {2} ({2}: Create a token copy of this creature, except it&apos;s a 1/1 W
 				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
-			<related>Starseeker Deva WAW</related>
 			<related>Wonder WAW</related>
 		</card>
 		<card>
@@ -50570,7 +49847,6 @@ Reflect {1} ({1}: Create a token copy of this creature, except it&apos;s a 1/1 W
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Vrep WAW</related>
 		</card>
 		<card>
@@ -50737,7 +50013,6 @@ Reflect {2}{W} ({2}{W}: Create a token copy of this creature, except it&apos;s a
 				<pt>5/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Gilded Ancient WAW</related>
 		</card>
 		<card>
@@ -50776,7 +50051,6 @@ When New Tensuo Calmkeeper enters, create a 3/3 green Beast creature token and a
 				<pt>2/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related>Beast WAW</related>
 		</card>
 		<card>
@@ -50796,7 +50070,6 @@ When New Tensuo Calmkeeper enters, create a 3/3 green Beast creature token and a
 				<pt>6/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
-			
 			<related count="2">Wonder WAW</related>
 		</card>
 		<card>

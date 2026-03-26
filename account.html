@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="/src/css/theme.css">
 	<link rel="stylesheet" href="/src/css/deck-container.css">
 	<link rel="stylesheet" href="/src/css/modal.css">
+	<link rel="stylesheet" href="/src/css/tab.css">
 	<link rel="stylesheet" href="/src/css/pages/account.css">
 </head>
 
@@ -58,15 +59,25 @@
 				<a href="https://discord.com/oauth2/authorize?client_id=1355416783804301382&response_type=code&redirect_uri=https%3A%2F%2Fvoyager-api-pq2h.onrender.com%2Fdiscord%2Flink%2Fcallback&scope=identify"><button class="discord-link-btn"><img src="/img/discord.webp" class="btn-icon">Login with Discord</button></a>
 			</div>
 		</div>
-		<div class="deck-section-header text">My Decks</div>
-		<hr class="text-bg">
-		<div class="decks-container" id="decks">
-			<!-- test -->
+		<div class="tab-select" id="tab-select">
+			<div class="tab-btn tab-btn-active" id="decks-tab-select" onclick="changeTab('decks')">
+				<img src="/img/header/deck.png" class="tab-switch-icon">
+				<span>Decks</span>
+			</div>
+			<div class="tab-btn" id="stats-tab-select" onclick="changeTab('stats')">
+				<img src="/img/trophy.png" class="tab-switch-icon">
+				<span>Stats</span>
+			</div>
 		</div>
-		<div class="deck-section-header text">My Collections</div>
-		<hr class="text-bg">
-		<div class="collections-container" id="colls">
-			<!-- test -->
+		<div class="main-tab">
+			<div class="decks-tab">
+				<div class="deck-section-header text">My Decks</div>
+				<hr class="text-bg">
+				<div class="decks-container" id="decks"></div>
+				<div class="deck-section-header text">My Collections</div>
+				<hr class="text-bg">
+				<div class="collections-container" id="colls"></div>
+			</div>
 		</div>
 	</div>
 	<div id="modal-container">
@@ -96,6 +107,21 @@
 				window.location.href = url;
 			}
 		});
+
+		function changeTab(tab_name) {
+			document.getElementById(tab_name).style.display = "";
+			document.getElementById(tab_name + "-tab-select").className = "tab-btn tab-btn-active"
+			for (const child of document.getElementById("main-tab").children) {
+				if (child.id != tab_name && child.id != "ended-text") {
+					child.style.display = "none";
+				}
+			}
+			for (const child of document.getElementById("tab-select").children) {
+				if (child.id != tab_name + "-tab-select") {
+					child.className = "tab-btn";
+				}
+			}
+		}
 	</script>
 	<script type="module">
 		// Import the functions you need from the SDKs you need
@@ -243,8 +269,6 @@
 					createFormatContainer("Collection League");
 				}
 
-				createCollectionLeaguePacks(user_data);
-
 				for (const deck of colls) {
 					let deck_container = document.createElement('div');
 					deck_container.className = "deck-container";
@@ -315,6 +339,7 @@
 
 		function createFormatContainer(format_name) {
 			const full_format_container = document.createElement("div");
+			full_format_container.className = 'full-format-container';
 			const format_container = document.createElement("div");
 
 			format_container.className = "format-container";
@@ -490,46 +515,6 @@
 			deck_icon_text.appendChild(deck_icon);
 
 			return deck_icon_text;
-		}
-
-		async function createCollectionLeaguePacks(user_data) {
-			await getDoc(doc(db, "info", "collectionleague")).then(docSnap => {
-				const cl_data = docSnap.data();
-				const players = JSON.parse(cl_data.players);
-
-				if (players.includes(user_data.username)) {
-					const packn = user_data.coll_league;
-
-					const content_container = document.createElement("div");
-					content_container.className = "coll-league-notif-container";
-					content_container.style.gridRow = "1";
-					content_container.style.gridColumn = "span 4";
-
-					const collection_league_notif = document.createElement("span");
-					collection_league_notif.innerText = `You have ${packn[0]} set packs available and ${packn[1]} collection league packs to open!`;
-					collection_league_notif.className = "collection-league-notif text";
-
-					const open_set_packs_btn = document.createElement("button");
-					open_set_packs_btn.className = "coll-league-btn popout";
-					open_set_packs_btn.innerText = "Open set packs!";
-					open_set_packs_btn.onclick = () => {
-						window.location.href = "/packopener?source=coll-league-set"
-					}
-
-					const open_pack_packs_btn = document.createElement("button");
-					open_pack_packs_btn.className = "coll-league-btn popout";
-					open_pack_packs_btn.innerText = "Open collection league packs!";
-					open_pack_packs_btn.onclick = () => {
-						window.location.href = "/packopener?source=coll-league-pack"
-					}
-
-					content_container.appendChild(collection_league_notif);
-					content_container.appendChild(open_set_packs_btn);
-					content_container.appendChild(open_pack_packs_btn);
-
-					document.getElementById("Collection League").appendChild(content_container);
-				}
-			});
 		}
 
 		reload();
