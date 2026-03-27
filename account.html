@@ -89,7 +89,7 @@
 				<div class="game-stats">
 					<div class="area-header text">Games</div>
 					<div class="stats text">
-						<b>Aanginer's Stats</b>
+						<b><span id="username-txt"></span>'s Stats</b>
 						<div class="games-played text"><span id="num-games"></span> games played</div>
 						<div class="most-played-opponent text"> Most played opponent: <span id="biggest-opponent"></span></div>
 						<div class="winrate text">Winrate: <span id="winrate"></span></div>
@@ -275,6 +275,8 @@
 				} else {
 					colls = [];
 				}
+
+				document.getElementById('username-txt').innerText = username;
 				
 				const canvas = document.getElementById('pfp');
 				const ctx = canvas.getContext('2d');
