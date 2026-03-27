@@ -53,30 +53,53 @@
 	</div>
 	<div class="page-container">
 		<div class="top-section">
-			<div class="username text" id="username"></div>
+			<div class="username-container">
+				<canvas id="pfp" width="100px" height="100px"></canvas>
+				<div class="username text" id="username"></div>
+			</div>
 			<div class="discord-login" id="discord-link">
 				Your discord account is not linked. Without it, you won't have access to the discord bot's full functionality.
 				<a href="https://discord.com/oauth2/authorize?client_id=1355416783804301382&response_type=code&redirect_uri=https%3A%2F%2Fvoyager-api-pq2h.onrender.com%2Fdiscord%2Flink%2Fcallback&scope=identify"><button class="discord-link-btn"><img src="/img/discord.webp" class="btn-icon">Login with Discord</button></a>
 			</div>
 		</div>
 		<div class="tab-select" id="tab-select">
-			<div class="tab-btn tab-btn-active" id="decks-tab-select" onclick="changeTab('decks')">
+			<div class="tab-btn tab-btn-active" id="profile-tab-select" onclick="changeTab('profile')">
+				<img src="/img/home.png" class="tab-switch-icon">
+				<span>Profile</span>
+			</div>
+			<div class="tab-btn" id="decks-tab-select" onclick="changeTab('decks')">
 				<img src="/img/header/deck.png" class="tab-switch-icon">
 				<span>Decks</span>
 			</div>
-			<div class="tab-btn" id="stats-tab-select" onclick="changeTab('stats')">
-				<img src="/img/trophy.png" class="tab-switch-icon">
-				<span>Stats</span>
-			</div>
 		</div>
-		<div class="main-tab">
-			<div class="decks-tab">
+		<div class="main-tab" id="main-tab">
+			<div class="tab decks-tab" id="decks" style="display: none;">
 				<div class="deck-section-header text">My Decks</div>
 				<hr class="text-bg">
-				<div class="decks-container" id="decks"></div>
+				<div class="decks-container" id="decks-grid"></div>
 				<div class="deck-section-header text">My Collections</div>
 				<hr class="text-bg">
 				<div class="collections-container" id="colls"></div>
+			</div>
+			<div class="tab profile-tab" id="profile">
+				<div class="profile-options">
+					<div class="area-header">Profile Options</div>
+					This section is a work in progress.
+				</div>
+				<div class="game-stats">
+					<div class="area-header text">Games</div>
+					<div class="stats text">
+						<b>Aanginer's Stats</b>
+						<div class="games-played text"><span id="num-games"></span> games played</div>
+						<div class="most-played-opponent text"> Most played opponent: <span id="biggest-opponent"></span></div>
+						<div class="winrate text">Winrate: <span id="winrate"></span></div>
+						<div class="rank text"><span id="rank"></span> highest winrate</div>
+					</div>
+				</div>
+				<div class="card-stats">
+					<div class="area-header">Top Cards</div>
+					<div class="card-stats-grid"></div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -252,22 +275,147 @@
 				} else {
 					colls = [];
 				}
+				
+				const canvas = document.getElementById('pfp');
+				const ctx = canvas.getContext('2d');
+				const [_, name, set, num] = user_data.favorite_card?.match(/(.*?) \((.*?)\) ([0-9]+)/) || 'Carapace Voyager (PTN) 166';
+				let favorite_card;
 
-				document.getElementById('decks').innerHTML = "";
+				for (const card of card_list_arrayified) {
+					if (card.card_name == name && card.set == set && card.number == num) {
+						favorite_card = card;
+						break;
+					}
+				}
+
+				if (!favorite_card) {
+					for (const card of card_list_arrayified) {
+						if (card.card_name == name && card.set == set) {
+							favorite_card = card;
+							break;
+						}
+					}
+				}
+
+				if (!favorite_card) {
+					for (const card of card_list_arrayified) {
+						if (card.card_name == name) {
+							favorite_card = card;
+							break;
+						}
+					}
+				}
+
+				if (!favorite_card) {
+					for (const card of card_list_arrayified) {
+						if (card.card_name == 'Carapace Voyager') {
+							favorite_card = card;
+							break;
+						}
+					}
+				}
+
+				const img_src = "/sets/" + favorite_card.set + "-files/img/" + favorite_card.number + (favorite_card.shape.includes("token") ? "t_" : "_") + favorite_card.card_name + ((favorite_card.shape.includes("double")) ? "_front" : "") + "." + favorite_card.image_type;
+				const size = canvas.clientWidth;
+				const img = new Image(size, size);
+				img.onload = () => {
+					const cropX = 71;
+					const cropY = 59;
+					ctx.save();
+					ctx.beginPath();
+					ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2, true);
+					ctx.closePath();
+					ctx.clip();
+					ctx.drawImage(img, cropX, cropY, 231, 231, 0, 0, size, size);
+					ctx.save();
+					ctx.beginPath();
+					ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2, true);
+					ctx.lineWidth = 4;
+					ctx.strokeStyle = 'white';
+					ctx.stroke();
+					ctx.closePath();
+				}
+				img.src = img_src;
+				
+				document.getElementById('decks-grid').innerHTML = "";
+				
+				const card_copies = {};
 
 				for (const deck of decks) {
 					if (!used_formats.includes(deck.format)) {
 						used_formats.push(deck.format);
 						const full_format_container = createFormatContainer(deck.format);
-						document.getElementById('decks').appendChild(full_format_container);
+						document.getElementById('decks-grid').appendChild(full_format_container);
+					}
+					
+					const decklist = atob(deck.url.split(";")[1].split("&")[0]);
+					for (const line of decklist.split('\n')) {
+						const match = line.match(/([0-9]+) (.*?) \(/);
+						if (!match) continue;
+						const [_, copies, card] = match;
+						card_copies[card] ??= 0;
+						card_copies[card] += parseInt(copies);
 					}
 
 					document.getElementById(deck.format).appendChild(createDeckContainer(user_data, deck, card_list_arrayified));
 				}
 
-				if (!document.getElementById("Collection League")) {
-					createFormatContainer("Collection League");
+				const basics = ['Plains', 'Island', 'Swamp', 'Mountain', 'Forest', 'Fault'];
+				const top_cards = Object.entries(card_copies).filter(([card, n]) => !basics.includes(card)).sort((a, b) => b[1] - a[1]).slice(0, 20);
+				const container = document.querySelector('.card-stats-grid');
+
+				container.innerHTML = `<div class="card-copies-row header-row"><div class="card-copies-name">Card</div><div class="card-copies-num"># of copies</div></div>`;
+
+				for (const [card, copies] of top_cards) {
+					const row = document.createElement('div');
+					row.className = 'card-copies-row';
+
+					const name = document.createElement('div');
+					name.className = 'card-copies-name';
+					name.innerText = card;
+
+					const num_copies = document.createElement('div');
+					num_copies.className = 'card-copies-num';
+					num_copies.innerText = copies;
+
+					row.appendChild(name);
+					row.appendChild(num_copies);
+					container.appendChild(row);
 				}
+
+				let user_stats;
+				await fetch(`https://voyager-api-pq2h.onrender.com/stats/user`)
+					.then(response => response.json())
+					.then(json => {
+						user_stats = json;
+					}).catch(error => console.error('Error:', error));
+
+				let game_stats;
+				await fetch(`https://voyager-api-pq2h.onrender.com/stats/games`)
+					.then(response => response.json())
+					.then(json => {
+						game_stats = json;
+					}).catch(error => console.error('Error:', error));
+
+				const user_games = game_stats.filter(game => game.hasOwnProperty(username));
+				const opponents = user_games.reduce((acc, game) => {
+					const opponent = Object.keys(game).filter(p => p != username);
+					acc[opponent] ??= 0;
+					acc[opponent]++;
+					return acc;
+				}, {});
+
+				const biggest_opponent = Object.entries(opponents).reduce((acc, opp) => {
+					if (opponents[acc] > opponents[opp[0]]) return acc;
+					return opp[0];
+				}, "");
+
+				const rank = Object.entries(user_stats).sort((a, b) => b[1].winrate - a[1].winrate).findIndex(s => s[0] == username) + 1;
+				
+				document.querySelector('#num-games').innerText = user_stats[username].games_played;
+				document.querySelector('#biggest-opponent').innerText = biggest_opponent;
+				document.querySelector('#winrate').innerText = (user_stats[username].winrate * 100).toFixed(2) + '%';
+				document.querySelector('#rank').innerText = rank + getOrdinal(rank);
 
 				for (const deck of colls) {
 					let deck_container = document.createElement('div');
@@ -335,6 +483,25 @@
 					document.getElementById('colls').appendChild(deck_container);
 				}
 			});
+		}
+
+		function getOrdinal(n) {
+			let ord = 'th';
+
+			if (n % 10 == 1 && n % 100 != 11)
+			{
+				ord = 'st';
+			}
+			else if (n % 10 == 2 && n % 100 != 12)
+			{
+				ord = 'nd';
+			}
+			else if (n % 10 == 3 && n % 100 != 13)
+			{
+				ord = 'rd';
+			}
+
+			return ord;
 		}
 
 		function createFormatContainer(format_name) {

@@ -504,6 +504,7 @@
 			gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
 			gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
 			document.getElementById("card-grid-container").appendChild(gridified_card);
+			localStorage.setItem('settings.format', window.location.search.includes('?collectionleague') ? 'Collection League' : 'Eternal');
 
 			processDeck();
 		});

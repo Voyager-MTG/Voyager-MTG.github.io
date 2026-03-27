@@ -149,7 +149,7 @@ async function searchToken(card, token) {
     let card_stats = [];
 
     for (var key in card) {
-        if (isNaN(card[key])) {
+        if (isNaN(card[key]) && key != 'related') {
             card_stats[key] = card[key].toLowerCase();
         }
         else {

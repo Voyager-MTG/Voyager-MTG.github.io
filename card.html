@@ -626,6 +626,18 @@
 				textContainer.appendChild(addToDeck);
 			}
 
+			if (localStorage.getItem('settings.session') != null) {
+				const starCard = document.createElement('button');
+
+				starCard.className = "star-card";
+				starCard.innerHTML = `<img src='img/star.png' class='add-icon'>Set as favorite`;
+				starCard.onclick = function () {
+					if (!window.confirm(`Are you sure you want to set ${card.card_name} as your favorite card?`)) return;
+					fetch(`https://voyager-api-pq2h.onrender.com/user/setfavoritecard?session=${localStorage.getItem('settings.session')}&card=${card.card_name} (${card.set}) ${card.number}`);
+				}
+				textContainer.appendChild(starCard);
+			}
+
 			grid.appendChild(textContainer);
 
 			return grid;

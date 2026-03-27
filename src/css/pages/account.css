@@ -36,6 +36,7 @@ select {
 	width: 100%;
 	margin: 20px;
 	font-family: beleren;
+	display: inline;
 }
 
 .decks-container {
@@ -256,4 +257,65 @@ a {
 
 .main-tab {
 	width: 100%;
+}
+
+#pfp {
+	display: inline;
+}
+
+.username-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.profile-tab {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 85%;
+	margin: auto;
+}
+
+.card-stats, .profile-options {
+	background-color: var(--bg-color);
+    color: var(--popout-text-color);
+    border: 3px solid var(--opposite);
+	padding: 18px;
+    border-radius: 20px;
+}
+
+.area-header {
+	font-family: beleren;
+	font-size: 2.5em;
+	text-align: center;
+	margin-bottom: 0.7em;
+}
+
+.card-copies-row {
+	display: block;
+	width: 100%;
+	font-size: 1.1em;
+	margin-bottom: 5px;
+}
+
+.card-copies-num {
+	float: right;
+	display: inline;
+}
+
+.card-copies-name {
+	display: inline;
+}
+
+.header-row {
+	font-weight: bold;
+}
+
+.stats {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#num-games, #winrate, #rank, #biggest-opponent {
+	font-weight: bold;
 }
