@@ -603,6 +603,9 @@ async function searchToken(card, token) {
                     const card_match = new RegExp(`\\*\\*${RegExp.escape(card_name)}(\\'s)?\\*\\* (.*?)\\n`, "gi");
                     return changelogs.match(card_match);
                 }
+                if (check == 'banned') {
+                    return banlist.banned.map(c => c.toLowerCase()).includes(card_name);
+                }
                 for (const [ regex, fn ] of Object.entries(is_rules)) {
                     if (!check.match(regex)) continue;
                     return fn(card);
