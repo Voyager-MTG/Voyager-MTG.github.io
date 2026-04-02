@@ -3,7 +3,7 @@
     "formats": "",
     "trimmed": "y",
     "image_type": "jpg",
-    "draft_structure": "play booster",
+    "draft_structure": "cube",
     "designer": "Myr",
     "cards": [
         {
@@ -958,7 +958,7 @@
             "number": 203,
             "color_identity": "G",
             "cost": "{2}{G}",
-            "rules_text": "When Sapient Stoneworks enters, create a 2/2 red Werewolf Citizen creature token.\n{6}: Liberate Sapient Stoneworks. Activate only as a sorcery. [i](Exile it if it isn't a Dragon. If it's exiled, its controller creates a colorless 3/2 Dragon creature token with its abilities.)[/i]",
+            "rules_text": "When Sapient Stoneworks enters, create a 2/2 green Werewolf Citizen creature token.\n{6}: Liberate Sapient Stoneworks. Activate only as a sorcery. [i](Exile it if it isn't a Dragon. If it's exiled, its controller creates a colorless 3/2 Dragon creature token with its abilities.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -1596,7 +1596,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timi Honkanen",
-            "notes": "TOKENREMINDER\n\n!tokentag Equalised Reminder"
+            "notes": "TOKENREMINDER\n\n!tokentag Equalised Reminder\n!related The Urveil;"
         },
         {
             "card_name": "Mourning Ithian",
@@ -2142,7 +2142,7 @@
             "notes": "ARCUNSET1\nOTHERUNCOMMON\nWEREWOLFTYPE"
         },
         {
-            "card_name": "Hyethian Prot\u00e9ge",
+            "card_name": "Hyethian Protege",
             "color": "UR",
             "rarity": "uncommon",
             "type": "Creature \u2014 Chimera Wizard",
@@ -2158,7 +2158,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Spectrum Shift",
-            "notes": "ARCUNSET1\nOTHERUNCOMMON\nWIZARDTYPE"
+            "notes": "ARCUNSET1\nOTHERUNCOMMON\nWIZARDTYPE\n!exportname Hyethian Protege"
         },
         {
             "card_name": "Scathing Critique",
@@ -2785,7 +2785,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jadekettu",
-            "notes": "TOKENREMINDER"
+            "notes": "TOKENREMINDER\n!related Spokesman of the Mothweft;"
         },
         {
             "card_name": "Intergenerational Violence",
@@ -3204,7 +3204,7 @@
             "number": 106,
             "color_identity": "B",
             "cost": "{1}{B}",
-            "rules_text": "Flash, menace\nWhen Hired Bouncer enters, if you cast it, each player sacrifices a creature.",
+            "rules_text": "Flash\nMenace\nWhen Hired Bouncer enters, if you cast it, each player sacrifices a creature.",
             "flavor_text": "[i]\u201cLowly humans like us've got no chance in a fair fight with a callwolf. So convince them it's unfair.\u201d[/i]",
             "pt": "1/1",
             "special_text": "",
@@ -3299,7 +3299,7 @@
             "number": 148,
             "color_identity": "R",
             "cost": "{2}{R}",
-            "rules_text": "Trample\nMotel Manager gets +1/+0 for each card you own in exile.",
+            "rules_text": "Trample\nWhenever you embrace a card or play a card from exile, Motel Manager gets +3/+0 until end of turn.",
             "flavor_text": "[i]Lowly housequalia are ambivalent on Erys; Some are worried their ancestral homes will fall into disrepeair. Some are delighted of the same.[/i]",
             "pt": "1/4",
             "special_text": "",
@@ -4660,7 +4660,7 @@
             "number": 107,
             "color_identity": "B",
             "cost": "{1}{B}{B}",
-            "rules_text": "When Identity Connoisseur enters, target player discards a card.\nWhenever a player discards a card with a creature type, you embrace it, and you may spend mana as though it was mana of any color to cast it. [i](Exile it. You may cast it on a later turn that a source you control that shares a creature type with it dealt damage to an opponent.)[/i]",
+            "rules_text": "When Identity Connoisseur enters, target player discards a card.\nWhenever a player discards a card with a creature type, you may embrace it, and you may spend mana as though it was mana of any color to cast it. [i](Exile it. You may cast it on a later turn that a source you control that shares a creature type with it dealt damage to an opponent.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "3/2",
             "special_text": "",
@@ -4745,7 +4745,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timi Honkanen",
-            "notes": "!tokentag Recruit"
+            "notes": "!tokentag Recruit\n!related Diaspora Recruiters;"
         },
         {
             "card_name": "Treasure",
@@ -4764,7 +4764,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Austin Hartell",
-            "notes": "Related cards: Aspect of Commerce, Sired Innocent\n\nTooken"
+            "notes": "Related cards: Aspect of Commerce, Sired Innocent\n\nToken\n!related Hazenwyld Beastmaster;Hazard Technician;"
         },
         {
             "card_name": "Human",
@@ -5050,7 +5050,7 @@
             "number": 100,
             "color_identity": "B",
             "cost": "{3}{B}{B}",
-            "rules_text": "Flying, lifelink\n{1}{B}, Embrace Disaster Responder from your hand or graveyard: Create a tapped 2/2 red Werewolf Citizen creature token. [i](Exile it. You may cast it on a later turn that a Dragon or Citizen you control dealt damage to an opponent.)[/i]",
+            "rules_text": "Flying, lifelink\n{1}{B}, Embrace Disaster Responder from your hand or graveyard: Create a tapped 2/2 green Werewolf Citizen creature token. [i](Exile it. You may cast it on a later turn that a Dragon or Citizen you control dealt damage to an opponent.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "4/5",
             "special_text": "",

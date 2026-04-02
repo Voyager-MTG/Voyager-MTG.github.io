@@ -3135,9 +3135,9 @@
 			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Artifact — Treasure",
-			"collector_number": "7",
+			"collector_number": "9",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PVR-files/img/7_Treasure.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PVR-files/img/9_Treasure.jpg"
 			}
 		},
 		{
@@ -3145,9 +3145,9 @@
 			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Creature — Dinosaur",
-			"collector_number": "6",
+			"collector_number": "8",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PVR-files/img/6_Dinosaur.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PVR-files/img/8_Dinosaur.jpg"
 			}
 		},
 		{
@@ -3175,9 +3175,9 @@
 			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Creature — Horror",
-			"collector_number": "5",
+			"collector_number": "6",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PVR-files/img/5_Horror.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PVR-files/img/6_Horror.jpg"
 			}
 		},
 		{
@@ -3195,9 +3195,9 @@
 			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Land",
-			"collector_number": "8",
+			"collector_number": "10",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/PVR-files/img/8_Nilvoid.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/PVR-files/img/10_Nilvoid.jpg"
 			}
 		},
 		{
@@ -3248,6 +3248,26 @@
 			"collector_number": "238",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/PVR-files/img/238_Eons of Ancestry.jpg"
+			}
+		},
+		{
+			"name": "Fractal Bird",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Fractal Bird",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PVR-files/img/5_Fractal Bird.jpg"
+			}
+		},
+		{
+			"name": "Red Dinosaur",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Dinosaur",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/PVR-files/img/7_Red Dinosaur.jpg"
 			}
 		},
 	]

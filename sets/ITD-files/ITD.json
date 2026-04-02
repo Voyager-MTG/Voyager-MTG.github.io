@@ -3,7 +3,7 @@
     "formats": "",
     "trimmed": "y",
     "image_type": "jpg",
-    "draft_structure": "play booster",
+    "draft_structure": "cube",
     "designer": "Trewq",
     "cards": [
         {
@@ -508,7 +508,7 @@
             "number": 12,
             "color_identity": "C",
             "cost": "{3}",
-            "rules_text": "[i]Landfall[/i]\u2014 Whenever a land enters under your control, you gain 1 life.\n[+1]: Untap target land. Surveil 1.\n[-3]: Search your library or graveyard for a land card, reveal it, put it into your hand, then shuffle.",
+            "rules_text": "[i]Landfall[/i] \u2014 Whenever a land enters under your control, you gain 1 life.\n[+1]: Untap target land. Surveil 1.\n[-3]: Search your library or graveyard for a land card, reveal it, put it into your hand, then shuffle.",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -2219,7 +2219,7 @@
             "color_identity": "R",
             "cost": "{1}{R}",
             "rules_text": "Haste\nWhen this creature enters, you may sacrifice another creature. When you do, this creature deals 3 damage to target creature or planeswalker.",
-            "flavor_text": "[i]Infused with almighty SOL, Heliarch looked towards the light. [/i]",
+            "flavor_text": "[i]Infused with almighty SOL, Heliach looked towards the light. [/i]",
             "pt": "2/2",
             "special_text": "",
             "shape": "normal",
@@ -2455,7 +2455,7 @@
             "loyalty": "",
             "designer": "Trewq",
             "artist": "sebastianmonpainting",
-            "notes": "https://www.deviantart.com/sebastianmonpainting/art/Stationary-Traveller-II-131-1109729216"
+            "notes": "https://www.deviantart.com/sebastianmonpainting/art/Stationary-Traveller-II-131-1109729216\n!noscript"
         },
         {
             "card_name": "Reshape Reality",
@@ -3348,7 +3348,7 @@
             "loyalty": "",
             "designer": "Trewq",
             "artist": "si_ku",
-            "notes": ""
+            "notes": "!related Chimerism;"
         },
         {
             "card_name": "Ringing Noise",
@@ -3405,7 +3405,7 @@
             "loyalty": "",
             "designer": "Trewq",
             "artist": "Ingrid Susanne Bergo",
-            "notes": ""
+            "notes": "!related To Be Forgotten in a Dream;"
         },
         {
             "card_name": "Nightmare",
@@ -3431,7 +3431,7 @@
             "color": "",
             "rarity": "common",
             "type": "Token Land",
-            "number": 8,
+            "number": 9,
             "color_identity": "C",
             "cost": "",
             "rules_text": "This land has every basic land type.",
@@ -3843,6 +3843,25 @@
             "designer": "Trewq",
             "artist": "Afodelo",
             "notes": "https://www.deviantart.com/asfodelo/art/Red26-807973377\nflag-change"
+        },
+        {
+            "card_name": "Desolation",
+            "color": "",
+            "rarity": "common",
+            "type": "Token Land",
+            "number": 8,
+            "color_identity": "C",
+            "cost": "",
+            "rules_text": "{T}: Add {C}.",
+            "flavor_text": "[i][/i]",
+            "pt": "",
+            "special_text": "",
+            "shape": "token",
+            "set": "ITD",
+            "loyalty": "",
+            "designer": "Trewq",
+            "artist": "MehdiArtss",
+            "notes": "!related Liferoot Gnawer;"
         }
     ]
 }

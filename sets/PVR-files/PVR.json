@@ -3,7 +3,7 @@
     "formats": "",
     "trimmed": "y",
     "image_type": "jpg",
-    "draft_structure": "play booster",
+    "draft_structure": "cube",
     "designer": "Myr",
     "cards": [
         {
@@ -128,7 +128,7 @@
             "number": 285,
             "color_identity": "C",
             "cost": "{5}",
-            "rules_text": "Retopology {6} [i](Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)[/i]",
+            "rules_text": "Retopology {6} [i](Cast a copy of this from your graveyard by exiling it and paying {6}. Spend only mana from differently named sources this way.)[/i]",
             "flavor_text": "[i]\u201cIt's filial piety, see? We have a duty of care to our fathers, no matter their sanity.\u201d\n\u2014Irticull, Shadow Sultan[/i]",
             "pt": "5/5",
             "special_text": "",
@@ -945,7 +945,7 @@
             "number": 137,
             "color_identity": "R",
             "cost": "{R}",
-            "rules_text": "Haste, menace\nBlazefoxes of Moz gets +2/+0 as long as your complexity is three or greater. [i](Your complexity is the number of spells you've cast and nonland abilities you've activated this turn.)[/i]",
+            "rules_text": "Menace, haste\nBlazefoxes of Moz gets +2/+0 as long as your complexity is three or greater. [i](Your complexity is the number of spells you've cast and nonland abilities you've activated this turn.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "1/2",
             "special_text": "",
@@ -3359,7 +3359,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "PULSAR BYTES",
-            "notes": "OTHERMYTHIC\nNEWCARD"
+            "notes": "OTHERMYTHIC\nNEWCARD\n!newscript"
         },
         {
             "card_name": "Mirrortusk",
@@ -4985,7 +4985,7 @@
             "number": 179,
             "color_identity": "R",
             "cost": "{2}{R}",
-            "rules_text": "Gain control of up to X target nonland permanents, where X is your complexity. Untap those permanents. They gain haste until end of turn. [i](Your complexity is the number of spells you've cast and nonland abilities you've activated this turn.)[/i]",
+            "rules_text": "Gain control of up to X target nonland permanents until end of turn, where X is your complexity. Untap those permanents. They gain haste until end of turn. [i](Your complexity is the number of spells you've cast and nonland abilities you've activated this turn.)[/i]",
             "flavor_text": "[i]\u201cYou betrayed your own people first.\u201d\n\u2014Uverngon, to Irticull[/i]",
             "pt": "",
             "special_text": "",
@@ -5147,7 +5147,7 @@
             "number": 223,
             "color_identity": "G",
             "cost": "{G}{G}{G}",
-            "rules_text": "Retopology {G}{G}{G}{G} [i](Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)[/i]",
+            "rules_text": "Retopology {G}{G}{G}{G} [i](Cast a copy of this from your graveyard by exiling it and paying {G}{G}{G}{G}. Spend only mana from differently named sources this way.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "5/4",
             "special_text": "",
@@ -5375,9 +5375,9 @@
             "number": 231,
             "color_identity": "UG",
             "cost": "{G}{U}",
-            "rules_text": "At the beginning of your end step, if you cast a spell this turn and haven't spent mana from lands to cast a spell this turn, draw a card.",
+            "rules_text": "Whenever you cast a spell, if you spent only mana from nonland sources to cast it, draw a card. This ability triggers only once each turn.",
             "flavor_text": "[i]Parents strive to ensure their children live in a better world than they did.[/i]",
-            "pt": "2/3",
+            "pt": "2/2",
             "special_text": "",
             "shape": "normal",
             "set": "PVR",
@@ -5546,7 +5546,7 @@
             "number": 226,
             "color_identity": "UB",
             "cost": "{U}{B}",
-            "rules_text": "{T}: Target player draws a card, then discards a card. Then if a library has twenty or fewer cards in it, create a colorless 0/0 Fractal Horror creature token with three +1/+1 counters on it. Activate only as a sorcery.",
+            "rules_text": "{T}: Target player draws a card, then discards a card. Then if a library has twenty or fewer cards in it, create a 0/0 colorless Fractal Horror creature token with three +1/+1 counters on it. Activate only as a sorcery.",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -6028,7 +6028,7 @@
             "color": "",
             "rarity": "special",
             "type": "Token Artifact \u2014 Treasure",
-            "number": 7,
+            "number": 9,
             "color_identity": "C",
             "cost": "",
             "rules_text": "{T}, Sacrifice this artifact: Add one mana of any color.",
@@ -6040,14 +6040,14 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mohamed Chahin",
-            "notes": ""
+            "notes": "!related Spoils of Scarcity;"
         },
         {
             "card_name": "Dinosaur",
             "color": "G",
             "rarity": "special",
             "type": "Token Creature \u2014 Dinosaur",
-            "number": 6,
+            "number": 8,
             "color_identity": "G",
             "cost": "",
             "rules_text": "",
@@ -6104,7 +6104,7 @@
             "color": "B",
             "rarity": "special",
             "type": "Token Creature \u2014 Horror",
-            "number": 5,
+            "number": 6,
             "color_identity": "B",
             "cost": "",
             "rules_text": "Prowess",
@@ -6142,7 +6142,7 @@
             "color": "",
             "rarity": "special",
             "type": "Token Land",
-            "number": 8,
+            "number": 10,
             "color_identity": "C",
             "cost": "",
             "rules_text": "Hexproof\n{T}: Add one mana of any color.",
@@ -6154,7 +6154,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mat Szulik",
-            "notes": ""
+            "notes": "!related Dynotopic Stampede;"
         },
         {
             "card_name": "Tromping Iguanodon",
@@ -6192,7 +6192,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
-            "notes": ""
+            "notes": "!noscript"
         },
         {
             "card_name": "Sudden Emergence",
@@ -6250,6 +6250,44 @@
             "designer": "Myr",
             "artist": "Jonathan Lam",
             "notes": "NEWCARD"
+        },
+        {
+            "card_name": "Fractal Bird",
+            "color": "U",
+            "rarity": "common",
+            "type": "Token Creature \u2014 Fractal Bird",
+            "number": 5,
+            "color_identity": "U",
+            "cost": "",
+            "rules_text": "Flying\nThis creature can't block.",
+            "flavor_text": "[i][/i]",
+            "pt": "",
+            "special_text": "",
+            "shape": "token",
+            "set": "PVR",
+            "loyalty": "",
+            "designer": "Myr",
+            "artist": "BoNk3rZz",
+            "notes": "!related Sparrow Spires;"
+        },
+        {
+            "card_name": "Red Dinosaur",
+            "color": "R",
+            "rarity": "common",
+            "type": "Token Creature \u2014 Dinosaur",
+            "number": 7,
+            "color_identity": "R",
+            "cost": "",
+            "rules_text": "This creature can't block.",
+            "flavor_text": "[i][/i]",
+            "pt": "",
+            "special_text": "",
+            "shape": "token",
+            "set": "PVR",
+            "loyalty": "",
+            "designer": "Myr",
+            "artist": "Adam Midzuk",
+            "notes": "!related Perpetual Cycle;\n!exportname Red Dinosaur"
         }
     ]
 }

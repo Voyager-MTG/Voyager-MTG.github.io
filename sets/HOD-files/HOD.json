@@ -3,7 +3,7 @@
     "formats": "",
     "trimmed": "y",
     "image_type": "jpg",
-    "draft_structure": "play booster",
+    "draft_structure": "cube",
     "designer": "Zangy",
     "cards": [
         {
@@ -80,7 +80,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Annadel Cinco",
-            "notes": "!tag Dewold\n!tag Whitaker"
+            "notes": "!tag Dewold\n!tag Whitaker\n!noscript"
         },
         {
             "card_name": "Sapner Vindicator",
@@ -213,7 +213,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "xyzl0119",
-            "notes": "!tag Dewold\n!tag Terrel\n!tag Leon"
+            "notes": "!tag Dewold\n!tag Terrel\n!tag Leon\n!noscript"
         },
         {
             "card_name": "Mirrorkin's Bargain",
@@ -299,7 +299,7 @@
             "number": 84,
             "color_identity": "U",
             "cost": "{3}{U}",
-            "rules_text": "Heir\u2014Your opponents have been dealt combat damage by unblocked creatures four or more times this game. [i](If this card is your chosen heir in your sanctum, you may replace a draw with this card if you've met its condition. Each creature counts separately.)[/i]\nWard {1}\nCreatures you control can't be blocked unless each creature with lesser power than that creature is also blocked.",
+            "rules_text": "Heir\u2014Your opponents have been dealt combat damage by unblocked creatures four or more times this game. [i](If this card is your chosen heir in your sanctum, you may replace a draw with this card if you've met its condition. Each creature counts separately.)[/i]\nWard {1}\nCreatures you control can't be blocked unless each attacking creature with lesser power than that creature is also blocked.",
             "flavor_text": "[i][/i]",
             "pt": "3/3",
             "special_text": "",
@@ -689,9 +689,9 @@
             "number": 128,
             "color_identity": "R",
             "cost": "{2}{R}",
-            "rules_text": "Whenever you attack, another target attacking creature gets +1/+0 until end of turn. Create a token that's a copy it in your reserves. [i]({3}: Put up to three tokens from your reserves onto the battlefield. Activate only as a sorcery.)[/i]",
+            "rules_text": "Whenever Ardleby Gatekeeper attacks, another target attacking creature gets +1/+0 until end of turn. Create a token that's a copy it in your reserves. [i]({3}: Put up to three tokens from your reserves onto the battlefield. Activate only as a sorcery.)[/i]",
             "flavor_text": "[i]The empty throne of House Phyre tempts many would be aspiring nobility. None have succeeded.[/i]",
-            "pt": "2/3",
+            "pt": "3/3",
             "special_text": "",
             "shape": "normal",
             "set": "HOD",
@@ -921,12 +921,12 @@
             "flavor_text": "[i][/i]",
             "pt": "7/7",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "HOD",
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Sandara Tang",
-            "notes": "!tag Dewold\n!tag Turnberry"
+            "notes": "!tag Dewold\n!tag Turnberry\n!noscript\n!tokens Destroyed-Knight<2>;"
         },
         {
             "card_name": "Choice of Salvations",
@@ -993,7 +993,7 @@
             "number": 202,
             "color_identity": "G",
             "cost": "{2}{G}",
-            "rules_text": "Reach\nBloom [i](Whenever you cast a spell that targets this creature, you may pay that spell's mana cost. If you do, copy that spell. You may choose new targets for the copy.)[/i]\nOther permanents you control have bloom.",
+            "rules_text": "Reach\nBloom [i](Whenever you cast a spell that targets this permanent, you may pay that spell's mana cost. If you do, copy that spell. You may choose new targets for the copy.)[/i]\nOther permanents you control have bloom.",
             "flavor_text": "[i][/i]",
             "pt": "3/4",
             "special_text": "",
@@ -1116,7 +1116,7 @@
             "loyalty": "4",
             "designer": "Zangy",
             "artist": "Juan Carlos Alegre",
-            "notes": "!tag Dewold\n!tag Planeswalker\n!tag Suyay\n!tag CaruMapu"
+            "notes": "!tag Dewold\n!tag Planeswalker\n!tag Suyay\n!tag CaruMapu\n!noscript"
         },
         {
             "card_name": "Roul Banefort, the Stern",
@@ -1130,12 +1130,12 @@
             "flavor_text": "[i][/i]",
             "pt": "4/4",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "HOD",
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Lain Valentine",
-            "notes": "!tag Dewold\n!tag Banefort\n!tag Roul"
+            "notes": "!tag Dewold\n!tag Banefort\n!tag Roul\n!tokens"
         },
         {
             "card_name": "Conrad Whitaker, Protector",
@@ -1192,7 +1192,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Benjamin Ee",
-            "notes": "!tag Dewold\n!tag Gosfridus\n!tag Turnberry"
+            "notes": "!tag Dewold\n!tag Gosfridus\n!tag Turnberry\n!noscript"
         },
         {
             "card_name": "Alger Perle, Lord of Truetower",
@@ -1658,7 +1658,7 @@
             "number": 297,
             "color_identity": "W",
             "cost": "",
-            "rules_text": "King's Rock Castle enters tapped unless you control two or fewer other lands.\n{T}: Add {W}.\n{3}{W}, {T}, Sacrifice a nontoken creature: Create a number of 1/1 red Scout creature tokens equal to the sacrificed creature's mana value. Activate only outside of combat.",
+            "rules_text": "King's Rock Castle enters tapped unless you control two or fewer other lands.\n{T}: Add {W}.\n{3}{W}, {T}, Sacrifice a nontoken creature: Create a number of 1/1 blue Scout creature tokens equal to the sacrificed creature's mana value. Activate only outside of combat.",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -1871,12 +1871,12 @@
             "flavor_text": "[i]\u201cDo you think your petty house can stand up to the greatest of the Grand Houses?\u201d[/i]",
             "pt": "3/2",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "HOD",
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Laila Kober",
-            "notes": "!tag Dewold\n!tag Terrel"
+            "notes": "!tag Dewold\n!tag Terrel\n!tokens Destroyed-Knight;"
         },
         {
             "card_name": "Imani Whitaker",
@@ -2213,12 +2213,12 @@
             "flavor_text": "[i]The mirrorkin had no issue adapting to the rather stale form of the castle-goers.[/i]",
             "pt": "",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "HOD",
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Ellie Quinonez",
-            "notes": "!tag HODStory\n!tag Dewold"
+            "notes": "!tag HODStory\n!tag Dewold\n!tokens Destroyed-Knight;"
         },
         {
             "card_name": "Beginning of a Grand Heist",
@@ -2688,12 +2688,12 @@
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "HOD",
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Aaron Nakahara",
-            "notes": "!tag Dewold\n!tag Rey\n!tag Perle"
+            "notes": "!tag Dewold\n!tag Rey\n!tag Perle\n!tokens Defender Soldier;Lover to All;The Sword of Perle;"
         },
         {
             "card_name": "Turnberry Mediator",
@@ -2883,7 +2883,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Alex Kuhn",
-            "notes": "!tag Dewold\n!tag Turnberry"
+            "notes": "!tag Dewold\n!tag Turnberry\n!noscript"
         },
         {
             "card_name": "Silberwald Trailblazer",
@@ -2940,7 +2940,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Alexandre Rodrigues",
-            "notes": "!tag Dewold\n!tag Rivers"
+            "notes": "!tag Dewold\n!tag Rivers\n!noscript"
         },
         {
             "card_name": "Travelcart Guardian",
@@ -3106,12 +3106,12 @@
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "HOD",
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Barret Frymire",
-            "notes": "!tag Dewold\n!tag Banefort"
+            "notes": "!tag Dewold\n!tag Banefort\n!tokens Destroyed-Knight;"
         },
         {
             "card_name": "Whitaker Cavalry",
@@ -3201,12 +3201,12 @@
             "flavor_text": "[i]When the Turnberries need an army, they only need to ask the Geistwald and it provides.[/i]",
             "pt": "",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "HOD",
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Mihail Gard",
-            "notes": "!tag Dewold\n!tag Turnberry"
+            "notes": "!tag Dewold\n!tag Turnberry\n!tokens Destroyed-Knight;"
         },
         {
             "card_name": "Restorative Hexer",
@@ -3244,7 +3244,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Olie Boldador",
-            "notes": "!tag Dewold\n!tag Perle"
+            "notes": "!tag Dewold\n!tag Perle\n!noscript"
         },
         {
             "card_name": "Renodet, the Shield of Perle",
@@ -3334,12 +3334,12 @@
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "HOD",
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Froxtain",
-            "notes": "!tag Dewold\n!tag Sapner\nTricolor"
+            "notes": "!tag Dewold\n!tag Sapner\nTricolor\n!tokens Destroyed-Knight;\n!noscript"
         },
         {
             "card_name": "Terrel Decree",
@@ -3353,12 +3353,12 @@
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "HOD",
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Xin Jin",
-            "notes": "!tag Dewold\n!tag Terrel\nTricolor"
+            "notes": "!tag Dewold\n!tag Terrel\nTricolor\n!tokens Scout<2>;"
         },
         {
             "card_name": "Vance Decree",
@@ -3372,12 +3372,12 @@
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "HOD",
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Gal Or",
-            "notes": "!tag Dewold\n!tag Vance\nTricolor"
+            "notes": "!tag Dewold\n!tag Vance\nTricolor\n!tokens Treasure<2>;\n!noscript"
         },
         {
             "card_name": "Rey Decree",
@@ -3448,12 +3448,12 @@
             "flavor_text": "[i][/i]",
             "pt": "3/4",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "HOD",
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Yannis Colas",
-            "notes": "!tag Dewold\n!tag Terrel\nTricolor"
+            "notes": "!tag Dewold\n!tag Terrel\nTricolor\n!tokens Destroyed-Knight;Scout;\n!noscript"
         },
         {
             "card_name": "Secluded Arachnomorph",
@@ -3486,12 +3486,12 @@
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "HOD",
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Alexander Forssberg",
-            "notes": "!tag Dewold\n!tag Rey\nTricolor"
+            "notes": "!tag Dewold\n!tag Rey\nTricolor\n!tokens Treasure;Scout;Weapon;\n!noscript"
         },
         {
             "card_name": "Faceless Mirrorkin",
@@ -3657,12 +3657,12 @@
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "HOD",
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Rene Aigner",
-            "notes": "!tag Dewold\n!tag Sapner"
+            "notes": "!tag Dewold\n!tag Sapner\n!tokens Destroyed-Knight<2>;\n!noscript"
         },
         {
             "card_name": "Highborn Sovereign",
@@ -3966,7 +3966,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Loles Romero",
-            "notes": "!tag Dewold"
+            "notes": "!tag Dewold\n!noscript"
         },
         {
             "card_name": "War Map",
@@ -4004,7 +4004,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Olga Shvetskaya",
-            "notes": "!tag Dewold\n!tag Terrel"
+            "notes": "!tag Dewold\n!tag Terrel\n!noscript"
         },
         {
             "card_name": "Terrel Recruit",
@@ -4080,7 +4080,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Stephen Scott",
-            "notes": "!tag Dewold\n!tag Turnberry\n!tag HouseAnimal"
+            "notes": "!tag Dewold\n!tag Turnberry\n!tag HouseAnimal\n!noscript"
         },
         {
             "card_name": "Glimpse",
@@ -4859,7 +4859,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Viviane Souza",
-            "notes": "!tag Dewold\n!tag Rey"
+            "notes": "!tag Dewold\n!tag Rey\n!noscript"
         },
         {
             "card_name": "Enduring Turtle",
@@ -5315,7 +5315,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Banana Art Studio",
-            "notes": "!tag Dewold\n!tag Rey"
+            "notes": "!tag Dewold\n!tag Rey\n!noscript"
         },
         {
             "card_name": "Charitable Faerie",
@@ -5367,12 +5367,12 @@
             "flavor_text": "[i][/i]",
             "pt": "8/6",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "HOD",
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Diana Franco",
-            "notes": "!tag Dewold\n!tag Turnberry"
+            "notes": "!tag Dewold\n!tag Turnberry\n!noscript\n!tokens Destroyed-Knight;"
         },
         {
             "card_name": "Kirsa's Page",
@@ -5443,12 +5443,12 @@
             "flavor_text": "[i]\u201cBe willing to die for your lord. Only then will greatness shine its light on you and your house.\u201d[/i]",
             "pt": "2/2",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "HOD",
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Oetar Penev",
-            "notes": "!tag Dewold\n!tag Terrel"
+            "notes": "!tag Dewold\n!tag Terrel\n!tokens Treasure;Clue;"
         },
         {
             "card_name": "Catharsis of Grief",
@@ -5842,12 +5842,12 @@
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "HOD",
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Tiago Sousa",
-            "notes": "!tag Dewold"
+            "notes": "!tag Dewold\n!tokens Clue;"
         },
         {
             "card_name": "Intisuyu's Armies",
@@ -5923,7 +5923,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "nozomi-M",
-            "notes": "!tag Dewold\nRenowned Cycle\n!related Call of the King; Kirsa's Page; Beckon Greatness;"
+            "notes": "!tag Dewold\nRenowned Cycle\n!related Kirsa's Page; Beckon Greatness;Overzealous Page;"
         },
         {
             "card_name": "Scout",
@@ -5961,7 +5961,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "LoranDeSore",
-            "notes": "!tag Dewold\n!related House Negotiations;"
+            "notes": "!tag Dewold\n!related Call to Strength;"
         },
         {
             "card_name": "Vance's Claw",
@@ -6037,7 +6037,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "konhis",
-            "notes": "!tag Dewold\nRenowned Cycle\n!related Call of the King; Wystan's Page;"
+            "notes": "!tag Dewold\nRenowned Cycle\n!related Wystan's Page;Overzealous Page;"
         },
         {
             "card_name": "Horror",
@@ -6094,7 +6094,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Viviane Souza",
-            "notes": "!tag Dewold\nYoung Soldier\n!related Whitaker Captain; Turnberry Scout <2>; Patrol the Geistwald; Leon's Claim; Hulking Vessel;\n!exportname Red Soldier"
+            "notes": "!tag Dewold\nYoung Soldier\n!related Whitaker Captain; Turnberry Scout <2>; Patrol the Geistwald; Leon's Claim;\n!exportname Red Soldier"
         },
         {
             "card_name": "Reserves",
@@ -6119,7 +6119,7 @@
             "card_name": "Knight all colors",
             "color": "WUBRG",
             "rarity": "common",
-            "type": "Legendary Token Creature \u2014 Knight",
+            "type": "Token Creature \u2014 Knight",
             "number": 19,
             "color_identity": "WUBRGI",
             "cost": "",
@@ -6132,7 +6132,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Madness Demon",
-            "notes": "!tag Dewold\nDestroyed-Knight\n!related Knight of Skyspire; Banefort Archer; Replenishing Camp; Resolute Elk; Turnberry Overseer;\n\n!exportname Knight all colors"
+            "notes": "!tag Dewold\nDestroyed-Knight\n!related Knight of Skyspire; Banefort Archer; Replenishing Camp; Resolute Elk; Turnberry Overseer;Leon's Claim;House Sigil;Lucky Break;Call of the King;Sandrock Infantry;Gleaming Courage;Long Night's Rest;\n\n!exportname Knight all colors"
         },
         {
             "card_name": "Plains",
@@ -6436,7 +6436,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Youngmin Seo",
-            "notes": "!tag Dewold\n!exportname Defender Soldier"
+            "notes": "!tag Dewold\n!exportname Defender Soldier\n!related Switching Shifts;"
         },
         {
             "card_name": "Green Knight",
@@ -6474,7 +6474,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "KartStudioDigi",
-            "notes": "!tag Dewold"
+            "notes": "!tag Dewold\n!related Leon's Claim;"
         },
         {
             "card_name": "Treasure",
@@ -6493,7 +6493,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Anna Mur",
-            "notes": "!tag Dewold\n!related Bounty Collectors;Cautious Seadog<2>;Wealthy Slabman;Writ of Supplies;"
+            "notes": "!tag Dewold\n!related Bounty Collectors;Cautious Seadog<2>;Wealthy Slabman;Writ of Supplies;Travelcart's Care;"
         },
         {
             "card_name": "Weapon",
@@ -6512,7 +6512,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Wilson Nugraha",
-            "notes": "!tag Dewold\n!related Camp Supplier;Sandrock Blacksmith;Weapons Holder;Heirloom Sword;Wealthy Slabman;"
+            "notes": "!tag Dewold\n!related Camp Supplier;Sandrock Blacksmith;Weapons Holder;Heirloom Sword;Wealthy Slabman;Kirsa, the Sword of Perle;Death's Sting Diplomacy;"
         },
         {
             "card_name": "Food",
@@ -6550,7 +6550,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Felix Hidayat",
-            "notes": "!tag Dewold\n!tag Dewold\n!related Overt Warning; Writ of Supplies;"
+            "notes": "!tag Dewold\n!tag Dewold\n!related Overt Warning; Writ of Supplies;Travelcart's Care;"
         },
         {
             "card_name": "Spirit",
@@ -6569,7 +6569,7 @@
             "loyalty": "",
             "designer": "Zangy",
             "artist": "Conor Burke",
-            "notes": "!tag Dewold"
+            "notes": "!tag Dewold\n!related Gathering of Lost Souls<4>;"
         },
         {
             "card_name": "House Sigil",

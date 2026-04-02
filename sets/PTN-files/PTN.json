@@ -3,7 +3,7 @@
     "formats": "",
     "trimmed": "y",
     "image_type": "jpg",
-    "draft_structure": "play booster",
+    "draft_structure": "cube",
     "designer": "Kogane</soft-line></soft-line></soft-line></soft-line></soft-line></soft-line></soft-line></soft-line></soft-line>",
     "cards": [
         {
@@ -33,7 +33,7 @@
             "number": 217,
             "color_identity": "UR",
             "cost": "{2}{U}{R}",
-            "rules_text": "{U}{R}, Sacrifice an unblocked attacking creature you control: Put Mother of Ants from your hand onto the battlefield tapped and attacking.\nAt the beginning of each of your postcombat main phases, add {R} for each 2 life your opponents have lost this turn.",
+            "rules_text": "{U}{R}, Sacrifice a creature that dealt combat damage to an opponent this turn: Put Mother of Ants from your hand onto the battlefield tapped.\nAt the beginning of each of your postcombat main phase, add {R} for each 2 life your opponents have lost this turn.",
             "flavor_text": "[i][/i]",
             "pt": "3/4",
             "special_text": "",
@@ -1287,7 +1287,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "OliverBeck",
-            "notes": ""
+            "notes": "!noscript"
         },
         {
             "card_name": "Lended Light",
@@ -1382,7 +1382,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Davide Lazzoni",
-            "notes": ""
+            "notes": "!noscript"
         },
         {
             "card_name": "Ragged Sun's Angel",
@@ -1724,7 +1724,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Kateryna Vitkovska",
-            "notes": ""
+            "notes": "!noscript"
         },
         {
             "card_name": "Discover the Stone Gods",
@@ -1876,7 +1876,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Mike Capprotti",
-            "notes": ""
+            "notes": "!noscript"
         },
         {
             "card_name": "Relic Vial",
@@ -1990,7 +1990,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Waking Of Sky Tree",
-            "notes": "!addtoken Scar;1"
+            "notes": "!addtoken Scar;\n!noscript"
         },
         {
             "card_name": "Guided Crusader",
@@ -2047,7 +2047,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Francois Baranger",
-            "notes": ""
+            "notes": "!noscript"
         },
         {
             "card_name": "Raw Prophet",
@@ -2560,7 +2560,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Jazm\u00edn Labaronnie",
-            "notes": ""
+            "notes": "!noscript"
         },
         {
             "card_name": "Seven-Coil's Scion",
@@ -2655,7 +2655,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Tyler James",
-            "notes": "https://www.deviantart.com/artofty/art/Lovecraft-Landscape-875251383"
+            "notes": "https://www.deviantart.com/artofty/art/Lovecraft-Landscape-875251383\n!noscript"
         },
         {
             "card_name": "White Reaper",
@@ -2921,7 +2921,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Adam Lunger",
-            "notes": ""
+            "notes": "!noscript"
         },
         {
             "card_name": "Cyprian Sacristan",
@@ -3281,7 +3281,7 @@
             "set": "PTN",
             "loyalty": "",
             "designer": "Kogane",
-            "artist": "Vanja Eberl",
+            "artist": "Vanya Eberl",
             "notes": "!addtoken Scar;1"
         },
         {
@@ -3320,7 +3320,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Byron Hamilton",
-            "notes": ""
+            "notes": "!noscript"
         },
         {
             "card_name": "Thyrsine Hunter",
@@ -3681,7 +3681,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Antonio J. Manzanedo",
-            "notes": "!tokentag God Horror\nGod Horror Token\n!related Monument of Rags;The Red Grail;Cleric;"
+            "notes": "!tokentag God Horror\nGod Horror Token\n!related Monument of Rags;Cleric;"
         },
         {
             "card_name": "Carapace Ancestor",
@@ -3833,7 +3833,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Marc Simonetti",
-            "notes": ""
+            "notes": "!noscript"
         },
         {
             "card_name": "Legacy of Flint",
@@ -3843,7 +3843,7 @@
             "number": 135,
             "color_identity": "R",
             "cost": "{2}{R}",
-            "rules_text": "Whenever you finish exiling one or more cards, Legacy of Flint deals damage to target player equal to the number of spells you've cast from exile this turn.",
+            "rules_text": "At the beginning of each end step, create a tapped land token with \u201c{T}, Sacrifice this land: Add {R}.\u201d\n{2}{R}, Sacrifice a land: Legacy of Flint deals 2 damage to any target.",
             "flavor_text": "[i]In fire are all the treasures of the earth revealed.[/i]",
             "pt": "",
             "special_text": "",
@@ -3862,7 +3862,7 @@
             "number": 138,
             "color_identity": "R",
             "cost": "{1}{R}",
-            "rules_text": "Haste\nWhenever Malleary Augmenter or another Cleric you control enters, you may pay {R}. If you do, Cleric creatures you control get +1/+0 until end of turn.",
+            "rules_text": "Other Clerics you control get +1/+1.\nAt the beginning of combat on your turn, you may pay {R}. If you do, Clerics and Gods you control gain haste until end of turn.",
             "flavor_text": "[i][/i]",
             "pt": "2/2",
             "special_text": "",
@@ -4479,7 +4479,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Aaron Nakahara",
-            "notes": ""
+            "notes": "!noscript"
         },
         {
             "card_name": "Dyad's Dance",
@@ -4669,7 +4669,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Samuel Bourguignon",
-            "notes": "Angel Token\n!related Guided Crusader;"
+            "notes": "Angel Token"
         },
         {
             "card_name": "Worm",
@@ -4707,7 +4707,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Susante",
-            "notes": "Wolf Token\n!related Smoldering Pack;Wolf-Splinter;Flames of Emnity;"
+            "notes": "Wolf Token"
         },
         {
             "card_name": "Noon Delver Serpent",
@@ -5144,7 +5144,7 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Travis Anderson",
-            "notes": ""
+            "notes": "!noscript"
         },
         {
             "card_name": "Nowhere Stygian",
@@ -5258,6 +5258,25 @@
             "loyalty": "",
             "designer": "Kogane",
             "artist": "Suzanne Helmigh",
+            "notes": ""
+        },
+        {
+            "card_name": "Land",
+            "color": "",
+            "rarity": "common",
+            "type": "Token Land",
+            "number": 8,
+            "color_identity": "R",
+            "cost": "",
+            "rules_text": "{T}, Sacrifice this token: Add {R}.",
+            "flavor_text": "[i][/i]",
+            "pt": "",
+            "special_text": "",
+            "shape": "token",
+            "set": "PTN",
+            "loyalty": "",
+            "designer": "Kogane",
+            "artist": "Andreas Rocha",
             "notes": ""
         }
     ]

@@ -1805,9 +1805,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Land",
-			"collector_number": "8",
+			"collector_number": "9",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/ITD-files/img/8_Everywhere.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/ITD-files/img/9_Everywhere.jpg"
 			}
 		},
 		{
@@ -2018,6 +2018,16 @@
 			"collector_number": "20",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/ITD-files/img/20_Desolate Meeting.jpg"
+			}
+		},
+		{
+			"name": "Desolation",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Land",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/ITD-files/img/8_Desolation.jpg"
 			}
 		},
 	]
