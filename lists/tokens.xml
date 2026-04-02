@@ -4,7 +4,7 @@
 		<card>
 			<name>Liberated Dragon AKT</name>
 			<text>(Put a liberated card under this; this has its abilities, but not card types. This is single faced and can&apos;t be transformed.)</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/3t_Liberated Dragon.jpg" num="3" uuid="2764">AKT</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/3t_Liberated Dragon.jpg" num="3" uuid="2450">AKT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -24,7 +24,7 @@
 		<card>
 			<name>Insect Advisor AKT</name>
 			<text>Flying</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/4t_Insect Advisor.jpg" num="4" uuid="2765">AKT</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/4t_Insect Advisor.jpg" num="4" uuid="2451">AKT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -43,7 +43,7 @@
 		<card>
 			<name>Embraced Cards AKT</name>
 			<text>(Put your embraced cards here. They&apos;re in exile, and you may play them on a later turn that a source you control that shares a creature type with it dealt damage to an opponent.)</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/2t_Embraced Cards.jpg" num="2" uuid="2766">AKT</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/2t_Embraced Cards.jpg" num="2" uuid="2452">AKT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -62,7 +62,7 @@
 		<card>
 			<name>Recruit AKT</name>
 			<text>(This is the creature type chosen as it was created.)</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/11t_Recruit.jpg" num="11" uuid="2767">AKT</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/11t_Recruit.jpg" num="11" uuid="2453">AKT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -81,7 +81,7 @@
 		<card>
 			<name>Treasure AKT</name>
 			<text>{T}, Sacrifice this artifact: Add one mana of any color.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/13t_Treasure.jpg" num="13" uuid="2768">AKT</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/13t_Treasure.jpg" num="13" uuid="2454">AKT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -100,7 +100,7 @@
 		<card>
 			<name>Human AKT</name>
 			<text></text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/9t_Human.jpg" num="9" uuid="2769">AKT</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/9t_Human.jpg" num="9" uuid="2455">AKT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -118,7 +118,7 @@
 		<card>
 			<name>Incarnation AKT</name>
 			<text>Flying</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/10t_Incarnation.jpg" num="10" uuid="2770">AKT</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/10t_Incarnation.jpg" num="10" uuid="2456">AKT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -136,7 +136,7 @@
 		<card>
 			<name>Hex Citizen AKT</name>
 			<text></text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/8t_Hex Citizen.jpg" num="8" uuid="2771">AKT</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/8t_Hex Citizen.jpg" num="8" uuid="2457">AKT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -154,7 +154,7 @@
 		<card>
 			<name>Werewolf Citizen AKT</name>
 			<text></text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/7t_Werewolf Citizen.jpg" num="7" uuid="2772">AKT</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/7t_Werewolf Citizen.jpg" num="7" uuid="2458">AKT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -172,7 +172,7 @@
 		<card>
 			<name>Incarnation Soldier AKT</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/6t_Incarnation Soldier.jpg" num="6" uuid="2773">AKT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/6t_Incarnation Soldier.jpg" num="6" uuid="2459">AKT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -190,7 +190,7 @@
 		<card>
 			<name>Soldier AKT</name>
 			<text></text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/5t_Soldier.jpg" num="5" uuid="2774">AKT</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/5t_Soldier.jpg" num="5" uuid="2460">AKT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -209,7 +209,7 @@
 			<name>House AKT</name>
 			<text>Equipped creature gets +1/+1.
 Equip creature of the chosen type {1}</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/12t_House.jpg" num="12" uuid="2775">AKT</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/12t_House.jpg" num="12" uuid="2461">AKT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -226,7 +226,7 @@ Equip creature of the chosen type {1}</text>
 		<card>
 			<name>Dragon AKT</name>
 			<text>Flying</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/1t_Dragon.jpg" num="1" uuid="2776">AKT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/AKT-files/img/1t_Dragon.jpg" num="1" uuid="2462">AKT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -244,7 +244,7 @@ Equip creature of the chosen type {1}</text>
 		<card>
 			<name>Icon EXPT</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/13t_Icon.jpg" num="13" uuid="2777">EXPT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/13t_Icon.jpg" num="13" uuid="2463">EXPT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -263,7 +263,7 @@ Equip creature of the chosen type {1}</text>
 		<card>
 			<name>Horror EXPT</name>
 			<text>Decayed (This creature can&apos;t block. When it attacks, sacrifice it at end of combat.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/10t_Horror.jpg" num="10" uuid="2778">EXPT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/10t_Horror.jpg" num="10" uuid="2464">EXPT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -282,7 +282,7 @@ Equip creature of the chosen type {1}</text>
 			<name>Shell&apos;s Scraping EXPT</name>
 			<text>Create two 1/1 silver Horror creature tokens with changeling. (They&apos;re every creature type.)
 This spell deals damage to any target equal to the number of tokens you control. You gain life equal to the damage dealt this way.</text>
-			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/65t_Shell&apos;s Scraping.jpg" num="65" uuid="2779">EXPT</set>
+			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/65t_Shell&apos;s Scraping.jpg" num="65" uuid="2465">EXPT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -301,7 +301,7 @@ This spell deals damage to any target equal to the number of tokens you control.
 			<name>Distant Vulture EXPT</name>
 			<text>Flying, haste
 This creature has lifelink as long as it has power 2 or greater.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/5t_Distant Vulture.jpg" num="5" uuid="2780">EXPT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/5t_Distant Vulture.jpg" num="5" uuid="2466">EXPT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -320,7 +320,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Insect Plant EXPT</name>
 			<text>Decayed. (This creature can&apos;t block. When it attacks, sacrifice it at end of combat.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/12t_Insect Plant.jpg" num="12" uuid="2781">EXPT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/12t_Insect Plant.jpg" num="12" uuid="2467">EXPT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -338,7 +338,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Wall EXPT</name>
 			<text>Defender (This creature can&apos;t attack.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/15t_Wall.jpg" num="15" uuid="2782">EXPT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/15t_Wall.jpg" num="15" uuid="2468">EXPT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -356,7 +356,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Shapeshifter EXPT</name>
 			<text>Changeling (This card is every creature type.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/2t_Shapeshifter.jpg" num="2" uuid="2783">EXPT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/2t_Shapeshifter.jpg" num="2" uuid="2469">EXPT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -374,7 +374,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Robot EXPT</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/14t_Robot.jpg" num="14" uuid="2784">EXPT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/14t_Robot.jpg" num="14" uuid="2470">EXPT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -393,7 +393,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Can Be Cast From Exile EXPT</name>
 			<text>(These cards can be cast from exile.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/1t_Can Be Cast From Exile.jpg" num="1" uuid="2785">EXPT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/1t_Can Be Cast From Exile.jpg" num="1" uuid="2471">EXPT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -410,7 +410,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Demon EXPT</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/4t_Demon.jpg" num="4" uuid="2786">EXPT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/4t_Demon.jpg" num="4" uuid="2472">EXPT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -429,7 +429,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Drake EXPT</name>
 			<text>Flying</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/6t_Drake.jpg" num="6" uuid="2787">EXPT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/6t_Drake.jpg" num="6" uuid="2473">EXPT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -451,7 +451,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Fox EXPT</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/3t_Fox.jpg" num="3" uuid="2788">EXPT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/3t_Fox.jpg" num="3" uuid="2474">EXPT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -470,7 +470,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Flying Elemental EXPT</name>
 			<text>Flying</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/7t_Flying Elemental.jpg" num="7" uuid="2789">EXPT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/7t_Flying Elemental.jpg" num="7" uuid="2475">EXPT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -489,7 +489,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Lifelink Elemental EXPT</name>
 			<text>Lifelink</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/8t_Lifelink Elemental.jpg" num="8" uuid="2790">EXPT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/8t_Lifelink Elemental.jpg" num="8" uuid="2476">EXPT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -508,7 +508,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Fish EXPT</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/9t_Fish.jpg" num="9" uuid="2791">EXPT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/9t_Fish.jpg" num="9" uuid="2477">EXPT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -527,7 +527,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Changeling Horror EXPT</name>
 			<text>Changeling (This card is every creature type.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/11t_Changeling Horror.jpg" num="11" uuid="2792">EXPT</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/11t_Changeling Horror.jpg" num="11" uuid="2478">EXPT</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -544,7 +544,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Aubrey FOE</name>
 			<text>Flying, haste</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/36t_Aubrey.jpg" num="36" uuid="2793">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/36t_Aubrey.jpg" num="36" uuid="2479">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -563,7 +563,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Beast FOE</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/26t_Beast.jpg" num="26" uuid="2794">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/26t_Beast.jpg" num="26" uuid="2480">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -580,9 +580,9 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<token>1</token>
 		</card>
 		<card>
-			<name>Bird FOE</name>
+			<name>Black Bird FOE</name>
 			<text>Flying</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/18t_Bird.jpg" num="18" uuid="2795">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/18t_Black Bird.jpg" num="18" uuid="2481">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -601,7 +601,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Bird FOE</name>
 			<text>Flying</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/3t_Bird.jpg" num="3" uuid="2796">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/3t_Bird.jpg" num="3" uuid="2482">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -619,7 +619,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Insect FOE</name>
 			<text>Flying, decayed (This creature can&apos;t block. When it attacks, sacrifice it at end of combat.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/39t_Insect.jpg" num="39" uuid="2797">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/39t_Insect.jpg" num="39" uuid="2483">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -639,7 +639,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Cat FOE</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/27t_Cat.jpg" num="27" uuid="2798">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/27t_Cat.jpg" num="27" uuid="2484">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -659,7 +659,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Crab FOE</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/32t_Crab.jpg" num="32" uuid="2799">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/32t_Crab.jpg" num="32" uuid="2485">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -692,7 +692,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 {I}{B}: Sacrifice//Go Tall
 {I}{R}: Multi Luminous
 {I}{G}: Mirror//Tokens</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/12t_Draft Archetypes.jpg" num="12" uuid="2800">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/12t_Draft Archetypes.jpg" num="12" uuid="2486">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -704,13 +704,12 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 				<coloridentity>WUBRGI</coloridentity>
 			</prop>
 			<tablerow>1</tablerow>
-			<related>Luminous VNM</related>
 			<token>1</token>
 		</card>
 		<card>
 			<name>Dragon Eye FOE</name>
 			<text>Trample</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/13t_Dragon Eye.jpg" num="13" uuid="2801">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/13t_Dragon Eye.jpg" num="13" uuid="2487">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -731,7 +730,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Blue Drake 21 FOE</name>
 			<text>Flying</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/15t_Blue Drake 21.jpg" num="15" uuid="2802">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/15t_Blue Drake 21.jpg" num="15" uuid="2488">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -750,7 +749,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>White Drake FOE</name>
 			<text>Flying</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/4t_White Drake.jpg" num="4" uuid="2803">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/4t_White Drake.jpg" num="4" uuid="2489">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -769,7 +768,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Blue Drake 11 FOE</name>
 			<text>Flying</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/14t_Blue Drake 11.jpg" num="14" uuid="2804">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/14t_Blue Drake 11.jpg" num="14" uuid="2490">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -787,7 +786,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Black Drake 11 FOE</name>
 			<text>Flying</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/19t_Black Drake 11.jpg" num="19" uuid="2805">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/19t_Black Drake 11.jpg" num="19" uuid="2491">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -805,7 +804,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Silver Drake 11 FOE</name>
 			<text>Flying</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/33t_Silver Drake 11.jpg" num="33" uuid="2806">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/33t_Silver Drake 11.jpg" num="33" uuid="2492">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -827,7 +826,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Elemental Demon FOE</name>
 			<text>Haste, lifelink</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/37t_Elemental Demon.jpg" num="37" uuid="2807">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/37t_Elemental Demon.jpg" num="37" uuid="2493">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -846,7 +845,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Elk Plant FOE</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/29t_Elk Plant.jpg" num="29" uuid="2808">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/29t_Elk Plant.jpg" num="29" uuid="2494">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -866,7 +865,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Fish FOE</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/30t_Fish.jpg" num="30" uuid="2809">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/30t_Fish.jpg" num="30" uuid="2495">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -884,7 +883,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Fox 11 FOE</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/6t_Fox 11.jpg" num="6" uuid="2810">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/6t_Fox 11.jpg" num="6" uuid="2496">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -906,7 +905,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Fox 02 FOE</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/5t_Fox 02.jpg" num="5" uuid="2811">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/5t_Fox 02.jpg" num="5" uuid="2497">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -925,7 +924,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Lizard 11 FOE</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/22t_Lizard 11.jpg" num="22" uuid="2812">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/22t_Lizard 11.jpg" num="22" uuid="2498">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -946,7 +945,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Lizard 21 FOE</name>
 			<text>Menace</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/23t_Lizard 21.jpg" num="23" uuid="2813">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/23t_Lizard 21.jpg" num="23" uuid="2499">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -965,7 +964,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 		<card>
 			<name>Mongoose FOE</name>
 			<text>Reach (This creature can block creatures with flying.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/35t_Mongoose.jpg" num="35" uuid="2814">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/35t_Mongoose.jpg" num="35" uuid="2500">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -985,7 +984,7 @@ This creature has lifelink as long as it has power 2 or greater.</text>
 			<name>Orb FOE</name>
 			<text>This creature can&apos;t block.
 Whenever this creature deals combat damage to a player, target player mills two cards.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/47t_Orb.jpg" num="47" uuid="2815">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/47t_Orb.jpg" num="47" uuid="2501">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1004,7 +1003,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 		<card>
 			<name>Shark FOE</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/8t_Shark.jpg" num="8" uuid="2816">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/8t_Shark.jpg" num="8" uuid="2502">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1022,7 +1021,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 		<card>
 			<name>Whale FOE</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/41t_Whale.jpg" num="41" uuid="2817">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/41t_Whale.jpg" num="41" uuid="2503">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1040,7 +1039,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 		<card>
 			<name>Red Wurm FOE</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/25t_Red Wurm.jpg" num="25" uuid="2818">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/25t_Red Wurm.jpg" num="25" uuid="2504">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1060,7 +1059,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 		<card>
 			<name>White Wurm 11 FOE</name>
 			<text>This creature can&apos;t block.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/10t_White Wurm 11.jpg" num="10" uuid="2819">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/10t_White Wurm 11.jpg" num="10" uuid="2505">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1079,7 +1078,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 		<card>
 			<name>White Wurm 22 FOE</name>
 			<text>Vigilance</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/11t_White Wurm 22.jpg" num="11" uuid="2820">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/11t_White Wurm 22.jpg" num="11" uuid="2506">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1097,7 +1096,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 		<card>
 			<name>White Wurm Dragon FOE</name>
 			<text>Flying</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/9t_White Wurm Dragon.jpg" num="9" uuid="2821">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/9t_White Wurm Dragon.jpg" num="9" uuid="2507">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1117,7 +1116,7 @@ Whenever this creature deals combat damage to a player, target player mills two 
 			<name>Wurm Dragon FOE</name>
 			<text>(This is also a Kindred permanent.)
 This is also a creature if you&apos;ve illuminated silver.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/2t_Wurm Dragon.jpg" num="2" uuid="2822">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/2t_Wurm Dragon.jpg" num="2" uuid="2508">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1136,7 +1135,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 		<card>
 			<name>Depthscout Token FOE</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/28t_Depthscout Token.jpg" num="28" uuid="2823">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/28t_Depthscout Token.jpg" num="28" uuid="2509">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1154,7 +1153,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 		<card>
 			<name>Illuminated black FOE</name>
 			<text>If you control four or more black permanents, you&apos;ve illuminated black for the rest of the game.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/21t_Illuminated black.jpg" num="21" uuid="2824">FOE</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/21t_Illuminated black.jpg" num="21" uuid="2510">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1192,7 +1191,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 		<card>
 			<name>Illuminated Blue FOE</name>
 			<text>If you control four or more blue permanents, you&apos;ve illuminated blue for the rest of the game.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/16t_Illuminated Blue.jpg" num="16" uuid="2825">FOE</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/16t_Illuminated Blue.jpg" num="16" uuid="2511">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1230,7 +1229,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 		<card>
 			<name>Illuminated Green FOE</name>
 			<text>If you control four or more green permanents, you&apos;ve illuminated green for the rest of the game.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/31t_Illuminated Green.jpg" num="31" uuid="2826">FOE</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/31t_Illuminated Green.jpg" num="31" uuid="2512">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1268,7 +1267,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 		<card>
 			<name>Illuminated Red FOE</name>
 			<text>If you control four or more red permanents, you&apos;ve illuminated red for the rest of the game.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/24t_Illuminated Red.jpg" num="24" uuid="2827">FOE</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/24t_Illuminated Red.jpg" num="24" uuid="2513">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1306,7 +1305,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 		<card>
 			<name>Illuminated Silver FOE</name>
 			<text>If you control four or more silver permanents, you&apos;ve illuminated silver for the rest of the game.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/34t_Illuminated Silver.jpg" num="34" uuid="2828">FOE</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/34t_Illuminated Silver.jpg" num="34" uuid="2514">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1344,7 +1343,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 		<card>
 			<name>Illuminated White FOE</name>
 			<text>If you control four or more white permanents, you&apos;ve illuminated white for the rest of the game.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/7t_Illuminated White.jpg" num="7" uuid="2829">FOE</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/7t_Illuminated White.jpg" num="7" uuid="2515">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1382,7 +1381,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 		<card>
 			<name>Healing Counter FOE</name>
 			<text></text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/20t_Healing Counter.jpg" num="20" uuid="2830">FOE</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/20t_Healing Counter.jpg" num="20" uuid="2516">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1400,7 +1399,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 		<card>
 			<name>Stun Counter FOE</name>
 			<text></text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/17t_Stun Counter.jpg" num="17" uuid="2831">FOE</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/17t_Stun Counter.jpg" num="17" uuid="2517">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1421,7 +1420,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 		<card>
 			<name>+1/+1 Counter FOE</name>
 			<text></text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/42t_+1/+1 Counter.jpg" num="42" uuid="2832">FOE</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/42t_+1/+1 Counter.jpg" num="42" uuid="2518">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1438,7 +1437,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 		<card>
 			<name>Orb Wizard FOE</name>
 			<text>{1}, Sacrifice this creature: Counter target noncreature spell unless its controller pays {1}.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/48t_Orb Wizard.jpg" num="48" uuid="2833">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/48t_Orb Wizard.jpg" num="48" uuid="2519">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1456,7 +1455,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 		<card>
 			<name>Luminous in All Colors FOE</name>
 			<text>If you control four or more permanents of the same color, you&apos;ve illuminated that color for the rest of the game.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/40t_Luminous in All Colors.jpg" num="40" uuid="2834">FOE</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/40t_Luminous in All Colors.jpg" num="40" uuid="2520">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1497,7 +1496,7 @@ This is also a creature if you&apos;ve illuminated silver.</text>
 When Jothi enters, put a +1/+1 counter on up to one target creature.
 [+1]: Target creature you control gets +1/+1 until end of turn. If it entered this turn, put a +1/+1 counter on it.
 [-4]: Create a token that&apos;s a copy of Jothi, except it&apos;s not legendary, doesn&apos;t enter with loyalty counters and is a 1/1 Bird creature with flying.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/34t_Jothi Token.jpg" num="34" uuid="2835">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/33t_Jothi Token.jpg" num="33" uuid="2521">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1516,7 +1515,7 @@ When Jothi enters, put a +1/+1 counter on up to one target creature.
 		<card>
 			<name>Food FOE</name>
 			<text>{2}, {T}, Sacrifice this: You gain 3 life.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/45t_Food.jpg" num="45" uuid="2836">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/45t_Food.jpg" num="45" uuid="2522">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1534,7 +1533,7 @@ When Jothi enters, put a +1/+1 counter on up to one target creature.
 		<card>
 			<name>Blood FOE</name>
 			<text>{1}, {T}, Discard a card, Sacrifice this token: Draw a card.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/43t_Blood.jpg" num="43" uuid="2837">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/43t_Blood.jpg" num="43" uuid="2523">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1552,7 +1551,7 @@ When Jothi enters, put a +1/+1 counter on up to one target creature.
 		<card>
 			<name>Clue FOE</name>
 			<text>{2}, Sacrifice this token: Draw a card.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/44t_Clue.jpg" num="44" uuid="2838">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/44t_Clue.jpg" num="44" uuid="2524">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1570,7 +1569,7 @@ When Jothi enters, put a +1/+1 counter on up to one target creature.
 		<card>
 			<name>Flying Counter FOE</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/292t_Flying Counter.jpg" num="292" uuid="2839">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/291t_Flying Counter.jpg" num="291" uuid="2525">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1589,7 +1588,7 @@ When Jothi enters, put a +1/+1 counter on up to one target creature.
 		<card>
 			<name>Goat FOE</name>
 			<text>Whenever this creature becomes blocked, each opponent loses 2 life.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/38t_Goat.jpg" num="38" uuid="2840">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/38t_Goat.jpg" num="38" uuid="2526">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1608,7 +1607,7 @@ When Jothi enters, put a +1/+1 counter on up to one target creature.
 			<name>Jura FOE</name>
 			<text>{T}: Add {C}.
 {3}, {T}, Sacrifice this land: Return target creature card with mana value 2 or less from your graveyard to the battlefield tapped.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/51t_Jura.jpg" num="51" uuid="2841">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/51t_Jura.jpg" num="51" uuid="2527">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1627,7 +1626,7 @@ When Jothi enters, put a +1/+1 counter on up to one target creature.
 			<name>Law of Nature FOE</name>
 			<text>Ward {2}
 Creatures you control get +2/+2 and have haste, vigilance, and first strike.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/46t_Law of Nature.jpg" num="46" uuid="2842">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/46t_Law of Nature.jpg" num="46" uuid="2528">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1645,7 +1644,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 		<card>
 			<name>Powerstone Shard FOE</name>
 			<text>{T}: Add {C}. This mana can&apos;t be spent to cast a nonartifact spell.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/49t_Powerstone Shard.jpg" num="49" uuid="2843">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/49t_Powerstone Shard.jpg" num="49" uuid="2529">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1665,7 +1664,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 		<card>
 			<name>Treasure FOE</name>
 			<text>{T}, Sacrifice this creature: Add one mana of any color.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/50t_Treasure.jpg" num="50" uuid="2844">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/50t_Treasure.jpg" num="50" uuid="2530">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1684,7 +1683,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 		<card>
 			<name>Dragon 34 FOE</name>
 			<text>Flying, vigilance</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/1t_Dragon 34.jpg" num="1" uuid="2845">FOE</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/1t_Dragon 34.jpg" num="1" uuid="2531">FOE</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1704,7 +1703,7 @@ Creatures you control get +2/+2 and have haste, vigilance, and first strike.</te
 			<name>Geistwald Abomination HOD</name>
 			<text>Trample, reach
 When Geistwald Abomination dies, choose two names. For each chosen name, create a legendary 3/3 Knight creature token that is all colors with that name in your reserves. ({3}: Put up to three tokens from your reserves onto the battlefield. Activate only as a sorcery.)</text>
-			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/183t_Geistwald Abomination.jpg" num="183" uuid="2846">HOD</set>
+			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/183t_Geistwald Abomination.jpg" num="183" uuid="2532">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1724,7 +1723,7 @@ When Geistwald Abomination dies, choose two names. For each chosen name, create 
 			<name>Roul Banefort, the Stern HOD</name>
 			<text>Whenever you cast a noncreature spell, choose a name. Create a legendary 3/3 Knight creature token that&apos;s all colors with that name in your reserves. ({3}: Put up to three tokens from your reserves onto the battlefield. Activate only as a sorcery.)
 Whenever you attack with three or more other Knights, you may return target card from your graveyard to your hand.</text>
-			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/224t_Roul Banefort, the Stern.jpg" num="224" uuid="2847">HOD</set>
+			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/224t_Roul Banefort, the Stern.jpg" num="224" uuid="2533">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1744,7 +1743,7 @@ Whenever you attack with three or more other Knights, you may return target card
 			<name>Terrel Battlemage HOD</name>
 			<text>{U}, {T}, Sacrifice a creature: Surveil 1, then draw a card.
 {R}, {T}, Sacrifice a creature: Choose a name. Create a legendary 3/3 Knight creature token that&apos;s all colors with that name. Activate only outside of combat.</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/36t_Terrel Battlemage.jpg" num="36" uuid="2848">HOD</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/36t_Terrel Battlemage.jpg" num="36" uuid="2534">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1762,7 +1761,7 @@ Whenever you attack with three or more other Knights, you may return target card
 		<card>
 			<name>Grasp of the Mirrorkin HOD</name>
 			<text>Counter target spell. That spell&apos;s controller chooses a name, then create a legendary 3/3 Knight creature token that&apos;s all colors with that name in their reserves. (They may pay {3} to put up to three tokens from their reserves onto the battlefield as a sorcery.)</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/57t_Grasp of the Mirrorkin.jpg" num="57" uuid="2849">HOD</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/57t_Grasp of the Mirrorkin.jpg" num="57" uuid="2535">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1781,7 +1780,7 @@ Whenever you attack with three or more other Knights, you may return target card
 			<text>Choose one, then create a token with those characteristics, then create a 3/3 white Soldier creature token with defender.
 • Lover to All, a legendary 2/3 red Human Noble creature token with menace.
 • The Sword of Perle, a legendary 3/1 red Orc Soldier creature token with &quot;This creature has first strike as long as it&apos;s attacking.&quot;</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/130t_Beacon of Greatness.jpg" num="130" uuid="2850">HOD</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/130t_Beacon of Greatness.jpg" num="130" uuid="2536">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1802,7 +1801,7 @@ Whenever you attack with three or more other Knights, you may return target card
 			<name>Standing Army HOD</name>
 			<text>At the beginning of your end step, create a 1/1 blue Scout creature tokens in your reserves. ({3}: Put up to three tokens from your reserves onto the battlefield. Activate only as a sorcery.)
 Exile three tokens from your reserves: Choose a name. Create a legendary 3/3 Knight creature token that&apos;s all colors with that name. It can&apos;t block this turn.</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/225t_Standing Army.jpg" num="225" uuid="2851">HOD</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/225t_Standing Army.jpg" num="225" uuid="2537">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1821,7 +1820,7 @@ Exile three tokens from your reserves: Choose a name. Create a legendary 3/3 Kni
 		<card>
 			<name>Dirt to Flesh HOD</name>
 			<text>At the beginning of each end step, if you attacked this turn, choose a name. Create a legendary 3/3 Knight creature token that&apos;s all colors with that name in your reserves. ({3}: Put up to three tokens from your reserves onto the battlefield. Activate only as a sorcery.)</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/232t_Dirt to Flesh.jpg" num="232" uuid="2852">HOD</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/232t_Dirt to Flesh.jpg" num="232" uuid="2538">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1842,7 +1841,7 @@ Exile three tokens from your reserves: Choose a name. Create a legendary 3/3 Kni
 • Target creature gets -3/-3 until end of turn.
 • Target player chooses a name, then creates a legendary 3/3 Knight creature token that&apos;s all colors with that name.
 • Exile target enchantment. You gain 3 life.</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/270t_Sapner Decree.jpg" num="270" uuid="2853">HOD</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/270t_Sapner Decree.jpg" num="270" uuid="2539">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1862,7 +1861,7 @@ Exile three tokens from your reserves: Choose a name. Create a legendary 3/3 Kni
 • Target player creates two 1/1 blue Scout creature tokens. Prevent all damage that would be dealt to them this turn.
 • Creatures target player controls get +2/+0 until end of turn.
 • Return target creature to its owner&apos;s hand.</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/277t_Terrel Decree.jpg" num="277" uuid="2854">HOD</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/277t_Terrel Decree.jpg" num="277" uuid="2540">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1883,7 +1882,7 @@ Exile three tokens from your reserves: Choose a name. Create a legendary 3/3 Kni
 • Target player creates two tapped Treasure tokens.
 • Target player discards two cards.
 • Return target creature card from your graveyard to your hand.</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/278t_Vance Decree.jpg" num="278" uuid="2855">HOD</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/278t_Vance Decree.jpg" num="278" uuid="2541">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1902,7 +1901,7 @@ Exile three tokens from your reserves: Choose a name. Create a legendary 3/3 Kni
 			<name>Glory on Bloodied Wings HOD</name>
 			<text>Flying, vigilance
 At the beginning of each end step, create a 1/1 blue Scout creature token if you&apos;ve sacrificed a permanent this turn. If you&apos;ve sacrificed three or more permanents this turn, instead choose a name. Create a legendary 3/3 Knight creature token that&apos;s all colors with that name.</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/259t_Glory on Bloodied Wings.jpg" num="259" uuid="2856">HOD</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/259t_Glory on Bloodied Wings.jpg" num="259" uuid="2542">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1921,7 +1920,7 @@ At the beginning of each end step, create a 1/1 blue Scout creature token if you
 		<card>
 			<name>Explore the Great Unknown HOD</name>
 			<text>Landfall – Whenever a land you control enters, you may mill three cards. Create a 1/1 blue Scout creature token if a creature card is milled this way. Create a Treasure token if a land card is milled this way. Create a Weapon token if a nonland, noncreature card is milled this way. (A Weapon token is an Equipment artifact token with equip {2} and &quot;Equipped creature gets +1/+1.)</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/257t_Explore the Great Unknown.jpg" num="257" uuid="2857">HOD</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/257t_Explore the Great Unknown.jpg" num="257" uuid="2543">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1942,7 +1941,7 @@ At the beginning of each end step, create a 1/1 blue Scout creature token if you
 			<name>Meeting of Powers HOD</name>
 			<text>Choose two names. For each name, create a legendary 3/3 Knight creature token that is all colors with that name.
 Plainscycling {2}, Swampcycling {2}, Forestcycling {2} ({2}, Discard this card: Search your library for a Plains, Swamp, or Forest card, reveal it, put it into your hand, then shuffle.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/263t_Meeting of Powers.jpg" num="263" uuid="2858">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/263t_Meeting of Powers.jpg" num="263" uuid="2544">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1960,7 +1959,7 @@ Plainscycling {2}, Swampcycling {2}, Forestcycling {2} ({2}, Discard this card: 
 			<name>Fleshborne Horror HOD</name>
 			<text>Whenever Fleshborne Horror becomes blocked by a creature, each opponent loses 2 life and you gain 2 life.
 {2}{B}, Discard Fleshborne Horror: Draw a card, then choose a name. Create a legendary 3/3 Knight creature token that&apos;s all colors with that name in your reserves. ({3}: Put up to three tokens from your reserves onto the battlefield. Activate only as a sorcery.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/95t_Fleshborne Horror.jpg" num="95" uuid="2859">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/95t_Fleshborne Horror.jpg" num="95" uuid="2545">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1980,7 +1979,7 @@ Plainscycling {2}, Swampcycling {2}, Forestcycling {2} ({2}, Discard this card: 
 			<name>King&apos;s Rock Warden HOD</name>
 			<text>Whenever King&apos;s Rock Warden enters, create a 1/1 blue Scout creature token, a Treasure token, and a Clue token.
 Sacrifice a token: Surveil 2.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/61t_King&apos;s Rock Warden.jpg" num="61" uuid="2860">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/61t_King&apos;s Rock Warden.jpg" num="61" uuid="2546">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2002,7 +2001,7 @@ Sacrifice a token: Surveil 2.</text>
 			<name>Hexer&apos;s Cave HOD</name>
 			<text>When Hexer&apos;s Cave enters, create a Food token and a Clue token in your reserves. ({3}: Put up to three tokens from your reserves onto the battlefield. Activate only as a sorcery.)
 {T}: Add {C}.</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/296t_Hexer&apos;s Cave.jpg" num="296" uuid="2861">HOD</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/296t_Hexer&apos;s Cave.jpg" num="296" uuid="2547">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2022,7 +2021,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>Intisuyu&apos;s Armies HOD</name>
 			<text>At the beginning of your end step, create a 1/1 white Soldier creature token for each creature you control.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/3t_Intisuyu&apos;s Armies.jpg" num="3" uuid="2862">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/3t_Intisuyu&apos;s Armies.jpg" num="3" uuid="2548">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2041,7 +2040,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>White Soldier 11 HOD</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/6t_White Soldier 11.jpg" num="6" uuid="2863">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/6t_White Soldier 11.jpg" num="6" uuid="2549">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2060,7 +2059,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>The Sword of Perle HOD</name>
 			<text>The Sword of Perle has first strike as long as it&apos;s attacking.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/16t_The Sword of Perle.jpg" num="16" uuid="2864">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/16t_The Sword of Perle.jpg" num="16" uuid="2550">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2079,7 +2078,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>Scout HOD</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/9t_Scout.jpg" num="9" uuid="2865">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/9t_Scout.jpg" num="9" uuid="2551">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2097,7 +2096,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>The Gentle Giant HOD</name>
 			<text>Vigilance</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/17t_The Gentle Giant.jpg" num="17" uuid="2866">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/17t_The Gentle Giant.jpg" num="17" uuid="2552">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2116,7 +2115,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>Vance&apos;s Claw HOD</name>
 			<text>Deathtouch, lifelink</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/12t_Vance&apos;s Claw.jpg" num="12" uuid="2867">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/12t_Vance&apos;s Claw.jpg" num="12" uuid="2553">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2135,7 +2134,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>Lover to All HOD</name>
 			<text>Menace</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/13t_Lover to All.jpg" num="13" uuid="2868">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/13t_Lover to All.jpg" num="13" uuid="2554">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2154,7 +2153,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>The Diamond of the Nye HOD</name>
 			<text>The Diamond of the Nye can&apos;t be blocked.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/8t_The Diamond of the Nye.jpg" num="8" uuid="2869">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/8t_The Diamond of the Nye.jpg" num="8" uuid="2555">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2172,7 +2171,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>The Occultist HOD</name>
 			<text>Lifelink</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/4t_The Occultist.jpg" num="4" uuid="2870">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/4t_The Occultist.jpg" num="4" uuid="2556">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2191,7 +2190,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>Horror HOD</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/11t_Horror.jpg" num="11" uuid="2871">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/11t_Horror.jpg" num="11" uuid="2557">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2210,7 +2209,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>Army HOD</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/10t_Army.jpg" num="10" uuid="2872">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/10t_Army.jpg" num="10" uuid="2558">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2229,7 +2228,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>Red Soldier HOD</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/14t_Red Soldier.jpg" num="14" uuid="2873">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/14t_Red Soldier.jpg" num="14" uuid="2559">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2248,7 +2247,7 @@ Sacrifice a token: Surveil 2.</text>
 			<name>Reserves HOD</name>
 			<text>You put tokens that you create in your reserves here. They are not on the battlefield and don&apos;t trigger enter the battlefield abilities.
 {3}: Put up to three tokens from your reserves onto the battlefield. Activate only as a sorcery.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/2t_Reserves.jpg" num="2" uuid="2874">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/2t_Reserves.jpg" num="2" uuid="2560">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2266,7 +2265,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>Knight all colors HOD</name>
 			<text>Knight is all colors.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/19t_Knight all colors.jpg" num="19" uuid="2875">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/19t_Knight all colors.jpg" num="19" uuid="2561">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2293,7 +2292,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>Defender Soldier HOD</name>
 			<text>Defender</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/5t_Defender Soldier.jpg" num="5" uuid="2876">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/5t_Defender Soldier.jpg" num="5" uuid="2562">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2312,7 +2311,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>Green Knight HOD</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/18t_Green Knight.jpg" num="18" uuid="2877">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/18t_Green Knight.jpg" num="18" uuid="2563">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2330,7 +2329,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>The True Heir HOD</name>
 			<text>Lifelink</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/7t_The True Heir.jpg" num="7" uuid="2878">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/7t_The True Heir.jpg" num="7" uuid="2564">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2348,7 +2347,7 @@ Sacrifice a token: Surveil 2.</text>
 		<card>
 			<name>Treasure HOD</name>
 			<text>{T}, Sacrifice this artifact: Add one mana of any color.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/22t_Treasure.jpg" num="22" uuid="2879">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/22t_Treasure.jpg" num="22" uuid="2565">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2368,7 +2367,7 @@ Sacrifice a token: Surveil 2.</text>
 			<name>Weapon HOD</name>
 			<text>Equipped creature gets +1/+1.
 Equip {2}</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/23t_Weapon.jpg" num="23" uuid="2880">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/23t_Weapon.jpg" num="23" uuid="2566">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2388,7 +2387,7 @@ Equip {2}</text>
 		<card>
 			<name>Food HOD</name>
 			<text>{2}, {T}, Sacrifice this artifact: You gain 3 life.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/21t_Food.jpg" num="21" uuid="2881">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/21t_Food.jpg" num="21" uuid="2567">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2406,7 +2405,7 @@ Equip {2}</text>
 		<card>
 			<name>Clue HOD</name>
 			<text>{2}, Sacrifice this artifact: Draw a card.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/20t_Clue.jpg" num="20" uuid="2882">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/20t_Clue.jpg" num="20" uuid="2568">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2425,7 +2424,7 @@ Equip {2}</text>
 		<card>
 			<name>Spirit HOD</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/15t_Spirit.jpg" num="15" uuid="2883">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/15t_Spirit.jpg" num="15" uuid="2569">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2444,7 +2443,7 @@ Equip {2}</text>
 		<card>
 			<name>Heir Tracking HOD</name>
 			<text>Use this to see how close you are to receiving your Heir!</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/1t_Heir Tracking.jpg" num="1" uuid="2884">HOD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/1t_Heir Tracking.jpg" num="1" uuid="2570">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2462,7 +2461,7 @@ Equip {2}</text>
 			<name>Faerie Horror ITD</name>
 			<text>Flying
 This creature can&apos;t block.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/2t_Faerie Horror.jpg" num="2" uuid="2885">ITD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/2t_Faerie Horror.jpg" num="2" uuid="2571">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2480,7 +2479,7 @@ This creature can&apos;t block.</text>
 		<card>
 			<name>Horror ITD</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/3t_Horror.jpg" num="3" uuid="2886">ITD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/3t_Horror.jpg" num="3" uuid="2572">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2499,7 +2498,7 @@ This creature can&apos;t block.</text>
 		<card>
 			<name>Ringing Noise ITD</name>
 			<text>At the beginning of each opponents upkeep, for each creature they control, destroy that creature unless its controller pays {1}.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/4t_Ringing Noise.jpg" num="4" uuid="2887">ITD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/4t_Ringing Noise.jpg" num="4" uuid="2573">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2516,7 +2515,7 @@ This creature can&apos;t block.</text>
 		<card>
 			<name>Illusion ITD</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/5t_Illusion.jpg" num="5" uuid="2888">ITD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/5t_Illusion.jpg" num="5" uuid="2574">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2536,7 +2535,7 @@ This creature can&apos;t block.</text>
 			<name>Nightmare ITD</name>
 			<text>Lifelink
 This creature can&apos;t block.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/6t_Nightmare.jpg" num="6" uuid="2889">ITD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/6t_Nightmare.jpg" num="6" uuid="2575">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2554,7 +2553,7 @@ This creature can&apos;t block.</text>
 		<card>
 			<name>Everywhere ITD</name>
 			<text>This land has every basic land type.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/9t_Everywhere.jpg" num="9" uuid="2890">ITD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/9t_Everywhere.jpg" num="9" uuid="2576">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2572,7 +2571,7 @@ This creature can&apos;t block.</text>
 		<card>
 			<name>Echo ITD</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/1t_Echo.jpg" num="1" uuid="2891">ITD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/1t_Echo.jpg" num="1" uuid="2577">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2591,7 +2590,7 @@ This creature can&apos;t block.</text>
 			<name>Ancient Forerunner ITD</name>
 			<text>This creature has first strike as long as it&apos;s your turn.
 When this creature enters, it deals 1 damage to each opponent. It deals 2 damage instead if it has power 4 or greater.</text>
-			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/3t_Ancient Forerunner.jpg" num="3" uuid="2892">ITD</set>
+			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/3t_Ancient Forerunner.jpg" num="3" uuid="2578">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2610,7 +2609,7 @@ When this creature enters, it deals 1 damage to each opponent. It deals 2 damage
 		<card>
 			<name>Cloudscape Observer ITD</name>
 			<text>When this creature enters, return up to one target creature you don&apos;t control to its owner&apos;s hand.</text>
-			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/4t_Cloudscape Observer.jpg" num="4" uuid="2893">ITD</set>
+			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/4t_Cloudscape Observer.jpg" num="4" uuid="2579">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2630,7 +2629,7 @@ When this creature enters, it deals 1 damage to each opponent. It deals 2 damage
 			<name>Deepmind Oracle ITD</name>
 			<text>Flying
 When this creature enters, surveil X, where X is its power.</text>
-			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/5t_Deepmind Oracle.jpg" num="5" uuid="2894">ITD</set>
+			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/5t_Deepmind Oracle.jpg" num="5" uuid="2580">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2650,7 +2649,7 @@ When this creature enters, surveil X, where X is its power.</text>
 			<name>Emergent Anomaly ITD</name>
 			<text>Menace
 Whenever this creature attacks, tap up to one target creature.</text>
-			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/6t_Emergent Anomaly.jpg" num="6" uuid="2895">ITD</set>
+			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/6t_Emergent Anomaly.jpg" num="6" uuid="2581">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2670,7 +2669,7 @@ Whenever this creature attacks, tap up to one target creature.</text>
 			<name>Fracture of Divinity ITD</name>
 			<text>Vigilance
 Whenever an opponent casts a noncreature spell with mana value less than this creature&apos;s power, draw a card.</text>
-			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/7t_Fracture of Divinity.jpg" num="7" uuid="2896">ITD</set>
+			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/7t_Fracture of Divinity.jpg" num="7" uuid="2582">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2690,7 +2689,7 @@ Whenever an opponent casts a noncreature spell with mana value less than this cr
 			<name>Lammasu, Dream-Stilled ITD</name>
 			<text>Flying
 When this creature enters, return target instant or sorcery card from your graveyard to your hand.</text>
-			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/8t_Lammasu, Dream-Stilled.jpg" num="8" uuid="2897">ITD</set>
+			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/8t_Lammasu, Dream-Stilled.jpg" num="8" uuid="2583">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2709,7 +2708,7 @@ When this creature enters, return target instant or sorcery card from your grave
 		<card>
 			<name>Mechanised Hunter ITD</name>
 			<text>When this creature enters, you may put an artifact card with mana value X or less from your hand onto the battlefield, where X is this creature&apos;s power.</text>
-			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/9t_Mechanised Hunter.jpg" num="9" uuid="2898">ITD</set>
+			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/9t_Mechanised Hunter.jpg" num="9" uuid="2584">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2728,7 +2727,7 @@ When this creature enters, return target instant or sorcery card from your grave
 		<card>
 			<name>New-Life Acolyte ITD</name>
 			<text>Artifact spells you cast cost {1} less to cast. This effect can&apos;t reduce a spell&apos;s cost to less than 1.</text>
-			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/10t_New-Life Acolyte.jpg" num="10" uuid="2899">ITD</set>
+			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/10t_New-Life Acolyte.jpg" num="10" uuid="2585">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2747,7 +2746,7 @@ When this creature enters, return target instant or sorcery card from your grave
 		<card>
 			<name>Priest of Perfection ITD</name>
 			<text>Whenever you spend five or more mana to cast a spell, draw a card.</text>
-			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/11t_Priest of Perfection.jpg" num="11" uuid="2900">ITD</set>
+			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/11t_Priest of Perfection.jpg" num="11" uuid="2586">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2767,7 +2766,7 @@ When this creature enters, return target instant or sorcery card from your grave
 			<name>Shifting Silverscape ITD</name>
 			<text>Shifting Silverscape enters tapped if it isn&apos;t a creature.
 {T}: Add {C}.</text>
-			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/12t_Shifting Silverscape.jpg" num="12" uuid="2901">ITD</set>
+			<set rarity="masterpiece" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/12t_Shifting Silverscape.jpg" num="12" uuid="2587">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2787,7 +2786,7 @@ When this creature enters, return target instant or sorcery card from your grave
 			<name>Insect ITD</name>
 			<text>Flying
 This creature can&apos;t block.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/7t_Insect.jpg" num="7" uuid="2902">ITD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/7t_Insect.jpg" num="7" uuid="2588">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2805,7 +2804,7 @@ This creature can&apos;t block.</text>
 		<card>
 			<name>Desolation ITD</name>
 			<text>{T}: Add {C}.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/8t_Desolation.jpg" num="8" uuid="2903">ITD</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/8t_Desolation.jpg" num="8" uuid="2589">ITD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2823,7 +2822,7 @@ This creature can&apos;t block.</text>
 		<card>
 			<name>Wonder LAIR</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/1t_Wonder.jpg" num="1" uuid="2904">LAIR</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/1t_Wonder.jpg" num="1" uuid="2590">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2842,7 +2841,7 @@ This creature can&apos;t block.</text>
 			<name>Scar PTN</name>
 			<text>(When this boon triggers, it disappears. Even if you didn&apos;t pay the {1}.)
 When a creature you control dies, you may pay {1}. If you do, draw a card.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PTN-files/img/4t_Scar.jpg" num="4" uuid="2905">PTN</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PTN-files/img/4t_Scar.jpg" num="4" uuid="2591">PTN</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2879,7 +2878,7 @@ When a creature you control dies, you may pay {1}. If you do, draw a card.</text
 		<card>
 			<name>God Horror PTN</name>
 			<text>This creature can&apos;t block.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PTN-files/img/3t_God Horror.jpg" num="3" uuid="2906">PTN</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PTN-files/img/3t_God Horror.jpg" num="3" uuid="2592">PTN</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2899,7 +2898,7 @@ When a creature you control dies, you may pay {1}. If you do, draw a card.</text
 		<card>
 			<name>Cleric PTN</name>
 			<text>Sacrifice two other Clerics: Transform this creature. Activate only as a sorcery.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PTN-files/img/1t_Cleric.jpg" num="1" uuid="2907">PTN</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PTN-files/img/1t_Cleric.jpg" num="1" uuid="2593">PTN</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2919,7 +2918,7 @@ When a creature you control dies, you may pay {1}. If you do, draw a card.</text
 			<name>Foretell PTN</name>
 			<text>When a card becomes foretold its foretell cost is its mana cost if it doesn&apos;t have one. 
 Lands can&apos;t have a cost and are played normally.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PTN-files/img/2t_Foretell.jpg" num="2" uuid="2908">PTN</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PTN-files/img/2t_Foretell.jpg" num="2" uuid="2594">PTN</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2959,7 +2958,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 		<card>
 			<name>Angel PTN</name>
 			<text>Flying</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PTN-files/img/5t_Angel.jpg" num="5" uuid="2909">PTN</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PTN-files/img/5t_Angel.jpg" num="5" uuid="2595">PTN</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2977,7 +2976,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 		<card>
 			<name>Worm PTN</name>
 			<text>Deathtouch, toxic 1 (Players dealt combat damage by this creature also get a poison counter.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PTN-files/img/6t_Worm.jpg" num="6" uuid="2910">PTN</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PTN-files/img/6t_Worm.jpg" num="6" uuid="2596">PTN</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2996,7 +2995,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 		<card>
 			<name>Wolf PTN</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PTN-files/img/7t_Wolf.jpg" num="7" uuid="2911">PTN</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PTN-files/img/7t_Wolf.jpg" num="7" uuid="2597">PTN</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3014,7 +3013,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 		<card>
 			<name>Land PTN</name>
 			<text>{T}, Sacrifice this token: Add {R}.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PTN-files/img/8t_Land.jpg" num="8" uuid="2912">PTN</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PTN-files/img/8t_Land.jpg" num="8" uuid="2598">PTN</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3031,7 +3030,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 		<card>
 			<name>Vertex Reminder PVR</name>
 			<text></text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/317t_Vertex Reminder.jpg" num="317" uuid="2913">PVR</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/317t_Vertex Reminder.jpg" num="317" uuid="2599">PVR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3048,7 +3047,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 		<card>
 			<name>Bird PVR</name>
 			<text>Flying</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/4t_Bird.jpg" num="4" uuid="2914">PVR</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/4t_Bird.jpg" num="4" uuid="2600">PVR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3066,7 +3065,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 		<card>
 			<name>Treasure PVR</name>
 			<text>{T}, Sacrifice this artifact: Add one mana of any color.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/9t_Treasure.jpg" num="9" uuid="2915">PVR</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/9t_Treasure.jpg" num="9" uuid="2601">PVR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3084,7 +3083,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 		<card>
 			<name>Dinosaur PVR</name>
 			<text></text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/8t_Dinosaur.jpg" num="8" uuid="2916">PVR</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/8t_Dinosaur.jpg" num="8" uuid="2602">PVR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3102,7 +3101,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 		<card>
 			<name>Fractal Horror PVR</name>
 			<text></text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/1t_Fractal Horror.jpg" num="1" uuid="2917">PVR</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/1t_Fractal Horror.jpg" num="1" uuid="2603">PVR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3120,7 +3119,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 		<card>
 			<name>Fractal Reflection PVR</name>
 			<text>{T}: Add {G} or {U}.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/2t_Fractal Reflection.jpg" num="2" uuid="2918">PVR</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/2t_Fractal Reflection.jpg" num="2" uuid="2604">PVR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3138,7 +3137,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 		<card>
 			<name>Horror PVR</name>
 			<text>Prowess</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/6t_Horror.jpg" num="6" uuid="2919">PVR</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/6t_Horror.jpg" num="6" uuid="2605">PVR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3156,7 +3155,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 		<card>
 			<name>Human PVR</name>
 			<text></text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/3t_Human.jpg" num="3" uuid="2920">PVR</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/3t_Human.jpg" num="3" uuid="2606">PVR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3175,7 +3174,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 			<name>Nilvoid PVR</name>
 			<text>Hexproof
 {T}: Add one mana of any color.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/10t_Nilvoid.jpg" num="10" uuid="2921">PVR</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/10t_Nilvoid.jpg" num="10" uuid="2607">PVR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3194,7 +3193,7 @@ Lands can&apos;t have a cost and are played normally.</text>
 			<name>Fractal Bird PVR</name>
 			<text>Flying
 This creature can&apos;t block.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/5t_Fractal Bird.jpg" num="5" uuid="2922">PVR</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/5t_Fractal Bird.jpg" num="5" uuid="2608">PVR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3212,7 +3211,7 @@ This creature can&apos;t block.</text>
 		<card>
 			<name>Red Dinosaur PVR</name>
 			<text>This creature can&apos;t block.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/7t_Red Dinosaur.jpg" num="7" uuid="2923">PVR</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/7t_Red Dinosaur.jpg" num="7" uuid="2609">PVR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3230,7 +3229,7 @@ This creature can&apos;t block.</text>
 		<card>
 			<name>Scout TZE-01</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/TZE-01-files/img/5t_Scout.jpg" num="5" uuid="2924">TZE-01</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/TZE-01-files/img/5t_Scout.jpg" num="5" uuid="2610">TZE-01</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3248,7 +3247,7 @@ This creature can&apos;t block.</text>
 		<card>
 			<name>Scout TZE-01</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/TZE-01-files/img/6t_Scout.jpg" num="6" uuid="2925">TZE-01</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/TZE-01-files/img/6t_Scout.jpg" num="6" uuid="2611">TZE-01</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3266,7 +3265,7 @@ This creature can&apos;t block.</text>
 		<card>
 			<name>Human TZE-01</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/TZE-01-files/img/4t_Human.jpg" num="4" uuid="2926">TZE-01</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/TZE-01-files/img/4t_Human.jpg" num="4" uuid="2612">TZE-01</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3284,7 +3283,7 @@ This creature can&apos;t block.</text>
 		<card>
 			<name>Fractal Horror TZE-01</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/TZE-01-files/img/2t_Fractal Horror.jpg" num="2" uuid="2927">TZE-01</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/TZE-01-files/img/2t_Fractal Horror.jpg" num="2" uuid="2613">TZE-01</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3303,7 +3302,7 @@ This creature can&apos;t block.</text>
 			<name>White Base TZE-01</name>
 			<text>{T}: Add {C}.
 {3}, {T}, Sacrifice this land: Return target creature card with mana value 2 or less from your graveyard to the battlefield tapped.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/TZE-01-files/img/7t_White Base.jpg" num="7" uuid="2928">TZE-01</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/TZE-01-files/img/7t_White Base.jpg" num="7" uuid="2614">TZE-01</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3320,7 +3319,7 @@ This creature can&apos;t block.</text>
 		<card>
 			<name>Cleric TZE-01</name>
 			<text>As a sorcery, sacrifice two other Clerics: Transform into a 4/4 God Horror that can&apos;t block.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/TZE-01-files/img/1t_Cleric.jpg" num="1" uuid="2929">TZE-01</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/TZE-01-files/img/1t_Cleric.jpg" num="1" uuid="2615">TZE-01</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3338,7 +3337,7 @@ This creature can&apos;t block.</text>
 		<card>
 			<name>God Horror TZE-01</name>
 			<text>This creature can&apos;t block.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/TZE-01-files/img/3t_God Horror.jpg" num="3" uuid="2930">TZE-01</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/TZE-01-files/img/3t_God Horror.jpg" num="3" uuid="2616">TZE-01</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3354,648 +3353,9 @@ This creature can&apos;t block.</text>
 			<token>1</token>
 		</card>
 		<card>
-			<name>Gateway Guardian VNM</name>
-			<text>When this creature enters, trace its skill into your hand. (Create that card. Traces are cards that become copies when they enter public zones.)
-[b]Subdued Rift[/b] {WB}| Skill Sorcery
-Create a 1/1 black and white Cat enchantment creature token.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/96t_Gateway Guardian.jpg" num="96" uuid="2931">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Creature – Human Warrior Spellshaper</type>
-				<maintype>Creature</maintype>
-				<manacost>1B</manacost>
-				<cmc>2</cmc>
-				<colors>B</colors>
-				<coloridentity>WB</coloridentity>
-				<pt>2/1</pt>
-			</prop>
-			<tablerow>2</tablerow>
-			<related count="conjure" persistent="">Subdued Rift VNM</related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Avlod Bulwark VNM</name>
-			<text>When this creature enters or dies, trace its skill into your hand. (Create that card. Traces are cards that become copies when they enter public zones.)
-[b]Subdued Rift[/b] {WB}| Skill Sorcery
-Create a 1/1 black and white Cat enchantment creature token.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/88t_Avlod Bulwark.jpg" num="88" uuid="2932">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Creature – Human Warlock Spellshaper</type>
-				<maintype>Creature</maintype>
-				<manacost>4BB</manacost>
-				<cmc>6</cmc>
-				<colors>B</colors>
-				<coloridentity>WB</coloridentity>
-				<pt>4/4</pt>
-			</prop>
-			<tablerow>2</tablerow>
-			<related count="conjure" persistent="">Subdued Rift VNM</related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Voidstone Shard VNM</name>
-			<text>When this enchantment enters, scry 2.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/5t_Voidstone Shard.jpg" num="5" uuid="2933">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Enchantment</type>
-				<maintype>Enchantment</maintype>
-				<manacost>2</manacost>
-				<cmc>2</cmc>
-				<colors></colors>
-				<coloridentity></coloridentity>
-			</prop>
-			<tablerow>1</tablerow>
-			<reverse-related>Breaking the Mold</reverse-related>
-			<reverse-related>Dust to Life</reverse-related>
-			<reverse-related>Eternity Siphon</reverse-related>
-			<reverse-related>Mordel Patrol</reverse-related>
-			<reverse-related>Outlands Respite</reverse-related>
-			<reverse-related count="2">Powerstone Claw</reverse-related>
-			<reverse-related>Prismatism</reverse-related>
-			<reverse-related>Purge the Clanless</reverse-related>
-			<reverse-related>Razorshell Drake</reverse-related>
-			<reverse-related>Rift Burn</reverse-related>
-			<reverse-related>Riftborn Flames</reverse-related>
-			<reverse-related>Rip to Yesterday</reverse-related>
-			<reverse-related>Rip to Today</reverse-related>
-			<reverse-related>Rip to Tomorrow</reverse-related>
-			<reverse-related count="2">Ripped into Eternity</reverse-related>
-			<reverse-related>Rush Down</reverse-related>
-			<reverse-related>Suffused Memories</reverse-related>
-			<reverse-related>Triumphant Riftcaller</reverse-related>
-			<reverse-related>Waterspout</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Reformed Rift VNM</name>
-			<text>(Created by Raze the Clanless.)
-{T}: Add one mana of any color.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/17t_Reformed Rift.jpg" num="17" uuid="2934">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Trace Land</type>
-				<maintype>Land</maintype>
-				<manacost></manacost>
-				<cmc>0</cmc>
-				<colors></colors>
-				<coloridentity></coloridentity>
-			</prop>
-			<tablerow>0</tablerow>
-			<reverse-related>Raze the Clanless</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Subdued Rift VNM</name>
-			<text>Create a 1/1 black and white Cat enchantment creature token. (Traces are cards that become copies when they enter a public zone.)</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/12t_Subdued Rift.jpg" num="12" uuid="2935">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Skill Sorcery</type>
-				<maintype>Sorcery</maintype>
-				<manacost>W/B</manacost>
-				<cmc>1</cmc>
-				<colors>WB</colors>
-				<coloridentity>WB</coloridentity>
-			</prop>
-			<tablerow>3</tablerow>
-			<reverse-related>Rift Tender</reverse-related>
-			<reverse-related>Outlands Riftbearer</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Hollow Graze VNM</name>
-			<text>Target creature gets -2/-0 until end of turn. Cast only outside of combat. (Traces are cards that become copies when they enter a public zone.)</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/8t_Hollow Graze.jpg" num="8" uuid="2936">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Skill Instant</type>
-				<maintype>Instant</maintype>
-				<manacost>U/B</manacost>
-				<cmc>1</cmc>
-				<colors>UB</colors>
-				<coloridentity>UB</coloridentity>
-			</prop>
-			<tablerow>3</tablerow>
-			<reverse-related>Malevolent Naginata</reverse-related>
-			<reverse-related>Due Dismissal</reverse-related>
-			<reverse-related>Avakin Hazeweaver</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Ever Vigilant VNM</name>
-			<text>Target creature gains vigilance and can&apos;t be blocked by creatures with power 2 or less until end of turn. (Traces are cards that become copies when they enter a public zone.)</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/7t_Ever Vigilant.jpg" num="7" uuid="2937">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Skill Sorcery</type>
-				<maintype>Sorcery</maintype>
-				<manacost>1G/U</manacost>
-				<cmc>2</cmc>
-				<colors>UG</colors>
-				<coloridentity>UG</coloridentity>
-			</prop>
-			<tablerow>3</tablerow>
-			<reverse-related>Outlands Diviner</reverse-related>
-			<reverse-related>Outlands Protector</reverse-related>
-			<reverse-related>Outlands Wanderer</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Steady Growth VNM</name>
-			<text>Enchant land
-Enchanted land has &quot;{T}: Add one mana of any color.&quot;</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/16t_Steady Growth.jpg" num="16" uuid="2938">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Enchantment</type>
-				<maintype>Enchantment</maintype>
-				<manacost>B/G</manacost>
-				<cmc>1</cmc>
-				<colors>BG</colors>
-				<coloridentity>BG</coloridentity>
-			</prop>
-			<tablerow>1</tablerow>
-			<reverse-related>Keeper of Calm</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Prepared Strike VNM</name>
-			<text>Target creature you control gets +1/+0 and gains first strike until end of turn. (Traces are cards that become copies when they enter a public zone.)</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/5t_Prepared Strike.jpg" num="5" uuid="2939">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Skill Sorcery</type>
-				<maintype>Sorcery</maintype>
-				<manacost>R</manacost>
-				<cmc>1</cmc>
-				<colors>R</colors>
-				<coloridentity>R</coloridentity>
-			</prop>
-			<tablerow>3</tablerow>
-			<reverse-related>Frontline Assaulter</reverse-related>
-			<reverse-related>Flaming Iron</reverse-related>
-			<reverse-related>Minotaur Outlander</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>In the Moment VNM</name>
-			<text>Exile the top card of your library. You may play it this turn. (Traces are cards that become copies when they enter a public zone.)</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/4t_In the Moment.jpg" num="4" uuid="2940">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Skill Sorcery</type>
-				<maintype>Sorcery</maintype>
-				<manacost>1R</manacost>
-				<cmc>2</cmc>
-				<colors>R</colors>
-				<coloridentity>R</coloridentity>
-			</prop>
-			<tablerow>3</tablerow>
-			<related>Can Be Cast From Exile EXPT</related>
-			<reverse-related>Mordel Drillmaster</reverse-related>
-			<reverse-related>Pinnacle of Vinimroth</reverse-related>
-			<reverse-related>Mordel Excursionist</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Reshape Will VNM</name>
-			<text>Tap target non-Aura enchantment. It also becomes a 3/3 creature. Cast this spell only outside of combat. (Traces are cards that become copies when they enter a public zone.)</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/11t_Reshape Will.jpg" num="11" uuid="2941">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Skill Instant</type>
-				<maintype>Instant</maintype>
-				<manacost>1W/U</manacost>
-				<cmc>2</cmc>
-				<colors>WU</colors>
-				<coloridentity>WU</coloridentity>
-			</prop>
-			<tablerow>3</tablerow>
-			<reverse-related>Fadove Willshaper</reverse-related>
-			<reverse-related>Avakin Watcher</reverse-related>
-			<reverse-related>Skillful Blade</reverse-related>
-			<reverse-related>Windshaper Drake</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Readied Assault VNM</name>
-			<text>Until end of turn, creatures you control get +1/+1 and can attack as though they didn&apos;t have defender. (Traces are cards that become copies when they enter a public zone.)</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/10t_Readied Assault.jpg" num="10" uuid="2942">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Trace Skill Sorcery</type>
-				<maintype>Sorcery</maintype>
-				<manacost>2R/W</manacost>
-				<cmc>3</cmc>
-				<colors>WR</colors>
-				<coloridentity>WR</coloridentity>
-			</prop>
-			<tablerow>3</tablerow>
-			<reverse-related>Fadove Tracker</reverse-related>
-			<reverse-related>Warforged Herald</reverse-related>
-			<reverse-related>Chromaboon Blade</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Military Training VNM</name>
-			<text>Put a +1/+1 counter on target creature you control. Cast only outside of combat. (Traces are cards that become copies when they enter a public zone.)</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/9t_Military Training.jpg" num="9" uuid="2943">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Skill Instant</type>
-				<maintype>Instant</maintype>
-				<manacost>G/W</manacost>
-				<cmc>1</cmc>
-				<colors>WG</colors>
-				<coloridentity>WG</coloridentity>
-			</prop>
-			<tablerow>3</tablerow>
-			<reverse-related>Fadove Trainer</reverse-related>
-			<reverse-related>Fadove Drillmaster</reverse-related>
-			<reverse-related>Bruin Mentor</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>White Drake VNM</name>
-			<text>Flying</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/6t_White Drake.jpg" num="6" uuid="2944">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Token Creature – Drake</type>
-				<maintype>Creature</maintype>
-				<manacost></manacost>
-				<cmc>0</cmc>
-				<colors>W</colors>
-				<coloridentity></coloridentity>
-				<pt>2/2</pt>
-			</prop>
-			<tablerow>2</tablerow>
-			<reverse-related>Breach of Protection</reverse-related>
-			<reverse-related>Drake Rider</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Icebound Reinforcements Copy VNM</name>
-			<text>Whenever you cast a noncreature spell, put a +1/+1 counter on this creature.
-{1}{GU}{GU}, Remove three +1/+1 counters from this creature: Create a token that&apos;s a copy of this creature.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/15t_Icebound Reinforcements Copy.jpg" num="15" uuid="2945">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Token Creature – Human Scout</type>
-				<maintype>Creature</maintype>
-				<manacost>1G/UG/U</manacost>
-				<cmc>3</cmc>
-				<colors>UG</colors>
-				<coloridentity>UG</coloridentity>
-				<pt>2/2</pt>
-			</prop>
-			<tablerow>2</tablerow>
-			<reverse-related>Icebound Reinforcements</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Luminous VNM</name>
-			<text>If you control four permanents of the same color, you&apos;ve illuminated that color for the rest of the game.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/1t_Luminous.jpg" num="1" uuid="2946">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Token Reminder</type>
-				<maintype>Reminder</maintype>
-				<manacost></manacost>
-				<cmc>0</cmc>
-				<colors></colors>
-				<coloridentity></coloridentity>
-			</prop>
-			<tablerow>1</tablerow>
-			<reverse-related>Abrupt Death</reverse-related>
-			<reverse-related>Aeon Awakener</reverse-related>
-			<reverse-related>Avakin Opportunist</reverse-related>
-			<reverse-related>Avakin Riftwalker</reverse-related>
-			<reverse-related>Boon of Roduth</reverse-related>
-			<reverse-related>Conscripted by the Clanless</reverse-related>
-			<reverse-related>Cursory Casualty</reverse-related>
-			<reverse-related>Drake Wrangler</reverse-related>
-			<reverse-related>Ephemeral Ordinance</reverse-related>
-			<reverse-related>Evanescent Impasse</reverse-related>
-			<reverse-related>Fadove Initiate</reverse-related>
-			<reverse-related>Fleeting Ruin</reverse-related>
-			<reverse-related>Impetuous Eradication</reverse-related>
-			<reverse-related>Outlands Traveller</reverse-related>
-			<reverse-related>Prismatic Powerstone</reverse-related>
-			<reverse-related>Rebuke the Foul</reverse-related>
-			<reverse-related>Rifttouched Ursine</reverse-related>
-			<reverse-related>Search For Wisdom</reverse-related>
-			<reverse-related>Stalwart Resolution</reverse-related>
-			<reverse-related>Study the Rifts</reverse-related>
-			<reverse-related>Sublime Liquidation</reverse-related>
-			<reverse-related>Torch</reverse-related>
-			<reverse-related>Transient Eternity</reverse-related>
-			<reverse-related>Transitory Refuge</reverse-related>
-			<reverse-related>Untamed Drake</reverse-related>
-			<reverse-related>Urkial, Outlands Clanleader</reverse-related>
-			<reverse-related>Vanishing Resolve</reverse-related>
-			<reverse-related>Verem-Volcano Rumbler</reverse-related>
-			<reverse-related>Weight of Betrayal</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Cat Token VNM</name>
-			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/14t_Cat Token.jpg" num="14" uuid="2947">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Token Enchantment Creature – Cat</type>
-				<maintype>Creature</maintype>
-				<manacost></manacost>
-				<cmc>0</cmc>
-				<colors>WB</colors>
-				<coloridentity></coloridentity>
-				<pt>1/1</pt>
-			</prop>
-			<tablerow>2</tablerow>
-			<reverse-related>Kier, Acolyte of Avlod Respite</reverse-related>
-			<reverse-related>Path of the Rift</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Warped Exploration VNM</name>
-			<text>Trace a basic land of any type into your hand. (Create that card. Traces are cards that become copies when they enter public zones.)</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/1t_Warped Exploration.jpg" num="1" uuid="2948">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Skill Sorcery</type>
-				<maintype>Sorcery</maintype>
-				<manacost>2</manacost>
-				<cmc>2</cmc>
-				<colors></colors>
-				<coloridentity></coloridentity>
-			</prop>
-			<tablerow>3</tablerow>
-			<reverse-related>Wings of New Horizons</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Blue Drake VNM</name>
-			<text>Flying
-This creature can&apos;t block.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/8t_Blue Drake.jpg" num="8" uuid="2949">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Token Creature – Drake</type>
-				<maintype>Creature</maintype>
-				<manacost></manacost>
-				<cmc>0</cmc>
-				<colors>U</colors>
-				<coloridentity></coloridentity>
-				<pt>1/1</pt>
-			</prop>
-			<tablerow>2</tablerow>
-			<reverse-related count="2">Aerial Roost</reverse-related>
-			<reverse-related>Drake Wrangler</reverse-related>
-			<reverse-related>Path of the Roost</reverse-related>
-			<reverse-related>Melodia, Voidtouched</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Harsh Reprise VNM</name>
-			<text>Each opponent loses 2 life. (Traces are cards that become copies when they enter a public zone.)</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/3t_Harsh Reprise.jpg" num="3" uuid="2950">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Skill Instant</type>
-				<maintype>Instant</maintype>
-				<manacost>B</manacost>
-				<cmc>1</cmc>
-				<colors>B</colors>
-				<coloridentity>B</coloridentity>
-			</prop>
-			<tablerow>3</tablerow>
-			<reverse-related>Avakin Avenger</reverse-related>
-			<reverse-related>Avakin Mentor</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Cut from Void VNM</name>
-			<text>Scry 1, then draw a card. (Traces are cards that become copies when they enter a public zone.)</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/2t_Cut from Void.jpg" num="2" uuid="2951">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Skill Instant</type>
-				<maintype>Instant</maintype>
-				<manacost>2U</manacost>
-				<cmc>3</cmc>
-				<colors>U</colors>
-				<coloridentity>U</coloridentity>
-			</prop>
-			<tablerow>3</tablerow>
-			<reverse-related>Kaln-Ocean Cloak</reverse-related>
-			<reverse-related>Sage of Truths</reverse-related>
-			<reverse-related>Storm Bearer</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Sanctum Reminder VNM</name>
-			<text>Before the game starts, place your sanctum here face down. [b]This is not an ordered deck[/b]. You can look at your sanctum at any time.
-Your sanctum consists of up to seven basic land cards and unique nonbasic cards that can start in the sanctum.
-You can move cards in and out of your sanctum in sideboarding, provided that all the cards in it can start there.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/3t_Sanctum Reminder.jpg" num="3" uuid="2952">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Reminder</type>
-				<maintype>Reminder</maintype>
-				<manacost></manacost>
-				<cmc>0</cmc>
-				<colors></colors>
-				<coloridentity></coloridentity>
-			</prop>
-			<tablerow>1</tablerow>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Pathbound VNM</name>
-			<text>Pathbound cards in your sanctum count towards deck building costs when creating a starting deck.
-Each pathbound card in your sanctum must be unique. You may have only five pathbound cards in your sanctum at the beginning of the game.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/2t_Pathbound.jpg" num="2" uuid="2953">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Reminder</type>
-				<maintype>Reminder</maintype>
-				<manacost></manacost>
-				<cmc>0</cmc>
-				<colors></colors>
-				<coloridentity></coloridentity>
-			</prop>
-			<tablerow>1</tablerow>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Icon VNM</name>
-			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/12t_Icon.jpg" num="12" uuid="2954">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Token Enchantment Creature – Icon</type>
-				<maintype>Creature</maintype>
-				<manacost></manacost>
-				<cmc>0</cmc>
-				<colors>GI</colors>
-				<coloridentity></coloridentity>
-				<pt>X/X</pt>
-			</prop>
-			<tablerow>2</tablerow>
-			<reverse-related>Splendid Genesis</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Black Wurm VNM</name>
-			<text>Deathtouch</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/9t_Black Wurm.jpg" num="9" uuid="2955">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Token Creature – Wurm</type>
-				<maintype>Creature</maintype>
-				<manacost></manacost>
-				<cmc>0</cmc>
-				<colors>B</colors>
-				<coloridentity></coloridentity>
-				<pt>1/1</pt>
-			</prop>
-			<tablerow>2</tablerow>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Green Wurm VNM</name>
-			<text>Reach</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/11t_Green Wurm.jpg" num="11" uuid="2956">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Token Creature – Wurm</type>
-				<maintype>Creature</maintype>
-				<manacost></manacost>
-				<cmc>0</cmc>
-				<colors>G</colors>
-				<coloridentity></coloridentity>
-				<pt>1/1</pt>
-			</prop>
-			<tablerow>2</tablerow>
-			<reverse-related>Bruin Clankeeper</reverse-related>
-			<reverse-related>Bulwark of the Thicket</reverse-related>
-			<reverse-related>Path of the Mighty</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Red Wurm VNM</name>
-			<text>Haste</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/10t_Red Wurm.jpg" num="10" uuid="2957">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Token Creature – Wurm</type>
-				<maintype>Creature</maintype>
-				<manacost></manacost>
-				<cmc>0</cmc>
-				<colors>R</colors>
-				<coloridentity></coloridentity>
-				<pt>1/1</pt>
-			</prop>
-			<tablerow>2</tablerow>
-			<reverse-related count="2">Unexpected Discovery</reverse-related>
-			<reverse-related>Brood Protector</reverse-related>
-			<reverse-related>Bulwark of the Thicket</reverse-related>
-			<reverse-related>Path of the Brood</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>White Wurm VNM</name>
-			<text></text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/7t_White Wurm.jpg" num="7" uuid="2958">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Token Creature – Wurm</type>
-				<maintype>Creature</maintype>
-				<manacost></manacost>
-				<cmc>0</cmc>
-				<colors>W</colors>
-				<coloridentity></coloridentity>
-				<pt>1/1</pt>
-			</prop>
-			<tablerow>2</tablerow>
-			<reverse-related count="2">Will of Roduth</reverse-related>
-			<reverse-related count="2">Oathkeep Wurm</reverse-related>
-			<reverse-related>Khestri, Fadove Clanleader</reverse-related>
-			<reverse-related>Path of the Proud</reverse-related>
-			<reverse-related count="2">Triumphant Entrance</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Trace Reminder VNM</name>
-			<text>Traces are copies of the spell that they traced in a non-public zone (Hand, Library, and Sanctum). When played or cast, they become tokens.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/4t_Trace Reminder.jpg" num="4" uuid="2959">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Reminder</type>
-				<maintype>Reminder</maintype>
-				<manacost></manacost>
-				<cmc>0</cmc>
-				<colors></colors>
-				<coloridentity></coloridentity>
-			</prop>
-			<tablerow>1</tablerow>
-			<token>1</token>
-		</card>
-		<card>
-			<name>Icon 22 VNM</name>
-			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/13t_Icon 22.jpg" num="13" uuid="2960">VNM</set>
-			<prop>
-				<layout>normal</layout>
-				<side>front</side>
-				<type>Token Enchantment Creature – Icon</type>
-				<maintype>Creature</maintype>
-				<manacost></manacost>
-				<cmc>0</cmc>
-				<colors>BI</colors>
-				<coloridentity></coloridentity>
-				<pt>2/2</pt>
-			</prop>
-			<tablerow>2</tablerow>
-			<reverse-related>Impunity of Souls</reverse-related>
-			<token>1</token>
-		</card>
-		<card>
 			<name>Dragon WAW</name>
 			<text>Flying</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/16t_Dragon.jpg" num="16" uuid="2961">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/16t_Dragon.jpg" num="16" uuid="2617">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4014,7 +3374,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 		<card>
 			<name>Memory of Home WAW</name>
 			<text>Whenever a creature you control dies, you may create an X/X black Spirit creature token that can&apos;t block, where X is its mana value. Do this only once on each of your turns.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/13t_Memory of Home.jpg" num="13" uuid="2962">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/13t_Memory of Home.jpg" num="13" uuid="2618">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4032,7 +3392,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 		<card>
 			<name>Spirit Token WAW</name>
 			<text>This creature can&apos;t block.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/15t_Spirit Token.jpg" num="15" uuid="2963">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/15t_Spirit Token.jpg" num="15" uuid="2619">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4055,7 +3415,7 @@ Each pathbound card in your sanctum must be unique. You may have only five pathb
 			<name>Story of a Dead Plane WAW</name>
 			<text>This enchantment is all colors.
 Sacrifice this enchantment: Until end of turn, lands you control gain &quot;{T}: Add one mana of any color.&quot;</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/21t_Story of a Dead Plane.jpg" num="21" uuid="2964">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/21t_Story of a Dead Plane.jpg" num="21" uuid="2620">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4073,7 +3433,7 @@ Sacrifice this enchantment: Until end of turn, lands you control gain &quot;{T}:
 		<card>
 			<name>Wonder Archon WAW</name>
 			<text>This creature is all colors.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/23t_Wonder Archon.jpg" num="23" uuid="2965">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/23t_Wonder Archon.jpg" num="23" uuid="2621">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4094,7 +3454,7 @@ Sacrifice this enchantment: Until end of turn, lands you control gain &quot;{T}:
 			<name>New Tensuo Luminary WAW</name>
 			<text>Whenever another creature with base power 1 or less enters under your control, put a +1/+1 counter on this creature. This ability triggers only once each turn.
 (This token&apos;s mana value is {W}.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/5t_New Tensuo Luminary.jpg" num="5" uuid="2966">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/5t_New Tensuo Luminary.jpg" num="5" uuid="2622">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4114,7 +3474,7 @@ Sacrifice this enchantment: Until end of turn, lands you control gain &quot;{T}:
 			<text>You may look at the top card of your library any time. As long as you control another permanent named Lakebed Wrudge, you may play lands and cast spells from the top of your library.
 {T}: Mill a card.
 (This token&apos;s mana cost is {1}{U}.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/9t_Lakebed Wrudge.jpg" num="9" uuid="2967">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/9t_Lakebed Wrudge.jpg" num="9" uuid="2623">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4133,7 +3493,7 @@ Sacrifice this enchantment: Until end of turn, lands you control gain &quot;{T}:
 		<card>
 			<name>Beast WAW</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/17t_Beast.jpg" num="17" uuid="2968">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/17t_Beast.jpg" num="17" uuid="2624">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4153,7 +3513,7 @@ Sacrifice this enchantment: Until end of turn, lands you control gain &quot;{T}:
 			<text>Flying
 When this creature enters, draw a card.
 (This token&apos;s mana cost is {2}{U}.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/8t_Cloudeater Drake.jpg" num="8" uuid="2969">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/8t_Cloudeater Drake.jpg" num="8" uuid="2625">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4171,7 +3531,7 @@ When this creature enters, draw a card.
 		<card>
 			<name>Copy WAW</name>
 			<text>(This token can be used to represent a token that&apos;s a copy of a permanent.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/2t_Copy.jpg" num="2" uuid="2970">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/2t_Copy.jpg" num="2" uuid="2626">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4189,7 +3549,7 @@ When this creature enters, draw a card.
 			<name>Demon WAW</name>
 			<text>Flying
 This creature can&apos;t block.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/12t_Demon.jpg" num="12" uuid="2971">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/12t_Demon.jpg" num="12" uuid="2627">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4209,7 +3569,7 @@ This creature can&apos;t block.</text>
 			<name>Flowering Germinus WAW</name>
 			<text>When Flowering Germinus enters, creatures you control with base power 1 or less get +1/+1 and gain vigilance until end of turn.
 (This token&apos;s mana cost is {1}{GW}{GW}.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/24t_Flowering Germinus.jpg" num="24" uuid="2972">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/24t_Flowering Germinus.jpg" num="24" uuid="2628">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4229,7 +3589,7 @@ This creature can&apos;t block.</text>
 			<text>Vigilance
 When this creature enters, target creature gets +X/+X until end of turn, where X is the number of creatures you control.
 (This token&apos;s mana cost is {5}{G}.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/18t_Gilded Ancient.jpg" num="18" uuid="2973">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/18t_Gilded Ancient.jpg" num="18" uuid="2629">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4248,7 +3608,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 			<name>Ilcan Keyseeker WAW</name>
 			<text>When this creature enters, untap target creature and put a +1/+1 counter on it. If that creature is a Wonder, put an additional +1/+1 counter on it.
 (This token&apos;s mana cost is {1}{W}.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/3t_Ilcan Keyseeker.jpg" num="3" uuid="2974">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/3t_Ilcan Keyseeker.jpg" num="3" uuid="2630">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4267,7 +3627,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 			<name>Kindly Skywinder WAW</name>
 			<text>When this creature enters, target creature you control gains flying until end of turn.
 (This token&apos;s mana cost is {3}{W}.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/4t_Kindly Skywinder.jpg" num="4" uuid="2975">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/4t_Kindly Skywinder.jpg" num="4" uuid="2631">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4286,7 +3646,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 			<name>Music of the Deepholt WAW</name>
 			<text>Whenever you cast a noncreature spell, target creature you control gets +1/+1 until end of turn.
 (This token&apos;s mana cost is {2}{U}.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/10t_Music of the Deepholt.jpg" num="10" uuid="2976">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/10t_Music of the Deepholt.jpg" num="10" uuid="2632">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4305,7 +3665,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 			<name>New Tensuo Clergy WAW</name>
 			<text>Whenever this creature or another creature you control dies, each opponent loses 1 life and you gain 1 life.
 (This token&apos;s mana cost is {2}{B}.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/14t_New Tensuo Clergy.jpg" num="14" uuid="2977">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/14t_New Tensuo Clergy.jpg" num="14" uuid="2633">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4324,7 +3684,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 			<name>New Tensuo Vanguard WAW</name>
 			<text>When this creature enters, creatures you control get +1/+0 and gain first strike until end of turn.
 (This token&apos;s mana cost is {4}{W}.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/6t_New Tensuo Vanguard.jpg" num="6" uuid="2978">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/6t_New Tensuo Vanguard.jpg" num="6" uuid="2634">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4342,7 +3702,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 		<card>
 			<name>Wonder WAW</name>
 			<text>This creature is all colors.</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/22t_Wonder.jpg" num="22" uuid="2979">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/22t_Wonder.jpg" num="22" uuid="2635">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4372,7 +3732,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 			<name>Redefinition WAW</name>
 			<text>When this creature enters, up to one target creature&apos;s power and toughness each become equal to this creature&apos;s power and toughness until this creature leaves the battlefield.
 (This token&apos;s mana cost is {3}{U}.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/11t_Redefinition.jpg" num="11" uuid="2980">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/11t_Redefinition.jpg" num="11" uuid="2636">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4392,7 +3752,7 @@ When this creature enters, target creature gets +X/+X until end of turn, where X
 			<text>Flash
 When this enchantment enters, exile target nonland permanent you don&apos;t control until this enchantment leaves the battlefield.
 (This token&apos;s mana cost is {3}{W}.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/7t_Stardust Haze.jpg" num="7" uuid="2981">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/7t_Stardust Haze.jpg" num="7" uuid="2637">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4412,7 +3772,7 @@ When this enchantment enters, exile target nonland permanent you don&apos;t cont
 			<text>During your turn, this creature has indestructible and vigilance.
 This creature gets +1/+0 for each other creature you control.
 (This token&apos;s mana cost is {4}{W}.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/1t_Ageless Caretaker.jpg" num="1" uuid="2982">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/1t_Ageless Caretaker.jpg" num="1" uuid="2638">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4431,7 +3791,7 @@ This creature gets +1/+0 for each other creature you control.
 			<name>New Tensuo Physician WAW</name>
 			<text>When this creature enters, return target permanent card from your graveyard to your hand. If it was a land or multicolored card, you gain 5 life.
 (This token&apos;s mana cost is {4}{G}.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/19t_New Tensuo Physician.jpg" num="19" uuid="2983">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/19t_New Tensuo Physician.jpg" num="19" uuid="2639">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4451,7 +3811,7 @@ This creature gets +1/+0 for each other creature you control.
 			<text>This creature can&apos;t be blocked by more than one creature.
 Augmented – At the beginning of combat on your turn, if you&apos;ve spent {W}{U}{B}{R}{G} to cast spells this turn, put a number of +1/+1 counters on target creature equal to this creature&apos;s power.
 (This token&apos;s mana cost is {4}{G}.)</text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/20t_Vrep.jpg" num="20" uuid="2984">WAW</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/20t_Vrep.jpg" num="20" uuid="2640">WAW</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
