@@ -212,7 +212,6 @@
 	<script src="src/js/search.js"></script>
 	<script src="src/js/img-container-defs.js"></script>
 	<script>
-		window.onload()
 		// initialize variables
 		let search_results = [];
 		let card_list_arrayified = [];
@@ -223,7 +222,6 @@
 		let active_card = [];
 		let sets_json = {};
 		let collection_copies = {};
-		let gradients = [];
 		let all_cards_stats;
 		const on_cl_page = false;
 
@@ -495,8 +493,6 @@
 					document.getElementById("deck-name").value = localStorage.getItem("info.lastdeck");
 				}
 			}			
-
-			setGradient(localStorage.getItem("settings.gradient"));
 
 			// If a deck name is not imported, set the name to 'Untitled Deck'
 			if (document.getElementById("deck-name").value == "undefined" || document.getElementById("deck-name").value == "") {
@@ -1457,8 +1453,6 @@
 					card_set = card_set == null ? "XXX" : card_set[1];
 					card_num = card_num == null ? "0" : card_num[1];
 					
-					console.log([card_name, card_set, card_num]);
-
 					if (deck_map.has([card_name, card_set, card_num])) // if the deck has card name, add the new value, if it doesnt, set the value to stop keyerrors
 					{
 						deck_map.set([card_name, card_set, card_num], deck_map.get(card_name) + count);

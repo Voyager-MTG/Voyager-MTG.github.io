@@ -1,4 +1,4 @@
-
+let gradients;
 
 function prepareGradients() {
 	let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
