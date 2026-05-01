@@ -467,7 +467,7 @@
 				}
 			});
 
-			const searchInput = document.getElementById("search");
+			const searchInput = screen.width < 750 ? document.getElementById("mobile-search") : document.getElementById("search");
 			const tagDropdown = document.getElementById("tag-dropdown");
 
 			// Create a mirror element for position calculation

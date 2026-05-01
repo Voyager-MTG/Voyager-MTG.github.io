@@ -97,7 +97,7 @@ const compendium_rules = {
         'Restored Lands': card => /restored/i.test(card.card_name) && /land/i.test(card.type) && /^pathbound/i.test(card.rules_text),
         'Shockpools': card => /land/i.test(card.type) && /add one mana of any color a land you control/i.test(card.rules_text) && /the/i.test(card.card_name),
         'Driftings': card => /drifting/i.test(card.card_name) && card.set === 'FOE',
-        'Castles': card => card.set === 'HOD' && /1 damage to you unless you control three or more/i.test(card.rules_text),
+        'Castles': card => /land/i.test(card.type) && /1 damage to you unless you control three or more/i.test(card.rules_text),
         'Gold Lands': card => false, // Manual categorization
         'Utility Lands': card => false // Manual categorization
     },
