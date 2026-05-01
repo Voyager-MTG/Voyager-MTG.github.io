@@ -122,6 +122,11 @@ def render_card(card, tokens, /, *, back=False, flipped=False, token=False):
 	if len(card[f'loyalty{suffix}']):
 		props += f'''
 				<loyalty>{xml_escape(card[f'loyalty{suffix}'])}</loyalty>'''
+		
+	tags = re.findall('!tag (^\n+)', card['notes'])
+	if len(tags):
+		props += f'''
+				<tag>{','.join(tags)}</tag>'''
 
 	card_name = (f'{card[f'card_name']} // {card[f'card_name2']}' if is_two_cards else card[f'card_name{suffix}'] if not 'token' in card['shape'] else card['card_name'] + ' ' + card['set'])
 	card_string = f'''

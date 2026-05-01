@@ -1,5 +1,7 @@
 import re
 
+NO_SCRIPT_SETS = [ 'ABY' ]
+
 def xml_escape(text: str):
 	return text.replace('&', '&amp;') \
 				.replace('"', '&quot;') \
@@ -121,7 +123,7 @@ def auto_related(card, tokens):
 
 	for token in TOKENMATCHES.keys():
 		exp = TOKENMATCHES[token]
-		if not card["rules_text"] or card["rules_text"] == None or card["rules_text"] == "":
+		if not card["rules_text"] or card["rules_text"] == None or card["rules_text"] == "" or card['set'] == 'ABY':
 			continue
 
 		token = token.replace("~", card["card_name"])
@@ -136,7 +138,7 @@ def auto_related(card, tokens):
 					break
 
 	big_match = re.findall(r'creates? [^.]+', card["rules_text"], flags=re.I)
-	if big_match and not "!noscript" in card["notes"]:
+	if big_match and not "!noscript" in card["notes"] and not card['set'] in NO_SCRIPT_SETS:
 		for phrase in big_match:
 			token_regex = re.compile("[C|c]reate (X|X plus one|a number of|that many|a|an|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty)( tapped| goaded)?( and attacking)?( legendary)?( basic)?( snow)? ?([XYZ0-9]+/[XYZ0-9]+ )?(colorless|white|blue|black|red|green|silver)?(, (?:white|blue|black|red|green|silver),)?( and white| and blue| and black| and red| and green| and silver)? ?([A-Z][a-z]+)?( [A-Z][a-z]+)?( [A-Z][a-z]+)? ?(enchantment )?(artifact )?(land )?(creature )?tokens?( (with|named|that[’']s|that is|that are|attached|that can't block) [^\n.]+)?")
 			matched_tokens = token_regex.search(phrase)

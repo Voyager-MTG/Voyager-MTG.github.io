@@ -97,6 +97,8 @@ function setTextColor(c = false) {
 	document.body.style.setProperty("--text-color", localStorage.getItem("settings.textcolor"));
 }
 
+const delay = ms => new Promise(res => setTimeout(res, ms));
+
 function defaultSetting(name, default_) {
 	// if you dont have a value in localstorage, set that value to default_
 	if (localStorage.getItem(name) == null) {

@@ -52,6 +52,7 @@
 			</div>
 		</div>
 	</div>
+	<img id="hover-card" class="hover-card">
 	<div id="myContextMenu" class="rc-menu popout">
 		<ul>
 			<li id="add-to-deck">Add to Deck</li>
@@ -91,8 +92,6 @@
 					<div class="search-image-gradient-container">
 						<div class="search-image-gradient"></div>
 					</div>
-				</div>
-				<div class="card-grid-container" id="card-grid-container">
 				</div>
 			</div>
 		</div>
@@ -213,6 +212,7 @@
 	<script src="src/js/search.js"></script>
 	<script src="src/js/img-container-defs.js"></script>
 	<script>
+		window.onload()
 		// initialize variables
 		let search_results = [];
 		let card_list_arrayified = [];
@@ -226,6 +226,9 @@
 		let gradients = [];
 		let all_cards_stats;
 		const on_cl_page = false;
+
+		const hover_card = document.querySelector('.hover-card');
+		const contextMenu = document.querySelector('.rc-menu');
 
 		const deck_cards_html = `<div class="deck-col" id="col1">
 					<div class="deck-section" id="deck-creature">
@@ -500,10 +503,10 @@
 				document.getElementById("deck-name").value = "Untitled Deck";
 			}
 
-			gridified_card = gridifyCard(card_list_arrayified[0], true, true);
-			gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
-			gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
-			document.getElementById("card-grid-container").appendChild(gridified_card);
+			// gridified_card = gridifyCard(card_list_arrayified[0], true, true);
+			// gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
+			// gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
+			// document.getElementById("card-grid-container").appendChild(gridified_card);
 			localStorage.setItem('settings.format', window.location.search.includes('?collectionleague') ? 'Collection League' : 'Eternal');
 
 			processDeck();
@@ -832,15 +835,15 @@
 			return div;
 		}
 
-		function openCardModal(card_stats, loc) {
+		function openCardModal(card_stats) {
 			document.getElementById("modal-content").innerHTML = `<span class="close" onclick="closeModal()">&times;</span>`; // clear the modal content's html
 			document.getElementById("modal-content").style.width = "fit-content";
-			document.getElementById("modal-content").style.height = "80%";
+			// document.getElementById("modal-content").style.height = "80%";
 			// initialize a container, card name element, card buttons container, the text and the add and subtract buttons
 			let container_div = createElement("div", "card-modal-info-container");
 			let card_name = createElement("div", "card-modal-name", card_stats.card_name);
 			let card_img_container = createElement("div", "card-modal-img-container");
-			let card_img = gridifyCard(card_stats);
+			let card_img = gridifyCard(card_stats, true);
 			let card_buttons_container = createElement("div", "card-modal-buttons");
 			let maindeck_text = createElement("div", "card-modal-maindeck-text", "Maindeck (" + getCopies("deck", card_stats) + ")");
 			let maindeck_buttons = createElement("div", "card-modal-buttons");
@@ -889,6 +892,7 @@
 				document.getElementsByClassName("card-modal-sanctum-text")[0].innerText = "Sanctum (" + getCopies("sanctum", card_stats) + ")";
 			}
 
+			const card_text = card_img.querySelector('.card-text');
 
 			// append the add and subtract buttons to the buttons area
 			maindeck_buttons.appendChild(add_button);
@@ -900,16 +904,17 @@
 			sanctum_buttons.appendChild(add_button_sc);
 			sanctum_buttons.appendChild(minus_button_sc);
 
+			card_text.appendChild(maindeck_text);
+			card_text.appendChild(maindeck_buttons);
+			card_text.appendChild(sideboard_text);
+			card_text.appendChild(sideboard_buttons);
+			card_text.appendChild(sanctum_text);
+			card_text.appendChild(sanctum_buttons);
+
 			card_img_container.appendChild(card_img);
 
 			container_div.appendChild(card_name);
 			container_div.appendChild(card_img_container);
-			container_div.appendChild(maindeck_text);
-			container_div.appendChild(maindeck_buttons);
-			container_div.appendChild(sideboard_text);
-			container_div.appendChild(sideboard_buttons);
-			container_div.appendChild(sanctum_text);
-			container_div.appendChild(sanctum_buttons);
 
 			document.getElementById("modal-container").style.display = "block";
 			document.getElementById("modal-content").appendChild(container_div);
@@ -1845,27 +1850,34 @@
 				const card_sr_grid = gridifyCard(search_results[i]);
 				const card_sr = card_sr_grid.getElementsByTagName("img")[0];
 
-				card_sr.onmouseover = function () {
-					card_grid_container = document.getElementById("card-grid-container");
-					card_grid_container.innerHTML = "";
-					const gridified_card = gridifyCard(card_stats, true, true);
-					gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
-					gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
-					if (card_stats.shape.includes("double")) {
-						gridified_card.getElementsByTagName("button")[0].onclick = async function () {
-							imgFlip("image-grid-card", card_stats.type.includes("Battle"));
-						}
-					}
-					card_grid_container.appendChild(gridified_card);
-				};
+				card_sr.onmouseover = () => {
+					hover_card.src = card_sr.src;
+					hover_card.style.display = 'block';
+				}
 
-				card_sr.onclick = function () {
-					addCardToDeck(JSON.stringify(card_stats));
+				card_sr.onmousemove = event => {
+					hover_card.style.left = event.pageX + "px";
+					const cardHeight = 523 * window.getComputedStyle(hover_card).getPropertyValue('--scale');
+					const posY = event.pageY - cardHeight;
+					const bottom = event.pageY + cardHeight;
+					// console.log(bottom, document.body.clientHeight);
+					// console.log(event.pageY);
+					hover_card.style.top = bottom > window.innerHeight ? posY : event.pageY;
+					// hover_card.style.top = Math.max(0, posY) + "px";
+				}
+
+				card_sr.onmouseout = () => {
+					hover_card.style.display = '';
+				}
+
+				card_sr.onclick = () => {
+					// addCardToDeck(JSON.stringify(card_stats));
+					openCardModal(card_stats);
 				}
 				card_sr.style.cursor = "pointer";
 
-				contextMenu = document.getElementById("myContextMenu");
-				card_sr.addEventListener("contextmenu", (event) => {
+				const contextMenu = document.getElementById("myContextMenu");
+				card_sr.addEventListener("contextmenu", event => {
 					event.preventDefault(); // Prevent default context menu
 
 					contextMenu.style.display = "block";
@@ -1876,6 +1888,40 @@
 				});
 
 				imgContainer.appendChild(card_sr);
+
+				const card = JSON.stringify(card_stats);
+
+				const buttons = document.createElement('div');
+				buttons.className = 'card-buttons';
+
+				const addBtn = document.createElement('button');
+				addBtn.className = 'card-add-button';
+				addBtn.innerText = '+';
+				addBtn.onclick = () => addCardToDeck(card);
+
+				const addSbBtn = document.createElement('button');
+				addSbBtn.className = 'card-add-button';
+				addSbBtn.onclick = () => addCardToSideboard(card);
+
+				const addSbIcon = document.createElement('img');
+				addSbIcon.className = 'card-button-icon';
+				addSbIcon.src = '/img/sb.png';
+				addSbBtn.appendChild(addSbIcon);
+
+				const addScBtn = document.createElement('button');
+				addScBtn.className = 'card-add-button';
+				addScBtn.onclick = () => addCardToSanctum(card);
+
+				const addScIcon = document.createElement('img');
+				addScIcon.className = 'card-button-icon';
+				addScIcon.src = '/img/star.png';
+				addScBtn.appendChild(addScIcon);
+
+				buttons.appendChild(addBtn);
+				buttons.appendChild(addSbBtn);
+				buttons.appendChild(addScBtn);
+				imgContainer.appendChild(buttons);
+
 				cardGrid.appendChild(imgContainer);
 			}
 		}
@@ -1939,6 +1985,7 @@
 		}
 
 		function processDeck() {
+			console.log('pd');
 			const display_style = document.getElementById("display-select").value;
 			if (display_style != "stats") {
 				document.getElementsByClassName("deck-cards-container")[0].innerHTML = deck_cards_html;
@@ -2220,23 +2267,22 @@
 				}
 			}
 
-			card_in_deck.onmouseover = function () { // on mouse over: do the following
-				// reset the card grid container's html
-				card_grid_container = document.getElementById("card-grid-container");
-				card_grid_container.innerHTML = "";
+			card_in_deck.onmouseover = () => {
+				hover_card.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + "_" + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+				hover_card.style.display = 'block';
+			}
 
-				const gridified_card = gridifyCard(card_stats, true, true); // line 2158
-				gridified_card.getElementsByTagName("img")[0].id = "image-grid-card"; // set gridified
-				gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
-				if (card_stats.shape.includes("double")) // if its a dfc, add the flip button and give it an onlcick that calls imgFlip (line 2342)
-				{
-					gridified_card.getElementsByTagName("button")[0].onclick = async function () {
-						imgFlip("image-grid-card", card_stats.type.includes("Battle"));
-					}
-				}
-				// add gridified card to the card grid container
-				card_grid_container.appendChild(gridified_card);
-			};
+			card_in_deck.onmousemove = event => {
+				hover_card.style.left = event.pageX + "px";
+				const cardHeight = 523 * window.getComputedStyle(hover_card).getPropertyValue('--scale');
+				const posY = event.pageY - cardHeight;
+				const bottom = event.pageY + cardHeight;
+				hover_card.style.top = bottom > window.innerHeight ? posY : event.pageY;
+			}
+
+			card_in_deck.onmouseout = () => {
+				hover_card.style.display = '';
+			}
 
 			// card_img_container.appendChild(db_container);
 			// card_img_container.appendChild(card_count);

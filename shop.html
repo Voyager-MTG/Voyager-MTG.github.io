@@ -1,0 +1,529 @@
+<html>
+
+<head>
+	<title>TITLE</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
+	<link rel="stylesheet" href="/src/css/mana.css">
+	<link rel="stylesheet" href="/src/css/header.css">
+	<link rel="stylesheet" href="/src/css/theme.css">
+	<link rel="stylesheet" href="/src/css/modal.css">
+	<link rel="stylesheet" href="/src/css/tab.css">
+	<link rel="stylesheet" href="/src/css/img-container.css">
+	<link rel="stylesheet" href="/src/css/pages/shop.css">
+</head>
+<body>
+	<img src="/img/header/menu.png" class="header-control" onclick="toggleHeader()">
+	<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/header/search.png" onclick="window.location.href = '/search'" style="cursor: pointer;">
+			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<div class="community"><a href="/community"><img src="/img/header/community.png"
+						class="sg-icon">Community<b>⮟</b></a>
+				<div class="community-dropdown">
+					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
+							src="/img/header/community.png">Users</a>
+					<a href="/community?tab=decks" class="community-dropdown-item"><img class="dropdown-icon"
+							src="/img/header/deck.png">Decks</a>
+					<a href="/community?tab=events" class="community-dropdown-item"><img class="dropdown-icon"
+							src="/img/swords.png">Events</a>
+					<a href="/community?tab=cards" class="community-dropdown-item"><img class="dropdown-icon"
+							src="/img/header/sets.png">Cards</a>
+				</div>
+			</div>
+			<a href="/settings" class="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+			<a href="/account" class="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
+			<div class="mobile-buttons">
+				<a href="/search"><img src="/img/header/search.png" class="sg-icon"></a>
+				<a href="/settings"><img src="/img/header/settings.png" class="sg-icon"></a>
+				<a href="/account"><img src="/img/header/account.png" class="sg-icon"></a>
+			</div>
+		</div>
+	</div>
+	<div class="page-container">
+		<h1 class="text shop-header">The ShopTM</h1>
+		<div class="tab-select" id="tab-select">
+			<div class="tab-btn-active tab-btn" id="buy-tab-select" onclick="changeTab('buy')">
+				<img src="/img/dollar.png" class="tab-switch-icon">
+				<span>Buy</span>
+			</div>
+			<div class="tab-btn" id="sell-tab-select" onclick="changeTab('sell')">
+				<img src="/img/header/sets.png" class="tab-switch-icon">
+				<span>Sell</span>
+			</div>
+		</div>
+		<div class="main-tab" id="main-tab">
+			<div class="tab buy-tab" id="buy">
+				<div class="shop-container"></div>
+			</div>
+			<div class="tab sell-tab" id="sell">
+				<div class="search-area">
+					<div style="position: relative; width: 100%; padding: 0; margin: 0;">
+						<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+						<div id="tag-dropdown" style="display: none; position: absolute; top: 100%; left: 0; width: 100%; background: white; border: 1px solid #d5d9d9; z-index: 1000; max-height: 200px; overflow-y: auto; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></div>
+					</div>
+					<div class="select-text">
+						<select name="sort-by" id="sort-by" class="popout">
+							<option value="name">Name</option>
+							<option value="set-code">Set / Number</option>
+							<option value="mv">Mana Value</option>
+							<option value="color">Color</option>
+							<option value="rarity">Rarity</option>
+							<option value="playrate">Playrate</option>
+							<option value="copies">Copies</option>
+							<option value="price">Price</option>
+						</select>:<select name="sort-order" id="sort-order" class="popout">
+							<option value="ascending">Asc</option>
+							<option value="descending">Desc</option>
+						</select>
+					</div>
+					<div class="sell-values">
+						<button class="buy-card">Sell Cards</button>
+						<img class="coin-icon" src="/img/coin.png">
+						<span class="coins">0</span>
+					</div>
+				</div>
+				<div class="search-image-grid-container">
+					<div class="card-grid" id="cardGrid"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="modal-container">
+		<div id="modal-content" class="popout">
+			<span class="close"
+				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+		</div>
+	</div>
+	<script src="/src/js/img-container-defs.js"></script>
+	<script src="/src/js/background.js"></script>
+	<script src="/src/js/search.js"></script>
+	<script src="/src/js/pricing.js"></script>
+	<script>
+		let shop;
+		let collection_cards = [];
+		let collection_copies;
+		let collection_prices;
+		let collection;
+		let search_results;
+		const on_cl_page = true;
+		function setGradient() {}
+		function prepareGradients() {}
+
+		document.getElementById("sort-by").onchange = preSearch;
+		document.getElementById("sort-order").onchange = preSearch;
+
+		document.addEventListener("DOMContentLoaded", async function () {
+			await fetch('/lists/all-cards.json')
+				.then(response => response.json())
+				.then(json => {
+					card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+			await fetch('/lists/all-sets.json')
+				.then(response => response.json())
+				.then(json => {
+					set_list = json;
+				}).catch(error => console.error('Error:', error));
+
+			card_list_arrayified = card_list.cards;
+
+			await fetch('/lists/all-sets.json')
+				.then(response => response.json())
+				.then(data => {
+					sets_json = data;
+				}).catch(error => console.error('Error:', error));
+
+			await fetch(`https://voyager-api-pq2h.onrender.com/collectionleague/collection/view?session=${localStorage.getItem('settings.session')}`)
+				.then(response => response.text())
+				.then(text => {
+					collection = text;
+				}).catch(error => console.error('Error:', error));
+
+			changeTab('buy');
+			await reloadCollection();
+			shop = await generateShop();
+            populateShop();
+			preSearch();
+
+			let all_tags = new Set();
+			card_list_arrayified.forEach(card => {
+				if (card.notes) {
+					const tagMatches = card.notes.matchAll(/!tag(?:<\w+>)?\s+([^\s\n\b]+)/g);
+					for (const match of tagMatches) {
+						if (match[0].includes('!tag<')) continue;
+						all_tags.add(match[1].replace(/;$/, ''));
+					}
+				}
+			});
+
+			const searchInput = document.getElementById("search");
+			const tagDropdown = document.getElementById("tag-dropdown");
+
+			// Create a mirror element for position calculation
+			const mirror = document.createElement("div");
+			Object.assign(mirror.style, {
+				position: "absolute",
+				visibility: "hidden",
+				whiteSpace: "pre",
+				font: getComputedStyle(searchInput).font,
+				padding: "0", // No padding for pure text measurement
+				border: "none",
+				boxSizing: "content-box"
+			});
+			document.body.appendChild(mirror);
+
+			if (searchInput && tagDropdown) {
+				tagDropdown.style.width = "auto";
+				tagDropdown.style.minWidth = "75px";
+				tagDropdown.style.maxWidth = "300px";
+				tagDropdown.style.maxHeight = "200px";
+				tagDropdown.style.overflowY = "auto";
+
+				const updateDropdown = function() {
+					const value = searchInput.value;
+					const cursorPosition = searchInput.selectionStart;
+					
+					// Find the tag: prefix immediately preceding the cursor
+					const lastTagIndex = value.substring(0, cursorPosition).lastIndexOf("tag:");
+					
+					if (lastTagIndex !== -1) {
+						const queryStart = lastTagIndex + 4;
+						const query = value.substring(queryStart, cursorPosition);
+						
+						if (!query.includes(" ")) {
+							const filteredTags = Array.from(all_tags).filter(tag => tag.toLowerCase().startsWith(query.toLowerCase())).sort();
+							if (filteredTags.length > 0) {
+								tagDropdown.innerHTML = "";
+								filteredTags.forEach(tag => {
+									const div = document.createElement("div");
+									div.innerText = tag;
+									div.style.padding = "5px 10px";
+									div.style.cursor = "pointer";
+									div.style.whiteSpace = "nowrap";
+									div.onmouseover = () => div.style.background = "#f0f0f0";
+									div.onmouseout = () => div.style.background = "white";
+									div.onclick = () => {
+										const newValue = value.substring(0, queryStart) + tag + " " + value.substring(cursorPosition);
+										searchInput.value = newValue;
+										tagDropdown.style.display = "none";
+										searchInput.focus();
+										const newCursorPos = queryStart + tag.length + 1;
+										searchInput.setSelectionRange(newCursorPos, newCursorPos);
+									};
+									tagDropdown.appendChild(div);
+								});
+
+								// Calculate position
+								mirror.textContent = value.substring(0, lastTagIndex + 4);
+								const textWidth = mirror.getBoundingClientRect().width;
+								const inputPaddingLeft = parseFloat(getComputedStyle(searchInput).paddingLeft) || 0;
+								
+								tagDropdown.style.left = Math.min(textWidth + inputPaddingLeft, searchInput.offsetWidth - tagDropdown.offsetWidth) + "px";
+								tagDropdown.style.display = "block";
+								return;
+							}
+						}
+					}
+					tagDropdown.style.display = "none";
+				};
+
+				searchInput.addEventListener("input", updateDropdown);
+				searchInput.addEventListener("click", updateDropdown);
+				searchInput.addEventListener("keyup", updateDropdown);
+
+				document.addEventListener("click", function(e) {
+					if (e.target !== searchInput && e.target !== tagDropdown) {
+						tagDropdown.style.display = "none";
+					}
+				});
+			}
+		});
+
+		function sellCard(i) {
+			const card = document.querySelector('#cardGrid').childNodes[i];
+			card.dataset.selected = card.dataset.selected == 'true' ? 'false' : 'true';
+			updateSellValues();
+		}
+
+		function updateSellValues() {
+			// /sets/AKT-files/img/49_Eaveshopper.jpg
+			const total_price = Array.from(document.querySelectorAll('div[data-selected=true]'))
+									.map(e => e.querySelector('img'))
+									.map(e => e.src.match(/sets\/(.*?)-files\/img\/t?(\d+?)_(.*?)[\._]/))
+									.map(m => `${decodeURI(m[3])} (${m[1]}) ${m[2]}`)
+									.reduce((acc, id) => acc + collection_prices.get(id), 0);
+			document.querySelector('.coins').innerText = total_price;
+		}
+
+        async function generateShop() {
+			while (!stats || !card_list_arrayified) await delay(100);
+            // cotd + 1 from each color + 1 r/m + 1 totally random
+            // use reallyrand
+            const card_list_cleaned = card_list_arrayified.filter(card => !card.shape.includes('token') && !card.type.includes('Basic') && card.rarity != 'special');
+            let rand = reallyRand(card_list_cleaned.length, Math.random() * 100000000);
+            const cotd = card_list_cleaned[rand];
+
+            const color_rands = [];
+            const colors = 'WUBRGI';
+            for (const color of colors) {
+                const color_list = card_list_cleaned.filter(card => card.color == color);
+                rand = Math.abs(reallyRand(color_list.length, rand + 35));
+                color_rands.push(color_list[rand])
+            }
+            
+            const rares = card_list_cleaned.filter(card => card.rarity == 'rare' || card.rarity == 'mythic');
+            rand = Math.abs(reallyRand(rares.length, rand - 45));
+            const randrare = rares[rand];
+
+			const playables = card_list_cleaned.filter(card => card.type.includes('Creature'));
+			rand = Math.abs(reallyRand(playables.length, rand + 27));
+			const rand_playable = playables[rand];
+
+			const cm = collection_cards.filter(card => card.color.length != 1 && !card.type.includes('Basic'));
+			rand = Math.abs(reallyRand(cm.length, rand - 45));
+            const randcm = cm[rand];
+
+			let _shop = [cotd, randrare, rand_playable, ...color_rands, randcm];
+			while (!stats || !card_list) await delay(100);
+			_shop = _shop.map(card => [card, cardPrice(card)]);
+			_shop[0][1] *= 0.8;
+			if (_shop[0][1] == 24) _shop[0][1] = 20;
+            return _shop;
+        }
+
+        async function populateShop() {
+            for (const [i, [card, card_price]] of shop.entries()) {
+                // const card_price = await cardPrice(card);
+                const card_container = document.createElement('div');
+                card_container.className = 'shop-card';
+                
+                const price_area = document.createElement('div');
+                price_area.className = 'price-container';
+
+                const price = document.createElement('span');
+                price.className = 'price-label';
+                price.innerHTML = i == 0 ? `<s>${card_price == 20 ? 30 : (card_price * 1.25)}</s> ${card_price}` : card_price;
+
+                const price_icon = document.createElement('img');
+                price_icon.className = 'coin-icon';
+                price_icon.src = '/img/coin.png';
+
+                const buy_btn = document.createElement('button');
+                buy_btn.className = 'buy-card';
+                buy_btn.innerText = 'Buy card';
+
+                card_container.appendChild(buildImgContainer(card));
+
+                price_area.appendChild(price_icon);
+                price_area.appendChild(price);
+                price_area.appendChild(buy_btn);
+                card_container.appendChild(price_area);
+
+                document.querySelector('.shop-container').appendChild(card_container);
+            }
+        }
+
+		function sellFraction(n) {
+			return 1 / (0.05 * n + 1);
+		}
+
+		function preSearch() {
+			const searchTerms = document.getElementById("search").value.toLowerCase();
+			const tokens = tokenizeTerms(searchTerms) || [];
+			const sortBySelect = document.getElementById("sort-by");
+			const sortOrderSelect = document.getElementById("sort-order");
+
+			sortBySelect.disabled = false;
+			sortOrderSelect.disabled = false;
+
+			tokens.forEach(token => {
+				if (token.startsWith("sort:")) {
+					const val = token.substring(5);
+					const map = {
+						"name": "name",
+						"set": "set-code",
+						"mv": "mv",
+						"color": "color",
+						"rarity": "rarity",
+						"cube": "cube"
+					};
+					if (map[val]) {
+						const option = Array.from(sortBySelect.options).find(opt => opt.value === map[val]);
+						if (option) {
+							sortBySelect.value = map[val];
+							sortBySelect.disabled = true;
+						}
+					}
+				}
+				if (token.startsWith("direction:")) {
+					const val = token.substring(10);
+					const map = {
+						"asc": "ascending",
+						"desc": "descending"
+					};
+					if (map[val]) {
+						const option = Array.from(sortOrderSelect.options).find(opt => opt.value === map[val]);
+						if (option) {
+							sortOrderSelect.value = map[val];
+							sortOrderSelect.disabled = true;
+						}
+					}
+				}
+			});
+
+			collection_cards.sort(compareFunction);
+			if (document.getElementById("sort-order").value == "descending") {
+				collection_cards.reverse();
+			}
+			search_results = [];
+
+			search();
+		}
+
+		async function search() {
+			searchTerms = document.getElementById("search").value.toLowerCase();
+			tokenizedTerms = tokenizeTerms(searchTerms);
+
+			cardGrid = document.getElementById("cardGrid");
+			cardGrid.innerHTML = "";
+
+			for (const card of collection_cards) {
+				if (card.shape.includes("token") && !searchTerms.includes("+t:token") && !searchTerms.includes("t:token")) {
+					continue;
+				}
+
+				searched = await searchAllTokens(card, tokenizeTerms(searchTerms));
+				if (searched)
+					search_results.push(card);
+			}
+
+			for (const [i, res] of search_results.entries()) {
+				const imgContainer = document.createElement("div");
+				imgContainer.appendChild(gridifyCard(res));
+				imgContainer.style.position = 'relative';
+				imgContainer.querySelector('a').href = `javascript:sellCard(${i})`;
+
+				const copies = collection_copies.get(`${res.card_name} (${res.set}) ${res.number}`);
+				const copies_label = document.createElement('span');
+				copies_label.className = 'copies-label';
+				copies_label.innerText = `${copies}x`;
+				imgContainer.appendChild(copies_label);
+
+				cardGrid.appendChild(imgContainer);
+			}
+		}
+
+		async function reloadCollection() {
+			collection_copies = new Map(); // map from card_name, set, num > copies
+			collection_prices = new Map(); // map from card_name, set, num > sell value
+			for (const line of collection.split('\n')) {
+				const card_match = line.match(/(\d+) ((.*?) \(([A-Z\-_0-9]+?)\) (\d+))/);
+				if (!card_match) continue;
+				const [_, _copies, card_id, card_name, set, num] = card_match;
+				const copies = parseInt(_copies);
+
+				if (collection_copies.has(card_id))
+					collection_copies.set(card_id, collection_copies.get(card_id) + copies);
+				else 
+					collection_copies.set(card_id, copies);
+			}
+			
+			let cards_to_check = card_list_arrayified.slice();
+			let cards_already_checked = [];
+			collection_cards = [];
+			const _collection_copies = new Map(collection_copies);
+
+			for (const [i, card] of card_list_arrayified.entries()) {
+				const card_id = `${card.card_name} (${card.set}) ${card.number}`;
+				if (_collection_copies.has(card_id)) {
+					collection_cards.push(card);
+					cards_already_checked.push(i);
+					collection_prices.set(card_id, sellValues[card.rarity]);
+					_collection_copies.delete(card_id);
+				}
+			}
+
+			cards_to_check = card_list_arrayified.filter((_, i) => !cards_already_checked.includes(i));
+
+			for (const collection_card of _collection_copies.keys()) {
+				const [_, card_name, set, num] = collection_card.match(/(.*?) \(([A-Z\-_0-9]+)\) (\d+)/);
+				for (const [i, card] of cards_to_check.entries()) {
+					if (card.card_name == card_name && card.set == set) {
+						collection_cards.push(card);
+						cards_already_checked.push(i);
+						collection_prices.set(card_id, sellValues[card.rarity]);
+						_collection_copies.delete(collection_card);
+						collection = collection.replaceAll(_, `${card.card_name} (${card.set}) ${card.number}`);
+					}
+				}
+			}
+			cards_to_check = card_list_arrayified.filter((_, i) => !cards_already_checked.includes(i));
+
+			for (const collection_card of _collection_copies.keys()) {
+				const [_, card_name, set, num] = collection_card.match(/(.*?) \(([A-Z\-_0-9]+)\) (\d+)/);
+				for (const [i, card] of cards_to_check.entries()) {
+					if (card.card_name == card_name) {
+						collection_cards.push(card);
+						cards_already_checked.push(i);
+						collection_prices.set(card_id, sellValues[card.rarity]);
+						_collection_copies.delete(collection_card);
+						collection = collection.replaceAll(_, `${card.card_name} (${card.set}) ${card.number}`);
+					}
+				}
+			}
+			
+			if (collection.includes('500 Internal Server Error')) return;
+			await fetch(`https://voyager-api-pq2h.onrender.com/collectionleague/collection/write?session=${localStorage.getItem('settings.session')}&collection=${btoa(collection)}`);
+		}
+
+		function changeTab(tab_name) {
+			document.getElementById(tab_name).style.display = "";
+			document.getElementById(tab_name + "-tab-select").className = "tab-btn tab-btn-active"
+			for (const child of document.getElementById("main-tab").children) {
+				if (child.id != tab_name && child.id != "ended-text") {
+					child.style.display = "none";
+				}
+			}
+			for (const child of document.getElementById("tab-select").children) {
+				if (child.id != tab_name + "-tab-select") {
+					child.className = "tab-btn";
+				}
+			}
+		}
+
+		modal = document.getElementById("modal-container");
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				document.getElementById('modal-container').style.display = 'none';
+			}
+		}
+
+		document.getElementById("search").addEventListener("keypress", function (event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				preSearch();
+			}
+		});
+		function randomCard() {
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
+
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+
+			window.location.href = url;
+		}
+	</script>
+</body>
+
+</html>

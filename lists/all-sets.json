@@ -1,6 +1,12 @@
 {
     "sets": [
         {
+            "set_code": "ABY",
+            "set_name": "A Better Yesterday",
+            "formats": "",
+            "designer": ""
+        },
+        {
             "set_code": "AKT",
             "set_name": "Akellan Transcendence",
             "formats": "",
@@ -49,11 +55,16 @@
             "designer": "Myr"
         },
         {
-            "set_code": "TZE-01",
+            "set_code": "TDD02",
+            "set_name": "Daydream",
+            "formats": "",
+            "designer": "Voyager"
+        },
+        {
+            "set_code": "TZE01",
             "set_name": "Zeta",
             "formats": "",
-            "designer": "Voyager",
-            "pack": true
+            "designer": "Voyager"
         },
         {
             "set_code": "VNM",

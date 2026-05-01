@@ -143,6 +143,12 @@ function compareFunction(a, b) {
     else if (sortMode == 'playrate') {
         return all_cards_stats[b.card_name].playrate_overall - all_cards_stats[a.card_name].playrate_overall;
     }
+
+    else if (sortMode == 'price') {
+        const a_price = collection_prices.get(`${a.card_name} (${a.set}) ${a.number}`);
+        const b_price = collection_prices.get(`${b.card_name} (${b.set}) ${b.number}`);
+        return b_price - a_price;
+    }
 }
 
 async function searchToken(card, token) {
