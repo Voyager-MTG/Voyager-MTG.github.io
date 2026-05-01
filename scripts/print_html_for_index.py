@@ -256,7 +256,7 @@ def generateHTML():
 		</div>
 		<script>
 			const delay = ms => new Promise(res => setTimeout(res, ms));
-			let gradients = [];
+			
 			let card_list_arrayified = [];
 			let specialchars = "";
 			let initial_gradient = true;

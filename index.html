@@ -178,7 +178,7 @@
 	</div>
 	<script src="src/js/background.js"></script>
 	<script>
-		let gradients = [];
+		
 		let card_backgrounds = [];
 		let card_list_arrayified = [];
 		let specialchars = "";
@@ -698,27 +698,27 @@ Search for cards that were made into champion promo's by a specific user. For ex
 		const app = initializeApp(firebaseConfig);
 		const db = getFirestore(app);
 
-		await getDoc(doc(db, "info", "events")).then(docSnap => {
-			const calendar = docSnap.data().calendar;
+		// await getDoc(doc(db, "info", "events")).then(docSnap => {
+		// 	const calendar = docSnap.data().calendar;
 
-			for (const item of calendar) {
-				const prop = item.split(";");
-				const name = prop[0];
-				const time = prop[1];
-				const desc = prop[2];
+		// 	for (const item of calendar) {
+		// 		const prop = item.split(";");
+		// 		const name = prop[0];
+		// 		const time = prop[1];
+		// 		const desc = prop[2];
 
-				const header = document.createElement("span");
-				header.className = "event-calendar-header";
-				header.innerText = name;
+		// 		const header = document.createElement("span");
+		// 		header.className = "event-calendar-header";
+		// 		header.innerText = name;
 
-				const time_desc = document.createElement("span");
-				time_desc.className = "time-desc";
-				time_desc.innerHTML = `${time} <b>•</b> ${desc}`;
+		// 		const time_desc = document.createElement("span");
+		// 		time_desc.className = "time-desc";
+		// 		time_desc.innerHTML = `${time} <b>•</b> ${desc}`;
 
-				document.getElementById("calendar").appendChild(header);
-				document.getElementById("calendar").appendChild(time_desc);
-			}
-		})
+		// 		document.getElementById("calendar").appendChild(header);
+		// 		document.getElementById("calendar").appendChild(time_desc);
+		// 	}
+		// })
 	</script>
 </body>
 
