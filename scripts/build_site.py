@@ -134,6 +134,9 @@ for entry in os.scandir('sets'):
 	elif entry.name != 'README.md' and os.path.isfile(entry):
 		os.remove(entry)
 
+set_codes.remove('LAIR')
+set_codes.append('LAIR')
+
 for entry in os.scandir('lists'):
 	if entry.name != 'README.md' and os.path.isfile(entry):
 		os.remove(entry)

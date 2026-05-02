@@ -65,9 +65,9 @@
 			"rarity": "masterpiece",
 			"mana_cost": "",
 			"type": "Land",
-			"collector_number": "18",
+			"collector_number": "19",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/18_Drifting Field.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/19_Drifting Field.jpg"
 			}
 		},
 		{
@@ -555,9 +555,9 @@
 			"rarity": "masterpiece",
 			"mana_cost": "",
 			"type": "Land — Spire",
-			"collector_number": "21",
+			"collector_number": "22",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/21_Shifting Spire.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/22_Shifting Spire.jpg"
 			}
 		},
 		{
@@ -1045,9 +1045,9 @@
 			"rarity": "masterpiece",
 			"mana_cost": "",
 			"type": "Basic Land — Mountain",
-			"collector_number": "19",
+			"collector_number": "20",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/19_Mountain.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/20_Mountain.jpg"
 			}
 		},
 		{
@@ -1302,9 +1302,9 @@
 			"rarity": "masterpiece",
 			"mana_cost": "{2}{C}{C}",
 			"type": "Enchantment",
-			"collector_number": "16",
+			"collector_number": "17",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/16_Unending Exploration.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/17_Unending Exploration.jpg"
 			}
 		},
 		{
@@ -1332,9 +1332,9 @@
 			"rarity": "masterpiece",
 			"mana_cost": "{2}{C}{B}",
 			"type": "Creature — Fish Spirit",
-			"collector_number": "17",
+			"collector_number": "18",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/17_Calamitous Koi.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/18_Calamitous Koi.jpg"
 			}
 		},
 		{
@@ -1342,9 +1342,19 @@
 			"rarity": "masterpiece",
 			"mana_cost": "",
 			"type": "Land — Forest Plains",
-			"collector_number": "20",
+			"collector_number": "21",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/20_Reflective Savannah.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/21_Reflective Savannah.jpg"
+			}
+		},
+		{
+			"name": "Wish for Transformation",
+			"rarity": "masterpiece",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Creature — Spirit",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/16_Wish for Transformation.jpg"
 			}
 		},
 	]
@@ -1476,3 +1486,4 @@
 	1 Castle Delta Lookout
 	1 Calamitous Koi
 	1 Reflective Savannah
+	1 Wish for Transformation
