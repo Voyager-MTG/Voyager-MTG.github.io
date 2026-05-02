@@ -316,8 +316,6 @@
 					all_cards_stats = json;
 				}).catch(error => console.error('Error:', error));
 
-			fetch('https://voyager-api-pq2h.onrender.com/stats/regenerate');
-
 
 			await fetch('/lists/all-sets.json')
 				.then(response => response.json())

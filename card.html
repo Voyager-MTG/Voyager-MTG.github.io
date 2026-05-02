@@ -824,7 +824,6 @@
 			viewStats.innerHTML = `<img src='img/show-white.png' class='add-icon'>View Stats`;
 			viewStats.onclick = () => { openStatsModal(stats) };
 			document.getElementsByClassName("text-container")[0].appendChild(viewStats);
-			fetch('https://voyager-api-pq2h.onrender.com/stats/regenerate');
 		}
 
 		function openStatsModal(stats) {
