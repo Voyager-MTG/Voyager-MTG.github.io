@@ -255,7 +255,7 @@ def generateHTML():
 			</div>
 		</div>
 		<script>
-			const delay = ms => new Promise(res => setTimeout(res, ms));
+			//const delay = ms => new Promise(res => setTimeout(res, ms));
 			
 			let card_list_arrayified = [];
 			let specialchars = "";

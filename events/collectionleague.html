@@ -140,7 +140,7 @@
 		let collection;
 		let on_jmp = false;
 		const on_cl_page = true;
-		const delay = ms => new Promise(res => setTimeout(res, ms));
+		// const delay = ms => new Promise(res => setTimeout(res, ms));
 		
 		document.addEventListener("DOMContentLoaded", async function () {
 			await fetch('/lists/all-cards.json')

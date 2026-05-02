@@ -280,7 +280,7 @@ async function imgFlip(id, rotate_card = false) {
 
 		if (cardName.includes("_front")) {
 			img.src = cardName.replace("_front", "_back");
-			img.parentElement.parentElement.getElementsByTagName("button")[0].style.filter = "invert()";
+			img.parentElement.parentElement.querySelector('button').style.filter = "invert()";
 
 			if (rotate_card) {
 				rotated_img.style.display = "none";
@@ -299,10 +299,6 @@ async function imgFlip(id, rotate_card = false) {
 
 		img.style.transition = (seconds * 2).toString() + "s";
 		img.style.transform = "rotateY(0deg)";
-	}, seconds * 1000);
-
-	await setTimeout(function () {
-		console.log("done");
 	}, seconds * 1000);
 }
 

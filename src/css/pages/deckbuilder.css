@@ -122,6 +122,7 @@ button:disabled, select:disabled {
 	border-bottom-left-radius: 22px;
 	border-bottom-right-radius: 22px;
 	direction: rtl;
+	overflow-x: hidden;
 }
 
 .search-image-grid,
@@ -856,4 +857,12 @@ button:disabled, select:disabled {
 
 #modal-content {
 	margin-bottom: 8%;
+}
+
+.img-container .btn {
+	min-width: 0;
+	z-index: 1;
+	width: 22.5%;
+	height: 16.5%;
+	left: 27%;
 }
