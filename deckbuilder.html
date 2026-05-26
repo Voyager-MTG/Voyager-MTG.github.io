@@ -21,6 +21,8 @@
 	<img class="preload-hidden" src="/img/export-white.png">
 	<img class="preload-hidden" src="/img/save.png">
 	<img class="preload-hidden" src="/img/download.png">
+	<img class="preload-hidden" src="/img/star.png">
+	<img class="preload-hidden" src="/img/sb.png">
 	<img class="preload-hidden" src="/img/copy-white.png">
 	<img src="/img/header/menu.png" class="header-control" onclick="toggleHeader()">
 	<div class="header">
@@ -103,7 +105,7 @@
 				<input type="text" value="Untitled Deck" id="deck-name" spellcheck="false" autocomplete="off"
 					autocorrect="off" spellcheck="false" class="popout">
 				<div id="deck-count" class="deck-count">
-					(0 / 0)
+					(0 / 0 / 0)
 				</div>
 				<select name="display-select" class="display-select popout" id="display-select">
 					<option value="text">Text</option>
@@ -215,6 +217,7 @@
 		// initialize variables
 		let search_results = [];
 		let card_list_arrayified = [];
+		let card_list_cleaned = [];
 		let specialchars = "";
 		let deck = [];
 		let sideboard = [];
@@ -324,6 +327,7 @@
 				}).catch(error => console.error('Error:', error));
 
 			let all_tags = new Set();
+			card_list_cleaned = [];
 			card_list_arrayified.forEach(card => {
 				if (card.notes) {
 					const tagMatches = card.notes.matchAll(/!tag(?:<\w+>)?\s+([^\s\n\b]+)/g);
@@ -332,7 +336,13 @@
 						all_tags.add(match[1].replace(/;$/, ''));
 					}
 				}
+
+				const printingI = card_list_cleaned.findIndex(c => c.card_name == card.card_name);
+				if (printingI == -1) card_list_cleaned.push({...card, printings: []});
+				else card_list_cleaned[printingI].printings.push(card);
 			});
+
+			// card_list_arrayified = card_list_cleaned;
 
 			const searchInput = document.getElementById("search");
 			const tagDropdown = document.getElementById("tag-dropdown");
@@ -887,6 +897,7 @@
 			}
 
 			const card_text = card_img.querySelector('.card-text');
+			card_img.querySelector('a').removeAttribute('href');
 
 			// append the add and subtract buttons to the buttons area
 			maindeck_buttons.appendChild(add_button);
@@ -1808,88 +1819,46 @@
 				}
 			});
 
-			card_list_arrayified.sort(compareFunction);
+			card_list_cleaned.sort(compareFunction);
 			if (document.getElementById("sort-order").value == "descending") {
-				card_list_arrayified.reverse();
+				card_list_cleaned.reverse();
 			}
 			search_results = [];
 
 			search();
 		}
 
-		async function search() {
+		function search() {
 			searchTerms = document.getElementById("search").value.toLowerCase();
 			tokenizedTerms = tokenizeTerms(searchTerms);
 
 			cardGrid = document.getElementById("imagesOnlyGrid");
 			cardGrid.innerHTML = "";
 
-			for (const card of card_list_arrayified) {
+			for (const card of card_list_cleaned) {
 				if (card.shape.includes("token") && !searchTerms.includes("+t:token") && !searchTerms.includes("t:token")) {
 					continue;
 				}
 
-				searched = await searchAllTokens(card, tokenizeTerms(searchTerms));
+				const terms = tokenizeTerms(searchTerms);
+				searched = [card, ...card.printings].findIndex(c => searchAllTokens(c, terms)) != -1;
+				// console.log(searche);
 				if (searched)
 					search_results.push(card);
 			}
+
+			const favorites = localStorage.getItem('settings.favorites');
 
 			for (let i = 0; i < search_results.length; i++) {
 				const imgContainer = document.createElement("div");
 				const card_stats = search_results[i];
 				const id = card_stats.set + "-" + card_stats.number + "-" + document.getElementById("display").value;
 				imgContainer.className = "img-container";
-				const card_sr_grid = gridifyCard(search_results[i]);
-				const card_sr = card_sr_grid.getElementsByTagName("img")[0];
+				const printings = [card_stats, ...card_stats.printings];
 
-				if (card_stats.shape.includes('double')) {
-					const imgFlipBtn = document.createElement("button");
-					imgFlipBtn.className = "btn";
-					imgFlipBtn.onclick = async function () { imgFlip(id, false); };
-					const imgFlipIcon = document.createElement("img");
-					imgFlipIcon.className = "img-flip-icon";
-					imgFlipIcon.src = '/img/flip.svg';
-					imgFlipBtn.appendChild(imgFlipIcon);
-					imgContainer.appendChild(imgFlipBtn);
-				}
-
-				card_sr.onmouseover = () => {
-					hover_card.src = card_sr.src;
-					hover_card.style.display = 'block';
-				}
-
-				card_sr.onmousemove = event => {
-					hover_card.style.left = event.pageX + "px";
-					const cardHeight = 523 * window.getComputedStyle(hover_card).getPropertyValue('--scale');
-					const posY = event.pageY - cardHeight;
-					const bottom = event.pageY + cardHeight;
-					// console.log(bottom, document.body.clientHeight);
-					// console.log(event.pageY);
-					hover_card.style.top = bottom > window.innerHeight ? posY : event.pageY;
-					// hover_card.style.top = Math.max(0, posY) + "px";
-				}
-
-				card_sr.onmouseout = () => {
-					hover_card.style.display = '';
-				}
-
-				card_sr.onclick = () => {
-					// addCardToDeck(JSON.stringify(card_stats));
-					openCardModal(card_stats);
-				}
-				card_sr.style.cursor = "pointer";
-
-				const contextMenu = document.getElementById("myContextMenu");
-				card_sr.addEventListener("contextmenu", event => {
-					event.preventDefault(); // Prevent default context menu
-
-					contextMenu.style.display = "block";
-					contextMenu.style.left = event.pageX + "px";
-					contextMenu.style.top = event.pageY + "px";
-
-					active_card = JSON.stringify(card_stats);
-				});
-
+				const getCard = () => JSON.stringify(printings[imgContainer.dataset.printing ?? 0]);
+				
+				const card_sr = createCardSr(imgContainer, id, card_stats);
 				imgContainer.appendChild(card_sr);
 
 				const card = JSON.stringify(card_stats);
@@ -1900,33 +1869,127 @@
 				const addBtn = document.createElement('button');
 				addBtn.className = 'card-add-button';
 				addBtn.innerText = '+';
-				addBtn.onclick = () => addCardToDeck(card);
+				addBtn.title = 'Add to maindeck';
+				addBtn.onclick = () => addCardToDeck(getCard());
 
 				const addSbBtn = document.createElement('button');
 				addSbBtn.className = 'card-add-button';
-				addSbBtn.onclick = () => addCardToSideboard(card);
+				addSbBtn.title = 'Add to sideboard';
+				addSbBtn.onclick = () => addCardToSideboard(getCard());
 
 				const addSbIcon = document.createElement('img');
 				addSbIcon.className = 'card-button-icon';
-				addSbIcon.src = '/img/sb.png';
+				addSbIcon.src = '/img/sb2.png';
 				addSbBtn.appendChild(addSbIcon);
 
 				const addScBtn = document.createElement('button');
 				addScBtn.className = 'card-add-button';
-				addScBtn.onclick = () => addCardToSanctum(card);
+				addScBtn.title = 'Add to sanctum';
+				addScBtn.onclick = () => addCardToSanctum(getCard());
 
 				const addScIcon = document.createElement('img');
 				addScIcon.className = 'card-button-icon';
-				addScIcon.src = '/img/star.png';
+				addScIcon.src = '/img/gyroscope.png';
 				addScBtn.appendChild(addScIcon);
+
+				const switchPrintingBtn = document.createElement('button');
+				switchPrintingBtn.className = 'card-add-button';
+				switchPrintingBtn.title = 'Switch printing';
+				switchPrintingBtn.onclick = () => switchPrinting(imgContainer, card_stats);
+
+				const switchPrintingIcon = document.createElement('img');
+				switchPrintingIcon.className = 'card-button-icon';
+				switchPrintingIcon.src = '/img/sb.png';
+				switchPrintingBtn.appendChild(switchPrintingIcon);
+
+				const favoriteBtn = document.createElement('button');
+				favoriteBtn.className = 'card-add-button';
+				favoriteBtn.title = 'Favorite card';
+				favoriteBtn.onclick = () => {
+					localStorage.setItem('settings.favorites', favorites + '\n' + card_stats.card_name);
+					favoriteIcon.src = '/img/starred.png';
+				};
+
+				const favoriteIcon = document.createElement('img');
+				favoriteIcon.className = 'card-button-icon';
+				favoriteIcon.src = favorites.match(`${RegExp.escape(card_stats.card_name)}\\n`) ? '/img/starred.png' : '/img/star.png';
+				favoriteBtn.appendChild(favoriteIcon);
 
 				buttons.appendChild(addBtn);
 				buttons.appendChild(addSbBtn);
 				buttons.appendChild(addScBtn);
+				buttons.appendChild(switchPrintingBtn);
+				buttons.appendChild(favoriteBtn);
 				imgContainer.appendChild(buttons);
 
 				cardGrid.appendChild(imgContainer);
 			}
+		}
+
+		function createCardSr(imgContainer, id, card_stats) {
+			const card_sr_grid = gridifyCard(card_stats);
+			const card_sr = card_sr_grid.getElementsByTagName("img")[0];
+
+			if (card_stats.shape.includes('double')) {
+				const imgFlipBtn = document.createElement("button");
+				imgFlipBtn.className = "btn";
+				imgFlipBtn.onclick = async function () { imgFlip(id, false); };
+				const imgFlipIcon = document.createElement("img");
+				imgFlipIcon.className = "img-flip-icon";
+				imgFlipIcon.src = '/img/flip.svg';
+				imgFlipBtn.appendChild(imgFlipIcon);
+				imgContainer.appendChild(imgFlipBtn);
+			}
+
+			card_sr.onmouseover = () => {
+				hover_card.src = card_sr.src;
+				hover_card.style.display = 'block';
+			}
+
+			card_sr.onmousemove = event => {
+				hover_card.style.left = event.pageX + "px";
+				const cardHeight = 523 * window.getComputedStyle(hover_card).getPropertyValue('--scale');
+				const posY = event.pageY - cardHeight;
+				const bottom = event.pageY + cardHeight;
+				// console.log(bottom, document.body.clientHeight);
+				// console.log(event.pageY);
+				hover_card.style.top = bottom > window.innerHeight ? posY : event.pageY;
+				// hover_card.style.top = Math.max(0, posY) + "px";
+			}
+
+			card_sr.onmouseout = () => {
+				hover_card.style.display = '';
+			}
+
+			card_sr.onclick = () => {
+				openCardModal(card_stats);
+			}
+			card_sr.style.cursor = "pointer";
+
+			const contextMenu = document.getElementById("myContextMenu");
+			card_sr.addEventListener("contextmenu", event => {
+				event.preventDefault(); // Prevent default context menu
+
+				contextMenu.style.display = "block";
+				contextMenu.style.left = event.pageX + "px";
+				contextMenu.style.top = event.pageY + "px";
+
+				active_card = JSON.stringify(card_stats);
+			});
+
+			return card_sr;
+		}
+
+		function switchPrinting(imgContainer, card) {
+			imgContainer.dataset.printing ??= 0;
+			imgContainer.dataset.printing++;
+			if (imgContainer.dataset.printing > card.printings.length) imgContainer.dataset.printing = 0;
+			const printings = [card, ...card.printings];
+			const id = card.set + "-" + card.number + "-" + document.getElementById("display").value;
+			const printing = printings[imgContainer.dataset.printing];
+			const new_card_sr = createCardSr(imgContainer, id, printing);
+			imgContainer.querySelector('.card-image').remove();
+			imgContainer.appendChild(new_card_sr);
 		}
 
 		async function imgFlip(id, rotate_card = false) {
@@ -2027,7 +2090,6 @@
 		}
 
 		function processDeck() {
-			console.log('pd');
 			const display_style = document.getElementById("display-select").value;
 			if (display_style != "stats") {
 				document.getElementsByClassName("deck-cards-container")[0].innerHTML = deck_cards_html;
@@ -2731,7 +2793,6 @@
 			}
 
 			const urlParams = new URLSearchParams(window.location.search);
-			console.log('HELLO');
 
 			if (urlParams.get('deck') != null) { // check if deck exists
 				if (urlParams.get("deck").includes("-") && !urlParams.get("deck").includes(";")) {
@@ -2744,7 +2805,6 @@
 						for (const deck of decks) {
 							if (deck.name == deck_name) {
 								let text = atob(deck.url.split(";")[1].split("&")[0]);
-								console.log(text);
 								if (!deck.private) readDeckText(text, deck.name);
 								window.fireimport = true;
 								break;

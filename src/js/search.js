@@ -9,6 +9,17 @@ function compareFunction(a, b) {
     // 	return -1;
     // }
 
+    const favorites = localStorage.getItem('settings.favorites') || '';
+    const a_fav = favorites.match(`${RegExp.escape(a.card_name)}\\n`);
+    const b_fav = favorites.match(`${RegExp.escape(b.card_name)}\\n`);
+
+    if (a_fav && !b_fav) {
+        return -1;
+    }
+    if (b_fav && !a_fav) {
+        return 1;
+    }
+
     if (a.shape.includes("token") && !b.shape.includes("token")) {
         return 1;
     }
@@ -151,11 +162,11 @@ function compareFunction(a, b) {
     }
 }
 
-async function searchToken(card, token) {
+function searchToken(card, token) {
     let card_stats = [];
 
     for (var key in card) {
-        if (isNaN(card[key]) && key != 'related') {
+        if (isNaN(card[key]) && !key.match(/printing|related/i)) {
             card_stats[key] = card[key].toLowerCase();
         }
         else {
@@ -863,7 +874,7 @@ function tokenizeTerms(searchTerms) {
     return searchTokens;
 }
 
-async function searchAllTokens(card, tokens) {
+function searchAllTokens(card, tokens) {
     if (tokens == null || tokens == '') {
         return true;
     }
@@ -876,22 +887,22 @@ async function searchAllTokens(card, tokens) {
 
     for (let i = 0; i < tokens.length; i++) {
         if (tokens[i].charAt(0) == '+') {
-            return await searchAllTokens(card, tokens.slice(0, i)) && await searchAllTokens(card, tokens.slice(i + 1));
+            return searchAllTokens(card, tokens.slice(0, i)) && searchAllTokens(card, tokens.slice(i + 1));
         }
         if (tokens[i] == "or") {
-            return await searchAllTokens(card, tokens.slice(0, i)) || await searchAllTokens(card, tokens.slice(i + 1));
+            return searchAllTokens(card, tokens.slice(0, i)) || searchAllTokens(card, tokens.slice(i + 1));
         }
     }
 
     for (let token of tokens) {
         if (token.charAt(0) == '-') {
-            return !(await searchToken(card, token.substring(1))) && (tokens.length == 1 ? true : await searchAllTokens(card, tokens.slice(1)));
+            return !(searchToken(card, token.substring(1))) && (tokens.length == 1 ? true : searchAllTokens(card, tokens.slice(1)));
         }
         if (token.charAt(0) == '(') {
-            return await searchAllTokens(card, tokenizeTerms(token.substring(1, token.length - 1))) && (tokens.length == 1 ? true : await searchAllTokens(card, tokens.slice(1)));
+            return searchAllTokens(card, tokenizeTerms(token.substring(1, token.length - 1))) && (tokens.length == 1 ? true : searchAllTokens(card, tokens.slice(1)));
         }
         else {
-            return await searchToken(card, token) && (tokens.length == 1 ? true : await searchAllTokens(card, tokens.slice(1)));
+            return searchToken(card, token) && (tokens.length == 1 ? true : searchAllTokens(card, tokens.slice(1)));
         }
     }
 }

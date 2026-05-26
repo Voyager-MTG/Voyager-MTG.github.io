@@ -776,7 +776,7 @@
 					continue;
 				}
 
-				searched = await searchAllTokens(card, tokenizeTerms(searchTerms));
+				searched = searchAllTokens(card, tokenizeTerms(searchTerms));
 
 				if (searched && (!containsCard(search_results, card) || searchTerms.includes("include:extras") || searchTerms.includes("include:printings") || searchTerms.includes("include:prints"))) {
 					search_results.push(card);

@@ -64,7 +64,7 @@ function setGradient(gradient = false) {
 
 	document.body.style.backgroundImage = gradImage;
 	localStorage.setItem("settings.gradient", gradient);
-	console.log("CHANGE");
+	// console.log("CHANGE");
 	if (document.getElementsByClassName("artist-credit")[0])
 		document.getElementsByClassName("artist-credit")[0].remove();
 	const credit_text = document.createElement("span");

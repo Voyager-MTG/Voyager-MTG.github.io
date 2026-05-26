@@ -789,7 +789,7 @@
 			search();
 		}
 
-		async function search() {
+		function search() {
 			searchTerms = document.getElementById("search").value.toLowerCase();
 			tokenizedTerms = tokenizeTerms(searchTerms);
 
@@ -801,7 +801,7 @@
 					continue;
 				}
 
-				searched = await searchAllTokens(card, tokenizeTerms(searchTerms));
+				searched = searchAllTokens(card, tokenizeTerms(searchTerms));
 				if (searched)
 					search_results.push(card);
 			}
