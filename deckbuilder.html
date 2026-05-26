@@ -1847,7 +1847,7 @@
 					search_results.push(card);
 			}
 
-			const favorites = localStorage.getItem('settings.favorites');
+			const favorites = localStorage.getItem('settings.favorites') || '';
 
 			for (let i = 0; i < search_results.length; i++) {
 				const imgContainer = document.createElement("div");
