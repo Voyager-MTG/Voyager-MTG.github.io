@@ -1332,7 +1332,7 @@
 				collectionToLoad_ = fullcoll;
 			}
 
-			let deck_map = new Map();
+			let coll_map = new Map();
 
 			for (let line of collectionToLoad_) {
 				// get the count and card name
@@ -1344,14 +1344,16 @@
 				card_set = card_set == null ? "XXX" : card_set[1];
 				card_num = card_num == null ? "0" : card_num[1];
 				
-				if (deck_map.has(`${card_name} (${card_set}) ${card_num}`)) // if the deck has card name, add the new value, if it doesnt, set the value to stop keyerrors
+				if (coll_map.has(`${card_name} (${card_set}) ${card_num}`)) // if the deck has card name, add the new value, if it doesnt, set the value to stop keyerrors
 				{
-					deck_map.set(`${card_name} (${card_set}) ${card_num}`, deck_map.get(`${card_name} (${card_set}) ${card_num}`) + count);
+					coll_map.set(`${card_name} (${card_set}) ${card_num}`, coll_map.get(`${card_name} (${card_set}) ${card_num}`) + count);
 				}
 				else {
-					deck_map.set(`${card_name} (${card_set}) ${card_num}`, count);
+					coll_map.set(`${card_name} (${card_set}) ${card_num}`, count);
 				}
 			}
+
+			collection_copies = new Map(coll_map);
 
 			for (const card of card_list.cards) {
 				if (card.type.includes('Basic')) {
@@ -1359,43 +1361,43 @@
 					continue;
 				} 
 				
-				for (const [ key, value ] of deck_map.entries()) {
+				for (const [ key, value ] of coll_map.entries()) {
 					const card_match = key.match(/(.*) \(([A-Z\-_0-9]+)\) (\d+)/);
 					if (!card_match) continue;
 					const [_, name, set, num] = card_match;
 					if (name == card.card_name && (set == card.set || set == "XXX") && (num == card.number.toString() || num == "0")) {
 						new_list.push(card);
 						cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}-cards-and-text):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${value}x"; display: block; position: absolute; border-radius: 20px; z-index: 1;}\n`;
-						deck_map.delete(key);
+						coll_map.delete(key);
 					}
 				}
 			}
 
-			if (deck_map.size > 1) {
+			if (coll_map.size > 1) {
 				for (const card of card_list.cards) {
-					for (const [ key, value ] of deck_map.entries()) {
+					for (const [ key, value ] of coll_map.entries()) {
 						const card_match = key.match(/(.*) \(([A-Z\-_0-9]+)\) (\d+)/);
 						if (!card_match) continue;
 						const [_, name, set, num] = card_match;
 						if (name == card.card_name && (set == card.set || set == "XXX")) {
 							new_list.push(card);
 							cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}-cards-and-text):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${value}x"; display: block; position: absolute; border-radius: 20px; z-index: 1;}\n`;
-							deck_map.delete(key);
+							coll_map.delete(key);
 						}
 					}
 				}
 			}
 
-			if (deck_map.size > 1) {
+			if (coll_map.size > 1) {
 				for (const card of card_list.cards) {
-					for (const [ key, value ] of deck_map.entries()) {
+					for (const [ key, value ] of coll_map.entries()) {
 						const card_match = key.match(/(.*) \(([A-Z\-_0-9]+)\) (\d+)/);
 						if (!card_match) continue;
 						const [_, name, set, num] = card_match;
 						if (name == card.card_name) {
 							new_list.push(card);
 							cssStr += `.img-container:has(> #${card["set"]}-${card["number"]}-cards-and-text):before {background-color: rgba(0,0,0,0.8); padding: 10px; color: white; font-size: 20px; content: "${value}x"; display: block; position: absolute; border-radius: 20px; z-index: 1;}\n`;
-							deck_map.delete(key);
+							coll_map.delete(key);
 						}
 					}
 				}
@@ -1403,6 +1405,14 @@
 
 			// set the card list to te new list, then add a style element with the css string we just made, then add it to the body. Close the modal, then initialize the search
 			card_list_arrayified = new_list;
+			card_list_cleaned = [];
+			card_list_arrayified.forEach(card => {
+				const printingI = card_list_cleaned.findIndex(c => c.card_name == card.card_name);
+				if (printingI == -1) card_list_cleaned.push({...card, printings: []});
+				else card_list_cleaned[printingI].printings.push(card);
+			});
+
+
 			const cssElem = document.createElement("style");
 			cssElem.id = "copies-style";
 			cssElem.innerHTML = cssStr;
@@ -2914,7 +2924,7 @@
 					previewimg: card_stats.card_name,
 					url: `https://voyager-mtg.github.io/deck?deck=${encodeURIComponent(document.getElementById("deck-name").value) + ';' + btoa(generateDeckText(true, true))}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`,
 					colors: colors,
-					last_modified: `${leadingZero(date.getDate())}-${leadingZero(date.getMonth())}-${date.getYear() + 1900}, ${date.getHours()}:${leadingZero(date.getMinutes())}`,
+					last_modified: `${date.getDate().padStart(2, '0')}-${date.getMonth().padStart(2, '0')}-${date.getYear() + 1900}, ${date.getHours()}:${date.getMinutes().padStart(2, '0')}`,
 					format: localStorage.getItem('settings.format'),
 					private: localStorage.getItem("settings.deck_privacy") == "Private"
 				};
@@ -2977,12 +2987,6 @@
 				}
 			});
 		});
-		function leadingZero(n) {
-			if (n.toString().length == 1) {
-				return "0" + n;
-			}
-			return n;
-		}
 	</script>
 </body>
 
