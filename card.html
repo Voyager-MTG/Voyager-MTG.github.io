@@ -610,6 +610,16 @@
 				}
 			}
 
+			const illustrator = document.createElement('div');
+			illustrator.innerHTML = `Illustrator:  <a href="/search?search=a%3D%22${encodeURI(card.artist)}%22">${card.artist}</a>`;
+			illustrator.className = 'illust';
+			text.appendChild(illustrator);
+
+			const designer = document.createElement('div');
+			designer.innerHTML = `Designer:  <a href="/search?search=designer%3D%22${encodeURI(card.designer)}%22">${card.designer}</a>`;
+			designer.className = 'illust';
+			text.appendChild(designer);
+
 			textContainer.appendChild(text);
 
 			if (localStorage.getItem('info.lastdeck') != null) {

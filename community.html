@@ -293,6 +293,8 @@
 			for (const event of all_events) {
 				const event_container = document.createElement("div");
 				event_container.className = "event-container";
+				event_container.style.backgroundImage = `url("/img/events/${event.name}.png")`;
+				event_container.style.color = 'red';
 
 				const event_name = document.createElement("a");
 				event_name.className = "event-name text";

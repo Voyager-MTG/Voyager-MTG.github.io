@@ -511,3 +511,21 @@ hr {
 /* .hide-sets {
 	display: none;
 } */
+
+.events-bar {
+	border: 3px solid var(--popout-text-color);
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	position: absolute;
+	left: -5px;
+	top: 10%;
+	height: 90%;
+	width: calc(50% - 420px);
+	padding: 8px;
+}
+
+@media (max-width: 1100px) {
+	.events-bar {
+		display: none;
+	}
+}

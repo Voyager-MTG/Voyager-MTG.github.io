@@ -25,6 +25,14 @@ hr {
 	justify-items: center;
 	padding: 5px;
 	background-color: color-mix(in srgb, var(--mid-accent) 60%, transparent);
+	height: 150px;
+	width: 200px;
+	background-size: cover;
+	transition: 0.3s;
+}
+
+.event-container:hover {
+	filter: brightness(0.7);
 }
 
 .event-name {
@@ -33,12 +41,14 @@ hr {
 	text-decoration: underline;
 	text-underline-position: below;
 	text-underline-offset: 3px;
+	text-align: center;
+	text-shadow: 2px 2x black;
 	/* color: rgb(48, 48, 135); */
 }
 
 .events-container {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(auto-fit, 230px);
 	gap: 10px;
 	margin: 40px;
 }

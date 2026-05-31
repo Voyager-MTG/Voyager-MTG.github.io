@@ -32,6 +32,9 @@
 		<img src="/img/header/account.png" class="settings-icon" onclick="window.location.href = `/account`">
 	</div>
 	<div id="gradient"></div>
+	<!-- <div class="events-bar popout">
+		TEST
+	</div> -->
 	<div class="item-container">
 		<img class="banner" src="/img/banner.png"></img>
 		<div><input type="text" inputmode="search" placeholder="Search ..." autofocus="autofocus" name="search"
@@ -307,7 +310,7 @@
 				await delay(100);
 			}
 			while (!isImageOk(document.getElementById("cotd")));
-			document.getElementById("preview-container").style.height = document.getElementById("cotd-image").offsetHeight;
+			// document.getElementById("preview-container").style.height = document.getElementById("cotd-image").offsetHeight;
 
 		});
 
@@ -369,9 +372,9 @@
 			}
 		});
 
-		window.addEventListener('resize', function (event) {
-			document.getElementById("preview-container").style.height = document.getElementById("cotd-image").offsetHeight;
-		}, true);
+		// window.addEventListener('resize', function (event) {
+			// document.getElementById("preview-container").style.height = document.getElementById("cotd-image").offsetHeight;
+		// }, true);
 
 		function isImageOk(img) {
 			if (!img.complete || img.naturalWidth == 0) {

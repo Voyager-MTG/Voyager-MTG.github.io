@@ -43,8 +43,6 @@ a {
 	position: relative;
 }
 
-
-
 .add-icon {
 	max-height: 14px;
 }
@@ -245,4 +243,14 @@ ul {
 	.card-changes {
 		font-size: 2em;
 	}
+}
+
+.card-text .illust {
+	font-size: 12em;
+	padding-bottom: 0;
+	font-weight: bold;
+}
+
+.illust a {
+	color: var(--link);
 }
