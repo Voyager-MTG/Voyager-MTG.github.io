@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <script>
+            document.addEventListener('DOMContentLoaded', async () => {
+                await fetch('out.json')
+                    .then(response => response.json())
+                    .then(json => {
+                        prices = json;
+                    }).catch(error => console.error('Error:', error));
+
+                const urlParams = new URLSearchParams(window.location.search);
+                const deck64 = urlParams.get('deck').split(';')[1].split('&main')[0];
+                const decklist = atob(deck64);
+                let price = 0;
+                
+                for (const line of decklist.split('\n')) {
+                    const m = line.match(/(\d+) (.*)/);
+                    if (!m) continue;
+                    const [_, copies, id] = m;
+                    price += parseInt(copies) * (prices[id] || 0);
+                }
+
+                console.log(price);
+            });
+        </script>
+    </body>
+</html>

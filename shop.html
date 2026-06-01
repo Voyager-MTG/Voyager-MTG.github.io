@@ -112,6 +112,29 @@
 		function setGradient() {}
 		function prepareGradients() {}
 
+		function cardPrice(card) {
+			// if (card.set == 'LAIR') return 100;
+			if (card.type.includes('Basic')) return 0;
+			// const card_stats = stats[card.card_name];
+			// const weighted_pr = 6 * card_stats.playrate_event + 4 * card_stats.playrate_user;
+			// const games_played = sigmoid(card_stats.games_played - 12, 50);
+			// const rarity = rarityN[card.rarity];
+			// const set_price = setP[card.set];
+
+			// seed = reallyRand(250, seed);
+			// console.log(`${card.card_name}\npr: ${2000 * weighted_pr}\ngames: ${1000 * games_played}\nrar: ${1000 * rarity}\nage: ${1000 * set_price}\nrand: -${seed}\nstatic: -1000\n`)
+			// const unfilteredPrice = (2000 * weighted_pr + 1000 * games_played + 1000 * rarity + 1000 * set_price - 800 - seed + (isRemoval(card) ? 300 : 0)) * 1.8;
+			// return 3000 * rarity;
+			return buyValues[card.rarity];
+		}
+
+		const buyValues = {
+			common: 30,
+			uncommon: 50,
+			rare: 200,
+			mythic: 500
+		};
+
 		document.getElementById("sort-by").onchange = preSearch;
 		document.getElementById("sort-order").onchange = preSearch;
 
