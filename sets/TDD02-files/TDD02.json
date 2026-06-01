@@ -1,9 +1,9 @@
 ﻿{
     "name": "Daydream",
     "formats": "",
-    "trimmed": "y",
+    "trimmed": "n",
     "image_type": "jpg",
-    "draft_structure": "cube",
+    "draft_structure": "draft booster",
     "designer": "Voyager",
     "cards": [
         {
@@ -575,7 +575,7 @@
             "number": 15,
             "color_identity": "W",
             "cost": "{2}{W}",
-            "rules_text": "At the beginning of your end step, if a permanent you controlled left the battlefield this turn, exile target card from a graveyard, you may have it become foretold.",
+            "rules_text": "At the beginning of your end step, if a permanent you controlled left the battlefield this turn, exile target permanent card from a graveyard, you may have it become foretold.",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -1535,7 +1535,7 @@
             "number": 60,
             "color_identity": "G",
             "cost": "{4}{G}{G}",
-            "rules_text": "Emerge {6}{G} [i](You may cast this spell by sacrificing a creature and paying the emerge cost reduced by that creature's mana value.)[/i]\nWhen Wish for Transformation enters, search your library for a non-Spirit creature card, reveal it, then put it into your hand. If it emerged from a creature with greater power than that card's mana value, put it onto the battlefield instead.",
+            "rules_text": "Emerge {6}{G} [i](You may cast this spell by sacrificing a creature and paying the emerge cost reduced by that creature's mana value.)[/i]\nWhen Wish for Transformation enters, search your library for a non-Spirit creature card, reveal it, then put it into your hand. If it emerged from a creature with power greater than that card's mana value, put it onto the battlefield instead.",
             "flavor_text": "[i][/i]",
             "pt": "7/7",
             "special_text": "",
@@ -1915,8 +1915,8 @@
             "number": 48,
             "color_identity": "R",
             "cost": "{2}{R}",
-            "rules_text": "At the beginning of each end step, create a tapped land token with \u201c{T}, Sacrifice this land: Add {R}.\u201d\n{2}{R}, Sacrifice a land: Legacy of Flint deals 2 damage to any target.",
-            "flavor_text": "[i]In fire are all the treasures of the earth revealed.[/i]",
+            "rules_text": "At the beginning of your end step, create a tapped land token with \u201c{T}, Sacrifice this land: Add {R}.\u201d\n{2}{R}, Sacrifice a land: Legacy of Flint deals 2 damage to any target.",
+            "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
             "shape": "normal",
@@ -2185,12 +2185,12 @@
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
-            "shape": "normal",
+            "shape": "token",
             "set": "TDD02",
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Yuumei",
-            "notes": "OVT Packs (Official Voyager Theme)\nTheme OV Pack for release of march 2026\nCard list:\n\n"
+            "notes": "OVT Packs (Official Voyager Theme)\nTheme OV Pack for release of march 2026\nCard list:\n!token\n\n"
         }
     ]
 }

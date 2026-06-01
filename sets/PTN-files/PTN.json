@@ -1,9 +1,9 @@
 ﻿{
     "name": "Port Noon: Occult Islands of Vespera",
     "formats": "",
-    "trimmed": "y",
+    "trimmed": "n",
     "image_type": "jpg",
-    "draft_structure": "cube",
+    "draft_structure": "draft booster",
     "designer": "Kogane</soft-line></soft-line></soft-line></soft-line></soft-line></soft-line></soft-line></soft-line></soft-line>",
     "cards": [
         {
@@ -3843,7 +3843,7 @@
             "number": 135,
             "color_identity": "R",
             "cost": "{2}{R}",
-            "rules_text": "At the beginning of each end step, create a tapped land token with \u201c{T}, Sacrifice this land: Add {R}.\u201d\n{2}{R}, Sacrifice a land: Legacy of Flint deals 2 damage to any target.",
+            "rules_text": "At the beginning of your end step, create a tapped land token with \u201c{T}, Sacrifice this land: Add {R}.\u201d\n{2}{R}, Sacrifice a land: Legacy of Flint deals 2 damage to any target.",
             "flavor_text": "[i]In fire are all the treasures of the earth revealed.[/i]",
             "pt": "",
             "special_text": "",
@@ -4812,7 +4812,7 @@
             "number": 32,
             "color_identity": "W",
             "cost": "{2}{W}",
-            "rules_text": "At the beginning of your end step, if a permanent you controlled left the battlefield this turn, exile target card from a graveyard, you may have it become foretold. [i](Their foretell costs are their mana costs if they aren't already specified.)[/i]",
+            "rules_text": "At the beginning of your end step, if a permanent you controlled left the battlefield this turn, exile target permanent card from a graveyard, you may have it become foretold. [i](Their foretell costs are their mana costs if they aren't already specified.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
