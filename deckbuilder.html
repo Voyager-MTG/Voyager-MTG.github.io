@@ -2010,7 +2010,7 @@
 			img.style.transition = seconds.toString() + "s";
 			img.style.transform = "rotateY(90deg)";
 
-			const btn = img.parentElement.querySelector('button');
+			const btn = img.closest('.img-container').querySelector('button');
 			btn.style.transition = seconds.toString() + "s";
 			btn.style.filter = cardName.includes("_front") ? "invert()" : "";
 
