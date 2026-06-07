@@ -1619,7 +1619,7 @@
 			document.getElementById("modal-content").innerHTML = "Deleting Deck:";
 			Object.keys(localStorage).forEach(function (key) {
 				// for each key, make a delete button with the name that calls deletedeck
-				document.getElementById("modal-content").innerHTML += `<span id="delete-${key}" class="del-btn" onclick="deleteDeck('${key}')">${key}</span>`;
+				document.getElementById("modal-content").innerHTML += `<span id="delete-${key}" class="del-btn" onclick="deleteDeck(\`${key}\`)">${key}</span>`;
 			});
 			document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>';
 		}
