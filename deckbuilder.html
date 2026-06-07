@@ -2924,7 +2924,7 @@
 					previewimg: card_stats.card_name,
 					url: `https://voyager-mtg.github.io/deck?deck=${encodeURIComponent(document.getElementById("deck-name").value) + ';' + btoa(generateDeckText(true, true))}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`,
 					colors: colors,
-					last_modified: `${date.getDate().toString().padStart(2, '0')}-${date.getMonth().padStart(2, '0')}-${date.getYear() + 1900}, ${date.getHours()}:${date.getMinutes().padStart(2, '0')}`,
+					last_modified: `${date.getDate().toString().padStart(2, '0')}-${date.getMonth().toString().padStart(2, '0')}-${date.getYear() + 1900}, ${date.getHours()}:${date.getMinutes().toString().padStart(2, '0')}`,
 					format: localStorage.getItem('settings.format'),
 					private: localStorage.getItem("settings.deck_privacy") == "Private"
 				};
