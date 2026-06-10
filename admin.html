@@ -1,0 +1,604 @@
+<html spellcheck="false">
+
+<head>
+	<title>Admin Panel</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.png">
+	<link rel="stylesheet" href="/src/css/mana.css">
+	<link rel="stylesheet" href="/src/css/header.css">
+	<link rel="stylesheet" href="/src/css/theme.css">
+	<link rel="stylesheet" href="/src/css/modal.css">
+	<link rel="stylesheet" href="/src/css/tab.css">
+	<link rel="stylesheet" href="/src/css/pages/admin.css">
+</head>
+<body>
+	<img src="/img/header/menu.png" class="header-control" onclick="toggleHeader()">
+	<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/header/search.png">
+			<div style="position: relative; width: 100%;">
+				<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+				<div id="tag-dropdown" style="display: none; position: absolute; top: 100%; left: 0; width: 100%; background: white; border: 1px solid #d5d9d9; z-index: 1000; max-height: 200px; overflow-y: auto; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></div>
+			</div>
+			<a href="/all-sets"><img src="/img/header/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/header/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<div class="community"><a href="/community"><img src="/img/header/community.png"
+						class="sg-icon">Community<b>⮟</b></a>
+				<div class="community-dropdown">
+					<a href="/community?tab=users" class="community-dropdown-item"><img class="dropdown-icon"
+							src="/img/header/community.png">Users</a>
+					<a href="/community?tab=decks" class="community-dropdown-item"><img class="dropdown-icon"
+							src="/img/header/deck.png">Decks</a>
+					<a href="/community?tab=events" class="community-dropdown-item"><img class="dropdown-icon"
+							src="/img/swords.png">Events</a>
+					<a href="/community?tab=cards" class="community-dropdown-item"><img class="dropdown-icon"
+							src="/img/header/sets.png">Cards</a>
+				</div>
+			</div>
+			<a href="/settings" class="account-link"><img src="/img/header/settings.png" class="sg-icon"></a>
+			<a href="/account" class="account-link"><img src="/img/header/account.png" class="sg-icon"></a>
+			<div class="mobile-buttons">
+				<a href="/search"><img src="/img/header/search.png" class="sg-icon"></a>
+				<a href="/settings"><img src="/img/header/settings.png" class="sg-icon"></a>
+				<a href="/account"><img src="/img/header/account.png" class="sg-icon"></a>
+			</div>
+		</div>
+	</div>
+	<div class="page-container">
+		<div class="tab-select" id="tab-select">
+			<div class="tab-btn-active tab-btn" id="home-tab-select" onclick="changeTab('home')">
+				<img src="/img/home.png" class="tab-switch-icon">
+				<span>Home</span>
+			</div>
+			<div class="tab-btn" id="events-tab-select" onclick="changeTab('events')">
+				<img src="/img/trophy.png" class="tab-switch-icon">
+				<span>Events</span>
+			</div>
+			<div class="tab-btn" id="opener-tab-select" onclick="changeTab('opener')">
+				<img src="/img/header/deck.png" class="tab-switch-icon">
+				<span>Pack Opener</span>
+			</div>
+			<div class="tab-btn" id="viewer-tab-select" onclick="changeTab('viewer')">
+				<img src="/img/show-white.png" class="tab-switch-icon">
+				<span>Pack Viewer</span>
+			</div>
+		</div>
+		<div class="main-tab" id="main-tab">
+			<div class="tab home-tab" id="home">
+				home
+			</div>
+			<div class="tab events-tab" style="display: none;" id="events">
+			</div>
+		</div>
+	</div>
+	<div id="modal-container">
+		<div id="modal-content" class="popout">
+			<span class="close"
+				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+		</div>
+	</div>
+	<script src="/src/js/background.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", async function () {
+			await fetch('/lists/all-cards.json')
+				.then(response => response.json())
+				.then(json => {
+					card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+			await fetch('/lists/all-sets.json')
+				.then(response => response.json())
+				.then(json => {
+					set_list = json;
+				}).catch(error => console.error('Error:', error));
+
+			await fetch('/data/cr.txt')
+				.then(response => response.text())
+				.then(text => {
+					cr = text;
+				}).catch(error => console.error('Error:', error));
+
+			card_list_arrayified = card_list.cards;
+
+			await fetch('/lists/all-sets.json')
+				.then(response => response.json())
+				.then(data => {
+					sets_json = data;
+				}).catch(error => console.error('Error:', error));
+
+			let all_tags = new Set();
+			card_list_arrayified.forEach(card => {
+				if (card.notes) {
+					const tagMatches = card.notes.matchAll(/!tag(?:<\w+>)?\s+([^\s\n\b]+)/g);
+					for (const match of tagMatches) {
+						if (match[0].includes('!tag<')) continue;
+						all_tags.add(match[1].replace(/;$/, ''));
+					}
+				}
+			});
+
+			const searchInput = document.getElementById("search");
+			const tagDropdown = document.getElementById("tag-dropdown");
+
+			// Create a mirror element for position calculation
+			const mirror = document.createElement("div");
+			Object.assign(mirror.style, {
+				position: "absolute",
+				visibility: "hidden",
+				whiteSpace: "pre",
+				font: getComputedStyle(searchInput).font,
+				padding: "0", // No padding for pure text measurement
+				border: "none",
+				boxSizing: "content-box"
+			});
+			document.body.appendChild(mirror);
+
+			if (searchInput && tagDropdown) {
+				tagDropdown.style.width = "auto";
+				tagDropdown.style.minWidth = "75px";
+				tagDropdown.style.maxWidth = "300px";
+				tagDropdown.style.maxHeight = "200px";
+				tagDropdown.style.overflowY = "auto";
+
+				const updateDropdown = function() {
+					const value = searchInput.value;
+					const cursorPosition = searchInput.selectionStart;
+					
+					// Find the tag: prefix immediately preceding the cursor
+					const lastTagIndex = value.substring(0, cursorPosition).lastIndexOf("tag:");
+					
+					if (lastTagIndex !== -1) {
+						const queryStart = lastTagIndex + 4;
+						const query = value.substring(queryStart, cursorPosition);
+						
+						if (!query.includes(" ")) {
+							const filteredTags = Array.from(all_tags).filter(tag => tag.toLowerCase().startsWith(query.toLowerCase())).sort();
+							if (filteredTags.length > 0) {
+								tagDropdown.innerHTML = "";
+								filteredTags.forEach(tag => {
+									const div = document.createElement("div");
+									div.innerText = tag;
+									div.style.padding = "5px 10px";
+									div.style.cursor = "pointer";
+									div.style.whiteSpace = "nowrap";
+									div.onmouseover = () => div.style.background = "#f0f0f0";
+									div.onmouseout = () => div.style.background = "white";
+									div.onclick = () => {
+										const newValue = value.substring(0, queryStart) + tag + " " + value.substring(cursorPosition);
+										searchInput.value = newValue;
+										tagDropdown.style.display = "none";
+										searchInput.focus();
+										const newCursorPos = queryStart + tag.length + 1;
+										searchInput.setSelectionRange(newCursorPos, newCursorPos);
+									};
+									tagDropdown.appendChild(div);
+								});
+
+								// Calculate position
+								mirror.textContent = value.substring(0, lastTagIndex + 4);
+								const textWidth = mirror.getBoundingClientRect().width;
+								const inputPaddingLeft = parseFloat(getComputedStyle(searchInput).paddingLeft) || 0;
+								
+								tagDropdown.style.left = Math.min(textWidth + inputPaddingLeft, searchInput.offsetWidth - tagDropdown.offsetWidth) + "px";
+								tagDropdown.style.display = "block";
+								return;
+							}
+						}
+					}
+					tagDropdown.style.display = "none";
+				};
+
+				searchInput.addEventListener("input", updateDropdown);
+				searchInput.addEventListener("click", updateDropdown);
+				searchInput.addEventListener("keyup", updateDropdown);
+
+				document.addEventListener("click", function(e) {
+					if (e.target !== searchInput && e.target !== tagDropdown) {
+						tagDropdown.style.display = "none";
+					}
+				});
+			}
+		});
+
+		function prepareGradients() {}
+		function setGradient() {}
+
+		function changeTab(tab_name) {
+			document.getElementById(tab_name).style.display = "";
+			document.getElementById(tab_name + "-tab-select").className = "tab-btn tab-btn-active"
+			for (const child of document.getElementById("main-tab").children) {
+				if (child.id != tab_name && child.id != "ended-text") {
+					child.style.display = "none";
+				}
+			}
+			for (const child of document.getElementById("tab-select").children) {
+				if (child.id != tab_name + "-tab-select") {
+					child.className = "tab-btn";
+				}
+			}
+		}
+
+		modal = document.getElementById("modal-container");
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				document.getElementById('modal-container').style.display = 'none';
+			}
+		}
+
+		document.getElementById("search").addEventListener("keypress", function (event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				const url = new URL('search', window.location.origin);
+				url.searchParams.append('search', document.getElementById("search").value);
+				window.location.href = url;
+			}
+		});
+
+		function randomCard() {
+			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+			let random_card = card_list_arrayified[i];
+
+			const url = new URL('card', window.location.origin);
+			const params = {
+				set: random_card.set,
+				num: random_card.number,
+				name: random_card.card_name
+			}
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+
+			window.location.href = url;
+		}
+	</script>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
+			authDomain: "voyager-78e30.firebaseapp.com",
+			projectId: "voyager-78e30",
+			storageBucket: "voyager-78e30.firebasestorage.app",
+			messagingSenderId: "411191248476",
+			appId: "1:411191248476:web:591349be169d823e5f8899",
+			measurementId: "G-TQ1L48F25M"
+		};
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+		let username = "";
+		let password = "";
+		let sessionid = localStorage.getItem('settings.session');
+		let decks = {};
+		const events = ["GP1", "League"];
+		let user_data;
+
+		if (sessionid) {
+			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
+				let data = docSnap.data();
+				username = data.username;
+				password = data.password;
+			});
+
+			await getDoc(doc(db, 'users', username)).then(docSnap => {
+				let data = docSnap.data();
+				user_data = data;
+			});
+		}
+
+		async function reload() {
+			if (!user_data || !user_data.admin) {
+				alert('You are not an admin. You cannot access this page');
+				window.location.href = '/login';
+			}
+
+			const all_user_docs = await getDocs(collection(db, 'users'));
+			const all_event_docs = await getDocs(collection(db, 'events'));
+
+			const user_data_container = document.createElement('div');
+			user_data_container.className = 'users-container';
+
+			const event_data_container = document.createElement('div');
+			event_data_container.className = 'events-container';
+
+			all_user_docs.forEach(docSnap => {
+				const data = docSnap.data();
+
+				const user_container = document.createElement('div');
+				user_container.className = 'user-container';
+
+				const username_label = document.createElement('div');
+				username_label.className = 'field-label username-label';
+				username_label.innerText = 'Username:';
+
+				const username = document.createElement('input');
+				username.className = 'field username-field';
+				username.value = data.username;
+
+				const username_container = document.createElement('div');
+				username_container.className = 'field-container username-container';
+				username_container.appendChild(username_label);
+				username_container.appendChild(username);
+
+				const save_button = document.createElement('button');
+				save_button.className = 'save-button button';
+				save_button.innerText = 'Save Changes';
+
+				user_container.appendChild(username_container);
+				user_container.appendChild(save_button);
+				user_data_container.appendChild(user_container);
+			});
+			
+			all_event_docs.forEach(docSnap => {
+				const data = docSnap.data();
+
+				const event_container = document.createElement('div');
+				event_container.className = 'event-container';
+
+				const event_label = document.createElement('div');
+				event_label.className = 'event-name';
+				event_label.innerText = data.name;
+
+				const save_button = document.createElement('button');
+				save_button.className = 'save-button button';
+				save_button.innerText = 'Save Changes';
+
+				const winner_label = document.createElement('div');
+				winner_label.className = 'field-label winner-label';
+				winner_label.innerText = 'Winner:';
+
+				const winner = document.createElement('input');
+				winner.className = 'field winner-field';
+				winner.value = data.winner;
+
+				const winner_container = document.createElement('div');
+				winner_container.className = 'field-container winner-container';
+				winner_container.appendChild(winner_label);
+				winner_container.appendChild(winner);
+
+				const stage = document.createElement('div');
+				stage.className = 'field-label stage-label';
+				stage.innerText = `Stage: ${data.stage}`;
+
+				const nrounds = document.createElement('div');
+				nrounds.className = 'field-label rounds-label';
+				nrounds.innerText = `Number of rounds: ${data.num_rounds}`;
+
+				const dropped_list = document.createElement('div');
+				dropped_list.className = 'dropped-list';
+				
+				for (const player of (data.dropped ?? [])) {
+					const dropped_container = document.createElement('div');
+					dropped_container.innerText = player;
+					dropped_container.className = 'dropped-container';
+
+					const remove_btn = document.createElement('button');
+					remove_btn.innerText = 'Re-add';
+					remove_btn.className = 'button';
+					remove_btn.onclick = () => {
+						console.log(`removing ${player} from ${data.name}`);
+					}
+					dropped_container.appendChild(remove_btn);
+
+					dropped_list.appendChild(dropped_container);
+				}
+
+				dropped_list.style.display = 'none';
+
+				const dropped = document.createElement('button');
+				dropped.className = 'button dropped';
+				dropped.innerText = 'View dropped';
+				dropped.onclick = () => {
+					dropped_list.style.display = dropped_list.style.display == 'none' ? 'block' : 'none';
+				};
+
+				const decks = document.createElement('button');
+				decks.className = 'button view-dropped';
+				decks.innerText = 'View decks';
+				decks.onclick = () => {
+					document.querySelector('#modal-content').innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+
+					const decks_container = document.createElement('div');
+					decks_container.className = 'decks-container';
+
+					for (const [player, deck] of Object.entries(data.decks)) {
+						const deck_container = document.createElement('div');
+						deck_container.className = 'deck-container';
+
+						const player_header = document.createElement('div');
+						player_header.className = 'player-header';
+						player_header.innerText = player;
+
+						const fields = [
+							'colors',
+							'format',
+							'last_modified',
+							'name',
+							'previewimg'
+						];
+
+						deck_container.appendChild(player_header);
+
+						for (const field of fields) {
+							const field_label = document.createElement('div');
+							field_label.className = `field-label ${field}-label`;
+							field_label.innerText = `${field}:`;
+
+							const field_input = document.createElement('input');
+							field_input.className = `field ${field}-field`;
+							field_input.value = deck[field];
+
+							const field_container = document.createElement('div');
+							field_container.className = `deck-field-container ${field}-container`;
+							field_container.appendChild(field_label);
+							field_container.appendChild(field_input);
+							deck_container.appendChild(field_container);
+						}
+
+						const decklist = atob(deck.url.split(";")[1].split("&")[0]);
+						const decklist_area = document.createElement('textarea');
+						decklist_area.className = 'decklist-editor field';
+						decklist_area.value = decklist;
+						deck_container.appendChild(decklist_area);
+
+						const buttons = document.createElement('div');
+						buttons.className = 'deck-buttons';
+
+						const view_btn = document.createElement('a');
+						view_btn.innerText = 'View Deck';
+						view_btn.className = 'button';
+						view_btn.href = deck.url.replaceAll('deckbuilder', 'deck');
+						view_btn.target = '_blank';
+
+						const save_deck_btn = document.createElement('button');
+						save_deck_btn.innerText = 'Save';
+						save_deck_btn.className = 'button';
+						save_deck_btn.onclick = async () => {
+							const decks = data.decks;
+							decks[player] = {
+								colors: deck_container.querySelector('.colors-field').value,
+								format: deck_container.querySelector('.format-field').value,
+								name: deck_container.querySelector('.name-field').value,
+								last_modified: deck_container.querySelector('.last_modified-field').value,
+								previewimg: deck_container.querySelector('.previewimg-field').value,
+								private: false,
+								url: deck.url.replace(/;(.*?)\&main/, `;${btoa(deck_container.querySelector('.decklist-editor').value)}&main`)
+							};
+
+							await updateDoc(doc(db, 'events', docSnap.id), {
+								decks: decks
+							});
+						}
+
+						buttons.appendChild(view_btn);
+						buttons.appendChild(save_deck_btn);
+						deck_container.appendChild(buttons);
+
+						decks_container.appendChild(deck_container);
+					}
+
+					const add_deck_button = document.createElement('button');
+					add_deck_button.className = 'add-deck-button button';
+
+					const label = document.createElement('div');
+					label.innerText = 'Add Deck';
+					label.className = 'deck-button-label';
+
+					const plus = document.createElement('div');
+					plus.className = 'plus-icon';
+					plus.innerText = '+';
+
+					add_deck_button.onclick = () => {
+						document.querySelector('#modal-content').innerHTML = '';
+						const deck_container = document.createElement('div');
+						deck_container.className = 'deck-container';
+
+						const fields = [
+							'player',
+							'name',
+							'previewimg'
+						];
+
+						for (const field of fields) {
+							const field_label = document.createElement('div');
+							field_label.className = `field-label ${field}-label`;
+							field_label.innerText = `${field}:`;
+
+							const field_input = document.createElement('input');
+							field_input.className = `field ${field}-field`;
+							field_input.placeholder = `Enter ${field}`;
+
+							const field_container = document.createElement('div');
+							field_container.className = `deck-field-container ${field}-container`;
+							field_container.appendChild(field_label);
+							field_container.appendChild(field_input);
+							deck_container.appendChild(field_container);
+						}
+
+						const decklist_area = document.createElement('textarea');
+						decklist_area.className = 'decklist-editor field';
+						decklist_area.placeholder = `Enter decklist here`;
+
+						const submit_btn = document.createElement('button');
+						submit_btn.innerText = `+ Add Deck to ${data.name}`;
+						submit_btn.className = 'submit-button button';
+
+						submit_btn.onclick = async () => {
+							const decks = data.decks;
+							const list = deck_container.querySelector('.decklist-editor').value;
+							const date = new Date();
+							const name = deck_container.querySelector('.name-field').value;
+							const player = deck_container.querySelector('.player-field').value;
+							let colorsList = [];
+
+							for (const card of card_list_arrayified) {
+								if (list.match(`\\d+ ${card.card_name}( \\(.*?\\) \\d+)?`)) {
+									for (const color of card.color)
+										if (!colorsList.includes(color)) colorsList.push(color);
+								}
+							}
+
+							const colors = colorsList.join('');
+							const mainCount = list.split(/sideboard|sanctum/)[0].split('\n').length;
+							const sideCount = list.split('sideboard')[1].split('sanctum')[0].split('\n').length;
+							const sanctumCount = list.split('sanctum')[1].split('sideboard')[0].split('\n').length;
+
+							decks[player] = {
+								colors: colors,
+								format: "Eternal",
+								name: name,
+								last_modified: `${date.getDate().toString().padStart(2, '0')}-${date.getMonth().toString().padStart(2, '0')}-${date.getYear() + 1900}, ${date.getHours()}:${date.getMinutes().toString().padStart(2, '0')}`,
+								previewimg: deck_container.querySelector('.previewimg-field').value,
+								private: false,
+								url: `https://voyager-mtg.github.io/deck?deck=${encodeURIComponent(name) + ';' + btoa(list)}&main=${mainCount}&side=${sideCount}&sanctum=${sanctumCount}`
+							}
+
+							await updateDoc(doc(db, 'events', docSnap.id), {
+								decks: decks
+							});
+
+							document.querySelector('#modal-container').style.display = 'none';
+							alert(`Added ${player} to ${data.name}`);
+						}
+
+						deck_container.appendChild(decklist_area);
+						deck_container.appendChild(submit_btn);
+						document.querySelector('#modal-content').appendChild(deck_container);
+					}
+
+					add_deck_button.appendChild(plus);
+					add_deck_button.appendChild(label);
+					decks_container.appendChild(add_deck_button);
+
+					document.querySelector('#modal-content').appendChild(decks_container);
+					document.querySelector('#modal-container').style.display = 'block';
+				};
+
+				event_container.appendChild(event_label);
+				event_container.appendChild(stage);
+				event_container.appendChild(nrounds);
+				event_container.appendChild(winner_container);
+				event_container.appendChild(dropped);
+				event_container.appendChild(dropped_list);
+				event_container.appendChild(decks);
+				event_container.appendChild(save_button);
+				event_data_container.appendChild(event_container);				
+			});
+
+			// document.querySelector('.database-tab').appendChild(user_data_container);
+			document.querySelector('.events-tab').appendChild(event_data_container);
+		}
+
+		reload();
+	</script>
+</body>
+
+</html>

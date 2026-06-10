@@ -1,0 +1,174 @@
+.tab-select {
+	width: fit-content;
+    margin: auto;
+    margin-top: 40px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.tab-btn {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tab {
+    display: block;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    font-size: 20px;
+}
+
+.field-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.deck-field-container {
+    display: grid;
+    align-items: center;
+    gap: 12px;
+    grid-template-columns: 1fr 2fr;
+    margin: 5px 0;
+}
+
+.field-label {
+    color: var(--popout-text-color);
+}
+
+.main-tab {
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.event-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 8px;
+}
+
+.button {
+    font-size: 17px;
+    border-radius: 5px;
+    border: 2px solid var(--dark-accent);
+    color: white;
+    background-color: var(--bg-color);
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--mid-accent);
+}
+
+.event-name {
+    color: var(--popout-text-color);
+    font-weight: bold;
+}
+
+.dropped-container {
+    display: flex;
+    color: var(--popout-text-color);
+    margin-left: 20px;
+    gap: 8px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+body {
+    background-color: var(--bg-color) !important;
+}
+
+.field {
+    background: var(--light-accent);
+    border: 2px solid var(--dark-accent);
+    color: var(--popout-text-color);
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.field:focus {
+    background-color: var(--mid-accent);
+}
+
+.field:hover {
+    filter: brightness(1.2);
+}
+
+.decks-container {
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.player-header {
+    font-family: beleren;
+    font-size: 24px;
+}
+
+#modal-content {
+    width: 70%;
+    margin-bottom: 100px;
+}
+
+.decklist-editor {
+    font-size: 14px;
+    resize: none;
+    width: 100%;
+    height: 150px;
+}
+
+.deck-buttons {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 30px;
+}
+
+.deck-buttons .button {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.add-deck-button {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 0fr 0fr;
+    border-radius: 20px;
+}
+
+.plus-icon {
+    font-weight: bold;
+    font-size: 300px;
+}
+
+.deck-button-label {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.submit-button {
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+}
