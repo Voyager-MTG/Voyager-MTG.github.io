@@ -215,6 +215,7 @@
 	<script src="src/js/img-container-defs.js"></script>
 	<script>
 		// initialize variables
+		const very_start = Date.now();
 		let search_results = [];
 		let card_list_arrayified = [];
 		let card_list_cleaned = [];
@@ -226,6 +227,7 @@
 		let sets_json = {};
 		let collection_copies = {};
 		let all_cards_stats;
+		let first_search = false;
 		const on_cl_page = false;
 
 		const hover_card = document.querySelector('.hover-card');
@@ -293,6 +295,7 @@
 
 		// load resource files
 		document.addEventListener("DOMContentLoaded", async function () {
+			let start = Date.now();
 			await fetch('/lists/all-cards.json')
 				.then(response => response.json())
 				.then(json => {
@@ -325,6 +328,10 @@
 				.then(data => {
 					sets_json = data;
 				}).catch(error => console.error('Error:', error));
+			
+			let loaded = Date.now();
+			console.log('Loaded files: ' + (loaded - start));
+			start = loaded;
 
 			let all_tags = new Set();
 			card_list_cleaned = [];
@@ -426,6 +433,10 @@
 				});
 			}
 
+			loaded = Date.now();
+			console.log('Tag dropdown: ' + (loaded - start));
+			start = loaded;
+
 			cardGrid = document.getElementById("imagesOnlyGrid");
 			card_list_arrayified.sort(compareFunction);
 
@@ -442,8 +453,16 @@
 			card_backgrounds = raw_gradients.cards;
 			// prepareGradients();
 
+			loaded = Date.now();
+			console.log('Gradients + sort: ' + (loaded - start));
+			start = loaded;
+
 			// initial search on load
 			preSearch();
+
+			loaded = Date.now();
+			console.log('Presearch: ' + (loaded - start));
+			start = loaded;
 
 			// get url params
 			const urlParams = new URLSearchParams(window.location.search);
@@ -471,21 +490,25 @@
 			let cssstr = "";
 			for (const card of card_list_arrayified) { // loop through all cards
 				// sanctum regex tests
-				let regex = new RegExp("((P|p)athbound|(H|h)eir–)"); // check pathbounds and heirs, in the future other mechanics
-				if (regex.test(card.rules_text)) {
-					sanctum_coll.push(`1 ${card.card_name}`); // push just 1 because of sanctum limit
-				} else if (card.type.includes("Wonder") || card.type.includes("Erysite") || card.type.includes("realm") || card.type.includes("frontier")) {  // check if it has a type that lets it be in the sanctum
-					sanctum_coll.push(`1 ${card.card_name}`);
-				}
-				else if (card.special_text.includes("sanctum")) { // check evobars
-					sanctum_coll.push(`1 ${card.card_name}`);
-				}
-				else if (card.type.includes("Basic")) { // add basic lands
-					sanctum_coll.push(`7 ${card.card_name}`); // push 7 as it's the max sanctum size
+				if (!colls["Sanctum cards"]) {
+					let regex = new RegExp("((P|p)athbound|(H|h)eir–)"); // check pathbounds and heirs, in the future other mechanics
+					if (regex.test(card.rules_text)) {
+						sanctum_coll.push(`1 ${card.card_name}`); // push just 1 because of sanctum limit
+					} else if (card.type.includes("Wonder") || card.type.includes("Erysite") || card.type.includes("realm") || card.type.includes("frontier")) {  // check if it has a type that lets it be in the sanctum
+						sanctum_coll.push(`1 ${card.card_name}`);
+					}
+					else if (card.special_text.includes("sanctum")) { // check evobars
+						sanctum_coll.push(`1 ${card.card_name}`);
+					}
+					else if (card.type.includes("Basic")) { // add basic lands
+						sanctum_coll.push(`7 ${card.card_name}`); // push 7 as it's the max sanctum size
+					}
 				}
 				// check if the card is a common, isn't a token/reminder/boon, and isn't distant vulture astral (this will be fixed on apr 15 when the next update is pushed)
-				if (card.rarity == "common" && !card.type.includes("Token") && !card.type.includes("Reminder") && !card.card_name.includes("Token") && !card.type.includes("Boon") && !card.card_name.includes("Distant Vulture Astral")) {
-					common_coll.push(`4 ${card.card_name}`);
+				if (!colls["Pauper"]) {
+					if (card.rarity == "common" && !card.type.includes("Token") && !card.type.includes("Reminder") && !card.card_name.includes("Token") && !card.type.includes("Boon") && !card.card_name.includes("Distant Vulture Astral")) {
+						common_coll.push(`4 ${card.card_name}`);
+					}
 				}
 			}
 			// send the created collections to localstorage
@@ -513,7 +536,15 @@
 			// document.getElementById("card-grid-container").appendChild(gridified_card);
 			localStorage.setItem('settings.format', window.location.search.includes('?collectionleague') ? 'Collection League' : 'Eternal');
 
+			loaded = Date.now();
+			console.log('Collections: ' + (loaded - start));
+			start = loaded;
+
 			processDeck();
+
+			loaded = Date.now();
+			console.log('Processdeck: ' + (loaded - start));
+			start = loaded;
 		});
 
 		function displayChangeListener() {
@@ -1845,12 +1876,12 @@
 			cardGrid = document.getElementById("imagesOnlyGrid");
 			cardGrid.innerHTML = "";
 
+			const terms = tokenizeTerms(searchTerms);
 			for (const card of card_list_cleaned) {
 				if (card.shape.includes("token") && !searchTerms.includes("+t:token") && !searchTerms.includes("t:token")) {
 					continue;
 				}
 
-				const terms = tokenizeTerms(searchTerms);
 				searched = [card, ...card.printings].findIndex(c => searchAllTokens(c, terms)) != -1;
 				// console.log(searche);
 				if (searched)
@@ -1858,6 +1889,8 @@
 			}
 
 			const favorites = localStorage.getItem('settings.favorites') || '';
+			const start = Date.now(0);
+			cardGrid.style.display = 'none';
 
 			for (let i = 0; i < search_results.length; i++) {
 				const imgContainer = document.createElement("div");
@@ -1934,11 +1967,16 @@
 
 				cardGrid.appendChild(imgContainer);
 			}
+			cardGrid.style.display = 'grid';
+			console.log('app: ', Date.now() - start);
+			
 		}
 
 		function createCardSr(imgContainer, id, card_stats) {
 			const card_sr_grid = gridifyCard(card_stats);
-			const card_sr = card_sr_grid.getElementsByTagName("img")[0];
+			const card_sr = card_sr_grid.querySelector('img');
+			card_sr.height = '523px';
+			card_sr.width = '375px';
 
 			if (card_stats.shape.includes('double')) {
 				const imgFlipBtn = document.createElement("button");
@@ -2751,7 +2789,7 @@
 			window.location.href = url;
 		}
 	</script>
-	<script type="module">
+	<!--script type="module">
 		// Import the functions you need from the SDKs you need
 		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
 		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
@@ -2987,7 +3025,7 @@
 				}
 			});
 		});
-	</script>
+	</script-->
 </body>
 
 </html>

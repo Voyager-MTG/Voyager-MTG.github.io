@@ -155,6 +155,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 	if (window.location.href.includes('#nobg')) {
 		document.body.style.background = 'rgba(0,0,0,0)';
 		document.querySelector('.header').style.display = 'none';
+		document.getElementById("color-select").style.display = 'none';
+		if (document.getElementsByClassName("artist-credit")[0])
+			document.getElementsByClassName("artist-credit")[0].remove();
 	}
 });
 

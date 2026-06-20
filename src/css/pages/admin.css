@@ -67,6 +67,7 @@
     transition: 0.2s;
     width: fit-content;
     text-decoration: none;
+    color: var(--popout-text-color);
 }
 
 .button:hover {

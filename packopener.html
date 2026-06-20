@@ -163,6 +163,11 @@
 				pack = 'Collection League';
 			}
 
+			if (window.location.href.includes('#nobg')) {
+				document.querySelector('#save-pack').style.display = 'none';
+				document.querySelector('.top-section :nth-child(2)').style.visibility = 'hidden';
+			}
+
 			document.title = `${num_packs} ${pack} packs`;
 
 			const seen_cards = [];
@@ -849,7 +854,9 @@
 		function openCardModal(card) {
 			document.getElementById("modal-content").style.width = "30%";
 			document.getElementById("modal-content").innerHTML = "";
-			document.getElementById("modal-content").appendChild(gridifyCard(card));
+			const cg = gridifyCard(card);
+			cg.querySelector('a').setAttribute('target', '_blank');
+			document.getElementById("modal-content").appendChild(cg);
 			document.getElementById("modal-container").style.display = "block";
 		}
 
