@@ -150,3 +150,50 @@ select:focus {
 	height: 30px;
 	width: 30px;
 }
+
+.open-deckview-button {
+	background: radial-gradient(black, transparent 70%);
+	width: 90px;
+	height: 90px;
+	text-align: center;
+	margin-left: 90%;
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+}
+
+.open-deckview-button:before {
+	content: "deck";
+	color: white;
+	font-size: 15px;
+	top: 58%;
+	position: absolute;
+	text-align: center;
+	left: 0;
+	width: 90px;
+}
+
+.deck-view {
+	background-color: var(--bg-color);
+	border-top: 5px solid var(--opposite);
+	height: 50vh;
+	left: 0;
+	width: calc(100% - 6px);
+	transform: translate(0, 70vh);
+	transition: 0.5s ease-in-out;
+	display: none;
+	border-radius: 15px;
+	border-left: 3px solid var(--opposite);
+	border-right: 3px solid var(--opposite);
+	/* position: absolute; */
+}
+
+.deck-view-container {
+	position: sticky;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
