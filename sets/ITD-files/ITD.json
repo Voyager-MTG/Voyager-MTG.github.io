@@ -3,7 +3,7 @@
     "formats": "",
     "trimmed": "y",
     "image_type": "jpg",
-    "draft_structure": "draft booster",
+    "draft_structure": "play booster",
     "designer": "Trewq",
     "cards": [
         {
@@ -460,7 +460,7 @@
             "loyalty": "",
             "designer": "Trewq",
             "artist": "Evi-gilatio",
-            "notes": "https://www.deviantart.com/evi-gilatio/art/Aha-891587483\nflag-change"
+            "notes": "https://www.deviantart.com/evi-gilatio/art/Aha-891587483\nflag-change\nhttps://www.deviantart.com/grandplay/art/Bacon-Cookie-1316435645"
         },
         {
             "card_name": "Restlessness",
@@ -2522,7 +2522,7 @@
             "number": 22,
             "color_identity": "W",
             "cost": "{4}{W}{W}",
-            "rules_text": "When this enchantment enters, if you cast it, exile all other nonland permanents until it leaves the battlefield and create four colorless 1/1 Faerie Horror creatures with flying that can't block.\nAt the beginning of each player's upkeep, they may return a card exiled with this enchantment to the battlefield under its owner's control.",
+            "rules_text": "When this enchantment enters, if you cast it, exile all other nonland permanents until it leaves the battlefield and create four colorless 1/1 Faerie Horror creature tokens with flying that can't block.\nAt the beginning of each player's upkeep, they may return a card exiled with this enchantment to the battlefield under its owner's control.",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",

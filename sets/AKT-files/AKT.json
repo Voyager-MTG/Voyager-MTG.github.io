@@ -3,7 +3,7 @@
     "formats": "",
     "trimmed": "y",
     "image_type": "jpg",
-    "draft_structure": "draft booster",
+    "draft_structure": "play booster",
     "designer": "Myr",
     "cards": [
         {
@@ -4223,7 +4223,7 @@
             "number": 116,
             "color_identity": "B",
             "cost": "{1}{B}{B}",
-            "rules_text": "[i]\u201cUrdonic strength protects Ur's creation. Your weakness is Akella's health.\u201d\n[/i]\u2014[i]Novablast[/i]\nI, II \u2014 Destroy target creature with the least power or tied for the least.\nIII \u2014 If you control the creature with the greatest power or tied for it, you draw two cards and you lose 2 life.\n\u200b",
+            "rules_text": "[i]\u201cUrdonic strength protects Ur's creation. Your weakness is Akella's health.\u201d\n[/i]\u2014[i]Novablast[/i]\nChoose a creature with the least power or tied for the least. It gets -2/-2 until end of turn.\nIf you control the creature with the greatest power or tied for it, you draw two cards and you lose 2 life.\n\u200b",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",

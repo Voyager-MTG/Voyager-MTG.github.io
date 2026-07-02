@@ -52,6 +52,7 @@
 	</div>
 	<img id="hover-card" class="hover-card">
 	<script src="src/js/background.js"></script>
+	<script src="src/js/article.js"></script>
 	<script>
 		
 		let raw_gradients = null;
@@ -59,13 +60,7 @@
 		let gradBottom = null;
 
 		document.addEventListener("DOMContentLoaded", async function () {
-			await fetch('/lists/all-cards.json')
-				.then(response => response.json())
-				.then(json => {
-					card_list = json;
-				}).catch(error => console.error('Error:', error));
-
-			card_list_arrayified = card_list.cards;
+	
 		});
 
 		function showCardHover(card_name, set = false, num = false) {
@@ -99,6 +94,7 @@
 				window.location.href = url;
 			}
 		});
+		
 		function randomCard() {
 			let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
 			let random_card = card_list_arrayified[i];
@@ -237,76 +233,6 @@
 			});
 
 			return is_approved;
-		}
-
-		function parseMarkdown(md) {
-			md = md.replaceAll("\r", "");
-
-			// Name
-			md = md.replaceAll(/name: (.*?)\n/g, function (_1, name) {
-				document.title = name;
-				return "# " + name;
-			});
-
-			// Writer
-			md = md.replaceAll(/author: (.*?)\n/g, function (_1, author) {
-				return "#### Written by " + author;
-			});
-
-			// Change preview
-			md = md.replaceAll(/<change-preview>\n?(.*?)\n(.*?)\n?<\/change-preview>/gm, function (_1, image_1, image_2) {
-				return `<div style="display: grid; grid-template-columns: 1fr 0.1fr 1fr; gap: 10px; align-items: center; justify-items: center; width: 100%;"><img style="max-height: 300px;" src="${image_1}"><span style="font-weight: bold; font-size: 100px;">›</span><img style="max-height: 300px;" src="${image_2}"></div>`;
-			});
-
-			// Change preview ban
-			md = md.replaceAll(/<change-preview ban>\n?(.*?)\n(.*?)\n?<\/change-preview>/gm, function (_1, image_1, image_2) {
-				return `<div style="display: grid; grid-template-columns: 1fr 0.1fr 1fr; gap: 10px; align-items: center; justify-items: center; width: 100%;"><img style="max-height: 300px;" src="${image_1}"><span style="font-weight: bold; font-size: 100px;">›</span><img style="max-height: 300px; filter: grayscale() brightness(0.8);" src="${image_2}"></div>`;
-			});
-
-			// Italic bold
-			md = md.replaceAll(/\*\*\*(.*?)\*\*\*/g, function (_1, _2) {
-				return `<i><b>${_2}</i></b>`;
-			});
-
-			// Bold
-			md = md.replaceAll(/\*\*(.*?)\*\*/g, function (_1, _2) {
-				return `<b>${_2}</b>`;
-			});
-
-			// Italic
-			md = md.replaceAll(/\*(.*?)\*/g, function (_1, _2) {
-				return `<i>${_2}</i>`;
-			});
-
-			// Underline
-			md = md.replaceAll(/\_\_(.*?)\_\_/g, function (_1, _2) {
-				return `<span style="text-decoration: underline;">${_2}</span>`;
-			});
-
-			// Strikethrough
-			md = md.replaceAll(/\~\~(.*?)\~\~/g, function (_1, _2) {
-				return `<span style="text-decoration: line-through;">${_2}</span>`;
-			});
-
-			// Links
-			md = md.replaceAll(/\[(.*?)\]\((.*?)\)/g, function (_1, _2, _3) {
-				return `<a href="${_3}" target="_blank">${_2}</a>`;
-			});
-
-			// Headers
-			md = md.replaceAll(/(\#+)(.*?)\n/g, function (_1, _2, _3, _4) {
-				return `<h${_2.length} id="${_3}">${_3}</h${_2.length}>`;
-			});
-
-			// Cards
-			md = md.replaceAll(/\[\[(.*?)\]\]/g, function (_1, card_name) {
-				return `<span class="card-hover-text" onmouseover="showCardHover('${card_name}')" onmousemove="moveCardHover(event)" onmouseout="hideCardHover()">${card_name}</span>`
-			});
-
-			// Linebreaks
-			md = md.replaceAll(/\n\n/gm, "<br><br>");
-
-			return `<div class="popout article-content">${md}</div>`;
 		}
 	</script>
 </body>

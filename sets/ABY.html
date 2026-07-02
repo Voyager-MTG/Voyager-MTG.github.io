@@ -461,7 +461,6 @@
 	</div>
 	<script src="/src/js/background.js"></script>
 	<script>
-		let card_list_arrayified = [];
 		let set_list_arrayified = [];
 		let specialchars = "";
 		let displayStyle = "";
@@ -480,7 +479,7 @@
 						specialchars = text; 
 				}).catch(error => console.error('Error:', error));
 
-				card_list_arrayified = card_list.cards;
+				
 
 				let all_tags = new Set();
 			card_list_arrayified.forEach(card => {

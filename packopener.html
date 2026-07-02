@@ -137,19 +137,11 @@
 		}
 
 		document.addEventListener("DOMContentLoaded", async function () {
-			await fetch('/lists/all-cards.json')
-				.then(response => response.json())
-				.then(json => {
-					card_list = json;
-				}).catch(error => console.error('Error:', error));
-
 			await fetch('/resources/replacechars.txt')
 				.then(response => response.text())
 				.then(text => {
 					specialchars = text;
 				}).catch(error => console.error('Error:', error));
-
-			card_list_arrayified = card_list.cards;
 
 			const isCollLeague = window.location.search.includes('?collectionleague');
 			if (isCollLeague) {
@@ -172,6 +164,7 @@
 
 			const seen_cards = [];
 
+			while (!card_list_arrayified) await delay(100);
 			for (const card of card_list_arrayified) {
 				if (seen_cards.includes(card.card_name)) continue;
 				if (card.shape.includes('token')) continue;

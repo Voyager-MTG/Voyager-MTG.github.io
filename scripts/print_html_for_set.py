@@ -493,7 +493,6 @@ def generateHTML(code):
 	</div>
 	<script src="/src/js/background.js"></script>
 	<script>
-		let card_list_arrayified = [];
 		let set_list_arrayified = [];
 		let specialchars = "";
 		let displayStyle = "";

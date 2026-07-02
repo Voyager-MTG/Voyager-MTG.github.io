@@ -98,13 +98,9 @@
 			setGradient(localStorage.getItem("settings.gradient"));
 			prepareGradients();
 
-			await fetch('/lists/all-cards.json')
-				.then(response => response.json())
-				.then(json => {
-					card_list = json;
-				}).catch(error => console.error('Error:', error));
+			
 
-			card_list_arrayified = card_list.cards;
+			
 
 			await fetch(`/data/compendium/compendium.json`)
 				.then(response => response.json())

@@ -38,11 +38,15 @@ hr {
 }
 
 .article-content {
-	width: 80%;
-	margin: auto;
+    overflow: scroll;
+    width: 80vw;
 	margin-top: 80px;
-	border-radius: 20px;
-	padding: 30px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	color: black;
 }
 
 body {

@@ -183,7 +183,7 @@
 	<script>
 		
 		let card_backgrounds = [];
-		let card_list_arrayified = [];
+		
 		let specialchars = "";
 		let img_list = [];
 		let current_dot = "dot-1";
@@ -221,11 +221,7 @@
 			setGradient(localStorage.getItem('settings.gradient'));
 			prepareGradients();
 
-			await fetch('/lists/all-cards.json')
-				.then(response => response.json())
-				.then(json => {
-					card_list = json;
-				}).catch(error => console.error('Error:', error));
+			
 
 			await fetch('/lists/all-sets.json')
 				.then(response => response.json())
@@ -257,7 +253,7 @@
 				}
 			});
 
-			card_list_arrayified = card_list.cards;
+			
 
 			card_list_cleaned = [];
 

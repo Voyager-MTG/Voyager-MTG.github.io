@@ -49,16 +49,12 @@
 	</div>
 	<script src="src/js/background.js"></script>
 	<script>
-		let card_list_arrayified = [];
+		
 		let specialchars = "";
 		let displayStyle = "";
 
 		document.addEventListener("DOMContentLoaded", async function () {
-			await fetch('/lists/all-cards.json')
-				.then(response => response.json())
-				.then(json => {
-					card_list = json;
-				}).catch(error => console.error('Error:', error));
+			
 
 			await fetch('/lists/all-sets.json')
 				.then(response => response.json())
@@ -75,7 +71,7 @@
 			const packs = window.location.search.includes('?packs');
 			if (packs) document.querySelector('#header-text').innerText = 'Packs';
 
-			card_list_arrayified = card_list.cards;
+			
 			set_list_arrayified = set_list.sets.filter(set => packs ? set.pack : !set.pack);
 			if (!packs) set_list_arrayified.push({
 				"set_code": "",

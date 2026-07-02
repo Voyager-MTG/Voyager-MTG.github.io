@@ -60,11 +60,7 @@
 	<script src="/src/js/background.js"></script>
 	<script>
         document.addEventListener("DOMContentLoaded", async function () {
-			await fetch('/lists/all-cards.json')
-				.then(response => response.json())
-				.then(json => {
-					card_list = json;
-				}).catch(error => console.error('Error:', error));
+			
 
 			await fetch('/lists/all-sets.json')
 				.then(response => response.json())
@@ -78,7 +74,7 @@
 					cr = text;
 				}).catch(error => console.error('Error:', error));
 
-			card_list_arrayified = card_list.cards;
+			
 
 			await fetch('/lists/all-sets.json')
 				.then(response => response.json())
