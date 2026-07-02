@@ -1,12 +1,6 @@
 {
     "sets": [
         {
-            "set_code": "ABY",
-            "set_name": "A Better Yesterday",
-            "formats": "",
-            "designer": ""
-        },
-        {
             "set_code": "AKT",
             "set_name": "Akellan Transcendence",
             "formats": "",
@@ -29,6 +23,12 @@
             "set_name": "Houses of Dewold",
             "formats": "",
             "designer": "Zangy"
+        },
+        {
+            "set_code": "IRD",
+            "set_name": "Itera: Restless Days",
+            "formats": "",
+            "designer": ""
         },
         {
             "set_code": "ITD",
@@ -69,6 +69,12 @@
             "pack": true
         },
         {
+            "set_code": "TTT04",
+            "set_name": "Treasures & Trinkets",
+            "formats": "",
+            "designer": ""
+        },
+        {
             "set_code": "TZE01",
             "set_name": "Zeta",
             "formats": "",
@@ -80,6 +86,12 @@
             "set_name": "Vinimroth Eternities",
             "formats": "",
             "designer": "TVP"
+        },
+        {
+            "set_code": "VSB",
+            "set_name": "Vespera: Breached",
+            "formats": "",
+            "designer": "Kogane"
         },
         {
             "set_code": "WAW",

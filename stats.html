@@ -294,11 +294,7 @@
 			setGradient(localStorage.getItem("settings.gradient"));
 			prepareGradients();
 
-			await fetch('/lists/all-cards.json')
-				.then(response => response.json())
-				.then(json => {
-					card_list = json;
-				}).catch(error => console.error('Error:', error));
+			
 
 			await fetch('/resources/replacechars.txt')
 				.then(response => response.text())
@@ -306,7 +302,7 @@
 					specialchars = text;
 				}).catch(error => console.error('Error:', error));
 
-			card_list_arrayified = card_list.cards;
+			
 		});
 
 		function prepareGradients() {

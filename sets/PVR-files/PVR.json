@@ -3,7 +3,7 @@
     "formats": "",
     "trimmed": "y",
     "image_type": "jpg",
-    "draft_structure": "draft booster",
+    "draft_structure": "play booster",
     "designer": "Myr",
     "cards": [
         {
@@ -593,7 +593,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Caerilho G.",
-            "notes": "REDCOMMON\nCR19\nLANDCYCLECOMMON"
+            "notes": "!tapped\nREDCOMMON\nCR19\nLANDCYCLECOMMON"
         },
         {
             "card_name": "Cubic Flames",
@@ -964,7 +964,7 @@
             "number": 265,
             "color_identity": "WR",
             "cost": "{1}{R}{W}",
-            "rules_text": "Sunbound Swarm has bake as long as you've gained life this turn. [i](When this enters, up to one target permanent gains its abilities until end of turn.)[/i]\nFlying, double strike, vigilance, trample, haste, protection from tokens and from copies of spells",
+            "rules_text": "Sunbound Swarm has bake as long as you've gained life this turn. [i](When this enters, up to one other target permanent gains its abilities until end of turn.)[/i]\nFlying, double strike, vigilance, trample, haste, protection from tokens and from copies of spells",
             "flavor_text": "[i][/i]",
             "pt": "1/1",
             "special_text": "",
@@ -2095,7 +2095,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Dragos Matovski",
-            "notes": "WHITECOMMON\nCW19\nLANDCYCLECOMMON"
+            "notes": "!tapped\nWHITECOMMON\nCW19\nLANDCYCLECOMMON"
         },
         {
             "card_name": "Memory Hole",
@@ -2133,7 +2133,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Rijas Preetch",
-            "notes": "BLACKCOMMON\nCB19\nLANDCYCLECOMMON"
+            "notes": "!tapped\nBLACKCOMMON\nCB19\nLANDCYCLECOMMON"
         },
         {
             "card_name": "Delete",
@@ -2608,7 +2608,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Henry Wong",
-            "notes": "WHITEUNCOMMON\nUW13\nLANDCYCLEUNCOMMON"
+            "notes": "WHITEUNCOMMON\nUW13\nLANDCYCLEUNCOMMON\n!tapped"
         },
         {
             "card_name": "Felygon Reclaimer",
@@ -2798,7 +2798,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ink Theory",
-            "notes": "BLUEUNCOMMON\nUU13\nLANDCYCLEUNCOMMON"
+            "notes": "!tapped\nBLUEUNCOMMON\nUU13\nLANDCYCLEUNCOMMON"
         },
         {
             "card_name": "Obfuscated Pier",
@@ -3606,7 +3606,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Julien louche",
-            "notes": "LANDCYCLERARE\nBLACKRARE12"
+            "notes": "!tapped\nLANDCYCLERARE\nBLACKRARE12"
         },
         {
             "card_name": "Rastira, the World Moat",
@@ -3644,7 +3644,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adagio Spring",
-            "notes": "REDRARE12\nLANDCYCLERARE"
+            "notes": "!tapped\nREDRARE12\nLANDCYCLERARE"
         },
         {
             "card_name": "Urwrapir, Restored Wilderness",
@@ -3663,7 +3663,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
-            "notes": "GREENRARE12\nLANDCYCLERARE"
+            "notes": "!tapped\nGREENRARE12\nLANDCYCLERARE"
         },
         {
             "card_name": "Domination Center",
@@ -4158,7 +4158,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nikola Ugarkovic",
-            "notes": "BLUECOMMON\nCU19\nLANDCYCLECOMMON"
+            "notes": "!tapped\nBLUECOMMON\nCU19\nLANDCYCLECOMMON"
         },
         {
             "card_name": "Buffer Zone",

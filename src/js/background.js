@@ -1,4 +1,65 @@
 let gradients;
+let card_list_arrayified;
+
+const deck_cards_html = `<div class="deck-col" id="col1">
+					<div class="deck-section" id="deck-creature">
+						<span id="deck-creature-title">Creatures (0)</span>
+						<div class="deck-inner-section" id="deck-creature-cards">
+						</div>
+					</div>
+					<div class="deck-section" id="deck-planeswalker">
+						<span id="deck-planeswalker-title">Planeswalkers (0)</span>
+						<div class="deck-inner-section" id="deck-planeswalker-cards">
+						</div>
+					</div>
+					<div class="deck-section" id="deck-artifact">
+						<span id="deck-artifact-title">Artifacts (0)</span>
+						<div class="deck-inner-section" id="deck-artifact-cards">
+						</div>
+					</div>
+					<div class="deck-section" id="deck-enchantment">
+						<span id="deck-enchantment-title">Enchantments (0)</span>
+						<div class="deck-inner-section" id="deck-enchantment-cards">
+						</div>
+					</div>
+					<div class="deck-section" id="deck-battle">
+						<span id="deck-battle-title">Battles (0)</span>
+						<div class="deck-inner-section" id="deck-battle-cards">
+						</div>
+					</div>
+					<div class="deck-section" id="deck-other">
+						<span id="deck-other-title">Other (0)</span>
+						<div class="deck-inner-section" id="deck-other-cards">
+						</div>
+					</div>
+				</div>
+				<div class="deck-col" id="col2">
+					<div class="deck-section" id="deck-instant">
+						<span id="deck-instant-title">Instants (0)</span>
+						<div class="deck-inner-section" id="deck-instant-cards">
+						</div>
+					</div>
+					<div class="deck-section" id="deck-sorcery">
+						<span id="deck-sorcery-title">Sorceries (0)</span>
+						<div class="deck-inner-section" id="deck-sorcery-cards">
+						</div>
+					</div>
+					<div class="deck-section" id="deck-land">
+						<span id="deck-land-title">Lands (0)</span>
+						<div class="deck-inner-section" id="deck-land-cards">
+						</div>
+					</div>
+					<div class="deck-section" id="deck-sideboard">
+						<span id="deck-sideboard-title">Sideboard (0)</span>
+						<div class="deck-inner-section" id="deck-sideboard-cards">
+						</div>
+					</div>
+					<div class="deck-section" id="deck-sanctum">
+						<span id="deck-sanctum-title">Sanctum (0)</span>
+						<div class="deck-inner-section" id="deck-sanctum-cards">
+						</div>
+					</div>
+				</div>`;
 
 function prepareGradients() {
 	let defaultGradient = localStorage.getItem("settings.gradient").replace('-', ' ');
@@ -64,7 +125,6 @@ function setGradient(gradient = false) {
 
 	document.body.style.backgroundImage = gradImage;
 	localStorage.setItem("settings.gradient", gradient);
-	// console.log("CHANGE");
 	if (document.getElementsByClassName("artist-credit")[0])
 		document.getElementsByClassName("artist-credit")[0].remove();
 	const credit_text = document.createElement("span");
@@ -112,6 +172,14 @@ function toggleHeader() {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
+	await fetch('/lists/all-cards.json')
+		.then(response => response.json())
+		.then(json => {
+			card_list = json;
+		}).catch(error => console.error('Error:', error));
+
+	card_list_arrayified = card_list.cards;
+
 	defaultSetting('settings.autosave', 'On');
 	defaultSetting('settings.searchalias', 'On');
 	defaultSetting('settings.exportcube', 'On');
@@ -152,7 +220,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 	setGradient(localStorage.getItem("settings.gradient"));
 	prepareGradients();
 
-	handleDeckView();
+	// handleDeckView();
 
 	if (window.location.href.includes('#nobg')) {
 		document.body.style.background = 'rgba(0,0,0,0)';
@@ -165,12 +233,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 async function handleDeckView() {
 	const deckview_container = document.createElement('div');
-	deckview_container.className = 'deck-view-container';
+	deckview_container.className = 'deck-tray-container';
 
 	deckview_container.appendChild(createDeckView());
 
 	const deckview = document.createElement('div');
-	deckview.className = 'deck-view';
+	deckview.className = 'deck-tray';
 
 	const pop_out_button = document.createElement('div');
 	pop_out_button.className = 'open-deckview-button';
@@ -202,18 +270,17 @@ async function handleDeckView() {
 		deckview.style.transform ='translate(0, 12vh)';
 		pop_out_button.innerText = '⮟';
 	}
+
+	readDeckText(localStorage.getItem('info.lastdeck'));
 }
 
 function createDeckView() {
 	const deck_name = localStorage.getItem('info.lastdeck');
 	const deck = localStorage.getItem(deck_name);
-	console.log(deck);
 	return document.createElement('div');
 }
 
 function readDeckText(text, name) {
-	document.getElementById("deck-name").value = name || 'Untitled Deck';
-
 	deck = [];
 	sideboard = [];
 	sanctum = [];
@@ -389,17 +456,11 @@ function readDeckText(text, name) {
 		}
 	}
 	
-	document.getElementById("modal-container").style.display = "none";
-	document.getElementById("file-menu").value = "default";
-
-	processDeck();
+	// processDeck();
 }
 
 function processDeck() {
-	const display_style = document.getElementById("display-select").value;
-	if (display_style != "stats") {
-		document.getElementsByClassName("deck-cards-container")[0].innerHTML = deck_cards_html;
-	}
+	document.getElementsByClassName("deck-cards-container")[0].innerHTML = deck_cards_html;
 
 	if (localStorage.getItem("settings.resultgradient") == "Off") {
 		document.getElementsByClassName("search-image-gradient")[0].style.display = "none";
@@ -527,21 +588,9 @@ function processDeck() {
 				// get the display style (text or image), the card json, and the name
 				const card_name = card_stats.card_name;
 				const card = JSON.stringify(card_stats);
-
-				if (display_style == "text") // if text is selected as the display mode
-				{
-					generateCardHTML("text", map, card, key, card_stats, cards_list);
-				}
-				else if (display_style == "images") // the display style is image
-				{
-					generateCardHTML("image", map, card, key, card_stats, cards_list);
-				}
+				generateCardHTML("text", map, card, key, card_stats, cards_list);
 			}
 		}
-	}
-	if (display_style == "stats") {
-		document.getElementsByClassName("deck-cards-container")[0].innerHTML = "";
-		makeStatsTab(deck_cards);
 	}
 }
 

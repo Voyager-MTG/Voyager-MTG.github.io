@@ -176,7 +176,7 @@ select:focus {
 	width: 90px;
 }
 
-.deck-view {
+.deck-tray {
 	background-color: var(--bg-color);
 	border-top: 5px solid var(--opposite);
 	height: 50vh;
@@ -191,7 +191,7 @@ select:focus {
 	/* position: absolute; */
 }
 
-.deck-view-container {
+.deck-tray-container {
 	position: sticky;
 	width: 100%;
 	bottom: 0;

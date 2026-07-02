@@ -217,7 +217,6 @@
 		// initialize variables
 		const very_start = Date.now();
 		let search_results = [];
-		let card_list_arrayified = [];
 		let card_list_cleaned = [];
 		let specialchars = "";
 		let deck = [];
@@ -233,74 +232,10 @@
 		const hover_card = document.querySelector('.hover-card');
 		const contextMenu = document.querySelector('.rc-menu');
 
-		const deck_cards_html = `<div class="deck-col" id="col1">
-					<div class="deck-section" id="deck-creature">
-						<span id="deck-creature-title">Creatures (0)</span>
-						<div class="deck-inner-section" id="deck-creature-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-planeswalker">
-						<span id="deck-planeswalker-title">Planeswalkers (0)</span>
-						<div class="deck-inner-section" id="deck-planeswalker-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-artifact">
-						<span id="deck-artifact-title">Artifacts (0)</span>
-						<div class="deck-inner-section" id="deck-artifact-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-enchantment">
-						<span id="deck-enchantment-title">Enchantments (0)</span>
-						<div class="deck-inner-section" id="deck-enchantment-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-battle">
-						<span id="deck-battle-title">Battles (0)</span>
-						<div class="deck-inner-section" id="deck-battle-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-other">
-						<span id="deck-other-title">Other (0)</span>
-						<div class="deck-inner-section" id="deck-other-cards">
-						</div>
-					</div>
-				</div>
-				<div class="deck-col" id="col2">
-					<div class="deck-section" id="deck-instant">
-						<span id="deck-instant-title">Instants (0)</span>
-						<div class="deck-inner-section" id="deck-instant-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-sorcery">
-						<span id="deck-sorcery-title">Sorceries (0)</span>
-						<div class="deck-inner-section" id="deck-sorcery-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-land">
-						<span id="deck-land-title">Lands (0)</span>
-						<div class="deck-inner-section" id="deck-land-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-sideboard">
-						<span id="deck-sideboard-title">Sideboard (0)</span>
-						<div class="deck-inner-section" id="deck-sideboard-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-sanctum">
-						<span id="deck-sanctum-title">Sanctum (0)</span>
-						<div class="deck-inner-section" id="deck-sanctum-cards">
-						</div>
-					</div>
-				</div>`
-
 		// load resource files
 		document.addEventListener("DOMContentLoaded", async function () {
 			let start = Date.now();
-			await fetch('/lists/all-cards.json')
-				.then(response => response.json())
-				.then(json => {
-					card_list = json;
-				}).catch(error => console.error('Error:', error));
+			
 
 			await fetch('/lists/all-sets.json')
 				.then(response => response.json())
@@ -314,7 +249,7 @@
 					specialchars = text;
 				}).catch(error => console.error('Error:', error));
 
-			card_list_arrayified = card_list.cards;
+			
 
 			await fetch('https://voyager-api-pq2h.onrender.com/stats')
 				.then(response => response.json())
@@ -1347,7 +1282,7 @@
 			var e = document.getElementById("copies-style");
 			if (e != null) { e.remove(); }
 			if (name == "Full card pool") { // This is a special collection, so loading it is hard coded; we set card_list_arrayified to the original json, then close the modal and initialize the search
-				card_list_arrayified = card_list.cards;
+				
 				closeModal();
 				preSearch();
 				return;
@@ -2139,6 +2074,7 @@
 
 		function processDeck() {
 			const display_style = document.getElementById("display-select").value;
+			const scroll = document.querySelector('.deck-cards-container').scrollTop;
 			if (display_style != "stats") {
 				document.getElementsByClassName("deck-cards-container")[0].innerHTML = deck_cards_html;
 			}
@@ -2285,6 +2221,10 @@
 				document.getElementsByClassName("deck-cards-container")[0].innerHTML = "";
 				makeStatsTab(deck_cards);
 			}
+			document.querySelector('.deck-cards-container').scroll({
+				top: scroll,
+				behavior: 'instant'
+			});
 		}
 
 		function generateCardHTML(display_style, map, card, key, card_stats, cards_list) {
