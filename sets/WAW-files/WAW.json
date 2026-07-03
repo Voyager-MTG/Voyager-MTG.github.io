@@ -812,7 +812,7 @@
             "number": 230,
             "color_identity": "C",
             "cost": "{1}",
-            "rules_text": "Defender\n{1}, {T}: [b][Add one mana of any color.][/b]\nImpetus {1} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)[/i]",
+            "rules_text": "Defender\n{1}, {T}: [b][Add one mana of any color.][/b]\nImpetus {1} [i](You may cast this from your graveyard as a sorcery with only the text in square brackets for {1}. Then exile it.)[/i]",
             "flavor_text": "[i]The structure of the Wonderlands is ever-shifting, and its motivations are inscrutable.[/i]",
             "pt": "0/4",
             "special_text": "",
