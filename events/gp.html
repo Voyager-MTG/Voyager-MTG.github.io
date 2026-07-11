@@ -1684,6 +1684,10 @@
 				dropped: []
 			});
 
+			await updateDoc(doc(db, 'info', 'events'), {
+				recent: event_name
+			});
+
 			alert("Created new GP!");
 		}
 
