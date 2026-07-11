@@ -570,7 +570,7 @@ function searchToken(card, token) {
             if (modifier == ":" || modifier == "!" || modifier == "=") {
                 // all of these are implemented individually
                 if (check == "permanent") {
-                    return !card_type.includes("instant") && !card_type.includes("sorcery");
+                    return card_type.match(/creature|land|enchantment|artifact|battle|planeswalker/g);
                 }
                 if (check == "spell") {
                     return !card_type.includes("land");
