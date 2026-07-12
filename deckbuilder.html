@@ -924,6 +924,12 @@
 				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Url copied to clipboard"); // open the modal notifying the user
 			}, "/img/copy-white.png"));
 
+			modalContent.appendChild(exportButtonHtml("Short Deck URL", function () {
+				document.getElementById('save-btn').click();
+				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deck?deck=${encodeURIComponent(username) + '-' + encodeURIComponent(document.getElementById("deck-name").value)}`);
+				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Url copied to clipboard"); // open the modal notifying the user
+			}, "/img/copy-white.png"));
+
 			modalContent.appendChild(exportButtonHtml("Decklist", function () {
 				navigator.clipboard.writeText(generateDeckText()); // copy the deck text to clipboard
 				document.getElementById("file-menu").value = "default"; // set the dropdown back
@@ -2751,7 +2757,7 @@
 		const app = initializeApp(firebaseConfig);
 		const db = getFirestore(app);
 
-		let username = "";
+		window.username = "";
 		let password = "";
 		let decks = "";
 
@@ -2759,7 +2765,7 @@
 
 		const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
 			let data = docSnap.data();
-			username = data.username;
+			window.username = data.username;
 			password = data.password;
 		});
 
