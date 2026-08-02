@@ -373,7 +373,7 @@
 		{
 			"name": "Angel of Dying Flames",
 			"rarity": "rare",
-			"mana_cost": "{4}{R}",
+			"mana_cost": "{4}{R}{R}",
 			"type": "Creature — Angel",
 			"collector_number": "41",
 			"image_uris": {
@@ -461,13 +461,13 @@
 			}
 		},
 		{
-			"name": "Exhuberant Genesis",
+			"name": "Exuberant Genesis",
 			"rarity": "rare",
 			"mana_cost": "{G}",
 			"type": "Instant",
 			"collector_number": "55",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/TOL03-files/img/55_Exhuberant Genesis.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/TOL03-files/img/55_Exuberant Genesis.jpg"
 			}
 		},
 		{
@@ -1176,7 +1176,7 @@
 	1 Lost Cause
 	1 Grazed by the Endless
 	1 Tidepool Scuttler
-	1 Exhuberant Genesis
+	1 Exuberant Genesis
 	1 Bropheria
 	1 Midnight Raven
 	1 The Pact

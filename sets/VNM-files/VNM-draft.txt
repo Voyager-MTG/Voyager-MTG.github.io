@@ -1874,7 +1874,7 @@
 			"name": "Subdued Rift",
 			"rarity": "special",
 			"mana_cost": "{W/B}",
-			"type": "Skill Sorcery",
+			"type": "Trace Skill Sorcery",
 			"collector_number": "12",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/12_Subdued Rift.jpg"
@@ -1884,7 +1884,7 @@
 			"name": "Hollow Graze",
 			"rarity": "special",
 			"mana_cost": "{U/B}",
-			"type": "Skill Instant",
+			"type": "Trace Skill Instant",
 			"collector_number": "8",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/8_Hollow Graze.jpg"
@@ -1894,7 +1894,7 @@
 			"name": "Ever Vigilant",
 			"rarity": "special",
 			"mana_cost": "{1}{G/U}",
-			"type": "Skill Sorcery",
+			"type": "Trace Skill Sorcery",
 			"collector_number": "7",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/7_Ever Vigilant.jpg"
@@ -1914,7 +1914,7 @@
 			"name": "Prepared Strike",
 			"rarity": "special",
 			"mana_cost": "{R}",
-			"type": "Skill Sorcery",
+			"type": "Trace Skill Sorcery",
 			"collector_number": "5",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/5_Prepared Strike.jpg"
@@ -1924,7 +1924,7 @@
 			"name": "In the Moment",
 			"rarity": "special",
 			"mana_cost": "{1}{R}",
-			"type": "Skill Sorcery",
+			"type": "Trace Skill Sorcery",
 			"collector_number": "4",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/4_In the Moment.jpg"
@@ -1934,7 +1934,7 @@
 			"name": "Reshape Will",
 			"rarity": "special",
 			"mana_cost": "{1}{W/U}",
-			"type": "Skill Instant",
+			"type": "Trace Skill Instant",
 			"collector_number": "11",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/11_Reshape Will.jpg"
@@ -1954,7 +1954,7 @@
 			"name": "Military Training",
 			"rarity": "special",
 			"mana_cost": "{G/W}",
-			"type": "Skill Instant",
+			"type": "Trace Skill Instant",
 			"collector_number": "9",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/9_Military Training.jpg"
@@ -2014,7 +2014,7 @@
 			"name": "Warped Exploration",
 			"rarity": "special",
 			"mana_cost": "{2}",
-			"type": "Skill Sorcery",
+			"type": "Trace Skill Sorcery",
 			"collector_number": "1",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/1_Warped Exploration.jpg"
@@ -2074,7 +2074,7 @@
 			"name": "Harsh Reprise",
 			"rarity": "special",
 			"mana_cost": "{B}",
-			"type": "Skill Instant",
+			"type": "Trace Skill Instant",
 			"collector_number": "3",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/3_Harsh Reprise.jpg"
@@ -2224,7 +2224,7 @@
 			"name": "Cut from Void",
 			"rarity": "special",
 			"mana_cost": "{2}{U}",
-			"type": "Skill Instant",
+			"type": "Trace Skill Instant",
 			"collector_number": "2",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/2_Cut from Void.jpg"
@@ -2593,7 +2593,7 @@
 		{
 			"name": "Path of Revival",
 			"rarity": "rare",
-			"mana_cost": "{B}",
+			"mana_cost": "{1}{B}",
 			"type": "Sorcery",
 			"collector_number": "105",
 			"image_uris": {
@@ -2694,7 +2694,7 @@
 			"name": "Path to Ages",
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{R}{R}",
-			"type": "Sorcery",
+			"type": "Enchantment",
 			"collector_number": "137",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/137_Path to Ages.jpg"
@@ -2773,7 +2773,7 @@
 		{
 			"name": "Pathborn Drake",
 			"rarity": "rare",
-			"mana_cost": "{1}{U}",
+			"mana_cost": "{2}{U}",
 			"type": "Creature — Drake",
 			"collector_number": "68",
 			"image_uris": {
@@ -3264,7 +3264,7 @@
 			"name": "Dustfall",
 			"rarity": "rare",
 			"mana_cost": "{1}{C}",
-			"type": "Enchantment",
+			"type": "Instant",
 			"collector_number": "187",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/VNM-files/img/187_Dustfall.jpg"
