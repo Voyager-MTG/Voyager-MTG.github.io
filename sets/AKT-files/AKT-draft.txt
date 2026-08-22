@@ -2525,9 +2525,9 @@
 			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Creature",
-			"collector_number": "11",
+			"collector_number": "12",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/11_Recruit.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/12_Recruit.jpg"
 			}
 		},
 		{
@@ -2535,9 +2535,9 @@
 			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Artifact — Treasure",
-			"collector_number": "13",
+			"collector_number": "14",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/13_Treasure.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/14_Treasure.jpg"
 			}
 		},
 		{
@@ -2545,9 +2545,9 @@
 			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Creature — Human",
-			"collector_number": "9",
+			"collector_number": "10",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/9_Human.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/10_Human.jpg"
 			}
 		},
 		{
@@ -2555,9 +2555,9 @@
 			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Creature — Incarnation",
-			"collector_number": "10",
+			"collector_number": "11",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/10_Incarnation.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/11_Incarnation.jpg"
 			}
 		},
 		{
@@ -2565,9 +2565,9 @@
 			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Creature — Hex Citizen",
-			"collector_number": "8",
+			"collector_number": "9",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/8_Hex Citizen.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/9_Hex Citizen.jpg"
 			}
 		},
 		{
@@ -2575,9 +2575,9 @@
 			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Creature — Werewolf Citizen",
-			"collector_number": "7",
+			"collector_number": "8",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/7_Werewolf Citizen.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/8_Werewolf Citizen.jpg"
 			}
 		},
 		{
@@ -2585,9 +2585,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Incarnation Soldier",
-			"collector_number": "6",
+			"collector_number": "7",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/6_Incarnation Soldier.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/7_Incarnation Soldier.jpg"
 			}
 		},
 		{
@@ -2809,9 +2809,9 @@
 			"rarity": "special",
 			"mana_cost": "",
 			"type": "Token Artifact — Equipment",
-			"collector_number": "12",
+			"collector_number": "13",
 			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/12_House.jpg"
+				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/13_House.jpg"
 			}
 		},
 		{
@@ -3255,6 +3255,16 @@
 			"collector_number": "85",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/85_Thoughtglass Shaper.jpg"
+			}
+		},
+		{
+			"name": "Serf",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Serf",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/AKT-files/img/6_Serf.jpg"
 			}
 		},
 	]

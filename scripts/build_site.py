@@ -29,6 +29,8 @@ def genAllCards(codes):
 		#F: grabs the corresponding file,
 		with open('data/collectionleague/packs.json') as f:
 			packs = json.load(f)
+		with open('data/dates.json') as f:
+			dates = json.load(f) 
 		with open(os.path.join('sets', code + '-files', code + '.json'), encoding='utf-8-sig') as f:
 			#F: puts its card data into a temp dictionary,
 			raw = json.load(f)
@@ -41,6 +43,7 @@ def genAllCards(codes):
 					card['rules_text2'] = card['rules_text2'].replace('—', '–')
 					card['special_text2'] = card['special_text2'].replace('—', '–')
 				card['image_type'] = 'png' if 'image_type' not in raw else raw['image_type']
+				card['date'] = card.get('date') or dates[code]
 				if 'v_mana' in raw:
 					card['v_mana'] = raw['v_mana']
 				#CE: Designer notes (for Rachel)
@@ -54,6 +57,7 @@ def genAllCards(codes):
 			set_data['set_name'] = raw['name']
 			set_data['formats'] = raw['formats']
 			set_data['designer'] = raw['designer']
+			set_data['date'] = dates[code]
 			if code in packs['theme']: set_data['pack'] = True
 			set_input['sets'].append(set_data)
 

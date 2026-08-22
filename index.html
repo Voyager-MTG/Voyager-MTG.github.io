@@ -56,6 +56,22 @@
 			<div class="show-sets">
 				<div class="preview-container">
 					<div class="set-icon-container">
+						<a href="sets/IRD">
+							<div class="set-icon"><img src="sets/IRD-files/logo.png"
+									title="Itera: Restless Days"></img>
+							</div>
+							<div class="set-icon-name text">Itera: Restless Days</div>
+						</a>
+					</div>
+					<div class="set-icon-container">
+						<a href="sets/VSB">
+							<div class="set-icon"><img src="sets/VSB-files/logo.png"
+									title="Vespera: Breached"></img>
+							</div>
+							<div class="set-icon-name text">Vespera: Breached</div>
+						</a>
+					</div>
+					<div class="set-icon-container">
 						<a href="sets/ABY">
 							<div class="set-icon"><img src="sets/ABY-files/logo.png"
 									title="A Better Yesterday"></img>
@@ -109,6 +125,8 @@
 							<div class="set-icon-name text">Port Noon: Occult Islands of Vespera</div>
 						</a>
 					</div>
+				</div>
+				<div class="hide-sets preview-container">
 					<div class="set-icon-container">
 						<a href="sets/PVR">
 							<div class="set-icon"><img src="sets/PVR-files/logo.png" title="Primivir"></img></div>
@@ -122,8 +140,6 @@
 							<div class="set-icon-name text">Vinimroth Eternities</div>
 						</a>
 					</div>
-				</div>
-				<div class="hide-sets preview-container">
 					<div class="set-icon-container">
 						<a href="sets/LAIR">
 							<div class="set-icon"><img src="sets/LAIR-files/logo.png" title="Secret Lair Drops"></img>
@@ -183,7 +199,7 @@
 	<script>
 		
 		let card_backgrounds = [];
-		let card_list_arrayified = [];
+		
 		let specialchars = "";
 		let img_list = [];
 		let current_dot = "dot-1";
@@ -221,11 +237,7 @@
 			setGradient(localStorage.getItem('settings.gradient'));
 			prepareGradients();
 
-			await fetch('/lists/all-cards.json')
-				.then(response => response.json())
-				.then(json => {
-					card_list = json;
-				}).catch(error => console.error('Error:', error));
+		
 
 			await fetch('/lists/all-sets.json')
 				.then(response => response.json())
@@ -257,7 +269,7 @@
 				}
 			});
 
-			card_list_arrayified = card_list.cards;
+			
 
 			card_list_cleaned = [];
 

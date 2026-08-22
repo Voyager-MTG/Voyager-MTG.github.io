@@ -10,7 +10,7 @@ await fetch('/lists/all-cards.json')
 						specialchars = text; 
 				}).catch(error => console.error('Error:', error));
 
-				card_list_arrayified = card_list.cards;
+				
 
 				let all_tags = new Set();
 			card_list_arrayified.forEach(card => {

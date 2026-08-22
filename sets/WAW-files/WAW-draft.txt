@@ -533,7 +533,7 @@
 		{
 			"name": "Mesmerize",
 			"rarity": "common",
-			"mana_cost": "{1}{W/U}",
+			"mana_cost": "{1}{W/U}{W/U}",
 			"type": "Kindred Sorcery — Wonder",
 			"collector_number": "204",
 			"image_uris": {
@@ -1543,7 +1543,7 @@
 		{
 			"name": "Retreat to the Borderholt",
 			"rarity": "rare",
-			"mana_cost": "{2}{W}",
+			"mana_cost": "{3}{W}",
 			"type": "Instant",
 			"collector_number": "32",
 			"image_uris": {

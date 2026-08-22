@@ -137,19 +137,11 @@
 		}
 
 		document.addEventListener("DOMContentLoaded", async function () {
-			await fetch('/lists/all-cards.json')
-				.then(response => response.json())
-				.then(json => {
-					card_list = json;
-				}).catch(error => console.error('Error:', error));
-
 			await fetch('/resources/replacechars.txt')
 				.then(response => response.text())
 				.then(text => {
 					specialchars = text;
 				}).catch(error => console.error('Error:', error));
-
-			card_list_arrayified = card_list.cards;
 
 			const isCollLeague = window.location.search.includes('?collectionleague');
 			if (isCollLeague) {
@@ -163,10 +155,16 @@
 				pack = 'Collection League';
 			}
 
+			if (window.location.href.includes('#nobg')) {
+				document.querySelector('#save-pack').style.display = 'none';
+				document.querySelector('.top-section :nth-child(2)').style.visibility = 'hidden';
+			}
+
 			document.title = `${num_packs} ${pack} packs`;
 
 			const seen_cards = [];
 
+			while (!card_list_arrayified) await delay(100);
 			for (const card of card_list_arrayified) {
 				if (seen_cards.includes(card.card_name)) continue;
 				if (card.shape.includes('token')) continue;
@@ -849,7 +847,9 @@
 		function openCardModal(card) {
 			document.getElementById("modal-content").style.width = "30%";
 			document.getElementById("modal-content").innerHTML = "";
-			document.getElementById("modal-content").appendChild(gridifyCard(card));
+			const cg = gridifyCard(card);
+			cg.querySelector('a').setAttribute('target', '_blank');
+			document.getElementById("modal-content").appendChild(cg);
 			document.getElementById("modal-container").style.display = "block";
 		}
 

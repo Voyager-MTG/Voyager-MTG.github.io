@@ -886,7 +886,6 @@
 			let sc_cards = false;
 			let count;
 			let card_name;
-			let card_list_arrayified = card_list.cards;
 
 			const lines = text.split('\n');
 
@@ -1357,6 +1356,14 @@
 			return { raw: raw_structure, info: structure_info };
 		}
 
+		function shuffleArr(arr) {
+			for (let i = arr.length - 1; i > 0; i--) {
+				const j = Math.floor(Math.random() * (i + 1));
+				[arr[i], arr[j]] = [arr[j], arr[i]];
+			}
+			return arr;
+		}
+
 		async function pushGP() {
 			const confirmed = confirm("Are you sure you want to push a GP round?");
 			console.log(confirmed);
@@ -1466,7 +1473,7 @@
 				let games = [];
 				let in_games = [];
 
-				const decks = event_data.decks;
+				const decks = shuffleArr(event_data.decks);
 				let i = 0;
 
 				for (const player in decks) {
@@ -1683,6 +1690,10 @@
 				name: event_name,
 				winner: "TBD",
 				dropped: []
+			});
+
+			await updateDoc(doc(db, 'info', 'events'), {
+				recent: event_name
 			});
 
 			alert("Created new GP!");

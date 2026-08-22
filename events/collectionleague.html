@@ -81,10 +81,10 @@
 					</div>
 				</div>
 				<div class="monthly-pack">
-					<h1>Monthly Pack: Daydream</h1>
-					<img src="/data/collectionleague/packs/TDD02.png">
-					<p>Daydream is a theme pack filled with 100 rearts of cards with an ethereal and dreamy feeling.</p>
-					<button class="go" onclick="window.location.href='/sets/TDD02'">View Pack</button>
+					<h1>Monthly Pack: Treasures & Trinkets</h1>
+					<img src="/data/collectionleague/packs/TTT04.png">
+					<p>Treasures & Trinkets is filled with 100 of exactly what its name suggests - Treasures & Trinkets!.</p>
+					<button class="go" onclick="window.location.href='/sets/TTT04'">View Pack</button>
 				</div>
 			</div>
 			<div class="tab opener-tab" id="opener" style="display: none;">
@@ -143,11 +143,7 @@
 		// const delay = ms => new Promise(res => setTimeout(res, ms));
 		
 		document.addEventListener("DOMContentLoaded", async function () {
-			await fetch('/lists/all-cards.json')
-				.then(response => response.json())
-				.then(json => {
-					card_list = json;
-				}).catch(error => console.error('Error:', error));
+			
 
 			await fetch('/lists/all-sets.json')
 				.then(response => response.json())
@@ -167,7 +163,7 @@
 					collection = text;
 				}).catch(error => console.error('Error:', error));
 
-			card_list_arrayified = card_list.cards;
+			
 
 			await fetch('/lists/all-sets.json')
 				.then(response => response.json())
@@ -503,8 +499,16 @@
 					if (card.card_name == card_name && card.set == set) {
 						collection_cards.push(card);
 						cards_already_checked.push(i);
+						const copies = _collection_copies.get(collection_card);
+						const card_id = `${card.card_name} (${card.set}) ${card.number}`;
+						collection = collection.replaceAll(_, card_id);
+						
+						if (collection_copies.has(card_id))
+							collection_copies.set(card_id, collection_copies.get(card_id) + copies);
+						else 
+							collection_copies.set(card_id, copies);
+
 						_collection_copies.delete(collection_card);
-						collection = collection.replaceAll(_, `${card.card_name} (${card.set}) ${card.number}`);
 					}
 				}
 			}
@@ -516,8 +520,14 @@
 					if (card.card_name == card_name) {
 						collection_cards.push(card);
 						cards_already_checked.push(i);
-						_collection_copies.delete(collection_card);
-						collection = collection.replaceAll(_, `${card.card_name} (${card.set}) ${card.number}`);
+						const copies = _collection_copies.get(collection_card);
+						const card_id = `${card.card_name} (${card.set}) ${card.number}`;
+						collection = collection.replaceAll(_, card_id);
+						
+						if (collection_copies.has(card_id))
+							collection_copies.set(card_id, collection_copies.get(card_id) + copies);
+						else 
+							collection_copies.set(card_id, copies);
 					}
 				}
 			}

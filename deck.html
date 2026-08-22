@@ -528,10 +528,10 @@
 		let deck_author;
 
 		await fetch('/lists/all-cards.json')
-				.then(response => response.json())
-				.then(json => {
-					card_list = json;
-				}).catch(error => console.error('Error:', error));
+			.then(response => response.json())
+			.then(json => {
+				card_list = json;
+			}).catch(error => console.error('Error:', error));
 
 		let card_list_arrayified = card_list.cards; // default card list
 
@@ -814,7 +814,7 @@
 					card_list = json;
 				}).catch(error => console.error('Error:', error));
 
-			card_list_arrayified = card_list.cards;
+			
 
 			console.log(card_list_arrayified);
 

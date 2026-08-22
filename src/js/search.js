@@ -354,9 +354,12 @@ function searchToken(card, token) {
             }
         }
         if (term == "cost" || term == "mana") {
-            if (modifier == "!" || modifier == "=" || modifier == ":") {
-                card_cost_cleaned = card_cost.replaceAll('{', '').replaceAll('}', '');
+            card_cost_cleaned = card_cost.replaceAll('{', '').replaceAll('}', '');
+            if (modifier == "!" || modifier == "=") {
                 return check == card_cost || check == card_cost_cleaned;
+            }
+            else if (modifier == '>') {
+                return (check.includes('{') ? card_cost.length : card_cost_cleaned.length) > check.length && (hasAllChars(card_cost, check) || hasAllChars(card_cost_cleaned, check));
             }
         }
         if (term == "ci" || term == "id") {
@@ -570,7 +573,7 @@ function searchToken(card, token) {
             if (modifier == ":" || modifier == "!" || modifier == "=") {
                 // all of these are implemented individually
                 if (check == "permanent") {
-                    return !card_type.includes("instant") && !card_type.includes("sorcery");
+                    return card_type.match(/creature|land|enchantment|artifact|battle|planeswalker/g);
                 }
                 if (check == "spell") {
                     return !card_type.includes("land");

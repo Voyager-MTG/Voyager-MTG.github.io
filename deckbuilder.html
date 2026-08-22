@@ -215,8 +215,8 @@
 	<script src="src/js/img-container-defs.js"></script>
 	<script>
 		// initialize variables
+		const very_start = Date.now();
 		let search_results = [];
-		let card_list_arrayified = [];
 		let card_list_cleaned = [];
 		let specialchars = "";
 		let deck = [];
@@ -226,78 +226,16 @@
 		let sets_json = {};
 		let collection_copies = {};
 		let all_cards_stats;
+		let first_search = false;
 		const on_cl_page = false;
 
 		const hover_card = document.querySelector('.hover-card');
 		const contextMenu = document.querySelector('.rc-menu');
 
-		const deck_cards_html = `<div class="deck-col" id="col1">
-					<div class="deck-section" id="deck-creature">
-						<span id="deck-creature-title">Creatures (0)</span>
-						<div class="deck-inner-section" id="deck-creature-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-planeswalker">
-						<span id="deck-planeswalker-title">Planeswalkers (0)</span>
-						<div class="deck-inner-section" id="deck-planeswalker-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-artifact">
-						<span id="deck-artifact-title">Artifacts (0)</span>
-						<div class="deck-inner-section" id="deck-artifact-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-enchantment">
-						<span id="deck-enchantment-title">Enchantments (0)</span>
-						<div class="deck-inner-section" id="deck-enchantment-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-battle">
-						<span id="deck-battle-title">Battles (0)</span>
-						<div class="deck-inner-section" id="deck-battle-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-other">
-						<span id="deck-other-title">Other (0)</span>
-						<div class="deck-inner-section" id="deck-other-cards">
-						</div>
-					</div>
-				</div>
-				<div class="deck-col" id="col2">
-					<div class="deck-section" id="deck-instant">
-						<span id="deck-instant-title">Instants (0)</span>
-						<div class="deck-inner-section" id="deck-instant-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-sorcery">
-						<span id="deck-sorcery-title">Sorceries (0)</span>
-						<div class="deck-inner-section" id="deck-sorcery-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-land">
-						<span id="deck-land-title">Lands (0)</span>
-						<div class="deck-inner-section" id="deck-land-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-sideboard">
-						<span id="deck-sideboard-title">Sideboard (0)</span>
-						<div class="deck-inner-section" id="deck-sideboard-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-sanctum">
-						<span id="deck-sanctum-title">Sanctum (0)</span>
-						<div class="deck-inner-section" id="deck-sanctum-cards">
-						</div>
-					</div>
-				</div>`
-
 		// load resource files
 		document.addEventListener("DOMContentLoaded", async function () {
-			await fetch('/lists/all-cards.json')
-				.then(response => response.json())
-				.then(json => {
-					card_list = json;
-				}).catch(error => console.error('Error:', error));
+			let start = Date.now();
+			
 
 			await fetch('/lists/all-sets.json')
 				.then(response => response.json())
@@ -311,7 +249,7 @@
 					specialchars = text;
 				}).catch(error => console.error('Error:', error));
 
-			card_list_arrayified = card_list.cards;
+			
 
 			await fetch('https://voyager-api-pq2h.onrender.com/stats')
 				.then(response => response.json())
@@ -325,6 +263,10 @@
 				.then(data => {
 					sets_json = data;
 				}).catch(error => console.error('Error:', error));
+			
+			let loaded = Date.now();
+			console.log('Loaded files: ' + (loaded - start));
+			start = loaded;
 
 			let all_tags = new Set();
 			card_list_cleaned = [];
@@ -426,6 +368,10 @@
 				});
 			}
 
+			loaded = Date.now();
+			console.log('Tag dropdown: ' + (loaded - start));
+			start = loaded;
+
 			cardGrid = document.getElementById("imagesOnlyGrid");
 			card_list_arrayified.sort(compareFunction);
 
@@ -442,8 +388,16 @@
 			card_backgrounds = raw_gradients.cards;
 			// prepareGradients();
 
+			loaded = Date.now();
+			console.log('Gradients + sort: ' + (loaded - start));
+			start = loaded;
+
 			// initial search on load
 			preSearch();
+
+			loaded = Date.now();
+			console.log('Presearch: ' + (loaded - start));
+			start = loaded;
 
 			// get url params
 			const urlParams = new URLSearchParams(window.location.search);
@@ -471,21 +425,25 @@
 			let cssstr = "";
 			for (const card of card_list_arrayified) { // loop through all cards
 				// sanctum regex tests
-				let regex = new RegExp("((P|p)athbound|(H|h)eir–)"); // check pathbounds and heirs, in the future other mechanics
-				if (regex.test(card.rules_text)) {
-					sanctum_coll.push(`1 ${card.card_name}`); // push just 1 because of sanctum limit
-				} else if (card.type.includes("Wonder") || card.type.includes("Erysite") || card.type.includes("realm") || card.type.includes("frontier")) {  // check if it has a type that lets it be in the sanctum
-					sanctum_coll.push(`1 ${card.card_name}`);
-				}
-				else if (card.special_text.includes("sanctum")) { // check evobars
-					sanctum_coll.push(`1 ${card.card_name}`);
-				}
-				else if (card.type.includes("Basic")) { // add basic lands
-					sanctum_coll.push(`7 ${card.card_name}`); // push 7 as it's the max sanctum size
+				if (!colls["Sanctum cards"]) {
+					let regex = new RegExp("((P|p)athbound|(H|h)eir–)"); // check pathbounds and heirs, in the future other mechanics
+					if (regex.test(card.rules_text)) {
+						sanctum_coll.push(`1 ${card.card_name}`); // push just 1 because of sanctum limit
+					} else if (card.type.includes("Wonder") || card.type.includes("Erysite") || card.type.includes("realm") || card.type.includes("frontier")) {  // check if it has a type that lets it be in the sanctum
+						sanctum_coll.push(`1 ${card.card_name}`);
+					}
+					else if (card.special_text.includes("sanctum")) { // check evobars
+						sanctum_coll.push(`1 ${card.card_name}`);
+					}
+					else if (card.type.includes("Basic")) { // add basic lands
+						sanctum_coll.push(`7 ${card.card_name}`); // push 7 as it's the max sanctum size
+					}
 				}
 				// check if the card is a common, isn't a token/reminder/boon, and isn't distant vulture astral (this will be fixed on apr 15 when the next update is pushed)
-				if (card.rarity == "common" && !card.type.includes("Token") && !card.type.includes("Reminder") && !card.card_name.includes("Token") && !card.type.includes("Boon") && !card.card_name.includes("Distant Vulture Astral")) {
-					common_coll.push(`4 ${card.card_name}`);
+				if (!colls["Pauper"]) {
+					if (card.rarity == "common" && !card.type.includes("Token") && !card.type.includes("Reminder") && !card.card_name.includes("Token") && !card.type.includes("Boon") && !card.card_name.includes("Distant Vulture Astral")) {
+						common_coll.push(`4 ${card.card_name}`);
+					}
 				}
 			}
 			// send the created collections to localstorage
@@ -513,7 +471,15 @@
 			// document.getElementById("card-grid-container").appendChild(gridified_card);
 			localStorage.setItem('settings.format', window.location.search.includes('?collectionleague') ? 'Collection League' : 'Eternal');
 
+			loaded = Date.now();
+			console.log('Collections: ' + (loaded - start));
+			start = loaded;
+
 			processDeck();
+
+			loaded = Date.now();
+			console.log('Processdeck: ' + (loaded - start));
+			start = loaded;
 		});
 
 		function displayChangeListener() {
@@ -958,6 +924,12 @@
 				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Url copied to clipboard"); // open the modal notifying the user
 			}, "/img/copy-white.png"));
 
+			modalContent.appendChild(exportButtonHtml("Short Deck URL", function () {
+				document.getElementById('save-btn').click();
+				navigator.clipboard.writeText(`https://voyager-mtg.github.io/deck?deck=${encodeURIComponent(username) + '-' + encodeURIComponent(document.getElementById("deck-name").value)}`);
+				openModal('<span class="close" onclick="closeModal()">&times;</span>' + "Url copied to clipboard"); // open the modal notifying the user
+			}, "/img/copy-white.png"));
+
 			modalContent.appendChild(exportButtonHtml("Decklist", function () {
 				navigator.clipboard.writeText(generateDeckText()); // copy the deck text to clipboard
 				document.getElementById("file-menu").value = "default"; // set the dropdown back
@@ -1316,7 +1288,7 @@
 			var e = document.getElementById("copies-style");
 			if (e != null) { e.remove(); }
 			if (name == "Full card pool") { // This is a special collection, so loading it is hard coded; we set card_list_arrayified to the original json, then close the modal and initialize the search
-				card_list_arrayified = card_list.cards;
+				
 				closeModal();
 				preSearch();
 				return;
@@ -1619,7 +1591,7 @@
 			document.getElementById("modal-content").innerHTML = "Deleting Deck:";
 			Object.keys(localStorage).forEach(function (key) {
 				// for each key, make a delete button with the name that calls deletedeck
-				document.getElementById("modal-content").innerHTML += `<span id="delete-${key}" class="del-btn" onclick="deleteDeck('${key}')">${key}</span>`;
+				document.getElementById("modal-content").innerHTML += `<span id="delete-${key}" class="del-btn" onclick="deleteDeck(\`${key}\`)">${key}</span>`;
 			});
 			document.getElementById("modal-content").innerHTML += '<span class="close" onclick="closeModal()">&times;</span>';
 		}
@@ -1845,12 +1817,12 @@
 			cardGrid = document.getElementById("imagesOnlyGrid");
 			cardGrid.innerHTML = "";
 
+			const terms = tokenizeTerms(searchTerms);
 			for (const card of card_list_cleaned) {
 				if (card.shape.includes("token") && !searchTerms.includes("+t:token") && !searchTerms.includes("t:token")) {
 					continue;
 				}
 
-				const terms = tokenizeTerms(searchTerms);
 				searched = [card, ...card.printings].findIndex(c => searchAllTokens(c, terms)) != -1;
 				// console.log(searche);
 				if (searched)
@@ -1858,6 +1830,8 @@
 			}
 
 			const favorites = localStorage.getItem('settings.favorites') || '';
+			const start = Date.now(0);
+			cardGrid.style.display = 'none';
 
 			for (let i = 0; i < search_results.length; i++) {
 				const imgContainer = document.createElement("div");
@@ -1934,11 +1908,16 @@
 
 				cardGrid.appendChild(imgContainer);
 			}
+			cardGrid.style.display = 'grid';
+			console.log('app: ', Date.now() - start);
+			
 		}
 
 		function createCardSr(imgContainer, id, card_stats) {
 			const card_sr_grid = gridifyCard(card_stats);
-			const card_sr = card_sr_grid.getElementsByTagName("img")[0];
+			const card_sr = card_sr_grid.querySelector('img');
+			card_sr.height = '523px';
+			card_sr.width = '375px';
 
 			if (card_stats.shape.includes('double')) {
 				const imgFlipBtn = document.createElement("button");
@@ -2010,7 +1989,7 @@
 			img.style.transition = seconds.toString() + "s";
 			img.style.transform = "rotateY(90deg)";
 
-			const btn = img.parentElement.querySelector('button');
+			const btn = img.closest('.img-container').querySelector('button');
 			btn.style.transition = seconds.toString() + "s";
 			btn.style.filter = cardName.includes("_front") ? "invert()" : "";
 
@@ -2101,6 +2080,7 @@
 
 		function processDeck() {
 			const display_style = document.getElementById("display-select").value;
+			const scroll = document.querySelector('.deck-cards-container').scrollTop;
 			if (display_style != "stats") {
 				document.getElementsByClassName("deck-cards-container")[0].innerHTML = deck_cards_html;
 			}
@@ -2247,6 +2227,10 @@
 				document.getElementsByClassName("deck-cards-container")[0].innerHTML = "";
 				makeStatsTab(deck_cards);
 			}
+			document.querySelector('.deck-cards-container').scroll({
+				top: scroll,
+				behavior: 'instant'
+			});
 		}
 
 		function generateCardHTML(display_style, map, card, key, card_stats, cards_list) {
@@ -2773,7 +2757,7 @@
 		const app = initializeApp(firebaseConfig);
 		const db = getFirestore(app);
 
-		let username = "";
+		window.username = "";
 		let password = "";
 		let decks = "";
 
@@ -2781,7 +2765,7 @@
 
 		const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
 			let data = docSnap.data();
-			username = data.username;
+			window.username = data.username;
 			password = data.password;
 		});
 
@@ -2924,7 +2908,7 @@
 					previewimg: card_stats.card_name,
 					url: `https://voyager-mtg.github.io/deck?deck=${encodeURIComponent(document.getElementById("deck-name").value) + ';' + btoa(generateDeckText(true, true))}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`,
 					colors: colors,
-					last_modified: `${date.getDate().padStart(2, '0')}-${date.getMonth().padStart(2, '0')}-${date.getYear() + 1900}, ${date.getHours()}:${date.getMinutes().padStart(2, '0')}`,
+					last_modified: `${date.getDate().toString().padStart(2, '0')}-${date.getMonth().toString().padStart(2, '0')}-${date.getYear() + 1900}, ${date.getHours()}:${date.getMinutes().toString().padStart(2, '0')}`,
 					format: localStorage.getItem('settings.format'),
 					private: localStorage.getItem("settings.deck_privacy") == "Private"
 				};
