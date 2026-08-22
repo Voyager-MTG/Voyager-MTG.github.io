@@ -23,11 +23,15 @@ const releaseDates = {
     WAW: "2025-02",
     TZE01: "2026-04",
     TDD02: "2026-05",
+    TOL03: "2026-06",
+    TTT04: "2026-07",
+    VSB: "2026-07",
+    IRD: "2026-07",
     ABY: "2026-05",
     LAIR: "2026-01"
 };
 
-const now = '2026-06';
+const now = '2026-08';
 
 function priceFactor(set) {
     const date = releaseDates[set];
@@ -80,7 +84,7 @@ async function main() {
 
     for (const set of set_list) {
         const code = set.set_code;
-
+ 
         if (code == 'LAIR') continue;
 
         let cardFactor = 300;
