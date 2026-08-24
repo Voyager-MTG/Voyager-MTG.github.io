@@ -610,107 +610,109 @@
 			for (const user in decks) {
 				let deck = decks[user];
 
-				let full_deck_container = document.createElement('div');
-				full_deck_container.className = "full-deck-container";
+				// let full_deck_container = document.createElement('div');
+				// full_deck_container.className = "full-deck-container";
 
-				let deck_container = document.createElement('div');
-				deck_container.className = "deck-container";
+				// let deck_container = document.createElement('div');
+				// deck_container.className = "deck-container";
 
-				let colors_container = document.createElement('div');
-				colors_container.className = "colors-container";
+				// let colors_container = document.createElement('div');
+				// colors_container.className = "colors-container";
 
-				let deck_preview = document.createElement('img');
-				let card_stats;
+				// let deck_preview = document.createElement('img');
+				// let card_stats;
 
-				for (const card of card_list_arrayified) {
-					if (deck.previewimg == card.card_name) {
-						card_stats = card;
-						break;
-					}
-				}
+				// for (const card of card_list_arrayified) {
+				// 	if (deck.previewimg == card.card_name) {
+				// 		card_stats = card;
+				// 		break;
+				// 	}
+				// }
 
-				if (!card_stats) {
-					deck_preview.src = "/img/card_back.png"
-				} else {
-					deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
-				}
+				// if (!card_stats) {
+				// 	deck_preview.src = "/img/card_back.png"
+				// } else {
+				// 	deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+				// }
 
-				deck_preview.onclick = function () {
-					document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-					let deck_header = document.createElement("span");
-					deck_header.className = "deck-window-header";
-					deck_header.innerText = user + "'s " + deck.name;
-					document.getElementById("modal-content").appendChild(deck_header);
-					document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
-					document.getElementById("modal-container").style.display = 'block';
-				}
+				// deck_preview.onclick = function () {
+				// 	document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+				// 	let deck_header = document.createElement("span");
+				// 	deck_header.className = "deck-window-header";
+				// 	deck_header.innerText = user + "'s " + deck.name;
+				// 	document.getElementById("modal-content").appendChild(deck_header);
+				// 	document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+				// 	document.getElementById("modal-container").style.display = 'block';
+				// }
 
-				deck_preview.className = "deck-preview-img";
+				// deck_preview.className = "deck-preview-img";
 
-				let deck_name = document.createElement('div');
-				deck_name.className = "deck-name";
-				deck_name.innerText = user + "'s " + deck.name;
+				// let deck_name = document.createElement('div');
+				// deck_name.className = "deck-name";
+				// deck_name.innerText = user + "'s " + deck.name;
 
-				let deck_btns = document.createElement('div');
-				deck_btns.className = "deck-buttons";
+				// let deck_btns = document.createElement('div');
+				// deck_btns.className = "deck-buttons";
 
-				let deck_link = document.createElement('a');
-				deck_link.href = `/deck?edeck=${event}-${user}`;
-				deck_link.innerText = "Open";
-				deck_link.className = "deck-link-green deck-icon-shadow";
-				deck_link.target = "_blank";
+				// let deck_link = document.createElement('a');
+				// deck_link.href = `/deck?edeck=${event}-${user}`;
+				// deck_link.innerText = "Open";
+				// deck_link.className = "deck-link-green deck-icon-shadow";
+				// deck_link.target = "_blank";
 
-				let deck_edit_icon = document.createElement('img');
-				deck_edit_icon.src = "/img/header/deck.png";
-				deck_edit_icon.className = "deck-icon-green";
+				// let deck_edit_icon = document.createElement('img');
+				// deck_edit_icon.src = "/img/header/deck.png";
+				// deck_edit_icon.className = "deck-icon-green";
 
-				deck_link.appendChild(deck_edit_icon);
+				// deck_link.appendChild(deck_edit_icon);
 
-				let deck_link2 = document.createElement('span');
-				deck_link2.innerText = "View";
-				deck_link2.className = "deck-link-blue deck-icon-shadow";
+				// let deck_link2 = document.createElement('span');
+				// deck_link2.innerText = "View";
+				// deck_link2.className = "deck-link-blue deck-icon-shadow";
 
-				let deck_edit_icon2 = document.createElement('img');
-				deck_edit_icon2.src = "/img/show-white.png";
-				deck_edit_icon2.className = "deck-icon-blue";
+				// let deck_edit_icon2 = document.createElement('img');
+				// deck_edit_icon2.src = "/img/show-white.png";
+				// deck_edit_icon2.className = "deck-icon-blue";
 
-				deck_link2.onclick = function () {
-					document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-					let deck_header = document.createElement("span");
-					deck_header.className = "deck-window-header";
-					deck_header.innerText = user + "'s " + deck.name;
-					document.getElementById("modal-content").appendChild(deck_header);
-					document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
-					document.getElementById("modal-container").style.display = 'block';
-				}
+				// deck_link2.onclick = function () {
+				// 	document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+				// 	let deck_header = document.createElement("span");
+				// 	deck_header.className = "deck-window-header";
+				// 	deck_header.innerText = user + "'s " + deck.name;
+				// 	document.getElementById("modal-content").appendChild(deck_header);
+				// 	document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+				// 	document.getElementById("modal-container").style.display = 'block';
+				// }
 
-				deck_link2.appendChild(deck_edit_icon2);
+				// deck_link2.appendChild(deck_edit_icon2);
 
-				if (deck.colors) {
-					for (const color of deck.colors) {
-						let color_ele = document.createElement('img');
-						color_ele.src = `/img/mana/mana_${color}.png`;
-						color_ele.className = "mana-img";
-						colors_container.appendChild(color_ele);
-					}
-				}
+				// if (deck.colors) {
+				// 	for (const color of deck.colors) {
+				// 		let color_ele = document.createElement('img');
+				// 		color_ele.src = `/img/mana/mana_${color}.png`;
+				// 		color_ele.className = "mana-img";
+				// 		colors_container.appendChild(color_ele);
+				// 	}
+				// }
 
-				deck_btns.appendChild(deck_link);
-				deck_btns.appendChild(deck_link2);
+				// deck_btns.appendChild(deck_link);
+				// deck_btns.appendChild(deck_link2);
 
-				deck_container.appendChild(deck_name);
-				deck_container.appendChild(deck_preview);
-				deck_container.appendChild(deck_btns);
+				// deck_container.appendChild(deck_name);
+				// deck_container.appendChild(deck_preview);
+				// deck_container.appendChild(deck_btns);
 
-				full_deck_container.appendChild(deck_container);
+				// full_deck_container.appendChild(deck_container);
 
-				if (deck.colors) full_deck_container.appendChild(colors_container);
+				// if (deck.colors) full_deck_container.appendChild(colors_container);
 
-				if (deck.colors) {
-					document.getElementById("decklists").appendChild(full_deck_container);
-				} else {
-					document.getElementById("decklists").appendChild(deck_container);
-				}
+				// if (deck.colors) {
+				// 	document.getElementById("decklists").appendChild(full_deck_container);
+				// } else {
+				// 	document.getElementById("decklists").appendChild(deck_container);
+				// }
+
+				document.getElementById('decklists').appendChild(gridifyDeck(deck, user));
 			}
 		}
 
@@ -1044,7 +1046,7 @@
 						}
 
 						let deck_preview_card = document.getElementById("deck-preview-card");
-						deck_preview_card.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+						deck_preview_card.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 
 						deck_preview_card.onclick = function () {
 							window.location.href = `/card?set=${card_stats.set}&num=${card_stats.number}&name=${card_name.replaceAll(" ", "+")}`;
@@ -1876,29 +1878,67 @@
 			return false
 		}
 
-		function gridifyDeck(deck) {
-			const container = document.createElement("div");
-			container.className = "deck-container";
-			const preview_img = document.createElement("img");
+		function gridifyDeck(deck, user=false) {
 			let card_stats;
+			let src;
+
 			for (const card of card_list_arrayified) {
 				if (deck.previewimg == card.card_name) {
 					card_stats = card;
 					break;
 				}
 			}
-			preview_img.src = card_stats ? "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type : "/img/card_back.png";
-			preview_img.className = "deck-preview-img";
-			// preview_img.onclick = function() {
-			//     window.location.href = `/deck?deck=${deck.user}-${encodeURI(deck.name)}`
-			// }
-			const deck_name = document.createElement("div");
-			deck_name.className = "deck-name";
-			deck_name.innerText = deck.name;
 
-			container.appendChild(deck_name);
-			container.appendChild(preview_img);
-			return container;
+			if (!card_stats) {
+				src = "/img/card_back.png"
+			} else {
+				src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+			}
+
+			/*
+			<a class="deck-card">
+				<div class="deck-card-bg" style="background-image: url('https://uiwow7.github.io/sets/DSW-files/img/241_Protect%20Boundless%20Will.jpg')"></div>
+				<div class="deck-card-overlay"></div>
+				<div class="deck-card-info">
+					<h1>Name</h1>
+					<h3><span class="mana mana-w"></span><span class="mana mana-i"></span></h3>
+				</div>
+			</a>
+			*/
+			let colors_html = '';
+			const colors = deck.colors ? Array.from(deck.colors).sort(colorSort) : "";
+
+			for (const color of colors) {
+				colors_html += `<span class="mana mana-${color.toLowerCase()}"></span>`;
+			}
+
+			const deck_card = document.createElement('a');
+			deck_card.className = 'deck-card';
+			if (!user) deck_card.href = deck.url;
+			if (user) {
+				deck_card.onclick = () => {
+					document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
+					let deck_header = document.createElement("span");
+					deck_header.className = "deck-window-header";
+					deck_header.innerText = user + "'s " + deck.name;
+					document.getElementById("modal-content").appendChild(deck_header);
+					document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
+					document.getElementById("modal-container").style.display = 'block';
+				}
+			}
+			// console.log(deck);
+			const user_html = user ? `<h3>${user}</h3>` : '';
+			deck_card.innerHTML = `
+				<div class="deck-card-bg" style="background-image: url('${src}')"></div>
+				<div class="deck-card-overlay"></div>
+				<div class="deck-card-info">
+					<h1>${deck.name}</h1>
+					${user_html}
+					<h3>${colors_html}</h3>
+				</div>
+			`;
+
+			return deck_card;
 		}
 
 		function numRounds(n) {

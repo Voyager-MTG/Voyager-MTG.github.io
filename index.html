@@ -311,7 +311,7 @@
 
 			setTextColor();
 
-			img.src = '/sets/' + card_stats.set + '-files/img/' + card_stats.number + '_' + card_stats.card_name + (card_stats.shape.includes('double') ? '_front' : '') + '.' + card_stats.image_type;
+			img.src = '/sets/' + card_stats.set + '-files/img/' + card_stats.position + (card_stats.shape.includes('double') ? '_front' : '') + '.' + card_stats.image_type;
 
 			a.append(img);
 			document.getElementById("cotd-image").append(a);
@@ -401,7 +401,7 @@
 			const l = p1p1Rand(card_list_cleaned.length, p1p1_count);
 			for (const i of l) {
 				const card = card_list_cleaned[i];
-				const img_url = '/sets/' + card.set + '-files/img/' + card.number + '_' + card.card_name + (card.shape.includes('double') ? '_front' : '') + '.' + card.image_type;
+				const img_url =' /sets/' + card.set + '-files/img/' + card.position + ((card.shape.includes("double")) ? "_front" : "") + "." + card.image_type;
 
 				const image = new Image();
 				image.src = img_url;

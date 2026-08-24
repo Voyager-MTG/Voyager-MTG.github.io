@@ -240,6 +240,10 @@ async function handleDeckView() {
 	const deckview = document.createElement('div');
 	deckview.className = 'deck-tray';
 
+	const deck_cards_container = document.createElement('div');
+	deck_cards_container.className = 'deck-cards-container';
+	deckview.appendChild(deck_cards_container);
+
 	const pop_out_button = document.createElement('div');
 	pop_out_button.className = 'open-deckview-button';
 	pop_out_button.innerText = '⮝';
@@ -271,13 +275,30 @@ async function handleDeckView() {
 		pop_out_button.innerText = '⮟';
 	}
 
-	readDeckText(localStorage.getItem('info.lastdeck'));
+	readDeckText(localStorage.getItem(localStorage.getItem('info.lastdeck')));
+}
+
+function colorSort(a, b) {
+	const order = 'WUBRGI';
+	return order.indexOf(a) - order.indexOf(b);
 }
 
 function createDeckView() {
 	const deck_name = localStorage.getItem('info.lastdeck');
 	const deck = localStorage.getItem(deck_name);
 	return document.createElement('div');
+}
+
+function addCardToDeck(card) {
+	deck.push(card);
+}
+
+function addCardToSideboard(card) {
+	deck.push(card);
+}
+
+function addCardToSanctum(card) {
+	deck.push(card);
 }
 
 function readDeckText(text, name) {
@@ -364,6 +385,8 @@ function readDeckText(text, name) {
 			}
 		}
 	}
+
+	console.log(text);
 
 	for (const card of card_list_arrayified) {
 		for (const [ key, value ] of deck_map.entries()) {
@@ -455,8 +478,9 @@ function readDeckText(text, name) {
 			}
 		}
 	}
+	console.log(deck_map, sb_map, sc_map);
 	
-	// processDeck();
+	processDeck();
 }
 
 function processDeck() {
@@ -475,12 +499,12 @@ function processDeck() {
 	}
 
 	// add the no-cards-text if there's no cards in the deck or sideboard, otherwise hide it
-	const nct = document.getElementById("no-cards-text");
-	nct.style.display = (deck.length == 0 && sideboard.length == 0 && sanctum.length == 0) ? "block" : "none";
+	// const nct = document.getElementById("no-cards-text");
+	// nct.style.display = (deck.length == 0 && sideboard.length == 0 && sanctum.length == 0) ? "block" : "none";
 
 	// set the deck count thing in the deck header
-	const dc = document.getElementById("deck-count");
-	dc.innerText = "(" + deck.length + " / " + sideboard.length + " / " + sanctum.length + ")";
+	// const dc = document.getElementById("deck-count");
+	// dc.innerText = "(" + deck.length + " / " + sideboard.length + " / " + sanctum.length + ")";
 
 	// initialize card types (and sideboard, sanctum)
 	let deck_cards = new Map([
@@ -622,7 +646,7 @@ function generateCardHTML(display_style, map, card, key, card_stats, cards_list)
 
 		// make an image element and give it the correct url
 		card_in_deck = document.createElement("img");
-		card_in_deck.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + "_" + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+		card_in_deck.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 		card_in_deck.style.borderRadius = "8px";
 		// card_in_deck.onmouseover = updateCardGrid(card_stats);
 
@@ -727,7 +751,7 @@ function generateCardHTML(display_style, map, card, key, card_stats, cards_list)
 	}
 
 	card_in_deck.onmouseover = () => {
-		hover_card.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + "_" + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+		hover_card.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 		hover_card.style.display = 'block';
 	}
 

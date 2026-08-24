@@ -47,8 +47,13 @@ select {
 
 .format-container {
 	display: grid;
-	gap: 30px 0;
+	gap: 30px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+	/* height: 100px; */
+}
+
+.deck-card {
+	height: 200px;
 }
 
 .collections-container {

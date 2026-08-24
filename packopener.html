@@ -615,7 +615,7 @@
 					card = slot[rand_i];
 				} while (used_cards.includes(card));
 
-				const img_url = '/sets/' + card.set + '-files/img/' + card.number + '_' + card.card_name + (card.shape.includes('double') ? '_front' : '') + '.' + card.image_type;
+				const img_url =' /sets/' + card.set + '-files/img/' + card.position + ((card.shape.includes("double")) ? "_front" : "") + "." + card.image_type;
 
 				const image = new Image();
 				image.src = img_url;

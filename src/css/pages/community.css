@@ -78,6 +78,11 @@ hr {
 	/* align-items: center; */
 	justify-items: center;
 	grid-template-columns: 1fr 1fr;
+	width: 95%;
+}
+
+.deck-sections-container .deck-card {
+	height: 200px;
 }
 
 .full-deck-section-container {
@@ -276,6 +281,10 @@ select {
 	font-family: beleren;
 	text-align: center;
 	color: var(--popout-text-color);
+}
+
+.deck-card-info {
+	text-align: left;
 }
 
 @media (max-device-width: 750px) {

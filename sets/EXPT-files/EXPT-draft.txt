@@ -81,16 +81,6 @@
 			}
 		},
 		{
-			"name": "Unbothered Alchemist",
-			"rarity": "common",
-			"mana_cost": "{3}{C}",
-			"type": "Creature — Human Wizard",
-			"collector_number": "102",
-			"image_uris": {
-				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/102_Unbothered Alchemist.jpg"
-			}
-		},
-		{
 			"name": "Scouting Party",
 			"rarity": "common",
 			"mana_cost": "{3}{C}{C}",
@@ -273,7 +263,7 @@
 		{
 			"name": "Iridescent Summit",
 			"rarity": "rare",
-			"mana_cost": "{1}{C}{C}",
+			"mana_cost": "{C}{C}",
 			"type": "Enchantment",
 			"collector_number": "65",
 			"image_uris": {
@@ -1412,7 +1402,7 @@
 		},
 		{
 			"name": "Exposed Tower",
-			"rarity": "common",
+			"rarity": "rare",
 			"mana_cost": "",
 			"type": "Land",
 			"collector_number": "146",
@@ -1944,6 +1934,23 @@
 				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/22_Food.jpg"
 			}
 		},
+		{
+			"name": "Unbothered Alchemist",
+			"rarity": "common",
+			"mana_cost": "{3}{C}",
+			"type": "Creature — Human Wizard",
+			"collector_number": "102",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/102_Unbothered Alchemist_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/EXPT-files/img/102_Unbothered Alchemist_front.jpg"
+			}
+		},
 	]
 
 [rare(1)]
@@ -1998,6 +2005,7 @@
 	2 Fortress of Splintered Truth
 	2 Stronghold of Silence
 	2 Tower of Ambition
+	2 Exposed Tower
 	1 Yasin, Who Ascends the Peak
 	2 Controlled Calamity
 	2 The Restricted Library
@@ -2071,7 +2079,6 @@
 	8 Exuberant Archaeologist
 	8 Tepid Tamer
 	8 Striking Reflection
-	8 Unbothered Alchemist
 	8 Scouting Party
 	8 Back to Market
 	8 Center Mass
@@ -2104,8 +2111,8 @@
 	8 Edification
 	8 Canyon Crustacean
 	8 Faulty Recreation
-	8 Exposed Tower
 	8 Colossal Dreadmaw
+	8 Unbothered Alchemist
 [wildcard(1)]
 	7 Falling Sparks
 	7 Soul Splintering
@@ -2114,7 +2121,6 @@
 	6 Exuberant Archaeologist
 	6 Tepid Tamer
 	6 Striking Reflection
-	6 Unbothered Alchemist
 	6 Scouting Party
 	6 Back to Market
 	6 Center Mass
@@ -2228,7 +2234,7 @@
 	7 Stronghold of Silence
 	7 Tower of Ambition
 	15 Omnigenius Vessel
-	6 Exposed Tower
+	7 Exposed Tower
 	4 Yasin, Who Ascends the Peak
 	7 Controlled Calamity
 	7 The Restricted Library
@@ -2264,3 +2270,4 @@
 	7 Neon Nightblade
 	7 Monument to Lapsed Worlds
 	7 Eyes Searching Blindly
+	6 Unbothered Alchemist

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="/src/css/theme.css">
 	<link rel="stylesheet" href="/src/css/modal.css">
 	<link rel="stylesheet" href="/src/css/img-container.css">
+	<link rel="stylesheet" href="/src/css/deck-container.css">
 	<link rel="stylesheet" href="/src/css/pages/deckbuilder.css">
 </head>
 
@@ -1056,7 +1057,7 @@
 
 				preview_card_img.className = "card-image preview-card-image";
 				preview_card_img.id = "preview-card-image";
-				preview_card_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+				preview_card_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 
 				let card_dropdown = document.createElement("select");
 				card_dropdown.id = "card-dropdown";
@@ -1237,32 +1238,80 @@
 			return deck_ele;
 		}
 
+		// function gridifyDeck(deck) {
+		// 	const container = document.createElement("div");
+		// 	container.className = "load-deck-container";
+		// 	const preview_img = document.createElement("img");
+		// 	let card_stats;
+		// 	let card_stats_image = "/img/card_back.png";
+		// 	for (const card of card_list_arrayified) {
+		// 		if (deck.previewimg == card.card_name) {
+		// 			card_stats = card;
+		// 			card_stats_image = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+		// 			break;
+		// 		}
+		// 	}
+		// 	preview_img.src = deck.previewimg == "cardback" ? "/img/card_back.png" : card_stats_image;
+		// 	preview_img.className = "deck-preview-img";
+		// 	// preview_img.onclick = function() {
+		// 	//     window.location.href = `/deck?deck=${deck.user}-${encodeURI(deck.name)}`
+		// 	// }
+		// 	const deck_name = document.createElement("div");
+		// 	deck_name.className = "deck-name";
+		// 	deck_name.innerText = deck.name;
+
+		// 	container.appendChild(deck_name);
+		// 	container.appendChild(preview_img);
+
+		// 	return container;
+		// }
+
 		function gridifyDeck(deck) {
-			const container = document.createElement("div");
-			container.className = "load-deck-container";
-			const preview_img = document.createElement("img");
 			let card_stats;
-			let card_stats_image = "/img/card_back.png";
+			let src;
+
 			for (const card of card_list_arrayified) {
 				if (deck.previewimg == card.card_name) {
 					card_stats = card;
-					card_stats_image = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 					break;
 				}
 			}
-			preview_img.src = deck.previewimg == "cardback" ? "/img/card_back.png" : card_stats_image;
-			preview_img.className = "deck-preview-img";
-			// preview_img.onclick = function() {
-			//     window.location.href = `/deck?deck=${deck.user}-${encodeURI(deck.name)}`
-			// }
-			const deck_name = document.createElement("div");
-			deck_name.className = "deck-name";
-			deck_name.innerText = deck.name;
 
-			container.appendChild(deck_name);
-			container.appendChild(preview_img);
+			if (!card_stats) {
+				src = "/img/card_back.png"
+			} else {
+				src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+			}
 
-			return container;
+			/*
+			<a class="deck-card">
+				<div class="deck-card-bg" style="background-image: url('https://uiwow7.github.io/sets/DSW-files/img/241_Protect%20Boundless%20Will.jpg')"></div>
+				<div class="deck-card-overlay"></div>
+				<div class="deck-card-info">
+					<h1>Name</h1>
+					<h3><span class="mana mana-w"></span><span class="mana mana-i"></span></h3>
+				</div>
+			</a>
+			*/
+			let colors_html = '';
+			const colors = deck.colors ? Array.from(deck.colors).sort(colorSort) : "";
+
+			for (const color of colors) {
+				colors_html += `<span class="mana mana-${color.toLowerCase()}"></span>`;
+			}
+
+			const deck_card = document.createElement('a');
+			deck_card.className = 'deck-card';
+			deck_card.innerHTML = `
+				<div class="deck-card-bg" style="background-image: url('${src}')"></div>
+				<div class="deck-card-overlay"></div>
+				<div class="deck-card-info">
+					<h1>${deck.name}</h1>
+					<h3>${colors_html}</h3>
+				</div>
+			`;
+
+			return deck_card;
 		}
 
 		function openLoadCollectionWindow(load_as_deck = false) {
@@ -1810,6 +1859,11 @@
 			search();
 		}
 
+		let currentRenderIndex = 0;
+		const CHUNK_SIZE = 100;
+		let searchObserver = null;
+		let currentProcessedResults = [];
+
 		function search() {
 			searchTerms = document.getElementById("search").value.toLowerCase();
 			tokenizedTerms = tokenizeTerms(searchTerms);
@@ -1829,9 +1883,11 @@
 					search_results.push(card);
 			}
 
+			currentProcessedResults = search_results;
+
 			const favorites = localStorage.getItem('settings.favorites') || '';
 			const start = Date.now(0);
-			cardGrid.style.display = 'none';
+			// cardGrid.style.display = 'none';
 
 			for (let i = 0; i < search_results.length; i++) {
 				const imgContainer = document.createElement("div");
@@ -1908,9 +1964,111 @@
 
 				cardGrid.appendChild(imgContainer);
 			}
-			cardGrid.style.display = 'grid';
-			console.log('app: ', Date.now() - start);
+			// cardGrid.style.display = 'grid';
+			// console.log('app: ', Date.now() - start);
+			renderNextChunk();
+		}
+
+		function renderNextChunk() {
+			const cardGrid = document.getElementById("imagesOnlyGrid");
 			
+			const oldSentinel = document.getElementById("search-sentinel");
+			if (oldSentinel) oldSentinel.remove();
+
+			const nextChunk = currentProcessedResults.slice(currentRenderIndex, currentRenderIndex + CHUNK_SIZE);
+			
+			nextChunk.forEach(card_stats => {
+				const imgContainer = document.createElement("div");
+				const id = card_stats.set + "-" + card_stats.number + "-" + document.getElementById("display").value;
+				imgContainer.className = "img-container";
+				const printings = [card_stats, ...card_stats.printings];
+
+				const getCard = () => JSON.stringify(printings[imgContainer.dataset.printing ?? 0]);
+				
+				const card_sr = createCardSr(imgContainer, id, card_stats);
+				imgContainer.appendChild(card_sr);
+
+				const card = JSON.stringify(card_stats);
+
+				const buttons = document.createElement('div');
+				buttons.className = 'card-buttons';
+
+				const addBtn = document.createElement('button');
+				addBtn.className = 'card-add-button';
+				addBtn.innerText = '+';
+				addBtn.title = 'Add to maindeck';
+				addBtn.onclick = () => addCardToDeck(getCard());
+
+				const addSbBtn = document.createElement('button');
+				addSbBtn.className = 'card-add-button';
+				addSbBtn.title = 'Add to sideboard';
+				addSbBtn.onclick = () => addCardToSideboard(getCard());
+
+				const addSbIcon = document.createElement('img');
+				addSbIcon.className = 'card-button-icon';
+				addSbIcon.src = '/img/sb2.png';
+				addSbBtn.appendChild(addSbIcon);
+
+				const addScBtn = document.createElement('button');
+				addScBtn.className = 'card-add-button';
+				addScBtn.title = 'Add to sanctum';
+				addScBtn.onclick = () => addCardToSanctum(getCard());
+
+				const addScIcon = document.createElement('img');
+				addScIcon.className = 'card-button-icon';
+				addScIcon.src = '/img/gyroscope.png';
+				addScBtn.appendChild(addScIcon);
+
+				const switchPrintingBtn = document.createElement('button');
+				switchPrintingBtn.className = 'card-add-button';
+				switchPrintingBtn.title = 'Switch printing';
+				switchPrintingBtn.onclick = () => switchPrinting(imgContainer, card_stats);
+
+				const switchPrintingIcon = document.createElement('img');
+				switchPrintingIcon.className = 'card-button-icon';
+				switchPrintingIcon.src = '/img/sb.png';
+				switchPrintingBtn.appendChild(switchPrintingIcon);
+
+				const favoriteBtn = document.createElement('button');
+				favoriteBtn.className = 'card-add-button';
+				favoriteBtn.title = 'Favorite card';
+				favoriteBtn.onclick = () => {
+					localStorage.setItem('settings.favorites', favorites + '\n' + card_stats.card_name);
+					favoriteIcon.src = '/img/starred.png';
+				};
+
+				const favoriteIcon = document.createElement('img');
+				favoriteIcon.className = 'card-button-icon';
+				favoriteIcon.src = favorites.match(`${RegExp.escape(card_stats.card_name)}\\n`) ? '/img/starred.png' : '/img/star.png';
+				favoriteBtn.appendChild(favoriteIcon);
+
+				buttons.appendChild(addBtn);
+				buttons.appendChild(addSbBtn);
+				buttons.appendChild(addScBtn);
+				buttons.appendChild(switchPrintingBtn);
+				buttons.appendChild(favoriteBtn);
+				imgContainer.appendChild(buttons);
+
+				cardGrid.appendChild(imgContainer);
+			});
+
+			currentRenderIndex += CHUNK_SIZE;
+
+			if (currentRenderIndex < currentProcessedResults.length) {
+				const sentinel = document.createElement("div");
+				sentinel.id = "search-sentinel";
+				sentinel.style.height = "20px";
+				cardGrid.appendChild(sentinel);
+
+				if (!searchObserver) {
+					searchObserver = new IntersectionObserver((entries) => {
+						if (entries[0].isIntersecting) {
+							renderNextChunk();
+						}
+					}, { root: document.querySelector(".search-image-grid-container"), threshold: 0.1 });
+				}
+				searchObserver.observe(sentinel);
+			}
 		}
 
 		function createCardSr(imgContainer, id, card_stats) {
@@ -2261,7 +2419,7 @@
 
 				// make an image element and give it the correct url
 				card_in_deck = document.createElement("img");
-				card_in_deck.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + "_" + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+				card_in_deck.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 				card_in_deck.style.borderRadius = "8px";
 				// card_in_deck.onmouseover = updateCardGrid(card_stats);
 
@@ -2366,7 +2524,7 @@
 			}
 
 			card_in_deck.onmouseover = () => {
-				hover_card.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + "_" + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+				hover_card.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 				hover_card.style.display = 'block';
 			}
 

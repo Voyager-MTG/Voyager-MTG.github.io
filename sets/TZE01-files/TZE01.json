@@ -3,7 +3,7 @@
     "formats": "",
     "trimmed": "y",
     "image_type": "jpg",
-    "draft_structure": "play booster",
+    "draft_structure": "cube",
     "designer": "Voyager",
     "cards": [
         {
@@ -23,6 +23,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "0",
             "notes": ""
         },
         {
@@ -42,6 +43,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Jimmy Dang",
+            "position": "1",
             "notes": "https://www.artstation.com/artwork/092m5"
         },
         {
@@ -61,6 +63,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "ianllanas",
+            "position": "2",
             "notes": "https://www.deviantart.com/ianllanas/art/Cyborg-Birth-699157305"
         },
         {
@@ -80,6 +83,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "3",
             "notes": "Explorers Compass"
         },
         {
@@ -99,6 +103,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "KUFFINS",
+            "position": "4",
             "notes": "https://www.artstation.com/artwork/QryEQ4"
         },
         {
@@ -118,6 +123,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "5",
             "notes": "COLOURLESSCOMMON\nCA01"
         },
         {
@@ -137,6 +143,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "saikikazuya",
+            "position": "6",
             "notes": "!tag Dewold\n!tag Attwater"
         },
         {
@@ -156,6 +163,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "tessaku ro",
+            "position": "7",
             "notes": ""
         },
         {
@@ -175,6 +183,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "tessaku ro",
+            "position": "8",
             "notes": ""
         },
         {
@@ -194,6 +203,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "AlMaNeGrA",
+            "position": "9",
             "notes": "https://www.deviantart.com/almanegra/art/Body-Horror-847667203"
         },
         {
@@ -204,7 +214,7 @@
             "number": 3,
             "color_identity": "WU",
             "cost": "{4}{W}",
-            "rules_text": "Vigilance\nWhenever Catechesis Engine attacks, you may sacrifice a land or exile a land card from your graveyard. If you do, you get {VcU}.",
+            "rules_text": "Vigilance\nWhenever Catechesis Engine attacks, you may sacrifice a land or exile a land card from your graveyard. If you do, you get {VU}.",
             "flavor_text": "[i][/i]",
             "pt": "4/5",
             "special_text": "",
@@ -213,6 +223,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "AlMaNeGrA",
+            "position": "10",
             "notes": "https://www.deviantart.com/almanegra/art/Balakaralimus-864446377"
         },
         {
@@ -232,6 +243,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "AlMaNeGrA",
+            "position": "11",
             "notes": "https://www.deviantart.com/almanegra/art/The-great-nothing-Hunt-is-over-914492739"
         },
         {
@@ -251,6 +263,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "12",
             "notes": "COLOURLESSCOMMON\nCA03"
         },
         {
@@ -270,6 +283,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "ianllanas",
+            "position": "13",
             "notes": "!designer TVP\n\"Giant Soldier of Stone.\"\n\u2014Giant Soldier of Stone, the Giant Soldier of Stone"
         },
         {
@@ -289,6 +303,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Beau Chapman",
+            "position": "14",
             "notes": "https://www.artstation.com/artwork/GaPe9Q"
         },
         {
@@ -308,6 +323,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "15",
             "notes": ""
         },
         {
@@ -327,6 +343,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "16",
             "notes": ""
         },
         {
@@ -346,6 +363,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Trunnec",
+            "position": "17",
             "notes": "https://www.deviantart.com/trunnec/art/Gundam-RX-78-2-Origin-803533207\n\nColored : 40\nBonus : 40\nTheme \u2014 month : 19\nTheme \u2014 Any : 1"
         },
         {
@@ -356,7 +374,7 @@
             "number": 42,
             "color_identity": "G",
             "cost": "{1}{G}",
-            "rules_text": "Whenever Awakened Titan attacks, sacrifice an artifact. If you do, draw a card.",
+            "rules_text": "Whenever this creature attacks, sacrifice an artifact. If you do, draw a card.",
             "flavor_text": "[i]\u201cYou're good. It'd be no surprise why some people want you on their side. If adults are going to send children out to fight... It's their responsibility to show them the horrors of the battlefield.\u201d\n\u2014Ramba Ral [/i]",
             "pt": "3/3",
             "special_text": "",
@@ -365,6 +383,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "bcnyArt",
+            "position": "18",
             "notes": "https://www.deviantart.com/bcnyart/art/Gundam-RX-78-885063795"
         },
         {
@@ -384,6 +403,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "19",
             "notes": "https://www.zerochan.net/4155618#full"
         },
         {
@@ -403,6 +423,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Cellbuzer",
+            "position": "20",
             "notes": "https://www.deviantart.com/cellbuzer/art/Mechagodzilla-1021041979"
         },
         {
@@ -422,6 +443,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "sizzleredux",
+            "position": "21",
             "notes": "https://www.deviantart.com/sizzleredux/art/Abandoned-Defense-Fortress-1293243483"
         },
         {
@@ -441,6 +463,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "sizzleredux",
+            "position": "22",
             "notes": "https://www.deviantart.com/sizzleredux/art/Towers-Landscape-1199412078"
         },
         {
@@ -460,6 +483,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "23",
             "notes": "https://static.wikia.nocookie.net/gundam/images/f/fa/CrashedKomusai08MST.png/revision/latest/scale-to-width-down/1000?cb=20201111131130"
         },
         {
@@ -479,6 +503,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "morishita naochika",
+            "position": "24",
             "notes": "https://danbooru.donmai.us/posts/356717?q=white_base"
         },
         {
@@ -498,6 +523,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "25",
             "notes": ""
         },
         {
@@ -517,6 +543,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Yasuo Ohtagaki",
+            "position": "26",
             "notes": "!tag Dewold\n!tag Nye"
         },
         {
@@ -536,6 +563,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Kunio Okawara",
+            "position": "27",
             "notes": "!designer TVP"
         },
         {
@@ -546,7 +574,7 @@
             "number": 89,
             "color_identity": "C",
             "cost": "{1}",
-            "rules_text": "When Wings of New Horizons enters, trace its skill into your hand. [i](Create that card. Traces are cards that become copies when they enter public zones.)[/i]\nEquipped creature gets +1/+1 and has flying.\nEquip {3}\n[b]Warped Exploration[/b] {2}|[i] [/i]Skill Sorcery\nTrace a basic land of any type into your hand.",
+            "rules_text": "When this equipment enters, create a trace of its skill into your hand. [i](Traces can't exist in graveyards or exile and are tokens while on the battlefield.)[/i]\nEquipped creature gets +1/+1 and has flying.\nEquip {3}\n[b]Warped Exploration[/b] {2}|[i] [/i]Skill Sorcery\nTrace a basic land of any type into your hand.",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -555,6 +583,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Marc Simonetti",
+            "position": "28",
             "notes": "Preview"
         },
         {
@@ -565,7 +594,7 @@
             "number": 41,
             "color_identity": "R",
             "cost": "{2}{R}{R}",
-            "rules_text": "Defender, reach\nAs long as Towering Protector is equipped, enchanted, or has a counter on it, this creature may attack as though it didn't have defender.",
+            "rules_text": "Defender, reach\nAs long as this creature is equipped, enchanted, or has a counter on it, this creature may attack as though it didn't have defender.",
             "flavor_text": "[i][/i]",
             "pt": "4/4",
             "special_text": "",
@@ -574,6 +603,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "29",
             "notes": ""
         },
         {
@@ -593,6 +623,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "30",
             "notes": "WHITEUNCOMMON\nUW01"
         },
         {
@@ -612,6 +643,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kumono",
+            "position": "31",
             "notes": "https://www.artstation.com/artwork/29k9lY"
         },
         {
@@ -631,6 +663,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "32",
             "notes": "!tag Dewold\n!tag Radcliff"
         },
         {
@@ -641,7 +674,7 @@
             "number": 7,
             "color_identity": "WB",
             "cost": "{1}{W}{W}",
-            "rules_text": "When Giant's Blade enters, trace its skill into your hand. [i](Create that card. Traces are cards that become copies when they enter public zones.)[/i]\nEquipped creature gets +4/+4.\nEquip {5}\n[b]Subdued Rift[/b] {WB}| Skill Sorcery\nCreate a 1/1 black and white Cat enchantment creature token.",
+            "rules_text": "When this equipment enters, create a trace of its skill into your hand. [i](Traces can't exist in graveyards or exile and are tokens while on the battlefield.)[/i]\nEquipped creature gets +4/+4.\nEquip {5}\n[b]Subdued Rift[/b] {WB}| Skill Sorcery\nCreate a 1/1 black and white Cat enchantment creature token.",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -650,6 +683,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "StarEagle711",
+            "position": "33",
             "notes": "Giants Blade\n!addtoken Subdued Rift;conjured;"
         },
         {
@@ -669,6 +703,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "34",
             "notes": ""
         },
         {
@@ -688,6 +723,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "35",
             "notes": ""
         },
         {
@@ -707,6 +743,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "36",
             "notes": ""
         },
         {
@@ -726,6 +763,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "37",
             "card_name2": "Tesselation",
             "color2": "U",
             "type2": "Instant \u2014 Focus",
@@ -746,7 +784,7 @@
             "number": 37,
             "color_identity": "R",
             "cost": "{R}",
-            "rules_text": "When Flaming Iron enters, trace its skill into your hand. [i](Create that card. Traces are cards that become copies when they enter public zones.)[/i]\nEquipped creature gets +2/+0.\nEquip {2}\n[b]Prepared Strike[/b] {R}| Skill Sorcery\nTarget creature you control gets +1/+0 and gains first strike until end of turn.",
+            "rules_text": "When this equipment enters, create a trace of its skill into your hand. [i](Traces can't exist in graveyards or exile and are tokens while on the battlefield.)[/i]\nEquipped creature gets +2/+0.\nEquip {2}\n[b]Prepared Strike[/b] {R}| Skill Sorcery\nTarget creature you control gets +1/+0 and gains first strike until end of turn.",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -755,6 +793,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "commanderjosh",
+            "position": "38",
             "notes": "https://www.deviantart.com/commanderjosh/art/G-I-B-Heat-Hawk-1251589629"
         },
         {
@@ -766,7 +805,7 @@
             "color_identity": "C",
             "cost": "{2}",
             "rules_text": "When Messenger of Absent Messages enters, draw a card.",
-            "flavor_text": "[i][/i]",
+            "flavor_text": "[i]The RGM-79 was a mass produced mobile suit that saw its greatest use in the one year war, with the most fielded in a single conflict during the assault on Solomon.[/i]",
             "pt": "1/1",
             "special_text": "",
             "shape": "normal",
@@ -774,6 +813,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "39",
             "notes": ""
         },
         {
@@ -793,6 +833,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "REAL-ELMARIACHI",
+            "position": "40",
             "notes": "https://www.deviantart.com/real-elmariachi/art/RGM-79-GM-Fanart-330918654"
         },
         {
@@ -812,6 +853,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Caleb Worchester",
+            "position": "41",
             "notes": "BLACKCOMMON\nCB04"
         },
         {
@@ -831,6 +873,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Kunio Okawara",
+            "position": "42",
             "notes": "!noscript"
         },
         {
@@ -850,6 +893,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Turbofurby",
+            "position": "43",
             "notes": "https://www.deviantart.com/turbofurby/art/AMX-004-Qubeley-Mk-II-617325136\n\n!related Mechanised Hunter<conjure>;"
         },
         {
@@ -869,6 +913,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Mark Molnar",
+            "position": "44",
             "notes": "https://momarkmagic.blogspot.com/2013/10/pyramid-lord-speedpainting.html\n!spellbook I9;1"
         },
         {
@@ -888,6 +933,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Max Hay",
+            "position": "45",
             "notes": "https://www.artstation.com/artwork/xJN3qR"
         },
         {
@@ -907,6 +953,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "LoganWalden",
+            "position": "46",
             "notes": "https://www.deviantart.com/loganwaldenart/art/Illusion-of-Dissolution-870241606\n!spellbook I1;1\n"
         },
         {
@@ -926,6 +973,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "DenisZHbankov",
+            "position": "47",
             "notes": ""
         },
         {
@@ -945,6 +993,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Amir Zand",
+            "position": "48",
             "notes": ""
         },
         {
@@ -964,6 +1013,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Tomek Larek",
+            "position": "49",
             "notes": "COLOURLESSCOMMON"
         },
         {
@@ -983,6 +1033,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Leonardo Vincent",
+            "position": "50",
             "notes": ""
         },
         {
@@ -1002,6 +1053,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Zdzislaw Beksinski",
+            "position": "51",
             "notes": "reworked to be a titan"
         },
         {
@@ -1012,7 +1064,7 @@
             "number": 15,
             "color_identity": "U",
             "cost": "{U}",
-            "rules_text": "Flying\nWhen Deepmind Oracle enters, surveil X, where X is its power.\nIterate [i](When this enters, conjure a colorless {6} 4/4 artifact creature version of it without iterate into your hand.)[/i]",
+            "rules_text": "Flying\nWhen this creature enters, surveil X, where X is its power.\nIterate [i](When this enters, conjure a colorless {6} 4/4 artifact creature version of it without iterate into your hand.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "1/1",
             "special_text": "",
@@ -1021,6 +1073,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Benjamin GILETTI",
+            "position": "52",
             "notes": "https://www.artstation.com/artwork/48b0JY\n!spellbook I2;1"
         },
         {
@@ -1040,6 +1093,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "QBRTcubeart",
+            "position": "53",
             "notes": "https://www.deviantart.com/qbrtcubeart/art/Biomechanoids-within-each-seed-there-is-the-926455973\n!spellbook I3;1"
         },
         {
@@ -1059,6 +1113,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Vergvoktre",
+            "position": "54",
             "notes": "changed to crew 3"
         },
         {
@@ -1078,6 +1133,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Aborygen43",
+            "position": "55",
             "notes": ""
         },
         {
@@ -1097,6 +1153,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Carlos Lopez",
+            "position": "56",
             "notes": ""
         },
         {
@@ -1116,6 +1173,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Bastien Grivet",
+            "position": "57",
             "notes": "!designer TVP\n!related Robot Token;"
         },
         {
@@ -1126,7 +1184,7 @@
             "number": 71,
             "color_identity": "C",
             "cost": "{9}",
-            "rules_text": "When Extraplanar Portal enters, each opponent chooses three creatures they control and puts them into their owner's sanctum.\nOnce during each of your turns, you may play a card from your sanctum.",
+            "rules_text": "When this artifact enters, each opponent chooses three creatures they control and puts them into their owner's sanctum.\nOnce during each of your turns, you may play a card from your sanctum.",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -1135,6 +1193,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "ABeardedArtist",
+            "position": "58",
             "notes": "RA03,Noncreature,2,,Sorcerous Spyglass\n#voyager fix"
         },
         {
@@ -1145,7 +1204,7 @@
             "number": 16,
             "color_identity": "U",
             "cost": "{1}{U}",
-            "rules_text": "Impending 4\u2014{3}{U} [i](If this spell was impending, it enters with four time counters and isn't a creature until they're removed. At the beginning of your end step, remove one.)[/i]\nFlying\nWhenever a time counter is removed from Firmament Sculptor, create a token that's a copy of it.",
+            "rules_text": "Impending 4\u2014{3}{U} [i](If this spell was impending, it enters with four time counters and isn't a creature until they're removed. At the beginning of your end step, remove one.)[/i]\nFlying\nWhenever a time counter is removed from this permanent, create a token that's a copy of it.",
             "flavor_text": "[i][/i]",
             "pt": "2/1",
             "special_text": "",
@@ -1154,6 +1213,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Aldo Katayanagi",
+            "position": "59",
             "notes": ""
         },
         {
@@ -1173,6 +1233,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "feiyukicchi",
+            "position": "60",
             "notes": "https://feiyukicchi.tumblr.com/post/763284664242864128/concept-so-good-i-changed-my-whole-artstyle-lmao"
         },
         {
@@ -1192,6 +1253,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Alf Anas",
+            "position": "61",
             "notes": "BLACKRARE5"
         },
         {
@@ -1211,6 +1273,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Pawel Kozera",
+            "position": "62",
             "notes": "WHITERARE5"
         },
         {
@@ -1230,6 +1293,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Mariusz Lewandowski",
+            "position": "63",
             "notes": ""
         },
         {
@@ -1249,6 +1313,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Pascal Blance",
+            "position": "64",
             "notes": "https://www.behance.net/gallery/82915737/BLADERUNNER-2049\n!spellbook I4;1"
         },
         {
@@ -1268,6 +1333,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "MDK_Art",
+            "position": "65",
             "card_name2": "Hazardous Technician",
             "color2": "G",
             "type2": "Artifact Creature \u2014 Werewolf Artificer",
@@ -1297,6 +1363,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Ali Hoff",
+            "position": "66",
             "notes": "BLACKUNCOMMON\nUB04"
         },
         {
@@ -1316,6 +1383,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Ali Hoff",
+            "position": "67",
             "notes": "WHITEUNCOMMON\nUW03"
         },
         {
@@ -1335,6 +1403,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Sergio Mayo",
+            "position": "68",
             "notes": "!tag Dewold\n!tag Radcliffe"
         },
         {
@@ -1354,6 +1423,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Vasiliy Ivanov",
+            "position": "69",
             "notes": "#updated"
         },
         {
@@ -1373,6 +1443,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Grafit Studio",
+            "position": "70",
             "notes": "!tag Dewold"
         },
         {
@@ -1392,6 +1463,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Samuel Johnson",
+            "position": "71",
             "notes": "UB06\nBLACKUNCOMMON"
         },
         {
@@ -1411,6 +1483,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Slitherbop",
+            "position": "72",
             "notes": "https://x.com/Slitherbop/status/1737311175824838900/photo/1\nchanged last ability."
         },
         {
@@ -1421,7 +1494,7 @@
             "number": 28,
             "color_identity": "B",
             "cost": "{5}{B}{B}",
-            "rules_text": "Impending 5\u2014{1}{B}{B} [i](If this spell was impending, it enters with five time counters and isn't a creature until they're removed. At the beginning of your end step, remove one.)[/i]\nWhenever Longlegs enters or attacks, each opponent sacrifices a creature.",
+            "rules_text": "Impending 5\u2014{1}{B}{B} [i](If this spell was impending, it enters with five time counters and isn't a creature until they're removed. At the beginning of your end step, remove one.)[/i]\nWhenever this permanent enters or attacks, each opponent sacrifices a creature.",
             "flavor_text": "[i][/i]",
             "pt": "5/5",
             "special_text": "",
@@ -1430,6 +1503,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "dariuszkieliszek",
+            "position": "73",
             "notes": "https://www.deviantart.com/dariuszkieliszek/art/Welcome-To-The-House-of-Phosgene-1107029061\nchanged to 5/5"
         },
         {
@@ -1440,7 +1514,7 @@
             "number": 29,
             "color_identity": "UB",
             "cost": "{B}",
-            "rules_text": "When Malevolent Naginata enters, trace its skill into your hand. [i](Create that card. Traces are cards that become copies when they enter public zones.)[/i]\nEquipped creature gets +1/+0 and has menace.\nEquip {1}{B}\n[b]Hollow Graze[/b] {UB}| Skill Instant[i]\n[/i]Target creature gets -2/-0 until end of turn. Cast only outside of combat.",
+            "rules_text": "When this equipment enters, create a trace of its skill into your hand. [i](Traces can't exist in graveyards or exile and are tokens while on the battlefield.)[/i]\nEquipped creature gets +1/+0 and has menace.\nEquip {1}{B}\n[b]Hollow Graze[/b] {UB}| Skill Instant[i]\n[/i]Target creature gets -2/-0 until end of turn. Cast only outside of combat.",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -1449,6 +1523,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Don Engel",
+            "position": "74",
             "notes": ""
         },
         {
@@ -1459,7 +1534,7 @@
             "number": 78,
             "color_identity": "C",
             "cost": "{5}",
-            "rules_text": "When Matryoshka Crawler enters, if you cast it, you may search your library for a colorless card with mana value 3 or less, put it onto the battlefield, then shuffle.",
+            "rules_text": "When this creature enters, if you cast it, you may search your library for a colorless card with mana value 3 or less, put it onto the battlefield, then shuffle.",
             "flavor_text": "[i]It contains multitudes.[/i]",
             "pt": "3/3",
             "special_text": "",
@@ -1468,6 +1543,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Pavel Vophira",
+            "position": "75",
             "notes": "changed to enters cast trigger"
         },
         {
@@ -1487,6 +1563,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Tristan Delgado",
+            "position": "76",
             "notes": ""
         },
         {
@@ -1506,6 +1583,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Yasuo Ohtagaki",
+            "position": "77",
             "notes": ""
         },
         {
@@ -1525,6 +1603,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Ali Hoff",
+            "position": "78",
             "notes": "WHITEUNCOMMON\nUW07"
         },
         {
@@ -1544,6 +1623,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Martin Newell",
+            "position": "79",
             "notes": "COLOURLESSRARE"
         },
         {
@@ -1563,6 +1643,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "esuthio",
+            "position": "80",
             "notes": "https://www.artstation.com/artwork/mqwZlZ\n!spellbook I7;1"
         },
         {
@@ -1582,6 +1663,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "1oshuart",
+            "position": "81",
             "notes": "S"
         },
         {
@@ -1601,6 +1683,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Myrmiredon",
+            "position": "82",
             "notes": "COLOURLESSRARE\n!tag CanonReprint"
         },
         {
@@ -1620,6 +1703,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Infinite_Art",
+            "position": "83",
             "notes": "You may reveal this card from your sanctum at the start of the game. If you do, put any combination of six basic lands of any type from outside the game into your sanctum. (You don't reveal them. They do not count towards your starting sanctum size.)"
         },
         {
@@ -1630,7 +1714,7 @@
             "number": 86,
             "color_identity": "C",
             "cost": "{2}",
-            "rules_text": "This artifact enters tapped.\nWhen Rustic Cultivator enters, draft a card from your sanctum. [i](Look at three random cards from your sanctum. Put one into your hand.)[/i]\n{2}, {T}, Sacrifice this artifact: Draw a card from your library or from your sanctum at random.",
+            "rules_text": "This artifact enters tapped.\nWhen this creature enters, draft a card from your sanctum. [i](Look at three random cards from your sanctum. Put one into your hand.)[/i]\n{2}, {T}, Sacrifice this artifact: Draw a card from your library or from your sanctum at random.",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -1639,6 +1723,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Joe Slucher",
+            "position": "84",
             "notes": "#updated"
         },
         {
@@ -1658,6 +1743,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Even Amundsen",
+            "position": "85",
             "notes": "!tag Dewold\n!tag Terrel\nTricolor"
         },
         {
@@ -1677,6 +1763,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Sylvain Sarrailh",
+            "position": "86",
             "notes": "!designer TVP"
         },
         {
@@ -1696,6 +1783,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Augustus Clark",
+            "position": "87",
             "notes": "COLOURLESSRARE"
         },
         {
@@ -1715,6 +1803,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Laser-Fire",
+            "position": "88",
             "notes": "WHITEUNCOMMON\nUW06"
         },
         {
@@ -1734,6 +1823,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "erenomoto",
+            "position": "89",
             "notes": "changed condition to 3 lands in realm"
         },
         {
@@ -1753,6 +1843,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Vladimir Matyukhin",
+            "position": "90",
             "notes": ""
         },
         {
@@ -1772,6 +1863,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Anton Domin",
+            "position": "91",
             "notes": "Traverse up to X, where X is the number of cards in your graveyard"
         },
         {
@@ -1782,7 +1874,7 @@
             "number": 40,
             "color_identity": "R",
             "cost": "{2}{R}",
-            "rules_text": "Explorer \u2014 Whenever Stinging Surveyor enters or attacks, it deals 1 damage to any target. If you control five or more differently named lands, repeat this process once.\nWhenever you deal noncombat damage to a creature you control, it gets +2/+0 until end of turn.",
+            "rules_text": "[i]Explorer[/i] \u2014 Whenever this creature enters or attacks, it deals 1 damage to target creature you control or target opponent. If you control five or more differently named lands, repeat this process once.\nWhenever you deal noncombat damage to a creature you control, it gets +2/+0 until end of turn.",
             "flavor_text": "[i][/i]",
             "pt": "1/4",
             "special_text": "",
@@ -1791,6 +1883,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Mathias Hermier",
+            "position": "92",
             "notes": ""
         },
         {
@@ -1801,7 +1894,7 @@
             "number": 49,
             "color_identity": "I",
             "cost": "{4}{I}{I}",
-            "rules_text": "Flash\nWhen Syphroid enters, destroy up to one target enchantment or planeswalker.",
+            "rules_text": "Flash\nWhen this creature enters, destroy up to one target enchantment or planeswalker.",
             "flavor_text": "[i][/i]",
             "pt": "5/5",
             "special_text": "Golgoil",
@@ -1810,6 +1903,7 @@
             "loyalty": "",
             "designer": "TVP",
             "artist": "Vladimir Matyukhin",
+            "position": "93",
             "notes": "!designer TVP"
         },
         {
@@ -1829,6 +1923,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Enaya Ray",
+            "position": "94",
             "notes": "GREENCOMMON\nCG16"
         },
         {
@@ -1848,6 +1943,7 @@
             "loyalty": "",
             "designer": "Voyager",
             "artist": "Jeff Sorley",
+            "position": "95",
             "notes": "https://www.artstation.com/artwork/WKdvN2"
         }
     ]

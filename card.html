@@ -125,7 +125,7 @@
 			// 				  card.pt
 
 			// const card_stats = card;
-			// const card_img = "https://voyager-mtg.github.io/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+			// const card_img = "https://voyager-mtg.github.io/sets+ card_stats.set + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 
 			// document.getElementById("meta-card-name").setAttribute("content", name);
 			// document.getElementById("meta-card-desc").setAttribute("content", card_desc);
@@ -369,7 +369,7 @@
 		}
 
 		function showCardHover(card_stats) {
-			const src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+			const src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 
 			const hover_card = document.getElementById("hover-card");
 			hover_card.style.display = "block";
@@ -658,7 +658,7 @@
 			img.className = "card-image";
 			img.id = id;
 			// (card_stats[13].includes("_") ? card_stats[13] : card_stats[0]) for posterity
-			img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+			img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 
 			let not_in_voyager;
 
@@ -888,7 +888,7 @@
 
 			decks.sort(newDeck);
 
-			for (let i = 0; i < Math.min(6, decks.length); i++) {
+			for (let i = 0; i < Math.min(9, decks.length); i++) {
 				const deck = decks[i];
 
 				const deck_container = gridifyDeck(deck);
@@ -918,6 +918,55 @@
 		}
 
 		function gridifyDeck(deck) {
+			let card_stats;
+			let src;
+
+			for (const card of card_list_arrayified) {
+				if (deck.previewimg == card.card_name) {
+					card_stats = card;
+					break;
+				}
+			}
+
+			if (!card_stats) {
+				src = "/img/card_back.png"
+			} else {
+				src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+			}
+
+			/*
+			<a class="deck-card">
+				<div class="deck-card-bg" style="background-image: url('https://uiwow7.github.io/sets/DSW-files/img/241_Protect%20Boundless%20Will.jpg')"></div>
+				<div class="deck-card-overlay"></div>
+				<div class="deck-card-info">
+					<h1>Name</h1>
+					<h3><span class="mana mana-w"></span><span class="mana mana-i"></span></h3>
+				</div>
+			</a>
+			*/
+			let colors_html = '';
+			const colors = deck.colors ? Array.from(deck.colors).sort(colorSort) : "";
+
+			for (const color of colors) {
+				colors_html += `<span class="mana mana-${color.toLowerCase()}"></span>`;
+			}
+
+			const deck_card = document.createElement('a');
+			deck_card.className = 'deck-card';
+			deck_card.href = deck.url;
+			deck_card.innerHTML = `
+				<div class="deck-card-bg" style="background-image: url('${src}')"></div>
+				<div class="deck-card-overlay"></div>
+				<div class="deck-card-info">
+					<h1>${deck.name}</h1>
+					<h3>${colors_html}</h3>
+				</div>
+			`;
+
+			return deck_card;
+		}
+
+		/*function gridifyDeck(deck) {
 			const container = document.createElement("div");
 			container.className = "deck-container";
 			const preview_img = document.createElement("img");
@@ -928,7 +977,7 @@
 					break;
 				}
 			}
-			preview_img.src = card_stats ? "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type : "/img/card_back.png";
+			preview_img.src = card_stats ? "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type : "/img/card_back.png";
 			preview_img.className = "deck-preview-img";
 			preview_img.onclick = function () {
 				window.location.href = deck.url;
@@ -940,7 +989,7 @@
 			container.appendChild(deck_name);
 			container.appendChild(preview_img);
 			return container;
-		}
+		}*/
 
 		function newDeck(a, b) {
 			if (a.last_modified && !b.last_modified) {

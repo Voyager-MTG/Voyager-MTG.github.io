@@ -3,7 +3,7 @@
     "formats": "",
     "trimmed": "y",
     "image_type": "jpg",
-    "draft_structure": "play booster",
+    "draft_structure": "cube",
     "designer": "Myr",
     "cards": [
         {
@@ -23,6 +23,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Virensere",
+            "position": "0",
             "notes": "CW10\nWHITECOMMON\nWORK"
         },
         {
@@ -42,6 +43,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Oliver Habour",
+            "position": "1",
             "card_name2": "Ur-Gifted Surgeon",
             "color2": "W",
             "type2": "Creature \u2014 Dragon Advisor",
@@ -71,6 +73,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nakashima Kazuma",
+            "position": "2",
             "notes": "WHITECOMMON\nCW15"
         },
         {
@@ -90,6 +93,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Madness Demon",
+            "position": "3",
             "notes": "CW16\nWHITECOMMON\nCOMMONKINDREDCYCLE\nLIZARDTYPE\nADVISORTYPE"
         },
         {
@@ -109,6 +113,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nino Vecia",
+            "position": "4",
             "notes": "CW18\nWHITECOMMON\nCOMMONKINDREDCYCLE\nHEXTYPE\nSOLDIERTYPE"
         },
         {
@@ -128,6 +133,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Simone D'Eliso",
+            "position": "5",
             "notes": "CU02\nBLUECOMMON\nWIZARDTYPE\nLIZARDTYPE"
         },
         {
@@ -147,6 +153,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Kai Carpenter",
+            "position": "6",
             "notes": "CU03\nBLUECOMMON\nHUMANTYPE\nWIZARDTYPE"
         },
         {
@@ -166,6 +173,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Venishi",
+            "position": "7",
             "notes": "BLUECOMMON\nCU13"
         },
         {
@@ -185,6 +193,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Julia Zhuravleva",
+            "position": "8",
             "notes": "BLUECOMMON\nHUMANTYPE\nCU06"
         },
         {
@@ -204,6 +213,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Venishi",
+            "position": "9",
             "notes": "BLUECOMMON\nCU09\nARTIFICERTYPE"
         },
         {
@@ -223,6 +233,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Yuliya Zabelina",
+            "position": "10",
             "notes": "BLUECOMMON\nCU11\nSPOTLIGHT"
         },
         {
@@ -242,6 +253,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "ClintCearley",
+            "position": "11",
             "notes": "CU12\nBLUECOMMON\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -261,6 +273,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Alexandr Elichev",
+            "position": "12",
             "notes": "BLUECOMMON\nARTIFICERTYPE\nCU04"
         },
         {
@@ -280,6 +293,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Devin Elle Kurtz",
+            "position": "13",
             "card_name2": "Ur-Gifted Theologian",
             "color2": "U",
             "type2": "Creature \u2014 Dragon Wizard",
@@ -309,6 +323,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Clint Clearley",
+            "position": "14",
             "notes": "CU17\nBLUECOMMON\nCOMMONKINDREDCYCLE\nHUMANTYPE\nWIZARDTYPE"
         },
         {
@@ -328,6 +343,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Tobias Hermann",
+            "position": "15",
             "notes": "CU18\nCOMMONKINDREDCYCLE\nLIZARDTYPE\nARTIFICERTYPE\nBLUECOMMON"
         },
         {
@@ -347,6 +363,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "ForrestImel",
+            "position": "16",
             "notes": "BLACKCOMMON\nINCARNATIONTYPE\nCITIZENTYPE\nCB01"
         },
         {
@@ -366,6 +383,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Stjepan Lukac",
+            "position": "17",
             "notes": "BLACKCOMMON\nHUMANTYPE\nCB02"
         },
         {
@@ -385,6 +403,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "MatBirdie",
+            "position": "18",
             "notes": "BLACKCOMMON\nCITIZENTYPE\nCB04"
         },
         {
@@ -404,6 +423,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Grafit Studio",
+            "position": "19",
             "notes": "BLACKCOMMON\nHUMANTYPE\nCB05"
         },
         {
@@ -423,6 +443,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "MonoKubo",
+            "position": "20",
             "notes": "BLACKCOMMON\nCB08\nCITIZENTYPE"
         },
         {
@@ -442,6 +463,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Collette Curran",
+            "position": "21",
             "notes": "BLACKCOMMON\nADVISORTYPE\nCB09"
         },
         {
@@ -461,6 +483,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "JB Cassop",
+            "position": "22",
             "notes": "BLACKCOMMON\nCB10\nHUMANTYPE\nCITIZENTYPE"
         },
         {
@@ -480,6 +503,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sara Forlenza",
+            "position": "23",
             "notes": "BLACKCOMMON\nCB12"
         },
         {
@@ -499,6 +523,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "MonoKubo",
+            "position": "24",
             "notes": "BLACKCOMMON\nCOMMONKINDREDCYCLE\nCB13\nINCARNATIONTYPE\nADVISORTYPE"
         },
         {
@@ -518,6 +543,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Saltamor",
+            "position": "25",
             "notes": "BLACKCOMMON\nCB14"
         },
         {
@@ -537,6 +563,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "GabeRamos",
+            "position": "26",
             "notes": "BLACKCOMMON\nCB15"
         },
         {
@@ -556,6 +583,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Alwyn Talbot",
+            "position": "27",
             "notes": "BLACKCOMMON\nCB16"
         },
         {
@@ -575,6 +603,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Randy Vargas",
+            "position": "28",
             "card_name2": "Ur-Gifted Guide",
             "color2": "B",
             "type2": "Creature \u2014 Dragon Citizen",
@@ -604,6 +633,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ognjen Sporin",
+            "position": "29",
             "card_name2": "Callwolf Courier",
             "color2": "R",
             "type2": "Creature \u2014 Werewolf Soldier",
@@ -633,6 +663,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jake Clark",
+            "position": "30",
             "notes": "CR02\nREDCOMMON\nCOMMONKINDREDCYCLE\nWEREWOLFTYPE\nSOLDIERTYPE"
         },
         {
@@ -652,6 +683,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "x-Celebril-x",
+            "position": "31",
             "card_name2": "Urdon-Thief Batterer",
             "color2": "R",
             "type2": "Creature \u2014 Werewolf Pirate",
@@ -681,6 +713,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "SulaMoon",
+            "position": "32",
             "notes": "REDCOMMON\nCR04\nINCARNATIONTYPE\nWIZARDTYPE\n\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -700,6 +733,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Bogdan Marica",
+            "position": "33",
             "card_name2": "Hazenwyld Atrocity",
             "color2": "R",
             "type2": "Creature \u2014 Dragon Werewolf Wizard",
@@ -729,6 +763,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "dcwj",
+            "position": "34",
             "notes": "REDCOMMON\nCR07\nSOLDIERTYPE"
         },
         {
@@ -748,6 +783,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Fahmi Fauzi",
+            "position": "35",
             "notes": "REDCOMMON\nCR08\nWIZARDTYPE"
         },
         {
@@ -767,6 +803,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Heliac Wolf",
+            "position": "36",
             "notes": "REDCOMMON\nCR09\nINCARNATIONTYPE"
         },
         {
@@ -786,6 +823,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sandara Tang",
+            "position": "37",
             "notes": "REDCOMMON\nCR10\n\nWORK"
         },
         {
@@ -805,6 +843,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Gabriel Oliviera",
+            "position": "38",
             "notes": "REDCOMMON\nCR11"
         },
         {
@@ -824,6 +863,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Qahnareen",
+            "position": "39",
             "notes": "REDCOMMON\nCR13"
         },
         {
@@ -843,6 +883,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Andrei Pervukhin",
+            "position": "40",
             "notes": "REDCOMMON\nCR14"
         },
         {
@@ -862,6 +903,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Artur Treffner",
+            "position": "41",
             "notes": "REDCOMMON\nCR15"
         },
         {
@@ -881,6 +923,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Daria Kalashnikova",
+            "position": "42",
             "notes": "REDCOMMON\nCR16"
         },
         {
@@ -900,6 +943,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Taran Fiddler",
+            "position": "43",
             "card_name2": "Ur-Gifted Enforcer",
             "color2": "R",
             "type2": "Creature \u2014 Dragon Soldier",
@@ -929,6 +973,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sabrina Langenberger",
+            "position": "44",
             "notes": "CR19\nREDCOMMON\nCOMMONKINDREDCYCLE\nINCARNATIONTYPE\nWIZARDTYPE"
         },
         {
@@ -948,6 +993,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Alexandr Elichev",
+            "position": "45",
             "notes": "GREENCOMMON\nCG09\nARTIFICERTYPE"
         },
         {
@@ -967,6 +1013,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "MonoKubo",
+            "position": "46",
             "notes": "CG06\nGREENCOMMON\nCITIZENTYPE\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -986,6 +1033,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Wouter Florusse",
+            "position": "47",
             "card_name2": "Protector of Old Groves",
             "color2": "G",
             "type2": "Creature \u2014 Werewolf Spirit",
@@ -1015,6 +1063,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "MDK_Art",
+            "position": "48",
             "card_name2": "Hazardous Technician",
             "color2": "G",
             "type2": "Artifact Creature \u2014 Werewolf Artificer",
@@ -1044,6 +1093,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "ArianSilver",
+            "position": "49",
             "notes": "GREENCOMMON\nCG04\nARTIFICERTYPE"
         },
         {
@@ -1063,6 +1113,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Edgar S\u00e1nchez Hidalgo",
+            "position": "50",
             "notes": "GREENCOMMON\nCG11\nDRAGONTYPE"
         },
         {
@@ -1082,6 +1133,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ognjen Sporin",
+            "position": "51",
             "notes": "CG12\nGREENCOMMON"
         },
         {
@@ -1101,6 +1153,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ben Guldemond",
+            "position": "52",
             "card_name2": "Ur-Gifted Surveyor",
             "color2": "G",
             "type2": "Creature \u2014 Dragon Artificer",
@@ -1130,6 +1183,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Arian Silver",
+            "position": "53",
             "notes": "COMMONKINDREDCYCLE\nCG15\nGREENCOMMON\nWEREWOLFTYPE\nCITIZENTYPE"
         },
         {
@@ -1149,6 +1203,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Enaya Ray",
+            "position": "54",
             "notes": "GREENCOMMON\nCG16"
         },
         {
@@ -1168,6 +1223,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Crushvisuals",
+            "position": "55",
             "notes": "COMMONKINDREDCYCLE\nCG13\nGREENCOMMON\nHEXTYPE\nARTIFICERTYPE"
         },
         {
@@ -1187,6 +1243,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Venishi",
+            "position": "56",
             "notes": "GREENCOMMON\nCG19"
         },
         {
@@ -1206,6 +1263,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "JungSung Kim",
+            "position": "57",
             "notes": "COMMONKINDREDCYCLE\nCB19\nBLACKCOMMON\nHUMANTYPE\nCITIZENTYPE"
         },
         {
@@ -1225,6 +1283,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Saltamoor",
+            "position": "58",
             "notes": "WHITECOMMON\nCW01\nLIZARDTYPE\nSOLDIERTYPE"
         },
         {
@@ -1244,6 +1303,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Shahab Alizadeh",
+            "position": "59",
             "notes": "WHITECOMMON\nCW03\n\nHEXTYPE"
         },
         {
@@ -1263,6 +1323,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Stephen Crowe",
+            "position": "60",
             "notes": "WHITECOMMON\nCW09\nHEXTYPE\nADVISORTYPE\n\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -1282,6 +1343,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jarreau Wimberly",
+            "position": "61",
             "notes": "WHITECOMMON\nCW07\n\nHEXTYPE"
         },
         {
@@ -1301,6 +1363,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Vagelio K.",
+            "position": "62",
             "notes": "WHITECOMMON\nCW06\nLIZARDTYPE"
         },
         {
@@ -1320,6 +1383,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "PlagueDaemon",
+            "position": "63",
             "notes": "WHITECOMMON\nCW08"
         },
         {
@@ -1339,6 +1403,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Marina Kleyman",
+            "position": "64",
             "notes": "WHITECOMMON\nCW05\nADVISORTYPE"
         },
         {
@@ -1358,6 +1423,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Yirikus",
+            "position": "65",
             "notes": "WHITECOMMON\nCW02\nSOLDIERTYPE"
         },
         {
@@ -1377,6 +1443,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Akeiron",
+            "position": "66",
             "notes": "WHITECOMMON\nCW11\nSOLDIERTYPE"
         },
         {
@@ -1396,6 +1463,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Isra Carrion",
+            "position": "67",
             "notes": "WHITECOMMON\nCW12\nADVISORTYPE"
         },
         {
@@ -1415,6 +1483,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nikolai Lebedev",
+            "position": "68",
             "card_name2": "Cunning Mastermind",
             "color2": "U",
             "type2": "Creature \u2014 Bird Werewolf Wizard",
@@ -1444,6 +1513,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sam Santala",
+            "position": "69",
             "notes": "BLUECOMMON\nLIZARDTYPE\nCU07"
         },
         {
@@ -1463,6 +1533,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Logan Preshaw",
+            "position": "70",
             "notes": "BLUECOMMON\nCU10\nLIZARDTYPE\nARTIFICERTYPE"
         },
         {
@@ -1482,6 +1553,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timi Honkanen",
+            "position": "71",
             "notes": "WHITECOMMON\nCW04\nLIZARDTYPE\nSOLDIERTYPE\n\nRelated Cards: Recruit"
         },
         {
@@ -1501,6 +1573,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ludovico Tellatin",
+            "position": "72",
             "notes": "BLUECOMMON\nCU19\n\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -1520,6 +1593,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nele-Diel",
+            "position": "73",
             "notes": "HEXTYPE\nGREENCOMMON\n\nCG02"
         },
         {
@@ -1539,6 +1613,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ben Guldemond",
+            "position": "74",
             "notes": "GREENCOMMON\nCG01\nCITIZENTYPE"
         },
         {
@@ -1558,6 +1633,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Rustey Pulley\nShahabAlizadeh",
+            "position": "75",
             "notes": "GREENCOMMON\nCG05\nHEXTYPE"
         },
         {
@@ -1577,6 +1653,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Shahab Alizadeh\nShahabAlizadeh",
+            "position": "76",
             "notes": "GREENCOMMON\nHEXTYPE\nCG10"
         },
         {
@@ -1596,6 +1673,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timi Honkanen",
+            "position": "77",
             "notes": "TOKENREMINDER\n\n!tokentag Equalised Reminder\n!related The Urveil;"
         },
         {
@@ -1615,6 +1693,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Helen Dafne",
+            "position": "78",
             "notes": "BLUECOMMON\nLIZARDTYPE\nWIZARDTYPE\nCU08"
         },
         {
@@ -1634,6 +1713,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sarah Feldmann",
+            "position": "79",
             "notes": "BLACKCOMMON\nCB06\nADVISORTYPE\nINCARNATIONTYPE"
         },
         {
@@ -1653,6 +1733,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sebastian Kowoll",
+            "position": "80",
             "notes": "BLACKCOMMON\nCB11"
         },
         {
@@ -1672,6 +1753,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timi Honkanen",
+            "position": "81",
             "notes": "REDCOMMON\nCR12"
         },
         {
@@ -1691,6 +1773,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timi Honkanen",
+            "position": "82",
             "notes": "CU14\nBLUECOMMON"
         },
         {
@@ -1710,6 +1793,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Carson Daniel Lowmiller",
+            "position": "83",
             "notes": "CB18\nBLACKCOMMON\n\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -1729,6 +1813,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "PlagueDaemon",
+            "position": "84",
             "notes": "BLUECOMMON\nCU16\n!tag CanonReprint"
         },
         {
@@ -1748,6 +1833,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Royzilya",
+            "position": "85",
             "notes": "REDCOMMON\nCR17\n\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -1767,6 +1853,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timi Honkanen",
+            "position": "86",
             "notes": "WHITECOMMON\nCW17\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -1786,6 +1873,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sandara Tang",
+            "position": "87",
             "notes": "WHITECOMMON\nCW19"
         },
         {
@@ -1805,6 +1893,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Edli Akolli",
+            "position": "88",
             "notes": "!tag CanonReprint\nCG14\nGREENCOMMON"
         },
         {
@@ -1824,6 +1913,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ondrej Hrdina",
+            "position": "89",
             "notes": "COLOURLESSCOMMON"
         },
         {
@@ -1843,6 +1933,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Dao Trong Le",
+            "position": "90",
             "notes": "COLOURLESSCOMMON"
         },
         {
@@ -1862,6 +1953,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ryan Groskamp",
+            "position": "91",
             "notes": "COLOURLESSUNCOMMON"
         },
         {
@@ -1881,6 +1973,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Stone Perales",
+            "position": "92",
             "notes": "COLOURLESSCOMMON\n\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -1900,6 +1993,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Tomek Larek",
+            "position": "93",
             "notes": "COLOURLESSCOMMON"
         },
         {
@@ -1919,6 +2013,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "ViceKillX",
+            "position": "94",
             "notes": "BLACKCOMMON\nCB07\nINCARNATIONTYPE"
         },
         {
@@ -1938,6 +2033,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jeff Chen",
+            "position": "95",
             "notes": "REDCOMMON\nCR05\nINCARNATIONTYPE\nSOLDIERTYPE"
         },
         {
@@ -1957,6 +2053,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "ALRadeck",
+            "position": "96",
             "card_name2": "Hazenwyld Ransacker",
             "color2": "G",
             "type2": "Creature \u2014 Insect Werewolf Warrior",
@@ -1986,6 +2083,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "x-Celebril-x",
+            "position": "97",
             "notes": "BLACKCOMMON\nADVISORTYPE\nINCARNATIONTYPE\nCB03"
         },
         {
@@ -2005,6 +2103,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Wonyong Jeong",
+            "position": "98",
             "notes": "COLOURLESSCOMMON"
         },
         {
@@ -2024,6 +2123,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timi Honkanen",
+            "position": "99",
             "notes": "ARCUNSET1\nOTHERUNCOMMON\nLIZARDTYPE"
         },
         {
@@ -2043,6 +2143,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sam Mburu",
+            "position": "100",
             "notes": "OTHERRARE\nNOBLECYC"
         },
         {
@@ -2062,6 +2163,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Stu Harrington",
+            "position": "101",
             "card_name2": "Sarajex Protector",
             "color2": "WR",
             "type2": "Creature \u2014 Werewolf Soldier",
@@ -2091,6 +2193,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Alexandr Elichev",
+            "position": "102",
             "notes": "ARCUNSET1\nOTHERUNCOMMON\nADVISORTYPE"
         },
         {
@@ -2110,6 +2213,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "1oshuart",
+            "position": "103",
             "notes": "ARCUNSET1\nOTHERUNCOMMON\nHUMANTYPE"
         },
         {
@@ -2129,6 +2233,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nele Klumpe",
+            "position": "104",
             "card_name2": "Skarrgsong",
             "color2": "RG",
             "type2": "Creature \u2014 Werewolf Avatar",
@@ -2158,6 +2263,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Spectrum Shift",
+            "position": "105",
             "notes": "ARCUNSET1\nOTHERUNCOMMON\nWIZARDTYPE\n!exportname Hyethian Protege"
         },
         {
@@ -2177,6 +2283,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Rogier Van De Beek",
+            "position": "106",
             "notes": "ARCUNSET1\nOTHERUNCOMMON\nINCARNATIONTYPE"
         },
         {
@@ -2196,6 +2303,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "NIno Vecia",
+            "position": "107",
             "notes": "ARCUNSET1\nOTHERUNCOMMON\nHEXTYPE"
         },
         {
@@ -2215,6 +2323,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Regin Wellender",
+            "position": "108",
             "notes": "ARCUNSET1\nOTHERUNCOMMON\nCITIZENTYPE"
         },
         {
@@ -2234,6 +2343,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "David Franco",
+            "position": "109",
             "notes": "ARCUNSET2\nOTHERUNCOMMON\nHEXTYPE"
         },
         {
@@ -2253,6 +2363,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "George Redreev",
+            "position": "110",
             "notes": "ARCUNSET2\nOTHERUNCOMMON\nWEREWOLFTYPE\n\nWROk"
         },
         {
@@ -2272,6 +2383,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mingchen Zhen",
+            "position": "111",
             "notes": "ARCUNSET2\nOTHERUNCOMMON\nCITIZENTYPE"
         },
         {
@@ -2291,6 +2403,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Joseph Nickson",
+            "position": "112",
             "notes": "ARCUNSET2\nOTHERUNCOMMON\nARTIFICERTYPE\n\nWORK"
         },
         {
@@ -2310,6 +2423,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Anato Finnstark",
+            "position": "113",
             "notes": "ARCUNSET2\nOTHERUNCOMMON\nINCARNATIONTYPE"
         },
         {
@@ -2329,6 +2443,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Micheal Adamidis",
+            "position": "114",
             "notes": "ARCUNSET2\nSOLDIERTYPE\nOTHERUNCOMMON"
         },
         {
@@ -2348,6 +2463,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Christina Yen",
+            "position": "115",
             "notes": "ARCUNSET2\nOTHERUNCOMMON\nLIZARDTYPE\n!replacetoken Liberated Reminder;2"
         },
         {
@@ -2367,6 +2483,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "\u5b8b\u5927\u80fd",
+            "position": "116",
             "notes": "ARCUNSET2\nOTHERUNCOMMON\nHUMANTYPE"
         },
         {
@@ -2386,6 +2503,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Alvaro Estrada",
+            "position": "117",
             "notes": "ARCUNSET2\nOTHERUNCOMMON\nADVISORTYPE"
         },
         {
@@ -2405,6 +2523,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timi Honkanen",
+            "position": "118",
             "notes": "ARCUNSET2\nOTHERUNCOMMON\nWIZARDTYPE"
         },
         {
@@ -2424,6 +2543,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Thiago Klafke",
+            "position": "119",
             "notes": "COLOURLESSUNCOMMON\nFELLOWLANDCYCLE\nADVISORTYPE"
         },
         {
@@ -2443,6 +2563,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "takashi monji",
+            "position": "120",
             "notes": "COLOURLESSUNCOMMON\nFELLOWLANDCYCLE\nARTIFICERTYPE"
         },
         {
@@ -2462,6 +2583,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Damian Krzywonos",
+            "position": "121",
             "notes": "COLOURLESSUNCOMMON\nFELLOWLANDCYCLE"
         },
         {
@@ -2481,6 +2603,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Minjeong Kim",
+            "position": "122",
             "notes": "COLOURLESSUNCOMMON\nFELLOWLANDCYCLE"
         },
         {
@@ -2500,6 +2623,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nevena Jevtic",
+            "position": "123",
             "notes": "COLOURLESSUNCOMMON\nFELLOWLANDCYCLE"
         },
         {
@@ -2519,6 +2643,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Gustavo Arteaga",
+            "position": "124",
             "notes": "COLOURLESSUNCOMMON\nFELLOWLANDCYCLE"
         },
         {
@@ -2538,6 +2663,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Kurobot",
+            "position": "125",
             "notes": "COLOURLESSUNCOMMON\nFELLOWLANDCYCLE"
         },
         {
@@ -2557,6 +2683,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ryan Groskamp",
+            "position": "126",
             "notes": "COLOURLESSUNCOMMON\nFELLOWLANDCYCLE"
         },
         {
@@ -2576,6 +2703,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Bruce Wang",
+            "position": "127",
             "notes": "COLOURLESSUNCOMMON\nFELLOWLANDCYCLE\nSOLDIERTYPE"
         },
         {
@@ -2595,6 +2723,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ismail Inceoglu",
+            "position": "128",
             "notes": "COLOURLESSUNCOMMON\nFELLOWLANDCYCLE"
         },
         {
@@ -2614,6 +2743,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Christina Yen",
+            "position": "129",
             "notes": "WHITEUNCOMMON\nAEONITEUNCOMMONCYCLE\nUW07"
         },
         {
@@ -2633,6 +2763,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sandara Tang",
+            "position": "130",
             "notes": "BLACKUNCOMMON\nAEONITEUNCOMMONCYCLE\nUB07"
         },
         {
@@ -2652,6 +2783,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Christina Yen",
+            "position": "131",
             "notes": "GREENUNCOMMON\nAEONITEUNCOMMONCYCLE\nUG07"
         },
         {
@@ -2671,6 +2803,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Darkavey",
+            "position": "132",
             "notes": "BLUEUNCOMMON\nAEONITEUNCOMMONCYCLE\nUU07"
         },
         {
@@ -2690,6 +2823,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Anato Finnstark",
+            "position": "133",
             "notes": ""
         },
         {
@@ -2709,6 +2843,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jong Kiwi Seo",
+            "position": "134",
             "notes": ""
         },
         {
@@ -2728,6 +2863,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Anthony Catillaz",
+            "position": "135",
             "notes": ""
         },
         {
@@ -2747,6 +2883,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "s- noba",
+            "position": "136",
             "notes": ""
         },
         {
@@ -2766,6 +2903,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ryan Groskamp",
+            "position": "137",
             "notes": ""
         },
         {
@@ -2785,6 +2923,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jadekettu",
+            "position": "138",
             "notes": "TOKENREMINDER\n!related Spokesman of the Mothweft;"
         },
         {
@@ -2804,6 +2943,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Lucas Torquato",
+            "position": "139",
             "notes": "BLACKUNCOMMON\nUB05\nINCARNATIONTYPE"
         },
         {
@@ -2822,7 +2962,8 @@
             "set": "AKT",
             "loyalty": "",
             "designer": "Myr",
-            "artist": "Nino Vecia (Edited)",
+            "artist": "Nino Vecia",
+            "position": "140",
             "notes": "HEXTYPE\nWHITEUNCOMMON\nUW01"
         },
         {
@@ -2842,6 +2983,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Cindy Avelino",
+            "position": "141",
             "notes": "WHITEUNCOMMON\nUW02\nADVISORTYPE"
         },
         {
@@ -2861,6 +3003,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Kaido7794",
+            "position": "142",
             "notes": "WHITEUNCOMMON\nUW03\nSOLDIERTYPE\nHEXTYPE"
         },
         {
@@ -2880,13 +3023,14 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Thanshuhai",
+            "position": "143",
             "notes": "WHITEUNCOMMON\nUW04\nLIZARDTYPE"
         },
         {
             "card_name": "Lightning's Protection",
             "color": "W",
             "rarity": "uncommon",
-            "type": "Instant",
+            "type": "Sorcery",
             "number": 26,
             "color_identity": "W",
             "cost": "{2}{W}",
@@ -2899,6 +3043,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Stepan Gilev",
+            "position": "144",
             "notes": "WHITEUNCOMMON\nUW05"
         },
         {
@@ -2918,6 +3063,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Suzanne Helmigh",
+            "position": "145",
             "notes": "WHITEUNCOMMON\nUW08"
         },
         {
@@ -2937,6 +3083,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Aspidal",
+            "position": "146",
             "notes": "WHITEUNCOMMON\nUW09\nUNCOMMONKINCYCLE\nSOLDIERTYPE\nADVISORTYPE"
         },
         {
@@ -2956,6 +3103,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sharaiza",
+            "position": "147",
             "notes": "WHITEUNCOMMON\nUW10"
         },
         {
@@ -2975,6 +3123,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Chriss Dunn",
+            "position": "148",
             "notes": "WHITEUNCOMMON\nUW11\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -2994,6 +3143,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jama Jurabaev",
+            "position": "149",
             "card_name2": "Gatrix Vaultwarden",
             "color2": "U",
             "type2": "Artifact Creature \u2014 Gargoyle Artificer",
@@ -3023,6 +3173,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Bruno Balixa",
+            "position": "150",
             "notes": "BLUEUNCOMMON\nARTIFICERTYPE"
         },
         {
@@ -3042,6 +3193,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Cindy Avelino",
+            "position": "151",
             "notes": "BLUEUNCOMMON\nLIZARDTYPE"
         },
         {
@@ -3061,6 +3213,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Dong Zhuo",
+            "position": "152",
             "notes": "BLUEUNCOMMON\nWIZARDTYPE\nUU04\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -3080,6 +3233,7 @@
             "loyalty": "",
             "designer": "Janahwhamme",
             "artist": "RinRinDaishi",
+            "position": "153",
             "notes": "BLUEUNCOMMON\nHUMANTYPE\n!designer Janahwhamme"
         },
         {
@@ -3099,6 +3253,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Angelo Bortolini",
+            "position": "154",
             "notes": "BLUERARE01"
         },
         {
@@ -3118,6 +3273,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ryosei Hase",
+            "position": "155",
             "notes": "BLUEUNCOMMON\nUU11"
         },
         {
@@ -3137,6 +3293,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "TyphonArt",
+            "position": "156",
             "notes": "BLACKUNCOMMON\nHUMANTYPE\nSOLDIERTYPE\nUB01"
         },
         {
@@ -3156,6 +3313,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Cindy Avelino",
+            "position": "157",
             "notes": "BLACKUNCOMMON\nADVISORTYPE\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -3175,6 +3333,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Maradraws",
+            "position": "158",
             "notes": "BLACKUNCOMMON\nCITIZENTYPE\nADVISORTYPE\nUB02\nUNCOMMONKINCYCLE"
         },
         {
@@ -3194,6 +3353,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Artur Treffner",
+            "position": "159",
             "notes": "ADVISORTYPE\nBLACKUNCOMMON\nINCARNATIONTYPE\nADVISORTYPE\nUB04"
         },
         {
@@ -3213,6 +3373,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Diego Lafuente",
+            "position": "160",
             "notes": "BLACKUNCOMMON\nUB08\nHUMANTYPE\nCITIZENTYPE"
         },
         {
@@ -3232,6 +3393,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "AlRadeck",
+            "position": "161",
             "notes": "BLACKUNCOMMON\nUB09"
         },
         {
@@ -3251,6 +3413,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Andrzej Rybus",
+            "position": "162",
             "notes": "BLACKUNCOMMON\nINCARNATIONTYPE\nCITIZENTYPE"
         },
         {
@@ -3270,6 +3433,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ilse Gort",
+            "position": "163",
             "notes": "REDUNCOMMON\nWIZARDTYPE\nUR01\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -3289,6 +3453,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Dan Watson",
+            "position": "164",
             "notes": "REDUNCOMMON\nUR02"
         },
         {
@@ -3308,6 +3473,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Lucas Staniec",
+            "position": "165",
             "notes": "REDUNCOMMON\nINCARNATIONTYPE"
         },
         {
@@ -3318,22 +3484,23 @@
             "number": 131,
             "color_identity": "R",
             "cost": "{3}{R}",
-            "rules_text": "Bisapience {R} [i](Cast either half of this card. Pay bisapience once each turn as a sorcery to transform for that turn.)[/i]\n{R}, Discard a card: Exile the top two cards of your library. Put one of them into your hand.",
+            "rules_text": "Bisapience {R} [i](Cast either half of this card. Pay bisapience once each turn as a sorcery to transform for that turn.)[/i]\nWhever you draw your second card each turn, create a 1/1 red Incarnation creature token with flying.",
             "flavor_text": "[i][/i]",
-            "pt": "2/4",
+            "pt": "3/4",
             "special_text": "",
             "shape": "modal double faced",
             "set": "AKT",
             "loyalty": "",
             "designer": "Myr",
             "artist": "LudvikSKP",
+            "position": "166",
             "card_name2": "Cunning Thoughtlich",
             "color2": "R",
-            "type2": "Creature \u2014 Werewolf Shapeshifter",
+            "type2": "Creature \u2014 Werewolf Incarnation",
             "cost2": "{3}{R}",
-            "rules_text2": "Bisapience {R}\nTrample\nWhenever Cunning Thoughtlich attacks, you may cast a card exiled by it.",
-            "flavor_text2": "[i][/i]",
-            "pt2": "4/4",
+            "rules_text2": "Bisapience {R}\nTrample\nWhenever Cunning Thoughtlich attacks or blocks, sacrifice a creature.",
+            "flavor_text2": "[i]Thinking you're a monster makes you one.[/i]",
+            "pt2": "6/8",
             "special_text2": "",
             "loyalty2": "",
             "artist2": "Grafit Studio",
@@ -3356,6 +3523,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Akeiron",
+            "position": "167",
             "notes": "REDUNCOMMON\nSOLDIERTYPE\nUR05"
         },
         {
@@ -3375,6 +3543,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Reece Firman",
+            "position": "168",
             "notes": "REDUNCOMMON\nINCARNATIONTYPE\nWIZARDTYPE"
         },
         {
@@ -3394,6 +3563,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "DOFRESH",
+            "position": "169",
             "notes": "GREENUNCOMMON\nHEXTYPE\nCITIZENTYPE"
         },
         {
@@ -3413,6 +3583,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mazzaropi",
+            "position": "170",
             "card_name2": "Hazenwyld Reveller",
             "color2": "G",
             "type2": "Creature \u2014 Werewolf Druid",
@@ -3442,6 +3613,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Denis Zhbankov",
+            "position": "171",
             "notes": "GREENUNCOMMON\nARTIFICERTYPE"
         },
         {
@@ -3461,6 +3633,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Diefox",
+            "position": "172",
             "notes": "GREENUNCOMMON\nCITIZENTYPE"
         },
         {
@@ -3480,6 +3653,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Magali Villeneuve",
+            "position": "173",
             "notes": "GREENUNCOMMON\nUG06\nCITIZENTYPE"
         },
         {
@@ -3499,6 +3673,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Venishi",
+            "position": "174",
             "notes": "GREENUNCOMMON\nUG08\nHEXTYPE"
         },
         {
@@ -3518,6 +3693,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Magdalena Mieszczak",
+            "position": "175",
             "notes": "GREENUNCOMMON\nUG11\nUNCOMMONKINCYCLE\nCITIZENTYPE\nARTIFICERTYPE"
         },
         {
@@ -3537,6 +3713,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Darko Kreculj",
+            "position": "176",
             "notes": "WHITECOMMON\nCW13\nSPOTLIGHT"
         },
         {
@@ -3556,6 +3733,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Grace Liu",
+            "position": "177",
             "notes": "UU08\nBLUEUNCOMMON"
         },
         {
@@ -3575,6 +3753,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Diego Lafuente",
+            "position": "178",
             "notes": "OTHERRARE\nNOBLECYC\nHUMANTYPE"
         },
         {
@@ -3594,6 +3773,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Yuliya Zabelina",
+            "position": "179",
             "notes": "BLUEUNCOMMON\nUU10"
         },
         {
@@ -3613,6 +3793,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "SUSANTE",
+            "position": "180",
             "notes": "BLUERARE03"
         },
         {
@@ -3632,6 +3813,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Eric Gagnon",
+            "position": "181",
             "notes": "BLUEUNCOMMON\nUU09"
         },
         {
@@ -3651,6 +3833,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Rutger van de Steeg",
+            "position": "182",
             "notes": "OTHERRARE\nPENCILIN"
         },
         {
@@ -3670,6 +3853,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Yuliya Zabelina",
+            "position": "183",
             "notes": "OTHERMYTHIC\nUSUPRATE\nPENCILIN"
         },
         {
@@ -3689,6 +3873,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "\u4e0d\u60f3\u5f53\u753b\u5bb6\u7684",
+            "position": "184",
             "notes": "OTHERMYTHIC\nUSURPATE\nPENCILIN"
         },
         {
@@ -3708,6 +3893,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timi Honkanen",
+            "position": "185",
             "notes": "REDRARE03\n\nPrithiteWordlyDicta"
         },
         {
@@ -3727,6 +3913,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jose Luis V",
+            "position": "186",
             "notes": "OTHERRARE\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -3737,15 +3924,16 @@
             "number": 216,
             "color_identity": "WG",
             "cost": "{G}{W}",
-            "rules_text": "Akaaja, Steel Commander can't attack or block unless you pay {4}.\nWhenever you attack, put a +1/+1 counter on another target attacking Hex. Then draw a card if Akaaja has lesser power than that Hex.",
+            "rules_text": "Akaaja, Steel Commander can't attack or block unless you pay {1}.\nWhenever you attack, put a +1/+1 counter on another target attacking Hex. Then draw a card if Akaaja has lesser power than that Hex.",
             "flavor_text": "[i][/i]",
-            "pt": "4/4",
+            "pt": "3/3",
             "special_text": "",
             "shape": "normal",
             "set": "AKT",
             "loyalty": "",
             "designer": "Myr",
             "artist": "Armiche Lora S\u00e1nchez",
+            "position": "187",
             "notes": "OTHERRARE\nNOBLECYC\nHEXTYPE"
         },
         {
@@ -3765,6 +3953,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Yuliya Zabelina",
+            "position": "188",
             "notes": "BLACKRARE08\nAEONITERARECYC1"
         },
         {
@@ -3784,6 +3973,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Michal Ivan.",
+            "position": "189",
             "notes": "BLUERARE02\n!replacetoken Liberated Reminder;X"
         },
         {
@@ -3803,6 +3993,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sandara Tang",
+            "position": "190",
             "notes": "OTHERRARE\nPENCILIN"
         },
         {
@@ -3822,6 +4013,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Christina Yen",
+            "position": "191",
             "notes": "REDRARE\nAEONITERARECYC1"
         },
         {
@@ -3841,6 +4033,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "R\u00e9ne Puls",
+            "position": "192",
             "notes": "OTHERRARE\nTRICOLOURCYCLE\nPENCILIN"
         },
         {
@@ -3860,6 +4053,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Zephra",
+            "position": "193",
             "notes": "OTHERARE\nWORK\nPENCILIN\nLIZARDTYPE\nNOBLECYC"
         },
         {
@@ -3879,6 +4073,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Riccardo Rullo",
+            "position": "194",
             "notes": "COLOURLESSRARE\nPENCILIN"
         },
         {
@@ -3898,6 +4093,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "MonoKubo",
+            "position": "195",
             "notes": "BLUERARE"
         },
         {
@@ -3917,6 +4113,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Pedro Sena",
+            "position": "196",
             "notes": "BLUERARE08\nAEONITERARECYC1"
         },
         {
@@ -3936,6 +4133,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Fahmi Fauzi",
+            "position": "197",
             "notes": "WHITERARE02\nSPOTLIGHT\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -3955,6 +4153,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Christina Yen",
+            "position": "198",
             "notes": "WHITERARE08\nAEONITERARECYC1"
         },
         {
@@ -3974,6 +4173,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Christina Yen",
+            "position": "199",
             "notes": "GREENRARE08\nAEONITERARECYC1"
         },
         {
@@ -3993,6 +4193,7 @@
             "loyalty": "2",
             "designer": "Myr",
             "artist": "gkb3rk",
+            "position": "200",
             "card_name2": "The Last Aetherbeast",
             "color2": "U",
             "type2": "Legendary Creature \u2014 God Illusion",
@@ -4022,6 +4223,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Alexander Mokhov",
+            "position": "201",
             "notes": "GREENCOMMON\nCG17\n\nURDONSONDER"
         },
         {
@@ -4041,6 +4243,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Zsolt Ruzsinszki",
+            "position": "202",
             "notes": "REDUNCOMMON\nUR11"
         },
         {
@@ -4051,7 +4254,7 @@
             "number": 190,
             "color_identity": "G",
             "cost": "{G}",
-            "rules_text": "{G}, {T}, Discard a card with a creature type: Search your library for a card with at least one of that card's creature types, reveal it, put it into your hand, then shuffle.",
+            "rules_text": "{G}, {T}, Discard a card with a creature type: Search your library for a card with a different name and at least one of that card's creature types, reveal it, put it into your hand, then shuffle.",
             "flavor_text": "[i]Where kids become adults, newts become urdons, and chairs become chairmen.[/i]",
             "pt": "",
             "special_text": "",
@@ -4060,6 +4263,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Andreas Rocha",
+            "position": "203",
             "notes": "WORK"
         },
         {
@@ -4079,6 +4283,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "MonoFlax",
+            "position": "204",
             "notes": "BLACKRARE01"
         },
         {
@@ -4088,16 +4293,17 @@
             "type": "Legendary Creature \u2014 Dragon Noble",
             "number": 251,
             "color_identity": "WUG",
-            "cost": "{1}{G}{W}{U}",
-            "rules_text": "Flying, first strike\nIf an ability of a non-Dragon creature you control triggers, you may have that ability trigger an additional time for each Dragon you control. Do this only once each turn.",
+            "cost": "{G}{W}{U}",
+            "rules_text": "Flying\nIf an ability of a non-Dragon creature you control would trigger, you may have that ability trigger an additional time for each Dragon you control. Do this only once each turn.",
             "flavor_text": "[i]\u201cStrength serves those without it.\u201d[/i]",
-            "pt": "4/3",
+            "pt": "3/3",
             "special_text": "",
             "shape": "normal",
             "set": "AKT",
             "loyalty": "",
             "designer": "LeetWizard",
             "artist": "x-Celebril-x",
+            "position": "205",
             "notes": "OTHERRARE\n!designer LeetWizard"
         },
         {
@@ -4117,6 +4323,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "KoruXypress",
+            "position": "206",
             "notes": "BLACKRARE03"
         },
         {
@@ -4136,6 +4343,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Maxime Minard",
+            "position": "207",
             "card_name2": "That Gross Authentic Self",
             "color2": "R",
             "type2": "Creature \u2014 Werewolf Incarnation",
@@ -4165,6 +4373,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "MonoKubo",
+            "position": "208",
             "notes": "!tag CanonReprint\nREDUNCOMMON\nUR10"
         },
         {
@@ -4184,6 +4393,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ben Guldemond",
+            "position": "209",
             "notes": "GREENUNCOMMON\nUG09"
         },
         {
@@ -4203,6 +4413,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Noxyfer",
+            "position": "210",
             "card_name2": "Protective Sire",
             "color2": "G",
             "type2": "Creature \u2014 Werewolf Druid",
@@ -4232,6 +4443,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ilya Popov",
+            "position": "211",
             "notes": "POLITICSCYCLE"
         },
         {
@@ -4251,6 +4463,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Vanleith",
+            "position": "212",
             "notes": "WHITEUNCOMMON\nWU12\nPOLITICSCYCLE\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -4270,6 +4483,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mooninthedark12",
+            "position": "213",
             "notes": "REDUNCOMMON\nRU12\nPOLITICSCYCLE"
         },
         {
@@ -4289,6 +4503,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "MonoKubo",
+            "position": "214",
             "notes": "GREENUNCOMMON\nGU12\nPOLITICSCYCLE"
         },
         {
@@ -4308,6 +4523,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "MonoKubo",
+            "position": "215",
             "notes": "BLUEUNCOMMON\nUU12\nPOLITICSCYCLE"
         },
         {
@@ -4327,6 +4543,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Samuel Johnson",
+            "position": "216",
             "notes": "UB06\nBLACKUNCOMMON"
         },
         {
@@ -4346,6 +4563,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Eunsu Kang",
+            "position": "217",
             "notes": "REDUNCOMMON\nUR08\nUNCOMMONKINCYCLE\nSOLDIERTYPE"
         },
         {
@@ -4365,6 +4583,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timi Honkanen",
+            "position": "218",
             "notes": "WHITEUNCOMMON\nUW06\nADVISORTYPE"
         },
         {
@@ -4384,6 +4603,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Riccardo Moscatello",
+            "position": "219",
             "notes": "BLUEUNCOMMON\nUU06\n\nUNCOMMONKINCYCLE\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -4403,6 +4623,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timi Honkanen",
+            "position": "220",
             "notes": "GREENRARE02\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -4422,6 +4643,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Livia Prima",
+            "position": "221",
             "notes": "WHITERARE01\nADVISORTYPE\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -4441,6 +4663,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Christina Yen",
+            "position": "222",
             "notes": "REDUNCOMMON\nAEONITEUNCOMMONCYCLE\nUR07"
         },
         {
@@ -4460,6 +4683,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Geoffrey Ernault",
+            "position": "223",
             "notes": "GREENRARE01"
         },
         {
@@ -4479,6 +4703,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Cui Xiaoyu",
+            "position": "224",
             "notes": "!tag CanonReprint"
         },
         {
@@ -4498,6 +4723,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Eunsu Kang",
+            "position": "225",
             "notes": "REDRARE01\nSPOTLIGHT"
         },
         {
@@ -4517,6 +4743,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sandara Tang",
+            "position": "226",
             "notes": "GREENMYTHIC"
         },
         {
@@ -4536,6 +4763,7 @@
             "loyalty": "3",
             "designer": "Myr",
             "artist": "Matt Hodorowski",
+            "position": "227",
             "notes": ""
         },
         {
@@ -4555,6 +4783,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Oxckeper (Edited)",
+            "position": "228",
             "notes": "LIZARDTYPE\nBLUERARE"
         },
         {
@@ -4574,6 +4803,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Siggie1",
+            "position": "229",
             "notes": "WHITERARE07\nLIZARDTYPE"
         },
         {
@@ -4593,6 +4823,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Logan Feliciano",
+            "position": "230",
             "notes": "BLACKRARE02\nINCARNATIONTYPE"
         },
         {
@@ -4612,26 +4843,8 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Logan Feliciano",
+            "position": "231",
             "notes": "OTHERRARE\nINCARNATIONTYPE\nNOBLECYC"
-        },
-        {
-            "card_name": "Ruthless Revenge",
-            "color": "R",
-            "rarity": "rare",
-            "type": "Creature \u2014 Incarnation Soldier",
-            "number": 157,
-            "color_identity": "R",
-            "cost": "{R}",
-            "rules_text": "Whenever Ruthless Revenge attacks or blocks, if a creature hasn't died this turn, sacrifice a creature.\nSacrifice Ruthless Revenge, Discard a card: Draw a card.",
-            "flavor_text": "[i][/i]",
-            "pt": "3/3",
-            "special_text": "",
-            "shape": "normal",
-            "set": "AKT",
-            "loyalty": "",
-            "designer": "Myr",
-            "artist": "Logan Feliciano",
-            "notes": "REDRARE\nINCARNATIONTYPE"
         },
         {
             "card_name": "Aetherbeast Scholar",
@@ -4650,6 +4863,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Anh Tung",
+            "position": "232",
             "notes": "HUMANTYPE\nWIZARDTYPE\nBLUERARE"
         },
         {
@@ -4669,6 +4883,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mian Kong",
+            "position": "233",
             "notes": "BLACKRARE04\nHUMANTYPE"
         },
         {
@@ -4679,7 +4894,7 @@
             "number": 194,
             "color_identity": "G",
             "cost": "{3}{G}{G}",
-            "rules_text": "Flash\nTrample\nWhen Ixaja's Stalwart enters, another target Hex you control gets +6/+5 and gains trample until end of turn.",
+            "rules_text": "Trample\nWhen Ixaja's Stalwart enters, put three +1/+1 counters on target Hex you control.\n{3}, Embrace Ixaja's Stalwart from your hand: Put three +1/+1 counters on target Hex you control. [i](Exile it. You may cast it on a later turn that a Hex or Soldier you control dealt damage to an opponent.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "6/5",
             "special_text": "",
@@ -4687,7 +4902,8 @@
             "set": "AKT",
             "loyalty": "",
             "designer": "Myr",
-            "artist": "Joshua Carraca (Edited)",
+            "artist": "Joshua Carraca",
+            "position": "234",
             "notes": "HEXTYPE\nGREENRARE"
         },
         {
@@ -4707,6 +4923,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Games Revolted",
+            "position": "235",
             "notes": "HEXTYPE\nWHITERARE\nADVISORTYPE"
         },
         {
@@ -4726,6 +4943,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Efan Fowler",
+            "position": "236",
             "notes": "TOKENREMINDER\n\n!tokentag EmbracedReminder"
         },
         {
@@ -4745,6 +4963,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timi Honkanen",
+            "position": "237",
             "notes": "!tokentag Recruit\n!related Diaspora Recruiters;"
         },
         {
@@ -4764,6 +4983,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Austin Hartell",
+            "position": "238",
             "notes": "Related cards: Aspect of Commerce, Sired Innocent\n\nToken\n!related Hazenwyld Beastmaster;Hazard Technician;"
         },
         {
@@ -4783,6 +5003,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Marco Gonz\u00e1les",
+            "position": "239",
             "notes": "Related cards: Host Farm\n\nTooken"
         },
         {
@@ -4802,6 +5023,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "J\u00falio Rocha",
+            "position": "240",
             "notes": "Related Cards: Mother of Notions\n\nTooken"
         },
         {
@@ -4821,6 +5043,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Annato Finnstark",
+            "position": "241",
             "notes": "Related Cards: Infested Fortress, Host Farm Babysitter, Orthodox Scholar\n\nTooken"
         },
         {
@@ -4840,6 +5063,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "ThanShuhai",
+            "position": "242",
             "notes": "Related Cards: Mother of Notions\n\nTooken"
         },
         {
@@ -4859,6 +5083,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ari-Matti Toivonen",
+            "position": "243",
             "notes": "Related Cards: Lethal Force\n\nTooken"
         },
         {
@@ -4878,6 +5103,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Luis De La Cerda",
+            "position": "244",
             "notes": ""
         },
         {
@@ -4897,6 +5123,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Kitak Lee",
+            "position": "245",
             "notes": ""
         },
         {
@@ -4916,6 +5143,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "AtSkiy",
+            "position": "246",
             "notes": "OTHERRARE\nINCARNATIONTYPE\nBLACKRARE"
         },
         {
@@ -4935,6 +5163,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "AlectorFencer",
+            "position": "247",
             "card_name2": "Bisapience Studies",
             "color2": "R",
             "type2": "Kindred Instant \u2014 Werewolf Wizard",
@@ -4964,6 +5193,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Istrandar",
+            "position": "248",
             "notes": "WIZARDTYPE\nREDRARE"
         },
         {
@@ -4983,6 +5213,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Melvin Chan",
+            "position": "249",
             "notes": "SOLDIERTYPE\nNOBLECYC"
         },
         {
@@ -5002,6 +5233,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Dimitris Tzilivakis",
+            "position": "250",
             "notes": "GREENRARE\nCITIZENTYPE"
         },
         {
@@ -5021,6 +5253,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sandara Tang",
+            "position": "251",
             "notes": "BLUERARE"
         },
         {
@@ -5040,6 +5273,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "ChaosTheory999",
+            "position": "252",
             "notes": "CITIZENTYPE\nNOBLECYC\nOTHERRARE"
         },
         {
@@ -5059,6 +5293,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Satoru Wada",
+            "position": "253",
             "notes": "BLACKRARE\nCITIZENTYPE"
         },
         {
@@ -5078,6 +5313,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Yuliya Zabelina",
+            "position": "254",
             "notes": "OTHERMYTHIC\nUSUPRATE\nPENCILIN"
         },
         {
@@ -5097,6 +5333,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Aborygen43",
+            "position": "255",
             "notes": ""
         },
         {
@@ -5116,6 +5353,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "AlectorFencer",
+            "position": "256",
             "notes": "REDRARE"
         },
         {
@@ -5135,6 +5373,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "David Astruga",
+            "position": "257",
             "notes": "OTHERRARE\nWORK\nPENCILIN\nADVISORTYPE\nNOBLECYC\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -5154,6 +5393,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Herckeim",
+            "position": "258",
             "notes": "BLACKRARE\nADVISORTYPE"
         },
         {
@@ -5173,6 +5413,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timi Honkanen",
+            "position": "259",
             "notes": ""
         },
         {
@@ -5192,6 +5433,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Alessandro Marelli",
+            "position": "260",
             "card_name2": "Emerged Stonepiler",
             "color2": "UG",
             "type2": "Creature \u2014 Fish Werewolf Artificer",
@@ -5221,6 +5463,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jocarra",
+            "position": "261",
             "notes": "COLOURLESSCOMMON\nDenizen of New Akella Alt"
         },
         {
@@ -5240,6 +5483,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ilia Kole",
+            "position": "262",
             "notes": "BLUERARE\nARTIFICERTYPE"
         },
         {
@@ -5259,6 +5503,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "MonoKubo",
+            "position": "263",
             "notes": "ARCUNSET1"
         },
         {
@@ -5278,6 +5523,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Denis Zhbankov",
+            "position": "264",
             "notes": "Related Cards: Accommodation"
         },
         {
@@ -5297,6 +5543,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Christina Yen",
+            "position": "265",
             "notes": ""
         },
         {
@@ -5316,6 +5563,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sam Perin",
+            "position": "266",
             "notes": "BLUERARE"
         },
         {
@@ -5326,7 +5574,7 @@
             "number": 219,
             "color_identity": "UG",
             "cost": "{1}{G}{U}",
-            "rules_text": "At the beginning of combat on your turn, tap X other untapped artifacts or enchantments you control.\nIf X is 1 or more, surveil 1.\nIf X is 3 or more, draw a card.\nIf X is 6 or more, Argent Court Enraged becomes a 6/5 Artificer Noble creature with trample until end of turn.",
+            "rules_text": "Tap an untapped artifact, enchantment, or Artificer you control: Surveil 1 if this is the first time this ability has resolved this turn. Draw a card if it's the third time. Argent Court Enraged becomes a 6/5 Artificer Noble creature with trample until end of turn if it's the sixth time.",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -5335,6 +5583,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Matt Hodo",
+            "position": "267",
             "notes": "OTHERRARE\nWORK\n\nPENCILIN\nARTIFICERTYPE"
         },
         {
@@ -5354,6 +5603,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Bella Liu",
+            "position": "268",
             "notes": "ARTIFICERTYPE\nGREENRARE"
         },
         {
@@ -5373,6 +5623,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Royzila",
+            "position": "269",
             "notes": "REDRARE"
         },
         {
@@ -5392,6 +5643,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Screwbald",
+            "position": "270",
             "notes": "GREENMYTHIC"
         },
         {
@@ -5411,6 +5663,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Maciaj Biniek",
+            "position": "271",
             "card_name2": "Vengeant Skarrgspawn",
             "color2": "G",
             "type2": "Creature \u2014 Bird Werewolf Hydra Avatar",
@@ -5440,6 +5693,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "GreyHues (Edited)",
+            "position": "272",
             "card_name2": "Gristlethark, Godsire",
             "color2": "RG",
             "type2": "Legendary Creature \u2014 Werewolf Noble",
@@ -5469,6 +5723,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Anne Stokes",
+            "position": "273",
             "notes": "OTHERMYTHIC"
         },
         {
@@ -5488,6 +5743,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Carlos Herrera",
+            "position": "274",
             "notes": "WHITERARE\nSOLDIERTYPE"
         },
         {
@@ -5507,6 +5763,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "KoruXypress",
+            "position": "275",
             "notes": "WHITERARE"
         },
         {
@@ -5526,6 +5783,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Red-Izak",
+            "position": "276",
             "notes": "WHITERARE"
         },
         {
@@ -5545,6 +5803,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "o0dzaka0o",
+            "position": "277",
             "notes": "OTHERMYTHIC"
         },
         {
@@ -5564,6 +5823,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Alexis Susani",
+            "position": "278",
             "card_name2": "Heziir, Heretic's Sanctum",
             "color2": "",
             "type2": "Land \u2014 Lair",
@@ -5593,6 +5853,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "LPSDC",
+            "position": "279",
             "card_name2": "Klata, God's Plaything",
             "color2": "",
             "type2": "Land \u2014 Lair",
@@ -5622,6 +5883,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "JJCanvas",
+            "position": "280",
             "card_name2": "Stainlark, Tomb of Erys",
             "color2": "",
             "type2": "Land \u2014 Lair",
@@ -5651,6 +5913,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "PK87",
+            "position": "281",
             "card_name2": "Regarjex, Nest of Tyranny",
             "color2": "",
             "type2": "Land \u2014 Lair",
@@ -5680,6 +5943,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Andreas Rochas",
+            "position": "282",
             "card_name2": "Erythea, Justiciar's Rest",
             "color2": "",
             "type2": "Land \u2014 Lair",
@@ -5709,6 +5973,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "PhaseRunner",
+            "position": "283",
             "notes": "URDONLANDSCYC"
         },
         {
@@ -5728,6 +5993,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Harkal\u00e9 Lina\u00ef",
+            "position": "284",
             "notes": ""
         },
         {
@@ -5747,6 +6013,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "MonoKubo",
+            "position": "285",
             "notes": "OTHERRARE\nWORK\nPENCILIN\nADVISORTYPE\nNOBLECYC"
         },
         {
@@ -5766,6 +6033,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Cooperativa Creativa",
+            "position": "286",
             "notes": "COLOURLESSRARE\n!replacetoken Liberated Reminder;1"
         },
         {
@@ -5785,6 +6053,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Denis Pospelov",
+            "position": "287",
             "notes": "GREENUNCOMMON"
         },
         {
@@ -5804,6 +6073,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timi Honkanen",
+            "position": "288",
             "notes": "BLACKMYTHIC\nSPOTLIGHT"
         },
         {
@@ -5823,6 +6093,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Asahisuperdry",
+            "position": "289",
             "notes": "GREENRARE"
         },
         {
@@ -5842,6 +6113,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Alessandro Manzella",
+            "position": "290",
             "notes": ""
         },
         {
@@ -5861,6 +6133,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sjoerd Provoost",
+            "position": "291",
             "notes": ""
         },
         {
@@ -5880,6 +6153,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "FellFallow",
+            "position": "292",
             "notes": "BLUERARE"
         },
         {
@@ -5899,6 +6173,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Smite (Edited)",
+            "position": "293",
             "notes": "WHITERARE\nSPOTLIGHT"
         },
         {
@@ -5918,6 +6193,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jeremiah Humphries",
+            "position": "294",
             "card_name2": "Toxic Skavaratakla",
             "color2": "B",
             "type2": "Creature \u2014 Horror Werewolf Citizen",
@@ -5947,6 +6223,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Chaos-Drago",
+            "position": "295",
             "card_name2": "Swiftmind Sage",
             "color2": "R",
             "type2": "Creature \u2014 Dragon Werewolf Wizard",
@@ -5976,6 +6253,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Istvoc",
+            "position": "296",
             "notes": ""
         },
         {
@@ -5995,6 +6273,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "\u4e0d\u60f3\u5f53\u753b\u5bb6\u7684",
+            "position": "297",
             "notes": "lyyrata"
         },
         {
@@ -6014,6 +6293,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jubjubjedi",
+            "position": "298",
             "notes": "REDRARE"
         },
         {
@@ -6033,6 +6313,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "The Black Arrow",
+            "position": "299",
             "notes": "GREENRARE"
         },
         {
@@ -6052,6 +6333,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "AlectorFecner",
+            "position": "300",
             "notes": "COLOURLESSRARE"
         },
         {
@@ -6071,6 +6353,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jaygraphixx",
+            "position": "301",
             "notes": "BLACKUNCOMMON\nUB10"
         },
         {
@@ -6090,6 +6373,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Christina Bidon",
+            "position": "302",
             "notes": "BLUECOMMON\nCU05"
         },
         {
@@ -6109,7 +6393,28 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Marco Gonzales",
+            "position": "303",
             "notes": "!related Karaja, Heroic Trueblight"
+        },
+        {
+            "card_name": "Ruthless Revenge",
+            "color": "R",
+            "rarity": "rare",
+            "type": "Creature \u2014 Incarnation Soldier",
+            "number": 157,
+            "color_identity": "R",
+            "cost": "{R}",
+            "rules_text": "{R}, {T}, Discard a card: Choose a permanent you control with a creature type. Create a red 1/1 creature token with its creature types named Recruit.\nTap six permanents you control with a creature type: Ruthless Revenge deals 4 damage to each opponent.",
+            "flavor_text": "[i][/i]",
+            "pt": "1/1",
+            "special_text": "",
+            "shape": "normal",
+            "set": "AKT",
+            "loyalty": "",
+            "designer": "Myr",
+            "artist": "Logan Feliciano",
+            "position": "304",
+            "notes": "REDRARE\nINCARNATIONTYPE"
         }
     ]
 }

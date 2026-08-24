@@ -446,7 +446,7 @@
 		}
 
 		function showCardHover(card_stats) {
-			const src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+			const src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 
 			const hover_card = document.getElementById("hover-card");
 			hover_card.style.display = "block";
@@ -579,7 +579,7 @@
 				face_card.className = 'jmp-face';
 				for (const card of card_list_arrayified) {
 					if (card.card_name == pack.face_card) { 
-						face_card.src = "/sets/" + card.set + "-files/img/" + card.number + (card.shape.includes("token") ? "t_" : "_") + card.card_name + ((card.shape.includes("double")) ? "_front" : "") + "." + card.image_type;
+						face_card.src = "/sets+ card.set + "-files/img/" + card.position + ((card.shape.includes("double")) ? "_front" : "") + "." + card.image_type;
 						break;
 					}
 				}
@@ -622,7 +622,7 @@
 				face_card.className = 'jmp-face';
 				for (const card of card_list_arrayified) {
 					if (card.card_name == pack.face_card) { 
-						face_card.src = "/sets/" + card.set + "-files/img/" + card.number + (card.shape.includes("token") ? "t_" : "_") + card.card_name + ((card.shape.includes("double")) ? "_front" : "") + "." + card.image_type;
+						face_card.src = "/sets+ card.set + "-files/img/" + card.position + ((card.shape.includes("double")) ? "_front" : "") + "." + card.image_type;
 						break;
 					}
 				}

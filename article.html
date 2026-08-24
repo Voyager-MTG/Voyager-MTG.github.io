@@ -67,7 +67,7 @@
 			// console.log(set, num);
 			for (const card_stats of card_list_arrayified) {
 				if (card_stats.card_name == card_name && (!set || card_stats.set == set) && (!num || card_stats.number == num)) {
-					const src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+					const src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 
 					const hover_card = document.getElementById("hover-card");
 					hover_card.style.display = "block";

@@ -431,7 +431,7 @@
 					break;
 				}
 			}
-			preview_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+			preview_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 			preview_img.className = "deck-preview-img";
 			// preview_img.onclick = function() {
 			//     window.location.href = `/deck?deck=${deck.user}-${encodeURI(deck.name)}`
@@ -468,9 +468,9 @@
 				if (!card_stats) {
 					deck_preview.src = "/img/card_back.png"
 				} else {
-					deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+					deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 				}
-				deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+				deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 				deck_preview.onclick = function () {
 					document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
 					let deck_header = document.createElement("span");
@@ -693,7 +693,7 @@
 							}
 						}
 						let deck_preview_card = document.getElementById("deck-preview-card");
-						deck_preview_card.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+						deck_preview_card.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 						//https://voyager-mtg.github.io/card?set=EXPT&num=44&name=Fyndhorn+Betrayer
 						deck_preview_card.onclick = function () {
 							window.location.href = `/card?set=${card_stats.set}&num=${card_stats.number}&name=${card_name.replaceAll(" ", "+")}`;
