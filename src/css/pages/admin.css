@@ -173,3 +173,47 @@ body {
     text-align: center;
     display: block;
 }
+
+.trello-tab {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.resource-link {
+    width: 248px;
+    height: 174px;
+    margin-left: 18px;
+    position: relative;
+    /* display: grid; */
+    /* grid-template-rows: 3fr 1fr; */
+    cursor: pointer;
+}
+
+.resource-image {
+    height: 150px;
+    position: absolute;
+    top: 15px;
+    left: 15%;
+    filter: grayscale() brightness(0);
+}
+
+/* .resource-center {
+    
+} */
+
+.resource-header {
+    color: white;
+    height: 150px;
+    background-image: linear-gradient(rgb(159, 43, 43), rgb(227, 162, 84));
+    padding: 5px;
+    font-weight: bold;
+    /* width: 100%; */
+}
+
+.resource-footer {
+    background-color: white;
+    color: #333;
+    padding: 5px;
+    /* float: right; */
+    /* width: 100%; */
+}

@@ -167,15 +167,21 @@
 		</div>
 		<div class="event-container" id="event-container">
 			<p>Events</p>
-			<div class="event" onclick="window.location.href = '/events/gp';">
+			<!-- <div class="event" onclick="window.location.href = '/events/gp';">
 				<img src="/img/swords.png" class="event-icon">
 				Current GP
+			</div> -->
+			<div class="gp-container">
+				<a class="event-name text" href="/events/gp">GP X</a>
+				<span class="event-players text">X players</span>
+				<span class="event-winner text">Winner: X</span>
 			</div>
-			<div class="event" onclick="window.location.href = '/events/collectionleague';">
+			<!-- <div class="event" onclick="window.location.href = '/events/collectionleague';">
 				<img src="/img/trophy.png" class="event-icon">
 				Collection League
-			</div>
-			<div id="calendar"></div>
+			</div> -->
+			<!-- <div id="calendar"></div> -->
+			 <div class="gp-container cl-container" style="background-image: url('/img/events/Collection League.png');"><a class="event-name text" href="/events/collectionleague">Collection League</a></div>
 		</div>
 		<div class="p1p1-container" id="p1p1-image" onclick="openP1P1()">
 			<p>Daily "P1P1"</p>
@@ -188,7 +194,6 @@
 		<div class="dot" id="dot-2"></div>
 		<div class="dot" id="dot-3"></div>
 	</div>
-	</div>
 	<div id="modal-container">
 		<div id="modal-content" class="popout">
 			<span class="close" onclick="closeModal()">&times;</span>
@@ -199,7 +204,7 @@
 	<script>
 		
 		let card_backgrounds = [];
-		
+		let current_gp;
 		let specialchars = "";
 		let img_list = [];
 		let current_dot = "dot-1";
@@ -251,6 +256,26 @@
 					specialchars = text;
 				}).catch(error => console.error('Error:', error));
 
+			await fetch('https://voyager-api-pq2h.onrender.com/events/info')
+				.then(response => response.json())
+				.then(json => {
+					event_info = json;
+				}).catch(error => console.error('Error:', error));
+			
+			current_gp = event_info.recent;
+			console.log(current_gp, event_info);
+
+			await fetch(`http://localhost:10000/events/public?event=${current_gp}`)
+				.then(response => response.json())
+				.then(json => {
+					event = json;
+				}).catch(error => console.error('Error:', error));
+
+			document.querySelector('.event-name').innerText = event.name;
+			document.querySelector('.event-players').innerText = Object.keys(event.decks).length + ' players';
+			document.querySelector('.event-winner').innerText = 'Winner: ' + event.winner;
+			document.querySelector('.gp-container').style.backgroundImage = `url('/img/events/${event.name}.png')`;
+
 			//dots
 			Array.from(document.getElementsByClassName("dot")).forEach(dot => {
 				dot.onclick = () => {
@@ -268,8 +293,6 @@
 					})
 				}
 			});
-
-			
 
 			card_list_cleaned = [];
 
@@ -689,51 +712,6 @@ Search for cards that were made into champion promo's by a specific user. For ex
 
 			window.location.href = url;
 		}
-	</script>
-	<script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-		// TODO: Add SDKs for Firebase products that you want to use
-		// https://firebase.google.com/docs/web/setup#available-libraries
-
-		// Your web app's Firebase configuration
-		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-		const firebaseConfig = {
-			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-			authDomain: "voyager-78e30.firebaseapp.com",
-			projectId: "voyager-78e30",
-			storageBucket: "voyager-78e30.firebasestorage.app",
-			messagingSenderId: "411191248476",
-			appId: "1:411191248476:web:591349be169d823e5f8899",
-			measurementId: "G-TQ1L48F25M"
-		};
-
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-		const db = getFirestore(app);
-
-		// await getDoc(doc(db, "info", "events")).then(docSnap => {
-		// 	const calendar = docSnap.data().calendar;
-
-		// 	for (const item of calendar) {
-		// 		const prop = item.split(";");
-		// 		const name = prop[0];
-		// 		const time = prop[1];
-		// 		const desc = prop[2];
-
-		// 		const header = document.createElement("span");
-		// 		header.className = "event-calendar-header";
-		// 		header.innerText = name;
-
-		// 		const time_desc = document.createElement("span");
-		// 		time_desc.className = "time-desc";
-		// 		time_desc.innerHTML = `${time} <b>•</b> ${desc}`;
-
-		// 		document.getElementById("calendar").appendChild(header);
-		// 		document.getElementById("calendar").appendChild(time_desc);
-		// 	}
-		// })
 	</script>
 </body>
 

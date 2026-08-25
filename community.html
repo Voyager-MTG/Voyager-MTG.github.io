@@ -147,6 +147,7 @@
 		let decks_html;
 		let users_html;
 		let cards_html;
+		let user_data;
 		let sort_cards = "name";
 		let initial_load = true;
 
@@ -178,12 +179,11 @@
 			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
 				let data = docSnap.data();
 				username = data.username;
-				password = data.password;
 			});
 
 			await getDoc(doc(db, 'users', username)).then(docSnap => {
-				let data = docSnap.data();
-				decks = data.decks;
+				user_data = docSnap.data();
+				decks = user_data.decks;
 			});
 		}
 
@@ -248,7 +248,7 @@
 
 				all_events_docs.forEach((doc) => {
 					const data = doc.data();
-					all_events.push(data);
+					all_events.push({...data, id: doc.id});
 					for (const user in data.decks) {
 						let deck = data.decks[user];
 
@@ -288,6 +288,57 @@
 		}
 
 		function makeEventTab() {
+			const tab = document.createElement('div');
+			tab.className = 'events-tab';
+			
+			if (user_data.admin || user_data.organizer) {
+				const buttons = document.createElement('div');
+				buttons.className = 'admin-buttons-container';
+
+				const fire = document.createElement('button');
+				fire.className = 'admin-button';
+				fire.innerText = 'Fire a Draft';
+				fire.onclick = () => {
+					const form_options = [
+						{name: 'Set Code', id: 'code', type: 'short'},
+						{name: 'Draft Link', id: 'draft-link', type: 'short'},
+						{name: 'Blurb', id: 'draft-blurb', type: 'long'}
+					];
+
+					const form = document.createElement('div');
+					form.className = 'fire-form';
+					let html = '';
+
+					for (const option of form_options) {
+						if (option.type == 'short') {
+							html += `<div class="fire-form-option-short"><span class="fire-form-label">${option.name}</span><input class="${option.id} fire-form-input" placeholder="Enter ${option.name}"></div>`
+						}
+						else if (option.type == 'long') {
+							html += `<div class="fire-form-option-long"><span class="fire-form-label">${option.name}</span><textarea class="${option.id} fire-form-textarea fire-form-input" placeholder="Enter ${option.name}"></textarea></div>`
+						}
+					}
+
+					html += `<button class="admin-button">Submit</button>`;
+					form.innerHTML = html;
+
+					form.querySelector('.admin-button').onclick = async () => {
+						const option_data = form_options.reduce((acc, opt) => {
+							return acc + `&${opt.id}=${encodeURIComponent(form.querySelector('.' + opt.id).value)}`;
+						}, '');
+						console.log('sending', option_data);
+						await fetch(`http://localhost:10000/events/draft/fire?session=${localStorage.getItem('settings.session')}${option_data}`);
+						closeModal();
+					}
+
+					document.querySelector('#modal-content').innerHTML = '';
+					document.querySelector('#modal-content').appendChild(form);
+					document.querySelector('#modal-container').style.display = 'block';
+				}
+
+				buttons.appendChild(fire);
+				tab.appendChild(buttons);
+			}
+			
 			const container = document.createElement("div");
 			container.className = "events-container";
 			for (const event of all_events) {
@@ -315,7 +366,9 @@
 
 				container.appendChild(event_container);
 			}
-			return container;
+
+			tab.appendChild(container);
+			return tab;
 		}
 
 		// function gridifyDeck(deck) {

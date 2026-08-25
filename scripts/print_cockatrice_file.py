@@ -133,7 +133,7 @@ def render_card(card, tokens, /, *, back=False, flipped=False, token=False):
 		<card>
 			<name>{xml_escape(card_name)}</name>
 			<text>{re.sub(r'\[/?i\]', '', xml_escape(get_text(card, back, flipped)))}</text>
-			<set rarity="{'rare' if card['rarity'] == 'cube' else card['rarity']}" picurl="{xml_escape(get_picurl(card, back))}" num="{get_number(card, back)}" uuid="{uuid}">{xml_escape(card['set'])}</set>
+			<set rarity="{'rare' if card['rarity'] == 'cube' else card['rarity']}" picurl="{xml_escape(get_picurl(card, back))}" num="{get_number(card, back)}" uuid="{xml_escape(card['set'])}{card['position']}">{xml_escape(card['set'])}</set>
 			<prop>{props}
 			</prop>
 			<tablerow>{get_tablerow(card_type)}</tablerow>'''

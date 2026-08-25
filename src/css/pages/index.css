@@ -189,9 +189,9 @@ button:hover {
 	border-bottom: 1px solid #898989;
 }
 
-.event-container a {
+/* .event-container a {
 	width: 70%;
-}
+} */
 
 .event-container img {
 	width: 100%;
@@ -437,8 +437,49 @@ button:hover {
 .dots {
 	display: flex;
 	gap: 8px;
-	margin-left: 62%;
-	margin-top: 15px;
+	margin-left: 59.5%;
+	/* margin-top: 15px; */
+}
+
+.gp-container {
+	border: 3px solid var(--text-color);
+	border-radius: 3px;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	padding: 5px;
+	background-color: color-mix(in srgb, var(--mid-accent) 60%, transparent);
+	height: 150px;
+	width: 200px;
+	background-size: cover;
+	transition: 0.3s;
+}
+
+.cl-container {
+	height: 115px;
+}
+
+.gp-container:hover {
+	filter: brightness(0.7);
+}
+
+.event-name {
+	font-family: beleren;
+	font-size: 32px;
+	text-decoration: underline;
+	text-underline-position: below;
+	text-underline-offset: 3px;
+	text-align: center;
+	width: 100%;
+	text-shadow: 2px 2x black;
+	/* color: rgb(48, 48, 135); */
+}
+
+.events-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 230px);
+	gap: 10px;
+	margin: 40px;
 }
 
 .event {

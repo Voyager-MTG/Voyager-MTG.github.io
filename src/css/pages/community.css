@@ -287,6 +287,88 @@ select {
 	text-align: left;
 }
 
+.admin-buttons-container {
+	font-weight: bold;
+	font-size: 16px;
+	/* margin-top: 20px; */
+	width: 100%;
+	align-items: center;
+	display: flex;
+	gap: 5px;
+	justify-content: center;
+}
+
+.admin-button {
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid var(--dark-accent);
+    color: white;
+    background-color: var(--bg-color);
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: fit-content;
+    text-decoration: none;
+    color: var(--popout-text-color);
+}
+
+.admin-button:hover {
+    background-color: var(--mid-accent);
+}
+/* 
+.fire-form-option-short {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+} */
+
+.fire-form-option-short {
+    display: grid;
+    align-items: center;
+    gap: 12px;
+    grid-template-columns: 1fr 2fr;
+    margin: 5px 0;
+}
+/* 
+.field-label {
+    color: var(--popout-text-color);
+} */
+
+.fire-form-input {
+    background: var(--light-accent);
+    border: 2px solid var(--dark-accent);
+    color: var(--popout-text-color);
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.fire-form-input:focus {
+    background-color: var(--mid-accent);
+}
+
+.fire-form-input:hover {
+    filter: brightness(1.2);
+}
+
+.fire-form-textarea {
+    font-size: 14px;
+    resize: none;
+    width: 100%;
+    height: 150px;
+	margin-top: 8px;
+}
+
+.fire-form-label {
+	font-weight: bold;
+	font-size: 20px;
+}
+
 @media (max-device-width: 750px) {
 	.tab-select {
 		grid-template-columns: 1fr 1fr;
