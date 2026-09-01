@@ -6527,7 +6527,7 @@ Discard your hand, then exile the top three cards of your library. You may play 
 		</card>
 		<card>
 			<name>Warping Wolf</name>
-			<text>When this creature enters, return up to one target creature card from your graveyard to the battlefield. It enters as an enchantment with materialize X, where X is its mana value. (Tap one or more other enchantments you control with total mana value X or more: This also becomes an Icon creature until your next turn.)</text>
+			<text>When this creature enters, return up to one target creature card from your graveyard to the battlefield. It enters as an enchantment with materialize X, where X is its mana value. (Tap one or more other enchantments you control with total mana value X or more: This also becomes an Icon creature until your next upkeep.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/32.jpg" num="106" uuid="352">EXPT</set>
 			<prop>
 				<layout>normal</layout>
@@ -7698,7 +7698,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 		</card>
 		<card>
 			<name>Yaiba Robo</name>
-			<text>Restructure {I} (If you cast this for its restructure cost, it&apos;s a kindred artifact until you pay its mana cost as a sorcery.)
+			<text>Restructure {I} (If you cast this for its restructure cost, its a kindred artifact until you pay its mana cost as a sorcery.)
 At the beginning of combat on your turn, up to one target creature gains first strike until end of turn.</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/109.jpg" num="112" uuid="418">EXPT</set>
 			<prop>
@@ -10861,7 +10861,7 @@ Create a 1/1 silver Drake creature token with flying. (Then put this into your s
 		</card>
 		<card>
 			<name>Mana Compression</name>
-			<text>Put target noncreature permanent into its owner&apos;s sanctum. Mirror. (Create a token thats a copy of a token you control.)</text>
+			<text>Put target noncreature permanent into its owner&apos;s sanctum. Mirror. (Create a token thats a copy of another token you control.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/93.jpg" num="254" uuid="591">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -11605,7 +11605,7 @@ At the beginning of combat on each turn, if a land entered under your control th
 		<card>
 			<name>Balutr Runners</name>
 			<text>When this creature enters, if it isn&apos;t a token, choose one – 
-• Mirror. (Create a token thats a copy of a token you control.)
+• Mirror. (Create a token thats a copy of another token you control.)
 • Reveal the top card of your library. If its a permanent card, put it into your hand.
 Evoke {1}{IG} (You may cast this spell for its evoke cost. If you do, it&apos;s sacrificed when it enters.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/163.jpg" num="278" uuid="632">FOE</set>
@@ -14737,7 +14737,7 @@ Once during each of your turns, you may play a card from your sanctum.</text>
 			<name>Korna, Adventuring Historian</name>
 			<text>Trample, vigilance
 Once each turn, when a spell or ability puts a card into your hand, you may create a 2/2 white Wurm creature token with vigilance.
-Materialize 2 (Tap one or more other enchantments you control with total mana value 2 or more: This also becomes an Icon creature until your next turn.)</text>
+Materialize 2 (Tap any number of other enchantments you control with total mana value 2 or more: This becomes a creature in addition to its other types until your next upkeep.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/336.jpg" num="302" uuid="804">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -17941,7 +17941,7 @@ Whenever Caryl Rey, the Rose attacks, exile the top card of your library. You ma
 		<card>
 			<name>Geistwald Deceiver</name>
 			<text>Haste
-{T}: Create a token that&apos;s a copy of target non-Ouphe creature you control. That token has haste. At the beginning of your next end step, forsake. (To forsake, sacrifice creatures with total toughness 3 or more.)</text>
+{T}: Create a token that&apos;s a copy of target non-Ouphe creature you control. That token has haste. At the beginning of your next end step, forsake. (Sacrifice creatures with total toughness 3 or more.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/36.jpg" num="144" uuid="976">HOD</set>
 			<prop>
 				<layout>normal</layout>
@@ -36464,7 +36464,7 @@ Blazefoxes of Moz gets +2/+0 as long as your complexity is three or greater. (Yo
 		</card>
 		<card>
 			<name>Sunbound Swarm</name>
-			<text>Sunbound Swarm has bake as long as you&apos;ve gained life this turn. (When this enters, up to one target permanent gains its abilities until end of turn.)
+			<text>Sunbound Swarm has bake as long as you&apos;ve gained life this turn. (When this enters, up to one other target permanent gains its abilities until end of turn.)
 Flying, double strike, vigilance, trample, haste, protection from tokens and from copies of spells</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/50.jpg" num="265" uuid="2009">PVR</set>
 			<prop>
@@ -56609,7 +56609,7 @@ Ploy – Target opponent reveals their hand and discards a nonland card of your 
 		<card>
 			<name>Deepmists Vindicator</name>
 			<text>Whenever Deepmists Vindicator becomes blocked, [b][each opponent sacrifices a creature or planeswalker.][/b]
-Impetus {4}{B} (You may cast this from your graveyard as a sorcery with only the text in square brackets for {4}{B}. Then exile it.)</text>
+Impetus {4}{B} (You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/79.jpg" num="85" uuid="3119">WAW</set>
 			<prop>
 				<layout>normal</layout>
@@ -56773,7 +56773,7 @@ Reflect {3} ({3}: Create a token copy of this creature, except it&apos;s a 1/1 W
 			<name>Lifelighter</name>
 			<text>Flash
 When Lifelighter enters, you may [b][return target permanent you control not named Lifelighter to its owner&apos;s hand.][/b]
-Impetus {1}{W} (You may cast this from your graveyard as a sorcery with only the text in square brackets for {1}{W}. Then exile it.)</text>
+Impetus {1}{W} (You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/89.jpg" num="23" uuid="3128">WAW</set>
 			<prop>
 				<layout>normal</layout>
