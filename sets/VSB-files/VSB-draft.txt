@@ -193,7 +193,7 @@
 		{
 			"name": "Skaptodon",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{R}{R}",
+			"mana_cost": "{1}{R}",
 			"type": "Creature — Cat",
 			"collector_number": "16",
 			"image_uris": {
@@ -213,7 +213,7 @@
 		{
 			"name": "Abandon the Church",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{R}{G}",
+			"mana_cost": "{1}{R}{G}",
 			"type": "Sorcery",
 			"collector_number": "42",
 			"image_uris": {
@@ -493,7 +493,7 @@
 		{
 			"name": "Vesperan Exodus",
 			"rarity": "mythic",
-			"mana_cost": "{X}{C/G}{C/W}{G/W}",
+			"mana_cost": "{X}{C/G}{C/W}",
 			"type": "Sorcery",
 			"collector_number": "55",
 			"image_uris": {
