@@ -23,6 +23,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Alexey Egorov\nDmitriy Yakovlev",
+            "position": "0",
             "notes": "REDCOMMON\nCR16"
         },
         {
@@ -42,6 +43,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mohamed Chahin",
+            "position": "1",
             "notes": "WHITEUNCOMMON\nUW01"
         },
         {
@@ -61,6 +63,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Gordon Dylan Johnson",
+            "position": "2",
             "notes": "WHITEMYTHIC13\nWHITERARE"
         },
         {
@@ -80,6 +83,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "3",
             "notes": "GREENUNCOMMON\nUG07"
         },
         {
@@ -99,6 +103,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Alex Mattel",
+            "position": "4",
             "notes": "COLOURLESSCOMMON\nCA01"
         },
         {
@@ -118,6 +123,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mat Szulik",
+            "position": "5",
             "notes": "COLOURLESSUNCOMMON"
         },
         {
@@ -137,6 +143,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ali Hoff",
+            "position": "6",
             "notes": "COLOURLESSCOMMON\nCA03"
         },
         {
@@ -156,6 +163,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Myrmiredon",
+            "position": "7",
             "notes": "COLOURLESSRARE\n!tag CanonReprint"
         },
         {
@@ -175,6 +183,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Calder Moore",
+            "position": "8",
             "notes": "COLOURLESSCOMMON"
         },
         {
@@ -194,6 +203,7 @@
             "loyalty": "4",
             "designer": "Myr",
             "artist": "Giselle Manzano Ram\u00edrez",
+            "position": "9",
             "notes": "SPOTLIGHT\nOTHERRARE"
         },
         {
@@ -213,6 +223,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Eirikurbjorn",
+            "position": "10",
             "notes": "COLOURLESSCOMMON\nUA04"
         },
         {
@@ -232,6 +243,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Giselle Manzano Ram\u00edrez",
+            "position": "11",
             "notes": "BLUECOMMON\nCU12"
         },
         {
@@ -251,6 +263,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mat Szulik",
+            "position": "12",
             "notes": "BLACKUNCOMMON\nUB01"
         },
         {
@@ -270,6 +283,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Trevor Carlee",
+            "position": "13",
             "notes": "BLACKRARE11"
         },
         {
@@ -289,6 +303,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "14",
             "notes": "REDCOMMON\nCR02"
         },
         {
@@ -308,6 +323,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Arnaldo Souza",
+            "position": "15",
             "notes": "REDCOMMON\nCR03"
         },
         {
@@ -327,6 +343,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "16",
             "notes": "REDCOMMON\nCR04"
         },
         {
@@ -337,7 +354,7 @@
             "number": 144,
             "color_identity": "R",
             "cost": "{2}{R}",
-            "rules_text": "Creature tokens you control have menace.\nRetopology {2}{R}{R} [i](Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)[/i]",
+            "rules_text": "Creature tokens you control have menace.\nRetopology {2}{R}{R} [i](Cast a copy of this from your graveyard by exiling it and paying {2}{R}{R}. Spend only mana from differently named sources this way.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "2/3",
             "special_text": "",
@@ -346,6 +363,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Anato Finnstark",
+            "position": "17",
             "notes": "REDCOMMON\nCR05"
         },
         {
@@ -365,6 +383,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "18",
             "notes": "REDCOMMON\nCR06"
         },
         {
@@ -384,6 +403,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Skye Freeman",
+            "position": "19",
             "notes": "REDCOMMON\nCR07"
         },
         {
@@ -403,6 +423,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Arnaldo Souza",
+            "position": "20",
             "notes": "REDUNCOMMON\nUR07"
         },
         {
@@ -422,6 +443,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "21",
             "notes": "REDCOMMON"
         },
         {
@@ -441,6 +463,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Rafal Urbanski",
+            "position": "22",
             "notes": "REDCOMMON\nCR10"
         },
         {
@@ -460,6 +483,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Edgars Soiko",
+            "position": "23",
             "notes": "REDCOMMON"
         },
         {
@@ -479,6 +503,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "24",
             "notes": "REDCOMMON\nCR13"
         },
         {
@@ -498,6 +523,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Robin Tran",
+            "position": "25",
             "notes": "REDCOMMON\nCR14"
         },
         {
@@ -517,6 +543,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Estudio Guardabosques",
+            "position": "26",
             "notes": "REDCOMMON"
         },
         {
@@ -536,6 +563,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "PurePoly",
+            "position": "27",
             "notes": "REDCOMMON\nCR15"
         },
         {
@@ -555,6 +583,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "WhoohooSue",
+            "position": "28",
             "notes": "REDCOMMON\nCR17"
         },
         {
@@ -574,6 +603,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "29",
             "notes": "REDCOMMON\nCR18"
         },
         {
@@ -593,6 +623,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Caerilho G.",
+            "position": "30",
             "notes": "!tapped\nREDCOMMON\nCR19\nLANDCYCLECOMMON"
         },
         {
@@ -612,6 +643,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Aaaatatatata",
+            "position": "31",
             "notes": "REDUNCOMMON\nUR09"
         },
         {
@@ -631,6 +663,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Silke Voigts",
+            "position": "32",
             "notes": "GREENCOMMON"
         },
         {
@@ -650,6 +683,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "33",
             "notes": "GREENCOMMON\nCG04"
         },
         {
@@ -669,6 +703,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Barry Tobin",
+            "position": "34",
             "notes": "GREENCOMMON"
         },
         {
@@ -688,6 +723,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "35",
             "notes": "GREENCOMMON\nCG06"
         },
         {
@@ -707,6 +743,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Hot Amr",
+            "position": "36",
             "notes": "GREENCOMMON\nCG09"
         },
         {
@@ -726,6 +763,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "37",
             "notes": "GREENCOMMON\nCG10"
         },
         {
@@ -745,6 +783,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "38",
             "notes": "GREENCOMMON\nCG12"
         },
         {
@@ -764,6 +803,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "39",
             "notes": "GREENCOMMON\nCG13"
         },
         {
@@ -783,6 +823,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Barry Tobin",
+            "position": "40",
             "notes": "GREENCOMMON\nCG14"
         },
         {
@@ -802,6 +843,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "41",
             "notes": "GREENCOMMON\nCG15"
         },
         {
@@ -821,6 +863,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "TayAmazingness",
+            "position": "42",
             "notes": "GREENCOMMON\nCG16"
         },
         {
@@ -840,6 +883,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "43",
             "notes": "GREENCOMMON"
         },
         {
@@ -859,6 +903,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ethron981",
+            "position": "44",
             "notes": "GREENCOMMON"
         },
         {
@@ -878,6 +923,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Alex Pahomov",
+            "position": "45",
             "notes": "GREENCOMMON\nCG19\nLANDCYCLECOMMON"
         },
         {
@@ -897,6 +943,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "LittleNorweigens",
+            "position": "46",
             "notes": "GREENUNCOMMON\nUG09"
         },
         {
@@ -916,6 +963,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jeremy Endelblut",
+            "position": "47",
             "notes": "GREENCOMMON\nCG01"
         },
         {
@@ -935,6 +983,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Lithium-Polygon",
+            "position": "48",
             "notes": "COLOURLESSUNCOMMON\nUA06"
         },
         {
@@ -954,6 +1003,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Dimitry Novikov",
+            "position": "49",
             "notes": "REDUNCOMMON\nUR01"
         },
         {
@@ -964,7 +1014,7 @@
             "number": 265,
             "color_identity": "WR",
             "cost": "{1}{R}{W}",
-            "rules_text": "Sunbound Swarm has bake as long as you've gained life this turn. [i](When this enters, up to one other target permanent gains its abilities until end of turn.)[/i]\nFlying, double strike, vigilance, trample, haste, protection from tokens and from copies of spells",
+            "rules_text": "Sunbound Swarm has bake as long as you've gained life this turn. [i](When this enters, up to one target permanent gains its abilities until end of turn.)[/i]\nFlying, double strike, vigilance, trample, haste, protection from tokens and from copies of spells",
             "flavor_text": "[i][/i]",
             "pt": "1/1",
             "special_text": "",
@@ -973,6 +1023,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jfboards24",
+            "position": "50",
             "notes": "OTHERRARE"
         },
         {
@@ -992,6 +1043,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Glipto",
+            "position": "51",
             "card_name2": "Melt",
             "color2": "BRG",
             "type2": "Vertex Sorcery",
@@ -1021,6 +1073,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Rafal Urbanski",
+            "position": "52",
             "notes": "REDRARE11"
         },
         {
@@ -1040,6 +1093,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Calder Moore",
+            "position": "53",
             "notes": "REDRARE10"
         },
         {
@@ -1059,6 +1113,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Chris Masna",
+            "position": "54",
             "notes": "GREENCOMMON\nCG02\nDINOCURVE?"
         },
         {
@@ -1078,6 +1133,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "55",
             "notes": "CG08\nGREENCOMMON"
         },
         {
@@ -1097,6 +1153,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "56",
             "notes": "GREENCOMMON\nCG11"
         },
         {
@@ -1116,6 +1173,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "57",
             "notes": "GREENRARE3"
         },
         {
@@ -1135,6 +1193,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "ButtonUpZipper",
+            "position": "58",
             "card_name2": "Emerge",
             "color2": "WUG",
             "type2": "Vertex Instant",
@@ -1164,6 +1223,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Laser-Fire",
+            "position": "59",
             "notes": "WHITERARE\nWHITERARE6"
         },
         {
@@ -1183,6 +1243,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Amr Elshamy",
+            "position": "60",
             "notes": "BLACKRARE7"
         },
         {
@@ -1202,6 +1263,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "LongestDistance",
+            "position": "61",
             "notes": "REDUNCOMMON\nUR10"
         },
         {
@@ -1221,6 +1283,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "e4ennCheshireCat",
+            "position": "62",
             "notes": "WHITEUNCOMMON\nUW02"
         },
         {
@@ -1240,6 +1303,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ridell Apellanes",
+            "position": "63",
             "notes": "GREENRARE13"
         },
         {
@@ -1259,6 +1323,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Hoang V Ng",
+            "position": "64",
             "notes": "REDCOMMON\nCR01"
         },
         {
@@ -1278,6 +1343,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Gordan Dylan Johnson",
+            "position": "65",
             "notes": "WHITERARE10"
         },
         {
@@ -1297,6 +1363,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sebastien van Everdinghe",
+            "position": "66",
             "notes": "I'M SORRY CAJUN \n!token"
         },
         {
@@ -1316,6 +1383,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Pawel Kozera",
+            "position": "67",
             "notes": "WHITERARE5"
         },
         {
@@ -1335,6 +1403,7 @@
             "loyalty": "6",
             "designer": "Myr",
             "artist": "Andreas Kopriva Lernis",
+            "position": "68",
             "notes": "SPOTLIGHT\nOTHERRARE\n\nPwarth, Planar Decimator"
         },
         {
@@ -1354,6 +1423,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Spydermik",
+            "position": "69",
             "notes": "BLACKRARE2"
         },
         {
@@ -1373,6 +1443,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jerome Comentale",
+            "position": "70",
             "notes": "COLOURLESSCOMMON"
         },
         {
@@ -1392,6 +1463,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "EmacEArt",
+            "position": "71",
             "notes": "GREENRARE10"
         },
         {
@@ -1411,6 +1483,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "HEAVYPOLY",
+            "position": "72",
             "notes": "UM05\nARCUNSET1"
         },
         {
@@ -1430,6 +1503,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Daragos90",
+            "position": "73",
             "notes": "UM07\nARCUNSET1"
         },
         {
@@ -1449,6 +1523,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jeremy Endelblut",
+            "position": "74",
             "notes": "UM09\nARCUNSET1"
         },
         {
@@ -1468,6 +1543,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Kirill Khrol",
+            "position": "75",
             "notes": "UM08\nARCUNSET1"
         },
         {
@@ -1487,6 +1563,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "76",
             "notes": "UM10\nARCUNSET1"
         },
         {
@@ -1506,6 +1583,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "PULSAR BYTES",
+            "position": "77",
             "notes": "UM01\nARCUNSET1"
         },
         {
@@ -1525,6 +1603,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "78",
             "notes": "UM06\nARCUNSET1"
         },
         {
@@ -1544,6 +1623,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mat Szulik",
+            "position": "79",
             "notes": "REDRARE8"
         },
         {
@@ -1563,6 +1643,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Zacharias Reinhardt",
+            "position": "80",
             "notes": "UM15\nARCUNSET2"
         },
         {
@@ -1582,6 +1663,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Calder Moore",
+            "position": "81",
             "notes": "UM18\nARCUNSET2"
         },
         {
@@ -1601,6 +1683,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ali Hoff",
+            "position": "82",
             "notes": "UM20\nARCUNSET2"
         },
         {
@@ -1620,6 +1703,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Julien Louche",
+            "position": "83",
             "notes": "OTHERRARE"
         },
         {
@@ -1639,6 +1723,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Lars Grevsm\u00fchl",
+            "position": "84",
             "notes": "OTHERRARE"
         },
         {
@@ -1658,6 +1743,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Lars Grevsm\u00fchl",
+            "position": "85",
             "notes": "UM12\nARCUNSET2"
         },
         {
@@ -1677,6 +1763,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "PurePoly",
+            "position": "86",
             "notes": "UM14\nARCUNSET2"
         },
         {
@@ -1696,6 +1783,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Henry Wong",
+            "position": "87",
             "notes": "UM13\nARCUNSET2"
         },
         {
@@ -1715,6 +1803,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Prusakov Vitaliy",
+            "position": "88",
             "notes": "UM11\nARCUNSET2"
         },
         {
@@ -1734,6 +1823,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Pascal Blanch\u00e9",
+            "position": "89",
             "notes": "UM17\nARCUNSET2"
         },
         {
@@ -1753,6 +1843,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "90",
             "notes": "UM04\nARCUNSET1"
         },
         {
@@ -1772,6 +1863,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Cleasia",
+            "position": "91",
             "notes": "WHITECOMMON\nCW10"
         },
         {
@@ -1791,6 +1883,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Auburn Hodgson",
+            "position": "92",
             "notes": "WHITECOMMON\nCW09"
         },
         {
@@ -1810,6 +1903,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "HitchHock",
+            "position": "93",
             "notes": "WHITECOMMON\nCW07"
         },
         {
@@ -1829,6 +1923,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Lars Grevsm\u00fchl",
+            "position": "94",
             "notes": "WHITECOMMON\nCW02"
         },
         {
@@ -1848,6 +1943,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "HitchHock",
+            "position": "95",
             "notes": "WHITECOMMON\nCW06"
         },
         {
@@ -1867,6 +1963,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Estudio Guardabosques",
+            "position": "96",
             "notes": "WHITECOMMON\nCR11"
         },
         {
@@ -1886,6 +1983,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Matt Tkocz",
+            "position": "97",
             "notes": "WHITECOMMON\nCW05"
         },
         {
@@ -1905,6 +2003,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Terrabyte224",
+            "position": "98",
             "notes": "WHITECOMMON\nCW18"
         },
         {
@@ -1924,6 +2023,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "HitchHock",
+            "position": "99",
             "notes": "WHITECOMMON\nCW04"
         },
         {
@@ -1943,6 +2043,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Robin Tran",
+            "position": "100",
             "notes": "WHITECOMMON\nCW15"
         },
         {
@@ -1962,6 +2063,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nexumorphic",
+            "position": "101",
             "notes": "WHITECOMMON\nCW18"
         },
         {
@@ -1981,6 +2083,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mohamed Chahin",
+            "position": "102",
             "notes": "WHITECOMMON\nCW08"
         },
         {
@@ -2000,6 +2103,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "HitchHock",
+            "position": "103",
             "notes": "WHITECOMMON\nCW12"
         },
         {
@@ -2019,6 +2123,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "SuperPow31",
+            "position": "104",
             "notes": "WHITECOMMON\nCW13"
         },
         {
@@ -2038,6 +2143,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mytholaran",
+            "position": "105",
             "notes": "WHITECOMMON\nCW03"
         },
         {
@@ -2057,6 +2163,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Lois van Baarle",
+            "position": "106",
             "notes": "WHITECOMMON\nCW14"
         },
         {
@@ -2076,6 +2183,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "MassCreed",
+            "position": "107",
             "notes": "WHITECOMMON\nCW01"
         },
         {
@@ -2095,6 +2203,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Dragos Matovski",
+            "position": "108",
             "notes": "!tapped\nWHITECOMMON\nCW19\nLANDCYCLECOMMON"
         },
         {
@@ -2114,6 +2223,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Stephanie Stutz",
+            "position": "109",
             "notes": "BLUEUNCOMMON\nUU09"
         },
         {
@@ -2133,6 +2243,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Rijas Preetch",
+            "position": "110",
             "notes": "!tapped\nBLACKCOMMON\nCB19\nLANDCYCLECOMMON"
         },
         {
@@ -2152,6 +2263,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Lithium-Polygon",
+            "position": "111",
             "notes": "BLACKCOMMON\nCB12"
         },
         {
@@ -2171,6 +2283,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "112",
             "notes": "BLACKCOMMON"
         },
         {
@@ -2190,6 +2303,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jeremy Endelblut",
+            "position": "113",
             "notes": "CB18\nBLACKCOMMON"
         },
         {
@@ -2209,6 +2323,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mohamed Chahin",
+            "position": "114",
             "notes": "BLACKCOMMON"
         },
         {
@@ -2228,6 +2343,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Caleb Worchester",
+            "position": "115",
             "notes": "BLACKCOMMON\nCB15"
         },
         {
@@ -2247,6 +2363,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Trevor Carlee",
+            "position": "116",
             "notes": "BLACKCOMMON"
         },
         {
@@ -2266,6 +2383,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Kzuim (DeviantArt)",
+            "position": "117",
             "notes": "BLACKCOMMON\nCB02"
         },
         {
@@ -2285,6 +2403,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Andrew Juodawlkis",
+            "position": "118",
             "notes": "BLACKCOMMON\nCB01"
         },
         {
@@ -2304,6 +2423,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mat Szulik",
+            "position": "119",
             "notes": "BLACKCOMMON\nCB17"
         },
         {
@@ -2323,6 +2443,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jason Nelson",
+            "position": "120",
             "notes": "BLACKCOMMON\nCB14"
         },
         {
@@ -2342,6 +2463,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Daniel Guti\u00e9rrez",
+            "position": "121",
             "notes": "BLACKCOMMON"
         },
         {
@@ -2361,6 +2483,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Silke Voigts",
+            "position": "122",
             "notes": "BLACKCOMMON\nCB06"
         },
         {
@@ -2380,6 +2503,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Caleb Worchester",
+            "position": "123",
             "notes": "BLACKCOMMON\nCB04"
         },
         {
@@ -2399,6 +2523,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "124",
             "notes": "BLACKCOMMON\nCB08"
         },
         {
@@ -2418,6 +2543,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Alcore Rain",
+            "position": "125",
             "notes": "BLACKCOMMON\nCB07"
         },
         {
@@ -2437,6 +2563,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "David Demaret",
+            "position": "126",
             "notes": "BLACKCOMMON\nCB09"
         },
         {
@@ -2456,6 +2583,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Thomas Elliot",
+            "position": "127",
             "notes": "BLACKCOMMON\nCB10"
         },
         {
@@ -2475,6 +2603,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Wojtek Fus",
+            "position": "128",
             "notes": "WHITERARE3"
         },
         {
@@ -2494,6 +2623,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jeremy Endelblut",
+            "position": "129",
             "notes": "GREENRARE5"
         },
         {
@@ -2513,6 +2643,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mohamed Chahin",
+            "position": "130",
             "notes": "WHITEUNCOMMON\nUW10"
         },
         {
@@ -2532,6 +2663,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mat Szulik",
+            "position": "131",
             "notes": "OTHERRARE"
         },
         {
@@ -2551,6 +2683,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nicholas Myers",
+            "position": "132",
             "notes": "BLUERARE6"
         },
         {
@@ -2570,6 +2703,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mohamed Chahin",
+            "position": "133",
             "notes": "BLACKCOMMON"
         },
         {
@@ -2589,6 +2723,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Emek Ozben",
+            "position": "134",
             "notes": "COLOURLESSCOMMON"
         },
         {
@@ -2608,6 +2743,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Henry Wong",
+            "position": "135",
             "notes": "WHITEUNCOMMON\nUW13\nLANDCYCLEUNCOMMON\n!tapped"
         },
         {
@@ -2627,6 +2763,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mat Szulik",
+            "position": "136",
             "notes": "UM03\nARCUNSET1"
         },
         {
@@ -2646,6 +2783,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sandra Campos",
+            "position": "137",
             "notes": "SPOTLIGHT\nBLACKUNCOMMON\nUB11"
         },
         {
@@ -2665,6 +2803,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ali Hoff",
+            "position": "138",
             "notes": "SPOTLIGHT\nBLACKRARE8"
         },
         {
@@ -2684,6 +2823,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nexumorphic",
+            "position": "139",
             "notes": "SPOTLIGHT\nREDRARE13"
         },
         {
@@ -2703,6 +2843,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Igor Vitkovskiy",
+            "position": "140",
             "notes": "BLACKUNCOMMON\nUB08"
         },
         {
@@ -2722,6 +2863,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nikuto13",
+            "position": "141",
             "notes": "GREENCOMMON\nCG07"
         },
         {
@@ -2741,6 +2883,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ste Flack",
+            "position": "142",
             "notes": "COLOURLESSUNCOMMON"
         },
         {
@@ -2760,6 +2903,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Milicevic",
+            "position": "143",
             "notes": "SPOTLIGHT\nBLUERARE10"
         },
         {
@@ -2779,6 +2923,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "D\u00e9borah Maradan",
+            "position": "144",
             "notes": "UM19\nARCUNSET2"
         },
         {
@@ -2798,6 +2943,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ink Theory",
+            "position": "145",
             "notes": "!tapped\nBLUEUNCOMMON\nUU13\nLANDCYCLEUNCOMMON"
         },
         {
@@ -2817,6 +2963,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Gordon Dylan Johnson",
+            "position": "146",
             "notes": "BLACKUNCOMMON\nUB13\nLANDCYCLEUNCOMMON"
         },
         {
@@ -2836,6 +2983,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Vidjogamer",
+            "position": "147",
             "notes": "REDUNCOMMON\nUR13\nLANDCYCLEUNCOMMON"
         },
         {
@@ -2855,6 +3003,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Pure Poly",
+            "position": "148",
             "notes": "GREENUNCOMMON\nUG13\nLANDCYCLEUNCOMMON"
         },
         {
@@ -2874,6 +3023,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "David J Fulde",
+            "position": "149",
             "notes": "BASICLAND"
         },
         {
@@ -2893,6 +3043,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Stephanie Stutz",
+            "position": "150",
             "notes": "BASICLAND"
         },
         {
@@ -2912,6 +3063,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Robin Tran",
+            "position": "151",
             "notes": "BASICLAND"
         },
         {
@@ -2931,6 +3083,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Calder Moore",
+            "position": "152",
             "notes": "BASICLAND"
         },
         {
@@ -2950,6 +3103,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mohamed Chahin",
+            "position": "153",
             "notes": "REDUNCOMMON\nUR02"
         },
         {
@@ -2969,6 +3123,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "154",
             "notes": "REDUNCOMMON\nUR03"
         },
         {
@@ -2988,6 +3143,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Purbosky",
+            "position": "155",
             "notes": "REDUNCOMMON\nUR04"
         },
         {
@@ -3007,6 +3163,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "156",
             "notes": "REDUNCOMMON\nUR05"
         },
         {
@@ -3026,6 +3183,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Christian Bravery",
+            "position": "157",
             "notes": "REDUNCOMMON\nUR06\nDINOCURVE?"
         },
         {
@@ -3045,6 +3203,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Lars Grevsm\u00fchl",
+            "position": "158",
             "notes": "REDUNCOMMON\nUR08"
         },
         {
@@ -3064,6 +3223,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "P. Carredo",
+            "position": "159",
             "notes": "REDUNCOMMON\nUR11"
         },
         {
@@ -3083,6 +3243,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "AdagioString",
+            "position": "160",
             "notes": "REDUNCOMMON\nUR12"
         },
         {
@@ -3102,6 +3263,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "161",
             "notes": "REDCOMMON\nCR08"
         },
         {
@@ -3121,6 +3283,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Timothy J Reynolds",
+            "position": "162",
             "notes": "GREENUNCOMMON\nUG08"
         },
         {
@@ -3140,6 +3303,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mat Szulik",
+            "position": "163",
             "notes": "BLUEUNCOMMON\nUU07"
         },
         {
@@ -3159,6 +3323,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "ImTater",
+            "position": "164",
             "notes": "WHITERARE11"
         },
         {
@@ -3178,6 +3343,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mohamed Chahin",
+            "position": "165",
             "notes": "BLACKUNCOMMON\nUB09"
         },
         {
@@ -3197,6 +3363,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Igor Vitkovskiy",
+            "position": "166",
             "notes": "GREENRARE7"
         },
         {
@@ -3216,6 +3383,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jason Nelson",
+            "position": "167",
             "card_name2": "Grow",
             "color2": "BG",
             "type2": "Vertex Sorcery",
@@ -3245,6 +3413,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Gnoccy",
+            "position": "168",
             "notes": "GREENUNCOMMON\nUG03"
         },
         {
@@ -3264,6 +3433,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "169",
             "notes": "BLUEUNCOMMON\nUU08"
         },
         {
@@ -3283,6 +3453,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Caleb Worchester",
+            "position": "170",
             "notes": "BLACKRARE3"
         },
         {
@@ -3302,6 +3473,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mohamed Chahin",
+            "position": "171",
             "notes": "BLUEUNCOMMON\nUU02"
         },
         {
@@ -3321,6 +3493,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Lars Grevsm\u00fchl",
+            "position": "172",
             "notes": "GREENRARE11"
         },
         {
@@ -3340,6 +3513,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "173",
             "notes": "BLUECOMMON\nCU03"
         },
         {
@@ -3359,6 +3533,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "PULSAR BYTES",
+            "position": "174",
             "notes": "OTHERMYTHIC\nNEWCARD\n!newscript"
         },
         {
@@ -3378,6 +3553,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mohamed Chahin",
+            "position": "175",
             "notes": "BLUEUNCOMMON\nUU03"
         },
         {
@@ -3397,6 +3573,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Robin Tran",
+            "position": "176",
             "notes": "BLUEUNCOMMON\nUU05"
         },
         {
@@ -3416,6 +3593,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nicholas Myers",
+            "position": "177",
             "notes": "BLUEUNCOMMON\nUU06"
         },
         {
@@ -3435,6 +3613,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Snatti89",
+            "position": "178",
             "notes": "WHITEUNCOMMON\nUW04"
         },
         {
@@ -3454,6 +3633,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Trevor Carlee",
+            "position": "179",
             "notes": "BLACKUNCOMMON\nUB02"
         },
         {
@@ -3473,6 +3653,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "180",
             "notes": "BLACKUNCOMMON\nUB03"
         },
         {
@@ -3492,6 +3673,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ali Hoff",
+            "position": "181",
             "notes": "BLACKUNCOMMON\nUB04"
         },
         {
@@ -3511,6 +3693,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Simon Cowell",
+            "position": "182",
             "notes": "BLACKUNCOMMON\nUB05"
         },
         {
@@ -3530,6 +3713,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Trevor Carlee",
+            "position": "183",
             "notes": "BLACKUNCOMMON\nUB06"
         },
         {
@@ -3549,6 +3733,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "ButtonUpZipper",
+            "position": "184",
             "notes": "BLACKUNCOMMON\nUB07"
         },
         {
@@ -3568,6 +3753,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ali Hoff",
+            "position": "185",
             "notes": "WHITEUNCOMMON\nUW07"
         },
         {
@@ -3587,6 +3773,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Henry Wong",
+            "position": "186",
             "notes": "GREENUNCOMMON\nUG10"
         },
         {
@@ -3606,6 +3793,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Julien louche",
+            "position": "187",
             "notes": "!tapped\nLANDCYCLERARE\nBLACKRARE12"
         },
         {
@@ -3625,6 +3813,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Thodoris Tsiridis",
+            "position": "188",
             "notes": "BLUERARE12\nLANDCYCLERARE"
         },
         {
@@ -3644,6 +3833,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adagio Spring",
+            "position": "189",
             "notes": "!tapped\nREDRARE12\nLANDCYCLERARE"
         },
         {
@@ -3663,6 +3853,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "190",
             "notes": "!tapped\nGREENRARE12\nLANDCYCLERARE"
         },
         {
@@ -3682,6 +3873,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ali Hoff",
+            "position": "191",
             "notes": "COLOURLESSRARE\nLANDCYCLERARE"
         },
         {
@@ -3701,6 +3893,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "xxxscope001xxx",
+            "position": "192",
             "notes": "BLACKUNCOMMON\nUB10"
         },
         {
@@ -3720,6 +3913,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Julien Louche",
+            "position": "193",
             "notes": "BLACKUNCOMMON"
         },
         {
@@ -3739,6 +3933,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Federico Spissu",
+            "position": "194",
             "notes": "WHITEUNCOMMON"
         },
         {
@@ -3758,6 +3953,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ali Hoff",
+            "position": "195",
             "notes": "WHITEUNCOMMON\nUW03"
         },
         {
@@ -3777,6 +3973,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Laser-Fire",
+            "position": "196",
             "notes": "WHITEUNCOMMON\nUW06"
         },
         {
@@ -3796,6 +3993,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Glen Renner",
+            "position": "197",
             "notes": "WHITEUNCOMMON\nUW11"
         },
         {
@@ -3815,6 +4013,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ali Hoff",
+            "position": "198",
             "notes": "WHITEUNCOMMON\nUW12"
         },
         {
@@ -3834,6 +4033,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nikita Bulatov",
+            "position": "199",
             "notes": "WHITEUNCOMMON\nUW05"
         },
         {
@@ -3853,6 +4053,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Lars Grevsm\u00fchl",
+            "position": "200",
             "notes": "LANDCYCLERARE\nWHITERARE12"
         },
         {
@@ -3872,6 +4073,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "201",
             "notes": "GREENUNCOMMON\nUG01"
         },
         {
@@ -3891,6 +4093,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "202",
             "notes": "GREENUNCOMMON"
         },
         {
@@ -3910,6 +4113,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Infinity PBR",
+            "position": "203",
             "notes": "!tag CanonReprint\nGREENUNCOMMON\nUG06"
         },
         {
@@ -3929,6 +4133,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Whitman and Olbert",
+            "position": "204",
             "notes": "GREENUNCOMMON\nUG12"
         },
         {
@@ -3948,6 +4153,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Augustus Clark",
+            "position": "205",
             "notes": "COLOURLESSRARE"
         },
         {
@@ -3967,6 +4173,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Pulsar Bytes",
+            "position": "206",
             "notes": "REDRARE4"
         },
         {
@@ -3986,6 +4193,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Carlord420",
+            "position": "207",
             "notes": "BLUERARE9"
         },
         {
@@ -4005,6 +4213,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ali Hoff",
+            "position": "208",
             "notes": "BLUEUNCOMMON\nUU10"
         },
         {
@@ -4024,6 +4233,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "209",
             "card_name2": "Frenzy",
             "color2": "WBG",
             "type2": "Vertex Sorcery",
@@ -4053,6 +4263,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Billy Christian",
+            "position": "210",
             "card_name2": "Thrall",
             "color2": "UBG",
             "type2": "Vertex Sorcery",
@@ -4082,6 +4293,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Sega23333",
+            "position": "211",
             "notes": "COLOURLESSUNCOMMON"
         },
         {
@@ -4101,6 +4313,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jake Moore",
+            "position": "212",
             "notes": "COLOURLESSRARE"
         },
         {
@@ -4120,6 +4333,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Lars Grevsm\u00fchl",
+            "position": "213",
             "notes": "!tag CanonReprint\nCOLOURLESSUNCOMMON"
         },
         {
@@ -4139,6 +4353,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Martin Newell",
+            "position": "214",
             "notes": "COLOURLESSRARE"
         },
         {
@@ -4158,6 +4373,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nikola Ugarkovic",
+            "position": "215",
             "notes": "!tapped\nBLUECOMMON\nCU19\nLANDCYCLECOMMON"
         },
         {
@@ -4177,6 +4393,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "216",
             "notes": "CU17\nBLUECOMMON"
         },
         {
@@ -4196,6 +4413,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ali Hoff",
+            "position": "217",
             "notes": "BLUECOMMON\nCU15"
         },
         {
@@ -4215,6 +4433,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Memonex",
+            "position": "218",
             "notes": "BLUECOMMON\nCU14"
         },
         {
@@ -4234,6 +4453,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Destructor021",
+            "position": "219",
             "notes": "CU01\nBLUECOMMON"
         },
         {
@@ -4253,6 +4473,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Anton Moek",
+            "position": "220",
             "notes": "BLUECOMMON\nCU16"
         },
         {
@@ -4272,6 +4493,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Kami Wasa",
+            "position": "221",
             "notes": "BLUEUNCOMMON\nUU02"
         },
         {
@@ -4291,6 +4513,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Silke Voigts",
+            "position": "222",
             "notes": "BLUECOMMON\nCU02"
         },
         {
@@ -4310,6 +4533,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jeremy Edelblut",
+            "position": "223",
             "notes": "BLUECOMMON\nCU04"
         },
         {
@@ -4329,6 +4553,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "224",
             "notes": "CU18\nBLUECOMMON"
         },
         {
@@ -4348,6 +4573,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Robin Tran",
+            "position": "225",
             "notes": "BLUECOMMON\nCU11"
         },
         {
@@ -4367,6 +4593,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "MassCreed",
+            "position": "226",
             "notes": "CU05\nBLUECOMMON"
         },
         {
@@ -4386,6 +4613,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "227",
             "notes": "BLUECOMMON\nCU06"
         },
         {
@@ -4405,6 +4633,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "228",
             "notes": "CU07\nBLUECOMMON"
         },
         {
@@ -4424,6 +4653,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mat Szulik",
+            "position": "229",
             "notes": "BLUECOMMON\nCU08"
         },
         {
@@ -4443,6 +4673,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "R\u00e9ka Farkas",
+            "position": "230",
             "notes": "BLUERARE5"
         },
         {
@@ -4462,6 +4693,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Yesaw",
+            "position": "231",
             "notes": "CU09\nBLUECOMMON"
         },
         {
@@ -4481,6 +4713,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Velaz Quezchile",
+            "position": "232",
             "notes": "BLUECOMMON\nCU18"
         },
         {
@@ -4500,6 +4733,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "233",
             "notes": "BLUECOMMON\nCU09"
         },
         {
@@ -4519,6 +4753,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Henry Wong",
+            "position": "234",
             "notes": "UM16\nARCUNSET2"
         },
         {
@@ -4538,6 +4773,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Stephanie Stutz",
+            "position": "235",
             "notes": "COLOURLESSUNCOMMON"
         },
         {
@@ -4557,6 +4793,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Rafal Urbanski",
+            "position": "236",
             "notes": "OTHERRARE"
         },
         {
@@ -4576,6 +4813,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Pulsar Bytes",
+            "position": "237",
             "notes": "BLUEUNCOMMON"
         },
         {
@@ -4595,6 +4833,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Estudio Guardabosques",
+            "position": "238",
             "notes": "MONARCHCYCLE"
         },
         {
@@ -4614,6 +4853,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mat Szulik",
+            "position": "239",
             "notes": "MONARCHCYCLE"
         },
         {
@@ -4633,6 +4873,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ali Hoff",
+            "position": "240",
             "notes": "MONARCHCYCLE"
         },
         {
@@ -4652,6 +4893,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ziqi Chan",
+            "position": "241",
             "notes": "BLACKRARE6"
         },
         {
@@ -4671,6 +4913,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nikita Bulatov",
+            "position": "242",
             "notes": "MONARCHCYCLE"
         },
         {
@@ -4690,6 +4933,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Caleb Worchester",
+            "position": "243",
             "notes": "BLACKRARE13"
         },
         {
@@ -4709,6 +4953,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mat Szulik",
+            "position": "244",
             "notes": "BLUERARE"
         },
         {
@@ -4728,6 +4973,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nexumorphic",
+            "position": "245",
             "notes": "WHITEUNCOMMON\nUW09"
         },
         {
@@ -4747,6 +4993,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nexumorphic",
+            "position": "246",
             "notes": "WHITERARE2"
         },
         {
@@ -4766,6 +5013,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nikita Bulatov",
+            "position": "247",
             "notes": "WHITERARE4"
         },
         {
@@ -4785,6 +5033,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Calder Moore",
+            "position": "248",
             "notes": "WHITERARE7"
         },
         {
@@ -4804,6 +5053,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Marcin Turecki",
+            "position": "249",
             "notes": "WHITERARE8"
         },
         {
@@ -4823,6 +5073,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mat Szulik",
+            "position": "250",
             "notes": "OTHERRARE"
         },
         {
@@ -4842,6 +5093,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mohamed Chahin",
+            "position": "251",
             "notes": "BLUERARE2"
         },
         {
@@ -4861,6 +5113,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "252",
             "notes": "BLUERARE3"
         },
         {
@@ -4880,6 +5133,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Auburn Hodgson",
+            "position": "253",
             "notes": "BLUERARE4"
         },
         {
@@ -4899,6 +5153,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Trevor Carlee",
+            "position": "254",
             "notes": "BLACKRARE4"
         },
         {
@@ -4918,6 +5173,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Alf Anas",
+            "position": "255",
             "notes": "BLACKRARE5"
         },
         {
@@ -4937,6 +5193,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "256",
             "notes": "REDRARE2\n\nDINOCURVE?"
         },
         {
@@ -4956,6 +5213,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Daniela Comarella",
+            "position": "257",
             "notes": "REDRARE3"
         },
         {
@@ -4975,6 +5233,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mat Szulik",
+            "position": "258",
             "notes": "REDRARE8\n!exportname Levy Paths"
         },
         {
@@ -4994,6 +5253,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "VentuarGames",
+            "position": "259",
             "notes": "REDRARE9"
         },
         {
@@ -5013,6 +5273,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mohammed Chahin",
+            "position": "260",
             "notes": "GREENRARE6"
         },
         {
@@ -5032,6 +5293,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "PULSAR BYTES",
+            "position": "261",
             "notes": "GREENRARE8"
         },
         {
@@ -5051,6 +5313,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Maxime Galland",
+            "position": "262",
             "notes": "GREENRARE\nASSIGN"
         },
         {
@@ -5070,6 +5333,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Alex Pahomov",
+            "position": "263",
             "notes": "GREENUNCOMMON\nUG05"
         },
         {
@@ -5089,6 +5353,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Trevor Carlee",
+            "position": "264",
             "card_name2": "Arise",
             "color2": "WBRG",
             "type2": "Vertex Sorcery",
@@ -5118,6 +5383,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Oliver Beck",
+            "position": "265",
             "notes": "BLACKRARE10"
         },
         {
@@ -5137,6 +5403,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mikhail Pigichka",
+            "position": "266",
             "notes": "BASICLAND"
         },
         {
@@ -5156,6 +5423,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "267",
             "notes": "GREENRARE4"
         },
         {
@@ -5175,6 +5443,7 @@
             "loyalty": "3",
             "designer": "Myr",
             "artist": "Kuro-Illustrations",
+            "position": "268",
             "notes": "OTHERRARE"
         },
         {
@@ -5194,6 +5463,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mat Szulik",
+            "position": "269",
             "notes": "GREENRARE2"
         },
         {
@@ -5213,6 +5483,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jeremy Vitry",
+            "position": "270",
             "notes": "GREENUNCOMMON\nUG02"
         },
         {
@@ -5232,6 +5503,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "271",
             "notes": "OTHERRARE\nDINOCURVE?"
         },
         {
@@ -5251,6 +5523,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ste Flack",
+            "position": "272",
             "notes": "BLACKRARE9"
         },
         {
@@ -5270,6 +5543,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Rafal Urbanski",
+            "position": "273",
             "notes": "UM05\nARCUNSET1"
         },
         {
@@ -5289,6 +5563,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mat Szulik",
+            "position": "274",
             "notes": "BLUEUNCOMMON\nUU11"
         },
         {
@@ -5308,6 +5583,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "275",
             "notes": "WHITECOMMON\nCW11"
         },
         {
@@ -5327,6 +5603,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "276",
             "notes": "REDRARE7"
         },
         {
@@ -5346,6 +5623,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "MMDCharizard",
+            "position": "277",
             "notes": "REDRARE6"
         },
         {
@@ -5365,6 +5643,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "R\u00e9ka Farkas",
+            "position": "278",
             "notes": "BLUERARE13"
         },
         {
@@ -5384,6 +5663,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "279",
             "notes": "OTHERRARE"
         },
         {
@@ -5403,6 +5683,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Julien Louche",
+            "position": "280",
             "notes": "BLUERARE7"
         },
         {
@@ -5413,7 +5694,7 @@
             "number": 50,
             "color_identity": "U",
             "cost": "{2}{U}{U}",
-            "rules_text": "Create a token that's a copy of target permanent, except its name is Mirrored Entity.\nRetopology {2}{U}{U}{U}{U} [i](Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)[/i]",
+            "rules_text": "Create a token that's a copy of target permanent, except its name is Mirrored Entity.\nRetopology {2}{U}{U}{U}{U} [i](Cast a copy of this from your graveyard by exiling it and paying {2}{U}{U}{U}{U}. Spend only mana from differently named sources this way.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -5422,6 +5703,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Trevor Carlee",
+            "position": "281",
             "notes": "BLUERARE8"
         },
         {
@@ -5441,6 +5723,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "David J Fulde",
+            "position": "282",
             "notes": "OTHERRARE"
         },
         {
@@ -5460,6 +5743,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jona Dinges",
+            "position": "283",
             "notes": "WHITERARE9"
         },
         {
@@ -5479,6 +5763,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "NonArtArtist",
+            "position": "284",
             "notes": "OTHERRARE"
         },
         {
@@ -5498,6 +5783,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Harleigh Bass",
+            "position": "285",
             "notes": "COLOURLESSRARE"
         },
         {
@@ -5508,7 +5794,7 @@
             "number": 286,
             "color_identity": "C",
             "cost": "{3}{C}",
-            "rules_text": "Trample, haste\nRetopology {C}{C}{C} [i](Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)[/i]",
+            "rules_text": "Trample, haste\nRetopology {C}{C}{C} [i](Cast a copy of this from your graveyard by exiling it and paying {C}{C}{C}. Spend only mana from differently named sources this way.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "4/4",
             "special_text": "",
@@ -5517,6 +5803,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Nevin Chang",
+            "position": "286",
             "notes": ""
         },
         {
@@ -5536,6 +5823,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Lars Grevsm\u00fchl",
+            "position": "287",
             "notes": ""
         },
         {
@@ -5555,6 +5843,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Zacharias Reinhardt",
+            "position": "288",
             "notes": "OTHERRARE\nNEWCARD"
         },
         {
@@ -5574,6 +5863,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Benjamin Del",
+            "position": "289",
             "notes": "COLOURLESSUNCOMMON"
         },
         {
@@ -5593,6 +5883,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Caleb Worcester",
+            "position": "290",
             "notes": "WHITERARE\nNEWCARD"
         },
         {
@@ -5612,6 +5903,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Oswelt",
+            "position": "291",
             "notes": "OTHERRARE\nNEWCARD"
         },
         {
@@ -5631,6 +5923,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "292",
             "card_name2": "Wound",
             "color2": "BRG",
             "type2": "Vertex Enchantment",
@@ -5660,6 +5953,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "293",
             "notes": "GREENUNCOMMON\nNEWCARD\nUG11"
         },
         {
@@ -5679,6 +5973,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Gurk Vangus",
+            "position": "294",
             "notes": "GREENRARE\nNEWCARD"
         },
         {
@@ -5698,6 +5993,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Caleb Worcester",
+            "position": "295",
             "notes": "NEWCARD\nSHADERCYCLE\nWHITERARE"
         },
         {
@@ -5717,6 +6013,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Caleb Worcester",
+            "position": "296",
             "notes": "NEWCARD\nSHADERCYCLE\nBLACKRARE"
         },
         {
@@ -5736,6 +6033,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Caleb Worcester",
+            "position": "297",
             "notes": "NEWCARD\nSHADERCYCLE\nBLUERARE"
         },
         {
@@ -5755,6 +6053,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ali Hoff",
+            "position": "298",
             "notes": "NEWCARD\nSHADERCYCLE\nREDRARE"
         },
         {
@@ -5774,6 +6073,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ali Hoff",
+            "position": "299",
             "notes": "NEWCARD\nSHADERCYCLE\nGREENRARE"
         },
         {
@@ -5793,6 +6093,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mezaka",
+            "position": "300",
             "notes": "WHITERARE\nNEWCARD"
         },
         {
@@ -5812,6 +6113,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Caleb Worcester",
+            "position": "301",
             "notes": "COLOURLESSRARE"
         },
         {
@@ -5831,6 +6133,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Caleb Worcester",
+            "position": "302",
             "notes": "BLUERARE\nNEWCARD"
         },
         {
@@ -5850,6 +6153,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Caleb Worcester",
+            "position": "303",
             "notes": "NEWCARD\nBLUERARE"
         },
         {
@@ -5869,6 +6173,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Caleb Worcester",
+            "position": "304",
             "notes": "!tag CanonReprint\nBLACKRARE\nNEWCARD"
         },
         {
@@ -5888,6 +6193,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Caleb Worcester",
+            "position": "305",
             "notes": "BLACKRARE\nNEWCARD"
         },
         {
@@ -5907,6 +6213,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Kyan0s",
+            "position": "306",
             "notes": "REDRARE\nNEWCARD"
         },
         {
@@ -5926,6 +6233,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "307",
             "notes": "REDRARE\nNEWCARD"
         },
         {
@@ -5945,6 +6253,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "308",
             "notes": "NEWCARD\nGREENRARE"
         },
         {
@@ -5964,6 +6273,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ali Hoff",
+            "position": "309",
             "notes": "COLOURLESSUNCOMMON"
         },
         {
@@ -5983,6 +6293,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "310",
             "notes": "BLUEUNCOMMON\nUU06 Storm Crowed"
         },
         {
@@ -6002,6 +6313,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "311",
             "notes": "OTHERMYTHIC"
         },
         {
@@ -6021,6 +6333,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Carina Soares",
+            "position": "312",
             "notes": ""
         },
         {
@@ -6040,6 +6353,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mohamed Chahin",
+            "position": "313",
             "notes": "!related Spoils of Scarcity;"
         },
         {
@@ -6059,6 +6373,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Estudio Guardabosques",
+            "position": "314",
             "notes": "L\u00e9vy Paths"
         },
         {
@@ -6078,6 +6393,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jennah Walters",
+            "position": "315",
             "notes": "Subsurface Spawning\nEpoch Ending\nConquex, Broken Mandate"
         },
         {
@@ -6097,6 +6413,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Giselle Manzano Ram\u00edrez",
+            "position": "316",
             "notes": "TOKEN\nAnivir, Forgotten Savior"
         },
         {
@@ -6116,6 +6433,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "David Romero",
+            "position": "317",
             "notes": "Merion, Planar Smuggler\nConquex, Broken Mandate"
         },
         {
@@ -6135,6 +6453,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Estudio Guardabosques",
+            "position": "318",
             "notes": "Edravir's Lynchpin"
         },
         {
@@ -6154,6 +6473,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Mat Szulik",
+            "position": "319",
             "notes": "!related Dynotopic Stampede;"
         },
         {
@@ -6173,6 +6493,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "320",
             "notes": "NEWCARD"
         },
         {
@@ -6192,6 +6513,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "321",
             "notes": "!noscript"
         },
         {
@@ -6211,6 +6533,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "322",
             "notes": ""
         },
         {
@@ -6230,6 +6553,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Ali Hoff",
+            "position": "323",
             "notes": ""
         },
         {
@@ -6249,6 +6573,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Jonathan Lam",
+            "position": "324",
             "notes": "NEWCARD"
         },
         {
@@ -6268,6 +6593,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "BoNk3rZz",
+            "position": "325",
             "notes": "!related Sparrow Spires;"
         },
         {
@@ -6287,6 +6613,7 @@
             "loyalty": "",
             "designer": "Myr",
             "artist": "Adam Midzuk",
+            "position": "326",
             "notes": "!related Perpetual Cycle;\n!exportname Red Dinosaur"
         }
     ]
