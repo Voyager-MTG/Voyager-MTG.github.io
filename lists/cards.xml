@@ -11707,7 +11707,7 @@ Whenever you spend four or more mana to cast a spell, you may sacrifice enchantm
 		<card>
 			<name>Winged Turtle</name>
 			<text>Flying
-When this creature enters, if it isn&apos;t a token, mirror. (Create a token thats a copy of a token you control.)
+When this creature enters, if it isn&apos;t a token, mirror. (Create a token that&apos;s a copy of a token you control.)
 Whenever you create a token that doesn&apos;t share a name with a token you control, you may exile this creature, then return it to the battlefield under its owner&apos;s control at the beginning of the next end step.</text>
 			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/28.jpg" num="107" uuid="EXPT28">EXPT</set>
 			<prop>
@@ -11778,7 +11778,7 @@ Discard your hand, then exile the top three cards of your library. You may play 
 		</card>
 		<card>
 			<name>Warping Wolf</name>
-			<text>When this creature enters, return up to one target creature card from your graveyard to the battlefield. It enters as an enchantment with materialize X, where X is its mana value. (Tap one or more other enchantments you control with total mana value X or more: This also becomes an Icon creature until your next turn.)</text>
+			<text>When this creature enters, return up to one target creature card from your graveyard to the battlefield. It enters as an enchantment with materialize X, where X is its mana value. (Tap one or more other enchantments you control with total mana value X or more: This also becomes an Icon creature until your next upkeep.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/32.jpg" num="106" uuid="EXPT32">EXPT</set>
 			<prop>
 				<layout>normal</layout>
@@ -12949,7 +12949,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 		</card>
 		<card>
 			<name>Yaiba Robo</name>
-			<text>Restructure {I} (If you cast this for its restructure cost, it&apos;s a kindred artifact until you pay its mana cost as a sorcery.)
+			<text>Restructure {I} (If you cast this for its restructure cost, its a kindred artifact until you pay its mana cost as a sorcery.)
 At the beginning of combat on your turn, up to one target creature gains first strike until end of turn.</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/109.jpg" num="112" uuid="EXPT109">EXPT</set>
 			<prop>
@@ -14325,7 +14325,7 @@ Whenever Me attacks, choose one that hasn&apos;t been chosen. If you can&apos;t,
 		<card>
 			<name>Rustic Cultivator</name>
 			<text>This artifact enters tapped.
-When this artifact enters, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )
+When this artifact enters, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)
 {2}, {T}, Sacrifice this artifact: Draw a card from your library or from your sanctum at random.</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/0.jpg" num="335" uuid="FOE0">FOE</set>
 			<prop>
@@ -14437,7 +14437,7 @@ Prevent the next 3 damage that would be dealt to any target this turn. (Then put
 		</card>
 		<card>
 			<name>Meirel Pathwalker</name>
-			<text>When this creature enters, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )</text>
+			<text>When this creature enters, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/5.jpg" num="40" uuid="FOE5">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -14874,7 +14874,7 @@ Explorer – Whenever this creature attacks, draw a card, then discard a card if
 		</card>
 		<card>
 			<name>Outlands Trailblazer</name>
-			<text>When this creature enters, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )</text>
+			<text>When this creature enters, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/27.jpg" num="79" uuid="FOE27">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -15291,7 +15291,7 @@ Threshold – Whenever this creature attacks while you have seven or more cards 
 		</card>
 		<card>
 			<name>Pioneer&apos;s Premonition</name>
-			<text>Draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )
+			<text>Draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)
 Create a 1/1 black Drake creature token with flying.</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/49.jpg" num="129" uuid="FOE49">FOE</set>
 			<prop>
@@ -15381,7 +15381,7 @@ As long as you&apos;ve illuminated red, this creature gets +2/+0 and has first s
 		</card>
 		<card>
 			<name>Drougth Adventurer</name>
-			<text>When this creature enters, you may discard a card. If you do, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )</text>
+			<text>When this creature enters, you may discard a card. If you do, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/54.jpg" num="151" uuid="FOE54">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -15769,7 +15769,7 @@ Target creature you control gets +1/+1 and gains haste until end of turn. (Then 
 		<card>
 			<name>Outland Pair</name>
 			<text>Trample
-When this creature enters, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )</text>
+When this creature enters, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/74.jpg" num="205" uuid="FOE74">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -15895,7 +15895,7 @@ Draw a card from your library or from your sanctum at random. You may put a land
 		</card>
 		<card>
 			<name>Dust Converter</name>
-			<text>When this creature leaves the battlefield, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )</text>
+			<text>When this creature leaves the battlefield, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/81.jpg" num="238" uuid="FOE81">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -15912,7 +15912,7 @@ Draw a card from your library or from your sanctum at random. You may put a land
 		</card>
 		<card>
 			<name>Avakin Adventurer</name>
-			<text>When this creature enters, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )</text>
+			<text>When this creature enters, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/82.jpg" num="227" uuid="FOE82">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -16112,7 +16112,7 @@ Create a 1/1 silver Drake creature token with flying. (Then put this into your s
 		</card>
 		<card>
 			<name>Mana Compression</name>
-			<text>Put target noncreature permanent into its owner&apos;s sanctum. Mirror. (Create a token thats a copy of a token you control.)</text>
+			<text>Put target noncreature permanent into its owner&apos;s sanctum. Mirror. (Create a token thats a copy of another token you control.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/93.jpg" num="254" uuid="FOE93">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -16615,7 +16615,7 @@ When this creature leaves the battlefield, put the exiled creature onto the batt
 		</card>
 		<card>
 			<name>Sisters in Sorrow</name>
-			<text>Whenever this creature and at least one other creature attacks, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )</text>
+			<text>Whenever this creature and at least one other creature attacks, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/150.jpg" num="323" uuid="FOE150">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -16856,7 +16856,7 @@ At the beginning of combat on each turn, if a land entered under your control th
 		<card>
 			<name>Balutr Runners</name>
 			<text>When this creature enters, if it isn&apos;t a token, choose one – 
-• Mirror. (Create a token thats a copy of a token you control.)
+• Mirror. (Create a token thats a copy of another token you control.)
 • Reveal the top card of your library. If its a permanent card, put it into your hand.
 Evoke {1}{IG} (You may cast this spell for its evoke cost. If you do, it&apos;s sacrificed when it enters.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/163.jpg" num="278" uuid="FOE163">FOE</set>
@@ -17215,7 +17215,7 @@ This creature gets +1/+0 for each enchantment you control.</text>
 			<tablerow>1</tablerow>
 		</card>
 		<card>
-			<name>Clerics Claymore</name>
+			<name>Cleric&apos;s Claymore</name>
 			<text>When this Equipment enters and whenever you gain life, attach this to up to one target creature you control if it isn&apos;t already attached to a permanent.
 Equipped creature gets +2/+2.</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/181.jpg" num="331" uuid="FOE181">FOE</set>
@@ -17729,7 +17729,7 @@ Discard a card: This creature has size 4/4 until end of turn.</text>
 			<name>Unweave</name>
 			<text>Choose one –
 • Counter target permanent spell unless its controller pays {2}. If you control three or more tokens, counter that spell instead.
-• Draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )</text>
+• Draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/222.jpg" num="272" uuid="FOE222">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -18925,7 +18925,7 @@ Create a blue 4/4 Dragon Eye creature token with trample. (Then put this into yo
 			<text>Enchant creature
 When this enchantment enters, tap enchanted permanent.
 Enchanted permanent doesn&apos;t untap during its controller&apos;s untap step.
-When this enchantment leaves the battlefield, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )</text>
+When this enchantment leaves the battlefield, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/283.jpg" num="85" uuid="FOE283">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -19234,7 +19234,7 @@ Whenever you attack, if you&apos;ve illuminated black, each opponent loses 2 lif
 		</card>
 		<card>
 			<name>Spire of Rebirth</name>
-			<text>When this artifact enters, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )
+			<text>When this artifact enters, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)
 {3}{B}{B}, {T}, Sacrifice this artifact: Return target creature card from your graveyard to the battlefield. Activate only as a sorcery.</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/298.jpg" num="136" uuid="FOE298">FOE</set>
 			<prop>
@@ -19556,7 +19556,7 @@ Explorer – {1}{R}: This creature gets +2/+0 and gains trample until end of tur
 		<card>
 			<name>Seasoned Flamefinder</name>
 			<text>Prowess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)
-Whenever this creature attacks, you may discard a card. If you do, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )</text>
+Whenever this creature attacks, you may discard a card. If you do, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/312.jpg" num="170" uuid="FOE312">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -20477,7 +20477,7 @@ Whenever you attack with two or more creatures, you may reveal a permanent card 
 		<card>
 			<name>Outlands Chimera</name>
 			<text>Flying, ward {2}
-Whenever this creature enters or attacks, if its not a token, you may mirror. (Create a token thats a copy of another token you control.)</text>
+Whenever this creature enters or attacks, if its not a token, you may mirror. (Create a token that&apos;s a copy of a token you control.)</text>
 			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/362.jpg" num="260" uuid="FOE362">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -21124,7 +21124,7 @@ Whenever this creature attacks, you may discard a card. If you do, reveal random
 		<card>
 			<name>Ancient Interference</name>
 			<text>Counter target spell.
-Draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )</text>
+Draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/388.jpg" num="225" uuid="FOE388">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -21391,7 +21391,7 @@ As long as you control a white, blue, black, red, or silver permanent, this crea
 		</card>
 		<card>
 			<name>Mordel Peacekeeper // Tend Pride</name>
-			<text>When this creature enters, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )
+			<text>When this creature enters, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)
 
 ---
 
@@ -22336,7 +22336,7 @@ Whenever you cast or copy a noncreature spell, create a 1/1 white Shark enchantm
 			<name>Coralwisp Entity</name>
 			<text>Vigilance
 Whenever this enchantment attacks, you may reveal a nonpermanent card from your sanctum and put it into your hand.
-Materialize 3 (Tap any number of other enchantments you control with total mana value 3 or more: This becomes a creature in addition to its other types until your next upkeep.)</text>
+Materialize 3 (Tap one or more other enchantments you control with total mana value 3 or more: This also becomes an Icon creature until your next turn.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/461.jpg" num="66" uuid="FOE461">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -22485,7 +22485,7 @@ Non-Advisor creatures with mana value 5 or greater can&apos;t attack.</text>
 		</card>
 		<card>
 			<name>Ambitious Haze</name>
-			<text>{1}, Sacrifice this creature: Draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )
+			<text>{1}, Sacrifice this creature: Draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)
 {4}, Exile this card from your graveyard: Draft a card from your sanctum.</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/473.jpg" num="1" uuid="FOE473">FOE</set>
 			<prop>
@@ -22980,16 +22980,17 @@ Whenever a creature you control dies, you may discard a card if that creature en
 		</card>
 		<card>
 			<name>Vance Informant</name>
-			<text>Flying
+			<text>Flash
+Flying
 Sycophant (Whenever this creature deals damage to a player or planeswalker, the next spell you cast this turn costs {1} less to cast.)
-Whenever Vance Informant deals combat damage to a player or planeswalker, mill three cards. Return one with the highest mana value to your hand, then you lose life equal to the total mana value of the other two cards milled this way.</text>
+At the beginning of your postcombat main phase, an opponent chooses a nonland card in your graveyard. You may cast that card. If you don&apos;t, exile it and Vance Informant deals 2 damage to that player.</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/26.jpg" num="119" uuid="HOD26">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Creature – Faerie Assassin</type>
 				<maintype>Creature</maintype>
-				<manacost>3B</manacost>
+				<manacost>2BB</manacost>
 				<cmc>4</cmc>
 				<colors>B</colors>
 				<coloridentity>B</coloridentity>
@@ -23192,7 +23193,7 @@ Whenever Caryl Rey, the Rose attacks, exile the top card of your library. You ma
 		<card>
 			<name>Geistwald Deceiver</name>
 			<text>Haste
-{T}: Create a token that&apos;s a copy of target non-Ouphe creature you control. That token has haste. At the beginning of your next end step, forsake. (To forsake, sacrifice creatures with total toughness 3 or more.)</text>
+{T}: Create a token that&apos;s a copy of target non-Ouphe creature you control. That token has haste. At the beginning of your next end step, forsake. (Sacrifice creatures with total toughness 3 or more.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/36.jpg" num="144" uuid="HOD36">HOD</set>
 			<prop>
 				<layout>normal</layout>
@@ -23729,16 +23730,17 @@ Escape–{R}{G}{W}, Exile four other cards from your graveyard. (You may cast th
 		</card>
 		<card>
 			<name>In Defiance</name>
-			<text>{2}, Forsake: Target creature gets +3/+3 until end of turn. Activate only outside of combat. (To forsake, sacrifice creatures with total toughness 3 or more.)
-Whenever a creature you control dies, draw a card, then discard a card.</text>
+			<text>When In Defiance enters, create a 3/3 Knight creature token that&apos;s all colors.
+Forsake: Target creature gets +3/+3 until end of turn. Activate only outside of combat. (To forsake, sacrifice creatures with total toughness 3 or more.)
+Whenever a creature you control deals 6 or more damage, draw a card.</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/65.jpg" num="261" uuid="HOD65">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Enchantment</type>
 				<maintype>Enchantment</maintype>
-				<manacost>URW</manacost>
-				<cmc>3</cmc>
+				<manacost>1URW</manacost>
+				<cmc>4</cmc>
 				<colors>WUR</colors>
 				<coloridentity>WUR</coloridentity>
 			</prop>
@@ -23746,21 +23748,24 @@ Whenever a creature you control dies, draw a card, then discard a card.</text>
 		</card>
 		<card>
 			<name>Inspiring Castellan</name>
-			<text>Flying
-At the beginning of your upkeep, you may forsake. If you do, reveal the top card of your library until you reveal a nonland card with mana value 4 or less. You may cast that card without paying its mana cost. If you don&apos;t, put that card into your hand. (To forsake, sacrifice creatures with total toughness 3 or more.)</text>
+			<text>Flash
+Flying
+When Inspiring Castellan enters, create a 1/1 blue Scout creature token.
+Forsake: Inspiring Castellan gains hexproof, lifelink, and indestructible until end of turn. (To forsake, sacrifice creatures with total toughness 3 or more.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/66.jpg" num="262" uuid="HOD66">HOD</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
 				<type>Creature – Gargoyle Soldier</type>
 				<maintype>Creature</maintype>
-				<manacost>1URW</manacost>
-				<cmc>4</cmc>
+				<manacost>2URW</manacost>
+				<cmc>5</cmc>
 				<colors>WUR</colors>
 				<coloridentity>WUR</coloridentity>
 				<pt>3/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
+			<related>Scout HOD</related>
 		</card>
 		<card>
 			<name>Edict of the Mirrorkin</name>
@@ -23797,8 +23802,8 @@ Draw a card for each creature that died under your control this turn.</text>
 		</card>
 		<card>
 			<name>Whisperer of Armies</name>
-			<text>Whenever you cast a noncreature spell, create an X/X black Army creature token, where X is the number of spells you&apos;ve cast this turn.
-Whenever you attack, Armies you control gain trample until end of turn if their total power is 4 or greater. The same is true for menace and 8 or greater and lifelink for 12 or greater.</text>
+			<text>Bloom (Whenever you cast a spell that targets this creature, you may pay that spell&apos;s mana cost. If you do, copy that spell. You may choose new targets for the copy.)
+Whenever you cast a noncreature spell, create an X/X black Army creature token, where X is the number of spells you&apos;ve cast or copied this turn.</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/69.jpg" num="280" uuid="HOD69">HOD</set>
 			<prop>
 				<layout>normal</layout>
@@ -23809,7 +23814,7 @@ Whenever you attack, Armies you control gain trample until end of turn if their 
 				<cmc>4</cmc>
 				<colors>WBG</colors>
 				<coloridentity>WBG</coloridentity>
-				<pt>3/3</pt>
+				<pt>3/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
 			<related>Army HOD</related>
@@ -23865,8 +23870,8 @@ Enchanted player can&apos;t gain life, spells they cast cost {2} more to cast, a
 		</card>
 		<card>
 			<name>Castle Delta Agitator</name>
-			<text>Sneak {3}{B}{G}{U} (You may cast this spell for {3}{B}{G}{U} if you also return an unblocked attacker you control to hand during the declare blockers step. This creature enters tapped and attacking.)
-Whenever Castle Delta Agitator deals combat damage to a player or planeswalker, you may cast target card in your graveyard without paying its mana cost. If you do, exile that card as it resolves.</text>
+			<text>Sneak {B}{G}{U} (You may cast this spell for {B}{G}{U} if you also return an unblocked attacker you control to hand during the declare blockers step. This creature enters tapped and attacking.)
+Whenever Castle Delta Agitator enters, if you cast it, destroy target nonland permanent. It&apos;s controller draws a card.</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/73.jpg" num="245" uuid="HOD73">HOD</set>
 			<prop>
 				<layout>normal</layout>
@@ -23877,7 +23882,7 @@ Whenever Castle Delta Agitator deals combat damage to a player or planeswalker, 
 				<cmc>4</cmc>
 				<colors>UBG</colors>
 				<coloridentity>UBG</coloridentity>
-				<pt>4/4</pt>
+				<pt>3/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
 		</card>
@@ -24356,7 +24361,7 @@ Whenever an opponent casts a spell, if the amount of mana spent to cast it was l
 			<name>Paragon of Stories</name>
 			<text>Lifelink
 At the beginning of combat on your turn, you may forsake. If you do, put a +1/+1 counter on each creature you control. (To forsake, sacrifice creatures with total toughness 3 or more.)
-{3}{W}: Create a 2/1 red Soldier creature token. It can&apos;t block this turn.</text>
+{2}{W}: Create a 2/1 red Soldier creature token. Activate only outside of combat.</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/100.jpg" num="28" uuid="HOD100">HOD</set>
 			<prop>
 				<layout>normal</layout>
@@ -24848,11 +24853,11 @@ When Tacit Scorpion dies, it deals 2 damage to each opponent and you gain 2 life
 				<side>front</side>
 				<type>Creature – Scorpion</type>
 				<maintype>Creature</maintype>
-				<manacost>1B</manacost>
-				<cmc>2</cmc>
+				<manacost>2B</manacost>
+				<cmc>3</cmc>
 				<colors>B</colors>
 				<coloridentity>B</coloridentity>
-				<pt>1/3</pt>
+				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
 		</card>
@@ -25078,8 +25083,8 @@ Whenever you sacrifice a permanent, target creature can&apos;t block this turn.<
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
-				<type>Instant</type>
-				<maintype>Instant</maintype>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
 				<manacost>3R</manacost>
 				<cmc>4</cmc>
 				<colors>R</colors>
@@ -25262,7 +25267,7 @@ When Turnberry Overseer enters, choose a name. Create a legendary 3/3 Knight cre
 				<cmc>3</cmc>
 				<colors>G</colors>
 				<coloridentity>G</coloridentity>
-				<pt>2/2</pt>
+				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
 			<related>Reserves HOD</related>
@@ -27902,7 +27907,7 @@ When Mockery of Innocence enters, you may destroy target creature. If you do, yo
 		</card>
 		<card>
 			<name>Perle Retainer</name>
-			<text>When Perle Retainer dies, you may search your library for a legendary card and exile it. If you do, you may play it next turn.</text>
+			<text>When Perle Retainer dies, you may search your library for a legendary card and exile it. If you do, you may play it during your next turn.</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/299.jpg" num="151" uuid="HOD299">HOD</set>
 			<prop>
 				<layout>normal</layout>
@@ -28705,7 +28710,7 @@ Iterate (When this enters, conjure a colorless {6} 4/4 artifact creature version
 			<name>Render of Dreams</name>
 			<text>Impending 5–{1}{W} (If this spell was cast for its impending cost, it enters with five time counters and isn&apos;t a creature until they&apos;re removed. At the beginning of your end step, remove one.)
 Flying, vigilance
-Whenever this permanent enters or attacks, until your next turn, when a player next casts a noncreature spell, counter that spell unles that player pays {2}.</text>
+Whenever this permanent enters or attacks, until your next turn, when a player next casts a noncreature spell, counter that spell unless that player pays {2}.</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/IRD-files/img/6.jpg" num="9" uuid="IRD6">IRD</set>
 			<prop>
 				<layout>normal</layout>
@@ -30617,7 +30622,7 @@ Enchanted creature has +1/+1 for each land in your realm. (Your realm consists o
 				<cmc>3</cmc>
 				<colors>W</colors>
 				<coloridentity>W</coloridentity>
-				<loyalty>3</loyalty>
+				<loyalty>2</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
 		</card>
@@ -32953,8 +32958,8 @@ You may cast artifact spells and colorless spells from the top of your library.
 		<card>
 			<name>The Eternal Echo</name>
 			<text>Whenever you activate a loyalty ability of The Eternal Echo, create a colorless Echo planeswalker token at the beginning of your next end step and put 3 loyalty counters on it. It gains that ability, except it costs [-1].
-[+1]: Put a +1/+1 counter on target creature.
-[-1]: Each opponent loses 2 life.
+[+1]: Put a +1/+1 counter on up to one target creature.
+[-2]: Each opponent loses 2 life.
 [-3]: You gain 2 life and draw a card.</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/ITD-files/img/186.jpg" num="4" uuid="ITD186">ITD</set>
 			<prop>
@@ -41715,7 +41720,7 @@ Blazefoxes of Moz gets +2/+0 as long as your complexity is three or greater. (Yo
 		</card>
 		<card>
 			<name>Sunbound Swarm</name>
-			<text>Sunbound Swarm has bake as long as you&apos;ve gained life this turn. (When this enters, up to one target permanent gains its abilities until end of turn.)
+			<text>Sunbound Swarm has bake as long as you&apos;ve gained life this turn. (When this enters, up to one other target permanent gains its abilities until end of turn.)
 Flying, double strike, vigilance, trample, haste, protection from tokens and from copies of spells</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/50.jpg" num="265" uuid="PVR50">PVR</set>
 			<prop>
@@ -42244,7 +42249,7 @@ If a player would gain life, that player gets that many {V} instead. (Spend {V} 
 		<card>
 			<name>Slumbering Dreadblade</name>
 			<text>Flash
-Bake (When this enters, up to one other target permanent gains its abilities until end of turn.)
+Bake (When this enters, up to one target permanent gains its abilities until end of turn.)
 This permanent is a 3/3 Zombie Soldier artifact creature if an artifact entered this turn.</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/80.jpg" num="260" uuid="PVR80">PVR</set>
 			<prop>
@@ -42855,7 +42860,7 @@ Exile target creature or planeswalker.</text>
 		<card>
 			<name>Backface Culling</name>
 			<text>Flash
-Bake (When this enters, up to one other target permanent gains its abilities until end of turn.)
+Bake (When this enters, up to one target permanent gains its abilities until end of turn.)
 Sacrifice this permanent: Draw a card.</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/115.jpg" num="96" uuid="PVR115">PVR</set>
 			<prop>
@@ -44741,7 +44746,7 @@ Whenever Migrating Songon deals combat damage to a player, you get {V}. (Spend {
 		<card>
 			<name>Hyperbolic Jumper</name>
 			<text>Flash
-Bake (When this enters, up to one other target permanent gains its abilities until end of turn.)
+Bake (When this enters, up to one target permanent gains its abilities until end of turn.)
 If you&apos;ve cast a spell this turn and it wasn&apos;t your main phase, this permanent has flying.</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/221.jpg" num="53" uuid="PVR221">PVR</set>
 			<prop>
@@ -46448,7 +46453,7 @@ If five or more permanents incremented your complexity this turn, you may cast a
 		<card>
 			<name>Envoy of Debauchery</name>
 			<text>Flash
-Bake (When this enters, up to one other target permanent gains its abilities until end of turn.)
+Bake (When this enters, up to one target permanent gains its abilities until end of turn.)
 Defender, haste
 {2}, {T}: Each opponent loses 3 life and you gain 3 life. Activate only if you control three or more artifacts.</text>
 			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/323.jpg" num="237" uuid="PVR323">PVR</set>
@@ -61363,7 +61368,8 @@ Whenever you cast a blue, black, red, or green spell, untap Holt Sleeper and you
 		</card>
 		<card>
 			<name>Insight Beyond the Clouds</name>
-			<text>Augmented – Surveil 1, then draw a card. If you&apos;ve spent five or more colors to cast spells this turn, instead draw two cards.</text>
+			<text>Surveil 1, then draw a card. 
+Augmented – As long as you&apos;ve spent five or more colors to cast spells this turn, and Insight Beyond the Clouds is in your graveyard, it has flashback {0}. (You may cast this card from your graveyard for its flashback cost. Then exile it.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/50.jpg" num="51" uuid="WAW50">WAW</set>
 			<prop>
 				<layout>normal</layout>
@@ -62067,7 +62073,7 @@ Augmented – At the beginning of your end step, if you&apos;ve spent five or mo
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
-				<type>Creature – Elf Wizard</type>
+				<type>Creature – Elf Wizard Spy</type>
 				<maintype>Creature</maintype>
 				<manacost>1U</manacost>
 				<cmc>2</cmc>
@@ -62113,7 +62119,7 @@ Augmented – At the beginning of your end step, if you&apos;ve spent five or mo
 		<card>
 			<name>Overeager Researcher</name>
 			<text>Whenever Overeager Researcher deals combat damage to an opponent, draw a card.
-Ploy – Creatures you control can&apos;t be blocked by creatures with greater power this turn. (When this creature attacks, you may trigger its ploy. If you do, sacrifice it at the next end step.)</text>
+Ploy – Tap target creature and put a stun counter on it. (When this creature attacks, you may trigger its ploy. If you do, sacrifice it at the next end step.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/94.jpg" num="62" uuid="WAW94">WAW</set>
 			<prop>
 				<layout>normal</layout>

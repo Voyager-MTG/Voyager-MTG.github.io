@@ -21,7 +21,7 @@ const db = getFirestore(app);
 
 const names = {
 	//unclean: clean
-	"Exhuberant Genesis": "Exuberant Genesis"
+	"001, Errant Spark-Engine": "Errant Spark-Engine 001"
 }
 
 function isString(obj) {

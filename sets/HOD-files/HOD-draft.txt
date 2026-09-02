@@ -263,7 +263,7 @@
 		{
 			"name": "Vance Informant",
 			"rarity": "rare",
-			"mana_cost": "{3}{B}",
+			"mana_cost": "{2}{B}{B}",
 			"type": "Creature — Faerie Assassin",
 			"collector_number": "119",
 			"image_uris": {
@@ -660,7 +660,7 @@
 		{
 			"name": "In Defiance",
 			"rarity": "rare",
-			"mana_cost": "{U}{R}{W}",
+			"mana_cost": "{1}{U}{R}{W}",
 			"type": "Enchantment",
 			"collector_number": "261",
 			"image_uris": {
@@ -670,7 +670,7 @@
 		{
 			"name": "Inspiring Castellan",
 			"rarity": "rare",
-			"mana_cost": "{1}{U}{R}{W}",
+			"mana_cost": "{2}{U}{R}{W}",
 			"type": "Creature — Gargoyle Soldier",
 			"collector_number": "262",
 			"image_uris": {
@@ -1280,7 +1280,7 @@
 		{
 			"name": "Tacit Scorpion",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{B}",
+			"mana_cost": "{2}{B}",
 			"type": "Creature — Scorpion",
 			"collector_number": "112",
 			"image_uris": {
@@ -1411,7 +1411,7 @@
 			"name": "Beacon of Greatness",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{R}",
-			"type": "Instant",
+			"type": "Sorcery",
 			"collector_number": "130",
 			"image_uris": {
 				"en": "https://Voyager-MTG.github.io/sets/HOD-files/img/130_Beacon of Greatness.jpg"
