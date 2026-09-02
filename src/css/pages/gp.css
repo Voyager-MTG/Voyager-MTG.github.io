@@ -166,6 +166,10 @@ hr {
 	border: 2px solid var(--opposite);
 }
 
+#manage-tab-select img {
+	filter: brightness(0) invert();
+}
+
 /* .bar {
             background-color: white;
             height: 1px;

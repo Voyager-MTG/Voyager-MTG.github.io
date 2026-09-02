@@ -579,7 +579,7 @@
 				face_card.className = 'jmp-face';
 				for (const card of card_list_arrayified) {
 					if (card.card_name == pack.face_card) { 
-						face_card.src = "/sets+ card.set + "-files/img/" + card.position + ((card.shape.includes("double")) ? "_front" : "") + "." + card.image_type;
+						face_card.src = "/sets" + card.set + "-files/img/" + card.position + ((card.shape.includes("double")) ? "_front" : "") + "." + card.image_type;
 						break;
 					}
 				}
@@ -622,7 +622,7 @@
 				face_card.className = 'jmp-face';
 				for (const card of card_list_arrayified) {
 					if (card.card_name == pack.face_card) { 
-						face_card.src = "/sets+ card.set + "-files/img/" + card.position + ((card.shape.includes("double")) ? "_front" : "") + "." + card.image_type;
+						face_card.src = "/sets" + card.set + "-files/img/" + card.position + ((card.shape.includes("double")) ? "_front" : "") + "." + card.image_type;
 						break;
 					}
 				}
@@ -888,8 +888,14 @@
 		};
 
 		window.openMaster = async () => {
+			let packs = [];
+			await getDoc(doc(db, 'collectionleague', username)).then(docSnap => {
+				const data = doc.data;
+				packs = data.packs;
+			});
+			packs.push(Array(7).fill('MASTER'));
 			await setDoc(doc(db, 'collectionleague', username), {
-				'packs': Array(7).fill('MASTER'),
+				'packs': packs,
 				'packsOpened': 0,
 				'collection': ''
 			});

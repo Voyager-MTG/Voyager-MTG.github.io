@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>test</title>
+    </head>
+    <body>
+        <script src="draft-compressor.js"></script>
+        <script>
+            async function main() {
+                let compressed;
+                let log;
+                await fetch('deckdata-cleaner/log.json').then(res => res.json()).then(json => log = json);
+                compressed = await compressLog(log, 'PTN');
+                console.log(compressed);
+                console.log(await decompressLog(compressed));
+            }
+
+            main();
+        </script>
+    </body>
+</html>

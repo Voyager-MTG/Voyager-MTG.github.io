@@ -10,8 +10,8 @@
 	<link rel="stylesheet" href="/src/css/deck-container.css">
 	<link rel="stylesheet" href="/src/css/tab.css">
 	<link rel="stylesheet" href="/src/css/pages/gp.css">
+	<link rel="stylesheet" href="/src/css/pages/draft.css">
 </head>
-
 <body>
 	<img src="/img/header/menu.png" class="header-control" onclick="toggleHeader()">
 	<div class="header">
@@ -65,12 +65,10 @@
 				<img src="/img/trophy.png" class="tab-switch-icon">
 				<span>Stats</span>
 			</div>
-		</div>
-		<div class="admin-container" id="admin">
-			<span class="text">Admin Options: </span>
-			<button class="push-gp admin-btn" id="push-gp">Push GP Round</button>
-			<button class="new-gp admin-btn" id="new-gp">Create new GP</button>
-			<button class="end-gp admin-btn" id="end-gp">End GP</button>
+			<div class="tab-btn" id="manage-tab-select" onclick="changeTab('manage')">
+				<img src="/img/header/settings.png" class="tab-switch-icon">
+				<span>Manage</span>
+			</div>
 		</div>
 		<div class="options-container">
 			<span class="text">Options: </span>
@@ -83,15 +81,19 @@
 			<div class="decks-tab" id="decklists"></div>
 			<div class="rounds-tab" id="games"></div>
 			<div class="stats-tab" id="stats"></div>
+			<div class="manage-tab" id="manage">
+				<input type="file" class="draft-log-input">
+				<button class="admin-btn upload-log">Upload a Draft Log</button>
+			</div>
 		</div>
 	</div>
 	<div id="modal-container">
 		<div id="modal-content" class="popout">
-			<span class="close"
-				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
+			<span class="close" onclick="closeModal()">&times;</span>
 		</div>
 	</div>
 	<script src="/src/js/background.js"></script>
+	<script src="/src/js/draft-compressor.js"></script>
 	<script>
 		
 		let raw_gradients = null;
@@ -190,7 +192,7 @@
 		}
 	</script>
 	<script type="module">
-		// <!--MARK: init-->
+		// MARK: init
 		// Import the functions you need from the SDKs you need
 		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
 		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
@@ -216,7 +218,7 @@
 		let password = "";
 		let sessionid = localStorage.getItem('settings.session');
 		let decks = {};
-		let admin = false;
+		let organizer = false;
 		const urlParams = new URLSearchParams(window.location.search);
 		let event = urlParams.get('event');
 		let card_list;
@@ -238,7 +240,7 @@
 			})
 		}
 
-		await getDoc(doc(db, 'events', event)).then(async docSnap => {
+		await getDoc(doc(db, 'drafts', event)).then(async docSnap => {
 			event_data = docSnap.data();
 		});
 
@@ -252,22 +254,22 @@
 			await getDoc(doc(db, 'users', username)).then(docSnap => {
 				let data = docSnap.data();
 				decks = data.decks;
-				admin = data.admin;
+				organizer = data.admin || data.organizer;
 			});
 		}
 
-		function addAdminEventListeners() {
-			document.getElementById('push-gp').addEventListener("click", (e) => {
-				pushGP();
-			});
-			document.getElementById('new-gp').addEventListener("click", (e) => {
-				newGP();
-			});
-			document.getElementById('end-gp').addEventListener("click", (e) => {
-				endGP();
-			});
-			document.getElementById('admin').style.display = "block";
-		}
+		// function addAdminEventListeners() {
+		// 	document.getElementById('push-gp').addEventListener("click", (e) => {
+		// 		pushGP();
+		// 	});
+		// 	document.getElementById('new-gp').addEventListener("click", (e) => {
+		// 		newGP();
+		// 	});
+		// 	document.getElementById('end-gp').addEventListener("click", (e) => {
+		// 		endGP();
+		// 	});
+		// 	document.getElementById('admin').style.display = "block";
+		// }
 
 		function addButtonEventListeners() {
 			document.getElementById("drop").addEventListener("click", (e) => {
@@ -840,6 +842,71 @@
 			}
 		}
 
+		function organizerReload() {
+			document.querySelector('.tab-select').style.gridTemplateColumns = 'repeat(4, 1fr)';
+			document.querySelector('#manage-tab-select').style.display = 'grid';
+			makeManageTab();
+		}
+
+		function makeManageTab() {
+			document.querySelector('.upload-log').addEventListener('click', () => {
+				document.querySelector('.draft-log-input').click();
+				// const modal_content = document.querySelector('#modal-content');
+				// modal_content.innerHTML = '<span class="close" onclick="closeModal()">&times;</span>';
+				// document.querySelector('#modal-container').style.display = 'block';
+			});
+
+			document.querySelector('.draft-log-input').addEventListener('change', event => {
+				const files = event.target.files;
+
+				if (files.length > 0) {
+					const file = files[0];
+					const name = file.name.replace(/\.[^/.]+$/, "");
+					const reader = new FileReader();
+					reader.onload = async function (e) {
+						let users;
+						try {
+							const fileContent = e.target.result;
+							const log = JSON.parse(fileContent);
+							if (log.version != '2.1' || log.type != 'Draft') {
+								alert('Invalid draft file!');
+								return;
+							}
+
+							users = Object.values(log.users).map(u => u.userName);
+							// const compressed = await compressLog(log, event_data.set);
+							// await fetch(`http://localhost:10000/events/draft/uploadlog?event=${event_data.name}`);
+						}
+						catch {
+							alert('Error while reading draft log!');
+						}
+						makeDraftLogModal(users);
+					}
+
+					reader.readAsText(file);
+				}
+			});
+		}
+
+		function makeDraftLogModal(users) {
+			const modal_content = document.querySelector('#modal-content');
+			let html = `
+				<span class="close" onclick="closeModal()">&times;</span>
+				<div class="draft-log-users">
+					<span class="draft-log-header">Username in Draftmancer</span>
+					<span class="draft-log-header">Discord Username (leave blank if drafter is a bot)</span>
+			`;
+
+			for (const user of users) {
+				html += `<span class="draft-log-draftmancer-username">${user}</span><input class="draft-log-discord-username" placeholder="Username ...">`
+			}
+
+			html += `<button class="admin-btn"></button>`
+			html += '</div>';
+			modal_content.innerHTML = html;
+			document.querySelector('#modal-container').style.display = 'block';
+		}
+
 		async function reload() {
 			const decks = event_data.decks;
 			const rounds = JSON.parse(event_data.rounds);
@@ -853,11 +920,11 @@
 			document.title = event;
 
 			// button listeners
-			if (admin) {
-				addAdminEventListeners();
-				if (urlParams.get("action") == "push") {
-					pushGP();
-				}
+			if (organizer) {
+				organizerReload();
+				// if (urlParams.get("action") == "push") {
+				// 	pushGP();
+				// }
 			}
 			addButtonEventListeners();
 
