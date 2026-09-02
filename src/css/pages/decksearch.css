@@ -51,6 +51,10 @@
 	margin-top: 50px;
 }
 
+.deck-card {
+	height: 200px;
+}
+
 @media (max-device-width: 750px) {
 	.results-container {
 		grid-template-columns: 1fr 1fr;

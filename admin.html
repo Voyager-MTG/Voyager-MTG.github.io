@@ -55,9 +55,9 @@
 				<img src="/img/trophy.png" class="tab-switch-icon">
 				<span>Events</span>
 			</div>
-			<div class="tab-btn" id="opener-tab-select" onclick="changeTab('opener')">
+			<div class="tab-btn" id="trello-tab-select" onclick="changeTab('trello')">
 				<img src="/img/header/deck.png" class="tab-switch-icon">
-				<span>Pack Opener</span>
+				<span>Resources</span>
 			</div>
 			<div class="tab-btn" id="viewer-tab-select" onclick="changeTab('viewer')">
 				<img src="/img/show-white.png" class="tab-switch-icon">
@@ -68,7 +68,18 @@
 			<div class="tab home-tab" id="home">
 				home
 			</div>
-			<div class="tab events-tab" style="display: none;" id="events">
+			<div class="tab events-tab" style="display: none;" id="events"></div>
+			<div class="tab trello-tab" style="display: none;" id="trello">
+				<blockquote class="trello-board-compact">
+					<a href="https://trello.com/b/hOWRKlUp/voyager">Trello Board</a>
+				</blockquote>
+				<a href="https://console.firebase.google.com/project/voyager-78e30/firestore/databases/-default-/data/~2Finfo~2Faccountlinks">
+					<div class="resource-link firebase">
+						<div class="resource-header">Firebase</div>
+						<div class="resource-footer">Voyager Database</div>
+						<img src="/img/phoenix.png" class="resource-image">
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -78,6 +89,7 @@
 				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
 		</div>
 	</div>
+	<script src="https://p.trellocdn.com/embed.min.js"></script>
 	<script src="/src/js/background.js"></script>
 	<script>
 		document.addEventListener("DOMContentLoaded", async function () {

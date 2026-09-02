@@ -21,7 +21,7 @@ const db = getFirestore(app);
 
 const names = {
 	//unclean: clean
-	"Planar Boundary": "The Boundary"
+	"Exhuberant Genesis": "Exuberant Genesis"
 }
 
 function isString(obj) {

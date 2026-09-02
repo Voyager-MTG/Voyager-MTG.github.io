@@ -168,13 +168,12 @@ def auto_related(card, tokens):
 						if tk['card_name'] == token_name: 
 							related_cards.append([tk, 1, '!conjured' in tk['notes'], False])
 							break
-						
 				else:
 					if token_to_script: related_cards.append([token_to_script, count, '!conjured' in token_to_script['notes'], False])
 
 	return related_cards
 
-def  get_related(notes, instruction, tag):
+def get_related(notes, instruction, tag):
 	related = []
 	for line in notes.split('\n'):
 		if not line.startswith(instruction):

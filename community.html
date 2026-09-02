@@ -147,6 +147,7 @@
 		let decks_html;
 		let users_html;
 		let cards_html;
+		let user_data;
 		let sort_cards = "name";
 		let initial_load = true;
 
@@ -178,12 +179,11 @@
 			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
 				let data = docSnap.data();
 				username = data.username;
-				password = data.password;
 			});
 
 			await getDoc(doc(db, 'users', username)).then(docSnap => {
-				let data = docSnap.data();
-				decks = data.decks;
+				user_data = docSnap.data();
+				decks = user_data.decks;
 			});
 		}
 
@@ -248,7 +248,7 @@
 
 				all_events_docs.forEach((doc) => {
 					const data = doc.data();
-					all_events.push(data);
+					all_events.push({...data, id: doc.id});
 					for (const user in data.decks) {
 						let deck = data.decks[user];
 
@@ -288,6 +288,57 @@
 		}
 
 		function makeEventTab() {
+			const tab = document.createElement('div');
+			tab.className = 'events-tab';
+			
+			if (user_data.admin || user_data.organizer) {
+				const buttons = document.createElement('div');
+				buttons.className = 'admin-buttons-container';
+
+				const fire = document.createElement('button');
+				fire.className = 'admin-button';
+				fire.innerText = 'Fire a Draft';
+				fire.onclick = () => {
+					const form_options = [
+						{name: 'Set Code', id: 'code', type: 'short'},
+						{name: 'Draft Link', id: 'draft-link', type: 'short'},
+						{name: 'Blurb', id: 'draft-blurb', type: 'long'}
+					];
+
+					const form = document.createElement('div');
+					form.className = 'fire-form';
+					let html = '';
+
+					for (const option of form_options) {
+						if (option.type == 'short') {
+							html += `<div class="fire-form-option-short"><span class="fire-form-label">${option.name}</span><input class="${option.id} fire-form-input" placeholder="Enter ${option.name}"></div>`
+						}
+						else if (option.type == 'long') {
+							html += `<div class="fire-form-option-long"><span class="fire-form-label">${option.name}</span><textarea class="${option.id} fire-form-textarea fire-form-input" placeholder="Enter ${option.name}"></textarea></div>`
+						}
+					}
+
+					html += `<button class="admin-button">Submit</button>`;
+					form.innerHTML = html;
+
+					form.querySelector('.admin-button').onclick = async () => {
+						const option_data = form_options.reduce((acc, opt) => {
+							return acc + `&${opt.id}=${encodeURIComponent(form.querySelector('.' + opt.id).value)}`;
+						}, '');
+						console.log('sending', option_data);
+						await fetch(`http://localhost:10000/events/draft/fire?session=${localStorage.getItem('settings.session')}${option_data}`);
+						closeModal();
+					}
+
+					document.querySelector('#modal-content').innerHTML = '';
+					document.querySelector('#modal-content').appendChild(form);
+					document.querySelector('#modal-container').style.display = 'block';
+				}
+
+				buttons.appendChild(fire);
+				tab.appendChild(buttons);
+			}
+			
 			const container = document.createElement("div");
 			container.className = "events-container";
 			for (const event of all_events) {
@@ -315,21 +366,68 @@
 
 				container.appendChild(event_container);
 			}
-			return container;
+
+			tab.appendChild(container);
+			return tab;
 		}
 
+		// function gridifyDeck(deck) {
+		// 	let full_deck_container = document.createElement('div');
+		// 	full_deck_container.className = "full-deck-container";
+
+		// 	let deck_container = document.createElement('div');
+		// 	deck_container.className = "deck-container";
+
+		// 	let colors_container = document.createElement('div');
+		// 	colors_container.className = "colors-container";
+
+		// 	let card_stats;
+		// 	let deck_preview = document.createElement('img');
+
+		// 	for (const card of card_list_arrayified) {
+		// 		if (deck.previewimg == card.card_name) {
+		// 			card_stats = card;
+		// 			break;
+		// 		}
+		// 	}
+
+		// 	if (!card_stats) {
+		// 		deck_preview.src = "/img/card_back.png"
+		// 	} else {
+		// 		deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+		// 	}
+
+		// 	deck_preview.onclick = function () {
+		// 		window.location.href = deck.url.replaceAll('deckbuilder', 'deck');
+		// 	}
+
+		// 	deck_preview.style.cursor = "pointer";
+		// 	deck_preview.className = "deck-preview-img";
+
+		// 	const deck_name = document.createElement('div');
+		// 	deck_name.className = "deck-name";
+		// 	deck_name.innerText = deck.name;
+
+
+		// 	const colors = deck.colors ? Array.from(deck.colors).sort(colorSort) : "";
+
+		// 	for (const color of colors) {
+		// 		const color_ele = document.createElement('img');
+		// 		color_ele.src = `/img/mana/mana_${color}.png`; // fuck you git
+		// 		color_ele.className = "mana-img";
+		// 		colors_container.appendChild(color_ele);
+		// 	}
+
+		// 	deck_container.appendChild(deck_name);
+		// 	deck_container.appendChild(deck_preview);
+		// 	full_deck_container.appendChild(deck_container);
+		// 	full_deck_container.appendChild(colors_container);
+		// 	return (full_deck_container);
+		// }
+
 		function gridifyDeck(deck) {
-			let full_deck_container = document.createElement('div');
-			full_deck_container.className = "full-deck-container";
-
-			let deck_container = document.createElement('div');
-			deck_container.className = "deck-container";
-
-			let colors_container = document.createElement('div');
-			colors_container.className = "colors-container";
-
 			let card_stats;
-			let deck_preview = document.createElement('img');
+			let src;
 
 			for (const card of card_list_arrayified) {
 				if (deck.previewimg == card.card_name) {
@@ -339,43 +437,52 @@
 			}
 
 			if (!card_stats) {
-				deck_preview.src = "/img/card_back.png"
+				src = "/img/card_back.png"
 			} else {
-				deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+				src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 			}
 
-			deck_preview.onclick = function () {
-				window.location.href = deck.url.replaceAll('deckbuilder', 'deck');
-			}
-
-			deck_preview.style.cursor = "pointer";
-			deck_preview.className = "deck-preview-img";
-
-			const deck_name = document.createElement('div');
-			deck_name.className = "deck-name";
-			deck_name.innerText = deck.name;
-
-
-			const colors = deck.colors ? deck.colors : "";
+			/*
+			<a class="deck-card">
+				<div class="deck-card-bg" style="background-image: url('https://uiwow7.github.io/sets/DSW-files/img/241_Protect%20Boundless%20Will.jpg')"></div>
+				<div class="deck-card-overlay"></div>
+				<div class="deck-card-info">
+					<h1>Name</h1>
+					<h3><span class="mana mana-w"></span><span class="mana mana-i"></span></h3>
+				</div>
+			</a>
+			*/
+			let colors_html = '';
+			const colors = deck.colors ? Array.from(deck.colors).sort(colorSort) : "";
 
 			for (const color of colors) {
-				const color_ele = document.createElement('img');
-				color_ele.src = `/img/mana/mana_${color}.png`; // fuck you git
-				color_ele.className = "mana-img";
-				colors_container.appendChild(color_ele);
+				colors_html += `<span class="mana mana-${color.toLowerCase()}"></span>`;
 			}
 
-			deck_container.appendChild(deck_name);
-			deck_container.appendChild(deck_preview);
-			full_deck_container.appendChild(deck_container);
-			full_deck_container.appendChild(colors_container);
-			return (full_deck_container);
+			const deck_card = document.createElement('a');
+			deck_card.className = 'deck-card';
+			deck_card.href = deck.url;
+
+			// console.log(deck);
+			const user_html = deck.user ? `<h3>${deck.user}</h3>` : '';
+			console.log(deck);
+			deck_card.innerHTML = `
+				<div class="deck-card-bg" style="background-image: url('${src}')"></div>
+				<div class="deck-card-overlay"></div>
+				<div class="deck-card-info">
+					<h1>${deck.name}</h1>
+					${user_html}
+					<h3>${colors_html}</h3>
+				</div>
+			`;
+
+			return deck_card;
 		}
 
 		async function makeDecksTab() {
 			const winning_decks = await getWinningDecks();
 
-			const sections = [{ name: "New Decks", cond: "new", num: winning_decks.length }, { name: "Winning Decks", cond: "win", num: "all" }];
+			const sections = [{ name: "New Decks", cond: "new", num: winning_decks.length }, { name: "Top Decks", cond: "win", num: "all" }];
 
 			const content_container = document.createElement("div");
 			content_container.className = "decks-container";

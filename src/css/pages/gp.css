@@ -87,9 +87,14 @@ hr {
 
 .decks-tab {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	gap: 10px;
 	display: none;
+}
+
+.decks-tab .deck-card {
+	height: 300px;
+	cursor: pointer;
 }
 
 .stats-tab {
@@ -159,6 +164,10 @@ hr {
 	background-color: var(--light-accent);
 	border-radius: 8px;
 	border: 2px solid var(--opposite);
+}
+
+#manage-tab-select img {
+	filter: brightness(0) invert();
 }
 
 /* .bar {

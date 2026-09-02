@@ -68,7 +68,7 @@ function parseMarkdown(md) {
     md = md.replaceAll(/\{\{(.*?)\}\}/g, function (_1, card_name) {
         if (!image_bank[card_name]) {
             const card_stats = card_list_arrayified.find(c => c.card_name == card_name);
-            image_bank[card_name] = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+            image_bank[card_name] = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
         }
         console.log(card_name, image_bank[card_name]);
         return `<img class="card-image" src="${image_bank[card_name]}">`

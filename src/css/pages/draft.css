@@ -1,0 +1,42 @@
+/* .tab-select {
+    grid-template-columns: repeat(4, 1fr); */
+/* } */
+
+#manage-tab-select {
+    display: none;
+}
+
+.manage-tab {
+    display: none;
+}
+
+.draft-log-input {
+    display: none;
+}
+
+.draft-log-users {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 85%;
+    margin: auto;
+    font-size: 22px;
+    gap: 8px;
+}
+
+.draft-log-discord-username {
+    background: var(--light-accent);
+    border: 2px solid var(--dark-accent);
+    color: var(--popout-text-color);
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.draft-log-discord-username:focus {
+    background-color: var(--mid-accent);
+}
+
+.draft-log-discord-username:hover {
+    filter: brightness(1.2);
+}

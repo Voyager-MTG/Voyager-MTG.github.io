@@ -161,3 +161,70 @@
 	max-height: 26px;
 	margin: 2px;
 }
+
+
+.deck-card {
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 8px;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	transition: 0.2s;
+	height: 160px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.deck-card:hover, .notification:hover, .set-container:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+	filter: brightness(1.1);
+}
+
+.deck-card-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: 130%;
+	background-position: center 22%;
+	z-index: 1;
+}
+.deck-card-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,0.85) 100%);
+	z-index: 2;
+}
+.deck-card-info {
+	position: relative;
+	z-index: 3;
+	padding: 12px;
+	color: white;
+}
+.deck-card-info h1 {
+	font-family: 'Gotham Narrow Bold', sans-serif;
+	font-size: 22px;
+	margin: 0;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+	line-height: 1.1;
+}
+.deck-card-info h3 {
+	font-family: 'Gotham Narrow Medium', sans-serif;
+	font-size: 16px;
+	margin: 4px 0 0 0;
+	opacity: 0.9;
+	font-style: italic;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+	font-weight: normal;
+}
+.deck-card .mana {
+	margin-right: 2px;
+}

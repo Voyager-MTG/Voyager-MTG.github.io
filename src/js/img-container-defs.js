@@ -185,7 +185,7 @@ function buildImgContainer(card_stats, hidden_title = false, rotate_card = false
 	img.id = id;
 	img.setAttribute("loading", "lazy");
 	// (card_stats[13].includes("_") ? card_stats[13] : card_stats[0]) for posterity
-	img.src = img_src + "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+	img.src = img_src + "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
 
 	// let not_in_voyager;
 
