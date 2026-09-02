@@ -265,7 +265,7 @@
 			current_gp = event_info.recent;
 			console.log(current_gp, event_info);
 
-			await fetch(`http://localhost:10000/events/public?event=${current_gp}`)
+			await fetch(`https://voyager-api-pq2h.onrender.com/events/public?event=${current_gp}`)
 				.then(response => response.json())
 				.then(json => {
 					event = json;

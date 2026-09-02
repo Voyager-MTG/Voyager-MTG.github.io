@@ -319,16 +319,17 @@
 					}
 
 					html += `<button class="admin-button">Submit</button>`;
+					html = 'This is under development';
 					form.innerHTML = html;
 
-					form.querySelector('.admin-button').onclick = async () => {
-						const option_data = form_options.reduce((acc, opt) => {
-							return acc + `&${opt.id}=${encodeURIComponent(form.querySelector('.' + opt.id).value)}`;
-						}, '');
-						console.log('sending', option_data);
-						await fetch(`http://localhost:10000/events/draft/fire?session=${localStorage.getItem('settings.session')}${option_data}`);
-						closeModal();
-					}
+					// form.querySelector('.admin-button').onclick = async () => {
+					// 	const option_data = form_options.reduce((acc, opt) => {
+					// 		return acc + `&${opt.id}=${encodeURIComponent(form.querySelector('.' + opt.id).value)}`;
+					// 	}, '');
+					// 	console.log('sending', option_data);
+					// 	await fetch(`http://localhost:10000/events/draft/fire?session=${localStorage.getItem('settings.session')}${option_data}`);
+					// 	closeModal();
+					// }
 
 					document.querySelector('#modal-content').innerHTML = '';
 					document.querySelector('#modal-content').appendChild(form);
