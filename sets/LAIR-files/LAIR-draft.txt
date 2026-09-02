@@ -1,0 +1,1951 @@
+[CustomCards]
+	[
+		{
+			"name": "Mother of Ants",
+			"rarity": "mythic",
+			"mana_cost": "{2}{U}{R}",
+			"type": "Legendary Creature — Cleric God",
+			"collector_number": "103",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/103_Mother of Ants.jpg"
+			}
+		},
+		{
+			"name": "The Forge of Days",
+			"rarity": "mythic",
+			"mana_cost": "{2}{R}{R}{W}",
+			"type": "Legendary Creature — Elemental God",
+			"collector_number": "98",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/98_The Forge of Days.jpg"
+			}
+		},
+		{
+			"name": "The Moth",
+			"rarity": "mythic",
+			"mana_cost": "{3}{B}{G}",
+			"type": "Legendary Creature — Insect God",
+			"collector_number": "102",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/102_The Moth.jpg"
+			}
+		},
+		{
+			"name": "The Red Grail",
+			"rarity": "mythic",
+			"mana_cost": "{3}{B}{R}",
+			"type": "Legendary Creature — Vampire God",
+			"collector_number": "107",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/107_The Red Grail.jpg"
+			}
+		},
+		{
+			"name": "The Watchman",
+			"rarity": "mythic",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Legendary Creature — Human God",
+			"collector_number": "114",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/114_The Watchman.jpg"
+			}
+		},
+		{
+			"name": "The Thunderskin",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}{W}",
+			"type": "Legendary Creature — Human God",
+			"collector_number": "112",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/112_The Thunderskin.jpg"
+			}
+		},
+		{
+			"name": "Drifting Field",
+			"rarity": "masterpiece",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/21_Drifting Field.jpg"
+			}
+		},
+		{
+			"name": "Mountain",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Mountain",
+			"collector_number": "125",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/125_Mountain.jpg"
+			}
+		},
+		{
+			"name": "Island",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Island",
+			"collector_number": "123",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/123_Island.jpg"
+			}
+		},
+		{
+			"name": "Plains",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Plains",
+			"collector_number": "126",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/126_Plains.jpg"
+			}
+		},
+		{
+			"name": "Swamp",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Swamp",
+			"collector_number": "135",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/135_Swamp.jpg"
+			}
+		},
+		{
+			"name": "Forest",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Forest",
+			"collector_number": "120",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/120_Forest.jpg"
+			}
+		},
+		{
+			"name": "Drown in Self Reflection",
+			"rarity": "masterpiece",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/8_Drown in Self Reflection.jpg"
+			}
+		},
+		{
+			"name": "Apostle Entheate",
+			"rarity": "masterpiece",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Creature — Angel Cleric",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/3_Apostle Entheate.jpg"
+			}
+		},
+		{
+			"name": "Identity Connoisseur",
+			"rarity": "masterpiece",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Creature — Human Assassin",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/13_Identity Connoisseur.jpg"
+			}
+		},
+		{
+			"name": "Illuminant Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "122",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/122_Illuminant Spire.jpg"
+			}
+		},
+		{
+			"name": "Ivory Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "124",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/124_Ivory Spire.jpg"
+			}
+		},
+		{
+			"name": "Searing Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "133",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/133_Searing Spire.jpg"
+			}
+		},
+		{
+			"name": "Silent Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "134",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/134_Silent Spire.jpg"
+			}
+		},
+		{
+			"name": "Twisted Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "136",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/136_Twisted Spire.jpg"
+			}
+		},
+		{
+			"name": "Verdant Spire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "137",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/137_Verdant Spire.jpg"
+			}
+		},
+		{
+			"name": "True Blood of Saint Janus",
+			"rarity": "mythic",
+			"mana_cost": "{2}",
+			"type": "Legendary Artifact",
+			"collector_number": "118",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/118_True Blood of Saint Janus.jpg"
+			}
+		},
+		{
+			"name": "The Heart of Ischav",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "121",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/121_The Heart of Ischav.jpg"
+			}
+		},
+		{
+			"name": "Found Family",
+			"rarity": "mythic",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/20_Found Family.jpg"
+			}
+		},
+		{
+			"name": "Delete",
+			"rarity": "mythic",
+			"mana_cost": "{B}",
+			"type": "Instant",
+			"collector_number": "52",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/52_Delete.jpg"
+			}
+		},
+		{
+			"name": "The Calm Belt",
+			"rarity": "mythic",
+			"mana_cost": "{1}",
+			"type": "Enchantment — Realm",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/1_The Calm Belt.jpg"
+			}
+		},
+		{
+			"name": "Wanderer's Shrine",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "138",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/138_Wanderer's Shrine.jpg"
+			}
+		},
+		{
+			"name": "Falling Sparks",
+			"rarity": "mythic",
+			"mana_cost": "{X}{2}{C}{R}",
+			"type": "Sorcery",
+			"collector_number": "97",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/97_Falling Sparks.jpg"
+			}
+		},
+		{
+			"name": "Sundown",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "76",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/76_Sundown.jpg"
+			}
+		},
+		{
+			"name": "Restored Plains",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land — Plains",
+			"collector_number": "131",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/131_Restored Plains.jpg"
+			}
+		},
+		{
+			"name": "Restored Island",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land — Island",
+			"collector_number": "129",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/129_Restored Island.jpg"
+			}
+		},
+		{
+			"name": "Restored Swamp",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land — Swamp",
+			"collector_number": "132",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/132_Restored Swamp.jpg"
+			}
+		},
+		{
+			"name": "Restored Mountain",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land — Mountain",
+			"collector_number": "130",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/130_Restored Mountain.jpg"
+			}
+		},
+		{
+			"name": "Restored Fault",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land — Fault",
+			"collector_number": "127",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/127_Restored Fault.jpg"
+			}
+		},
+		{
+			"name": "Restored Forest",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land — Forest",
+			"collector_number": "128",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/128_Restored Forest.jpg"
+			}
+		},
+		{
+			"name": "Call of the Rose",
+			"rarity": "masterpiece",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/16_Call of the Rose.jpg"
+			}
+		},
+		{
+			"name": "The Gardener, Crowned",
+			"rarity": "masterpiece",
+			"mana_cost": "{12}",
+			"type": "Legendary Planeswalker — Gardener",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/2_The Gardener, Crowned.jpg"
+			}
+		},
+		{
+			"name": "Wonder",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Wonder",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/1_Wonder.jpg"
+			}
+		},
+		{
+			"name": "Blinding Majesty",
+			"rarity": "masterpiece",
+			"mana_cost": "{3}{W}",
+			"type": "Instant",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/5_Blinding Majesty.jpg"
+			}
+		},
+		{
+			"name": "Shimmer From Beyond",
+			"rarity": "masterpiece",
+			"mana_cost": "{3}{R}",
+			"type": "Sorcery",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/17_Shimmer From Beyond.jpg"
+			}
+		},
+		{
+			"name": "Territorial Yew-Maw",
+			"rarity": "mythic",
+			"mana_cost": "{1}{G}{G}",
+			"type": "Creature — Treefolk Beast",
+			"collector_number": "87",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/87_Territorial Yew-Maw.jpg"
+			}
+		},
+		{
+			"name": "The Geminiad",
+			"rarity": "mythic",
+			"mana_cost": "{3}",
+			"type": "Legendary Artifact",
+			"collector_number": "116",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/116_The Geminiad.jpg"
+			}
+		},
+		{
+			"name": "Naval Diplomacy",
+			"rarity": "mythic",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "41",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/41_Naval Diplomacy.jpg"
+			}
+		},
+		{
+			"name": "Torch",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}",
+			"type": "Sorcery",
+			"collector_number": "77",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/77_Torch.jpg"
+			}
+		},
+		{
+			"name": "Collector of the Wonderful",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Fox Rogue",
+			"collector_number": "67",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/67_Collector of the Wonderful.jpg"
+			}
+		},
+		{
+			"name": "Pull of the Unknown",
+			"rarity": "mythic",
+			"mana_cost": "{1}{U/B}",
+			"type": "Kindred Instant — Wonder",
+			"collector_number": "105",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/105_Pull of the Unknown.jpg"
+			}
+		},
+		{
+			"name": "Rite of Resurrection",
+			"rarity": "mythic",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "62",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/62_Rite of Resurrection.jpg"
+			}
+		},
+		{
+			"name": "Survivor's Instinct",
+			"rarity": "mythic",
+			"mana_cost": "{G/W}",
+			"type": "Instant",
+			"collector_number": "111",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/111_Survivor's Instinct.jpg"
+			}
+		},
+		{
+			"name": "Drakesteel Effigy",
+			"rarity": "rare",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "115",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/115_Drakesteel Effigy.jpg"
+			}
+		},
+		{
+			"name": "The Red Door",
+			"rarity": "rare",
+			"mana_cost": "{U}{B}",
+			"type": "Artifact",
+			"collector_number": "106",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/106_The Red Door.jpg"
+			}
+		},
+		{
+			"name": "Tangled Heart",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Artifact",
+			"collector_number": "63",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/63_Tangled Heart.jpg"
+			}
+		},
+		{
+			"name": "Font of Decadence",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Artifact Creature — Zombie Advisor",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/19_Font of Decadence.jpg"
+			}
+		},
+		{
+			"name": "Awakened Titan",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}",
+			"type": "Artifact Creature — Demon Construct",
+			"collector_number": "78",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/78_Awakened Titan.jpg"
+			}
+		},
+		{
+			"name": "Memory Hole",
+			"rarity": "masterpiece",
+			"mana_cost": "{U}{U}",
+			"type": "Instant",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/9_Memory Hole.jpg"
+			}
+		},
+		{
+			"name": "Lifelighter",
+			"rarity": "masterpiece",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Knight",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/6_Lifelighter.jpg"
+			}
+		},
+		{
+			"name": "Shifting Spire",
+			"rarity": "masterpiece",
+			"mana_cost": "",
+			"type": "Land — Spire",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/24_Shifting Spire.jpg"
+			}
+		},
+		{
+			"name": "Eye of the Abominable",
+			"rarity": "masterpiece",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Legendary Enchantment Artifact",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/12_Eye of the Abominable.jpg"
+			}
+		},
+		{
+			"name": "Moonlit Augury",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment",
+			"collector_number": "40",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/40_Moonlit Augury.jpg"
+			}
+		},
+		{
+			"name": "Callous Observer",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}{R}",
+			"type": "Enchantment Creature — Eye Horror",
+			"collector_number": "93",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/93_Callous Observer.jpg"
+			}
+		},
+		{
+			"name": "Bone Prophet",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Creature — Cleric",
+			"collector_number": "48",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/48_Bone Prophet.jpg"
+			}
+		},
+		{
+			"name": "A Beloved World",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "119",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/119_A Beloved World.jpg"
+			}
+		},
+		{
+			"name": "Crashing Rot",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "51",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/51_Crashing Rot.jpg"
+			}
+		},
+		{
+			"name": "Flesh Centrifuge",
+			"rarity": "rare",
+			"mana_cost": "{7}{B}",
+			"type": "Artifact Creature — Zombie Horror",
+			"collector_number": "53",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/53_Flesh Centrifuge.jpg"
+			}
+		},
+		{
+			"name": "Scars of Oil",
+			"rarity": "rare",
+			"mana_cost": "{1}{C/U}",
+			"type": "Enchantment",
+			"collector_number": "108",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/108_Scars of Oil.jpg"
+			}
+		},
+		{
+			"name": "Melting Pot",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Incarnation Wizard",
+			"collector_number": "71",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/71_Melting Pot.jpg"
+			}
+		},
+		{
+			"name": "Closure",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "50",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/50_Closure.jpg"
+			}
+		},
+		{
+			"name": "Forgiving Monument",
+			"rarity": "rare",
+			"mana_cost": "{6}",
+			"type": "Enchantment",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/4_Forgiving Monument.jpg"
+			}
+		},
+		{
+			"name": "Eyes Scorched from Divinity",
+			"rarity": "rare",
+			"mana_cost": "{5}",
+			"type": "Creature — Angel Eye Incarnation",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/3_Eyes Scorched from Divinity.jpg"
+			}
+		},
+		{
+			"name": "The Shattering of Meirel",
+			"rarity": "rare",
+			"mana_cost": "{7}",
+			"type": "Sorcery",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/8_The Shattering of Meirel.jpg"
+			}
+		},
+		{
+			"name": "Wandering Moon",
+			"rarity": "rare",
+			"mana_cost": "{4}",
+			"type": "Creature — Orb Horror",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/9_Wandering Moon.jpg"
+			}
+		},
+		{
+			"name": "Breach of Malice",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+			"type": "Enchantment",
+			"collector_number": "66",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/66_Breach of Malice.jpg"
+			}
+		},
+		{
+			"name": "Defacement",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/14_Defacement.jpg"
+			}
+		},
+		{
+			"name": "Ajha, the Wish for Home",
+			"rarity": "rare",
+			"mana_cost": "{5}{W}{W}",
+			"type": "Legendary Creature — Spirit",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/10_Ajha, the Wish for Home.jpg"
+			}
+		},
+		{
+			"name": "Sentinel of Dead Lands",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}",
+			"type": "Artifact Creature – Spirit Soldier",
+			"collector_number": "74",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/74_Sentinel of Dead Lands.jpg"
+			}
+		},
+		{
+			"name": "Mental Unmooring",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}",
+			"type": "Instant",
+			"collector_number": "39",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/39_Mental Unmooring.jpg"
+			}
+		},
+		{
+			"name": "Disregarded Project",
+			"rarity": "rare",
+			"mana_cost": "{W}",
+			"type": "Artifact Creature — Zombie Warrior",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/15_Disregarded Project.jpg"
+			}
+		},
+		{
+			"name": "Firmament Sculptor",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}",
+			"type": "Artifact Creature — Avatar",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/38_Firmament Sculptor.jpg"
+			}
+		},
+		{
+			"name": "Aurel, Born Through Discord",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{R}{W}",
+			"type": "Legendary Creature — Angel",
+			"collector_number": "91",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/91_Aurel, Born Through Discord.jpg"
+			}
+		},
+		{
+			"name": "Starsea Bloomqueen",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}{U}",
+			"type": "Creature — Jellyfish",
+			"collector_number": "46",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/46_Starsea Bloomqueen.jpg"
+			}
+		},
+		{
+			"name": "Breach of Mortality",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}",
+			"type": "Enchantment",
+			"collector_number": "49",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/49_Breach of Mortality.jpg"
+			}
+		},
+		{
+			"name": "Pattern Processing",
+			"rarity": "rare",
+			"mana_cost": "{G}",
+			"type": "Sorcery",
+			"collector_number": "86",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/86_Pattern Processing.jpg"
+			}
+		},
+		{
+			"name": "Sorting Servant",
+			"rarity": "rare",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Golem",
+			"collector_number": "117",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/117_Sorting Servant.jpg"
+			}
+		},
+		{
+			"name": "Meet the Beyond",
+			"rarity": "rare",
+			"mana_cost": "{2}",
+			"type": "Instant",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/5_Meet the Beyond.jpg"
+			}
+		},
+		{
+			"name": "Through Violence",
+			"rarity": "special",
+			"mana_cost": "{4}",
+			"type": "Sorcery",
+			"collector_number": "140",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/140_Through Violence.jpg"
+			}
+		},
+		{
+			"name": "Beautiful Headhuntress",
+			"rarity": "rare",
+			"mana_cost": "{1}{C}{G}",
+			"type": "Creature — Human Shapeshifter",
+			"collector_number": "92",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/92_Beautiful Headhuntress.jpg"
+			}
+		},
+		{
+			"name": "Star-Binding Command",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "34",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/34_Star-Binding Command.jpg"
+			}
+		},
+		{
+			"name": "Spread His Formula",
+			"rarity": "rare",
+			"mana_cost": "{U}",
+			"type": "Sorcery",
+			"collector_number": "45",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/45_Spread His Formula.jpg"
+			}
+		},
+		{
+			"name": "Mordel Excursionist",
+			"rarity": "mythic",
+			"mana_cost": "{R}",
+			"type": "Creature — Human Scout Spellshaper",
+			"collector_number": "72",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/72_Mordel Excursionist.jpg"
+			}
+		},
+		{
+			"name": "Mordel Reinforcement",
+			"rarity": "mythic",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Creature — Minotaur Warrior",
+			"collector_number": "73",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/73_Mordel Reinforcement.jpg"
+			}
+		},
+		{
+			"name": "Outlands Traveller",
+			"rarity": "mythic",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Creature — Human Warrior",
+			"collector_number": "61",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/61_Outlands Traveller.jpg"
+			}
+		},
+		{
+			"name": "Eternities Weaver",
+			"rarity": "mythic",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Human Druid",
+			"collector_number": "80",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/80_Eternities Weaver.jpg"
+			}
+		},
+		{
+			"name": "Outlands Guardian",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Bear Warrior",
+			"collector_number": "85",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/85_Outlands Guardian.jpg"
+			}
+		},
+		{
+			"name": "Fadove Reinforcement",
+			"rarity": "mythic",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Hyena Warrior",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/18_Fadove Reinforcement.jpg"
+			}
+		},
+		{
+			"name": "Pathborn Drake",
+			"rarity": "mythic",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Drake",
+			"collector_number": "42",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/42_Pathborn Drake.jpg"
+			}
+		},
+		{
+			"name": "Scars of Oil",
+			"rarity": "mythic",
+			"mana_cost": "{1}{C/U}",
+			"type": "Enchantment",
+			"collector_number": "109",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/109_Scars of Oil.jpg"
+			}
+		},
+		{
+			"name": "Impunity of Souls",
+			"rarity": "mythic",
+			"mana_cost": "{C/B}",
+			"type": "Instant",
+			"collector_number": "100",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/100_Impunity of Souls.jpg"
+			}
+		},
+		{
+			"name": "Fadove Reinforcement",
+			"rarity": "mythic",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Hyena Warrior",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/17_Fadove Reinforcement.jpg"
+			}
+		},
+		{
+			"name": "Ethereal Exposure",
+			"rarity": "mythic",
+			"mana_cost": "{2}{C/W}",
+			"type": "Instant",
+			"collector_number": "96",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/96_Ethereal Exposure.jpg"
+			}
+		},
+		{
+			"name": "Volatile Visions",
+			"rarity": "mythic",
+			"mana_cost": "{1}{C/R}",
+			"type": "Sorcery",
+			"collector_number": "113",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/113_Volatile Visions.jpg"
+			}
+		},
+		{
+			"name": "Splendid Genesis",
+			"rarity": "mythic",
+			"mana_cost": "{X}{C/G}",
+			"type": "Sorcery",
+			"collector_number": "110",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/110_Splendid Genesis.jpg"
+			}
+		},
+		{
+			"name": "Paths Strider",
+			"rarity": "mythic",
+			"mana_cost": "{3}",
+			"type": "Creature — Beast",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/6_Paths Strider.jpg"
+			}
+		},
+		{
+			"name": "Prophellos, Pathborn Hunger",
+			"rarity": "mythic",
+			"mana_cost": "{5}",
+			"type": "Legendary Creature — God",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/7_Prophellos, Pathborn Hunger.jpg"
+			}
+		},
+		{
+			"name": "Forgiving Monument",
+			"rarity": "masterpiece",
+			"mana_cost": "{6}",
+			"type": "Enchantment",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/1_Forgiving Monument.jpg"
+			}
+		},
+		{
+			"name": "Beseech the Divine",
+			"rarity": "masterpiece",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/4_Beseech the Divine.jpg"
+			}
+		},
+		{
+			"name": "Mountain",
+			"rarity": "masterpiece",
+			"mana_cost": "",
+			"type": "Basic Land — Mountain",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/22_Mountain.jpg"
+			}
+		},
+		{
+			"name": "Eldstone of Transience",
+			"rarity": "mythic",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Legendary Artifact",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/16_Eldstone of Transience.jpg"
+			}
+		},
+		{
+			"name": "Prodigal Dimensiurge",
+			"rarity": "mythic",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Artificer",
+			"collector_number": "32",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/32_Prodigal Dimensiurge.jpg"
+			}
+		},
+		{
+			"name": "Timecoil Tracings",
+			"rarity": "mythic",
+			"mana_cost": "{1}{U}",
+			"type": "Sorcery",
+			"collector_number": "47",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/47_Timecoil Tracings.jpg"
+			}
+		},
+		{
+			"name": "Inciting Incident",
+			"rarity": "mythic",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Instant",
+			"collector_number": "59",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/59_Inciting Incident.jpg"
+			}
+		},
+		{
+			"name": "Splintered Memories",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}",
+			"type": "Enchantment",
+			"collector_number": "75",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/75_Splintered Memories.jpg"
+			}
+		},
+		{
+			"name": "Millenniapede",
+			"rarity": "mythic",
+			"mana_cost": "{6}{G}{G}",
+			"type": "Creature — Elder Insect",
+			"collector_number": "82",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/82_Millenniapede.jpg"
+			}
+		},
+		{
+			"name": "Loche, Returned Pilgrim",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}{G}",
+			"type": "Legendary Creature — Human Druid",
+			"collector_number": "101",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/101_Loche, Returned Pilgrim.jpg"
+			}
+		},
+		{
+			"name": "Ouarra, All-Devourer",
+			"rarity": "mythic",
+			"mana_cost": "{6}{U}{B}",
+			"type": "Legendary Creature — Elemental",
+			"collector_number": "104",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/104_Ouarra, All-Devourer.jpg"
+			}
+		},
+		{
+			"name": "Abyssal Pursuer",
+			"rarity": "mythic",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Creature — Horror Warrior",
+			"collector_number": "65",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/65_Abyssal Pursuer.jpg"
+			}
+		},
+		{
+			"name": "Chthonic Gorger",
+			"rarity": "mythic",
+			"mana_cost": "{1}{B}{G}",
+			"type": "Creature — Bat Horror",
+			"collector_number": "94",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/94_Chthonic Gorger.jpg"
+			}
+		},
+		{
+			"name": "Eager Impostor",
+			"rarity": "mythic",
+			"mana_cost": "{7}",
+			"type": "Creature — Shapeshifter Knight",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/2_Eager Impostor.jpg"
+			}
+		},
+		{
+			"name": "Greenscale Descendant",
+			"rarity": "mythic",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Human Dinosaur",
+			"collector_number": "81",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/81_Greenscale Descendant.jpg"
+			}
+		},
+		{
+			"name": "Herald of Blackened Stars",
+			"rarity": "mythic",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Avatar Demon",
+			"collector_number": "55",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/55_Herald of Blackened Stars.jpg"
+			}
+		},
+		{
+			"name": "Hex Trueblight",
+			"rarity": "mythic",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Creature — Hex Horror",
+			"collector_number": "57",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/57_Hex Trueblight.jpg"
+			}
+		},
+		{
+			"name": "Inter Knowledge",
+			"rarity": "mythic",
+			"mana_cost": "{B}",
+			"type": "Instant",
+			"collector_number": "60",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/60_Inter Knowledge.jpg"
+			}
+		},
+		{
+			"name": "Lord of the Broken",
+			"rarity": "mythic",
+			"mana_cost": "{3}{C}{C}",
+			"type": "Legendary Creature — Tyranid Noble",
+			"collector_number": "90",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/90_Lord of the Broken.jpg"
+			}
+		},
+		{
+			"name": "Return to Essence",
+			"rarity": "mythic",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "43",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/43_Return to Essence.jpg"
+			}
+		},
+		{
+			"name": "Solar Pilgrimage",
+			"rarity": "mythic",
+			"mana_cost": "{W}",
+			"type": "Enchantment",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/33_Solar Pilgrimage.jpg"
+			}
+		},
+		{
+			"name": "Traumatic Decree",
+			"rarity": "mythic",
+			"mana_cost": "{W}",
+			"type": "Sorcery",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/35_Traumatic Decree.jpg"
+			}
+		},
+		{
+			"name": "The Planar Portal",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Legendary Token Artifact",
+			"collector_number": "142",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/142_The Planar Portal.jpg"
+			}
+		},
+		{
+			"name": "Angel",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Creature — Angel",
+			"collector_number": "141",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/141_Angel.jpg"
+			}
+		},
+		{
+			"name": "Scar",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Boon",
+			"collector_number": "139",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/139_Scar.jpg"
+			}
+		},
+		{
+			"name": "Me, Divine Aspirant",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}",
+			"type": "Legendary Creature — Goblin Wizard",
+			"collector_number": "70",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/70_Me, Divine Aspirant_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/70_Me, Divine Aspirant_front.jpg"
+			}
+		},
+		{
+			"name": "Painted Distorter",
+			"rarity": "masterpiece",
+			"mana_cost": "{5}{U}",
+			"type": "Creature — Merfolk Demon",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/10_Painted Distorter.jpg"
+			}
+		},
+		{
+			"name": "Unending Exploration",
+			"rarity": "masterpiece",
+			"mana_cost": "{2}{C}{C}",
+			"type": "Enchantment",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/19_Unending Exploration.jpg"
+			}
+		},
+		{
+			"name": "Bleak Return",
+			"rarity": "masterpiece",
+			"mana_cost": "{1}{B}",
+			"type": "Sorcery",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/11_Bleak Return.jpg"
+			}
+		},
+		{
+			"name": "Castle Delta Lookout",
+			"rarity": "masterpiece",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Human Bard Rogue",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/7_Castle Delta Lookout.jpg"
+			}
+		},
+		{
+			"name": "Calamitous Koi",
+			"rarity": "masterpiece",
+			"mana_cost": "{2}{C}{B}",
+			"type": "Creature — Fish Spirit",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/20_Calamitous Koi.jpg"
+			}
+		},
+		{
+			"name": "Reflective Savannah",
+			"rarity": "masterpiece",
+			"mana_cost": "",
+			"type": "Land — Forest Plains",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/23_Reflective Savannah.jpg"
+			}
+		},
+		{
+			"name": "Wish for Transformation",
+			"rarity": "masterpiece",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Creature — Spirit",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/18_Wish for Transformation.jpg"
+			}
+		},
+		{
+			"name": "Glorious Enforcer",
+			"rarity": "mythic",
+			"mana_cost": "{5}{W}{W}",
+			"type": "Creature — Angel",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/28_Glorious Enforcer.jpg"
+			}
+		},
+		{
+			"name": "Glorious Enforcer",
+			"rarity": "mythic",
+			"mana_cost": "{5}{W}{W}",
+			"type": "Creature — Angel",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/27_Glorious Enforcer.jpg"
+			}
+		},
+		{
+			"name": "Glorious Enforcer",
+			"rarity": "mythic",
+			"mana_cost": "{5}{W}{W}",
+			"type": "Creature — Angel",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/26_Glorious Enforcer.jpg"
+			}
+		},
+		{
+			"name": "Glorious Enforcer",
+			"rarity": "mythic",
+			"mana_cost": "{5}{W}{W}",
+			"type": "Creature — Angel",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/21_Glorious Enforcer.jpg"
+			}
+		},
+		{
+			"name": "Glorious Enforcer",
+			"rarity": "mythic",
+			"mana_cost": "{5}{W}{W}",
+			"type": "Creature — Angel",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/25_Glorious Enforcer.jpg"
+			}
+		},
+		{
+			"name": "Glorious Enforcer",
+			"rarity": "mythic",
+			"mana_cost": "{5}{W}{W}",
+			"type": "Creature — Angel",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/24_Glorious Enforcer.jpg"
+			}
+		},
+		{
+			"name": "Glorious Enforcer",
+			"rarity": "mythic",
+			"mana_cost": "{5}{W}{W}",
+			"type": "Creature — Angel",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/23_Glorious Enforcer.jpg"
+			}
+		},
+		{
+			"name": "Glorious Enforcer",
+			"rarity": "mythic",
+			"mana_cost": "{5}{W}{W}",
+			"type": "Creature — Angel",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/22_Glorious Enforcer.jpg"
+			}
+		},
+		{
+			"name": "Exiled Trickster",
+			"rarity": "mythic",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Faerie",
+			"collector_number": "37",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/37_Exiled Trickster.jpg"
+			}
+		},
+		{
+			"name": "Liberators of the Soul",
+			"rarity": "mythic",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Kor Cleric",
+			"collector_number": "29",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/29_Liberators of the Soul.jpg"
+			}
+		},
+		{
+			"name": "Breach of Nature",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}",
+			"type": "Enchantment",
+			"collector_number": "79",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/79_Breach of Nature.jpg"
+			}
+		},
+		{
+			"name": "Herald of Storms",
+			"rarity": "mythic",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Creature — Elemental Dragon",
+			"collector_number": "68",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/68_Herald of Storms.jpg"
+			}
+		},
+		{
+			"name": "Mordel Peacekeeper",
+			"rarity": "mythic",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Creature — Dryad Shaman",
+			"collector_number": "83",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/83_Mordel Peacekeeper.jpg"
+			}
+		},
+		{
+			"name": "Apostle Entheate",
+			"rarity": "mythic",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Creature — Angel Cleric",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/12_Apostle Entheate.jpg"
+			}
+		},
+		{
+			"name": "Saylthe, Twice-Drowned",
+			"rarity": "mythic",
+			"mana_cost": "{2}{U}",
+			"type": "Legendary Creature — Zombie",
+			"collector_number": "44",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/44_Saylthe, Twice-Drowned.jpg"
+			}
+		},
+		{
+			"name": "New Tensuo Physician",
+			"rarity": "mythic",
+			"mana_cost": "{4}{G}",
+			"type": "Creature — Elf Druid",
+			"collector_number": "84",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/84_New Tensuo Physician.jpg"
+			}
+		},
+		{
+			"name": "Angel of Dying Flames",
+			"rarity": "masterpiece",
+			"mana_cost": "{4}{R}{R}",
+			"type": "Creature — Angel",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/15_Angel of Dying Flames.jpg"
+			}
+		},
+		{
+			"name": "Urban Flytrap",
+			"rarity": "mythic",
+			"mana_cost": "{6}{G}",
+			"type": "Creature — Plant",
+			"collector_number": "88",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/88_Urban Flytrap.jpg"
+			}
+		},
+		{
+			"name": "Angel of the True Sun",
+			"rarity": "mythic",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Creature — Angel",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/11_Angel of the True Sun.jpg"
+			}
+		},
+		{
+			"name": "Wishtouched Outcast",
+			"rarity": "mythic",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Vampire Wizard",
+			"collector_number": "64",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/64_Wishtouched Outcast.jpg"
+			}
+		},
+		{
+			"name": "Ilcan Soulshear",
+			"rarity": "mythic",
+			"mana_cost": "{4}{B}",
+			"type": "Creature — Kor Rogue Warlock",
+			"collector_number": "58",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/58_Ilcan Soulshear.jpg"
+			}
+		},
+		{
+			"name": "Herald of Blackened Stars",
+			"rarity": "mythic",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Avatar Demon",
+			"collector_number": "56",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/56_Herald of Blackened Stars.jpg"
+			}
+		},
+		{
+			"name": "Lifelighter",
+			"rarity": "mythic",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Knight",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/30_Lifelighter.jpg"
+			}
+		},
+		{
+			"name": "New Tensuo Luminary",
+			"rarity": "mythic",
+			"mana_cost": "{W}",
+			"type": "Creature — Elf Knight",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/31_New Tensuo Luminary.jpg"
+			}
+		},
+		{
+			"name": "Beacon Dreamer",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/13_Beacon Dreamer.jpg"
+			}
+		},
+		{
+			"name": "Sting",
+			"rarity": "masterpiece",
+			"mana_cost": "{B}",
+			"type": "Sorcery",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/14_Sting.jpg"
+			}
+		},
+		{
+			"name": "Liferoot Gnawer",
+			"rarity": "mythic",
+			"mana_cost": "{3}{R}{R}",
+			"type": "Artifact Creature — Horror",
+			"collector_number": "69",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/69_Liferoot Gnawer.jpg"
+			}
+		},
+		{
+			"name": "Herongrand Transcended",
+			"rarity": "mythic",
+			"mana_cost": "{4}{U}{B}",
+			"type": "Legendary Creature — Erysite Dragon",
+			"collector_number": "99",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/99_Herongrand Transcended.jpg"
+			}
+		},
+		{
+			"name": "Bropheria",
+			"rarity": "mythic",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Jellyfish",
+			"collector_number": "36",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/36_Bropheria.jpg"
+			}
+		},
+		{
+			"name": "Flesh Centrifuge",
+			"rarity": "rare",
+			"mana_cost": "{7}{B}",
+			"type": "Artifact Creature — Zombie Horror",
+			"collector_number": "54",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/54_Flesh Centrifuge.jpg"
+			}
+		},
+		{
+			"name": "Curious Dexteria",
+			"rarity": "mythic",
+			"mana_cost": "{C}",
+			"type": "Creature — Beast",
+			"collector_number": "89",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/89_Curious Dexteria.jpg"
+			}
+		},
+		{
+			"name": "The Elegiast",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{B}",
+			"type": "Legendary Creature — Bird God",
+			"collector_number": "95",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/LAIR-files/img/95_The Elegiast.jpg"
+			}
+		},
+	]
+
+[rare(1)]
+	1 Mother of Ants
+	1 The Forge of Days
+	1 The Moth
+	1 The Red Grail
+	1 The Watchman
+	1 The Thunderskin
+	1 True Blood of Saint Janus
+	1 The Heart of Ischav
+	1 Found Family
+	1 Delete
+	1 The Calm Belt
+	1 Wanderer's Shrine
+	1 Falling Sparks
+	1 Sundown
+	1 Restored Plains
+	1 Restored Island
+	1 Restored Swamp
+	1 Restored Mountain
+	1 Restored Fault
+	1 Restored Forest
+	1 Territorial Yew-Maw
+	1 The Geminiad
+	1 Naval Diplomacy
+	1 Torch
+	1 Collector of the Wonderful
+	1 Pull of the Unknown
+	1 Rite of Resurrection
+	1 Survivor's Instinct
+	2 Drakesteel Effigy
+	2 The Red Door
+	2 Tangled Heart
+	2 Font of Decadence
+	2 Awakened Titan
+	2 Moonlit Augury
+	2 Callous Observer
+	2 Bone Prophet
+	2 A Beloved World
+	2 Crashing Rot
+	2 Flesh Centrifuge
+	2 Scars of Oil
+	2 Melting Pot
+	2 Closure
+	2 Forgiving Monument
+	2 Eyes Scorched from Divinity
+	2 The Shattering of Meirel
+	2 Wandering Moon
+	2 Breach of Malice
+	2 Defacement
+	2 Ajha, the Wish for Home
+	2 Sentinel of Dead Lands
+	2 Mental Unmooring
+	2 Disregarded Project
+	2 Firmament Sculptor
+	2 Aurel, Born Through Discord
+	2 Starsea Bloomqueen
+	2 Breach of Mortality
+	2 Pattern Processing
+	2 Sorting Servant
+	2 Meet the Beyond
+	2 Beautiful Headhuntress
+	2 Star-Binding Command
+	2 Spread His Formula
+	1 Mordel Excursionist
+	1 Mordel Reinforcement
+	1 Outlands Traveller
+	1 Eternities Weaver
+	1 Outlands Guardian
+	1 Fadove Reinforcement
+	1 Pathborn Drake
+	1 Scars of Oil
+	1 Impunity of Souls
+	1 Fadove Reinforcement
+	1 Ethereal Exposure
+	1 Volatile Visions
+	1 Splendid Genesis
+	1 Paths Strider
+	1 Prophellos, Pathborn Hunger
+	1 Eldstone of Transience
+	1 Prodigal Dimensiurge
+	1 Timecoil Tracings
+	1 Inciting Incident
+	1 Splintered Memories
+	1 Millenniapede
+	1 Loche, Returned Pilgrim
+	1 Ouarra, All-Devourer
+	1 Abyssal Pursuer
+	1 Chthonic Gorger
+	1 Eager Impostor
+	1 Greenscale Descendant
+	1 Herald of Blackened Stars
+	1 Hex Trueblight
+	1 Inter Knowledge
+	1 Lord of the Broken
+	1 Return to Essence
+	1 Solar Pilgrimage
+	1 Traumatic Decree
+	1 Me, Divine Aspirant
+	1 Glorious Enforcer
+	1 Glorious Enforcer
+	1 Glorious Enforcer
+	1 Glorious Enforcer
+	1 Glorious Enforcer
+	1 Glorious Enforcer
+	1 Glorious Enforcer
+	1 Glorious Enforcer
+	1 Exiled Trickster
+	1 Liberators of the Soul
+	1 Breach of Nature
+	1 Herald of Storms
+	1 Mordel Peacekeeper
+	1 Apostle Entheate
+	1 Saylthe, Twice-Drowned
+	1 New Tensuo Physician
+	1 Urban Flytrap
+	1 Angel of the True Sun
+	1 Wishtouched Outcast
+	1 Ilcan Soulshear
+	1 Herald of Blackened Stars
+	1 Lifelighter
+	1 New Tensuo Luminary
+	2 Beacon Dreamer
+	1 Liferoot Gnawer
+	1 Herongrand Transcended
+	1 Bropheria
+	2 Flesh Centrifuge
+	1 Curious Dexteria
+	2 The Elegiast
+[uncommon(4)]
+	4 Illuminant Spire
+	4 Ivory Spire
+	4 Searing Spire
+	4 Silent Spire
+	4 Twisted Spire
+	4 Verdant Spire
+[common(7)]
+[wildcard(2)]
+	4 Mother of Ants
+	4 The Forge of Days
+	4 The Moth
+	4 The Red Grail
+	4 The Watchman
+	4 The Thunderskin
+	15 Illuminant Spire
+	15 Ivory Spire
+	15 Searing Spire
+	15 Silent Spire
+	15 Twisted Spire
+	15 Verdant Spire
+	4 True Blood of Saint Janus
+	4 The Heart of Ischav
+	4 Found Family
+	4 Delete
+	4 The Calm Belt
+	4 Wanderer's Shrine
+	4 Falling Sparks
+	4 Sundown
+	4 Restored Plains
+	4 Restored Island
+	4 Restored Swamp
+	4 Restored Mountain
+	4 Restored Fault
+	4 Restored Forest
+	4 Territorial Yew-Maw
+	4 The Geminiad
+	4 Naval Diplomacy
+	4 Torch
+	4 Collector of the Wonderful
+	4 Pull of the Unknown
+	4 Rite of Resurrection
+	4 Survivor's Instinct
+	7 Drakesteel Effigy
+	7 The Red Door
+	7 Tangled Heart
+	7 Font of Decadence
+	7 Awakened Titan
+	7 Moonlit Augury
+	7 Callous Observer
+	7 Bone Prophet
+	7 A Beloved World
+	7 Crashing Rot
+	7 Flesh Centrifuge
+	7 Scars of Oil
+	7 Melting Pot
+	7 Closure
+	7 Forgiving Monument
+	7 Eyes Scorched from Divinity
+	7 The Shattering of Meirel
+	7 Wandering Moon
+	7 Breach of Malice
+	7 Defacement
+	7 Ajha, the Wish for Home
+	7 Sentinel of Dead Lands
+	7 Mental Unmooring
+	7 Disregarded Project
+	7 Firmament Sculptor
+	7 Aurel, Born Through Discord
+	7 Starsea Bloomqueen
+	7 Breach of Mortality
+	7 Pattern Processing
+	7 Sorting Servant
+	7 Meet the Beyond
+	7 Beautiful Headhuntress
+	7 Star-Binding Command
+	7 Spread His Formula
+	4 Mordel Excursionist
+	4 Mordel Reinforcement
+	4 Outlands Traveller
+	4 Eternities Weaver
+	4 Outlands Guardian
+	4 Fadove Reinforcement
+	4 Pathborn Drake
+	4 Scars of Oil
+	4 Impunity of Souls
+	4 Fadove Reinforcement
+	4 Ethereal Exposure
+	4 Volatile Visions
+	4 Splendid Genesis
+	4 Paths Strider
+	4 Prophellos, Pathborn Hunger
+	4 Eldstone of Transience
+	4 Prodigal Dimensiurge
+	4 Timecoil Tracings
+	4 Inciting Incident
+	4 Splintered Memories
+	4 Millenniapede
+	4 Loche, Returned Pilgrim
+	4 Ouarra, All-Devourer
+	4 Abyssal Pursuer
+	4 Chthonic Gorger
+	4 Eager Impostor
+	4 Greenscale Descendant
+	4 Herald of Blackened Stars
+	4 Hex Trueblight
+	4 Inter Knowledge
+	4 Lord of the Broken
+	4 Return to Essence
+	4 Solar Pilgrimage
+	4 Traumatic Decree
+	4 Me, Divine Aspirant
+	4 Glorious Enforcer
+	4 Glorious Enforcer
+	4 Glorious Enforcer
+	4 Glorious Enforcer
+	4 Glorious Enforcer
+	4 Glorious Enforcer
+	4 Glorious Enforcer
+	4 Glorious Enforcer
+	4 Exiled Trickster
+	4 Liberators of the Soul
+	4 Breach of Nature
+	4 Herald of Storms
+	4 Mordel Peacekeeper
+	4 Apostle Entheate
+	4 Saylthe, Twice-Drowned
+	4 New Tensuo Physician
+	4 Urban Flytrap
+	4 Angel of the True Sun
+	4 Wishtouched Outcast
+	4 Ilcan Soulshear
+	4 Herald of Blackened Stars
+	4 Lifelighter
+	4 New Tensuo Luminary
+	7 Beacon Dreamer
+	4 Liferoot Gnawer
+	4 Herongrand Transcended
+	4 Bropheria
+	7 Flesh Centrifuge
+	4 Curious Dexteria
+	7 The Elegiast
