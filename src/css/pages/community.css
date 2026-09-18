@@ -369,6 +369,48 @@ select {
 	font-size: 20px;
 }
 
+.promos-container {
+    width: 90%;
+    margin: auto;
+}
+
+.promo-header {
+    font-size: 2em;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
+.promo-info {
+    color: var(--text-color);
+    text-align: center;
+    /* width: 220px; */
+}
+
+.promo-row {
+    display: flex;
+    height: fit-content;
+    padding-bottom: 12px;
+    overflow-x: auto;
+    width: 90vw;
+    gap: 15px;
+}
+
+.promo-info img {
+    height: 250px;
+    width: auto;
+}
+
+.promo-card-name {
+    font-family: beleren;
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}
+
+.promo-user {
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
 @media (max-device-width: 750px) {
 	.tab-select {
 		grid-template-columns: 1fr 1fr;

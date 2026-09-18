@@ -228,3 +228,45 @@
 .deck-card .mana {
 	margin-right: 2px;
 }
+
+.deck-card-info .mana-r {
+	-webkit-text-stroke: 0.6px #DB8664;
+	-moz-text-stroke: 0.6px #DB8664;
+	text-shadow: 0 0 8px #DB8664;
+	color: hsl(17.5, 100%, 85.1%);
+}
+
+.deck-card-info .mana-u {
+	-webkit-text-stroke: 0.6px #B5CDE3;
+	-moz-text-stroke: 0.6px #B5CDE3;
+	text-shadow: 0 0 8px #B5CDE3;
+	color: hsl(208.7, 100%, 95%);
+}
+
+.deck-card-info .mana-w {
+	-webkit-text-stroke: 0.6px #F0F2C0;
+	-moz-text-stroke: 0.6px #F0F2C0;
+	text-shadow: 0 0 8px #F0F2C0;
+	color: hsl(62.4, 100%, 93.1%)
+}
+
+.deck-card-info .mana-b {
+	-webkit-text-stroke: 0.6px #ACA29A;
+	-moz-text-stroke: 0.6px #ACA29A;
+	text-shadow: 0 0 8px #ACA29A;
+	color: hsl(26.67, 100%, 93.92%);
+}
+
+.deck-card-info .mana-g {
+	-webkit-text-stroke: 0.6px #93B483;
+	-moz-text-stroke: 0.6px #93B483;
+	text-shadow: 0 0 8px #93B483;
+	color: hsl(100.41, 100%, 90.98%);
+}
+
+.deck-card-info .mana-i {
+	-webkit-text-stroke: 0.6px #9B91B2;
+	-moz-text-stroke: 0.6px #9B91B2;
+	text-shadow: 0 0 8px #9B91B2;
+	color: hsl(258.18, 100%, 93.33%);
+}
