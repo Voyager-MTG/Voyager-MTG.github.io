@@ -226,7 +226,7 @@
 	font-weight: normal;
 }
 .deck-card .mana {
-	margin-right: 2px;
+	margin-right: 3px;
 }
 
 .deck-card-info .mana-r {
@@ -234,6 +234,7 @@
 	-moz-text-stroke: 0.6px #DB8664;
 	text-shadow: 0 0 8px #DB8664;
 	color: hsl(17.5, 100%, 85.1%);
+	margin-right: 4px;
 }
 
 .deck-card-info .mana-u {
