@@ -200,6 +200,7 @@
 		let set_list;
 		let stats;
 		let search_value = "";
+		let event_info;
 
 		await fetch('/lists/all-cards.json')
 			.then(response => response.json())
@@ -211,6 +212,12 @@
 			.then(response => response.json())
 			.then(json => {
 				set_list = json;
+			}).catch(error => console.error('Error:', error));
+
+		await fetch('https://voyager-api-pq2h.onrender.com/events/info')
+			.then(response => response.json())
+			.then(json => {
+				event_info = json;
 			}).catch(error => console.error('Error:', error));
 
 		let card_list_arrayified = card_list.cards; 
@@ -463,6 +470,7 @@
 			const deck_card = document.createElement('a');
 			deck_card.className = 'deck-card';
 			deck_card.href = deck.url;
+			deck_card.target = '_blank';
 
 			// console.log(deck);
 			const user_html = deck.user ? `<h3>${deck.user}</h3>` : '';
@@ -546,14 +554,99 @@
 		}
 
 		function makeUsersTab() {
-			const users_container = document.createElement("div");
-			users_container.className = "users-container";
+			// const users_container = document.createElement("div");
+			// users_container.className = "users-container";
 
-			for (const user of all_users) {
-				users_container.appendChild(gridifyUser(user));
+			// for (const user of all_users) {
+			// 	users_container.appendChild(gridifyUser(user));
+			// }
+
+			// return users_container;
+			return makePromosTab();
+		}
+
+		function makePromosTab() {
+			const container = document.createElement('div');
+			container.className = 'promos-container';
+			
+			let gp_win_html = '';
+			let gp_topcut_html = '';
+			for (const _gp of event_info.gporder.reverse()) {
+				const gp = _gp.replace(' ', '');
+				let promo;
+				let topcut_promos = [];
+				for (const card of card_list_arrayified) {
+					if (card.notes.match(new RegExp(`!tag<promofor> ${gp}$`, 'm'))) promo = card;
+					if (card.notes.match(new RegExp(`!tag<promofor> ${gp}Top$`, 'm'))) topcut_promos.push(card);
+				}
+
+				// gp_wins.push(promo);
+				const src = promo ? ("/sets/" + promo.set + "-files/img/" + promo.position + ((promo.shape.includes("double")) ? "_front" : "") + "." + promo.image_type) : '/img/card_back.png';
+				const player = promo?.notes?.match(/!tag<champion> (.*?)$/m)?.[1] || '???';
+				gp_win_html += `<div class="promo-info">
+					<img src="${src}">
+					<div class="promo-card-name">${promo?.card_name || '???'}</div>
+					<div class="promo-user">${player}</div>
+					<div class="promo-event">GP Win: ${'GP ' + gp.split('GP')[1]}</div>
+				</div>`;
+				
+				// console.log(topcut_promos);
+				for (const promo of topcut_promos) {
+					const src = promo ? ("/sets/" + promo.set + "-files/img/" + promo.position + ((promo.shape.includes("double")) ? "_front" : "") + "." + promo.image_type) : '/img/card_back.png';
+					const player = promo?.notes?.match(/!tag<champion> (.*?)$/m)?.[1] || '???';
+					gp_topcut_html += `<div class="promo-info">
+						<img src="${src}">
+						<div class="promo-card-name">${promo?.card_name || '???'}</div>
+						<div class="promo-user">${player}</div>
+						<div class="promo-event">GP Top Cut: ${'GP ' + gp.split('GP')[1]}</div>
+					</div>`
+				}
 			}
 
-			return users_container;
+			let league_top_html = '';
+			for (const card of card_list_arrayified) {
+				const match = card.notes.match(/!tag<promofor> leagueS(\d+)$/);
+				if (match) {
+					console.log(match);
+					console.log('1afdsfadfsadfs');
+					// promo = card;
+				}
+			}
+
+			// let gp_win_html = '';
+			// for (const promo of gp_wins) {
+				
+			// }
+
+			container.innerHTML = `
+				<h2 class="promo-header">GP & League Wins</h2>
+				<div class="promo-row gp-wins">
+					${gp_win_html}
+				</div>
+				<h2 class="promo-header">GP Top Cut</h2>
+				<div class="promo-row gp-wins">
+					${gp_topcut_html}
+				</div>
+				<!--h2 class="promo-header">League Monthly Champions</h2>
+				<div class="promo-row gp-wins">
+					${`<div class="promo-info">
+						<img src="/img/card_back.png">
+						<div class="promo-card-name">Card Name</div>
+						<div class="promo-user">Aanginer</div>
+						<div class="promo-event">GP Win: GP Something</div>
+					</div>`.repeat(15)}
+				</div>
+				<h2 class="promo-header">League Top 5</h2>
+				<div class="promo-row gp-wins">
+					${`<div class="promo-info">
+						<img src="/img/card_back.png">
+						<div class="promo-card-name">Card Name</div>
+						<div class="promo-user">Aanginer</div>
+						<div class="promo-event">GP Win: GP Something</div>
+					</div>`.repeat(15)}
+				</div-->
+			`;
+			return container;
 		}
 
 		function gridifyUser(user) {
