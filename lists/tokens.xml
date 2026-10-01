@@ -852,6 +852,134 @@ Equip creature of the chosen type {1}</text>
 			<token>1</token>
 		</card>
 		<card>
+			<name>Demon Noble BTO</name>
+			<text>Flying</text>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/BTO-files/img/15.jpg" num="3" uuid="BTO15">BTO</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Creature – Demon Noble</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<pt>5/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Skeleton BTO</name>
+			<text></text>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/BTO-files/img/16.jpg" num="5" uuid="BTO16">BTO</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Creature – Skeleton</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>City&apos;s Blessing BTO</name>
+			<text>&quot;Not even death can wrest from your claws the freedom you win in life.&quot;
+–Price Deus, Sunson</text>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/BTO-files/img/17.jpg" num="1" uuid="BTO17">BTO</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type></type>
+				<maintype></maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Keeper of the Forgotten BTO</name>
+			<text>Flash
+When this creature enters, you may exile target instant or sorcery card with mana value less than or equal to its power from your graveyard, then copy it. You may cast the copy without paying its mana cost.</text>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/BTO-files/img/18.jpg" num="6" uuid="BTO18">BTO</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Creature – Human</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>UR</colors>
+				<coloridentity>UR</coloridentity>
+				<pt>1/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Conflict BTO</name>
+			<text>(As this token enters, choose an opponent to protect it. You can attack it. When it&apos;s defeated, return the exiled card to its owner&apos;s hand.)</text>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/BTO-files/img/19.jpg" num="2" uuid="BTO19">BTO</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Battle – Conflict</type>
+				<maintype>Battle</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
+				<pt>2</pt>
+			</prop>
+			<tablerow>1</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Nightmare BTO</name>
+			<text></text>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/BTO-files/img/20.jpg" num="4" uuid="BTO20">BTO</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Creature – Nightmare</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<pt>1/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Musclegrounds Tunneler BTO</name>
+			<text>Haste
+Whenever this creature becomes tapped, put a +1/+1 counter on it.</text>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/BTO-files/img/21.jpg" num="7" uuid="BTO21">BTO</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Creature – Wurm Mutant</type>
+				<maintype>Creature</maintype>
+				<manacost>4RG</manacost>
+				<cmc>6</cmc>
+				<colors>RG</colors>
+				<coloridentity>RG</coloridentity>
+				<pt>1/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
 			<name>Icon EXPT</name>
 			<text></text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/2.jpg" num="19" uuid="EXPT2">EXPT</set>

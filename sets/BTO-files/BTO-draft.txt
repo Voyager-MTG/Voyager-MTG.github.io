@@ -1,0 +1,247 @@
+[CustomCards]
+	[
+		{
+			"name": "Wildcount Heir",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Creature — Azra Noble",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/1_Wildcount Heir.jpg"
+			}
+		},
+		{
+			"name": "Sage of the Stingfields",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment Creature — Tide Merfolk",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/2_Sage of the Stingfields.jpg"
+			}
+		},
+		{
+			"name": "Peasant's Bane",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Noble",
+			"collector_number": "3",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/3_Peasant's Bane_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/3_Peasant's Bane_front.jpg"
+			}
+		},
+		{
+			"name": "Jack In",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}",
+			"type": "Sorcery",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/4_Jack In.jpg"
+			}
+		},
+		{
+			"name": "Teeming Anurboroid",
+			"rarity": "rare",
+			"mana_cost": "{G}",
+			"type": "Artifact Creature — Plant Frog",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/5_Teeming Anurboroid.jpg"
+			}
+		},
+		{
+			"name": "On Sabbatical",
+			"rarity": "rare",
+			"mana_cost": "{W}{U}",
+			"type": "Sorcery",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/11_On Sabbatical.jpg"
+			}
+		},
+		{
+			"name": "Starspawn Nucleus",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{B}",
+			"type": "Creature — Nightmare Ooze",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/13_Starspawn Nucleus.jpg"
+			}
+		},
+		{
+			"name": "Whispering Warmonger",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{R}",
+			"type": "Creature — Faerie Demon",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/15_Whispering Warmonger.jpg"
+			}
+		},
+		{
+			"name": "Muscleground Tunneler",
+			"rarity": "rare",
+			"mana_cost": "{4}{R}{G}",
+			"type": "Creature — Wurm Mutant",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/10_Muscleground Tunneler.jpg"
+			}
+		},
+		{
+			"name": "Spirit of Solidarity",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{W}",
+			"type": "Creature — Chimera Spirit",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/12_Spirit of Solidarity.jpg"
+			}
+		},
+		{
+			"name": "Balancer of Lives",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{B}",
+			"type": "Creature — Insect Cleric",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/6_Balancer of Lives.jpg"
+			}
+		},
+		{
+			"name": "Bifurcating Mycomass",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{G}",
+			"type": "Creature — Plant Horror",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/7_Bifurcating Mycomass.jpg"
+			}
+		},
+		{
+			"name": "Tooth of the Rising Star",
+			"rarity": "rare",
+			"mana_cost": "{G}{U}",
+			"type": "Artifact — Equipment",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/14_Tooth of the Rising Star.jpg"
+			}
+		},
+		{
+			"name": "Keeper of the Forgotten",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{R}",
+			"type": "Creature — Faerie Wizard",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/9_Keeper of the Forgotten.jpg"
+			}
+		},
+		{
+			"name": "Golden Avenger",
+			"rarity": "rare",
+			"mana_cost": "{R}{W}",
+			"type": "Artifact Creature — Robot Rogue",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/8_Golden Avenger.jpg"
+			}
+		},
+		{
+			"name": "Demon Noble",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Demon Noble",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/3_Demon Noble.jpg"
+			}
+		},
+		{
+			"name": "Skeleton",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Skeleton",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/5_Skeleton.jpg"
+			}
+		},
+		{
+			"name": "City's Blessing",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/1_City's Blessing.jpg"
+			}
+		},
+		{
+			"name": "Keeper of the Forgotten",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Human",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/6_Keeper of the Forgotten.jpg"
+			}
+		},
+		{
+			"name": "Conflict",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Battle — Conflict",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/2_Conflict.jpg"
+			}
+		},
+		{
+			"name": "Nightmare",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Nightmare",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/4_Nightmare.jpg"
+			}
+		},
+		{
+			"name": "Musclegrounds Tunneler",
+			"rarity": "common",
+			"mana_cost": "{4}{R}{G}",
+			"type": "Token Creature — Wurm Mutant",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/BTO-files/img/7_Musclegrounds Tunneler.jpg"
+			}
+		},
+	]
+
+[cube(5)]
+	1 Wildcount Heir
+	1 Sage of the Stingfields
+	1 Peasant's Bane
+	1 Jack In
+	1 Teeming Anurboroid
+	1 On Sabbatical
+	1 Starspawn Nucleus
+	1 Whispering Warmonger
+	1 Muscleground Tunneler
+	1 Spirit of Solidarity
+	1 Balancer of Lives
+	1 Bifurcating Mycomass
+	1 Tooth of the Rising Star
+	1 Keeper of the Forgotten
+	1 Golden Avenger
