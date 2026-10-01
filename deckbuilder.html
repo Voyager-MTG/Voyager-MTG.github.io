@@ -2039,7 +2039,7 @@
 
 				const favoriteIcon = document.createElement('img');
 				favoriteIcon.className = 'card-button-icon';
-				favoriteIcon.src = favorites.match(`${RegExp.escape(card_stats.card_name)}\\n`) ? '/img/starred.png' : '/img/star.png';
+				favoriteIcon.src = favorites?.match(`${RegExp.escape(card_stats.card_name)}\\n`) ? '/img/starred.png' : '/img/star.png';
 				favoriteBtn.appendChild(favoriteIcon);
 
 				buttons.appendChild(addBtn);

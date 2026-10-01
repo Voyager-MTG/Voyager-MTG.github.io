@@ -1,0 +1,3558 @@
+[CustomCards]
+	[
+		{
+			"name": "Guiding Zhulong",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}{U}",
+			"type": "Enchantment Creature — Chimera",
+			"collector_number": "204",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/204_Guiding Zhulong.jpg"
+			}
+		},
+		{
+			"name": "Realm Corrosion",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{B}",
+			"type": "Sorcery",
+			"collector_number": "225",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/225_Realm Corrosion.jpg"
+			}
+		},
+		{
+			"name": "Lonqua Kingpin",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{R}",
+			"type": "Creature — Rat Rogue",
+			"collector_number": "215",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/215_Lonqua Kingpin.jpg"
+			}
+		},
+		{
+			"name": "Wild-Stoker Xiongmao",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{R}{G}",
+			"type": "Enchantment Creature — Panda",
+			"collector_number": "237",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/237_Wild-Stoker Xiongmao.jpg"
+			}
+		},
+		{
+			"name": "Bountiful Fuzhu",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{W}",
+			"type": "Enchantment Creature — Saga Elk",
+			"collector_number": "192",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/192_Bountiful Fuzhu.jpg"
+			}
+		},
+		{
+			"name": "Beizu Shadowstalker",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{B}",
+			"type": "Creature — Panda Bear Assassin",
+			"collector_number": "190",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/190_Beizu Shadowstalker.jpg"
+			}
+		},
+		{
+			"name": "Fengxi Magistrate",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{G}",
+			"type": "Enchantment Creature — Boar Advisor",
+			"collector_number": "199",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/199_Fengxi Magistrate.jpg"
+			}
+		},
+		{
+			"name": "Gate-Bound Kun",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{U}",
+			"type": "Enchantment Creature — Fish",
+			"collector_number": "202",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/202_Gate-Bound Kun.jpg"
+			}
+		},
+		{
+			"name": "Fervent Stageplay",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}{R}",
+			"type": "Instant",
+			"collector_number": "200",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/200_Fervent Stageplay.jpg"
+			}
+		},
+		{
+			"name": "Xiao Shen, Warden Aspirant",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{W}",
+			"type": "Legendary Creature — Wolf Soldier",
+			"collector_number": "241",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/241_Xiao Shen, Warden Aspirant.jpg"
+			}
+		},
+		{
+			"name": "Beizu Fangblade",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Creature — Human Mercenary",
+			"collector_number": "78",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/78_Beizu Fangblade.jpg"
+			}
+		},
+		{
+			"name": "Lonqua Qibinder",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Monk",
+			"collector_number": "95",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/95_Lonqua Qibinder.jpg"
+			}
+		},
+		{
+			"name": "Decaying Disciple",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Zombie",
+			"collector_number": "85",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/85_Decaying Disciple.jpg"
+			}
+		},
+		{
+			"name": "Enshadowed Huodou",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment Creature — Saga Dog",
+			"collector_number": "87",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/87_Enshadowed Huodou.jpg"
+			}
+		},
+		{
+			"name": "Inner Blight Daoshi",
+			"rarity": "common",
+			"mana_cost": "{4}{B}{B}",
+			"type": "Creature — Panda Bear Monk",
+			"collector_number": "93",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/93_Inner Blight Daoshi.jpg"
+			}
+		},
+		{
+			"name": "Ox-Head Guardian",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Enchantment Creature — Ox Warrior",
+			"collector_number": "101",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/101_Ox-Head Guardian.jpg"
+			}
+		},
+		{
+			"name": "Hero's Downfall",
+			"rarity": "common",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Instant",
+			"collector_number": "91",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/91_Hero's Downfall.jpg"
+			}
+		},
+		{
+			"name": "Imperial Battlesage",
+			"rarity": "common",
+			"mana_cost": "{4}{B}",
+			"type": "Creature — Azra Wizard",
+			"collector_number": "92",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/92_Imperial Battlesage.jpg"
+			}
+		},
+		{
+			"name": "Read the Shadows",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Sorcery",
+			"collector_number": "105",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/105_Read the Shadows.jpg"
+			}
+		},
+		{
+			"name": "Soulblight Corrosion",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Enchantment — Aura",
+			"collector_number": "108",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/108_Soulblight Corrosion.jpg"
+			}
+		},
+		{
+			"name": "Refuse Mortality",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Sorcery",
+			"collector_number": "106",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/106_Refuse Mortality.jpg"
+			}
+		},
+		{
+			"name": "Malevolent Scorn",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "96",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/96_Malevolent Scorn.jpg"
+			}
+		},
+		{
+			"name": "Bloodless Belle",
+			"rarity": "common",
+			"mana_cost": "{2}{U/B}",
+			"type": "Creature — Zombie",
+			"collector_number": "191",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/191_Bloodless Belle.jpg"
+			}
+		},
+		{
+			"name": "Lonqua Bladewright",
+			"rarity": "common",
+			"mana_cost": "{2}{B/R}",
+			"type": "Creature — Human Artificer",
+			"collector_number": "214",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/214_Lonqua Bladewright.jpg"
+			}
+		},
+		{
+			"name": "Spider Manifestation",
+			"rarity": "common",
+			"mana_cost": "{1}{R/G}",
+			"type": "Creature — Spider Avatar",
+			"collector_number": "231",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/231_Spider Manifestation.jpg"
+			}
+		},
+		{
+			"name": "Peakbound Pangu",
+			"rarity": "common",
+			"mana_cost": "{3}{G/W}{G/W}",
+			"type": "Enchantment Creature — Saga Giant",
+			"collector_number": "221",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/221_Peakbound Pangu.jpg"
+			}
+		},
+		{
+			"name": "Inexperienced Pyredancer",
+			"rarity": "common",
+			"mana_cost": "{W/B}",
+			"type": "Creature — Human Performer",
+			"collector_number": "208",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/208_Inexperienced Pyredancer.jpg"
+			}
+		},
+		{
+			"name": "Withered Penghou",
+			"rarity": "common",
+			"mana_cost": "{1}{B/G}",
+			"type": "Enchantment Creature — Treefolk",
+			"collector_number": "238",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/238_Withered Penghou.jpg"
+			}
+		},
+		{
+			"name": "Mourning Yaoguai",
+			"rarity": "common",
+			"mana_cost": "{3}{G/U}{G/U}",
+			"type": "Enchantment Creature — Beast",
+			"collector_number": "219",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/219_Mourning Yaoguai.jpg"
+			}
+		},
+		{
+			"name": "Wardens Mentor",
+			"rarity": "common",
+			"mana_cost": "{2}{R/W}{R/W}",
+			"type": "Creature — Cat Human Soldier",
+			"collector_number": "236",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/236_Wardens Mentor.jpg"
+			}
+		},
+		{
+			"name": "Royal Custodian",
+			"rarity": "common",
+			"mana_cost": "{2}{U/R}",
+			"type": "Creature — Azra Noble Soldier",
+			"collector_number": "228",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/228_Royal Custodian.jpg"
+			}
+		},
+		{
+			"name": "Yizan Ascetic",
+			"rarity": "common",
+			"mana_cost": "{1}{W/U}",
+			"type": "Creature — Human Monk",
+			"collector_number": "243",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/243_Yizan Ascetic.jpg"
+			}
+		},
+		{
+			"name": "Myriad Landscape",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "265",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/265_Myriad Landscape.jpg"
+			}
+		},
+		{
+			"name": "Venerated Stage",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "269",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/269_Venerated Stage.jpg"
+			}
+		},
+		{
+			"name": "Ferocious Emissary",
+			"rarity": "mythic",
+			"mana_cost": "{R}{R}",
+			"type": "Creature — Human Monk",
+			"collector_number": "128",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/128_Ferocious Emissary.jpg"
+			}
+		},
+		{
+			"name": "Xuan Wu, Stalwart Cardinal",
+			"rarity": "mythic",
+			"mana_cost": "{3}{G}{G}{G}",
+			"type": "Legendary Enchantment Creature — Saga Turtle",
+			"collector_number": "187",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/187_Xuan Wu, Stalwart Cardinal.jpg"
+			}
+		},
+		{
+			"name": "Zhu Que, Incarnated Cardinal",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}{R}{R}",
+			"type": "Legendary Enchantment Creature — Saga Phoenix",
+			"collector_number": "151",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/151_Zhu Que, Incarnated Cardinal.jpg"
+			}
+		},
+		{
+			"name": "Bai Hu, Warding Cardinal",
+			"rarity": "mythic",
+			"mana_cost": "{W}{W}{W}",
+			"type": "Legendary Enchantment Creature — Saga Cat",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/3_Bai Hu, Warding Cardinal.jpg"
+			}
+		},
+		{
+			"name": "Qin Long, Flowing Cardinal",
+			"rarity": "mythic",
+			"mana_cost": "{4}{U}{U}{U}",
+			"type": "Legendary Enchantment Creature — Saga Dragon",
+			"collector_number": "61",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/61_Qin Long, Flowing Cardinal.jpg"
+			}
+		},
+		{
+			"name": "Tian Lang, Lost to Tales",
+			"rarity": "mythic",
+			"mana_cost": "{B}{B}{B}{B}{B}",
+			"type": "Legendary Enchantment Creature — Zombie Wolf",
+			"collector_number": "110",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/110_Tian Lang, Lost to Tales.jpg"
+			}
+		},
+		{
+			"name": "Longwang, Celestial Ancestor",
+			"rarity": "mythic",
+			"mana_cost": "{12}",
+			"type": "Legendary Enchantment Creature — Dragon God",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/1_Longwang, Celestial Ancestor.jpg"
+			}
+		},
+		{
+			"name": "Soulblighter Mage",
+			"rarity": "mythic",
+			"mana_cost": "{U}{B}",
+			"type": "Creature — Human Warlock",
+			"collector_number": "230",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/230_Soulblighter Mage.jpg"
+			}
+		},
+		{
+			"name": "Vermillion Reincarnation",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "147",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/147_Vermillion Reincarnation.jpg"
+			}
+		},
+		{
+			"name": "Dreamsifter Kalavinka",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment Creature — Saga Bird",
+			"collector_number": "47",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/47_Dreamsifter Kalavinka.jpg"
+			}
+		},
+		{
+			"name": "Inner Flow Daoshi",
+			"rarity": "common",
+			"mana_cost": "{4}{U}{U}",
+			"type": "Creature — Panda Bear Monk",
+			"collector_number": "53",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/53_Inner Flow Daoshi.jpg"
+			}
+		},
+		{
+			"name": "Reckless Studies",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Sorcery",
+			"collector_number": "65",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/65_Reckless Studies.jpg"
+			}
+		},
+		{
+			"name": "Yizan Talekeeper",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Human Monk",
+			"collector_number": "77",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/77_Yizan Talekeeper.jpg"
+			}
+		},
+		{
+			"name": "Soulblight Enervation",
+			"rarity": "common",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Instant",
+			"collector_number": "68",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/68_Soulblight Enervation.jpg"
+			}
+		},
+		{
+			"name": "Feng-Brood Yearling",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment Creature — Dragon",
+			"collector_number": "49",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/49_Feng-Brood Yearling.jpg"
+			}
+		},
+		{
+			"name": "Lofty Denial",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "57",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/57_Lofty Denial.jpg"
+			}
+		},
+		{
+			"name": "Divine Connection",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Sorcery",
+			"collector_number": "45",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/45_Divine Connection.jpg"
+			}
+		},
+		{
+			"name": "Perfected Guard",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "60",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/60_Perfected Guard.jpg"
+			}
+		},
+		{
+			"name": "Realmbound Sentence",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "63",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/63_Realmbound Sentence.jpg"
+			}
+		},
+		{
+			"name": "Treasured Memory",
+			"rarity": "common",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Instant",
+			"collector_number": "73",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/73_Treasured Memory.jpg"
+			}
+		},
+		{
+			"name": "Ragged Jiangshi",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Zombie",
+			"collector_number": "62",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/62_Ragged Jiangshi.jpg"
+			}
+		},
+		{
+			"name": "Wardens Flamesignaller",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Soldier",
+			"collector_number": "148",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/148_Wardens Flamesignaller.jpg"
+			}
+		},
+		{
+			"name": "Acolyte Aspirant",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Human Monk Warrior",
+			"collector_number": "115",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/115_Acolyte Aspirant.jpg"
+			}
+		},
+		{
+			"name": "Dreamstoker",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Warlock",
+			"collector_number": "123",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/123_Dreamstoker.jpg"
+			}
+		},
+		{
+			"name": "Crossed Defiance",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Sorcery",
+			"collector_number": "119",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/119_Crossed Defiance.jpg"
+			}
+		},
+		{
+			"name": "Shenme Courtesan",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Enchantment Creature — Fox Citizen",
+			"collector_number": "144",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/144_Shenme Courtesan.jpg"
+			}
+		},
+		{
+			"name": "Inner Rage Daoshi",
+			"rarity": "common",
+			"mana_cost": "{4}{R}{R}",
+			"type": "Creature — Panda Bear Monk",
+			"collector_number": "136",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/136_Inner Rage Daoshi.jpg"
+			}
+		},
+		{
+			"name": "Greedy Jin Chan",
+			"rarity": "common",
+			"mana_cost": "{4}{R}",
+			"type": "Enchantment Creature — Saga Frog",
+			"collector_number": "133",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/133_Greedy Jin Chan.jpg"
+			}
+		},
+		{
+			"name": "Festival Preparations",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "129",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/129_Festival Preparations.jpg"
+			}
+		},
+		{
+			"name": "Realm's Rebuke",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "143",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/143_Realm's Rebuke.jpg"
+			}
+		},
+		{
+			"name": "Sudden Flourish",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "146",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/146_Sudden Flourish.jpg"
+			}
+		},
+		{
+			"name": "Young Pyredancer",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Creature — Human Performer",
+			"collector_number": "149",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/149_Young Pyredancer.jpg"
+			}
+		},
+		{
+			"name": "Yaoguai Qi-Seekers",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Enchantment Creature — Ogre",
+			"collector_number": "188",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/188_Yaoguai Qi-Seekers.jpg"
+			}
+		},
+		{
+			"name": "Reject the Malevolent",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "177",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/177_Reject the Malevolent.jpg"
+			}
+		},
+		{
+			"name": "Tigren Ascetic",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Cat Monk",
+			"collector_number": "185",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/185_Tigren Ascetic.jpg"
+			}
+		},
+		{
+			"name": "Mountain's Might",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Enchantment — Aura",
+			"collector_number": "172",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/172_Mountain's Might.jpg"
+			}
+		},
+		{
+			"name": "Imperial Storyteller",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Human Performer",
+			"collector_number": "164",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/164_Imperial Storyteller.jpg"
+			}
+		},
+		{
+			"name": "Burgeoning Nest",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Sorcery",
+			"collector_number": "155",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/155_Burgeoning Nest.jpg"
+			}
+		},
+		{
+			"name": "Inner Strength Daoshi",
+			"rarity": "common",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Creature — Panda Bear Monk",
+			"collector_number": "165",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/165_Inner Strength Daoshi.jpg"
+			}
+		},
+		{
+			"name": "Savage Zhizhujing",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Enchantment Creature — Saga Spider",
+			"collector_number": "181",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/181_Savage Zhizhujing.jpg"
+			}
+		},
+		{
+			"name": "Gateward Colossus",
+			"rarity": "common",
+			"mana_cost": "{5}{G}{G}",
+			"type": "Creature — Panda Bear Warrior",
+			"collector_number": "159",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/159_Gateward Colossus.jpg"
+			}
+		},
+		{
+			"name": "Liang Protective Stance",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Instant",
+			"collector_number": "168",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/168_Liang Protective Stance.jpg"
+			}
+		},
+		{
+			"name": "Realm Confrontation",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Instant",
+			"collector_number": "175",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/175_Realm Confrontation.jpg"
+			}
+		},
+		{
+			"name": "Beizu Serpent-Guard",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Human Soldier",
+			"collector_number": "153",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/153_Beizu Serpent-Guard.jpg"
+			}
+		},
+		{
+			"name": "Temple Vitalist",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Kirin Druid",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/35_Temple Vitalist.jpg"
+			}
+		},
+		{
+			"name": "Tales Retold",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Sorcery",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/33_Tales Retold.jpg"
+			}
+		},
+		{
+			"name": "Windcarp Pyredancer",
+			"rarity": "common",
+			"mana_cost": "{4}{W}{W}",
+			"type": "Creature — Cat Performer",
+			"collector_number": "37",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/37_Windcarp Pyredancer.jpg"
+			}
+		},
+		{
+			"name": "Inner Peace Daoshi",
+			"rarity": "common",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Creature — Panda Bear Monk",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/19_Inner Peace Daoshi.jpg"
+			}
+		},
+		{
+			"name": "Huyao Bondforger",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment Creature — Saga Fox",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/18_Huyao Bondforger.jpg"
+			}
+		},
+		{
+			"name": "Breezelifted Quingqiao",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment Creature — Bird",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/7_Breezelifted Quingqiao.jpg"
+			}
+		},
+		{
+			"name": "Balanced Acolyte",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Creature — Human Monk",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/4_Balanced Acolyte.jpg"
+			}
+		},
+		{
+			"name": "Accompanied Trueblood",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "creature — Kirin Noble",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/2_Accompanied Trueblood.jpg"
+			}
+		},
+		{
+			"name": "Moonsight Warden",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Soldier",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/24_Moonsight Warden.jpg"
+			}
+		},
+		{
+			"name": "Revoke",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/28_Revoke.jpg"
+			}
+		},
+		{
+			"name": "Celestial Sanction",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Enchantment",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/8_Celestial Sanction.jpg"
+			}
+		},
+		{
+			"name": "Masters Rebuttal",
+			"rarity": "common",
+			"mana_cost": "{4}{W}",
+			"type": "Instant",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/21_Masters Rebuttal.jpg"
+			}
+		},
+		{
+			"name": "Skyward Leap",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/30_Skyward Leap.jpg"
+			}
+		},
+		{
+			"name": "Tang Yang, Ji's Second",
+			"rarity": "rare",
+			"mana_cost": "{W}",
+			"type": "Legendary Creature — Human Soldier",
+			"collector_number": "34",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/34_Tang Yang, Ji's Second.jpg"
+			}
+		},
+		{
+			"name": "Dijiang of Shared Blessings",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment Creature — Saga Bird",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/11_Dijiang of Shared Blessings.jpg"
+			}
+		},
+		{
+			"name": "Mox Jade",
+			"rarity": "mythic",
+			"mana_cost": "{0}",
+			"type": "Legendary Artifact",
+			"collector_number": "250",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/250_Mox Jade.jpg"
+			}
+		},
+		{
+			"name": "Court of the Storied",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Legendary Land",
+			"collector_number": "256",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/256_Court of the Storied.jpg"
+			}
+		},
+		{
+			"name": "Cyclical Wisdom",
+			"rarity": "mythic",
+			"mana_cost": "{1}{G}{U}",
+			"type": "Instant",
+			"collector_number": "196",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/196_Cyclical Wisdom.jpg"
+			}
+		},
+		{
+			"name": "Imperial Mediator",
+			"rarity": "mythic",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Creature — Human Monk",
+			"collector_number": "163",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/163_Imperial Mediator.jpg"
+			}
+		},
+		{
+			"name": "Cauldron of Lost Authority",
+			"rarity": "mythic",
+			"mana_cost": "{1}{B}",
+			"type": "Artifact",
+			"collector_number": "83",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/83_Cauldron of Lost Authority.jpg"
+			}
+		},
+		{
+			"name": "Divine Knowledge",
+			"rarity": "mythic",
+			"mana_cost": "{X}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "46",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/46_Divine Knowledge.jpg"
+			}
+		},
+		{
+			"name": "Fableweaver Huxian",
+			"rarity": "mythic",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment Creature — Fox Shapeshifter",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/13_Fableweaver Huxian.jpg"
+			}
+		},
+		{
+			"name": "Derelict Temple",
+			"rarity": "common",
+			"mana_cost": "{1}",
+			"type": "Enchantment Artifact — Shrine",
+			"collector_number": "247",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/247_Derelict Temple.jpg"
+			}
+		},
+		{
+			"name": "Crossed's Lantern",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "246",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/246_Crossed's Lantern.jpg"
+			}
+		},
+		{
+			"name": "Ironforged Leigong",
+			"rarity": "common",
+			"mana_cost": "{4}",
+			"type": "Artifact Creature — Bird Golem",
+			"collector_number": "249",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/249_Ironforged Leigong.jpg"
+			}
+		},
+		{
+			"name": "Awakened Terracotta",
+			"rarity": "common",
+			"mana_cost": "{7}",
+			"type": "Enchantment Artifact Creature — Golem",
+			"collector_number": "245",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/245_Awakened Terracotta.jpg"
+			}
+		},
+		{
+			"name": "Inactive Crossing",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "262",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/262_Inactive Crossing.jpg"
+			}
+		},
+		{
+			"name": "Festival Server",
+			"rarity": "uncommon",
+			"mana_cost": "{W}",
+			"type": "Creature — Human Citizen",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/14_Festival Server.jpg"
+			}
+		},
+		{
+			"name": "Gateward Huli Jing",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{W}{W}",
+			"type": "Enchantment Creature — Fox Soldier",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/16_Gateward Huli Jing.jpg"
+			}
+		},
+		{
+			"name": "Moon Rabbit Joyseeker",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Enchantment Creature — Saga Rabbit",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/22_Moon Rabbit Joyseeker.jpg"
+			}
+		},
+		{
+			"name": "Boonmother Nuwa",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{W}{W}",
+			"type": "Enchantment Creature — Saga Snake",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/6_Boonmother Nuwa.jpg"
+			}
+		},
+		{
+			"name": "Custodian Captain",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Creature — Human Soldier",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/10_Custodian Captain.jpg"
+			}
+		},
+		{
+			"name": "Bifang-Blood Warden",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Bird Soldier",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/5_Bifang-Blood Warden.jpg"
+			}
+		},
+		{
+			"name": "Hopegranter Crane",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Enchantment Creature — Bird",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/17_Hopegranter Crane.jpg"
+			}
+		},
+		{
+			"name": "Whitehorn Ascetic",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Elk Monk",
+			"collector_number": "36",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/36_Whitehorn Ascetic.jpg"
+			}
+		},
+		{
+			"name": "Deep-Hoarder Jiaolong",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Enchantment Creature — Saga Dragon",
+			"collector_number": "43",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/43_Deep-Hoarder Jiaolong.jpg"
+			}
+		},
+		{
+			"name": "Freeze Belief",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "51",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/51_Freeze Belief.jpg"
+			}
+		},
+		{
+			"name": "Climb The Gate",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment",
+			"collector_number": "41",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/41_Climb The Gate.jpg"
+			}
+		},
+		{
+			"name": "Ideal Reflection",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "52",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/52_Ideal Reflection.jpg"
+			}
+		},
+		{
+			"name": "Spirit's Claim",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "70",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/70_Spirit's Claim.jpg"
+			}
+		},
+		{
+			"name": "Deep Betrayal",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Instant",
+			"collector_number": "42",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/42_Deep Betrayal.jpg"
+			}
+		},
+		{
+			"name": "Enervating Skykoi",
+			"rarity": "uncommon",
+			"mana_cost": "{U}{U}{U}",
+			"type": "Enchantment Creature — Fish",
+			"collector_number": "48",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/48_Enervating Skykoi.jpg"
+			}
+		},
+		{
+			"name": "Ripplewatcher",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Merfolk Warlock",
+			"collector_number": "67",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/67_Ripplewatcher.jpg"
+			}
+		},
+		{
+			"name": "Jingwei Pyredancer",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Bird Performer",
+			"collector_number": "55",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/55_Jingwei Pyredancer.jpg"
+			}
+		},
+		{
+			"name": "Soulblighted Wanderer",
+			"rarity": "uncommon",
+			"mana_cost": "{U}",
+			"type": "Creature — Zombie",
+			"collector_number": "69",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/69_Soulblighted Wanderer.jpg"
+			}
+		},
+		{
+			"name": "Resplendent Fuzhu",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{U}{U}",
+			"type": "Enchantment Creature — Elk",
+			"collector_number": "66",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/66_Resplendent Fuzhu.jpg"
+			}
+		},
+		{
+			"name": "Ancestral Guidance",
+			"rarity": "uncommon",
+			"mana_cost": "{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "40",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/40_Ancestral Guidance.jpg"
+			}
+		},
+		{
+			"name": "Yaoguai Formeater",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Enchantment Creature — Saga Beast",
+			"collector_number": "75",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/75_Yaoguai Formeater.jpg"
+			}
+		},
+		{
+			"name": "Witness Uniformity",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "74",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/74_Witness Uniformity.jpg"
+			}
+		},
+		{
+			"name": "Shrine",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Enchantment Creature — Shrine",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/2_Shrine.jpg"
+			}
+		},
+		{
+			"name": "Taotie Paineater",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Enchantment Creature — Demon",
+			"collector_number": "184",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/184_Taotie Paineater.jpg"
+			}
+		},
+		{
+			"name": "Cardinal Alignment",
+			"rarity": "mythic",
+			"mana_cost": "{R}{G}{W}{U}",
+			"type": "Enchantment",
+			"collector_number": "193",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/193_Cardinal Alignment.jpg"
+			}
+		},
+		{
+			"name": "Li Hua, Imperial Scion",
+			"rarity": "rare",
+			"mana_cost": "{2}{W/U}{W/U}",
+			"type": "Legendary Creature — Human Noble",
+			"collector_number": "212",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/212_Li Hua, Imperial Scion.jpg"
+			}
+		},
+		{
+			"name": "Ai Yao, Acclaimed Pyredancer",
+			"rarity": "rare",
+			"mana_cost": "{1}{U/B}{U/B}",
+			"type": "Legendary Creature — Human Performer",
+			"collector_number": "189",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/189_Ai Yao, Acclaimed Pyredancer.jpg"
+			}
+		},
+		{
+			"name": "Ling Guang, Discarded Vessel",
+			"rarity": "rare",
+			"mana_cost": "{2}{B/R}{B/R}",
+			"type": "Legendary Creature — Bird Warlock",
+			"collector_number": "213",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/213_Ling Guang, Discarded Vessel.jpg"
+			}
+		},
+		{
+			"name": "Jing Cao, Liang Prodigy",
+			"rarity": "rare",
+			"mana_cost": "{4}{R/G}{R/G}",
+			"type": "Legendary Creature — Cat Monk",
+			"collector_number": "210",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/210_Jing Cao, Liang Prodigy.jpg"
+			}
+		},
+		{
+			"name": "An Gong, Temple-Keeper",
+			"rarity": "rare",
+			"mana_cost": "{1}{G/W}{G/W}",
+			"type": "Legendary Creature — Panda Bear Advisor",
+			"collector_number": "203",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/203_An Gong, Temple-Keeper.jpg"
+			}
+		},
+		{
+			"name": "Xiao Shen, God-Shunned",
+			"rarity": "rare",
+			"mana_cost": "{W/B}{W/B}",
+			"type": "Legendary Creature — Wolf Rogue",
+			"collector_number": "239",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/239_Xiao Shen, God-Shunned.jpg"
+			}
+		},
+		{
+			"name": "Ming Su, Reborn Lotus",
+			"rarity": "rare",
+			"mana_cost": "{3}{G/U}{G/U}",
+			"type": "Legendary Creature — Dwarf",
+			"collector_number": "217",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/217_Ming Su, Reborn Lotus.jpg"
+			}
+		},
+		{
+			"name": "Ji Chen, Supreme Warden",
+			"rarity": "rare",
+			"mana_cost": "{3}{R/W}{R/W}",
+			"type": "Legendary Creature — Human Noble Soldier",
+			"collector_number": "209",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/209_Ji Chen, Supreme Warden.jpg"
+			}
+		},
+		{
+			"name": "Xing Zhe, Sun's Chosen",
+			"rarity": "rare",
+			"mana_cost": "{1}{U/R}{U/R}",
+			"type": "Legendary Creature — Monkey Monk",
+			"collector_number": "242",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/242_Xing Zhe, Sun's Chosen.jpg"
+			}
+		},
+		{
+			"name": "Qi-Shift Technique",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{R}",
+			"type": "Instant",
+			"collector_number": "224",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/224_Qi-Shift Technique.jpg"
+			}
+		},
+		{
+			"name": "Imperious Geji",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}{W}",
+			"type": "Creature — Kirin Noble Performer",
+			"collector_number": "206",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/206_Imperious Geji.jpg"
+			}
+		},
+		{
+			"name": "Realmfarers Temple",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{U}",
+			"type": "Legendary Enchantment — Shrine",
+			"collector_number": "226",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/226_Realmfarers Temple.jpg"
+			}
+		},
+		{
+			"name": "Qi Reapers",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{G}",
+			"type": "Creature — Panda Bear Warlock",
+			"collector_number": "223",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/223_Qi Reapers.jpg"
+			}
+		},
+		{
+			"name": "Impose Balance",
+			"rarity": "rare",
+			"mana_cost": "{4}{W}{B}",
+			"type": "Sorcery",
+			"collector_number": "207",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/207_Impose Balance.jpg"
+			}
+		},
+		{
+			"name": "Splendorous Tengshe",
+			"rarity": "rare",
+			"mana_cost": "{G}{W}",
+			"type": "Enchantment Creature — Saga Lizard",
+			"collector_number": "232",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/232_Splendorous Tengshe.jpg"
+			}
+		},
+		{
+			"name": "Patron of Celebrations",
+			"rarity": "rare",
+			"mana_cost": "{6}{R}{R}{G}{G}",
+			"type": "Enchantment Creature — Dragon",
+			"collector_number": "220",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/220_Patron of Celebrations.jpg"
+			}
+		},
+		{
+			"name": "Kingpin's Enforcer",
+			"rarity": "rare",
+			"mana_cost": "{B}{R}",
+			"type": "Creature — Human Mercenary",
+			"collector_number": "211",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/211_Kingpin's Enforcer.jpg"
+			}
+		},
+		{
+			"name": "Dredge Thoughts",
+			"rarity": "rare",
+			"mana_cost": "{U}{B}",
+			"type": "Sorcery",
+			"collector_number": "198",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/198_Dredge Thoughts.jpg"
+			}
+		},
+		{
+			"name": "Tiger Skyguard",
+			"rarity": "rare",
+			"mana_cost": "{W}{U}",
+			"type": "Enchantment Creature — Cat",
+			"collector_number": "234",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/234_Tiger Skyguard.jpg"
+			}
+		},
+		{
+			"name": "Sun Hu, Crossed General",
+			"rarity": "rare",
+			"mana_cost": "{2}{B/G}{B/G}",
+			"type": "Legendary Creature — Demon Warrior",
+			"collector_number": "233",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/233_Sun Hu, Crossed General.jpg"
+			}
+		},
+		{
+			"name": "Propagating Yaoguai",
+			"rarity": "rare",
+			"mana_cost": "{3}",
+			"type": "Enchantment Artifact Creature — Beast",
+			"collector_number": "252",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/252_Propagating Yaoguai.jpg"
+			}
+		},
+		{
+			"name": "Fabled Lotus",
+			"rarity": "rare",
+			"mana_cost": "{4}",
+			"type": "Artifact",
+			"collector_number": "248",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/248_Fabled Lotus.jpg"
+			}
+		},
+		{
+			"name": "Weathered Gates",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "270",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/270_Weathered Gates.jpg"
+			}
+		},
+		{
+			"name": "Imperial Throne",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "261",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/261_Imperial Throne.jpg"
+			}
+		},
+		{
+			"name": "Pearlcarver's Masterpiece",
+			"rarity": "rare",
+			"mana_cost": "{8}",
+			"type": "Artifact Creature — Dragon Golem",
+			"collector_number": "251",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/251_Pearlcarver's Masterpiece.jpg"
+			}
+		},
+		{
+			"name": "Nurturing Matriarch",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Cat Citizen Advisor",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/25_Nurturing Matriarch.jpg"
+			}
+		},
+		{
+			"name": "Shenme Grand Temple",
+			"rarity": "rare",
+			"mana_cost": "{4}{W}",
+			"type": "Legendary Enchantment — Shrine",
+			"collector_number": "29",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/29_Shenme Grand Temple.jpg"
+			}
+		},
+		{
+			"name": "Write Out",
+			"rarity": "rare",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/38_Write Out.jpg"
+			}
+		},
+		{
+			"name": "Chord of Return",
+			"rarity": "rare",
+			"mana_cost": "{X}{W}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/9_Chord of Return.jpg"
+			}
+		},
+		{
+			"name": "Moon-Chaser Tiangou",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}{W}{W}",
+			"type": "Enchantment Creature — Dog",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/23_Moon-Chaser Tiangou.jpg"
+			}
+		},
+		{
+			"name": "Deep-Thought Kun",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{U}{U}",
+			"type": "Enchantment Creature — Whale",
+			"collector_number": "44",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/44_Deep-Thought Kun.jpg"
+			}
+		},
+		{
+			"name": "Realmguide Orator",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Azra Monk",
+			"collector_number": "64",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/64_Realmguide Orator.jpg"
+			}
+		},
+		{
+			"name": "Tidal Expulsion",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Instant",
+			"collector_number": "72",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/72_Tidal Expulsion.jpg"
+			}
+		},
+		{
+			"name": "Memories Relived",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "58",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/58_Memories Relived.jpg"
+			}
+		},
+		{
+			"name": "Mirror Fate",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}",
+			"type": "Enchantment",
+			"collector_number": "59",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/59_Mirror Fate.jpg"
+			}
+		},
+		{
+			"name": "Yizan Grand Temple",
+			"rarity": "rare",
+			"mana_cost": "{U}",
+			"type": "Legendary Enchantment — Shrine",
+			"collector_number": "76",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/76_Yizan Grand Temple.jpg"
+			}
+		},
+		{
+			"name": "Jiaoren Shallowstalker",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment Creature — Saga Shark",
+			"collector_number": "54",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/54_Jiaoren Shallowstalker.jpg"
+			}
+		},
+		{
+			"name": "Beizu Grand Temple",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}",
+			"type": "Legendary Enchantment — Shrine",
+			"collector_number": "79",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/79_Beizu Grand Temple.jpg"
+			}
+		},
+		{
+			"name": "Maskstealer",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Warlock",
+			"collector_number": "97",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/97_Maskstealer.jpg"
+			}
+		},
+		{
+			"name": "Merchant of Beyond",
+			"rarity": "rare",
+			"mana_cost": "{B}",
+			"type": "Creature — Zombie Citizen",
+			"collector_number": "98",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/98_Merchant of Beyond.jpg"
+			}
+		},
+		{
+			"name": "Pit's Petition",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}",
+			"type": "Sorcery",
+			"collector_number": "103",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/103_Pit's Petition.jpg"
+			}
+		},
+		{
+			"name": "Treasonous Mandate",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}{B}",
+			"type": "Instant",
+			"collector_number": "111",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/111_Treasonous Mandate.jpg"
+			}
+		},
+		{
+			"name": "Mist-Stalker Zhujian",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{B}{B}",
+			"type": "Enchantment Creature — Cat Cyclops Human Ox",
+			"collector_number": "99",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/99_Mist-Stalker Zhujian.jpg"
+			}
+		},
+		{
+			"name": "Dreadmother Nuwa",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}",
+			"type": "Enchantment Creature — Saga Snake",
+			"collector_number": "86",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/86_Dreadmother Nuwa.jpg"
+			}
+		},
+		{
+			"name": "Gloryforger",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{R}",
+			"type": "Creature — Azra Artificer",
+			"collector_number": "132",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/132_Gloryforger.jpg"
+			}
+		},
+		{
+			"name": "Field-Scorcher Huolong",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}{R}{R}",
+			"type": "Enchantment Creature — Dragon",
+			"collector_number": "130",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/130_Field-Scorcher Huolong.jpg"
+			}
+		},
+		{
+			"name": "Bloodthrall Tigren",
+			"rarity": "rare",
+			"mana_cost": "{R}",
+			"type": "Creature — Cat Berserker",
+			"collector_number": "117",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/117_Bloodthrall Tigren.jpg"
+			}
+		},
+		{
+			"name": "Crossed Invitation",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{R}{R}",
+			"type": "Enchantment",
+			"collector_number": "120",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/120_Crossed Invitation.jpg"
+			}
+		},
+		{
+			"name": "Nezha of Ignited Tales",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}",
+			"type": "Enchantment Creature — Saga Demon",
+			"collector_number": "141",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/141_Nezha of Ignited Tales.jpg"
+			}
+		},
+		{
+			"name": "Lonqua Grand Temple",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}",
+			"type": "Legendary Enchantment — Shrine",
+			"collector_number": "140",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/140_Lonqua Grand Temple.jpg"
+			}
+		},
+		{
+			"name": "Evernourish Jinmenju",
+			"rarity": "rare",
+			"mana_cost": "{G}",
+			"type": "Enchantment Creature — Saga Treefolk",
+			"collector_number": "157",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/157_Evernourish Jinmenju.jpg"
+			}
+		},
+		{
+			"name": "Liang Grand Temple",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}",
+			"type": "Legendary Enchantment — Shrine",
+			"collector_number": "167",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/167_Liang Grand Temple.jpg"
+			}
+		},
+		{
+			"name": "Reliquary-Back Bixi",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}{G}{G}",
+			"type": "Enchantment Creature — Dragon Turtle",
+			"collector_number": "178",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/178_Reliquary-Back Bixi.jpg"
+			}
+		},
+		{
+			"name": "Storyteller's Expertise",
+			"rarity": "rare",
+			"mana_cost": "{4}{G}",
+			"type": "Instant",
+			"collector_number": "182",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/182_Storyteller's Expertise.jpg"
+			}
+		},
+		{
+			"name": "Reverent Xiangliu",
+			"rarity": "rare",
+			"mana_cost": "{X}{G}{G}",
+			"type": "Enchantment Creature — Serpent Hydra",
+			"collector_number": "179",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/179_Reverent Xiangliu.jpg"
+			}
+		},
+		{
+			"name": "Imaginative Ensemble",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Creature — Human Druid",
+			"collector_number": "161",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/161_Imaginative Ensemble.jpg"
+			}
+		},
+		{
+			"name": "Da Po, Jun's Guide",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}",
+			"type": "Legendary Creature — Panda Bear Rebel",
+			"collector_number": "156",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/156_Da Po, Jun's Guide.jpg"
+			}
+		},
+		{
+			"name": "Sky-Gate Temple",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W/U}",
+			"type": "Legendary Enchantment — Shrine",
+			"collector_number": "229",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/229_Sky-Gate Temple.jpg"
+			}
+		},
+		{
+			"name": "Port-Gate Temple",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U/B}{U/B}",
+			"type": "Legendary Enchantment — Shrine",
+			"collector_number": "222",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/222_Port-Gate Temple.jpg"
+			}
+		},
+		{
+			"name": "Dread-Gate Temple",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B/R}",
+			"type": "Legendary Enchantment — Shrine",
+			"collector_number": "197",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/197_Dread-Gate Temple.jpg"
+			}
+		},
+		{
+			"name": "Cliff-Gate Temple",
+			"rarity": "uncommon",
+			"mana_cost": "{R/G}",
+			"type": "Legendary Enchantment — Shrine",
+			"collector_number": "195",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/195_Cliff-Gate Temple.jpg"
+			}
+		},
+		{
+			"name": "Valley-Gate Temple",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G/W}{G/W}",
+			"type": "Legendary Enchantment — Shrine",
+			"collector_number": "235",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/235_Valley-Gate Temple.jpg"
+			}
+		},
+		{
+			"name": "Marsh-Gate Temple",
+			"rarity": "uncommon",
+			"mana_cost": "{W/B}",
+			"type": "Legendary Enchantment — Shrine",
+			"collector_number": "216",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/216_Marsh-Gate Temple.jpg"
+			}
+		},
+		{
+			"name": "Moss-Gate Temple",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B/G}",
+			"type": "Legendary Enchantment — Shrine",
+			"collector_number": "218",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/218_Moss-Gate Temple.jpg"
+			}
+		},
+		{
+			"name": "Roaming-Gate Temple",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G/U}",
+			"type": "Legendary Enchantment — Shrine",
+			"collector_number": "227",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/227_Roaming-Gate Temple.jpg"
+			}
+		},
+		{
+			"name": "Foam-Gate Temple",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U/R}",
+			"type": "Legendary Enchantment — Shrine",
+			"collector_number": "201",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/201_Foam-Gate Temple.jpg"
+			}
+		},
+		{
+			"name": "City-Gate Temple",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R/W}{R/W}",
+			"type": "Legendary Enchantment — Shrine",
+			"collector_number": "194",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/194_City-Gate Temple.jpg"
+			}
+		},
+		{
+			"name": "Legend of the Masters",
+			"rarity": "special",
+			"mana_cost": "{2}{W}{U}{B}{R}{G}",
+			"type": "Sorcery",
+			"collector_number": "273",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/273_Legend of the Masters.jpg"
+			}
+		},
+		{
+			"name": "Panda Bear",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Creature — Panda Bear",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/16_Panda Bear.jpg"
+			}
+		},
+		{
+			"name": "Snake",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Creature — Snake",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/14_Snake.jpg"
+			}
+		},
+		{
+			"name": "Ape",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Creature — Ape",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/8_Ape.jpg"
+			}
+		},
+		{
+			"name": "Insect",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Creature — Insect",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/3_Insect.jpg"
+			}
+		},
+		{
+			"name": "Bird",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Creature — Bird",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/6_Bird.jpg"
+			}
+		},
+		{
+			"name": "Cat",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Creature — Cat",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/11_Cat.jpg"
+			}
+		},
+		{
+			"name": "Divine Guardianship",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}",
+			"type": "Instant",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/12_Divine Guardianship.jpg"
+			}
+		},
+		{
+			"name": "Fly Beyond",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/15_Fly Beyond.jpg"
+			}
+		},
+		{
+			"name": "Realmbreach",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/27_Realmbreach.jpg"
+			}
+		},
+		{
+			"name": "Pilgrimage's Reward",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/26_Pilgrimage's Reward.jpg"
+			}
+		},
+		{
+			"name": "Sun's Defiance",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/31_Sun's Defiance.jpg"
+			}
+		},
+		{
+			"name": "Jiufeng's Boon",
+			"rarity": "uncommon",
+			"mana_cost": "{W}",
+			"type": "Enchantment — Aura",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/20_Jiufeng's Boon.jpg"
+			}
+		},
+		{
+			"name": "Supportive Performer",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Cat Performer",
+			"collector_number": "32",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/32_Supportive Performer.jpg"
+			}
+		},
+		{
+			"name": "Festival Troublemakers",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Creature — Human Rabbit Citizen",
+			"collector_number": "50",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/50_Festival Troublemakers.jpg"
+			}
+		},
+		{
+			"name": "Tactical Battlesage",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Azra Wizard",
+			"collector_number": "71",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/71_Tactical Battlesage.jpg"
+			}
+		},
+		{
+			"name": "Shadowtreader",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Dwarf Warlock",
+			"collector_number": "107",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/107_Shadowtreader.jpg"
+			}
+		},
+		{
+			"name": "Jiufeng of Darkest Cycles",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{B}{B}",
+			"type": "Enchantment Creature — Bird Hydra",
+			"collector_number": "94",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/94_Jiufeng of Darkest Cycles.jpg"
+			}
+		},
+		{
+			"name": "Forgemaster's Edict",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Sorcery",
+			"collector_number": "88",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/88_Forgemaster's Edict.jpg"
+			}
+		},
+		{
+			"name": "Heartless Act",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "90",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/90_Heartless Act.jpg"
+			}
+		},
+		{
+			"name": "Darkest Prayers",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment",
+			"collector_number": "84",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/84_Darkest Prayers.jpg"
+			}
+		},
+		{
+			"name": "Wake the Bones",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{B}",
+			"type": "Sorcery",
+			"collector_number": "112",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/112_Wake the Bones.jpg"
+			}
+		},
+		{
+			"name": "Call the Damned",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "82",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/82_Call the Damned.jpg"
+			}
+		},
+		{
+			"name": "Pry Desire",
+			"rarity": "uncommon",
+			"mana_cost": "{B}",
+			"type": "Sorcery",
+			"collector_number": "104",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/104_Pry Desire.jpg"
+			}
+		},
+		{
+			"name": "Patient Fangblade",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Human Mercenary",
+			"collector_number": "102",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/102_Patient Fangblade.jpg"
+			}
+		},
+		{
+			"name": "Thought-Scraper Hou",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Enchantment Creature — Saga Wolf",
+			"collector_number": "109",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/109_Thought-Scraper Hou.jpg"
+			}
+		},
+		{
+			"name": "Gorging Mogwai",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{B}{B}",
+			"type": "Enchantment Creature — Saga",
+			"collector_number": "89",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/89_Gorging Mogwai.jpg"
+			}
+		},
+		{
+			"name": "Betrayer's Finale",
+			"rarity": "uncommon",
+			"mana_cost": "{B}{B}",
+			"type": "Instant",
+			"collector_number": "80",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/80_Betrayer's Finale.jpg"
+			}
+		},
+		{
+			"name": "Wangliang Shade",
+			"rarity": "uncommon",
+			"mana_cost": "{B}{B}{B}",
+			"type": "Enchantment Creature — Shade",
+			"collector_number": "113",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/113_Wangliang Shade.jpg"
+			}
+		},
+		{
+			"name": "Obsessed Jiangshi",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Creature — Zombie",
+			"collector_number": "100",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/100_Obsessed Jiangshi.jpg"
+			}
+		},
+		{
+			"name": "Bloodwilter",
+			"rarity": "uncommon",
+			"mana_cost": "{B}",
+			"type": "Creature — Human Warlock",
+			"collector_number": "81",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/81_Bloodwilter.jpg"
+			}
+		},
+		{
+			"name": "Weaving Maskwright",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment Creature — Spider Monk",
+			"collector_number": "114",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/114_Weaving Maskwright.jpg"
+			}
+		},
+		{
+			"name": "Ignited Qi Technique",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Instant",
+			"collector_number": "135",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/135_Ignited Qi Technique.jpg"
+			}
+		},
+		{
+			"name": "Huo-Brood Yearling",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Enchantment Creature — Dragon",
+			"collector_number": "134",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/134_Huo-Brood Yearling.jpg"
+			}
+		},
+		{
+			"name": "Long-Blessed Pyredancer",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Performer",
+			"collector_number": "139",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/139_Long-Blessed Pyredancer.jpg"
+			}
+		},
+		{
+			"name": "Endless Joys",
+			"rarity": "uncommon",
+			"mana_cost": "{R}",
+			"type": "Sorcery",
+			"collector_number": "125",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/125_Endless Joys.jpg"
+			}
+		},
+		{
+			"name": "Embercaller",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Dragon Warlock",
+			"collector_number": "124",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/124_Embercaller.jpg"
+			}
+		},
+		{
+			"name": "Excited Attendee",
+			"rarity": "uncommon",
+			"mana_cost": "{R}",
+			"type": "Creature — Human Citizen",
+			"collector_number": "126",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/126_Excited Attendee.jpg"
+			}
+		},
+		{
+			"name": "Nian Soulforger",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{R}{R}",
+			"type": "Enchantment Creature — Saga Dragon",
+			"collector_number": "142",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/142_Nian Soulforger.jpg"
+			}
+		},
+		{
+			"name": "Fabled General",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}{R}",
+			"type": "Enchantment Creature — Monkey Soldier",
+			"collector_number": "127",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/127_Fabled General.jpg"
+			}
+		},
+		{
+			"name": "Liang Punisher",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Wolf Monk",
+			"collector_number": "138",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/138_Liang Punisher.jpg"
+			}
+		},
+		{
+			"name": "Dragonheart Ancestor",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{R}{R}",
+			"type": "Enchantment Creature — Dragon",
+			"collector_number": "122",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/122_Dragonheart Ancestor.jpg"
+			}
+		},
+		{
+			"name": "Irresolute Zhubajie",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Enchantment Creature — Saga Boar",
+			"collector_number": "137",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/137_Irresolute Zhubajie.jpg"
+			}
+		},
+		{
+			"name": "Bile Blaze",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{R}",
+			"type": "Instant",
+			"collector_number": "116",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/116_Bile Blaze.jpg"
+			}
+		},
+		{
+			"name": "Fiery Virtue",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Enchantment",
+			"collector_number": "131",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/131_Fiery Virtue.jpg"
+			}
+		},
+		{
+			"name": "Conquer Psyche",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "118",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/118_Conquer Psyche.jpg"
+			}
+		},
+		{
+			"name": "Spiteful Prayer",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Enchantment",
+			"collector_number": "145",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/145_Spiteful Prayer.jpg"
+			}
+		},
+		{
+			"name": "Zealous Rivalry",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "150",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/150_Zealous Rivalry.jpg"
+			}
+		},
+		{
+			"name": "Deflected Advance",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Instant",
+			"collector_number": "121",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/121_Deflected Advance.jpg"
+			}
+		},
+		{
+			"name": "Millennial Greatkoi",
+			"rarity": "uncommon",
+			"mana_cost": "{8}{G}{G}",
+			"type": "Enchantment Creature — Fish",
+			"collector_number": "171",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/171_Millennial Greatkoi.jpg"
+			}
+		},
+		{
+			"name": "Regrow Bonds",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{G}",
+			"type": "Instant",
+			"collector_number": "176",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/176_Regrow Bonds.jpg"
+			}
+		},
+		{
+			"name": "Ancestor's Presence",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Enchantment — Aura",
+			"collector_number": "152",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/152_Ancestor's Presence.jpg"
+			}
+		},
+		{
+			"name": "Bounty of Heritage",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}",
+			"type": "Enchantment — Aura",
+			"collector_number": "154",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/154_Bounty of Heritage.jpg"
+			}
+		},
+		{
+			"name": "Malevolent Strength",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Sorcery",
+			"collector_number": "170",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/170_Malevolent Strength.jpg"
+			}
+		},
+		{
+			"name": "Strengthwarder",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Creature — Azra Warlock",
+			"collector_number": "183",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/183_Strengthwarder.jpg"
+			}
+		},
+		{
+			"name": "Iron-Breaker",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Creature — Panda Bear Giant",
+			"collector_number": "166",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/166_Iron-Breaker.jpg"
+			}
+		},
+		{
+			"name": "Groundforger Pangu",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Enchantment Creature — Saga Giant",
+			"collector_number": "160",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/160_Groundforger Pangu.jpg"
+			}
+		},
+		{
+			"name": "Impenetrable Ruishi",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{G}{G}",
+			"type": "Enchantment Creature — Cat Dog",
+			"collector_number": "162",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/162_Impenetrable Ruishi.jpg"
+			}
+		},
+		{
+			"name": "Liang Sparrer",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Weasel Monk",
+			"collector_number": "169",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/169_Liang Sparrer.jpg"
+			}
+		},
+		{
+			"name": "Tireless Chronicler",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Human Advisor",
+			"collector_number": "186",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/186_Tireless Chronicler.jpg"
+			}
+		},
+		{
+			"name": "Festival Guide",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Enchantment Creature — Fox Shapeshifter",
+			"collector_number": "158",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/158_Festival Guide.jpg"
+			}
+		},
+		{
+			"name": "Qilin Harvestguide",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Enchantment Creature — Saga Kirin",
+			"collector_number": "174",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/174_Qilin Harvestguide.jpg"
+			}
+		},
+		{
+			"name": "Rumbling Battlesage",
+			"rarity": "uncommon",
+			"mana_cost": "{X}{G}",
+			"type": "Creature — Human Wizard",
+			"collector_number": "180",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/180_Rumbling Battlesage.jpg"
+			}
+		},
+		{
+			"name": "Power of Tales",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Sorcery",
+			"collector_number": "173",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/173_Power of Tales.jpg"
+			}
+		},
+		{
+			"name": "Accursed Legion",
+			"rarity": "uncommon",
+			"mana_cost": "{6}",
+			"type": "Artifact Creature — Golem Army",
+			"collector_number": "244",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/244_Accursed Legion.jpg"
+			}
+		},
+		{
+			"name": "Realmscroll",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "253",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/253_Realmscroll.jpg"
+			}
+		},
+		{
+			"name": "Soulblessed Jian",
+			"rarity": "uncommon",
+			"mana_cost": "{1}",
+			"type": "Artifact — Equipment",
+			"collector_number": "254",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/254_Soulblessed Jian.jpg"
+			}
+		},
+		{
+			"name": "Suntouched Pond",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "268",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/268_Suntouched Pond.jpg"
+			}
+		},
+		{
+			"name": "Deepwater Mire",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "257",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/257_Deepwater Mire.jpg"
+			}
+		},
+		{
+			"name": "Bloodsoaked Meadow",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "255",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/255_Bloodsoaked Meadow.jpg"
+			}
+		},
+		{
+			"name": "Peakcarved Village",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "266",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/266_Peakcarved Village.jpg"
+			}
+		},
+		{
+			"name": "Flourishing Court",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "260",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/260_Flourishing Court.jpg"
+			}
+		},
+		{
+			"name": "Misty Monument",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "263",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/263_Misty Monument.jpg"
+			}
+		},
+		{
+			"name": "Moldering Cavern",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "264",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/264_Moldering Cavern.jpg"
+			}
+		},
+		{
+			"name": "Flooded Field",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "259",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/259_Flooded Field.jpg"
+			}
+		},
+		{
+			"name": "Roiling Crag",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "267",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/267_Roiling Crag.jpg"
+			}
+		},
+		{
+			"name": "Festival Ground",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "258",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/258_Festival Ground.jpg"
+			}
+		},
+		{
+			"name": "Swamp",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Basic Land — Swamp",
+			"collector_number": "282",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/282_Swamp.jpg"
+			}
+		},
+		{
+			"name": "Mountain",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Basic Land — Mountain",
+			"collector_number": "278",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/278_Mountain.jpg"
+			}
+		},
+		{
+			"name": "Island",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Basic Land — Island",
+			"collector_number": "276",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/276_Island.jpg"
+			}
+		},
+		{
+			"name": "Forest",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Basic Land — Forest",
+			"collector_number": "275",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/275_Forest.jpg"
+			}
+		},
+		{
+			"name": "Plains",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Basic Land — Plains",
+			"collector_number": "279",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/279_Plains.jpg"
+			}
+		},
+		{
+			"name": "Yan Lei, Regal Outsider",
+			"rarity": "mythic",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Legendary Planeswalker — Eileen",
+			"collector_number": "39",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/39_Yan Lei, Regal Outsider.jpg"
+			}
+		},
+		{
+			"name": "Jun, Draconic Visitor",
+			"rarity": "mythic",
+			"mana_cost": "{4}{U}{U}",
+			"type": "Legendary Planeswalker — Jun",
+			"collector_number": "56",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/56_Jun, Draconic Visitor.jpg"
+			}
+		},
+		{
+			"name": "Hou De, Martial Master",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}{G}",
+			"type": "Legendary Planeswalker — Hou",
+			"collector_number": "205",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/205_Hou De, Martial Master.jpg"
+			}
+		},
+		{
+			"name": "Xiao Shen, In Balance",
+			"rarity": "mythic",
+			"mana_cost": "{2}{W}{B/R}{B/R}",
+			"type": "Legendary Planeswalker — Xiao",
+			"collector_number": "240",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/240_Xiao Shen, In Balance.jpg"
+			}
+		},
+		{
+			"name": "Balance",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "",
+			"collector_number": "271",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/271_Balance.jpg"
+			}
+		},
+		{
+			"name": "Dragon",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Enchantment Creature — Dragon",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/7_Dragon.jpg"
+			}
+		},
+		{
+			"name": "Bird",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Enchantment Creature — Bird",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/10_Bird.jpg"
+			}
+		},
+		{
+			"name": "Demon",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Enchantment Creature — Demon",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/12_Demon.jpg"
+			}
+		},
+		{
+			"name": "Golem",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Artifact Creature — Golem",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/17_Golem.jpg"
+			}
+		},
+		{
+			"name": "Snake",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Creature — Snake",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/15_Snake.jpg"
+			}
+		},
+		{
+			"name": "Soldier",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Creature — Soldier",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/4_Soldier.jpg"
+			}
+		},
+		{
+			"name": "Spirit",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Enchantment Creature — Spirit",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/5_Spirit.jpg"
+			}
+		},
+		{
+			"name": "Dragon",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Enchantment Creature — Dragon",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/13_Dragon.jpg"
+			}
+		},
+		{
+			"name": "Treasure",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Artifact — Treasure",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/18_Treasure.jpg"
+			}
+		},
+		{
+			"name": "Beast",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token Enchantment Creature — Beast",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/9_Beast.jpg"
+			}
+		},
+		{
+			"name": "Copy",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Token",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/1_Copy.jpg"
+			}
+		},
+		{
+			"name": "Heir",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "",
+			"collector_number": "272",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/272_Heir.jpg"
+			}
+		},
+		{
+			"name": "Consecrated Grove",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "274",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/274_Consecrated Grove.jpg"
+			}
+		},
+		{
+			"name": "Teeming District",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "283",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/283_Teeming District.jpg"
+			}
+		},
+		{
+			"name": "Mistcloaked Gateway",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "277",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/277_Mistcloaked Gateway.jpg"
+			}
+		},
+		{
+			"name": "Pooling Rivulet",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "280",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/280_Pooling Rivulet.jpg"
+			}
+		},
+		{
+			"name": "Scorched Pillars",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "281",
+			"image_uris": {
+				"en": "https://Voyager-MTG.github.io/sets/SSC-files/img/281_Scorched Pillars.jpg"
+			}
+		},
+	]
+
+[rare(1)]
+	1 Ferocious Emissary
+	1 Xuan Wu, Stalwart Cardinal
+	1 Zhu Que, Incarnated Cardinal
+	1 Bai Hu, Warding Cardinal
+	1 Qin Long, Flowing Cardinal
+	1 Tian Lang, Lost to Tales
+	1 Longwang, Celestial Ancestor
+	1 Soulblighter Mage
+	2 Vermillion Reincarnation
+	2 Tang Yang, Ji's Second
+	2 Dijiang of Shared Blessings
+	1 Mox Jade
+	1 Court of the Storied
+	1 Cyclical Wisdom
+	1 Imperial Mediator
+	1 Cauldron of Lost Authority
+	1 Divine Knowledge
+	1 Fableweaver Huxian
+	1 Cardinal Alignment
+	2 Li Hua, Imperial Scion
+	2 Ai Yao, Acclaimed Pyredancer
+	2 Ling Guang, Discarded Vessel
+	2 Jing Cao, Liang Prodigy
+	2 An Gong, Temple-Keeper
+	2 Xiao Shen, God-Shunned
+	2 Ming Su, Reborn Lotus
+	2 Ji Chen, Supreme Warden
+	2 Xing Zhe, Sun's Chosen
+	2 Qi-Shift Technique
+	2 Imperious Geji
+	2 Realmfarers Temple
+	2 Qi Reapers
+	2 Impose Balance
+	2 Splendorous Tengshe
+	2 Patron of Celebrations
+	2 Kingpin's Enforcer
+	2 Dredge Thoughts
+	2 Tiger Skyguard
+	2 Sun Hu, Crossed General
+	2 Propagating Yaoguai
+	2 Fabled Lotus
+	2 Weathered Gates
+	2 Imperial Throne
+	2 Pearlcarver's Masterpiece
+	2 Nurturing Matriarch
+	2 Shenme Grand Temple
+	2 Write Out
+	2 Chord of Return
+	2 Moon-Chaser Tiangou
+	2 Deep-Thought Kun
+	2 Realmguide Orator
+	2 Tidal Expulsion
+	2 Memories Relived
+	2 Mirror Fate
+	2 Yizan Grand Temple
+	2 Jiaoren Shallowstalker
+	2 Beizu Grand Temple
+	2 Maskstealer
+	2 Merchant of Beyond
+	2 Pit's Petition
+	2 Treasonous Mandate
+	2 Mist-Stalker Zhujian
+	2 Dreadmother Nuwa
+	2 Gloryforger
+	2 Field-Scorcher Huolong
+	2 Bloodthrall Tigren
+	2 Crossed Invitation
+	2 Nezha of Ignited Tales
+	2 Lonqua Grand Temple
+	2 Evernourish Jinmenju
+	2 Liang Grand Temple
+	2 Reliquary-Back Bixi
+	2 Storyteller's Expertise
+	2 Reverent Xiangliu
+	2 Imaginative Ensemble
+	2 Da Po, Jun's Guide
+	1 Yan Lei, Regal Outsider
+	1 Jun, Draconic Visitor
+	1 Hou De, Martial Master
+	1 Xiao Shen, In Balance
+[uncommon(4)]
+	4 Guiding Zhulong
+	4 Realm Corrosion
+	4 Lonqua Kingpin
+	4 Wild-Stoker Xiongmao
+	4 Bountiful Fuzhu
+	4 Beizu Shadowstalker
+	4 Fengxi Magistrate
+	4 Gate-Bound Kun
+	4 Fervent Stageplay
+	4 Xiao Shen, Warden Aspirant
+	4 Myriad Landscape
+	4 Venerated Stage
+	4 Festival Server
+	4 Gateward Huli Jing
+	4 Moon Rabbit Joyseeker
+	4 Boonmother Nuwa
+	4 Custodian Captain
+	4 Bifang-Blood Warden
+	4 Hopegranter Crane
+	4 Whitehorn Ascetic
+	4 Deep-Hoarder Jiaolong
+	4 Freeze Belief
+	4 Climb The Gate
+	4 Ideal Reflection
+	4 Spirit's Claim
+	4 Deep Betrayal
+	4 Enervating Skykoi
+	4 Ripplewatcher
+	4 Jingwei Pyredancer
+	4 Soulblighted Wanderer
+	4 Resplendent Fuzhu
+	4 Ancestral Guidance
+	4 Yaoguai Formeater
+	4 Witness Uniformity
+	4 Sky-Gate Temple
+	4 Port-Gate Temple
+	4 Dread-Gate Temple
+	4 Cliff-Gate Temple
+	4 Valley-Gate Temple
+	4 Marsh-Gate Temple
+	4 Moss-Gate Temple
+	4 Roaming-Gate Temple
+	4 Foam-Gate Temple
+	4 City-Gate Temple
+	4 Divine Guardianship
+	4 Fly Beyond
+	4 Realmbreach
+	4 Pilgrimage's Reward
+	4 Sun's Defiance
+	4 Jiufeng's Boon
+	4 Supportive Performer
+	4 Tactical Battlesage
+	4 Jiufeng of Darkest Cycles
+	4 Forgemaster's Edict
+	4 Heartless Act
+	4 Darkest Prayers
+	4 Wake the Bones
+	4 Call the Damned
+	4 Pry Desire
+	4 Patient Fangblade
+	4 Thought-Scraper Hou
+	4 Gorging Mogwai
+	4 Betrayer's Finale
+	4 Wangliang Shade
+	4 Obsessed Jiangshi
+	4 Bloodwilter
+	4 Weaving Maskwright
+	4 Long-Blessed Pyredancer
+	4 Endless Joys
+	4 Embercaller
+	4 Excited Attendee
+	4 Nian Soulforger
+	4 Fabled General
+	4 Liang Punisher
+	4 Dragonheart Ancestor
+	4 Irresolute Zhubajie
+	4 Bile Blaze
+	4 Fiery Virtue
+	4 Conquer Psyche
+	4 Spiteful Prayer
+	4 Zealous Rivalry
+	4 Deflected Advance
+	4 Millennial Greatkoi
+	4 Regrow Bonds
+	4 Ancestor's Presence
+	4 Bounty of Heritage
+	4 Malevolent Strength
+	4 Strengthwarder
+	4 Iron-Breaker
+	4 Groundforger Pangu
+	4 Impenetrable Ruishi
+	4 Liang Sparrer
+	4 Tireless Chronicler
+	4 Festival Guide
+	4 Qilin Harvestguide
+	4 Rumbling Battlesage
+	4 Power of Tales
+	4 Accursed Legion
+	4 Realmscroll
+	4 Soulblessed Jian
+[common(8)]
+	8 Beizu Fangblade
+	8 Lonqua Qibinder
+	8 Decaying Disciple
+	8 Enshadowed Huodou
+	8 Inner Blight Daoshi
+	8 Ox-Head Guardian
+	8 Hero's Downfall
+	8 Imperial Battlesage
+	8 Read the Shadows
+	8 Soulblight Corrosion
+	8 Refuse Mortality
+	8 Malevolent Scorn
+	8 Bloodless Belle
+	8 Lonqua Bladewright
+	8 Spider Manifestation
+	8 Peakbound Pangu
+	8 Inexperienced Pyredancer
+	8 Withered Penghou
+	8 Mourning Yaoguai
+	8 Wardens Mentor
+	8 Royal Custodian
+	8 Yizan Ascetic
+	8 Dreamsifter Kalavinka
+	8 Inner Flow Daoshi
+	8 Reckless Studies
+	8 Yizan Talekeeper
+	8 Soulblight Enervation
+	8 Feng-Brood Yearling
+	8 Lofty Denial
+	8 Divine Connection
+	8 Perfected Guard
+	8 Realmbound Sentence
+	8 Treasured Memory
+	8 Ragged Jiangshi
+	8 Wardens Flamesignaller
+	8 Acolyte Aspirant
+	8 Dreamstoker
+	8 Crossed Defiance
+	8 Shenme Courtesan
+	8 Inner Rage Daoshi
+	8 Greedy Jin Chan
+	8 Festival Preparations
+	8 Realm's Rebuke
+	8 Sudden Flourish
+	8 Young Pyredancer
+	8 Yaoguai Qi-Seekers
+	8 Reject the Malevolent
+	8 Tigren Ascetic
+	8 Mountain's Might
+	8 Imperial Storyteller
+	8 Burgeoning Nest
+	8 Inner Strength Daoshi
+	8 Savage Zhizhujing
+	8 Gateward Colossus
+	8 Liang Protective Stance
+	8 Realm Confrontation
+	8 Beizu Serpent-Guard
+	8 Temple Vitalist
+	8 Tales Retold
+	8 Windcarp Pyredancer
+	8 Inner Peace Daoshi
+	8 Huyao Bondforger
+	8 Breezelifted Quingqiao
+	8 Balanced Acolyte
+	8 Accompanied Trueblood
+	8 Moonsight Warden
+	8 Revoke
+	8 Celestial Sanction
+	8 Masters Rebuttal
+	8 Skyward Leap
+	8 Derelict Temple
+	8 Crossed's Lantern
+	8 Ironforged Leigong
+	8 Awakened Terracotta
+	8 Inactive Crossing
+	8 Taotie Paineater
+	8 Festival Troublemakers
+	8 Shadowtreader
+	8 Ignited Qi Technique
+	8 Huo-Brood Yearling
+	8 Suntouched Pond
+	8 Deepwater Mire
+	8 Bloodsoaked Meadow
+	8 Peakcarved Village
+	8 Flourishing Court
+	8 Misty Monument
+	8 Moldering Cavern
+	8 Flooded Field
+	8 Roiling Crag
+	8 Festival Ground
+[wildcard(2)]
+	15 Guiding Zhulong
+	15 Realm Corrosion
+	15 Lonqua Kingpin
+	15 Wild-Stoker Xiongmao
+	15 Bountiful Fuzhu
+	15 Beizu Shadowstalker
+	15 Fengxi Magistrate
+	15 Gate-Bound Kun
+	15 Fervent Stageplay
+	15 Xiao Shen, Warden Aspirant
+	6 Beizu Fangblade
+	6 Lonqua Qibinder
+	6 Decaying Disciple
+	6 Enshadowed Huodou
+	6 Inner Blight Daoshi
+	6 Ox-Head Guardian
+	6 Hero's Downfall
+	6 Imperial Battlesage
+	6 Read the Shadows
+	6 Soulblight Corrosion
+	6 Refuse Mortality
+	6 Malevolent Scorn
+	6 Bloodless Belle
+	6 Lonqua Bladewright
+	6 Spider Manifestation
+	6 Peakbound Pangu
+	6 Inexperienced Pyredancer
+	6 Withered Penghou
+	6 Mourning Yaoguai
+	6 Wardens Mentor
+	6 Royal Custodian
+	6 Yizan Ascetic
+	15 Myriad Landscape
+	15 Venerated Stage
+	4 Ferocious Emissary
+	4 Xuan Wu, Stalwart Cardinal
+	4 Zhu Que, Incarnated Cardinal
+	4 Bai Hu, Warding Cardinal
+	4 Qin Long, Flowing Cardinal
+	4 Tian Lang, Lost to Tales
+	4 Longwang, Celestial Ancestor
+	4 Soulblighter Mage
+	7 Vermillion Reincarnation
+	6 Dreamsifter Kalavinka
+	6 Inner Flow Daoshi
+	6 Reckless Studies
+	6 Yizan Talekeeper
+	6 Soulblight Enervation
+	6 Feng-Brood Yearling
+	6 Lofty Denial
+	6 Divine Connection
+	6 Perfected Guard
+	6 Realmbound Sentence
+	6 Treasured Memory
+	6 Ragged Jiangshi
+	6 Wardens Flamesignaller
+	6 Acolyte Aspirant
+	6 Dreamstoker
+	6 Crossed Defiance
+	6 Shenme Courtesan
+	6 Inner Rage Daoshi
+	6 Greedy Jin Chan
+	6 Festival Preparations
+	6 Realm's Rebuke
+	6 Sudden Flourish
+	6 Young Pyredancer
+	6 Yaoguai Qi-Seekers
+	6 Reject the Malevolent
+	6 Tigren Ascetic
+	6 Mountain's Might
+	6 Imperial Storyteller
+	6 Burgeoning Nest
+	6 Inner Strength Daoshi
+	6 Savage Zhizhujing
+	6 Gateward Colossus
+	6 Liang Protective Stance
+	6 Realm Confrontation
+	6 Beizu Serpent-Guard
+	6 Temple Vitalist
+	6 Tales Retold
+	6 Windcarp Pyredancer
+	6 Inner Peace Daoshi
+	6 Huyao Bondforger
+	6 Breezelifted Quingqiao
+	6 Balanced Acolyte
+	6 Accompanied Trueblood
+	6 Moonsight Warden
+	6 Revoke
+	6 Celestial Sanction
+	6 Masters Rebuttal
+	6 Skyward Leap
+	7 Tang Yang, Ji's Second
+	7 Dijiang of Shared Blessings
+	4 Mox Jade
+	4 Court of the Storied
+	4 Cyclical Wisdom
+	4 Imperial Mediator
+	4 Cauldron of Lost Authority
+	4 Divine Knowledge
+	4 Fableweaver Huxian
+	6 Derelict Temple
+	6 Crossed's Lantern
+	6 Ironforged Leigong
+	6 Awakened Terracotta
+	6 Inactive Crossing
+	15 Festival Server
+	15 Gateward Huli Jing
+	15 Moon Rabbit Joyseeker
+	15 Boonmother Nuwa
+	15 Custodian Captain
+	15 Bifang-Blood Warden
+	15 Hopegranter Crane
+	15 Whitehorn Ascetic
+	15 Deep-Hoarder Jiaolong
+	15 Freeze Belief
+	15 Climb The Gate
+	15 Ideal Reflection
+	15 Spirit's Claim
+	15 Deep Betrayal
+	15 Enervating Skykoi
+	15 Ripplewatcher
+	15 Jingwei Pyredancer
+	15 Soulblighted Wanderer
+	15 Resplendent Fuzhu
+	15 Ancestral Guidance
+	15 Yaoguai Formeater
+	15 Witness Uniformity
+	6 Taotie Paineater
+	4 Cardinal Alignment
+	7 Li Hua, Imperial Scion
+	7 Ai Yao, Acclaimed Pyredancer
+	7 Ling Guang, Discarded Vessel
+	7 Jing Cao, Liang Prodigy
+	7 An Gong, Temple-Keeper
+	7 Xiao Shen, God-Shunned
+	7 Ming Su, Reborn Lotus
+	7 Ji Chen, Supreme Warden
+	7 Xing Zhe, Sun's Chosen
+	7 Qi-Shift Technique
+	7 Imperious Geji
+	7 Realmfarers Temple
+	7 Qi Reapers
+	7 Impose Balance
+	7 Splendorous Tengshe
+	7 Patron of Celebrations
+	7 Kingpin's Enforcer
+	7 Dredge Thoughts
+	7 Tiger Skyguard
+	7 Sun Hu, Crossed General
+	7 Propagating Yaoguai
+	7 Fabled Lotus
+	7 Weathered Gates
+	7 Imperial Throne
+	7 Pearlcarver's Masterpiece
+	7 Nurturing Matriarch
+	7 Shenme Grand Temple
+	7 Write Out
+	7 Chord of Return
+	7 Moon-Chaser Tiangou
+	7 Deep-Thought Kun
+	7 Realmguide Orator
+	7 Tidal Expulsion
+	7 Memories Relived
+	7 Mirror Fate
+	7 Yizan Grand Temple
+	7 Jiaoren Shallowstalker
+	7 Beizu Grand Temple
+	7 Maskstealer
+	7 Merchant of Beyond
+	7 Pit's Petition
+	7 Treasonous Mandate
+	7 Mist-Stalker Zhujian
+	7 Dreadmother Nuwa
+	7 Gloryforger
+	7 Field-Scorcher Huolong
+	7 Bloodthrall Tigren
+	7 Crossed Invitation
+	7 Nezha of Ignited Tales
+	7 Lonqua Grand Temple
+	7 Evernourish Jinmenju
+	7 Liang Grand Temple
+	7 Reliquary-Back Bixi
+	7 Storyteller's Expertise
+	7 Reverent Xiangliu
+	7 Imaginative Ensemble
+	7 Da Po, Jun's Guide
+	15 Sky-Gate Temple
+	15 Port-Gate Temple
+	15 Dread-Gate Temple
+	15 Cliff-Gate Temple
+	15 Valley-Gate Temple
+	15 Marsh-Gate Temple
+	15 Moss-Gate Temple
+	15 Roaming-Gate Temple
+	15 Foam-Gate Temple
+	15 City-Gate Temple
+	15 Divine Guardianship
+	15 Fly Beyond
+	15 Realmbreach
+	15 Pilgrimage's Reward
+	15 Sun's Defiance
+	15 Jiufeng's Boon
+	15 Supportive Performer
+	6 Festival Troublemakers
+	15 Tactical Battlesage
+	6 Shadowtreader
+	15 Jiufeng of Darkest Cycles
+	15 Forgemaster's Edict
+	15 Heartless Act
+	15 Darkest Prayers
+	15 Wake the Bones
+	15 Call the Damned
+	15 Pry Desire
+	15 Patient Fangblade
+	15 Thought-Scraper Hou
+	15 Gorging Mogwai
+	15 Betrayer's Finale
+	15 Wangliang Shade
+	15 Obsessed Jiangshi
+	15 Bloodwilter
+	15 Weaving Maskwright
+	6 Ignited Qi Technique
+	6 Huo-Brood Yearling
+	15 Long-Blessed Pyredancer
+	15 Endless Joys
+	15 Embercaller
+	15 Excited Attendee
+	15 Nian Soulforger
+	15 Fabled General
+	15 Liang Punisher
+	15 Dragonheart Ancestor
+	15 Irresolute Zhubajie
+	15 Bile Blaze
+	15 Fiery Virtue
+	15 Conquer Psyche
+	15 Spiteful Prayer
+	15 Zealous Rivalry
+	15 Deflected Advance
+	15 Millennial Greatkoi
+	15 Regrow Bonds
+	15 Ancestor's Presence
+	15 Bounty of Heritage
+	15 Malevolent Strength
+	15 Strengthwarder
+	15 Iron-Breaker
+	15 Groundforger Pangu
+	15 Impenetrable Ruishi
+	15 Liang Sparrer
+	15 Tireless Chronicler
+	15 Festival Guide
+	15 Qilin Harvestguide
+	15 Rumbling Battlesage
+	15 Power of Tales
+	15 Accursed Legion
+	15 Realmscroll
+	15 Soulblessed Jian
+	6 Suntouched Pond
+	6 Deepwater Mire
+	6 Bloodsoaked Meadow
+	6 Peakcarved Village
+	6 Flourishing Court
+	6 Misty Monument
+	6 Moldering Cavern
+	6 Flooded Field
+	6 Roiling Crag
+	6 Festival Ground
+	4 Yan Lei, Regal Outsider
+	4 Jun, Draconic Visitor
+	4 Hou De, Martial Master
+	4 Xiao Shen, In Balance

@@ -296,6 +296,10 @@
 
 			card_list_cleaned = [];
 
+			console.log('a');
+			while (!card_list_arrayified) await delay(100);
+			console.log('b');
+
 			for (const card of card_list_arrayified) {
 				let card_stats = [];
 
@@ -314,6 +318,7 @@
 			}
 
 			const cotd = reallyRand(card_list_cleaned.length);
+			console.log(cotd);
 			const card_stats = card_list_cleaned[cotd];
 
 			const a = document.createElement("a");

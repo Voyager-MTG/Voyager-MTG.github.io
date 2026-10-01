@@ -594,7 +594,7 @@ function searchToken(card, token) {
                     if (regex.test(card_oracle_text)) {
                         return true;
                     } else {
-                        if (card_type.includes("wonder") || card_type.includes("erysite") || card_type.includes("realm") || card_type.includes("frontier")) {
+                        if (card_type.includes("wonder") || card_type.includes("shrine") || card_type.includes("erysite") || card_type.includes("realm") || card_type.includes("frontier")) {
                             return true;
                         } else {
                             if (card.special_text.includes("sanctum")) {

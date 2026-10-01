@@ -3386,7 +3386,7 @@ This creature can&apos;t block.</text>
 		<card>
 			<name>The Planar Portal LAIR</name>
 			<text>{2}, {T}: Exile target creature you control, then return it to the battlefield under its owner&apos;s control.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/124.jpg" num="142" uuid="LAIR124">LAIR</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/124.jpg" num="143" uuid="LAIR124">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -3788,6 +3788,328 @@ This creature can&apos;t block.</text>
 			</prop>
 			<tablerow>2</tablerow>
 			<reverse-related>Perpetual Cycle</reverse-related>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Shrine SSC</name>
+			<text></text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/127.jpg" num="2" uuid="SSC127">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Enchantment Creature – Shrine</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
+				<pt>1/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Panda Bear SSC</name>
+			<text>Panda Bear is all colors.</text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/198.jpg" num="16" uuid="SSC198">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Creature – Panda Bear</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity>WUBRGI</coloridentity>
+				<pt>5/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Snake SSC</name>
+			<text>Deathtouch</text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/199.jpg" num="14" uuid="SSC199">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Creature – Snake</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>G</colors>
+				<coloridentity>G</coloridentity>
+				<pt>2/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Ape SSC</name>
+			<text>Lifelink</text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/200.jpg" num="8" uuid="SSC200">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Creature – Ape</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<pt>2/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Insect SSC</name>
+			<text>Double strike</text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/201.jpg" num="3" uuid="SSC201">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Creature – Insect</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+				<pt>1/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Bird SSC</name>
+			<text>Flying</text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/202.jpg" num="6" uuid="SSC202">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Creature – Bird</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Cat SSC</name>
+			<text>Menace</text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/203.jpg" num="11" uuid="SSC203">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Creature – Cat</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+				<pt>3/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Dragon SSC</name>
+			<text>Flying</text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/284.jpg" num="7" uuid="SSC284">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Enchantment Creature – Dragon</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Bird SSC</name>
+			<text>Flying</text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/285.jpg" num="10" uuid="SSC285">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Enchantment Creature – Bird</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<pt>1/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Demon SSC</name>
+			<text>Haste</text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/286.jpg" num="12" uuid="SSC286">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Enchantment Creature – Demon</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+				<pt>1/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Golem SSC</name>
+			<text>Haste</text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/287.jpg" num="17" uuid="SSC287">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Artifact Creature – Golem</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
+				<pt>X/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Snake SSC</name>
+			<text></text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/288.jpg" num="15" uuid="SSC288">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Creature – Snake</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>G</colors>
+				<coloridentity>G</coloridentity>
+				<pt>X/X</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Soldier SSC</name>
+			<text></text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/289.jpg" num="4" uuid="SSC289">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Creature – Soldier</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+				<pt>1/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Spirit SSC</name>
+			<text></text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/290.jpg" num="5" uuid="SSC290">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Enchantment Creature – Spirit</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Dragon SSC</name>
+			<text></text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/291.jpg" num="13" uuid="SSC291">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Enchantment Creature – Dragon</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+				<pt>3/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Treasure SSC</name>
+			<text>{T}, Sacrifice this token: Add one mana of any color.</text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/292.jpg" num="18" uuid="SSC292">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Artifact – Treasure</type>
+				<maintype>Artifact</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Beast SSC</name>
+			<text></text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/293.jpg" num="9" uuid="SSC293">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token Enchantment Creature – Beast</type>
+				<maintype>Creature</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+			<token>1</token>
+		</card>
+		<card>
+			<name>Copy SSC</name>
+			<text></text>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/294.jpg" num="1" uuid="SSC294">SSC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Token</type>
+				<maintype>Token</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors></colors>
+				<coloridentity></coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
 			<token>1</token>
 		</card>
 		<card>

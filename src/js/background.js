@@ -171,7 +171,7 @@ function toggleHeader() {
 	header.style.transform = header.style.transform === '' ? 'translate(0)' : '';
 }
 
-document.addEventListener("DOMContentLoaded", async () => {
+async function loadFiles() {
 	await fetch('/lists/all-cards.json')
 		.then(response => response.json())
 		.then(json => {
@@ -229,7 +229,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 		if (document.getElementsByClassName("artist-credit")[0])
 			document.getElementsByClassName("artist-credit")[0].remove();
 	}
-});
+}
+
+loadFiles();
 
 async function handleDeckView() {
 	const deckview_container = document.createElement('div');
