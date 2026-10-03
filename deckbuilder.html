@@ -250,20 +250,20 @@
 					specialchars = text;
 				}).catch(error => console.error('Error:', error));
 
-			
-
-			await fetch('https://voyager-api-pq2h.onrender.com/stats')
-				.then(response => response.json())
-				.then(json => {
-					all_cards_stats = json;
-				}).catch(error => console.error('Error:', error));
-
-
 			await fetch('/lists/all-sets.json')
 				.then(response => response.json())
 				.then(data => {
 					sets_json = data;
 				}).catch(error => console.error('Error:', error));
+			
+			const loadStats = async () => {
+				await fetch('https://voyager-api-pq2h.onrender.com/stats')
+					.then(response => response.json())
+					.then(json => {
+						all_cards_stats = json;
+					}).catch(error => console.error('Error:', error));
+			};
+			loadStats();
 			
 			let loaded = Date.now();
 			console.log('Loaded files: ' + (loaded - start));
