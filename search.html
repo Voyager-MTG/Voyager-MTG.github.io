@@ -1024,29 +1024,6 @@ Search for cards that were made into champion promo's by a specific user. For ex
 			modal_content.innerHTML = formatText(search_tips);
 		}
 
-	</script>
-	<script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-		// TODO: Add SDKs for Firebase products that you want to use
-		// https://firebase.google.com/docs/web/setup#available-libraries
-
-		// Your web app's Firebase configuration
-		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-		const firebaseConfig = {
-			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-			authDomain: "voyager-78e30.firebaseapp.com",
-			projectId: "voyager-78e30",
-			storageBucket: "voyager-78e30.firebasestorage.app",
-			messagingSenderId: "411191248476",
-			appId: "1:411191248476:web:591349be169d823e5f8899",
-			measurementId: "G-TQ1L48F25M"
-		};
-
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-		const db = getFirestore(app);
 		let username = "";
 		let password = "";
 		let sessionid = localStorage.getItem('settings.session');
@@ -1074,14 +1051,10 @@ Search for cards that were made into champion promo's by a specific user. For ex
 			return stats;
 		}
 
-		q = query(collection(db, "events"));
-		all_events_docs = await getDocs(q);
+		all_events_docs = await getCollection('events');
+		all_users_docs = await getCollection('users');
 
-		q = query(collection(db, "users"));
-		all_users_docs = await getDocs(q);
-
-		all_events_docs.forEach((doc) => {
-			const data = doc.data();
+		all_events_docs.forEach((data) => {
 			all_events.push(data);
 			for (const user in data.decks) {
 				let deck = data.decks[user];
@@ -1090,8 +1063,7 @@ Search for cards that were made into champion promo's by a specific user. For ex
 			}
 		});
 
-		all_users_docs.forEach((doc) => {
-			const data = doc.data();
+		all_users_docs.forEach((data) => {
 			for (const deck of data.decks) {
 				all_user_decks.push({ ...deck, "user": data.username, "event": false });
 				all_decks.push({ ...deck, "user": data.username, "event": false });

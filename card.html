@@ -1103,29 +1103,7 @@
 				return true;
 			}
 		}
-	</script>
-	<script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-		// TODO: Add SDKs for Firebase products that you want to use
-		// https://firebase.google.com/docs/web/setup#available-libraries
 
-		// Your web app's Firebase configuration
-		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-		const firebaseConfig = {
-			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-			authDomain: "voyager-78e30.firebaseapp.com",
-			projectId: "voyager-78e30",
-			storageBucket: "voyager-78e30.firebasestorage.app",
-			messagingSenderId: "411191248476",
-			appId: "1:411191248476:web:591349be169d823e5f8899",
-			measurementId: "G-TQ1L48F25M"
-		};
-
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-		const db = getFirestore(app);
 		let username = "";
 		let password = "";
 		let sessionid = localStorage.getItem('settings.session');
@@ -1135,14 +1113,12 @@
 		const urlParams = new URLSearchParams(window.location.search);
 
 		if (sessionid) {
-			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-				let data = docSnap.data();
+			await getDoc('sessions', sessionid).then(data => {
 				username = data.username;
 				password = data.password;
 			});
 
-			await getDoc(doc(db, 'users', username)).then(docSnap => {
-				let data = docSnap.data();
+			await getDoc('users', username).then(data => {
 				user_data = data;
 			});
 		}
@@ -1186,11 +1162,11 @@
 
 		async function submitRulings() {
 			const ruling_to_submit = document.getElementsByClassName("rulings-textarea")[0].value;
-			await getDoc(doc(db, "info", "rulings")).then(async docSnap => {
-				let cardl = docSnap.data()[urlParams.get("name")] ? docSnap.data()[urlParams.get("name")] : [];
+			await getDoc("info", "rulings").then(async data => {
+				let cardl = data[urlParams.get("name")] ? data[urlParams.get("name")] : [];
 				let card_obj = {};
 				card_obj[urlParams.get("name")] = [...cardl, ruling_to_submit];
-				await updateDoc(doc(db, "info", "rulings"), card_obj);
+				await updateDoc("info", "rulings", card_obj);
 				window.location.reload();
 			});
 		}
@@ -1206,8 +1182,8 @@
 
 			let card_rulings = rulings_json[card_name] ? rulings_json[card_name] : [];
 
-			await getDoc(doc(db, "info", "rulings")).then(docSnap => {
-				firebase_list = docSnap.data()[card_name] ? docSnap.data()[card_name] : [];
+			await getDoc("info", "rulings").then(data => {
+				firebase_list = data[card_name] ? data[card_name] : [];
 			});
 
 			const rulings_list = [...firebase_list, ...card_rulings];

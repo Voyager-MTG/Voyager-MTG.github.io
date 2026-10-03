@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
 
 <head>
 	<title>Login</title>
@@ -309,7 +309,6 @@
 		</div>
 		<hr class="text-bg">
 		<div class="decks-container" id="decks">
-			<!-- test -->
 		</div>
 	</div>
 	<script>
@@ -467,8 +466,7 @@
 		console.log(username);
 
 		if (sessionid != null) {
-			const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-				let data = docSnap.data();
+			const resp = await getDoc('sessions', sessionid).then(data => {
 				username2 = data.username;
 			});
 		} else {
@@ -479,8 +477,7 @@
 			logged_in = true;
 		}
 
-		await getDoc(doc(db, 'users', username)).then(docSnap => {
-			let data = docSnap.data();
+		await getDoc('users', username).then(data => {
 			decks = data.decks;
 		});
 
@@ -578,7 +575,7 @@
 						//             let tourndata = docSnap2.data();
 						//             let decks_ = JSON.parse(tourndata.decks);
 						//             decks_[username] = deck;
-						//             await updateDoc(doc(db, "events", "GP1"), {
+						//             await updateDoc("events", "GP1", {
 						//                 decks:(decks_)
 						//             });
 						//         });
@@ -601,7 +598,7 @@
 								}
 								// index += 1;
 							}
-							await updateDoc(doc(db, "users", username), {
+							await updateDoc("users", username, {
 								decks: (new_decks)
 							});
 							alert("Deck Deleted!");
@@ -646,4 +643,5 @@
 	</script>
 </body>
 
-</html>
+</html> -->
+This page is deprecated

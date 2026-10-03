@@ -79,7 +79,7 @@ async function cleanUserDecks() {
 		const data = _doc.data();
 		const name = _doc.id;
 		console.log("Cleaning user" + name);
-		updateDoc(doc(db, "users", name), {
+		updateDoc("users", name, {
 			decks: swapUserDeckNames(data.decks)
 		});
 	});
@@ -92,7 +92,7 @@ async function cleanEventDecks() {
 		const data = _doc.data();
 		const name = _doc.id;
 		console.log("Cleaning event" + name);
-		updateDoc(doc(db, "events", name), {
+		updateDoc("events", name, {
 			decks: swapEventDeckNames(data.decks)
 		});
 	});

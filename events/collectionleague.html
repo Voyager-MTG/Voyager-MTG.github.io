@@ -875,8 +875,7 @@
 		let sessionid = localStorage.getItem('settings.session');
 
 		if (sessionid) {
-			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-				let data = docSnap.data();
+			await getDoc('sessions', sessionid).then(data => {
 				username = data.username;
 				password = data.password;
 			});

@@ -528,14 +528,12 @@
 			window.location.href = "/login";
 		}
 
-		const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-			let data = docSnap.data();
+		const resp = await getDoc('sessions', sessionid).then(data => {
 			username = data.username;
 			password = data.password;
 		});
 
-		await getDoc(doc(db, 'users', username)).then(docSnap => {
-			let data = docSnap.data();
+		await getDoc('users', username).then(data => {
 			decks = data.decks;
 		});
 

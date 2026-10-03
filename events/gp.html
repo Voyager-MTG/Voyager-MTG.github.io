@@ -243,14 +243,12 @@
 		});
 
 		if (sessionid) {
-			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-				let data = docSnap.data();
+			await getDoc('sessions', sessionid).then(data => {
 				username = data.username;
 				password = data.password;
 			});
 
-			await getDoc(doc(db, 'users', username)).then(docSnap => {
-				let data = docSnap.data();
+			await getDoc('users', username).then(data => {
 				decks = data.decks;
 				admin = data.admin;
 			});
@@ -1145,7 +1143,7 @@
 						}
 					}
 
-					await updateDoc(doc(db, 'events', event), {
+					await updateDoc('events', event, {
 						rounds: JSON.stringify(parsed_data)
 					});
 
@@ -1160,7 +1158,7 @@
 
 					parsed_data.bracket.matches[round_name] = new_game;
 
-					await updateDoc(doc(db, 'events', event), {
+					await updateDoc('events', event, {
 						rounds: JSON.stringify(parsed_data)
 					});
 
@@ -1428,7 +1426,7 @@
 
 				navigator.clipboard.writeText(discord_msg);
 
-				await updateDoc(doc(db, 'events', event), {
+				await updateDoc('events', event, {
 					rounds: JSON.stringify(rounds)
 				});
 
@@ -1464,7 +1462,7 @@
 				rounds.bracket.structure = structure;
 				rounds.bracket.matches = matches;
 
-				await updateDoc(doc(db, 'events', event), {
+				await updateDoc('events', event, {
 					rounds: JSON.stringify(rounds),
 					stage: "bracket"
 				});
@@ -1498,13 +1496,13 @@
 
 				rounds.swiss["Round 1"] = games;
 
-				await updateDoc(doc(db, 'events', event), {
+				await updateDoc('events', event, {
 					rounds: JSON.stringify(rounds),
 					num_rounds: numRounds(in_games.length),
 					stage: "swiss"
 				});
 
-				await updateDoc(doc(db, 'events', event), {
+				await updateDoc('events', event, {
 					decks: decks
 				});
 
@@ -1694,7 +1692,7 @@
 				dropped: []
 			});
 
-			await updateDoc(doc(db, 'info', 'events'), {
+			await updateDoc('info', 'events', {
 				recent: event_name
 			});
 
@@ -1704,7 +1702,7 @@
 		async function dropGP(event_data) {
 			if (!confirm("Are you sure you want to drop?")) return;
 
-			await updateDoc(doc(db, 'events', event), {
+			await updateDoc('events', event, {
 				dropped: [...event_data.dropped, username]
 			});
 
@@ -1725,7 +1723,7 @@
 		// 			const new_decks = event_data.decks;
 		// 			new_decks[username] = deck;
 
-		// 			updateDoc(doc(db, "events", event), {
+		// 			updateDoc("events", event, {
 		// 				decks: (new_decks)
 		// 			});
 
@@ -1802,7 +1800,7 @@
 					const new_decks = event_data.decks;
 					new_decks[username] = deck;
 
-					updateDoc(doc(db, "events", event), {
+					updateDoc("events", event, {
 						decks: (new_decks)
 					});
 
@@ -1957,7 +1955,7 @@
 		function endGP() {
 			if (!confirm("Are you sure you want to end this gp?")) return;
 
-			updateDoc(doc(db, 'events', event), {
+			updateDoc('events', event, {
 				ended: true
 			});
 		}

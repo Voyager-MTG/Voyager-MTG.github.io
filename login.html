@@ -215,7 +215,7 @@
 				if (!data.salt) {
 					data.salt = generateSalt();
 					data.password = await sha256(data.password + data.salt + data.username);
-					await updateDoc(doc(db, "users", name), {
+					await updateDoc("users", name, {
 						salt: data.salt,
 						password: data.password
 					});

@@ -30,8 +30,7 @@ async function main() {
         current_json = JSON.parse(data.toString());
     });
 
-    await getDoc(doc(db, "info", "rulings")).then(docSnap => {
-        const data = docSnap.data();
+    await getDoc("info", "rulings").then(data => {
         for (const card_name in data) {
             current_json[card_name] = current_json[card_name] ? [...current_json[card_name], ...data[card_name]] : [];
         }

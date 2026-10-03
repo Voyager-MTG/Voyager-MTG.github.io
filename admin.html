@@ -259,29 +259,7 @@
 
 			window.location.href = url;
 		}
-	</script>
-	<script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-		// TODO: Add SDKs for Firebase products that you want to use
-		// https://firebase.google.com/docs/web/setup#available-libraries
 
-		// Your web app's Firebase configuration
-		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-		const firebaseConfig = {
-			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-			authDomain: "voyager-78e30.firebaseapp.com",
-			projectId: "voyager-78e30",
-			storageBucket: "voyager-78e30.firebasestorage.app",
-			messagingSenderId: "411191248476",
-			appId: "1:411191248476:web:591349be169d823e5f8899",
-			measurementId: "G-TQ1L48F25M"
-		};
-
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-		const db = getFirestore(app);
 		let username = "";
 		let password = "";
 		let sessionid = localStorage.getItem('settings.session');
@@ -290,14 +268,12 @@
 		let user_data;
 
 		if (sessionid) {
-			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-				let data = docSnap.data();
+			await getDoc('sessions', sessionid).then(data => {
 				username = data.username;
 				password = data.password;
 			});
 
-			await getDoc(doc(db, 'users', username)).then(docSnap => {
-				let data = docSnap.data();
+			await getDoc('users', username).then(data => {
 				user_data = data;
 			});
 		}
@@ -308,8 +284,8 @@
 				window.location.href = '/login';
 			}
 
-			const all_user_docs = await getDocs(collection(db, 'users'));
-			const all_event_docs = await getDocs(collection(db, 'events'));
+			const all_user_docs = await getCollection('users');
+			const all_event_docs = await getCollection('events');
 
 			const user_data_container = document.createElement('div');
 			user_data_container.className = 'users-container';
@@ -317,9 +293,7 @@
 			const event_data_container = document.createElement('div');
 			event_data_container.className = 'events-container';
 
-			all_user_docs.forEach(docSnap => {
-				const data = docSnap.data();
-
+			all_user_docs.forEach(data => {
 				const user_container = document.createElement('div');
 				user_container.className = 'user-container';
 
@@ -345,9 +319,7 @@
 				user_data_container.appendChild(user_container);
 			});
 			
-			all_event_docs.forEach(docSnap => {
-				const data = docSnap.data();
-
+			all_event_docs.forEach(data => {
 				const event_container = document.createElement('div');
 				event_container.className = 'event-container';
 
@@ -481,7 +453,7 @@
 								url: deck.url.replace(/;(.*?)\&main/, `;${btoa(deck_container.querySelector('.decklist-editor').value)}&main`)
 							};
 
-							await updateDoc(doc(db, 'events', docSnap.id), {
+							await updateDoc('events', data.id, {
 								decks: decks
 							});
 						}
@@ -569,7 +541,7 @@
 								url: `https://voyager-mtg.github.io/deck?deck=${encodeURIComponent(name) + ';' + btoa(list)}&main=${mainCount}&side=${sideCount}&sanctum=${sanctumCount}`
 							}
 
-							await updateDoc(doc(db, 'events', docSnap.id), {
+							await updateDoc('events', data.id, {
 								decks: decks
 							});
 

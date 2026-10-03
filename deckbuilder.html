@@ -2892,44 +2892,20 @@
 
 			window.location.href = url;
 		}
-	</script>
-	<script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-		// https://firebase.google.com/docs/web/setup#available-libraries
 
-		// Your web app's Firebase configuration
-		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-		const firebaseConfig = {
-			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-			authDomain: "voyager-78e30.firebaseapp.com",
-			projectId: "voyager-78e30",
-			storageBucket: "voyager-78e30.firebasestorage.app",
-			messagingSenderId: "411191248476",
-			appId: "1:411191248476:web:591349be169d823e5f8899",
-			measurementId: "G-TQ1L48F25M"
-		};
-
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-		const db = getFirestore(app);
-
-		window.username = "";
+		let username = "";
 		let password = "";
 		let decks = "";
 
 		let sessionid = localStorage.getItem("settings.session");
 
-		const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-			let data = docSnap.data();
-			window.username = data.username;
+		const resp = await getDoc('sessions', sessionid).then(data => {
+			username = data.username;
 			password = data.password;
 		});
 
 		console.log('????');
-		await getDoc(doc(db, 'users', username)).then(async docSnap => {
-			let data = docSnap.data();
+		await getDoc('users', username).then(async data => {
 			let colls;
 			const admin = data.admin;
 			let coll_league = data.coll_league;
@@ -2951,8 +2927,7 @@
 					const splitted = urlParams.get('deck').split('-');
 					const deck_user = splitted[0];
 					const deck_name = splitted[1];
-					await getDoc(doc(db, 'users', deck_user)).then(docSnap => {
-						let data2 = docSnap.data();
+					await getDoc('users', deck_user).then(data2 => {
 						let decks = data2.decks;
 						for (const deck of decks) {
 							if (deck.name == deck_name) {
@@ -2970,8 +2945,7 @@
 				const splitted = urlParams.get('edeck').split('-');
 				const deck_event = splitted[0];
 				const deck_user = splitted[1];
-				await getDoc(doc(db, 'events', deck_event)).then(docSnap => {
-					let data3 = docSnap.data();
+				await getDoc('events', deck_event).then(data3 => {
 					let decks = data3.decks;
 					for (const user in decks) {
 						if (user == deck_user) {
@@ -2990,8 +2964,7 @@
 					const splitted = urlParams.get('ucollection').split('-');
 					const collection_user = splitted[0];
 					const collection_name = splitted[1];
-					await getDoc(doc(db, 'users', collection_user)).then(docSnap => {
-						let data2 = docSnap.data();
+					await getDoc('users', collection_user).then(data2 => {
 						let collections = JSON.parse(data2.colls);
 						for (const collection of collections) {
 							if (collection.name == collection_name) {
@@ -3079,7 +3052,7 @@
 
 				decks.push(deckObj);
 
-				updateDoc(doc(db, "users", username), {
+				updateDoc("users", username, {
 					decks: (decks)
 				});
 			});
@@ -3103,7 +3076,7 @@
 
 				decks.push(deckObj);
 
-				updateDoc(doc(db, "users", username), {
+				updateDoc("users", username, {
 					decks: (decks)
 				});
 			}
@@ -3123,7 +3096,7 @@
 						}
 					}
 					colls.push(collObj);
-					updateDoc(doc(db, "users", username), {
+					updateDoc("users", username, {
 						colls: JSON.stringify(colls)
 					});
 				}

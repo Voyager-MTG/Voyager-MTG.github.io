@@ -144,25 +144,6 @@
 				}
 			}
 		}
-	</script>
-	<script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-		// TODO: Add SDKs for Firebase products that you want to use
-		// https://firebase.google.com/docs/web/setup#available-libraries
-
-		// Your web app's Firebase configuration
-		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-		const firebaseConfig = {
-			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-			authDomain: "voyager-78e30.firebaseapp.com",
-			projectId: "voyager-78e30",
-			storageBucket: "voyager-78e30.firebasestorage.app",
-			messagingSenderId: "411191248476",
-			appId: "1:411191248476:web:591349be169d823e5f8899",
-			measurementId: "G-TQ1L48F25M"
-		};
 
 		const color_bgs = {
 			white: "#"
@@ -185,11 +166,6 @@
 		let decks = {};
 		let card_list_arrayified;
 		let card_list;
-		let events = ["League"];
-
-		await getDoc(doc(db, "info", "events")).then(docSnap => {
-			events.push(docSnap.data().recent);
-		});
 
 		if (!sessionid) {
 			window.location.href = "/login";
@@ -198,62 +174,18 @@
 			window.location.href = "/account-compact";
 		}
 
-		const resp = await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-			let data = docSnap.data();
-
-			if (!data) {
-				window.location.href = "/login";
-			}
+		const resp = await getDoc('sessions', sessionid).then(data => {
+			if (!data) window.location.href = "/login";
 
 			username = data.username;
 			password = data.password;
 		});
 
-		await getDoc(doc(db, 'users', username)).then(docSnap => {
-			let data = docSnap.data();
-			decks = data.decks;
-		});
-
+		const user_data = await getDoc('users', username);
 		document.getElementById("username").innerText = username;
-		// document.getElementById('text-style').innerHTML = `.text { color: ${localStorage.getItem('settings.textcolor')} }`;
-		// document.getElementById('text-style').innerHTML += `\n.text-bg { background-color: ${localStorage.getItem('settings.textcolor')} }`;
 
-
-		// if (localStorage.getItem("settings.darkthememenu") == "On") {
-		// 	document.body.style.setProperty("--bg-color", "#171717");
-		// 	document.body.style.setProperty("--popout-text-color", "white");
-		// } else if (localStorage.getItem("settings.darkthememenu") == "Off") {
-		// 	document.body.style.setProperty("--bg-color", "#f3f3f3");
-		// 	document.body.style.setProperty("--popout-text-color", "black");
-		// }
-
-
-		document.body.style.setProperty("--text-color", localStorage.getItem("settings.textcolor"));
-
-		// document.addEventListener("DOMContentLoaded", async () => {
-		//     await fetch('/lists/all-cards.json')
-		// 		.then(response => response.json())
-		// 		.then(json => {
-		// 			card_list_arrayified = json.cards;
-		// 	}).catch(error => console.error('Error:', error));
-		// });
-
-		async function reload() {
-			let card_list;
-			let card_list_arrayified;
-			if (!card_list_arrayified) {
-				await fetch('/lists/all-cards.json')
-					.then(response => response.json())
-					.then(json => {
-						card_list = json;
-					}).catch(error => console.error('Error:', error));
-			}
-
-			card_list_arrayified = card_list.cards;
-			
-			await getDoc(doc(db, "info", "accountlinks")).then(docSnap => {
-				const data = docSnap.data();
-
+		async function reload() {			
+			await getDoc("info", "accountlinks").then(data => {
 				let found = false;
 				for (const user in data) {
 					if (data[user] == username) found = true;
@@ -262,228 +194,227 @@
 				if (!found) document.getElementById("discord-link").style.display = "flex";
 			});
 
-			await getDoc(doc(db, 'users', username)).then(async docSnap => {
-				const user_data = docSnap.data();
-				let colls;
-				let used_formats = [];
-				document.title = username;
-				let decks = user_data.decks.reverse();
+			let colls;
+			let used_formats = [];
+			document.title = username;
+			let decks = user_data.decks.reverse();
 
-				if (user_data.colls) {
-					colls = JSON.parse(user_data.colls);
-				} else {
-					colls = [];
+			if (user_data.colls) {
+				colls = JSON.parse(user_data.colls);
+			} else {
+				colls = [];
+			}
+
+			document.getElementById('username-txt').innerText = username;
+			
+			const canvas = document.getElementById('pfp');
+			const ctx = canvas.getContext('2d');
+			const [_, name, set, num] = user_data.favorite_card?.match(/(.*?) \((.*?)\) ([0-9]+)/) || 'Carapace Voyager (PTN) 166';
+			let favorite_card;
+
+			for (const card of card_list_arrayified) {
+				if (card.card_name == name && card.set == set && card.number == num) {
+					favorite_card = card;
+					break;
 				}
+			}
 
-				document.getElementById('username-txt').innerText = username;
-				
-				const canvas = document.getElementById('pfp');
-				const ctx = canvas.getContext('2d');
-				const [_, name, set, num] = user_data.favorite_card?.match(/(.*?) \((.*?)\) ([0-9]+)/) || 'Carapace Voyager (PTN) 166';
-				let favorite_card;
-
+			if (!favorite_card) {
 				for (const card of card_list_arrayified) {
-					if (card.card_name == name && card.set == set && card.number == num) {
+					if (card.card_name == name && card.set == set) {
 						favorite_card = card;
 						break;
 					}
 				}
+			}
 
-				if (!favorite_card) {
-					for (const card of card_list_arrayified) {
-						if (card.card_name == name && card.set == set) {
-							favorite_card = card;
-							break;
-						}
+			if (!favorite_card) {
+				for (const card of card_list_arrayified) {
+					if (card.card_name == name) {
+						favorite_card = card;
+						break;
 					}
 				}
+			}
 
-				if (!favorite_card) {
-					for (const card of card_list_arrayified) {
-						if (card.card_name == name) {
-							favorite_card = card;
-							break;
-						}
+			if (!favorite_card) {
+				for (const card of card_list_arrayified) {
+					if (card.card_name == 'Carapace Voyager') {
+						favorite_card = card;
+						break;
 					}
 				}
+			}
 
-				if (!favorite_card) {
-					for (const card of card_list_arrayified) {
-						if (card.card_name == 'Carapace Voyager') {
-							favorite_card = card;
-							break;
-						}
-					}
-				}
+			const img_src = "/sets/" + favorite_card.set + "-files/img/" + favorite_card.position + ((favorite_card.shape.includes("double")) ? "_front" : "") + "." + favorite_card.image_type;
+			const size = canvas.clientWidth;
+			const img = new Image(size, size);
+			img.onload = () => {
+				const cropX = 71;
+				const cropY = 59;
+				ctx.save();
+				ctx.beginPath();
+				ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2, true);
+				ctx.closePath();
+				ctx.clip();
+				ctx.drawImage(img, cropX, cropY, 231, 231, 0, 0, size, size);
+				ctx.save();
+				ctx.beginPath();
+				ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2, true);
+				ctx.lineWidth = 4;
+				ctx.strokeStyle = 'white';
+				ctx.stroke();
+				ctx.closePath();
+			}
+			img.src = img_src;
+			
+			document.getElementById('decks-grid').innerHTML = "";
+			
+			const card_copies = {};
 
-				const img_src = "/sets/" + favorite_card.set + "-files/img/" + favorite_card.position + ((favorite_card.shape.includes("double")) ? "_front" : "") + "." + favorite_card.image_type;
-				const size = canvas.clientWidth;
-				const img = new Image(size, size);
-				img.onload = () => {
-					const cropX = 71;
-					const cropY = 59;
-					ctx.save();
-					ctx.beginPath();
-					ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2, true);
-					ctx.closePath();
-					ctx.clip();
-					ctx.drawImage(img, cropX, cropY, 231, 231, 0, 0, size, size);
-					ctx.save();
-					ctx.beginPath();
-					ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2, true);
-					ctx.lineWidth = 4;
-					ctx.strokeStyle = 'white';
-					ctx.stroke();
-					ctx.closePath();
+			for (const deck of decks) {
+				if (!used_formats.includes(deck.format)) {
+					used_formats.push(deck.format);
+					const full_format_container = createFormatContainer(deck.format);
+					document.getElementById('decks-grid').appendChild(full_format_container);
 				}
-				img.src = img_src;
 				
-				document.getElementById('decks-grid').innerHTML = "";
-				
-				const card_copies = {};
-
-				for (const deck of decks) {
-					if (!used_formats.includes(deck.format)) {
-						used_formats.push(deck.format);
-						const full_format_container = createFormatContainer(deck.format);
-						document.getElementById('decks-grid').appendChild(full_format_container);
-					}
-					
-					const decklist = atob(deck.url.split(";")[1].split("&")[0]);
-					for (const line of decklist.split('\n')) {
-						const match = line.match(/([0-9]+) (.*?) \(/);
-						if (!match) continue;
-						const [_, copies, card] = match;
-						card_copies[card] ??= 0;
-						card_copies[card] += parseInt(copies);
-					}
-
-					document.getElementById(deck.format).appendChild(createDeckContainer(user_data, deck, card_list_arrayified));
+				const decklist = atob(deck.url.split(";")[1].split("&")[0]);
+				for (const line of decklist.split('\n')) {
+					const match = line.match(/([0-9]+) (.*?) \(/);
+					if (!match) continue;
+					const [_, copies, card] = match;
+					card_copies[card] ??= 0;
+					card_copies[card] += parseInt(copies);
 				}
 
-				const basics = ['Plains', 'Island', 'Swamp', 'Mountain', 'Forest', 'Fault'];
-				const top_cards = Object.entries(card_copies).filter(([card, n]) => !basics.includes(card)).sort((a, b) => b[1] - a[1]).slice(0, 20);
-				const container = document.querySelector('.card-stats-grid');
+				document.getElementById(deck.format).appendChild(createDeckContainer(user_data, deck, card_list_arrayified));
+			}
 
-				container.innerHTML = `<div class="card-copies-row header-row"><div class="card-copies-name">Card</div><div class="card-copies-num"># of copies</div></div>`;
+			const basics = ['Plains', 'Island', 'Swamp', 'Mountain', 'Forest', 'Fault'];
+			const top_cards = Object.entries(card_copies).filter(([card, n]) => !basics.includes(card)).sort((a, b) => b[1] - a[1]).slice(0, 20);
+			const container = document.querySelector('.card-stats-grid');
 
-				for (const [card, copies] of top_cards) {
-					const row = document.createElement('div');
-					row.className = 'card-copies-row';
+			container.innerHTML = `<div class="card-copies-row header-row"><div class="card-copies-name">Card</div><div class="card-copies-num"># of copies</div></div>`;
 
-					const name = document.createElement('div');
-					name.className = 'card-copies-name';
-					name.innerText = card;
+			for (const [card, copies] of top_cards) {
+				const row = document.createElement('div');
+				row.className = 'card-copies-row';
 
-					const num_copies = document.createElement('div');
-					num_copies.className = 'card-copies-num';
-					num_copies.innerText = copies;
+				const name = document.createElement('div');
+				name.className = 'card-copies-name';
+				name.innerText = card;
 
-					row.appendChild(name);
-					row.appendChild(num_copies);
-					container.appendChild(row);
+				const num_copies = document.createElement('div');
+				num_copies.className = 'card-copies-num';
+				num_copies.innerText = copies;
+
+				row.appendChild(name);
+				row.appendChild(num_copies);
+				container.appendChild(row);
+			}
+
+			let user_stats;
+			await fetch(`https://voyager-api-pq2h.onrender.com/stats/user`)
+				.then(response => response.json())
+				.then(json => {
+					user_stats = json;
+				}).catch(error => console.error('Error:', error));
+
+			let game_stats;
+			await fetch(`https://voyager-api-pq2h.onrender.com/stats/games`)
+				.then(response => response.json())
+				.then(json => {
+					game_stats = json;
+				}).catch(error => console.error('Error:', error));
+
+			const user_games = game_stats.filter(game => game.hasOwnProperty(username));
+			const opponents = user_games.reduce((acc, game) => {
+				const opponent = Object.keys(game).filter(p => p != username);
+				acc[opponent] ??= 0;
+				acc[opponent]++;
+				return acc;
+			}, {});
+
+			const biggest_opponent = Object.entries(opponents).reduce((acc, opp) => {
+				if (opponents[acc] > opponents[opp[0]]) return acc;
+				return opp[0];
+			}, "");
+
+			const rank = Object.entries(user_stats).sort((a, b) => b[1].winrate - a[1].winrate).findIndex(s => s[0] == username) + 1;
+			
+			document.querySelector('#num-games').innerText = user_stats[username].games_played;
+			document.querySelector('#biggest-opponent').innerText = biggest_opponent;
+			document.querySelector('#winrate').innerText = (user_stats[username].winrate * 100).toFixed(2) + '%';
+			document.querySelector('#rank').innerText = rank + getOrdinal(rank);
+
+			for (const deck of colls) {
+				let deck_container = document.createElement('div');
+				deck_container.className = "deck-container";
+				let card_stats;
+				let deck_preview = document.createElement('img');
+
+				for (const card of card_list_arrayified) {
+					if (deck.previewimg == card.card_name) {
+						card_stats = card;
+						break;
+					}
 				}
+				deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+				deck_preview.className = "deck-preview-img";
+				deck_preview.onclick = function () {
+					window.location.href = deck.url;
+				}
+				deck_preview.style.cursor = "pointer";
+				let deck_name = document.createElement('div');
+				deck_name.className = "deck-name";
+				deck_name.innerText = deck.name;
 
-				let user_stats;
-				await fetch(`https://voyager-api-pq2h.onrender.com/stats/user`)
-					.then(response => response.json())
-					.then(json => {
-						user_stats = json;
-					}).catch(error => console.error('Error:', error));
+				let deck_btns = document.createElement('div');
+				deck_btns.className = "coll-buttons";
 
-				let game_stats;
-				await fetch(`https://voyager-api-pq2h.onrender.com/stats/games`)
-					.then(response => response.json())
-					.then(json => {
-						game_stats = json;
-					}).catch(error => console.error('Error:', error));
+				let deck_link = document.createElement('a');
+				deck_link.href = deck.url;
 
-				const user_games = game_stats.filter(game => game.hasOwnProperty(username));
-				const opponents = user_games.reduce((acc, game) => {
-					const opponent = Object.keys(game).filter(p => p != username);
-					acc[opponent] ??= 0;
-					acc[opponent]++;
-					return acc;
-				}, {});
+				let deck_edit_icon = document.createElement('img');
+				deck_edit_icon.src = "/img/create.png";
+				deck_edit_icon.className = "deck-icon-green";
+				deck_link.innerText = "Create Deck";
+				deck_link.className = "deck-link-green deck-icon-shadow";
+				deck_link.appendChild(deck_edit_icon);
 
-				const biggest_opponent = Object.entries(opponents).reduce((acc, opp) => {
-					if (opponents[acc] > opponents[opp[0]]) return acc;
-					return opp[0];
-				}, "");
+				let deck_delete_icon = document.createElement('img');
+				deck_delete_icon.src = "/img/trash.png";
+				deck_delete_icon.className = "deck-icon-red deck-icon-shadow";
 
-				const rank = Object.entries(user_stats).sort((a, b) => b[1].winrate - a[1].winrate).findIndex(s => s[0] == username) + 1;
-				
-				document.querySelector('#num-games').innerText = user_stats[username].games_played;
-				document.querySelector('#biggest-opponent').innerText = biggest_opponent;
-				document.querySelector('#winrate').innerText = (user_stats[username].winrate * 100).toFixed(2) + '%';
-				document.querySelector('#rank').innerText = rank + getOrdinal(rank);
-
-				for (const deck of colls) {
-					let deck_container = document.createElement('div');
-					deck_container.className = "deck-container";
-					let card_stats;
-					let deck_preview = document.createElement('img');
-
-					for (const card of card_list_arrayified) {
-						if (deck.previewimg == card.card_name) {
-							card_stats = card;
-							break;
+				deck_delete_icon.onclick = async function () {
+					let new_decks = decks;
+					// let index = 0;
+					let user_deck = {};
+					for (let i = 0; i < decks.length; i++) {
+						user_deck = decks[i];
+						if (user_deck["name"] == deck.name) {
+							new_decks.splice(i, 1);
 						}
-					}
-					deck_preview.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
-					deck_preview.className = "deck-preview-img";
-					deck_preview.onclick = function () {
-						window.location.href = deck.url;
-					}
-					deck_preview.style.cursor = "pointer";
-					let deck_name = document.createElement('div');
-					deck_name.className = "deck-name";
-					deck_name.innerText = deck.name;
-
-					let deck_btns = document.createElement('div');
-					deck_btns.className = "coll-buttons";
-
-					let deck_link = document.createElement('a');
-					deck_link.href = deck.url;
-
-					let deck_edit_icon = document.createElement('img');
-					deck_edit_icon.src = "/img/create.png";
-					deck_edit_icon.className = "deck-icon-green";
-					deck_link.innerText = "Create Deck";
-					deck_link.className = "deck-link-green deck-icon-shadow";
-					deck_link.appendChild(deck_edit_icon);
-
-					let deck_delete_icon = document.createElement('img');
-					deck_delete_icon.src = "/img/trash.png";
-					deck_delete_icon.className = "deck-icon-red deck-icon-shadow";
-
-					deck_delete_icon.onclick = async function () {
-						let new_decks = decks;
-						// let index = 0;
-						let user_deck = {};
-						for (let i = 0; i < decks.length; i++) {
-							user_deck = decks[i];
-							if (user_deck["name"] == deck.name) {
-								new_decks.splice(i, 1);
-							}
-							// index += 1;
-						}
-						await updateDocs(doc(db, "users", username), {
-							decks: (new_decks)
-						});
-						alert("Deck Deleted!");
-						reload();
+						// index += 1;
 					}
 
-					deck_btns.appendChild(deck_link);
-					// deck_btns.appendChild(deck_submit_text);
-					deck_btns.appendChild(deck_delete_icon);
-					deck_container.appendChild(deck_name);
-					deck_container.appendChild(deck_preview);
-					deck_container.appendChild(deck_btns);
-					document.getElementById('colls').appendChild(deck_container);
+					if (!window.confirm(`Are you sure you want to delete ${deck.name}? This operation is permanent and cannot be undone.`)) return;
+
+					await updateDoc("users", username, {
+						decks: new_decks
+					});
+					reload();
 				}
-			});
+
+				deck_btns.appendChild(deck_link);
+				// deck_btns.appendChild(deck_submit_text);
+				deck_btns.appendChild(deck_delete_icon);
+				deck_container.appendChild(deck_name);
+				deck_container.appendChild(deck_preview);
+				deck_container.appendChild(deck_btns);
+				document.getElementById('colls').appendChild(deck_container);
+			}
 		}
 
 		function getOrdinal(n) {
@@ -640,7 +571,7 @@
 			// 		}
 			// 		// index += 1;
 			// 	}
-			// 	await updateDoc(doc(db, "users", username), {
+			// 	await updateDoc("users", username, {
 			// 		decks: (new_decks)
 			// 	});
 			// 	localStorage.removeItem(deck.name);
@@ -668,31 +599,31 @@
 			return deck_card;
 		}
 
-		async function handleEventSubmission(event, deck) {
-			await getDoc(doc(db, "events", event)).then(async docSnap2 => {
-				let tourndata = docSnap2.data();
-				if (tourndata.name.includes("League")) {
-					let runs = JSON.parse(tourndata.runs);
-					let user_runs = runs[username] ? runs[username] : [];
-					user_runs.push({ deck: deck, matches: [] });
-					runs[username] = user_runs;
-					updateDoc(doc(db, "events", event), {
-						runs: JSON.stringify(runs)
-					});
-					return;
-				}
-				let decks_ = tourndata.decks;
-				if (event.toLowerCase().includes("league")) {
-					decks_.push({ ...deck, user: username });
-				} else {
-					decks_[username] = deck;
-				}
-				updateDoc(doc(db, "events", event), {
-					decks: (decks_)
-				});
-			});
-			alert("Submitted deck " + deck.name + " to" + event + "!");
-		}
+		// async function handleEventSubmission(event, deck) {
+		// 	await getDoc(doc(db, "events", event)).then(async docSnap2 => {
+		// 		let tourndata = docSnap2.data();
+		// 		if (tourndata.name.includes("League")) {
+		// 			let runs = JSON.parse(tourndata.runs);
+		// 			let user_runs = runs[username] ? runs[username] : [];
+		// 			user_runs.push({ deck: deck, matches: [] });
+		// 			runs[username] = user_runs;
+		// 			updateDoc("events", event, {
+		// 				runs: JSON.stringify(runs)
+		// 			});
+		// 			return;
+		// 		}
+		// 		let decks_ = tourndata.decks;
+		// 		if (event.toLowerCase().includes("league")) {
+		// 			decks_.push({ ...deck, user: username });
+		// 		} else {
+		// 			decks_[username] = deck;
+		// 		}
+		// 		updateDoc("events", event, {
+		// 			decks: (decks_)
+		// 		});
+		// 	});
+		// 	alert("Submitted deck " + deck.name + " to" + event + "!");
+		// }
 
 		function createDeckIcon(img, color) {
 			const deck_icon = document.createElement('img');

@@ -932,14 +932,12 @@
 		}
 
 		if (sessionid) {
-			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-				let data = docSnap.data();
+			await getDoc('sessions', sessionid).then(data => {
 				username = data.username;
 				password = data.password;
 			});
 
-			await getDoc(doc(db, 'users', username)).then(docSnap => {
-				let data = docSnap.data();
+			await getDoc('users', username).then(data => {
 				user_data = data;
 			});
 		}

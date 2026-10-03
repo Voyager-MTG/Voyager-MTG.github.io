@@ -171,8 +171,7 @@
 		// console.log
 
 		if (sessionid) {
-			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-				let data = docSnap.data();
+			await getDoc('sessions', sessionid).then(data => {
 				username = data.username;
 				password = data.password;
 			});
@@ -185,7 +184,7 @@
 
 		// await getDoc(doc(db, COLLECTION, DOC)).then(docSnap => {})
 		// docSnap.data()
-		// updateDoc(doc(db, COLLECTION, DOC), {k: v, k2: v2, ...})
+		// updateDoc(COLLECTION, DOC, {k: v, k2: v2, ...})
 		await getDoc(doc(db, 'users', username)).then(async docSnap => {
 			user_data = docSnap.data();
 		});
@@ -300,7 +299,7 @@
 						new_matches[match_id][player][0] = run_id;
 						new_matches[match_id][opponent][0] = run_id;
 
-						updateDoc(doc(db, "events", event), {
+						updateDoc("events", event, {
 							runs: JSON.stringify(new_runs),
 							games: JSON.stringify(new_matches)
 						});
@@ -409,7 +408,7 @@
 					const new_runs = JSON.parse(event_data.runs);
 					new_runs[user_data.username] = new_runs[user_data.username] ? new_runs[user_data.username] : [];
 					new_runs[user_data.username].push({ deck: deck, matches: [] })
-					updateDoc(doc(db, "events", event), {
+					updateDoc("events", event, {
 						runs: JSON.stringify(new_runs)
 					});
 					alert("Created new run!");
@@ -757,7 +756,7 @@
 				game[opponent] = ["unclaimed", document.getElementById("p2-score-input").value];
 				new_games.push(game);
 				alert(`Game reported. Go to the runs tab to assign it to a run!`);
-				await updateDoc(doc(db, "events", event), {
+				await updateDoc("events", event, {
 					games: JSON.stringify(new_games)
 				});
 				reload();

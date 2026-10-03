@@ -262,14 +262,12 @@
 		let user_data;
 
 		if (sessionid) {
-			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-				let data = docSnap.data();
+			await getDoc('sessions', sessionid).then(data => {
 				username = data.username;
 				password = data.password;
 			});
 
-			await getDoc(doc(db, 'users', username)).then(docSnap => {
-				let data = docSnap.data();
+			await getDoc('users', username).then(data => {
 				user_data = data;
 			});
 		}
@@ -287,7 +285,7 @@
 
 			if (user_articles.exists()) {
 				let articles = user_articles.data();
-				updateDoc(doc(db, "articles", username), {
+				updateDoc("articles", username, {
 					[article_name]: article_text
 				});
 			} else {

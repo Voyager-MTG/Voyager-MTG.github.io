@@ -120,14 +120,12 @@
 		let user_data;
 
 		if (sessionid) {
-			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-				let data = docSnap.data();
+			await getDoc('sessions', sessionid).then(data => {
 				username = data.username;
 				password = data.password;
 			});
 
-			await getDoc(doc(db, 'users', username)).then(docSnap => {
-				let data = docSnap.data();
+			await getDoc('users', username).then(data => {
 				user_data = data;
 			});
 		}
@@ -140,7 +138,7 @@
                 const data = docSnap.data();
                 const user_to_link = data[`id_${id}`];
 
-                await updateDoc(doc(db, "info", "accountlinks"), {
+                await updateDoc("info", "accountlinks", {
                     [user_to_link]: user_data.username,
                     [`id_${id}`]: deleteField()
                 });
@@ -148,7 +146,7 @@
                 await getDoc(doc(db, "info", "extras")).then(async docSnap => {
                     const data = docSnap.data();
 
-                    await updateDoc(doc(db, "info", "extras"), {
+                    await updateDoc("info", "extras", {
                         link_id: data.link_id - 1
                     });
                 });

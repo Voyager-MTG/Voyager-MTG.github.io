@@ -457,7 +457,7 @@
 		}
 
 	</script>
-	<script type="module">
+	<!--script type="module">
 		// Import the functions you need from the SDKs you need
 		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
 		import { setDoc, addDoc, updateDoc, doc, deleteDoc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
@@ -494,21 +494,18 @@
 		// console.log
 
 		if (sessionid) {
-			await getDoc(doc(db, 'sessions', sessionid)).then(docSnap => {
-				let data = docSnap.data();
+			await getDoc('sessions', sessionid).then(data => {
 				username = data.username;
 				password = data.password;
 			});
 
-			await getDoc(doc(db, 'users', username)).then(docSnap => {
-				let data = docSnap.data();
+			await getDoc('users', username).then(data => {
 				decks = data.decks;
 				user_data = data;
 			});
 		}
 
-		await getDoc(doc(db, "info", "collectionleague")).then(docSnap => {
-			let data = docSnap.data();
+		await getDoc("info", "collectionleague").then(data => {
 			coll_league_players = JSON.parse(data.players);
 		});
 
@@ -554,7 +551,7 @@
 
 					await getDoc(doc(db, "info", "events")).then(docSnap => {
 						const calendar = docSnap.data().calendar;
-						updateDoc(doc(db, "info", "events"), {
+						updateDoc("info", "events", {
 							calendar: [...calendar, `${name};${time};${desc}`]
 						});
 					})
@@ -566,7 +563,7 @@
 						if (!coll_league_players.includes(user.username)) {
 							continue;
 						}
-						updateDoc(doc(db, "users", user.username), {
+						updateDoc("users", user.username, {
 							coll_league: user.coll_league ? [parseInt(user.coll_league[0]) + set_count, parseInt(user.coll_league[1]) + pack_count] : [0, 0]
 						});
 					}
@@ -577,7 +574,7 @@
 		}
 
 		document.addEventListener("DOMContentLoaded", reload);
-	</script>
+	</script-->
 </body>
 
 </html>
