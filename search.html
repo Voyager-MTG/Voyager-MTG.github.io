@@ -1051,36 +1051,38 @@ Search for cards that were made into champion promo's by a specific user. For ex
 			return stats;
 		}
 
-		all_events_docs = await getCollection('events');
-		all_users_docs = await getCollection('users');
+		document.addEventListener("DOMContentLoaded", async () => {
+			all_events_docs = await getCollection('events');
+			all_users_docs = await getCollection('users');
 
-		all_events_docs.forEach((data) => {
-			all_events.push(data);
-			for (const user in data.decks) {
-				let deck = data.decks[user];
-				all_event_decks.push({ ...deck, "user": user, "event": true });
-				all_decks.push({ ...deck, "user": user, "event": true });
+			all_events_docs.forEach((data) => {
+				all_events.push(data);
+				for (const user in data.decks) {
+					let deck = data.decks[user];
+					all_event_decks.push({ ...deck, "user": user, "event": true });
+					all_decks.push({ ...deck, "user": user, "event": true });
+				}
+			});
+
+			all_users_docs.forEach((data) => {
+				for (const deck of data.decks) {
+					all_user_decks.push({ ...deck, "user": data.username, "event": false });
+					all_decks.push({ ...deck, "user": data.username, "event": false });
+				}
+			});
+
+			let event_decks_count = 0;
+			let user_decks_count = 0;
+
+			for (const deck of all_decks) {
+				if (deck.event) {
+					event_decks_count++;
+				}
+				else {
+					user_decks_count++;
+				}
 			}
 		});
-
-		all_users_docs.forEach((data) => {
-			for (const deck of data.decks) {
-				all_user_decks.push({ ...deck, "user": data.username, "event": false });
-				all_decks.push({ ...deck, "user": data.username, "event": false });
-			}
-		});
-
-		let event_decks_count = 0;
-		let user_decks_count = 0;
-
-		for (const deck of all_decks) {
-			if (deck.event) {
-				event_decks_count++;
-			}
-			else {
-				user_decks_count++;
-			}
-		}
 
 	</script>
 </body>

@@ -82,7 +82,7 @@
 	<script src="/src/js/img-container-defs.js"></script>
 	<script>
 		document.addEventListener("DOMContentLoaded", async function () {
-			await fetch('http://localhost:10000/events/draft/info')
+			await fetch('https://voyager-api-pq2h.onrender.com/events/draft/info')
 				.then(response => response.json())
 				.then(json => {
 					draft_info = json;

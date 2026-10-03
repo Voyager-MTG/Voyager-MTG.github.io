@@ -154,17 +154,6 @@
 			reload();
 		});
 
-		if (sessionid) {
-			await getDoc('sessions', sessionid).then(data => {
-				username = data.username;
-			});
-
-			await getDoc('users', username).then(data => {
-				user_data = data;
-				decks = user_data.decks;
-			});
-		}
-
 		// declare variables outside of functions to avoid passing nonsense
 		let q;
 		let all_users_docs;
@@ -180,25 +169,17 @@
 		let search_value = "";
 		let event_info;
 
-		await fetch('/lists/all-cards.json')
-			.then(response => response.json())
-			.then(json => {
-				card_list = json;
-			}).catch(error => console.error('Error:', error));
+		// await fetch('/lists/all-cards.json')
+		// 	.then(response => response.json())
+		// 	.then(json => {
+		// 		card_list = json;
+		// 	}).catch(error => console.error('Error:', error));
 
-		await fetch('/lists/all-sets.json')
-			.then(response => response.json())
-			.then(json => {
-				set_list = json;
-			}).catch(error => console.error('Error:', error));
-
-		await fetch('https://voyager-api-pq2h.onrender.com/events/info')
-			.then(response => response.json())
-			.then(json => {
-				event_info = json;
-			}).catch(error => console.error('Error:', error));
-
-		let card_list_arrayified = card_list.cards; 
+		// await fetch('/lists/all-sets.json')
+		// 	.then(response => response.json())
+		// 	.then(json => {
+		// 		set_list = json;
+		// 	}).catch(error => console.error('Error:', error));
 
 		function setTabs() {
 			document.getElementById(`events-tab-select`).className = "tab-btn";
@@ -213,6 +194,23 @@
 			setTabs();
 
 			if (initial_load) {
+				if (sessionid) {
+					await getDoc('sessions', sessionid).then(data => {
+						username = data.username;
+					});
+
+					await getDoc('users', username).then(data => {
+						user_data = data;
+						decks = user_data.decks;
+					});
+				}
+
+				await fetch('https://voyager-api-pq2h.onrender.com/events/info')
+					.then(response => response.json())
+					.then(json => {
+						event_info = json;
+					}).catch(error => console.error('Error:', error));
+
 				all_users_docs = await getCollection('users');
 				all_decks = [];
 				all_users = [];
@@ -238,8 +236,9 @@
 					}
 				});
 
-				await getDoc("info", "events").then(data => {
+				await getDoc("info", "events").then(info => {
 					all_events.sort((a, b) => info.gporder.indexOf(a.name) - info.gporder.indexOf(b.name));
+					console.log(all_events, info.gporder, info.gporder.indexOf('GP Jidiao'), info.gporder.indexOf('GP Ironmantle'));
 					all_events.reverse();
 				});
 
@@ -307,7 +306,7 @@
 					// 		return acc + `&${opt.id}=${encodeURIComponent(form.querySelector('.' + opt.id).value)}`;
 					// 	}, '');
 					// 	console.log('sending', option_data);
-					// 	await fetch(`http://localhost:10000/events/draft/fire?session=${localStorage.getItem('settings.session')}${option_data}`);
+					// 	await fetch(`https://voyager-api-pq2h.onrender.com/events/draft/fire?session=${localStorage.getItem('settings.session')}${option_data}`);
 					// 	closeModal();
 					// }
 

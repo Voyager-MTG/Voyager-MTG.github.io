@@ -155,24 +155,6 @@
 	</div>
 	<script src="src/js/background.js"></script>
 	<script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-		// TODO: Add SDKs for Firebase products that you want to use
-		// https://firebase.google.com/docs/web/setup#available-libraries
-
-		// Your web app's Firebase configuration
-		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-		const firebaseConfig = {
-			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-			authDomain: "voyager-78e30.firebaseapp.com",
-			projectId: "voyager-78e30",
-			storageBucket: "voyager-78e30.firebasestorage.app",
-			messagingSenderId: "411191248476",
-			appId: "1:411191248476:web:591349be169d823e5f8899",
-			measurementId: "G-TQ1L48F25M"
-		};
-
 		async function sha256(message) {
 			// encode as UTF-8
 			const msgBuffer = new TextEncoder().encode(message);
@@ -200,18 +182,12 @@
 			return ret;
 		}
 
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-		const db = getFirestore(app);
-
 		document.getElementById("log-in").addEventListener("click", async (e) => {
 			let name = document.getElementById("username").value;
 			let pw = btoa(document.getElementById("password").value);
 			let exit = false;
 
-			const data = await getDoc(doc(db, "users", name)).then(async docSnap => {
-				let data = docSnap.data();
-
+			const data = await getDoc("users", name).then(async data => {
 				if (!data.salt) {
 					data.salt = generateSalt();
 					data.password = await sha256(data.password + data.salt + data.username);
@@ -236,7 +212,7 @@
 
 			const uuid = "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c => (+c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> +c / 4).toString(16));
 
-			await setDoc(doc(db, "sessions", uuid), {
+			await setDoc("sessions", uuid, {
 				username: name
 			});
 
@@ -256,26 +232,17 @@
 				return;
 			}
 
-			const q = query(collection(db, "users"), where("username", "==", name));
-			const querySnapshot = await getDocs(q).then(docSnap => {
-				let users = [];
-				docSnap.forEach((doc) => {
-					users.push({ ...doc.data(), id: doc.id });
-				});
-				if (users.length != 0) {
-					alert("Username taken!");
-					exit = true;
-					return;
-				}
-			});
+			// const q = query(collection(db, "users"), where("username", "==", name));
+			const users = await getCollection('users').filter(u => u.username === name);
 
-			if (exit) {
+			if (users.length != 0) {
+				alert("Username taken!");
 				return;
 			}
 
 			const salt = generateSalt();
 
-			await setDoc(doc(db, "users", name), {
+			await setDoc("users", name, {
 				username: name,
 				password: await sha256(password + salt + name),
 				decks: [],
@@ -284,7 +251,7 @@
 
 			const uuid = "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c => (+c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> +c / 4).toString(16));
 
-			await setDoc(doc(db, "sessions", uuid), {
+			await setDoc("sessions", uuid, {
 				username: name
 			});
 

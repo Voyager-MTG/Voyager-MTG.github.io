@@ -144,6 +144,10 @@ hr {
 	font-family: beleren;
 }
 
+.card-in-deck {
+	cursor: none;
+}
+
 .deck-preview-card {
 	max-width: 300px;
 	cursor: pointer;
@@ -426,6 +430,16 @@ hr {
 	width: 80%;
 	height: 80%;
 	overflow-y: scroll;
+}
+
+.deck-next-link {
+	margin-left: 12px;
+	color: var(--link);
+	transition: 0.2s;
+}
+
+.deck-next-link:hover {
+	filter: brightness(1.3);
 }
 
 /* mobile layout changes*/

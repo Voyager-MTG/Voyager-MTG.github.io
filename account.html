@@ -149,10 +149,6 @@
 			white: "#"
 		}
 
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-		const db = getFirestore(app);
-
 		const urlParams = new URLSearchParams(window.location.search);
 		if (urlParams.get("setsession")) { 
 			localStorage.setItem('settings.session', urlParams.get("setsession"));
@@ -161,30 +157,28 @@
 		
 
 		let username = "";
-		let password = "";
 		let sessionid = localStorage.getItem('settings.session');
 		let decks = {};
-		let card_list_arrayified;
-		let card_list;
+		let user_data;
 
-		if (!sessionid) {
-			window.location.href = "/login";
-		}
+		// if (!sessionid) {
+		// 	window.location.href = "/login";
+		// }
 		if (localStorage.getItem("settings.compactaccount") == "On") {
 			window.location.href = "/account-compact";
 		}
 
-		const resp = await getDoc('sessions', sessionid).then(data => {
-			if (!data) window.location.href = "/login";
+		async function reload() {
+			console.log(username);
+			await getDoc('sessions', sessionid).then(data => {
+				if (!data) window.location.href = "/login";
+				console.log(data);
+				username = data.username;
+			});
+			
+			const user_data = await getDoc('users', username);
+			document.getElementById("username").innerText = username;
 
-			username = data.username;
-			password = data.password;
-		});
-
-		const user_data = await getDoc('users', username);
-		document.getElementById("username").innerText = username;
-
-		async function reload() {			
 			await getDoc("info", "accountlinks").then(data => {
 				let found = false;
 				for (const user in data) {

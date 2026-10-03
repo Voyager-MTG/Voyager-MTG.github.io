@@ -94,7 +94,7 @@
 				onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>
 		</div>
 	</div>
-	<div id="hover-card" class="hover-card">
+	<div id="hover-card" class="hover-card"></div>
 	<script src="/src/js/background.js"></script>
 	<script src="/src/js/img-container-defs.js"></script>
 	<script>
@@ -475,8 +475,6 @@
 			document.getElementById("modal-content").innerHTML = html;
 		}
 
-		let username = "";
-		let password = "";
 		let sessionid = localStorage.getItem('settings.session');
 		let decks = {};
 		const events = ["GP1", "League"];
@@ -489,27 +487,8 @@
 		document.body.style.setProperty("--card-height", card_height + "px");
 		document.body.style.setProperty("--card-spacing", card_spacing + "px");
 
-		if (sessionid) {
-			await getDoc('sessions', sessionid).then(data => {
-				username = data.username;
-				password = data.password;
-			});
-
-			await getDoc('users', username).then(data => {
-				user_data = data;
-			});
-		}
-
 		let card_list;
 		let deck_author;
-
-		await fetch('/lists/all-cards.json')
-			.then(response => response.json())
-			.then(json => {
-				card_list = json;
-			}).catch(error => console.error('Error:', error));
-
-		let card_list_arrayified = card_list.cards; // default card list
 
 		document.getElementById("sort-type").onchange = reload;
 		document.getElementById("displayed-as").onchange = reload;

@@ -188,30 +188,7 @@
 				}
 			}
 		}
-	</script>
-	<script type="module">
-		// <!--MARK: init-->
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-		// https://firebase.google.com/docs/web/setup#available-libraries
 
-		// Your web app's Firebase configuration
-		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-		const firebaseConfig = {
-			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-			authDomain: "voyager-78e30.firebaseapp.com",
-			projectId: "voyager-78e30",
-			storageBucket: "voyager-78e30.firebasestorage.app",
-			messagingSenderId: "411191248476",
-			appId: "1:411191248476:web:591349be169d823e5f8899",
-			measurementId: "G-TQ1L48F25M"
-		};
-
-
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-		const db = getFirestore(app);
 		let username = "";
 		let password = "";
 		let sessionid = localStorage.getItem('settings.session');
@@ -222,36 +199,30 @@
 		let card_list;
 		let event_data;
 
-		await fetch('/lists/all-cards.json')
-			.then(response => response.json())
-			.then(json => {
-				card_list = json;
-			}).catch(error => console.error('Error:', error));
+		async function loadData() {
+			if (!event) {
+				await getDoc("info", "events").then(data => {
+					event = data.recent;
+					const url = new URL(window.location.href);
+					history.pushState({}, "", `${url.pathname}?event=${event}`);
+				})
+			}
 
-		let card_list_arrayified = card_list.cards;
-
-		if (!event) {
-			await getDoc(doc(db, "info", "events")).then(docSnap => {
-				event = docSnap.data().recent;
-				const url = new URL(window.location.href);
-				history.pushState({}, "", `${url.pathname}?event=${event}`);
-			})
-		}
-
-		await getDoc(doc(db, 'events', event)).then(async docSnap => {
-			event_data = docSnap.data();
-		});
-
-		if (sessionid) {
-			await getDoc('sessions', sessionid).then(data => {
-				username = data.username;
-				password = data.password;
+			await getDoc('events', event).then(data => {
+				event_data = data;
 			});
 
-			await getDoc('users', username).then(data => {
-				decks = data.decks;
-				admin = data.admin;
-			});
+			if (sessionid) {
+				await getDoc('sessions', sessionid).then(data => {
+					username = data.username;
+					password = data.password;
+				});
+
+				await getDoc('users', username).then(data => {
+					decks = data.decks;
+					admin = data.admin;
+				});
+			}
 		}
 
 		function addAdminEventListeners() {
@@ -327,9 +298,9 @@
 				player_name.innerText = player;
 				player_name.onclick = function () {
 					document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-					let deck_header = document.createElement("span");
+					const deck_header = document.createElement("div");
 					deck_header.className = "deck-window-header";
-					deck_header.innerText = player + "'s " + deck.name;
+					deck_header.innerHTML = `<span class="player-title">${player}'s ${deck.name}</span><a class="deck-next-link" href="/deck?edeck=${event}-${player}" target="_blank">↗</a>`;
 					document.getElementById("modal-content").appendChild(deck_header);
 					document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
 					document.getElementById("modal-container").style.display = 'block';
@@ -422,9 +393,9 @@
 					player_name.onclick = function () {
 						let deck = decks[player];
 						document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-						let deck_header = document.createElement("span");
+						const deck_header = document.createElement("div");
 						deck_header.className = "deck-window-header";
-						deck_header.innerText = player + "'s " + deck.name;
+						deck_header.innerHTML = `<span class="player-title">${player}'s ${deck.name}</span><a class="deck-next-link" href="/deck?edeck=${event}-${player}" target="_blank">↗</a>`;
 						document.getElementById("modal-content").appendChild(deck_header);
 						document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
 						document.getElementById("modal-container").style.display = 'block';
@@ -521,9 +492,9 @@
 						player_name.onclick = function () {
 							let deck = decks[player];
 							document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-							let deck_header = document.createElement("span");
+							const deck_header = document.createElement("div");
 							deck_header.className = "deck-window-header";
-							deck_header.innerText = player + "'s " + deck.name;
+							deck_header.innerHTML = `<span class="player-title">${player}'s ${deck.name}</span><a class="deck-next-link" href="/deck?edeck=${event}-${player}" target="_blank">↗</a>`;
 							document.getElementById("modal-content").appendChild(deck_header);
 							document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
 							document.getElementById("modal-container").style.display = 'block';
@@ -635,7 +606,7 @@
 
 				// deck_preview.onclick = function () {
 				// 	document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-				// 	let deck_header = document.createElement("span");
+				// 	const deck_header = document.createElement("div");
 				// 	deck_header.className = "deck-window-header";
 				// 	deck_header.innerText = user + "'s " + deck.name;
 				// 	document.getElementById("modal-content").appendChild(deck_header);
@@ -674,7 +645,7 @@
 
 				// deck_link2.onclick = function () {
 				// 	document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-				// 	let deck_header = document.createElement("span");
+				// 	const deck_header = document.createElement("div");
 				// 	deck_header.className = "deck-window-header";
 				// 	deck_header.innerText = user + "'s " + deck.name;
 				// 	document.getElementById("modal-content").appendChild(deck_header);
@@ -799,9 +770,9 @@
 				if (event_data.stage != "initial") {
 					name_container.onclick = function () {
 						document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-						let deck_header = document.createElement("span");
+						const deck_header = document.createElement("div");
 						deck_header.className = "deck-window-header";
-						deck_header.innerText = player + "'s " + deck.name;
+						deck_header.innerHTML = `<span class="player-title">${player}'s ${deck.name}</span><a class="deck-next-link" href="/deck?edeck=${event}-${player}" target="_blank">↗</a>`;
 						document.getElementById("modal-content").appendChild(deck_header);
 						document.getElementById("modal-content").appendChild(deckHTML(deck, card_list));
 						document.getElementById("modal-container").style.display = 'block';
@@ -839,6 +810,7 @@
 		}
 
 		async function reload() {
+			await loadData();
 			const decks = event_data.decks;
 			const rounds = JSON.parse(event_data.rounds);
 
@@ -1682,7 +1654,7 @@
 
 			const event_name = window.prompt("GP Name?");
 
-			await setDoc(doc(db, 'events', event_name), {
+			await setDoc('events', event_name, {
 				decks: {},
 				rounds: '{"swiss":{},"bracket":{}}',
 				num_rounds: 0,
@@ -1916,7 +1888,7 @@
 			if (user) {
 				deck_card.onclick = () => {
 					document.getElementById("modal-content").innerHTML = `<span class="close" onclick="document.getElementById('modal-container').style.display = 'none';">&times;</span>`;
-					let deck_header = document.createElement("span");
+					const deck_header = document.createElement("div");
 					deck_header.className = "deck-window-header";
 					deck_header.innerText = user + "'s " + deck.name;
 					document.getElementById("modal-content").appendChild(deck_header);

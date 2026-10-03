@@ -847,53 +847,33 @@
 
 			window.location.href = url;
 		}
-	</script>
-	<script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-		import { setDoc, addDoc, updateDoc, doc, collection, getFirestore, query, where, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-		// TODO: Add SDKs for Firebase products that you want to use
-		// https://firebase.google.com/docs/web/setup#available-libraries
 
-		// Your web app's Firebase configuration
-		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-		const firebaseConfig = {
-			apiKey: "AIzaSyCPurnKVn2caCn3L-gKF2tMFwWur73YAuw",
-			authDomain: "voyager-78e30.firebaseapp.com",
-			projectId: "voyager-78e30",
-			storageBucket: "voyager-78e30.firebasestorage.app",
-			messagingSenderId: "411191248476",
-			appId: "1:411191248476:web:591349be169d823e5f8899",
-			measurementId: "G-TQ1L48F25M"
-		};
-
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-		const db = getFirestore(app);
 		let username;
 		let password;
 		let sessionid = localStorage.getItem('settings.session');
 
-		if (sessionid) {
-			await getDoc('sessions', sessionid).then(data => {
-				username = data.username;
-				password = data.password;
-			});
-		}
+		document.addEventListener("DOMContentLoaded", async () => {
+			if (sessionid) {
+				await getDoc('sessions', sessionid).then(data => {
+					username = data.username;
+					password = data.password;
+				});
+			}
+		});
 
 		window.inCollectionLeague = async () => {
-			const d = (await getDoc(doc(db, 'collectionleague', username))).data();
+			const d = (await getDoc('collectionleague', username)).data();
 			return !(d == undefined || d.joined === false);
 		};
 
 		window.openMaster = async () => {
 			let packs = [];
-			await getDoc(doc(db, 'collectionleague', username)).then(docSnap => {
+			await getDoc('collectionleague', username).then(docSnap => {
 				const data = doc.data;
 				packs = data.packs;
 			});
 			packs.push(Array(7).fill('MASTER'));
-			await setDoc(doc(db, 'collectionleague', username), {
+			await updateDoc('collectionleague', username, {
 				'packs': packs,
 				'packsOpened': 0,
 				'collection': ''

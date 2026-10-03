@@ -267,18 +267,18 @@
 		const events = ["GP1", "League"];
 		let user_data;
 
-		if (sessionid) {
-			await getDoc('sessions', sessionid).then(data => {
-				username = data.username;
-				password = data.password;
-			});
-
-			await getDoc('users', username).then(data => {
-				user_data = data;
-			});
-		}
-
 		async function reload() {
+			if (sessionid) {
+				await getDoc('sessions', sessionid).then(data => {
+					username = data.username;
+					password = data.password;
+				});
+
+				await getDoc('users', username).then(data => {
+					user_data = data;
+				});
+			}
+
 			if (!user_data || !user_data.admin) {
 				alert('You are not an admin. You cannot access this page');
 				window.location.href = '/login';

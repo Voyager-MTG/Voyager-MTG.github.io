@@ -2899,38 +2899,54 @@
 
 		let sessionid = localStorage.getItem("settings.session");
 
-		const resp = await getDoc('sessions', sessionid).then(data => {
+		const resp = getDoc('sessions', sessionid).then(data => {
 			username = data.username;
 			password = data.password;
-		});
+			getDoc('users', username).then(async data => {
+				let colls;
+				const admin = data.admin;
+				let coll_league = data.coll_league;
+				decks = data.decks;
+				if (data.colls != null) {
+					colls = JSON.parse(data.colls);
+				} else {
+					colls = []
+				}
 
-		console.log('????');
-		await getDoc('users', username).then(async data => {
-			let colls;
-			const admin = data.admin;
-			let coll_league = data.coll_league;
-			decks = data.decks;
-			if (data.colls != null) {
-				colls = JSON.parse(data.colls);
-			} else {
-				colls = []
-			}
+				if (decks) {
+					window.user_decks = decks;
+				}
 
-			if (decks) {
-				window.user_decks = decks;
-			}
+				const urlParams = new URLSearchParams(window.location.search);
 
-			const urlParams = new URLSearchParams(window.location.search);
+				if (urlParams.get('deck') != null) { // check if deck exists
+					if (urlParams.get("deck").includes("-") && !urlParams.get("deck").includes(";")) {
+						const splitted = urlParams.get('deck').split('-');
+						const deck_user = splitted[0];
+						const deck_name = splitted[1];
+						await getDoc('users', deck_user).then(data2 => {
+							let decks = data2.decks;
+							for (const deck of decks) {
+								if (deck.name == deck_name) {
+									let text = atob(deck.url.split(";")[1].split("&")[0]);
+									if (!deck.private) readDeckText(text, deck.name);
+									window.fireimport = true;
+									break;
+								}
+							}
+						});
+					}
+				}
 
-			if (urlParams.get('deck') != null) { // check if deck exists
-				if (urlParams.get("deck").includes("-") && !urlParams.get("deck").includes(";")) {
-					const splitted = urlParams.get('deck').split('-');
-					const deck_user = splitted[0];
-					const deck_name = splitted[1];
-					await getDoc('users', deck_user).then(data2 => {
-						let decks = data2.decks;
-						for (const deck of decks) {
-							if (deck.name == deck_name) {
+				if (urlParams.get('edeck') != null) { // check if deck exists
+					const splitted = urlParams.get('edeck').split('-');
+					const deck_event = splitted[0];
+					const deck_user = splitted[1];
+					await getDoc('events', deck_event).then(data3 => {
+						let decks = data3.decks;
+						for (const user in decks) {
+							if (user == deck_user) {
+								let deck = decks[user];
 								let text = atob(deck.url.split(";")[1].split("&")[0]);
 								if (!deck.private) readDeckText(text, deck.name);
 								window.fireimport = true;
@@ -2939,169 +2955,153 @@
 						}
 					});
 				}
-			}
 
-			if (urlParams.get('edeck') != null) { // check if deck exists
-				const splitted = urlParams.get('edeck').split('-');
-				const deck_event = splitted[0];
-				const deck_user = splitted[1];
-				await getDoc('events', deck_event).then(data3 => {
-					let decks = data3.decks;
-					for (const user in decks) {
-						if (user == deck_user) {
-							let deck = decks[user];
-							let text = atob(deck.url.split(";")[1].split("&")[0]);
-							if (!deck.private) readDeckText(text, deck.name);
-							window.fireimport = true;
-							break;
-						}
+				if (urlParams.get('ucollection') != null) { // check if collection exists
+					if (urlParams.get("ucollection").includes("-")) {
+						const splitted = urlParams.get('ucollection').split('-');
+						const collection_user = splitted[0];
+						const collection_name = splitted[1];
+						await getDoc('users', collection_user).then(data2 => {
+							let collections = JSON.parse(data2.colls);
+							for (const collection of collections) {
+								if (collection.name == collection_name) {
+									let text = atob(collection.url.split("?collection=")[1]);
+									loadCollection(collection.name, text.split("\n"));
+									window.fireimport = true;
+									break;
+								}
+							}
+						});
+						gridified_card = gridifyCard(card_list_arrayified[0], true, true);
+						gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
+						gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
+						document.getElementById("card-grid-container").appendChild(gridified_card);
 					}
-				});
-			}
+				}
 
-			if (urlParams.get('ucollection') != null) { // check if collection exists
-				if (urlParams.get("ucollection").includes("-")) {
-					const splitted = urlParams.get('ucollection').split('-');
-					const collection_user = splitted[0];
-					const collection_name = splitted[1];
-					await getDoc('users', collection_user).then(data2 => {
-						let collections = JSON.parse(data2.colls);
-						for (const collection of collections) {
-							if (collection.name == collection_name) {
-								let text = atob(collection.url.split("?collection=")[1]);
-								loadCollection(collection.name, text.split("\n"));
-								window.fireimport = true;
-								break;
+				if (window.location.search.includes('collectionleague')) {
+					let collection;
+					await fetch(`https://voyager-api-pq2h.onrender.com/collectionleague/collection/view?session=${localStorage.getItem('settings.session')}`)
+						.then(response => response.text())
+						.then(data => {
+							collection = data;
+						}).catch(error => console.error('Error:', error));
+						
+					loadCollection('Collection League', collection.split('\n'), true);
+				}
+
+				document.getElementById('save-btn').addEventListener("click", (e) => {
+					let colorsList = [];
+					let colors = "";
+
+					for (const card of deck) {
+						let card_stats = JSON.parse(card);
+
+						for (const color of card_stats.color) {
+							if (!colorsList.includes(color)) {
+								colorsList.push(color);
 							}
 						}
-					});
-					gridified_card = gridifyCard(card_list_arrayified[0], true, true);
-					gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
-					gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
-					document.getElementById("card-grid-container").appendChild(gridified_card);
-				}
-			}
-
-			if (window.location.search.includes('collectionleague')) {
-				let collection;
-				await fetch(`https://voyager-api-pq2h.onrender.com/collectionleague/collection/view?session=${localStorage.getItem('settings.session')}`)
-					.then(response => response.text())
-					.then(data => {
-						collection = data;
-					}).catch(error => console.error('Error:', error));
-					
-				loadCollection('Collection League', collection.split('\n'), true);
-			}
-
-			document.getElementById('save-btn').addEventListener("click", (e) => {
-				let colorsList = [];
-				let colors = "";
-
-				for (const card of deck) {
-					let card_stats = JSON.parse(card);
-
-					for (const color of card_stats.color) {
-						if (!colorsList.includes(color)) {
-							colorsList.push(color);
-						}
 					}
-				}
 
-				if (colorsList.includes('W')) {
-					colors += "W";
-				}
-
-				if (colorsList.includes('U')) {
-					colors += "U";
-				}
-
-				if (colorsList.includes('B')) {
-					colors += "B";
-				}
-
-				if (colorsList.includes('R')) {
-					colors += "R";
-				}
-
-				if (colorsList.includes('G')) {
-					colors += "G";
-				}
-
-				if (colorsList.includes('I')) {
-					colors += "I";
-				}
-
-				const card_stats = JSON.parse(localStorage.getItem('settings.previewimg'));
-				const date = new Date();
-
-				const deckObj = {
-					name: document.getElementById("deck-name").value,
-					previewimg: card_stats.card_name,
-					url: `https://voyager-mtg.github.io/deck?deck=${encodeURIComponent(document.getElementById("deck-name").value) + ';' + btoa(generateDeckText(true, true))}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`,
-					colors: colors,
-					last_modified: `${date.getDate().toString().padStart(2, '0')}-${date.getMonth().toString().padStart(2, '0')}-${date.getYear() + 1900}, ${date.getHours()}:${date.getMinutes().toString().padStart(2, '0')}`,
-					format: localStorage.getItem('settings.format'),
-					private: localStorage.getItem("settings.deck_privacy") == "Private"
-				};
-
-				for (const deck_ of decks) {
-					if (deck_.name == deckObj.name) {
-						decks.splice(decks.indexOf(deck_), 1);
+					if (colorsList.includes('W')) {
+						colors += "W";
 					}
-				}
 
-				decks.push(deckObj);
-
-				updateDoc("users", username, {
-					decks: (decks)
-				});
-			});
-
-			window.beforeunload = function () {
-				if (localStorage.getItem("settings.autosave") != "On") return;
-
-				let card_stats = JSON.parse(localStorage.getItem('settings.previewimg'));
-
-				let deckObj = {
-					name: document.getElementById("deck-name").value,
-					previewimg: card_stats.card_name,
-					url: `https://voyager-mtg.github.io/deck?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`
-				};
-
-				for (const deck_ of decks) {
-					if (deck_.name == deckObj.name) {
-						decks.splice(decks.indexOf(deck_), 1);
+					if (colorsList.includes('U')) {
+						colors += "U";
 					}
-				}
 
-				decks.push(deckObj);
+					if (colorsList.includes('B')) {
+						colors += "B";
+					}
 
-				updateDoc("users", username, {
-					decks: (decks)
-				});
-			}
+					if (colorsList.includes('R')) {
+						colors += "R";
+					}
 
-			document.getElementById("file-menu").addEventListener("change", function (event) { // Watch the dropdown that says Actions...
-				let option = document.getElementById("file-menu").value; // get the chosen option
-				if (option == "save-collection") {
-					let card_stats = JSON.parse(localStorage.getItem('settings.previewimg'));
-					let collObj = {
+					if (colorsList.includes('G')) {
+						colors += "G";
+					}
+
+					if (colorsList.includes('I')) {
+						colors += "I";
+					}
+
+					const card_stats = JSON.parse(localStorage.getItem('settings.previewimg'));
+					const date = new Date();
+
+					const deckObj = {
 						name: document.getElementById("deck-name").value,
 						previewimg: card_stats.card_name,
-						url: 'https://voyager-mtg.github.io/deckbuilder?collection=' + btoa(generateDeckText())
+						url: `https://voyager-mtg.github.io/deck?deck=${encodeURIComponent(document.getElementById("deck-name").value) + ';' + btoa(generateDeckText(true, true))}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`,
+						colors: colors,
+						last_modified: `${date.getDate().toString().padStart(2, '0')}-${date.getMonth().toString().padStart(2, '0')}-${date.getYear() + 1900}, ${date.getHours()}:${date.getMinutes().toString().padStart(2, '0')}`,
+						format: localStorage.getItem('settings.format'),
+						private: localStorage.getItem("settings.deck_privacy") == "Private"
 					};
-					for (const coll_ of colls) {
-						if (coll_.name == collObj.name) {
-							colls.splice(colls.indexOf(coll_), 1);
+
+					for (const deck_ of decks) {
+						if (deck_.name == deckObj.name) {
+							decks.splice(decks.indexOf(deck_), 1);
 						}
 					}
-					colls.push(collObj);
+
+					decks.push(deckObj);
+
 					updateDoc("users", username, {
-						colls: JSON.stringify(colls)
+						decks: (decks)
+					});
+				});
+
+				window.beforeunload = function () {
+					if (localStorage.getItem("settings.autosave") != "On") return;
+
+					let card_stats = JSON.parse(localStorage.getItem('settings.previewimg'));
+
+					let deckObj = {
+						name: document.getElementById("deck-name").value,
+						previewimg: card_stats.card_name,
+						url: `https://voyager-mtg.github.io/deck?deck=${document.getElementById("deck-name").value.replaceAll(" ", "%20") + ';' + btoa(generateDeckText())}&main=${deck.length}&side=${sideboard.length}&sanctum=${sanctum.length}`
+					};
+
+					for (const deck_ of decks) {
+						if (deck_.name == deckObj.name) {
+							decks.splice(decks.indexOf(deck_), 1);
+						}
+					}
+
+					decks.push(deckObj);
+
+					updateDoc("users", username, {
+						decks: (decks)
 					});
 				}
+
+				document.getElementById("file-menu").addEventListener("change", function (event) { // Watch the dropdown that says Actions...
+					let option = document.getElementById("file-menu").value; // get the chosen option
+					if (option == "save-collection") {
+						let card_stats = JSON.parse(localStorage.getItem('settings.previewimg'));
+						let collObj = {
+							name: document.getElementById("deck-name").value,
+							previewimg: card_stats.card_name,
+							url: 'https://voyager-mtg.github.io/deckbuilder?collection=' + btoa(generateDeckText())
+						};
+						for (const coll_ of colls) {
+							if (coll_.name == collObj.name) {
+								colls.splice(colls.indexOf(coll_), 1);
+							}
+						}
+						colls.push(collObj);
+						updateDoc("users", username, {
+							colls: JSON.stringify(colls)
+						});
+					}
+				});
 			});
 		});
+
+		console.log('????');
 	</script>
 </body>
 

@@ -104,36 +104,9 @@
 			white: "#"
 		}
 
-		let username = "";
-		let password = "";
-		let admin = false;
 		let sessionid = localStorage.getItem('settings.session');
-		let decks = {};
 		const events = ["GP2", "League"];
 		let urlParams = new URLSearchParams(window.location.search);
-		let card_list;
-		let card_list_arrayified;
-
-		await fetch('/lists/all-cards.json')
-			.then(response => response.json())
-			.then(json => {
-				card_list = json;
-			}).catch(error => console.error('Error:', error));
-
-		card_list_arrayified = card_list.cards;
-
-		if (sessionid) {
-			await getDoc('sessions', sessionid).then(data => {
-				username = data.username;
-				password = data.password;
-			});
-
-			await getDoc('users', username).then(data => {
-				decks = data.decks;
-				admin = data.admin;
-			});
-		}
-
 
 		async function reload() {
 			let date = new Date();
@@ -179,11 +152,80 @@
 					search(all_decks);
 				}
 			});
+			all_decks.sort(newDeck);
+			while (!card_list_arrayified) await delay(10);
 			search(all_decks);
 			// await getDoc(doc(db, 'users', username)).then(async docSnap => {
 			//     let user_data = docSnap.data();
 			//     // firebase code
 			// }); 
+		}
+
+		function newDeck(a, b) {
+			if (a.last_modified && !b.last_modified) {
+				return -1;
+			}
+			if (!a.last_modified && b.last_modified) {
+				return 1;
+			}
+			if (!a.last_modified && !b.last_modified) {
+				return 0;
+			}
+
+			let a_date = {};
+			let b_date = {};
+
+			let a_split = a.last_modified.split(',');
+			let a_split2 = a_split[0].split('-');
+
+			a_date.day = Number(a_split2[0]);
+			a_date.month = Number(a_split2[1]);
+			a_date.year = Number(a_split2[2]);
+
+			a_date.hour = Number(a_split[1].split(":")[0]);
+			a_date.min = Number(a_split[1].split(":")[1]);
+
+			let b_split = b.last_modified.split(',');
+			let b_split2 = b_split[0].split('-');
+
+			b_date.day = Number(b_split2[0]);
+			b_date.month = Number(b_split2[1]);
+			b_date.year = Number(b_split2[2]);
+
+			b_date.hour = Number(b_split[1].split(":")[0]);
+			b_date.min = Number(b_split[1].split(":")[1]);
+
+			if (a_date.year > b_date.year) {
+				return -1;
+			}
+			if (a_date.year < b_date.year) {
+				return 1;
+			}
+			if (a_date.month > b_date.month) {
+				return -1;
+			}
+			if (a_date.month < b_date.month) {
+				return 1;
+			}
+			if (a_date.day > b_date.day) {
+				return -1;
+			}
+			if (a_date.day < b_date.day) {
+				return 1;
+			}
+			if (a_date.hour > b_date.hour) {
+				return -1;
+			}
+			if (a_date.hour < b_date.hour) {
+				return 1;
+			}
+			if (a_date.min > b_date.min) {
+				return -1;
+			}
+			if (a_date.min < b_date.min) {
+				return 1;
+			}
+			return 0;
 		}
 
 		function search(all_decks) {
