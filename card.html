@@ -1112,18 +1112,17 @@
 		let user_data;
 		const urlParams = new URLSearchParams(window.location.search);
 
-		if (sessionid) {
-			await getDoc('sessions', sessionid).then(data => {
-				username = data.username;
-				password = data.password;
-			});
-
-			await getDoc('users', username).then(data => {
-				user_data = data;
-			});
-		}
-
 		async function reload() {
+			if (sessionid) {
+				await getDoc('sessions', sessionid).then(data => {
+					username = data.username;
+					password = data.password;
+				});
+
+				await getDoc('users', username).then(data => {
+					user_data = data;
+				});
+			}
 			const image_grid = document.getElementsByClassName("image-grid")[0];
 
 			const rulings_container = document.getElementsByClassName("rulings-container")[0];
