@@ -590,7 +590,7 @@ function searchToken(card, token) {
                     return false;
                 }
                 if (check == "sanctum") {
-                    let regex = new RegExp("((P|p)athbound|(H|h)eir–)");
+                    let regex = new RegExp("((P|p)athbound|(H|h)eir ?–)");
                     if (regex.test(card_oracle_text)) {
                         return true;
                     } else {
