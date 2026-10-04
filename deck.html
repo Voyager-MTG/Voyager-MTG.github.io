@@ -694,6 +694,7 @@
 		async function loadDeck(deck, name, deck_obj) {
 			document.title = name;
 			document.getElementById("deck-container").style.gridTemplateColumns = "repeat(10, 1fr)";
+			while (!card_list_arrayified) await delay(50);
 
 			const small_width = window.innerWidth < 1200;
 

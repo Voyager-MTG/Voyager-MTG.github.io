@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 function isBannedCard(card_name) {
-	return banlist.banned.includes(card_name);
+	return !banlist || banlist.banned.includes(card_name);
 }
 
 function tokenize(text) {
