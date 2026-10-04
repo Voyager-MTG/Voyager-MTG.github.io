@@ -426,6 +426,7 @@
 				const card_match = new RegExp(`\\*\\*${RegExp.escape(card.card_name)}(\\'s)?\\*\\* (.*?)\\n`, "g");
 				if (card_match.test(changelog)) {
 					const match = changelog.match(card_match);
+					console.log(match);
 					changes.push([date, match[0].split("**")[2]]);
 				}
 			}

@@ -13258,7 +13258,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 		</card>
 		<card>
 			<name>Yaiba Robo</name>
-			<text>Restructure {I} (If you cast this for its restructure cost, its a kindred artifact until you pay its mana cost as a sorcery.)
+			<text>Restructure {I} (If you cast this for its restructure cost, it&apos;s a kindred artifact until you pay its mana cost as a sorcery.)
 At the beginning of combat on your turn, up to one target creature gains first strike until end of turn.</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/109.jpg" num="112" uuid="EXPT109">EXPT</set>
 			<prop>
@@ -19865,7 +19865,7 @@ Explorer – {1}{R}: This creature gets +2/+0 and gains trample until end of tur
 		<card>
 			<name>Seasoned Flamefinder</name>
 			<text>Prowess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)
-Whenever this creature attacks, you may discard a card. If you do, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand.)</text>
+Whenever this creature attacks, you may discard a card. If you do, draft a card from your sanctum. (Look at three random cards from your sanctum. Put one into your hand. )</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/312.jpg" num="170" uuid="FOE312">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -20297,7 +20297,7 @@ Once during each of your turns, you may play a card from your sanctum.</text>
 			<name>Korna, Adventuring Historian</name>
 			<text>Trample, vigilance
 Once each turn, when a spell or ability puts a card into your hand, you may create a 2/2 white Wurm creature token with vigilance.
-Materialize 2 (Tap one or more other enchantments you control with total mana value 2 or more: This also becomes an Icon creature until your next turn.)</text>
+Materialize 2 (Tap any number of other enchantments you control with total mana value 2 or more: This becomes a creature in addition to its other types until your next upkeep.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/336.jpg" num="302" uuid="FOE336">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -21482,7 +21482,7 @@ Enchanted permanent loses all abilities and is a colorless enchantment.</text>
 		</card>
 		<card>
 			<name>Cascading Reflections</name>
-			<text>Mirror. (Create a token that&apos;s a copy of a token you control.)</text>
+			<text>Mirror. (Create a token thats a copy of another token you control.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/391.jpg" num="232" uuid="FOE391">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -22645,7 +22645,7 @@ Whenever you cast or copy a noncreature spell, create a 1/1 white Shark enchantm
 			<name>Coralwisp Entity</name>
 			<text>Vigilance
 Whenever this enchantment attacks, you may reveal a nonpermanent card from your sanctum and put it into your hand.
-Materialize 3 (Tap one or more other enchantments you control with total mana value 3 or more: This also becomes an Icon creature until your next turn.)</text>
+Materialize 3 (Tap any number of other enchantments you control with total mana value 3 or more: This becomes a creature in addition to its other types until your next upkeep.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/461.jpg" num="66" uuid="FOE461">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -27314,7 +27314,7 @@ Whenever one or more creatures you control enter, if they weren&apos;t cast from
 		<card>
 			<name>Banefort Skywarden</name>
 			<text>Flying
-Bloom (Whenever you cast a spell that targets this permanent, you may pay that spell&apos;s mana cost. If you do, copy that spell. You may choose new targets for the copy.)</text>
+Bloom (Whenever you cast a spell that targets this creature, you may pay that spell&apos;s mana cost. If you do, copy that spell. You may choose new targets for the copy.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/249.jpg" num="4" uuid="HOD249">HOD</set>
 			<prop>
 				<layout>normal</layout>
@@ -41178,7 +41178,7 @@ Enchanted creature gets +3/+2 and has haste.</text>
 		<card>
 			<name>Disregarded Project</name>
 			<text>Protection from multicolored
-Retopology {W}{W}{W} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {W}{W}{W} (Cast a copy of this from your graveyard by exiling it and paying {W}{W}{W}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/1.jpg" num="11" uuid="PVR1">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -41196,7 +41196,7 @@ Retopology {W}{W}{W} (Cast a copy of this from your graveyard by exiling it and 
 		<card>
 			<name>Epoch Ending</name>
 			<text>You gain 6 life. Then if this spell was retopologised, create six 0/0 colorless Fractal Horror creature tokens. Put two +1/+1 counters on each of those creatures.
-Retopology {W}{W}{W}{W}{W}{W} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {W}{W}{W}{W}{W}{W} (Cast a copy of this from your graveyard by exiling it and paying {W}{W}{W}{W}{W}{W}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/2.jpg" num="17" uuid="PVR2">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -41214,7 +41214,7 @@ Retopology {W}{W}{W}{W}{W}{W} (Cast a copy of this from your graveyard by exilin
 		<card>
 			<name>Gathering Olorosaurs</name>
 			<text>Gathering Olorosaurs enters with two +1/+1 counters on it if no mana from land sources were spent to cast it.
-Retopology {G}{G}{G} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {G}{G}{G} (Cast a copy of this from your graveyard by exiling it and paying {G}{G}{G}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/3.jpg" num="192" uuid="PVR3">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -41395,7 +41395,7 @@ Whenever another artifact you control enters, put a +1/+1 counter on Awakened Ma
 		<card>
 			<name>Prepackaged Assembly</name>
 			<text>Return target creature card from your graveyard to the battlefield.
-Retopology {1}{B}{B}{B}{B} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {1}{B}{B}{B}{B} (Cast a copy of this from your graveyard by exiling it and paying {1}{B}{B}{B}{B}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/13.jpg" num="128" uuid="PVR13">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -41464,7 +41464,7 @@ Whenever your complexity is three or greater, untap Sun Pouncer. This ability tr
 		<card>
 			<name>Downscaled Matrongon</name>
 			<text>Creature tokens you control have menace.
-Retopology {2}{R}{R} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {2}{R}{R} (Cast a copy of this from your graveyard by exiling it and paying {2}{R}{R}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/17.jpg" num="144" uuid="PVR17">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -41890,7 +41890,7 @@ You get {VW}. (Spend {V} to cast copies of Vertex spells.)</text>
 		<card>
 			<name>Burrow Deep</name>
 			<text>Return target card from your graveyard to your hand.
-Retopology {1}{G}{G} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {1}{G}{G} (Cast a copy of this from your graveyard by exiling it and paying {1}{G}{G}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/41.jpg" num="182" uuid="PVR41">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -42090,7 +42090,7 @@ Melt deals 3 damage to any target.</text>
 		<card>
 			<name>Geometric Singularity</name>
 			<text>Geometric Singularity deals X damage to any target.
-Retopology {X}{R} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {X}{R} (Cast a copy of this from your graveyard by exiling it and paying {X}{R}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/52.jpg" num="147" uuid="PVR52">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -42124,7 +42124,7 @@ You may tap lands you don&apos;t control for mana. Activate abilities this way o
 		<card>
 			<name>Emerging Wildlife</name>
 			<text>When Emerging Wildlife enters, put a +1/+1 counter on target creature.
-Retopology {2}{G}{G} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {2}{G}{G} (Cast a copy of this from your graveyard by exiling it and paying {2}{G}{G}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/54.jpg" num="188" uuid="PVR54">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -42309,7 +42309,7 @@ Sacrifice a land: Mill a card. If the milled card is a creature card, you may ca
 		<card>
 			<name>Orchard Vixen</name>
 			<text>Sacrifice Orchard Vixen, discard a card: Draw a card.
-Retopology {R}{R} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {R}{R} (Cast a copy of this from your graveyard by exiling it and paying {R}{R}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/64.jpg" num="161" uuid="PVR64">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -42467,7 +42467,7 @@ Sacrifice a nonartifact permanent, Exile an artifact card from your graveyard an
 		<card>
 			<name>Stick Retriever</name>
 			<text>When Stick Retriever enters, create a 1/1 white Human creature token for each creature card in your graveyard.
-Retopology {1}{BG}{BG}{BG}{BG}{BG} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {1}{BG}{BG}{BG}{BG}{BG} (Cast a copy of this from your graveyard by exiling it and paying {1}{BG}{BG}{BG}{BG}{BG}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/74.jpg" num="262" uuid="PVR74">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -42576,7 +42576,7 @@ If a player would gain life, that player gets that many {V} instead. (Spend {V} 
 		<card>
 			<name>Slumbering Dreadblade</name>
 			<text>Flash
-Bake (When this enters, up to one target permanent gains its abilities until end of turn.)
+Bake (When this enters, up to one other target permanent gains its abilities until end of turn.)
 This permanent is a 3/3 Zombie Soldier artifact creature if an artifact entered this turn.</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/80.jpg" num="260" uuid="PVR80">PVR</set>
 			<prop>
@@ -42731,7 +42731,7 @@ Burn Barren deals 4 damage to any target and you gain 4 life.</text>
 		<card>
 			<name>Urwrapir Explorations</name>
 			<text>Draw two cards. You may play an additional land this turn.
-Retopology {1}{GU}{GU}{GU}{GU} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {1}{GU}{GU}{GU}{GU} (Cast a copy of this from your graveyard by exiling it and paying {1}{GU}{GU}{GU}{GU}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/89.jpg" num="270" uuid="PVR89">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -42782,7 +42782,7 @@ Retopology {1}{GU}{GU}{GU}{GU} (Cast a copy of this from your graveyard by exili
 		<card>
 			<name>Asset Manager</name>
 			<text>When Asset Manager enters, create a 1/1 white Human creature token.
-Retopology {2}{W}{W} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {2}{W}{W} (Cast a copy of this from your graveyard by exiling it and paying {2}{W}{W}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/92.jpg" num="3" uuid="PVR92">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -42855,7 +42855,7 @@ Enchanted permanent has ward {1}.</text>
 			<name>Desperate Pathfinding</name>
 			<text>Enchant creature
 Enchanted creature gets +2/+2.
-Retopology {W}{W} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {W}{W} (Cast a copy of this from your graveyard by exiling it and paying {W}{W}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/96.jpg" num="9" uuid="PVR96">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -43187,7 +43187,7 @@ Exile target creature or planeswalker.</text>
 		<card>
 			<name>Backface Culling</name>
 			<text>Flash
-Bake (When this enters, up to one target permanent gains its abilities until end of turn.)
+Bake (When this enters, up to one other target permanent gains its abilities until end of turn.)
 Sacrifice this permanent: Draw a card.</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/115.jpg" num="96" uuid="PVR115">PVR</set>
 			<prop>
@@ -43205,7 +43205,7 @@ Sacrifice this permanent: Draw a card.</text>
 		<card>
 			<name>Bleak Return</name>
 			<text>Return target creature card with mana value 3 or less from your graveyard to the battlefield.
-Retopology {1}{B}{B} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {1}{B}{B} (Cast a copy of this from your graveyard by exiling it and paying {1}{B}{B}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/116.jpg" num="97" uuid="PVR116">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -43222,7 +43222,7 @@ Retopology {1}{B}{B} (Cast a copy of this from your graveyard by exiling it and 
 		<card>
 			<name>Bog Snapper</name>
 			<text>When Bog Snapper dies, up to one target creature gets -1/-1 until end of turn.
-Retopology {2}{B}{B} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {2}{B}{B} (Cast a copy of this from your graveyard by exiling it and paying {2}{B}{B}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/117.jpg" num="98" uuid="PVR117">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -43468,7 +43468,7 @@ An opponent with complexity three or greater can&apos;t cast spells or activate 
 		<card>
 			<name>Draw Distance</name>
 			<text>Destroy target nonland permanent with mana value 3 or less.
-Retopology {1}{BG}{BG}{BG}{BG} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {1}{BG}{BG}{BG}{BG} (Cast a copy of this from your graveyard by exiling it and paying {1}{BG}{BG}{BG}{BG}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/131.jpg" num="236" uuid="PVR131">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -43886,7 +43886,7 @@ Whenever Burning Devastatasaur attacks, you may sacrifice a land or exile a land
 		<card>
 			<name>Harsurfir&apos;s Folly</name>
 			<text>When Harsurfir&apos;s Folly enters, gain control of target permanent until end of turn. Untap that permanent. It gains haste until end of turn.
-Retopology {1}{R}{R}{R} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {1}{R}{R}{R} (Cast a copy of this from your graveyard by exiling it and paying {1}{R}{R}{R}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/155.jpg" num="152" uuid="PVR155">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -44008,7 +44008,7 @@ Whenever Leaping Carnosaur attacks, it gets +1/+0 until end of turn for each Din
 		<card>
 			<name>Subsurface Spawning</name>
 			<text>Create a 0/0 colorless Fractal Horror creature token. Put X +1/+1 counters on it.
-Retopology {X} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {X} (Cast a copy of this from your graveyard by exiling it and paying {X}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/162.jpg" num="220" uuid="PVR162">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -44026,7 +44026,7 @@ Retopology {X} (Cast a copy of this from your graveyard by exiling it and paying
 		<card>
 			<name>Excessive Decadence</name>
 			<text>Target player mills twice X cards.
-Retopology {X}{U} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {X}{U} (Cast a copy of this from your graveyard by exiling it and paying {X}{U}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/163.jpg" num="51" uuid="PVR163">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -44138,7 +44138,7 @@ Search your library for a creature card, reveal it, put it into your hand, then 
 		<card>
 			<name>Asset Export</name>
 			<text>Draw X cards, where X is the amount of mana spent to cast this spell, then discard a card.
-Retopology {U}{U}{U}{U}{U} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {U}{U}{U}{U}{U} (Cast a copy of this from your graveyard by exiling it and paying {U}{U}{U}{U}{U}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/169.jpg" num="47" uuid="PVR169">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -44386,7 +44386,7 @@ Hatebloom Titangon gets +3/+3 if a library has twenty or fewer cards in it.</tex
 		<card>
 			<name>Ego Eroder</name>
 			<text>When Ego Eroder enters, look at target player&apos;s hand. You may choose a noncreature, nonland card from it. Exile that card until Ego Eroder leaves the battlefield.
-Retopology {1}{B}{B}{B} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {1}{B}{B}{B} (Cast a copy of this from your graveyard by exiling it and paying {1}{B}{B}{B}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/183.jpg" num="108" uuid="PVR183">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -44604,7 +44604,7 @@ Whenever Catechesis Engine attacks, you may sacrifice a land or exile a land car
 		<card>
 			<name>Hierarch of Exultation</name>
 			<text>Whenever Hierarch of Exultation or another permanent you control leaves the battlefield, you gain 1 life.
-Retopology {2}{W}{W} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {2}{W}{W} (Cast a copy of this from your graveyard by exiling it and paying {2}{W}{W}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/195.jpg" num="26" uuid="PVR195">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -45002,7 +45002,7 @@ You get {VW}. (Spend {V} to cast copies of Vertex spells.)</text>
 		<card>
 			<name>Extrude Wisdom</name>
 			<text>Look at the top two cards of your library. Put one of those cards into your hand and the other into your graveyard.
-Retopology {U}{U} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {U}{U} (Cast a copy of this from your graveyard by exiling it and paying {U}{U}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/217.jpg" num="52" uuid="PVR217">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -45073,7 +45073,7 @@ Whenever Migrating Songon deals combat damage to a player, you get {V}. (Spend {
 		<card>
 			<name>Hyperbolic Jumper</name>
 			<text>Flash
-Bake (When this enters, up to one target permanent gains its abilities until end of turn.)
+Bake (When this enters, up to one other target permanent gains its abilities until end of turn.)
 If you&apos;ve cast a spell this turn and it wasn&apos;t your main phase, this permanent has flying.</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/221.jpg" num="53" uuid="PVR221">PVR</set>
 			<prop>
@@ -45126,7 +45126,7 @@ If you&apos;ve cast a spell this turn and it wasn&apos;t your main phase, this p
 		<card>
 			<name>Seafloor Scrounger</name>
 			<text>Seafloor Scrounger gets +1/+1 if a spell or ability put a nontoken card into your hand this turn.
-Retopology {2}{U}{U} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {2}{U}{U} (Cast a copy of this from your graveyard by exiling it and paying {2}{U}{U}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/224.jpg" num="81" uuid="PVR224">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -45437,7 +45437,7 @@ If you would create one or more tokens that&apos;s a copy of a permanent, instea
 		<card>
 			<name>Abandonmare</name>
 			<text>When Abandonmare enters, each player discards two cards.
-Retopology {B}{B}. Spend only mana from nonland sources this way. (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {B}{B}. Spend only mana from nonland sources this way. (Cast a copy of this from your graveyard by exiling it and paying {B}{B}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/241.jpg" num="91" uuid="PVR241">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -45546,7 +45546,7 @@ Middleware Distributor gets +1/+1 for each nontoken card a spell or ability has 
 		<card>
 			<name>Irticull&apos;s Vanguard</name>
 			<text>When Irticull&apos;s Vanguard enters, exile target nonland permanent an opponent controls until Irticull&apos;s Vanguard leaves the battlefield.
-Retopology {1}{W}{W}{W} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {1}{W}{W}{W} (Cast a copy of this from your graveyard by exiling it and paying {1}{W}{W}{W}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/247.jpg" num="28" uuid="PVR247">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -46142,7 +46142,7 @@ Cadix gets -2/-2 for each land you control.</text>
 		<card>
 			<name>Buffer Overflow</name>
 			<text>If it isn&apos;t an extra turn, take an extra turn after this one.
-Retopology {U}{U}{U}{U}{U}{U}{U}{U} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {U}{U}{U}{U}{U}{U}{U}{U} (Cast a copy of this from your graveyard by exiling it and paying {U}{U}{U}{U}{U}{U}{U}{U}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/280.jpg" num="48" uuid="PVR280">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -46159,7 +46159,7 @@ Retopology {U}{U}{U}{U}{U}{U}{U}{U} (Cast a copy of this from your graveyard by 
 		<card>
 			<name>Duplicate Specialty</name>
 			<text>Create a token that&apos;s a copy of target permanent, except its name is Mirrored Entity.
-Retopology {2}{U}{U}{U}{U} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {2}{U}{U}{U}{U} (Cast a copy of this from your graveyard by exiling it and paying {2}{U}{U}{U}{U}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/281.jpg" num="50" uuid="PVR281">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -46246,7 +46246,7 @@ Whenever Paleoartistic Masterpiece attacks, the next spell you cast this turn co
 		<card>
 			<name>Rogue Process</name>
 			<text>Trample, haste
-Retopology {C}{C}{C} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {C}{C}{C} (Cast a copy of this from your graveyard by exiling it and paying {C}{C}{C}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/286.jpg" num="286" uuid="PVR286">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -46780,7 +46780,7 @@ If five or more permanents incremented your complexity this turn, you may cast a
 		<card>
 			<name>Envoy of Debauchery</name>
 			<text>Flash
-Bake (When this enters, up to one target permanent gains its abilities until end of turn.)
+Bake (When this enters, up to one other target permanent gains its abilities until end of turn.)
 Defender, haste
 {2}, {T}: Each opponent loses 3 life and you gain 3 life. Activate only if you control three or more artifacts.</text>
 			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/323.jpg" num="237" uuid="PVR323">PVR</set>
@@ -47532,7 +47532,7 @@ Whenever another creature dies, you may pay 1 life. If you do, draw a card.</tex
 			<name>Longwang, Celestial Ancestor</name>
 			<text>This spell costs {X} less to cast, where X is the greatest number of permanents you control that share a color.
 Longwang, Celestial Ancestor is all colors.
-Flying, vigilance, trample, lifelink, haste.</text>
+Flying, vigilance, trample, lifelink, haste</text>
 			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/40.jpg" num="1" uuid="SSC40">SSC</set>
 			<prop>
 				<layout>normal</layout>
@@ -51221,7 +51221,7 @@ When Iron-Breaker enters, it fights up to one target creature you don&apos;t con
 		</card>
 		<card>
 			<name>Tireless Chronicler</name>
-			<text>Whenever a land you control enters, venerate. (You may reveal and put a Shrine card you own from outside the game into your hand, or create a 1/1 colorless Shrine enchantment creature token.)</text>
+			<text>Whenever you play a land, venerate. (You may reveal and put a Shrine card you own from outside the game into your hand, or create a 1/1 colorless Shrine enchantment creature token.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/256.jpg" num="186" uuid="SSC256">SSC</set>
 			<prop>
 				<layout>normal</layout>
@@ -52012,10 +52012,8 @@ Fracture – At the beginning of combat on your turn, create a 1/1 red Wurm crea
 			<tablerow>2</tablerow>
 		</card>
 		<card>
-			<name>Calia, Oracle of Tofnet Plains</name>
-			<text>Ward {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
-Other enchantment creatures you control get +1/+1.
-Fracture – Once each turn, when you cast a noncreature spell, you may have another target permanent you control become a creature until end of turn. Put two +1/+1 counters on it. (Permanents without printed size are 0/0.)</text>
+			<name>Caylia, Oracle of Tofnet Plains</name>
+			<text>Fracture – Once each turn, when you cast a noncreature spell or when Caylia enters, put two +1/+1 counters on another target permanent you control. You may have it become a creature in addition to its other types until end of turn. (Permanents without printed size are 0/0.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/TDD02-files/img/11.jpg" num="14" uuid="TDD0211">TDD02</set>
 			<prop>
 				<layout>normal</layout>
@@ -52026,7 +52024,7 @@ Fracture – Once each turn, when you cast a noncreature spell, you may have ano
 				<cmc>4</cmc>
 				<colors>W</colors>
 				<coloridentity>W</coloridentity>
-				<pt>3/3</pt>
+				<pt>3/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
 		</card>
@@ -62885,7 +62883,7 @@ When this enchantment enters, scry 2.</text>
 		</card>
 		<card>
 			<name>Caylia, Oracle of Tofnet Plains</name>
-			<text>Fracture – Once each turn, when you cast a noncreature spell or when Caylia enters, put two +1/+1 counters on another target permanent you control. You may have it become a creature in addition ot its other types until end of turn. (Permanents without printed size are 0/0.)</text>
+			<text>Fracture – Once each turn, when you cast a noncreature spell or when Caylia enters, put two +1/+1 counters on another target permanent you control. You may have it become a creature in addition to its other types until end of turn. (Permanents without printed size are 0/0.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/233.jpg" num="16" uuid="VNM233">VNM</set>
 			<prop>
 				<layout>normal</layout>
@@ -63698,7 +63696,7 @@ Whenever this creature attacks, scry 1.</text>
 			<name>Outlands Pathwarden</name>
 			<text>Pathbound {I}{B}. Activate only if you have seven or more cards in your graveyard. ({I}{B}, Reveal this card from your sanctum as a sorcery: Put this card on top of your library.)
 Ward–Discard a card
-When this creature enters, return up to one target creature or artifact from your graveyard to your hand.</text>
+When this creature enters, put up to one target artifact or creature card from your graveyard on top of your library.</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/VNM-files/img/278.jpg" num="102" uuid="VNM278">VNM</set>
 			<prop>
 				<layout>normal</layout>
@@ -67189,7 +67187,7 @@ Ploy – Target opponent reveals their hand and discards a nonland card of your 
 		<card>
 			<name>Deepmists Vindicator</name>
 			<text>Whenever Deepmists Vindicator becomes blocked, [b][each opponent sacrifices a creature or planeswalker.][/b]
-Impetus {4}{B} (You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)</text>
+Impetus {4}{B} (You may cast this from your graveyard as a sorcery with only the text in square brackets for {4}{B}. Then exile it.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/79.jpg" num="85" uuid="WAW79">WAW</set>
 			<prop>
 				<layout>normal</layout>
@@ -67281,7 +67279,7 @@ Reflect {3}{W} ({3}{W}: Create a token copy of this creature, except it&apos;s a
 		<card>
 			<name>Ilcan Resilience</name>
 			<text>[b][Target creature you control gains indestructible and lifelink until end of turn.][/b] Put a +1/+1 counter on it.
-Impetus {1}{B} (You may cast this from your graveyard as a sorcery with only the text in square brackets for {1}{B}. Then exile it.)</text>
+Impetus {1}{B} (You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/84.jpg" num="20" uuid="WAW84">WAW</set>
 			<prop>
 				<layout>normal</layout>
@@ -67774,7 +67772,7 @@ Destroy target creature if it&apos;s tapped or if this spell emerged. You gain 3
 • [b][Exile up to one target nonland permanent with mana value 1 or less.][/b]
 • [b][Scry 2, then draw a card.][/b]
 • [b][Create a 3/3 green Beast creature token.][/b]
-Impetus {W}{U}{B}{R}{G} (You may cast this from your graveyard as a sorcery with only the text in square brackets for {W}{U}{B}{R}{G}. Then exile it.)</text>
+Impetus {W}{U}{B}{R}{G} (You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)</text>
 			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/113.jpg" num="1" uuid="WAW113">WAW</set>
 			<prop>
 				<layout>normal</layout>
@@ -68861,7 +68859,7 @@ Reflect {3} ({3}: Create a token copy of this creature, except it&apos;s a 1/1 W
 		<card>
 			<name>Contemplative Pause</name>
 			<text>[b][Tap up to two target creatures][/b], then put a stun counter on each of them. (If a permanent with a stun counter would become untapped, remove one from it instead.)
-Impetus {2}{U} (You may cast this from your graveyard as a sorcery with only the text in square brackets for {2}{U}. Then exile it.)</text>
+Impetus {2}{U} (You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/185.jpg" num="44" uuid="WAW185">WAW</set>
 			<prop>
 				<layout>normal</layout>
