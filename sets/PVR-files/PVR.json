@@ -3664,7 +3664,7 @@
             "number": 117,
             "color_identity": "B",
             "cost": "{3}{B}",
-            "rules_text": "When Hierarch of Expiration enters, each player sacrifices a creature or planeswalker.\nRetopology {2}{B}{B} [i](Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)[/i]",
+            "rules_text": "When Hierarch of Expiration enters, each player sacrifices a creature or planeswalker.\nRetopology {2}{B}{B} [i](Cast a copy of this from your graveyard by exiling it and paying {2}{B}{B}. Spend only mana from differently named sources this way.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "3/3",
             "special_text": "",

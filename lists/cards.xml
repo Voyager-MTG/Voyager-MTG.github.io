@@ -12106,7 +12106,7 @@ Discard your hand, then exile the top three cards of your library. You may play 
 			<name>Risen Earthdragon</name>
 			<text>This spell costs {1} less for each land you control.
 Flying
-When this creature enters, if it&apos;s not a token, mirror twice. (Create a token thats a copy of a token you control.)</text>
+When this creature enters, if it&apos;s not a token, mirror twice. (Create a token that&apos;s a copy of a token you control.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/33.jpg" num="132" uuid="EXPT33">EXPT</set>
 			<prop>
 				<layout>normal</layout>
@@ -12795,7 +12795,7 @@ Whenever you attack with two or more creatures, this creature deals 2 damage to 
 		<card>
 			<name>Whimsy Unbound</name>
 			<text>Create a token that&apos;s a copy of target creature card or planeswalker card in a graveyard, except it&apos;s not legendary.
-Channel – {I}{W}, Discard this: Mirror. (Create a token thats a copy of a token you control.)</text>
+Channel – {I}{W}, Discard this: Mirror. (Create a token that&apos;s a copy of a token you control.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/75.jpg" num="138" uuid="EXPT75">EXPT</set>
 			<prop>
 				<layout>normal</layout>
@@ -13258,7 +13258,7 @@ Ominous {2} ({2}, Exile this card from your hand as a sorcery: Draw a card. Duri
 		</card>
 		<card>
 			<name>Yaiba Robo</name>
-			<text>Restructure {I} (If you cast this for its restructure cost, it&apos;s a kindred artifact until you pay its mana cost as a sorcery.)
+			<text>Restructure {I} (If you cast this for its restructure cost, its a kindred artifact until you pay its mana cost as a sorcery.)
 At the beginning of combat on your turn, up to one target creature gains first strike until end of turn.</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/EXPT-files/img/109.jpg" num="112" uuid="EXPT109">EXPT</set>
 			<prop>
@@ -16421,7 +16421,7 @@ Create a 1/1 silver Drake creature token with flying. (Then put this into your s
 		</card>
 		<card>
 			<name>Mana Compression</name>
-			<text>Put target noncreature permanent into its owner&apos;s sanctum. Mirror. (Create a token that&apos;s a copy of a token you control.)</text>
+			<text>Put target noncreature permanent into its owner&apos;s sanctum. Mirror. (Create a token thats a copy of another token you control.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/93.jpg" num="254" uuid="FOE93">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -17165,7 +17165,7 @@ At the beginning of combat on each turn, if a land entered under your control th
 		<card>
 			<name>Balutr Runners</name>
 			<text>When this creature enters, if it isn&apos;t a token, choose one – 
-• Mirror. (Create a token that&apos;s a copy of a token you control.)
+• Mirror. (Create a token thats a copy of another token you control.)
 • Reveal the top card of your library. If its a permanent card, put it into your hand.
 Evoke {1}{IG} (You may cast this spell for its evoke cost. If you do, it&apos;s sacrificed when it enters.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/163.jpg" num="278" uuid="FOE163">FOE</set>
@@ -20786,7 +20786,7 @@ Whenever you attack with two or more creatures, you may reveal a permanent card 
 		<card>
 			<name>Outlands Chimera</name>
 			<text>Flying, ward {2}
-Whenever this creature enters or attacks, if its not a token, you may mirror. (Create a token that&apos;s a copy of a token you control.)</text>
+Whenever this creature enters or attacks, if its not a token, you may mirror. (Create a token thats a copy of another token you control.)</text>
 			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/FOE-files/img/362.jpg" num="260" uuid="FOE362">FOE</set>
 			<prop>
 				<layout>normal</layout>
@@ -23502,7 +23502,7 @@ Whenever Caryl Rey, the Rose attacks, exile the top card of your library. You ma
 		<card>
 			<name>Geistwald Deceiver</name>
 			<text>Haste
-{T}: Create a token that&apos;s a copy of target non-Ouphe creature you control. That token has haste. At the beginning of your next end step, forsake. (Sacrifice creatures with total toughness 3 or more.)</text>
+{T}: Create a token that&apos;s a copy of target non-Ouphe creature you control. That token has haste. At the beginning of your next end step, forsake. (To forsake, sacrifice creatures with total toughness 3 or more.)</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/36.jpg" num="144" uuid="HOD36">HOD</set>
 			<prop>
 				<layout>normal</layout>
@@ -27186,7 +27186,7 @@ Whenever Devious Cutthroat deals combat damage to a player or planeswalker, defe
 		</card>
 		<card>
 			<name>Innocent Rendezvous</name>
-			<text>As an additional cost to cast this spell, you may forsake. (Sacrifice creatures with total toughness 3 or more.)
+			<text>As an additional cost to cast this spell, you may forsake. (To forsake, sacrifice creatures with total toughness 3 or more.)
 Exile the top three cards of your library. You may play them until the end of your next turn. If Innocent Rendezvous was forsaken, add {R}{R}{R}{R}{R}.</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/HOD-files/img/242.jpg" num="148" uuid="HOD242">HOD</set>
 			<prop>
@@ -33361,7 +33361,7 @@ Whenever you attack, put a +1/+1 counter on target attacking Nightmare you contr
 			<name>Mother of Ants</name>
 			<text>{U}{R}, Sacrifice a creature that dealt combat damage to an opponent this turn: Put Mother of Ants from your hand onto the battlefield tapped.
 At the beginning of each of your postcombat main phase, add {R} for each 2 life your opponents have lost this turn.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/0.jpg" num="104" uuid="LAIR0">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/0.jpg" num="105" uuid="LAIR0">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33378,7 +33378,7 @@ At the beginning of each of your postcombat main phase, add {R} for each 2 life 
 		<card>
 			<name>The Forge of Days</name>
 			<text>Whenever The Forge of Days attacks, you may put a creature card you own in exile onto the battlefield tapped and attacking. Its owner puts it on the bottom of their library at the beginning of the next end step.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/1.jpg" num="98" uuid="LAIR1">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/1.jpg" num="99" uuid="LAIR1">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33397,7 +33397,7 @@ At the beginning of each of your postcombat main phase, add {R} for each 2 life 
 			<text>Reach
 If you would draw a card, instead mill three cards.
 {1}: Return up to two target cards from your graveyard to your hand. Activate only during your turn and only once each turn.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/2.jpg" num="103" uuid="LAIR2">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/2.jpg" num="104" uuid="LAIR2">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33417,7 +33417,7 @@ If you would draw a card, instead mill three cards.
 Other Vampires you control get +2/+0.
 Creature tokens you control are Vampires in addition to their other types.
 Sacrifice a Vampire: The Red Grail deals 3 damage to any target. Activate only once during each of your turns.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/3.jpg" num="108" uuid="LAIR3">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/3.jpg" num="109" uuid="LAIR3">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33436,7 +33436,7 @@ Sacrifice a Vampire: The Red Grail deals 3 damage to any target. Activate only o
 			<text>Vigilance, ward {1}
 Whenever a card you own becomes foretold, put a +1/+1 counter on The Watchman. 
 {T}: Scry a number of cards equal to The Watchman power, then draw a card. Activate only if you own a foretold card in exile.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/4.jpg" num="115" uuid="LAIR4">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/4.jpg" num="116" uuid="LAIR4">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33454,7 +33454,7 @@ Whenever a card you own becomes foretold, put a +1/+1 counter on The Watchman.
 			<name>The Thunderskin</name>
 			<text>Lifelink
 Whenever The Thunderskin attacks, create an enchantment token named Heartbeat with &quot;GW, Sacrifice this permanent: Return target card named The Thunderskin from your graveyard to the battlefield tapped.&quot;</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/5.jpg" num="113" uuid="LAIR5">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/5.jpg" num="114" uuid="LAIR5">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33489,7 +33489,7 @@ Exhaust – {T}: Choose a color.
 		<card>
 			<name>Mountain</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/7.jpg" num="126" uuid="LAIR7">LAIR</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/7.jpg" num="127" uuid="LAIR7">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33505,7 +33505,7 @@ Exhaust – {T}: Choose a color.
 		<card>
 			<name>Island</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/8.jpg" num="124" uuid="LAIR8">LAIR</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/8.jpg" num="125" uuid="LAIR8">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33521,7 +33521,7 @@ Exhaust – {T}: Choose a color.
 		<card>
 			<name>Plains</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/9.jpg" num="127" uuid="LAIR9">LAIR</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/9.jpg" num="128" uuid="LAIR9">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33537,7 +33537,7 @@ Exhaust – {T}: Choose a color.
 		<card>
 			<name>Swamp</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/10.jpg" num="136" uuid="LAIR10">LAIR</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/10.jpg" num="137" uuid="LAIR10">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33553,7 +33553,7 @@ Exhaust – {T}: Choose a color.
 		<card>
 			<name>Forest</name>
 			<text></text>
-			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/11.jpg" num="121" uuid="LAIR11">LAIR</set>
+			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/11.jpg" num="122" uuid="LAIR11">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33625,7 +33625,7 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 		<card>
 			<name>Illuminant Spire</name>
 			<text>{T}, Pay 1 life, Sacrifice Illuminant Spire: Search your library for an Island card, put it onto the battlefield, then shuffle.</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/15.jpg" num="123" uuid="LAIR15">LAIR</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/15.jpg" num="124" uuid="LAIR15">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33641,7 +33641,7 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 		<card>
 			<name>Ivory Spire</name>
 			<text>{T}, Pay 1 life, Sacrifice Ivory Spire: Search your library for a Plains card, put it onto the battlefield, then shuffle.</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/16.jpg" num="125" uuid="LAIR16">LAIR</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/16.jpg" num="126" uuid="LAIR16">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33657,7 +33657,7 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 		<card>
 			<name>Searing Spire</name>
 			<text>{T}, Pay 1 life, Sacrifice Searing Spire: Search your library for a Mountain card, put it onto the battlefield, then shuffle.</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/17.jpg" num="134" uuid="LAIR17">LAIR</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/17.jpg" num="135" uuid="LAIR17">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33673,7 +33673,7 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 		<card>
 			<name>Silent Spire</name>
 			<text>{T}, Pay 1 life, Sacrifice Silent Spire: Search your library for a Swamp card, put it onto the battlefield, then shuffle.</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/18.jpg" num="135" uuid="LAIR18">LAIR</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/18.jpg" num="136" uuid="LAIR18">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33689,7 +33689,7 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 		<card>
 			<name>Twisted Spire</name>
 			<text>{T}, Pay 1 life, Sacrifice Twisted Spire: Search your library for a Fault card, put it onto the battlefield, then shuffle.</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/19.jpg" num="137" uuid="LAIR19">LAIR</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/19.jpg" num="138" uuid="LAIR19">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33705,7 +33705,7 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 		<card>
 			<name>Verdant Spire</name>
 			<text>{T}, Pay 1 life, Sacrifice Verdant Spire: Search your library for a Forest card, put it onto the battlefield, then shuffle.</text>
-			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/20.jpg" num="138" uuid="LAIR20">LAIR</set>
+			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/20.jpg" num="139" uuid="LAIR20">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33722,7 +33722,7 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 			<name>True Blood of Saint Janus</name>
 			<text>{T}: Exile up to two target cards from a single graveyard.
 {6}, {T}, Exile True Blood of Saint Janus: Cast a copy of a spell with mana value X or less exiled by True Blood of Saint Janus, where X is the number of cards exiled by True Blood of Saint Janus. Activate only as sorcery.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/21.jpg" num="119" uuid="LAIR21">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/21.jpg" num="120" uuid="LAIR21">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33740,7 +33740,7 @@ Whenever a player discards a card with a creature type, you embrace it, and you 
 			<text>When The Heart of Ischav enters, you may exile a card from your hand. If you do, exile a basic land card from your sanctum.
 {T}: Add one mana of any color basic lands you control could produce.
 {T}, Pay 1 life: Return a basic land card exiled with The Heart of Ischav to your hand.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/22.jpg" num="122" uuid="LAIR22">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/22.jpg" num="123" uuid="LAIR22">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33806,7 +33806,7 @@ Activated abilities of sources with the chosen name can&apos;t be activated unle
 		<card>
 			<name>Wanderer&apos;s Shrine</name>
 			<text>{T}, Pay 1 life, Sacrifice Wanderer&apos;s Shrine: Put a basic land card from your sanctum onto the battlefield.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/26.jpg" num="139" uuid="LAIR26">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/26.jpg" num="140" uuid="LAIR26">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33822,7 +33822,7 @@ Activated abilities of sources with the chosen name can&apos;t be activated unle
 		<card>
 			<name>Falling Sparks</name>
 			<text>Converge – Falling Sparks deals damage to each creature and planeswalker equal to the number of colors of mana spent to cast this spell. You gain that much life.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/27.jpg" num="97" uuid="LAIR27">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/27.jpg" num="98" uuid="LAIR27">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33839,7 +33839,7 @@ Activated abilities of sources with the chosen name can&apos;t be activated unle
 			<name>Sundown</name>
 			<text>Pathbound–{3}, Reveal five basic land cards from your sanctum. ({3}, Reveal five basic land cards from your sanctum, reveal this card from your sanctum as a sorcery: Put this card on top of your library.)
 Discard your hand, then exile the top three cards of your library. You may play them until the end of your next turn.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/28.jpg" num="76" uuid="LAIR28">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/28.jpg" num="77" uuid="LAIR28">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33859,7 +33859,7 @@ Discard your hand, then exile the top three cards of your library. You may play 
 This land enters tapped.
 When this land enters, surveil 1.
 ({T}: Add {W}.)</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/29.jpg" num="132" uuid="LAIR29">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/29.jpg" num="133" uuid="LAIR29">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33879,7 +33879,7 @@ When this land enters, surveil 1.
 This land enters tapped.
 When this land enters, surveil 1.
 ({T}: Add {U}.)</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/30.jpg" num="130" uuid="LAIR30">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/30.jpg" num="131" uuid="LAIR30">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33899,7 +33899,7 @@ When this land enters, surveil 1.
 This land enters tapped.
 When this land enters, surveil 1.
 ({T}: Add {B}.)</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/31.jpg" num="133" uuid="LAIR31">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/31.jpg" num="134" uuid="LAIR31">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33919,7 +33919,7 @@ When this land enters, surveil 1.
 This land enters tapped.
 When this land enters, surveil 1.
 ({T}: Add {R}.)</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/32.jpg" num="131" uuid="LAIR32">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/32.jpg" num="132" uuid="LAIR32">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33939,7 +33939,7 @@ When this land enters, surveil 1.
 This land enters tapped.
 When Restored Fault enters, surveil 1.
 ({T}: Add {I}.)</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/33.jpg" num="128" uuid="LAIR33">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/33.jpg" num="129" uuid="LAIR33">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -33959,7 +33959,7 @@ When Restored Fault enters, surveil 1.
 This land enters tapped.
 When this land enters, surveil 1.
 ({T}: Add {G}.)</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/34.jpg" num="129" uuid="LAIR34">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/34.jpg" num="130" uuid="LAIR34">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34049,7 +34049,7 @@ Create Lover to All in your reserves. He&apos;s a legendary 2/3 red Human Noble 
 			<name>Territorial Yew-Maw</name>
 			<text>When Territorial Yew-Maw enters, you may have it deal 2 damage to itself.
 Whenever Territorial Yew-Maw is dealt damage during your turn, destroy up to one target artifact or enchantment if you control Territorial Yew-Maw.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/40.jpg" num="87" uuid="LAIR40">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/40.jpg" num="88" uuid="LAIR40">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34068,7 +34068,7 @@ Whenever Territorial Yew-Maw is dealt damage during your turn, destroy up to one
 			<text>Spells your opponents cast from exile cost {1} more to cast.
 {T}: Induct. (Create a 0/1 Cleric creature token with &quot;As a sorcery, sacrifice two other Clerics: Transform into a 4/4 God Horror that can&apos;t block.&quot;)
 {3}: The Geminiad gains &quot;Whenever this artifact becomes tapped, add {C}.&quot; Activate only once.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/41.jpg" num="117" uuid="LAIR41">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/41.jpg" num="118" uuid="LAIR41">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34105,7 +34105,7 @@ Whenever Territorial Yew-Maw is dealt damage during your turn, destroy up to one
 			<name>Torch</name>
 			<text>This spell can&apos;t be countered.
 Torch deals 4 damage to target creature or planeswalker. If a permanent dealt damage this way would die this turn, exile it instead.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/43.jpg" num="77" uuid="LAIR43">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/43.jpg" num="78" uuid="LAIR43">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34122,7 +34122,7 @@ Torch deals 4 damage to target creature or planeswalker. If a permanent dealt da
 			<name>Collector of the Wonderful</name>
 			<text>Menace
 Whenever you attack, you may discard a card. If you do, draw a card. If Collector of the Wonderful is attacking, you may pursue Wonder instead.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/44.jpg" num="67" uuid="LAIR44">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/44.jpg" num="68" uuid="LAIR44">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34139,7 +34139,7 @@ Whenever you attack, you may discard a card. If you do, draw a card. If Collecto
 		<card>
 			<name>Pull of the Unknown</name>
 			<text>Look at the top five cards of your library. Put up to one back on top and the rest into your graveyard.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/45.jpg" num="106" uuid="LAIR45">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/45.jpg" num="107" uuid="LAIR45">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34156,7 +34156,7 @@ Whenever you attack, you may discard a card. If you do, draw a card. If Collecto
 			<name>Rite of Resurrection</name>
 			<text>Destroy all creatures. Then you may return a creature card with mana value 3 or less from your graveyard to the battlefield.
 Exile Rite of Resurrection.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/46.jpg" num="62" uuid="LAIR46">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/46.jpg" num="63" uuid="LAIR46">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34172,7 +34172,7 @@ Exile Rite of Resurrection.</text>
 		<card>
 			<name>Survivor&apos;s Instinct</name>
 			<text>Put a +1/+1 counter on target creature you control. It gains hexproof until end of turn.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/47.jpg" num="112" uuid="LAIR47">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/47.jpg" num="113" uuid="LAIR47">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34188,7 +34188,7 @@ Exile Rite of Resurrection.</text>
 		<card>
 			<name>Drakesteel Effigy</name>
 			<text>Exploring – {6}, {T}: Draw a card, then discard a card. Each opponent loses 1 life and you gain 1 life. This ability costs {1} less to activate for each differently named land you control.</text>
-			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/48.jpg" num="116" uuid="LAIR48">LAIR</set>
+			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/48.jpg" num="117" uuid="LAIR48">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34207,7 +34207,7 @@ Exile Rite of Resurrection.</text>
 {2}{U}{B}, Sacrifice this artifact: Choose one –
 • Return target creature card with mana value 3 or less from your graveyard to the battlefield tapped.
 • Return target instant or sorcery card with mana value 3 or less from your graveyard to your hand.</text>
-			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/49.jpg" num="107" uuid="LAIR49">LAIR</set>
+			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/49.jpg" num="108" uuid="LAIR49">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34224,7 +34224,7 @@ Exile Rite of Resurrection.</text>
 			<name>Tangled Heart</name>
 			<text>When Tangled Heart enters, if you cast it, destroy up to one target creature with mana value 3 or less.
 Whenever a creature you control with mana value 4 or greater dies, Tangled Heart deals 1 damage to you and you draw a card.</text>
-			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/50.jpg" num="63" uuid="LAIR50">LAIR</set>
+			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/50.jpg" num="64" uuid="LAIR50">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34258,7 +34258,7 @@ Whenever Font of Decadence attacks, it gains first strike until end of turn. Eac
 		<card>
 			<name>Awakened Titan</name>
 			<text>Whenever this creature attacks, sacrifice an artifact. If you do, draw a card.</text>
-			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/52.jpg" num="78" uuid="LAIR52">LAIR</set>
+			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/52.jpg" num="79" uuid="LAIR52">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34363,7 +34363,7 @@ When Eye of the Abominable enters, return target creature card from your graveya
 			<text>Flying
 Whenever you cast an instant or sorcery spell, put a +1/+1 counter on this creature.
 Whenever this creature attacks, conjure a card named Drain into your hand. (It&apos;s a {B} sorcery with &quot;Target opponent loses 1 life and you gain 1 life.&quot;)</text>
-			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/58.jpg" num="93" uuid="LAIR58">LAIR</set>
+			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/58.jpg" num="94" uuid="LAIR58">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34399,7 +34399,7 @@ Whenever this creature attacks, conjure a card named Drain into your hand. (It&a
 			<text>{T}: Add {C}.
 {1}, {T}: Add one mana of any color. Note that color.
 Lands you control have &quot;{T}: Add one mana of any color noted by A Beloved World.&quot;</text>
-			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/60.jpg" num="120" uuid="LAIR60">LAIR</set>
+			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/60.jpg" num="121" uuid="LAIR60">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34467,7 +34467,7 @@ Once each turn, when you discard a card, you may mill a card. If you do, put up 
 			<name>Melting Pot</name>
 			<text>Nonbasic lands enter the battlefield tapped unless they can produce {C}.
 When Melting Pot enters, destroy up to one target nonbasic land. Its controller searches their library for a basic land card, puts it onto the battlefield tapped, then shuffles.</text>
-			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/64.jpg" num="71" uuid="LAIR64">LAIR</set>
+			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/64.jpg" num="72" uuid="LAIR64">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34575,7 +34575,7 @@ Lands you control are Swamps.</text>
 			<text>Pathbound {I}{R} ({I}{R}, Reveal this card from your sanctum as a sorcery: Put this card on top of your library.)
 Creatures you control have haste.
 Sacrifice this enchantment: Creatures you control get +2/+0 until end of turn.</text>
-			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/70.jpg" num="66" uuid="LAIR70">LAIR</set>
+			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/70.jpg" num="67" uuid="LAIR70">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34628,7 +34628,7 @@ When Ajha enters, return any number of target creature cards with total mana val
 			<name>Sentinel of Dead Lands</name>
 			<text>Whenever you cast a noncreature spell, this creature deals 1 damage to each opponent.
 At the beginning of your end step, if you haven&apos;t cast a noncreature spell this turn, conjure a card named Spark into your hand. (It&apos;s a {R} sorcery with &quot;Spark deals 1 damage to any target.&quot;)</text>
-			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/73.jpg" num="74" uuid="LAIR73">LAIR</set>
+			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/73.jpg" num="75" uuid="LAIR73">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34700,7 +34700,7 @@ Whenever a time counter is removed from this permanent, create a token that&apos
 			<name>Aurel, Born Through Discord</name>
 			<text>Flying, haste
 The first creature spell with mana value 3 or less you cast each turn has cascade. (When you cast that spell, exile cards from the top of your library until you exile a nonland card that costs less. You may cast it without paying its mana cost. Put the exiled cards on the bottom in a random order.)</text>
-			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/77.jpg" num="91" uuid="LAIR77">LAIR</set>
+			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/77.jpg" num="92" uuid="LAIR77">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34755,7 +34755,7 @@ Whenever a creature dies, each opponent loses 1 life.</text>
 			<name>Pattern Processing</name>
 			<text>Search your library for a basic land card or a Texture card, reveal it, put it into your hand, then shuffle.
 You get {VW}.</text>
-			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/80.jpg" num="86" uuid="LAIR80">LAIR</set>
+			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/80.jpg" num="87" uuid="LAIR80">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34773,7 +34773,7 @@ You get {VW}.</text>
 			<name>Sorting Servant</name>
 			<text>When this creature dies, search your library for a colorless card with mana value 5 or greater, reveal it and put it into your hand. Then shuffle.
 {3}: Sacrifice this creature.</text>
-			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/81.jpg" num="118" uuid="LAIR81">LAIR</set>
+			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/81.jpg" num="119" uuid="LAIR81">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34808,7 +34808,7 @@ You get {VW}.</text>
 			<text>Exile target nonland permanent.
 Draw a card.
 (This is a conjured card and not legal in deckbuilding.)</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/83.jpg" num="141" uuid="LAIR83">LAIR</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/83.jpg" num="142" uuid="LAIR83">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34826,7 +34826,7 @@ Draw a card.
 			<text>Changeling (This card is every creature type.)
 When this creature enters, put a land card with a nonbasic land type from your hand or graveyard onto the battlefield.
 Lands you control with a nonbasic land type have &quot;{T}: Add one mana of any type.&quot;</text>
-			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/84.jpg" num="92" uuid="LAIR84">LAIR</set>
+			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/84.jpg" num="93" uuid="LAIR84">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34882,7 +34882,7 @@ The next time target creature deals damage to an opponent this turn, you draw a 
 			<text>Whenever Mordel Excursionist attacks, trace its skill into your hand.
 [b]In the Moment[/b] {1}{R}| Skill Sorcery
 Exile the top card of your library. You may play it this turn.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/87.jpg" num="72" uuid="LAIR87">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/87.jpg" num="73" uuid="LAIR87">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34900,7 +34900,7 @@ Exile the top card of your library. You may play it this turn.</text>
 		<card>
 			<name>Mordel Reinforcement</name>
 			<text>Pathbound {1}{I}{R}. Activate only if you control an artifact. ({1}{I}{R}, Reveal this card from your sanctum as a sorcery: Put this card on top of your library.)</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/88.jpg" num="73" uuid="LAIR88">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/88.jpg" num="74" uuid="LAIR88">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34917,7 +34917,7 @@ Exile the top card of your library. You may play it this turn.</text>
 		<card>
 			<name>Outlands Traveller</name>
 			<text>Pathbound {1}{I}{B}. Activate only if you control an enchantment. ({1}{I}{B}, Reveal this card from your sanctum as a sorcery: Put this card on top of your library.)</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/89.jpg" num="61" uuid="LAIR89">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/89.jpg" num="62" uuid="LAIR89">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34935,7 +34935,7 @@ Exile the top card of your library. You may play it this turn.</text>
 			<name>Eternities Weaver</name>
 			<text>Pathbound {I}{G} ({I}{G}, Reveal this card from your sanctum as a sorcery: Put this card on top of your library.)
 You may play lands from your sanctum.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/90.jpg" num="80" uuid="LAIR90">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/90.jpg" num="81" uuid="LAIR90">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34952,7 +34952,7 @@ You may play lands from your sanctum.</text>
 		<card>
 			<name>Outlands Guardian</name>
 			<text>Pathbound {IG}. Activate only if creatures you control have total power 3 or greater. ({IG}, Reveal this card from your sanctum as a sorcery: Put this card on top of your library.)</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/91.jpg" num="85" uuid="LAIR91">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/91.jpg" num="86" uuid="LAIR91">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -34970,7 +34970,7 @@ You may play lands from your sanctum.</text>
 			<name>Fadove Reinforcement</name>
 			<text>Pathbound {I}. Activate only if you control two or more permanents with a creature type. ({I}, Reveal this card from your sanctum as a sorcery: Put this card on top of your library.)
 When Fadove Reinforcement enters, you may return up to one other target creature or enchantment you control to its owners hand.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/92.jpg" num="17" uuid="LAIR92">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/92.jpg" num="18" uuid="LAIR92">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35007,7 +35007,7 @@ Whenever Pathborn Drake attacks, scry 1.</text>
 			<name>Scars of Oil</name>
 			<text>When this enchantment enters, draw two cards, then discard a card.
 Once each turn, when you discard a card, you may mill a card. If you do, put up to one card in your graveyard into your sanctum.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/94.jpg" num="109" uuid="LAIR94">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/94.jpg" num="111" uuid="LAIR94">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35023,7 +35023,7 @@ Once each turn, when you discard a card, you may mill a card. If you do, put up 
 		<card>
 			<name>Impunity of Souls</name>
 			<text>Put target card in a graveyard into its owner&apos;s sanctum. Create a tapped 2/2 green and silver Icon enchantment creature token. You gain 2 life.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/95.jpg" num="101" uuid="LAIR95">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/95.jpg" num="102" uuid="LAIR95">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35040,7 +35040,7 @@ Once each turn, when you discard a card, you may mill a card. If you do, put up 
 			<name>Fadove Reinforcement</name>
 			<text>Pathbound {I}. Activate only if you control two or more permanents with a creature type. ({I}, Reveal this card from your sanctum as a sorcery: Put this card on top of your library.)
 When Fadove Reinforcement enters, you may return up to one other target creature or enchantment you control to its owners hand.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/96.jpg" num="18" uuid="LAIR96">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/96.jpg" num="17" uuid="LAIR96">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35058,7 +35058,7 @@ When Fadove Reinforcement enters, you may return up to one other target creature
 			<name>Ethereal Exposure</name>
 			<text>Tap up to two target nonland permanents.
 Draw a card.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/97.jpg" num="96" uuid="LAIR97">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/97.jpg" num="97" uuid="LAIR97">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35075,7 +35075,7 @@ Draw a card.</text>
 			<name>Volatile Visions</name>
 			<text>Look at the top two cards of your library and exile one of them. Until the end of your next turn, you may play that card. Put the other on the bottom of your library.
 Create a 1/1 red Wurm creature token with haste.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/98.jpg" num="114" uuid="LAIR98">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/98.jpg" num="115" uuid="LAIR98">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35092,7 +35092,7 @@ Create a 1/1 red Wurm creature token with haste.</text>
 		<card>
 			<name>Splendid Genesis</name>
 			<text>Create an X/X green and silver Icon enchantment creature token.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/99.jpg" num="111" uuid="LAIR99">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/99.jpg" num="112" uuid="LAIR99">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35251,7 +35251,7 @@ Return Timecoil Tracings to its owner&apos;s hand.</text>
 			<name>Inciting Incident</name>
 			<text>You may cast Inciting Incident for {B} as long as it&apos;s the first spell you&apos;ve cast this game.
 Destroy target creature</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/108.jpg" num="59" uuid="LAIR108">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/108.jpg" num="60" uuid="LAIR108">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35269,7 +35269,7 @@ Destroy target creature</text>
 			<text>When Splintered Memories enters, draw a card.
 Each card in your hand has cycling 1.
 At the beginning of your end step, sacrifice Splintered Memories.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/109.jpg" num="75" uuid="LAIR109">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/109.jpg" num="76" uuid="LAIR109">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35286,7 +35286,7 @@ At the beginning of your end step, sacrifice Splintered Memories.</text>
 			<name>Millenniapede</name>
 			<text>When Millenniapede enters, return up to one thousand target permanent cards from your graveyard to your hand.
 {1}{G}, Discard Millenniapede: Mill three cards. You may put a permanent card from among the milled cards into your hand.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/110.jpg" num="82" uuid="LAIR110">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/110.jpg" num="83" uuid="LAIR110">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35305,7 +35305,7 @@ At the beginning of your end step, sacrifice Splintered Memories.</text>
 			<text>Haste
 When Loche, Returned Pilgrim enters, exile up to one target card from your graveyard. You may play a copy of it until end of turn. (A land played this way becomes a token.)
 Loche has all activated abilities of lands you control.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/111.jpg" num="102" uuid="LAIR111">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/111.jpg" num="103" uuid="LAIR111">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35324,7 +35324,7 @@ Loche has all activated abilities of lands you control.</text>
 			<text>This spell costs {1} less to cast for each permanent with flash you control and each instant card in your graveyard.
 Flash
 Whenever you cast a spell, you may have Ouarra, All-Devourer phase out. (Treat it and anything attached to it as though they don&apos;t exist until its controller&apos;s next turn.)</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/112.jpg" num="105" uuid="LAIR112">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/112.jpg" num="106" uuid="LAIR112">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35341,7 +35341,7 @@ Whenever you cast a spell, you may have Ouarra, All-Devourer phase out. (Treat i
 		<card>
 			<name>Abyssal Pursuer</name>
 			<text>Whenever Abyssal Pursuer attacks, you may discard a card and pursue Wonder. When you do, if a creature card with mana value less than or equal to the number of attacking creatures was revealed this way, you may put it onto the battlefield tapped and attacking.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/113.jpg" num="65" uuid="LAIR113">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/113.jpg" num="66" uuid="LAIR113">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35359,7 +35359,7 @@ Whenever you cast a spell, you may have Ouarra, All-Devourer phase out. (Treat i
 			<name>Chthonic Gorger</name>
 			<text>Flying
 When Chthonic Gorger enters, destroy all nonland permanents with mana value 1 or less.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/114.jpg" num="94" uuid="LAIR114">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/114.jpg" num="95" uuid="LAIR114">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35397,7 +35397,7 @@ When Eager Impostor dies, you may exile it. If you do, return target creature ca
 			<text>Reach
 {T}, Mill a card: Add one mana of any color.
 Each Dinosaur card in your graveyard has retopology. Its retopology cost is equal to its mana cost. (Cast copies of Dinosaur cards from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/116.jpg" num="81" uuid="LAIR116">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/116.jpg" num="82" uuid="LAIR116">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35415,7 +35415,7 @@ Each Dinosaur card in your graveyard has retopology. Its retopology cost is equa
 			<name>Herald of Blackened Stars</name>
 			<text>Whenever a creature you control enters, you get {V}. (Spend {V} to cast vertex spells.)
 At the beginning of your end step, if you cast a noncreature spell this turn, sacrifice a creature.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/117.jpg" num="56" uuid="LAIR117">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/117.jpg" num="55" uuid="LAIR117">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35453,7 +35453,7 @@ Whenever Hex Trueblight exploits a creature, each opponent loses 3 life unless t
 			<name>Inter Knowledge</name>
 			<text>Put a card at random from your sanctum into your graveyard.
 Draw a card.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/119.jpg" num="60" uuid="LAIR119">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/119.jpg" num="61" uuid="LAIR119">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35470,7 +35470,7 @@ Draw a card.</text>
 			<name>Lord of the Broken</name>
 			<text>Heir – You&apos;ve changed the abilities or text on five or more permanents this game. (If this card is your chosen heir in your sanctum, you may replace a draw with this card if you&apos;ve met its condition.)
 Other creatures you control lose all abilities and get +3/+3.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/120.jpg" num="90" uuid="LAIR120">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/120.jpg" num="91" uuid="LAIR120">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35542,7 +35542,7 @@ Foretell 1W</text>
 		<card>
 			<name>Angel</name>
 			<text>Flying</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/125.jpg" num="142" uuid="LAIR125">LAIR</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/125.jpg" num="143" uuid="LAIR125">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35560,7 +35560,7 @@ Foretell 1W</text>
 			<name>Scar</name>
 			<text>(When this boon triggers, it disappears even if you didn&apos;t pay the {1}.)
 Whenever a creature you control dies you may pay {1}. If you do, draw a card.</text>
-			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/126.jpg" num="140" uuid="LAIR126">LAIR</set>
+			<set rarity="special" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/126.jpg" num="141" uuid="LAIR126">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35582,7 +35582,7 @@ Whenever Me, Divine Aspirant attacks, choose one that hasn&apos;t been chosen. I
 • Me gets +1/+1 until end of turn.
 ---
 (Back): The Placebo God</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/127_front.jpg" num="70a" uuid="LAIR127">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/127_front.jpg" num="71a" uuid="LAIR127">LAIR</set>
 			<prop>
 				<layout>transform</layout>
 				<side>front</side>
@@ -35600,7 +35600,7 @@ Whenever Me, Divine Aspirant attacks, choose one that hasn&apos;t been chosen. I
 			<name>The Placebo God</name>
 			<text>---
 (Front): Me, Divine Aspirant</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/127_back.jpg" num="70b" uuid="LAIR127">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/127_back.jpg" num="71b" uuid="LAIR127">LAIR</set>
 			<prop>
 				<layout>transform</layout>
 				<side>back</side>
@@ -35744,7 +35744,7 @@ When Wish for Transformation enters, search your library for a non-Spirit creatu
 			<name>Glorious Enforcer</name>
 			<text>Flying, lifelink
 At the beginning of each combat, if you have more life than an opponent, Glorious Enforcer gains double strike until end of turn.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/135.jpg" num="22" uuid="LAIR135">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/135.jpg" num="26" uuid="LAIR135">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35762,7 +35762,7 @@ At the beginning of each combat, if you have more life than an opponent, Gloriou
 			<name>Glorious Enforcer</name>
 			<text>Flying, lifelink
 At the beginning of each combat, if you have more life than an opponent, Glorious Enforcer gains double strike until end of turn.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/136.jpg" num="28" uuid="LAIR136">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/136.jpg" num="23" uuid="LAIR136">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35798,7 +35798,7 @@ At the beginning of each combat, if you have more life than an opponent, Gloriou
 			<name>Glorious Enforcer</name>
 			<text>Flying, lifelink
 At the beginning of each combat, if you have more life than an opponent, Glorious Enforcer gains double strike until end of turn.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/138.jpg" num="26" uuid="LAIR138">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/138.jpg" num="25" uuid="LAIR138">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35816,7 +35816,7 @@ At the beginning of each combat, if you have more life than an opponent, Gloriou
 			<name>Glorious Enforcer</name>
 			<text>Flying, lifelink
 At the beginning of each combat, if you have more life than an opponent, Glorious Enforcer gains double strike until end of turn.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/139.jpg" num="21" uuid="LAIR139">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/139.jpg" num="24" uuid="LAIR139">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35834,7 +35834,7 @@ At the beginning of each combat, if you have more life than an opponent, Gloriou
 			<name>Glorious Enforcer</name>
 			<text>Flying, lifelink
 At the beginning of each combat, if you have more life than an opponent, Glorious Enforcer gains double strike until end of turn.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/140.jpg" num="25" uuid="LAIR140">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/140.jpg" num="22" uuid="LAIR140">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35852,7 +35852,7 @@ At the beginning of each combat, if you have more life than an opponent, Gloriou
 			<name>Glorious Enforcer</name>
 			<text>Flying, lifelink
 At the beginning of each combat, if you have more life than an opponent, Glorious Enforcer gains double strike until end of turn.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/141.jpg" num="24" uuid="LAIR141">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/141.jpg" num="21" uuid="LAIR141">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35870,7 +35870,7 @@ At the beginning of each combat, if you have more life than an opponent, Gloriou
 			<name>Glorious Enforcer</name>
 			<text>Flying, lifelink
 At the beginning of each combat, if you have more life than an opponent, Glorious Enforcer gains double strike until end of turn.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/142.jpg" num="23" uuid="LAIR142">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/142.jpg" num="28" uuid="LAIR142">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35925,7 +35925,7 @@ When this creature enters, exile up to one target instant or sorcery card in you
 			<text>Pathbound–{I}{G}, Exile a land card from your hand. ({I}{G}, Exile a land card from your hand, reveal this card from your sanctum as a sorcery: Put this card on top of your library.)
 You may look at the top card of your library any time.
 {T}: Reveal the top card of your library. If it&apos;s a land, you may put it onto the battlefield. Otherwise, you may mill it.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/145.jpg" num="79" uuid="LAIR145">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/145.jpg" num="80" uuid="LAIR145">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35944,7 +35944,7 @@ You may look at the top card of your library any time.
 At the beginning of your draw step, draw an additional card.
 At the beginning of your end step, discard your hand.
 Escape–{2}{R}{R}, Exile eight other cards from your graveyard. (You may cast this card from your graveyard for its escape cost.)</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/146.jpg" num="68" uuid="LAIR146">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/146.jpg" num="69" uuid="LAIR146">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -35965,7 +35965,7 @@ Escape–{2}{R}{R}, Exile eight other cards from your graveyard. (You may cast t
 ---
 
 Prevent all combat damage that would be dealt to players this turn. (Then put this card into your sanctum.)</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/147.jpg" num="83" uuid="LAIR147">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/147.jpg" num="84" uuid="LAIR147">LAIR</set>
 			<prop>
 				<layout>adventure</layout>
 				<side>front</side>
@@ -36021,7 +36021,7 @@ Deep Dwelling – Once each turn, when you cast an instant or sorcery spell, unt
 			<name>New Tensuo Physician</name>
 			<text>When New Tensuo Physician enters, return target permanent card from your graveyard to your hand. If it was a land or multicolored card, you gain 5 life.
 Reflect {1} ({1}: Create a token copy of this creature, except it&apos;s a 1/1 Wonder Elf Druid without reflect. Reflect only as a sorcery, and only once.)</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/150.jpg" num="84" uuid="LAIR150">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/150.jpg" num="85" uuid="LAIR150">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -36058,7 +36058,7 @@ When this creature enters, it deals damage equal to the number of lands in your 
 			<name>Urban Flytrap</name>
 			<text>As an additional cost to cast this spell, you may sacrifice a creature. If you do, this spell costs {3} less to cast.
 Reach</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/152.jpg" num="88" uuid="LAIR152">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/152.jpg" num="89" uuid="LAIR152">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -36093,7 +36093,7 @@ Whenever Angel of the True Sun enters or a Sanctuary you control is put into a g
 		<card>
 			<name>Wishtouched Outcast</name>
 			<text>At the beginning of your upkeep, pursue Wonder. When you do, you lose life equal to the mana value of the card revealed this way. (To pursue Wonder, reveal a basic land or Wonder card from your sanctum and put it into your hand.)</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/154.jpg" num="64" uuid="LAIR154">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/154.jpg" num="65" uuid="LAIR154">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -36112,7 +36112,7 @@ Whenever Angel of the True Sun enters or a Sanctuary you control is put into a g
 			<text>When Ilcan Soulshear enters, choose one –
 • Destroy target creature with mana value 4 or less.
 • Return target creature card with mana value 4 or less from your graveyard to the battlefield.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/155.jpg" num="58" uuid="LAIR155">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/155.jpg" num="59" uuid="LAIR155">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -36130,7 +36130,7 @@ Whenever Angel of the True Sun enters or a Sanctuary you control is put into a g
 			<name>Herald of Blackened Stars</name>
 			<text>Whenever a creature you control dies, you get {V}. (Spend {V} to cast copies of vertex spells.)
 At the beginning of your end step, if you cast a noncreature spell this turn, sacrifice a creature.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/156.jpg" num="55" uuid="LAIR156">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/156.jpg" num="56" uuid="LAIR156">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -36225,7 +36225,7 @@ Reflect {3} ({3}: Create a token copy of this creature, except it&apos;s a 1/1 W
 			<text>When this creature enters, choose one –
 • This creature deals 3 damage divided among one or two targets.
 • Gain control of target land you don&apos;t control. Its controller creates a tapped token land with &quot;{T}: Add {C}.&quot;</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/161.jpg" num="69" uuid="LAIR161">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/161.jpg" num="70" uuid="LAIR161">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -36245,7 +36245,7 @@ Reflect {3} ({3}: Create a token copy of this creature, except it&apos;s a 1/1 W
 Flying
 This spell can&apos;t be countered.
 {U}{B}, Pay 1 life: Draw a card. Herongrand phases out. Activate only once each turn.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/162.jpg" num="99" uuid="LAIR162">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/162.jpg" num="100" uuid="LAIR162">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -36298,7 +36298,7 @@ When Flesh Centrifuge enters, it deals 3 damage to any target and you gain 3 lif
 			<name>Curious Dexteria</name>
 			<text>Protection from artifacts and from enchantments. (This creature can&apos;t be blocked, targeted, dealt damage, or equipped by artifacts or enchantments.)
 Whenever an opponent casts an artifact or enchantment spell for the first time each turn, draw a card unless they pay {1}.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/165.jpg" num="89" uuid="LAIR165">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/165.jpg" num="90" uuid="LAIR165">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -36316,7 +36316,7 @@ Whenever an opponent casts an artifact or enchantment spell for the first time e
 			<name>The Elegiast</name>
 			<text>Whenever you sacrifice a creature, note its name. 
 Once during each of your turns, you may cast a spell from your graveyard with a name noted for cards named The Elegiast.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/166.jpg" num="95" uuid="LAIR166">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/166.jpg" num="96" uuid="LAIR166">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -36334,7 +36334,7 @@ Once during each of your turns, you may cast a spell from your graveyard with a 
 			<name>Hook Ironmantle</name>
 			<text>Menace
 Whenever you cast a spell with mana value 5 or greater, each opponent discards a card if it&apos;s your turn. Otherwise, put a +1/+1 counter on Hook Ironmantle and it deals 2 damage to each opponent.</text>
-			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/167.jpg" num="100" uuid="LAIR167">LAIR</set>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/167.jpg" num="101" uuid="LAIR167">LAIR</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -36345,6 +36345,28 @@ Whenever you cast a spell with mana value 5 or greater, each opponent discards a
 				<colors>BR</colors>
 				<coloridentity>BR</coloridentity>
 				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Ignelscor Jidiao // Tear a Path</name>
+			<text>Menace
+At the beginning of combat, you may put a card from your sanctum into your graveyard. If you do, up to one target creature you control gains deathtouch until end of turn.
+
+---
+
+Draw a card. Mill two cards. You may put them into your sanctum. (Then put this into your sanctum.)</text>
+			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/LAIR-files/img/168.jpg" num="58" uuid="LAIR168">LAIR</set>
+			<prop>
+				<layout>adventure</layout>
+				<side>front</side>
+				<type>Creature – Dragon Turtle // Instant – Focus</type>
+				<maintype>Creature</maintype>
+				<manacost>5B // 1B</manacost>
+				<cmc>6</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<pt>6/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
 		</card>
@@ -44350,7 +44372,7 @@ Deathtouch, lifelink</text>
 		<card>
 			<name>Hierarch of Expiration</name>
 			<text>When Hierarch of Expiration enters, each player sacrifices a creature or planeswalker.
-Retopology {2}{B}{B} (Cast a copy of this from your graveyard by exiling it and paying its retopology cost. Spend only mana from differently named sources this way.)</text>
+Retopology {2}{B}{B} (Cast a copy of this from your graveyard by exiling it and paying {2}{B}{B}. Spend only mana from differently named sources this way.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/PVR-files/img/181.jpg" num="117" uuid="PVR181">PVR</set>
 			<prop>
 				<layout>normal</layout>
@@ -48530,7 +48552,7 @@ Copy target spell, activated ability, or triggered ability. if you&apos;re balan
 		<card>
 			<name>Imperial Mediator</name>
 			<text>When Imperial Mediator enters, venerate. (You may reveal and put a Shrine card you own from outside the game into your hand, or create a 1/1 colorless Shrine enchantment creature token.)
-If one or more tokens would be created under your control, that many plus X are created instead, where X is the number of Shrines you control.</text>
+If one or more enchantment tokens would be created under your control, twice that many of those tokens are created instead.</text>
 			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/96.jpg" num="163" uuid="SSC96">SSC</set>
 			<prop>
 				<layout>normal</layout>
@@ -48583,7 +48605,7 @@ Trespass {X}{U}{U}{U}{U} (You may cast this spell from your graveyard for {X}{U}
 		<card>
 			<name>Fableweaver Huxian</name>
 			<text>Vigilance
-Enchantment spells you cast have convoke.
+The first enchantment spell you cast each turn has convoke.
 Whenever an enchantment you control enters, Fableweaver Huxian gets +1/+1 until end of turn.</text>
 			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/99.jpg" num="13" uuid="SSC99">SSC</set>
 			<prop>
@@ -48601,9 +48623,9 @@ Whenever an enchantment you control enters, Fableweaver Huxian gets +1/+1 until 
 		</card>
 		<card>
 			<name>Derelict Temple</name>
-			<text>When Derelict Temple enters, surveil 2.
+			<text>When Derelict Temple enters, surveil 1.
 {1}, {T}: Add one mana of any color.
-{5}: Derelict Temple becomes a 4/4 creature in addition to its other types until end of turn.</text>
+{4}: Derelict Temple becomes a 3/3 creature in addition to its other types until end of turn.</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/100.jpg" num="247" uuid="SSC100">SSC</set>
 			<prop>
 				<layout>normal</layout>
@@ -49318,8 +49340,8 @@ When Imperious Geji enters, it deals damage to up to one target creature or plan
 			<tablerow>2</tablerow>
 		</card>
 		<card>
-			<name>Realmfarers Temple</name>
-			<text>Whenever Realmfarers Temple or another Shrine you control enters, draw a card. You may put a land card from your hand onto the battlefield.</text>
+			<name>Realmfarer&apos;s Temple</name>
+			<text>Whenever another Shrine you control enters, draw a card. You may put a land card from your hand onto the battlefield. This ability triggers only once each turn.</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/141.jpg" num="226" uuid="SSC141">SSC</set>
 			<prop>
 				<layout>normal</layout>
@@ -50020,7 +50042,7 @@ At the beginning of combat on your turn, gain control of target creature an oppo
 		</card>
 		<card>
 			<name>Liang Grand Temple</name>
-			<text>Tap an untapped Shrine you control: Add one mana of any color.</text>
+			<text>At the beginning of your second main phase, untap up to X lands, where X is the number of Shrines you control.</text>
 			<set rarity="rare" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/181.jpg" num="167" uuid="SSC181">SSC</set>
 			<prop>
 				<layout>normal</layout>
@@ -50175,7 +50197,7 @@ Whenever you play a land, copy the next loyalty ability you activate this turn w
 		</card>
 		<card>
 			<name>Cliff-Gate Temple</name>
-			<text>At the beginning of combat on your turn, target creature you control gains haste until end of turn. If you control three or more Shrines, it also gains trample until end of turn.</text>
+			<text>At the beginning of combat on your turn, target creature you control gains trample until end of turn. If you control three or more Shrines, it also gets +2/+0 until end of turn.</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/SSC-files/img/190.jpg" num="195" uuid="SSC190">SSC</set>
 			<prop>
 				<layout>normal</layout>
@@ -66547,7 +66569,7 @@ Pursue Wonder. (Reveal a basic land or Wonder card from your sanctum and put it 
 			<name>Cryptic Columns</name>
 			<text>Defender
 {1}, {T}: [b][Add one mana of any color.][/b]
-Impetus {1} (You may cast this from your graveyard as a sorcery with only the text in square brackets for {1}. Then exile it.)</text>
+Impetus {1} (You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/42.jpg" num="230" uuid="WAW42">WAW</set>
 			<prop>
 				<layout>normal</layout>
@@ -67187,7 +67209,7 @@ Ploy – Target opponent reveals their hand and discards a nonland card of your 
 		<card>
 			<name>Deepmists Vindicator</name>
 			<text>Whenever Deepmists Vindicator becomes blocked, [b][each opponent sacrifices a creature or planeswalker.][/b]
-Impetus {4}{B} (You may cast this from your graveyard as a sorcery with only the text in square brackets for {4}{B}. Then exile it.)</text>
+Impetus {4}{B} (You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/79.jpg" num="85" uuid="WAW79">WAW</set>
 			<prop>
 				<layout>normal</layout>
@@ -67279,7 +67301,7 @@ Reflect {3}{W} ({3}{W}: Create a token copy of this creature, except it&apos;s a
 		<card>
 			<name>Ilcan Resilience</name>
 			<text>[b][Target creature you control gains indestructible and lifelink until end of turn.][/b] Put a +1/+1 counter on it.
-Impetus {1}{B} (You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)</text>
+Impetus {1}{B} (You may cast this from your graveyard as a sorcery with only the text in square brackets for {1}{B}. Then exile it.)</text>
 			<set rarity="uncommon" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/84.jpg" num="20" uuid="WAW84">WAW</set>
 			<prop>
 				<layout>normal</layout>
@@ -67351,7 +67373,7 @@ Reflect {3} ({3}: Create a token copy of this creature, except it&apos;s a 1/1 W
 			<name>Lifelighter</name>
 			<text>Flash
 When Lifelighter enters, you may [b][return target permanent you control not named Lifelighter to its owner&apos;s hand.][/b]
-Impetus {1}{W} (You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)</text>
+Impetus {1}{W} (You may cast this from your graveyard as a sorcery with only the text in square brackets for {1}{W}. Then exile it.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/89.jpg" num="23" uuid="WAW89">WAW</set>
 			<prop>
 				<layout>normal</layout>
@@ -67772,7 +67794,7 @@ Destroy target creature if it&apos;s tapped or if this spell emerged. You gain 3
 • [b][Exile up to one target nonland permanent with mana value 1 or less.][/b]
 • [b][Scry 2, then draw a card.][/b]
 • [b][Create a 3/3 green Beast creature token.][/b]
-Impetus {W}{U}{B}{R}{G} (You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)</text>
+Impetus {W}{U}{B}{R}{G} (You may cast this from your graveyard as a sorcery with only the text in square brackets for {W}{U}{B}{R}{G}. Then exile it.)</text>
 			<set rarity="mythic" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/113.jpg" num="1" uuid="WAW113">WAW</set>
 			<prop>
 				<layout>normal</layout>
@@ -68859,7 +68881,7 @@ Reflect {3} ({3}: Create a token copy of this creature, except it&apos;s a 1/1 W
 		<card>
 			<name>Contemplative Pause</name>
 			<text>[b][Tap up to two target creatures][/b], then put a stun counter on each of them. (If a permanent with a stun counter would become untapped, remove one from it instead.)
-Impetus {2}{U} (You may cast this from your graveyard as a sorcery with only the text in square brackets for its impetus cost. Then exile it.)</text>
+Impetus {2}{U} (You may cast this from your graveyard as a sorcery with only the text in square brackets for {2}{U}. Then exile it.)</text>
 			<set rarity="common" picurl="https://voyager-mtg.github.io/sets/WAW-files/img/185.jpg" num="44" uuid="WAW185">WAW</set>
 			<prop>
 				<layout>normal</layout>
